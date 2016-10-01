@@ -1,0 +1,17 @@
+# c_saka
+
+# County Title
+title = c_saka
+
+# Settlements
+max_settlements = 3
+
+b_saka = tribal
+b_sol_katti_shrine = temple
+#b_silverwolf = city
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

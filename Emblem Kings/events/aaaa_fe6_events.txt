@@ -1,0 +1,138 @@
+namespace = fe6
+###################################
+# FE6 / The Sword of Seals Events #
+###################################
+# fe6.1	 Kingdom of Lycia formed
+
+narrative_event = {
+	id = fe6.1
+	title = EVTNAMEfe6.1
+	desc = EVTDESCfe6.1
+	
+	picture = GFX_evt_coronation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAfe6.1
+		hidden_tooltip = {
+			primary_title = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = k_lycia
+				}
+			}
+		}
+		k_lycia = {
+			grant_title = ROOT
+			#make_primary_title = yes
+			copy_title_laws = k_lycian_league
+			copy_title_history = k_lycian_league
+		}
+		k_lycian_league = {
+			destroy_landed_title = THIS
+		}
+		hidden_tooltip = {
+			activate_title = { title = k_lycian_league status = no }
+			any_playable_ruler = {
+				limit = {
+					NOT = { has_landed_title = k_lycian_league }
+					ai = no
+				}
+				narrative_event = { id = fe6.2 }
+			}
+		}
+	}
+}
+
+# Informed 
+narrative_event = {
+	id = fe6.2
+	title = EVTNAMEfe6.2
+	desc = EVTDESCfe6.2
+	
+	picture = GFX_evt_coronation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAfe6.2
+	}
+}
+
+#Spawn war dragons
+character_event  = {
+	id = fe6.3
+	title = EVTNAMEfe6.3
+	desc = EVTDESCfe6.3
+	
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAfe6.3
+			
+		create_character = {
+			random_traits = no
+			#name = "Ein"
+			religion = FROM
+			culture = war_dragon
+			female = no
+			dynasty=none
+			age = 20
+			attributes = {
+				martial = 6
+				diplomacy = 0
+				stewardship = 0
+				intrigue = 0
+				learning = 0
+			}
+			trait = dragon
+			trait = war_dragon
+			trait = class_manakete
+			employer = FROM
+		}
+				
+		create_character = {
+			random_traits = no
+			#name = "Ein"
+			religion = FROM
+			culture = war_dragon
+			female = no
+			dynasty=none
+			age = 20
+			attributes = {
+				martial = 6
+				diplomacy = 0
+				stewardship = 0
+				intrigue = 0
+				learning = 0
+			}
+			trait = dragon
+			trait = war_dragon
+			trait = class_manakete
+			employer = FROM
+		}
+		
+		create_character = {
+			random_traits = no
+			#name = "Ein"
+			religion = FROM
+			culture = war_dragon
+			female = no
+			dynasty=none
+			age = 20
+			attributes = {
+				martial = 6
+				diplomacy = 0
+				stewardship = 0
+				intrigue = 0
+				learning = 0
+			}
+			trait = dragon
+			trait = war_dragon
+			trait = class_manakete
+			employer = FROM
+		}
+	}
+}

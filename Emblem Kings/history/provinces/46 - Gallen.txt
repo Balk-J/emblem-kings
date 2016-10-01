@@ -1,0 +1,18 @@
+# c_gallen
+
+# County Title
+title = c_gallen
+
+# Settlements
+max_settlements = 4
+
+b_gallen = castle
+b_gallen_2 = temple
+b_gallen_3 = city
+#b_geltwil = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,10 @@
+440.1.1=
+{
+	holder=901 # Naga 
+#TODO: find someone else; Naga was never the head of her own religion. Maybe Gotoh or Bantu?
+}
+
+680.2.28=
+{
+	holder=902 # Tiki
+}

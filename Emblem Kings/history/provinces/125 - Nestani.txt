@@ -1,0 +1,18 @@
+# c_nestani
+
+# County Title
+title = c_nestani
+
+# Settlements
+max_settlements = 4
+
+b_nestani = castle
+b_nestani_2 = city
+b_nestani_3 = temple
+#b_mavriki = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

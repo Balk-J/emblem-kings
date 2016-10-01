@@ -1,0 +1,17 @@
+# c_vangos
+
+# County Title
+title = c_vangos
+
+# Settlements
+max_settlements = 3
+
+b_vangos = tribal
+#b_vangos_2 = temple
+#b_vangos_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

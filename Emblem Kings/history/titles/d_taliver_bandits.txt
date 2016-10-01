@@ -1,0 +1,7 @@
+1145.1.1={
+	holder=537 # Taliver Bandits
+}
+
+1160.1.1={
+	holder=0 # Taliver Bandits destroyed
+}

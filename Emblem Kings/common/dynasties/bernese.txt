@@ -1,0 +1,623 @@
+# Canon
+401={
+	name="of Bern"
+	culture="bernese"
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 46
+			emblem = 0
+			color = 7
+			color = 6
+			color = 2
+		}
+	}
+}
+
+415={
+	name="Grentzer" #Pascal
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 35
+            emblem = 0
+            color = 7
+            color = 0
+            color = 8
+        }
+    }	
+}
+
+417={
+	name="Reed"
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 9
+            emblem = 0
+            color = 11
+            color = 3
+            color = 5
+        }
+    }	
+}
+
+# Canon-ish
+402={
+	name="of Appenzell" # Brunnya
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 17
+            emblem = 0
+            color = 0
+            color = 10
+            color = 3
+        }
+    }
+}
+403={
+	name="of Glarus" # Narcian
+	culture="bernese"    
+	coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 6
+            emblem = 0
+            color = 3
+            color = 10
+            color = 6
+        }
+    }
+}
+404={
+	name="of Unterwalden" # Vaida
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 40
+            emblem = 0
+            color = 12
+            color = 7
+            color = 6
+        }
+    }	
+}
+405={
+	name="of Obwalden" # Heath
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 42
+            emblem = 0
+            color = 12
+            color = 2
+            color = 6
+        }
+    }	
+}
+406={
+	name="of Basel" # Milady, Zeiss
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 21
+            emblem = 0
+            color = 9
+            color = 3
+            color = 9
+        }
+    }
+}
+407={
+	name="of Jura" # Ruud
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 12
+            emblem = 0
+            color = 10
+            color = 4
+            color = 9
+        }
+    }	
+}
+408={
+	name="of Bettingen" # Elen (actually supposed to be from the same town as Zeiss, but same duchy is close enough here)
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 11
+            emblem = 0
+            color = 3
+            color = 1
+            color = 9
+        }
+    }	
+}
+409={
+	name="of Ennenda" #Flaer
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 38
+            emblem = 0
+            color = 9
+            color = 6
+            color = 9
+        }
+    }	
+}
+410={
+	name="of Netstal" #Slater
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 41
+            emblem = 0
+            color = 0
+            color = 3
+            color = 9
+        }
+    }	
+}
+411={
+	name="of Isenthal" #Oates
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 45
+            emblem = 0
+            color = 6
+            color = 9
+            color = 9
+        }
+    }	
+}
+
+412={
+	name="of Solothurn" #Raith
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 8
+            emblem = 0
+            color = 11
+            color = 14
+            color = 9
+        }
+    }	
+}
+
+413={
+	name="of Zug" #Tick
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 8
+            emblem = 0
+            color = 2
+            color = 9
+            color = 9
+        }
+    }	
+}
+
+414={
+	name="of Fribourg" #Peres
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 12
+            emblem = 0
+            color = 8
+            color = 12
+            color = 6
+        }
+    }	
+}
+
+416={
+	name="of Bauen" #Martel
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 21
+            emblem = 0
+            color = 6
+            color = 0
+            color = 3
+        }
+    }	
+}
+
+418={
+	name="of Nidwalden" #Richten
+	culture="bernese"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 27
+            emblem = 0
+            color = 7
+            color = 3
+            color = 5
+        }
+    }	
+}
+
+498={
+	name="Blackbone" #Audamorze
+	culture="bernese"    
+	coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 41
+            emblem = 0
+            color = 5
+            color = 7
+            color = 6
+        }
+    }
+	can_appear=no
+}
+
+# Non-canon
+419={
+	name="Gualch"
+	culture="bernese"
+}
+420={
+	name="Runese"
+	culture="bernese"
+}
+421={
+	name="Vorrade"
+	culture="bernese"
+}
+422={
+	name="Geronen"
+	culture="bernese"
+}
+423={
+	name="Beck"
+	culture="bernese"
+}
+424={
+	name="Roes"
+	culture="bernese"
+}
+425={
+	name="Walter"
+	culture="bernese"
+}
+426={
+	name="Grelle"
+	culture="bernese"
+}
+427={
+	name="of Andechs"
+	culture="bernese"
+}
+428={
+	name="of Stade"
+	culture="bernese"
+}
+429={
+	name="of Raabs"
+	culture="bernese"
+}
+430={
+	name="of Wickerode"
+	culture="bernese"
+}
+431={
+	name="of Vianden"
+	culture="bernese"
+}
+432={
+	name="Ernste"
+	culture="bernese"
+}
+433={
+	name="of Sachsen"
+	culture="bernese"
+}
+434={
+	name="of Lusatia"
+	culture="bernese"
+}
+435={
+	name="Brunswick"
+	culture="bernese"
+}
+436={
+	name="Wettin"
+	culture="bernese"
+}
+437={
+	name="Bluome"
+	culture="bernese"
+}
+438={
+	name="of Stad"
+	culture="bernese"
+}
+439={
+	name="Gerbod"
+	culture="bernese"
+}
+440={
+	name="Witte"
+	culture="bernese"
+}
+441={
+	name="Wullenpund"
+	culture="bernese"
+}
+442={
+	name="of Hagen"
+	culture="bernese"
+}
+443={
+	name="Steneke"
+	culture="bernese"
+}
+444={
+	name="Wittelsbach"
+	culture="bernese"
+}
+445={
+	name="Hildemar"
+	culture="bernese"
+}
+446={
+	name="of Plotzkau"
+	culture="bernese"
+}
+447={
+	name="of Goslar"
+	culture="bernese"
+}
+448={
+	name="of Goltern"
+	culture="bernese"
+}
+449={
+	name="of Holte"
+	culture="bernese"
+}
+450={
+	name="of Are"
+	culture="bernese"
+}
+451={
+	name="of Wippra"
+	culture="bernese"
+}
+452={
+	name="of Diest"
+	culture="bernese"
+}
+453={
+	name="of Waldeck"
+	culture="bernese"
+}
+454={
+	name="of Kerpen"
+	culture="bernese"
+}
+455={
+	name="of Osterna"
+	culture="bernese"
+}
+456={
+	name="of Heldrungen"
+	culture="bernese"
+}
+457={
+	name="of Feuchtwangen"
+	culture="bernese"
+}
+458={
+	name="of Orseln"
+	culture="bernese"
+}
+459={
+	name="of Nauen"
+	culture="bernese"
+}
+460={
+	name="of Lunen"
+	culture="bernese"
+}
+461={
+	name="of Vechta"
+	culture="bernese"
+}
+462={
+	name="of Dolen"
+	culture="bernese"
+}
+463={
+	name="of Vyshusen"
+	culture="bernese"
+}
+464={
+	name="of Friesack"
+	culture="bernese"
+}
+465={
+	name="of Ziegenhain"
+	culture="bernese"
+}
+466={
+	name="of Stahleck"
+	culture="bernese"
+}
+467={
+	name="Rapotonen"
+	culture="bernese"
+}
+468={
+	name="of Lambach"
+	culture="bernese"
+}
+469={
+	name="of Badewide"
+	culture="bernese"
+}
+470={
+	name="of Dolen"
+	culture="bernese"
+}
+471={
+	name="of Walbeck"
+	culture="bernese"
+}
+472={
+	name="of Greyerz"
+	culture="bernese"
+}
+473={
+	name="of Grenchen"
+	culture="bernese"
+}
+474={
+	name="of Wolfach"
+	culture="bernese"
+}
+475={
+	name="of Gerhausen"
+	culture="bernese"
+}
+476={
+	name="of Bibra"
+	culture="bernese"
+}
+477={
+	name="of Andernach"
+	culture="bernese"
+}
+478={
+	name="of Sigmaringen"
+	culture="bernese"
+}
+479={
+	name="of Lurngau"
+	culture="bernese"
+}
+480={
+	name="of Formbach"
+	culture="bernese"
+}
+481={
+	name="of Attems"
+	culture="bernese"
+}
+482={
+	name="Pahlen"
+	culture="bernese"
+}
+483={
+	name="of Andechs"
+	culture="bernese"
+}
+484={
+	name="of Vinstingen"
+	culture="bernese"
+}
+485={
+	name="of Arbon"
+	culture="bernese"
+}
+486={
+	name="of Daun"
+	culture="bernese"
+}
+487={
+	name="of Salm"
+	culture="bernese"
+}
+488={
+	name="of Brunshorn"
+	culture="bernese"
+}
+489={
+	name="of Urach"
+	culture="bernese"
+}
+490={
+	name="of Veringen"
+	culture="bernese"
+}
+491={
+	name="of Gruningen"
+	culture="bernese"
+}
+492={
+	name="of Hessen"
+	culture="bernese"
+}
+493={
+	name="of Landau"
+	culture="bernese"
+}
+494={
+	name="of Kiel"
+	culture="bernese"
+}
+495={
+	name="of Gustrow"
+	culture="bernese"
+}
+496={
+	name="Kaunitz"
+	culture="bernese"
+}
+497={
+	name="Bloch"
+	culture="bernese"
+}
+#498={
+#	name="of Eschenloch"
+#	culture="bernese"
+#}
+499={
+	name="of Calach"
+	culture="bernese"
+}

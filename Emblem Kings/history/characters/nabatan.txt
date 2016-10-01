@@ -1,0 +1,993 @@
+601 = {
+	name="Athos"
+	dynasty=601
+	
+	religion=guardian
+	culture=etrurian
+	
+	disallow_random_traits="yes" 
+	trait="class_archsage"
+	trait="genius"
+	trait="mastermind_theologian"
+	trait="mystic"
+	trait="scholar"
+	trait="diligent"
+	trait="kind"
+	trait="patient"
+	trait="temperate"
+	trait="just"
+	trait="honest"
+	120.01.01 = { 
+	birth=yes 
+	}
+	180.01.01 = {
+		give_nickname=nick_the_archsage
+		add_trait=immortal
+	}
+	
+	# About 500 years before FE7, meets Nergal wandering the desert...
+	660.01.01 = {  
+		culture=nabatan
+		effect={
+			add_friend=308 # Nergal
+		}
+	}
+	
+	# A little bit later, they stumble across Arcadia
+	
+	# An unspecified amount of time later (still hundreds of years before FE7? Canas: "Nergal began creating morphs centuries ago"), they fight over morph research
+	800.01.01 = {  
+		effect={
+			add_rival=308 # Nergal
+		}
+	}
+	1161.01.01 = { 
+	death=yes 
+	}
+}
+
+602 = {
+	name="Bramimond"
+	#female=yes
+	dynasty=602
+	
+	religion=guardian
+	culture=bernese
+	
+	disallow_random_traits="yes"
+	trait="class_archdruid"
+	trait="genius"
+	trait="mastermind_theologian"
+	trait="mystic"
+	trait="scholar"
+	trait="celibate"
+	trait="dark_selfless"
+	123.01.01 = { 
+	birth=yes 
+	}
+	180.01.01 = {
+		culture=nabatan
+		give_nickname=nick_the_enigma
+		add_trait=immortal
+		effect={
+			add_friend=601 # Athos
+		}
+	}
+	
+	1162.01.01 = { 
+	death=yes 
+	}
+}
+
+603 = {
+	name="Hawkeye"
+	dynasty=603
+	dna="bdbfarlbaay" 
+	properties="cc0ded00000000"
+	
+	religion=guardian
+	culture=nabatan
+	
+	disallow_random_traits="yes" 
+	trait="class_brigand"
+	trait="strong"
+	trait="desert_terrain_leader"
+	trait="defensive_leader"
+	trait="holy_warrior"
+	trait="martial_cleric"
+	trait="shy"
+	trait="content"
+	1125.01.01 = { 
+		birth=yes 
+	}
+	1150.01.01 = { 
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}
+	1170.01.01 = { 
+		death=yes 
+	} # Igrene is Guardian as of FE6, so Hawkeye is gone by then
+}
+
+604 = {
+	name="Igrene"
+	female=yes
+	dynasty=603
+	
+	religion=guardian
+	culture=nabatan
+	
+	father=603
+	trait="class_archer_female"
+	trait="desert_terrain_leader"
+	trait="light_foot_leader"
+	trait="holy_warrior"
+	trait="martial_cleric"
+	trait="diligent"
+	trait="kind"
+	trait="shy"
+	trait="just"
+	trait="honest"
+	1147.01.01 = { 
+	birth=yes 
+	}
+	1177.01.01 = { 
+		remove_trait="class_archer_female"
+		add_trait="class_sniper_female"
+		add_trait="cynical"
+		add_trait="depressed"
+	}
+	1208.01.01 = { 
+	death=yes 
+	}
+}
+
+605 = {
+	name="Efta" #unused name, as good as any for Igrene's daughter.
+	female=yes
+	dynasty=603
+	
+	religion=guardian
+	culture=nabatan
+	
+	real_father=129 #Astore
+	mother=604
+	trait="fair"
+	1170.09.01 = { 
+		birth=yes 
+	}
+	
+	1176.09.01 = { 
+		effect={
+			add_friend=922 # Fae
+		}
+	}
+	
+	1177.01.01 = { 
+		death = {
+			death_reason=death_accident 
+		}
+	}
+}
+
+606 = {
+	name="Kishuna" # the magic seal
+	
+	religion=dark
+	culture=nabatan
+	
+	disallow_random_traits="yes"
+	trait="class_magic_seal"
+	trait="mastermind_theologian"
+	trait="morph"
+	
+	# in our somewhat arbitrary timeline, he's created after Renault leaves Nergal in 1140. 
+	# setting his birth earlier than that so he's an adult on birth.
+	1125.01.01 = { 
+	birth=yes 
+	}
+	
+	1125.01.01 = { 
+		employer=308 # Nergal 
+	}
+	
+	1155.01.01 = { 
+		employer=0 # kicked out? 
+	}
+		
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=103 #Hector
+		}
+	}
+}
+
+607 = {
+	name="Ephidel" #
+	
+	#religion=anima
+	religion=dark
+	culture=nabatan
+	
+	disallow_random_traits="yes"
+	trait="class_sage"
+	trait="intricate_webweaver"
+	trait="morph"
+	trait="fair"
+	
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1140.01.01 = { 
+		employer=308 # Nergal 
+	}
+		
+	1161.01.01 = { 
+		death = {
+			death_reason=death_accident # well, close enough
+		}
+	}
+}
+
+608 = {
+	name="Limstella" #
+	female=yes
+	
+	#religion=anima
+	religion=dark
+	culture=nabatan
+	
+	disallow_random_traits="yes"
+	trait="class_sage_female"
+	trait="elusive_shadow"
+	trait="morph"
+	trait="fair"
+	
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1140.01.01 = { 
+		employer=308 # Nergal 
+	}
+		
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+609 = {
+	name="Sonia" #
+	female=yes
+	
+	#religion=anima
+	religion=dark
+	culture=nabatan
+	
+	disallow_random_traits="yes"
+	trait="class_sage_female"
+	trait="flamboyant_schemer"
+	trait="morph"
+	trait="fair"
+	trait="cruel"
+	trait="proud"
+	
+	1141.01.01 = { 
+		birth=yes 
+	}
+	
+	1141.01.01 = { 
+		employer=308 # Nergal 
+	}
+		
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+610 = {
+	name="Denning" #This is a message from Lord Nergal...
+	
+	#religion=elimine_church
+	religion=dark
+	culture=nabatan
+	
+	disallow_random_traits="yes"
+	trait="class_sniper"
+	trait="tough_soldier"
+	trait="morph"
+	
+	1142.01.01 = { 
+		birth=yes 
+	}
+	
+	1142.01.01 = { 
+		employer=308 # Nergal 
+	}
+		
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+611 = {
+	name="Jaffar" # 
+	
+	religion=elimine_church
+	culture=nabatan
+	
+	disallow_random_traits="yes"
+	trait="class_thief"
+	trait="elusive_shadow"
+	trait="content"
+	trait="shy"
+	
+	1143.01.01 = { 
+		birth=yes 
+	}
+	
+	# found by Nergal as an infant
+	1144.01.01 = { 
+		employer=308 # Nergal 
+	}
+	1157.1.1 = {
+		remove_trait="class_thief"
+		add_trait="class_assassin"
+		give_nickname=nick_the_angel_of_death
+	}
+	1161.01.01 = { 
+		add_trait="kind"
+		employer=147 # Nino... his only paired ending, so let's have him at least hang out there. 
+	}
+		
+	1171.01.01= {
+		death = {
+			death_reason=death_murder_unknown
+			#killer= #bounty hunters?
+		}
+	}
+}
+
+612 = {
+	name="Sophia" #priestess of Nabata. Dragon mother, human father.
+	female=yes
+	
+	religion=dark
+	culture=nabatan
+	
+	disallow_random_traits="yes"
+	trait="class_shaman_female"
+	trait="detached_priest"
+	trait="immortal"
+	trait="shy"
+	trait="kind"
+	trait="humble"
+	trait="proud"
+	
+	# centuries old, but younger than Fae
+	905.1.1={
+		birth=yes
+	}
+	
+	905.01.01 = { 
+		employer=601 # Athos 
+	}
+	
+	1000.01.01 = { 
+		effect={
+			add_friend=922 # Fae
+		}
+	}
+	
+	1125.01.01 = { 
+		employer=603 # Hawkeye 
+	}
+		
+	1400.01.01 = { 
+		death = yes
+	}
+}
+
+613={
+	name="Paul" # Wacky Berserker Twin #1
+	dynasty=604
+	culture=nabatan
+	religion=raider_pagan
+	
+	trait="class_brigand"
+	trait="strong"
+	trait="misguided_warrior"
+	trait="heavy_infantry_leader"
+	trait="aggressive_leader"
+	trait="desert_terrain_leader"
+	trait="greedy"
+	trait="ambitious"
+	trait="homosexual"
+	
+	1135.1.1={
+		birth=yes
+	}
+	
+	1151.1.1={
+		add_lover=614 #Jasmine
+	}
+	
+	1155.01.01 = { 
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}
+				
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+614={
+	name="Jasmine" # Wacky Berserker Twin #2
+	dynasty=605
+	culture=nabatan
+	religion=raider_pagan
+	
+	trait="class_brigand"
+	trait="strong"
+	trait="misguided_warrior"
+	trait="heavy_infantry_leader"
+	trait="aggressive_leader"
+	trait="desert_terrain_leader"
+	trait="greedy"
+	trait="ambitious"
+	trait="homosexual"
+	
+	1135.1.1={
+		birth=yes
+	}	
+	
+	1155.01.01 = { 
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+615={
+	name="Maggie" # Wacky Berserker Twin #3
+	dynasty=606
+	culture=nabatan
+	religion=raider_pagan
+	
+	trait="class_brigand"
+	trait="strong"
+	trait="misguided_warrior"
+	trait="heavy_infantry_leader"
+	trait="aggressive_leader"
+	trait="desert_terrain_leader"
+	trait="greedy"
+	trait="ambitious"
+	trait="homosexual"
+	
+	1155.1.1={
+		birth=yes
+	}
+	
+	1171.1.1={
+		add_lover=616 #Rose
+	}	
+	
+	1175.01.01 = { 
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}
+				
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+616={
+	name="Rose" # Wacky Berserker Twin #4
+	dynasty=607
+	culture=nabatan
+	religion=raider_pagan
+	
+	trait="class_brigand"
+	trait="strong"
+	trait="misguided_warrior"
+	trait="heavy_infantry_leader"
+	trait="aggressive_leader"
+	trait="desert_terrain_leader"
+	trait="greedy"
+	trait="ambitious"
+	trait="homosexual"
+	
+	1155.1.1={
+		birth=yes
+	}
+	
+	1175.01.01 = { 
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+617={
+	name="Gehato" # random bandit, beaten by Lance in vol 3. Rose/Maggie lookalike. Works for Kruzard?
+	culture=nabatan
+	religion=raider_pagan
+	
+	trait="class_brigand"
+	trait="strong"
+	trait="tough_soldier"
+	trait="heavy_infantry_leader"
+	trait="cruel"
+	trait="craven"
+	trait="wroth"
+	trait="homosexual"
+	
+	1153.1.1={
+		birth=yes
+	}
+	
+	1180.01.01 = {
+		#religion=elimine_church
+		employer=188 #Kruzard
+	}	
+				
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=136 #Lance
+		}
+	}
+}
+
+#Patricians
+618 = {
+	name="Aretas" 
+	dynasty=608
+	
+	religion=elimine_church
+	culture=nabatan
+	
+	1111.01.01 = { 
+		birth=yes 
+	}
+	
+	1189.01.01 = { 
+		death = yes
+	}
+}
+
+# Other non-canon characters to hold land in Nabata and Missur
+
+#Mantineia
+619 = {
+	name="Musa" 
+	dynasty=609
+	
+	religion=elimine_church
+	culture=nabatan
+	
+	1114.01.01 = { 
+		birth=yes 
+	}
+	
+	1191.01.01 = { 
+		death = yes
+	}
+}
+#Tyros
+620 = {
+	name="Tifilwit" 
+	dynasty=610
+	
+	religion=elimine_church
+	culture=nabatan
+	
+	1109.01.01 = { 
+		birth=yes 
+	}
+	
+	1182.01.01 = { 
+		death = yes
+	}
+}
+#Mallotta
+621 = {
+	name="Mundir" 
+	dynasty=611
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death = yes
+	}
+}
+#Gefyra
+622 = {
+	name="Garsiya" 
+	dynasty=612
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1132.01.01 = { 
+		birth=yes 
+	}
+	
+	1183.01.01 = { 
+		death = yes
+	}
+}
+#Elati 
+623 = {
+	name="Abbad" 
+	dynasty=623
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1135.01.01 = { 
+		birth=yes 
+	}
+	
+	1186.01.01 = { 
+		death = yes
+	}
+}
+#Kapsas
+624 = {
+	name="Karima" 
+	female=yes
+	dynasty=624
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1128.01.01 = { 
+		birth=yes 
+	}
+	
+	1181.01.01 = { 
+		death = yes
+	}
+}
+#Pikernis
+625 = {
+	name="Yahaff" 
+	dynasty=625
+	
+	religion=elimine_church
+	culture=nabatan
+	
+	1144.01.01 = { 
+		birth=yes 
+	}
+	
+	1219.01.01 = { 
+		death = yes
+	}
+}
+#Levidi
+626 = {
+	name="Lubb" 
+	dynasty=626
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1132.01.01 = { 
+		birth=yes 
+	}
+	
+	1182.01.01 = { 
+		death = yes
+	}
+}
+#Kynouria
+627 = {
+	name="Hakam" 
+	dynasty=627
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1124.01.01 = { 
+		birth=yes 
+	}
+	
+	1182.01.01 = { 
+		death = yes
+	}
+}
+#Loukas
+628 = {
+	name="Bilal" 
+	dynasty=628
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1119.01.01 = { 
+		birth=yes 
+	}
+	
+	1183.01.01 = { 
+		death = yes
+	}
+}
+#Sagkas
+629 = {
+	name="Siddray" 
+	dynasty=629
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1128.01.01 = { 
+		birth=yes 
+	}
+	
+	1185.01.01 = { 
+		death = yes
+	}
+}
+#Rizes
+630 = {
+	name="Rasiq" 
+	dynasty=630
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death = yes
+	}
+}
+#Plaka
+631 = {
+	name="Utman" 
+	dynasty=631
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1122.01.01 = { 
+		birth=yes 
+	}
+	
+	1184.01.01 = { 
+		death = yes
+	}
+}
+#Vangos
+632 = {
+	name="Balashk" 
+	dynasty=632
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1115.01.01 = { 
+		birth=yes 
+	}
+	
+	1190.01.01 = { 
+		death = yes
+	}
+}
+#Thoknia
+633 = {
+	name="Tariq" 
+	dynasty=633
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1131.01.01 = { 
+		birth=yes 
+	}
+	
+	1188.01.01 = { 
+		death = yes
+	}
+}
+#Isaris
+634 = {
+	name="Ibrahim" 
+	dynasty=634
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1126.01.01 = { 
+		birth=yes 
+	}
+	
+	1185.01.01 = { 
+		death = yes
+	}
+}
+#Chirades
+635 = {
+	name="Jyad" 
+	dynasty=635
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1124.01.01 = { 
+		birth=yes 
+	}
+	
+	1189.01.01 = { 
+		death = yes
+	}
+}
+#Souli
+636 = {
+	name="Sanyo" 
+	dynasty=636
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1119.01.01 = { 
+		birth=yes 
+	}
+	
+	1182.01.01 = { 
+		death = yes
+	}
+}
+#Tripotamo
+637 = {
+	name="Umar" 
+	dynasty=637
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1183.01.01 = { 
+		death = yes
+	}
+}
+#Vastas
+638 = {
+	name="Fadl" 
+	dynasty=638
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1122.01.01 = { 
+		birth=yes 
+	}
+	
+	1187.01.01 = { 
+		death = yes
+	}
+}
+#Tegea
+639 = {
+	name="Adfuns" 
+	dynasty=639
+	
+	religion=elimine_church
+	culture=nabatan
+	
+	1132.01.01 = { 
+		birth=yes 
+	}
+	
+	1203.01.01 = { 
+		death = yes
+	}
+}
+#Akovos
+640 = {
+	name="Abda" 
+	female=yes
+	dynasty=640
+	
+	religion=elimine_church
+	culture=nabatan
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1199.01.01 = { 
+		death = yes
+	}
+}
+#Lasta
+641 = {
+	name="Galind" 
+	dynasty=641
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1131.01.01 = { 
+		birth=yes 
+	}
+	
+	1198.01.01 = { 
+		death = yes
+	}
+}
+#Vytina
+642 = {
+	name="Yahya" 
+	dynasty=642
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1197.01.01 = { 
+		death = yes
+	}
+}
+#Gortynia
+643 = {
+	name="Siddray" 
+	dynasty=643
+	
+	religion=raider_pagan
+	culture=nabatan
+	
+	1132.01.01 = { 
+		birth=yes 
+	}
+	
+	1198.01.01 = { 
+		death = yes
+	}
+}

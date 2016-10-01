@@ -1,0 +1,19 @@
+# c_catuna
+
+# County Title
+title = c_catuna
+
+# Settlements
+max_settlements = 5
+
+b_catuna = castle
+b_catuna_2 = temple
+b_catuna_3 = city
+#b_scitonia = temple
+#b_cetona = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

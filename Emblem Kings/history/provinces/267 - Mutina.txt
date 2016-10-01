@@ -1,0 +1,16 @@
+# c_mutina
+
+# County Title
+title = c_mutina
+
+# Settlements
+max_settlements = 2
+
+b_mutina = tribal
+#b_mutina_2 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

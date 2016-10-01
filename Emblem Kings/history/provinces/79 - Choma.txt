@@ -1,0 +1,17 @@
+# c_choma
+
+# County Title
+title = c_choma
+
+# Settlements
+max_settlements = 3
+
+b_choma = castle
+b_choma_2 = temple
+b_choma_3 = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

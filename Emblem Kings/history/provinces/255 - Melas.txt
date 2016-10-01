@@ -1,0 +1,17 @@
+# c_melas
+
+# County Title
+title = c_melas
+
+# Settlements
+max_settlements = 3
+
+b_melas = tribal
+b_melas_2 = city
+#b_melas_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

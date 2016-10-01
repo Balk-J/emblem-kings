@@ -1,0 +1,18 @@
+# c_segontium
+
+# County Title
+title = c_segontium
+
+# Settlements
+max_settlements = 4
+
+b_segontium = tribal
+#b_segontium_2 = temple
+#b_segontium_3 = city
+#b_lagentium = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

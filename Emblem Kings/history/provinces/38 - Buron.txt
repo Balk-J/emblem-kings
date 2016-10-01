@@ -1,0 +1,16 @@
+# c_buron
+
+# County Title
+title = c_buron
+
+# Settlements
+max_settlements = 2
+
+b_buron = tribal
+#b_buron_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

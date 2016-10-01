@@ -1,0 +1,18 @@
+# c_neandreia
+
+# County Title
+title = c_neandreia
+
+# Settlements
+max_settlements = 4
+
+b_neandreia = castle
+b_neandreia_2 = city
+b_cigri = city
+b_samonion = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

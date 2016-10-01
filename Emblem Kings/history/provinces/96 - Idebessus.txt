@@ -1,0 +1,18 @@
+# c_idebessus
+
+# County Title
+title = c_idebessus
+
+# Settlements
+max_settlements = 4
+
+b_idebessus = castle
+b_idebessus_2 = city
+b_idebessus_3 = temple
+#b_sinda = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

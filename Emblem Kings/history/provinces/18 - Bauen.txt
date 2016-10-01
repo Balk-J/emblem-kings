@@ -1,0 +1,17 @@
+# c_bauen
+
+# County Title
+title = c_bauen
+
+# Settlements
+max_settlements = 3
+
+b_bauen = castle
+b_bauen_2 = temple
+b_bauen_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

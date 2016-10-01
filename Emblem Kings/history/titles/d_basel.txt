@@ -1,0 +1,15 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=k_bern
+}
+1132.1.1={
+	holder=448 # Miledy & Zeiss's father 448
+}
+1205.1.1={
+	holder=410 # Miledy
+}

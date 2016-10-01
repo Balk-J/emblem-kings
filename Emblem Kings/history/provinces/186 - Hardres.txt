@@ -1,0 +1,16 @@
+# c_hardres
+
+# County Title
+title = c_hardres
+
+# Settlements
+max_settlements = 2
+
+b_hardres = tribal
+#b_hardres_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

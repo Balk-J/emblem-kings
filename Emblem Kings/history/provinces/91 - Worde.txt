@@ -1,0 +1,17 @@
+# c_worde
+
+# County Title
+title = c_worde
+
+# Settlements
+max_settlements = 3
+
+b_castle_worde = castle
+b_worde = city
+b_worde_2 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

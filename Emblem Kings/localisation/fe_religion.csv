@@ -1,0 +1,83 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+HIGH_BISHOP;High Bishop;;;;;;;;;;;;;x
+k_naga;Naga's Cradle;;;;;;;;;;;;;x
+NAGA;Naga;;;;;;;;;;;;;x
+THE_VOICE;The Voice;;;;;;;;;;;;;x
+VOICE_OF_NAGA;Voice;;;;;;;;;;;;;x
+FELL_DRAGON;The Fell Dragon;;;;;;;;;;;;;x
+GRIMA;Grima;;;;;;;;;;;;;x
+MAGE;Mage;;;;;;;;;;;;;x
+SAGE;Sage;;;;;;;;;;;;;x
+ARCHSAGE;Archsage;;;;;;;;;;;;;x
+SHAMAN;Shaman;;;;;;;;;;;;;x
+DRUID;Druid;;;;;;;;;;;;;x
+ARCHDRUID;Archdruid;;;;;;;;;;;;;x
+DARK_DRUID;Dark Druid;;;;;;;;;;;;;x
+PONTIFEX;Pontifex;;;;;;;;;;;;;x
+DARK_PONTIFEX;Dark Pontifex;;;;;;;;;;;;;x
+THE_DARK_FORCES;Dark Forces;;;;;;;;;;;;;x
+THE_SPELLBOOKS;The Spellbooks;;;;;;;;;;;;;x
+THE_TOMES;The Tomes;;;;;;;;;;;;;x
+GOD_FATHER_SKY;Father Sky;;;;;;;;;;;;;x
+GOD_MOTHER_EARTH;Mother Earth;;;;;;;;;;;;;x
+ARCHBISHOP;Archbishop;;;;;;;;;;;;;x
+ARCHBISHOP_GOLDEN_CHURCH;Golden Bishop;;;;;;;;;;;;;x
+ARCHBISHOPRIC_OF;Archbishopric of;;;;;;;;;;;;;x
+temple_duchy_of_light;Archbishopric of;;;;;;;;;;;;;x
+temple_county_of_light;Bishopric of;;;;;;;;;;;;;x
+temple_barony_of_light;Church of;;;;;;;;;;;;;x
+temple_baron_light;Father;;;;;;;;;;;;;x
+temple_baron_female_light;Sister;;;;;;;;;;;;;x
+temple_count_light;Bishop;;;;;;;;;;;;;x
+temple_duke_light;Archbishop;;;;;;;;;;;;;x
+temple_king_light;King-Bishop;Roi très Catholique;König-Bischof;;Rey-obispo;;;;;;;;;x
+temple_king_female_light;Queen-Bishop;;;;;;;;;;;;;x
+emperor_king_light;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
+emperor_king_female_light;Empress-Bishop;;;;;;;;;;;;;x
+temple_king_pagan_group;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
+draconic_group;Draconic;;;;;;;;;;;;;x
+draconic_group_DESC;The power, wisdom, and longevity of dragons has made them a focal point for religion since the dawn of human civilization.;;;;;;;;;;;;;x
+dragon_gods;Dragon Gods;;;;;;;;;;;;;x
+dragon_gods_DESC;The belief system of the ancient dragons who ruled the world many thousands of years before human civilization began.;;;;;;;;;;;;;x
+divine_dragon;Divine Dragon;;;;;;;;;;;;;x
+divine_dragon_DESC;The Divine Dragon Naga has been revered since the end of the Age of Dragons, when she led the dragon tribes in the defense of humanity against the berserk Earth Dragons. Naga withdrew from mortal affairs after the war. Since then, her followers have revered the Voice of Naga - an oracle who can commune with the Divine Dragon.;;;;;;;;;;;;;x
+light_group;Holy Light;;;;;;;;;;;;;x
+light_group_DESC;The power of light magic is derived from faith in the divine presence.;;;;;;;;;;;;;x
+elimine_church;Elimine Church;;;;;;;;;;;;;x
+elimine_church_DESC;The Elimine Church was founded by St. Elimine of the Eight Legends after the Scouring and became the dominant religion of Elibe. Priests are capable of using light magic and healing staves through the power of their faith. According to church lore, St. Elimine ascended to heaven after her work in the mortal world was complete at a location now marked by the Tower of the Saint.;;;;;;;;;;;;;x
+dragon_liberation;Liberationist;;;;;;;;;;;;;x
+dragon_liberation_DESC;Liberationists believe that humanity is inherently evil and that a world under human rule is doomed to misery and suffering. They seek to build a better world by returning it to the control of another species - the dragons. Liberationist rulers may launch invasions in pursuit of this goal.;;;;;;;;;;;;;x
+golden_church;Golden Church;;;;;;;;;;;;;x
+golden_church_DESC;The Golden Church is a heretical sect of the Elimine Church that originated among influential bishops. It holds that members of the clergy are the closest to God and their commands should be taken as God's own. To a Golden Church bishop, anything can be done in the name of God.;;;;;;;;;;;;;x
+autotheist;Autotheist;;;;;;;;;;;;;x
+autotheist_DESC;Autotheism is an Elimine Church heresy whose believers consider gods to be lies created by the weakness in all mankind. To them, the only gods that could truly exist are powerful mortals.;;;;;;;;;;;;;x
+d_elimine;The Elimine Church;;;;;;;;;;;;;x
+d_elimine_adj;Elimine;;;;;;;;;;;;;x
+k_elimine;The Elimine Church;;;;;;;;;;;;;x
+k_elimine_adj;Elimine;;;;;;;;;;;;;x
+k_golden_church;The Golden See;;;;;;;;;;;;;x
+k_golden_church_adj;Golden;;;;;;;;;;;;;x
+k_dragon_liberation;The Final Dragons;;;;;;;;;;;;;x
+k_dragon_liberation_adj;Final Dragon;;;;;;;;;;;;;x
+magic_group;Mage;;;;;;;;;;;;;x
+dark;Elder Magic;;;;;;;;;;;;;x
+dark_DESC;Elder or "dark" magic is an ancient magical discipline whose power stems from deep knowledge and understanding of the arcane. The common folk widely believe elder magic to be evil - perhaps due to the number of shamans who have had their minds erased by the forces they sought to command, or been twisted into power-hungry maniacs.;;;;;;;;;;;;;x
+anima;Anima Magic;;;;;;;;;;;;;x
+anima_DESC;Anima magic is a magical discipline centered around communion with and mastery of the forces of nature itself. In addition to controlling the formidable powers of the elements, practicioners of anima magic claim that their powers allow communion with the spirit of all things.;;;;;;;;;;;;;x
+divine_sky_pagan;Divine Sky;;;;;;;;;;;;;x
+divine_sky_pagan_reformed;Divine Sky;;;;;;;;;;;;;x
+divine_sky_pagan_DESC;The people of Sacae worship many different nature spirits, with Father Sky and Mother Earth supreme among them.;;;;;;;;;;;;;x
+divine_sky_pagan_reformed_DESC;The reformed Divine Sky faith has a Holy Book written in the ancient runic script of Sacae, a standardized liturgy and a formal church hierarchy led by the Divine Priest of Father Sky, who can be vassalized by secular rulers.;;;;;;;;;;;;;x
+d_divine_sky;The Heavenly Priesthood;;;;;;;;;;;;;x
+d_divine_sky_adj;Heavenly Priesthood;;;;;;;;;;;;;x
+DIVINE_SKY_PRIEST;Divine Priest;;;;;;;;;;;;;x
+DIVINE_SKY_PRIESTESS;Divine Priestess;;;;;;;;;;;;;x
+temple_baron_divine_sky_pagan_reformed;Priest;;;;;;;;;;;;;x
+temple_baron_female_divine_sky_pagan_reformed;Priestess;;;;;;;;;;;;;x
+temple_baron_divine_sky_pagan;Priest;;;;;;;;;;;;;x
+temple_baron_female_divine_sky_pagan;Priestess;;;;;;;;;;;;;x
+raider_pagan;Raider;;;;;;;;;;;;;x
+raider_pagan_DESC;The brigands and pirates of the world have only one god - plunder.;;;;;;;;;;;;;x
+guardian_group;Guardians;;;;;;;;;;;;;x
+guardian;Guardian;;;;;;;;;;;;;x
+guardian_DESC;Guardians are men and women dedicated to the defense of a particular region or people. Generally peaceful until provoked, Guardians struggle with offensive wars but have an easier time than most keeping order in the lands they protect.;;;;;;;;;;;;;x

@@ -1,0 +1,12 @@
+#####################################
+# Special Flavor Names (priority 5) #
+#####################################
+
+government_flavor = {
+	name = gov_noble_league
+	graphics = GFX_evt_throne_room
+	priority = 5
+	trigger = {
+		has_landed_title = k_lycian_league
+	}
+}

@@ -1,0 +1,17 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_coria
+}
+
+1115.01.01 = { 
+	holder=738
+}
+
+1168.01.01={
+	holder=713 # Scott
+}

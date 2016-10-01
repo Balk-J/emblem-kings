@@ -1,0 +1,27 @@
+# c_thuban
+
+# County Title
+title = c_temperantia
+
+# Settlements
+max_settlements = 4
+
+b_temperantia = castle
+b_rottentree = castle
+b_prudentia = temple
+#b_clementia = castle
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History
+#440.1.1={
+#	culture=nabatan
+#}
+#1160.1.1={
+#	culture=bernese #Aion's crew
+#}
+#1161.1.1={
+#	culture=seafarer
+#}

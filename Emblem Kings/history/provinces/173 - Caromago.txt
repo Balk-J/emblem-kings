@@ -1,0 +1,17 @@
+# c_caromago
+
+# County Title
+title = c_caromago
+
+# Settlements
+max_settlements = 3
+
+b_caromago = tribal
+#b_caromago_2 = temple
+#b_caromago_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

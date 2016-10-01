@@ -1,0 +1,35 @@
+max_provinces = 337
+# stats:  336 provinces
+# unused:
+definitions = "definition.csv"
+provinces = "provinces.bmp"
+positions = "positions.txt"
+terrain = "terrain.bmp"
+rivers = "rivers.bmp"
+terrain_definition = "terrain.txt"
+heightmap = "topology.bmp"
+tree_definition = "trees.bmp"
+continent = "continent.txt"
+adjacencies = "adjacencies.csv"
+climate = "climate.txt"
+#region = "region.txt"
+region = "island_region.txt"
+geographical_region = "geographical_region.txt"
+static = "statics"
+seasons = "seasons.txt"
+
+sea_zones = { 290 336 }
+
+ocean_region = {	# Great Ocean
+	sea_zones = { 1 }
+}
+
+# Define which indices in trees.bmp palette which should count as trees for automatic terrain assignment
+tree = { 3 4 7 10 }
+
+major_rivers = 
+{
+	# Great Ocean
+	332 333 334 335 336  #Aare
+
+}

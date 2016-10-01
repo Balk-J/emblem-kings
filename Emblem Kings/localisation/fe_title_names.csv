@@ -1,0 +1,59 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+COMMANDER;Commander;;;;;;;;;;;;;x
+COMMANDER_FOA;Commander;;;;;;;;;;;;;x
+GENERAL;General;;;;;;;;;;;;;x
+GENERAL_FOA;General;;;;;;;;;;;;;x
+LORD;Lord;;;;;;;;;;;;;x
+LORD_female;Lady;;;;;;;;;;;;;x
+LORD_foa;My Lord;Monseigneur;Mein Fürst;;Mi Señor;;;;;;;;;x
+LORD_foa_female;My Lady;Madame;Meine Fürstin;;Mi Señora;;;;;;;;;x
+chief_foa;Chief;;;;;;;;;;;;;x
+chief_foa_female;Chieftess;;;;;;;;;;;;;x
+duke_lycian;Marquess;;;;;;;;;;;;;x
+duke_female_lycian;Marchioness;;;;;;;;;;;;;x
+duchy_of_lycian;March of;;;;;;;;;;;;;x
+count_sacaean;Chief;Chef;Häuptling;;Mandatario;;;;;;;;;x
+count_female_sacaean;Chieftess;Chef;Häuptling;;Mandatario;;;;;;;;;x
+county_of_sacaean;Chiefdom of;Chefferie de;Häuptlingdom von;;Cacicazgo de;;;;;;;;;x
+duke_sacaean;High Chief;Grand Chef;Großhäuptling;;Alto mandatario;;;;;;;;;x
+duke_female_sacaean;High Chieftess;Grand cheftaine;Großhäuptling;;Alto mandataria;;;;;;;;;x
+duchy_of_sacaean;High Chiefdom of;Grande chefferie de;Großhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x
+duke_pagan_group;High Chief;Grand Chef;Großhäuptling;;Alto mandatario;;;;;;;;;x
+duke_female_pagan_group;High Chieftess;Grand cheftaine;Großhäuptling;;Alto mandatario;;;;;;;;;x
+baron_guardian;Keeper;;;;;;;;;;;;;x
+count_guardian;Protector;;;;;;;;;;;;;x
+duke_guardian;Guardian;;;;;;;;;;;;;x
+king_guardian;Lord Protector;;;;;;;;;;;;;x
+emperor_guardian;High Guardian;;;;;;;;;;;;;x
+baron_female_guardian;Keeper;;;;;;;;;;;;;x
+count_female_guardian;Protector;;;;;;;;;;;;;x
+duke_female_guardian;Guardian;;;;;;;;;;;;;x
+king_female_guardian;Lord Protector;;;;;;;;;;;;;x
+emperor_female_guardian;High Guardian;;;;;;;;;;;;;x
+#county_of_guardian; of;;;;;;;;;;;;;x
+duchy_of_guardian;Guardianship of;;;;;;;;;;;;;x
+kingdom_of_guardian;Protectorship of;;;;;;;;;;;;;x
+empire_of_guardian;High Guardianship of;;;;;;;;;;;;;x
+king_raider_pagan;Bandit King;;;;;;;;;;;;;x
+emperor_raider_pagan;Bandit Lord;;;;;;;;;;;;;x
+king_female_raider_pagan;Bandit Queen;;;;;;;;;;;;;x
+emperor_female_raider_pagan;Bandit Lady;;;;;;;;;;;;;x
+#king_seafarer;Pirate King;;;;;;;;;;;;;x
+#emperor_seafarer;Pirate Lord;;;;;;;;;;;;;x
+#king_female_seafarer;Pirate Queen;;;;;;;;;;;;;x
+#emperor_female_seafarer;Pirate Lady;;;;;;;;;;;;;x
+nomadic_king;Khan;Khan;Khan;;Kan;;;;;;;;;x;
+nomadic_emperor;Khagan;Khagan;Khagan;;Khagan;;;;;;;;;x;
+nomadic_empire;Khaganate;Khaganat;Khaganat;;Khaganato;;;;;;;;;x
+nomadic_empire_of;Khaganate of;Khaganat de;Großkhanat von;;Kaganato de;;;;;;;;;x
+nomadic_kingdom;Khanate;Khanat;Khanat;;Kanato;;;;;;;;;x;
+nomadic_kingdom_of;Khanate of;Khanat de;Khanat von;;Kanato de;;;;;;;;;x
+nomadic_king_sacaean;Chief;Chef;Häuptling;;Mandatario;;;;;;;;;x
+nomadic_king_female_sacaean;Chieftess;Chef;Häuptling;;Mandatario;;;;;;;;;x
+nomadic_emperor_sacaean;Chieftain;Chef;Häuptling;;Mandatario;;;;;;;;;x
+nomadic_emperor_female_sacaean;Chieftain;Chef;Häuptling;;Mandatario;;;;;;;;;x
+nomadic_empire_sacaean;Clan;;;;;;;;;;;;;x
+nomadic_empire_of_sacaean;Clan of;;;;;;;;;;;;;x
+nomadic_kingdom_sacaean;Tribe;;;;;;;;;;;;;x
+nomadic_kingdom_of_sacaean;Tribe of;Tribu de;Stamm der;;Tribu de;;;;;;;;;x
+lands_of;Lands of;;;;;;;;;;;;;x

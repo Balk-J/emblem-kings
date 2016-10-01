@@ -1,0 +1,18 @@
+# c_boltigen
+
+# County Title
+title = c_boltigen
+
+# Settlements
+max_settlements = 4
+
+b_boltigen = castle
+b_boltigen_2 = temple
+b_boltigen_3 = city
+#b_augst = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

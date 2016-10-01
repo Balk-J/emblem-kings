@@ -1,0 +1,18 @@
+# c_clevsin
+
+# County Title
+title = c_clevsin
+
+# Settlements
+max_settlements = 4
+
+b_clevsin = castle
+b_clevsin_2 = temple
+b_clevsin_3 = city
+#b_cleusina = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

@@ -1,0 +1,15 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = enatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_remy
+}
+1154.01.01 = { 
+	holder=347
+}
+1170.01.01 = { 
+	holder=348
+}

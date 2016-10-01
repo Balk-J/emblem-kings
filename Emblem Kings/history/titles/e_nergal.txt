@@ -1,0 +1,11 @@
+800.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_open_elective
+}
+800.1.1={
+	holder=308 #take a wild guess
+}
+1161.1.1={
+	holder=0
+}

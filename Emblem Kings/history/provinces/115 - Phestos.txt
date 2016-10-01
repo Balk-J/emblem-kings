@@ -1,0 +1,17 @@
+# c_phestos
+
+# County Title
+title = c_phestos
+
+# Settlements
+max_settlements = 3
+
+b_phestos = castle
+b_phestos_2 = city
+b_sedra = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

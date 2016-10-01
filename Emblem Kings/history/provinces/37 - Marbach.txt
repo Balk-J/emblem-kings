@@ -1,0 +1,17 @@
+# c_marbach
+
+# County Title
+title = c_marbach
+
+# Settlements
+max_settlements = 3
+
+b_marbach = tribal
+b_saints_refuge = city
+#b_marbach_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

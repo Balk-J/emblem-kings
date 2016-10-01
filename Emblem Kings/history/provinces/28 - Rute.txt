@@ -1,0 +1,17 @@
+# c_rute
+
+# County Title
+title = c_rute
+
+# Settlements
+max_settlements = 3
+
+b_rute = castle
+b_rute_2 = city
+b_rute_3 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

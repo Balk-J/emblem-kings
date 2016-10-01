@@ -1,0 +1,16 @@
+# c_carmna
+
+# County Title
+title = c_carmna
+
+# Settlements
+max_settlements = 2
+
+b_carmna = tribal
+#b_carmna_2 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

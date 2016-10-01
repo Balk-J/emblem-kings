@@ -1,0 +1,17 @@
+# c_belgarum
+
+# County Title
+title = c_belgarum
+
+# Settlements
+max_settlements = 3
+
+b_belgarum = tribal
+#b_belgarum_2 = temple
+#b_belgarum_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

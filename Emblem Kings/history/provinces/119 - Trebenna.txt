@@ -1,0 +1,17 @@
+# c_trebenna
+
+# County Title
+title = c_trebenna
+
+# Settlements
+max_settlements = 3
+
+b_trebenna = castle
+b_trebenna_2 = city
+b_trebenna_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

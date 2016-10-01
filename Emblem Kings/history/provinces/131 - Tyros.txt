@@ -1,0 +1,19 @@
+# c_tyros
+
+# County Title
+title = c_tyros
+
+# Settlements
+max_settlements = 5
+
+b_tyros = castle
+b_tyros_2 = city
+b_tyros_3 = temple
+#b_falaisia = city
+#b_kokkoras = castle
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

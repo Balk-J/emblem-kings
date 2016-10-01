@@ -1,0 +1,18 @@
+# c_telmessus
+
+# County Title
+title = c_telmessus
+
+# Settlements
+max_settlements = 4
+
+b_telmessus = castle
+b_telmessus_2 = city
+b_telmessus_3 = temple
+#b_termessus = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

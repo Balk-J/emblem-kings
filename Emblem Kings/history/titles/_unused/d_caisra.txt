@@ -1,0 +1,8 @@
+# e_elibe
+440.1.1={
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#440.1.1={
+#	liege=k_etruria
+#}

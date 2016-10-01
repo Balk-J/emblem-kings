@@ -1,0 +1,19 @@
+# c_evidensca
+
+# County Title
+title = c_evidensca
+
+# Settlements
+max_settlements = 5
+
+b_evidensca = tribal
+b_evidensca_2 = temple
+#b_evidensca_3 = city
+#b_cantiacorum = city
+#b_durovernum = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

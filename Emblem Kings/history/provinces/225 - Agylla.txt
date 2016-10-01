@@ -1,0 +1,18 @@
+# c_agylla
+
+# County Title
+title = c_agylla
+
+# Settlements
+max_settlements = 4
+
+b_agylla = castle
+b_agylla_2 = temple
+b_agylla_3 = city
+#b_kisra = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

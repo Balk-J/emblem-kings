@@ -1,0 +1,30 @@
+
+### MERCHANT REPUBLIC PATRICIAN FAMILIES
+
+## Elibe
+
+# Bulgar
+
+b_gossler = {
+	culture = bernese
+}
+
+b_kubernis = {
+	culture = lycian
+}
+
+b_tarquinius = {
+	culture = etrurian
+}
+
+b_caecina = {
+	culture = ilian
+}
+
+b_commius = {
+	culture = western_islander
+}
+
+b_ortogh = {
+	culture = sacaean
+}

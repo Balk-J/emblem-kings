@@ -1,0 +1,21 @@
+# c_elati
+
+# County Title
+title = c_elati
+
+# Settlements
+max_settlements = 4
+
+b_elati = tribal
+#b_elati_2 = temple
+#b_elati_3 = city
+#b_palamari = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History
+1155.1.1 = {
+	b_elati_2 = temple
+}

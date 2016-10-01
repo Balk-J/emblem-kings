@@ -1,0 +1,17 @@
+# c_thria
+
+# County Title
+title = c_thria
+
+# Settlements
+max_settlements = 3
+
+b_castle_thria = castle
+b_thria = city
+b_thria_2 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

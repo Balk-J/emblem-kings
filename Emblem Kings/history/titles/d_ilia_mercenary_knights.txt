@@ -1,0 +1,15 @@
+180.1.1={
+	active = yes
+}
+
+1127.1.1={
+	holder=346 # Zelots' father
+}
+
+1167.1.1={
+	holder=326 # Zelots
+}
+1185.1.1={
+	active = no
+	holder=0 # Kingdom of Ilia founded
+}

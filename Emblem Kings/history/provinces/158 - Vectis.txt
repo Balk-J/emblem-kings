@@ -1,0 +1,18 @@
+# c_vectis
+
+# County Title
+title = c_vectis
+
+# Settlements
+max_settlements = 4
+
+b_vectis = castle
+b_vectis_2 = city
+b_vectis_3 = temple
+#b_durnovaria = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

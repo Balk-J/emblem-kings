@@ -1,0 +1,279 @@
+decisions = {
+	form_kingdom_of_lycia = {
+		only_playable = yes
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			OR = {
+				has_landed_title = d_ostia
+				has_landed_title = d_araphen
+				has_landed_title = d_badon
+				has_landed_title = d_caelin
+				has_landed_title = d_cornwell
+				has_landed_title = d_khathalet
+				has_landed_title = d_laus
+				has_landed_title = d_pherae
+				has_landed_title = d_ryerde
+				has_landed_title = d_santaruz
+				has_landed_title = d_tania
+				has_landed_title = d_thria
+				has_landed_title = d_tuscana
+				has_landed_title = d_worde
+			}
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = lycia_formed }
+		}
+		allow = {
+			primary_title = { title = k_lycian_league }
+			prestige = 1000
+			ROOT = {
+				d_ostia = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_caelin = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_badon = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_araphen = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_cornwell = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_khathalet = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_laus = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_pherae = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_ryerde = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_santaruz = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_tania = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_thria = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_tuscana = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+				d_worde = {
+					OR = {
+						has_holder = no
+						holder_scope = {
+							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = lycia_formed
+			narrative_event = { id = fe6.1 tooltip = EVTTOOLTIPfe6.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	create_war_dragons = {
+		only_playable = yes
+		
+		potential = {
+			any_courtier  = {
+				trait = demon_dragon
+				is_adult = yes
+				prisoner = no
+				NOT = { trait = incapable }
+			}
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			any_courtier  = {
+				trait = demon_dragon
+				is_adult = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { has_character_modifier = created_war_dragons }
+			}
+		}
+		effect = {
+		
+			random_courtier  = {
+				limit = {
+					trait = demon_dragon
+					is_adult = yes
+					prisoner = no
+					NOT = { trait = incapable }
+					NOT = { has_character_modifier = created_war_dragons }
+				}
+				add_character_modifier = { name = created_war_dragons duration = 1825 } 
+			}
+			character_event = { id = fe6.3 tooltip = EVTTOOLTIPfe6.3 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	create_morph = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_morphs 
+			NOT = { trait = incapable }
+		}
+		allow = {
+			piety = 500
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_morphs 
+		}
+		effect = {
+			piety = -500
+			character_event = { id = fe7.2 }#tooltip = EVTTOOLTIPfe7.2 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	organize_dragon_liberation_religion = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			religion = dragon_liberation
+			NOT = { is_title_active = k_dragon_liberation }
+		}
+		
+		allow = {
+			piety = 1000
+			OR = {
+				owns = 210 # Aquleia
+				any_realm_lord = {
+					owns = 210
+				}
+			}
+		}
+		
+		effect = {
+			activate_title = { title = k_dragon_liberation status = yes }
+			hidden_tooltip = {
+				create_random_priest = {
+					dynasty = none
+					random_traits = yes
+				}
+				new_character = {
+					k_dragon_liberation = {
+						grant_title = PREV
+					}
+					wealth = 500
+					opinion = {
+						who = ROOT
+						modifier = opinion_creator_of_rel_heal
+					}
+				}
+				
+				religion_authority = {
+					modifier = papacy_instituted
+					years = 20
+				}
+			}
+			piety = 1000
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+

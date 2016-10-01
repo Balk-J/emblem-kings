@@ -1,0 +1,19 @@
+# c_perthori
+
+# County Title
+title = c_perthori
+
+# Settlements
+max_settlements = 5
+
+b_perthori = tribal
+#b_perthori_2 = castle
+#b_perthori_3 = temple
+#b_kastraki = city
+#b_dafni = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

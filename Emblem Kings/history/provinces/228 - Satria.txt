@@ -1,0 +1,21 @@
+# c_satria
+
+# County Title
+title = c_satria
+
+# Settlements
+max_settlements = 5
+
+b_satria = castle
+b_satria_2 = temple
+b_satria_3 = city
+#b_bannaventa = temple
+#b_calleva = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History
+1159.1.1 = { capital = b_satria_2 }
+1181.1.1 = { capital = b_satria }

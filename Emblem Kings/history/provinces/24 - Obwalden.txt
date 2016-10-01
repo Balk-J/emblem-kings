@@ -1,0 +1,18 @@
+# c_obwalden
+
+# County Title
+title = c_obwalden
+
+# Settlements
+max_settlements = 4
+
+b_obwalden = castle
+b_obwalden_2 = temple
+b_obwalden_3 = city
+#b_bellelay = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

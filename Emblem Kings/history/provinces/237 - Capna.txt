@@ -1,0 +1,18 @@
+# c_capna
+
+# County Title
+title = c_capna
+
+# Settlements
+max_settlements = 4
+
+b_capna = castle
+b_capna_2 = temple
+b_capna_3 = city
+#b_capena = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

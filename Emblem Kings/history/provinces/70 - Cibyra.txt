@@ -1,0 +1,17 @@
+# c_cibyra
+
+# County Title
+title = c_cibyra
+
+# Settlements
+max_settlements = 3
+
+b_cibyra = tribal
+#b_cibyra_2 = city
+#b_cibyra_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

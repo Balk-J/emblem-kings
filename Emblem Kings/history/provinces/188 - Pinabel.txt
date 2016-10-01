@@ -1,0 +1,16 @@
+# c_pinabel
+
+# County Title
+title = c_pinabel
+
+# Settlements
+max_settlements = 2
+
+b_pinabel = tribal
+#b_pinabel_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

@@ -1,0 +1,20 @@
+# c_sion
+
+# County Title
+title = c_sion
+
+# Settlements
+max_settlements = 3
+
+b_sion = tribal
+#b_sion_2 = temple
+#b_sion_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History
+800.1.1 = { #Nergal sets up an underground lair
+	b_sion = castle
+}

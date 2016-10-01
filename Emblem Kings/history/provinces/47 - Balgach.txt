@@ -1,0 +1,17 @@
+# c_balgach
+
+# County Title
+title = c_balgach
+
+# Settlements
+max_settlements = 3
+
+b_balgach = castle
+b_balgach_2 = temple
+b_balgach_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

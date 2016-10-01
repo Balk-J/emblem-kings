@@ -1,0 +1,23 @@
+# c_balkh
+
+# County Title
+title = c_balkh
+
+# Settlements
+max_settlements = 3
+
+b_balkh = tribal
+#b_balkh_2 = temple
+#b_balkh_3 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History
+1134.1.1={
+	b_balkh = city
+}
+1135.1.1={
+	b_balkh_2 = castle
+}

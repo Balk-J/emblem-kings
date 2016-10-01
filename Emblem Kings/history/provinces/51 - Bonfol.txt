@@ -1,0 +1,16 @@
+# c_bonfol
+
+# County Title
+title = c_bonfol
+
+# Settlements
+max_settlements = 2
+
+b_bonfol = tribal
+#b_bonfol_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

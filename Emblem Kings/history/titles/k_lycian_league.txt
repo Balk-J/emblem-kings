@@ -1,0 +1,32 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_feudal_elective
+	#law = crown_authority_0
+}
+#180.1.1={
+#	liege=e_elibe
+#}
+
+180.1.1={
+	holder=101 #Roland 
+}
+
+1110.1.1={
+	holder=113
+}
+1150.1.1={
+	holder=102 #Uther 
+}
+
+1161.1.1={
+	holder=103 #Hector 
+}
+
+1180.03.01={ 
+	holder=108 #Roy
+}
+1181.1.1={
+	holder=0 #Lilina forms the kingdom
+}

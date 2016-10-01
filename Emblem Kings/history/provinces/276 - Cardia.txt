@@ -1,0 +1,18 @@
+# c_cardia
+
+# County Title
+title = c_cardia
+
+# Settlements
+max_settlements = 4
+
+b_cardia = castle
+b_cardia_2 = city
+b_cardia_3 = temple
+#b_bilitio = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

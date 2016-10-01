@@ -1,0 +1,21 @@
+# k_the_taliver_mountains
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_taliver
+}
+
+
+1145.1.1={
+	liege=d_taliver_bandits
+	holder=537 # Taliver Bandits
+}
+
+1160.1.1={
+	liege=d_taliver
+	#holder=0 # Taliver Bandits destroyed
+	holder=567
+}

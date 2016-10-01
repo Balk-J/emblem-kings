@@ -1,0 +1,17 @@
+# c_vinovia
+
+# County Title
+title = c_vinovia
+
+# Settlements
+max_settlements = 3
+
+b_vinovia = tribal
+#b_vinovia_2 = temple
+#b_vinovia_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

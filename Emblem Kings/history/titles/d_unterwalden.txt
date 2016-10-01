@@ -1,0 +1,16 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=k_bern
+}
+1121.1.1={
+	holder=447 # 
+}
+
+1175.1.1={
+	holder=450 #Richten (should he be that powerful?)
+}

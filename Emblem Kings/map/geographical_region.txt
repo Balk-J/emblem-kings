@@ -1,0 +1,177 @@
+# Geographical regions
+# Regions can be declared with one or more of the following fields:
+#	duchies = { }, takes duchy title names declared in landed_titles.txt
+#	counties = { }, takes county title names declared in landed_titles.txt
+#	provinces = { }, takes province id numbers declared in /history/provinces
+#	regions = { }, a region can also include other regions, however the subregions needs to be declared before the parent region. 
+#		E.g. If the region world_europe contains the region world_europe_west then world_europe_west needs to be declared as a region before (i.e. higher up in this file) world_europe.
+
+###########################################################################
+# World Regions
+#	These groups are mutually exclusive on the same tier
+###########################################################################
+
+world_elibe_valor = {
+	duchies = {
+		d_valor
+	}
+}
+world_elibe_bern = {
+	duchies = {
+		d_bern
+		d_appenzell
+		d_basel
+		d_fribourg
+		d_glarus
+		d_solothurn
+		d_unterwalden
+		d_uri
+		d_zug
+	}
+}
+world_elibe_etruria = {
+	duchies = {
+		d_aquleia
+		d_alesia
+		d_arritim
+		d_caerleon
+		d_clevsin
+		d_felathri
+		d_reglay
+		d_siene
+		d_tarchna
+	}
+}
+world_elibe_ilia = {
+	duchies = {
+		d_edessa
+		d_cardia
+		d_carrhae
+		d_cebrene
+		d_neandreia
+		d_remy
+		d_sestos
+		d_sigeion
+		d_troas
+	}
+}
+world_elibe_lycia = {
+	duchies = {
+		d_ostia
+		d_araphen
+		d_badon
+		d_caelin
+		d_cornwell
+		d_khathalet
+		d_laus
+		d_pherae
+		d_ryerde
+		d_santaruz
+		d_tania
+		d_thria
+		d_tuscana
+		d_worde		
+	}
+}
+world_elibe_nabata = {
+	duchies = {
+		d_arcadia
+		d_mantineia
+		d_tegea
+		d_tyros
+		d_vytina
+	}
+}
+world_elibe_sacae = {
+	duchies = {
+		d_bulgar
+		d_gelonus
+		d_media
+		d_pamir
+		d_talas
+		d_tarim
+	}
+}
+world_elibe_western_isles = {
+	duchies = {
+		d_jutes
+		d_caledonia
+		d_coria
+		d_dia
+		d_eburacum
+		d_hibernia
+		d_scotia
+		d_vectis
+	}
+}
+world_elibe_taliver = {
+	duchies = {
+		d_taliver
+		d_ganelon
+	}
+}
+world_elibe_missur = {
+	duchies = {
+		d_mallota
+		d_gefyra
+		d_isaris
+	}
+}
+world_elibe_calach = {
+	duchies = {
+		d_calach
+		d_arles
+		d_gallen
+		d_jura
+		d_lucerne
+		d_sarnen
+		d_sion
+		d_vaud
+	}
+}
+world_elibe_terina = {
+	duchies = {
+		d_xanthus
+		d_araxa
+		d_nisa			
+	}
+}
+world_elibe_greater_bern = {
+	regions = {
+		world_elibe_bern
+		world_elibe_calach
+		world_elibe_terina
+	}
+}
+world_elibe_greater_missur = {
+	regions = {
+		world_elibe_nabata
+		world_elibe_missur
+	}	
+	duchies = {
+		d_kafti		
+	}
+}
+world_elibe = {
+	regions = {
+		world_elibe_valor
+		world_elibe_etruria
+		world_elibe_lycia
+		world_elibe_ilia
+		world_elibe_sacae
+		world_elibe_western_isles
+		world_elibe_taliver
+		world_elibe_greater_bern
+		world_elibe_greater_missur		
+	}
+}
+
+###########################################################################
+# Custom Regions
+###########################################################################
+
+#custom_eastern_baltic = {
+	#duchies = {
+		#Finland d_karelia d_finland d_kola d_esthonia
+	#}
+#}

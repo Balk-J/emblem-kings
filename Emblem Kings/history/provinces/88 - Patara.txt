@@ -1,0 +1,17 @@
+# c_patara
+
+# County Title
+title = c_patara
+
+# Settlements
+max_settlements = 3
+
+b_patara = castle
+b_patara_2 = city
+b_patara_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,17 @@
+# c_myra
+
+# County Title
+title = c_myra
+
+# Settlements
+max_settlements = 3
+
+b_myra = castle
+b_myra_2 = city
+b_myra_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

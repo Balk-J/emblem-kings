@@ -1,0 +1,18 @@
+# c_armagh
+
+# County Title
+title = c_armagh
+
+# Settlements
+max_settlements = 4
+
+b_castle_armagh = castle
+b_armagh = city
+b_letocetum = temple
+#b_praetorium = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

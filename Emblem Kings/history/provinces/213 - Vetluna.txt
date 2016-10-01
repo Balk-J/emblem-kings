@@ -1,0 +1,19 @@
+# c_vetluna
+
+# County Title
+title = c_vetluna
+
+# Settlements
+max_settlements = 5
+
+b_vetluna = castle
+b_vetluna_2 = temple
+b_vetluna_3 = city
+#b_agridi = temple
+#b_piana = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

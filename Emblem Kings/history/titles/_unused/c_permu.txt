@@ -1,0 +1,11 @@
+# e_elibe
+180.1.1={
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_velzna
+}	
+180.1.1={# So this starts under the Kingdom from the beginning. TODO: Remove this when duchy history is added!
+	liege=k_etruria
+}

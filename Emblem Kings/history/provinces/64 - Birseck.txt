@@ -1,0 +1,15 @@
+# c_birseck
+
+# County Title
+title = c_birseck
+
+# Settlements
+max_settlements = 1
+
+b_birseck = tribal
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

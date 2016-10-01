@@ -1,0 +1,6 @@
+180.1.1={
+	liege=c_amelas
+}
+1150.1.1={
+	holder=181 # Magough.... why not?
+}

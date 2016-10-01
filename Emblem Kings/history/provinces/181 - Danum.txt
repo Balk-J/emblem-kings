@@ -1,0 +1,18 @@
+# c_danum
+
+# County Title
+title = c_danum
+
+# Settlements
+max_settlements = 3
+
+b_danum = city
+b_danum_2 = temple
+b_danum_3 = castle
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History
+440.1.1 = { capital = b_danum }

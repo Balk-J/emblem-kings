@@ -1,0 +1,16 @@
+# c_ganelon
+
+# County Title
+title = c_ganelon
+
+# Settlements
+max_settlements = 2
+
+b_ganelon = tribal
+#b_ganelon_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

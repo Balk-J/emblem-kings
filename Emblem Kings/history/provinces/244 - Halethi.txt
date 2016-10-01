@@ -1,0 +1,17 @@
+# c_halethi
+
+# County Title
+title = c_halethi
+
+# Settlements
+max_settlements = 3
+
+b_halethi = castle
+b_halethi_2 = temple
+b_halethi_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

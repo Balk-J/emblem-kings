@@ -1,0 +1,11 @@
+180.1.1={
+	active = yes
+	law = enatic_succession
+}
+1159.1.1={
+	holder=310 # Farina. She may just be a member and not the commander...
+}
+1185.1.1={
+	active = no
+	holder=0 # Kingdom of Ilia founded
+}

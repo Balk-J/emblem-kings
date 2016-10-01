@@ -1,0 +1,16 @@
+# c_antigonia
+
+# County Title
+title = c_antigonia
+
+# Settlements
+max_settlements = 2
+
+b_antigonia = tribal
+#b_antigonia_2 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

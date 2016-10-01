@@ -1,0 +1,17 @@
+# c_media
+
+# County Title
+title = c_media
+
+# Settlements
+max_settlements = 3
+
+b_media = tribal
+#b_media_2 = temple
+#b_media_3 = city
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

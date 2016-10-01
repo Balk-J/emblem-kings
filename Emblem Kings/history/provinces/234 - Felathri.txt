@@ -1,0 +1,19 @@
+# c_felathri
+
+# County Title
+title = c_felathri
+
+# Settlements
+max_settlements = 5
+
+b_felathri = castle
+b_felathri_2 = temple
+b_felathri_3 = city
+#b_harimne = temple
+#b_perusna = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

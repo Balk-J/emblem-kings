@@ -1,0 +1,16 @@
+# c_kavi
+
+# County Title
+title = c_kavi
+
+# Settlements
+max_settlements = 2
+
+b_kavi = tribal
+#b_kavi_2 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

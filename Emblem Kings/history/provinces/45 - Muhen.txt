@@ -1,0 +1,16 @@
+# c_muhen
+
+# County Title
+title = c_muhen
+
+# Settlements
+max_settlements = 2
+
+b_muhen = tribal
+#b_muhen_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

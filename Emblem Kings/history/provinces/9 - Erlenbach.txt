@@ -1,0 +1,19 @@
+# c_erlenbach
+
+# County Title
+title = c_erlenbach
+
+# Settlements
+max_settlements = 5
+
+b_erlenbach = castle
+b_erlenbach_2 = city
+b_erlenbach_3 = temple
+#b_seftigen = castle
+#b_belp = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

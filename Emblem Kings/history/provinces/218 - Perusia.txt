@@ -1,0 +1,18 @@
+# c_perusia
+
+# County Title
+title = c_perusia
+
+# Settlements
+max_settlements = 4
+
+b_perusia = castle
+b_perusia_2 = temple
+b_perusia_3 = city
+#b_tropaia = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

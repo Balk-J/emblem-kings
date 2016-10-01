@@ -1,0 +1,17 @@
+# c_anth
+
+# County Title
+title = c_anth
+
+# Settlements
+max_settlements = 3
+
+b_anth = tribal
+#b_anth_2 = city
+#b_anth_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

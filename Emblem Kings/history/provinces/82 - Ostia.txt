@@ -1,0 +1,20 @@
+# c_ostia
+
+# County Title
+title = c_ostia
+
+# Settlements
+max_settlements = 6
+
+b_castle_ostia = castle
+b_fort_kinship = castle
+b_ostia = city
+b_ostia_2 = temple
+#b_lysinia = castle
+#b_attalea = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

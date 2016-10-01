@@ -1,0 +1,18 @@
+# c_unterwalden
+
+# County Title
+title = c_unterwalden
+
+# Settlements
+max_settlements = 4
+
+b_unterwalden = castle
+b_unterwalden_2 = temple
+b_unterwalden_3 = city
+#b_ursanne = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

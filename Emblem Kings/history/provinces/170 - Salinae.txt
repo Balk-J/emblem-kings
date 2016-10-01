@@ -1,0 +1,19 @@
+# c_salinae
+
+# County Title
+title = c_salinae
+
+# Settlements
+max_settlements = 5
+
+b_salinae = tribal
+b_salinae_2 = temple
+#b_salinae_3 = city
+#b_regulbium = city
+#b_vagniacae = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

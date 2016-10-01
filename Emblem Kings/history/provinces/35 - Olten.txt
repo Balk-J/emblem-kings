@@ -1,0 +1,17 @@
+# c_olten
+
+# County Title
+title = c_olten
+
+# Settlements
+max_settlements = 3
+
+b_olten = castle
+b_olten_2 = temple
+b_olten_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

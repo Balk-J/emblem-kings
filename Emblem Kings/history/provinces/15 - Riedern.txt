@@ -1,0 +1,18 @@
+# c_riedern
+
+# County Title
+title = c_riedern
+
+# Settlements
+max_settlements = 4
+
+b_riedern = castle
+b_riedern_2 = temple
+b_riedern_3 = city
+#b_konolfingen = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

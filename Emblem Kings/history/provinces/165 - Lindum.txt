@@ -1,0 +1,17 @@
+# c_lindum
+
+# County Title
+title = c_lindum
+
+# Settlements
+max_settlements = 3
+
+b_lindum = tribal
+#b_lindum_2 = temple
+#b_lindum_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

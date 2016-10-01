@@ -1,0 +1,17 @@
+# c_murgleis
+
+# County Title
+title = c_murgleis
+
+# Settlements
+max_settlements = 3
+
+b_murgleis = tribal
+b_murgleis_shrine = temple
+#b_murgleis_2 = city
+
+# Misc
+culture = sacaean
+religion = elimine_church
+
+#History

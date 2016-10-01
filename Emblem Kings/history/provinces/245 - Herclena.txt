@@ -1,0 +1,16 @@
+# c_herclena
+
+# County Title
+title = c_herclena
+
+# Settlements
+max_settlements = 2
+
+b_herclena = castle
+b_herclena_2 = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

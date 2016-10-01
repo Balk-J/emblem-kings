@@ -1,0 +1,17 @@
+# c_antiphellos
+
+# County Title
+title = c_antiphellos
+
+# Settlements
+max_settlements = 3
+
+b_antiphellos = castle
+b_antiphellos_2 = temple
+b_pednelissus = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

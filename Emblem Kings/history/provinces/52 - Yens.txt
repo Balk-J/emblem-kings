@@ -1,0 +1,16 @@
+# c_yens
+
+# County Title
+title = c_yens
+
+# Settlements
+max_settlements = 2
+
+b_yens = tribal
+#b_yens_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

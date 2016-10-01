@@ -1,0 +1,18 @@
+# c_aldhibah
+
+# County Title
+title = c_iustitia
+
+# Settlements
+max_settlements = 4
+
+b_iustitia = tribal
+#b_iustitia_2 = city
+#b_iustitia_3 = temple
+#b_dignitas = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

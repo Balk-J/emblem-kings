@@ -1,0 +1,18 @@
+# c_nisa
+
+# County Title
+title = c_nisa
+
+# Settlements
+max_settlements = 4
+
+b_nisa = tribal
+#b_nisa_2 = city
+#b_nisa_3 = temple
+#b_misae = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

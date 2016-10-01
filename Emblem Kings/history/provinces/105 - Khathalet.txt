@@ -1,0 +1,18 @@
+# c_khathalet
+
+# County Title
+title = c_khathalet
+
+# Settlements
+max_settlements = 4
+
+b_khathalet_castle = castle
+b_khathalet = city
+b_dalisan = temple
+#b_lyrbe = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,17 @@
+# c_sagkas
+
+# County Title
+title = c_sagkas
+
+# Settlements
+max_settlements = 3
+
+b_sagkas = tribal
+b_sagkas_2 = city
+#b_sagkas_3 = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

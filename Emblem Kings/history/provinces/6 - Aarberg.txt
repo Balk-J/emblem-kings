@@ -1,0 +1,18 @@
+# c_aarberg
+
+# County Title
+title = c_aarberg
+
+# Settlements
+max_settlements = 4
+
+b_bern_manse = castle
+b_aarberg = temple
+b_aarberg_2 = city
+#b_aarwangen = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

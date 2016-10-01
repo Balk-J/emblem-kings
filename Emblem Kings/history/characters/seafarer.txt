@@ -1,0 +1,162 @@
+801 = {
+	name="Fargus"
+	dynasty=801
+	
+	religion=raider_pagan
+	culture=seafarer
+	
+	trait="strong"
+	trait="class_pirate"
+	trait="aggressive_leader"
+	trait="heavy_infantry_leader"
+	trait="inspiring_leader"
+	trait="tough_soldier"
+	trait="brave"
+	trait="wroth"
+	trait="charitable"
+	trait="proud"
+	trait="adventurer"
+	1109.01.01 = { birth=yes }
+	
+	1130.01.01 = { 
+		remove_trait="class_pirate"
+		add_trait="class_berserker"
+	}
+	
+	1176.01.01 = { death=yes }
+}
+
+802={
+	name="Mark"
+	culture=seafarer
+	religion=elimine_church
+	disallow_random_traits="yes" 
+	trait="brilliant_strategist"
+	trait="organizer"
+	trait="siege_leader"
+	trait="narrow_flank_leader"
+	trait="inspiring_leader"
+	trait="genius"
+	trait="gamer"
+	trait="strategist"
+	trait="diligent"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	1159.01.01 = { 
+		employer=111 #Lyn
+	}
+	1160.01.01 = { 
+		employer=107 #Eliwood
+	}
+	1161.01.01 = { 
+		#Somewhere totally uninvolved in future events. Not Bern or Etruria.
+		employer=618 #Mayor of Kafti
+	}
+	1230.01.01={
+		death=yes
+	}
+}
+
+#Filler landholders
+#Marciana
+803 = {
+	name="Kelles"
+	dynasty=811
+	
+	religion=raider_pagan
+	culture=seafarer
+	
+	1139.01.01 = { birth=yes }
+	
+	1189.01.01 = { death=yes }
+}
+
+#Calynda
+804 = {
+	name="Marral"
+	dynasty=812
+	
+	religion=raider_pagan
+	culture=seafarer
+	
+	1138.01.01 = { birth=yes }
+	
+	1191.01.01 = { death=yes }
+}
+
+##Valor
+#Dragon's Gate
+805={
+	name="Bernard" 
+	dynasty=813
+	
+	culture=seafarer
+	religion=anima
+		
+	1140.1.1={
+		birth=yes
+	}
+	
+	1159.1.1={
+		add_trait="class_mage"
+	}
+	
+	1194.1.1= {
+		death = yes
+	}
+}
+
+#Nergal's lab
+806={
+	name="Aesha" 
+	female="yes"
+	dynasty=814
+	
+	culture=seafarer
+	religion=dark
+		
+	1141.1.1={
+		birth=yes
+	}
+	
+	1161.1.1={
+		add_trait="class_shaman_female"
+	}
+	
+	1221.1.1= {
+		death = yes
+	}
+}
+#The shore
+807={
+	name="Sealen" 
+	dynasty=815
+	
+	culture=seafarer
+	religion=elimine_church
+		
+	1139.1.1={
+		birth=yes
+	}
+	
+	1186.1.1= {
+		death = yes
+	}
+}
+#The part no one ever goes to
+808={
+	name="Kaim" 
+	dynasty=816
+	
+	culture=seafarer
+	religion=elimine_church
+		
+	1138.1.1={
+		birth=yes
+	}
+	
+	1187.1.1= {
+		death = yes
+	}
+}

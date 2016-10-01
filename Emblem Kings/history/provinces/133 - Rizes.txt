@@ -1,0 +1,17 @@
+# c_rizes
+
+# County Title
+title = c_rizes
+
+# Settlements
+max_settlements = 3
+
+b_rizes = tribal
+#b_rizes_2 = city
+#b_rizes_3 = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

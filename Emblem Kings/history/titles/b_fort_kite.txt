@@ -1,0 +1,8 @@
+1150.1.1={
+	holder=431 # Jerme
+	liege=d_black_fang
+}
+
+1161.1.1={
+	holder=0 # Black Fang destroyed
+}

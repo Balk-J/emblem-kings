@@ -1,0 +1,17 @@
+# c_dubris
+
+# County Title
+title = c_dubris
+
+# Settlements
+max_settlements = 3
+
+b_dubris = tribal
+b_dubris_2 = temple
+#b_dubris_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

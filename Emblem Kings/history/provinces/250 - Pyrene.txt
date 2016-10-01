@@ -1,0 +1,17 @@
+# c_pyrene
+
+# County Title
+title = c_pyrene
+
+# Settlements
+max_settlements = 3
+
+b_pyrene = tribal
+#b_pyrene_2 = city
+#b_pyrene_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

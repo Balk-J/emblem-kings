@@ -1,0 +1,20 @@
+# c_jutes
+
+# County Title
+title = c_jutes
+
+# Settlements
+max_settlements = 6
+
+b_castle_jutes = castle
+b_armads_shrine = temple
+b_jutes = city
+#b_leodis = castle
+#b_durolitum = city
+#b_londinium = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

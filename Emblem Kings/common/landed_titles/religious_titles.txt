@@ -1,0 +1,153 @@
+
+# SPECIAL TITLES
+
+k_naga = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 1 # The Dragon's Gate, for now...
+	
+	title = "VOICE_OF_NAGA"
+	title_female = "VOICE_OF_NAGA"
+	foa = "temple_duke_foa"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = divine_dragon
+	
+	religion = divine_dragon
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+}
+
+k_elimine = {
+	color={ 198 249 255 }
+	color2={ 220 220 0 }
+	
+	capital = 210 # Aquleia
+	
+	#title = "ARCHBISHOP_ELIMINE"
+	#title_female = "ARCHBISHOP_ELIMINE"
+	#foa = "temple_duke_foa"
+	
+	title = "HIGH_BISHOP"
+	title_female = "HIGH_BISHOP"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	#title_prefix = "ARCHBISHOPRIC_OF"
+	short_name = yes
+	
+	#location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = elimine_church
+	
+	religion = elimine_church
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	assimilate = no # Nothing drifts in or out
+	
+	allow = {
+		always = no # Only by special decision?
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+k_golden_church = {
+	color={ 183 60 155 }
+	color2={ 220 220 0 }
+	
+	capital = 210 # Aquelia
+	
+	title = "ARCHBISHOP_GOLDEN_CHURCH"
+	#foa = "temple_king_foa"
+	short_name = yes
+	location_ruler_title = yes
+	
+	allow = {
+		always = no # Only by special decision
+	}
+	
+	# Always exists
+	#landless = yes
+	
+	# Controls a religion
+	controls_religion = golden_church
+	
+	religion = golden_church
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+k_dragon_liberation = {
+	color={ 230 95 70 }
+	color2={ 220 220 0 }
+	
+	capital = 36 # Dragon Temple
+	
+	title = "temple_king_pagan_group"
+	foa = "temple_duke_foa"
+	short_name = yes
+	#location_ruler_title = yes
+	
+	allow = {
+		always = no # Only by special decision
+	}
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = dragon_liberation
+	
+	religion = dragon_liberation
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_divine_sky = {
+	color={ 100 80 100 }
+	color2={ 220 220 0 }
+	
+	capital = 192 #	Bulgar
+	
+	title = "DIVINE_SKY_PRIEST"
+	title_female = "DIVINE_SKY_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	#landless = yes	
+	
+	# Controls a religion
+	controls_religion = divine_sky_pagan_reformed
+	
+	religion = divine_sky_pagan_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

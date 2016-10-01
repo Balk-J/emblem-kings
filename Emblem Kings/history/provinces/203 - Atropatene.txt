@@ -1,0 +1,17 @@
+# c_atropatene
+
+# County Title
+title = c_atropatene
+
+# Settlements
+max_settlements = 3
+
+b_atropatene = tribal
+#b_atropatene_2 = temple
+#b_atropatene_3 = city
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

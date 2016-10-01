@@ -1,0 +1,17 @@
+# c_pikernis
+
+# County Title
+title = c_pikernis
+
+# Settlements
+max_settlements = 3
+
+b_pikernis = tribal
+#b_pikernis_2 = city
+#b_pikernis_3 = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

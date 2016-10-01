@@ -1,0 +1,17 @@
+# c_orhay
+
+# County Title
+title = c_orhay
+
+# Settlements
+max_settlements = 3
+
+b_orhay = castle
+b_orhay_2 = city
+b_orhay_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

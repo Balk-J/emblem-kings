@@ -1,0 +1,18 @@
+# c_berua
+
+# County Title
+title = c_berua
+
+# Settlements
+max_settlements = 4
+
+b_berua = castle
+b_berua_2 = temple
+b_berua_3 = city
+#b_vicentia = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

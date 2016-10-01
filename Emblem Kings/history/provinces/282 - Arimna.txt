@@ -1,0 +1,15 @@
+# c_arimna
+
+# County Title
+title = c_arimna
+
+# Settlements
+max_settlements = 1
+
+b_arimna = tribal
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

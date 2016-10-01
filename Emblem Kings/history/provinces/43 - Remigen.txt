@@ -1,0 +1,17 @@
+# c_remigen
+
+# County Title
+title = c_remigen
+
+# Settlements
+max_settlements = 3
+
+b_remigen = tribal
+b_remigen_2 = temple
+#b_remigen_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

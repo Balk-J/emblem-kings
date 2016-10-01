@@ -1,0 +1,17 @@
+# c_devana
+
+# County Title
+title = c_devana
+
+# Settlements
+max_settlements = 3
+
+b_devana = tribal
+#b_devana_2 = temple
+#b_devana_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

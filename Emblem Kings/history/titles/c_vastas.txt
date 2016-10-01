@@ -1,0 +1,12 @@
+# k_missur
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_isaris
+#}
+1138.1.1={
+	holder=638
+}

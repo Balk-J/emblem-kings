@@ -1,0 +1,16 @@
+# c_riha
+
+# County Title
+title = c_riha
+
+# Settlements
+max_settlements = 2
+
+b_riha = tribal
+#b_riha_2 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

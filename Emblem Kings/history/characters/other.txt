@@ -1,0 +1,23 @@
+1={
+	name="Bach"
+	dynasty=300
+	culture=ilian
+	religion=dark
+	trait="quick"
+	trait="scholarly_theologian"
+	trait="mystic"
+	trait="organizer"
+	trait="siege_leader"
+	trait="diligent"
+	trait="temperate"
+	trait="greedy"
+	trait="shy"
+	1140.6.24={
+		birth=yes
+		employer=601
+	}
+	1240.6.24={
+		death=yes
+	}
+}
+

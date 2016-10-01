@@ -1,0 +1,47 @@
+# SPECIAL TITLES
+
+d_ganelon_bandits = {
+	color={ 160 88 168 }
+	color2={ 255 255 255 }
+	
+	capital = 189 # Ganelon
+	#tribe = yes
+	culture=sacaean
+	title = "count_sacaean"
+	title_female = "count_female_sacaean"
+	title = "chief_foa"
+	title_female = "chief_foa_female"
+	short_name = yes
+	religion=raider_pagan
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_taliver_bandits = {
+	color={ 250 120 90 }
+	color2={ 255 255 255 }
+	
+	capital = 185 # Taliver
+	#tribe = yes
+	culture=sacaean
+	title = "count_sacaean"
+	title_female = "count_female_sacaean"
+	title = "chief_foa"
+	title_female = "chief_foa_female"
+	short_name = yes
+	religion=raider_pagan
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

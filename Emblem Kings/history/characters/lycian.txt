@@ -1,0 +1,3081 @@
+101 = {
+	name="Roland"
+	dynasty=101
+	
+	religion=elimine_church
+	culture=lycian
+	
+	159.01.01={
+		birth=yes
+	} 	
+	180.1.1 = {
+		give_nickname="nick_the_little_knight"
+	}
+	210.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+102 = {
+	name="Uther" #general
+	dynasty=101
+    dna="cllmdshiacj" 
+    properties="aj0bab00000000"
+	
+	religion=elimine_church
+	culture=lycian
+	father=113
+	mother=114
+	disallow_random_traits="yes" 
+	trait="diligent"
+	trait="patient"
+	trait="grey_eminence"
+	1130.01.01={
+		birth=yes
+	} 	
+	
+	1144.1.1 = {
+		add_trait="wounded"
+	}	
+
+	1145.01.01 = {
+		remove_trait="wounded"
+		add_trait="scarred"
+	}	
+	
+	1160.1.1 = {
+		add_trait="has_tuberculosis"
+	}
+	1161.01.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+103 = {
+	name="Hector"
+	dynasty=101
+    dna="cakdedmeaca" 
+    properties="ae00bc00000000"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=113
+	mother=114
+	disallow_random_traits="yes" 
+	trait="strong"	
+	trait="tough_soldier"	
+	trait="aggressive_leader"		
+	trait="heavy_infantry_leader"	
+	trait="duelist"
+	trait="brave"			
+	trait="honest"			
+	trait="wroth"	
+	1143.01.01={
+		birth=yes
+	} 		
+	1149.01.01 = {
+		effect={
+			add_friend=107 #Eliwood
+		}
+	}	
+	
+	#imprisoned by Zephiel at Araphen
+	1180.02.01 = {
+		effect = {
+			k_bern = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	1180.03.01 = { 
+		death = {
+			death_reason=death_dungeon
+		}
+	}
+}
+
+104 = {
+	name="Lilina"
+	female=yes
+	dynasty=101
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=103
+	trait="naive_appeaser"	
+		trait="kind"	
+		trait="humble"			
+		trait="honest"			
+		trait="trusting"
+	disallow_random_traits="yes" 
+	1165.01.01={
+		birth=yes
+	} 	
+	1171.01.01 = {
+		guardian=217 #Cecilia
+	}	
+	1175.01.01 = {
+		effect={
+			add_friend=108 #Roy
+		}
+	}	
+	1230.01.01={
+		death=yes
+	} 	
+}
+
+105 = {
+	name="Elbert" #Peer = Paladin?
+	dynasty=102
+    dna="bmlmkchfegc" 
+    properties="ce0ced00000000"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1125.01.01={
+		birth=yes
+	} 	
+		
+	1139.01.01 = {
+		add_trait="charismatic_negotiator"	
+		add_trait="cavalry_leader"		
+		add_trait="kind"	
+		add_trait="brave"			
+		add_trait="just"
+	} 	
+	1143.01.01 = {
+		add_spouse=106 # Eleanora
+	}
+	
+	#Imprisoned by Nergal
+	1160.01.01 = {
+		effect = {
+			e_nergal = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	1160.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=308 #Nergal
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+106 = {
+	name="Eleanora" #Bishop
+	female=yes
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1127.01.01={
+		birth=yes
+	} 	
+	1141.01.01 = { 
+		add_trait="underhanded_rogue"			
+		add_trait="fair"		
+		add_trait="kind"	
+		add_trait="patient"
+	}
+		
+	1180.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+107 = {
+	name="Eliwood"
+    dna="bjafijifecn" 
+    properties="ci0ehd00000000"
+	father=105 #Elbert
+	mother=106 #Eleanora
+	dynasty=102
+	
+	religion=elimine_church
+	culture=lycian
+		
+	1143.01.01={
+		birth=yes
+	} 	
+		
+	1157.01.01 = {
+		add_trait="skilled_tactician"	
+		add_trait="cavalry_leader"	
+		add_trait="unyielding_leader"	
+		add_trait="inspiring_leader"		
+		add_trait="gregarious"		
+		add_trait="kind"	
+		add_trait="brave"			
+		add_trait="just"
+	} 		
+	
+	1180.01.01 = {
+		add_trait="infirm"
+		add_trait="ill"
+	} 	
+	1180.02.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+108 = {
+	name="Roy"
+    dna="bmafkqcdean" 
+    properties="ci0dhd00000000"
+	father=107 #Eliwood
+	dynasty=102
+	
+	religion=elimine_church
+	culture=lycian
+		
+	disallow_random_traits="yes" 
+	1165.01.01={
+		birth=yes
+	} 	
+	1171.01.01 = {
+		guardian=217 #Cecilia
+	}	
+	1179.01.01 = {  
+		add_trait="misguided_warrior"	
+		add_trait="unyielding_leader"		
+		add_trait="chaste"		
+		add_trait="kind"	
+		add_trait="brave"			
+		add_trait="humble"
+	}
+	
+	1230.01.01={
+		death=yes
+	} 	
+}
+
+109 = {
+	name="Hausen"
+	dynasty=103
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=198
+	1098.01.01={
+		birth=yes
+	} 	
+	
+	1112.01.01 = {
+		add_trait="thrifty_clerk"	
+		add_trait="content"	
+		add_trait="patient"
+	} 	
+
+	# his wife is named Lyndis.
+	
+	1118.01.01={
+		add_spouse=199
+	} 	
+	
+	#Hassar + Madelyn elope
+	#1143.01.01 = {
+	
+	1160.01.01 = {
+		add_trait="slothful"	
+		add_trait="infirm"
+	} 	
+	1163.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+110 = {
+	name="Madelyn"
+	female=yes
+	dynasty=103
+	
+	religion=elimine_church
+	culture=lycian
+	
+	trait="fair"
+	father=109 #Hausen
+	mother=199 #Lyndis
+	
+	1128.01.01={
+		birth=yes
+	} 		
+	1142.01.01 = { 
+		add_trait="flamboyant_schemer"	
+		add_trait="flat_terrain_leader"	
+		add_trait="lustful"
+		add_trait="proud"
+		add_trait="gregarious"
+		add_trait="arbitrary"
+	}
+	#Elopes with Hassar
+	#1143.01.01 = { 
+	
+	1158.06.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=537 #Taliver Bandits
+		}
+	}
+}
+
+111 = {
+	name="Lyndis"
+    #dna="dcefbfafaah" 
+    #properties="ce0ecd00000000"
+    dna="aamiiocjaaj" 
+    properties="cl0ecd00000000"
+	female=yes
+	dynasty=505
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=515 #Hassar
+	mother=110 #Madelyn
+	1144.01.01={
+		birth=yes
+	culture=sacaean
+	} 	
+
+	1158.01.01 = {
+		add_trait="tough_soldier"	
+		add_trait="organizer"	
+		add_trait="flat_terrain_leader"	
+		add_trait="kind"	
+		add_trait="humble"
+		add_trait="honest"
+		add_trait="brave"
+		
+	} 	
+	1158.06.01 = { 
+		employer = 526 # living on Batta's turf
+		
+		add_claim="d_caelin"
+		add_claim="c_caelin"
+		add_claim="c_alta"
+		
+		effect = {
+			d_caelin = {
+				holder_scope = { 
+					opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 100
+					} 
+					#reverse_opinion = {
+						#modifier = opinion_claimant_adventure_target
+						#who = ROOT
+						#years = 2
+					#} 
+					reverse_opinion = {
+						modifier = opinion_evil_tyrant
+						who = ROOT
+						years = 100
+					}
+				}
+			}	
+		}
+	}
+	
+	1159.01.01={
+		add_trait="adventurer"
+		effect = {
+			set_character_flag = lyn_story
+			d_caelin = {
+				reverse_war = { 
+					target = ROOT
+					casus_belli = claim_all_lyn 
+				}
+			}	
+			spawn_unit = {
+				owner = ROOT
+				province = 209 # Kashgar, Batta's county
+				troops = {
+					archers = { 300 300 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 300 300 }
+					light_cavalry = { 100 100 }
+				}
+				attrition = 0
+				disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+		}
+	}
+	
+	1186.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+112 = {
+	name="Lundgren"
+    dna="bgigitkhaan" 
+    properties="cj0chd00000000"
+	dynasty=103
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=198
+	1109.01.01={
+		birth=yes
+	} 	
+
+	1123.01.01 = { 
+		add_trait="intricate_webweaver"	
+		add_trait="defensive_leader"
+		add_trait="heavy_infantry_leader"
+		add_trait="schemer"
+		add_trait="ambitious"	
+		add_trait="envious"
+		add_trait="deceitful"
+		add_trait="proud"
+	}
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+113 = {
+	name="Astore" #non-canon; Marquess Ostia and father of Uther/Hector
+	dynasty=101
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1110.01.01={
+		birth=yes
+	} 		
+	1129.1.1 = {
+		add_spouse=114 # Uther, Hector, and Orun's mother
+	}
+	1149.12.01= {
+		add_trait="ill"
+	}
+	1150.01.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+114 = {
+	name="Wendy"
+	female=yes
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1111.01.01={
+		birth=yes
+	} 	
+	1149.12.01= {
+		add_trait="ill"
+	}
+	1150.01.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+115 = {
+	name="Georg"
+	dynasty=106
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1110.01.01={
+		birth=yes
+	} 	
+	1127.1.1 = {
+		add_spouse=114 # Uther, Hector, and Orun's mother
+	}
+	1128.01.01 = { 
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+
+116 = {
+	name="Orun"
+	dynasty=106
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=115
+	mother=114 # Uther and Hector's mother
+	1128.01.01={
+		birth=yes
+	} 	
+	1180.02.01 = { 
+		death = {
+			death_reason=death_murder
+			killer=164 #Wagner, the shaman 
+		}
+	}
+}
+
+117 = {
+	name="Danan" #Marquess Araphen from FE7, no canon name
+	dynasty=110
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1134.01.01={
+		birth=yes
+	} 	
+	1148.01.01 = { 
+		add_trait="wroth"	
+		add_trait="proud"
+		add_trait="lustful"
+		add_trait="arbitrary"	
+	}
+	1183.01.01={
+		death=yes
+	} 	
+}
+
+118 = {
+	name="Darin"
+	dynasty=104
+	dna="bkbiddcffbz" 
+	properties="cg0chd00000000"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1126.01.01={
+		birth=yes
+	} 	
+
+	1140.01.01 = { 
+		add_trait="flamboyant_schemer"	
+		add_trait="organizer"
+		add_trait="heavy_infantry_leader"
+		add_trait="proud"
+		add_trait="lustful"
+		add_trait="patient"
+		add_trait="deceitful"
+		add_trait="ambitious"	
+		add_trait="arbitrary"
+	}
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+119 = {
+	name="Erik"
+	dynasty=104
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=118
+	1143.01.01={
+		birth=yes
+	} 	
+	1157.01.01 = { 
+		add_trait="amateurish_plotter"	
+		add_trait="cavalry_leader"
+		add_trait="proud"
+		add_trait="deceitful"
+		add_trait="envious"
+		add_trait="ambitious"	
+		add_trait="arbitrary"
+	}
+	1181.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+120 = {
+	name="Helman"
+	dynasty=107
+	
+	religion=elimine_church
+	culture=lycian
+	
+	disallow_random_traits="yes" 
+	trait="naive_appeaser"
+	trait="craven"
+	trait="just"
+	trait="content"
+	father=193
+	1098.01.01={
+		birth=yes
+	} 		
+
+	1161.01.01 = { 
+		death = {
+			death_reason=death_murder
+			killer=607 #Ephidel
+		}
+	}
+}
+
+121 = {
+	name="Alen" #Raven and Priscilla's father, non-canonical
+	dynasty=113
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1111.01.01={
+		birth=yes
+	} 		
+
+	1125.01.01 = { 
+		add_trait="fortune_builder" #Busted for embezzling
+		add_trait="charitable" # Had to embezzle because he took on debts for others
+		add_trait="kind"
+		add_trait="trusting"
+		add_trait="arbitrary"
+	}
+	1158.01.01 = { #Committed suicide (with the rest of Cornwell's nobility) 2 years before FE7, per Lucius. 
+		death = { 
+			death_reason = death_suicide 
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+122 = {
+	name="Raymond" #Raven!
+	dynasty=113
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=121
+	trait="skilled_tactician"
+	trait="light_foot_leader"
+	1141.01.01={
+		birth=yes
+	} 		
+	
+	1158.1.1 = {
+		add_trait="cynical"
+		add_trait="patient"
+		add_trait="adventurer"
+		#give_nickname="nick_raven"
+		set_name = "Raven"
+		add_claim="d_cornwell"
+		add_claim="c_cornwell"
+		add_claim="c_dias"
+		add_claim="c_telmessus"
+		add_claim="c_trebenna"
+	}	
+	1188.01.01={
+		death=yes
+	}
+	disallow_random_traits="yes" 
+}
+
+123 = {
+	name="Priscilla"
+	female=yes
+	dynasty=113
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=121
+	1144.01.01={
+		birth=yes
+	} 		
+	add_trait="fair"
+	1150.1.1 = {
+		guardian=249 #Count Caerleon of Etruria.
+	}	
+	1158.01.01 = {
+		add_claim="d_cornwell"
+		add_claim="c_cornwell"
+		add_claim="c_dias"
+		add_claim="c_telmessus"
+		add_claim="c_trebenna"
+		
+		add_trait="martial_cleric"
+		add_trait="kind"
+		add_trait="chaste"
+		add_trait="content"
+		add_trait="shy"
+		#Adopted by House Caerleon after Cornwell was destroyed.
+			employer=249
+			dynasty=204 
+			#TODO: fix this to set real dad
+			#set_mother=
+			#set_real_father=121
+			effect={
+				father_even_if_dead = {				
+					ROOT = { set_real_father = PREV }
+				}
+				d_caerleon = {
+					holder_scope = {
+						ROOT = { set_father = PREV }
+					}
+				}
+				#set_father=249
+			}
+	}	
+	1205.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+192 = {
+	name="Marcus"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1120.01.01={
+		birth=yes
+	} 		
+	1134.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"
+		add_trait="inspiring_leader"
+		add_trait="diligent"
+		add_trait="content"
+		
+		employer=105 #Elbert
+	}	
+	1160.1.1 = {
+		add_trait="infirm"
+	}	
+	1190.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+124 = {
+	name="Harken"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1138.01.01={
+		birth=yes
+	} 		
+	1152.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="light_foot_leader"
+		add_trait="humble"
+		add_trait="depressed"
+		employer=105 #Elbert
+	}	
+	1160.1.1 = {
+		add_trait="winter_soldier"
+		add_trait="mountain_terrain_leader"
+	}	
+	1188.01.01={
+		death=yes
+	} 	
+	#1170.01.01 = { #Not present in FE6 - maybe died (or retired?) after FE7
+		#death = {
+			#death_reason=death_trait
+		#}
+	#}
+	disallow_random_traits="yes" 
+}
+
+125 = {
+	name="Isadora"
+	female=yes
+	dynasty=115
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=191
+	1138.01.01={
+		birth=yes
+	} 		
+	#Harken is her fiance
+	1152.01.01 = {
+		add_trait="thrifty_clerk"
+		add_trait="cavalry_leader"
+		add_trait="defensive_leader"
+		add_trait="humble"
+		add_trait="chaste"
+		add_trait="patient"
+		add_trait="zealous"
+		employer=105 #Elbert
+		add_matrilineal_spouse = 124 
+	}	
+	1188.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+126 = {
+	name="Oswin"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1129.01.01={
+		birth=yes
+	} 		
+	1143.1.1= {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="defensive_leader"
+		add_trait="patient"
+		add_trait="just"
+		employer=121 #former vassal of Cornwell before its decline
+	}
+	
+	1158.01.01 = { 
+		employer=102 #goes to work for Ostia after the Cornwell thing
+	}
+	
+	disallow_random_traits="yes" 
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=403 #Zephiel? Assuming the Ostian retainers from FE7 went down in the same battle where Hector was captured...
+		}
+	}
+}
+
+127 = {
+	name="Matthew"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	trait="class_thief"
+	1139.01.01={
+		birth=yes
+	} 		
+	1139.01.01 = { 
+		employer=113 #Ostia 
+	}
+	1153.01.01= {
+		add_trait="elusive_shadow"
+		add_trait="schemer"
+		add_trait="trickster"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="gregarious"
+		add_trait="deceitful"		
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=403 #Zephiel?
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+128 = {
+	name="Leila"
+	female=yes
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1137.01.01={
+		birth=yes
+	} 		
+	1137.01.01 = { 
+		employer=113 #Ostia 
+	}	
+	1151.01.01= {
+		add_trait="elusive_shadow"
+		add_trait="schemer"
+		add_trait="trickster"
+		add_trait="patient"
+		add_trait="just"
+		add_trait="deceitful"
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			#killer= #Jaffar
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+129 = {
+	name="Astore"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	disallow_random_traits="yes" 
+	trait="intricate_webweaver"
+	trait="defensive_leader"
+	trait="brave"
+	trait="greedy"
+	trait="deceitful"
+	1142.01.01={
+		birth=yes
+	} 		
+	1142.01.01 = { 
+		employer=113 #Ostia 
+	}	
+	1156.01.01 = { 
+		trait="intricate_webweaver"
+	}
+	1162.01.01 = { 
+		employer=103 #caught stealing from Hector, got hired as a spy
+		add_trait="schemer"	
+	}
+	1165.01.01 = { 
+		# to Nabata on a mission. collapses in desert, loses memory, and marries Igrene
+		effect = {
+			set_name="Golrois"
+		}
+		employer=603 #Hawkeye
+		add_trait="ill"	
+	}
+	1166.01.01 = {
+		remove_trait="ill"
+		add_trait="desert_terrain_leader"
+		add_spouse=604 # Igrene
+	}
+	1170.01.01 = { 
+		# fights off bandits, fakes death
+		remove_spouse=604 # Igrene
+		effect = {
+			set_name="Astore"
+		}
+		employer=103 #back to Ostia
+		add_trait="drunkard"	
+	}
+	1193.01.01={
+		death=yes
+	} 	
+}
+
+130 = {
+	name="Bath"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1149.01.01={
+		birth=yes
+	} 		
+	1149.01.01 = { 
+		employer=113 #Ostia 
+	}	
+	1163.01.01 = {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="defensive_leader"
+		
+		employer=103 #Hector
+	}
+	1193.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+131 = {
+	name="Merlinus"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1126.01.01={
+		birth=yes
+	} 	
+	1130.01.01 = {
+		add_trait="midas_touched"
+		add_trait="organizer"
+		add_trait="shy"
+		add_trait="craven"
+		add_trait="gluttonous"
+	}	
+		
+	1180.1.1 = {
+		employer=108 #Roy
+		add_trait="wroth" #Always argumentative in FE6...
+		add_trait="honest"
+		remove_trait="shy"
+	}	
+	1205.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+132 = {
+	name="Lowen"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1144.01.01={
+		birth=yes
+	} 			
+	1144.01.01 = { 
+		employer=105 #Elbert 
+	}
+	1158.01.01 = { 
+		add_trait="misguided_warrior"
+		add_trait="cavalry_leader"	
+		add_trait="defensive_leader"
+		add_trait="diligent"
+		add_trait="humble"
+		add_trait="gluttonous"
+	}	
+	1196.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+133 = {
+	name="Kent"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1138.01.01={
+		birth=yes
+	} 		
+	1138.01.01 = { 
+		employer=105 #Elbert 
+	}
+	1152.01.01 = { 
+		add_trait="thrifty_clerk"
+		add_trait="cavalry_leader"	
+		add_trait="unyielding_leader"
+		add_trait="diligent"
+		add_trait="patient"
+		add_trait="chaste"
+		add_trait="brave"
+		add_trait="just"
+	}	
+	1192.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+134 = {
+	name="Sain"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1136.01.01={
+		birth=yes
+	} 			
+	1136.01.01 = { 
+		employer=105 #Elbert 
+	}
+	1150.01.01 = { 
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"	
+		add_trait="experimenter"
+		add_trait="gregarious"
+		add_trait="lustful"
+		add_trait="brave"
+		add_trait="just"
+	}	
+	1191.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+135 = {
+	name="Alen"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1159.01.01={
+		birth=yes
+	} 		
+	1159.01.01 = {
+		employer=107 #Eliwood
+	}		
+	
+	1173.01.01 = { 
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"	
+		add_trait="aggressive_leader"
+		add_trait="diligent"
+		add_trait="wroth"
+		add_trait="brave"
+	}	
+	
+	1209.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+136 = {
+	name="Lance"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1158.01.01={
+		birth=yes
+	} 		
+	
+	1164.01.01 = {
+		effect={
+		add_friend=188 #Kruzard
+		}
+	}		
+	
+	1172.01.01 = { 
+		add_trait="skilled_tactician"
+		add_trait="cavalry_leader"	
+		add_trait="defensive_leader"
+		add_trait="gamer"
+		add_trait="patient"
+		add_trait="humble"
+		add_trait="brave"
+	}	
+	1180.01.01 = {
+		employer=108 #Roy
+	}		
+	
+	1209.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+137 = {
+	name="Wolt"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	mother=142 #Rebecca
+	1165.01.01={
+		birth=yes
+	} 	
+	1165.01.01 = { 
+		employer=107 #Eliwood 
+	}
+	1179.01.01 = { 	
+		add_trait="misguided_warrior"
+		add_trait="flanker"	
+		add_trait="humble"
+		add_trait="kind"
+	}	
+	1212.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+138 = {
+	name="Bors"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=140
+	1157.01.01={
+		birth=yes
+	} 	
+	1157.01.01 = { employer=102 }	#Uther
+	1171.01.01 = { 	
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="defensive_leader"
+		add_trait="just"
+		add_trait="kind"
+		add_trait="gluttonous"
+	}	
+	1207.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+139 = {
+	name="Wendy"
+	female=yes
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=140
+	1163.01.01={
+		birth=yes
+	} 		
+	1163.01.01 = { 
+		employer=103 #Hector 
+	}	
+	1177.01.01 = { 	
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="defensive_leader"
+		add_trait="brave"
+		add_trait="humble"
+	}	
+	1221.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+140 = {
+	name="Bool" #Non-canon, father of Bors/Wendy
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1137.01.01={
+		birth=yes
+	} 	
+	1137.01.01 = { 
+		employer=113 #Ostia 
+	}	
+	1187.01.01={
+		death=yes
+	} 	
+}
+
+141 = {
+	name="Wil"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1142.01.01={
+		birth=yes
+	} 	
+	1142.01.01 = { 
+		employer=144 #Rebecca's father 
+	}
+	1155.1.1 = {
+		add_trait="adventurer"
+	}
+	1156.1.1 = {	
+		add_trait="misguided_warrior"
+		add_trait="light_foot_leader"
+		add_trait="gregarious"
+		add_trait="brave"
+		employer=105 #Elbert 
+	}
+	1198.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+142 = {
+	name="Rebecca"
+	female=yes
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=144
+	1145.01.01={
+		birth=yes
+	} 		
+	1145.01.01 = { 
+		employer=144 #Rebecca's father 
+	}
+	1159.1.1 = {	
+		add_trait="wroth"
+		add_trait="brave"
+		add_trait="chaste"
+		add_trait="indulgent_wastrel"
+		add_trait="light_foot_leader"
+		employer=107 #Eliwood 
+	}
+	1221.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+143 = {
+	name="Dan"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=144
+	1142.01.01={
+		birth=yes
+	} 		
+	add_trait="strong"
+	1142.01.01 = { 
+		employer=144 #Rebecca's father 
+	}
+	1155.1.1 = {
+		#give_nickname="nick_dart"
+		effect = {
+			set_name = "Dart"
+			father_even_if_dead = {				
+				ROOT = { set_real_father = PREV }
+			}
+			set_father = 0
+		}
+		culture=seafarer
+		add_trait="adventurer"
+		employer = 801 #Fargus
+	}	
+	1156.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="wroth"
+		add_trait="kind"
+	}	
+	1221.01.01={
+		death=yes
+	} 	
+	disallow_random_traits="yes" 
+}
+
+144 = {
+	name="Debias" #village chief in Pherae, Rebecca's father
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1120.01.01={
+		birth=yes
+	} 		
+	1200.01.01={
+		death=yes
+	} 	
+}
+
+145 = {
+	name="Iris" #Nino's mother
+	female=yes
+	
+	religion=anima
+	culture=lycian
+	
+	father=152
+	1121.01.01={
+		birth=yes
+	} 		
+	add_trait="quick"
+	1147.1.1= {
+		death = {
+			death_reason=death_murder
+			killer=609 #Sonia
+		}
+	}
+}
+
+146 = {
+	name="Juge" #Nino's father
+	dynasty=122
+	religion=anima
+	culture=lycian
+	
+	1120.01.01={
+		birth=yes
+	} 		
+	1137.01.01 = {
+		add_spouse=145 # Iris
+	}
+	1147.1.1= {
+		death = {
+			death_reason=death_murder
+			killer=609 #Sonia
+		}
+	}
+}
+
+147 = {
+	name="Nino"
+	female=yes
+	dynasty=122
+	
+	religion=anima
+	culture=lycian
+	
+	father=146
+	mother=145
+	1146.01.01={
+		birth=yes
+	} 		
+	add_trait="genius"
+	
+	1147.01.01 = { 
+		employer=425 #Brendan Reed 
+	}
+	
+	1159.01.01 = {
+		add_trait="kind"
+		add_trait="diligent"
+		add_trait="gregarious"
+		add_trait="brave"
+		add_trait="just"
+	}	
+	
+	1160.1.1 = {
+		add_trait="elusive_shadow"
+	}	
+	1171.01.01= {
+		death = {
+			death_reason=death_murder_unknown
+			#killer= #bounty hunters?
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+#148 = {
+	#name="Al" 
+	
+	#May not actually exist.
+	#Nino mentions twin brothers in her Canas A support, but only names one. 
+	#Plus Sonia only claims that her mother protected two kids. 
+	
+	#dynasty=122
+	
+	#religion=anima
+	#culture=lycian
+	
+	#father=146
+	#mother=145
+	#1143.01.01={
+		#birth=yes
+	#} 		
+	#add_trait="twin"
+	#1147.1.1= {
+		#death = {
+			#death_reason=death_murder
+			#killer=609 #Sonia
+		#}
+	#}
+#}
+
+149 = {
+	name="Kai" #Nino's brother
+	dynasty=122
+	
+	religion=anima
+	culture=lycian
+	
+	father=146
+	mother=145
+	1143.01.01={
+		birth=yes
+	} 		
+	#add_trait="twin"
+	1147.1.1= {
+		death = {
+			death_reason=death_murder
+			killer=609 #Sonia
+		}
+	}
+}
+
+150 = {
+	name="Lugh"
+	dynasty=122
+	
+	religion=anima
+	culture=lycian
+	
+	mother=147
+	1167.01.01={
+		birth=yes
+	} 		
+	add_trait="twin"
+	1180.01.01 = {
+		add_trait="kind"
+		add_trait="humble"
+		add_trait="brave"
+		add_trait="trusting"
+		add_trait="gregarious"
+		employer=108 #Roy
+	}	
+	1181.1.1 = {
+		add_trait="grey_eminence"
+	}	
+	1227.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+151 = {
+	name="Raigh"
+	dynasty=122
+	
+	religion=dark
+	culture=lycian
+	
+	mother=147
+	1167.01.01={
+		birth=yes
+	} 		
+	add_trait="twin"	
+	1180.01.01 = {
+		add_trait="proud"
+		add_trait="wroth"
+		add_trait="ambitious"
+		add_trait="cynical"
+		employer=108 #Roy
+	}	
+	1181.1.1 = {
+		add_trait="mastermind_theologian"
+	}	
+	1227.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+152 = {
+	name="Bauker" #non-canon, Nino's grandfather
+	
+	religion=anima
+	culture=lycian
+	
+	1100.01.01={
+		birth=yes
+	} 		
+	add_trait="genius"
+	1170.01.01={
+		death=yes
+	} 	 
+}
+
+153 = {
+	name="Cath" #Canas's wife
+	female=yes
+	
+	religion=anima
+	culture=lycian
+	
+	father=152
+	1140.01.01={
+		birth=yes
+	} 		
+	trait="quick"
+	1163.1.1= {
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+
+154 = {
+	name="Chad"
+	#Might actually be from Sacae?
+	religion=elimine_church
+	culture=lycian
+	
+	1165.01.01={
+		birth=yes
+	} 		
+	1179.01.01 = {
+		add_trait="flamboyant_schemer"
+		add_trait="schemer"
+		add_trait="poet" #He's really an artist, but close enough for now
+		add_trait="humble"
+		add_trait="cynical"
+	}	
+	1180.01.01 = { 
+		employer=108 #Roy 
+	}	
+	1216.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+155 = {
+	name="Cath"
+	female=yes
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1165.01.01={
+		birth=yes
+	} 		
+	1179.01.01 = {
+		add_trait="intricate_webweaver"
+		add_trait="schemer"
+		add_trait="organizer"
+		add_trait="charitable"
+		add_trait="proud"
+		add_trait="deceitful"
+		add_trait="just"
+		add_trait="cynical"
+	}	
+	1180.01.01 = { 
+		employer=108 #Roy 
+	}	
+	1216.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+156 = {
+	name="Renault"
+	# FE7's mystery man.
+	# Definitely killed Lucius's father when Lucius was 3 (FE7 minus 17-26 years).
+	# Definitely helped Nergal create morphs. It's uncertain as to whether he helped with the FIRST morphs of several centuries before FE7, or more recent research.
+	# Probably was "Renault the Impervious", Wallace's teacher 30 years before FE7, when Wallace was 10.
+	
+	# Is he actually hundreds of years old, or a 50+ year old who stopped aging or looks younger thanks to magic?
+	# It's arguable, but we'll assume the latter.
+	
+	religion=elimine_church
+	culture=lycian
+	
+	disallow_random_traits="yes" 
+	trait="strong"
+	1105.01.01={
+		birth=yes
+	} 		
+	1119.01.01 = {
+		add_trait="brilliant_strategist"
+		add_trait="unyielding_leader"
+		add_trait="inspiring_leader"
+		add_trait="defensive_leader"
+		add_trait="brave"
+		add_trait="just"
+		add_trait="diligent"
+	}	
+	1121.01.01 = {
+		give_nickname="nick_the_impervious"
+	}	
+	# Mercenary in service to Caelin
+	1125.01.01 = {
+		employer=109 #Marquess Hausen of Caelin
+		#give_job_title = job_marshal 
+		effect={
+			add_friend=157 
+		}
+	}			
+	
+	# Last time Wallace saw him before FE7.
+	# We'll assume this is when his friend died, driving him off the deep end and into Nergal's service.
+	1130.01.01 = {
+		remove_trait="inspiring_leader"
+		add_trait="wroth"
+		add_trait="cynical"
+		add_trait="depressed"
+		add_trait="lunatic" 
+		effect={
+			remove_nickname="nick_the_impervious"
+		}
+	}	
+
+	1130.02.01 = {
+		employer=308 #Nergal
+		religion=dark
+		add_trait="mystic"
+		add_trait="immortal"
+	}	
+	
+	# Arbitrary date when the "empty vessel" morph of his friend is created. 
+	# He leaves Nergal in disgust. We'll assume he went to the church.
+	1140.01.01= {
+		religion=elimine_church
+		effect={
+			add_rival=308 #Nergal
+		}
+		remove_trait="lunatic"
+		employer=0; #TODO: replace with whoever runs the Elimine Church
+	}
+	
+	#1160.01.01 = {
+		#give him land on the Dread Isle?
+	#}		
+	
+	1161.01.01 = {
+		remove_trait="depressed"
+		remove_trait="wroth"
+		employer=0 #He vanished as though he never existed. 
+	}	
+	1310.01.01={
+		death=yes
+	} 	 #can't keep him around forever, even the Eight Legends die...
+}
+
+157 = {
+	name="Bernard" # non-canon; Renault's friend. No, not Kishuna. Kishuna the morph has emotions on creation. Renault's friend did not.
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1108.01.01={
+		birth=yes
+	} 		
+	add_trait="quick"
+	1122.01.01 = {
+		add_trait="skilled_tactician"
+	}	
+	# Mercenary in service to Caelin
+	1125.01.01 = {
+		effect={
+		add_friend=156 #Renault
+		}
+		employer=109 #Marquess Hausen of Caelin
+	}			
+	1130.01.01 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+
+158 = {
+	name="Wallace"
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1115.01.01={
+		birth=yes
+	} 		
+	trait="weak"
+	trait="slow" # seriously, how do you try to get to Caelin and wind up in Ilia?
+	
+	1115.01.01 = {
+		employer=109 #Marquess Hausen of Caelin
+	}			
+	
+	#1125.01.01 = {
+		#effect={
+			#set_guardian=156
+		#}
+	#}		
+	1127.01.01 = {
+		effect = {
+			random_character = {
+				limit = { character = 156 } 
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 40
+				}
+			}
+		}
+			
+		remove_trait="weak"
+		add_trait="strong"
+	}			
+	1129.01.01 = {
+		add_trait="tough_soldier"
+		add_trait="inspiring_leader"
+		add_trait="heavy_infantry_leader"
+		add_trait="aggressive_leader"
+		add_trait="proud"
+		add_trait="patient"
+		add_trait="diligent"
+		add_trait="brave"
+		add_trait="just"
+		give_job_title = job_marshal #Knight Commander of Caelin
+	}
+	
+	#Let Hassar + Madelyn get away
+	1143.01.01 = { 
+		#give_job_title =0			
+		effect = {
+			d_caelin = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		} 
+	}
+	#Spent 6 months in jail
+	1143.07.01 = { 		
+		effect = { 
+			prisoner = no
+			#imprison=0  
+		} 
+	}
+	
+	#Let's say he retired after that to become a farmer
+	1143.08.01 = { 
+		add_trait="gardener"
+		employer=0
+	}
+	
+	#TODO: Lyn-specific events here?
+	
+	1161.01.01 = {
+		#"Wallace intended to return to Caelin, but he got lost and ended up in Ilia."
+		employer=0
+	}	
+	1200.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+159 = {
+	name="Eagler" 
+	dynasty=114
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1118.01.01={
+		birth=yes
+	} 		
+	1118.01.01 = {
+		employer=109 #Marquess Hausen of Caelin
+	}			
+	1132.01.01 = {
+		add_trait="skilled_tactician"
+		add_trait="cavalry_leader"
+		add_trait="unyielding_leader"
+		add_trait="just"
+	}	
+	
+	1154.01.01 = { 
+		give_job_title = job_marshal #Knight Commander of Caelin
+	}
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+160 = {
+	name="Bool" #knight, sent by Lundgren to kill Lyn  
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1129.01.01={
+		birth=yes
+	} 		
+	1129.01.01 = {
+		employer=109 #Marquess Hausen of Caelin
+	}			
+	1143.01.01 = {
+		add_trait="misguided_warrior"
+		add_trait="arbitrary"
+		add_trait="deceitful"
+	}	
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+161 = {
+	name="Bauker" #knight, Commander of the Imperial Guard of Laus.   
+	dynasty=132
+	religion=elimine_church
+	culture=lycian
+	
+	1132.01.01={
+		birth=yes
+	} 		
+	1132.01.01 = {
+		employer=118 #Marquess Darin of Laus
+	}			
+	1146.01.01 = {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="defensive_leader"
+		add_trait="just"
+	}	
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+162 = {
+	name="Bernard" #general, Knight Commander of Laus.
+	dynasty=133   
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1119.01.01={
+		birth=yes
+	} 		
+	1133.01.01 = {
+		employer=118 #Marquess Darin of Laus
+	}			
+	1133.01.01 = {
+		add_trait="skilled_tactician"
+		add_trait="heavy_infantry_leader"
+		add_trait="unyielding_leader"
+		add_trait="just"
+	}	
+	
+	1134.01.01 = { 
+		give_job_title = job_marshal #Knight Commander of Laus
+	}
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+163 = {
+	name="Eubans" #paladin, merc leader from FE7 Ch 21 (Heath's boss)  
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1109.01.01={
+		birth=yes
+	} 		
+	
+	1123.01.01 = {
+		add_trait="skilled_tactician"
+		add_trait="cavalry_leader"
+		add_trait="aggressive_leader"
+		add_trait="flanker"
+		add_trait="cynical"
+		add_trait="arbitrary"
+		add_trait="brave"
+		add_trait="greedy"
+		add_trait="proud" #I live and breathe the air of war! I can't be beaten!
+		add_trait="diligent"
+	}	
+		
+	1133.1.1 = {
+		give_nickname="nick_the_fierce_eagle"
+	}
+	
+	# Really loyal to Darin for some reason
+	1150.01.01 = {
+		effect = {
+			d_laus = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 50
+					}
+				}
+			}	
+		}
+	}		
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+164 = {
+	name="Wagner" #shaman, treacherous retainer of Orun  
+	dynasty=123
+	religion=dark
+	culture=lycian
+	
+	1130.01.01={
+		birth=yes
+	} 				
+	
+	1144.01.01 = {
+		add_trait="intricate_webweaver"
+		add_trait="schemer"
+		add_trait="ambitious"
+		add_trait="arbitrary"
+		add_trait="deceitful"
+		add_trait="cynical"
+		add_trait="gregarious"
+		add_trait="proud"
+	}	
+	
+	1146.01.01 = { 
+		give_job_title = job_spymaster 
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+165 = {
+	name="Puzon" #mercenary. The one who attacks Merlinus
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1142.01.01={
+		birth=yes
+	} 		
+	
+	1156.01.01 = {
+		add_trait="misguided_warrior"
+		add_trait="light_foot_leader"
+		add_trait="flanker"
+		add_trait="arbitrary"
+		add_trait="greedy"
+	}	
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+166 = {
+	name="Groznyi" #Brigand. Chapter 11E boss.
+	
+	religion=raider_pagan
+	culture=lycian
+	
+	1125.01.01={
+		birth=yes
+	} 		
+	
+	1139.01.01 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="greedy"
+		add_trait="proud"
+	}	
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+167 = {
+	name="Damas" #Fighter, leader of Bolm Mountain Bandits. Chapter 1 boss of FE6.
+	
+	religion=raider_pagan
+	culture=lycian
+	
+	1155.01.01={
+		birth=yes
+	} 		
+	
+	1169.01.01 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="greedy"
+		add_trait="proud"
+	}	
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+168 = {
+	name="Yogi" #knight, sent by Lundgren to kill Lyn. The one with the ballista.  
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1128.01.01={
+		birth=yes
+	} 		
+	1128.01.01 = {
+		employer=109 #Marquess Hausen of Caelin
+	}			
+	1142.01.01 = {
+		add_trait="misguided_warrior"
+		add_trait="proud"
+	}	
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+169 = {
+	name="Dory" #Brigand. Chapter 5 boss.
+	
+	religion=raider_pagan
+	culture=lycian
+	
+	1144.01.01={
+		birth=yes
+	} 	
+	add_trait="strong"	#or is it just the Killer Axe?
+	
+	1158.01.01 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="greedy"
+		add_trait="proud"
+		add_trait="scarred"
+	}	
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+170 = {
+	name="Legance" #general. Leader of the Ostian Revolt in FE6
+	dynasty=120
+	religion=elimine_church
+	culture=lycian
+	
+	1151.01.01={
+		birth=yes
+	} 		
+	#1151.01.01 = { 
+		#employer=103 #Uther	
+	#}
+	1165.01.01 = { 
+		add_trait="flamboyant_schemer"
+		add_trait="schemer"
+		add_trait="defensive_leader"
+		add_trait="heavy_infantry_leader"
+		add_trait="arbitrary"
+		add_trait="deceitful"	
+		add_trait="proud"
+		add_trait="greedy"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+171 = {
+	name="Debias" #knight. Legance's lieutenant.
+	dynasty=121
+	religion=elimine_church
+	culture=lycian
+	
+	1137.01.01={
+		birth=yes
+	} 		
+	#1137.01.01 = { 
+		#employer=103 #Uther	
+	#}
+	1151.01.01 = { 
+		add_trait="misguided_warrior"
+		add_trait="defensive_leader"
+		add_trait="heavy_infantry_leader"
+		add_trait="arbitrary"
+		add_trait="craven"
+	}
+	
+	# Loyal to Legance
+	1151.01.01 = {
+		effect = {
+			c_aperlae = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 50
+					}
+				}
+			}	
+		}
+	}	
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+173 = {
+	name="Zagan" #A Caelin bandit. Fights for pleasure more than money.
+	
+	religion=raider_pagan
+	culture=lycian
+	
+	trait="class_fighter"
+	trait="thrifty_clerk"
+	trait="greedy"
+	trait="cruel"
+	trait="proud"
+	1130.01.01={
+		birth=yes
+	} 	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+199 = {
+	name="Georg" #Berserker. Guards the Durandal cave in FE7.
+	#TODO: handle ghost status better
+	religion=elimine_church
+	culture=lycian
+	
+	160.01.01={
+		birth=yes
+	} 	
+	add_trait="strong"
+	174.01.01 = { 
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="unyielding_leader"
+		effect={
+		add_friend=101 #Roland 
+		}
+		#employer=101
+	}
+	
+	200.01.01 = { 
+		religion=guardian
+	}
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+#Hasha no Tsurugi manga characters. Needs work.
+174 = {
+	name="Ranward" #Marquess of Worde. Bishop?
+	dynasty=116
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=176
+	1151.01.01={
+		birth=yes
+	} 		
+	1164.02.01 = { 
+		add_trait="brave"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_murder
+			#killer=? #That random Bernese fire mage
+		}
+	}
+}
+175 = {
+	name="Rebecca" #Tiena is Ranward's neice, so he needs a sibling
+	female=yes
+	dynasty=116
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=176
+	1148.01.01={
+		birth=yes
+	} 		
+	1200.01.01={
+		death=yes
+	} 	 	
+}
+176 = {
+	name="Wilson" #non-canon, father for Ranward
+	dynasty=116
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1120.01.01={
+		birth=yes
+	} 		
+	1170.01.01={
+		death=yes
+	} 	 	
+}
+
+177 = {
+	name="Henning"  #non-canon, father for Tiena
+	dynasty=112
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1140.01.01={
+		birth=yes
+	} 		
+	1164.01.01 = {
+		add_spouse=175 
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=403 #Zephiel? 
+		}
+	}
+}
+
+178 = {
+	name="Tiena" #Tina? 
+	female=yes
+	dynasty=112
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=177
+	mother=175
+	1164.01.01={
+		birth=yes
+	} 		
+	1178.01.01 = { 
+		add_trait="detached_priest" # Staff user, but didn't really like learning it.
+		add_trait="proud"
+		add_trait="wroth"
+	}
+	1220.01.01={
+		death=yes
+	} 	 	
+}
+
+179 = {
+	name="Celdia" #pegasus knight. Princess of Ragna
+	female=yes
+	dynasty=117
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=180 #Dovanon
+	#mother=? #Ilian, died when C was a child
+	1165.01.01={
+		birth=yes
+	} 		
+	
+	1179.01.01 = { 
+		add_trait="misguided_warrior"
+		add_trait="proud"
+		add_trait="envious"
+	}
+	
+	1220.01.01={
+		death=yes
+	} 	 	
+}
+
+180 = {
+	name="Dovanon" #Lord of Ragna
+	dynasty=117
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1147.01.01={
+		birth=yes
+	} 	
+	1197.01.01={
+		death=yes
+	} 	 	
+}
+
+181 = {
+	name="Magough" 
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1130.01.01={
+		birth=yes
+	} 		
+	add_trait="strong"
+	1144.01.01 = { 
+		add_trait="scholar"
+		add_trait="wroth"
+		add_trait="just"
+	}
+	
+	1181.1.1= {
+		add_trait="wounded"
+	}	
+	
+	1200.01.01={
+		death=yes
+	} 	 
+}
+
+182 = {
+	name="Al"
+	dynasty=118
+	religion=elimine_church
+	culture=lycian
+	
+	#father=182 #Magough
+	real_father=401 #Hartmut
+	mother=921 #Melitha
+	1165.01.01={
+		birth=yes
+	} 		
+		add_trait="slow" 
+	1179.01.01 = { 
+		add_trait="misguided_warrior"
+		add_trait="inspiring_leader"
+		add_trait="light_foot_leader"
+		add_trait="bastard"
+		add_trait="proud"
+		add_trait="brave"
+		add_trait="just"
+		add_trait="diligent"
+		add_trait="kind"
+	}
+	
+	1183.01.01 = {
+		add_matrilineal_spouse=178 #Tiena
+	}
+	
+	1220.01.01={
+		death=yes
+	} 	 	
+}
+
+
+183 = {
+	name="Youzen" #minister of Worde. Sold the castle out to Bern.
+	dynasty=124
+	religion=elimine_church
+	culture=lycian
+	
+	1135.01.01={
+		birth=yes
+	} 		
+	
+	#1135.01.01 = {
+		#employer=174 #Marquess Worde
+	#}			
+	
+	1149.01.01 = {
+		add_trait="intricate_webweaver"
+		add_trait="schemer"
+		add_trait="ambitious"
+		add_trait="arbitrary"
+		add_trait="deceitful"
+		add_trait="cynical"
+		add_trait="cruel"
+		add_trait="lustful"
+		add_trait="proud"
+	}	
+	
+	1151.01.01 = { 
+		give_job_title = job_chancellor
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_murder
+			#killer=? #That random Bernese fire mage
+		}
+	}
+	disallow_random_traits="yes" 
+}
+
+184 = {
+	name="Danan" #solider of Worde. Mole for Youzen. Moves to Ostia after the war, goes into business w/Danan.
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1163.01.01={
+		birth=yes
+	} 		
+	
+	1163.01.01 = {
+		employer=174 #Marquess Worde
+	}			
+	
+	1177.01.01 = {
+		add_trait="misguided_warrior"
+		add_trait="craven"
+		add_trait="arbitrary"
+		add_trait="humble"
+	}		
+	
+	1180.02.01 = {
+		add_trait="deceitful"
+		add_trait="stressed"
+	}	
+	
+	1181.01.01 = {
+		remove_trait="deceitful"
+		remove_trait="stressed"
+		employer=104 #Lilina
+	}			
+	
+	1202.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+185 = {
+	name="Gant" #armor knight of Tania. Tiena's guard.
+	
+	religion=elimine_church
+	culture=lycian
+	
+	father=186 #Goldor
+	1161.01.01={
+		birth=yes
+	} 		
+		add_trait="strong"
+	
+	1161.01.01 = {
+		employer=177 #Marquess Tania
+	}		
+	
+	1172.01.01 = {
+		effect={
+		add_friend=178 #Tiena
+		}
+	}		
+	
+	1175.01.01 = {
+		add_trait="tough_soldier"
+		add_trait="gluttonous"
+		add_trait="just"
+		add_trait="humble"
+		
+		#loyal to Tiena
+	}	
+	
+	1181.01.01 = {
+		add_matrilineal_spouse=179 #Celdia
+		#they have 8 kids according to the epilogue.
+	}
+	
+	1202.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+186 = {
+	name="Goldor" #General. Commander of Tania's knights. Gant's father.
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1140.01.01={
+		birth=yes
+	} 		
+		add_trait="strong"
+	
+	1140.01.01 = {
+		employer=177 #Marquess Tania
+	}			
+	
+	1154.01.01 = {
+		add_trait="tough_soldier"
+		give_job_title = job_marshal
+		
+	}		
+	
+	1172.1.1= {
+		death = {
+			death_reason=death_murder
+			#killer= #bandit booby trap
+		}
+	} 
+}
+
+187 = {
+	name="Warren" #cavalier of Tania. Posed as a bandit after Bern invaded. Gant's friend.
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1162.01.01={
+		birth=yes
+	} 		
+	
+	1162.01.01 = {
+		employer=177 #Marquess Tania
+	}			
+	
+	1176.01.01 = {
+		add_trait="tough_soldier"
+		add_trait="gluttonous"
+		add_trait="just"
+		effect={
+		add_friend=185 #Gant
+		}
+	}		
+	
+	
+	1202.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+188 = {
+	name="Kruzard" #Mercenary. Merc for some anti-Lycia faction (Legance?). 
+	#Trying to get all the rebels in one army so the league proper can crush them and unify.
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1159.01.01={
+		birth=yes
+	} 		
+	
+	1173.01.01 = {
+		add_trait="tough_soldier"
+		add_trait="inspiring_leader"
+		add_trait="heavy_infantry_leader"
+		add_trait="ambitious"
+		add_trait="proud"
+		add_trait="just"
+		add_trait="cynical"
+	}		
+	1175.01.01 = {
+		add_spouse=189
+	}		
+	
+	1179.06.01 = {
+		#he's married and has a pregnant wife as of FE6. Twin daughters in the epilogue.
+		effect = { 
+			spouse = { ROOT = { impregnate = PREV } } 			
+		}
+	}	
+	
+	1180.01.01 = {
+		add_trait="depressed"
+	}	
+	
+	1181.01.01 = {
+		add_trait="wounded"
+		remove_trait="depressed"
+		
+		#banished by Eliwood
+	}	
+	
+	1209.01.01={
+		death=yes
+	} 	 
+	disallow_random_traits="yes" 
+}
+
+189 = {
+	name="Madelyn" #wife for Kruzard
+	female=yes
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1159.01.01={
+		birth=yes
+	} 		
+
+	1173.01.01 = {
+		add_trait="kind"
+		add_trait="just"
+	}	
+	
+	1209.01.01={
+		death=yes
+	} 	 
+}
+
+190 = {
+	name="Puzon" #lord of a small chunk of land near Ostia. Backer of Kruzard's rebels
+	dynasty=119
+	religion=elimine_church
+	culture=lycian
+	
+	1150.01.01={
+		birth=yes
+	} 		
+	1164.01.01 = { 
+		add_trait="ambitious"
+		add_trait="deceitful"
+		add_trait="arbitrary"
+		add_trait="envious"
+		add_trait="proud"
+		add_trait="craven"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_murder
+			killer=188 #Kruzard
+		}
+	}	
+}
+
+191 = {
+	name="Astore" #non-canon, father for Isadora.
+	dynasty=115
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1118.01.01={
+		birth=yes
+	} 		
+	1198.01.01={
+		death=yes
+	} 	
+}
+
+193 = {
+	name="Lundgren" #non-canon. for Santaruz to continue the line after Helman bites it
+	dynasty=107
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1073.01.01={
+		birth=yes
+	} 		
+
+	1125.01.01 = { 
+		death = yes
+	}
+}
+
+194 = {
+	name="Yogi" #non-canon. for Santaruz to continue the line after Helman bites it
+	dynasty=107
+	
+	religion=elimine_church
+	culture=lycian
+	father=193
+	1125.01.01={
+		birth=yes
+	} 		
+	1200.01.01 = { 
+		death = yes
+	}
+}
+
+195 = {
+	name="Renault" #non-canon, Marquess for Ryerde
+	dynasty=129
+	
+	religion=elimine_church
+	culture=lycian
+	1149.01.01={
+		birth=yes
+	} 		
+	1200.01.01 = { 
+		death = yes
+	}
+}
+
+196 = {
+	name="Madelyn" #non-canon, Marquess for Tuscana
+	female=yes
+	dynasty=111
+	
+	religion=elimine_church
+	culture=lycian
+	1140.01.01={
+		birth=yes
+	} 		
+	1195.01.01 = { 
+		death = yes
+	}
+}
+
+197 = {
+	name="Kruzard" #non-canon, Marquess for Kathalet
+	dynasty=109
+	
+	religion=elimine_church
+	culture=lycian
+	1150.01.01={
+		birth=yes
+	} 		
+	1230.01.01 = { 
+		death = yes
+	}
+}
+
+198 = {
+	name="Harken" #non-canon, father for Lundgren/Hausen
+	
+	religion=elimine_church
+	culture=lycian
+	dynasty=103
+	
+	1050.01.01={
+		birth=yes
+	} 	
+	1110.01.01 = { 
+		death = yes
+	}
+}
+
+199={
+	name="Lyndis"
+	female=yes
+	
+	culture=lycian
+	1100.01.01 = { 
+		birth=yes 
+	}
+	1140.01.01 = { 
+		add_trait="ill"
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+#Random shmucks to rule the smoking ruins of Cornwell.
+#May not need these now that it's vassal to the Lycian League...
+1000000000 = {
+	name="Bath" 
+	dynasty=125
+	
+	religion=elimine_church
+	culture=lycian
+	1132.01.01={
+		birth=yes
+	} 		
+	1196.01.01 = { 
+		death = yes
+	}
+}
+1000000001 = {
+	name="Eubans" 
+	dynasty=126
+	
+	religion=elimine_church
+	culture=lycian
+	1133.01.01={
+		birth=yes
+	} 		
+	1206.01.01 = { 
+		death = yes
+	}
+}
+1000000002 = {
+	name="Henning" 
+	dynasty=127
+	
+	religion=elimine_church
+	culture=lycian
+	1131.01.01={
+		birth=yes
+	} 		
+	1210.01.01 = { 
+		death = yes
+	}
+}
+1000000003 = {
+	name="Wagner" 
+	dynasty=128
+	
+	religion=elimine_church
+	culture=lycian
+	1135.01.01={
+		birth=yes
+	} 		
+	1199.01.01 = { 
+		death = yes
+	}
+}
+1000000004 = {
+	name="Goldor" 
+	dynasty=129
+	
+	religion=elimine_church
+	culture=lycian
+	1124.01.01={
+		birth=yes
+	} 		
+	1195.01.01 = { 
+		death = yes
+	}
+}
+1000000005 = {
+	name="Dory" 
+	dynasty=130
+	
+	religion=elimine_church
+	culture=lycian
+	1127.01.01={
+		birth=yes
+	} 		
+	1201.01.01 = { 
+		death = yes
+	}
+}
+1000000006 = {
+	name="Al" 
+	dynasty=131
+	
+	religion=elimine_church
+	culture=lycian
+	1141.01.01={
+		birth=yes
+	} 		
+	1209.01.01 = { 
+		death = yes
+	}
+}
+#Choma
+#Feudal noble, EC#
+1000000007 = {
+	name="Ceslin" 
+	dynasty=174
+	
+	religion=elimine_church
+	culture=lycian
+	1128.01.01={
+		birth=yes
+	} 		
+	1189.01.01 = { 
+		death = yes
+	}
+}
+
+#Mugla
+#Lycian bandit chief#
+1000000008 = {
+	name="Mainard" 
+	dynasty=175
+	
+	religion=raider_pagan
+	culture=lycian
+	1140.01.01={
+		birth=yes
+	} 		
+	1200.01.01 = { 
+		death = yes
+	}
+}
+
+#Comba
+#Acaliss
+#Lycian Bandit chief#
+1000000009 = {
+	name="Adalgrim" 
+	dynasty=176
+	
+	religion=raider_pagan
+	culture=lycian
+	1143.01.01={
+		birth=yes
+	} 		
+	1194.01.01 = { 
+		death = yes
+	}
+}
+
+#Nisa
+#Cibyra
+#Lycian Bandit chief#
+1000000010 = {
+	name="Creat" 
+	dynasty=179
+	
+	religion=raider_pagan
+	culture=lycian
+	1142.01.01={
+		birth=yes
+	} 		
+	1192.01.01 = { 
+		death = yes
+	}
+}

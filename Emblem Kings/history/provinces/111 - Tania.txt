@@ -1,0 +1,17 @@
+# c_tania
+
+# County Title
+title = c_tania
+
+# Settlements
+max_settlements = 3
+
+b_castle_tania = castle
+b_tania = city
+b_tania_2 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

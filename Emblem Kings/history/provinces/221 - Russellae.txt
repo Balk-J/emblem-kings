@@ -1,0 +1,17 @@
+# c_russellae
+
+# County Title
+title = c_russellae
+
+# Settlements
+max_settlements = 3
+
+b_russellae = castle
+b_russellae_2 = temple
+b_russellae_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

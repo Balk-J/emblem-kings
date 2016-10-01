@@ -1,0 +1,16 @@
+# c_atria
+
+# County Title
+title = c_atria
+
+# Settlements
+max_settlements = 2
+
+b_atria = tribal
+b_atria_2 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

@@ -1,0 +1,651 @@
+# Canon
+201={
+	name="of Etruria"
+	culture="etrurian"
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 6
+			color = 12
+		}
+	}
+}
+
+202={
+	name="Aquleia"
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 2
+            emblem = 0
+            color = 6
+            color = 3
+            color = 12
+        }
+    }	
+}
+
+203={
+	name="Reglay"
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 8
+            emblem = 0
+            color = 9
+            color = 6
+            color = 12
+        }
+    }	
+}
+
+204={
+	name="Caerleon" #
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 6
+            emblem = 0
+            color = 1
+            color = 11
+            color = 4
+        }
+    }
+}
+
+205={
+	name="Ceri" #For Louise - barony
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 16
+            emblem = 0
+            color = 1
+            color = 6
+            color = 4
+        }
+    }
+}
+
+206={
+	name="Siene" #For Roartz 
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 9
+            emblem = 0
+            color = 0
+            color = 10
+            color = 8
+        }
+    }
+}
+
+207={
+	name="Felathri" #For Cecilia
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 43
+            emblem = 0
+            color = 1
+            color = 6
+            color = 2
+        }
+    }
+}
+
+208={
+	name="Arritim" #For Douglas
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 17
+            emblem = 0
+            color = 0
+            color = 6
+            color = 2
+        }
+    }
+}
+
+209={
+	name="Clevsin" #For Percival
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 43
+            emblem = 0
+            color = 2
+            color = 5
+            color = 0
+        }
+    }
+}
+
+210={
+	name="Tarchna" #For Arcard
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 40
+            emblem = 0
+            color = 2
+            color = 6
+            color = 0
+        }
+    }
+}
+
+211={
+	name="Alesia" #For a random duke... Roberts?
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 18
+            emblem = 0
+            color = 12
+            color = 0
+            color = 6
+        }
+    }
+}
+
+212={
+	name="Bolsena" #For Morgan
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 2
+            emblem = 0
+            color = 8
+            color = 4
+            color = 8
+        }
+    }
+}
+
+213={
+	name="Satria" #For Orlo
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 16
+            emblem = 0
+            color = 1
+            color = 9
+            color = 0
+        }
+    }
+}
+
+214={
+	name="Muralto" #For Nord
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 3
+            emblem = 0
+            color = 8
+            color = 4
+            color = 5
+        }
+    }
+}
+
+215={
+	name="Tarkina" #For Galdes
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 28
+            emblem = 0
+            color = 13
+            color = 11
+            color = 7
+        }
+    }
+}
+
+216={
+	name="Velkha" #For Carls
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 40
+            emblem = 0
+            color = 6
+            color = 11
+            color = 7
+        }
+    }
+}
+
+217={
+	name="Tarracina" #For Gol
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 4
+            emblem = 0
+            color = 11
+            color = 5
+            color = 4
+        }
+    }
+}
+
+218={
+	name="Caisra" 
+	culture="etrurian"
+	    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 41
+            emblem = 0
+            color = 0
+            color = 3
+            color = 2
+        }
+    }
+}
+
+219={
+	name="Berua" # for Serra 
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 1
+            emblem = 0
+            color = 6
+            color = 1
+            color = 2
+        }
+    }
+}
+
+220={
+	name="of Aquleia"
+	culture="etrurian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 2
+            emblem = 0
+            color = 6
+            color = 3
+            color = 12
+        }
+    }	
+}
+
+221={
+	name="of Tournemire"
+	culture="etrurian"	
+}
+
+222={
+	name="of Craon"
+	culture="etrurian"	
+}
+
+
+223={
+	name="Tenque" # for Zinque
+	culture="etrurian"
+	coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 38
+            emblem = 0
+            color = 11
+            color = 12
+            color = 4
+        }
+    }
+}
+224={
+	name="of Archiac"
+	culture="etrurian"
+}
+225={
+	name="Mercadier"
+	culture="etrurian"
+}
+226={
+	name="Fournier"
+	culture="etrurian"
+}
+227={
+	name="Chamillart"
+	culture="etrurian"
+}
+228={
+	name="Scarponnois"
+	culture="etrurian"
+}
+229={
+	name="Barrois"
+	culture="etrurian"
+}
+230={
+	name="of Dros"
+	culture="etrurian"
+}
+231={
+	name="of Bage"
+	culture="etrurian"
+}
+232={
+	name="of Vitry"
+	culture="etrurian"
+}
+233={
+	name="of Gironde"
+	culture="etrurian"
+}
+234={
+	name="of Éolienne"
+	culture="etrurian"
+}
+235={
+	name="of Bessa"
+	culture="etrurian"
+}
+236={
+	name="of Ramla"
+	culture="etrurian"
+}
+237={
+	name="of Ibelin"
+	culture="etrurian"
+}
+238={
+	name="of Cleriuex"
+	culture="etrurian"
+}
+239={
+	name="of Valpergue"
+	culture="etrurian"
+}
+240={
+	name="of Cuiseaux"
+	culture="etrurian"
+}
+241={
+	name="of Vaudemont"
+	culture="etrurian"
+}
+242={
+	name="of Vendome"
+	culture="etrurian"
+}
+243={
+	name="of Namur"
+	culture="etrurian"
+}
+244={
+	name="of Perche"
+	culture="etrurian"
+}
+245={
+	name="of Laval"
+	culture="etrurian"
+}
+246={
+	name="of Salins"
+	culture="etrurian"
+}
+247={
+	name="Grenier"
+	culture="etrurian"
+}
+248={
+	name="of Barthe"
+	culture="etrurian"
+}
+249={
+	name="of Fezensac"
+	culture="etrurian"
+}
+250={
+	name="of Batarnay"
+	culture="etrurian"
+}
+251={
+	name="of Bellegarde"
+	culture="etrurian"
+}
+252={
+	name="of Albemarle"
+	culture="etrurian"
+}
+253={
+	name="of Verre"
+	culture="etrurian"
+}
+254={
+	name="of Mellent"
+	culture="etrurian"
+}
+255={
+	name="of Baalun"
+	culture="etrurian"
+}
+256={
+	name="of Vernon"
+	culture="etrurian"
+}
+257={
+	name="Nicolay"
+	culture="etrurian"
+}
+258={
+	name="of Glane"
+	culture="etrurian"
+}
+259={
+	name="of Nimes"
+	culture="etrurian"
+}
+260={
+	name="of Trainel"
+	culture="etrurian"
+}
+261={
+	name="of Hainault"
+	culture="etrurian"
+}
+262={
+	name="of Montaigu"
+	culture="etrurian"
+}
+263={
+	name="of Benserade"
+	culture="etrurian"
+}
+264={
+	name="of Harcourt"
+	culture="etrurian"
+}
+265={
+	name="of Soissons"
+	culture="etrurian"
+}
+266={
+	name="of Lagery"
+	culture="etrurian"
+}
+267={
+	name="of Marash"
+	culture="etrurian"
+}
+268={
+	name="of Alamant"
+	culture="etrurian"
+}
+269={
+	name="of Karditsa"
+	culture="etrurian"
+}
+270={
+	name="Bontemps"
+	culture="etrurian"
+}
+271={
+	name="Carpenel"
+	culture="etrurian"
+}
+272={
+	name="of Talmont"
+	culture="etrurian"
+}
+273={
+	name="Fergant"
+	culture="etrurian"
+}
+274={
+	name="Emenon"
+	culture="etrurian"
+}
+275={
+	name="of Oloron"
+	culture="etrurian"
+}
+276={
+	name="of Mortemart"
+	culture="etrurian"
+}
+277={
+	name="of Gramont"
+	culture="etrurian"
+}
+278={
+	name="of Caumont"
+	culture="etrurian"
+}
+279={
+	name="of Serrant"
+	culture="etrurian"
+}
+280={
+	name="of Martel"
+	culture="etrurian"
+}
+281={
+	name="of Arques"
+	culture="etrurian"
+}
+282={
+	name="of Riencourt"
+	culture="etrurian"
+}
+283={
+	name="of Matignon"
+	culture="norman"
+}
+284={
+	name="of Menthon"
+	culture="etrurian"
+}
+285={
+	name="of Abzac"
+	culture="etrurian"
+}
+286={
+	name="Chabot"
+	culture="etrurian"
+}
+287={
+	name="of Hesdin"
+	culture="etrurian"
+}
+288={
+	name="of Clissa"
+	culture="etrurian"
+}
+289={
+	name="of Stromoncourt"
+	culture="etrurian"
+}
+290={
+	name="of Voisins"
+	culture="etrurian"
+}
+291={
+	name="of Boves"
+	culture="etrurian"
+}
+292={
+	name="of Astarac"
+	culture="etrurian"
+}
+293={
+	name="of Gontaut"
+	culture="etrurian"
+}
+294={
+	name="of Barbaira"
+	culture="etrurian"
+}
+295={
+	name="of Laurac"
+	culture="etrurian"
+}
+296={
+	name="of Saissac"
+	culture="etrurian"
+}
+297={
+	name="Ledur"
+	culture="etrurian"
+}
+298={
+	name="of Trith"
+	culture="etrurian"
+}
+299={
+	name="of Apremont"
+	culture="etrurian"
+}

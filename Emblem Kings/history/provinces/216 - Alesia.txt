@@ -1,0 +1,19 @@
+# c_alesia
+
+# County Title
+title = c_alesia
+
+# Settlements
+max_settlements = 5
+
+b_castle_alesia = castle
+b_alesia = city
+b_pherusina = city
+#b_velimachi = temple
+#b_nymfasia = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

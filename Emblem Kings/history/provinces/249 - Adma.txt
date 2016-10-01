@@ -1,0 +1,17 @@
+# c_adma
+
+# County Title
+title = c_adma
+
+# Settlements
+max_settlements = 3
+
+b_adma = castle
+b_adma_2 = city
+b_adma_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

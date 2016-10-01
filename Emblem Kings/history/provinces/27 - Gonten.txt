@@ -1,0 +1,18 @@
+# c_gonten
+
+# County Title
+title = c_gonten
+
+# Settlements
+max_settlements = 4
+
+b_gonten = castle
+b_gonten_2 = temple
+b_gonten_3 = city
+#b_liestal = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

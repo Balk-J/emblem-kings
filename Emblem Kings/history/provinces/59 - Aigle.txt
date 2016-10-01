@@ -1,0 +1,16 @@
+# c_aigle
+
+# County Title
+title = c_aigle
+
+# Settlements
+max_settlements = 2
+
+b_aigle = tribal
+#b_aigle_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

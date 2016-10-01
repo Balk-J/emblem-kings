@@ -1,0 +1,17 @@
+# c_naryn
+
+# County Title
+title = c_naryn
+
+# Settlements
+max_settlements = 3
+
+b_naryn = tribal
+#b_naryn_2 = temple
+#b_naryn_3 = city
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

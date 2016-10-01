@@ -1,0 +1,17 @@
+# c_arycanda
+
+# County Title
+title = c_arycanda
+
+# Settlements
+max_settlements = 3
+
+b_arycanda = castle
+b_arycanda_2 = city
+b_arycanda_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

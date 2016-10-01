@@ -1,0 +1,487 @@
+# Canon
+601={
+	name="of Nabata"
+	culture="nabatan"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 3
+            emblem = 0
+            color = 9
+            color = 2
+            color = 6
+        }
+    }	
+}
+602={
+	can_appear=no
+	name="of Valor"
+	culture="nabatan"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 5
+            emblem = 0
+            color = 5
+            color = 11
+            color = 4
+        }
+    }
+}    
+603={
+	can_appear=no
+	name="Hawkeye"
+	culture="nabatan"
+    coat_of_arms = {
+		religion="raider_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 4
+            emblem = 0
+            color = 0
+            color = 11
+            color = 9
+        }
+    }	
+}    
+# Non-canon
+604={
+	name="of Vytina" # for Paul
+	culture="nabatan"
+	religion="raider_pagan"
+}  
+605={
+	name="of Lasta" # for Jasmine
+	culture="nabatan"
+	religion="raider_pagan"
+}  
+606={
+	name="of Tegea" # for Maggie
+	culture="nabatan"
+	religion="raider_pagan"
+}  
+607={
+	name="of Sagkas" # for Rose
+	culture="nabatan"
+	religion="raider_pagan"
+}   
+#Patricians 
+608={
+	can_appear=no
+	name="Aretas"
+	culture="nabatan"
+} 
+609={
+	can_appear=no
+	name="Rabbel"
+	culture="nabatan"
+} 
+610={
+	can_appear=no
+	name="Obodas"
+	culture="nabatan"
+} 
+611={
+	can_appear=no
+	name="Malichus"
+	culture="nabatan"
+} 
+612={
+	can_appear=no
+	name="Huldo"
+	culture="nabatan"
+} 
+613={
+	can_appear=no
+	name="Sagilat"
+	culture="nabatan"
+} 
+614={
+	can_appear=no
+	name="Gamilat"
+	culture="nabatan"
+} 
+#Andalusian
+615=
+{
+	name="Mutamin"
+	culture="nabatan"
+}
+616=
+{
+	name="Huddid"
+	culture="nabatan"
+}
+617=
+{
+	name="Amirid"
+	culture="nabatan"
+}
+618=
+{
+	name="Matiyid"
+	culture="nabatan"
+}
+619=
+{
+	name="Razinid"
+	culture="nabatan"
+}
+620=
+{
+	name="Aglabid"
+	culture="nabatan"
+}
+621=
+{
+	name="Hakamid"
+	culture="nabatan"
+}
+622=
+{
+	name="Mozzainid"
+	culture="nabatan"
+}
+623=
+{
+	name="Hayyid"
+	culture="nabatan"
+}
+624=
+{
+	name="Tifilwitid"
+	culture="nabatan"
+}
+625=
+{
+	name="Tuyyibid"
+	culture="nabatan"
+}
+626=
+{
+	name="Yahaffid"
+	culture="nabatan"
+}
+627=
+{
+	name="Jyadid"
+	culture="nabatan"
+}
+628=
+{
+	name="Wazirid"
+	culture="nabatan"
+}
+629=
+{
+	name="Yusufid"
+	culture="nabatan"
+}
+630=
+{
+	name="Ismailid"
+	culture="nabatan"
+}
+631=
+{
+	name="Ammarid"
+	culture="nabatan"
+}
+632=
+{
+	name="Yasavid"
+	culture="nabatan"
+}
+634=
+{
+	name="Rasiqid"
+	culture="nabatan"
+}
+635=
+{
+	name="Farayid"
+	culture="nabatan"
+}
+636=
+{
+	name="Abu-Ya'farid"
+	culture="nabatan"
+}
+637=
+{
+	name="Mardanisid"
+	culture="nabatan"
+}
+638=
+{
+	name="Musavid"
+	culture="nabatan"
+}
+639=
+{
+	name="Mursiyid"
+	culture="nabatan"
+}
+640=
+{
+	name="Abdallahvid"
+	culture="nabatan"
+}
+641=
+{
+	name="banu Fätima"
+	culture="nabatan"
+}
+642=
+{
+	name="Laridid"
+	culture="nabatan"
+}
+643=
+{
+	name="Ishbiliyid"
+	culture="nabatan"
+}
+644=
+{
+	name="Qunkid"
+	culture="nabatan"
+}
+645=
+{
+	name="Qaturbid"
+	culture="nabatan"
+}
+646=
+{
+	name="Balansiyyid"
+	culture="nabatan"
+}
+647=
+{
+	name="Maymunid"
+	culture="nabatan"
+}
+648=
+{
+	name="Ramimid"
+	culture="nabatan"
+}
+649=
+{
+	name="Adhavid"
+	culture="nabatan"
+}
+650=
+{
+	name="Hassunid"
+	culture="nabatan"
+}
+651=
+{
+	name="Malaqid"
+	culture="nabatan"
+}
+652=
+{
+	name="Gharnatid"
+	culture="nabatan"
+}
+653=
+{
+	name="Hishamid"
+	culture="nabatan"
+}
+654=
+{
+	name="Mahfuzid"
+	culture="nabatan"
+}
+655=
+{
+	name="Ahlidid"
+	culture="nabatan"
+}
+656=
+{
+	name="Zannunid"
+	culture="nabatan"
+}
+657=
+{
+	name="Mahdid"
+	culture="nabatan"
+}
+658=
+{
+	name="Sa'did"
+	culture="nabatan"
+}
+659=
+{
+	name="Wadalqavirid"
+	culture="nabatan"
+}
+660=
+{
+	name="Qadirid"
+	culture="nabatan"
+}
+661=
+{
+	name="Hamdinid"
+	culture="nabatan"
+}
+662=
+{
+	name="Yakubid"
+	culture="nabatan"
+}
+663=
+{
+	name="Yassin"
+	culture="nabatan"
+}
+664=
+{
+	name="Aminid"
+	culture="nabatan"
+}
+665=
+{
+	name="Habibid"
+	culture="nabatan"
+}
+666=
+{
+	name="Muratid"
+	culture="nabatan"
+}
+667=
+{
+	name="Salmanid"
+	culture="nabatan"
+}
+668=
+{
+	name="Sumadid"
+	culture="nabatan"
+}
+669=
+{
+	name="Galbunid"
+	culture="nabatan"
+}
+670=
+{
+	name="Hafsunid"
+	culture="nabatan"
+}
+671=
+{
+	name="Qasid"
+	culture="nabatan"
+}
+672=
+{
+	name="Salimid"
+	culture="nabatan"
+}
+673=
+{
+	name="Hayyunid"
+	culture="nabatan"
+}
+674=
+{
+	name="Jarrazid"
+	culture="nabatan"
+}
+675=
+{
+	name="Burrunid"
+	culture="nabatan"
+}
+676=
+{
+	name="Zuhrid"
+	culture="nabatan"
+}
+677=
+{
+	name="Alkadid"
+	culture="nabatan"
+}
+678=
+{
+	name="Balawid"
+	culture="nabatan"
+}
+679=
+{
+	name="Namirid"
+	culture="nabatan"
+}
+680=
+{
+	name="Jalidid"
+	culture="nabatan"
+}
+681=
+{
+	name="Ubbaid"
+	culture="nabatan"
+}
+682=
+{
+	name="Galindid"
+	culture="nabatan"
+}
+683=
+{
+	name="Musavid"
+	culture="nabatan"
+}
+684=
+{
+	name="Yusufid"
+	culture="nabatan"
+}
+685=
+{
+	name="Abdelrahmanid"
+	culture="nabatan"
+}
+686=
+{
+	name="Qutalanid"
+	culture="nabatan"
+}
+687=
+{
+	name="Mutamin"
+	culture="nabatan"
+}
+688=
+{
+	name="Huddid"
+	culture="nabatan"
+}
+689=
+{
+	name="Amirid"
+	culture="nabatan"
+}
+690=
+{
+	name="Matiyid"
+	culture="nabatan"
+}
+691=
+{
+	name="Razinid"
+	culture="nabatan"
+}

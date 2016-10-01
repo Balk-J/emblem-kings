@@ -1,0 +1,16 @@
+# c_batken
+
+# County Title
+title = c_batken
+
+# Settlements
+max_settlements = 2
+
+b_batken = tribal
+#b_batken_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

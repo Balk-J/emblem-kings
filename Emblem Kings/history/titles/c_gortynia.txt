@@ -1,0 +1,19 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+1148.1.1={
+	holder=643 #filler
+}
+
+#180.1.1={
+	#liege=d_arcadia
+#}
+#1125.1.1={
+	#holder=603 #Hawkeye
+#}
+#1170.1.1={
+	#holder=604 #Igrene
+#}

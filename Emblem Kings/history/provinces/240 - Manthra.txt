@@ -1,0 +1,18 @@
+# c_manthra
+
+# County Title
+title = c_manthra
+
+# Settlements
+max_settlements = 4
+
+b_manthra = castle
+b_manthra_2 = temple
+b_manthra_3 = city
+#b_clevsi = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

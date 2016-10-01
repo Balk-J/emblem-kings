@@ -1,0 +1,18 @@
+# c_gefyra
+
+# County Title
+title = c_gefyra
+
+# Settlements
+max_settlements = 4
+
+b_gefyra = tribal
+b_gefyra_2 = temple
+#b_gefyra_3 = city
+#b_pyrris = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

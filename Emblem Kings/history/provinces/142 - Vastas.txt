@@ -1,0 +1,17 @@
+# c_vastas
+
+# County Title
+title = c_vastas
+
+# Settlements
+max_settlements = 3
+
+b_vastas = tribal
+#b_vastas_2 = temple
+#b_vastas_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

@@ -1,0 +1,17 @@
+# c_carrhae
+
+# County Title
+title = c_carrhae
+
+# Settlements
+max_settlements = 3
+
+b_carrhae = castle
+b_carrhae_2 = city
+b_carrhae_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

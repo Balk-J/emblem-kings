@@ -1,0 +1,164 @@
+901={
+	name="Naga"
+	female="yes"
+	culture=divine_dragon
+	religion=dragon_gods
+	disallow_random_traits="yes" 
+	trait="immortal"
+	1.1.1={
+		birth=yes
+	}
+	
+	#700.2.28={ 
+	#}
+		
+	680.2.28={
+		add_trait="disappeared"
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+902={
+	name="Tiki"
+	female="yes"
+	culture=divine_dragon
+	religion=divine_dragon
+	disallow_random_traits="yes" 
+	trait="immortal"
+	680.2.28={
+		birth=yes
+	}
+	
+	#700.2.28={ 
+	#}
+		
+	5680.2.28={
+		death=yes
+	}
+}
+
+919={
+	name="Idenn"
+	female="yes"
+	culture=divine_dragon
+	religion=dragon_gods
+	disallow_random_traits="yes" 
+	trait = "immortal"
+	
+	1.1.1={
+		birth=yes
+	}
+	180.1.1={
+		add_trait="class_manakete_female"
+		add_trait="demon_dragon"
+	}
+	
+	1175.1.1={
+		employer=403 #Zephiel
+		religion=dragon_liberation
+		culture=bernese
+	}
+	
+	3001.1.1={
+		death=yes
+	}
+}
+
+920={
+	name="Jahn"
+	dynasty=920
+	culture=fire_dragon
+	religion=dragon_gods#dragon_liberation
+	disallow_random_traits="yes" 
+	trait = "immortal"
+	1.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+921={
+	name="Melitha"
+	female="yes"
+	culture=divine_dragon
+	religion=dragon_gods
+	trait="immortal"
+	trait="kind"
+	trait="honest"
+	1.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_murder
+			#killer= #random Blackbone Clan member
+		}
+	}
+}
+
+922={
+	name="Ein" # War dragon
+	culture=war_dragon
+	religion=dragon_liberation
+	
+	trait="dragon"
+	trait="war_dragon"
+	trait="class_manakete"
+	
+	1160.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 # Roy
+		}
+	}
+}
+
+923={
+	name="Fae"
+	female="yes"
+	culture=divine_dragon
+	religion=guardian
+	disallow_random_traits="yes" 
+	trait="immortal"
+	trait="amateurish_plotter"
+	trait="kind"
+	trait="deceitful"
+	trait="trusting"
+	trait="gregarious"
+	845.1.1={
+		birth=yes
+		culture=nabatan
+	}
+	4204.1.1={
+		death=yes
+	}
+}
+
+924={
+	name="Aenir" #Nergal's wife, mother of Ninian and Nils
+	female="yes"
+	dynasty=304
+	culture=ice_dragon
+	religion=dragon_gods
+	trait="immortal"
+	trait="fair"
+	1.1.1={
+		birth=yes
+	}
+	180.1.1={
+		death = {
+			death_reason=death_murder
+			#killer= #died in the Scouring, probably
+		}
+	}
+}

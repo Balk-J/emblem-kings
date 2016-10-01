@@ -1,0 +1,16 @@
+# c_orcla
+
+# County Title
+title = c_orcla
+
+# Settlements
+max_settlements = 2
+
+b_orcla = castle
+#b_orcla_2 = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

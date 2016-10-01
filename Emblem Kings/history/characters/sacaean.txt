@@ -1,0 +1,1913 @@
+501 = {
+	name="Hanon"
+	dynasty=501
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_ranger"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="organizer"
+	trait="holy_warrior"
+	trait="brilliant_strategist"
+	trait="hunter"
+	162.01.01 = { 
+		birth=yes 
+	}
+	
+	180.01.01 = {
+		give_nickname="nick_the_divine_trooper"
+	}
+	
+	207.01.01 = { 
+		death=yes 
+	}
+}
+
+502 = {
+	name="Dayan"
+	dynasty=502
+    dna="bjddewajaam" 
+    properties="gl0bad00000000"
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="organizer"
+	trait="skilled_tactician"
+	trait="strategist"
+	trait="patient"
+	trait="just"
+	trait="zealous"
+	trait="brave"
+	1126.01.01 = { 
+		birth=yes 
+	}
+	
+	1146.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	1159.01.01 = {
+		give_nickname="nick_the_silver_wolf"
+	}
+	
+	1181.01.01 = { 
+		add_trait="sympathy_light"
+	}
+	1189.01.01 = { 
+		death=yes 
+	}
+}
+
+503 = {
+	name="Rath"
+	dynasty=502
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	father=502
+	disallow_random_traits="yes" 
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="skilled_tactician"
+	trait="adventurer"
+	
+	1141.01.01 = { 
+		birth=yes 
+	}
+	
+	#banished from his village before the age of four due to a prophecy
+	1144.01.01 = { 
+		employer=0 #???
+		add_trait="ill"
+		add_trait="depressed"
+		add_trait="shy"
+	}
+	
+	#Eventually winds up working for Araphen
+	1147.01.01 = { 
+		employer=117 # Marquess Araphen the jerk
+		remove_trait="ill"
+	}	
+	
+	1160.01.01 = { 
+		employer=161 # Leaves Araphen at the start of Eliwood's story. Winds up with Eubans.
+	}
+	
+	1161.01.01 = { 
+		employer=502 # Winds up back in Sacae.
+	}
+	
+	# Assuming he died in the Bern invasion, since he's nowhere to be found in FE6.
+	1180.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=406 #Brunnya
+		}
+	}
+}
+
+504 = {
+	name="Sue"
+	female=yes
+	dynasty=502
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	father=503
+	disallow_random_traits="yes" 
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="tough_soldier"
+	trait="shy"
+	trait="patient"
+	trait="humble"
+	trait="brave"
+	trait="zealous"
+	
+	1155.01.01 = { 
+		birth=yes 
+	}
+	
+	#leads Kutolah women+children out of Sacae. 
+	#Gets them all massacred by Bern.
+	#Wanders around Lycia and is rescued by Orun.
+	#imprisoned after Wagner's coup.
+	1180.02.01 = {
+		effect = {
+			d_thria = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	1181.1.1= {		
+		effect = { 
+			prisoner = no
+		} 
+	}	
+	1212.01.01 = { 
+		death=yes 
+	}
+}
+
+505 = {
+	name="Sin"
+	dynasty=502
+	# is from the Kutolah clan, and takes over after Dayan dies, so let's make him part of the ruling line. 
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="tough_soldier"
+	trait="shy"
+	trait="patient"
+	trait="just"
+	
+	1159.01.01 = { 
+		birth=yes 
+	}
+	
+	1159.01.01 = { 
+		employer=502 # Kutolah clan
+	}
+	
+	1180.02.01 = { 
+		employer=713 # Signed on with Scott (?!) while looking for Sue.
+	}
+	
+	1181.01.01 = { 
+		employer=502 # Kutolah clan
+	}
+	
+	1190.01.01 = {
+		give_nickname="nick_the_silver_wolf"
+	}
+	
+	1220.01.01 = { 
+		death=yes 
+	}
+}
+
+506 = {
+	name="Guy"
+	#dynasty=502
+	# is from the Kutolah clan
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_myrmidon"
+	trait="flat_terrain_leader"
+	trait="light_foot_leader"
+	trait="tough_soldier"
+	trait="kind"
+	trait="diligent" 
+	trait="brave"
+	trait="just"
+	trait="ambitious" 
+	trait="proud" 
+	
+	1142.01.01 = { 
+		birth=yes 
+	}
+	
+	1142.01.01 = { 
+		employer=502 # Kutolah clan
+	}
+	
+	1157.01.01 = { 
+		add_trait="adventurer"
+		employer=502 # leaves Kutolah to train
+	}
+	
+	1158.01.01 = { 
+		employer=109 # winds up in Caelin with no money or food. Saved by Matthew.
+		
+		effect = { 
+			add_friend=127 #Matthew
+		}
+	}
+	
+	1158.01.02 = { 
+		effect = {
+			any_friend = {
+				 reverse_opinion = {
+					modifier = opinion_grateful
+					who = ROOT
+					months = 120
+				}
+			}
+		}
+	}
+	
+	# broke again, hired by the Fang
+	1160.01.01 = { 
+		employer=425 # working for a Black Fang band under Boies (441)
+	}
+	
+	1160.03.01 = { 
+		employer=107 # Eliwood
+		
+		# Just when I've finally found some work, now I have to throw it all away. This is all your fault!
+		effect = { 
+			remove_friend=127 #Matthew
+		}
+	}
+	
+	1161.01.01 = { 
+		employer=502 # Kutolah clan
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+		piety=1000
+		give_nickname="nick_the_saint_of_swords"
+	}
+	
+	# he agreed to duel the Sword Demon one year after FE7, and was not seen in FE6, soooo...
+	1162.01.01 = { 
+		death = {
+			death_reason=death_duel
+			killer=508 #Karel 
+		}
+	}
+}
+
+507 = {
+	name="Rutger"
+	dynasty=504
+	# from Bulgar. Paternal grandmother and maternal grandfather are Sacaean. 
+	# the rest of his family is apparently Bernese (invading soldiers thought he was Bernese) although he seems to be culturally Sacaean.
+	
+	religion=divine_sky_pagan
+	culture=bernese
+	
+	disallow_random_traits="yes" 
+	trait="class_myrmidon"
+	trait="flat_terrain_leader"
+	trait="light_foot_leader"
+	trait="tough_soldier"
+	trait="cynical"
+	trait="shy"
+	trait="ambitious" 
+	trait="proud" 
+	trait="wroth" 
+	trait="diligent" 
+	trait="patient"
+	
+	# father's mother and mother's father were Sacaean
+	father=555
+	mother=552
+	1158.01.01 = { 
+		birth=yes 
+		culture=sacaean
+	}
+	
+	1180.01.01 = { 
+		effect={
+			k_bern = { 
+				holder_scope = {			
+					reverse_opinion = { who = ROOT modifier = opinion_revenge_seeker }						
+				}
+			}
+		}
+		add_trait="adventurer"
+		employer=119 # Erik
+	}
+	
+	1181.01.01 = { 
+		employer=0 # disappears
+	}
+	
+	1209.01.01 = { 
+		death = yes
+	}
+}
+
+508 = {
+	name="Karel" #the sword demon/saint
+	dynasty=507
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="quick"
+	trait="flat_terrain_leader"
+	trait="light_foot_leader"
+	trait="aggressive_leader"
+	trait="skilled_tactician"
+	trait="class_myrmidon"
+	trait="duelist"
+	trait="wroth"
+	trait="proud"
+	trait="arbitrary"
+	trait="cruel"
+	trait="brave"
+	trait="ambitious"
+	trait="diligent"
+	
+	father=511
+	mother=512
+	1139.01.01 = { 
+		birth=yes 
+	}
+	
+	# kills his entire clan minus Karla. There were six of them - although it's not clear how many are his immediate family, let's say the six are Karla, Karel, their parents and two more siblings.
+	# "Only one can wield the sword."
+	1156.01.01 = { 
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+		add_trait="lunatic"
+		add_trait="kinslayer"
+		give_nickname="nick_the_sword_demon"
+	}
+	
+	# Something happens between FE7 and FE7 to make his personality do a 180.
+	# What this is and when it happens is not stated.
+	# I'll pretend it has something to do with Karla's death.
+	1170.01.01 = { 
+		remove_trait="lunatic"
+		remove_trait="wroth"
+		remove_trait="proud"
+		remove_trait="arbitrary"
+		remove_trait="ambitious"
+		remove_trait="cruel"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="content"
+		add_trait="humble"
+		add_trait="patient"
+		add_trait="depressed" 
+		effect={
+			remove_nickname="nick_the_sword_demon"
+		}
+		give_nickname="nick_the_saint_of_swords"
+		piety=1000
+	}
+	
+	#TODO
+	# Moves to the island near the Dragon Temple
+	
+	1189.01.01 = { 
+		death=yes 
+	}
+}
+
+509 = {
+	name="Karla"
+	female=yes
+	dynasty=507
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_myrmidon_female"
+	trait="flat_terrain_leader"
+	trait="light_foot_leader"
+	trait="skilled_tactician"
+	trait="duelist"
+	trait="patient"
+	trait="shy"
+	trait="brave"
+	
+	father=511
+	mother=512
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1160.1.1= {
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+		give_nickname="nick_the_princess_of_swords"
+	}	
+	
+	#died of illness when Fir was very young. 
+	#This was before Karel had his attack of sanity.
+	1169.12.1= {
+		add_trait="ill"
+	}	
+	1170.01.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+510 = {
+	name="Fir" 
+	female=yes
+	dynasty=507
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_myrmidon_female"
+	trait="flat_terrain_leader"
+	trait="light_foot_leader"
+	trait="tough_soldier"
+	trait="duelist"
+	trait="trusting"
+	trait="diligent"
+	trait="just"
+	trait="ambitious"
+	trait="proud"
+	
+	mother=509 #Karla
+	father=703 #Bartre
+	1164.01.01 = { 
+		birth=yes 
+	}
+	
+	1180.01.01 = { 
+		add_trait="adventurer"
+		employer=713 # Signed on with Scott 
+	}
+	
+	1181.01.01 = { 
+		employer=0 # traveling again
+	}
+	
+	
+	1189.01.01 = { 
+		remove_trait="proud"
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+		give_nickname="nick_the_saint_of_swords"
+		piety=1000
+	}
+	
+	1219.01.01 = { 
+		death=yes 
+	}
+}
+
+511 = {
+	name="Khachi" #non-canon; father for Karel and Karla
+	dynasty=507
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="brilliant_strategist"
+	trait="class_myrmidon"
+	trait="duelist"
+	
+	1100.01.01 = { 
+		birth=yes 
+	}
+	
+	1120.01.01 = { 
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}
+	
+	1130.01.01 = { 
+		add_spouse=512
+	}
+	
+	# murdered by Karel
+	1156.01.01 = { 
+		death = {
+			death_reason=death_duel
+			killer=508 #Karel 
+		}
+	}
+}
+
+512 = {
+	name="Khulan" #non-canon; mother for Karel and Karla
+	female=yes
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="grey_eminence"
+	trait="class_myrmidon_female"
+	trait="duelist"
+	
+	1110.01.01 = { 
+		birth=yes 
+	}
+	
+	1130.01.01 = { 
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+	}
+	
+	# murdered by Karel
+	1156.01.01 = { 
+		death = {
+			death_reason=death_duel
+			killer=508 #Karel 
+		}
+	}
+}
+
+513 = {
+	name="Khabichi" #non-canon; brother for Karel and Karla
+	dynasty=507
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="elusive_shadow"
+	trait="class_myrmidon"
+	trait="duelist"
+	
+	father=511
+	mother=512
+	1132.01.01 = { 
+		birth=yes 
+	}
+	
+	1152.01.01 = { 
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}
+	
+	# murdered by Karel
+	1156.01.01 = { 
+		death = {
+			death_reason=death_murder
+			killer=107 #Karel 
+		}
+	}
+}
+
+514 = {
+	name="Khojin" #non-canon; sister for Karel and Karla
+	female=yes
+	dynasty=507
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="mastermind_theologian"
+	trait="class_myrmidon_female"
+	trait="duelist"
+	
+	father=511
+	mother=512
+	1134.01.01 = { 
+		birth=yes 
+	}
+	
+	1154.01.01 = { 
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+	}
+	
+	# murdered by Karel
+	1156.01.01 = { 
+		death = {
+			death_reason=death_duel
+			killer=508 #Karel 
+		}
+	}
+}
+
+515 = {
+	name="Hassar" 
+	dynasty=505
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	
+	1127.01.01 = { 
+		birth=yes 
+	}
+	
+	#Elopes with Madelyn
+	1143.01.01 = { 
+		add_spouse=110 # Madelyn
+	}
+	
+	1144.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	# Killed 6 months before Lyn's story
+	1158.6.1= {
+		death = {
+			death_reason=death_battle
+			killer=537 # Taliver bandits
+		}
+	}
+}
+
+516 = {
+	name="Uhai" 
+	dynasty=506
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="flanker"
+	trait="jungle_terrain_leader"
+	trait="tough_soldier"
+	trait="just"
+	trait="honest"
+	trait="proud"
+	trait="charitable"
+	
+	1131.01.01 = { 
+		birth=yes 
+	}
+	
+	1150.01.01 = { 
+		employer=425 # Brendan Reed
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+		give_nickname="nick_the_soaring_hawk"
+	}
+	
+	1159.06.01 = { 
+		add_trait="cynical"
+	}
+	
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+# Djute
+517 = {
+	name="Monke" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="flanker"
+	trait="intricate_webweaver"
+	trait="proud"
+	trait="deceitful"
+	trait="cynical"
+	trait="ambitious"
+	
+	father=524
+	1159.01.01 = { 
+		birth=yes 
+	}
+	
+	1177.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+518 = {
+	name="Thoril" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="flanker"
+	trait="skilled_tactician"
+	trait="proud"
+	trait="brave"
+	trait="wroth"
+	
+	father=525
+	1125.01.01 = { 
+		birth=yes 
+	}
+	
+	1145.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+519 = {
+	name="Kudoka" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="flanker"
+	
+	father=525
+	1126.01.01 = { 
+		birth=yes 
+	}
+	
+	1146.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+520 = {
+	name="Kabul" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="flanker"
+	
+	father=525
+	1127.01.01 = { 
+		birth=yes 
+	}
+	
+	1147.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+521 = {
+	name="Brakul" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_shaman"
+	trait="flat_terrain_leader"
+	trait="flanker"
+	
+	father=525
+	1128.01.01 = { 
+		birth=yes 
+	}
+	
+	1148.01.01 = { 
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+522 = {
+	name="Chan" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_shaman"
+	trait="flat_terrain_leader"
+	trait="flanker"
+	
+	father=525
+	1129.01.01 = { 
+		birth=yes 
+	}
+	
+	1149.01.01 = { 
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+523 = {
+	name="Marral" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_shaman"
+	trait="flat_terrain_leader"
+	trait="flanker"
+	
+	father=525
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1150.01.01 = { 
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+524= {
+	name="Morokha" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	
+	father=525
+	1124.01.01 = { 
+		birth=yes 
+	}
+	
+	1144.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	1180.1.1= {
+		death = yes
+	}
+}
+
+525= {
+	name="Megujin" 
+	dynasty=503
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	
+	1090.01.01 = { 
+		birth=yes 
+	}
+	
+	1110.01.01 = { 
+		remove_trait="class_horse_archer"
+		add_trait="class_ranger"
+	}
+	
+	1144.1.1= {
+		death = yes
+	}
+}
+# /Djute
+
+526 = {
+	name="Batta" # the beast
+	dynasty=583
+	dna="baijgrbagbo" 
+	properties="ch0chk00000000"
+	
+	religion=raider_pagan
+	culture=etrurian
+	
+	disallow_random_traits="yes" 
+	trait="class_brigand"
+	trait="flat_terrain_leader"
+	trait="light_foot_leader"
+	trait="misguided_warrior"
+	trait="proud"
+	trait="wroth"
+	trait="arbitrary"
+	trait="cruel"
+	
+	1138.01.01 = { 
+		birth=yes 
+		culture=sacaean
+	}
+
+	1159.1.1={
+		add_trait="scarred"
+		give_nickname=nick_the_beast
+	}
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+527 = {
+	name="Sealen" #  member of Eubans' mercenary band. sent to take back Laus castle.
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_horse_archer"
+	trait="flat_terrain_leader"
+	trait="cavalry_leader"
+	trait="tough_soldier"
+	trait="wroth"
+	trait="greedy"
+	trait="cynical"
+	
+	1135.01.01 = { 
+		birth=yes 
+	}
+	
+	1160.1.1={
+		employer=163 #Eubans
+	}
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+528 = {
+	name="Glass" # The gods fear his peerless swordplay. 
+	dynasty=508
+	dna="allmhacbbat" 
+	properties="gh0cdk00000000"
+	
+	religion=raider_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_mercenary"
+	trait="flat_terrain_leader"
+	trait="light_foot_leader"
+	trait="misguided_warrior"
+	trait="proud"
+	trait="wroth"
+	trait="greedy"
+	trait="ambitious"
+	trait="arbitrary"
+	trait="cynical"
+	
+	1139.01.01 = { 
+		birth=yes 
+	}
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+529 = {
+	name="Geitz" # 
+	dynasty=584
+	
+	religion=elimine_church
+	culture=bernese
+	
+	disallow_random_traits="yes" 
+	trait="strong"
+	trait="quick"
+	trait="class_pirate"
+	trait="heavy_infantry_leader"
+	trait="fortune_builder"
+	trait="administrator"
+	trait="charitable"
+	trait="just"
+	trait="cynical"
+	trait="slothful"
+	
+	father=531
+	1134.01.01 = { 
+		birth=yes 
+	}
+	
+	1154.01.01 = { 
+		remove_trait="class_pirate"
+		add_trait="class_warrior"
+	}
+	
+	1161.01.01 = { 
+		employer = 801 #Fargus
+	}
+	
+	1189.01.01 = { 
+		death = yes
+	}
+}
+
+530 = {
+	name="Geese" # 
+	dynasty=584
+	
+	religion=elimine_church
+	culture=bernese
+	
+	disallow_random_traits="yes" 
+	trait="class_pirate"
+	trait="mountain_terrain_leader"
+	trait="heavy_infantry_leader"
+	trait="indulgent_wastrel"
+	trait="charitable"
+	trait="brave"
+	trait="kind"
+	
+	father=531
+	1159.01.01 = { 
+		birth=yes 
+	}
+	
+	1160.01.01 = { 
+		religion=raider_pagan
+		culture=western_islander
+	}
+	1161.01.01 = { 
+		religion=elimine_church
+	}
+	#starts a trade route that runs to the western isles
+	1220.01.01 = { 
+		death = yes
+	}
+}
+
+531 = {
+	name="Heintz" # non-canon; father for Geitz and Geese. Merchant.
+	dynasty=584
+	
+	religion=elimine_church
+	culture=bernese
+	
+	trait="quick"
+	trait="midas_touched"
+	trait="greedy"
+	trait="arbitrary"
+	trait="cruel"
+	
+	1114.01.01 = { 
+		birth=yes 
+	}
+	
+	1186.01.01 = { 
+		death = yes
+	}
+}
+
+532 = {
+	name="Kel" # Gel? Swordmaster in the Bern army. Very loyal to Brunya.
+	dynasty=586
+	
+	religion=elimine_church
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_myrmidon"
+	trait="tough_solider"
+	trait="brave"
+	trait="just"
+	trait="cynical"
+	
+	1151.01.01 = { 
+		birth=yes 
+	}
+	
+	1151.01.01 = { 
+		employer=406 # Brunnya 
+	}
+	
+	1171.01.01 = { 
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}
+	
+
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+533 = {
+	name="Bug" # Chief of the Ganelon Bandits. Or at least, the strongest to appear and the last boss to appear.
+	dynasty=585
+	dna="bfabeyefaaq" 
+	properties="cl0cgk00000000"
+	
+	religion=raider_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="strong"
+	trait="class_brigand"
+	trait="aggressive_leader"
+	trait="rough_terrain_leader"
+	trait="mountain_terrain_leader"
+	trait="tough_soldier"
+	trait="proud"
+	trait="wroth"
+	trait="cruel"
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+534 = {
+	name="Carjiga" #member of the Ganelon Bandits
+	
+	religion=raider_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_brigand"
+	trait="aggressive_leader"
+	trait="flanker"
+	trait="misguided_warrior"
+	trait="proud"
+	trait="wroth"
+	trait="cruel"
+	trait="ambitious"
+	
+	1131.01.01 = { 
+		birth=yes 
+	}
+	
+	1151.01.01 = { 
+		employer=533 #Bug
+	}
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+535 = {
+	name="Migal" #member of the Ganelon Bandits. The one Florina landed on.
+	
+	religion=raider_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_brigand"
+	trait="aggressive_leader"
+	trait="misguided_warrior"
+	trait="proud"
+	trait="wroth"
+	trait="lustful"
+	trait="cruel"
+	
+	1136.01.01 = { 
+		birth=yes 
+	}
+	
+	1156.01.01 = { 
+		employer=533 #Bug
+	}
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+536 = {
+	name="Zugu" #random bandit. Chapter 1 boss for Lyn
+	
+	religion=raider_pagan
+	culture=sacaean
+	
+	disallow_random_traits="yes" 
+	trait="class_brigand"
+	trait="aggressive_leader"
+	trait="flat_terrain_leader"
+	trait="misguided_warrior"
+	trait="lustful"
+	trait="wroth"
+	trait="cruel"
+	
+	1111.01.01 = { 
+		birth=yes 
+	}
+	
+	1159.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=111 #Lyn 
+		}
+	}
+}
+
+537 = {
+	name="Khubilai" #Non-canon. Boss of the Taliver Bandits
+	dynasty=587
+	religion=raider_pagan
+	culture=sacaean
+	
+	trait="strong"
+	trait="class_brigand"
+	trait="aggressive_leader"
+	trait="flat_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="mountain_terrain_leader"
+	trait="intricate_webweaver"
+	trait="deceitful"
+	trait="cruel"
+	trait="greedy"
+	trait="patient"
+	trait="cynical"
+	
+	1125.01.01 = { 
+		birth=yes 
+	}
+	
+	1160.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=158 #Wallace 
+		}
+	}
+}
+
+# Nomads to hold remaining land
+
+538 = {
+	name="Dagun"
+	dynasty=512
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+539 = {
+	name="Akhutai"
+	dynasty=513
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+540 = {
+	name="Usun"
+	dynasty=514
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+541 = {
+	name="Khubilai"
+	dynasty=515
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+542 = {
+	name="Ghazan"
+	dynasty=516
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+543 = {
+	name="Menggei"
+	dynasty=517
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+563 = {
+	name="Baya" 
+	dynasty=572
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	1136.01.01 = { 
+		birth=yes 
+	}
+	
+	1210.01.01 = { 
+		death = yes
+	}
+}
+
+#
+
+544 = {
+	name="Batu" # priest at Mani Katti Shrine
+	dynasty=518
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	1109.01.01 = { 
+		birth=yes 
+	}
+	
+	1194.01.01 = { 
+		death=yes 
+	}
+}
+
+545 = {
+	name="Chagatai"
+	dynasty=519
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+546 = {
+	name="Tumen" # He gets to be the only feudal ruler, in Talas
+	dynasty=582
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_myrmidon"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+# Rutger's family tree
+547 = {
+	name="Bolkhadar" # Bulgar clan, settled in Bulgar
+	dynasty=504
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_myrmidon"
+	1085.01.01 = { 
+		birth=yes 
+	}
+	
+	1140.01.01 = { 
+		death=yes 
+	}
+}
+
+548 = {
+	name="Bilge" 
+	dynasty=504
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_myrmidon"
+	father=547
+	1115.01.01 = { 
+		birth=yes 
+	}
+	
+	1134.01.01 = { 
+		add_spouse=549
+	}
+	
+	1178.01.01 = { 
+		death=yes 
+	}
+}
+
+549 = {
+	name="Vaida" 
+	female=yes
+	
+	religion=elimine_church
+	culture=bernese
+	
+	1118.01.01 = { 
+		birth=yes 
+	}
+	
+	1168.01.01 = { 
+		death=yes 
+	}
+}
+
+550 = {
+	name="Ghunan" 
+	dynasty=504
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_myrmidon"
+	father=548
+	mother=549
+	1136.01.01 = { 
+		birth=yes 
+	}
+	
+	1196.01.01 = { 
+		death=yes 
+	}
+}
+
+551 = {
+	name="Jamugha" 
+	dynasty=504
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_myrmidon"
+	father=548
+	mother=549
+	1137.01.01 = { 
+		birth=yes 
+	}
+	
+	1199.01.01 = { 
+		death=yes 
+	}
+}
+
+552 = {
+	name="Chakha" 
+	female=yes
+	dynasty=504
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_myrmidon_female"
+	father=548
+	mother=549
+	1138.01.01 = { 
+		birth=yes 
+	}
+	
+	#died in Bern invasion
+	1180.02.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=406 #Brunnya
+		}
+	}
+}
+
+553 = {
+	name="Rutger" 
+	
+	religion=elimine_church
+	culture=bernese
+	
+	1105.01.01 = { 
+		birth=yes 
+	}
+	
+	1126.01.01 = { 
+		add_spouse=554
+	}
+	
+	1157.01.01 = { 
+		death=yes 
+	}
+}
+
+554 = {
+	name="Ibakha"
+	female=yes	
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_myrmidon_female"
+	1110.01.01 = { 
+		birth=yes 
+	}
+	
+	1168.01.01 = { 
+		death=yes 
+	}
+}
+
+
+555 = {
+	name="Lloyd" 
+	
+	religion=elimine_church
+	culture=bernese
+	
+	trait="class_myrmidon"
+	father=553
+	mother=554
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1126.01.01 = { 
+		add_matrilineal_spouse=552
+	}
+	
+	1158.12.01= {
+		add_trait="ill"
+	}
+	1159.01.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+# more patricians for Geitz's republic
+
+
+556 = {
+	name="Reissmann" 
+	dynasty=588
+	
+	religion=elimine_church
+	culture=lycian
+	
+	1116.01.01 = { 
+		birth=yes 
+	}
+	
+	1198.01.01 = { 
+		death = yes
+	}
+}
+
+557 = {
+	name="Windham" 
+	dynasty=589
+	
+	religion=elimine_church
+	culture=etrurian
+	
+	1120.01.01 = { 
+		birth=yes 
+	}
+	
+	1192.01.01 = { 
+		death = yes
+	}
+}
+
+558 = {
+	name="Nils" 
+	dynasty=590
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1119.01.01 = { 
+		birth=yes 
+	}
+	
+	1186.01.01 = { 
+		death = yes
+	}
+}
+
+559 = {
+	name="Bruno" 
+	dynasty=591
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1121.01.01 = { 
+		birth=yes 
+	}
+	
+	1203.01.01 = { 
+		death = yes
+	}
+}
+
+560 = {
+	name="Oljaitu"
+	dynasty=520
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+561 = {
+	name="Bagaridai"
+	dynasty=521
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	trait="class_horse_archer"
+	1170.01.01 = { 
+		birth=yes 
+	}
+	
+	1225.01.01 = { 
+		death=yes 
+	}
+}
+
+562 = {
+	name="Tamachi" 
+	dynasty=592
+	
+	religion=elimine_church
+	culture=sacaean
+	
+	1121.01.01 = { 
+		birth=yes 
+	}
+	
+	1205.01.01 = { 
+		death = yes
+	}
+}
+
+564 = {
+	name="Yeke" # non-canon; Post-Lyn boss of the Ganelon Bandits
+	dynasty=585
+	
+	religion=raider_pagan
+	culture=sacaean
+	
+	1143.01.01 = { 
+		birth=yes 
+	}
+	1150.01.01 = { 
+		employer=533 #Bug
+	}
+	
+	1190.01.01 = { 
+		death = yes
+	}
+}
+
+#Post-Taliver Bandits mountain men
+565 = {
+	name="Jebe" 
+	dynasty=551
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1192.1.1= {
+		death = yes
+	}
+}
+566 = {
+	name="Inancha" 
+	dynasty=552
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	1143.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.1.1= {
+		death = yes
+	}
+}
+567 = {
+	name="Ukhuna" 
+	dynasty=553
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	1141.01.01 = { 
+		birth=yes 
+	}
+	
+	1196.1.1= {
+		death = yes
+	}
+}
+
+567 = {
+	name="Dayir" 
+	dynasty=554
+	
+	religion=divine_sky_pagan
+	culture=sacaean
+	
+	1138.01.01 = { 
+		birth=yes 
+	}
+	
+	1197.1.1= {
+		death = yes
+	}
+}

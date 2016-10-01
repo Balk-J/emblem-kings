@@ -1,0 +1,17 @@
+# c_bellona
+
+# County Title
+title = c_bellona
+
+# Settlements
+max_settlements = 3
+
+b_bellona = castle
+b_bellona_2 = temple
+b_bellona_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

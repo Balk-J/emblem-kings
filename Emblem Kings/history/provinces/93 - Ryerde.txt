@@ -1,0 +1,17 @@
+# c_ryerde
+
+# County Title
+title = c_ryerde
+
+# Settlements
+max_settlements = 3
+
+b_ryerde = castle
+b_ryerde_2 = city
+b_ryerde_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

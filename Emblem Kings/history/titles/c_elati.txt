@@ -1,0 +1,15 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_vytina
+#}
+
+# note that this is where Kishuna keeps his hideout
+
+1155.1.1={
+	holder=623
+}

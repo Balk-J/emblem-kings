@@ -1,0 +1,16 @@
+# c_orvin
+
+# County Title
+title = c_orvin
+
+# Settlements
+max_settlements = 2
+
+b_orvin = castle
+#b_orvin_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

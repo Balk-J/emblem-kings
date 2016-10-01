@@ -1,0 +1,17 @@
+# c_soulos
+
+# County Title
+title = c_soulos
+
+# Settlements
+max_settlements = 3
+
+b_soulos = tribal
+#b_soulos_2 = temple
+#b_soulos_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

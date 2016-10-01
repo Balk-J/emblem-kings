@@ -1,0 +1,18 @@
+# c_bolsena
+
+# County Title
+title = c_bolsena
+
+# Settlements
+max_settlements = 4
+
+b_bolsena = castle
+b_bolsena_2 = temple
+b_bolsena_3 = city
+#b_chaire = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

@@ -1,0 +1,18 @@
+# c_bettingen
+
+# County Title
+title = c_bettingen
+
+# Settlements
+max_settlements = 4
+
+b_bettingen = castle
+b_bettingen_2 = temple
+b_bettingen_3 = city
+b_thun = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

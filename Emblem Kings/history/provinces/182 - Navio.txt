@@ -1,0 +1,16 @@
+# c_navio
+
+# County Title
+title = c_navio
+
+# Settlements
+max_settlements = 2
+
+b_navio = tribal
+#b_navio_2 = temple
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

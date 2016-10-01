@@ -1,0 +1,17 @@
+# c_plaka
+
+# County Title
+title = c_plaka
+
+# Settlements
+max_settlements = 3
+
+b_plaka = tribal
+#b_plaka_2 = temple
+#b_plaka_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

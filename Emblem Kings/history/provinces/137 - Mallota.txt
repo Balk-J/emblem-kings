@@ -1,0 +1,18 @@
+# c_mallota
+
+# County Title
+title = c_mallota
+
+# Settlements
+max_settlements = 4
+
+b_mallota = tribal
+b_mallota_2 = city
+#b_mallota_3 = temple
+#b_meligou = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

@@ -1,0 +1,21 @@
+# c_bern
+
+# County Title
+title = c_bern
+
+# Settlements
+max_settlements = 7
+
+b_bern_keep = castle
+b_bern = city
+b_bern_2 = temple
+b_ecksachs = castle
+b_meiringen = castle
+b_wimmis = castle
+b_wangen = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

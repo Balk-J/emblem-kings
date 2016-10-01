@@ -1,0 +1,19 @@
+# c_fribourg
+
+# County Title
+title = c_fribourg
+
+# Settlements
+max_settlements = 5
+
+b_fribourg = castle
+b_fribourg_2 = temple
+b_fribourg_3 = city
+#b_blankenburg = city
+#b_schwarzenburg = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

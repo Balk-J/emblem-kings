@@ -1,0 +1,299 @@
+#ELIBE
+#Etruria
+technology = {
+	titles = {
+		#Etruria
+		#d_aquleia
+		d_alesia
+		d_arritim
+		d_caerleon
+		d_clevsin
+		d_felathri
+		d_reglay
+		d_siene
+		d_tarchna
+	}
+	440 = {
+		military = 1.2
+		economy = 1.5
+		culture = 1.5
+	}
+		
+	3680 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+	}
+}
+technology = {
+	titles = {
+		#Etruria
+		d_aquleia
+		#d_alesia
+		#d_arritim
+		#d_caerleon
+		#d_clevsin
+		#d_felathri
+		#d_reglay
+		#d_siene
+		#d_tarchna
+	}
+	440 = {
+		military = 1.2
+		economy = 1.5
+		culture = 1.5
+		
+		TECH_FORTIFICATIONS_CONSTRUCTION = 2.0
+		TECH_CASTLE_CONSTRUCTION = 2.0
+		TECH_TEMPLE_CONSTRUCTION = 3.0
+		TECH_LEGALISM = 2.0
+	}
+		
+	3680 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+		
+		TECH_FORTIFICATIONS_CONSTRUCTION = 4.5
+		TECH_CASTLE_CONSTRUCTION = 4.5
+		TECH_TEMPLE_CONSTRUCTION = 4.5
+		TECH_LEGALISM = 4.5
+	}
+}
+#Bern
+technology = {
+	titles = {
+		#Bern
+		d_bern
+		d_appenzell
+		d_basel
+		d_fribourg
+		d_glarus
+		d_solothurn
+		d_unterwalden
+		d_uri
+		d_zug
+	}
+	440 = {
+		#military = 1.2
+		military = 1.5
+		economy = 1.0
+		culture = 1.0
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3.0
+		TECH_CASTLE_CONSTRUCTION = 3.0
+		
+		#TECH_FORTIFICATIONS_CONSTRUCTION = 2.0
+		#TECH_CASTLE_CONSTRUCTION = 2.0
+	}
+	3680 = {
+		military = 5.0
+		economy = 5.0
+		culture = 5.0
+		#TECH_FORTIFICATIONS_CONSTRUCTION = 4.5
+		#TECH_CASTLE_CONSTRUCTION = 4.5
+	}
+}
+
+#Lycia
+technology = {
+	titles = {
+		#Lycia
+		d_ostia
+		d_araphen
+		d_badon
+		d_caelin
+		d_cornwell
+		d_khathalet
+		d_laus
+		d_pherae
+		d_ryerde
+		d_santaruz
+		d_tania
+		d_thria
+		d_tuscana
+		d_worde
+	}
+	440 = {
+		military = 0.5
+		economy = 1.0
+		culture = 1.0
+	}
+	3680 = {
+		military = 5.0
+		economy = 5.0
+		culture = 5.0
+	}
+}
+
+#Western Isles
+technology = {
+	titles = {
+		#Western Isles
+		d_jutes
+		d_caledonia
+		d_coria
+		d_dia
+		d_eburacum
+		d_hibernia
+		d_scotia
+		d_vectis
+		#Terina
+		d_xanthus
+		#d_araxa
+		d_nisa	
+	}
+	440 = {
+		military = 0.1
+		economy = 0.1
+		culture = 0.1
+		
+		TECH_NAVAL = 0.1
+	}
+	680 = {
+		military = 1.0
+		economy = 0.6
+		culture = 0.6
+		
+		TECH_NAVAL = 2.0
+	}	
+	3680 = {
+		military = 3.5
+		economy = 3.5
+		culture = 3.5
+	}
+}
+
+#Kafti
+technology = {
+	titles = {
+		#Kafti
+		d_kafti
+	}
+	440 = {
+		military = 0.1
+		economy = 0.1
+		culture = 0.1
+		
+		TECH_NAVAL = 0.1
+	}
+	680 = {
+		military = 0.1
+		economy = 0.6
+		culture = 0.6
+		
+		TECH_NAVAL = 2.0
+	}	
+	3680 = {
+		military = 3.5
+		economy = 3.5
+		culture = 3.5
+	}
+}
+
+#Less developed areas
+technology = {
+	titles = {
+		#Valor
+		d_valor
+		#Ilia
+		d_edessa
+		d_cardia
+		d_carrhae
+		d_cebrene
+		d_neandreia
+		d_remy
+		d_sestos
+		d_sigeion
+		d_troas
+		#Calach (south Bern)
+		d_calach
+		d_arles
+		d_gallen
+		d_jura
+		d_lucerne
+		d_sarnen
+		d_sion
+		d_vaud
+		#Terina
+		#d_xanthus
+		d_araxa
+		#d_nisa	
+		#Taliver
+		d_taliver
+		d_ganelon
+		#Missur
+		d_mallota
+		d_gefyra
+		d_isaris
+		#Nabata
+		#d_arcadia
+		d_mantineia
+		d_tegea
+		d_tyros
+		d_vytina
+	}
+	440 = {
+		military = 0.1
+		economy = 0.1
+		culture = 0.1
+		
+	}
+	
+	3680 = {
+		military = 3.5
+		economy = 3.5
+		culture = 3.5
+	}
+}
+technology = {
+	titles = {
+		#Nabata
+		d_arcadia
+		#d_mantineia
+		#d_tegea
+		#d_tyros
+		#d_vytina
+	}
+	440 = {
+		military = 0.5
+		economy = 1.5
+		culture = 1.5
+	}
+	
+	3680 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+	}
+}
+
+#Sacae
+technology = {
+	titles = {
+		#Sacae
+		d_bulgar
+		d_gelonus
+		d_media
+		d_pamir
+		d_talas
+		d_tarim
+	}
+	
+	440 = {
+		military = 0.5
+		economy = 0.1
+		culture = 0.1
+	}
+	
+	2000 = {
+		military = 3
+		economy = 2.5
+		culture = 2.5
+	}
+	
+	3680 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
+	}
+}

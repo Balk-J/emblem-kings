@@ -1,0 +1,16 @@
+# c_loukas
+
+# County Title
+title = c_loukas
+
+# Settlements
+max_settlements = 2
+
+b_loukas = tribal
+#b_loukas_2 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

@@ -1,0 +1,369 @@
+# SPECIAL TITLES
+
+# Eubans' mercenaries
+d_talon_company = {
+	color={ 235 235 235 }
+	color2={ 255 255 255 }
+
+	capital = 95 # Laus
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = talon_company_composition
+}
+
+# Deke's mercenaries
+d_tiger_company = {
+	color={ 235 235 0 }
+	color2={ 255 255 255 }
+
+	capital = 163 # Eburacum
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = tiger_company_composition
+}
+
+# Fargus's ship(s)
+d_davros = {
+	color={ 104 48 152 }
+	color2={ 255 255 255 }
+
+	capital = 98 # Badon
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = raider_pagan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = davros_composition
+}
+
+# Pegasus Knights of Ilia!
+# There are at least 5 "wings" (divisions? bands?). Fiora is canonically in charge of the 5th and Farina is a member of the 3rd.
+# Sigune is PROBABLY in charge of another. Likewise for Thite.
+# Florina and Shanna definitely are not.
+
+# Sigune's
+d_ilia_pegasus_knights_1 = {
+	color={ 72 128 160 }
+	color2={ 255 255 255 }
+
+	capital = 259 # Carrhae
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "COMMANDER"
+	title_female = "COMMANDER"
+	foa = "COMMANDER_FOA"
+	dynasty_title_names = no
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Can be vassalized 
+	#independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = ilia_pegasus_knights_composition
+}
+
+# Juno's?
+d_ilia_pegasus_knights_2 = {
+	color={ 192 80 248 }
+	color2={ 255 255 255 }
+
+	capital = 253 # Troas
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "COMMANDER"
+	title_female = "COMMANDER"
+	foa = "COMMANDER_FOA"
+	dynasty_title_names = no
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Can be vassalized 
+	#independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = ilia_pegasus_knights_composition
+}
+
+# 3rd wing - Farina's Strongwings
+d_ilia_pegasus_knights_3 = {
+	color={ 88 88 248 }
+	color2={ 255 255 255 }
+
+	capital = 260 # Cebrene
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "COMMANDER"
+	title_female = "COMMANDER"
+	foa = "COMMANDER_FOA"
+	dynasty_title_names = no
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Can be vassalized 
+	#independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = ilia_pegasus_knights_composition
+}
+
+# Thite's?
+d_ilia_pegasus_knights_4 = {
+	color={ 77 203 220 }
+	color2={ 255 255 255 }
+
+	capital = 273 # Sigeion
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "COMMANDER"
+	title_female = "COMMANDER"
+	foa = "COMMANDER_FOA"
+	dynasty_title_names = no
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Can be vassalized 
+	#independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = ilia_pegasus_knights_composition
+}
+
+# 5th wing - Fiora's
+d_ilia_pegasus_knights_5 = {
+	color={ 64 208 208 }
+	color2={ 255 255 255 }
+
+	capital = 270 # Sestos
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "COMMANDER"
+	title_female = "COMMANDER"
+	foa = "COMMANDER_FOA"
+	dynasty_title_names = no
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Can be vassalized 
+	#independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = ilia_pegasus_knights_composition
+}
+
+# Zelots' band
+d_ilia_mercenary_knights = {
+	color={ 208 240 248 }
+	color2={ 255 255 255 }
+
+	capital = 248 # Edessa
+	
+	# Hire Trigger
+	allow = {
+		#religion_group = light
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	mercenary = yes
+
+	title = "GENERAL"
+	foa = "GENERAL_FOA"
+	title_female = "LORD_female"
+	
+	dynasty_title_names = no
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = ilia_mercenary_knights_composition
+}
+
+d_black_fang = {
+	color={ 25 25 25 }
+	color2={ 255 255 255 }
+	
+	capital = 57 #	Vaud
+	
+	title = "tribal_count"
+	foa = "chief_foa"
+	title_female = "LORD_female"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	#allow = {
+	#	always = no 
+	#}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	# merc
+	allow = {
+		OR = {
+			has_landed_title = d_black_fang
+			is_liege_or_above = d_black_fang
+		}
+	}
+	mercenary = yes	
+	mercenary_type = black_fang_composition
+}

@@ -1,0 +1,17 @@
+# c_thoknia
+
+# County Title
+title = c_thoknia
+
+# Settlements
+max_settlements = 3
+
+b_thoknia = tribal
+#b_thoknia_2 = temple
+#b_thoknia_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

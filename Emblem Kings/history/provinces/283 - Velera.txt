@@ -1,0 +1,17 @@
+# c_velera
+
+# County Title
+title = c_velera
+
+# Settlements
+max_settlements = 3
+
+b_velera = castle
+b_velera_2 = city
+b_velera_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

@@ -1,0 +1,1784 @@
+301 = {
+	name="Barigan"
+	dynasty=301
+	
+	religion=elimine_church
+	culture=ilian
+	
+	disallow_random_traits="yes" 
+	155.01.01 = { 
+	birth=yes 
+	}
+	180.01.01 = {
+		give_nickname=nick_the_holy_knight
+	}
+	210.01.01 = { 
+	death=yes 
+	}
+}
+
+302 = {
+	name="Niime"
+	female=yes
+	dynasty=302
+	
+	religion=dark
+	culture=ilian
+	
+	disallow_random_traits="yes" 
+	trait="genius"
+	trait="fair"
+	trait="class_shaman_female"
+	trait="scholar"
+	trait="wroth"
+	trait="proud"
+	trait="lustful"
+	trait="diligent"
+	trait="just"
+	1106.01.01 = { 
+	birth=yes 
+	}
+	
+	1126.01.01 = { 
+		remove_trait="class_shaman_female"
+		add_trait="class_druid_female"
+	}
+	
+	1136.01.01 = {
+		give_nickname=nick_the_mountain_hermit
+	}
+	
+	#friends with Magough
+	1136.01.01 = {
+		effect={
+			add_friend=181 
+		}
+	}		
+	1205.01.01 = { 
+	death=yes 
+	}
+}
+
+303 = {
+	name="Canas"
+	dynasty=302
+	
+	religion=dark
+	culture=ilian
+	
+	mother=302
+	disallow_random_traits="yes" 
+	trait="quick"
+	trait="class_shaman"
+	trait="mastermind_theologian"
+	trait="scholar"
+	trait="diligent"
+	trait="kind"
+	1139.03.01 = { 
+	birth=yes 
+	}
+	1156.01.01 = {
+		add_spouse=153 # Nino's aunt
+	}
+	1163.1.1= {
+		death = {
+			death_reason=death_accident #continuity errors
+		}
+	}
+}
+
+304 = {
+	name="Hugh"
+	dynasty=302
+	
+	religion=dark
+	culture=ilian
+	
+	mother=302
+	trait="genius"
+	trait="class_shaman"
+	trait="mastermind_theologian"
+	trait="scholar"
+	1126.03.01 = { birth=yes }
+	1146.01.01 = { 
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+	}
+	1150.01.01 = { 
+		add_trait="dark_incapable"
+	}
+	1162.1.1= {
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+305 = {
+	name="Jodel"
+	dynasty=302
+	
+	religion=dark
+	culture=ilian
+	
+	mother=302
+	trait="fair"
+	trait="class_shaman"
+	trait="scholarly_theologian"
+	trait="mystic"
+	1129.03.01 = { birth=yes }
+	1149.01.01 = { 
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+	}
+	1153.01.01 = { 
+		add_trait="dark_incapable"
+	}
+	1168.1.1= {
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+306 = {
+	name="Noah"
+	dynasty=302
+	
+	religion=dark
+	culture=ilian
+	
+	mother=302
+	trait="class_shaman"
+	trait="scholarly_theologian"
+	trait="scholar"
+	1132.03.01 = { birth=yes }
+	1152.01.01 = { 
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+	}
+	1155.01.01 = { 
+		add_trait="dark_incapable"
+	}
+	1170.1.1= {
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+307 = {
+	name="Hugh"
+	dynasty=302
+	
+	religion=anima
+	culture=ilian
+	
+	father=303
+	mother=153
+	disallow_random_traits="yes" 
+	#trait="fair" # well, he says he is, and Niime was allegedly quite a looker...
+	trait="class_mage"
+	trait="greedy"
+	trait="lustful"
+	trait="proud"
+	trait="kind"
+	trait="trusting"
+	1158.03.01 = { 
+	birth=yes 
+	}
+	
+	1160.01.01 = { 
+		employer=202 # hired by Etruria 
+	}
+	
+	1160.03.01 = { 
+		employer=407#216 # Working for Roartz/Arcard/Narcian's army
+	}
+	
+	1161.01.01 = { 
+		employer=302 # goes off to become a better mage 
+	}
+	
+	1229.01.01 = { 
+	death=yes 
+	}
+}
+
+308 = { 
+	name="Nergal"
+	dynasty=305
+	dna="blafkzhjabf" 
+	properties="ag00d000000000"
+	
+	religion=dark
+	culture=ilian
+	
+	disallow_random_traits="yes" 
+	trait="genius"
+	trait="class_shaman"
+	trait="elusive_shadow"
+	trait="scholar"
+	trait="kind"
+	trait="diligent"
+	trait="patient"
+	trait="ambitious"
+	
+	120.01.01 = { 
+		birth=yes 
+	}
+	
+	150.01.01 = { 
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+		add_trait="immortal"
+	}
+	160.01.01 = { 
+		add_spouse = 924 #Aenir 
+	}
+	180.01.01 = { 
+		add_trait="depressed"
+		add_trait="celibate"
+	}
+	200.01.01 = { 
+		add_trait="dark_power_hungry"
+		add_trait="deceitful"
+		add_trait="schemer"
+		remove_trait="kind"
+		remove_trait="depressed"
+	}
+	500.01.01 = { 
+		remove_trait="class_druid"
+		add_trait="class_dark_druid"
+	}
+	
+	# About 500 years before FE7, meets Athos wandering the desert...
+	660.01.01 = { 
+		culture=nabatan 
+		add_trait="mystic"
+		add_trait="desert_terrain_leader"
+		add_trait="flanker"
+		add_trait="defensive_leader"
+		add_trait="organizer"
+	}
+	
+	# An unspecified amount of time later, starts making morphs and has a falling out with Athos
+	800.01.01 = {  
+		effect={
+			set_character_flag=lore_morphs
+			piety=500
+		}
+		add_trait="cruel"
+		add_trait="wroth"
+		add_trait="lunatic"
+		add_trait="maimed"
+	}	
+	
+	820.01.01 = {  
+		add_trait="scarred"
+		remove_trait="maimed"
+	}
+	#I am who I am. The pain of others, I do not feel. The sorrow of others does not touch me. 
+	#Death feeds me. Death pleases me. I am the essence I consume. 
+	#You fools will become corpses here, because I wish it to be.
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood 
+		}
+	}
+}
+
+309 = {
+	name="Fiora" #commander of the 5th Wing of Ilia's Pegasus Knights
+	female=yes
+	dynasty=307
+	
+	religion=elimine_church
+	culture=ilian
+	
+	stewardship=0 #I think you need me, Sis! You're not very good with finances, are you? You'd go broke without me around!
+	
+	mother=342
+	disallow_random_traits="yes" 
+	trait="class_pegasus_knight"
+	trait="tough_soldier"
+	trait="unyielding_leader"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="charitable"
+	trait="brave"
+	trait="just"
+	trait="diligent"
+	trait="humble"
+	trait="kind"
+	trait="chaste" #Do you ever feel that some here lack proper moral grounding? Yes, the same thought has occurred to me.
+
+	1141.01.01 = { 
+		birth=yes 
+	}
+	
+	1157.01.01 = { 
+	 	set_focus = focus_family 
+	}
+	
+	#hired by Pent to survey Valor. This does not go well. 
+	1160.01.01 = { 
+		add_trait="depressed"
+		add_trait="aggressive_leader"
+	}
+	
+	1161.01.01 = { 
+		remove_trait="depressed"
+		remove_trait="aggressive_leader"
+	}
+	
+	1192.01.01 = { 
+		death=yes 
+	}
+}
+
+310 = {
+	name="Farina" #member of the 3rd Wing of Ilia's Pegasus Knights, the Strongwings. Her pegasus is named Murphy.
+	female=yes
+	dynasty=307
+	
+	religion=elimine_church
+	culture=ilian
+	
+	martial=7
+	
+	mother=342
+	disallow_random_traits="yes" 
+	trait="class_pegasus_knight"
+	trait="midas_touched"
+	trait="narrow_flank_leader"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="greedy"
+	trait="cynical"
+	trait="proud"
+	trait="gregarious"
+	
+	1142.01.01 = { 
+		birth=yes 
+	}
+	
+	
+	#hired by Hector
+	1160.02.01 = { 
+		wealth=20000
+	}
+	
+	
+	1199.01.01 = { 
+		death=yes 
+	}
+}
+
+311 = {
+	name="Florina" #2nd rank Pegasus Knight
+	female=yes
+	dynasty=307
+	
+	religion=elimine_church
+	culture=ilian
+	
+	martial=7
+	
+	mother=342
+	disallow_random_traits="yes" 
+	trait="class_pegasus_knight"
+	trait="naive_appeaser"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="shy"
+	trait="kind"
+	trait="chaste"
+	trait="craven"
+	
+	1144.01.01 = { 
+		birth=yes 
+	}
+	
+	1159.01.01 = { 
+		employer=111 #Lyn
+	}
+	
+	1160.01.01 = { 
+		remove_trait="craven"
+	}
+	
+	1205.01.01 = { 
+		death=yes 
+	}
+}
+
+312 = {
+	name="Ninian"
+	female=yes
+	dynasty=304
+	
+	#religion=dragon_gods
+	religion = elimine_church #More for gameplay purposes. The dragon religion shouldn't be revived.
+	culture=ilian
+	
+	real_father=308
+	mother=924
+	disallow_random_traits="yes" 
+	#trait="immortal"
+	trait="scholarly_theologian"
+	trait="dragon"
+	trait="kind"
+	trait="shy"
+	trait="chaste"
+	170.01.01 = { 
+		birth=yes 
+	}
+	
+	190.01.01 = { 
+		add_trait="class_dancer"
+		add_trait="immortal"
+	}
+	# Summoned and imprisoned by Nergal
+	1158.01.01 = {
+		employer = 308
+		effect = {
+			e_nergal = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	
+	# escapes and somehow reaches Kathalet by Lyn's story
+	1159.1.1 = {
+		effect = { 
+			prisoner = no
+		} 
+		employer = 197
+	} 	
+	
+	# recaptured?
+	1160.01.01 = {
+		employer = 308
+		effect = {
+			e_nergal = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	
+	# After Nergal's defeat, either marries Eliwood or leaves through the Dragon's Gate
+	1161.1.1 = {
+		effect = { 
+			prisoner = no
+		} 
+		employer = 107 # Eliwood
+	} 	
+	
+	#1166.1.1= {
+	1161.1.1= {
+		#add_trait="disappeared"
+		death = {
+			#death_reason=death_trait
+			death_reason=death_missing
+		}
+	}
+}
+
+313 = {
+	name="Nils"
+	dynasty=304
+	
+	#religion=dragon_gods
+	religion = elimine_church #More for gameplay purposes. The dragon religion shouldn't be revived.
+	culture=ilian
+	
+	real_father=308
+	mother=924
+	disallow_random_traits="yes" 
+	trait="class_bard"
+	#trait="immortal"
+	trait="martial_cleric"
+	trait="dragon"
+	trait="brave"
+	trait="cynical"
+	trait="just"
+	
+	175.01.01 = { 
+		birth=yes 
+	}
+	
+	190.01.01 = { 
+		add_trait="immortal"
+	}
+	
+	# Summoned and imprisoned by Nergal
+	1158.01.01 = {
+		employer = 308
+		effect = {
+			e_nergal = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	
+	# escapes and somehow reaches Kathalet by Lyn's story
+	1159.1.1 = {
+		effect = { 
+			prisoner = no
+		} 
+		employer = 197
+	} 	
+	
+	# NOT recaptured with Ninian. Where exactly was he? Somewhere on Valor?
+	1160.01.01 = {
+		employer = 197 #still kathalet
+	} 	
+	
+	# After Nergal's defeat, leaves through the Dragon's Gate
+	1161.1.1= {
+		#add_trait="disappeared"
+		death = {
+			#death_reason=death_trait
+			death_reason=death_missing
+		}
+	}
+}
+
+320 = {
+	name="Chryseis" #non-canon; mother for the FE6 pegasus sisters
+	female=yes
+	dynasty=308
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_pegasus_knight"
+	1135.01.01 = { 
+		birth=yes 
+	}
+	
+	1170.1.1= {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+#"Our parents were killed together on the same battlefield when we were still young."
+#"Juno became our mother, when she was only a teenager."
+321 = {
+	name="Grant" #non-canon; father for the FE6 pegasus sisters
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_cavalier"
+	1135.01.01 = { 
+		birth=yes 
+	}
+	
+	1154.1.1={
+		add_matrilineal_spouse=320 # Juno, Thite, Shanna's mother
+	}	
+	
+	1170.1.1= {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+
+322 = {
+	name="Juno" #former pegasus knight. Retired to marry Zelots.
+#rivals with Sigune. Who used to be kind?
+#Juno had a baby girl while Shanna was away (after 1179)
+	female=yes
+	dynasty=308
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=321
+	mother=320
+	disallow_random_traits="yes" 
+	trait="class_pegasus_knight"
+	trait="grey_eminence"
+	trait="organizer"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="kind"
+	trait="patient"
+	trait="just"
+	
+	1155.01.01 = { 
+		birth=yes 
+	}
+
+	1175.01.01 = { 
+		remove_trait="class_pegasus_knight"
+		add_trait="class_falcon_knight"
+	}
+	
+	1208.01.01 = { 
+		death=yes 
+	}
+}
+
+323 = {
+	name="Thite" #flightleader of a group of pegasus knights. Hired by Klein.
+	female=yes
+	dynasty=308
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=321
+	mother=320
+	disallow_random_traits="yes" 
+	trait="class_pegasus_knight"
+	trait="unyielding_leader"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="shy"
+	trait="patient"
+	trait="diligent"
+	trait="honest"
+	
+	1162.01.01 = { 
+		birth=yes 
+	}	
+	
+	1216.01.01 = { 
+		death=yes 
+	}
+}
+
+324 = {
+	name="Shanna" # watch out for arrows
+	female=yes
+	dynasty=308
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=321
+	mother=320
+	disallow_random_traits="yes" 
+	trait="class_pegasus_knight"
+	trait="experimenter"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="gregarious"
+	trait="brave"
+	trait="wroth"
+	
+	1164.01.01 = { 
+		birth=yes 
+	}
+	
+	1179.01.01 = { 
+		employer=710 # Deke
+		#has a crush on Lot?
+	}	
+	
+	1219.01.01 = { 
+		death=yes 
+	}
+}
+
+325 = {
+	name="Sigune" #commander of the Pegasus Knights that turned to Bern in FE6.
+	female=yes
+	dynasty=309
+	
+	religion=elimine_church
+	culture=ilian
+	
+	disallow_random_traits="yes" 
+	trait="class_pegasus_knight"
+	trait="intricate_webweaver"
+	trait="flanker"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="strategist"
+	trait="cynical"
+	trait="ambitious"
+	trait="kind"
+	
+	1155.01.01 = { 
+		birth=yes 
+	}
+	
+	1170.01.01= {
+		effect={
+			add_rival=322 #Juno
+		}
+		remove_trait="kind"
+		add_trait="cruel"
+	}
+	
+	1173.01.01 = { 
+		remove_trait="class_pegasus_knight"
+		add_trait="class_falcon_knight"
+		give_nickname="nick_the_white_devil"
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+326 = {
+	name="Zelots"
+	dynasty=303
+	dna="calkamajaas"
+	properties="ce0dhd000000"
+	
+	religion=elimine_church
+	culture=ilian
+	father=346
+	disallow_random_traits="yes" 
+	trait="class_cavalier"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="cavalry_leader"
+	trait="inspiring_leader"
+	trait="tough_soldier"
+	trait="cynical"
+	trait="kind"
+	trait="just"
+	
+	1147.01.01 = { 
+		birth=yes 
+	}
+	
+	1167.01.01 = { 
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	
+	1177.1.1={
+		add_spouse=322 # Juno
+	}	
+	
+	1204.1.1= {
+		death = yes
+	}
+}
+
+327 = {
+	name="Cassandra" 
+	female=yes
+	dynasty=303
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=326
+	mother=322
+	
+	1179.10.01 = { 
+		birth=yes 
+	}
+	
+	1249.1.1= {
+		death = yes
+	}
+}
+
+328 = {
+	name="Noah"
+	
+	religion=elimine_church
+	culture=ilian
+	
+	disallow_random_traits="yes" 
+	trait="class_cavalier"
+	trait="winter_soldier"
+	trait="cavalry_leader"
+	trait="tough_soldier"
+	trait="shy"
+	trait="cynical"
+	
+	1157.01.01 = { 
+		birth=yes 
+	}
+	
+	1172.01.01 = { 
+		employer=326 #Zelots
+	}
+	
+	#fell in love with Fir at first sight?
+	
+	1207.1.1= {
+		death = yes
+	}
+}
+
+329 = {
+	name="Trec"
+	
+	religion=elimine_church
+	culture=ilian
+	
+	disallow_random_traits="yes" 
+	trait="class_cavalier"
+	trait="winter_soldier"
+	trait="cavalry_leader"
+	trait="misguided_warrior"
+	trait="hunter" # a fisherman, at least...
+	#trait="slow"
+	trait="slothful"
+	trait="content"
+	
+	1159.01.01 = { 
+		birth=yes 
+	}
+	
+	1174.01.01 = { 
+		employer=326 #Zelots
+	}
+	
+	1226.1.1= {
+		death = yes
+	}
+}
+
+330 = {
+	name="Ogier"
+	# became a mercenary to feed his family.
+	# Has a sister who's a little younger, and at least two little brothers.
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=331
+	mother=332
+	disallow_random_traits="yes" 
+	trait="class_mercenary"
+	trait="winter_soldier"
+	trait="light_foot_leader"
+	trait="tough_soldier"
+	trait="shy"
+	trait="kind"
+	trait="chaste"
+	
+	1164.01.01 = { 
+		birth=yes 
+	}
+	
+	1179.01.01 = { 
+		employer=103 #Ostia
+	}
+	
+	1215.1.1= {
+		death = yes
+	}
+}
+
+331 = {
+	name="Engeler" # non-canon; father for Ogier
+	religion=elimine_church
+	culture=ilian
+	
+	1144.01.01 = { 
+		birth=yes 
+	}
+	
+	1208.1.1= {
+		death = yes
+	}
+}
+
+332 = {
+	name="Alde" # non-canon; mother for Ogier
+	female=yes
+	religion=elimine_church
+	culture=ilian
+	
+	
+	1144.01.01 = { 
+		birth=yes 
+	}
+	
+	1208.1.1= {
+		death = yes
+	}
+}
+
+333 = {
+	name="Alde"
+	female=yes
+	# Ogier's sister 
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=331
+	mother=332
+	
+	1165.01.01 = { 
+		birth=yes 
+	}
+	
+	# dressed up and left in a village somewhere because they apparently couldn't afford to feed her
+	1171.01.01 = { 
+		employer=326 #Remy
+	}
+	
+	1219.1.1= {
+		death = yes
+	}
+}
+
+334 = {
+	name="Othon"
+	# little brother for Ogier 
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=331
+	mother=332
+	
+	1171.01.01 = { 
+		birth=yes 
+	}
+	
+	1217.1.1= {
+		death = yes
+	}
+}
+
+335 = {
+	name="Oliver"
+	# little brother for Ogier 
+	
+	religion=elimine_church
+	culture=ilian
+	
+	father=331
+	mother=332
+	
+	1175.01.01 = { 
+		birth=yes 
+	}
+	
+	1228.1.1= {
+		death = yes
+	}
+}
+
+336 = {
+	name="Grant" # another knight in Zelots' company. Died during FE6 at some point; was friends with Noah.
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_cavalier"
+	trait="winter_soldier"
+	trait="cavalry_leader"
+	
+	1157.01.01 = { 
+		birth=yes 
+	}
+	
+	1172.01.01 = { 
+		employer=326 #Zelots
+		effect={
+			add_friend=328 #Noah
+		}
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+
+337 = {
+	name="Siekes" # yet another knight in Zelots' company. 
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_cavalier"
+	trait="winter_soldier"
+	trait="cavalry_leader"
+	
+	1155.01.01 = { 
+		birth=yes 
+	}
+	
+	1170.01.01 = { 
+		employer=326 #Zelots
+	}
+	
+	1204.1.1= {
+		death = yes
+	}
+}
+
+338 = {
+	name="Casis" # Still another knight in Zelots' company. 
+	# "He's the guy who forgot to bring his weapons to our first mission. He even forgot to bring his horse."
+	# Later gets hired by Bern and killed at some point in FE6.
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_cavalier"
+	trait="misguided_warrior"
+	trait="imbecile"
+	
+	1164.01.01 = { 
+		birth=yes 
+	}
+	
+	1179.01.01 = { 
+		employer=326 #Zelots
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+
+339 = {
+	name="Naimon" # Name is made up; but he's a mage good at ice magic who Dart has heard about. Killed by Karel.
+	dynasty=310
+	
+	religion=anima
+	culture=ilian
+	
+	trait="quick"
+	
+	1103.01.01 = { 
+		birth=yes 
+	}
+	
+	1123.01.01 = { 
+		add_trait="class_mage"
+	}
+	
+	1133.01.01 = { 
+		remove_trait="class_mage"
+		add_trait="class_sage"
+		add_trait="scholar"
+		add_trait="winter_soldier"
+	}
+		
+	1133.1.1 = {
+		give_nickname="nick_the_blood_freezer"
+	}
+	
+	1158.01.01 = { 
+		death = {
+			death_reason=death_duel
+			killer=508 #Karel 
+		}
+	}
+}
+
+340 = {
+	name="Andromache" #non-canon, leader for Juno's squad
+	dynasty=311
+	female=yes
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_pegasus_knight"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	
+	1157.01.01 = { 
+		birth=yes 
+	}	
+	
+	1172.01.01 = { 
+		employer=322 # Juno
+	}
+	
+	1219.1.1= {
+		death = yes
+	}
+}
+
+341 = {
+	name="Hecuba" #non-canon, leader for Sigune's squad
+	dynasty=312
+	female=yes
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_pegasus_knight"
+	trait="winter_soldier"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	
+	1159.01.01 = { 
+		birth=yes 
+	}
+	
+	1174.01.01 = { 
+		employer=325 # Sigune
+	}
+	
+	1225.1.1= {
+		death = yes
+	}
+}
+
+342 = {
+	name="Celdia" #non-canon; mother for the FE7 pegasus sisters
+	female=yes
+	dynasty=307
+	
+	religion=elimine_church
+	culture=ilian
+	
+	trait="class_pegasus_knight"
+	1120.01.01 = { 
+	birth=yes 
+	}
+	
+	1168.01.01 = { 
+	death=yes 
+	}
+}
+
+343 = {
+	name="Chryseis" #non-canon; leader for pegasus knight company
+	female=yes
+	
+	religion=elimine_church
+	culture=ilian
+	
+	#trait="class_pegasus_knight"
+	1143.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+344 = {
+	name="Aileen" #non-canon; leader for pegasus knight company
+	female=yes
+	
+	religion=elimine_church
+	culture=ilian
+	
+	#trait="class_pegasus_knight"
+	1143.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+345 = {
+	name="Aesha" #non-canon; leader for pegasus knight company
+	female=yes
+	
+	religion=elimine_church
+	culture=ilian
+	
+	#trait="class_pegasus_knight"
+	1143.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death=yes 
+	}
+}
+
+346 = {
+	name="Helenos" #non-canon; father for Zelots and leader of the merc knights
+	dynasty=303
+	
+	religion=elimine_church
+	culture=ilian
+	
+	#trait="class_cavalier"
+	
+	1107.01.01 = { 
+		birth=yes 
+	}
+	
+	1167.1.1= {
+		death = yes
+	}
+}
+
+# Filler characters to hold land
+#Remy
+347 = {
+	name="Rhodanthe" 
+	female=yes
+	dynasty=313
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1138.01.01 = { 
+		birth=yes 
+	}
+	
+	1170.01.01 = { 
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+348 = {
+	name="Romylia" 
+	female=yes
+	dynasty=313
+	
+	mother=347
+	religion=elimine_church
+	culture=ilian
+	
+	1154.01.01 = { 
+		birth=yes 
+	}
+	
+	1216.1.1= {
+		death = yes
+	}
+}
+#Velera
+#Pathva
+#Remnun
+#vassals of above#
+
+#Neandreia
+349 = {
+	name="Parthena" 
+	female=yes
+	dynasty=310
+	
+	father=339
+	
+	religion=anima
+	culture=ilian
+	
+	1145.01.01 = { 
+		birth=yes 
+	}
+	
+	1159.01.01 = { 
+		add_trait="class_mage_female"
+		add_trait="winter_soldier"
+	}
+	
+	1210.1.1= {
+		death = yes
+	}
+}
+#Edessa
+#Zelots#
+#Adma 
+#Orhay
+#Vassal of Edessa#
+
+#Pyrene
+350 = {
+	name="Petronia" 
+	female=yes
+	dynasty=314
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1133.01.01 = { 
+		birth=yes 
+	}
+	
+	1175.1.1= {
+		death = yes
+	}
+}
+351 = {
+	name="Pavlina" 
+	female=yes
+	dynasty=314
+	mother=350
+	religion=elimine_church
+	culture=ilian
+	
+	1163.01.01 = { 
+		birth=yes 
+	}
+	
+	1221.1.1= {
+		death = yes
+	}
+}
+
+#Riha
+352 = {
+	name="Raphail" 
+	dynasty=315
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1141.01.01 = { 
+		birth=yes 
+	}
+	
+	1188.1.1= {
+		death = yes
+	}
+}
+#Troas
+#Juno's squad#
+#Sigeia
+353 = {
+	name="Sibylla" 
+	female=yes
+	dynasty=316
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1190.1.1= {
+		death = yes
+	}
+}
+354 = {
+	name="Sergia" 
+	female=yes
+	dynasty=316
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1160.01.01 = { 
+		birth=yes 
+	}
+	
+	1220.1.1= {
+		death = yes
+	}
+}
+#Carrhae
+#Aisarna
+#Sigune's squad#
+#Melas
+#Antigonia
+#Ida
+355 = {
+	name="Alexandra" 
+	female=yes
+	dynasty=317
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1110.01.01 = { 
+		birth=yes 
+	}
+	
+	1170.1.1= {
+		death = yes
+	}
+}
+356 = {
+	name="Apollonia" 
+	female=yes
+	dynasty=317
+	
+	mother=355
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1145.01.01 = { 
+		birth=yes 
+	}
+	
+	1198.1.1= {
+		death = yes
+	}
+}
+#Cebrene
+#Farina's squad#
+#Hortia
+#Sabatia
+357 = {
+	name="Samuel" 
+	dynasty=318
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1139.01.01 = { 
+		birth=yes 
+	}
+	
+	1203.1.1= {
+		death = yes
+	}
+}
+#Vipena
+358 = {
+	name="Viviana" 
+	female=yes
+	dynasty=319
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1180.1.1= {
+		death = yes
+	}
+}
+359 = {
+	name="Valeria" 
+	female=yes
+	dynasty=319
+	mother=358
+	religion=elimine_church
+	culture=ilian
+	
+	1165.01.01 = { 
+		birth=yes 
+	}
+	
+	1229.1.1= {
+		death = yes
+	}
+}
+#Spina
+#Niime#
+#Kavi
+#Mutina
+360 = {
+	name="Melissa" 
+	female=yes
+	dynasty=320
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1179.1.1= {
+		death = yes
+	}
+}
+361 = {
+	name="Konstantia" 
+	female=yes
+	dynasty=320
+	mother=360
+	religion=elimine_church
+	culture=ilian
+	
+	1163.01.01 = { 
+		birth=yes 
+	}
+	
+	1203.1.1= {
+		death = yes
+	}
+}
+#Anth
+#Clavna
+362 = {
+	name="Adriane" 
+	female=yes
+	dynasty=321
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1115.01.01 = { 
+		birth=yes 
+	}
+	
+	1177.1.1= {
+		death = yes
+	}
+}
+363 = {
+	name="Agne" 
+	female=yes
+	dynasty=321
+	mother=362
+	religion=elimine_church
+	culture=ilian
+	
+	1150.01.01 = { 
+		birth=yes 
+	}
+	
+	1205.1.1= {
+		death = yes
+	}
+}
+#Sestos
+#Fiora's squad#
+#Sigeion
+364 = {
+	name="Eugenia" 
+	female=yes
+	dynasty=322
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1139.01.01 = { 
+		birth=yes 
+	}
+	
+	1190.1.1= {
+		death = yes
+	}
+}
+365 = {
+	name="Georgia" 
+	female=yes
+	dynasty=322
+	mother=364
+	religion=elimine_church
+	culture=ilian
+	
+	1159.01.01 = { 
+		birth=yes 
+	}
+	
+	1212.1.1= {
+		death = yes
+	}
+}
+#Arciun
+366 = {
+	name="Aikaterine" 
+	female=yes
+	dynasty=323
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1141.01.01 = { 
+		birth=yes 
+	}
+	
+	1201.1.1= {
+		death = yes
+	}
+}
+367 = {
+	name="Anthe" 
+	female=yes
+	dynasty=323
+	mother=366
+	religion=elimine_church
+	culture=ilian
+	
+	1161.01.01 = { 
+		birth=yes 
+	}
+	
+	1201.1.1= {
+		death = yes
+	}
+}
+#Atria
+#Carmna
+368 = {
+	name="Demetra" 
+	female=yes
+	dynasty=324
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1117.01.01 = { 
+		birth=yes 
+	}
+	
+	1163.1.1= {
+		death = yes
+	}
+}
+369 = {
+	name="Damiane" 
+	female=yes
+	dynasty=324
+	mother=368
+	religion=elimine_church
+	culture=ilian
+	
+	1149.01.01 = { 
+		birth=yes 
+	}
+	
+	1199.1.1= {
+		death = yes
+	}
+}
+#Felsina
+370 = {
+	name="Eirene" 
+	female=yes
+	dynasty=325
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1144.01.01 = { 
+		birth=yes 
+	}
+	
+	1196.1.1= {
+		death = yes
+	}
+}
+371 = {
+	name="Stephanos" 
+	dynasty=325
+	mother=370
+	religion=elimine_church
+	culture=ilian
+	
+	1165.01.01 = { 
+		birth=yes 
+	}
+	
+	1228.1.1= {
+		death = yes
+	}
+}
+#Cardia
+#Aisina
+372 = {
+	name="Kallistos" 
+	dynasty=326
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1143.01.01 = { 
+		birth=yes 
+	}
+	
+	1194.1.1= {
+		death = yes
+	}
+}
+#Cainua
+373 = {
+	name="Dorothea" 
+	female=yes
+	dynasty=327
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1133.01.01 = { 
+		birth=yes 
+	}
+	
+	1190.1.1= {
+		death = yes
+	}
+}
+374 = {
+	name="Theodora" 
+	female=yes
+	dynasty=327
+	mother=373
+	religion=elimine_church
+	culture=ilian
+	
+	1158.01.01 = { 
+		birth=yes 
+	}
+	
+	1209.1.1= {
+		death = yes
+	}
+}
+#Phlera
+#Sabate
+#Arimna
+375 = {
+	name="Dionysia" 
+	female=yes
+	dynasty=328
+	
+	religion=elimine_church
+	culture=ilian
+	
+	1142.01.01 = { 
+		birth=yes 
+	}
+	
+	1191.1.1= {
+		death = yes
+	}
+}
+376 = {
+	name="Leontia" 
+	female=yes
+	dynasty=328
+	mother=375
+	religion=elimine_church
+	culture=ilian
+	
+	1165.01.01 = { 
+		birth=yes 
+	}
+	
+	1208.1.1= {
+		death = yes
+	}
+}

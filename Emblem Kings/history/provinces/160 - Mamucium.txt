@@ -1,0 +1,17 @@
+# c_mamucium
+
+# County Title
+title = c_mamucium
+
+# Settlements
+max_settlements = 3
+
+b_mamucium = tribal
+#b_mamucium_2 = temple
+#b_mamucium_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

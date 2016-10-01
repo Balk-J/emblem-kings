@@ -1,0 +1,9 @@
+180.1.1={
+	liege=c_aquila
+}
+1154.8.1={
+	holder=158 # farmer Wallace
+}
+1160.1.1={
+	holder=0
+}

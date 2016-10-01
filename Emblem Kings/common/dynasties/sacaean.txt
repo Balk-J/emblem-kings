@@ -1,0 +1,785 @@
+# Canon
+501={
+	name="of Sacae"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 11
+            emblem = 0
+            color = 5
+            color = 0
+            color = 5
+        }
+    }
+}
+502={
+	#can_appear=no
+	name="Kutolah"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 28
+            emblem = 0
+            color = 5
+            color = 0
+            color = 3
+        }
+    }
+}
+503={
+	#can_appear=no
+	name="Djute"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 33
+            emblem = 0
+            color = 0
+            color = 10
+            color = 4
+        }
+    }
+}
+504={
+	#can_appear=no
+	name="Bulgar" #mentioned in the Sin/Fir B support, but no confirmed appearance.
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 3
+            emblem = 0
+            color = 13
+            color = 7
+            color = 6
+        }
+    }
+}
+505={
+	#can_appear=no
+	name="Lorca"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 2
+            emblem = 0
+            color = 0
+            color = 12
+            color = 3
+        }
+    }
+}
+# Non-canon
+506={
+	can_appear=no
+	name="Uhaid"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 80
+            emblem = 0
+            color = 6
+            color = 2
+            color = 11
+        }
+    }
+}
+
+507={
+	can_appear=no
+	name="Wodao"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 3
+            emblem = 0
+            color = 1
+            color = 11
+            color = 11
+        }
+    }
+}
+
+508={
+	can_appear=no
+	name="Glass"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 2
+            emblem = 0
+            color = 1
+            color = 3
+            color = 3
+        }
+    }
+}
+
+509={
+	can_appear=no
+	name="Guy"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 52
+            emblem = 0
+            color = 1
+            color = 9
+            color = 2
+        }
+    }
+}
+
+510={
+	can_appear=no
+	name="Sin" #Sindi?
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 78
+            emblem = 0
+            color = 0
+            color = 4
+            color = 5
+        }
+    }
+}
+
+511={
+	can_appear=no
+	name="Rath" 
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 57
+            emblem = 0
+            color = 3
+            color = 0
+            color = 5
+        }
+    }
+}
+
+512={
+	name="Dahae"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+513={
+	name="Parni"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+514={
+	name="Parala"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+515={
+	name="Kamboja"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+516={
+	name="Geloni"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+517={
+	name="Massaget"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+518={
+	name="Apasia"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+519={
+	name="Sindi"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+520={
+	name="Tauri"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+521={
+	name="Traspia"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+522={
+	name="Neuri"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+523={
+	name="Lipo"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+524={
+	name="Arpo"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+525={
+	name="Kola"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+526={
+	name="Agathyr"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+527={
+	name="Amyrgia"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+528={
+	name="Budini"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+529={
+	name="Catia"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+
+# Mongol dynasty names! Sacae is basically Mongolia anyway.
+530=
+{
+	name="Sartaq"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+531=
+{
+	name="Mengu-Timur"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+532=
+{
+	name="Uriankhai"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+533=
+{
+	name="Bujakhin"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+534=
+{
+	name="Besud"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+
+535=
+{
+	name="Noyan"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+536=
+{
+	name="Jochid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+537=
+{
+	name="Chagatayid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+538=
+{
+	name="Borjigin"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+539=
+{
+	name="Chupanid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+540=
+{
+	name="Toluid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+
+541=
+{
+	name="Injuid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+
+542=
+{
+	name="Ganbold"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+543=
+{
+	name="Bolormaa"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+544=
+{
+	name="Batbayar"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+545=
+{
+	name="Bat-Erdene"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+546=
+{
+	name="Otgonbayar"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+547=
+{
+	name="Enkhtuyaa"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+548=
+{
+	name="Gantulga"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+549=
+{
+	name="Nergüi"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+550=
+{
+	name="Lkhagvasüren"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+551=
+{
+	name="Enkhjargal"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+552=
+{
+	name="Ganzorig"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+553=
+{
+	name="Narantsetseg"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+554=
+{
+	name="Pürevsüren"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+555=
+{
+	name="Ganbaatar"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+556=
+{
+	name="Mönkhtsetseg"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+557=
+{
+	name="Mönkhbat"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+558=
+{
+	name="Mönkh-Erdene"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+559=
+{
+	name="Jalair"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+560=
+{
+	name="Sartuul"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+561=
+{
+	name="Olkhunut"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+562=
+{
+	name="Khatagin"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+563=
+{
+	name="Iljigin"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+564=
+{
+	name="Tsookhor"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+565=
+{
+	name="Onggirat"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+566=
+{
+	name="Naiman"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+567=
+{
+	name="Kereyid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+
+568=
+{
+	name="Naimanid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+569=
+{
+	name="Buryat"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+570=
+{
+	name="Onggirat"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+571=
+{
+	name="Khunggirad"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+572=
+{
+	name="Bayad"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+573=
+{
+	name="Mergid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+574=
+{
+	name="Telingid"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+575= {
+	name="Aralkum"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+576= {
+	name="Dana"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+577= {
+	name="Aqtöbe"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+578= {
+	name="Bailjar"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+579= {
+	name="Kaztal"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+580= {
+	name="Pecha"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+581= {
+	name="Kangly"
+	culture="sacaean"
+	religion="divine_sky_pagan"
+}
+
+#
+582={
+	name="Talas"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 3
+            emblem = 0
+            color = 11
+            color = 8
+            color = 1
+        }
+    }
+}
+583={
+	can_appear=no
+	name="Battid"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 47
+            emblem = 0
+            color = 8
+            color = 4
+            color = 4
+        }
+    }
+}
+584={
+	can_appear=no
+	name="Gossler"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 31
+            emblem = 0
+            color = 10
+            color = 12
+            color = 11
+        }
+    }
+}
+585={
+	can_appear=no
+	name="Ganelon"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 42
+            emblem = 0
+            color = 10
+            color = 5
+            color = 5
+        }
+    }
+}
+586={
+	can_appear=no
+	name="Kel"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 3
+            emblem = 0
+            color = 5
+            color = 4
+            color = 4
+        }
+    }
+}
+587={
+	can_appear=no
+	name="Taliver"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 40
+            emblem = 0
+            color = 8
+            color = 1
+            color = 1
+        }
+    }
+}
+
+588={
+	can_appear=no
+	name="Kubernis"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 17
+            emblem = 0
+            color = 4
+            color = 11
+            color = 11
+        }
+    }
+}
+
+589= {
+	can_appear=no
+	name="Tarquinius"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 30
+            emblem = 0
+            color = 6
+            color = 0
+            color = 0
+        }
+    }
+}
+590={
+	can_appear=no
+	name="Caecina"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 42
+            emblem = 0
+            color = 1
+            color = 9
+            color = 4
+        }
+    }
+}
+591={
+	can_appear=no
+	name="Commius"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 1
+            emblem = 0
+            color = 1
+            color = 8
+            color = 1
+        }
+    }
+}
+592={
+	can_appear=no
+	name="Ortogh"
+	culture="sacaean"
+	coat_of_arms = {
+		religion="divine_sky_pagan"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 12
+            emblem = 0
+            color = 6
+            color = 9
+            color = 9
+        }
+    }
+}

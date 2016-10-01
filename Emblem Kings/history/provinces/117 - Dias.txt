@@ -1,0 +1,18 @@
+# c_dias
+
+# County Title
+title = c_dias
+
+# Settlements
+max_settlements = 4
+
+b_dias = castle
+b_dias_2 = city
+b_dias_3 = temple
+#b_pogla = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

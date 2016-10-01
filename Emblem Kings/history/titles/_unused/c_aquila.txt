@@ -1,0 +1,8 @@
+# e_elibe
+180.1.1={
+	law = agnatic_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_caelin
+#}

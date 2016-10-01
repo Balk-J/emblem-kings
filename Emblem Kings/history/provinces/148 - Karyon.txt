@@ -1,0 +1,17 @@
+# c_karyon
+
+# County Title
+title = c_karyon
+
+# Settlements
+max_settlements = 3
+
+b_karyon = tribal
+#b_karyon_2 = temple
+#b_karyon_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

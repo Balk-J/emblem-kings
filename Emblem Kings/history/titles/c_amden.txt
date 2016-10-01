@@ -1,0 +1,11 @@
+# k_calach
+180.1.1={
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_gallen
+#}
+1157.01.01 = { 
+	holder=469
+}

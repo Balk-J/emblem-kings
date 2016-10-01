@@ -1,0 +1,175 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+eight_legends;Eight Legends;;;;;;;;;;;;;x
+eight_legends_desc;This character is one of the Eight Legends, humanity's greatest generals during the Scouring;;;;;;;;;;;;;x
+#immortal;Ageless;;;;;;;;;;;;;x
+#immortal_desc;Through magic acquired or innate, this character is practically immortal - [GetSheHe] will not die from natural causes as long as [GetHerHis] power does not fail [GetHerHim]. However, that does not mean GetSheHe] cannot be killed...;;;;;;;;;;;;;x
+#disappeared;Disappeared;;;;;;;;;;;;;x
+#disappeared_desc;This character has vanished completely. [GetSheHe] may still be alive - in another world or hidden in a remote part of this one. However, [GetSheHe] is dead for all practical purposes.;;;;;;;;;;;;;x
+#disappeared_death;or vanished without a trace;;;;;;;;;;;;;x
+bad_priest_light;Wicked Priest;Mauvais prêtre;Der gottlose Priester;;Sacerdote malvado;;;;;;;;;x
+bad_priest_light_desc;The personality and habits of this priest are very inappropriate for [GetHerHis] position. And what's worse, [GetSheHe] has been unable to hide them from public view.;La personnalité et les mœurs de ce prêtre sont très inappropriées pour un homme de [GetHerHis] fonction. Pire encore, [GetSheHe] est incapable de faire cela discrètement.;Die Persönlichkeit und Gewohnheiten des Priesters sind äußerst unpassend für [GetHerHis] Stand. Auch vermag [GetSheHe] es keineswegs, seine schlechten Eigenschaften vor der Allgemeinheit zu verbergen.;;La personalidad y hábitos de este sacerdote son muy inapropiados para esta posición. Y lo peor es que no es capaz de esconderlos en público.;;;;;;;;;x
+bad_priest_divine_sky;Unworthy Priest;Mauvais prêtre;Der gottlose Priester;;Sacerdote malvado;;;;;;;;;x
+bad_priest_divine_sky_desc;The personality and habits of this priest are very inappropriate for [GetHerHis] position. And what's worse, [GetSheHe] has been unable to hide them from public view.;La personnalité et les mœurs de ce prêtre sont très inappropriées pour un homme de [GetHerHis] fonction. Pire encore, [GetSheHe] est incapable de faire cela discrètement.;Die Persönlichkeit und Gewohnheiten des Priesters sind äußerst unpassend für [GetHerHis] Stand. Auch vermag [GetSheHe] es keineswegs, seine schlechten Eigenschaften vor der Allgemeinheit zu verbergen.;;La personalidad y hábitos de este sacerdote son muy inapropiados para esta posición. Y lo peor es que no es capaz de esconderlos en público.;;;;;;;;;x
+dark_incapable;Comatose;;;;;;;;;;;;;x
+dark_incapable_desc;This unfortunate character invited dark power within [GetHerselfHimself] to further [GetHerHis] study of elder magic, but was unable to resist the temptation to submit to the darkness. They live and breathe. Their eyes open and close. But... they do not move. And they do not speak.;;;;;;;;;;;;;x 
+dark_incapable_death;comatose in bed;en sombrant dans le coma;komatös im Bett;;en estado de coma en la cama;;;;;;;;;x
+dark_selfless;Selfless;;;;;;;;;;;;;x
+dark_selfless_desc;To master elder magic, this character devoted [GetHerselfHimself] entirely to the darkness. [GetSheHeCap] has obtained great power, but at the cost of [GetHerHis] very identity. [GetSheHeCap] is now little more than a mirror that reflects the person addressing [GetHerHim]. All emotion and memory has been dissolved in a river of darkness.;;;;;;;;;;;;;x
+dark_power_hungry;Power-obsessed;;;;;;;;;;;;;x
+dark_power_hungry_desc;This character has lost themselves in the study of elder magic, erasing much of [GetHerHis] identity to attain more power. [GetSheHeCap] now pursues power for its own sake, and will stop at nothing to grow stronger.;;;;;;;;;;;;;x
+morph;Morph;;;;;;;;;;;;;x
+morph_desc;This character is a morph - a human-like monster created through dark magic.;;;;;;;;;;;;;x
+war_dragon;War Dragon;;;;;;;;;;;;;x
+war_dragon_desc;This character is an artificial dragon born only for combat.;;;;;;;;;;;;;x
+#war_dragon_desc;This character is an artificial dragon born for combat. War Dragons were originally created by the dragons of Elibe during the Scouring to compensate for their inferior numbers, and turned the tide of the war until the creation of Elibe's legendary weapons.;;;;;;;;;;;;;x
+demon_dragon;Demon Dragon;;;;;;;;;;;;;x
+demon_dragon_desc;This character is a Demon Dragon - a transformed Divine Dragon capable of producing War Dragons.;;;;;;;;;;;;;x
+dragon;Dragon;;;;;;;;;;;;;x
+dragon_desc;This character is of dragon lineage.;;;;;;;;;;;;;x
+beast;Beast;;;;;;;;;;;;;x
+beast_desc;This character is one of the beast tribe laguz of Tellius.;;;;;;;;;;;;;x
+bird;Bird;;;;;;;;;;;;;x
+bird_desc;This character is one of the bird tribe laguz of Tellius.;;;;;;;;;;;;;x
+sympathy_light;Sympathy for Holy Light;;;;;;;;;;;;;x
+sympathy_light_desc;This character, though not a believer in the Holy Light, has a special sympathy and understanding for the faith and its practitioners.;;;;;;;;;;;;;x
+sympathy_magic;Sympathy for Magic Users;;;;;;;;;;;;;x
+sympathy_magic_desc;This character, though not a mage, has a special sympathy and understanding for magic and its practitioners.;;;;;;;;;;;;;x
+class_archdruid;Archdruid;;;;;;;;;;;;;x
+class_archdruid_desc;A druid who has perfected dark magic.;;;;;;;;;;;;;x
+class_archer;Archer;;;;;;;;;;;;;x
+class_archer_desc;Lightly protected warriors armed with bows. They can attack from a distance.;;;;;;;;;;;;;x
+class_archer_female;Archer;;;;;;;;;;;;;x
+class_archer_female_desc;Lightly protected warriors armed with bows. They can attack from a distance.;;;;;;;;;;;;;x
+class_archsage;Archsage;;;;;;;;;;;;;x
+class_archsage_desc;A title reserved only for those who have mastered all types of magic and all staves.;;;;;;;;;;;;;x
+class_assassin;Assassin;;;;;;;;;;;;;x
+class_assassin_desc;Masters of the killing arts. They have the ability to kill a foe with a single stroke.;;;;;;;;;;;;;x
+class_assassin_female;Assassin;;;;;;;;;;;;;x
+class_assassin_female_desc;Masters of the killing arts. They have the ability to kill a foe with a single stroke.;;;;;;;;;;;;;x
+class_bard;Bard;;;;;;;;;;;;;x
+class_bard_desc;Musicians whose songs inspire allies. They do not fight in combat.;;;;;;;;;;;;;x
+class_berserker;Berserker;;;;;;;;;;;;;x
+class_berserker_desc;A title for those who live to fight. Strong in mountains or at sea. Skilled in killing blows.;;;;;;;;;;;;;x
+class_bishop;Bishop;;;;;;;;;;;;;x
+class_bishop_desc;A title given to monks who have attained enlightenment. Wields magic for offense.;;;;;;;;;;;;;x
+class_bishop_female;Bishop;;;;;;;;;;;;;x
+class_bishop_female_desc;A title given to monks who have attained enlightenment. Wields magic for offense.;;;;;;;;;;;;;x
+class_brigand;Brigand;;;;;;;;;;;;;x
+class_brigand_desc;Mighty axe fighters especially skilled in mountain combat.;;;;;;;;;;;;;x
+class_cavalier;Cavalier;;;;;;;;;;;;;x
+class_cavalier_desc;Mounted knights with superior movement. Well balanced for speed, defense, & attack.;;;;;;;;;;;;;x
+class_cleric;Cleric;;;;;;;;;;;;;x
+class_cleric_desc;Wielders of sacred staves who aid allies in battle. They refuse to take arms in combat.;;;;;;;;;;;;;x
+class_dancer;Dancer;;;;;;;;;;;;;x
+class_dancer_desc;Dancers whose grace soothes allies. They do not fight in combat.;;;;;;;;;;;;;x
+class_dark_druid;Dark Druid;;;;;;;;;;;;;x
+class_dark_druid_desc;A druid whose soul has been sacrificed to darkness in an appeal for power.;;;;;;;;;;;;;x
+class_druid;Druid;;;;;;;;;;;;;x
+class_druid_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
+#class_druid_desc;A title granted to powerful shamans. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
+class_druid_female;Druid;;;;;;;;;;;;;x
+class_druid_female_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
+#class_druid_female_desc;.;;;;;;;;;;;;;x
+class_falcon_knight;Falcon Knight;;;;;;;;;;;;;x
+class_falcon_knight_desc;A title bestowed upon skilled pegasus knights. They have superb speed and magic resistance.;;;;;;;;;;;;;x
+#class_falcon_knight_desc;Knights united with their pegasus mounts. They have superior skill and resistance.;;;;;;;;;;;;;x
+class_fighter;Fighter;;;;;;;;;;;;;x
+class_fighter_desc;Axe-wielding powerhouses whose wild fighting style leaves them with poor defenses.;;;;;;;;;;;;;x
+class_general;General;;;;;;;;;;;;;x
+class_general_desc;Lordly knights in heavy armor. They possess excellent defensive and offensive skills.;;;;;;;;;;;;;x
+#class_general_desc;A title earned by seasoned knights. Excellent offensive and defensive skills.;;;;;;;;;;;;;x
+class_great_knight;Great Knight;;;;;;;;;;;;;x
+class_great_knight_desc;Knights with high defense and mobility. They use swords, axes, and lances equally well.;;;;;;;;;;;;;x
+class_hero;Hero;;;;;;;;;;;;;x
+class_hero_desc;The finest of all mercenary warriors, expert in all fields of combat.;;;;;;;;;;;;;x
+class_hero_female;Hero;;;;;;;;;;;;;x
+class_hero_female_desc;The finest of all mercenary warriors, expert in all fields of combat.;;;;;;;;;;;;;x
+class_knight;Knight;;;;;;;;;;;;;x
+class_knight_desc;Heavily armored knights. Superior defense outweighs their poor movement and speed.;;;;;;;;;;;;;x
+class_mage;Mage;;;;;;;;;;;;;x
+class_mage_desc;Mages schooled in anima magic. They can bypass most defenses but are weak against conventional weapons.;;;;;;;;;;;;;x
+class_mage_female;Mage;;;;;;;;;;;;;x
+class_mage_female_desc;Mages schooled in anima magic. They can bypass most defenses but are weak against conventional weapons.;;;;;;;;;;;;;x
+class_mage_knight;Mage Knight;;;;;;;;;;;;;x
+class_mage_knight_desc;Mounted mage-knights who wield anima magic. Can also use sacred staves.;;;;;;;;;;;;;x
+class_mage_knight_female;Mage Knight;;;;;;;;;;;;;x
+class_mage_knight_female_desc;Mounted mage-knights who wield anima magic. Can also use sacred staves.;;;;;;;;;;;;;x
+class_magic_seal;Magic Seal;;;;;;;;;;;;;x
+class_magic_seal_desc;A foul creature born of heresy who negates the effects of magic.;;;;;;;;;;;;;x
+class_manakete;Manakete;;;;;;;;;;;;;x
+class_manakete_desc;A fabled race said to be able to take dragon form.;;;;;;;;;;;;;x
+class_manakete_female;Manakete;;;;;;;;;;;;;x
+class_manakete_female_desc;A fabled race said to be able to take dragon form.;;;;;;;;;;;;;x
+class_mercenary;Mercenary;;;;;;;;;;;;;x
+class_mercenary_desc;Professional soldiers-for-hire. They are well balanced, with superior ablilities all around.;;;;;;;;;;;;;x
+class_mercenary_female;Mercenary;;;;;;;;;;;;;x
+class_mercenary_female_desc;Professional soldiers-for-hire. They are well balanced, with superior ablilities all around.;;;;;;;;;;;;;x
+class_monk;Monk;;;;;;;;;;;;;x
+class_monk_desc;Ascetic wielders of sacred light magic. They have superior ability to hit but low attack power.;;;;;;;;;;;;;x
+class_myrmidon;Myrmidon;;;;;;;;;;;;;x
+class_myrmidon_desc;Swordsmen who possess superior speed and technique. They specialize in killing strokes.;;;;;;;;;;;;;x
+class_myrmidon_female;Myrmidon;;;;;;;;;;;;;x
+class_myrmidon_female_desc;Swordsmen who possess superior speed and technique. They specialize in killing strokes.;;;;;;;;;;;;;x
+class_horse_archer;Horse Archer;;;;;;;;;;;;;x
+class_horse_archer_desc;Riders skilled in horseback archery. Incredibly swift.;;;;;;;;;;;;;x
+class_horse_archer_female;Horse Archer;;;;;;;;;;;;;x
+class_horse_archer_female_desc;Riders skilled in horseback archery. Incredibly swift.;;;;;;;;;;;;;x
+class_paladin;Paladin;;;;;;;;;;;;;x
+class_paladin_desc;A title earned only by those cavaliers whose lives have been dedicated to justice.;;;;;;;;;;;;;x
+class_pegasus_knight;Pegasus Knight;;;;;;;;;;;;;x
+class_pegasus_knight_desc;Knights who soar through the skies on pegasi. They resist magic but are weak against bows.;;;;;;;;;;;;;x
+class_pirate;Pirate;;;;;;;;;;;;;x
+class_pirate_desc;Axe-wielding privateers trained to fight on the high seas.;;;;;;;;;;;;;x
+class_priest;Priest;;;;;;;;;;;;;x
+class_priest_desc;Members of the clergy who wield sacred staves to aid allies. They carry no weapons.;;;;;;;;;;;;;x
+class_ranger;Ranger;;;;;;;;;;;;;x
+class_ranger_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
+#class_ranger_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
+class_ranger_female;Ranger;;;;;;;;;;;;;x
+class_ranger_female_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
+#class_ranger_female_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
+class_rogue;Rogue;;;;;;;;;;;;;x
+class_rogue_desc;Adventurer-thieves with skills so great they can open chests and doors without tools.;;;;;;;;;;;;;x
+class_sage;Sage;;;;;;;;;;;;;x
+class_sage_desc;A title given to advanced mages. They wield magic and can carry staves.;;;;;;;;;;;;;x
+class_sage_female;Sage;;;;;;;;;;;;;x
+class_sage_female_desc;A title given to advanced mages. They wield magic and can carry staves.;;;;;;;;;;;;;x
+class_shaman;Shaman;;;;;;;;;;;;;x
+class_shaman_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
+class_shaman_female;Shaman;;;;;;;;;;;;;x
+class_shaman_female_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
+class_sniper;Sniper;;;;;;;;;;;;;x
+class_sniper_desc;Archers dedicated to mastering their art. None can match their skill with the bow.;;;;;;;;;;;;;x
+#class_sniper_desc;A title won by veteran archers. None can match their skill with the bow..;;;;;;;;;;;;;x
+class_sniper_female;Sniper;;;;;;;;;;;;;x
+class_sniper_female_desc;Archers dedicated to mastering their art. None can match their skill with the bow.;;;;;;;;;;;;;x
+#class_sniper_female_desc;A title won by veteran archers. None can match their skill with the bow..;;;;;;;;;;;;;x
+class_soldier;Soldier;;;;;;;;;;;;;x
+class_soldier_desc;Foot soldiers who bear spears in combat.;;;;;;;;;;;;;x
+#class_soldier_desc;Average foot soldiers possessing no unique abilities. They bear spears in combat.;;;;;;;;;;;;;x
+class_summoner;Summoner;;;;;;;;;;;;;x
+class_summoner_desc;A title granted to shamans who have used forbidden magic to learn the summoning arts.;;;;;;;;;;;;;x
+class_swordmaster;Swordmaster;;;;;;;;;;;;;x
+class_swordmaster_desc;A title given to those dedicated to the sword. They are capable of incredible speed and killing strokes.;;;;;;;;;;;;;x
+class_swordmaster_female;Swordmaster;;;;;;;;;;;;;x
+class_swordmaster_female_desc;A title given to those dedicated to the sword. They are capable of incredible speed and killing strokes.;;;;;;;;;;;;;x
+class_tactician;Tactician;;;;;;;;;;;;;x
+class_tactician_desc;.;;;;;;;;;;;;;x
+class_thief;Thief;;;;;;;;;;;;;x
+class_thief_desc;Rogues and fortune hunters. They possess weak attacks but many other skills.;;;;;;;;;;;;;x
+class_thief_female;Thief;;;;;;;;;;;;;x
+class_thief_female_desc;Rogues and fortune hunters. They possess weak attacks but many other skills.;;;;;;;;;;;;;x
+class_troubador;Troubador;;;;;;;;;;;;;x
+class_troubador_desc;Mounted maidens whose sacred staves aid allies. They are swift but will not fight.;;;;;;;;;;;;;x
+class_valkyrie;Valkyrie;;;;;;;;;;;;;x
+class_valkyrie_desc;Battle maidens who ride into combat wielding light magic and sacred staves.;;;;;;;;;;;;;x
+#class_valkyrie_desc;A title given to the finest troubadours. Wields sacred magic to aid allies.;;;;;;;;;;;;;x
+class_warrior;Warrior;;;;;;;;;;;;;x
+class_warrior_desc;A title awarded to battle-tested warriors. The strongest of all fighters.;;;;;;;;;;;;;x
+class_wyvern_knight;Wyvern Knight;;;;;;;;;;;;;x
+class_wyvern_knight_desc;High-flying, lance-wielding knights. They can penetrate enemy defenses with ease.;;;;;;;;;;;;;x
+class_wyvern_lord;Wyvern Lord;;;;;;;;;;;;;x
+class_wyvern_lord_desc;A title earned by only truly skilled wyvern riders. They are well-balanced warriors.;;;;;;;;;;;;;x
+#class_wyvern_lord_desc;Knights united with their wyvern mounts. They have better movement and combat skill.;;;;;;;;;;;;;x
+class_wyvern_rider;Wyvern Rider;;;;;;;;;;;;;x
+class_wyvern_rider_desc;Knights who rule the skies from wyvern-back. They are vulnerable to only bows and magic.;;;;;;;;;;;;;x

@@ -1,0 +1,19 @@
+# c_corinium
+
+# County Title
+title = c_corinium
+
+# Settlements
+max_settlements = 4
+
+b_corinium = city
+b_corinium_2 = temple
+b_corinium_3 = castle
+#b_garrianonum = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History
+440.1.1 = { capital = b_corinium }

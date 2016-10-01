@@ -1,0 +1,19 @@
+# c_dia
+
+# County Title
+title = c_dia
+
+# Settlements
+max_settlements = 4
+
+b_dia = city
+b_dia_2 = temple
+b_dia_3 = castle
+#b_aquae_sulis = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History
+440.1.1 = { capital = b_dia }

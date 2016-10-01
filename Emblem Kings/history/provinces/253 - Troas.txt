@@ -1,0 +1,18 @@
+# c_troas
+
+# County Title
+title = c_troas
+
+# Settlements
+max_settlements = 4
+
+b_troas = tribal
+#b_troas_2 = city
+#b_troas_3 = temple
+#b_taruisa = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

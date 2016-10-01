@@ -1,0 +1,21 @@
+# c_aquleia
+
+# County Title
+title = c_aquleia
+
+# Settlements
+max_settlements = 7
+
+b_aquleia_palace = castle
+b_tower_of_the_saint = temple
+b_aquleia = temple
+b_aureola = temple
+b_aquleia_2 = city
+b_artisans_town = city
+b_aquelia_keep = castle
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

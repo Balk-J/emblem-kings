@@ -1,0 +1,16 @@
+# c_netstal
+
+# County Title
+title = c_netstal
+
+# Settlements
+max_settlements = 2
+
+b_netstal = castle
+#b_netstal_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,19 @@
+# c_velkha
+
+# County Title
+title = c_velkha
+
+# Settlements
+max_settlements = 5
+
+b_velkha = castle
+b_velkha_2 = temple
+b_velkha_3 = city
+#b_volcei = temple
+#b_buccino = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

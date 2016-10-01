@@ -1,0 +1,17 @@
+# c_trimontium
+
+# County Title
+title = c_trimontium
+
+# Settlements
+max_settlements = 3
+
+b_trimontium = tribal
+#b_trimontium_2 = temple
+#b_trimontium_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

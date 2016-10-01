@@ -1,0 +1,16 @@
+# c_lucerne
+
+# County Title
+title = c_lucerne
+
+# Settlements
+max_settlements = 2
+
+b_lucerne = tribal
+#b_lucerne_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,23 @@
+# c_volga
+
+# County Title
+title = c_volga
+
+# Settlements
+max_settlements = 3
+
+b_volga = tribal
+#b_volga_2 = temple
+#b_volga_3 = city
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History
+#1134.1.1={
+#	b_volga = city
+#}
+#1135.1.1={
+#	b_volga_2 = castle
+#}

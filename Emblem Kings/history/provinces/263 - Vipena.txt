@@ -1,0 +1,17 @@
+# c_vipena
+
+# County Title
+title = c_vipena
+
+# Settlements
+max_settlements = 3
+
+b_vipena = tribal
+#b_vipena_2 = city
+#b_vipena_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

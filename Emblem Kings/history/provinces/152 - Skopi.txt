@@ -1,0 +1,17 @@
+# c_skopi
+
+# County Title
+title = c_skopi
+
+# Settlements
+max_settlements = 3
+
+b_skopi = tribal
+b_skopi_2 = temple
+#b_skopi_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

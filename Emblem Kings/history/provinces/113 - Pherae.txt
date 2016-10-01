@@ -1,0 +1,19 @@
+# c_pherae
+
+# County Title
+title = c_pherae
+
+# Settlements
+max_settlements = 5
+
+b_castle_pherae = castle
+b_demre = city
+b_kaya = temple
+#b_isba = city
+#b_aspendus = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,17 @@
+# c_caunus
+
+# County Title
+title = c_caunus
+
+# Settlements
+max_settlements = 3
+
+b_caunus = tribal
+#b_caunus_2 = city
+#b_caunus_3 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

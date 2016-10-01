@@ -1,0 +1,25 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_jutes
+}
+180.1.1={
+	holder=701 # Durban
+}
+
+1125.1.1={
+	liege=k_etruria
+	holder=261 # Filler
+}
+
+1175.1.1={
+	holder=215 #Arcard
+}
+
+1181.1.1={
+	holder=0 # liberated!
+}

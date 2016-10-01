@@ -1,0 +1,17 @@
+# c_durandal
+
+# County Title
+title = c_durandal
+
+# Settlements
+max_settlements = 3
+
+b_fort_roland = castle
+b_durandal_shrine = temple
+b_cremna = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

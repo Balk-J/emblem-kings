@@ -1,0 +1,19 @@
+# c_condate
+
+# County Title
+title = c_condate
+
+# Settlements
+max_settlements = 5
+
+b_condate = tribal
+#b_condate_2 = temple
+#b_condate_3 = city
+#b_curia = city
+#b_durocornovium = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

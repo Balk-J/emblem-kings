@@ -1,0 +1,17 @@
+# c_sarnen
+
+# County Title
+title = c_sarnen
+
+# Settlements
+max_settlements = 3
+
+b_sarnen = tribal
+#b_sarnen_2 = temple
+#b_sarnen_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

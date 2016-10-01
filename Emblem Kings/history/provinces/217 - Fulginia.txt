@@ -1,0 +1,17 @@
+# c_fulginia
+
+# County Title
+title = c_fulginia
+
+# Settlements
+max_settlements = 3
+
+b_fulginia = castle
+b_fulginia_2 = temple
+b_fulginia_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

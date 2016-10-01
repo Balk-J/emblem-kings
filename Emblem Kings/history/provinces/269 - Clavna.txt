@@ -1,0 +1,15 @@
+# c_clavna
+
+# County Title
+title = c_clavna
+
+# Settlements
+max_settlements = 1
+
+b_clavna = tribal
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

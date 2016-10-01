@@ -1,0 +1,17 @@
+# c_sestos
+
+# County Title
+title = c_sestos
+
+# Settlements
+max_settlements = 3
+
+b_sestos = tribal
+#b_sestos_2 = city
+#b_sestos_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

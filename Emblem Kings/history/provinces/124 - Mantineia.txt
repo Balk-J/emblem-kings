@@ -1,0 +1,19 @@
+# c_mantineia
+
+# County Title
+title = c_mantineia
+
+# Settlements
+max_settlements = 5
+
+b_mantineia = castle
+b_mantineia_2 = city
+b_dimitsana = city
+#b_elliniko = castle
+#b_kaltezes = castle
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

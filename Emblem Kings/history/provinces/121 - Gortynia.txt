@@ -1,0 +1,17 @@
+# c_gortynia
+
+# County Title
+title = c_gortynia
+
+# Settlements
+max_settlements = 3
+
+b_gortynia = tribal
+#b_gortynia_2 = city
+#b_gortynia_3 = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

@@ -1,0 +1,17 @@
+# c_levidi
+
+# County Title
+title = c_levidi
+
+# Settlements
+max_settlements = 3
+
+b_levidi = tribal
+#b_levidi_2 = city
+#b_levidi_3 = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

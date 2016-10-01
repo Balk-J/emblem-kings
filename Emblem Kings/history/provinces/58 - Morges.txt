@@ -1,0 +1,17 @@
+# c_morges
+
+# County Title
+title = c_morges
+
+# Settlements
+max_settlements = 4
+
+b_morges = tribal
+b_violetwater_temple = temple
+#b_rietheim = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

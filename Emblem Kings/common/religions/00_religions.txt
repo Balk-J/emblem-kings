@@ -1,0 +1,552 @@
+light_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	#crusade_cb = crusade
+	playable = yes
+	hostile_within_group = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2 # always try to convert
+	
+	# Names given only to Christian characters (base names)
+	male_names = {
+	}
+	female_names = {
+	}
+	
+	elimine_church = {
+		#c_aquelia, c_edessa, c_murgleis, c_durandal, c_jutes
+		graphical_culture = westerngfx
+		
+		icon = 3
+		heresy_icon = 4
+		
+		color = { 0.8 0.8 0.6 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD
+		}
+		
+		evil_god_names = {
+			THE_DEVIL
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_retire_to_monastery = yes
+		can_grant_claim = no
+		can_call_crusade = no
+		can_have_antipopes = no
+		priests_can_marry = no
+		priests_can_inherit = no
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	autotheist = {
+		# The Kenneth heresy.
+		# "Are you referring to my relationship with the "gods"? Are you still held in thrall of such a concept? You've met Lord Nergal, haven't you? Then there is something you must know. Gods are lies created by the weakness in all mankind. ...If a god truly exists, then it is my lord Nergal. Only him."
+		graphical_culture = westerngfx
+
+		icon = 3
+		heresy_icon = 4
+		
+		color = { 0.5 0.5 0.9 }
+		parent = elimine_church
+		
+		crusade_name = CRUSADE
+
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_retire_to_monastery = no
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	golden_church = {
+		# The Orlo/Oro heresy.
+		# "Anything can go unpunished if done in the name of God!"
+		graphical_culture = westerngfx
+
+		icon = 3
+		heresy_icon = 4
+		
+		color = { 0.7 0.7 0.4 }
+		parent = elimine_church
+		
+		crusade_name = CRUSADE
+
+		investiture = yes
+		can_have_antipopes = no
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_retire_to_monastery = no
+		priests_can_inherit = yes
+		priests_can_marry = yes
+
+		#bs_marriage = yes
+		#pc_marriage = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	dragon_liberation = {
+		# The Zephiel heresy.
+		graphical_culture = westerngfx
+
+		icon = 3
+		heresy_icon = 4
+		
+		color = { 0.4 0.4 0.7 }
+		parent = elimine_church
+		
+		crusade_name = CRUSADE
+
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+}
+
+pagan_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	hostile_within_group = yes
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 0	# never try to convert
+	
+	# Names given only to Pagan characters (base names)
+	male_names = {
+	}
+	female_names = {
+	}
+
+	pagan = { # Use for misc other pagans
+		# no holy sites
+		graphical_culture = westerngfx
+
+		icon = 1
+		
+		color = { 0.6 0.0 0.0 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		defensive_attrition = yes
+		
+		camel_cavalry_DEFENSIVE = 0.8
+		war_elephants_DEFENSIVE = 0.8
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		
+		dislike_tribal_organization = yes
+	}
+	
+	raider_pagan = {
+		#c_badon, c_ganelon, c_taliver, c_marciana, c_calynda
+		graphical_culture = norsegfx
+
+		icon = 11
+		
+		color = { 0.4 0.4 0.4 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		defensive_attrition = yes
+		
+		camel_cavalry_DEFENSIVE = 0.8
+		war_elephants_DEFENSIVE = 0.8
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = yes
+		
+		dislike_tribal_organization = yes
+		
+		allow_looting = yes
+		allow_rivermovement = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		allow_viking_invasion = yes
+		raised_vassal_opinion_loss = no
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+
+		aggression = 2.0 # AI aggression factor
+	}	
+	
+	divine_sky_pagan_reformed = { # Sacae
+		graphical_culture = mongolgfx
+		#c_bulgar, c_murgleis, c_saka, c_mani, c_talas
+		
+		secondary_event_pictures = tengri_pagan
+
+		icon = 9
+		heresy_icon = 8
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.1 0.3 0.85 }
+		
+		high_god_name = GOD_FATHER_SKY
+		
+		god_names = {
+			GOD_FATHER_SKY GOD_MOTHER_EARTH GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			light_cavalry_offensive = 0.3
+			light_cavalry_defensive = 0.3
+			
+			key = "divine_sky_pagan"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		allow_looting = yes
+		can_call_crusade = yes
+		max_consorts = 3
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+		
+		allow_in_ruler_designer = no
+	}		
+	
+	divine_sky_pagan = { #Sacae
+		graphical_culture = mongolgfx
+		#c_bulgar, c_murgleis, c_saka, c_mani, c_talas
+
+		icon = 7
+		heresy_icon = 8
+		
+		color = { 0.0 0.2 0.8 }
+		
+		high_god_name = GOD_FATHER_SKY
+		
+		god_names = {
+			GOD_FATHER_SKY GOD_MOTHER_EARTH GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			light_cavalry_offensive = 0.3
+			light_cavalry_defensive = 0.3
+			
+			key = "divine_sky_pagan"
+		}
+	
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		priests_can_marry = yes
+		allow_looting = yes
+		peace_prestige_loss = no#yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = divine_sky_pagan_reformed
+		ignores_defensive_attrition = yes
+		
+		short_reign_opinion_year_mult = 3 # The default is 2
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+		
+		dislike_tribal_organization = yes
+	}
+}
+
+magic_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2	# always try to convert
+	
+	# Names given only to these characters (base names)
+	male_names = {
+	}
+
+	anima = {
+		graphical_culture = westerngfx
+		#c_aquelia, c_arcadia, c_virtus, c_temperantia, c_uri
+		
+		icon = 6
+		
+		color = { 0.5 0.7 0.2 }
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		god_names = {
+			GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		scripture_name = THE_TOMES
+		priest_title = SAGE
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		#can_hold_temples = yes
+		female_temple_holders = yes
+		can_grant_divorce = no
+		can_call_crusade = no
+		feminist = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = dark
+		
+		has_heir_designation = yes
+	}
+
+	dark = {
+		graphical_culture = westerngfx
+		#c_spina, c_arcadia, c_virtus, c_temperantia, c_uri
+		
+		icon = 5
+		
+		color = { 0.3 0.65 0.25 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS 
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		scripture_name = THE_TOMES
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		#can_hold_temples = yes
+		female_temple_holders = yes
+		can_grant_divorce = no
+		can_call_crusade = no
+		feminist = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = anima
+		
+		has_heir_designation = yes
+	}
+}
+
+guardian_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 0 
+	ai_convert_other_group = 0	# never try to convert
+	
+	# Names given only to Pagan characters (base names)
+	male_names = {
+	}
+	female_names = {
+	}
+
+	guardian = { 
+		#c_arcadia, c_durandal, c_jutes, c_uri, c_aquelia
+		graphical_culture = jaingfx
+		secondary_event_pictures = sunni
+		
+		pacifist = yes # Makes the AI less likely to start wars, plots and factions
+
+		icon = 10
+		
+		color = { 0.6 0.0 0.0 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+
+		has_heir_designation = yes
+		priests_can_inherit = no
+		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		defensive_attrition = yes
+		
+		#camel_cavalry_DEFENSIVE = 0.8
+		#war_elephants_DEFENSIVE = 0.8
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+}
+
+draconic_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	#crusade_cb = crusade
+	playable = no # not yet!
+	hostile_within_group = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2 # always try to convert
+	
+	# Names given only to Christian characters (base names)
+	male_names = {
+	}
+	female_names = {
+	}
+	
+	divine_dragon = {
+		graphical_culture = westerngfx
+		
+		icon = 1
+		heresy_icon = 2
+		allow_in_ruler_designer = no #not yet!
+		
+		color = { 0.8 0.8 0.6 }
+		
+		#crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = NAGA
+		
+		god_names = {
+			NAGA THE_VOICE
+		}
+		
+		evil_god_names = {
+			GRIMA FELL_DRAGON
+		}
+		
+		investiture = no
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_retire_to_monastery = yes
+		can_grant_claim = no
+		can_call_crusade = no
+		can_have_antipopes = no
+		priests_can_marry = yes
+		priests_can_inherit = no
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	dragon_gods = {
+		graphical_culture = westerngfx
+		
+		icon = 1
+		heresy_icon = 2
+		allow_in_ruler_designer = no #not yet!
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS 
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		#crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		investiture = no
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_retire_to_monastery = yes
+		can_grant_claim = no
+		can_call_crusade = no
+		can_have_antipopes = no
+		priests_can_marry = yes
+		priests_can_inherit = no
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+			
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+}

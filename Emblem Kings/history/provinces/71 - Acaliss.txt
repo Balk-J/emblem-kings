@@ -1,0 +1,16 @@
+# c_acaliss
+
+# County Title
+title = c_acaliss
+
+# Settlements
+max_settlements = 2
+
+b_acaliss = tribal
+#b_acaliss_2 = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

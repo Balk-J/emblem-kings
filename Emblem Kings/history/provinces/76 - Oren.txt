@@ -1,0 +1,16 @@
+# c_oren
+
+# County Title
+title = c_oren
+
+# Settlements
+max_settlements = 2
+
+b_oren = castle
+b_oren_2 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,21 @@
+# e_elibe
+180.1.1={
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_pherae
+}
+
+
+1141.1.1={
+	holder=105 #Elbert 
+}
+
+1160.1.1={
+	holder=107 #Eliwood 
+}
+
+1180.1.1={
+	holder=108 #Roy 
+}

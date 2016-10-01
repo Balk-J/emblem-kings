@@ -1,0 +1,20 @@
+# e_elibe
+180.1.1={
+	active = no
+	law = status_of_women_4
+	law = agnatic_succession
+	law = succ_primogeniture
+}
+1150.1.1={
+	active = yes
+	holder=425 #Brendan Reed
+	set_global_flag = black_fang_founded
+}
+1159.1.1={
+	liege=e_nergal
+}
+1161.1.1={
+	active = no
+	holder=0 
+	set_global_flag = black_fang_destroyed
+}

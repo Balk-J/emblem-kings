@@ -1,0 +1,6 @@
+180.1.1={
+	liege=c_phestos
+}
+1136.1.1={
+	holder=144 # Rebecca's father
+}

@@ -1,0 +1,17 @@
+# c_moridin
+
+# County Title
+title = c_moridin
+
+# Settlements
+max_settlements = 3
+
+b_moridin = castle
+b_moridin_2 = temple
+b_moridin_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

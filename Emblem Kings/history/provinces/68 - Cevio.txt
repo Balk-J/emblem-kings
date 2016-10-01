@@ -1,0 +1,15 @@
+# c_cevio
+
+# County Title
+title = c_cevio
+
+# Settlements
+max_settlements = 1
+
+b_cevio = tribal
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,17 @@
+# c_isaris
+
+# County Title
+title = c_isaris
+
+# Settlements
+max_settlements = 3
+
+b_isaris = tribal
+#b_isaris_2 = temple
+#b_isaris_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

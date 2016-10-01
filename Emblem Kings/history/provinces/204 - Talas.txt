@@ -1,0 +1,18 @@
+# c_talas
+
+# County Title
+title = c_talas
+
+# Settlements
+max_settlements = 4
+
+b_castle_talas = castle
+b_talas = city
+b_taraz = city
+#b_zhizhi = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

@@ -1,0 +1,18 @@
+# c_laus
+
+# County Title
+title = c_laus
+
+# Settlements
+max_settlements = 4
+
+b_castle_laus = castle
+b_laus = city
+b_colbasa = temple
+#b_perge = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

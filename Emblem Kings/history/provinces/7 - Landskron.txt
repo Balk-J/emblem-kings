@@ -1,0 +1,19 @@
+# c_landskron
+
+# County Title
+title = c_landskron
+
+# Settlements
+max_settlements = 5
+
+b_landskron = castle
+b_landskron_2 = temple
+b_landskron_3 = city
+b_laupen = castle
+b_grentzer = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

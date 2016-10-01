@@ -1,0 +1,19 @@
+# c_makri
+
+# County Title
+title = c_makri
+
+# Settlements
+max_settlements = 4
+
+b_makri = city
+b_makri_2 = castle
+b_makri_3 = temple
+#b_kato_karyes = castle
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History
+440.1.1 = { capital = b_makri }

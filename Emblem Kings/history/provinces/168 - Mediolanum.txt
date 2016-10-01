@@ -1,0 +1,17 @@
+# c_mediolanum
+
+# County Title
+title = c_mediolanum
+
+# Settlements
+max_settlements = 3
+
+b_mediolanum = tribal
+#b_mediolanum_2 = temple
+#b_mediolanum_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

@@ -1,0 +1,529 @@
+# Canon
+301={
+	name="of Ilia" #Barigan
+	culture="ilian"
+	coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 5
+            emblem = 0
+            color = 2
+            color = 1
+            color = 2
+        }
+    }
+}
+302={
+	name="of Spina" #Niime
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 31
+            emblem = 0
+            color = 6
+            color = 5
+            color = 2
+        }
+    }	
+}
+303={
+	name="Edessa" #Zealot
+	culture="ilian"    
+	coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 3
+            emblem = 0
+            color = 2
+            color = 1
+            color = 2
+        }
+    }
+}
+304={
+	name="Aenir" #Ninian/Nils 
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 29
+            emblem = 0
+            color = 14
+            color = 1
+            color = 9
+        }
+    }
+}
+305={
+	can_appear=no
+	name="Nergal" # Nergal
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 1
+            emblem = 0
+            color = 5
+            color = 5
+            color = 6
+        }
+    }
+}
+306={
+	name="Remy" # 
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 43
+            emblem = 0
+            color = 1
+            color = 9
+            color = 6
+        }
+    }	
+}
+307={
+	name="of Pyrene" # for the FE7 sisters. Named after Florina's birthplace.
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 17
+            emblem = 0
+            color = 2
+            color = 1
+            color = 2
+        }
+    }	
+}
+308={
+	name="of Adma" # for the FE6 sisters. Named after a randomly selected county in the duchy of Edessa.
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 23
+            emblem = 0
+            color = 2
+            color = 1
+            color = 2
+        }
+    }	
+}
+309={
+	name="of Carrhae" # for Sigune
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 44
+            emblem = 0
+            color = 2
+            color = 1
+            color = 2
+        }
+    }	
+}
+310={
+	name="of Neandreia" # for the ice mage Karel whacks
+	culture="ilian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 22
+            emblem = 0
+            color = 1
+            color = 9
+            color = 6
+        }
+    }
+}
+311={
+	name="of Antigonia" # for a pegasus knight commander
+	culture="ilian"
+}
+312={
+	name="of Ida" # for a pegasus knight commander
+	culture="ilian"
+}
+313={
+	name="of Remy" 
+	culture="ilian"
+}
+
+#filler Greek dynasty names from vanilla
+
+314={
+	name="Chrysanthos"
+	culture="ilian"
+}
+315={
+	name="Radenos"
+	culture="ilian"
+}
+316={
+	name="Iagaris"
+	culture="ilian"
+}
+317={
+	name="Melias"
+	culture="ilian"
+}
+318={
+	name="Katas"
+	culture="ilian"
+}
+319={
+	name="Vatatzes"
+	culture="ilian"
+}
+320={
+	name="Kalamaras"
+	culture="ilian"
+}
+321={
+	name="Akunin"
+	culture="ilian"
+}
+322={
+	name="Spartenos"
+	culture="ilian"
+}
+323={
+	name="Allatios"
+	culture="ilian"
+}
+324={
+	name="Callistus"
+	culture="ilian"
+}
+325={
+	name="of Felsina"
+	culture="ilian"
+}
+326={
+	name="of Cardia"
+	culture="ilian"
+}
+327={
+	name="Chaldos"
+	culture="ilian"
+}
+328={
+	name="Barenos"
+	culture="ilian"
+}
+329={
+	name="Bardales"
+	culture="ilian"
+}
+330={
+	name="Barbaros"
+	culture="ilian"
+}
+331={
+	name="Brachamios"
+	culture="ilian"
+}
+332={
+	name="Balantes"
+	culture="ilian"
+}
+333={
+	name="Chasanes"
+	culture="ilian"
+}
+334={
+	name="Gavras"
+	culture="ilian"
+}
+335={
+	name="Chryselios"
+	culture="ilian"
+}
+336={
+	name="Daimones"
+	culture="ilian"
+}
+337={
+	name="Dalessenos"
+	culture="ilian"
+}
+338={
+	name="Dekanos"
+	culture="ilian"
+}
+339={
+	name="Diabatenos"
+	culture="ilian"
+}
+340={
+	name="Dikaios"
+	culture="ilian"
+}
+341={
+	name="Galaton"
+	culture="ilian"
+}
+342={
+	name="Gidos"
+	culture="ilian"
+}
+343={
+	name="Granatos"
+	culture="ilian"
+}
+344={
+	name="Gribas"
+	culture="ilian"
+}
+345={
+	name="Grispos"
+	culture="ilian"
+}
+346={
+	name="Hierakes"
+	culture="ilian"
+}
+347={
+	name="Hikanatos"
+	culture="ilian"
+}
+348={
+	name="Kabasilas"
+	culture="ilian"
+}
+349={
+	name="Kaisar"
+	culture="ilian"
+}
+350={
+	name="Phokas"
+	culture="ilian"
+}
+351={
+	name="Karamallos"
+	culture="ilian"
+}
+352={
+	name="Karenos"
+	culture="ilian"
+}
+353={
+	name="Katrares"
+	culture="ilian"
+}
+354={
+	name="Krateros"
+	culture="ilian"
+}
+355={
+	name="Lalakon"
+	culture="ilian"
+}
+356={
+	name="Libadas"
+	culture="ilian"
+}
+357={
+	name="Maleinos"
+	culture="ilian"
+}
+358={
+	name="Mauros"
+	culture="ilian"
+}
+359={
+	name="Megenos"
+	culture="ilian"
+}
+360={
+	name="Kabasilas"
+	culture="ilian"
+}
+361={
+	name="Melissenos"
+	culture="ilian"
+}
+362={
+	name="Palatinos"
+	culture="ilian"
+}
+363={
+	name="Pelamedes"
+	culture="ilian"
+}
+364={
+	name="Perenos"
+	culture="ilian"
+}
+365={
+	name="Raoul"
+	culture="norman"
+}
+366={
+	name="Romaios"
+	culture="ilian"
+}
+367={
+	name="Serblias"
+	culture="ilian"
+}
+368={
+	name="Skanranos"
+	culture="ilian"
+}
+369={
+	name="Solomon"
+	culture="ilian"
+}
+370={
+	name="Syros"
+	culture="ilian"
+}
+371={
+	name="Tilapos"
+	culture="ilian"
+}
+372={
+	name="Trellos"
+	culture="ilian"
+}
+373={
+	name="Malakes"
+	culture="ilian"
+}
+374={
+	name="Xanthos"
+	culture="ilian"
+}
+375={
+	name="Xeros"
+	culture="ilian"
+}
+376={
+	name="Xiphias"
+	culture="ilian"
+}
+377={
+	name="Zerbos"
+	culture="ilian"
+}
+378={
+	name="Zonaras"
+	culture="ilian"
+}
+379={
+	name="Adrianos"
+	culture="ilian"
+}
+380={
+	name="Agallon"
+	culture="ilian"
+}
+381={
+	name="Bessarion"
+	culture="ilian"
+}
+382={
+	name="Trichas"
+	culture="ilian"
+}
+383={
+	name="Gazis"
+	culture="ilian"
+}
+384={
+	name="Gemistus"
+	culture="ilian"
+}
+385={
+	name="Tagares"
+	culture="ilian"
+}
+386={
+	name="Kauleas"
+	culture="ilian"
+}
+387={
+	name="Damaskenos"
+	culture="ilian"
+}
+388={
+	name="Eparchos"
+	culture="ilian"
+}
+389={
+	name="Kilikos"
+	culture="ilian"
+}
+390={
+	name="Aineidas"
+	culture="ilian"
+}
+391={
+	name="Angelos"
+	culture="ilian"
+}
+392={
+	name="Glabas"
+	culture="ilian"
+}
+393={
+	name="Balatios"
+	culture="ilian"
+}
+394={
+	name="Ouranos"
+	culture="ilian"
+}
+395={
+	name="Amorios"
+	culture="ilian"
+}
+396={
+	name="Garidas"
+	culture="ilian"
+}
+397={
+	name="Heraclides"
+	culture="ilian"
+}
+398={
+	name="Kavallarios"
+	culture="ilian"
+}
+399={
+	name="Notaras"
+	culture="ilian"
+}
+
+# Non-canon
+300={
+	can_appear=no
+	name="Blackwell"
+	culture="ilian"
+	coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 17
+            emblem = 0
+            color = 5
+            color = 2
+            color = 0
+        }
+    }
+}

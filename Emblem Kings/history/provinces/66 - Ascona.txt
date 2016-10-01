@@ -1,0 +1,16 @@
+# c_ascona
+
+# County Title
+title = c_ascona
+
+# Settlements
+max_settlements = 2
+
+b_ascona = tribal
+#b_ascona_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

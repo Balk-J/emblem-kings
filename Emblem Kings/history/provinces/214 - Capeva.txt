@@ -1,0 +1,17 @@
+# c_capeva
+
+# County Title
+title = c_capeva
+
+# Settlements
+max_settlements = 3
+
+b_capeva = castle
+b_capeva_2 = temple
+b_capeva_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

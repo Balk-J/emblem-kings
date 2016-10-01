@@ -1,0 +1,17 @@
+# c_tios
+
+# County Title
+title = c_tios
+
+# Settlements
+max_settlements = 3
+
+b_tios = castle
+b_tios_2 = city
+b_tios_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,17 @@
+# c_aisinia
+
+# County Title
+title = c_aisinia
+
+# Settlements
+max_settlements = 3
+
+b_aisinia = castle
+b_aisinia_2 = city
+b_aisinia_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

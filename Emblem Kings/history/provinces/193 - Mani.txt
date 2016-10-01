@@ -1,0 +1,18 @@
+# c_mani
+
+# County Title
+title = c_mani
+
+# Settlements
+max_settlements = 3
+
+#b_mani = tribal
+b_mani_katti_shrine = temple
+#b_swiftarrow = city
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History
+180.1.1 = { capital = b_mani_katti_shrine }

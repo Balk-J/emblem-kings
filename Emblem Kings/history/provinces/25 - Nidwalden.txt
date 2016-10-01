@@ -1,0 +1,17 @@
+# c_nidwalden
+
+# County Title
+title = c_nidwalden
+
+# Settlements
+max_settlements = 3
+
+b_nidwalden = castle
+b_nidwalden_2 = temple
+b_nidwalden_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

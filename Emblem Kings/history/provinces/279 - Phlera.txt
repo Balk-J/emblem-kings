@@ -1,0 +1,15 @@
+# c_phlera
+
+# County Title
+title = c_phlera
+
+# Settlements
+max_settlements = 1
+
+b_phlera_2 = tribal
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

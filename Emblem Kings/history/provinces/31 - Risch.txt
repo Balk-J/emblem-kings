@@ -1,0 +1,17 @@
+# c_risch
+
+# County Title
+title = c_risch
+
+# Settlements
+max_settlements = 3
+
+b_risch = castle
+b_risch_2 = temple
+b_risch_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

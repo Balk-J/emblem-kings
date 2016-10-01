@@ -1,0 +1,16 @@
+# c_foulkes
+
+# County Title
+title = c_foulkes
+
+# Settlements
+max_settlements = 2
+
+b_foulkes = tribal
+#b_foulkes_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

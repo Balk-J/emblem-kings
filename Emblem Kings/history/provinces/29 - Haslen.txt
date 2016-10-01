@@ -1,0 +1,17 @@
+# c_haslen
+
+# County Title
+title = c_haslen
+
+# Settlements
+max_settlements = 3
+
+b_haslen = castle
+b_haslen_2 = temple
+b_haslen_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

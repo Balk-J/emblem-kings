@@ -1,0 +1,26 @@
+# c_etamin
+
+# County Title
+title = c_virtus
+
+# Settlements
+max_settlements = 6
+
+b_the_dragons_gate = castle
+b_virtus = castle
+b_pietas = castle
+b_gravitas = castle
+#b_potestas = temple
+#b_auctoritas = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History
+#440.1.1={
+#	culture=nabatan
+#}
+#1161.1.1={
+#	culture=seafarer
+#}

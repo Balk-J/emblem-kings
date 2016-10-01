@@ -1,0 +1,18 @@
+# c_tegea
+
+# County Title
+title = c_tegea
+
+# Settlements
+max_settlements = 4
+
+b_tegea = tribal
+#b_tegea_2 = city
+#b_tegea_3 = temple
+#b_chotoussa = castle
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

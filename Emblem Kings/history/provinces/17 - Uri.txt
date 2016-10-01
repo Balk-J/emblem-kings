@@ -1,0 +1,19 @@
+# c_uri
+
+# County Title
+title = c_uri
+
+# Settlements
+max_settlements = 5
+
+b_shrine_of_seals = castle
+b_temple_of_seals = temple
+b_uri = city
+b_moutier = city
+b_buren = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

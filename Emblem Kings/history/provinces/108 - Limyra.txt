@@ -1,0 +1,16 @@
+# c_limyra
+
+# County Title
+title = c_limyra
+
+# Settlements
+max_settlements = 2
+
+b_limyra = castle
+b_limyra_2 = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

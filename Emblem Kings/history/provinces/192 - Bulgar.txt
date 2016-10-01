@@ -1,0 +1,20 @@
+# c_bulgar
+
+# County Title
+title = c_bulgar
+
+# Settlements
+max_settlements = 6
+
+b_bulgar = tribal
+b_bulgar_2 = city
+#b_bulgar_3 = temple
+#b_hanons_arrow = temple
+#b_plainsedge = temple
+#b_hawkshall = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

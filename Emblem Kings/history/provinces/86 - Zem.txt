@@ -1,0 +1,18 @@
+# c_zem
+
+# County Title
+title = c_zem
+
+# Settlements
+max_settlements = 4
+
+b_zem_castle = castle
+b_zem = city
+b_zem_2 = temple
+#b_lagina = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

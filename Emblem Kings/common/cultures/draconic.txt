@@ -1,0 +1,156 @@
+draconic = {
+	graphical_cultures = { westerngfx }# buildings, portraits, units
+	
+	divine_dragon = {
+		graphical_cultures = { englishgfx} # units
+		
+		color = { 0 0 0 }
+		male_names = {
+			Forseti
+			Gotoh
+			Salamand
+			Xane
+		}
+		female_names = {
+			Fae
+			Idenn
+			Melitha
+			Naga Nagi
+			Tiki			
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 25
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 50
+		mother_name_chance = 10
+		
+		modifier = default_culture_modifier
+	}
+	
+	war_dragon = {
+		graphical_cultures = { southerngfx occitangfx }# Fallback type
+		
+		color = { 0.5 0 0.1 }
+		
+		male_names = {
+			Ein
+			Zwei
+			Drei
+			Vier
+			Fünf
+			Sechs
+			Sieben
+			Acht
+			Neun
+			Zehn
+			Elf
+			Zwölf
+			Dreizehn
+			Vierzehn
+			Fünfzehn
+			Sechszehn
+			Siebzehn
+			Achtzehn
+			Neunzehn
+			Zwanzig
+		}
+		female_names = {
+			Ein
+			Zwei
+			Drei
+			Vier
+			Fünf
+			Sechs
+			Sieben
+			Acht
+			Neun
+			Zehn
+			Elf
+			Zwölf
+			Dreizehn
+			Vierzehn
+			Fünfzehn
+			Sechszehn
+			Siebzehn
+			Achtzehn
+			Neunzehn
+			Zwanzig
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 25
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 50
+		mother_name_chance = 10
+		
+		modifier = default_culture_modifier
+	}
+	
+	fire_dragon = {
+		graphical_cultures = { southerngfx occitangfx }# Fallback type
+		
+		color = { 0.5 0 0.1 }
+		
+		male_names = {
+			Jahn
+		}
+		female_names = {
+			Jahn
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 25
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 50
+		mother_name_chance = 10
+		
+		modifier = default_culture_modifier
+	}
+	
+	ice_dragon = {
+		graphical_cultures = { easternslavicgfx}
+		graphical_unit_culture = western
+		
+		color = { 0 0 0 }
+		
+		male_names = {
+			Aenir
+		}
+		female_names = {
+			Aenir
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 25
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 50
+		mother_name_chance = 10
+		
+		modifier = default_culture_modifier
+	}
+}

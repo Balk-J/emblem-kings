@@ -1,0 +1,17 @@
+# c_meilen
+
+# County Title
+title = c_meilen
+
+# Settlements
+max_settlements = 3
+
+b_meilen = tribal
+b_meilen_2 = temple
+#b_meilen_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

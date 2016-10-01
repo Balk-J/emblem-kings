@@ -1,0 +1,20 @@
+# c_edessa
+
+# County Title
+title = c_edessa
+
+# Settlements
+max_settlements = 6
+
+b_castle_edessa = castle
+b_edessa = city
+b_maltet = temple
+b_barigan = castle
+#b_urha = castle
+#b_ilium = castle
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

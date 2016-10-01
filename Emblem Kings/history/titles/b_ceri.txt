@@ -1,0 +1,12 @@
+180.1.1={
+	liege=c_caisra
+}	
+1091.1.1={
+	holder=244 #Baron Ceri, Louise's father
+}
+1183.1.1={
+	holder=245 
+}
+1209.1.1={
+	holder=0
+}

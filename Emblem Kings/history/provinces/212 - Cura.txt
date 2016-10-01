@@ -1,0 +1,18 @@
+# c_cura
+
+# County Title
+title = c_cura
+
+# Settlements
+max_settlements = 4
+
+b_cura = castle
+b_cura_2 = temple
+b_cura_3 = city
+#b_cora = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

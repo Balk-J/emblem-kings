@@ -1,0 +1,18 @@
+# c_basel
+
+# County Title
+title = c_basel
+
+# Settlements
+max_settlements = 4
+
+b_basel = castle
+b_basel_2 = temple
+b_basel_3 = city
+#b_nidau = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

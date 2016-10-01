@@ -1,0 +1,16 @@
+# c_sabate
+
+# County Title
+title = c_sabate
+
+# Settlements
+max_settlements = 2
+
+b_sabate = tribal
+#b_sabate_2 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

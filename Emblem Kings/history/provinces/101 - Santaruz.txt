@@ -1,0 +1,18 @@
+# c_santaruz
+
+# County Title
+title = c_santaruz
+
+# Settlements
+max_settlements = 4
+
+b_santaruz_castle = castle
+b_santaruz = city
+b_isinda = temple
+#b_selge = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

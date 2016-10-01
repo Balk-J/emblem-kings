@@ -1,0 +1,18 @@
+# c_araphen
+
+# County Title
+title = c_araphen
+
+# Settlements
+max_settlements = 4
+
+b_castle_araphen = castle
+b_araphen = city
+b_graizel = castle
+b_hadriane = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

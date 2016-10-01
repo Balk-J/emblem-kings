@@ -1,0 +1,18 @@
+# c_akovos
+
+# County Title
+title = c_akovos
+
+# Settlements
+max_settlements = 4
+
+b_akovos = tribal
+#b_akovos_2 = city
+#b_akovos_3 = temple
+#b_evandro = castle
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

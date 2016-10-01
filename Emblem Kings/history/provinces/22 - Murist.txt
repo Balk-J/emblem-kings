@@ -1,0 +1,17 @@
+# c_murist
+
+# County Title
+title = c_murist
+
+# Settlements
+max_settlements = 3
+
+b_murist = castle
+b_murist_2 = temple
+b_murist_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

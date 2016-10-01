@@ -1,0 +1,23 @@
+# c_vaud
+
+# County Title
+title = c_vaud
+
+# Settlements
+max_settlements = 4
+
+b_vaud = tribal
+#b_fang_tower = castle
+#b_fort_kite = castle
+#b_fort_shrike = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History
+1150.1.1={
+	b_fang_tower = castle
+	b_fort_kite = castle
+	b_fort_shrike = castle
+}

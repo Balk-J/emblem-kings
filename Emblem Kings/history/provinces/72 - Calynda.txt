@@ -1,0 +1,15 @@
+# c_calynda
+
+# County Title
+title = c_calynda
+
+# Settlements
+max_settlements = 1
+
+b_calynda = tribal
+
+# Misc
+culture = seafarer
+religion = elimine_church
+
+#History

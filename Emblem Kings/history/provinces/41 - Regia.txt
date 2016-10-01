@@ -1,0 +1,15 @@
+# c_regia
+
+# County Title
+title = c_regia
+
+# Settlements
+max_settlements = 1
+
+b_regia = tribal
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

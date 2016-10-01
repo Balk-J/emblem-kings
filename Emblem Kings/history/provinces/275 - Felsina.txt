@@ -1,0 +1,16 @@
+# c_felsina
+
+# County Title
+title = c_felsina
+
+# Settlements
+max_settlements = 2
+
+b_felsina = castle
+b_felsina_2 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

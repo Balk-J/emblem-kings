@@ -1,0 +1,17 @@
+# c_sidyma
+
+# County Title
+title = c_sidyma
+
+# Settlements
+max_settlements = 3
+
+b_sidyma = castle
+b_sidyma_2 = city
+b_sidyma_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,19 @@
+# c_caelin
+
+# County Title
+title = c_caelin
+
+# Settlements
+max_settlements = 5
+
+b_caelin_castle = castle
+b_caelin = city
+b_cotenna = city
+b_etenna = city
+#b_casae = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

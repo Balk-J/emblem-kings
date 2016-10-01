@@ -1,0 +1,16 @@
+# c_kashgar
+
+# County Title
+title = c_kashgar
+
+# Settlements
+max_settlements = 2
+
+b_kashgar = tribal
+#b_kashgar_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

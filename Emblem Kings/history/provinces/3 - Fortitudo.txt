@@ -1,0 +1,27 @@
+# c_altais
+
+# County Title
+title = c_fortitudo
+
+
+# Settlements
+max_settlements = 3
+
+b_fortitudo = tribal
+#b_fortitudo_2 = city
+#b_fortitudo_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History
+#440.1.1={
+#	culture=ilian
+#}
+#1160.1.1={
+#	culture=sacaean #Uhai's crew
+#}
+#1161.1.1={
+#	culture=seafarer
+#}

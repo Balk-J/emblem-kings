@@ -1,0 +1,17 @@
+# c_cassina
+
+# County Title
+title = c_cassina
+
+# Settlements
+max_settlements = 3
+
+b_cassina = castle
+b_cassina_2 = temple
+b_cassina_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

@@ -1,0 +1,19 @@
+# c_sistan
+
+# County Title
+title = c_sistan
+
+# Settlements
+max_settlements = 2
+
+b_sistan = tribal
+#b_sistan_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History
+#440.1.1={
+#	capital=b_sistan
+#}

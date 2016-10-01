@@ -1,0 +1,355 @@
+#############################################
+# CHARACTER NICKNAMES
+# Independent dukes, kings and emperors only
+#
+# 'factor' is the percentage per year of 
+# gaining the nickname
+#
+#############################################
+
+# TRIGGERED ONLY
+################
+
+#Eight Legends
+nick_the_hero = {}
+nick_the_archsage = {}
+nick_the_enigma = {}
+nick_the_little_knight = {}
+nick_the_holy_knight = {}
+nick_the_berserker = {}
+nick_the_divine_trooper = {}
+#Black Fang
+nick_the_white_wolf = {}
+nick_the_mad_dog = {}
+nick_the_hurricane = {}
+nick_the_blue_crow = {}
+nick_the_angel_of_death = {}
+nick_the_soaring_hawk = {}
+nick_the_shadow_hawk = {}
+nick_the_owl = {}
+nick_the_shrike = {}
+nick_the_death_kite = {}
+#Other Elibian
+nick_raven = {}
+nick_dart = {}
+nick_the_mountain_hermit = {}
+nick_the_fierce_eagle = {}
+nick_the_stone_giant = {}
+nick_the_blood_freezer = {}
+
+# GIVEN BY TRAITS
+#################
+nick_the_beast = {
+	allow = {
+		age = 16
+		trait = cruel
+		NOT = {
+			trait = weak
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			trait = wroth
+		}
+		modifier = {
+			factor = 2.0
+			trait = strong
+		}
+		modifier = {
+			factor = 2.0
+			trait = lunatic
+		}
+		modifier = {
+			factor = 2.0
+			trait = impaler
+		}
+	}
+}
+nick_the_impervious = {
+	allow = {
+		age = 16
+		OR = {
+			trait = defensive_leader
+			trait = unyielding_leader
+		}
+		trait = inspiring_leader
+		
+		NOT = { trait = infirm }
+		NOT = { trait = incapable }
+		NOT = { trait = blinded }
+		NOT = { trait = weak }
+		NOT = { trait = craven }
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			trait = brave
+		}
+		modifier = {
+			factor = 1.5
+			trait = strong
+		}
+		modifier = {
+			factor = 1.5
+			trait = strategist
+		}
+		modifier = {
+			factor = 1.5
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 1.25
+			trait = skilled_tactician
+		}
+	}
+}
+nick_the_viper = {
+	allow = {
+		age = 16
+		trait = duelist
+		OR = {
+			trait = patient
+			trait = deceitful
+			trait = trickster
+		}
+		NOT = {
+			trait = kind
+			trait = just
+			trait = trusting
+			trait = maimed
+			trait = inbred
+			trait = slow
+			trait = incapable
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3.0
+			trait = elusive_shadow
+		}
+		modifier = {
+			factor = 2.5
+			trait = intricate_webweaver
+		}
+		modifier = {
+			factor = 2.0
+			trait = flamboyant_schemer
+		}
+		modifier = {
+			factor = 2.0
+			trait = cruel
+		}
+		modifier = {
+			factor = 2.0
+			trait = quick
+		}
+		modifier = {
+			factor = 2.5
+			trait = genius
+		}
+		modifier = {
+			factor = 2.0
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.0
+			trait = schemer
+		}
+	}
+}
+nick_the_silver_wolf = {
+	allow = {
+		age = 30
+		trait = flat_terrain_leader
+		trait = cavalry_leader
+		OR = {
+			religion = divine_sky_pagan_reformed
+			religion = divine_sky_pagan
+			culture = sacaean
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			age = 50
+		}
+		modifier = {
+			factor = 2.0
+			prestige = 1000
+		}
+	}
+}
+
+nick_the_princess_of_swords = {
+	allow = {
+		age = 16
+		trait = duelist
+		prestige = 1000
+		trait = class_swordmaster_female		
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			prestige = 2000
+		}
+	}
+}
+
+nick_the_saint_of_swords = {
+	allow = {
+		age = 16
+		trait = duelist
+		piety = 1000
+		OR = {
+			trait = class_swordmaster
+			trait = class_swordmaster_female
+		}
+		OR = {
+			trait = kind
+			trait = just
+		}
+		NOT = {
+			trait = cruel
+			trait = impaler
+			trait = schemer
+			trait = deceitful
+			trait = wroth
+			trait = possessed
+			trait = maimed
+			trait = inbred
+			trait = incapable
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			piety = 2000
+		}
+		modifier = {
+			factor = 2.0
+			piety = 4000
+		}
+		modifier = {
+			factor = 2.0
+			piety = 6000
+		}
+	}
+}
+
+nick_the_sword_demon = {
+	allow = {
+		age = 16
+		trait = duelist
+		OR = {
+			trait = class_swordmaster
+			trait = class_swordmaster_female
+		}
+		OR = {
+			trait = cruel
+			trait = impaler
+			trait = lunatic
+			trait = possessed
+		}
+		NOT = {
+			trait = kind
+			trait = just
+			trait = trusting
+			trait = maimed
+			trait = inbred
+			trait = incapable
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			trait = cruel
+		}
+		modifier = {
+			factor = 2.0
+			trait = wroth
+		}
+		modifier = {
+			factor = 2.0
+			trait = possessed
+		}
+		modifier = {
+			factor = 2.0
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -100 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -200 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -300 }
+		}
+	}
+}
+nick_the_white_devil = {
+	allow = {
+		age = 16
+		OR = {
+			trait = class_pegasus_knight
+			trait = class_falcon_knight
+		}
+		OR = {
+			trait = cruel
+			trait = impaler
+			trait = lunatic
+			trait = possessed
+		}
+		NOT = {
+			trait = kind
+			trait = just
+			trait = trusting
+			trait = maimed
+			trait = inbred
+			trait = incapable
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			trait = cruel
+		}
+		modifier = {
+			factor = 2.0
+			trait = lunatic
+		}
+		modifier = {
+			factor = 2.0
+			trait = possessed
+		}
+		modifier = {
+			factor = 2.0
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -100 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -200 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { piety = -300 }
+		}
+	}
+}

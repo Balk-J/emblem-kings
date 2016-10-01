@@ -1,0 +1,17 @@
+# c_arritim
+
+# County Title
+title = c_arritim
+
+# Settlements
+max_settlements = 3
+
+b_arritim = castle
+b_arritim_2 = temple
+b_arritim_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

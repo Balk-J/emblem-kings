@@ -1,0 +1,17 @@
+# c_walchwil
+
+# County Title
+title = c_walchwil
+
+# Settlements
+max_settlements = 3
+
+b_walchwil = castle
+b_walchwil_2 = temple
+b_walchwil_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

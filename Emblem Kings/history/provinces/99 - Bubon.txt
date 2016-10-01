@@ -1,0 +1,17 @@
+# c_bubon
+
+# County Title
+title = c_bubon
+
+# Settlements
+max_settlements = 3
+
+b_bubon = castle
+b_bubon_2 = city
+b_bubon_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,18 @@
+# c_xanthus
+
+# County Title
+title = c_xanthus
+
+# Settlements
+max_settlements = 4
+
+b_xanthus = castle
+b_xanthus_2 = temple
+b_xanthus_3 = city
+#b_arinna = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

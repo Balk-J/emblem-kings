@@ -1,0 +1,19 @@
+# c_appenzell
+
+# County Title
+title = c_appenzell
+
+# Settlements
+max_settlements = 5
+
+b_appenzell = castle
+b_appenzell_2 = temple
+b_appenzell_3 = city
+#b_riehen = city
+#b_saugern = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

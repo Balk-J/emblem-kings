@@ -1,0 +1,18 @@
+# c_calach
+
+# County Title
+title = c_calach
+
+# Settlements
+max_settlements = 4
+
+b_calach = tribal
+b_fire_dragon_temple = temple
+#b_ticino = castle
+#b_wohlen = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

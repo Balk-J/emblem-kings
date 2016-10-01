@@ -1,0 +1,16 @@
+# c_amina
+
+# County Title
+title = c_amina
+
+# Settlements
+max_settlements = 2
+
+b_amina = castle
+b_amina_2 = temple
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

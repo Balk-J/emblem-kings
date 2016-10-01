@@ -1,0 +1,21 @@
+# c_kafti
+
+# County Title
+title = c_kafti
+
+# Settlements
+max_settlements = 6
+
+b_kafti = city
+b_kafti_2 = castle
+b_kafti_3 = temple
+#b_kastri = city
+#b_limni = city
+#b_psari = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History
+440.1.1 = { capital = b_kafti }

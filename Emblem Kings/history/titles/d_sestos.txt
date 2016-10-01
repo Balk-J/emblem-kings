@@ -1,0 +1,16 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = enatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=k_ilia
+#}
+#1159.1.1={
+1185.1.1={
+	holder=309 # Fiora
+}
+1185.1.1={
+	liege=k_ilia
+}

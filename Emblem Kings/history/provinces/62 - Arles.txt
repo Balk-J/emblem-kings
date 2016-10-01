@@ -1,0 +1,16 @@
+# c_arles
+
+# County Title
+title = c_arles
+
+# Settlements
+max_settlements = 2
+
+b_arles = tribal
+b_arles_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

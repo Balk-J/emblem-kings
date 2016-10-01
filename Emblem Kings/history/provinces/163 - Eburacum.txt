@@ -1,0 +1,22 @@
+# c_eburacum
+
+# County Title
+title = c_eburacum
+
+# Settlements
+max_settlements = 6
+
+b_eburacum = castle
+b_eburacum_2 = city
+b_eburacum_3 = temple
+#b_hortonium = city
+#b_ardotalia = city
+#b_concangis = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History
+1175.1.1 = { capital = b_eburacum_3 }
+1181.1.1 = { capital = b_eburacum }

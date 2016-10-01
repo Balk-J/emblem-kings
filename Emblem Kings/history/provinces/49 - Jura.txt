@@ -1,0 +1,16 @@
+# c_jura
+
+# County Title
+title = c_jura
+
+# Settlements
+max_settlements = 2
+
+b_jura = castle
+#b_jura_2 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

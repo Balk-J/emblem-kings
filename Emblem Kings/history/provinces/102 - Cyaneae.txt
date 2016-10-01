@@ -1,0 +1,17 @@
+# c_cyaneae
+
+# County Title
+title = c_cyaneae
+
+# Settlements
+max_settlements = 3
+
+b_fort_cyaneae = castle
+b_cyaneae = city
+b_semnea = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

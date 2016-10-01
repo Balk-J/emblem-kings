@@ -1,0 +1,18 @@
+# c_ennenda
+
+# County Title
+title = c_ennenda
+
+# Settlements
+max_settlements = 4
+
+b_ennenda = castle
+b_ennenda_2 = temple
+b_ennenda_3 = city
+#b_oberhasli = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

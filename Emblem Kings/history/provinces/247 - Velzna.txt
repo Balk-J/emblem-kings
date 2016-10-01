@@ -1,0 +1,17 @@
+# c_velzna
+
+# County Title
+title = c_velzna
+
+# Settlements
+max_settlements = 3
+
+b_velzna = castle
+b_velzna_2 = temple
+b_velzna_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

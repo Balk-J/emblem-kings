@@ -1,0 +1,18 @@
+# c_alta
+
+# County Title
+title = c_alta
+
+# Settlements
+max_settlements = 4
+
+b_castle_alta = castle
+b_alta_village = city
+b_ariassus = temple
+#b_eudocias = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

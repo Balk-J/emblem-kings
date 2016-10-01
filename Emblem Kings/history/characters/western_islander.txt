@@ -1,0 +1,1149 @@
+701={
+	name="Durban"
+	dynasty=701
+	culture=western_islander
+	religion=raider_pagan
+	disallow_random_traits="yes" 
+	
+	trait="strong"
+	
+	150.1.1={
+		birth=yes
+	}
+	180.1.1 = {
+		give_nickname=nick_the_berserker
+	}
+	230.1.1={
+		death=yes
+	}
+}
+
+702={
+	name="Ekhidna"
+	dna="dmjfikjbbby"
+	properties="cc0cgk000000"
+	female=yes
+	dynasty=702
+	culture=western_islander
+	religion=elimine_church
+	disallow_random_traits="yes" 
+	trait="skilled_tactician"
+	trait="inspiring_leader"
+	trait="heavy_infantry_leader"
+	trait="ambitious"
+	trait="proud"
+	trait="just"
+	trait="cynical"
+	trait="honest"
+	trait="charitable"
+	
+	1155.1.1={
+		birth=yes
+	}
+	
+	1200.1.1={
+		death=yes
+	}
+}
+
+703={
+	name="Bartre"
+	culture=western_islander
+	religion=elimine_church
+	learning=0 # Illiterate. At risk to eat books instead of reading them.
+	intrigue=0
+	stewardship=0
+	diplomacy=0
+	disallow_random_traits="yes" 
+	trait="strong"
+	trait="slow" #Hard words make my head hurt!
+	trait="misguided_warrior"
+	trait="class_fighter"
+	trait="heavy_infantry_leader"
+	trait="aggressive_leader"
+	trait="unyielding_leader"
+	trait="kind"
+	trait="diligent"
+	trait="wroth"
+	trait="brave"
+	
+	1139.1.1={
+		birth=yes
+	}
+	
+	1161.1.1={
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	}	
+	
+	1162.1.1={
+		add_matrilineal_spouse=509 # Karla
+	}	
+	
+	1170.1.1={
+		remove_trait="wroth" # A bit less reckless in FE6
+	}	
+	
+	1198.1.1={
+		death=yes
+	}
+}
+
+704={
+	name="Alexis" # mother for Lot and his sister
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	1139.1.1={
+		birth=yes
+	}
+	
+	1174.12.1= {
+		add_trait="ill"
+	}	
+	
+	1175.01.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+705={
+	name="Lot"
+	culture=western_islander
+	religion=elimine_church
+	
+	disallow_random_traits="yes" 
+	trait="quick"
+	trait="gamer"
+	trait="skilled_tactician"
+	trait="heavy_infantry_leader"
+	trait="rough_terrain_leader"
+	trait="narrow_flank_leader"
+	trait="patient"
+	trait="shy"
+	
+	mother=704
+	1154.1.1={
+		birth=yes
+	}
+		
+	1159.01.01 = {
+		effect={
+			add_friend=708 #Wade
+			add_friend=709 #Mary
+		}
+	}	
+	
+	1175.1.1={
+		employer=710 # Deke
+	}
+	
+	1198.1.1={
+		death=yes
+	}
+}
+
+706={
+	name="Myu" #Lot's little sister
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	mother=704
+	1171.1.1={
+		birth=yes
+	}
+	
+	1222.1.1={
+		death=yes
+	}
+}
+
+707={
+	name="Nadine" # mother for Wade and his sister
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	1140.1.1={
+		birth=yes
+	}
+	
+	1185.1.1={
+		death=yes
+	}
+}
+
+708={
+	name="Wade"
+	culture=western_islander
+	religion=elimine_church
+	
+	disallow_random_traits="yes" 
+	trait="misguided_warrior"
+	trait="heavy_infantry_leader"
+	trait="rough_terrain_leader"
+	trait="wroth"
+	trait="trusting"
+	trait="brave"
+	
+	mother=707
+	1156.1.1={
+		birth=yes
+	}
+	
+	1175.1.1={
+		employer=710 # Deke
+	}
+		
+	1202.1.1={
+		death=yes
+	}
+}
+
+709={
+	name="Mary" #Wade's older sister
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	mother=707
+	1155.1.1={
+		birth=yes
+	}
+	
+	1198.1.1={
+		death=yes
+	}
+}
+
+710={
+	name="Deke"
+	culture=western_islander
+	religion=elimine_church
+	
+	disallow_random_traits="yes" 
+	trait="tough_soldier"
+	trait="light_foot_leader"
+	trait="rough_terrain_leader"
+	trait="trusting"
+	trait="kind"
+	trait="patient"
+	trait="brave"
+	
+	1148.1.1={
+		birth=yes
+	}
+	1161.01.01 = { 
+		employer=211 # Pent
+	}	
+	# Saves Klein from a lion
+	1165.01.01 = { 
+		add_trait="wounded"
+	}
+	
+	1166.01.01 = { 
+		remove_trait="wounded"
+		add_trait="scarred"
+	}	
+	
+	#Leaves to found a mercenary company
+	1170.01.01 = { 
+		employer=0
+	}	
+	
+	# Band is betrayed by employer and wiped out. Deke is captured and tortured.
+	1175.01.01 = { 
+		remove_trait="trusting"
+		add_trait="cynical"
+	}	
+		
+	1200.1.1={
+		death=yes
+	}
+}
+
+711={
+	name="Gonzalez"
+	culture=western_islander
+	religion=raider_pagan
+	
+	disallow_random_traits="yes" 
+	trait="strong"
+	trait="stutter"
+	trait="ugly"
+	trait="imbecile"
+	trait="misguided_warrior"
+	trait="heavy_infantry_leader"
+	trait="rough_terrain_leader"
+	trait="mountain_terrain_leader"
+	trait="kind"
+	trait="trusting"
+	trait="shy"
+	
+	1159.1.1={
+		birth=yes
+		employer=225 #Nord
+	}
+		
+	1181.01.01 = {
+		effect={
+			add_friend=104 #Lilina
+		}
+	}	
+	
+	1199.1.1={
+		death=yes
+	}
+}
+
+712={
+	name="Guerrero" # Berserker, tried to steal Armads
+	culture=western_islander
+	religion=raider_pagan
+	
+	disallow_random_traits="yes" 
+	trait="stutter"
+	trait="strong"
+	trait="misguided_warrior"
+	trait="heavy_infantry_leader"
+	trait="rough_terrain_leader"
+	trait="mountain_terrain_leader"
+	trait="greedy"
+	trait="ambitious"
+	trait="lunatic"
+	
+	1150.1.1={
+		birth=yes
+	}
+		
+	1172.01.01 = { 
+		employer=715 # Scollan. Could also be Nord.
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+713={
+	name="Scott" # Berserker and pirate. Fir/Sin's boss.
+	culture=western_islander
+	religion=raider_pagan
+	
+	disallow_random_traits="yes" 
+	trait="strong"
+	trait="amateurish_plotter"
+	trait="rough_terrain_leader"
+	trait="greedy"
+	trait="ambitious"
+	trait="arbitrary"
+	trait="deceitful"
+	trait="gregarious"
+	
+	1148.1.1={
+		birth=yes
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+715={
+	name="Scollan" # Bandit. Works for Zinque. Gonzalez may or may not be part of his band.
+	culture=western_islander
+	religion=raider_pagan
+	
+	disallow_random_traits="yes" 
+	trait="misguided_warrior"
+	trait="rough_terrain_leader"
+	trait="greedy"
+	trait="arbitrary"
+	trait="content"
+	trait="cruel"
+	
+	1152.1.1={
+		birth=yes
+	}
+	
+	1172.01.01 = { 
+		employer=714 # Zinque
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+716 = {
+	name="Kaim" #Berserker. Guards the Armads cave in FE7.
+	#TODO: handle ghost status better
+	religion=pagan
+	culture=western_islander
+	
+	trait="strong"
+	trait="tough_soldier"
+	trait="heavy_infantry_leader"
+	trait="unyielding_leader"
+	
+	152.01.01={
+		birth=yes
+	} 	
+	
+	174.01.01 = { 
+		effect={
+		add_friend=701 #Durban 
+		}
+		#employer=701
+	}
+	
+	200.01.01 = { 
+		religion=guardian
+	}
+	
+	1161.01.01 = { 
+		death = {
+			death_reason=death_battle
+			killer=103 #Hector 
+		}
+	}
+}
+
+714={
+	name="Kelles" #the "stone giant" killed by Karel in a duel
+	culture=western_islander
+	religion=raider_pagan
+	
+	trait="strong"
+	trait="slow"
+	trait="wroth"
+	
+	1130.1.1={
+		birth=yes
+	}
+		
+	1150.1.1 = {
+		give_nickname="nick_the_stone_giant"
+	}
+	
+	1159.01.01 = { 
+		death = {
+			death_reason=death_duel
+			killer=508 #Karel 
+		}
+	}
+}
+
+#Hasha no Tsurugi characters.
+
+717={
+	name="Kilmar" #Swordsman. Prisoner at mines.
+	culture=western_islander
+	religion=elimine_church
+	
+	disallow_random_traits="yes" 
+	trait="tough_soldier"
+	trait="wroth"
+	trait="cynical"
+	
+	1160.1.1={
+		birth=yes
+	}
+	
+	1178.1.1={
+		add_spouse=720
+	}
+		
+	1180.1.1= {
+		effect = {
+			c_calcaria = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+		add_trait="depressed"
+	}	
+		
+	1181.1.1= {		
+		effect = { 
+			prisoner = no
+		} 
+	}	
+	1182.12.1= {
+		add_trait="ill"
+	}	
+	1183.01.01 = { 
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+718={
+	name="Barnz" #member of Ekhidna's resistance.
+	culture=western_islander
+	religion=elimine_church
+	
+	trait="just"
+	1137.1.1={
+		birth=yes
+	}
+		
+	1180.1.1= {
+		employer=702 # Ekhidna
+	}	
+	
+	1188.01.01 = { 
+		death=yes
+	}
+}
+
+719={
+	name="Mancel" #prisoner, sent to mines.
+	culture=western_islander
+	religion=elimine_church
+	
+	trait="fortune_builder"
+	trait="cynical"
+	1140.1.1={
+		birth=yes
+	}
+		
+	1156.1.1={
+		add_spouse=721
+	}
+	1180.1.1= {
+		effect = {
+			c_calcaria = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+		add_trait="depressed"
+	}	
+		
+	1181.1.1= {		
+		effect = { 
+			prisoner = no
+		} 
+		# Moves to Ostia after the war.
+		remove_trait="depressed"
+		employer=104 #Lilina.
+	}	
+	
+	1192.01.01 = { 
+		death=yes
+	}
+}
+
+720={
+	name="Aileen" #Kilmar's wife, killed by Ein in an attack on their village
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	1161.1.1={
+		birth=yes
+	}
+	
+	1180.01.01 = { 
+		death = {
+			death_reason=death_execution
+			killer=922 #Ein 
+		}
+	}
+}
+
+721={
+	name="Myu" #wife for Mancel
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	1140.1.1={
+		birth=yes
+	}
+	
+	1190.01.01 = { 
+		death=yes
+	}
+}
+
+# Mancel has 3 daughters
+722={
+	name="Aileen" 
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	father=719
+	mother=721
+	
+	1157.1.1={
+		birth=yes
+	}
+	
+	1207.01.01 = { 
+		death=yes
+	}
+}
+723={
+	name="Alexis" 
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	father=719
+	mother=721
+	
+	1158.1.1={
+		birth=yes
+	}
+	
+	1208.01.01 = { 
+		death=yes
+	}
+}
+724={
+	name="Nadine" 
+	female=yes
+	culture=western_islander
+	religion=elimine_church
+	
+	father=719
+	mother=721
+	
+	1159.1.1={
+		birth=yes
+	}
+	
+	1209.01.01 = { 
+		death=yes
+	}
+}
+
+# Patricians
+
+725 = {
+	name="Drest" 
+	dynasty=724
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1118.01.01 = { 
+		birth=yes 
+	}
+	
+	1202.01.01 = { 
+		death = yes
+	}
+}
+#
+
+#Adventurers in Nabata
+726 = {
+	name="Galam" 
+	dynasty=726
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1119.01.01 = { 
+		birth=yes 
+	}
+	
+	1200.01.01 = { 
+		death = yes
+	}
+}
+
+727 = {
+	name="Nechtan" 
+	dynasty=730
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1120.01.01 = { 
+		birth=yes 
+	}
+	
+	1204.01.01 = { 
+		death = yes
+	}
+}
+
+#
+
+728 = {
+	name="Talorcan" 
+	dynasty=734
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1119.01.01 = { 
+		birth=yes 
+	}
+	
+	1201.01.01 = { 
+		death = yes
+	}
+}
+
+729 = {
+	name="Uurad" 
+	dynasty=738
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1122.01.01 = { 
+		birth=yes 
+	}
+	
+	1209.01.01 = { 
+		death = yes
+	}
+}
+
+730 = {
+	name="Vipoig" 
+	dynasty=713
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1119.01.01 = { 
+		birth=yes 
+	}
+	
+	1202.01.01 = { 
+		death = yes
+	}
+}
+
+731 = {
+	name="Bridei" 
+	dynasty=716
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1121.01.01 = { 
+		birth=yes 
+	}
+	
+	1204.01.01 = { 
+		death = yes
+	}
+}
+
+# Filler characters to hold land
+#Navio
+733 = {
+	name="Naiton" 
+	dynasty=743
+	
+	religion=raider_pagan
+	culture=western_islander
+	
+	1139.01.01 = { 
+		birth=yes 
+	}
+	
+	1184.01.01 = { 
+		death = yes
+	}
+}
+#Olicana
+734 = {
+	name="Usuullt" 
+	dynasty=744
+	
+	religion=raider_pagan
+	culture=western_islander
+	
+	1120.01.01 = { 
+		birth=yes 
+	}
+	
+	1188.01.01 = { 
+		death = yes
+	}
+}
+#Isca
+735 = {
+	name="Iduallon" 
+	dynasty=745
+	
+	religion=raider_pagan
+	culture=western_islander	
+	
+	1133.01.01 = { 
+		birth=yes 
+	}
+	
+	1182.01.01 = { 
+		death = yes
+	}
+}
+#Amina
+736 = {
+	name="Achiuir" 
+	dynasty=746
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1142.01.01 = { 
+		birth=yes 
+	}
+	
+	1183.01.01 = { 
+		death = yes
+	}
+}
+#Colonnata
+737 = {
+	name="Canu" 
+	dynasty=747
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1143.01.01 = { 
+		birth=yes 
+	}
+	
+	1186.01.01 = { 
+		death = yes
+	}
+}
+
+#Mediolanum
+738 = {
+	name="Morleo" 
+	dynasty=748
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1099.01.01 = { 
+		birth=yes 
+	}
+	
+	1168.01.01 = { 
+		death = yes
+	}
+}
+#Lindum
+739 = {
+	name="Pidarnoin" 
+	dynasty=749
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1109.01.01 = { 
+		birth=yes 
+	}
+	
+	1180.01.01 = { 
+		death = yes
+	}
+}
+#Vinovia
+740 = {
+	name="Uist" 
+	dynasty=750
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1102.01.01 = { 
+		birth=yes 
+	}
+	
+	1176.01.01 = { 
+		death = yes
+	}
+}
+#Condate
+741 = {
+	name="Castant" 
+	dynasty=751
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1124.01.01 = { 
+		birth=yes 
+	}
+	
+	1183.01.01 = { 
+		death = yes
+	}
+}
+#Calcaria
+742 = {
+	name="Crup" 
+	dynasty=752
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1110.01.01 = { 
+		birth=yes 
+	}
+	
+	1177.01.01 = { 
+		death = yes
+	}
+}
+#Silurum
+743 = {
+	name="Iduallon" 
+	dynasty=753
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1104.01.01 = { 
+		birth=yes 
+	}
+	
+	1179.01.01 = { 
+		death = yes
+	}
+}
+#Salinae
+744 = {
+	name="Aethon" 
+	dynasty=754
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1103.01.01 = { 
+		birth=yes 
+	}
+	
+	1175.01.01 = { 
+		death = yes
+	}
+}
+#Dubris
+745 = {
+	name="Deoord" 
+	dynasty=755
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1186.01.01 = { 
+		death = yes
+	}
+}
+#Segontium
+746 = {
+	name="Sara" 
+	female=yes
+	dynasty=756
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1132.01.01 = { 
+		birth=yes 
+	}
+	
+	1181.01.01 = { 
+		death = yes
+	}
+}
+#Lindinis
+747 = {
+	name="Lutrin" 
+	dynasty=757
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1129.01.01 = { 
+		birth=yes 
+	}
+	
+	1199.01.01 = { 
+		death = yes
+	}
+}
+#Mamucium
+748 = {
+	name="Mael" 
+	dynasty=758
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1132.01.01 = { 
+		birth=yes 
+	}
+	
+	1202.01.01 = { 
+		death = yes
+	}
+}
+#Pontes
+749 = {
+	name="Pedric" 
+	dynasty=759
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1126.01.01 = { 
+		birth=yes 
+	}
+	
+	1196.01.01 = { 
+		death = yes
+	}
+}
+##Caledonia
+#Caromago
+750 = {
+	name="Ciniod" 
+	dynasty=760
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1127.01.01 = { 
+		birth=yes 
+	}
+	
+	1187.01.01 = { 
+		death = yes
+	}
+}
+#Belgarum
+751 = {
+	name="Bran" 
+	dynasty=761
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1133.01.01 = { 
+		birth=yes 
+	}
+	
+	1187.01.01 = { 
+		death = yes
+	}
+}
+#Trimontium
+752 = {
+	name="Telurg" 
+	dynasty=762
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1131.01.01 = { 
+		birth=yes 
+	}
+	
+	1196.01.01 = { 
+		death = yes
+	}
+}
+#Devana
+753 = {
+	name="Domelch" 
+	dynasty=763
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1130.01.01 = { 
+		birth=yes 
+	}
+	
+	1185.01.01 = { 
+		death = yes
+	}
+}
+#Graupius
+754 = {
+	name="Ganant" 
+	dynasty=764
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1123.01.01 = { 
+		birth=yes 
+	}
+	
+	1184.01.01 = { 
+		death = yes
+	}
+}
+#Alauna
+755 = {
+	name="Ardle" 
+	dynasty=765
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1133.01.01 = { 
+		birth=yes 
+	}
+	
+	1190.01.01 = { 
+		death = yes
+	}
+}
+#Evidensca
+756 = {
+	name="Eddarrnonn" 
+	dynasty=766
+	
+	religion=elimine_church
+	culture=western_islander
+	
+	1115.01.01 = { 
+		birth=yes 
+	}
+	
+	1182.01.01 = { 
+		death = yes
+	}
+}

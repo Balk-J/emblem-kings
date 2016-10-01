@@ -1,0 +1,19 @@
+# c_siene
+
+# County Title
+title = c_siene
+
+# Settlements
+max_settlements = 5
+
+b_siene = castle
+b_siene_2 = temple
+b_siene_3 = city
+#b_arreti = temple
+#b_areuthes = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

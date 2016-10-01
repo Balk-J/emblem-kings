@@ -1,0 +1,16 @@
+# c_amelas
+
+# County Title
+title = c_amelas
+
+# Settlements
+max_settlements = 2
+
+b_amelas = castle
+b_amelas_2 = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

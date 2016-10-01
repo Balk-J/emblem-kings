@@ -1,0 +1,20 @@
+# c_tarchna
+
+# County Title
+title = c_tarchna
+
+# Settlements
+max_settlements = 6
+
+b_tarchna = castle
+b_tarchna_2 = temple
+b_tarchna_3 = city
+#b_tarkina = temple
+#b_tarracina = city
+#b_muralto = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

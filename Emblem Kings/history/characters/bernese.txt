@@ -1,0 +1,1708 @@
+401={
+	name="Hartmut"
+	dynasty=401
+	culture=bernese
+	religion=elimine_church
+	disallow_random_traits="yes" 
+	trait="strong"
+	150.1.1={
+		birth=yes
+	}
+	180.1.1 = {
+		give_nickname=nick_the_hero
+	}
+	230.1.1={
+		death=yes
+	}
+}
+
+402={
+	name="Desmond"
+    dna="alfkhxmcgan" 
+    properties="aj0bbc00000000"
+	dynasty=401
+	culture=bernese
+	religion=elimine_church
+	disallow_random_traits="yes" 
+	#trait="tough_soldier"
+	trait="flamboyant_schemer"	
+	trait="envious"
+	trait="proud"
+	trait="arbitrary"
+	trait="cruel"
+	trait="deceitful"
+	trait="paranoid"
+	1122.1.1={
+		birth=yes
+	}
+	1144.1.1 = {
+		add_spouse=230 #Hellene
+	}
+	1165.1.1= {
+		death = {
+			death_reason=death_murder_unknown
+			killer=403 #Zephiel
+		}
+	}
+}
+
+403={
+	name="Zephiel"
+	dynasty=401
+	culture=bernese
+	religion=elimine_church
+    dna="bhfgcubfgab" 
+    properties="ah00d00000000"
+	father=402 #Desmond
+	mother=230 #Hellene
+	disallow_random_traits="yes" 
+	trait="brilliant_strategist"
+	trait="inspiring_leader"
+	trait="unyielding_leader"
+	trait="duelist"
+	trait="falconer"
+	trait="quick"	
+	trait="strong"	
+	trait="kind"
+	trait="charitable"
+	trait="content"
+	trait="just"
+	trait="gregarious"
+	trait="diligent"
+	trait="brave"
+	1145.1.1={
+		birth=yes
+	}
+	1165.1.1 = {
+		remove_trait="kind"
+		remove_trait="charitable"
+		remove_trait="content"
+		remove_trait="just"
+		remove_trait="gregarious"
+		add_trait="aggressive_leader"
+		add_trait="cynical"
+		add_trait="deceitful"
+		add_trait="wroth"
+		add_trait="ambitious"
+		religion=dragon_liberation
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+404={
+	name="Guinivere"
+	female=yes
+	dynasty=401
+	culture=bernese
+	religion=elimine_church
+	father=402 #Desmond
+	#mother= #Desmond's unknown mistress
+	disallow_random_traits="yes" 
+	trait="fair"
+	trait="legit_bastard"
+	1154.1.1={
+		birth=yes
+	}
+	1244.1.1={
+		death=yes
+	}
+}
+
+405={
+	name="Murdock"
+	culture=bernese
+	religion=elimine_church
+	trait="brilliant_strategist"
+	trait="heavy_infantry_leader"
+	trait="mountain_terrain_leader"
+	trait="rough_terrain_leader"
+	trait="strategist"
+	trait="strong"	
+	trait="content"	
+	trait="diligent"	
+	1140.1.1={
+		birth=yes
+	}
+	1180.1.1 = {
+		add_trait="winter_soldier"
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+406={
+	name="Brunnya"
+	female="yes"
+	dynasty=402
+	culture=bernese
+	religion=elimine_church
+	1140.1.1={
+		birth=yes
+	}
+	1180.1.1 = {
+		add_trait="flat_terrain_leader"
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+407={
+	name="Narcian"
+	dynasty=403
+	culture=bernese
+	religion=elimine_church
+	trait="amateurish_plotter"
+	trait="hedonist"		
+	trait="proud"	
+	trait="ambitious"	
+	trait="lustful"	
+	trait="craven"	
+	trait="deceitful"	
+	trait="cruel"	
+	trait="arbitrary"
+	1153.1.1={
+		birth=yes
+	}	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+408={
+	name="Vaida"
+	female="yes"
+	dynasty=404
+	culture=bernese
+	religion=elimine_church
+	father=447 
+	trait="tough_soldier"	
+	trait="aggressive_leader"	
+	trait="mountain_terrain_leader"	
+	trait="wroth"	
+	trait="scarred"	
+	trait="bastard"	
+	1120.1.1={
+		birth=yes
+	}
+	1190.1.1={
+		death=yes
+	}
+}
+
+409={
+	name="Heath"
+	dynasty=405
+	culture=bernese
+	religion=elimine_church
+	trait="tough_soldier"	
+	trait="mountain_terrain_leader"	
+	trait="narrow_flank_leader"	
+	trait="just"	
+	1135.1.1={
+		birth=yes
+	}
+	1160.1.1={
+		employer=163 #Eubans
+	}
+	1161.1.1={
+		employer=0 #???
+	}
+	1185.1.1={
+		death=yes
+	}
+}
+
+455={
+	name="Galle"
+	culture=bernese
+	# actually not from Bern - Lycian, maybe? Or Jugdrali?
+	religion=elimine_church
+	trait="skilled_tactician"
+	trait="flanker"	
+	trait="brave"	
+	trait="just"	
+	1155.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+
+410={
+	name="Miledy"
+	female="yes"
+	dynasty=406
+	culture=bernese
+	religion=elimine_church
+	father=448
+	trait="tough_soldier"	
+	trait="defensive_leader"	
+	trait="organizer"	
+	trait="just"	
+	trait="diligent"	
+	1153.1.1={
+		birth=yes
+	}
+	1233.1.1={
+		death=yes
+	}
+}
+
+411={
+	name="Zeiss"
+	dynasty=406
+	culture=bernese
+	religion=elimine_church
+	father=448
+	trait="tough_soldier"	
+	trait="just"	
+	1162.1.1={
+		birth=yes
+	}
+	1242.1.1={
+		death=yes
+	}
+}
+
+412={
+	name="Elen"
+	female="yes"
+	dynasty=408
+	culture=bernese
+	religion=elimine_church
+	father=449
+	trait="detached_priest"	
+	trait="kind"	
+	trait="chaste"	
+	trait="patient"	
+	trait="shy"	
+	1163.1.1={
+		birth=yes
+	}
+	1243.1.1={
+		death=yes
+	}
+}
+
+413={
+	name="Ruud" #knight
+	dynasty=407
+	culture=bernese
+	religion=elimine_church
+	trait="flamboyant_schemer"	
+	trait="mountain_terrain_leader"	
+	trait="heavy_infantry_leader"	
+	trait="gluttonous"	
+	trait="greedy"	
+	trait="deceitful"	
+	trait="arbitrary"
+	1140.1.1={
+		birth=yes
+	}	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+414={
+	name="Flaer" #wyvern lord
+	dynasty=409
+	culture=bernese
+	religion=elimine_church
+	trait="underhanded_rogue"	
+	trait="defensive_leader"
+	trait="schemer"		
+	trait="humble"	
+	trait="deceitful"
+	1135.1.1={
+		birth=yes
+	}	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+415={
+	name="Slater" #knight
+	dynasty=410
+	culture=bernese
+	religion=elimine_church
+	trait="misguided_warrior"		
+	trait="heavy_infantry_leader"		
+	trait="content"		
+	trait="trusting"	
+	1140.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+	
+}
+
+416={
+	name="Oates" #sage
+	dynasty=411
+	culture=bernese
+	religion=elimine_church
+	trait="scholarly_theologian"	
+	1110.1.1={
+		birth=yes
+	}
+	1180.1.1 = {
+		add_trait="desert_terrain_leader"
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+417={
+	name="Raith" #paladin
+	dynasty=412
+	culture=bernese
+	religion=elimine_church
+	trait="tough_soldier"	
+	trait="cavalry_leader"	
+	trait="slothful"
+	1150.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+418={
+	name="Tick" #general
+	dynasty=413
+	culture=bernese
+	religion=elimine_church
+	trait="misguided_warrior"	
+	trait="defensive_leader"
+	trait="slothful"
+	1151.1.1={
+		birth=yes
+	}
+	1180.1.1 = {
+		add_trait="winter_soldier"
+	}	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+419={
+	name="Peres" #druid
+	dynasty=414
+	culture=bernese
+	religion=elimine_church
+	trait="mastermind_theologian"	
+	trait="mystic"	
+	1125.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+420={
+	name="Pascal" #paladin
+	dynasty=415
+	culture=bernese
+	religion=elimine_church
+	trait="skilled_tactician"	
+	trait="cavalry_leader"	
+	trait="aggressive_leader"	
+	trait="cruel"	
+	trait="cynical"	
+	trait="ambitious"	
+	trait="lunatic"	
+	1121.1.1={
+		birth=yes
+	}
+	1155.1.1 = {
+		add_trait="impaler"
+		give_nickname=nick_the_beast
+	} 	
+	1155.6.1 = {
+		effect = {
+			k_bern = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	1160.1.1 = {
+		effect = { 
+			prisoner = no
+			#imprison=0  
+		} 
+	} 	
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=103 #Hector
+		}
+	}
+}
+
+421={
+	name="Dorcas"
+	culture=bernese
+	religion=elimine_church
+	trait="misguided_warrior"
+	trait="shy"		
+	trait="cynical"	
+	trait="patient"	
+	trait="kind"	
+	1124.1.1={
+		birth=yes
+	}
+	1146.1.1 = {
+		add_spouse=422
+	}
+	1174.1.1={
+		death=yes
+	}
+}
+
+422={
+	name="Natalie"
+	female="yes"
+	culture=bernese
+	religion=elimine_church
+	trait="clubfooted"	
+	trait="patient"	
+	trait="kind"	
+	trait="infirm"	
+	1130.1.1={
+		birth=yes
+	}
+	1170.1.1={
+		death=yes
+	}
+}
+
+423={
+	name="Martel" #bishop
+	dynasty=416
+	culture=bernese
+	religion=elimine_church
+	trait="martial_cleric"	
+	trait="mystic"	
+	trait="proud"	
+	trait="deceitful"
+	1137.1.1={
+		birth=yes
+	}	
+	1180.1.1 = {
+		add_trait="winter_soldier"
+	}	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+424={
+	name="Randy" #hero
+	#dynasty= #just a merc
+	culture=bernese
+	religion=elimine_church
+	trait="skilled_tactician"	
+	trait="desert_terrain_leader"	
+	trait="mystic"	
+	trait="scarred"	
+	1148.1.1={
+		birth=yes
+	}
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=108 #Roy
+		}
+	}
+}
+
+# the Black Fang
+
+425={
+	name="Brendan"
+	dynasty=417
+	culture=bernese
+	religion=elimine_church
+	trait="tough_soldier"	
+	trait="mountain_terrain_leader"	
+	trait="inspiring_leader"	
+	trait="winter_soldier"
+	trait="strong"	
+	trait="just"	
+	trait="charitable"	
+	trait="brave"	
+	1107.1.1={
+		birth=yes
+	}
+	1132.1.1 = {
+		add_spouse=426 # first wife
+	}
+	1150.1.1 = {
+		add_trait="scarred"
+	}	
+	1159.1.2 = {
+		add_spouse=609 #Sonia
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_murder_unknown
+			killer=608 #Limstella
+		}
+	}
+}
+
+426={
+	name="Barbara" #made up for Mrs. Brendan Reed the First
+	female="yes"
+	culture=bernese
+	religion=elimine_church
+	trait="intricate_webweaver"	
+	trait="just"	
+	trait="charitable"	
+	1116.1.1={
+		birth=yes
+	}
+	1159.1.1={
+		death=yes
+	}
+}
+
+427={
+	name="Lloyd"
+	dynasty=417
+	culture=bernese
+	religion=elimine_church
+	father=425 #Brendan
+	mother=426
+	trait="intricate_webweaver"	
+	trait="strategist"	
+	trait="mountain_terrain_leader"	
+	trait="inspiring_leader"	
+	trait="light_foot_leader"
+	trait="quick"	
+	trait="just"	
+	trait="patient"	
+	trait="brave"
+	1133.1.1={
+		birth=yes
+	}	
+	1150.1.1 = {
+		give_nickname=nick_the_white_wolf
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+			#death_reason=death_murder_unknown
+			#killer=608 #Limstella
+		}
+	}
+}
+
+428={
+	name="Linus"
+	dynasty=417
+	culture=bernese
+	religion=elimine_church
+	father=425 #Brendan
+	mother=426
+	trait="misguided_warrior"	
+	trait="duelist"	
+	trait="aggressive_leader"	
+	trait="unyielding_leader"
+	trait="mountain_terrain_leader"	
+	trait="strong"
+	trait="slow"		
+	trait="just"	
+	trait="brave"	
+	trait="wroth"	
+	1134.1.1={
+		birth=yes
+	}
+	1150.1.1 = {
+		give_nickname=nick_the_mad_dog
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+			#death_reason=death_murder_unknown
+			#killer=608 #Limstella
+		}
+	}
+}
+
+429={
+	name="Legault"
+	culture=bernese
+	religion=elimine_church
+	trait="elusive_shadow"	
+	trait="schemer"	
+	trait="charitable"	
+	trait="just"
+	1132.1.1={
+		birth=yes
+	}
+	1150.1.1 = {
+		give_nickname=nick_the_hurricane
+	}
+	1212.1.1={
+		death=yes
+	}
+}
+
+430={
+	name="Jan" #brigand
+	culture=bernese
+	religion=elimine_church
+	trait="amateurish_plotter"	
+	trait="flat_terrain_leader"
+	trait="charitable"	
+	trait="just"
+	trait="kind"	
+	trait="craven"	
+	1116.1.1={
+		birth=yes
+	}	
+	1161.1.1 = {
+		trait="depressed"
+	}	
+	1166.1.1={
+		death=yes
+	}
+}
+
+431={
+	name="Jerme"
+	culture=bernese
+	religion=elimine_church
+	trait="intricate_webweaver"	
+	trait="impaler"	
+	trait="winter_soldier"	
+	trait="defensive_leader"	
+	trait="cruel"	
+	trait="arbitrary"	
+	trait="lunatic"
+	1130.1.1={
+		birth=yes
+	}
+	1150.1.1 = {
+		give_nickname=nick_the_death_kite
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+432={
+	name="Kenneth"
+	culture=bernese
+	religion=autotheist
+	trait="scholarly_theologian"	
+	trait="impaler"	
+	trait="theologian"	
+	trait="winter_soldier"	
+	trait="defensive_leader"	
+	trait="cruel"	
+	trait="arbitrary"	
+	trait="lunatic"
+	trait="bad_priest_christian"	
+	1130.1.1={
+		birth=yes
+	}
+	1150.1.1 = {
+		give_nickname=nick_the_shrike
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+433={
+	name="Ursula"
+	female="yes"
+	culture=bernese
+	religion=anima
+	trait="intricate_webweaver"	
+	trait="flanker"	
+	trait="patient"	
+	trait="humble"		
+	1140.1.1={
+		birth=yes
+	}
+	1159.1.1 = {
+		give_nickname=nick_the_blue_crow
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+434={
+	name="Aion"#sage
+	culture=bernese
+	religion=anima
+	trait="skilled_tactician"	
+	trait="strategist"	
+	trait="unyielding_leader"	
+	trait="narrow_flank_leader"	
+	trait="proud"			
+	1116.1.1={
+		birth=yes
+	}	
+	1159.1.1 = {
+		give_nickname=nick_the_owl
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+435={
+	name="Teodor"#druid
+	culture=bernese
+	religion=dark
+	trait="mastermind_theologian"	
+	trait="flanker"	
+	trait="scholar"	
+	trait="patient"		
+	trait="ambitious"		
+	trait="deceitful"
+	1136.1.1={
+		birth=yes
+	}			
+	1159.1.1 = {
+		give_nickname=nick_the_shadow_hawk
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=103 #Hector
+		}
+	}
+}
+
+436={
+	name="Heintz"#shaman
+	culture=bernese
+	religion=dark
+	trait="flamboyant_schemer"	
+	trait="defensive_leader"	
+	trait="proud"
+	trait="cynical"	
+	trait="ambitious"
+	1101.1.1={
+		birth=yes
+	}	
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+437={
+	name="Zoldam"#shaman with boats
+	culture=bernese
+	religion=dark
+	trait="intricate_webweaver"	
+	trait="aggressive_leader"	
+	trait="flanker"	
+	trait="cruel"
+	trait="cynical"	
+	trait="shy"	
+	1099.1.1={
+		birth=yes
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+438={
+	name="Beyard" #Mercenary
+	culture=bernese
+	religion=elimine_church
+	trait="tough_soldier"	
+	trait="light_foot_leader"	
+	trait="flanker"	
+	trait="humble"	
+	trait="patient"
+	1122.1.1={
+		birth=yes
+	}	
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+439={
+	name="Wire" #Knight
+	culture=bernese
+	religion=elimine_church
+	trait="amateurish_plotter"	
+	trait="heavy_infantry_leader"	
+	trait="flanker"	
+	1134.1.1={
+		birth=yes
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=103 #Hector
+		}
+	}
+}
+
+440={
+	name="Damian" #You're about to die. Scream if you must.
+	culture=bernese
+	religion=elimine_church
+	trait="flamboyant_schemer"	
+	trait="cavalry_leader"	
+	trait="flanker"	
+	trait="proud"	
+	trait="deceitful"
+	1133.1.1={
+		birth=yes
+	}	
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+441={
+	name="Boies"
+	culture=bernese
+	religion=elimine_church
+	trait="amateurish_plotter"	
+	trait="heavy_infantry_leader"	
+	trait="proud"	
+	trait="greedy"	#I paid too much for that worthless pack of sellswords
+	1115.1.1={
+		birth=yes
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+442={
+	name="Cameron" #paladin, miniboss with Darin
+	culture=bernese
+	religion=elimine_church
+	trait="misguided_warrior"	
+	trait="cavalry_leader"	
+	trait="proud"	
+	1140.1.1={
+		birth=yes
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+443={
+	name="Maxime" #paladin, miniboss with Ursula
+	culture=bernese
+	religion=elimine_church
+	trait="tough_soldier"	
+	trait="cavalry_leader"	
+	trait="flanker"	
+	1139.1.1={
+		birth=yes
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+444={
+	name="Oleg" #warrior
+	culture=bernese
+	religion=elimine_church
+	trait="tough_soldier"	
+	trait="humble"	
+	1130.1.1={
+		birth=yes
+	}
+	1161.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=107 #Eliwood
+		}
+	}
+}
+
+445={
+	name="Igor" #myrmidon, works for Linus
+	culture=bernese
+	religion=elimine_church
+	trait="underhanded_rogue"	
+	trait="deceitful"	
+	trait="just"	
+	1138.1.1={
+		birth=yes
+	}
+	1188.1.1={
+		death=yes
+	}
+}
+
+446={
+	name="Aesha" #assassin?
+	female="yes"
+	culture=bernese
+	religion=elimine_church
+	trait="intricate_webweaver"	
+	trait="just"	
+	trait="charitable"	
+	trait="brave"	
+	1132.1.1={
+		birth=yes
+	}
+	1159.12.30 = {
+		add_trait="maimed"
+	}	
+	1160.1.1= {
+		death = {
+			death_reason=death_murder_unknown
+			killer=429 #Legault, on Sonia's orders
+		}
+	}
+}
+
+# Non-canon
+
+447={
+	name="Isaac"
+	dynasty=404
+	culture=bernese
+	religion=elimine_church
+	1100.1.1={
+		birth=yes
+	}
+	1175.1.1={
+		death=yes
+	}
+}
+
+448={
+	name="Lachius"
+	dynasty=406
+	culture=bernese
+	religion=elimine_church
+	1132.1.1={
+		birth=yes
+	}
+	1205.1.1={
+		death=yes
+	}
+}
+
+449={
+	name="Belminade"
+	dynasty=408
+	culture=bernese
+	religion=elimine_church
+	1140.1.1={
+		birth=yes
+	}
+	1220.1.1={
+		death=yes
+	}
+}
+
+#Hasha no Tsurugi
+450={
+	name="Richten" #old cavalier, early chapter villain. general of bern?
+	dynasty=418
+	
+	culture=bernese
+	religion=elimine_church
+	
+	trait="misguided_warrior"	
+	trait="cavalry_leader"	
+	trait="proud"	
+	trait="gluttonous"	
+	trait="cruel"	
+	trait="arbitrary"	
+	1130.1.1={
+		birth=yes
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			#killer=108 #Al
+		}
+	}
+}
+
+451={
+	name="Zeed" #Wyvern Knight under Narcian.
+	culture=bernese
+	religion=elimine_church
+	father=453
+		trait="tough_soldier"
+		trait="flanker"
+		trait="lustful"
+		trait="cruel"
+	1160.1.1={
+		birth=yes
+	}
+	1160.1.1={
+		employer=407 #Narcian
+	}	
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=185 #Gant
+		}
+	}
+}
+
+452={
+	name="Jemmie" #Mage
+	female=yes
+	culture=bernese
+	religion=elimine_church
+	father=453
+		trait="tough_soldier"
+		trait="gregarious"
+		trait="lustful"
+		trait="proud"
+		trait="cruel"
+	1164.1.1={
+		birth=yes
+	}
+	1164.1.1={
+		employer=407 #Narcian
+	}	
+	
+	1170.01.01 = {
+		effect={
+		add_friend=451 #Zeed
+		}
+	}	
+	
+	1175.01.01 = {
+		religion=anima
+	}	
+	
+	#a siege tome asshole
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_suicide
+			#killer= #kamikaze attack on Kilmar
+		}
+	}
+}
+
+453={
+	name="Teodor" #non-canon, father for Zeed/Jemmie
+	culture=bernese
+	religion=elimine_church
+	1130.1.1={
+		birth=yes
+	}
+	1153.1.1={
+		employer=407 #Narcian
+	}	
+	1164.01.01 = {
+		death = {
+			death_reason=death_accident 
+		}
+	}
+}
+
+454={
+	name="Audamorze" #Blackbone Clan leader and final boss of HNT. His clan was apparently exiled by humans and dragons because they sought power through evil means.
+	culture=bernese
+	religion=autotheist # Not entirely accurate, but it's the best fit.
+	
+	dynasty=498
+	
+	1140.1.1={
+		birth=yes
+	}
+	
+	1155.01.01 = {
+		add_trait="elusive_shadow"
+		add_trait="heresiarch"
+		add_trait="schemer"
+		add_trait="lustful"
+		add_trait="cruel"
+		add_trait="ambitious"
+		add_trait="greedy"
+		add_trait="patient"
+		add_trait="proud"
+	}	
+	
+	1180.01.01={
+		effect = {
+			spawn_unit = {
+				owner = ROOT
+				province = 42 # Sion
+				troops = {
+					archers = { 100 100 }
+					pikemen = { 100 100 }
+					heavy_infantry = { 300 300 }
+				}
+				attrition = 0
+				maintenance_multiplier = 0
+			}
+		}
+	}
+	
+	1181.1.1= {
+		death = {
+			death_reason=death_battle
+			killer=182 #Al
+		}
+	}
+}
+
+# Filler
+#455-458
+
+##Terina##
+#Xanthus
+459={
+	name="Walram" 
+	dynasty=423
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1137.1.1={
+		birth=yes
+	}
+	
+	1187.1.1= {
+		death = yes
+	}
+}
+
+#Araxa
+#Oren
+460={
+	name="Adam" 
+	dynasty=424
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1136.1.1={
+		birth=yes
+	}
+	
+	1190.1.1= {
+		death = yes
+	}
+}
+
+#Gallen
+#Balgach
+461={
+	name="Gerlach" 
+	dynasty=425
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1130.1.1={
+		birth=yes
+	}
+	
+	1193.1.1= {
+		death = yes
+	}
+}
+
+
+#Calach
+#Marbach
+#Regia
+462={
+	name="Christopher" 
+	dynasty=499
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1120.1.1={
+		birth=yes
+	}
+	
+	1150.1.1={
+		add_trait="mystic"
+	}
+	
+	1181.1.1= {
+		death = yes
+	}
+}
+
+#Buron
+#Nyon
+463={
+	name="Baldur" 
+	dynasty=426
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1131.1.1={
+		birth=yes
+	}
+	
+	1200.1.1= {
+		death = yes
+	}
+}
+
+#Emmen
+#Remigen
+464={
+	name="Emund" 
+	dynasty=427
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1141.1.1={
+		birth=yes
+	}
+	
+	1186.1.1= {
+		death = yes
+	}
+}
+
+#Nebikon
+465={
+	name="Nikolaus" 
+	dynasty=428
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1134.1.1={
+		birth=yes
+	}
+	
+	1204.1.1= {
+		death = yes
+	}
+}
+#Sion
+466={
+	name="Siegfried" 
+	dynasty=429
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1145.1.1={
+		birth=yes
+	}
+	
+	1215.1.1= {
+		death = yes
+	}
+}
+#Kaisten
+467={
+	name="Karl" 
+	dynasty=430
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1139.1.1={
+		birth=yes
+	}
+	
+	1189.1.1= {
+		death = yes
+	}
+}
+#Muhen
+468={
+	name="Martin" 
+	dynasty=431
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1142.1.1={
+		birth=yes
+	}
+	
+	1198.1.1= {
+		death = yes
+	}
+}
+
+#Amden
+469={
+	name="Adalbert" 
+	dynasty=432
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1141.1.1={
+		birth=yes
+	}
+	
+	1199.1.1= {
+		death = yes
+	}
+}
+#Cornol
+470={
+	name="Dietwin" 
+	dynasty=433
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1140.1.1={
+		birth=yes
+	}
+	
+	1197.1.1= {
+		death = yes
+	}
+}
+#Bonfol
+471={
+	name="Bernhard" 
+	dynasty=434
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1143.1.1={
+		birth=yes
+	}
+	
+	1202.1.1= {
+		death = yes
+	}
+}
+#Yens
+472={
+	name="Ulrich" 
+	dynasty=435
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1139.1.1={
+		birth=yes
+	}
+	
+	1189.1.1= {
+		death = yes
+	}
+}
+
+#Sarnen
+#Hori
+473={
+	name="Hartmann" 
+	dynasty=436
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1142.1.1={
+		birth=yes
+	}
+	
+	1188.1.1= {
+		death = yes
+	}
+}
+
+#Meilen
+#Rorbas
+474={
+	name="Radbot" 
+	dynasty=437
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1138.1.1={
+		birth=yes
+	}
+	
+	1194.1.1= {
+		death = yes
+	}
+}
+
+#Vaud
+475={
+	name="Viktor" 
+	dynasty=438
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1140.1.1={
+		birth=yes
+	}
+	
+	1189.1.1= {
+		death = yes
+	}
+}
+
+#Morges
+476={
+	name="Martin" 
+	dynasty=439
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1141.1.1={
+		birth=yes
+	}
+	
+	1196.1.1= {
+		death = yes
+	}
+}
+
+#Aigle
+477={
+	name="Andreas" 
+	dynasty=440
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1137.1.1={
+		birth=yes
+	}
+	
+	1182.1.1= {
+		death = yes
+	}
+}
+
+#Itingen
+478={
+	name="Landolf" 
+	dynasty=441
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1136.1.1={
+		birth=yes
+	}
+	
+	1181.1.1= {
+		death = yes
+	}
+}
+#Birseck
+479={
+	name="Burchard" 
+	dynasty=442
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1140.1.1={
+		birth=yes
+	}
+	
+	1203.1.1= {
+		death = yes
+	}
+}
+
+#Lucerne
+#Lugano
+#Vaulion
+480={
+	name="Lothar" 
+	dynasty=443
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1143.1.1={
+		birth=yes
+	}
+	
+	1199.1.1= {
+		death = yes
+	}
+}
+
+#Ascona
+481={
+	name="Arnulf" 
+	dynasty=444
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1141.1.1={
+		birth=yes
+	}
+	
+	1198.1.1= {
+		death = yes
+	}
+}
+
+#Arles
+#Cevio
+482={
+	name="Aldrich" 
+	dynasty=445
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1142.1.1={
+		birth=yes
+	}
+	
+	1200.1.1= {
+		death = yes
+	}
+}
+
+
+#Lebessus
+483={
+	name="Ludwig" 
+	dynasty=446
+	
+	culture=bernese
+	religion=raider_pagan
+		
+	1140.1.1={
+		birth=yes
+	}
+	
+	1189.1.1= {
+		death = yes
+	}
+}
+#Caunus
+484={
+	name="Udalrich" 
+	dynasty=447
+	
+	culture=bernese
+	religion=raider_pagan
+		
+	1138.1.1={
+		birth=yes
+	}
+	
+	1188.1.1= {
+		death = yes
+	}
+}
+

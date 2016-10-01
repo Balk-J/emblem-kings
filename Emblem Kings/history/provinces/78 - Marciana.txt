@@ -1,0 +1,16 @@
+# c_marciana
+
+# County Title
+title = c_marciana
+
+# Settlements
+max_settlements = 2
+
+b_marciana = tribal
+#b_marciana_2 = city
+
+# Misc
+culture = seafarer
+religion = elimine_church
+
+#History

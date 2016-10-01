@@ -1,0 +1,19 @@
+# c_zug
+
+# County Title
+title = c_zug
+
+# Settlements
+max_settlements = 5
+
+b_zug = castle
+b_zug_2 = temple
+b_zug_3 = city
+#b_rue = castle
+#b_wald = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

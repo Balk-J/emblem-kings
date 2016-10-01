@@ -1,0 +1,17 @@
+# c_lebessus
+
+# County Title
+title = c_lebessus
+
+# Settlements
+max_settlements = 3
+
+b_lebessus = tribal
+#b_lebessus_2 = city
+#b_lebessus_3 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

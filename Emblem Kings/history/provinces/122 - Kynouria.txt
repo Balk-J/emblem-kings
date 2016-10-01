@@ -1,0 +1,18 @@
+# c_kynouria
+
+# County Title
+title = c_kynouria
+
+# Settlements
+max_settlements = 4
+
+b_kynouria = tribal
+#b_kynouria_2 = city
+#b_kynouria_3 = temple
+#b_ano_karyes = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

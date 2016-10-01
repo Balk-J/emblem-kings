@@ -1,0 +1,15 @@
+# c_shan
+
+# County Title
+title = c_shan
+
+# Settlements
+max_settlements = 1
+
+b_shan = tribal
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

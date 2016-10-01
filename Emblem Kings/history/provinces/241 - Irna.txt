@@ -1,0 +1,18 @@
+# c_irna
+
+# County Title
+title = c_irna
+
+# Settlements
+max_settlements = 4
+
+b_irna = castle
+b_irna_2 = temple
+b_irna_3 = city
+#b_salernum = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

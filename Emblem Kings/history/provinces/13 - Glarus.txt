@@ -1,0 +1,19 @@
+# c_glarus
+
+# County Title
+title = c_glarus
+
+# Settlements
+max_settlements = 5
+
+b_glarus = castle
+b_glarus_2 = temple
+b_glarus_3 = city
+#b_biel = castle
+#b_signau = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

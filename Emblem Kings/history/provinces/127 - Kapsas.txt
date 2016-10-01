@@ -1,0 +1,17 @@
+# c_kapsas
+
+# County Title
+title = c_kapsas
+
+# Settlements
+max_settlements = 3
+
+b_kapsas = tribal
+b_kapsas_2 = city
+b_kapsas_3 = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

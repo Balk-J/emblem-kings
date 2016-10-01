@@ -1,0 +1,17 @@
+# c_phellus
+
+# County Title
+title = c_phellus
+
+# Settlements
+max_settlements = 3
+
+b_phellus = castle
+b_phellus_2 = city
+b_phaselis = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

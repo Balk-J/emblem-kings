@@ -1,0 +1,762 @@
+# Canon
+101={
+	can_appear=no
+	name="Ostia"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 10
+            emblem = 0
+            color = 9
+            color = 2
+            color = 13
+        }
+    }	
+}
+102={
+	can_appear=no
+	name="Pherae"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 33
+            emblem = 0
+            color = 3
+            color = 6
+            color = 2
+        }
+    }	
+}
+103={
+	can_appear=no
+	name="Caelin"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 0
+            emblem = 0
+            color = 10
+            color = 9
+            color = 4
+        }
+    }	
+}
+104={
+	can_appear=no
+	name="Laus"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 22
+            emblem = 0
+            color = 10
+            color = 0
+            color = 4
+        }
+   	}
+}
+105={
+	can_appear=no
+	name="Badon"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 13
+            emblem = 0
+            color = 9
+            color = 2
+            color = 4
+        }
+    }	
+}
+106={
+	can_appear=no
+	name="Thria"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 15
+            emblem = 0
+            color = 6
+            color = 11
+            color = 4
+        }
+    }	
+}
+107={
+	can_appear=no
+	name="Santaruz"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 34
+            emblem = 0
+            color = 12
+            color = 8
+            color = 4
+        }
+    }	
+}
+109={
+	can_appear=no
+	name="Khathalet"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 32
+            emblem = 0
+            color = 2
+            color = 14
+            color = 4
+        }
+    }	
+}
+110={
+	can_appear=no
+	name="Araphen"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 4
+            emblem = 0
+            color = 14
+            color = 10
+            color = 4
+        }
+    }	
+}
+111={
+	can_appear=no
+	name="Tuscana"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 6
+            emblem = 0
+            color = 9
+            color = 7
+            color = 4
+        }
+    }	
+}
+112={
+	can_appear=no
+	name="Tania"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 8
+            emblem = 0
+            color = 14
+            color = 4
+            color = 11
+        }
+    }	
+}
+113={
+	can_appear=no
+	name="Cornwell"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 4
+            emblem = 0
+            color = 9
+            color = 3
+            color = 2
+        }
+    }
+}
+116={
+	can_appear=no
+	name="Worde"
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 29
+            emblem = 0
+            color = 2
+            color = 5
+            color = 10
+        }
+    }	
+}
+
+129={
+	can_appear=no
+	name="Ryerde" #
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 13
+            emblem = 0
+            color = 11
+            color = 2
+            color = 6
+        }
+    }
+}
+
+# Non-canon
+114={
+	can_appear=no
+	name="of Alta"  # for Eagler
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 2
+            texture_internal = 8
+            emblem = 0
+            color = 0
+            color = 1
+            color = 1
+        }
+    }
+}
+
+115={
+	can_appear=no
+	name="Phestos" #for Isadora, since she's a minor noble from Pherae
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 11
+            emblem = 0
+            color = 2
+            color = 9
+            color = 1
+        }
+    }	
+}
+
+117={
+	can_appear=no
+	name="Ragna" #for Celdia's family
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 43
+            emblem = 0
+            color = 9
+            color = 11
+            color = 10
+        }
+    }	
+}
+
+118={
+	name="Eldreed" #for Al
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 3
+            texture_internal = 29
+            emblem = 0
+            color = 9
+            color = 2
+            color = 10
+        }
+    }
+}
+
+119={
+	can_appear=no
+	name="Zem" #
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 43
+            emblem = 0
+            color = 7
+            color = 5
+            color = 10
+        }
+    }	
+}
+
+120={
+	can_appear=no
+	name="Aperlae" #for Legance
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 14
+            emblem = 0
+            color = 10
+            color = 6
+            color = 0
+        }
+    }	
+}
+
+121={
+	can_appear=no
+	name="Arycanda" #for Debias
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 28
+            emblem = 0
+            color = 8
+            color = 0
+            color = 0
+        }
+    }	
+}
+
+122={
+	can_appear=no
+	name="Juge" # for Nino's family
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 1
+            texture_internal = 0
+            emblem = 0
+            color = 4
+            color = 0
+            color = 3
+        }
+    }	
+}    
+123={
+	can_appear=no
+	name="Myra" # for Wagner
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 40
+            emblem = 0
+            color = 8
+            color = 6
+            color = 0
+        }
+    }
+}   
+124={
+	can_appear=no
+	name="Olst" # for Youzen
+	culture="lycian"
+    coat_of_arms = {
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 28
+            emblem = 0
+            color = 5
+            color = 3
+            color = 0
+        }
+    }
+}
+125={
+	name="of Cornwell" 
+	culture="lycian"
+}
+126={
+	name="of Dias" 
+	culture="lycian"
+}
+127={
+	name="of Telmessus" 
+	culture="lycian"
+}
+128={
+	name="of Trebenna" 
+	culture="lycian"
+}
+129={
+	name="of Badon" 
+	culture="lycian"
+}
+130={
+	name="of Bubon" 
+	culture="lycian"
+}
+131={
+	name="of Balbura" 
+	culture="lycian"
+}
+132={
+	can_appear=no
+	name="of Balbura" # for Bauker, Darin's knight
+	culture="lycian"
+}
+133={
+	can_appear=no
+	name="of Idebessus" # for Bernard, Darin's general
+	culture="lycian"
+}
+
+134={
+	name="Hetanid"
+	culture="lycian"
+}
+
+135={
+	name="Emichid"
+	culture="lycian"
+}
+
+136={
+	name="Erenolding"
+	culture="lycian"
+}
+
+137={
+	name="Hugonid"
+	culture="lycian"
+}
+
+138={
+	name="Dodonid"
+	culture="lycian"
+}
+
+139={
+	name="Theodnid"
+	culture="lycian"
+}
+
+140={
+	name="Charibertid"
+	culture="lycian"
+}
+
+141={
+	name="Riculfling"
+	culture="lycian"
+}
+
+142={
+	name="Bouvinid"
+	culture="lycian"
+}
+
+143={
+	name="of Landen"
+	culture="lycian"
+}
+
+144={
+	name="Adalberts"
+	culture="lycian"
+}
+
+145={
+	name="Laidrati"
+	culture="lycian"
+}
+
+146={
+	name="Chiemgaudson"
+	culture="lycian"
+}
+
+147={
+	name="Hildegars"
+	culture="lycian"
+}
+
+148={
+	name="Leudoni"
+	culture="lycian"
+}
+
+149={
+	name="Adelards"
+	culture="lycian"
+}
+
+150={
+	name="Australdling"
+	culture="lycian"
+}
+
+151={
+	name="Baugulfson"
+	culture="lycian"
+}
+
+152={
+	name="Berengling"
+	culture="lycian"
+}
+
+153={
+	name="Hildradson"
+	culture="lycian"
+}
+
+154={
+	name="Drogling"
+	culture="lycian"
+}
+
+155={
+	name="Engelgerson"
+	culture="lycian"
+}
+
+156={
+	name="of Transjuranie"
+	culture="lycian"
+}
+
+157={
+	name="Galimani"
+	culture="lycian"
+}
+
+158={
+	name="of Betoricas"
+	culture="lycian"
+}
+
+159={
+	name="Herluins"
+	culture="lycian"
+}
+
+160={
+	name="Hermenelds"
+	culture="lycian"
+}
+
+161={
+	name="Roding"
+	culture="lycian"
+}
+
+162={
+	name="Ringling"
+	culture="lycian"
+}
+
+163={
+	name="Gunberts"
+	culture="lycian"
+}
+
+164={
+	name="Wulfardson"
+	culture="lycian"
+}
+
+165={
+	name="Vuodi"
+	culture="lycian"
+}
+
+166={
+	name="Walthars"
+	culture="lycian"
+}
+
+167={
+	name="Warins"
+	culture="lycian"
+}
+
+168={
+	name="Wegelenzi"
+	culture="lycian"
+}
+
+169={
+	name="Welenti"
+	culture="lycian"
+}
+
+170={
+	name="Widling"
+	culture="lycian"
+}
+
+171={
+	name="Morgannid"
+	culture="lycian"
+}
+
+172={
+	name="Hucberting"
+	culture="lycian"
+}
+
+173={
+	name="of Argengau"
+	culture="lycian"
+}
+# after random Lycian-culture counties
+174={
+	name="of Choma"
+	culture="lycian"
+}
+
+175={
+	name="of Mugla"
+	culture="lycian"
+}
+
+176={
+	name="of Comba"
+	culture="lycian"
+}
+
+177={
+	name="of Cibyra"
+	culture="lycian"
+}
+
+178={
+	name="of Acaliss"
+	culture="lycian"
+}
+
+179={
+	name="of Nisa"
+	culture="lycian"
+}
+
+180={
+	name="of Patara"
+	culture="lycian"
+}
+
+181={
+	name="of Sidyma"
+	culture="lycian"
+}
+
+182={
+	name="of Tios"
+	culture="lycian"
+}
+
+183={
+	name="of Cyaneae"
+	culture="lycian"
+}
+
+184={
+	name="of Antiphellos"
+	culture="lycian"
+}
+
+185={
+	name="of Limyra"
+	culture="lycian"
+}
+
+186={
+	name="of Rhodia"
+	culture="lycian"
+}
+
+187={
+	name="of Amelas"
+	culture="lycian"
+}
+
+188={
+	name="of Khathalet"
+	culture="lycian"
+}
+
+189={
+	name="of Araphen"
+	culture="lycian"
+}
+
+190={
+	name="of Worde"
+	culture="lycian"
+}
+
+191={
+	name="of Ryerde"
+	culture="lycian"
+}
+
+192={
+	name="of Thria"
+	culture="lycian"
+}
+
+193={
+	name="of Ostia"
+	culture="lycian"
+}
+
+194={
+	name="of Laus"
+	culture="lycian"
+}
+
+195={
+	name="of Santaruz"
+	culture="lycian"
+}
+
+196={
+	name="of Caelin"
+	culture="lycian"
+}
+
+197={
+	name="of Pherae"
+	culture="lycian"
+}
+
+198={
+	name="of Phellus"
+	culture="lycian"
+}
+
+199={
+	name="of Lycia"
+	culture="lycian"
+}

@@ -1,0 +1,9 @@
+665.1.1={
+	holder=601 # Athos
+	liege=0
+}
+
+1161.1.1={
+	liege=c_arcadia
+	holder=0 # Athos is dead
+}

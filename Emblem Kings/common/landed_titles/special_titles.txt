@@ -1,0 +1,105 @@
+
+# SPECIAL TITLES
+
+e_nergal = {
+	color={ 50 50 50 }
+	color2={ 255 255 255 }
+	
+	capital = 1 # The Dragon's Gate
+	
+	title = "LORD"
+	title_female = "LORD_female"
+	foa = "LORD_foa"
+	title_prefix = lands_of
+	culture=nabatan
+	#short_name = yes
+	#location_ruler_title = yes
+	
+	
+	allow = {
+		always = no # Only by special decision
+	}
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+# Lyndis' Legion
+# Temporary title for Lyn in her war against Lundgren
+d_lyn = {
+	color={ 68 156 163 }
+	color2={ 255 255 255 }
+	
+	capital = 103 #	Caelin
+	
+	title = "LORD"
+	title_female = "LORD_female"
+	foa = "LORD_foa"
+	
+	#short_name = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	allow = {
+		always = no 
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_blackbone_clan = {
+	color={ 90 50 50 }
+	color2={ 255 255 255 }
+	
+	capital = 42 #	Sion
+	
+	title = "GRANDMASTER"
+	title_female = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	short_name = yes
+	
+	#landless = yes
+	
+	#primary = yes
+	
+	allow = {
+		always = no 
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+
+
+# The Kingdom of Lycia proper. In canon, formed by Lilina after the events of FE6
+k_lycia = {
+	color={ 20 80 162 }
+	allow = {
+		FROM = {
+			any_previous_holder = {
+				always = yes
+			}
+		}
+	}
+}
+
+# The new nation formed by Ekhidna after kicking Etruria out of the Western Isles
+k_western_union = {
+	color={ 72 160 144 }
+	allow = {
+		FROM = {
+			any_previous_holder = {
+				always = yes
+			}
+		}
+	}
+}

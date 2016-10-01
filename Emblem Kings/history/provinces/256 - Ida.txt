@@ -1,0 +1,17 @@
+# c_ida
+
+# County Title
+title = c_ida
+
+# Settlements
+max_settlements = 3
+
+b_ida = tribal
+#b_ida_2 = city
+#b_ida_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

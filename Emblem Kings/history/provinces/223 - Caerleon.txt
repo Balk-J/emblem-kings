@@ -1,0 +1,19 @@
+# c_caerleon
+
+# County Title
+title = c_caerleon
+
+# Settlements
+max_settlements = 5
+
+b_caerleon = castle
+b_caerleon_2 = temple
+b_caerleon_3 = city
+#b_cerveteri = temple
+#b_caere = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

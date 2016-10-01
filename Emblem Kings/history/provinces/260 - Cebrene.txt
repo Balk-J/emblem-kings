@@ -1,0 +1,17 @@
+# c_cebrene
+
+# County Title
+title = c_cebrene
+
+# Settlements
+max_settlements = 3
+
+b_cebrene = castle
+b_cebrene_2 = city
+b_cebrene_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

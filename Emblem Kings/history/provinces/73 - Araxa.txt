@@ -1,0 +1,17 @@
+# c_araxa
+
+# County Title
+title = c_araxa
+
+# Settlements
+max_settlements = 3
+
+b_araxa = castle
+b_araxa_2 = city
+b_araxa_3 = temple
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

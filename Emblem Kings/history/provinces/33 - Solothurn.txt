@@ -1,0 +1,17 @@
+# c_solothurn
+
+# County Title
+title = c_solothurn
+
+# Settlements
+max_settlements = 3
+
+b_solothurn = castle
+b_solothurn_2 = temple
+b_solothurn_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

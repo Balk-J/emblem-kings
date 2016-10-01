@@ -1,0 +1,17 @@
+# c_olst
+
+# County Title
+title = c_olst
+
+# Settlements
+max_settlements = 3
+
+b_olst_castle = castle
+b_olst = city
+b_olst_2 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

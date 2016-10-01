@@ -1,0 +1,16 @@
+# c_arciun
+
+# County Title
+title = c_arciun
+
+# Settlements
+max_settlements = 2
+
+b_arciun = tribal
+#b_arciun_2 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

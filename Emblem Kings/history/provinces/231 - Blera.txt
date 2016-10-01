@@ -1,0 +1,18 @@
+# c_blera
+
+# County Title
+title = c_blera
+
+# Settlements
+max_settlements = 4
+
+b_blera = castle
+b_blera_2 = temple
+b_blera_3 = city
+#b_phlera = temple
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

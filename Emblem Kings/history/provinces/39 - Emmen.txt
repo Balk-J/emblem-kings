@@ -1,0 +1,15 @@
+# c_emmen
+
+# County Title
+title = c_emmen
+
+# Settlements
+max_settlements = 1
+
+b_emmen = tribal
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

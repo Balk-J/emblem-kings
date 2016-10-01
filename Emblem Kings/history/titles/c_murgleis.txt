@@ -1,0 +1,15 @@
+180.1.1 = {
+	law = status_of_women_4
+	#historical_nomad = yes # Just as a buffer between nomads and the giant kingdoms
+}
+
+#180.1.1={
+#	liege=d_ganelon
+#}
+
+1156.1.1={
+	holder=545 # filler
+}
+1180.1.1={
+	holder=517 # Djute
+}

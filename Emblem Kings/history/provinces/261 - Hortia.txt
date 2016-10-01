@@ -1,0 +1,15 @@
+# c_hortia
+
+# County Title
+title = c_hortia
+
+# Settlements
+max_settlements = 1
+
+b_hortia = tribal
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

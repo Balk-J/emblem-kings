@@ -1,0 +1,17 @@
+# c_pontes
+
+# County Title
+title = c_pontes
+
+# Settlements
+max_settlements = 3
+
+b_pontes = tribal
+#b_pontes_2 = temple
+#b_pontes_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

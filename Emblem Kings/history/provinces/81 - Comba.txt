@@ -1,0 +1,17 @@
+# c_comba
+
+# County Title
+title = c_comba
+
+# Settlements
+max_settlements = 3
+
+b_comba = tribal
+b_comba_2 = city
+#b_comba_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,20 @@
+# c_badon
+
+# County Title
+title = c_badon
+
+# Settlements
+max_settlements = 5
+
+b_badon_keep = castle
+b_port_badon = city
+b_syedra = temple
+#b_carallia = city
+#b_orymna = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History
+440.1.1 = { capital = b_port_badon }

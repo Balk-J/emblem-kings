@@ -1,0 +1,15 @@
+# c_berenger
+
+# County Title
+title = c_berenger
+
+# Settlements
+max_settlements = 1
+
+b_berenger = tribal
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

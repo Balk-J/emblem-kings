@@ -1,0 +1,19 @@
+# c_caisra
+
+# County Title
+title = c_caisra
+
+# Settlements
+max_settlements = 5
+
+b_caisra = castle
+b_caisra_2 = temple
+b_caisra_3 = city
+#b_atrebatum = temple
+#b_ceri = castle
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

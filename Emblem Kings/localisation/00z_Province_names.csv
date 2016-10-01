@@ -1,0 +1,336 @@
+PROV1;Virtus;Virtus;Virtus;;;;;;;;;x
+PROV2;Temperantia;Temperantia;Temperantia;;;;;;;;;x
+PROV3;Fortitudo;Fortitudo;Fortitudo;;;;;;;;;x
+PROV4;Iustitia;Iustitia;Iustitia;;;;;;;;;x
+PROV5;Bern;Bern;Bern;;;;;;;;;x
+PROV6;Aarberg;Aarberg;Aarberg;;;;;;;;;x
+PROV7;Landskron;Landskron;Landskron;;;;;;;;;x
+PROV8;Boltigen;Boltigen;Boltigen;;;;;;;;;x
+PROV9;Erlenbach;Erlenbach;Erlenbach;;;;;;;;;x
+PROV10;Basel;Basel;Basel;;;;;;;;;x
+PROV11;Bettingen;Bettingen;Bettingen;;;;;;;;;x
+PROV12;Orvin;Orvin;Orvin;;;;;;;;;x
+PROV13;Glarus;Glarus;Glarus;;;;;;;;;x
+PROV14;Ennenda;Ennenda;Ennenda;;;;;;;;;x
+PROV15;Riedern;Riedern;Riedern;;;;;;;;;x
+PROV16;Netstal;Netstal;Netstal;;;;;;;;;x
+PROV17;Uri;Uri;Uri;;;;;;;;;x
+PROV18;Bauen;Bauen;Bauen;;;;;;;;;x
+PROV19;Isenthal;Isenthal;Isenthal;;;;;;;;;x
+PROV20;Fribourg;Fribourg;Fribourg;;;;;;;;;x
+PROV21;Galmiz;Galmiz;Galmiz;;;;;;;;;x
+PROV22;Murist;Murist;Murist;;;;;;;;;x
+PROV23;Unterwalden;Unterwalden;Unterwalden;;;;;;;;;x
+PROV24;Obwalden;Obwalden;Obwalden;;;;;;;;;x
+PROV25;Nidwalden;Nidwalden;Nidwalden;;;;;;;;;x
+PROV26;Appenzell;Appenzell;Appenzell;;;;;;;;;x
+PROV27;Gonten;Gonten;Gonten;;;;;;;;;x
+PROV28;Rute;Rute;Rute;;;;;;;;;x
+PROV29;Haslen;Haslen;Haslen;;;;;;;;;x
+PROV30;Zug;Zug;Zug;;;;;;;;;x
+PROV31;Risch;Risch;Risch;;;;;;;;;x
+PROV32;Walchwil;Walchwil;Walchwil;;;;;;;;;x
+PROV33;Solothurn;Solothurn;Solothurn;;;;;;;;;x
+PROV34;Dorneck;Dorneck;Dorneck;;;;;;;;;x
+PROV35;Olten;Olten;Olten;;;;;;;;;x
+PROV36;Calach;Calach;Calach;;;;;;;;;x
+PROV37;Marbach;Marbach;Marbach;;;;;;;;;x
+PROV38;Buron;Buron;Buron;;;;;;;;;x
+PROV39;Emmen;Emmen;Emmen;;;;;;;;;x
+PROV40;Nebikon;Nebikon;Nebikon;;;;;;;;;x
+PROV41;Regia;Regia;Regia;;;;;;;;;x
+PROV42;Sion;Sion;Sion;;;;;;;;;x
+PROV43;Remigen;Remigen;Remigen;;;;;;;;;x
+PROV44;Kaisten;Kaisten;Kaisten;;;;;;;;;x
+PROV45;Muhen;Muhen;Muhen;;;;;;;;;x
+PROV46;Gallen;Gallen;Gallen;;;;;;;;;x
+PROV47;Balgach;Balgach;Balgach;;;;;;;;;x
+PROV48;Amden;Amden;Amden;;;;;;;;;x
+PROV49;Jura;Jura;Jura;;;;;;;;;x
+PROV50;Cornol;Cornol;Cornol;;;;;;;;;x
+PROV51;Bonfol;Bonfol;Bonfol;;;;;;;;;x
+PROV52;Yens;Yens;Yens;;;;;;;;;x
+PROV53;Sarnen;Sarnen;Sarnen;;;;;;;;;x
+PROV54;Hori;Hori;Hori;;;;;;;;;x
+PROV55;Meilen;Meilen;Meilen;;;;;;;;;x
+PROV56;Rorbas;Rorbas;Rorbas;;;;;;;;;x
+PROV57;Vaud;Vaud;Vaud;;;;;;;;;x
+PROV58;Morges;Morges;Morges;;;;;;;;;x
+PROV59;Aigle;Aigle;Aigle;;;;;;;;;x
+PROV60;Nyon;Nyon;Nyon;;;;;;;;;x
+PROV61;Vaulion;Vaulion;Vaulion;;;;;;;;;x
+PROV62;Arles;Arles;Arles;;;;;;;;;x
+PROV63;Itingen;Itingen;Itingen;;;;;;;;;x
+PROV64;Birseck;Birseck;Birseck;;;;;;;;;x
+PROV65;Lucerne;Lucerne;Lucerne;;;;;;;;;x
+PROV66;Ascona;Ascona;Ascona;;;;;;;;;x
+PROV67;Lugano;Lugano;Lugano;;;;;;;;;x
+PROV68;Cevio;Cevio;Cevio;;;;;;;;;x
+PROV69;Xanthus;Xanthus;Xanthus;;;;;;;;;x
+PROV70;Cibyra;Cibyra;Cibyra;;;;;;;;;x
+PROV71;Acaliss;Acaliss;Acaliss;;;;;;;;;x
+PROV72;Calynda;Calynda;Calynda;;;;;;;;;x
+PROV73;Araxa;Araxa;Araxa;;;;;;;;;x
+PROV74;Lebessus;Lebessus;Lebessus;;;;;;;;;x
+PROV75;Caunus;Caunus;Caunus;;;;;;;;;x
+PROV76;Oren;Oren;Oren;;;;;;;;;x
+PROV77;Nisa;Nisa;Nisa;;;;;;;;;x
+PROV78;Marciana;Marciana;Marciana;;;;;;;;;x
+PROV79;Choma;Choma;Choma;;;;;;;;;x
+PROV80;Mugla;Mugla;Mugla;;;;;;;;;x
+PROV81;Comba;Comba;Comba;;;;;;;;;x
+PROV82;Ostia;Ostia;Ostia;;;;;;;;;x
+PROV83;Durandal;Durandal;Durandal;;;;;;;;;x
+PROV84;Ragna;Ragna;Ragna;;;;;;;;;x
+PROV85;Arycanda;Arycanda;Arycanda;;;;;;;;;x
+PROV86;Zem;Zem;Zem;;;;;;;;;x
+PROV87;Aperlae;Aperlae;Aperlae;;;;;;;;;x
+PROV88;Patara;Patara;Patara;;;;;;;;;x
+PROV89;Thria;Thria;Thria;;;;;;;;;x
+PROV90;Myra;Myra;Myra;;;;;;;;;x
+PROV91;Worde;Worde;Worde;;;;;;;;;x
+PROV92;Olst;Olst;Olst;;;;;;;;;x
+PROV93;Ryerde;Ryerde;Ryerde;;;;;;;;;x
+PROV94;Sidyma;Sidyma;Sidyma;;;;;;;;;x
+PROV95;Laus;Laus;Laus;;;;;;;;;x
+PROV96;Idebessus;Idebessus;Idebessus;;;;;;;;;x
+PROV97;Tios;Tios;Tios;;;;;;;;;x
+PROV98;Badon;Badon;Badon;;;;;;;;;x
+PROV99;Bubon;Bubon;Bubon;;;;;;;;;x
+PROV100;Balbura;Balbura;Balbura;;;;;;;;;x
+PROV101;Santaruz;Santaruz;Santaruz;;;;;;;;;x
+PROV102;Cyaneae;Cyaneae;Cyaneae;;;;;;;;;x
+PROV103;Caelin;Caelin;Caelin;;;;;;;;;x
+PROV104;Alta;Alta;Alta;;;;;;;;;x
+PROV105;Khathalet;Khathalet;Khathalet;;;;;;;;;x
+PROV106;Antiphellos;Antiphellos;Antiphellos;;;;;;;;;x
+PROV107;Araphen;Araphen;Araphen;;;;;;;;;x
+PROV108;Limyra;Limyra;Limyra;;;;;;;;;x
+PROV109;Tuscana;Tuscana;Tuscana;;;;;;;;;x
+PROV110;Rhodia;Rhodia;Rhodia;;;;;;;;;x
+PROV111;Tania;Tania;Tania;;;;;;;;;x
+PROV112;Amelas;Amelas;Amelas;;;;;;;;;x
+PROV113;Pherae;Pherae;Pherae;;;;;;;;;x
+PROV114;Phellus;Phellus;Phellus;;;;;;;;;x
+PROV115;Phestos;Phestos;Phestos;;;;;;;;;x
+PROV116;Cornwell;Cornwell;Cornwell;;;;;;;;;x
+PROV117;Dias;Dias;Dias;;;;;;;;;x
+PROV118;Telmessus;Telmessus;Telmessus;;;;;;;;;x
+PROV119;Trebenna;Trebenna;Trebenna;;;;;;;;;x
+PROV120;Arcadia;Arcadia;Arcadia;;;;;;;;;x
+PROV121;Gortynia;Gortynia;Gortynia;;;;;;;;;x
+PROV122;Kynouria;Kynouria;Kynouria;;;;;;;;;x
+PROV123;Levidi;Levidi;Levidi;;;;;;;;;x
+PROV124;Mantineia;Mantineia;Mantineia;;;;;;;;;x
+PROV125;Nestani;Nestani;Nestani;;;;;;;;;x
+PROV126;Pikernis;Pikernis;Pikernis;;;;;;;;;x
+PROV127;Kapsas;Kapsas;Kapsas;;;;;;;;;x
+PROV128;Tegea;Tegea;Tegea;;;;;;;;;x
+PROV129;Sagkas;Sagkas;Sagkas;;;;;;;;;x
+PROV130;Loukas;Loukas;Loukas;;;;;;;;;x
+PROV131;Tyros;Tyros;Tyros;;;;;;;;;x
+PROV132;Akovos;Akovos;Akovos;;;;;;;;;x
+PROV133;Rizes;Rizes;Rizes;;;;;;;;;x
+PROV134;Vytina;Vytina;Vytina;;;;;;;;;x
+PROV135;Elati;Elati;Elati;;;;;;;;;x
+PROV136;Lasta;Lasta;Lasta;;;;;;;;;x
+PROV137;Mallota;Mallota;Mallota;;;;;;;;;x
+PROV138;Soulos;Soulos;Soulos;;;;;;;;;x
+PROV139;Plaka;Plaka;Plaka;;;;;;;;;x
+PROV140;Vangos;Vangos;Vangos;;;;;;;;;x
+PROV141;Isaris;Isaris;Isaris;;;;;;;;;x
+PROV142;Vastas;Vastas;Vastas;;;;;;;;;x
+PROV143;Chirades;Chirades;Chirades;;;;;;;;;x
+PROV144;Thoknia;Thoknia;Thoknia;;;;;;;;;x
+PROV145;Gefyra;Gefyra;Gefyra;;;;;;;;;x
+PROV146;Tripotamo;Tripotamo;Tripotamo;;;;;;;;;x
+PROV147;Souli;Souli;Souli;;;;;;;;;x
+PROV148;Karyon;Karyon;Karyon;;;;;;;;;x
+PROV149;Kafti;Kafti;Kafti;;;;;;;;;x
+PROV150;Makri;Makri;Makri;;;;;;;;;x
+PROV151;Perthori;Perthori;Perthori;;;;;;;;;x
+PROV152;Skopi;Skopi;Skopi;;;;;;;;;x
+PROV153;Jutes;Jutes;Jutes;;;;;;;;;x
+PROV154;Condate;Condate;Condate;;;;;;;;;x
+PROV155;Moridin;Moridin;Moridin;;;;;;;;;x
+PROV156;Segontium;Segontium;Segontium;;;;;;;;;x
+PROV157;Dubris;Dubris;Dubris;;;;;;;;;x
+PROV158;Vectis;Vectis;Vectis;;;;;;;;;x
+PROV159;Lindinis;Lindinis;Lindinis;;;;;;;;;x
+PROV160;Mamucium;Mamucium;Mamucium;;;;;;;;;x
+PROV161;Pontes;Pontes;Pontes;;;;;;;;;x
+PROV162;Calcaria;Calcaria;Calcaria;;;;;;;;;x
+PROV163;Eburacum;Eburacum;Eburacum;;;;;;;;;x
+PROV164;Armagh;Armagh;Armagh;;;;;;;;;x
+PROV165;Lindum;Lindum;Lindum;;;;;;;;;x
+PROV166;Vinovia;Vinovia;Vinovia;;;;;;;;;x
+PROV167;Coria;Coria;Coria;;;;;;;;;x
+PROV168;Mediolanum;Mediolanum;Mediolanum;;;;;;;;;x
+PROV169;Silurum;Silurum;Silurum;;;;;;;;;x
+PROV170;Salinae;Salinae;Salinae;;;;;;;;;x
+PROV171;Edina;Edina;Edina;;;;;;;;;x
+PROV172;Belgarum;Belgarum;Belgarum;;;;;;;;;x
+PROV173;Caromago;Caromago;Caromago;;;;;;;;;x
+PROV174;Alauna;Alauna;Alauna;;;;;;;;;x
+PROV175;Devana;Devana;Devana;;;;;;;;;x
+PROV176;Graupius;Graupius;Graupius;;;;;;;;;x
+PROV177;Evidensca;Evidensca;Evidensca;;;;;;;;;x
+PROV178;Trimontium;Trimontium;Trimontium;;;;;;;;;x
+PROV179;Dia;Dia;Dia;;;;;;;;;x
+PROV180;Corinium;Corinium;Corinium;;;;;;;;;x
+PROV181;Danum;Danum;Danum;;;;;;;;;x
+PROV182;Navio;Navio;Navio;;;;;;;;;x
+PROV183;Olicana;Olicana;Olicana;;;;;;;;;x
+PROV184;Isca;Isca;Isca;;;;;;;;;x
+PROV185;Taliver;Taliver;Taliver;;;;;;;;;x
+PROV186;Hardres;Hardres;Hardres;;;;;;;;;x
+PROV187;Berenger;Berenger;Berenger;;;;;;;;;x
+PROV188;Pinabel;Pinabel;Pinabel;;;;;;;;;x
+PROV189;Ganelon;Ganelon;Ganelon;;;;;;;;;x
+PROV190;Foulkes;Foulkes;Foulkes;;;;;;;;;x
+PROV191;Murgleis;Murgleis;Murgleis;;;;;;;;;x
+PROV192;Bulgar;Bulgar;Bulgar;;;;;;;;;x
+PROV193;Mani;Mani;Mani;;;;;;;;;x
+PROV194;Balkh;Balkh;Balkh;;;;;;;;;x
+PROV195;Volga;Volga;Volga;;;;;;;;;x
+PROV196;Gelonus;Gelonus;Gelonus;;;;;;;;;x
+PROV197;Sistan;Sistan;Sistan;;;;;;;;;x
+PROV198;Saka;Saka;Saka;;;;;;;;;x
+PROV199;Pamir;Pamir;Pamir;;;;;;;;;x
+PROV200;Shan;Shan;Shan;;;;;;;;;x
+PROV201;Media;Media;Media;;;;;;;;;x
+PROV202;Ecbatana;Ecbatana;Ecbatana;;;;;;;;;x
+PROV203;Atropatene;Atropatene;Atropatene;;;;;;;;;x
+PROV204;Talas;Talas;Talas;;;;;;;;;x
+PROV205;Naryn;Naryn;Naryn;;;;;;;;;x
+PROV206;Batken;Batken;Batken;;;;;;;;;x
+PROV207;Tarim;Tarim;Tarim;;;;;;;;;x
+PROV208;Kunlun;Kunlun;Kunlun;;;;;;;;;x
+PROV209;Kashgar;Kashgar;Kashgar;;;;;;;;;x
+PROV210;Aquleia;Aquleia;Aquleia;;;;;;;;;x
+PROV211;Berua;Berua;Berua;;;;;;;;;x
+PROV212;Cura;Cura;Cura;;;;;;;;;x
+PROV213;Vetluna;Vetluna;Vetluna;;;;;;;;;x
+PROV214;Capeva;Capeva;Capeva;;;;;;;;;x
+PROV215;Orcla;Orcla;Orcla;;;;;;;;;x
+PROV216;Alesia;Alesia;Alesia;;;;;;;;;x
+PROV217;Fulginia;Fulginia;Fulginia;;;;;;;;;x
+PROV218;Perusia;Perusia;Perusia;;;;;;;;;x
+PROV219;Reglay;Reglay;Reglay;;;;;;;;;x
+PROV220;Rasela;Rasela;Rasela;;;;;;;;;x
+PROV221;Russellae;Russellae;Russellae;;;;;;;;;x
+PROV222;Colonnata;Colonnata;Colonnata;;;;;;;;;x
+PROV223;Caerleon;Caerleon;Caerleon;;;;;;;;;x
+PROV224;Caisra;Caisra;Caisra;;;;;;;;;x
+PROV225;Agylla;Agylla;Agylla;;;;;;;;;x
+PROV226;Tarchna;Tarchna;Tarchna;;;;;;;;;x
+PROV227;Bolsena;Bolsena;Bolsena;;;;;;;;;x
+PROV228;Satria;Satria;Satria;;;;;;;;;x
+PROV229;Amina;Amina;Amina;;;;;;;;;x
+PROV230;Siene;Siene;Siene;;;;;;;;;x
+PROV231;Blera;Blera;Blera;;;;;;;;;x
+PROV232;Marturi;Marturi;Marturi;;;;;;;;;x
+PROV233;Catuna;Catuna;Catuna;;;;;;;;;x
+PROV234;Felathri;Felathri;Felathri;;;;;;;;;x
+PROV235;Nucra;Nucra;Nucra;;;;;;;;;x
+PROV236;Velkha;Velkha;Velkha;;;;;;;;;x
+PROV237;Capna;Capna;Capna;;;;;;;;;x
+PROV238;Liburna;Liburna;Liburna;;;;;;;;;x
+PROV239;Clevsin;Clevsin;Clevsin;;;;;;;;;x
+PROV240;Manthra;Manthra;Manthra;;;;;;;;;x
+PROV241;Irna;Irna;Irna;;;;;;;;;x
+PROV242;Cassina;Cassina;Cassina;;;;;;;;;x
+PROV243;Arritim;Arritim;Arritim;;;;;;;;;x
+PROV244;Halethi;Halethi;Halethi;;;;;;;;;x
+PROV245;Herclena;Herclena;Herclena;;;;;;;;;x
+PROV246;Bellona;Bellona;Bellona;;;;;;;;;x
+PROV247;Velzna;Velzna;Velzna;;;;;;;;;x
+PROV248;Edessa;Edessa;Edessa;;;;;;;;;x
+PROV249;Adma;Adma;Adma;;;;;;;;;x
+PROV250;Pyrene;Pyrene;Pyrene;;;;;;;;;x
+PROV251;Orhay;Orhay;Orhay;;;;;;;;;x
+PROV252;Riha;Riha;Riha;;;;;;;;;x
+PROV253;Troas;Troas;Troas;;;;;;;;;x
+PROV254;Sigeia;Sigeia;Sigeia;;;;;;;;;x
+PROV255;Melas;Melas;Melas;;;;;;;;;x
+PROV256;Ida;Ida;Ida;;;;;;;;;x
+PROV257;Antigonia;Antigonia;Antigonia;;;;;;;;;x
+PROV258;Aisarna;Aisarna;Aisarna;;;;;;;;;x
+PROV259;Carrhae;Carrhae;Carrhae;;;;;;;;;x
+PROV260;Cebrene;Cebrene;Cebrene;;;;;;;;;x
+PROV261;Hortia;Hortia;Hortia;;;;;;;;;x
+PROV262;Sabatia;Sabatia;Sabatia;;;;;;;;;x
+PROV263;Vipena;Vipena;Vipena;;;;;;;;;x
+PROV264;Spina;Spina;Spina;;;;;;;;;x
+PROV265;Neandreia;Neandreia;Neandreia;;;;;;;;;x
+PROV266;Kavi;Kavi;Kavi;;;;;;;;;x
+PROV267;Mutina;Mutina;Mutina;;;;;;;;;x
+PROV268;Anth;Anth;Anth;;;;;;;;;x
+PROV269;Clavna;Clavna;Clavna;;;;;;;;;x
+PROV270;Sestos;Sestos;Sestos;;;;;;;;;x
+PROV271;Arciun;Arciun;Arciun;;;;;;;;;x
+PROV272;Carmna;Carmna;Carmna;;;;;;;;;x
+PROV273;Sigeion;Sigeion;Sigeion;;;;;;;;;x
+PROV274;Atria;Atria;Atria;;;;;;;;;x
+PROV275;Felsina;Felsina;Felsina;;;;;;;;;x
+PROV276;Cardia;Cardia;Cardia;;;;;;;;;x
+PROV277;Cainua;Cainua;Cainua;;;;;;;;;x
+PROV278;Aisinia;Aisinia;Aisinia;;;;;;;;;x
+PROV279;Phlera;Phlera;Phlera;;;;;;;;;x
+PROV280;Sabate;Sabate;Sabate;;;;;;;;;x
+PROV281;Remy;Remy;Remy;;;;;;;;;x
+PROV282;Arimna;Arimna;Arimna;;;;;;;;;x
+PROV283;Velera;Velera;Velera;;;;;;;;;x
+PROV284;Pathva;Pathva;Pathva;;;;;;;;;x
+PROV285;Remnun;Remnun;Remnun;;;;;;;;;x
+PROV286;Ice Dragon Mountains;Ice Dragon Mountains;Ice Dragon Mountains;;;;;;;;;x
+PROV287;Maltet Mountains;Maltet Mountains;Maltet Mountains;;;;;;;;;x
+PROV288;The Seasonless Peaks;The Seasonless Peaks;The Seasonless Peaks;;;;;;;;;x
+PROV289;Wyvern Mountains;Wyvern Mountains;Wyvern Mountains;;;;;;;;;x
+PROV290;Eastern Coast of Edessa;Eastern Coast of Edessa;Eastern Coast of Edessa;;;;;;;;;x
+PROV291;Northern Coast of Edessa;Northern Coast of Edessa;Northern Coast of Edessa;;;;;;;;;x
+PROV292;Barigan Bay;Barigan Bay;Barigan Bay;;;;;;;;;x
+PROV293;Bay of Scamander;Bay of Scamander;Bay of Scamander;;;;;;;;;x
+PROV294;Central Sea of Ilia;Central Sea of Ilia;Central Sea of Ilia;;;;;;;;;x
+PROV295;Western Sea of Ilia;Western Sea of Ilia;Western Sea of Ilia;;;;;;;;;x
+PROV296;Sea of Etruria;Sea of Etruria;Sea of Etruria;;;;;;;;;x
+PROV297;Bay of Remy;Bay of Remy;Bay of Remy;;;;;;;;;x
+PROV298;Coast of Dia;Coast of Dia;Coast of Dia;;;;;;;;;x
+PROV299;Strait of Dia;Strait of Dia;Strait of Dia;;;;;;;;;x
+PROV300;Strait of Armads;Strait of Armads;Strait of Armads;;;;;;;;;x
+PROV301;Durban's Strait;Durban's Strait;Durban's Strait;;;;;;;;;x
+PROV302;Coast of Jutes;Coast of Jutes;Coast of Jutes;;;;;;;;;x
+PROV303;Coast of Dubris;Coast of Dubris;Coast of Dubris;;;;;;;;;x
+PROV304;Bay of Fibernia;Bay of Fibernia;Bay of Fibernia;;;;;;;;;x
+PROV305;Strait of Edina;Strait of Edina;Strait of Edina;;;;;;;;;x
+PROV306;Western Coast of Scotia;Western Coast of Scotia;Western Coast of Scotia;;;;;;;;;x
+PROV307;Coast of Caledonia;Coast of Caledonia;Coast of Caledonia;;;;;;;;;x
+PROV308;Southern Coast of Fibernia;Southern Coast of Fibernia;Southern Coast of Fibernia;;;;;;;;;x
+PROV309;Outer Bay of Aquelia;Outer Bay of Aquelia;Outer Bay of Aquelia;;;;;;;;;x
+PROV310;Bay of Aquelia;Bay of Aquelia;Bay of Aquelia;;;;;;;;;x
+PROV311;Nabatan Coast;Nabatan Coast;Nabatan Coast;;;;;;;;;x
+PROV312;Southern Coast of Scotia;Southern Coast of Scotia;Southern Coast of Scotia;;;;;;;;;x
+PROV313;Northern Sea of Kafti;Northern Sea of Kafti;Northern Sea of Kafti;;;;;;;;;x
+PROV314;Elibian Ocean;Elibian Ocean;Elibian Ocean;;;;;;;;;x
+PROV315;Coast of Kafti;Coast of Kafti;Coast of Kafti;;;;;;;;;x
+PROV316;Central Sea of Kafti;Central Sea of Kafti;Central Sea of Kafti;;;;;;;;;x
+PROV317;Southern Sea of Kafti;Southern Sea of Kafti;Southern Sea of Kafti;;;;;;;;;x
+PROV318;Western Missur Coast;Western Missur Coast;Western Missur Coast;;;;;;;;;x
+PROV319;Central Missur Coast;Central Missur Coast;Central Missur Coast;;;;;;;;;x
+PROV320;Outer Sea of Lycia;Outer Sea of Lycia;Outer Sea of Lycia;;;;;;;;;x
+PROV321;Inner Sea of Lycia;Inner Sea of Lycia;Inner Sea of Lycia;;;;;;;;;x
+PROV322;Bay of Lycia;Bay of Lycia;Bay of Lycia;;;;;;;;;x
+PROV323;Sea of Pherae;Sea of Pherae;Sea of Pherae;;;;;;;;;x
+PROV324;Valor Coast;Valor Coast;Valor Coast;;;;;;;;;x
+PROV325;Cornwell Coast;Cornwell Coast;Cornwell Coast;;;;;;;;;x
+PROV326;Sea of Marciana;Sea of Marciana;Sea of Marciana;;;;;;;;;x
+PROV327;Terina Coast;Terina Coast;Terina Coast;;;;;;;;;x
+PROV328;Sea of Calynda;Sea of Calynda;Sea of Calynda;;;;;;;;;x
+PROV329;Terina Cliffs;Terina Cliffs;Terina Cliffs;;;;;;;;;x
+PROV330;Aareshore;Aareshore;Aareshore;;;;;;;;;x
+PROV331;Lake Calach;Lake Calach;Lake Calach;;;;;;;;;x
+PROV332;River Aare;River Aare;River Aare;;;;;;;;;x
+PROV333;River Aare;River Aare;River Aare;;;;;;;;;x
+PROV334;River Aare;River Aare;River Aare;;;;;;;;;x
+PROV335;River Aare;River Aare;River Aare;;;;;;;;;x
+PROV336;River Scamander;River Scamander;River Scamander;;;;;;;;;x

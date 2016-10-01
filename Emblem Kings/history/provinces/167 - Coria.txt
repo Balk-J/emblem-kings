@@ -1,0 +1,20 @@
+# c_coria
+
+# County Title
+title = c_coria
+
+# Settlements
+max_settlements = 6
+
+b_coria = castle
+b_coria_2 = city
+b_lemanis = city
+b_viroconium = city
+#b_vindolanda = temple
+#b_anavio = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

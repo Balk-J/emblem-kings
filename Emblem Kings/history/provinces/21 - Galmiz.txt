@@ -1,0 +1,18 @@
+# c_galmiz
+
+# County Title
+title = c_galmiz
+
+# Settlements
+max_settlements = 4
+
+b_galmiz = castle
+b_galmiz_2 = temple
+b_galmiz_3 = city
+#b_saanen = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

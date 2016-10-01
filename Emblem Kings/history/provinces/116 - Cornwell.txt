@@ -1,0 +1,18 @@
+# c_cornwell
+
+# County Title
+title = c_cornwell
+
+# Settlements
+max_settlements = 4
+
+b_cornwell = castle
+b_cornwell_2 = city
+b_cornwell_3 = temple
+#b_magydus = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

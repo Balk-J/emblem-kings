@@ -1,0 +1,48 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+PICK_YOUR_STARTING_ERA;Choose Your Starting Era;Choisissez l'époque à laquelle vous débutez;Wählt Eure Startperiode;;Elige Tu Época de Inicio;;;;;;;;;x;;
+PICK_STARTING_ERA_TEXT;Emblem Kings currently covers a few interesting dates in Elibian history.  Choose where in the timeline you want your game to start.;;;;;;;;;;;;;x
+bm_fe7_girl_from_the_plains;The Girl From the Plains;;;;;;;;;;;;;x
+bm_fe7_girl_from_the_plains_desc;Lyn, the last survivor of the Lorca clan, has learned that she is the granddaughter of Marquess Hausen of Caelin. As she begins her journey towards Caelin, Hausen's younger brother Lundgren plots to keep her away from the throne... and hasten his own inheritance.;;;;;;;;;;;;;x
+bm_fe7_blazing_sword;The Blazing Sword;;;;;;;;;;;;;x
+bm_fe7_blazing_sword_desc;The continent of Elibe teeters on the brink of war. In Lycia, Marquess Elbert of Pherae vanishes among whispers of rebellion, while shadowy figures slip in and out of castles in Laus and Santaruz. In Bern, a succession crisis looms as the envious King Desmond schemes to keep his popular and talented son off the throne. A league of assassins can be connected to all these events, directed by a mysterious sorceror...;;;;;;;;;;;;;x
+bm_fe6_sword_of_seals;The Sword of Seals;;;;;;;;;;;;;x
+bm_fe6_sword_of_seals_desc;A thousand-year peace is shattered as King Zephiel of Bern begins to conquer the continent. He plans for the divided people of Sacae and Ilia to fall quickly, allowing Bern to turn its attention to the other major powers - the Kingdom of Etruria and the Lycian League. Can the wealth of Etruria or the champions of Lycia previal against the secret weapons of Bern, or will King Zephiel succeed in his plan to "liberate" Elibe?;;;;;;;;;;;;;x
+PICK_ERA_YEAR;$YEAR$ G.C.;$YEAR$ G.C.;$YEAR$ G.C.;;$YEAR$ G.C.;;;;;;;;;x;;
+ERA_CHAR_NAME_LYN;Lyndis Lorca;;;;;;;;;;;;;x
+ERA_CHAR_INFO_111;A young girl from the Lorca tribe. Stouthearted and kind.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_LUNDGREN;Lundgren Caelin;;;;;;;;;;;;;x
+ERA_CHAR_INFO_112;Marquess Caelin's brother. Hungers to rule over Caelin.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_ELBERT;Elbert Pherae;;;;;;;;;;;;;x
+ERA_CHAR_INFO_105;The beloved and benevolent ruler of Pherae.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_ELIWOOD;Eliwood Pherae;;;;;;;;;;;;;x
+ERA_CHAR_INFO_107;Marquess Pherae's young son. Just and honorable.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_UTHER;Uther Ostia;;;;;;;;;;;;;x
+ERA_CHAR_INFO_102;The strong-willed Marquess of Ostia.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_DESMOND;Desmond of Bern;;;;;;;;;;;;;x
+ERA_CHAR_INFO_402;A man of average skill and intellect, with a envious and cruel streak.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_ROY;Roy Pherae;;;;;;;;;;;;;x
+ERA_CHAR_INFO_108;The next heir to Pherae. The protagonist of this story.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_HECTOR;Hector Ostia;;;;;;;;;;;;;x
+ERA_CHAR_INFO_103;The leader of the Lycian League and the Marquess of Ostia.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_ZEPHIEL;Zephiel of Bern;;;;;;;;;;;;;x
+ERA_CHAR_INFO_403;The mighty king of Bern. A talented and gifted genius.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_MORDRED;Mordred Aquleia;;;;;;;;;;;;;x
+ERA_CHAR_INFO_202;The old king of Etruria, grief-stricken over the loss of his son and heir.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_DAYAN;Dayan the Silver Wolf;;;;;;;;;;;;;x
+ERA_CHAR_INFO_502;The leader of the Kutolah clan, one of the largest Sacaean nomad tribes.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_ZELOTS;Zelots Edessa;;;;;;;;;;;;;x
+ERA_CHAR_INFO_326;The head of the Ilian Mercenary Knights.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_EKHIDNA;Ekhidna;;;;;;;;;;;;;x
+ERA_CHAR_INFO_702;The leader of the resistance movement against Etruria in the Western Isles.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_DARIN;Darin Laus;;;;;;;;;;;;;x
+ERA_CHAR_INFO_118;The power-hungry marquess of Laus.;;;;;;;;;;;;;x###
+ERA_CHAR_NAME_HAWKEYE;Hawkeye;;;;;;;;;;;;;x
+ERA_CHAR_INFO_603;The protector of Nabata. A mysterious air surrounds him.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_NERGAL;Nergal;;;;;;;;;;;;;x
+ERA_CHAR_INFO_308;An avaricious fiend who turns death into power.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_BATTA;Batta the Beast;;;;;;;;;;;;;x
+ERA_CHAR_INFO_526;A Ganelon bandit called the Beast for his savagery,;;;;;;;;;;;;;x
+ERA_CHAR_NAME_GLASS;Glass;;;;;;;;;;;;;x
+ERA_CHAR_INFO_528;The gods fear his peerless swordplay.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_BUG;Bug;;;;;;;;;;;;;x
+ERA_CHAR_INFO_533;The leader of the Ganelon Bandits.;;;;;;;;;;;;;x

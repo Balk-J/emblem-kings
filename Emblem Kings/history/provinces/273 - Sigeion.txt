@@ -1,0 +1,17 @@
+# c_sigeion
+
+# County Title
+title = c_sigeion
+
+# Settlements
+max_settlements = 3
+
+b_sigeion = tribal
+#b_sigeion_2 = city
+#b_sigeion_3 = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

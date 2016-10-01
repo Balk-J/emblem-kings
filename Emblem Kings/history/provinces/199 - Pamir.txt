@@ -1,0 +1,16 @@
+# c_pamir
+
+# County Title
+title = c_pamir
+
+# Settlements
+max_settlements = 2
+
+b_pamir = tribal
+#b_pamir_2 = temple
+
+# Misc
+culture = sacaean
+religion = divine_sky_pagan
+
+#History

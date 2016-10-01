@@ -1,0 +1,17 @@
+# c_dorneck
+
+# County Title
+title = c_dorneck
+
+# Settlements
+max_settlements = 3
+
+b_dorneck = castle
+b_dorneck_2 = temple
+b_dorneck_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,6 @@
+180.1.1={
+	liege=k_elimine
+}
+1170.1.1={
+	holder=226 # Windham
+}

@@ -1,0 +1,7 @@
+1159.01.01={
+	holder=111 # Lyn
+	liege=k_lycian_league 
+}
+1160.1.1={
+	holder=0
+}

@@ -1,0 +1,16 @@
+# c_mugla
+
+# County Title
+title = c_mugla
+
+# Settlements
+max_settlements = 2
+
+b_mugla = tribal
+#b_mugla_2 = city
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

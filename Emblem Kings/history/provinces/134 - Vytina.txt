@@ -1,0 +1,18 @@
+# c_vytina
+
+# County Title
+title = c_vytina
+
+# Settlements
+max_settlements = 4
+
+b_vytina = tribal
+#b_vytina_2 = city
+#b_vytina_3 = temple
+#b_tzivas = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

@@ -1,0 +1,15 @@
+# c_itingen
+
+# County Title
+title = c_itingen
+
+# Settlements
+max_settlements = 1
+
+b_itingen = tribal
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

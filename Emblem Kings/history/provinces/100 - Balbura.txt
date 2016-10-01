@@ -1,0 +1,17 @@
+# c_balbura
+
+# County Title
+title = c_balbura
+
+# Settlements
+max_settlements = 3
+
+b_balbura = castle
+b_balbura_2 = city
+b_balbura_3 = temple
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

@@ -1,0 +1,18 @@
+# c_souli
+
+# County Title
+title = c_souli
+
+# Settlements
+max_settlements = 4
+
+b_souli = tribal
+#b_souli_2 = temple
+#b_souli_3 = city
+#b_soulari = temple
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

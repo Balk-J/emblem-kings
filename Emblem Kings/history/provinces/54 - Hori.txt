@@ -1,0 +1,17 @@
+# c_hori
+
+# County Title
+title = c_hori
+
+# Settlements
+max_settlements = 3
+
+b_hori = tribal
+#b_hori_2 = temple
+#b_hori_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

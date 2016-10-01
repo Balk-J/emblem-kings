@@ -1,0 +1,18 @@
+# c_alauna
+
+# County Title
+title = c_alauna
+
+# Settlements
+max_settlements = 4
+
+b_alauna = tribal
+#b_alauna_2 = temple
+#b_alauna_3 = city
+#b_clausentum = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

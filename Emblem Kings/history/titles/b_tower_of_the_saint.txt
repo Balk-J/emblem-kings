@@ -1,0 +1,12 @@
+180.1.1={
+	liege=k_elimine
+}
+180.1.1=
+{
+	holder=201 # St. Elimine
+}
+#TODO: Fill in the blanks
+1150.1.1=
+{
+	holder=208 # Bishop Jodel
+}

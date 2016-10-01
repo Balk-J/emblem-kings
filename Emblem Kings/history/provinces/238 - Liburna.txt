@@ -1,0 +1,17 @@
+# c_liburna
+
+# County Title
+title = c_liburna
+
+# Settlements
+max_settlements = 3
+
+b_liburna = castle
+b_liburna_2 = temple
+b_liburna_3 = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

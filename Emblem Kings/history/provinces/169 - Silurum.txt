@@ -1,0 +1,17 @@
+# c_silurum
+
+# County Title
+title = c_silurum
+
+# Settlements
+max_settlements = 3
+
+b_silurum = tribal
+#b_silurum_2 = temple
+#b_silurum_3 = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History

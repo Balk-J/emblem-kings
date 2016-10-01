@@ -1,0 +1,17 @@
+# c_spina
+
+# County Title
+title = c_spina
+
+# Settlements
+max_settlements = 3
+
+b_spina = castle
+#b_spina_2 = temple
+#b_spina_3 = city
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

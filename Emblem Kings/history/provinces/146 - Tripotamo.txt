@@ -1,0 +1,17 @@
+# c_tripotamo
+
+# County Title
+title = c_tripotamo
+
+# Settlements
+max_settlements = 3
+
+b_tripotamo = tribal
+#b_tripotamo_2 = temple
+#b_tripotamo_3 = city
+
+# Misc
+culture = nabatan
+religion = elimine_church
+
+#History

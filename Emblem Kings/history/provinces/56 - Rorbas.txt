@@ -1,0 +1,17 @@
+# c_rorbas
+
+# County Title
+title = c_rorbas
+
+# Settlements
+max_settlements = 3
+
+b_rorbas = tribal
+#b_rorbas_2 = temple
+#b_rorbas_3 = city
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,21 @@
+# c_calcaria
+
+# County Title
+title = c_calcaria
+
+# Settlements
+max_settlements = 4
+
+b_calcaria = tribal
+#b_calcaria_2 = temple
+#b_calcaria_3 = city
+#b_lutonium = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History
+1175.1.1={
+	b_calcaria = castle
+}

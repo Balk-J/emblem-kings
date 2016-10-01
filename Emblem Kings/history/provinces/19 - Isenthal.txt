@@ -1,0 +1,18 @@
+# c_isenthal
+
+# County Title
+title = c_isenthal
+
+# Settlements
+max_settlements = 4
+
+b_isenthal = castle
+b_isenthal_2 = temple
+b_isenthal_3 = city
+#b_brunnen = castle
+
+# Misc
+culture = bernese
+religion = elimine_church
+
+#History

@@ -1,0 +1,18 @@
+# c_ragna
+
+# County Title
+title = c_ragna
+
+# Settlements
+max_settlements = 4
+
+b_ragna_castle = castle
+b_ragna = city
+b_ragna_2 = temple
+#b_andeda = castle
+
+# Misc
+culture = lycian
+religion = elimine_church
+
+#History

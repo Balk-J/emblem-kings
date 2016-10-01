@@ -1,0 +1,19 @@
+# c_reglay
+
+# County Title
+title = c_reglay
+
+# Settlements
+max_settlements = 5
+
+b_reglay = castle
+b_reglay_2 = temple
+b_reglay_3 = city
+#b_vetulonia = temple
+#b_vatalu = city
+
+# Misc
+culture = etrurian
+religion = elimine_church
+
+#History

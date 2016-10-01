@@ -1,0 +1,19 @@
+# c_remy
+
+# County Title
+title = c_remy
+
+# Settlements
+max_settlements = 5
+
+b_castle_remy = castle
+b_remy = temple
+b_remy_2 = city
+#b_ravna = temple
+#b_ratumna = temple
+
+# Misc
+culture = ilian
+religion = elimine_church
+
+#History

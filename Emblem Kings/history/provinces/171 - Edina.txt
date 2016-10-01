@@ -1,0 +1,19 @@
+# c_edina
+
+# County Title
+title = c_edina
+
+# Settlements
+max_settlements = 5
+
+b_castle_edina = castle
+b_edina = city
+b_luentinum = temple
+#b_verulamium = city
+#b_sulloniacae = city
+
+# Misc
+culture = western_islander
+religion = elimine_church
+
+#History
