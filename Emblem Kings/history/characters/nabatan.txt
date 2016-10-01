@@ -181,13 +181,12 @@
 	trait="mastermind_theologian"
 	trait="morph"
 	
-	# in our somewhat arbitrary timeline, he's created after Renault leaves Nergal in 1140. 
-	# setting his birth earlier than that so he's an adult on birth.
-	1125.01.01 = { 
-	birth=yes 
+	# In our somewhat arbitrary timeline, he's created after Renault leaves Nergal in 1140. 
+	1141.02.01 = { 
+		birth=yes 
 	}
 	
-	1125.01.01 = { 
+	1140.02.01 = { 
 		employer=308 # Nergal 
 	}
 	
@@ -211,16 +210,21 @@
 	culture=nabatan
 	
 	disallow_random_traits="yes"
+	diplomacy = 10
+	martial = 10
+	stewardship = 10
+	intrigue = 10
+	learning = 10
 	trait="class_sage"
 	trait="intricate_webweaver"
 	trait="morph"
 	trait="fair"
 	
-	1140.01.01 = { 
+	1141.01.01 = { 
 		birth=yes 
 	}
 	
-	1140.01.01 = { 
+	1141.01.01 = { 
 		employer=308 # Nergal 
 	}
 		
@@ -240,16 +244,21 @@
 	culture=nabatan
 	
 	disallow_random_traits="yes"
+	diplomacy = 10
+	martial = 10
+	stewardship = 10
+	intrigue = 10
+	learning = 10
 	trait="class_sage_female"
 	trait="elusive_shadow"
 	trait="morph"
 	trait="fair"
 	
-	1140.01.01 = { 
+	1141.01.01 = { 
 		birth=yes 
 	}
 	
-	1140.01.01 = { 
+	1141.01.01 = { 
 		employer=308 # Nergal 
 	}
 		
@@ -270,6 +279,11 @@
 	culture=nabatan
 	
 	disallow_random_traits="yes"
+	diplomacy = 10
+	martial = 10
+	stewardship = 10
+	intrigue = 10
+	learning = 10
 	trait="class_sage_female"
 	trait="flamboyant_schemer"
 	trait="morph"
@@ -301,6 +315,12 @@
 	culture=nabatan
 	
 	disallow_random_traits="yes"
+	# Seems like Nergal was a bit rushed.
+	diplomacy = 0
+	martial = 10
+	stewardship = 0
+	intrigue = 0
+	learning = 0
 	trait="class_sniper"
 	trait="tough_soldier"
 	trait="morph"

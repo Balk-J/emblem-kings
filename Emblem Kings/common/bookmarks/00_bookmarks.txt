@@ -93,22 +93,22 @@ bm_fe7_girl_from_the_plains =
 		}
 	}
 	
-	selectable_character = {
-		id = 533 # Bug
-		age=29
-		name = ERA_CHAR_NAME_BUG
-		title = d_ganelon_bandits
-		title_name = d_ganelon_bandits
-		
-		character = {
-			dna="bfabeyefaaq" 
-			properties="cl0cgk00000000"
-			religion="divine_sky_pagan"
-			culture="sacaean"
-			government = tribal_government
-			dynasty=585
-		}
-	}
+#	selectable_character = {
+#		id = 533 # Bug
+#		age=29
+#		name = ERA_CHAR_NAME_BUG
+#		title = d_ganelon_bandits
+#		title_name = d_ganelon_bandits
+#		
+#		character = {
+#			dna="bfabeyefaaq" 
+#			properties="cl0cgk00000000"
+#			religion="divine_sky_pagan"
+#			culture="sacaean"
+#			government = tribal_government
+#			dynasty=585
+#		}
+#	}
 }
 
 bm_fe7_blazing_sword =

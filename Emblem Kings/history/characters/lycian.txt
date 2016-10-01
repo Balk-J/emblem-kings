@@ -387,11 +387,6 @@
 						who = ROOT
 						years = 100
 					} 
-					#reverse_opinion = {
-						#modifier = opinion_claimant_adventure_target
-						#who = ROOT
-						#years = 2
-					#} 
 					reverse_opinion = {
 						modifier = opinion_evil_tyrant
 						who = ROOT
@@ -426,6 +421,40 @@
 				maintenance_multiplier = 0
 			}
 		}
+	}
+	
+	1159.02.01 = { 
+		effect = {
+			clr_character_flag = lyn_story
+			any_war = {
+				if = {
+					limit = {
+						using_cb = claim_all_lyn
+					}	
+					end_war = invalid
+				}	
+			}
+			
+			# Otherwise, she and Hausen hate each other at the start of Eliwood's story...
+			d_caelin = {
+				holder_scope = { 
+					remove_opinion  = {
+						modifier = opinion_hate
+						who = ROOT
+					} 
+					remove_opinion  = {
+						modifier = declared_war
+						who = ROOT
+					} 
+					reverse_remove_opinion  = {
+						modifier = opinion_evil_tyrant
+						who = ROOT
+					}
+				}
+			}	
+			add_friend=109 # Hausen
+		}
+		employer = 109 # Hausen
 	}
 	
 	1186.01.01={
