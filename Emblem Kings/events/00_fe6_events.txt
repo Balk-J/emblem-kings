@@ -87,6 +87,7 @@ character_event  = {
 				intrigue = 0
 				learning = 0
 			}
+			trait = tough_soldier
 			trait = dragon
 			trait = war_dragon
 			trait = class_manakete

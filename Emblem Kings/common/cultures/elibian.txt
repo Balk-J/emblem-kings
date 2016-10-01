@@ -249,7 +249,9 @@ elibian = {
 		#graphical_cultures = { andalusiangfx }# units
 		graphical_cultures = {muslimgfx arabicgfx andalusiangfx}
 		
-		color = { 0 1 0.3 }
+		#color = { 0 1 0.3 }#Egypt
+		#color = { 0.7 0.6 0.3 }#Sicily
+		color = { 0.47 0.24 0.07 }
 		
 		male_names = {
 			Athos

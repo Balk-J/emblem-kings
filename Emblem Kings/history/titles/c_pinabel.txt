@@ -17,5 +17,5 @@
 1160.1.1={
 	liege=d_taliver
 	#holder=0 # Taliver Bandits destroyed
-	holder=567
+	holder=568
 }

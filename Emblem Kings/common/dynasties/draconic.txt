@@ -2,6 +2,19 @@
 920={
 	name="of the Dragon Temple"
 	culture="fire_dragon"
+	coat_of_arms = {
+		religion="dragon_gods"
+        template = 0
+        layer = {
+            texture = 0
+            texture_internal = 2
+            emblem = 0
+            color = 8
+            color = 3
+            color = 1
+        }
+    }
+	can_appear=no
 }
 # Non-canon
 #911={

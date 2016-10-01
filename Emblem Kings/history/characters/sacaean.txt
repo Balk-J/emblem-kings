@@ -1050,7 +1050,7 @@
 	properties="gh0cdk00000000"
 	
 	religion=raider_pagan
-	culture=sacaean
+	culture=etrurian
 	
 	disallow_random_traits="yes" 
 	trait="class_mercenary"
@@ -1066,6 +1066,10 @@
 	
 	1139.01.01 = { 
 		birth=yes 
+		culture=sacaean
+	}
+	1159.01.01 = { 
+		add_claim="c_mani"
 	}
 	
 	1159.02.01 = { 
@@ -1896,7 +1900,7 @@
 	}
 }
 
-567 = {
+568 = {
 	name="Dayir" 
 	dynasty=554
 	

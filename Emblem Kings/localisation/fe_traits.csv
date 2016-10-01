@@ -16,7 +16,7 @@ dark_incapable_death;comatose in bed;en sombrant dans le coma;komatös im Bett;;e
 dark_selfless;Selfless;;;;;;;;;;;;;x
 dark_selfless_desc;To master elder magic, this character devoted [GetHerselfHimself] entirely to the darkness. [GetSheHeCap] has obtained great power, but at the cost of [GetHerHis] very identity. [GetSheHeCap] is now little more than a mirror that reflects the person addressing [GetHerHim]. All emotion and memory has been dissolved in a river of darkness.;;;;;;;;;;;;;x
 dark_power_hungry;Power-obsessed;;;;;;;;;;;;;x
-dark_power_hungry_desc;This character has lost themselves in the study of elder magic, erasing much of [GetHerHis] identity to attain more power. [GetSheHeCap] now pursues power for its own sake, and will stop at nothing to grow stronger.;;;;;;;;;;;;;x
+dark_power_hungry_desc;This character has lost [GetHerselfHimself] in the study of elder magic, erasing much of [GetHerHis] identity to attain more power. [GetSheHeCap] now pursues power for its own sake, and will stop at nothing to grow stronger.;;;;;;;;;;;;;x
 morph;Morph;;;;;;;;;;;;;x
 morph_desc;This character is a morph - a human-like monster created through dark magic.;;;;;;;;;;;;;x
 war_dragon;War Dragon;;;;;;;;;;;;;x
@@ -69,7 +69,7 @@ class_druid_desc;A title received by shamans who focus their powers toward maste
 #class_druid_desc;A title granted to powerful shamans. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
 class_druid_female;Druid;;;;;;;;;;;;;x
 class_druid_female_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
-#class_druid_female_desc;.;;;;;;;;;;;;;x
+#class_druid_female_desc;A title granted to powerful shamans. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
 class_falcon_knight;Falcon Knight;;;;;;;;;;;;;x
 class_falcon_knight_desc;A title bestowed upon skilled pegasus knights. They have superb speed and magic resistance.;;;;;;;;;;;;;x
 #class_falcon_knight_desc;Knights united with their pegasus mounts. They have superior skill and resistance.;;;;;;;;;;;;;x
@@ -110,9 +110,11 @@ class_myrmidon;Myrmidon;;;;;;;;;;;;;x
 class_myrmidon_desc;Swordsmen who possess superior speed and technique. They specialize in killing strokes.;;;;;;;;;;;;;x
 class_myrmidon_female;Myrmidon;;;;;;;;;;;;;x
 class_myrmidon_female_desc;Swordsmen who possess superior speed and technique. They specialize in killing strokes.;;;;;;;;;;;;;x
-class_horse_archer;Horse Archer;;;;;;;;;;;;;x
+class_horse_archer;Nomad;;;;;;;;;;;;;x
+#class_horse_archer;Horse Archer;;;;;;;;;;;;;x
 class_horse_archer_desc;Riders skilled in horseback archery. Incredibly swift.;;;;;;;;;;;;;x
-class_horse_archer_female;Horse Archer;;;;;;;;;;;;;x
+class_horse_archer_female;Nomad;;;;;;;;;;;;;x
+#class_horse_archer_female;Horse Archer;;;;;;;;;;;;;x
 class_horse_archer_female_desc;Riders skilled in horseback archery. Incredibly swift.;;;;;;;;;;;;;x
 class_paladin;Paladin;;;;;;;;;;;;;x
 class_paladin_desc;A title earned only by those cavaliers whose lives have been dedicated to justice.;;;;;;;;;;;;;x
@@ -122,10 +124,12 @@ class_pirate;Pirate;;;;;;;;;;;;;x
 class_pirate_desc;Axe-wielding privateers trained to fight on the high seas.;;;;;;;;;;;;;x
 class_priest;Priest;;;;;;;;;;;;;x
 class_priest_desc;Members of the clergy who wield sacred staves to aid allies. They carry no weapons.;;;;;;;;;;;;;x
-class_ranger;Ranger;;;;;;;;;;;;;x
+class_ranger;Nomad Trooper;;;;;;;;;;;;;x
+#class_ranger;Ranger;;;;;;;;;;;;;x
 class_ranger_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
 #class_ranger_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
-class_ranger_female;Ranger;;;;;;;;;;;;;x
+class_ranger_female;Nomad Trooper;;;;;;;;;;;;;x
+#class_ranger_female;Ranger;;;;;;;;;;;;;x
 class_ranger_female_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
 #class_ranger_female_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
 class_rogue;Rogue;;;;;;;;;;;;;x
@@ -160,8 +164,10 @@ class_thief_desc;Rogues and fortune hunters. They possess weak attacks but many 
 class_thief_female;Thief;;;;;;;;;;;;;x
 class_thief_female_desc;Rogues and fortune hunters. They possess weak attacks but many other skills.;;;;;;;;;;;;;x
 class_troubador;Troubador;;;;;;;;;;;;;x
+#class_troubador_desc;Mounted warriors whose sacred staves aid allies. They are swift but will not fight.;;;;;;;;;;;;;x
 class_troubador_desc;Mounted maidens whose sacred staves aid allies. They are swift but will not fight.;;;;;;;;;;;;;x
 class_valkyrie;Valkyrie;;;;;;;;;;;;;x
+#class_valkyrie_desc;Warriors who ride into combat wielding light magic and sacred staves.;;;;;;;;;;;;;x
 class_valkyrie_desc;Battle maidens who ride into combat wielding light magic and sacred staves.;;;;;;;;;;;;;x
 #class_valkyrie_desc;A title given to the finest troubadours. Wields sacred magic to aid allies.;;;;;;;;;;;;;x
 class_warrior;Warrior;;;;;;;;;;;;;x

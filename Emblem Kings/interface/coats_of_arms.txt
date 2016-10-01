@@ -447,7 +447,8 @@ culture = {
 }
 
 culture = {
-	religion_group = "zoroastrian_group"
+	#religion_group = "draconic_group"
+	religion=dragon_gods
 	
 	templates = { 
 		"coa_plain_muslim:1"

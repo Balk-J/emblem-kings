@@ -2,7 +2,7 @@
 	name="Roland"
 	dynasty=101
 	
-	religion=elimine_church
+	religion=pagan
 	culture=lycian
 	
 	159.01.01={
@@ -357,11 +357,13 @@
 	mother=110 #Madelyn
 	1144.01.01={
 		birth=yes
-	culture=sacaean
+		culture=sacaean
+		religion=divine_sky_pagan
 	} 	
 
 	1158.01.01 = {
-		add_trait="tough_soldier"	
+		add_trait="tough_soldier"
+		add_trait="class_myrmidon_female"	
 		add_trait="organizer"	
 		add_trait="flat_terrain_leader"	
 		add_trait="kind"	

@@ -1,0 +1,23 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_form_kingdom_of_lycia"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_war_dragons"
+		texturefile = "gfx\\interface\\decision_icon_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_create_morph"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_liege_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_create_golden_church"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_return_elibe_to_dragons"
+		texturefile = "gfx\\interface\\decision_icon_buy_indulgence_for_sins.dds"
+	}
+}

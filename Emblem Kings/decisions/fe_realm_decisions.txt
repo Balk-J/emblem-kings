@@ -5,7 +5,6 @@ decisions = {
 		is_high_prio = yes
 		
 		potential = {
-			is_playable = yes
 			OR = {
 				has_landed_title = d_ostia
 				has_landed_title = d_araphen
@@ -28,8 +27,6 @@ decisions = {
 			NOT = { has_global_flag = lycia_formed }
 		}
 		allow = {
-			primary_title = { title = k_lycian_league }
-			prestige = 1000
 			ROOT = {
 				d_ostia = {
 					OR = {
@@ -144,6 +141,8 @@ decisions = {
 					}
 				}
 			}
+			primary_title = { title = k_lycian_league }
+			prestige = 1000
 		}
 		effect = {
 			set_global_flag = lycia_formed
@@ -158,7 +157,7 @@ decisions = {
 		only_playable = yes
 		
 		potential = {
-			any_courtier  = {
+			any_courtier = {
 				trait = demon_dragon
 				is_adult = yes
 				prisoner = no
@@ -177,8 +176,7 @@ decisions = {
 				NOT = { has_character_modifier = created_war_dragons }
 			}
 		}
-		effect = {
-		
+		effect = {		
 			random_courtier  = {
 				limit = {
 					trait = demon_dragon
@@ -189,7 +187,7 @@ decisions = {
 				}
 				add_character_modifier = { name = created_war_dragons duration = 1825 } 
 			}
-			character_event = { id = fe6.3 tooltip = EVTTOOLTIPfe6.3 }
+			character_event = { id = fe6.3 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -213,26 +211,27 @@ decisions = {
 		}
 		effect = {
 			piety = -500
-			character_event = { id = fe7.2 }#tooltip = EVTTOOLTIPfe7.2 }
+			character_event = { id = fe7.2 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}	
 	
-	organize_dragon_liberation_religion = {
+	create_golden_church = {
 		only_playable = yes
 		
 		is_high_prio = yes
 	
 		potential = {
 			is_playable = yes
-			religion = dragon_liberation
-			NOT = { is_title_active = k_dragon_liberation }
+			religion = golden_church
+			NOT = { is_title_active = k_golden_church }
 		}
 		
 		allow = {
-			piety = 1000
+			gold = 1000
+			#piety = 1000
 			OR = {
 				owns = 210 # Aquleia
 				any_realm_lord = {
@@ -242,17 +241,18 @@ decisions = {
 		}
 		
 		effect = {
-			activate_title = { title = k_dragon_liberation status = yes }
+			gold = -1000
+			activate_title = { title = k_golden_church status = yes }
 			hidden_tooltip = {
 				create_random_priest = {
 					dynasty = none
 					random_traits = yes
 				}
 				new_character = {
-					k_dragon_liberation = {
+					k_golden_church = {
 						grant_title = PREV
 					}
-					wealth = 500
+					wealth = 1000
 					opinion = {
 						who = ROOT
 						modifier = opinion_creator_of_rel_heal
@@ -273,6 +273,121 @@ decisions = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	return_elibe_to_dragons = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			religion = dragon_liberation
+			NOT = { is_title_active = e_dragon_liberation }
+			capital_scope = {
+				region = world_elibe
+			}
+		}
+		
+		allow = {
+			calc_true_if = {
+				amount = 4
+				completely_controls_region = world_elibe_bern
+				completely_controls_region = world_elibe_lycia
+				completely_controls_region = world_elibe_etruria
+				completely_controls_region = world_elibe_ilia
+				completely_controls_region = world_elibe_nabata
+				completely_controls_region = world_elibe_sacae
+			}			
+			any_realm_character  = {
+				trait = dragon
+				culture_group = draconic
+				religion = dragon_liberation
+				NOT = { trait = demon_dragon }
+				NOT = { trait = war_dragon }
+				opinion = { who = ROOT value = 80 }
+				#is_adult = yes
+				prisoner = no
+			}
+			#num_of_realm_counties = { value = 157 title = e_elibe } 
+		}
+		
+		effect = {
+			activate_title = { title = e_dragon_liberation status = yes }
+			piety = 2000
+			custom_tooltip = {
+				text = return_elibe_to_dragons_TOOLTIP
+				hidden_tooltip = {
+					random_realm_character  = {
+						limit={
+							trait = dragon
+							religion = dragon_liberation
+							culture_group = draconic
+							NOT = { trait = demon_dragon }
+							NOT = { trait = war_dragon }
+							opinion = { who = ROOT value = 80 }
+							#is_adult = yes
+							prisoner = no
+						}
+						c_calach = {
+							grant_title = PREV
+						}
+						e_dragon_liberation = {
+							grant_title = PREV
+						}
+						wealth = 500
+						opinion = {
+							who = ROOT
+							modifier = opinion_creator_of_rel_heal
+						}
+					}
+					
+					ROOT = {					
+						any_vassal = {
+							limit = { 
+								higher_tier_than = DUKE 
+							} 
+							set_defacto_liege = e_dragon_liberation
+						}	
+						any_demesne_title = {
+							limit = {
+								#is_landless_type_title = no
+								higher_tier_than = KING
+							}
+							destroy_landed_title = THIS
+						}		
+						set_defacto_liege = e_dragon_liberation				
+					}
+					
+					religion_authority = {
+						modifier = papacy_instituted
+						years = 20
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+			}
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			
+			modifier = {
+				factor = 10
+				trait = zealous
+			}
 		}
 	}
 }

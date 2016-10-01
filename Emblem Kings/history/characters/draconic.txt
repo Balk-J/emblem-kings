@@ -4,9 +4,12 @@
 	culture=divine_dragon
 	religion=dragon_gods
 	disallow_random_traits="yes" 
-	trait="immortal"
+	trait="dragon"
 	1.1.1={
 		birth=yes
+	}
+	21.1.1={
+		add_trait="immortal"
 	}
 	
 	#700.2.28={ 
@@ -26,9 +29,12 @@
 	culture=divine_dragon
 	religion=divine_dragon
 	disallow_random_traits="yes" 
-	trait="immortal"
+	trait="dragon"
 	680.2.28={
 		birth=yes
+	}
+	700.2.28={
+		add_trait="immortal"
 	}
 	
 	#700.2.28={ 
@@ -45,20 +51,24 @@
 	culture=divine_dragon
 	religion=dragon_gods
 	disallow_random_traits="yes" 
-	trait = "immortal"
+	trait="dragon"
 	
 	1.1.1={
 		birth=yes
 	}
+	21.1.1={
+		add_trait="immortal"
+	}
 	180.1.1={
 		add_trait="class_manakete_female"
 		add_trait="demon_dragon"
+		add_trait="naive_appeaser"
 	}
 	
 	1175.1.1={
 		employer=403 #Zephiel
 		religion=dragon_liberation
-		culture=bernese
+		#culture=bernese
 	}
 	
 	3001.1.1={
@@ -71,10 +81,24 @@
 	dynasty=920
 	culture=fire_dragon
 	religion=dragon_gods#dragon_liberation
-	disallow_random_traits="yes" 
-	trait = "immortal"
+	disallow_random_traits="yes"
+	
+	trait="dragon"
+	
 	1.1.1={
 		birth=yes
+	}
+	21.1.1={ 
+		add_trait = "immortal"
+		add_trait="class_manakete"
+		add_trait="tough_soldier"
+		add_trait="patient"
+		add_trait="honest"
+		add_trait="shy" # More like stoic. Although he does like a good monologue.
+	}
+	1180.1.1={
+		religion=dragon_liberation
+		#employer = 403 # Zephiel
 	}
 	1181.1.1= {
 		death = {
@@ -89,11 +113,17 @@
 	female="yes"
 	culture=divine_dragon
 	religion=dragon_gods
-	trait="immortal"
-	trait="kind"
-	trait="honest"
+	disallow_random_traits="yes"
+	trait="dragon"
 	1.1.1={
 		birth=yes
+	}
+	21.1.1={ 
+		add_trait = "immortal"
+		add_trait="class_manakete"
+		add_trait="grey_eminence"
+		add_trait="kind"
+		add_trait="honest"
 	}
 	1181.1.1= {
 		death = {
@@ -108,9 +138,11 @@
 	culture=war_dragon
 	religion=dragon_liberation
 	
+	disallow_random_traits="yes"
 	trait="dragon"
 	trait="war_dragon"
 	trait="class_manakete"
+	trait="tough_soldier"
 	
 	1160.1.1={
 		birth=yes

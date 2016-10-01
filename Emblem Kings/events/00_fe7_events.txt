@@ -165,7 +165,7 @@ character_event = {
 				new_character = {
 					# Assign a class
 					random_list = {
-						5 = {
+						6 = {
 							add_trait=class_assassin
 						}
 						5 = {
@@ -174,25 +174,22 @@ character_event = {
 						5 = {
 							add_trait=class_bishop
 						}
-						5 = {
+						6 = {
 							add_trait=class_druid
 						}
-						5 = {
-							add_trait=class_falcon_knight
-						}
-						5 = {
+						6 = {
 							add_trait=class_general
 						}
 						5 = {
 							add_trait=class_great_knight
 						}
-						5 = {
+						6 = {
 							add_trait=class_hero
 						}
 						5 = {
 							add_trait=class_mage_knight
 						}
-						5 = {
+						6 = {
 							add_trait=class_paladin
 						}
 						5 = {
@@ -201,28 +198,25 @@ character_event = {
 						5 = {
 							add_trait=class_rogue
 						}
-						5 = {
+						6 = {
 							add_trait=class_sage
 						}
-						5 = {
+						6 = {
 							add_trait=class_sniper
 						}
 						5 = {
 							add_trait=class_summoner
 						}
-						5 = {
+						6 = {
 							add_trait=class_swordmaster
 						}
-						5 = {
-							add_trait=class_valkyrie
-						}
-						5 = {
+						6 = {
 							add_trait=class_warrior
 						}
 						5 = {
 							add_trait=class_wyvern_knight
 						}
-						5 = {
+						6 = {
 							add_trait=class_wyvern_lord
 						}
 					}
@@ -320,8 +314,11 @@ character_event = {
 			40 = {
 				add_trait=brilliant_strategist
 			}
-			60 = {
+			50 = {
 				add_trait=skilled_tactician
+			}
+			10 = {
+				add_trait=tough_soldier
 			}
 		}
 		}
@@ -329,24 +326,145 @@ character_event = {
 	option = {
 		name = "EVTOPTBfe7.3"#Diplomat/Intrigue
 		
-		create_character = {
-			random_traits = no
-			religion = FROM
-			culture = FROM
-			female = no
-			dynasty=none
-			age = 20
-			attributes = {
-				martial = 10
-				diplomacy = 10
-				stewardship = 20
-				intrigue = 10
-				learning = 10
+		# Male or female?
+		random_list = {
+			50 = {
+				create_character = {
+					random_traits = no
+					religion = FROM
+					culture = FROM
+					female = no
+					dynasty=none
+					age = 20
+					attributes = {
+						martial = 10
+						diplomacy = 10
+						stewardship = 10
+						intrigue = 10
+						learning = 10
+					}
+					trait = morph
+					trait = attractive
+					employer = FROM
+				}
+				
+				new_character = {
+					# Assign a class
+					random_list = {
+						10 = {
+							add_trait=class_assassin
+						}
+						10 = {
+							add_trait=class_bishop
+						}
+						10 = {
+							add_trait=class_druid
+						}
+						10 = {
+							add_trait=class_hero
+						}
+						10 = {
+							add_trait=class_mage_knight
+						}
+						10 = {
+							add_trait=class_rogue
+						}
+						10 = {
+							add_trait=class_sage
+						}
+						10 = {
+							add_trait=class_sniper
+						}
+						10 = {
+							add_trait=class_summoner
+						}
+						10 = {
+							add_trait=class_swordmaster
+						}
+					}
+				}
 			}
-			trait = midas_touched
-			trait = morph
-			trait = quick
-			employer = FROM
+			50 = {
+				create_character = {
+					random_traits = no
+					religion = FROM
+					culture = FROM
+					female = yes
+					dynasty=none
+					age = 20
+					attributes = {
+						martial = 10
+						diplomacy = 10
+						stewardship = 10
+						intrigue = 10
+						learning = 10
+					}
+					trait = morph
+					trait = attractive
+					employer = FROM
+				}
+				new_character = {
+					# Assign a class
+					random_list = {
+						9 = {
+							add_trait=class_assassin_female
+						}
+						9 = {
+							add_trait=class_bishop_female		
+						}
+						9 = {
+							add_trait=class_druid_female		
+						}
+						9 = {
+							add_trait=class_hero_female		
+						}
+						9 = {
+							add_trait=class_mage_knight_female		
+						}
+						9 = {
+							add_trait=class_rogue		
+						}
+						10 = {
+							add_trait=class_sage_female		
+						}
+						9 = {
+							add_trait=class_sniper_female		
+						}
+						9 = {
+							add_trait=class_summoner		
+						}
+						9 = {
+							add_trait=class_swordmaster_female		
+						}
+						9 = {
+							add_trait=class_valkyrie		
+						}
+					}
+				}
+			}
+		}
+		# Assign education trait
+		new_character = {
+			random_list = {
+				20 = {
+					add_trait=grey_eminence
+				}
+				20 = {
+					add_trait=elusive_shadow
+				}
+				25 = {
+					add_trait=charismatic_negotiator
+				}
+				25 = {
+					add_trait=intricate_webweaver
+				}
+				5 = {
+					add_trait=underhanded_rogue
+				}
+				5 = {
+					add_trait=flamboyant_schemer
+				}
+			}
 		}
 	}
 	option = {

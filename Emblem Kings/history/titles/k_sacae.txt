@@ -5,9 +5,12 @@
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
+180.1.1={
+	holder=501 #Hanon
+}
+207.1.1={
+	holder=0 
+}
 440.1.1 = {
 	historical_nomad = yes
 }
-#180.1.1={
-#	liege=e_elibe
-#}

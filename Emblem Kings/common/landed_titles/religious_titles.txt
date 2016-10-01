@@ -20,6 +20,7 @@ k_naga = {
 	controls_religion = divine_dragon
 	
 	religion = divine_dragon
+	graphical_culture = holygfx 
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -55,6 +56,7 @@ k_elimine = {
 	controls_religion = elimine_church
 	
 	religion = elimine_church
+	graphical_culture = holygfx 
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -77,7 +79,7 @@ k_golden_church = {
 	title = "ARCHBISHOP_GOLDEN_CHURCH"
 	#foa = "temple_king_foa"
 	short_name = yes
-	location_ruler_title = yes
+	#location_ruler_title = yes
 	
 	allow = {
 		always = no # Only by special decision
@@ -90,6 +92,7 @@ k_golden_church = {
 	controls_religion = golden_church
 	
 	religion = golden_church
+	graphical_culture = holygfx 
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -97,17 +100,17 @@ k_golden_church = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-k_dragon_liberation = {
+e_dragon_liberation = {
 	color={ 230 95 70 }
 	color2={ 220 220 0 }
 	
 	capital = 36 # Dragon Temple
 	
 	title = "temple_king_pagan_group"
+	title_female = "temple_king_pagan_group"
 	foa = "temple_duke_foa"
 	short_name = yes
 	#location_ruler_title = yes
-	
 	allow = {
 		always = no # Only by special decision
 	}
@@ -116,9 +119,10 @@ k_dragon_liberation = {
 	landless = yes
 	
 	# Controls a religion
-	controls_religion = dragon_liberation
-	
+	controls_religion = dragon_liberation	
 	religion = dragon_liberation
+	graphical_culture = holygfx 
+	culture=fire_dragon
 	
 	# Cannot be held as a secondary title
 	primary = yes

@@ -2,7 +2,7 @@
 	name="Durban"
 	dynasty=701
 	culture=western_islander
-	religion=raider_pagan
+	religion=pagan
 	disallow_random_traits="yes" 
 	
 	trait="strong"
