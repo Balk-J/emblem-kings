@@ -855,18 +855,22 @@ claim_all_lyn = {
  	apply_short_occ_mod = no 
 	coalition_threat = no
 
-	can_use = {
-		ROOT = { has_character_flag = lyn_story }
-	}
+	#can_use = {
+	#	ROOT = { has_character_flag = lyn_story }
+	#}
 
+	can_use = {
+		always = no
+	}
 	is_valid = {
-		ROOT = {
-			total_claims = {
-				who = FROM
-				strong = yes # Count only strong claims
-				value = 1 # must have at least one claim left
-			}
-		}
+		ROOT = { has_character_flag = lyn_story }
+#		ROOT = {
+#			total_claims = {
+#				who = FROM
+#				strong = yes # Count only strong claims
+#				value = 1 # must have at least one claim left
+#			}
+#		}
 	}
 
 	on_add = {

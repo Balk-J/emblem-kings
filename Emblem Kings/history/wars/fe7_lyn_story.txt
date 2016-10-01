@@ -1,0 +1,19 @@
+name = "Lyndis' Return to Caelin"
+
+casus_belli = {
+	actor = 111 #Lyn
+	recipient = 112 #Lundgren
+	casus_belli = claim_all_lyn
+	landed_title=d_caelin
+	date=1159.1.1
+}
+
+1159.1.1 = {
+	add_attacker = 111
+	add_defender = 112
+}
+
+1159.2.1 = {
+	rem_attacker = 111
+	rem_defender = 112
+}

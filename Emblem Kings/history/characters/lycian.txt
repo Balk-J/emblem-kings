@@ -401,19 +401,37 @@
 		add_trait="adventurer"
 		effect = {
 			set_character_flag = lyn_story
-			d_caelin = {
-				reverse_war = { 
-					target = ROOT
-					casus_belli = claim_all_lyn 
-				}
-			}	
 			spawn_unit = {
 				owner = ROOT
 				province = 209 # Kashgar, Batta's county
 				troops = {
-					archers = { 300 300 }
-					light_infantry = { 800 800 }
-					heavy_infantry = { 300 300 }
+					archers = { 100 100 }
+					light_infantry = { 300 300 }
+					heavy_infantry = { 100 100 }
+				}
+				attrition = 0
+				disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				owner = ROOT
+				province = 209 # Kashgar, Batta's county
+				troops = {
+					archers = { 100 100 }
+					light_infantry = { 300 300 }
+					heavy_infantry = { 100 100 }
+				}
+				attrition = 0
+				disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				owner = ROOT
+				province = 209 # Kashgar, Batta's county
+				troops = {
+					archers = { 100 100 }
+					light_infantry = { 200 200 }
+					heavy_infantry = { 100 100 }
 					light_cavalry = { 100 100 }
 				}
 				attrition = 0
@@ -426,14 +444,6 @@
 	1159.02.01 = { 
 		effect = {
 			clr_character_flag = lyn_story
-			any_war = {
-				if = {
-					limit = {
-						using_cb = claim_all_lyn
-					}	
-					end_war = invalid
-				}	
-			}
 			
 			# Otherwise, she and Hausen hate each other at the start of Eliwood's story...
 			d_caelin = {
