@@ -2,7 +2,7 @@
 	name="Hartmut"
 	dynasty=401
 	culture=bernese
-	religion=elimine_church
+	religion=pagan
 	disallow_random_traits="yes" 
 	trait="strong"
 	150.1.1={
@@ -10,9 +10,24 @@
 	}
 	180.1.1 = {
 		give_nickname=nick_the_hero
+		add_trait="eight_legends"
+		add_trait="regalia_binding_blade"
+		add_trait="regalia_eckesachs"
+		effect = {
+			ROOT = {
+				add_character_modifier = { name = owns_regalia duration = -1 } 
+				set_character_flag="regalia_hide"
+				set_global_flag="regalia_binding_blade_held"
+				set_global_flag="regalia_eckesachs_held"
+			}
+		}
 	}
 	230.1.1={
 		death=yes
+		effect = {
+			clr_global_flag="regalia_binding_blade_held"
+			clr_global_flag="regalia_eckesachs_held"
+		}
 	}
 }
 
@@ -34,6 +49,17 @@
 	trait="paranoid"
 	1122.1.1={
 		birth=yes
+		add_trait="regalia_eckesachs"
+		add_trait="fire_emblem_elibe"
+		effect = {
+			ROOT = {
+				add_character_modifier = { name = "owns_regalia" duration = -1 }  
+				set_character_flag="regalia_inherit"
+				
+				add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+				#set_character_flag = fire_emblem_elibe	
+			}
+		}
 	}
 	1144.1.1 = {
 		add_spouse=230 #Hellene
@@ -70,9 +96,26 @@
 	trait="gregarious"
 	trait="diligent"
 	trait="brave"
-	1145.1.1={
+	# Becomes an adult during FE7. Since we have the age of adulthood at 15, he should be 14 at the start
+	1146.1.1={
 		birth=yes
 	}
+	
+	1159.1.1 = {
+		effect = {
+			k_bern = {
+				holder_scope = { 
+					opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+				}
+			}	
+		}
+	
+	}
+	
 	1165.1.1 = {
 		remove_trait="kind"
 		remove_trait="charitable"
@@ -85,11 +128,29 @@
 		add_trait="wroth"
 		add_trait="ambitious"
 		religion=dragon_liberation
+		add_trait="regalia_eckesachs"
+		add_trait="fire_emblem_elibe"
+		effect = {
+			ROOT = {
+				add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+				add_character_modifier = { name = "owns_regalia" duration = -1 } 
+				set_character_flag="regalia_hide"
+			}
+		}
+	}
+	1180.1.1= {
+		effect = {
+			remove_trait="fire_emblem_elibe"
+			remove_character_modifier = holds_fire_emblem
+		}
 	}
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
 			killer=108 #Roy
+		}
+		effect = {
+			clr_global_flag="regalia_eckesachs_held"
 		}
 	}
 }
@@ -107,6 +168,12 @@
 	trait="legit_bastard"
 	1154.1.1={
 		birth=yes
+	}
+	1180.1.1= {
+		effect = {
+			add_trait="fire_emblem_elibe"
+			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+		}
 	}
 	1244.1.1={
 		death=yes
@@ -1194,7 +1261,7 @@
 	1130.1.1={
 		birth=yes
 	}
-	1153.1.1={
+	1159.1.1={
 		employer=407 #Narcian
 	}	
 	1164.01.01 = {
@@ -1706,3 +1773,69 @@
 	}
 }
 
+
+#Choma
+#Feudal noble, EC#
+485 = {
+	name="Ceslin" 
+	dynasty=174
+	
+	religion=elimine_church
+	culture=lycian
+	1128.01.01={
+		birth=yes
+	} 		
+	1189.01.01 = { 
+		death = yes
+	}
+}
+
+#Mugla
+#Lycian bandit chief#
+486 = {
+	name="Mainard" 
+	dynasty=175
+	
+	religion=raider_pagan
+	culture=lycian
+	1140.01.01={
+		birth=yes
+	} 		
+	1200.01.01 = { 
+		death = yes
+	}
+}
+
+#Comba
+#Acaliss
+#Lycian Bandit chief#
+487 = {
+	name="Adalgrim" 
+	dynasty=176
+	
+	religion=raider_pagan
+	culture=lycian
+	1143.01.01={
+		birth=yes
+	} 		
+	1194.01.01 = { 
+		death = yes
+	}
+}
+
+#Nisa
+#Cibyra
+#Lycian Bandit chief#
+488 = {
+	name="Creat" 
+	dynasty=179
+	
+	religion=raider_pagan
+	culture=lycian
+	1142.01.01={
+		birth=yes
+	} 		
+	1192.01.01 = { 
+		death = yes
+	}
+}

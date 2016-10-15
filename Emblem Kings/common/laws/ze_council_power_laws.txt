@@ -60,6 +60,7 @@ laws = {
 			NOT = { is_nomadic = yes }
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -173,7 +174,6 @@ laws = {
 			}
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -260,6 +260,7 @@ laws = {
 			NOT = { is_nomadic = yes }
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -360,7 +361,6 @@ laws = {
 			}
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -439,6 +439,7 @@ laws = {
 			NOT = { is_nomadic = yes }
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -536,7 +537,6 @@ laws = {
 			}
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -611,6 +611,7 @@ laws = {
 			NOT = { is_nomadic = yes }
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -707,7 +708,6 @@ laws = {
 			}
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -780,6 +780,7 @@ laws = {
 			NOT = { is_nomadic = yes }
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -877,7 +878,6 @@ laws = {
 			}
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -951,6 +951,7 @@ laws = {
 			NOT = { is_nomadic = yes }
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -1048,7 +1049,6 @@ laws = {
 			}
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -1122,6 +1122,7 @@ laws = {
 			NOT = { is_nomadic = yes }
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -1218,7 +1219,6 @@ laws = {
 			}
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = baron
 			OR = {
@@ -1289,6 +1289,7 @@ laws = {
 			}
 		}
 		potential = {
+			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = duke
 			holder_scope = {
@@ -1355,7 +1356,6 @@ laws = {
 			has_law = succession_voting_power_0
 		}
 		potential = {
-			NOT = { title = k_lycian_league }
 			has_dlc = "Zeus"
 			higher_tier_than = duke
 			holder_scope = {

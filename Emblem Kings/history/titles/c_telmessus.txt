@@ -12,7 +12,7 @@
 	holder=121 #Raven's father
 }
 1158.1.1={
-	holder=1000000002
+	holder=759
 	#liege=k_lycian_league
 	liege=0
 }

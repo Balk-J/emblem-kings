@@ -1,0 +1,123 @@
+# Regalia
+obj_acquire_regalia = {
+	type = character
+	
+	potential = {
+		is_adult = yes
+		is_playable = yes
+		NOT = { has_character_modifier = owns_regalia }
+		OR = {
+			ai = no
+			AND = {
+				is_ruler = yes
+				NOT = { tier = BARON }
+				OR = {
+					wealth = 500
+					yearly_income = 250
+				}			
+			}		
+			OR = {
+				trait = duelist
+				trait = strategist
+				trait = mystic
+				trait = scholar
+			}
+		}
+	}
+	
+	allow = {
+		is_adult = yes
+		prisoner = no		
+		OR = {
+			trait = ambitious	
+			trait = envious
+			trait = greedy
+			trait = proud
+			trait = brave
+		}	
+	}
+	chance = {
+		factor = 20
+		
+		modifier = {
+			factor = 0.1
+			is_ruler = no	
+			NOR = {
+				trait = duelist
+				trait = strategist
+				trait = mystic
+				trait = scholar
+			}	
+		}
+		modifier = {
+			factor = 1.5
+			wealth = 750
+		}
+		modifier = {
+			factor = 2.5
+			wealth = 1000
+		}
+		modifier = {
+			factor = 3.5
+			wealth = 1500
+		}
+		modifier = {
+			factor = 4
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2
+			trait = greedy
+		}
+		modifier = {
+			factor = 2
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.5
+			trait = charitable
+		}
+		modifier = {
+			factor = 0
+			trait = craven
+		}
+		modifier = {
+			factor = 0.1
+			trait = humble
+		}	
+		modifier = {
+			factor = 0
+			trait = content
+		}
+	}
+	success = {
+		custom_tooltip = {
+			text = obj_acquire_regalia_success
+			hidden_tooltip = { has_character_modifier = owns_regalia }
+		}	
+	}
+	abort = {
+		OR = {
+			prisoner = yes
+			trait = incapable
+		}
+	}
+	abort_effect = {
+		clr_character_flag = improve_martial_success
+	}
+	effect = {
+		prestige = 1000
+	}
+}

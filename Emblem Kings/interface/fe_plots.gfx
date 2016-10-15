@@ -1,0 +1,10 @@
+spriteTypes = {
+	# AMBITIONS
+	spriteType = {
+		name = "GFX_plot_disinherit_character"
+		texturefile = "gfx/ambitions/plot_disinherit_character.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

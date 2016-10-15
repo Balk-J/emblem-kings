@@ -7,6 +7,6 @@
 #	liege=d_xanthus
 #}
 1159.01.01 = { 
-	holder=1000000009
+	holder=487
 }
 

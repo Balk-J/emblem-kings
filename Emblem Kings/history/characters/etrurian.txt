@@ -5,15 +5,33 @@
 	female=yes
 	religion=elimine_church
 	culture=etrurian
+	disallow_random_traits="yes" 
+	trait="mastermind_theologian"
+	trait="zealous"
 	
 	164.01.01 = { 
 		birth=yes 
 	}
 	180.1.1 = {
 		give_nickname="nick_the_saint"
+		add_trait="eight_legends"
+		add_trait="regalia_aureola"
+		add_trait="regalia_saints_staff"
+		effect = {
+			ROOT = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 } 
+		set_character_flag="regalia_hide"
+		set_global_flag="regalia_aureola_held"
+		set_global_flag="regalia_saints_staff_held"
+			}
+		}
 	}
 	213.01.01 = { 
 		death=yes 
+		effect = {
+		clr_global_flag="regalia_aureola_held"
+		clr_global_flag="regalia_saints_staff_held"
+		}
 	}
 }
 
@@ -155,13 +173,28 @@
 		birth=yes 
 	}
 	
+	
 	1123.01.01 = {
 		effect={
 			add_friend=302 #Niime
 		}
 	}		
+	
+	1180.01.01 = { 
+		add_trait="regalia_saints_staff"
+		effect = {
+			ROOT = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 } 
+		set_character_flag="regalia_hide"
+		set_global_flag="regalia_saints_staff_held"
+			}
+		}
+	}	
 	1190.01.01 = { 
 		death=yes 
+		effect = {
+			clr_global_flag="regalia_saints_staff_held"
+		}
 	}
 }
 

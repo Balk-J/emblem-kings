@@ -18,6 +18,12 @@
 	#is_health = yes 
 #}
 
+eight_legends = {
+	monthly_character_prestige = 0.5
+	customizer = no
+	random = no
+}
+
 dragon = {
 	fertility = -0.4
 	same_opinion = 10
@@ -31,7 +37,7 @@ war_dragon = {
 	cannot_marry = yes 
 	customizer = no
 	random = no
-	fertility = -100
+	fertility = -10
 	diplomacy = -100
 	stewardship = -100
 	martial = 20
@@ -97,10 +103,10 @@ sympathy_light = {
 	}
 	
 	potential = {
-		NOT = { religion_group = light }
+		NOT = { religion_group = light_group }
 	}
 
-	tolerates_light = yes		# Tolerates and is tolerated by 
+	tolerates_light_group = yes		# Tolerates and is tolerated by 
 	
 	same_opinion_if_same_religion = 10
 
@@ -139,7 +145,7 @@ sympathy_magic = {
 		NOT = { religion_group = magic }
 	}
 
-	tolerates_magic=yes		# Tolerates and is tolerated by 
+	tolerates_magic_group=yes		# Tolerates and is tolerated by 
 	
 	same_opinion_if_same_religion = 10
 
@@ -151,7 +157,7 @@ morph = {
 	customizer = no
 	random = no
 	#general_opinion = -10
-	fertility = -1000
+	fertility = -10
 	liege_opinion = 100
 	same_opinion = 100
 	ai_rationality = 100
@@ -159,6 +165,20 @@ morph = {
 	ai_ambition = -100
 	ai_greed = -100
 	ai_zeal = -100
+	
+	male_insult = INSULT_ABOMINATION
+	female_insult = INSULT_ABOMINATION
+	male_insult_adj = INSULT_FOUL
+	female_insult_adj = INSULT_FOUL
+}
+
+phantom = {
+	customizer = no
+	random = no
+	#general_opinion = -10
+	fertility = -10
+	liege_opinion = 100
+	same_opinion = 100
 	
 	male_insult = INSULT_ABOMINATION
 	female_insult = INSULT_ABOMINATION
@@ -199,7 +219,7 @@ dark_power_hungry = {
 	customizer = no
 	random = no
 	
-	monthly_character_prestige = 0.5
+	monthly_character_prestige = 0.25
 	general_opinion = -30
 
 	ai_ambition = 80
@@ -218,277 +238,13 @@ dark_power_hungry = {
 	male_compliment_adj = COMPL_GREAT
 }
 
-class_wyvern_lord= {
+disinherited = {
 	customizer = no
 	random = no
+	cannot_inherit = yes
 }
-class_archdruid= {
-	customizer = no
-	random = no
-}
-class_archer= {
-	customizer = no
-	random = no
-}
-class_archer_female= {
-	customizer = no
-	random = no
-}
-class_archsage= {
-	customizer = no
-	random = no
-}
-class_assassin= {
-	customizer = no
-	random = no
-}
-class_assassin_female= {
-	customizer = no
-	random = no
-}
-class_bard= {
-	customizer = no
-	random = no
-}
-class_berserker= {
-	customizer = no
-	random = no
-}
-class_bishop= {
-	customizer = no
-	random = no
-}
-class_bishop_female= {
-	customizer = no
-	random = no
-}
-class_brigand= {
-	customizer = no
-	random = no
-}
-class_cavalier= {
-	customizer = no
-	random = no
-}
-class_cleric= {
-	customizer = no
-	random = no
-}
-class_dancer= {
-	customizer = no
-	random = no
-}
-class_dark_druid= {
-	customizer = no
-	random = no
-}
-class_druid= {
-	customizer = no
-	random = no
-}
-class_druid_female= {
-	customizer = no
-	random = no
-}
-class_falcon_knight= {
-	customizer = no
-	random = no
-}
-class_fighter= {
-	customizer = no
-	random = no
-}
-class_general= {
-	customizer = no
-	random = no
-}
-class_great_knight= {
-	customizer = no
-	random = no
-}
-class_hero= {
-	customizer = no
-	random = no
-}
-class_hero_female= {
-	customizer = no
-	random = no
-}
-class_knight= {
-	customizer = no
-	random = no
-}
-class_mage= {
-	customizer = no
-	random = no
-}
-class_mage_female= {
-	customizer = no
-	random = no
-}
-class_mage_knight= {
-	customizer = no
-	random = no
-}
-class_mage_knight_female= {
-	customizer = no
-	random = no
-}
-class_magic_seal= {
-	customizer = no
-	random = no
 
-	opposites =  {
-		class_mage class_mage_female
-		class_sage class_sage_female
-		class_mage_knight class_mage_knight_female
-		class_shaman class_shaman_female
-		class_druid class_druid_female
-		class_summoner
-		class_monk
-		class_cleric class_priest
-		class_bishop class_bishop_female
-		class_troubador
-		class_valkyrie
-		class_archsage class_archdruid class_dark_druid
-	}
-	opposite_opinion = -50
-}
-class_manakete= {
-	customizer = no
-	random = no
-}
-class_manakete_female= {
-	customizer = no
-	random = no
-}
-class_mercenary= {
-	customizer = no
-	random = no
-}
-class_mercenary_female= {
-	customizer = no
-	random = no
-}
-class_monk= {
-	customizer = no
-	random = no
-}
-class_myrmidon= {
-	customizer = no
-	random = no
-}
-class_myrmidon_female= {
-	customizer = no
-	random = no
-}
-#class_nomad= {
-class_horse_archer= {
-	customizer = no
-	random = no
-}
-#class_nomad_female= {
-class_horse_archer_female= {
-	customizer = no
-	random = no
-}
-class_paladin= {
-	customizer = no
-	random = no
-}
-class_pegasus_knight= {
-	customizer = no
-	random = no
-}
-class_pirate= {
-	customizer = no
-	random = no
-}
-class_priest= {
-	customizer = no
-	random = no
-}
-class_ranger= {
-	customizer = no
-	random = no
-}
-class_ranger_female= {
-	customizer = no
-	random = no
-}
-class_rogue= {
-	customizer = no
-	random = no
-}
-class_sage= {
-	customizer = no
-	random = no
-}
-class_sage_female= {
-	customizer = no
-	random = no
-}
-class_shaman= {
-	customizer = no
-	random = no
-}
-class_shaman_female= {
-	customizer = no
-	random = no
-}
-class_sniper= {
-	customizer = no
-	random = no
-}
-class_sniper_female= {
-	customizer = no
-	random = no
-}
-class_soldier= {
-	customizer = no
-	random = no
-}
-class_summoner= {
-	customizer = no
-	random = no
-}
-class_swordmaster= {
-	customizer = no
-	random = no
-}
-class_swordmaster_female= {
-	customizer = no
-	random = no
-}
-class_tactician= {
-	customizer = no
-	random = no
-}
-class_thief= {
-	customizer = no
-	random = no
-}
-class_thief_female= {
-	customizer = no
-	random = no
-}
-class_troubador= {
-	customizer = no
-	random = no
-}
-class_valkyrie= {
-	customizer = no
-	random = no
-}
-class_warrior= {
-	customizer = no
-	random = no
-}
-class_wyvern_knight= {
-	customizer = no
-	random = no
-}
-class_wyvern_rider= {
+fire_emblem_elibe = {
 	customizer = no
 	random = no
 }

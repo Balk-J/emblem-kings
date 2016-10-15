@@ -77,3 +77,23 @@ negative_money = {
 created_war_dragons = {
 	icon = 18
 }
+
+holds_fire_emblem = {
+	monthly_character_prestige = 0.25
+	icon = 7
+}
+
+owns_regalia = {
+	combat_rating = 2
+	monthly_character_prestige = 0.25
+	icon = 1
+}
+
+declined_regalia_search = {
+	icon = 25
+}
+
+ancient_ruins = {
+	tech_growth_modifier_culture = 0.05
+	icon = 15
+}

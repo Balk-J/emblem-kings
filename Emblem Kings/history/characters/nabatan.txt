@@ -23,6 +23,15 @@
 	180.01.01 = {
 		give_nickname=nick_the_archsage
 		add_trait=immortal
+		add_trait="eight_legends"
+		add_trait="regalia_forblaze"
+		effect = {
+			ROOT = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 } 
+		set_character_flag="regalia_hide"	
+		set_global_flag="regalia_forblaze_held"	
+			}
+		}
 	}
 	
 	# About 500 years before FE7, meets Nergal wandering the desert...
@@ -43,6 +52,9 @@
 	}
 	1161.01.01 = { 
 	death=yes 
+		effect = {
+		clr_global_flag="regalia_forblaze_held"
+		}
 	}
 }
 
@@ -72,10 +84,22 @@
 		effect={
 			add_friend=601 # Athos
 		}
+		add_trait="eight_legends"
+		add_trait="regalia_apocalypse"
+		effect = {
+			ROOT = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 }  
+		set_character_flag="regalia_hide"	
+		set_global_flag="regalia_apocalypse_held"	
+			}
+		}
 	}
 	
 	1162.01.01 = { 
 	death=yes 
+		effect = {
+		clr_global_flag="regalia_apocalypse_held"
+		}
 	}
 }
 
@@ -184,9 +208,6 @@
 	# In our somewhat arbitrary timeline, he's created after Renault leaves Nergal in 1140. 
 	1141.02.01 = { 
 		birth=yes 
-	}
-	
-	1140.02.01 = { 
 		employer=308 # Nergal 
 	}
 	

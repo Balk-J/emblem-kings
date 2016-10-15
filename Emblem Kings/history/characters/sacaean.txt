@@ -1,5 +1,6 @@
 501 = {
 	name="Hanon"
+	female=yes
 	dynasty=501
 	
 	religion=divine_sky_pagan
@@ -19,10 +20,22 @@
 	
 	180.01.01 = {
 		give_nickname="nick_the_divine_trooper"
+		add_trait="eight_legends"
+		add_trait="regalia_murgleis"
+		effect = {
+			ROOT = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 } 
+		set_character_flag="regalia_hide"
+		set_global_flag="regalia_murgleis_held"
+			}
+		}
 	}
 	
 	207.01.01 = { 
 		death=yes 
+		effect = {
+		clr_global_flag="regalia_murgleis_held"
+		}
 	}
 }
 
@@ -380,9 +393,14 @@
 		add_trait="lunatic"
 		add_trait="kinslayer"
 		give_nickname="nick_the_sword_demon"
+		employer = 548 # Bulgar clan
 	}
 	
-	# Something happens between FE7 and FE7 to make his personality do a 180.
+	1160.01.01 = { 
+		employer = 475 # County where the Black Fang forts are
+	}
+	
+	# Something happens between FE7 and FE6 to make his personality do a 180.
 	# What this is and when it happens is not stated.
 	# I'll pretend it has something to do with Karla's death.
 	1170.01.01 = { 
@@ -1183,7 +1201,7 @@
 	
 	disallow_random_traits="yes" 
 	trait="class_myrmidon"
-	trait="tough_solider"
+	trait="tough_soldier"
 	trait="brave"
 	trait="just"
 	trait="cynical"
@@ -1703,7 +1721,7 @@
 		birth=yes 
 	}
 	
-	1126.01.01 = { 
+	1146.01.01 = { 
 		add_matrilineal_spouse=552
 	}
 	

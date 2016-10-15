@@ -146,7 +146,8 @@ elibian = {
 			Ingeltrude Irmele Irmeltrud Irmgard_Ermengarde Isentrude Jutta_Judith Karlotte_Caroline Katharina_Catherine Klara_Clara
 			Klementia_Clementia Konstanze_Constance Kriemhild Kunigunde_Kunigunde Luitgard_Luitgard Margarete_Margaret Maria_Maria
 			Mechthild_Matilda Oda Osterhild Richara_Ricarda Richenza Richwara Romilda Serhilda_Serhilda Sofie_Sophia Sybille_Sibylla Trude
-			Ulrike Ursula Ute_Ute Walpurga Wilhelmina_Wilhelmina Winfrida Wulfhilde_Ulfhild
+			Ulrike #Ursula 
+			Ute_Ute Walpurga Wilhelmina_Wilhelmina Winfrida Wulfhilde_Ulfhild
 		}
 		
 		from_dynasty_prefix = "of "
@@ -505,7 +506,6 @@ seafarer = {
 			#And let's throw in all the other canon names too
 			Astore Alen Al
 			Bath Bors Bool Bauker Bernard
-			Chad
 			Darin Dan Danan Debias Damas Dory Dovanon
 			Eliwood Elbert Erik Eagler Eubans
 			#Fargus

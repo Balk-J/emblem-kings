@@ -1,5 +1,5 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-EVTNAMEfe7.1;The Kingdom of Lycia;;;;;;;;;;;;;x
+EVTNAMEfe7.1;The Death of Nergal;;;;;;;;;;;;;x
 EVTDESCfe7.1;With the death of Nergal, the holdings he once controlled have been taken over by opportunistic locals. The fiend's empire is no more.;;;;;;;;;;;;;x
 EVTOPTAfe7.1;Good riddance!;;;;;;;;;;;;;x
 EVTNAMEfe7.2;Crafting New Life;;;;;;;;;;;;;x
@@ -22,3 +22,198 @@ EVTDESCfe6.2;Since the time of Roland, the Lycian League has been a federation o
 EVTOPTAfe6.2;We shall see.;;;;;;;;;;;;;x
 EVTDESCfe6.3;At your command, the Demon Dragon has created several new war dragons. They will surely prove to be capable commanders - and fearsome warriors - for your army.;;;;;;;;;;;;;x
 EVTOPTAfe6.3;My enemies shall burn.;;;;;;;;;;;;;x
+regalia.1.title;The Mountains of Lycia;;;;;;;;;;;;;x
+regalia.1.desc;One of the scouts you dispatched to look into rumors of legendary weapons has returned with an interesting story. Long ago, an altar was built in the depths of a nearby mountain cave. In the altar, a weapon of great strength was hidden to keep it from evil hands.\nMost locals fear what might be lurking in the cave and refuse to approach. However, a village elder may be able to tell you more about the place.;;;;;;;;;;;;;x
+regalia.1.A;We will proceed directly to this cave.;;;;;;;;;;;;;x
+regalia.1.B;Let us see what this elder has to say.;;;;;;;;;;;;;x
+regalia.1.C;This hunt has gone far enough.;;;;;;;;;;;;;x
+regalia.2.title;Roland's Warriors;;;;;;;;;;;;;x
+regalia.2.desc;"[Root.GetTitledFirstName], welcome," the old man greets you. "I'm told you're curious about the old cave. Lord Roland built something in there long ago, when he ruled all of Lycia. The story goes that many soldiers who fought beside him in the Scouring followed him inside to help with the construction, but Lord Roland was the only one to leave before the cave was sealed."\n\nThe elder's expression turns thoughtful. "Anyone he left to guard the cave is long dead, of course. If they were alive, though... I wouldn't care to test them without an army of my own.";;;;;;;;;;;;;x
+regalia.2.A;Let us investigate this cave.;;;;;;;;;;;;;x
+regalia.2.B;This hunt has gone far enough.;;;;;;;;;;;;;x
+regalia.3.title;Valorous Roland;;;;;;;;;;;;;x
+regalia.3.desc;Your men have broken the seal on the cave, and you step into an inferno. The air in the tunnels is hot and hurts to breathe. You can see lava pools spouting columns of flame off to the side of the path. But what stops you in your tracks isn't the oppressive heat - it's the pale warriors in ancient armor striding towards you from the back of the cavern. The weapons they brandish still look lethal despite their obvious age, and from the rustling and clanking you can hear, there are a lot of them.\n\nThe ghostly warriors do not speak, but it's clear they will not let you pass without a fight.;;;;;;;;;;;;;x
+#EVTDESCregalia.3;As you walk deeper into the cave, you see pale warriors in ancient armor striding towards you from the back of the cavern. The weapons they brandish still looks lethal despite their age, and from the rustling and clanking you can hear, there are a lot of them.\nThe ghostly soldiers have not spoken, but it's clear they will not let you pass without a fight.;;;;;;;;;;;;;x
+#EVTDESCregalia.x;Your men have broken the seal on the cave, and you walk into an inferno. The air in this mountain cave is hot and hurts to breathe. You can see lava pools spouting columns of flame off to the side of the path. But what stops you in your tracks isn't the oppressive heat - it's the pale warriors in ancient armor striding towards you from the back of the cavern. The weapons they brandish still looks lethal ;;;;;;;;;;;;;x
+regalia.3.A;We will cut them down.;;;;;;;;;;;;;x
+regalia.3.B;I'm getting out of here!;;;;;;;;;;;;;x
+regalia.4.title;The Guardians Stand Fast;;;;;;;;;;;;;x
+regalia.4.desc;Their job done, the silent warriors head back into the cave. You get the sense that you've failed a test - even if you return with more soldiers and defeat the phantoms, the weapon they protect will never acknowledge you as its rightful wielder.;;;;;;;;;;;;;x
+regalia.4.A;I guess they don't make them like they used to...;;;;;;;;;;;;;x
+regalia.5.title;The Guardians Fall;;;;;;;;;;;;;x
+regalia.5.desc;The last guardian spirit looks you in the eyes and nods before it stiffens, falls over, and crumbles to dust.\n\nNow that they are out of the way - and more importantly, that they seem to have recognized you - you can resume your search for the weapon.;;;;;;;;;;;;;x
+regalia.5.A;At last..;;;;;;;;;;;;;x
+regalia.6.title;The Blazing Sword;;;;;;;;;;;;;x
+regalia.6.desc;In the depths of the volcanic cave you find an altar carved with the image of a sword. As you approach the altar, the air above it seems to shimmer and an enormous broadsword appears. It floats in place for a moment before dropping smoothly into your hands.\n\nDurandal, the Blazing Sword, has chosen you as its rightful wielder.;;;;;;;;;;;;;x
+regalia.6.A;...what a wondrous blade.;;;;;;;;;;;;;x
+regalia.7.title;The Blazing Sword;;;;;;;;;;;;;x
+regalia.7.desc;Roland, the original wielder of the sword Durandal, was from a small town in Ostia before he rose to prominence. It is possible that his weapon lies hidden somewhere in the area...;;;;;;;;;;;;;x
+regalia.7.A;I will send some people to investigate.;;;;;;;;;;;;;x
+regalia.7.B;I know exactly where it is.;;;;;;;;;;;;;x
+regalia.7.C;I don't have time for this right now.;;;;;;;;;;;;;x
+regalia.8.title;The Blazing... Cave?;;;;;;;;;;;;;x
+regalia.8.desc;"[Root.GetTitledFirstName], welcome," the old man greets you. "I hear you'll be exploring the old cave. Best be careful if you do. It's fiendishly hot in there, and the path is treacherous. One wrong step and you'll tumble into a lava flow. I haven't explored it all myself, but I did find that mosaic in one of the chambers."\n\nHe points upward, at a tablet covered with ugly brown and red tiles. "I think it's a map of the deepest part. Remember what it looks like if you find yourself lost.";;;;;;;;;;;;;x
+regalia.8.A;Let us investigate this cave.;;;;;;;;;;;;;x
+regalia.8.B;This hunt has gone far enough.;;;;;;;;;;;;;x
+regalia.9.title;;;;;;;;;;;;;;x
+regalia.9.desc;As you walk down the path, the stone tiles give way to a gray, ashy dirt, and the noxious odor in the air gets worse. Your head is swimming too badly for you to notice the large crack in the ground until you stumble over the edge. You lose your balance and fall off the path, careening toward a pool of lava!;;;;;;;;;;;;;x
+regalia.9.A;AAAAAAAAH!;;;;;;;;;;;;;x
+regalia.10.title;;;;;;;;;;;;;;x
+regalia.10.desc;You managed to survive your close call with the lava, but you're badly injured and have to call off the search for Roland's blade. You could return to the cave later, but you have a feeling that the weapon sleeping within is not yours to wield.;;;;;;;;;;;;;x
+regalia.10.A;At least I'm alive.;;;;;;;;;;;;;x
+regalia.11.title;Cavern Depths;;;;;;;;;;;;;x
+regalia.11.desc;The air in the cave is hot, and the combination of its temparature and an odor of sulfur makes it unpleasant to breathe. You think you've found the deepest part of the cavern. The path here is tiled stone, and some sections of the walls are actually smooth and straight, carved with murals and writing it's too dim to make out. These depths are far from safe, however. The dull red light you can see coming from under a few tiles suggests there's a lava pool somewhere below - one wrong step could be your final mistake.\n\nYou could continue forward - the cavern opens up directly in front of you, and there's something shimmering in the distance. Or, you could turn right and proceed down a narrow tunnel.;;;;;;;;;;;;;x
+regalia.11.A;Forward march!;;;;;;;;;;;;;x
+regalia.11.B;Turn right.;;;;;;;;;;;;;x
+regalia.12.desc;The tunnel eventually opens up into a larger chamber. There are two paths forward, both on your left. There's a narrow opening right next to the tunnel's exit. Further away, there's a wider path that has the same smooth stone walls as the tunnel on one side.;;;;;;;;;;;;;x
+regalia.12.A;The near path.;;;;;;;;;;;;;x
+regalia.12.B;The far path.;;;;;;;;;;;;;x
+regalia.13.desc;You follow the path, keeping the wall on your left until it stops abruptly. There's a large opening in the wall, and the path in that direction looks like natural rock. You could follow it, or continue forward.;;;;;;;;;;;;;x
+regalia.13.A;Turn left.;;;;;;;;;;;;;x
+regalia.13.B;Continue forward.;;;;;;;;;;;;;x
+regalia.14.desc;The path ends at a rocky wall. You can no longer continue forward, but you see two paths as you turn to your left. There's another small tunnel lined with smooth bricks on the right, and a tiny opening in the jagged walls of the cave on the left.;;;;;;;;;;;;;x
+regalia.14.A;Take the right path.;;;;;;;;;;;;;x
+regalia.14.B;Take the left path.;;;;;;;;;;;;;x
+regalia.15.desc;The tunnel ends sooner than you expected, and you find yourself in another large chamber. The cavern opens up in front of you, and you can see a large structure directly ahead. There's also a brick-lined tunnel to your left, and another tiny passage directly outside the mouth of the tunnel you just left.;;;;;;;;;;;;;x
+regalia.15.A;Approach the structure.;;;;;;;;;;;;;x
+regalia.15.B;Head into the tunnel.;;;;;;;;;;;;;x
+regalia.15.C;Enter the tiny passage.;;;;;;;;;;;;;x
+regalia.16.desc;The tunnel ends at a T-intersection. You can turn left or right. The tunnel seems to continue on the right, while the left path appears to end at another large chamber.;;;;;;;;;;;;;x
+regalia.16.A;Turn left.;;;;;;;;;;;;;x
+regalia.16.B;Turn right.;;;;;;;;;;;;;x
+regalia.17.desc;You've reached another T-intersection. On your left, the path opens into yet another large chamber. There's a dull red glow coming from that direction. On your right, a set of stone stairs leads upwards.;;;;;;;;;;;;;x
+regalia.17.A;Turn left.;;;;;;;;;;;;;x
+regalia.17.B;Turn right.;;;;;;;;;;;;;x
+regalia.18.title;Inheritance;;;;;;;;;;;;;x
+regalia.18.desc;It would be a good idea to leave instructions about what to do with your regalia after your death.;;;;;;;;;;;;;x
+regalia.18.A;I will bequeath it to my heir.;;;;;;;;;;;;;x
+regalia.18.B;I will have it hidden. Let fate decide its next holder.;;;;;;;;;;;;;x
+regalia.18.C;I will decide later.;;;;;;;;;;;;;x
+regalia.20.title;Shifting Sands;;;;;;;;;;;;;x
+regalia.20.desc;You've heard stories about magical artifacts lost in the desert sands, but never quite believed the wild tales. Until now. A recent sandstorm has uncovered a chest carved with strange writing. Its seal has held despite the years, and the box seems to hum with an impression of... power.;;;;;;;;;;;;;x
+regalia.20.A;I must see what's inside! Crack it open!;;;;;;;;;;;;;x
+regalia.20.B;This is too good to be true. Take it back into the sands and bury it.;;;;;;;;;;;;;x
+regalia.21.title;The Treasure;;;;;;;;;;;;;x
+regalia.21.desc;Inside the chest is a masterfully crafted regalia weapon. It's in excellent condition and just needs a true expert like yourself to wield it.;;;;;;;;;;;;;x
+regalia.21.A;Impressive.;;;;;;;;;;;;;x
+regalia.23.title;The Expedition;;;;;;;;;;;;;x
+regalia.23.desc;Your [Root.GetLordSpiritualName], [Root.job_spiritual.GetTitledFirstName], has noticed your interest in obtaining a legendary weapon and has come up with an idea. Your lands contain some ancient ruins that have yet to be fully explored. [Root.job_spiritual.GetTitledFirstName] believes they hold the weapon you seek, and proposes that you organize an expedition to find it.;;;;;;;;;;;;;x
+regalia.23.A;A fine idea. I shall set out at once.;;;;;;;;;;;;;x
+regalia.23.B;Why don't you go search this place yourself?;;;;;;;;;;;;;x
+regalia.23.C;We have no time for such nonsense.;;;;;;;;;;;;;x
+regalia.23.D;Impressive.;;;;;;;;;;;;;x
+regalia.24.title;The Expedition;;;;;;;;;;;;;x
+regalia.24.desc;After several fruitless days of searching, you've found something in the remains of a building that was once some sort of armory or vault. Either by accident or providence, you pushed something that was the switch for a still-functioning secret passage. It leads to a tiny room with a treasure chest enshrined in the center...;;;;;;;;;;;;;x
+regalia.24.A;Exactly what I was looking for!;;;;;;;;;;;;;x
+regalia.25.title;The Expedition;;;;;;;;;;;;;x
+regalia.25.desc;The ruins are less impressive than your [Root.GetLordSpiritualName] led you to believe. Your efforts have turned up nothing except some useless fragments of stone and pottery.;;;;;;;;;;;;;x
+regalia.25.A;What a waste of time.;;;;;;;;;;;;;x
+regalia.26.title;The Expedition;;;;;;;;;;;;;x
+regalia.26.desc;Your expedition unearthed the entrance to a labyrinth beneath the ruins. Unfortunately, it seems the catacombs were built to snare would-be thieves. The hallway you thought was the path to the treasure room turned out to be a dead end, and as you turn to leave, you see a wall of spikes rushing towards you...;;;;;;;;;;;;;x
+regalia.26.A;...oh no.;;;;;;;;;;;;;x
+regalia.27.title;The Expedition;;;;;;;;;;;;;x
+regalia.27.desc;[Root.GetLordSpiritualName] [Root.job_spiritual.GetTitledFirstName] has returned from [Root.job_spiritual.GetHerHis] expedition with a fabulous prize! [Root.job_spiritual.GetSheHeCap] presents you with a golden treasure chest and informs you that it contains the weapon you seek.;;;;;;;;;;;;;x
+regalia.27.A;I will repay [Root.job_spiritual.GetHerHim] for [Root.job_spiritual.GetHerHis] service.;;;;;;;;;;;;;x
+regalia.27.B;Fantastic! [Root.job_spiritual.GetSheHeCap] shall be richly rewarded!;;;;;;;;;;;;;x
+regalia.27.C;[Root.job_spiritual.GetSheHeCap] shall have my gratitude.;;;;;;;;;;;;;x
+regalia.28.title;The Expedition;;;;;;;;;;;;;x
+regalia.28.desc;[Root.GetLordSpiritualName] [Root.job_spiritual.GetTitledFirstName] has returned from [Root.job_spiritual.GetHerHis] expedition empty-handed.;;;;;;;;;;;;;x
+regalia.28.A;Oh well.;;;;;;;;;;;;;x
+regalia.29.title;The Expedition;;;;;;;;;;;;;x
+regalia.29.desc;It has been several days, and [Root.GetLordSpiritualName] [Root.job_spiritual.GetTitledFirstName] has not returned from [Root.job_spiritual.GetHerHis] expedition. You can only assume that [Root.job_spiritual.GetSheHe] had some sort of accident in the ruins...;;;;;;;;;;;;;x
+regalia.29.A;Better [Root.job_spiritual.GetHerHim] than me.;;;;;;;;;;;;;x
+regalia.30.title;The Weapon Peddler;;;;;;;;;;;;;x
+regalia.30.desc;A suspicious peddler has come to the market of [Root.Capital.GetName]. He claims to possess an ancient weapon of immense power, and is offering to sell it to you for a king's ransom in gold.;;;;;;;;;;;;;x
+regalia.30.A;I know a con artist when I see one.;;;;;;;;;;;;;x
+regalia.30.B;That doesn't look like any "ancient weapon" I've ever heard of...;;;;;;;;;;;;;x
+regalia.30.C;I will buy it!;;;;;;;;;;;;;x
+regalia.30.D;Your price is far too high.;;;;;;;;;;;;;x
+regalia.31.title;It's a Fake;;;;;;;;;;;;;x
+regalia.31.desc;After careful examination of the weapon, it becomes clear that it is actually a common piece you could purchase anywhere, painted and decorated to look valuable. The peddler has tried to sell you a fake!;;;;;;;;;;;;;x
+regalia.31.A;Throw this fraud into the dungeon!;;;;;;;;;;;;;x
+regalia.31.B;Get this man out of my sight.;;;;;;;;;;;;;x
+regalia.31.A.tooltip;The peddler is imprisoned.;;;;;;;;;;;;;x
+regalia.31.B.tooltip;The peddler is banished from your lands.;;;;;;;;;;;;;x
+regalia.31.C;I will pardon him if he returns the gold.;;;;;;;;;;;;;x
+regalia.32.title;A Master Criminal;;;;;;;;;;;;;x
+regalia.32.desc;The peddler has managed to elude your guards and has vanished as suddenly as he appeared.;;;;;;;;;;;;;x
+regalia.32.A;Damnnation!;;;;;;;;;;;;;x
+regalia.33.title;The Axe of Thunder;;;;;;;;;;;;;x
+regalia.33.desc;After the Scouring, Durban the Berserker established a warrior clan in the Western Isles. His axe Armads might have been left somewhere nearby...;;;;;;;;;;;;;x
+regalia.33.A;Start searching the mountains.;;;;;;;;;;;;;x
+regalia.33.B;I know exactly where to find it.;;;;;;;;;;;;;x
+regalia.33.C;I don't have time for this right now.;;;;;;;;;;;;;x
+regalia.34.title;Durban's Treasure;;;;;;;;;;;;;x
+regalia.34.desc;As your men began to search for signs of Durban's axe, they were approached by a local rogue. He told them about a nearby cave "full of treeaasure," and warned them that anyone who enters the cave faces certain death unless they know what's in store for them.\n\nHe's prepared to tell you everything he knows... for a price.;;;;;;;;;;;;;x
+regalia.34.A;That thug can't help us. We'll search this cave ourselves.;;;;;;;;;;;;;x
+regalia.34.B;He might know something useful. Give the man his gold.;;;;;;;;;;;;;x
+regalia.34.C;This hunt has gone far enough.;;;;;;;;;;;;;x
+regalia.35.title;Durban's Warriors;;;;;;;;;;;;;x
+regalia.35.desc;"[Root.GetTitledFirstName]?" You turn around and see a bearded man in a cloak, leaning against a wall and playing with a dagger. \n\n"Let me tell you something worth the gold you paid. Don't go in that cave. It's haunted. Me and my mates went in there a few months back. Everyone else got torn apart by these crazy ghost knights. I only escaped 'cause they slowed down after they got everyone else. Whatever treasure's in there, it ain't worth messing with the ghosts."\n\nThe man leaves before you can ask any questions.;;;;;;;;;;;;;x
+regalia.35.A;Superstitious nonsense. I will find the truth for myself.;;;;;;;;;;;;;x
+regalia.35.B;...maybe I should leave well enough alone.;;;;;;;;;;;;;x
+regalia.36.title;The Berserker;;;;;;;;;;;;;x
+regalia.36.desc;The cave was exactly where your informant said it would be. It's pitch black and full of smoke inside. Your men light torches to clear the gloom, and they reveal a legion of knights packed into the cavern's narrow passages. These warriors have been down here a long, long time - their armor is old and dusty, and the lances they carry are badly rusted.\n\nAs the knights catch sight of your group, a bloodthirsty howl makes its way through their ranks and they charge toward you with weapons drawn...;;;;;;;;;;;;;x
+regalia.36.A;I can get through them.;;;;;;;;;;;;;x
+regalia.36.B;Run away! Run away!;;;;;;;;;;;;;x
+regalia.37.title;The Guardians Stand Fast;;;;;;;;;;;;;x
+regalia.37.desc;The ghostly warriors' rage seems to have cooled. As one, they turn and head back into the cave. You get the sense that you've failed a test - even if you return with more soldiers and defeat the phantoms, the weapon they protect will never acknowledge you as its rightful wielder.;;;;;;;;;;;;;x
+regalia.37.A;Maybe it's better to leave it there.;;;;;;;;;;;;;x
+regalia.38.title;The Guardians Fall;;;;;;;;;;;;;x
+regalia.38.desc;The last guardian spirit looks you in the eyes and nods before it stiffens, falls over, and crumbles to dust.\n\nNow that they are out of the way - and more importantly, that they seem to have recognized you - you can resume your search for the weapon.;;;;;;;;;;;;;x
+regalia.38.A;At last..;;;;;;;;;;;;;x
+regalia.39.title;The Thunder Axe;;;;;;;;;;;;;x
+regalia.39.desc;You can hear a breeze coming from behind the throne at the back of the cave. You reach behind it and feel a niche between the floor and wall, with a hidden switch. Pressing it opens an alcove in the wall. Inside it is the largest axe you've ever seen. As you approach, you can feel the weapon's raw desire to be used. It needs no seal. It cares not for peace. It only wants to return to the battlefield, to dance in the savage garden of war's bloody delights.\n\nArmads, the Thunder Axe, has chosen you to receive its power.;;;;;;;;;;;;;x
+regalia.39.A;I am power. Power without peer.;;;;;;;;;;;;;x
+regalia.40.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.40.desc;"Aaaah, the [Root.GetTitle]!" Your informant turns out to be a bald, heavily muscled man who everyone else on the street is giving a wide berth. "I'm glad you're going in there to get the poor treeaasure. It must feel so looooneleeeeey. I found a fancy throne in there, but couldn't figure out the seeeeeecreeeet."\n\nHe produces a drawing done in charcoal and shoves it into your hands. "That's a map of the caaaaaaave. You come in at the bottom leeeeeft, and the shrine is at the top riiiiiight," he says, tapping the drawing. "Don't get looooooost! If you wander around to loooong, you'll get poisoned by the gaaaaas!";;;;;;;;;;;;;x
+regalia.40.A;...ah, thank you. I'll go find it right away.;;;;;;;;;;;;;x
+regalia.40.B;I'm not taking directions from this lunatic.;;;;;;;;;;;;;x
+regalia.41.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.41.desc;A grueling day's hike takes you into the mountains near Jutes, where you find the entrace to a cave in the southwest side of a mountain. It's pitch black inside, and the air is full of smoke. Your torch barely helps you identify where the walls are. You'll have to be careful as you continue.;;;;;;;;;;;;;x
+regalia.41.A;Here goes nothing.;;;;;;;;;;;;;x
+regalia.41.B;I'm having second thoughts about this.;;;;;;;;;;;;;x
+regalia.42.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.42.desc;You've reach a crossroads in the tunnels. There are paths leading north, east, and southwest.;;;;;;;;;;;;;x
+regalia.42.A;Go north.;;;;;;;;;;;;;x
+regalia.42.B;Go east.;;;;;;;;;;;;;x
+regalia.42.C;Go southwest.;;;;;;;;;;;;;x
+regalia.43.title;Failure;;;;;;;;;;;;;x
+regalia.43.desc;You stumble back out of the cave into the countryside, coughing from the smoke you inhaled. The thought of going back in there triggers a fresh wave of nausea. It looks like you won't be claiming this particular weapon.;;;;;;;;;;;;;x
+regalia.43.A;Ugh...;;;;;;;;;;;;;x
+regalia.44.title;Poison Gas;;;;;;;;;;;;;x
+regalia.44.desc;As you walk down the passageway, an alcove in the wall shoots out a jet of poisonous smoke!;;;;;;;;;;;;;x
+regalia.44.A.1;...but you dodge it just in time.;;;;;;;;;;;;;x
+regalia.44.A.2;...and it hits you in the face.;;;;;;;;;;;;;x
+regalia.45.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.45.desc;You've reached a crossroads in the tunnels. There are paths leading northwest, northeast, southeast, and southwest.;;;;;;;;;;;;;x
+regalia.45.A;Go northwest.;;;;;;;;;;;;;x
+regalia.45.B;Go northeast.;;;;;;;;;;;;;x
+regalia.45.C;Go southeast.;;;;;;;;;;;;;x
+regalia.45.D;Go southwest.;;;;;;;;;;;;;x
+regalia.46.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.46.desc;You've reached a dead end. Your only choice is to turn around and return to the last crossroads.;;;;;;;;;;;;;x
+regalia.46.A;Go back.;;;;;;;;;;;;;x
+regalia.47.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.47.desc;You've reached a crossroads in the tunnels. There are paths leading northwest, northeast, and south.;;;;;;;;;;;;;x
+regalia.47.A;Go northwest.;;;;;;;;;;;;;x
+regalia.47.B;Go northeast.;;;;;;;;;;;;;x
+regalia.47.C;Go south.;;;;;;;;;;;;;x
+regalia.48.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.48.desc;You've reached a crossroads in the tunnels. There are paths leading north, west, and south.;;;;;;;;;;;;;x
+regalia.48.A;Go north.;;;;;;;;;;;;;x
+regalia.48.B;Go west.;;;;;;;;;;;;;x
+regalia.48.C;Go south.;;;;;;;;;;;;;x
+regalia.49.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.49.desc;You've reached a crossroads in the tunnels. There are paths leading north, west, and east.;;;;;;;;;;;;;x
+regalia.49.A;Go north.;;;;;;;;;;;;;x
+regalia.49.B;Go west.;;;;;;;;;;;;;x
+regalia.49.C;Go east.;;;;;;;;;;;;;x
+regalia.50.title;Dark Tunnels;;;;;;;;;;;;;x
+regalia.50.desc;You've reached a crossroads in the tunnels. There are paths leading north and west.;;;;;;;;;;;;;x
+regalia.50.A;Go north.;;;;;;;;;;;;;x
+regalia.50.B;Go west.;;;;;;;;;;;;;x
+regalia.51.title;The Altar;;;;;;;;;;;;;x
+regalia.51.desc;The tunnels have taken you into a larger cavern. The fumes are thinner in here, and you can see a dais with a stone structure upon it. In front of the structure is a throne.;;;;;;;;;;;;;x
+regalia.51.A;The axe must be nearby!;;;;;;;;;;;;;x
+regalia..;;;;;;;;;;;;;;x

@@ -483,7 +483,7 @@ succession_laws = {
 			NOT = { title = k_lycian_league }
 			holder_scope = {
 				#religion_group = muslim
-				religion_group = magic
+				religion_group = magic_group
 				is_republic = no
 				is_merchant_republic = no
 				is_nomadic = no

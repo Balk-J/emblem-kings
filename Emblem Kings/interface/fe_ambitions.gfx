@@ -1,0 +1,10 @@
+spriteTypes = {
+	# AMBITIONS
+	spriteType = {
+		name = "GFX_obj_acquire_regalia"
+		texturefile = "gfx/ambitions/obj_acquire_regalia.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

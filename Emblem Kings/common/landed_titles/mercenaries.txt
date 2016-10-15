@@ -361,7 +361,7 @@ d_black_fang = {
 	allow = {
 		OR = {
 			has_landed_title = d_black_fang
-			is_liege_or_above = d_black_fang
+			is_liege_or_above = d_black_fang # TODO - fix this?
 		}
 	}
 	mercenary = yes	

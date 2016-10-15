@@ -1,0 +1,2909 @@
+# Regalia events
+
+# Divine weapons hunts will follow the same pattern:
+# 1: Go to the county where it's hidden, with the ambition to find it.
+# 2: Get an event informing you the hiding place has been found, with the option to go straight there, look for a hint first, or call off the hunt.
+# 3: The hint event will explain how to get the item and then send you to the hiding spot.
+# 4: Puzzle event, varies depending on the weapon.
+# Successful completion of the event gets you the weapon. Failure locks that character out of the shrine permanently, if they survive.
+
+namespace = regalia
+
+# Starting point - do you want to search?
+character_event = {
+	id = regalia.7
+	title = "regalia.7.title"
+	desc = "regalia.7.desc"
+	picture = "GFX_evt_armory" 
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_ambition = obj_acquire_regalia
+		NOT = { has_global_flag = regalia_durandal_held }
+		NOT = { has_character_flag = regalia_durandal_trial }
+		NOT = { has_character_flag = regalia_durandal_failure }
+		NOT = { has_character_modifier = declined_regalia_search }
+		
+		location = {
+			county = {
+				title = c_durandal
+			}
+		}
+
+	}
+	mean_time_to_happen = {
+		days = 5	
+	}
+	
+	# Yes, let's look
+	option = {
+		name = "regalia.7.A"
+		trigger = {
+			NOT = { has_character_flag = regalia_durandal_info }
+		}
+		hidden_tooltip = { character_event = { id = regalia.1 } }
+	}	
+	# I already found it, skip to the trial
+	option = {
+		name = "regalia.7.B"
+		trigger = {
+			has_character_flag = regalia_durandal_info 
+		}
+		hidden_tooltip = { character_event = { id = regalia.3 } }
+	}		
+	# No
+	option = {
+		name = "regalia.7.C"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+	}		
+}
+
+# Looking for Durandal
+narrative_event = {
+	id = regalia.1
+	title = "regalia.1.title"
+	desc = "regalia.1.desc"
+	picture = "GFX_evt_armory" 
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = regalia_durandal_info
+	}
+	
+	option = {
+		name = "regalia.1.A"
+		prestige = 10
+		hidden_tooltip = { 
+			if = {
+				limit = {
+					has_global_flag = georg_defeated
+				}
+				character_event = { id = regalia.9 } 
+			}			
+			if = {
+				limit = {
+					NOT = { has_global_flag = georg_defeated }
+				}
+				character_event = { id = regalia.3 } 
+			}		
+		}
+	}	
+	
+	option = {
+		name = "regalia.1.B"
+		hidden_tooltip = { 
+			if = {
+				limit = {
+					has_global_flag = georg_defeated
+				}
+				character_event = { id = regalia.8 } 
+			}			
+			if = {
+				limit = {
+					NOT = { has_global_flag = georg_defeated }
+				}
+				character_event = { id = regalia.2 } 
+			}		
+		}
+	}		
+	
+	option = {
+		name = "regalia.1.C"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# Warning about the warriors
+narrative_event = {
+	id = regalia.2
+	title = "regalia.2.title"
+	desc = "regalia.2.desc"
+	picture = "GFX_evt_armory" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.2.A"
+		hidden_tooltip = { character_event = { id = regalia.3 } }
+	}		
+	
+	option = {
+		name = "regalia.2.B"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# "Valorous Roland" event - mini-war against Georg's guardians
+narrative_event = {
+	id = regalia.3
+	title = "regalia.3.title"
+	desc = "regalia.3.desc"
+	picture = "GFX_evt_armory" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.3.A"
+		set_character_flag = regalia_durandal_trial
+		hidden_tooltip = { 
+			ROOT={
+				location = {
+					create_character = {
+						name="Georg"
+						random_traits = no
+						dynasty = none
+						religion = guardian
+						culture = lycian
+						female = no
+						age = 30
+						attributes = {
+							martial = 10
+						}
+						trait = tough_soldier
+						trait = strong
+						trait = heavy_infantry_leader
+						trait = unyielding_leader
+						trait = class_berserker
+						trait = phantom
+					}
+					
+					new_character = {
+						set_character_flag = regalia_guardian
+						
+						create_title = {
+							tier = COUNT
+							landless = yes
+							temporary = yes
+							#rebel = yes
+							culture = lycian
+							name = "PHANTOM_GUARDIANS"
+							holder = THIS
+						}
+						# Get the war dec to work right.
+						# Just make the guardians a vassal of the character if he's a duke or above.
+						if = {
+							limit = {
+								ROOT = {
+									primary_title = { higher_tier_than = COUNT } 
+								}
+							}
+							set_defacto_liege = ROOT
+						}
+						
+						# If he's an independent count, the guardians can also stay independent.
+						# If he's a vassal count, the guardians need to have the same liege so they don't war the wrong person.
+						if = {
+							limit = {
+								ROOT = {
+									primary_title = { lower_tier_than = DUKE } 
+									independent = no
+								}
+							}
+							ROOT = {
+								liege = {
+									save_event_target_as = target_count_liege
+								}
+							}
+							set_defacto_liege = event_target:target_count_liege
+							
+						}
+						#set_defacto_liege = ROOT
+						
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = THIS
+							leader = THIS
+							match_character = ROOT
+							match_mult = 0.25
+							attrition = 0
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = THIS
+							match_character = ROOT
+							match_mult = 0.25
+							attrition = 0
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = THIS
+							match_character = ROOT
+							match_mult = 0.25
+							attrition = 0
+						}
+							
+						# DoW on the character
+						ROOT = {
+							reverse_war = {
+								target = PREV
+								casus_belli = regalia_guardian
+							}
+							reverse_opinion = {
+								who = PREV
+								modifier = opinion_regalia_trespasser
+							}
+						}
+					}
+				}
+			}
+		}
+	}		
+	
+	option = {
+		name = "regalia.3.B"
+		set_character_flag = regalia_durandal_failure
+		prestige = -100
+	}		
+}
+
+# Lost to the guardians
+narrative_event = {
+	id = regalia.4
+	title = "regalia.4.title"
+	desc = "regalia.4.desc"
+	picture = "GFX_evt_bad_news" 
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_character_flag = regalia_durandal_trial 
+		has_character_flag = lost_to_regalia_guardians 
+	}
+	mean_time_to_happen = {
+		days = 1	
+	}
+		
+	option = {
+		name = "regalia.4.A"
+		set_character_flag = regalia_durandal_failure
+		clr_character_flag = regalia_durandal_trial
+		clr_character_flag = lost_to_regalia_guardians
+		prestige = -500
+	}		
+}
+
+# Defeated the guardians
+narrative_event = {
+	id = regalia.5
+	title = "regalia.5.title"
+	desc = "regalia.5.desc"
+	picture = "GFX_evt_armory"
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_character_flag = regalia_durandal_trial 
+		has_character_flag = defeated_regalia_guardians 
+	}
+	mean_time_to_happen = {
+		days = 1	
+	}
+		
+	option = {
+		name = "regalia.5.A"
+		clr_character_flag = regalia_durandal_trial
+		clr_character_flag = defeated_regalia_guardians
+		set_global_flag = georg_defeated
+		hidden_tooltip = { character_event = { id = regalia.6 } }
+	}		
+}
+
+#Claim the sword
+narrative_event = {
+	id = regalia.6
+	title = "regalia.6.title"
+	desc = "regalia.6.desc"
+	picture = "GFX_evt_regalia"
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.6.A"
+		add_character_modifier = { name = owns_regalia duration = -1 } 
+		add_trait = regalia_durandal
+		set_global_flag = regalia_durandal_held 
+	}		
+}
+
+# Fire cave hint
+narrative_event = {
+	id = regalia.8
+	title = "regalia.8.title"
+	desc = "regalia.8.desc"
+	picture = "GFX_evt_durandal_tiles" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.8.A"
+		hidden_tooltip = { character_event = { id = regalia.11 } }
+	}		
+	
+	option = {
+		name = "regalia.8.B"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# Walked off the path!
+character_event = {
+	id = regalia.9
+	#title = "regalia.9.title"
+	desc = "regalia.9.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.9.A"
+		hidden_tooltip = { 
+			set_character_flag = regalia_durandal_failure
+			clr_character_flag = regalia_durandal_trial 
+		}
+		
+		random_list = {
+			10 = {
+				add_trait = wounded
+				character_event = { id = regalia.10 }
+			}
+			20 = {
+				add_trait = maimed
+				character_event = { id = regalia.10 }
+			}
+			70 = {
+				death = { death_reason = death_lava } 
+			}
+		}
+	}		
+}
+
+# Survived, but failed the trial.
+character_event = {
+	id = regalia.10
+	#title = "regalia.10.title"
+	desc = "regalia.10.desc"
+	picture = "GFX_evt_bad_news" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.10.A"
+		prestige = -100
+	}		
+}
+
+# Durandal Cave is a linear path. Follow the level map and you'll be fine. Make the wrong choice and you fall in the lava.
+# Step 1
+narrative_event = {
+	id = regalia.11
+	title = "regalia.11.title"
+	desc = "regalia.11.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = regalia_durandal_trial
+	}
+	
+	# Forward
+	option = {
+		name = "regalia.11.A"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+	# Right
+	option = {
+		name = "regalia.11.B"
+		hidden_tooltip = { character_event = { id = regalia.12 } }
+	}		
+}
+
+# Step 2
+character_event = {
+	id = regalia.12
+	desc = "regalia.12.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	# Near
+	option = {
+		name = "regalia.12.A"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+	# Far
+	option = {
+		name = "regalia.12.B"
+		hidden_tooltip = { character_event = { id = regalia.13 } }
+	}		
+}
+
+# Step 3
+character_event = {
+	id = regalia.13
+	desc = "regalia.13.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.13.A"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+	
+	option = {
+		name = "regalia.13.B"
+		hidden_tooltip = { character_event = { id = regalia.14 } }
+	}		
+}
+
+# Step 4
+character_event = {
+	id = regalia.14
+	desc = "regalia.14.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.14.A"
+		hidden_tooltip = { character_event = { id = regalia.15 } }
+	}		
+	
+	option = {
+		name = "regalia.14.B"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+}
+
+# Step 5
+character_event = {
+	id = regalia.15
+	desc = "regalia.15.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.15.A"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+	
+	option = {
+		name = "regalia.15.B"
+		hidden_tooltip = { character_event = { id = regalia.16 } }
+	}		
+	
+	option = {
+		name = "regalia.15.C"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+}
+
+# Step 6
+character_event = {
+	id = regalia.16
+	desc = "regalia.16.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.16.A"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+	
+	option = {
+		name = "regalia.16.B"
+		hidden_tooltip = { character_event = { id = regalia.17 } }
+	}		
+}
+
+# Step 7
+character_event = {
+	id = regalia.17
+	desc = "regalia.17.desc"
+	picture = "GFX_evt_irminsul_burning" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.17.A"
+		hidden_tooltip = { character_event = { id = regalia.9 } }
+	}		
+	
+	option = {
+		name = "regalia.17.B"
+		hidden_tooltip = { character_event = { id = regalia.6 } }
+	}		
+}
+
+# Decide on regalia inheritance
+character_event = {
+	id = regalia.18
+	title = "regalia.18.title"
+	desc = "regalia.18.desc"
+	picture = "GFX_evt_death" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.18.A"
+		set_character_flag = regalia_inherit
+	}		
+	
+	option = {
+		name = "regalia.18.B"
+		set_character_flag = regalia_hide
+	}		
+	
+	option = {
+		name = "regalia.18.C"
+	}		
+}
+
+# Death of a regalia holder
+character_event = {
+	id = regalia.19
+	hide_window = yes
+	picture = "GFX_evt_death" 
+	
+	is_triggered_only = yes
+	
+	trigger = {		
+		has_character_modifier = owns_regalia 
+	}
+	
+	immediate = {
+		ROOT = { save_event_target_as = last_regalia_owner }
+		
+		if = {
+			limit = {
+				NOT = { has_character_flag = regalia_hide }
+			}
+			if = { 
+				limit = { 
+					is_ruler = yes
+					current_heir = { 
+						dynasty = ROOT 
+						is_alive = yes  
+						NOT = { has_character_modifier = owns_regalia } 
+					}
+				}
+				current_heir = {
+					#
+					character_event = { id = regalia.52 }
+				}
+				set_character_flag = regalia_heir_found
+			}
+			if = { 
+				limit = { NOT = { has_character_flag = regalia_heir_found } is_patrician = yes }
+				family_palace = {
+					current_heir = { 
+						if = {
+							limit = { NOT = { has_character_modifier = owns_regalia  } }
+							#
+							character_event = { id = regalia.52 }
+							ROOT = { set_character_flag = regalia_heir_found }
+						}	
+					}					
+				}				
+			}
+			if = { 
+				limit = { NOT = { has_character_flag = regalia_heir_found } }
+				random_child = {
+					limit = { dynasty = ROOT is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					character_event = { id = regalia.52 }
+					ROOT = { set_character_flag = regalia_heir_found }
+				}	
+			}	
+			if = {
+				limit = { NOT = { has_character_flag = regalia_heir_found } }
+				random_sibling = {
+					limit = { dynasty = ROOT is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					character_event = { id = regalia.52 }
+					ROOT = { set_character_flag = regalia_heir_found }
+				}	
+			}	
+			if = {
+				limit = { NOT = { has_character_flag = regalia_heir_found } }
+				random_dynasty_member = {
+					limit = { is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					character_event = { id = regalia.52 }
+					ROOT = { set_character_flag = regalia_heir_found }
+				}
+			}
+			if = {
+				limit = { NOT = { has_character_flag = regalia_heir_found } }
+				random_child = {
+					limit = { is_primary_heir = yes is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					character_event = { id = regalia.52 }
+					ROOT = { set_character_flag = regalia_heir_found }
+				}
+			}
+			if = {
+				limit = { NOT = { has_character_flag = regalia_heir_found } }
+				random_child = {
+					limit = { is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					character_event = { id = regalia.52 }
+					ROOT = { set_character_flag = regalia_heir_found }
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_character_flag = regalia_heir_found }
+					spouse = { is_alive = yes NOT = { has_character_modifier = owns_regalia } }		
+				}
+				spouse = { character_event = { id = regalia.52 } }
+				set_character_flag = regalia_heir_found
+			}
+			if = {
+				limit = { 
+					NOT = { has_character_flag = regalia_heir_found }	
+					liege = { NOT = { character = ROOT } NOT = { has_character_modifier = owns_regalia } }
+				}
+				liege = { character_event = { id = regalia.52 } }
+				set_character_flag = regalia_heir_found
+			}
+			if = {
+				limit = { 
+					NOT = { has_character_flag = regalia_heir_found }	
+					current_heir = { NOT = { character = ROOT } NOT = { has_character_modifier = owns_regalia } }
+				}
+				current_heir = { 
+					#
+					character_event = { id = regalia.52 }
+				}
+				set_character_flag = regalia_heir_found
+			}
+			if = {
+				limit = { 
+					NOT = { has_character_flag = regalia_heir_found }	
+				}
+				random_vassal = { 
+					limit = { NOT = { has_character_modifier = owns_regalia } }
+					#
+					character_event = { id = regalia.52 }
+				}
+			}
+			clr_character_flag = regalia_heir_found
+		}
+		
+		if = {
+			limit = {
+				has_character_flag = regalia_hide
+			}
+			if = {
+				limit = {
+					trait = regalia_durandal
+				}
+				clr_global_flag = regalia_durandal_held 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_binding_blade"
+				}
+				clr_global_flag = "regalia_binding_blade_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_armads"
+				}
+				clr_global_flag = "regalia_armads_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_forblaze"
+				}
+				clr_global_flag = "regalia_forblaze_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_aureola"
+				}
+				clr_global_flag = "regalia_aureola_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_murgleis"
+				}
+				clr_global_flag = "regalia_murgleis_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_maltet"
+				}
+				clr_global_flag = "regalia_maltet_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_apocalypse"
+				}
+				clr_global_flag = "regalia_apocalypse_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_eckesachs"
+				}
+				clr_global_flag = "regalia_eckesachs_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_saints_staff"
+				}
+				clr_global_flag = "regalia_saints_staff_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_mani_katti"
+				}
+				clr_global_flag = "regalia_mani_katti_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_sol_katti"
+				}
+				clr_global_flag = "regalia_sol_katti_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_ereshkigal"
+				}
+				clr_global_flag = "regalia_ereshkigal_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_gespenst"
+				}
+				clr_global_flag = "regalia_gespenst_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_luce"
+				}
+				clr_global_flag = "regalia_luce_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_excalibur_fe7"
+				}
+				clr_global_flag = "regalia_excalibur_fe7_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_rienfleche"
+				}
+				clr_global_flag = "regalia_rienfleche_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_rex_hasta"
+				}
+				clr_global_flag = "regalia_rex_hasta_held" 
+			}		
+			if = {
+				limit = {
+					trait = "regalia_regal_blade"
+				}
+				clr_global_flag = "regalia_regal_blade_held" 
+			}			
+		}
+	}		
+}
+
+# Found one in the desert!
+character_event = {
+	id = regalia.20
+	#title = "regalia.20.title"
+	desc = "regalia.20.desc"
+	picture = "GFX_evt_desert" 
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_ambition = obj_acquire_regalia
+		location = {
+			terrain = desert
+			NOT = { has_province_flag = regalia_found }
+			OR = {
+				AND = {
+					region = world_elibe
+					OR = {
+						NOT = { has_global_flag="regalia_gespenst_held" }
+						NOT = { has_global_flag="regalia_luce_held" }
+						NOT = { has_global_flag="regalia_excalibur_fe7_held" }
+						NOT = { has_global_flag="regalia_rienfleche_held" }
+						NOT = { has_global_flag="regalia_basilikos_held" }
+						NOT = { has_global_flag="regalia_rex_hasta_held" }
+						NOT = { has_global_flag="regalia_regal_blade_held" }
+					}
+				}
+				# Add more region-specific regalia here...				
+			}
+		}
+
+	}
+	mean_time_to_happen = {
+		years = 150
+	}
+	
+	# open it
+	option = {
+		name = "regalia.20.A"
+		
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.5
+				trait = trusting
+			}
+		}
+		
+		hidden_tooltip = {  
+			location = {
+				set_province_flag = regalia_found
+			}
+			#TODO: handle other continents
+			
+			# Randomly pick a non-claimed regalia to hand out
+			random_list = {
+				15 = {
+					modifier = {
+						factor = 0
+						has_global_flag="regalia_gespenst_held"
+					}
+					set_character_flag="regalia_gespenst"
+				}
+				15 = {
+					modifier = {
+						factor = 0
+						has_global_flag="regalia_luce_held"
+					}
+					set_character_flag="regalia_luce"
+				}
+				14 = {
+					modifier = {
+						factor = 0
+						has_global_flag="regalia_excalibur_fe7_held"
+					}
+					set_character_flag="regalia_excalibur_fe7"
+				}
+				14 = {
+					modifier = {
+						factor = 0
+						has_global_flag="regalia_rienfleche_held"
+					}
+					set_character_flag="regalia_rienfleche"
+				}
+				14 = {
+					modifier = {
+						factor = 0
+						has_global_flag="regalia_basilikos_held"
+					}
+					set_character_flag="regalia_basilikos"
+				}
+				14 = {
+					modifier = {
+						factor = 0
+						has_global_flag="regalia_rex_hasta_held"
+					}
+					set_character_flag="regalia_rex_hasta"
+				}
+				14 = {
+					modifier = {
+						factor = 0
+						has_global_flag="regalia_regal_blade_held"
+					}
+					set_character_flag="regalia_regal_blade"
+				}
+			}
+			
+			# Inform them of their prize
+			character_event = { id = regalia.21 }
+		}
+	}	
+	
+	# No
+	option = {
+		name = "regalia.20.B"
+		
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 50
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+		}
+		
+		random_list = {
+			85 = {}
+			10 = { add_trait = paranoid }
+			5 = { add_trait = craven }
+		}
+	}	
+}
+
+#Inform character of their prize
+character_event = {
+	id = regalia.21
+	#title = "regalia.21.title"
+	desc = "regalia.21.desc"
+	picture = "GFX_evt_regalia" 
+	
+	is_triggered_only = yes
+		
+	# open it
+	option = {
+		name = "regalia.21.A"
+		if = {
+			limit = {
+				has_character_flag="regalia_gespenst"
+			}
+			clr_character_flag="regalia_gespenst"
+			add_trait="regalia_gespenst"		
+			set_global_flag="regalia_gespenst_held"		
+		}
+		if = {
+			limit = {
+				has_character_flag="regalia_luce"
+			}
+			clr_character_flag="regalia_luce"
+			add_trait="regalia_luce"		
+			set_global_flag="regalia_luce_held"		
+		}
+		if = {
+			limit = {
+				has_character_flag="regalia_excalibur_fe7"
+			}
+			clr_character_flag="regalia_excalibur_fe7"
+			add_trait="regalia_excalibur_fe7"
+			set_global_flag="regalia_excalibur_held"				
+		}
+		if = {
+			limit = {
+				has_character_flag="regalia_rienfleche"
+			}
+			clr_character_flag="regalia_rienfleche"
+			add_trait="regalia_rienfleche"
+			set_global_flag="regalia_rienfleche_held"				
+		}
+		if = {
+			limit = {
+				has_character_flag="regalia_basilikos"
+			}
+			clr_character_flag="regalia_basilikos"
+			add_trait="regalia_basilikos"	
+			set_global_flag="regalia_basilikos_held"			
+		}
+		if = {
+			limit = {
+				has_character_flag="regalia_rex_hasta"
+			}
+			clr_character_flag="regalia_rex_hasta"
+			add_trait="regalia_rex_hasta"
+			set_global_flag="regalia_rex_hasta_held"	
+		}
+		if = {
+			limit = {
+				has_character_flag="regalia_regal_blade"
+			}
+			clr_character_flag="regalia_regal_blade"
+			add_trait="regalia_regal_blade"		
+			set_global_flag="regalia_regal_blade_held"	
+		}
+		
+		add_character_modifier = { name = owns_regalia duration = -1 } 
+	}	
+}
+
+# Expedition to ruins
+province_event = {
+	id = regalia.22
+	title = "regalia.22.title"
+	desc = "regalia.22.desc"
+	picture = "GFX_evt_pagan"
+
+	#hide_window = yes
+	
+	trigger = {
+		has_province_modifier = ancient_ruins
+		owner = { 
+			has_ambition = obj_acquire_regalia
+			#NOT = { has_character_modifier = owns_regalia } 
+			NOT = { trait = incapable }
+				
+			job_spiritual = {
+				ai = yes
+				NOT = {
+					trait = craven
+				}
+				prisoner = no
+				opinion = { who = PREV value = 25 }
+			}			
+		}
+		#NOT = { has_province_flag = ruin_regalia_search }
+			
+		OR = {
+			AND = {
+				region = world_elibe
+				OR = {
+					NOT = { has_global_flag="regalia_gespenst_held" }
+					NOT = { has_global_flag="regalia_luce_held" }
+					NOT = { has_global_flag="regalia_excalibur_fe7_held" }
+					NOT = { has_global_flag="regalia_rienfleche_held" }
+					NOT = { has_global_flag="regalia_basilikos_held" }
+					NOT = { has_global_flag="regalia_rex_hasta_held" }
+					NOT = { has_global_flag="regalia_regal_blade_held" }
+				}
+			}
+			# Add more region-specific regalia here...				
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 120
+	}
+	
+	immediate = { 
+		#set_province_flag = ruin_regalia_search
+		owner = { character_event = { id = regalia.23} } 
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = regalia.23
+	title = "regalia.23.title"
+	desc = "regalia.23.desc"
+	picture = "GFX_evt_pagan" 
+	
+	is_triggered_only = yes
+		#
+		#scaled_wealth = -0.25
+		
+	option = {
+		name = "regalia.23.A"
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				trait = craven
+			}
+			modifier = {
+				factor = 3
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.5
+				trait = diligent
+			}
+		}
+		
+		random_list = {
+			70 = { # Found it
+				hidden_tooltip = { ROOT = { character_event = { id = regalia.24 days=3 } } }
+			}
+			20 = { # Nothing
+				hidden_tooltip = { ROOT = { character_event = { id = regalia.25 days=3 } } }
+			}
+			10 = { # Death
+				hidden_tooltip = { ROOT = { character_event = { id = regalia.26 days=3 } } }
+			}
+		}		
+	}	
+		
+	option = {
+		name = "regalia.23.B"
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+		}
+				
+		job_spiritual = {
+			random_list = {
+				50 = { # Found it
+					hidden_tooltip = { ROOT = { character_event = { id = regalia.27 days=3 } } }
+				}
+				30 = { # Nothing
+					hidden_tooltip = { ROOT = { character_event = { id = regalia.28 days=3 } } }
+				}
+				20 = { # Death
+					hidden_tooltip = { ROOT = { character_event = { id = regalia.29 days=7 } } }
+				}
+				# Takes it and sells it?
+			}
+		}
+	}	
+		
+	option = {
+		name = "regalia.23.C"
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				trait = brave
+			}
+		}
+		
+		job_spiritual = {
+			opinion = {
+				modifier = opinion_unhappy
+				who = ROOT
+				years = 1
+			}		
+		}
+	}	
+}
+
+character_event = {
+	id = regalia.24
+	#title = "regalia.24.title"
+	desc = "regalia.24.desc"
+	picture = "GFX_evt_pagan" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.24.A"
+		# Randomly pick a non-claimed regalia to hand out
+		random_list = {
+			100 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						any_demesne_province = {
+							has_province_modifier = ancient_ruins
+							region = world_elibe
+						}
+					}
+				}
+				random_list = {
+					15 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_gespenst_held"
+						}
+						set_character_flag="regalia_gespenst"
+					}
+					15 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_luce_held"
+						}
+						set_character_flag="regalia_luce"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_excalibur_fe7_held"
+						}
+						set_character_flag="regalia_excalibur_fe7"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_rienfleche_held"
+						}
+						set_character_flag="regalia_rienfleche"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_basilikos_held"
+						}
+						set_character_flag="regalia_basilikos"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_rex_hasta_held"
+						}
+						set_character_flag="regalia_rex_hasta"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_regal_blade_held"
+						}
+						set_character_flag="regalia_regal_blade"
+					}
+				}
+			}
+			# Add regalia from other continents here
+		}
+		
+		# Inform them of their prize
+		character_event = { id = regalia.21 }
+	}	
+}
+
+# Failed hunt
+character_event = {
+	id = regalia.25
+	#title = "regalia.25.title"
+	desc = "regalia.25.desc"
+	picture = "GFX_evt_pagan" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.25.A"
+		prestige = -50
+		job_spiritual = {
+			reverse_opinion = {
+				modifier = opinion_unhappy
+				who = ROOT
+				years = 5
+			}		
+			prestige = -100
+		}		
+	}	
+}
+
+# Died in the ruins
+character_event = {
+	id = regalia.26
+	#title = "regalia.26.title"
+	desc = "regalia.26.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.26.A"
+		death = { death_reason = death_accident }
+	}	
+}
+
+# Chaplain success
+character_event = {
+	id = regalia.27
+	#title = "regalia.27.title"
+	desc = "regalia.27.desc"
+	picture = "GFX_evt_pagan" 
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		# Randomly pick a non-claimed regalia to hand out
+		random_list = {
+			100 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						any_demesne_province = {
+							has_province_modifier = ancient_ruins
+							region = world_elibe
+						}
+					}
+				}
+				random_list = {
+					15 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_gespenst_held"
+						}
+						set_character_flag="regalia_gespenst"
+					}
+					15 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_luce_held"
+						}
+						set_character_flag="regalia_luce"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_excalibur_fe7_held"
+						}
+						set_character_flag="regalia_excalibur_fe7"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_rienfleche_held"
+						}
+						set_character_flag="regalia_rienfleche"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_basilikos_held"
+						}
+						set_character_flag="regalia_basilikos"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_rex_hasta_held"
+						}
+						set_character_flag="regalia_rex_hasta"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_regal_blade_held"
+						}
+						set_character_flag="regalia_regal_blade"
+					}
+				}
+			}
+			# Add regalia from other continents here
+		}
+	}
+		
+	option = {
+		name = "regalia.27.A"
+		
+		job_spiritual = {
+			wealth = 100
+			prestige = 100
+		}		
+		
+		# Inform them of their prize
+		character_event = { id = regalia.21 }
+	}	
+	option = {
+		name = "regalia.27.B"
+		
+		job_spiritual = {
+			opinion = {
+				modifier = happy
+				who = ROOT
+				years = 5
+			}		
+			wealth = 200
+			prestige = 100
+		}		
+		
+		# Inform them of their prize
+		character_event = { id = regalia.21 }
+	}	
+	option = {
+		name = "regalia.27.C"
+		
+		job_spiritual = {
+			opinion = {
+				modifier = unhappy
+				who = ROOT
+				years = 5
+			}		
+			prestige = 100
+		}		
+		
+		
+		# Inform them of their prize
+		character_event = { id = regalia.21 }
+	}	
+}
+
+# Chaplain failed hunt
+character_event = {
+	id = regalia.28
+	#title = "regalia.28.title"
+	desc = "regalia.28.desc"
+	picture = "GFX_evt_pagan" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.28.A"
+		job_spiritual = {
+			prestige = -100
+		}		
+	}	
+}
+
+# Chaplain died in the ruins
+character_event = {
+	id = regalia.29
+	#title = "regalia.29.title"
+	desc = "regalia.29.desc"
+	picture = "GFX_evt_pagan" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.29.A"
+		death = { death_reason = death_accident }
+	}	
+}
+
+
+# Buy one
+character_event = {
+	id = regalia.30
+	#title = "regalia.30.title"
+	desc = "regalia.30.desc"
+	picture = "GFX_evt_market"
+	
+	only_rulers = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		age = 14
+		has_ambition = obj_acquire_regalia
+		NOT = { has_character_modifier = owns_regalia }
+					
+		OR = {
+			AND = {
+				capital_scope = {
+					region = world_elibe
+				}
+				OR = {
+					NOT = { has_global_flag="regalia_gespenst_held" }
+					NOT = { has_global_flag="regalia_luce_held" }
+					NOT = { has_global_flag="regalia_excalibur_fe7_held" }
+					NOT = { has_global_flag="regalia_rienfleche_held" }
+					NOT = { has_global_flag="regalia_basilikos_held" }
+					NOT = { has_global_flag="regalia_rex_hasta_held" }
+					NOT = { has_global_flag="regalia_regal_blade_held" }
+				}
+			}
+			# Add more region-specific regalia here...				
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 5000
+		
+		modifier = {
+			factor = 0.25
+			wealth = 500
+		}
+		modifier = {
+			factor = 0.25
+			wealth = 1000
+		}
+		modifier = {
+			factor = 0.25
+			wealth = 5000
+		}
+		modifier = {
+			factor = 0.25
+			wealth = 10000
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 10
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 15
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 20
+		}
+	}
+
+	immediate = {
+		random_list = {		
+			50 = { 
+				set_character_flag=fake_regalia_peddler
+			}
+			50 = { 
+				set_character_flag=true_regalia_peddler
+			}
+		}
+		
+		# Randomly pick a non-claimed regalia to hand out
+		random_list = {
+			100 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						capital_scope = {
+							region = world_elibe
+						}
+					}
+				}
+				random_list = {
+					15 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_gespenst_held"
+						}
+						set_character_flag="regalia_gespenst"
+					}
+					15 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_luce_held"
+						}
+						set_character_flag="regalia_luce"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_excalibur_fe7_held"
+						}
+						set_character_flag="regalia_excalibur_fe7"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_rienfleche_held"
+						}
+						set_character_flag="regalia_rienfleche"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_basilikos_held"
+						}
+						set_character_flag="regalia_basilikos"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_rex_hasta_held"
+						}
+						set_character_flag="regalia_rex_hasta"
+					}
+					14 = {
+						modifier = {
+							factor = 0
+							has_global_flag="regalia_regal_blade_held"
+						}
+						set_character_flag="regalia_regal_blade"
+					}
+				}
+			}
+			# Add regalia from other continents here
+		}
+		
+	}
+	
+	# It could be fake. If so, a character with good intrigue or learning can spot it.
+	option = {
+		name = "regalia.30.A"
+		tooltip_info = intrigue
+		trigger = {
+			has_character_flag=fake_regalia_peddler
+			intrigue = 15
+		}
+		clr_character_flag=fake_regalia_peddler
+		clr_character_flag="regalia_gespenst"
+		clr_character_flag="regalia_luce"
+		clr_character_flag="regalia_excalibur_fe7"
+		clr_character_flag="regalia_rienfleche"
+		clr_character_flag="regalia_basilikos"
+		clr_character_flag="regalia_rex_hasta"
+		clr_character_flag="regalia_regal_blade"
+		ROOT = { character_event = { id = regalia.31 } }
+	}
+	option = {
+		name = "regalia.30.B"
+		tooltip_info = learning
+		trigger = {
+			has_character_flag=fake_regalia_peddler
+			learning = 12
+		}
+		clr_character_flag=fake_regalia_peddler
+		clr_character_flag="regalia_gespenst"
+		clr_character_flag="regalia_luce"
+		clr_character_flag="regalia_excalibur_fe7"
+		clr_character_flag="regalia_rienfleche"
+		clr_character_flag="regalia_basilikos"
+		clr_character_flag="regalia_rex_hasta"
+		clr_character_flag="regalia_regal_blade"
+		ROOT = { character_event = { id = regalia.31 } }
+	}
+
+	# Buy it
+	option = {
+		name = "regalia.30.C"
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 2
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+		}
+		wealth = -1000
+		
+		if = {
+			limit = {
+				has_character_flag=fake_regalia_peddler
+			}
+			# Pretend we're handing it out...
+			if = {
+				limit = {
+					has_character_flag="regalia_gespenst"
+				}
+				clr_character_flag="regalia_gespenst"
+				add_trait="regalia_gespenst"		
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_luce"
+				}
+				clr_character_flag="regalia_luce"
+				add_trait="regalia_luce"		
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_excalibur_fe7"
+				}
+				clr_character_flag="regalia_excalibur_fe7"
+				add_trait="regalia_excalibur_fe7"				
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_rienfleche"
+				}
+				clr_character_flag="regalia_rienfleche"
+				add_trait="regalia_rienfleche"				
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_basilikos"
+				}
+				clr_character_flag="regalia_basilikos"
+				add_trait="regalia_basilikos"			
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_rex_hasta"
+				}
+				clr_character_flag="regalia_rex_hasta"
+				add_trait="regalia_rex_hasta"
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_regal_blade"
+				}
+				clr_character_flag="regalia_regal_blade"
+				add_trait="regalia_regal_blade"			
+			}
+			
+			add_character_modifier = { name = owns_regalia duration = -1 } 
+			hidden_tooltip = { 
+				set_character_flag = "bought_fake_regalia"
+				remove_character_modifier = owns_regalia 
+				remove_trait="regalia_gespenst"		
+				remove_trait="regalia_luce"		
+				remove_trait="regalia_excalibur_fe7"				
+				remove_trait="regalia_rienfleche"			
+				remove_trait="regalia_basilikos"			
+				remove_trait="regalia_rex_hasta"
+				remove_trait="regalia_regal_blade"			
+				character_event = { id = regalia.31 } 
+			}
+		}
+		
+		if = {
+			limit = {
+				has_character_flag=true_regalia_peddler
+			}
+			
+			#Hand it out
+			if = {
+				limit = {
+					has_character_flag="regalia_gespenst"
+				}
+				clr_character_flag="regalia_gespenst"
+				add_trait="regalia_gespenst"		
+				set_global_flag="regalia_gespenst_held"		
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_luce"
+				}
+				clr_character_flag="regalia_luce"
+				add_trait="regalia_luce"		
+				set_global_flag="regalia_luce_held"		
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_excalibur_fe7"
+				}
+				clr_character_flag="regalia_excalibur_fe7"
+				add_trait="regalia_excalibur_fe7"
+				set_global_flag="regalia_excalibur_held"				
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_rienfleche"
+				}
+				clr_character_flag="regalia_rienfleche"
+				add_trait="regalia_rienfleche"
+				set_global_flag="regalia_rienfleche_held"				
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_basilikos"
+				}
+				clr_character_flag="regalia_basilikos"
+				add_trait="regalia_basilikos"	
+				set_global_flag="regalia_basilikos_held"			
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_rex_hasta"
+				}
+				clr_character_flag="regalia_rex_hasta"
+				add_trait="regalia_rex_hasta"
+				set_global_flag="regalia_rex_hasta_held"	
+			}
+			if = {
+				limit = {
+					has_character_flag="regalia_regal_blade"
+				}
+				clr_character_flag="regalia_regal_blade"
+				add_trait="regalia_regal_blade"		
+				set_global_flag="regalia_regal_blade_held"	
+			}
+			
+			add_character_modifier = { name = owns_regalia duration = -1 } 
+		}
+	}
+
+	# Pass
+	option = {
+		name = "regalia.30.D"
+		ai_chance = { factor = 100 }
+		
+		clr_character_flag="regalia_gespenst"
+		clr_character_flag="regalia_luce"
+		clr_character_flag="regalia_excalibur_fe7"
+		clr_character_flag="regalia_rienfleche"
+		clr_character_flag="regalia_basilikos"
+		clr_character_flag="regalia_rex_hasta"
+		clr_character_flag="regalia_regal_blade"
+		
+		clr_character_flag=true_regalia_peddler
+		clr_character_flag=fake_regalia_peddler
+	}	
+}
+
+# It was a fake
+character_event = {
+	id = regalia.31
+	#title = "regalia.31.title"
+	desc = "regalia.31.desc"
+	picture = "GFX_evt_market" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.31.A"
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+		}
+		random_list = {		
+			50 = {
+				modifier = {
+					factor = 0.5
+					NOT={intrigue = 10}
+				}
+				modifier = {
+					factor = 1.5
+					intrigue = 15
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 20
+				}
+				if = {
+					limit = { has_character_flag = bought_fake_regalia }
+					wealth = 1000
+					clr_character_flag = "bought_fake_regalia"
+				}
+				create_character = {
+					female = no
+					age = 40
+					random_traits = yes
+					dynasty = none
+					culture = seafarer
+					religion = ROOT
+					trait = deceitful
+					trait = greedy
+					trait = flamboyant_schemer
+				}
+				new_character = {
+					imprison = ROOT
+					opinion = {
+						modifier = opinion_arrest_attempt
+						who = ROOT
+						years = 15
+					}
+				}
+				custom_tooltip = { text = regalia.31.A.tooltip }
+			}
+			50 = {
+				modifier = {
+					factor = 1.5
+					NOT={intrigue = 10}
+				}
+				ROOT = { character_event = { id = regalia.32 } }
+			}
+		}
+	}
+	option = {
+		name = "regalia.31.B"
+		ai_chance = { factor = 10 }
+		if = {
+			limit = { has_character_flag = bought_fake_regalia }
+			random_list = {		
+				50 = {
+					modifier = {
+						factor = 1.5
+						intrigue = 15
+					}
+					modifier = {
+						factor = 1.2
+						intrigue = 20
+					}
+					wealth = 1000
+					custom_tooltip = { text = regalia.31.B.tooltip }
+					clr_character_flag = bought_fake_regalia
+				}
+				50 = { 
+					modifier = {
+						factor = 1.5
+						NOT={intrigue = 10}
+					}
+					ROOT = { character_event = { id = regalia.32 } }
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_character_flag = bought_fake_regalia } }
+			custom_tooltip = { text = regalia.31.B.tooltip }
+		}
+	}
+}
+
+# He got away
+character_event = {
+	id = regalia.32
+	desc = "regalia.32.desc"
+	picture = "GFX_evt_scandal"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "regalia.32.A"
+		if = {
+			limit = { NOT = { has_character_flag = bought_fake_regalia } }
+			#custom_tooltip = { text = regalia.32.A.tooltip }
+			prestige = -10
+		}
+		if = {
+			limit = { has_character_flag = bought_fake_regalia }
+			prestige = -100
+			clr_character_flag = bought_fake_regalia
+		}
+	}
+}
+
+# Armads
+# Starting point - do you want to search?
+character_event = {
+	id = regalia.33
+	title = "regalia.33.title"
+	desc = "regalia.33.desc"
+	picture = "GFX_evt_armory" 
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_ambition = obj_acquire_regalia
+		NOT = { has_global_flag = regalia_armads_held }
+		NOT = { has_character_flag = regalia_armads_trial }
+		NOT = { has_character_flag = regalia_armads_failure }
+		NOT = { has_character_modifier = declined_regalia_search }
+		
+		location = {
+			county = {
+				title = c_jutes
+			}
+		}
+
+	}
+	mean_time_to_happen = {
+		days = 5	
+	}
+	
+	# Yes, let's look
+	option = {
+		name = "regalia.33.A"
+		trigger = {
+			NOT = { has_character_flag = regalia_armads_info }
+		}
+		hidden_tooltip = { character_event = { id = regalia.34 } }
+	}	
+	# I already found it, skip to the trial
+	option = {
+		name = "regalia.33.B"
+		trigger = {
+			has_character_flag = regalia_armads_info 
+		}
+		hidden_tooltip = { character_event = { id = regalia.3 } }
+	}		
+	# No
+	option = {
+		name = "regalia.33.C"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+	}		
+}
+
+# Looking for Armads
+narrative_event = {
+	id = regalia.34
+	title = "regalia.34.title"
+	desc = "regalia.34.desc"
+	picture = "GFX_evt_whispers" 
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = regalia_armads_info
+	}
+	
+	option = {
+		name = "regalia.34.A"
+		prestige = 10
+		hidden_tooltip = { 
+			if = {
+				limit = {
+					has_global_flag = kaim_defeated
+				}
+				character_event = { id = regalia.1 } 
+			}			
+			if = {
+				limit = {
+					NOT = { has_global_flag = kaim_defeated }
+				}
+				character_event = { id = regalia.36 } 
+			}		
+		}
+	}	
+	
+	option = {
+		name = "regalia.34.B"
+		hidden_tooltip = { 
+			if = {
+				limit = {
+					has_global_flag = kaim_defeated
+				}
+				character_event = { id = regalia.8 } 
+			}			
+			if = {
+				limit = {
+					NOT = { has_global_flag = kaim_defeated }
+				}
+				wealth = -10
+				character_event = { id = regalia.35 } 
+			}		
+		}
+	}		
+	
+	option = {
+		name = "regalia.34.C"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# Warning about the warriors
+narrative_event = {
+	id = regalia.35
+	title = "regalia.35.title"
+	desc = "regalia.35.desc"
+	picture = "GFX_evt_whispers" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.35.A"
+		hidden_tooltip = { character_event = { id = regalia.36 } }
+	}		
+	
+	option = {
+		name = "regalia.35.B"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# "The Berserker" event - mini-war against Kaim's guardians
+narrative_event = {
+	id = regalia.36
+	title = "regalia.36.title"
+	desc = "regalia.36.desc"
+	picture = "GFX_evt_viking_battle_oldgods" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.36.A"
+		set_character_flag = regalia_armads_trial
+		hidden_tooltip = { 
+			ROOT={
+				location = {
+					create_character = {
+						name="Kaim"
+						random_traits = no
+						dynasty = none
+						religion = guardian
+						culture = western_islander
+						female = no
+						age = 30
+						attributes = {
+							martial = 10
+						}
+						trait = tough_soldier
+						trait = strong
+						trait = heavy_infantry_leader
+						trait = unyielding_leader
+						trait = class_hero
+						trait = phantom
+					}
+					
+					new_character = {
+						set_character_flag = regalia_guardian
+						
+						create_title = {
+							tier = COUNT
+							landless = yes
+							temporary = yes
+							#rebel = yes
+							culture = western_islander
+							name = "PHANTOM_GUARDIANS"
+							holder = THIS
+						}
+						# Get the war dec to work right.
+						# Just make the guardians a vassal of the character if he's a duke or above.
+						if = {
+							limit = {
+								ROOT = {
+									primary_title = { higher_tier_than = COUNT } 
+								}
+							}
+							set_defacto_liege = ROOT
+						}
+						
+						# If he's an independent count, the guardians can also stay independent.
+						# If he's a vassal count, the guardians need to have the same liege so they don't war the wrong person.
+						if = {
+							limit = {
+								ROOT = {
+									primary_title = { lower_tier_than = DUKE } 
+									independent = no
+								}
+							}
+							ROOT = {
+								liege = {
+									save_event_target_as = target_count_liege
+								}
+							}
+							set_defacto_liege = event_target:target_count_liege
+							
+						}
+						#set_defacto_liege = ROOT
+						
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = THIS
+							leader = THIS
+							match_character = ROOT
+							match_mult = 0.25
+							attrition = 0
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = THIS
+							match_character = ROOT
+							match_mult = 0.25
+							attrition = 0
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = THIS
+							match_character = ROOT
+							match_mult = 0.25
+							attrition = 0
+						}
+							
+						# DoW on the character
+						ROOT = {
+							reverse_war = {
+								target = PREV
+								casus_belli = regalia_guardian
+							}
+							reverse_opinion = {
+								who = PREV
+								modifier = opinion_regalia_trespasser
+							}
+						}
+					}
+				}
+			}
+		}
+	}		
+	
+	option = {
+		name = "regalia.36.B"
+		set_character_flag = regalia_armads_failure
+		prestige = -100
+	}		
+}
+
+# Lost to the guardians
+narrative_event = {
+	id = regalia.37
+	title = "regalia.37.title"
+	desc = "regalia.37.desc"
+	picture = "GFX_evt_bad_news" 
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_character_flag = regalia_armads_trial 
+		has_character_flag = lost_to_regalia_guardians 
+	}
+	mean_time_to_happen = {
+		days = 1	
+	}
+		
+	option = {
+		name = "regalia.37.A"
+		set_character_flag = regalia_armads_failure
+		clr_character_flag = regalia_armads_trial
+		clr_character_flag = lost_to_regalia_guardians
+		prestige = -500
+	}		
+}
+
+# Defeated the guardians
+narrative_event = {
+	id = regalia.38
+	title = "regalia.38.title"
+	desc = "regalia.38.desc"
+	picture = "GFX_evt_armory"
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_character_flag = regalia_armads_trial 
+		has_character_flag = defeated_regalia_guardians 
+	}
+	mean_time_to_happen = {
+		days = 1	
+	}
+		
+	option = {
+		name = "regalia.38.A"
+		clr_character_flag = regalia_armads_trial
+		clr_character_flag = defeated_regalia_guardians
+		set_global_flag = kaim_defeated
+		hidden_tooltip = { character_event = { id = regalia.39 } }
+	}		
+}
+
+#Claim the axe
+narrative_event = {
+	id = regalia.39
+	title = "regalia.39.title"
+	desc = "regalia.39.desc"
+	picture = "GFX_evt_regalia"
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.39.A"
+		add_character_modifier = { name = owns_regalia duration = -1 } 
+		add_trait = regalia_armads
+		set_global_flag = regalia_armads_held 
+		# Durban gets the best lines:
+		# "I am power. Power without peer. I am the dragonhunter. I am the fleshbiter, the bonecrusher, the skullbreaker, the doombringer."
+		# "I require no seals. I have no need of this idleness called peace. Power unused is power wasted. Better to lie spent in the grave than to sit in wait. I care not who... I would fight someone..."
+	}		
+}
+
+# Poison cave hint
+narrative_event = {
+	id = regalia.40
+	title = "regalia.40.title"
+	desc = "regalia.40.desc"
+	picture = "GFX_evt_armads_sketch" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.40.A"
+		hidden_tooltip = { character_event = { id = regalia.41 } }
+	}		
+	
+	option = {
+		name = "regalia.40.B"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		#prestige = -10
+	}		
+}
+
+# Armads Cave is a roughly circular path, with several junctions where you can choose a direction to take. Each junction gets an event.
+# Most junctions have poison gas traps between them. The traps have a random chance to hurt you.
+character_event = {
+	id = regalia.41
+	#title = "regalia.41.title"
+	desc = "regalia.41.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# Forward
+	option = {
+		name = "regalia.41.A"
+		ai_chance = { 
+			factor = 0
+		}
+		set_character_flag = regalia_armads_trial
+		hidden_tooltip = { character_event = { id = regalia.42 } }
+	}		
+	
+	option = {
+		name = "regalia.41.B"
+		ai_chance = { 
+			factor = 100
+		}
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# Junction #1, southwest corner
+character_event = {
+	id = regalia.42
+	#title = "regalia.42.title"
+	desc = "regalia.42.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# North
+	option = {
+		name = "regalia.42.A"
+		set_character_flag = "armads_cave_2"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+	# East
+	option = {
+		name = "regalia.42.B"
+		set_character_flag = "armads_cave_5"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+	# Back out of the cave
+	option = {
+		name = "regalia.42.B"
+		hidden_tooltip = { character_event = { id = regalia.43 } }
+	}		
+}
+
+# Stumbled out of the cave
+character_event = {
+	id = regalia.43
+	#title = "regalia.43.title"
+	desc = "regalia.43.desc"
+	picture = "GFX_evt_bad_news" 
+	
+	is_triggered_only = yes
+	
+	# Forward
+	option = {
+		name = "regalia.43.A"
+		set_character_flag = regalia_armads_failure
+		clr_character_flag = regalia_armads_trial
+		prestige = -500
+	}		
+}
+
+# Poison gas!
+# Random chance for it to hit.
+# On the first hit, it causes illness. Subsequent hits lower health.
+# High-intrigue characters have better chances to dodge, and thief classes always dodge.
+# TODO: Have it cause random symptoms instead of the illness-health thing?
+character_event = {
+	id = regalia.44
+	#title = "regalia.44.title"
+	desc = "regalia.44.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_list = {		
+			50 = {
+				modifier = {
+					factor = 0.5
+					NOT={intrigue = 5}
+				}
+				modifier = {
+					factor = 1.5
+					intrigue = 10
+				}
+				modifier = {
+					factor = 1.2
+					intrigue = 15
+				}
+				set_character_flag = "armads_cave_dodged_gas"
+			}
+			50 = {
+				modifier = {
+					factor = 0
+					OR = {
+						trait="class_assassin"
+						trait="class_assassin_female"
+						trait="class_rogue"
+						trait="class_thief"
+						trait="class_thief_female"
+					}
+				}
+				modifier = {
+					factor = 1.5
+					NOT={intrigue = 5}
+				}
+				set_character_flag = "armads_cave_gassed"
+			}
+		}	
+	}
+	# Back out of the cave
+	option = {
+		name= {
+		  text = "regalia.44.A.1"
+		  trigger = {
+			has_character_flag = "armads_cave_dodged_gas"
+		  }
+		}
+		name= {
+		  text = "regalia.44.A.2"
+		  trigger = {
+			has_character_flag = "armads_cave_gassed"
+		  }
+		}
+		
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_gassed"				
+			}
+			
+			if = {
+				limit = {
+					trait = "ill"				
+				}
+				health = -0.5
+			}			
+			if = {
+				limit = {
+					NOT={trait = "ill" }
+				}
+				add_trait="ill"
+			}	
+		}
+		clr_character_flag = "armads_cave_dodged_gas"
+		clr_character_flag = "armads_cave_gassed"
+		
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_1"				
+			}
+			clr_character_flag = "armads_cave_1"
+			hidden_tooltip = { character_event = { id = regalia.42 } }
+		}
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_2"				
+			}
+			clr_character_flag = "armads_cave_2"
+			hidden_tooltip = { character_event = { id = regalia.45 } }
+		}
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_3"				
+			}
+			clr_character_flag = "armads_cave_3"
+			hidden_tooltip = { character_event = { id = regalia.47 } }
+		}
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_4"				
+			}
+			clr_character_flag = "armads_cave_4"
+			hidden_tooltip = { character_event = { id = regalia.48 } }
+		}
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_5"				
+			}
+			clr_character_flag = "armads_cave_5"
+			hidden_tooltip = { character_event = { id = regalia.49 } }
+		}
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_6"				
+			}
+			clr_character_flag = "armads_cave_6"
+			hidden_tooltip = { character_event = { id = regalia.50 } }
+		}
+		if = {
+			limit = {
+				has_character_flag = "armads_cave_7"				
+			}
+			clr_character_flag = "armads_cave_7"
+			hidden_tooltip = { character_event = { id = regalia.51 } }
+		}
+	}		
+}
+
+# Junction #2, northwest corner
+character_event = {
+	id = regalia.45
+	#title = "regalia.45.title"
+	desc = "regalia.45.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# Northwest - dead end.
+	option = {
+		name = "regalia.45.A"
+		set_character_flag = "armads_cave_2"
+		hidden_tooltip = { character_event = { id = regalia.46 } }
+	}		
+	# Northeast
+	option = {
+		name = "regalia.45.B"
+		set_character_flag = "armads_cave_3"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}	
+	# Southeast
+	option = {
+		name = "regalia.45.B"
+		set_character_flag = "armads_cave_4"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}	
+	# Southwest
+	option = {
+		name = "regalia.45.D"
+		set_character_flag = "armads_cave_1"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+}
+
+# Junction #2, northwest corner dead end
+character_event = {
+	id = regalia.46
+	#title = "regalia.46.title"
+	desc = "regalia.46.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.46.A"
+		set_character_flag = "armads_cave_2"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}			
+}
+
+# Junction #3, northeast area
+character_event = {
+	id = regalia.47
+	#title = "regalia.47.title"
+	desc = "regalia.47.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# Northwest
+	option = {
+		name = "regalia.47.A"
+		set_character_flag = "armads_cave_2"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+	# Northeast
+	option = {
+		name = "regalia.47.B"
+		hidden_tooltip = { character_event = { id = regalia.51 } }
+	}	
+	# South
+	option = {
+		name = "regalia.47.B"
+		set_character_flag = "armads_cave_4"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+}
+
+# Junction #4, central area
+character_event = {
+	id = regalia.48
+	#title = "regalia.48.title"
+	desc = "regalia.48.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# North
+	option = {
+		name = "regalia.48.A"
+		set_character_flag = "armads_cave_3"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+	# West
+	option = {
+		name = "regalia.48.B"
+		set_character_flag = "armads_cave_2"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}	
+	# South
+	option = {
+		name = "regalia.48.B"
+		set_character_flag = "armads_cave_5"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+}
+
+# Junction #5, south central area
+character_event = {
+	id = regalia.49
+	#title = "regalia.49.title"
+	desc = "regalia.49.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# North
+	option = {
+		name = "regalia.49.A"
+		set_character_flag = "armads_cave_4"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+	# West
+	option = {
+		name = "regalia.49.B"
+		set_character_flag = "armads_cave_1"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}	
+	# East
+	option = {
+		name = "regalia.49.C"
+		hidden_tooltip = { character_event = { id = regalia.50 } }
+	}		
+}
+
+# Junction #6, southeast corner
+character_event = {
+	id = regalia.50
+	#title = "regalia.50.title"
+	desc = "regalia.50.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# North
+	option = {
+		name = "regalia.50.A"
+		set_character_flag = "armads_cave_7"
+		hidden_tooltip = { character_event = { id = regalia.44 } }
+	}		
+	# West
+	option = {
+		name = "regalia.50.B"
+		hidden_tooltip = { character_event = { id = regalia.49 } }
+	}	
+}
+
+# Junction #7, northeast corner
+character_event = {
+	id = regalia.51
+	#title = "regalia.51.title"
+	desc = "regalia.51.desc"
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+	
+	# Goal!
+	option = {
+		name = "regalia.51.A"
+		clr_character_flag = regalia_armads_trial
+		hidden_tooltip = { character_event = { id = regalia.39 } }
+	}	
+}
+
+# Death of a regalia holder, part 2 - hand out the regalia to its heir
+character_event = {
+	id = regalia.52
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+			
+		add_character_modifier = { name = owns_regalia duration = -1 } 
+				
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = regalia_durandal
+				}
+			}
+			add_trait = regalia_durandal
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_binding_blade"
+				}
+			}
+			add_trait = "regalia_binding_blade"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_armads"
+				}
+			}
+			add_trait = "regalia_armads"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_forblaze"
+				}
+			}
+			add_trait = "regalia_forblaze"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_aureola"
+				}
+			}
+			add_trait = "regalia_aureola"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_murgleis"
+				}
+			}
+			add_trait = "regalia_murgleis"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_maltet"
+				}
+			}
+			add_trait = "regalia_maltet"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_apocalypse"
+				}
+			}
+			add_trait = "regalia_apocalypse"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_eckesachs"
+				}
+			}
+			add_trait = "regalia_eckesachs"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_saints_staff"
+				}
+			}
+			add_trait = "regalia_saints_staff"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_mani_katti"
+				}
+			}
+			add_trait = "regalia_mani_katti"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_sol_katti"
+				}
+			}
+			add_trait = "regalia_sol_katti"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_ereshkigal"
+				}
+			}
+			add_trait = "regalia_ereshkigal"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_gespenst"
+				}
+			}
+			add_trait = "regalia_gespenst"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_luce"
+				}
+			}
+			add_trait = "regalia_luce"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_excalibur_fe7"
+				}
+			}
+			add_trait = "regalia_excalibur_fe7"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_rienfleche"
+				}
+			}
+			add_trait = "regalia_rienfleche"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_basilikos"
+				}
+			}
+			add_trait = "regalia_basilikos"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_rex_hasta"
+				}
+			}
+			add_trait = "regalia_rex_hasta"
+		}	
+		if = {
+			limit = {
+				event_target:last_regalia_owner = {
+					trait = "regalia_regal_blade"
+				}
+			}
+			add_trait = "regalia_regal_blade"
+		}		
+			
+	}		
+}
+
+# Just... find it, randomly?
+
+# Found it going raiding
+
+# Dig up treasure in remote location
+
+
+# Sacaen ones. Mani and Saka

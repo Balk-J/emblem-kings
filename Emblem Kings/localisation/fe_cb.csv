@@ -1,3 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+PHANTOM_GUARDIANS;[Root.Location.County.GetName] Guardians;;;;;;;;;;;;;x
+CB_NAME_REGALIA_GUARDIAN;[Actor.Location.County.GetName] Regalia Trial;;;;;;;;;;;;;x
+WAR_NAME_REGALIA_GUARDIAN;[Actor.Location.County.GetName] Regalia Defense;;;;;;;;;;;;;x
 CB_NAME_LYN;Lyndis' Return to Caelin;;;;;;;;;;;;;x
 claim_all_lyn_desc;Lyndis' Return to Caelin;;;;;;;;;;;;;x

@@ -1,0 +1,10 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fire_emblem.3.title;;;;;;;;;;;;;;x
+fire_emblem.3.desc;It is traditional for the heir to the [Root.PrimaryTitle.GetFullName] to have a coming-of-age ceremony that confirms them as the right-born heir to the throne. Your national treasure, the Fire Emblem, is the symbol of the heir and the heart of the ceremony.;;;;;;;;;;;;;x
+fire_emblem.3.A;It will be a grand event!;;;;;;;;;;;;;x
+fire_emblem.3.B;.;;;;;;;;;;;;;x
+fire_emblem.4.title;;;;;;;;;;;;;;x
+fire_emblem.4.desc;It is traditional for the heir to the [Root.PrimaryTitle.GetFullName] to have a coming-of-age ceremony that confirms them as the right-born heir to the throne. Your national treasure, the Fire Emblem, is the symbol of the heir and the heart of the ceremony. \n\nThe fact that it has gone missing presents a small problem.;;;;;;;;;;;;;x
+fire_emblem.4.A;We shall conduct the ceremony without it. [Root.Heir.GetFirstName] remains my heir.;;;;;;;;;;;;;x
+fire_emblem.4.B;This is reason enough to declare [Root.Heir.GetHerHim] unfit to inherit...;;;;;;;;;;;;;x
+fire_emblem.1.C;.;;;;;;;;;;;;;x

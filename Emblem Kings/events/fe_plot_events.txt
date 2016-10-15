@@ -1,0 +1,1210 @@
+namespace = fe_plot
+
+# Falling accident - The plotter sees an opportunity
+character_event = {
+	id = fe_plot.1
+	desc = "fe_plot.1.desc"
+	picture = GFX_evt_whispers
+	border = GFX_event_normal_frame_intrigue
+	
+	capable_only = yes
+	prisoner = no
+	is_part_of_plot = yes
+	
+	trigger = {
+		has_plot = plot_disinherit_character
+		plot_target_char = {
+			age = 5
+			is_adult = no
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }
+			at_location = ROOT # The Plot Head needs to be at the target's location to get a chance
+			
+			liege = {
+				OR = {
+					has_character_modifier = holds_fire_emblem
+					any_realm_character = {
+						has_character_modifier = holds_fire_emblem
+						prisoner = no
+					}
+				}
+			}
+		}
+		NOT = { has_character_flag = disinherit_in_motion }
+		plot_power_contribution = 
+		{
+			plotter = ROOT
+			power = 0.025
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.10
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.20
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.30
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.40
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.50
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.60
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.70
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.80
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 0.90
+			}
+		}
+		modifier = {
+			factor = 0.7
+			plot_power_contribution = 
+			{
+				plotter = ROOT
+				power = 1.5
+			}
+		}
+		
+		modifier = {
+			factor = 0.33
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				plot_power = 1.0
+			}
+		}
+		modifier = {
+			factor = 0.33
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				plot_power = 1.5
+			}
+		}
+		modifier = {
+			factor = 0.33
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				plot_power = 2.0
+			}
+		}
+	}
+	
+	immediate = {
+		plot_target_char = { save_event_target_as = plot_target }
+	}
+	
+	option = {
+		name = "fe_plot.1.A" # The conspirators provide the poison
+		trigger = {
+			plot_power = 1.0
+		}
+		hidden_tooltip = {
+			any_plot_backer = {
+				character_event = { id = fe_plot.13 days = 1 }
+			}
+		}
+		
+		set_character_flag = disinherit_in_motion
+		event_target:plot_target = { character_event = { id = fe_plot.6 days = 30 tooltip = "fe_plot.6.tooltip" } }
+	}
+	option = {
+		name = "fe_plot.1.B" # Bribe a Guard
+		trigger = {
+			NOT = { plot_power = 0.5 }
+			NOT = { intrigue = 10 }
+		}
+		scaled_wealth = -1.0
+		
+		hidden_tooltip = {
+			any_plot_backer = {
+				character_event = { id = fe_plot.13 days = 1 }
+			}
+		}
+		
+		set_character_flag = disinherit_in_motion
+		event_target:plot_target = { character_event = { id = fe_plot.6 days = 30 tooltip = "fe_plot.6.tooltip" } }
+	}
+	option = {
+		name = "fe_plot.1.B" # Bribe a Guard
+		trigger = {
+			plot_power = 0.5
+			NOT = { plot_power = 1.0 }
+			NOT = { intrigue = 10 }
+		}
+		scaled_wealth = -0.5
+		
+		hidden_tooltip = {
+			any_plot_backer = {
+				character_event = { id = fe_plot.13 days = 1 }
+			}
+		}
+		
+		set_character_flag = disinherit_in_motion
+		event_target:plot_target = { character_event = { id = fe_plot.6 days = 30 tooltip = "fe_plot.6.tooltip" } }
+	}
+	option = {
+		name = "fe_plot.1.C" # I know just the person for the job...
+		tooltip_info = intrigue
+		trigger = {
+			plot_power = 0.5
+			intrigue = 10
+		}
+		
+		hidden_tooltip = {
+			any_plot_backer = {
+				character_event = { id = fe_plot.13 days = 1 }
+			}
+		}
+		
+		set_character_flag = disinherit_in_motion
+		event_target:plot_target = { character_event = { id = fe_plot.6 days = 30 tooltip = "fe_plot.6.tooltip" } }
+	}
+	option = {
+		name = "fe_plot.1.D" # I cannot afford this
+		trigger = {
+			ai = no
+			NOT = { intrigue = 10 }
+			NOT = { plot_power = 1.0 }
+		}
+	}
+}
+
+# Falling Accident - A plot backer sees an opportunity
+character_event = {
+	id = fe_plot.2
+	desc = "EVTDESCfe_plot.2"
+	picture = GFX_evt_whispers
+	border = GFX_event_normal_frame_intrigue
+	
+	capable_only = yes
+	prisoner = no
+	is_part_of_plot = yes
+	
+	trigger = {
+		any_backed_character = {
+			has_plot = plot_disinherit_character
+			plot_power = 0.5
+			plot_target_char = {
+				age = 5
+				is_adult =  no
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				liege = {
+					OR = {
+						has_character_modifier = holds_fire_emblem
+						any_realm_character = {
+							has_character_modifier = holds_fire_emblem
+							prisoner = no
+						}
+					}
+				}
+			}
+			NOT = { has_character_flag = disinherit_in_motion }
+			ROOT = {
+				plot_power_contribution = 
+				{
+					plotter = PREV
+					power = 0.025
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.20
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.30
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.40
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.50
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.60
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.70
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.80
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.90
+					}
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.33
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				plot_power = 1.0
+			}
+		}
+		modifier = {
+			factor = 0.33
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				plot_power = 1.5
+			}
+		}
+		modifier = {
+			factor = 0.33
+			any_backed_character = {
+				has_plot = plot_disinherit_character
+				plot_power = 2.0
+			}
+		}
+	}
+
+	immediate = {
+		random_backed_character = {
+			limit = {
+				has_plot = plot_disinherit_character
+				plot_power = 0.5
+				plot_target_char = {
+					age = 5
+					NOT = { age = 16 }
+					prisoner = no
+					NOT = { trait = incapable }
+					NOT = { is_inaccessible_trigger = yes }
+				}
+				NOT = { has_character_flag = disinherit_in_motion }
+				ROOT = {
+					plot_power_contribution = 
+					{
+						plotter = PREV
+						power = 0.025
+					}
+				}
+			}
+			save_event_target_as = plot_leader
+		}
+	}
+	
+	option = {
+		name = "fe_plot.1.A" # The conspirators provide a killer
+		trigger = {
+			event_target:plot_leader = {
+				plot_power = 1.0
+			}
+		}
+		event_target:plot_leader = {
+			character_event = { id = fe_plot.11 days = 3 tooltip = "EVTTOOLTIP8160" }
+			set_character_flag = disinherit_in_motion
+		}
+	}
+	option = {
+		name = "fe_plot.2.B" # Ask the Plotter for funds
+		trigger = {
+			NOT = { intrigue = 10 }
+			NOT = {
+				event_target:plot_leader = {
+					plot_power = 1.0
+				}
+			}
+		}
+		event_target:plot_leader = {
+			character_event = { id = fe_plot.3 days = 3 tooltip = "EVTTOOLTIP8152" }
+			set_character_flag = disinherit_in_motion
+		}
+	}
+	
+	option = {
+		name = "fe_plot.2.B" # Bribe a Guard
+		trigger = {
+			NOT = { intrigue = 10 }
+			NOT = {
+				event_target:plot_leader = {
+					plot_power = 1.0
+				}
+			}
+		}
+		scaled_wealth = -0.5
+		event_target:plot_leader = {
+			character_event = { id = fe_plot.11 days = 3 tooltip = "EVTTOOLTIP8160" }
+			set_character_flag = disinherit_in_motion
+		}
+	}
+	option = {
+		name = "fe_plot.1.C" # I know just the person for the job...
+		tooltip_info = intrigue
+		trigger = {
+			intrigue = 10
+		}
+		
+		event_target:plot_leader = {
+			character_event = { id = fe_plot.11 days = 3 tooltip = "EVTTOOLTIP8160" }
+			set_character_flag = disinherit_in_motion
+		}
+	}
+	
+	option = {
+		name = "EVTOPTD8150" # I cannot afford this
+		trigger = {
+			ai = no
+			NOT = { intrigue = 10 }
+			NOT = {
+				event_target:plot_leader = {
+					plot_power = 1.0
+				}
+			}
+		}
+	}
+}
+
+# Falling Accident - Plot backer requests funds
+character_event = {
+	id = fe_plot.3
+	desc = "fe_plot.3.desc"
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		plot_target_char = { save_event_target_as = plot_target }
+	}
+	
+	option = {
+		name = "fe_plot.3.A"
+		transfer_scaled_wealth = {
+			to = FROM
+			value = 1.0
+		}
+		FROM = { character_event = { id = fe_plot.4 tooltip = "EVTTOOLTIP8153" } }
+	}
+	
+	option = {
+		name = "fe_plot.3.B"
+		FROM = { character_event = { id = fe_plot.5 tooltip = "EVTTOOLTIP8154" } }
+	}
+}
+
+# Falling Accident - plot backer receives funds
+character_event = {
+	id = fe_plot.4
+	desc = "fe_plot.4.desc"
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EXCELLENT"
+		event_target:plot_target = { character_event = { id = fe_plot.6 days = 27 tooltip = "fe_plot.6.tooltip" } }
+	}
+}
+
+# Falling Accident - plot backer does NOT receive funds
+character_event = {
+	id = fe_plot.5
+	desc = "fe_plot.5.desc"
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA8154" # Pay for it myself
+		scaled_wealth = -1.0
+		event_target:plot_target = { character_event = { id = fe_plot.6 days = 27 tooltip = "fe_plot.6.tooltip" } }
+	}
+	option = {
+		name = "EVTOPTB8154" # Screw this
+		FROM = { clr_character_flag = disinherit_in_motion }
+	}
+}
+
+# Falling Accident - the murder attempt
+character_event = {
+	id = fe_plot.6
+	desc = "fe_plot.6.desc"
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_intrigue
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		save_event_target_as = target_victim
+	}
+	
+	trigger = {
+		prisoner = no
+		
+		# Is the plot still in motion?
+		OR = {
+			FROM = {
+				has_plot = plot_disinherit_character
+				plot_target_char = {
+					character = ROOT
+				}
+			}
+			FROMFROM = {
+				has_plot = plot_disinherit_character
+				plot_target_char = {
+					character = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "fe_plot.6.A" # Falls
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						trait = paranoid
+						random = 33
+					}
+					AND = {
+						trait = trusting
+						random = 90
+					}
+					AND = {
+						NOT = { trait = paranoid }
+						NOT = { trait = trusting }
+						random = 75
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			random_list = {
+				25 = {
+					hidden_tooltip = {
+						FROM = { character_event = { id = fe_plot.14 days = 1 } }
+						FROMFROM = { character_event = { id = fe_plot.14 days = 1 } }
+					}
+					character_event = { id = fe_plot.7 days = 1 } # Dies, murderer discovered
+				}
+				75 = {
+					hidden_tooltip = {
+						FROM = { character_event = { id = fe_plot.15 days = 1 } }
+						FROMFROM = { character_event = { id = fe_plot.15 days = 1 } }
+					}
+					character_event = { id = fe_plot.8 days = 1 } # Dies, murderer unknown
+				}
+			}
+		}
+	}
+	option = {
+		name = "fe_plot.6.B" # Dodges
+		trigger = {
+			OR = {
+				AND = {
+					trait = paranoid
+					random = 33
+				}
+				AND = {
+					trait = trusting
+					random = 90
+				}
+				AND = {
+					NOT = { trait = trusting }
+					NOT = { trait = paranoid }
+					random = 75
+				}
+			}
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					hidden_tooltip = {
+						FROM = { character_event = { id = fe_plot.16 days = 1 } }
+						FROMFROM = { character_event = { id = fe_plot.16 days = 1 } }
+					}
+					character_event = { id = fe_plot.9 days = 1 } # Lives, murderer discovered
+				}
+				50 = {
+					hidden_tooltip = {
+						FROM = { character_event = { id = fe_plot.17 days = 1 } }
+						FROMFROM = { character_event = { id = fe_plot.17 days = 1 } }
+					}
+					character_event = { id = fe_plot.10 days = 1 } # Lives, murderer unknown
+				}
+			}
+		}
+	}
+}
+
+# Falling Accident - Dies, murderer(s) discovered
+character_event = {
+	id = fe_plot.7
+	desc = "fe_plot.7.desc"
+	picture = GFX_evt_scandal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.7.A"
+		#
+		hidden_tooltip = {
+			random_independent_ruler = {
+				limit = {
+					ai = yes
+					controls_religion = no
+					is_adult = yes
+					is_within_diplo_range = ROOT
+					mercenary = no
+					holy_order = no
+					primary_title = {
+						is_landless_type_title = no
+					}
+					NOT = {
+						ROOT = {
+							any_liege = {
+								character = PREVPREV
+							}
+						}
+					}
+				}
+					
+				create_character = {
+					random_traits = yes
+					religion = PREV
+					culture = PREV
+					female = no
+					dynasty=none
+					age = 30
+					trait = intricate_webweaver
+					trait = class_rogue
+					employer = PREV
+				}
+				
+				new_character = {
+					set_character_flag = fire_emblem_thief
+					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+					if = {
+						limit = {
+							ROOT = {
+								liege = {
+									primary_title = {
+										region = world_elibe
+									}
+								}
+							}
+						}
+						add_trait = fire_emblem_elibe
+						
+						ROOT = {
+							liege = {
+								if = {
+									limit = {
+										NOT = {trait = fire_emblem_elibe}
+									}
+									random_realm_character = {
+										limit = {
+											trait = fire_emblem_elibe
+										}
+										remove_trait = fire_emblem_elibe
+										remove_character_modifier = holds_fire_emblem
+									}
+								}
+								if = {
+									limit = {
+										trait = fire_emblem_elibe
+									}
+									remove_trait = fire_emblem_elibe
+									remove_character_modifier = holds_fire_emblem
+								}
+								opinion = {
+									modifier = opinion_dirty_thief
+									who = PREVPREV
+									years = 10
+								} 
+								reverse_opinion = {
+									modifier = opinion_job_target
+									who = PREVPREV
+									years = 10
+								}
+							}
+						}
+					}	
+				}				
+			}
+		
+		}
+		#
+	}
+	
+}
+
+# Falling Accident - Dies, murderer NOT discovered
+character_event = {
+	id = fe_plot.8
+	desc = "fe_plot.7.desc"
+	picture = GFX_evt_death
+	border = GFX_event_normal_frame_intrigue
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.8.A"
+		
+		#
+		hidden_tooltip = {
+			random_independent_ruler = {
+				limit = {
+					ai = yes
+					controls_religion = no
+					is_adult = yes
+					is_within_diplo_range = ROOT
+					mercenary = no
+					holy_order = no
+					primary_title = {
+						is_landless_type_title = no
+					}
+					NOT = {
+						ROOT = {
+							any_liege = {
+								character = PREVPREV
+							}
+						}
+					}
+				}
+					
+				create_character = {
+					random_traits = yes
+					religion = PREV
+					culture = PREV
+					female = no
+					dynasty=none
+					age = 30
+					trait = intricate_webweaver
+					trait = class_rogue
+					employer = PREV
+				}
+				
+				new_character = {
+					set_character_flag = fire_emblem_thief
+					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+					if = {
+						limit = {
+							ROOT = {
+								liege = {
+									primary_title = {
+										region = world_elibe
+									}
+								}
+							}
+						}
+						add_trait = fire_emblem_elibe
+						
+						ROOT = {
+							liege = {
+								if = {
+									limit = {
+										NOT = {trait = fire_emblem_elibe}
+									}
+									random_realm_character = {
+										limit = {
+											trait = fire_emblem_elibe
+										}
+										remove_trait = fire_emblem_elibe
+										remove_character_modifier = holds_fire_emblem
+									}
+								}
+								if = {
+									limit = {
+										trait = fire_emblem_elibe
+									}
+									remove_trait = fire_emblem_elibe
+									remove_character_modifier = holds_fire_emblem
+								}
+								opinion = {
+									modifier = opinion_dirty_thief
+									who = PREVPREV
+									years = 10
+								} 
+								reverse_opinion = {
+									modifier = opinion_job_target
+									who = PREVPREV
+									years = 10
+								}
+							}
+						}
+					}	
+				}		
+			}
+		
+		}
+		#
+	}
+}
+
+# Falling Accident - Lives, murderer discovered
+character_event = {
+	id = fe_plot.9
+	desc = "fe_plot.9.desc"
+	picture = GFX_evt_scandal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.9.A"
+	}
+}
+
+# Falling Accident - Lives, murderer NOT discovered
+character_event = {
+	id = fe_plot.10
+	desc = "fe_plot.10.desc"
+	picture = GFX_evt_scandal
+	border = GFX_event_normal_frame_intrigue
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.10.A"
+		if = {
+			limit = {
+				NOT = { trait = paranoid }
+				NOT = { trait = trusting }
+			}
+			random = {
+				chance = 25
+				add_trait = paranoid
+			}
+		}
+		if = {
+			limit = {
+				trait = trusting
+			}
+			random = {
+				chance = 50
+				remove_trait = trusting
+			}
+		}
+	}
+}
+
+# Falling Accident - Backer informs Plotter of plan
+character_event = {
+	id = fe_plot.11
+	desc = "fe_plot.11.desc"
+	picture = GFX_evt_whispers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		plot_target_char = { save_event_target_as = plot_target }
+	}
+	
+	option = {
+		name = "fe_plot.11.A"
+		set_character_flag = disinherit_in_motion
+		FROM = { character_event = { id = fe_plot.12 tooltip = "EVTTOOLTIP8161" } }
+		hidden_tooltip = {
+			any_plot_backer = {
+				limit = {
+					NOT = { character = FROM }
+				}
+				character_event = { id = fe_plot.13 days = 1 }
+			}
+		}
+	}
+}
+
+# Falling Accident - Plotter tells backer to go ahead
+character_event = {
+	id = fe_plot.12
+	desc = "fe_plot.12.desc"
+	picture = GFX_evt_whispers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA8161"
+		event_target:plot_target = { character_event = { id = fe_plot.6 days = 27 tooltip = "fe_plot.6.tooltip" } }
+	}
+}
+
+# Falling Accident - Initiator informs other plotter
+character_event = {
+	id = fe_plot.13
+	desc = "fe_plot.13.desc"
+	picture = GFX_evt_whispers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.11.A"
+	}
+}
+
+# Falling Accident - Notification: Success, but discovered
+character_event = {
+	id = fe_plot.14
+	desc = "fe_plot.14.desc"
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = { id = fe_plot.18 } # Consequences of discovery
+		clear_event_target = target_victim
+	}
+	
+	option = {
+		name = "EVTOPTA8163"
+	}
+}
+
+# Falling Accident - Notification: Success, and NOT discovered
+character_event = {
+	id = fe_plot.15
+	desc = "fe_plot.15.desc"
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.15.A"
+	}
+}
+
+# Falling Accident - Notification: Failure, and discovered
+character_event = {
+	id = fe_plot.16
+	desc = "fe_plot.16.desc"
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = { id = fe_plot.18 } # Consequences of discovery
+		clear_event_target = target_victim
+		
+		if = {
+			limit = { 
+				plot_target_char = {
+					character = FROM
+				}
+				has_plot = plot_disinherit_character
+			}
+			reveal_plot = yes
+		}
+	}
+	
+	option = {
+		name = "fe_plot.16.A"
+		if = {
+			limit = { 
+				plot_target_char = {
+					character = FROM
+				}
+				has_plot = plot_disinherit_character
+			}
+			clr_character_flag = disinherit_in_motion
+			tooltip = { reveal_plot = yes }
+		}
+	}
+}
+
+# Falling Accident - Notification: Failure, but NOT discovered
+character_event = {
+	id = fe_plot.17
+	desc = "fe_plot.17.desc"
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA8166"
+		
+		if = {
+			limit = { 
+				plot_target_char = {
+					character = FROM
+				}
+				has_plot = plot_disinherit_character
+			}
+			clr_character_flag = disinherit_in_motion
+		}
+	}
+}
+
+# Attacker discovered after Fire Emblem theft attempt.
+# (Should be fired for the attacker. The victim is event_target:target_victim.)
+character_event = {
+	id = fe_plot.18
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		event_target:target_victim = {
+			opinion = {
+				who = ROOT
+				modifier = scheming_bastard
+				months = 600
+			}
+			
+			any_vassal = {
+				limit = {
+					NOT = { is_close_relative = PREV }
+					NOT = { dynasty = ROOT }
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_dishonorable
+					months = 60
+				}
+			}
+			
+			any_liege = {
+				limit = {
+					is_close_relative = PREV
+					NOT = { character = ROOT }
+					NOT = { dynasty = ROOT }
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_dishonorable
+					months = 60
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = { dynasty = ROOT }
+				}
+				any_dynasty_member = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_dishonorable
+						months = 60
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					mother = {
+						NOT = { character = ROOT }
+						NOT = { is_mother = ROOT }
+					}
+				}
+				mother = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_dishonorable_scum
+						months = 120
+					}
+				}
+			}
+			if = {
+				limit = {
+					father = {
+						NOT = { character = ROOT }
+						NOT = { is_father = ROOT }
+					}
+				}
+				father = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_dishonorable_scum
+						months = 120
+					}
+				}
+			}
+			
+			any_child = {
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_child_of = ROOT }
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_dishonorable_scum
+					months = 120
+				}
+			}
+			
+			any_sibling = {
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { sibling = ROOT }
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_dishonorable_scum
+					months = 60
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+namespace = startup
+
+character_event = {
+	id = startup.1
+	#desc = "startup.1.desc"
+	
+	is_triggered_only = yes #Triggered from on_startup
+	only_rulers = yes
+	
+	trigger = {
+		NOT = { has_global_flag = initialized }
+		has_landed_title = k_naga
+	}
+	immediate = { 
+		set_global_flag = initialized 
+	}
+	
+	option = {
+		#name = startup.1.A
+			
+		if = {
+			limit = { year = 440 }
+			# Structures on Valor
+			1 = { #Virtus
+				add_province_modifier = { name = ancient_ruins duration = -1 }
+			}
+			2 = { #Temperantia
+				add_province_modifier = { name = ancient_ruins duration = -1 }
+			}
+			# The area in Ilia where Bern found that weather magic tome
+			265 = { #Neandreia
+				add_province_modifier = { name = ancient_ruins duration = -1 }
+			}
+		}
+	}
+}

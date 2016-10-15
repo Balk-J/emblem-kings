@@ -1,4 +1,36 @@
 decisions = {
+	decide_what_to_do_with_regalia = {
+		only_playable = yes
+	
+		potential = {
+			is_playable = yes
+			has_character_modifier = owns_regalia 
+			OR = {
+				ai = no
+				AND = {
+					NOT = { has_character_flag = regalia_inherit }
+					NOT = { has_character_flag = regalia_hide }				
+				}
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			character_event = { id = regalia.18 tooltip = decide_what_to_do_with_regalia_tooltip }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 	form_kingdom_of_lycia = {
 		only_playable = yes
 		only_independent = yes
@@ -230,7 +262,7 @@ decisions = {
 		}
 		
 		allow = {
-			gold = 1000
+			wealth = 1000
 			#piety = 1000
 			OR = {
 				owns = 210 # Aquleia
@@ -241,7 +273,7 @@ decisions = {
 		}
 		
 		effect = {
-			gold = -1000
+			wealth = -1000
 			activate_title = { title = k_golden_church status = yes }
 			hidden_tooltip = {
 				create_random_priest = {
@@ -390,5 +422,52 @@ decisions = {
 			}
 		}
 	}
+
+	demand_fire_emblem = {
+		only_playable = yes
+		
+		potential = {
+			always=no
+			is_adult = yes
+			is_ruler = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			primary_title = {
+				has_title_flag = fire_emblem_succession	
+			}	
+			NOR = {
+				has_character_modifier = holds_fire_emblem
+				any_realm_character  = {
+					has_character_modifier = holds_fire_emblem
+				}
+			}
+			NOR = {
+				AND = {
+					primary_title = {
+						region = world_elibe
+					}	
+					OR = {
+						trait = fire_emblem_elibe
+						any_realm_character = {
+							trait = fire_emblem_elibe
+							prisoner = no
+						}
+					}
+					
+				}
+			}
+		}
+		allow = {
+			piety = 500
+			is_adult = yes
+			prisoner = no
+		}
+		effect = {
+			piety = -500
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 }
 

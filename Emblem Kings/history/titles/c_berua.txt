@@ -10,3 +10,7 @@
 180.1.1={# So this starts under the Kingdom from the beginning. TODO: Remove this when duchy history is added!
 	liege=k_etruria
 }
+
+#1160.6.24={
+#	holder=1
+#}

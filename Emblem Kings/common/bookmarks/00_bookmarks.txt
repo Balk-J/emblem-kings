@@ -211,10 +211,10 @@ bm_fe7_blazing_sword =
 	}
 }
 
-bm_fe6_sword_of_seals =
+bm_fe6_binding_blade =
 {
-	name = "bm_fe6_sword_of_seals"
-	desc = "bm_fe6_sword_of_seals_desc"
+	name = "bm_fe6_binding_blade"
+	desc = "bm_fe6_binding_blade_desc"
 	date = 1180.1.1
 	
 	era = yes						## Will be shown on Era screen.

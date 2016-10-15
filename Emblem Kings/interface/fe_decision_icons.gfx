@@ -1,6 +1,10 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_decide_what_to_do_with_regalia"
+		texturefile = "gfx\\interface\\decision_icon_commit_suicide.dds"
+	}
+	spriteType = {
 		name = "GFX_form_kingdom_of_lycia"
 		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
 	}
@@ -19,5 +23,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_return_elibe_to_dragons"
 		texturefile = "gfx\\interface\\decision_icon_buy_indulgence_for_sins.dds"
+	}
+	spriteType = {
+		name = "GFX_demand_fire_emblem"
+		texturefile = "gfx\\interface\\decision_icon_fire_emblem.dds"
 	}
 }

@@ -1,0 +1,278 @@
+########################################################################################################
+# WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
+########################################################################################################
+
+class_wyvern_lord= {
+	customizer = no
+	random = no
+}
+class_archdruid= {
+	customizer = no
+	random = no
+}
+class_archer= {
+	customizer = no
+	random = no
+}
+class_archer_female= {
+	customizer = no
+	random = no
+}
+class_archsage= {
+	customizer = no
+	random = no
+}
+class_assassin= {
+	customizer = no
+	random = no
+}
+class_assassin_female= {
+	customizer = no
+	random = no
+}
+class_bard= {
+	customizer = no
+	random = no
+}
+class_berserker= {
+	customizer = no
+	random = no
+}
+class_bishop= {
+	customizer = no
+	random = no
+}
+class_bishop_female= {
+	customizer = no
+	random = no
+}
+class_brigand= {
+	customizer = no
+	random = no
+}
+class_cavalier= {
+	customizer = no
+	random = no
+}
+class_cleric= {
+	customizer = no
+	random = no
+}
+class_dancer= {
+	customizer = no
+	random = no
+}
+class_dark_druid= {
+	customizer = no
+	random = no
+}
+class_druid= {
+	customizer = no
+	random = no
+}
+class_druid_female= {
+	customizer = no
+	random = no
+}
+class_falcon_knight= {
+	customizer = no
+	random = no
+}
+class_fighter= {
+	customizer = no
+	random = no
+}
+class_general= {
+	customizer = no
+	random = no
+}
+class_great_knight= {
+	customizer = no
+	random = no
+}
+class_hero= {
+	customizer = no
+	random = no
+}
+class_hero_female= {
+	customizer = no
+	random = no
+}
+class_knight= {
+	customizer = no
+	random = no
+}
+class_mage= {
+	customizer = no
+	random = no
+}
+class_mage_female= {
+	customizer = no
+	random = no
+}
+class_mage_knight= {
+	customizer = no
+	random = no
+}
+class_mage_knight_female= {
+	customizer = no
+	random = no
+}
+class_magic_seal= {
+	customizer = no
+	random = no
+
+	opposites =  {
+		class_mage class_mage_female
+		class_sage class_sage_female
+		class_mage_knight class_mage_knight_female
+		class_shaman class_shaman_female
+		class_druid class_druid_female
+		class_summoner
+		class_monk
+		class_cleric class_priest
+		class_bishop class_bishop_female
+		class_troubador
+		class_valkyrie
+		class_archsage class_archdruid class_dark_druid
+	}
+	opposite_opinion = -50
+}
+class_manakete= {
+	customizer = no
+	random = no
+}
+class_manakete_female= {
+	customizer = no
+	random = no
+}
+class_mercenary= {
+	customizer = no
+	random = no
+}
+class_mercenary_female= {
+	customizer = no
+	random = no
+}
+class_monk= {
+	customizer = no
+	random = no
+}
+class_myrmidon= {
+	customizer = no
+	random = no
+}
+class_myrmidon_female= {
+	customizer = no
+	random = no
+}
+#class_nomad= {
+class_horse_archer= {
+	customizer = no
+	random = no
+}
+#class_nomad_female= {
+class_horse_archer_female= {
+	customizer = no
+	random = no
+}
+class_paladin= {
+	customizer = no
+	random = no
+}
+class_pegasus_knight= {
+	customizer = no
+	random = no
+}
+class_pirate= {
+	customizer = no
+	random = no
+}
+class_priest= {
+	customizer = no
+	random = no
+}
+class_ranger= {
+	customizer = no
+	random = no
+}
+class_ranger_female= {
+	customizer = no
+	random = no
+}
+class_rogue= {
+	customizer = no
+	random = no
+}
+class_sage= {
+	customizer = no
+	random = no
+}
+class_sage_female= {
+	customizer = no
+	random = no
+}
+class_shaman= {
+	customizer = no
+	random = no
+}
+class_shaman_female= {
+	customizer = no
+	random = no
+}
+class_sniper= {
+	customizer = no
+	random = no
+}
+class_sniper_female= {
+	customizer = no
+	random = no
+}
+class_soldier= {
+	customizer = no
+	random = no
+}
+class_summoner= {
+	customizer = no
+	random = no
+}
+class_swordmaster= {
+	customizer = no
+	random = no
+}
+class_swordmaster_female= {
+	customizer = no
+	random = no
+}
+class_tactician= {
+	customizer = no
+	random = no
+}
+class_thief= {
+	customizer = no
+	random = no
+}
+class_thief_female= {
+	customizer = no
+	random = no
+}
+class_troubador= {
+	customizer = no
+	random = no
+}
+class_valkyrie= {
+	customizer = no
+	random = no
+}
+class_warrior= {
+	customizer = no
+	random = no
+}
+class_wyvern_knight= {
+	customizer = no
+	random = no
+}
+class_wyvern_rider= {
+	customizer = no
+	random = no
+}

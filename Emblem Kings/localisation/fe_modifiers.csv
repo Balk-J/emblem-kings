@@ -1,2 +1,9 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 created_war_dragons;Created War Dragons;;;;;;;;;;;;;x
+#created_war_dragons_desc;This character has recently created some war dragons.;;;;;;;;;;;;;x
+owns_regalia;Owns a Regalia;;;;;;;;;;;;;x
+holds_fire_emblem;Holds Fire Emblem;;;;;;;;;;;;;x
+holds_fire_emblem_desc;This character is the current holder of the national treasure known as the Fire Emblem.;;;;;;;;;;;;;x
+declined_regalia_search;Declined regalia search;;;;;;;;;;;;;x
+ancient_ruins;Ancient Ruins;;;;;;;;;;;;;x
+desc_ancient_ruins;The ruined buildings of a long-forgotten kingdom can be found in this county.;;;;;;;;;;;;;x

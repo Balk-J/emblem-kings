@@ -1,33 +1,7 @@
 # Canon
 801={
 	name="Davros"
-	culture="seafarer"801 = {
-	name="Fargus"
-	dynasty=801
-	
-	religion=raider_pagan
-	culture=seafarer
-	
-	trait="strong"
-	trait="class_pirate"
-	trait="aggressive_leader"
-	trait="heavy_infantry_leader"
-	trait="inspiring_leader"
-	trait="tough_soldier"
-	trait="brave"
-	trait="wroth"
-	trait="charitable"
-	trait="proud"
-	trait="adventurer"
-	1109.01.01 = { birth=yes }
-	
-	1130.01.01 = { 
-		remove_trait="class_pirate"
-		add_trait="class_berserker"
-	}
-	
-	1176.01.01 = { death=yes }
-}
+	culture="seafarer"
 	coat_of_arms = {
 		religion="raider_pagan"
         template = 0

@@ -11,9 +11,21 @@
 	}
 	180.01.01 = {
 		give_nickname=nick_the_holy_knight
+		add_trait="eight_legends"
+		add_trait="regalia_maltet"
+		effect = {
+			ROOT = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 }  
+		set_character_flag="regalia_hide"
+		set_global_flag="regalia_maltet_held"
+			}
+		}
 	}
 	210.01.01 = { 
-	death=yes 
+		death=yes 
+		effect = {
+		clr_global_flag="regalia_maltet_held"
+		}
 	}
 }
 
@@ -320,7 +332,9 @@
 	}
 	
 	1157.01.01 = { 
+		effect = {
 	 	set_focus = focus_family 
+		}
 	}
 	
 	#hired by Pent to survey Valor. This does not go well. 

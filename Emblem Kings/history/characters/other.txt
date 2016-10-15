@@ -12,6 +12,10 @@
 	trait="temperate"
 	trait="greedy"
 	trait="shy"
+	trait="class_shaman"
+	trait=regalia_apocalypse
+	trait=regalia_durandal
+	trait="regalia_binding_blade"
 	1140.6.24={
 		birth=yes
 		employer=601

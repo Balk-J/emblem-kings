@@ -1,6 +1,5 @@
 180.1.1 = {
 	historical_nomad = yes
-	law = status_of_women_4
 }
 # e_elibe
 180.1.1={

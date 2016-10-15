@@ -13,5 +13,5 @@
 	#liege=d_santaruz
 }
 1150.1.1={
-	holder=1000000005
+	holder=762
 }

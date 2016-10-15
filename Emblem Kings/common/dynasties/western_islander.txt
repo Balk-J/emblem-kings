@@ -299,11 +299,6 @@
 	religion="raider_pagan"
 }
 748={
-	name="Ceanadach"
-	culture="western_islander"
-	religion="raider_pagan"
-}
-748={
 	name="Camshron"
 	culture="western_islander"
 	religion="raider_pagan"
@@ -464,7 +459,7 @@
 	religion="raider_pagan"
 }
 780={
-	name="of Kald"
+	name="Ceanadach"
 	culture="western_islander"
 	religion="raider_pagan"
 }

@@ -1,4 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+decide_what_to_do_with_regalia;Decide on regalia inheritance;;;;;;;;;;;;;x
+decide_what_to_do_with_regalia_desc;Decide what to do with your regalia after your death.;;;;;;;;;;;;;x
+decide_what_to_do_with_regalia_tooltip;You have a decision to make.;;;;;;;;;;;;;x
 create_golden_church;Create the Golden See;;;;;;;;;;;;;x
 create_golden_church_desc;If I am "pious" enough and control Aquleia, I can create a Golden Bishop to serve as the head of the faith in opposition to the foolish High Bishop of the Elimine Church.;;;;;;;;;;;;;x
 form_kingdom_of_lycia;Form the Kingdom of Lycia;;;;;;;;;;;;;x

@@ -1,0 +1,88 @@
+########################################################################################################
+# WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
+########################################################################################################
+
+#Regalia
+#Divine Weapons
+regalia_binding_blade = {
+	customizer = no
+	random = no
+}
+regalia_durandal = {
+	customizer = no
+	random = no
+}
+regalia_armads = {
+	customizer = no
+	random = no
+}
+regalia_forblaze = {
+	customizer = no
+	random = no
+}
+regalia_aureola = {
+	customizer = no
+	random = no
+}
+regalia_murgleis = {
+	customizer = no
+	random = no
+}
+regalia_maltet = {
+	customizer = no
+	random = no
+}
+regalia_apocalypse = {
+	customizer = no
+	random = no
+}
+regalia_eckesachs = {
+	customizer = no
+	random = no
+}
+# Other legendary items
+regalia_saints_staff = {
+	customizer = no
+	random = no
+}
+regalia_mani_katti = {
+	customizer = no
+	random = no
+}
+regalia_sol_katti = {
+	customizer = no
+	random = no
+}
+regalia_ereshkigal = {
+	customizer = no
+	random = no
+}
+# S-ranked weapons
+regalia_gespenst = {
+	customizer = no
+	random = no
+}
+regalia_luce = {
+	customizer = no
+	random = no
+}
+regalia_excalibur_fe7 = {
+	customizer = no
+	random = no
+}
+regalia_rienfleche = {
+	customizer = no
+	random = no
+}
+regalia_basilikos = {
+	customizer = no
+	random = no
+}
+regalia_rex_hasta = {
+	customizer = no
+	random = no
+}
+regalia_regal_blade = {
+	customizer = no
+	random = no
+}

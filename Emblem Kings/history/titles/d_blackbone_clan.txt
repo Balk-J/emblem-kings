@@ -4,7 +4,7 @@
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
-1160.1.1={
+1161.1.1={
 	holder=454 #Audamorze
 }
 1181.1.1={

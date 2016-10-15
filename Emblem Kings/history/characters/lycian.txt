@@ -5,14 +5,28 @@
 	religion=pagan
 	culture=lycian
 	
+	#trait="regalia_durandal"
+	
 	159.01.01={
 		birth=yes
 	} 	
 	180.1.1 = {
 		give_nickname="nick_the_little_knight"
+		add_trait="eight_legends"
+		add_trait="regalia_durandal"
+		effect = {
+			ROOT = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 } 
+		set_character_flag="regalia_hide"
+		set_global_flag="regalia_durandal_held"
+			}
+		}
 	}
 	210.01.01={
 		death=yes
+		effect = {
+		clr_global_flag="regalia_durandal_held"
+		}
 	} 	
 	disallow_random_traits="yes" 
 }
@@ -742,12 +756,14 @@
 		add_trait="patient"
 		add_trait="adventurer"
 		#give_nickname="nick_raven"
-		set_name = "Raven"
 		add_claim="d_cornwell"
 		add_claim="c_cornwell"
 		add_claim="c_dias"
 		add_claim="c_telmessus"
 		add_claim="c_trebenna"
+		effect = {
+		set_name = "Raven"
+		}
 	}	
 	1188.01.01={
 		death=yes
@@ -2339,37 +2355,7 @@
 	}
 }
 
-199 = {
-	name="Georg" #Berserker. Guards the Durandal cave in FE7.
-	#TODO: handle ghost status better
-	religion=elimine_church
-	culture=lycian
-	
-	160.01.01={
-		birth=yes
-	} 	
-	add_trait="strong"
-	174.01.01 = { 
-		add_trait="tough_soldier"
-		add_trait="heavy_infantry_leader"
-		add_trait="unyielding_leader"
-		effect={
-		add_friend=101 #Roland 
-		}
-		#employer=101
-	}
-	
-	200.01.01 = { 
-		religion=guardian
-	}
-	
-	1161.01.01 = { 
-		death = {
-			death_reason=death_battle
-			killer=107 #Eliwood 
-		}
-	}
-}
+#199 = {name="Georg" #Berserker. Guards the Durandal cave in FE7.
 
 #Hasha no Tsurugi manga characters. Needs work.
 174 = {
@@ -2949,6 +2935,7 @@
 199={
 	name="Lyndis"
 	female=yes
+	religion=elimine_church
 	
 	culture=lycian
 	1100.01.01 = { 
@@ -2964,7 +2951,7 @@
 
 #Random shmucks to rule the smoking ruins of Cornwell.
 #May not need these now that it's vassal to the Lycian League...
-1000000000 = {
+757 = {
 	name="Bath" 
 	dynasty=125
 	
@@ -2977,7 +2964,7 @@
 		death = yes
 	}
 }
-1000000001 = {
+758 = {
 	name="Eubans" 
 	dynasty=126
 	
@@ -2990,7 +2977,7 @@
 		death = yes
 	}
 }
-1000000002 = {
+759 = {
 	name="Henning" 
 	dynasty=127
 	
@@ -3003,7 +2990,7 @@
 		death = yes
 	}
 }
-1000000003 = {
+760 = {
 	name="Wagner" 
 	dynasty=128
 	
@@ -3016,9 +3003,9 @@
 		death = yes
 	}
 }
-1000000004 = {
+761 = {
 	name="Goldor" 
-	dynasty=129
+	dynasty=131
 	
 	religion=elimine_church
 	culture=lycian
@@ -3029,7 +3016,7 @@
 		death = yes
 	}
 }
-1000000005 = {
+762 = {
 	name="Dory" 
 	dynasty=130
 	
@@ -3042,9 +3029,9 @@
 		death = yes
 	}
 }
-1000000006 = {
+763 = {
 	name="Al" 
-	dynasty=131
+	dynasty=187
 	
 	religion=elimine_church
 	culture=lycian
@@ -3052,71 +3039,6 @@
 		birth=yes
 	} 		
 	1209.01.01 = { 
-		death = yes
-	}
-}
-#Choma
-#Feudal noble, EC#
-1000000007 = {
-	name="Ceslin" 
-	dynasty=174
-	
-	religion=elimine_church
-	culture=lycian
-	1128.01.01={
-		birth=yes
-	} 		
-	1189.01.01 = { 
-		death = yes
-	}
-}
-
-#Mugla
-#Lycian bandit chief#
-1000000008 = {
-	name="Mainard" 
-	dynasty=175
-	
-	religion=raider_pagan
-	culture=lycian
-	1140.01.01={
-		birth=yes
-	} 		
-	1200.01.01 = { 
-		death = yes
-	}
-}
-
-#Comba
-#Acaliss
-#Lycian Bandit chief#
-1000000009 = {
-	name="Adalgrim" 
-	dynasty=176
-	
-	religion=raider_pagan
-	culture=lycian
-	1143.01.01={
-		birth=yes
-	} 		
-	1194.01.01 = { 
-		death = yes
-	}
-}
-
-#Nisa
-#Cibyra
-#Lycian Bandit chief#
-1000000010 = {
-	name="Creat" 
-	dynasty=179
-	
-	religion=raider_pagan
-	culture=lycian
-	1142.01.01={
-		birth=yes
-	} 		
-	1192.01.01 = { 
 		death = yes
 	}
 }

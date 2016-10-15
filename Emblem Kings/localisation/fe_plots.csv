@@ -1,0 +1,4 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+plot_disinherit_character_title;Disinherit [This.GetBestName];;;;;;;;;;;;;x
+plot_disinherit_character_desc;§Y[From.GetTitledFirstName]§! wants to disinherit §Y[This.GetTitledFirstName]§! by removing a certain item necessary for §Y[This.GetHerHis]§! coming of age ceremony.;;;;;;;;;;;;;x
+plot_disinherit_character_short;Disinherit;;;;;;;;;;;;;x

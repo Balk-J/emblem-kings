@@ -165,8 +165,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 		
-		camel_cavalry_DEFENSIVE = 0.8
-		war_elephants_DEFENSIVE = 0.8
+		#camel_cavalry_DEFENSIVE = 0.8
+		#war_elephants_DEFENSIVE = 0.8
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -202,8 +202,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 		
-		camel_cavalry_DEFENSIVE = 0.8
-		war_elephants_DEFENSIVE = 0.8
+		#camel_cavalry_DEFENSIVE = 0.8
+		#war_elephants_DEFENSIVE = 0.8
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -226,7 +226,7 @@ pagan_group = {
 		graphical_culture = mongolgfx
 		#c_bulgar, c_murgleis, c_saka, c_mani, c_talas
 		
-		secondary_event_pictures = tengri_pagan
+		secondary_event_pictures = divine_sky_pagan#tengri_pagan
 
 		icon = 9
 		heresy_icon = 8
@@ -321,6 +321,7 @@ pagan_group = {
 }
 
 magic_group = {
+	#color = { 0 0 0 }
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
 	playable = yes
@@ -421,7 +422,7 @@ guardian_group = {
 	guardian = { 
 		#c_arcadia, c_durandal, c_jutes, c_uri, c_aquelia
 		graphical_culture = jaingfx
-		secondary_event_pictures = sunni
+		#secondary_event_pictures = sunni
 		
 		pacifist = yes # Makes the AI less likely to start wars, plots and factions
 

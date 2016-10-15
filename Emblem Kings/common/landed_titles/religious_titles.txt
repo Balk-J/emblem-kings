@@ -11,7 +11,7 @@ k_naga = {
 	title_female = "VOICE_OF_NAGA"
 	foa = "temple_duke_foa"
 	short_name = yes
-	location_ruler_title = yes
+	#location_ruler_title = yes
 	
 	# Always exists
 	landless = yes

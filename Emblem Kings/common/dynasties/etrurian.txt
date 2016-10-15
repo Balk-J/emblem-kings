@@ -21,14 +21,14 @@
     coat_of_arms = {
         template = 0
         layer = {
-            texture = 3
-            texture_internal = 2
+            texture = 1
+            texture_internal = 11
             emblem = 0
-            color = 6
             color = 3
-            color = 12
+            color = 0
+            color = 6
         }
-    }	
+    }
 }
 
 203={
@@ -583,7 +583,7 @@
 }
 283={
 	name="of Matignon"
-	culture="norman"
+	culture="etrurian"
 }
 284={
 	name="of Menthon"

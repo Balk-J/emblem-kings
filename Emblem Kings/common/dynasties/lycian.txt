@@ -408,20 +408,15 @@
 	name="of Trebenna" 
 	culture="lycian"
 }
-129={
-	name="of Badon" 
-	culture="lycian"
-}
 130={
 	name="of Bubon" 
 	culture="lycian"
 }
 131={
-	name="of Balbura" 
+	name="of Badon" 
 	culture="lycian"
 }
 132={
-	can_appear=no
 	name="of Balbura" # for Bauker, Darin's knight
 	culture="lycian"
 }

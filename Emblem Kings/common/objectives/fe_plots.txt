@@ -1,0 +1,417 @@
+# Plot tags need to start with 'plot_'
+
+# Supported types:
+# character, spouse, rivals, friends, liege_titles, vassal_titles, realm_titles, realm_characters, realm_characters_plus, independent_rulers
+
+###############
+# PLOTS
+###############
+
+
+# Get a character disinherited
+plot_disinherit_character = {
+	type = realm_characters_plus # All characters in the same realm, plus rivals and relatives of self, parents, children and spouse
+	intrigue_plot = yes
+	
+	# Plotter scope
+	potential = {
+		prisoner = no
+		age = 16
+		NOT = { trait = incapable }
+		#NOT = { trait = dark_incapable }
+		NOT = {
+			AND = {
+				ai = yes
+				trait = honest
+			}
+		}
+		NOT = {
+			AND = {
+				ai = yes
+				trait = kind
+			}
+		}
+		NOT = {
+			AND = {
+				ai = yes
+				trait = just
+			}
+		}
+		
+		hidden_tooltip = {
+			OR = {
+				ai = no # Human
+				
+				# Pretender to a title
+				any_pretender_title = {
+					always = yes
+				}
+				
+				# Heir to a title
+				any_heir_title = {
+					always = yes
+				}
+				
+				# Character's child is heir or pretender to a title that I don't hold
+				any_child = {
+					OR = {
+						any_pretender_title = {
+							NOT = { holder = ROOT }
+							NOT = { current_heir = { character = ROOT } }
+						}
+						any_heir_title = {
+							NOT = { holder = ROOT }
+						}
+					}
+				}
+				
+				# Spouse is pretender to a title
+				spouse = {
+					any_pretender_title = {
+						NOT = { current_heir = { character = ROOT } }
+					}
+					any_heir_title = {
+						NOT = { holder = ROOT }
+					}
+				}
+	
+				# A lover of spouse...
+				spouse = {
+					has_lover = yes
+				}
+				
+				# Is nuts...
+				trait = lunatic
+				trait = possessed
+			}
+		}
+	}
+	
+	# Target allow trigger for when players target a specific character in the GUI
+	
+	player_allow = {
+		#NOT = { is_child_of = FROM } # YES my own children! That's the point!
+		is_within_diplo_range = FROM
+		NOT = { has_blood_oath_with = FROM }
+	}
+	
+	target_potential = {
+		NOT = { any_spouse = { character = FROM } } # This case is covered by another plot
+		# Only if the presence of the Fire Emblem affects the succession
+		liege = {
+			primary_title = {
+				has_title_flag = fire_emblem_succession	
+			}	
+			current_heir = {
+				character = ROOT
+			}		
+		}
+		is_adult = no
+	}
+	
+	# Target character scope
+	allow = {
+		
+		#NOT = { is_child_of = FROM } # YES my own children! That's the point!
+		OR = {
+			NOT = { character = FROM }  # Not against myself! (unself I am bonkers)
+			trait = lunatic
+		}
+		NOT = { any_spouse = { character = FROM } } # This case is covered by another plot
+		NOT = { has_blood_oath_with = FROM }
+		
+		is_within_diplo_range = FROM
+		
+		# Don't kill my lovers###, or their children
+		NOT = {
+			FROM = {
+				any_lover = {
+					#OR = {
+						character = ROOT
+						#is_father = ROOT
+						#is_mother = ROOT
+					#}
+				}
+			}
+		}
+		
+		NOT = { is_friend = FROM }
+		
+		FROM = {
+			OR = {		
+				# Get rid of the current heir if I'm a pretender
+				AND = {
+					any_pretender_title = {
+						current_heir = { character = ROOT }
+					}
+					OR = {
+						ai = no
+						trait = deceitful
+						trait = ambitious
+						trait = arbitrary
+						NOT = { opinion = { who = ROOT value = 0 } }
+					}
+				}
+				
+				# Kill a ruler if I'm the heir
+				AND = {
+					any_heir_title = {
+						holder = ROOT
+					}
+					OR = {
+						ai = no
+						trait = deceitful
+						trait = ambitious
+						trait = arbitrary
+						NOT = { opinion = { who = ROOT value = 0 } }
+					}
+				}
+				
+				# Gets rid of obstacles in the way of a child's succession
+				AND = {
+					any_child = {
+						OR = {
+							any_pretender_title = {
+								current_heir = { character = ROOT }
+							}
+							any_heir_title = {
+								holder = ROOT
+							}
+						}
+					}
+					NOT = { is_close_relative = ROOT }
+					OR = {
+						ai = no
+						trait = deceitful
+						trait = ambitious
+						trait = arbitrary
+						NOT = { opinion = { who = ROOT value = 0 } }
+					}
+				}
+				
+				# Get rid of the current heir to a title the character's spouse is a pretender to
+				AND = {
+					spouse = {	
+						any_pretender_title = {
+							current_heir = { character = ROOT }
+						}
+					}
+					NOT = { is_close_relative = ROOT }
+					OR = {
+						ai = no
+						trait = deceitful
+						trait = ambitious
+						trait = arbitrary
+						NOT = { opinion = { who = ROOT value = 0 } }
+					}
+				}
+				
+				# Get rid of a ruler the spouse is heir to
+				AND = {
+					spouse = {
+						any_heir_title = {
+							holder = ROOT
+						}
+					}
+					NOT = { is_close_relative = ROOT }
+					OR = {
+						ai = no
+						trait = deceitful
+						trait = ambitious
+						trait = arbitrary
+						AND = {
+							is_female = no
+							NOT = { opinion = { who = ROOT value = 0 } }
+						}
+						AND = {
+							is_female = yes
+							NOT = { opinion = { who = ROOT value = -33 } }
+						}
+					}
+				}
+
+				# A lover of spouse...
+				spouse = {
+					has_lover = yes
+					any_lover = {
+						character = ROOT
+					}
+					OR = {
+						ai = no
+						NOT = { opinion = { who = ROOT value = 0 } }
+					}
+				}
+				
+				# Go nuts...
+				AND = {
+					same_liege = ROOT
+					OR = {
+						trait = lunatic
+						trait = possessed
+					}
+				}
+				
+				# Rivals
+				any_rival = {
+					character = ROOT
+				}
+			}
+		}
+	}
+	
+	chance = {
+		factor = 2
+		
+		modifier = {
+			factor = 0.01
+			FROM = {
+				trait = content
+				NOT = { trait = lunatic } 
+				NOT = { trait = possessed }
+			}
+		}
+		
+		modifier = {
+			factor = 0.2
+			FROM = { pacifist = yes }
+		}
+		
+		modifier = {
+			factor = 2.0
+			FROM = {
+				trait = envious
+				OR = {
+					any_pretender_title = {
+						current_heir = { character = ROOT }
+					}
+					any_heir_title = {
+						holder = ROOT
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 2.0
+			FROM = { trait = cruel }
+		}
+		modifier = {
+			factor = 2.0
+			FROM = { trait = deceitful }
+		}
+		modifier = {
+			factor = 3.0
+			FROM = { trait = ambitious }
+		}
+		modifier = {
+			factor = 0
+			their_opinion = { who = FROM value = 25 }
+		}
+		modifier = {
+			factor = 0
+			their_opinion = { who = FROM value = 0 }
+			NOT = {
+				OR = {
+					FROM = { trait = envious }
+					FROM = { trait = deceitful }
+					FROM = { trait = ambitious }
+				}
+			}		
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { their_opinion = { who = FROM value = -25 } }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { their_opinion = { who = FROM value = -50 } }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { their_opinion = { who = FROM value = -75 } }
+		}
+		modifier = {
+			# Subtle balance against nepotism: Kill off members of powerful dynasties
+			factor = 2.0
+			top_liege = {
+				higher_tier_than = COUNT
+				dynasty = ROOT
+				dynasty_realm_power = 0.25
+			}
+		}
+		modifier = {
+			# Subtle balance against nepotism: Kill off members of powerful dynasties
+			factor = 2.0
+			top_liege = {
+				higher_tier_than = COUNT
+				dynasty = ROOT
+				dynasty_realm_power = 0.4
+			}
+		}
+		modifier = {
+			# Subtle balance against nepotism: Kill off members of powerful dynasties
+			factor = 2.0
+			top_liege = {
+				higher_tier_than = COUNT
+				dynasty = ROOT
+				dynasty_realm_power = 0.6
+			}
+		}
+		
+		modifier = {
+			factor = 4.0
+			plot_target_char = {
+				sibling = FROM
+				ai = yes
+				top_liege = { character = father }
+			}
+			FROM = {
+				religion_group = muslim
+				top_liege = { character = father }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			plot_target_char = {
+				sibling = FROM
+				ai = yes
+				top_liege = { character = father }
+				is_landed = no
+			}
+			FROM = {
+				religion_group = muslim
+				top_liege = { character = father }
+			}
+		}
+	}
+	
+	success = {
+		trait = disinherited
+		hidden_tooltip = {
+			FROM = { has_character_flag = disinherit_in_motion }
+		}
+	}
+	abort = {
+		OR = {
+			is_alive = no
+			is_adult = yes
+			trait = disinherited
+		}
+	}
+	abort_effect = {
+		FROM = { clr_character_flag = disinherit_in_motion }
+	}
+	effect = {
+		change_intrigue = 1
+		FROM = {
+			# Clear flags
+			hidden_tooltip = {
+				clr_character_flag = disinherit_in_motion
+			}
+		}
+	}
+}
+

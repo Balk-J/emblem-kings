@@ -12,9 +12,19 @@
 	}
 	180.1.1 = {
 		give_nickname=nick_the_berserker
+		add_trait="eight_legends"
+		add_trait="regalia_armads"
+		effect = {
+		add_character_modifier = { name = "owns_regalia" duration = -1 } 
+		set_character_flag="regalia_hide"
+		set_global_flag="regalia_armads_held"
+		}
 	}
 	230.1.1={
 		death=yes
+		effect = {
+		clr_global_flag="regalia_armads_held"
+		}
 	}
 }
 
@@ -388,39 +398,7 @@
 	}
 }
 
-716 = {
-	name="Kaim" #Berserker. Guards the Armads cave in FE7.
-	#TODO: handle ghost status better
-	religion=pagan
-	culture=western_islander
-	
-	trait="strong"
-	trait="tough_soldier"
-	trait="heavy_infantry_leader"
-	trait="unyielding_leader"
-	
-	152.01.01={
-		birth=yes
-	} 	
-	
-	174.01.01 = { 
-		effect={
-		add_friend=701 #Durban 
-		}
-		#employer=701
-	}
-	
-	200.01.01 = { 
-		religion=guardian
-	}
-	
-	1161.01.01 = { 
-		death = {
-			death_reason=death_battle
-			killer=103 #Hector 
-		}
-	}
-}
+#716 = {name="Kaim" #Berserker. Guards the Armads cave in FE7.
 
 714={
 	name="Kelles" #the "stone giant" killed by Karel in a duel
@@ -1147,3 +1125,5 @@
 		death = yes
 	}
 }
+
+# See Lycian file, some IDs taken - 763

@@ -20,5 +20,5 @@
 }
 1161.1.1={
 	liege=k_lycian_league
-	holder=1000000005
+	holder=763
 }

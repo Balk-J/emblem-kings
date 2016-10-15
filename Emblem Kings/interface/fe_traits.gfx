@@ -70,6 +70,20 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_phantom"
+		texturefile = "gfx/traits/phantom.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_eight_legends"
+		texturefile = "gfx/traits/eight_legends.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_class_archdruid"
 		texturefile = "gfx/traits/class_archdruid.tga"
 		noOfFrames = 1
@@ -541,6 +555,160 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_disappeared"
 		texturefile = "gfx/traits/disappeared.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_binding_blade"
+		texturefile = "gfx/traits/regalia_binding_blade.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_durandal"
+		texturefile = "gfx/traits/regalia_durandal.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_armads"
+		texturefile = "gfx/traits/regalia_armads.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_forblaze"
+		texturefile = "gfx/traits/regalia_forblaze.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_aureola"
+		texturefile = "gfx/traits/regalia_aureola.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_maltet"
+		texturefile = "gfx/traits/regalia_maltet.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_murgleis"
+		texturefile = "gfx/traits/regalia_murgleis.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_apocalypse"
+		texturefile = "gfx/traits/regalia_apocalypse.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_saints_staff"
+		texturefile = "gfx/traits/regalia_saints_staff.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_eckesachs"
+		texturefile = "gfx/traits/regalia_eckesachs.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_mani_katti"
+		texturefile = "gfx/traits/regalia_mani_katti.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_sol_katti"
+		texturefile = "gfx/traits/regalia_sol_katti.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_ereshkigal"
+		texturefile = "gfx/traits/regalia_ereshkigal.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_gespenst"
+		texturefile = "gfx/traits/regalia_gespenst.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_luce"
+		texturefile = "gfx/traits/regalia_luce.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_excalibur_fe7"
+		texturefile = "gfx/traits/regalia_excalibur_fe7.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_rienfleche"
+		texturefile = "gfx/traits/regalia_rienfleche.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_basilikos"
+		texturefile = "gfx/traits/regalia_basilikos.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_rex_hasta"
+		texturefile = "gfx/traits/regalia_rex_hasta.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regalia_regal_blade"
+		texturefile = "gfx/traits/regalia_regal_blade.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fire_emblem_elibe"
+		texturefile = "gfx/traits/fire_emblem_elibe.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_disinherited"
+		texturefile = "gfx/traits/disinherited.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

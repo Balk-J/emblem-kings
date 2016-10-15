@@ -1,3 +1,8 @@
+
+175.1.1={
+	holder=301 # Barigan
+}
+
 # e_elibe
 180.1.1={
 	law = status_of_women_4
@@ -8,9 +13,6 @@
 #	liege=k_ilia
 #}
 
-175.1.1={
-	holder=301 # Barigan
-}
 
 1127.1.1={
 	holder=346 # Zelots' father

@@ -1,6 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 eight_legends;Eight Legends;;;;;;;;;;;;;x
-eight_legends_desc;This character is one of the Eight Legends, humanity's greatest generals during the Scouring;;;;;;;;;;;;;x
+eight_legends_desc;This character is one of the Eight Legends, humanity's greatest generals during the Scouring.;;;;;;;;;;;;;x
 #immortal;Ageless;;;;;;;;;;;;;x
 #immortal_desc;Through magic acquired or innate, this character is practically immortal - [GetSheHe] will not die from natural causes as long as [GetHerHis] power does not fail [GetHerHim]. However, that does not mean GetSheHe] cannot be killed...;;;;;;;;;;;;;x
 #disappeared;Disappeared;;;;;;;;;;;;;x
@@ -17,6 +17,8 @@ dark_selfless;Selfless;;;;;;;;;;;;;x
 dark_selfless_desc;To master elder magic, this character devoted [GetHerselfHimself] entirely to the darkness. [GetSheHeCap] has obtained great power, but at the cost of [GetHerHis] very identity. [GetSheHeCap] is now little more than a mirror that reflects the person addressing [GetHerHim]. All emotion and memory has been dissolved in a river of darkness.;;;;;;;;;;;;;x
 dark_power_hungry;Power-obsessed;;;;;;;;;;;;;x
 dark_power_hungry_desc;This character has lost [GetHerselfHimself] in the study of elder magic, erasing much of [GetHerHis] identity to attain more power. [GetSheHeCap] now pursues power for its own sake, and will stop at nothing to grow stronger.;;;;;;;;;;;;;x
+phantom;Phantom;;;;;;;;;;;;;x
+phantom_desc;This character is a phantom warrior.;;;;;;;;;;;;;x
 morph;Morph;;;;;;;;;;;;;x
 morph_desc;This character is a morph - a human-like monster created through dark magic.;;;;;;;;;;;;;x
 war_dragon;War Dragon;;;;;;;;;;;;;x
@@ -179,3 +181,47 @@ class_wyvern_lord_desc;A title earned by only truly skilled wyvern riders. They 
 #class_wyvern_lord_desc;Knights united with their wyvern mounts. They have better movement and combat skill.;;;;;;;;;;;;;x
 class_wyvern_rider;Wyvern Rider;;;;;;;;;;;;;x
 class_wyvern_rider_desc;Knights who rule the skies from wyvern-back. They are vulnerable to only bows and magic.;;;;;;;;;;;;;x
+regalia_binding_blade;Binding Blade;;;;;;;;;;;;;x
+regalia_binding_blade_desc;A legendary sword whose power surpasses that of Elibe's eight Divine Weapons.;;;;;;;;;;;;;x
+regalia_durandal;Durandal;;;;;;;;;;;;;x
+regalia_durandal_desc;Roland's Blazing Sword.;;;;;;;;;;;;;x
+regalia_armads;Armads;;;;;;;;;;;;;x
+regalia_armads_desc;Durban's Thunder Axe.;;;;;;;;;;;;;x
+regalia_forblaze;Forblaze;;;;;;;;;;;;;x
+regalia_forblaze_desc;Athos' Infernal Truth.;;;;;;;;;;;;;x
+regalia_aureola;Aureola;;;;;;;;;;;;;x
+regalia_aureola_desc;Elimine's Glorious Ascension.;;;;;;;;;;;;;x
+regalia_murgleis;Murgleis;;;;;;;;;;;;;x
+regalia_murgleis_desc;Hanon's Tempest Bow.;;;;;;;;;;;;;x
+regalia_maltet;Maltet;;;;;;;;;;;;;x
+regalia_maltet_desc;Barigan's Blizzard Spear.;;;;;;;;;;;;;x
+regalia_apocalypse;Apocalypse;;;;;;;;;;;;;x
+regalia_apocalypse_desc;Bramimond's Elder Revelation.;;;;;;;;;;;;;x
+regalia_saints_staff;Saint's Staff;;;;;;;;;;;;;x
+regalia_saints_staff_desc;A healing staff carried by St. Elimine alongside the light tome Aureola.;;;;;;;;;;;;;x
+regalia_eckesachs;Eckesachs;;;;;;;;;;;;;x
+regalia_eckesachs_desc;Hartmut's Royal Sword.;;;;;;;;;;;;;x
+regalia_mani_katti;Mani Katti;;;;;;;;;;;;;x
+regalia_mani_katti_desc;A spirit-infused sword, sacred to the people of Sacae.;;;;;;;;;;;;;x
+regalia_sol_katti;Sol Katti;;;;;;;;;;;;;x
+regalia_sol_katti_desc;A spirit-infused sword with ties to the mythology of the Sacaen tribes, forged for fighting dragons.;;;;;;;;;;;;;x
+regalia_ereshkigal;Ereshkigal;;;;;;;;;;;;;x
+regalia_ereshkigal_desc;Nergal's dark magic.;;;;;;;;;;;;;x
+regalia_gespenst;Gespenst;;;;;;;;;;;;;x
+regalia_gespenst_desc;A regalia dark tome.;;;;;;;;;;;;;x
+regalia_luce;Luce;;;;;;;;;;;;;x
+regalia_luce_desc;A regalia light tome.;;;;;;;;;;;;;x
+regalia_excalibur_fe7;Excalibur;;;;;;;;;;;;;x
+regalia_excalibur_fe7_desc;A regalia wind tome.;;;;;;;;;;;;;x
+regalia_rienfleche;Rienfleche;;;;;;;;;;;;;x
+regalia_rienfleche_desc;A regalia bow.;;;;;;;;;;;;;x
+regalia_basilikos;Basilikos;;;;;;;;;;;;;x
+regalia_basilikos_desc;A regalia axe.;;;;;;;;;;;;;x
+regalia_rex_hasta;Rex Hasta;;;;;;;;;;;;;x
+regalia_rex_hasta_desc;A regalia lance.;;;;;;;;;;;;;x
+regalia_regal_blade;Regal Blade;;;;;;;;;;;;;x
+regalia_regal_blade_desc;A regalia sword.;;;;;;;;;;;;;x
+disinherited;Disinherited;;;;;;;;;;;;;x
+disinherited_desc;This character has been removed from the line of succession.;;;;;;;;;;;;;x
+fire_emblem_elibe;Fire Emblem;;;;;;;;;;;;;x
+fire_emblem_elibe_desc;The Fire Emblem of Elibe. No gem in existence is its equal.;;;;;;;;;;;;;x

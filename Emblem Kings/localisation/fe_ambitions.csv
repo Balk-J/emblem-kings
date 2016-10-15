@@ -1,0 +1,4 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+obj_acquire_regalia_title;Acquire a Regalia;;;;;;;;;;;;;x
+obj_acquire_regalia_desc;[This.GetTitledFirstName] wants to acquire a legendary weapon.;;;;;;;;;;;;;x
+obj_acquire_regalia_success;[This.GetTitledFirstName] owns a legendary weapon.;;;;;;;;;;;;;x

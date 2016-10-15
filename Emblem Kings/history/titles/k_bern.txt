@@ -4,6 +4,9 @@
 	law = true_cognatic_succession
 	law = succ_primogeniture
 	law = crown_authority_1
+	effect = { 
+		set_title_flag = fire_emblem_succession
+	}
 }
 #180.1.1={
 #	liege=e_elibe

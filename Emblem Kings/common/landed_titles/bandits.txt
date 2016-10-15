@@ -1,7 +1,8 @@
 # SPECIAL TITLES
 
 d_ganelon_bandits = {
-	color={ 160 88 168 }
+	#color={ 160 88 168 }
+	color={ 217 159 255 }
 	color2={ 255 255 255 }
 	
 	capital = 189 # Ganelon
@@ -9,8 +10,8 @@ d_ganelon_bandits = {
 	culture=sacaean
 	title = "count_sacaean"
 	title_female = "count_female_sacaean"
-	title = "chief_foa"
-	title_female = "chief_foa_female"
+	#title = "chief_foa"
+	#title_female = "chief_foa_female"
 	short_name = yes
 	religion=raider_pagan
 	
@@ -32,8 +33,8 @@ d_taliver_bandits = {
 	culture=sacaean
 	title = "count_sacaean"
 	title_female = "count_female_sacaean"
-	title = "chief_foa"
-	title_female = "chief_foa_female"
+	#title = "chief_foa"
+	#title_female = "chief_foa_female"
 	short_name = yes
 	religion=raider_pagan
 	
