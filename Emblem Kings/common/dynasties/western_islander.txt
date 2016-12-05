@@ -1,6 +1,6 @@
 # Canon
 701={
-	#can_appear=no
+	can_appear=no
 	name="of the Western Isles"
 	culture="western_islander"
     coat_of_arms = {

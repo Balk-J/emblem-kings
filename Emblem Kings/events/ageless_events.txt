@@ -1,0 +1,266 @@
+namespace = ageless
+
+# Dragons dying.
+# This event handles the true dragons.
+character_event = {
+	id = ageless.1
+	
+	hide_window = yes
+	
+	trigger = {
+		trait = dragon
+		NOT = { trait = war_dragon }
+		OR = { 
+			age = 6000
+			health_traits = 1 
+		}		
+		# Manaketes:
+		# 1000 = child
+		# 3000 = young adult
+		# Beyond this is conjecture.
+		# 4000 = adult
+		# 5000 = middle age
+		# 6000 = Old?
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			age = 6100
+		}
+		modifier = {
+			factor = 0.33
+			age = 6200
+		}
+		modifier = {
+			factor = 0.5
+			age = 6300
+		}
+		modifier = {
+			factor = 0.66
+			age = 6400
+		}
+		modifier = {
+			factor = 0.75
+			age = 6500
+		}
+	}
+	
+	immediate = {	
+		if = {
+			limit = { 
+				NOT = { health_traits = 1 } 
+			}
+			death = yes
+		}
+		if = {
+			limit = { 
+				health_traits = 1	
+			}
+			death = {					
+				death_reason = death_trait
+			}
+		}		
+	}
+	
+	option = {
+		name = OK	
+	}
+}
+
+# This event handles the partial dragons (Nils, Sophia, etc.)
+character_event = {
+	id = ageless.2
+	
+	hide_window = yes
+	
+	trigger = {
+		trait = dragon_blood
+		NOT = { trait = war_dragon }
+		OR = { 
+			age = 1000
+			health_traits = 1 
+		}		
+		# It's not fully clear how fast these guys age.
+		# Sophia is a few centuries old and looks like a teenager.
+		# Ninian and Nils are in their 900s in FE7.
+		# Let's go with this:
+		# 1000 = young adult
+		# 1500 = adult
+		# 2000 = Old
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			age = 2100
+		}
+		modifier = {
+			factor = 0.33
+			age = 2200
+		}
+		modifier = {
+			factor = 0.5
+			age = 2300
+		}
+		modifier = {
+			factor = 0.66
+			age = 2400
+		}
+		modifier = {
+			factor = 0.75
+			age = 2500
+		}
+	}
+	
+	immediate = {	
+		if = {
+			limit = { 
+				NOT = { health_traits = 1 } 
+			}
+			death = yes
+		}
+		if = {
+			limit = { 
+				health_traits = 1	
+			}
+			death = {					
+				death_reason = death_trait
+			}
+		}		
+	}
+	
+	option = {
+		name = OK	
+	}
+}
+
+# This event handles the war dragons 
+character_event = {
+	id = ageless.3
+	
+	hide_window = yes
+	
+	trigger = {
+		trait = war_dragon
+		OR = { 
+			age = 40
+			health_traits = 1 
+		}		
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.25
+			age = 50
+		}
+		modifier = {
+			factor = 0.33
+			age = 60
+		}
+		modifier = {
+			factor = 0.5
+			age = 70
+		}
+		modifier = {
+			factor = 0.66
+			age = 80
+		}
+		modifier = {
+			factor = 0.75
+			age = 90
+		}
+	}
+	
+	immediate = {	
+		if = {
+			limit = { 
+				NOT = { health_traits = 1 } 
+			}
+			death = yes
+		}
+		if = {
+			limit = { 
+				health_traits = 1	
+			}
+			death = {					
+				death_reason = death_trait
+			}
+		}		
+	}
+	
+	option = {
+		name = OK	
+	}
+}
+
+# This event handles the powerful mages (Athos, Brammimond, Nergal, etc.)
+character_event = {
+	id = ageless.4
+	
+	hide_window = yes
+	
+	trigger = {
+		OR = { 
+			traits = class_archdruid
+			traits = class_archsage
+			traits = class_dark_druid
+		}		
+		OR = { 
+			age = 1000
+			health_traits = 1 
+		}		
+		# Again, it's not totally clear how long they can live.
+		# Nergal was in his 1000s and looked middle-aged.
+		# Athos and Brammimond are in their 1000s minimum as of FE7 and died during/shortly after the events of that game.
+		# Let's say they can start dying at 1000... Nergal's apparent youth could be due to quintessence shenanigans?
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			age = 1100
+		}
+		modifier = {
+			factor = 0.33
+			age = 1200
+		}
+		modifier = {
+			factor = 0.5
+			age = 1300
+		}
+		modifier = {
+			factor = 0.66
+			age = 1400
+		}
+		modifier = {
+			factor = 0.75
+			age = 1500
+		}
+	}
+	
+	immediate = {	
+		if = {
+			limit = { 
+				NOT = { health_traits = 1 } 
+			}
+			death = yes
+		}
+		if = {
+			limit = { 
+				health_traits = 1	
+			}
+			death = {					
+				death_reason = death_trait
+			}
+		}		
+	}
+	
+	option = {
+		name = OK	
+	}
+}

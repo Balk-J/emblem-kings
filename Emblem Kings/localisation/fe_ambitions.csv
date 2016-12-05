@@ -2,3 +2,9 @@
 obj_acquire_regalia_title;Acquire a Regalia;;;;;;;;;;;;;x
 obj_acquire_regalia_desc;[This.GetTitledFirstName] wants to acquire a legendary weapon.;;;;;;;;;;;;;x
 obj_acquire_regalia_success;[This.GetTitledFirstName] owns a legendary weapon.;;;;;;;;;;;;;x
+obj_class_title;Train in a Class;;;;;;;;;;;;;x
+obj_class_desc;[This.GetTitledFirstName] wants to train as a warrior or mage.;;;;;;;;;;;;;x
+obj_class_success;[This.GetTitledFirstName] completes training in a job class.;;;;;;;;;;;;;x
+obj_promote_title;Promote;;;;;;;;;;;;;x
+obj_promote_desc;[This.GetTitledFirstName] wants to become more experienced in [This.GetHerHis] chosen class.;;;;;;;;;;;;;x
+obj_promote_success;[This.GetTitledFirstName] has been promoted to the next level in [This.GetHerHis] class.;;;;;;;;;;;;;x

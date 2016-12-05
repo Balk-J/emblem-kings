@@ -1,5 +1,6 @@
 # Canon
 501={
+	can_appear=no
 	name="of Sacae"
 	culture="sacaean"
 	coat_of_arms = {
@@ -16,7 +17,7 @@
     }
 }
 502={
-	#can_appear=no
+	can_appear=no
 	name="Kutolah"
 	culture="sacaean"
 	coat_of_arms = {
@@ -33,7 +34,7 @@
     }
 }
 503={
-	#can_appear=no
+	can_appear=no
 	name="Djute"
 	culture="sacaean"
 	coat_of_arms = {
@@ -50,7 +51,7 @@
     }
 }
 504={
-	#can_appear=no
+	can_appear=no
 	name="Bulgar" #mentioned in the Sin/Fir B support, but no confirmed appearance.
 	culture="sacaean"
 	coat_of_arms = {
@@ -67,7 +68,7 @@
     }
 }
 505={
-	#can_appear=no
+	can_appear=no
 	name="Lorca"
 	culture="sacaean"
 	coat_of_arms = {

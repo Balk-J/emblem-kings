@@ -216,4 +216,22 @@ regalia.50.B;Go west.;;;;;;;;;;;;;x
 regalia.51.title;The Altar;;;;;;;;;;;;;x
 regalia.51.desc;The tunnels have taken you into a larger cavern. The fumes are thinner in here, and you can see a dais with a stone structure upon it. In front of the structure is a throne.;;;;;;;;;;;;;x
 regalia.51.A;The axe must be nearby!;;;;;;;;;;;;;x
-regalia..;;;;;;;;;;;;;;x
+regalia.53.title;The Royal Sword;;;;;;;;;;;;;x
+regalia.53.desc;Hartmut, the leader of the Eight Legends, established the Kingdom of Bern after his victory in the war against the dragons. His sword might be hidden here, at the very heart of his kingdom.;;;;;;;;;;;;;x
+regalia.53.A;Begin looking into the matter immediately.;;;;;;;;;;;;;x
+regalia.53.B;I know exactly where it is.;;;;;;;;;;;;;x
+regalia.53.C;I don't have time for this right now.;;;;;;;;;;;;;x
+regalia.54.title;Descendants of the Hero;;;;;;;;;;;;;x
+regalia.54.desc;The scholar you dispatched to investigate the history of Hartmut's sword has returned. He reports that the weapon was passed down through the royal line of Bern after Hartmut's death. Although they clearly misplaced it at some point, the sword may still be the country. \n\nYour scholar found references to a small and secretive order of knights operating out of a fortress near Bern Keep. These men have attempted to collect and preserve artifacts related to Hartmut and his fellow legends throughout the years.\n\nIf they don't have Hartmut's blade, they should at least know something about its location.;;;;;;;;;;;;;x
+regalia.54.A;I will visit these knights.;;;;;;;;;;;;;x
+regalia.54.B;This hunt has gone far enough.;;;;;;;;;;;;;x
+regalia.55.title;Eckesachs;;;;;;;;;;;;;x
+regalia.55.desc;The grandmaster of this knightly order proved to be surprisingly accessible. His men did in fact retrieve Hartmut's sword shortly after it was lost, and the weapon rests in a vault at the heart of their fortress. He's even willing to give it to you - if it accepts you.\n\nThe sword can only be wielded by the "rightful ruler of Bern." In the hands of anyone else, it's a useless decorative scepter.;;;;;;;;;;;;;x
+regalia.55.A;I will claim the sword.;;;;;;;;;;;;;x
+regalia.55.B;I do not have the right to hold it.;;;;;;;;;;;;;x
+regalia.55.C;Maybe I'll come back for it later.;;;;;;;;;;;;;x
+regalia.56.title;The Royal Sword;;;;;;;;;;;;;x
+regalia.56.desc;The grandmaster leads you into a small room. It contains a pedestal with a scepter taller than you are resting on top. The head of the scepter has a purple gem in the center, and three silver spikes that make it look like a trident. When you touch up the scepter, it crackles with golden lightning and transforms into a gleaming broadsword.\n\nEckesachs, the Royal Sword, is now yours.;;;;;;;;;;;;;x
+regalia.56.A;Challenging me now is tantamount to suicide.;;;;;;;;;;;;;x
+regalia.57.desc;The grandmaster leads you into a small room. It contains a pedestal with a scepter taller than you are resting on top. This, apparently, is the inert form of Hartmut's sword. You pick it up and lift it into the air, but nothing happens. This weapon is not yours to wield.;;;;;;;;;;;;;x
+regalia.57.A;I gave myself too much credit.;;;;;;;;;;;;;x

@@ -6,6 +6,9 @@ eight_legends_desc;This character is one of the Eight Legends, humanity's greate
 #disappeared;Disappeared;;;;;;;;;;;;;x
 #disappeared_desc;This character has vanished completely. [GetSheHe] may still be alive - in another world or hidden in a remote part of this one. However, [GetSheHe] is dead for all practical purposes.;;;;;;;;;;;;;x
 #disappeared_death;or vanished without a trace;;;;;;;;;;;;;x
+sleeping;Slumbering;;;;;;;;;;;;;x
+sleeping_desc;This character has fallen into a deep slumber, and no longer interacts with the mortal world.;;;;;;;;;;;;;x
+sleeping_death;or fell into a deep slumber;;;;;;;;;;;;;x
 bad_priest_light;Wicked Priest;Mauvais prêtre;Der gottlose Priester;;Sacerdote malvado;;;;;;;;;x
 bad_priest_light_desc;The personality and habits of this priest are very inappropriate for [GetHerHis] position. And what's worse, [GetSheHe] has been unable to hide them from public view.;La personnalité et les mœurs de ce prêtre sont très inappropriées pour un homme de [GetHerHis] fonction. Pire encore, [GetSheHe] est incapable de faire cela discrètement.;Die Persönlichkeit und Gewohnheiten des Priesters sind äußerst unpassend für [GetHerHis] Stand. Auch vermag [GetSheHe] es keineswegs, seine schlechten Eigenschaften vor der Allgemeinheit zu verbergen.;;La personalidad y hábitos de este sacerdote son muy inapropiados para esta posición. Y lo peor es que no es capaz de esconderlos en público.;;;;;;;;;x
 bad_priest_divine_sky;Unworthy Priest;Mauvais prêtre;Der gottlose Priester;;Sacerdote malvado;;;;;;;;;x
@@ -27,11 +30,15 @@ war_dragon_desc;This character is an artificial dragon born only for combat.;;;;
 demon_dragon;Demon Dragon;;;;;;;;;;;;;x
 demon_dragon_desc;This character is a Demon Dragon - a transformed Divine Dragon capable of producing War Dragons.;;;;;;;;;;;;;x
 dragon;Dragon;;;;;;;;;;;;;x
-dragon_desc;This character is of dragon lineage.;;;;;;;;;;;;;x
-beast;Beast;;;;;;;;;;;;;x
-beast_desc;This character is one of the beast tribe laguz of Tellius.;;;;;;;;;;;;;x
-bird;Bird;;;;;;;;;;;;;x
-bird_desc;This character is one of the bird tribe laguz of Tellius.;;;;;;;;;;;;;x
+dragon_desc;This character is one of the dragonkin, legendary and powerful giant reptiles who ruled the world in ages past. When not in combat, dragons typically take human form to preserve their strength and health.;;;;;;;;;;;;;x
+dragon_blood;Dragon;;;;;;;;;;;;;x
+dragon_blood_desc;This character is of dragon lineage. Although [GetSheHe] does not have the raw strength of a true dragon, [GetSheHe] enjoys a degree of their power and longevity.;;;;;;;;;;;;;x
+dragon_tribe;Dragon Tribe;;;;;;;;;;;;;x
+dragon_tribe_desc;This character is one of the dragon tribe laguz of Tellius.;;;;;;;;;;;;;x
+beast_tribe;Beast Tribe;;;;;;;;;;;;;x
+beast_tribe_desc;This character is one of the beast tribe laguz of Tellius.;;;;;;;;;;;;;x
+bird_tribe;Bird Tribe;;;;;;;;;;;;;x
+bird_tribe_desc;This character is one of the bird tribe laguz of Tellius.;;;;;;;;;;;;;x
 sympathy_light;Sympathy for Holy Light;;;;;;;;;;;;;x
 sympathy_light_desc;This character, though not a believer in the Holy Light, has a special sympathy and understanding for the faith and its practitioners.;;;;;;;;;;;;;x
 sympathy_magic;Sympathy for Magic Users;;;;;;;;;;;;;x
@@ -53,9 +60,9 @@ class_bard_desc;Musicians whose songs inspire allies. They do not fight in comba
 class_berserker;Berserker;;;;;;;;;;;;;x
 class_berserker_desc;A title for those who live to fight. Strong in mountains or at sea. Skilled in killing blows.;;;;;;;;;;;;;x
 class_bishop;Bishop;;;;;;;;;;;;;x
-class_bishop_desc;A title given to monks who have attained enlightenment. Wields magic for offense.;;;;;;;;;;;;;x
+class_bishop_desc;A title given to priests who have attained enlightenment. Wields magic for offense.;;;;;;;;;;;;;x
 class_bishop_female;Bishop;;;;;;;;;;;;;x
-class_bishop_female_desc;A title given to monks who have attained enlightenment. Wields magic for offense.;;;;;;;;;;;;;x
+class_bishop_female_desc;A title given to clerics who have attained enlightenment. Wields magic for offense.;;;;;;;;;;;;;x
 class_brigand;Brigand;;;;;;;;;;;;;x
 class_brigand_desc;Mighty axe fighters especially skilled in mountain combat.;;;;;;;;;;;;;x
 class_cavalier;Cavalier;;;;;;;;;;;;;x

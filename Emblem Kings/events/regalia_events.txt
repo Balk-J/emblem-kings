@@ -2899,6 +2899,204 @@ character_event = {
 	}		
 }
 
+# Eckesachs
+# Starting point - do you want to search?
+character_event = {
+	id = regalia.53
+	title = "regalia.53.title"
+	desc = "regalia.53.desc"
+	picture = "GFX_evt_armory" 
+	
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_ambition = obj_acquire_regalia
+		NOT = { has_global_flag = regalia_eckesachs_held }
+		NOT = { has_character_flag = regalia_eckesachs_trial }
+		NOT = { has_character_flag = regalia_eckesachs_failure }
+		NOT = { has_character_modifier = declined_regalia_search }
+		
+		location = {
+			county = {
+				title = c_bern
+			}
+		}
+
+	}
+	mean_time_to_happen = {
+		days = 5	
+	}
+	
+	# Yes, let's look
+	option = {
+		name = "regalia.53.A"
+		trigger = {
+			NOT = { has_character_flag = regalia_eckesachs_info }
+		}
+		hidden_tooltip = { character_event = { id = regalia.54 days=5} }
+	}	
+	# I already found it, skip to the trial
+	option = {
+		name = "regalia.53.B"
+		trigger = {
+			has_character_flag = regalia_eckesachs_info 
+		}
+		hidden_tooltip = { character_event = { id = regalia.55 } }
+	}		
+	# No
+	option = {
+		name = "regalia.53.C"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+	}		
+}
+
+# Looking for Eckesachs
+narrative_event = {
+	id = regalia.54
+	title = "regalia.54.title"
+	desc = "regalia.54.desc"
+	picture = "GFX_evt_throne_room" 
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = regalia_eckesachs_info
+	}
+	
+	option = {
+		name = "regalia.54.A"
+		prestige = 10
+		hidden_tooltip = { 
+			character_event = { id = regalia.55 } 
+		}
+	}	
+	
+	option = {
+		name = "regalia.54.B"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# Meeting with sword's keeper
+narrative_event = {
+	id = regalia.55
+	title = "regalia.55.title"
+	desc = "regalia.55.desc"
+	picture = "GFX_evt_council" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.55.A"
+		hidden_tooltip = { 
+			# Eckesachs is a Zephiel-only weapon.
+			# We'll say it can only be held by someone from the royal line.
+			# Or, someone who holds or has a claim on the kingdom of Bern.
+			
+			if = {
+				limit = {
+					OR = {
+						dynasty = 401 # of Bern
+						dynasty = 118 # Eldreed; Al is Hartmut's secret bastard
+						has_claim = k_bern
+						has_landed_title = k_bern
+						has_claim = k_calach # Calach is close enough. Might as well make this a little more open.
+						has_landed_title = k_calach
+					}
+				}
+				character_event = { id = regalia.56 } 
+			}
+			if = {
+				limit = {
+					NOR = {
+						dynasty = 401 # of Bern
+						dynasty = 118 # Eldreed; Al is Hartmut's secret bastard
+						has_claim = k_bern
+						has_landed_title = k_bern
+						has_claim = k_calach # Calach is close enough. Might as well make this a little more open.
+						has_landed_title = k_calach
+					}
+				}
+				character_event = { id = regalia.57 } 
+			}
+		
+		
+		}
+	}		
+	
+	option = {
+		name = "regalia.55.B"
+		set_character_flag = regalia_eckesachs_failure
+		piety = 100
+		
+		if = {
+			limit = {
+				NOT = {trait = humble}
+			}
+			random = {
+				chance = 50
+				if = {
+					limit = {
+						trait = proud
+					}
+					remove_trait = proud
+				}
+				if = {
+					limit = {
+						NOT = {trait = proud}
+					}
+					add_trait = humble
+				}
+			}
+		}
+	}			
+	
+	option = {
+		name = "regalia.55.C"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+		prestige = -10
+	}		
+}
+
+# Accepted by Eckesachs
+narrative_event = {
+	id = regalia.56
+	title = "regalia.56.title"
+	desc = "regalia.56.desc"
+	picture = "GFX_evt_regalia"
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.56.A"
+		add_character_modifier = { name = owns_regalia duration = -1 } 
+		add_trait = regalia_eckesachs
+		set_global_flag = regalia_eckesachs_held 
+	}		
+}
+
+# Rejected by Eckesachs
+character_event = {
+	id = regalia.57
+	#title = "regalia.57.title"
+	desc = "regalia.57.desc"
+	picture = "GFX_evt_bad_news" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.9.A"
+		hidden_tooltip = { 
+			set_character_flag = regalia_eckesachs_failure
+		}
+		prestige = -500
+	}		
+}
+
 # Just... find it, randomly?
 
 # Found it going raiding

@@ -463,7 +463,82 @@ decisions = {
 			prisoner = no
 		}
 		effect = {
-			piety = -500
+			piety = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	promote = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			OR = {
+				has_character_flag=class_knight
+				has_character_flag=class_cavalier
+				has_character_flag=class_archer
+				has_character_flag=class_horse_archer
+				has_character_flag=class_mercenary
+				has_character_flag=class_fighter
+				has_character_flag=class_myrmidon
+				has_character_flag=class_thief
+				has_character_flag=class_pirate
+				has_character_flag=class_brigand
+				has_character_flag=class_priest
+				has_character_flag=class_monk
+				has_character_flag=class_mage
+				has_character_flag=class_shaman
+				has_character_flag=class_wyvern_rider
+				has_character_flag=class_pegasus_knight
+			}
+			NOR = {
+				trait=class_assassin
+				trait=class_assassin_female
+				trait=class_berserker
+				trait=class_bishop
+				trait=class_bishop_female
+				trait=class_druid
+				trait=class_druid_female
+				trait=class_falcon_knight
+				trait=class_general
+				trait=class_great_knight
+				trait=class_hero
+				trait=class_hero_female
+				trait=class_mage_knight
+				trait=class_mage_knight_female
+				trait=class_paladin
+				trait=class_ranger
+				trait=class_ranger_female
+				trait=class_rogue
+				trait=class_sage
+				trait=class_sage_female
+				trait=class_sniper
+				trait=class_sniper_female
+				trait=class_summoner
+				trait=class_swordmaster
+				trait=class_swordmaster_female
+				trait=class_valkyrie
+				trait=class_warrior
+				trait=class_wyvern_knight
+				trait=class_wyvern_lord	
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			wealth = 100
+			check_variable = { which = "level" value = 20 }
+		}
+		effect = {
+			wealth = -100
+			#hidden_tooltip = {
+				character_event = { id = class.5 }
+			#}
 		}
 		ai_will_do = {
 			factor = 1

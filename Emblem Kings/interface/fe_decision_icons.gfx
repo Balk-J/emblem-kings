@@ -28,4 +28,8 @@ spriteTypes = {
 		name = "GFX_demand_fire_emblem"
 		texturefile = "gfx\\interface\\decision_icon_fire_emblem.dds"
 	}
+	spriteType = {
+		name = "GFX_promote"
+		texturefile = "gfx\\interface\\decision_icon_promote.dds"
+	}
 }

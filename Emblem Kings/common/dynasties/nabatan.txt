@@ -232,7 +232,7 @@
 }
 641=
 {
-	name="banu Fätima"
+	name="banu Fatima"
 	culture="nabatan"
 }
 642=

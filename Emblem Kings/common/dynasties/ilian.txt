@@ -1,5 +1,6 @@
 # Canon
 301={
+	can_appear=no
 	name="of Ilia" #Barigan
 	culture="ilian"
 	coat_of_arms = {
@@ -15,6 +16,7 @@
     }
 }
 302={
+	can_appear=no
 	name="of Spina" #Niime
 	culture="ilian"
     coat_of_arms = {
@@ -30,6 +32,7 @@
     }	
 }
 303={
+	can_appear=no
 	name="Edessa" #Zealot
 	culture="ilian"    
 	coat_of_arms = {
@@ -45,6 +48,7 @@
     }
 }
 304={
+	can_appear=no
 	name="Aenir" #Ninian/Nils 
 	culture="ilian"
     coat_of_arms = {
@@ -76,6 +80,7 @@
     }
 }
 306={
+	can_appear=no
 	name="Remy" # 
 	culture="ilian"
     coat_of_arms = {
@@ -91,6 +96,7 @@
     }	
 }
 307={
+	can_appear=no
 	name="of Pyrene" # for the FE7 sisters. Named after Florina's birthplace.
 	culture="ilian"
     coat_of_arms = {
@@ -106,6 +112,7 @@
     }	
 }
 308={
+	can_appear=no
 	name="of Adma" # for the FE6 sisters. Named after a randomly selected county in the duchy of Edessa.
 	culture="ilian"
     coat_of_arms = {

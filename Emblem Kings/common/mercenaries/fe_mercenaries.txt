@@ -10,7 +10,7 @@ davros_composition = {
 
 ilia_pegasus_knights_composition = {
 	levy_size = 2
-	light_cavalry = 500
+	pegasus_knights = 500
 }
 
 ilia_mercenary_knights_composition = {
@@ -34,7 +34,7 @@ talon_company_composition = {
 tiger_company_composition = {
 	levy_size = 1
 	heavy_infantry = 200
-	light_cavalry = 50
+	pegasus_knights = 50
 }
 
 black_fang_composition = {
@@ -47,9 +47,10 @@ black_fang_composition = {
 
 blackbone_clan_composition = {
 	levy_size = 4
-	pikemen = 250
+	pikemen = 200
 	heavy_infantry = 500
 	archers = 250
+	magic_users = 50
 }
 
 #Vanilla stuff

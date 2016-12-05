@@ -1,0 +1,191 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Heavy Cavalry
+# 5 - Archers
+# 6 - Special troops
+
+RETTYPE_CUL_LYCIAN = 
+{
+	first_type = 1
+	first_amount = 300
+	second_type = 3
+	second_amount = 200
+	
+	
+	potential = {
+		is_nomadic = no
+		culture = lycian
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.2
+		heavy_infantry_morale = 0.1
+		light_cavalry_offensive = 0.1
+	}
+}
+RETTYPE_CUL_SACAEAN = 
+{
+	first_type = 6
+	first_amount = 250
+	
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+		culture = sacaean
+	}
+	
+	modifier = {
+		horse_archers_offensive = 0.2
+		horse_archers_morale = 0.12
+	}
+}
+
+RETTYPE_CUL_NABATAN = 
+{
+	first_type = 0
+	first_amount = 500
+	
+	potential = {
+		is_nomadic = no
+		culture = nabatan
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.5
+		light_infantry_defensive = 0.5
+	}
+}
+RETTYPE_CUL_WESTERN_ISLANDER = 
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture = western_islander
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.4
+		heavy_infantry_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_ETRURIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+
+	special_troops = magic_users
+	
+	potential = {
+		is_nomadic = no
+		culture = etrurian
+	}
+	
+	modifier = {
+		knights_offensive = 0.1
+		knights_defensive = 0.1
+		knights_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_ILIAN = 
+{
+	first_type = 6
+	first_amount = 250
+	
+	special_troops = pegasus_knights
+	
+	potential = {
+		is_nomadic = no
+		culture = ilian
+	}
+	
+	modifier = {
+		pegasus_knights_offensive = 0.2
+		pegasus_knights_defensive = 0.2
+		pegasus_knights_morale = 0.2
+	}
+}
+RETTYPE_CUL_BERNESE = 
+{
+	first_type = 6
+	first_amount = 250
+	
+	special_troops = wyvern_riders
+	
+	potential = {
+		is_nomadic = no
+		culture = bernese
+	}
+	
+	modifier = {
+		wyvern_riders_offensive = 0.2
+		wyvern_riders_defensive = 0.2
+		wyvern_riders_morale = 0.2
+	}
+}
+RETTYPE_REL_MAGE = 
+{
+	first_type = 6
+	first_amount = 500
+	
+	special_troops = magic_users
+	
+	potential = {
+		is_nomadic = no
+		religion = anima
+	}
+	
+	modifier = {
+		magic_users_offensive = 0.5
+		magic_users_defensive = 0.2
+		magic_users_morale = 0.2
+	}
+}
+RETTYPE_REL_SHAMAN = 
+{
+	first_type = 6
+	first_amount = 500
+	
+	special_troops = magic_users
+	
+	potential = {
+		is_nomadic = no
+		religion = dark
+	}
+	
+	modifier = {
+		magic_users_offensive = 0.2
+		magic_users_defensive = 0.5
+		magic_users_morale = 0.2
+	}
+}
+RETTYPE_REL_MONK = 
+{
+	first_type = 6
+	first_amount = 500
+	
+	special_troops = magic_users
+	
+	potential = {
+		is_nomadic = no
+		religion_group = light_group
+		is_priest = yes
+	}
+	
+	modifier = {
+		magic_users_offensive = 0.2
+		magic_users_defensive = 0.2
+		magic_users_morale = 0.5
+	}
+}

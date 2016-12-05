@@ -13,9 +13,11 @@
 	180.1.1 = {
 		give_nickname="nick_the_little_knight"
 		add_trait="eight_legends"
+		add_trait="class_hero"
 		add_trait="regalia_durandal"
 		effect = {
 			ROOT = {
+		set_character_flag="class_mercenary"
 		add_character_modifier = { name = "owns_regalia" duration = -1 } 
 		set_character_flag="regalia_hide"
 		set_global_flag="regalia_durandal_held"
@@ -42,11 +44,17 @@
 	father=113
 	mother=114
 	disallow_random_traits="yes" 
-	trait="diligent"
-	trait="patient"
-	trait="grey_eminence"
 	1130.01.01={
 		birth=yes
+	} 	
+	
+	1142.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
 	} 	
 	
 	1144.1.1 = {
@@ -54,10 +62,17 @@
 	}	
 
 	1145.01.01 = {
+		add_trait="diligent"
+		add_trait="patient"
+		add_trait="grey_eminence"
 		remove_trait="wounded"
 		add_trait="scarred"
 	}	
 	
+	1150.1.1 = {
+		add_trait="class_general"
+		remove_trait="class_knight"
+	}
 	1160.1.1 = {
 		add_trait="has_tuberculosis"
 	}
@@ -81,13 +96,6 @@
 	mother=114
 	disallow_random_traits="yes" 
 	trait="strong"	
-	trait="tough_soldier"	
-	trait="aggressive_leader"		
-	trait="heavy_infantry_leader"	
-	trait="duelist"
-	trait="brave"			
-	trait="honest"			
-	trait="wroth"	
 	1143.01.01={
 		birth=yes
 	} 		
@@ -97,6 +105,30 @@
 		}
 	}	
 	
+	1155.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	
+	1158.01.01={
+		add_trait="brave"
+		add_trait="honest"
+		add_trait="wroth"
+		add_trait="tough_soldier"
+		add_trait="aggressive_leader"
+		add_trait="heavy_infantry_leader"
+	} 	
+	1159.01.01={
+		add_trait="duelist"
+	} 	
+	1163.1.1 = {
+		add_trait="class_general"
+		remove_trait="class_knight"
+	}
 	#imprisoned by Zephiel at Araphen
 	1180.02.01 = {
 		effect = {
@@ -125,11 +157,6 @@
 	culture=lycian
 	
 	father=103
-	trait="naive_appeaser"	
-		trait="kind"	
-		trait="humble"			
-		trait="honest"			
-		trait="trusting"
 	disallow_random_traits="yes" 
 	1165.01.01={
 		birth=yes
@@ -142,6 +169,21 @@
 			add_friend=108 #Roy
 		}
 	}	
+	1177.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1180.01.01={
+		add_trait="kind"
+		add_trait="humble"
+		add_trait="honest"
+		add_trait="trusting"
+		add_trait="naive_appeaser"
+	} 
 	1230.01.01={
 		death=yes
 	} 	
@@ -159,17 +201,28 @@
 	1125.01.01={
 		birth=yes
 	} 	
-		
-	1139.01.01 = {
-		add_trait="charismatic_negotiator"	
-		add_trait="cavalry_leader"		
-		add_trait="kind"	
-		add_trait="brave"			
+	
+	1137.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 	
+	1140.01.01 = {
+		add_trait="kind"
+		add_trait="brave"
 		add_trait="just"
+		add_trait="charismatic_negotiator"	
 	} 	
 	1143.01.01 = {
 		add_spouse=106 # Eleanora
 	}
+	1145.1.1 = {
+		add_trait="class_paladin"
+		remove_trait="class_cavalier"
+	}	
 	
 	#Imprisoned by Nergal
 	1160.01.01 = {
@@ -179,6 +232,31 @@
 					ROOT = { 
 						imprison = PREV 
 					}
+					opinion = {
+						modifier = opinion_annoyed
+						who = ROOT
+						years = 20
+					} 
+					opinion = {
+						modifier = opinion_annoyed
+						who = ROOT
+						years = 20
+					} 
+					opinion = {
+						modifier = opinion_annoyed
+						who = ROOT
+						years = 20
+					} 
+					opinion = {
+						modifier = opinion_annoyed
+						who = ROOT
+						years = 20
+					} 
+					opinion = {
+						modifier = opinion_annoyed
+						who = ROOT
+						years = 20
+					} 
 				}
 			}
 		}
@@ -201,13 +279,25 @@
 	
 	1127.01.01={
 		birth=yes
+	}	
+	1139.01.01={		
+		add_trait="class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cleric"
+		}
 	} 	
-	1141.01.01 = { 
-		add_trait="underhanded_rogue"			
+	1142.01.01 = { 
 		add_trait="fair"		
 		add_trait="kind"	
 		add_trait="patient"
+		add_trait="underhanded_rogue"	
 	}
+	1147.1.1 = {
+		add_trait="class_bishop_female"
+		remove_trait="class_cleric"
+	}	
 		
 	1180.01.01={
 		death=yes
@@ -229,18 +319,30 @@
 	1143.01.01={
 		birth=yes
 	} 	
+	1155.01.01={	
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
 		
-	1157.01.01 = {
-		add_trait="skilled_tactician"	
-		add_trait="cavalry_leader"	
-		add_trait="unyielding_leader"	
-		add_trait="inspiring_leader"		
+	1158.01.01 = {
 		add_trait="gregarious"		
 		add_trait="kind"	
 		add_trait="brave"			
 		add_trait="just"
+		add_trait="skilled_tactician"	
+		add_trait="cavalry_leader"	
+		add_trait="unyielding_leader"	
+		add_trait="inspiring_leader"	
 	} 		
 	
+	1163.1.1 = {
+		add_trait="class_paladin"
+		remove_trait="class_cavalier"
+	}	
 	1180.01.01 = {
 		add_trait="infirm"
 		add_trait="ill"
@@ -270,13 +372,21 @@
 	1171.01.01 = {
 		guardian=217 #Cecilia
 	}	
-	1179.01.01 = {  
-		add_trait="misguided_warrior"	
-		add_trait="unyielding_leader"		
+	1177.01.01={	
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1180.01.01 = {  
 		add_trait="chaste"		
 		add_trait="kind"	
 		add_trait="brave"			
 		add_trait="humble"
+		add_trait="misguided_warrior"	
+		add_trait="unyielding_leader"	
 	}
 	
 	1230.01.01={
@@ -374,24 +484,22 @@
 		culture=sacaean
 		religion=divine_sky_pagan
 	} 	
-
-	1158.01.01 = {
-		add_trait="tough_soldier"
-		add_trait="class_myrmidon_female"	
-		add_trait="organizer"	
-		add_trait="flat_terrain_leader"	
-		add_trait="kind"	
-		add_trait="humble"
-		add_trait="honest"
-		add_trait="brave"
-		
-	} 	
+	1156.01.01={
+		add_trait="class_myrmidon_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	
+	
 	1158.06.01 = { 
 		employer = 526 # living on Batta's turf
 		
-		add_claim="d_caelin"
-		add_claim="c_caelin"
-		add_claim="c_alta"
+		add_pressed_claim="d_caelin"
+		add_pressed_claim="c_caelin"
+		add_pressed_claim="c_alta"
 		
 		effect = {
 			d_caelin = {
@@ -409,9 +517,17 @@
 				}
 			}	
 		}
-	}
+	}	
 	
 	1159.01.01={
+		add_trait="kind"	
+		add_trait="humble"
+		add_trait="honest"
+		add_trait="brave"
+		add_trait="tough_soldier"	
+		add_trait="organizer"	
+		add_trait="flat_terrain_leader"	
+		
 		add_trait="adventurer"
 		effect = {
 			set_character_flag = lyn_story
@@ -500,17 +616,30 @@
 	1109.01.01={
 		birth=yes
 	} 	
+	
+	1121.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
 
-	1123.01.01 = { 
-		add_trait="intricate_webweaver"	
-		add_trait="defensive_leader"
-		add_trait="heavy_infantry_leader"
+	1124.01.01 = { 
 		add_trait="schemer"
 		add_trait="ambitious"	
 		add_trait="envious"
 		add_trait="deceitful"
 		add_trait="proud"
+		add_trait="intricate_webweaver"	
+		add_trait="defensive_leader"
+		add_trait="heavy_infantry_leader"
 	}
+	1129.1.1 = {
+		add_trait="class_general"
+		remove_trait="class_knight"
+	}	
 	1159.02.01 = { 
 		death = {
 			death_reason=death_battle
@@ -530,6 +659,14 @@
 	1110.01.01={
 		birth=yes
 	} 		
+	1122.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
 	1129.1.1 = {
 		add_spouse=114 # Uther, Hector, and Orun's mother
 	}
@@ -613,7 +750,7 @@
 	1134.01.01={
 		birth=yes
 	} 	
-	1148.01.01 = { 
+	1149.01.01 = { 
 		add_trait="wroth"	
 		add_trait="proud"
 		add_trait="lustful"
@@ -637,16 +774,28 @@
 		birth=yes
 	} 	
 
-	1140.01.01 = { 
-		add_trait="flamboyant_schemer"	
-		add_trait="organizer"
-		add_trait="heavy_infantry_leader"
+	1138.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1141.01.01 = { 
 		add_trait="proud"
 		add_trait="lustful"
 		add_trait="patient"
 		add_trait="deceitful"
 		add_trait="ambitious"	
 		add_trait="arbitrary"
+		add_trait="flamboyant_schemer"	
+		add_trait="organizer"
+		add_trait="heavy_infantry_leader"
+	} 
+	1146.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
 	}
 	1161.01.01 = { 
 		death = {
@@ -667,15 +816,23 @@
 	father=118
 	1143.01.01={
 		birth=yes
-	} 	
-	1157.01.01 = { 
-		add_trait="amateurish_plotter"	
-		add_trait="cavalry_leader"
+	} 		
+	1155.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1158.01.01 = { 
 		add_trait="proud"
 		add_trait="deceitful"
 		add_trait="envious"
 		add_trait="ambitious"	
 		add_trait="arbitrary"
+		add_trait="amateurish_plotter"	
+		add_trait="cavalry_leader"
 	}
 	1181.01.01 = { 
 		death = {
@@ -694,13 +851,15 @@
 	culture=lycian
 	
 	disallow_random_traits="yes" 
-	trait="naive_appeaser"
-	trait="craven"
-	trait="just"
-	trait="content"
 	father=193
 	1098.01.01={
 		birth=yes
+	} 			
+	1113.01.01={
+		add_trait="naive_appeaser"
+		add_trait="craven"
+		add_trait="just"
+		add_trait="content"
 	} 		
 
 	1161.01.01 = { 
@@ -722,7 +881,7 @@
 		birth=yes
 	} 		
 
-	1125.01.01 = { 
+	1126.01.01 = { 
 		add_trait="fortune_builder" #Busted for embezzling
 		add_trait="charitable" # Had to embezzle because he took on debts for others
 		add_trait="kind"
@@ -745,24 +904,34 @@
 	culture=lycian
 	
 	father=121
-	trait="skilled_tactician"
-	trait="light_foot_leader"
 	1141.01.01={
 		birth=yes
 	} 		
 	
+	1153.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1156.01.01={
+		add_trait="patient"
+		add_trait="skilled_tactician"
+		add_trait="light_foot_leader"
+	} 
+	
 	1158.1.1 = {
 		add_trait="cynical"
-		add_trait="patient"
 		add_trait="adventurer"
-		#give_nickname="nick_raven"
-		add_claim="d_cornwell"
-		add_claim="c_cornwell"
-		add_claim="c_dias"
-		add_claim="c_telmessus"
-		add_claim="c_trebenna"
+		add_pressed_claim="d_cornwell"
+		add_pressed_claim="c_cornwell"
+		add_pressed_claim="c_dias"
+		add_pressed_claim="c_telmessus"
+		add_pressed_claim="c_trebenna"
 		effect = {
-		set_name = "Raven"
+			set_name = "Raven"
 		}
 	}	
 	1188.01.01={
@@ -780,42 +949,49 @@
 	culture=lycian
 	
 	father=121
+	trait="fair"
 	1144.01.01={
 		birth=yes
 	} 		
-	add_trait="fair"
 	1150.1.1 = {
 		guardian=249 #Count Caerleon of Etruria.
 	}	
+	1156.01.01={
+		add_trait="class_troubador"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_troubador"
+		}
+	} 
 	1158.01.01 = {
-		add_claim="d_cornwell"
-		add_claim="c_cornwell"
-		add_claim="c_dias"
-		add_claim="c_telmessus"
-		add_claim="c_trebenna"
+		add_pressed_claim="d_cornwell"
+		add_pressed_claim="c_cornwell"
+		add_pressed_claim="c_dias"
+		add_pressed_claim="c_telmessus"
+		add_pressed_claim="c_trebenna"
 		
-		add_trait="martial_cleric"
+		#Adopted by House Caerleon after Cornwell was destroyed.
+		employer=249
+		dynasty=204 
+		#TODO: fix this to set real dad?
+		effect={
+			father_even_if_dead = {				
+				ROOT = { set_real_father = PREV }
+			}
+			d_caerleon = {
+				holder_scope = {
+					ROOT = { set_father = PREV }
+				}
+			}
+		}
+	}	
+	1159.01.01 = {	
 		add_trait="kind"
 		add_trait="chaste"
 		add_trait="content"
-		add_trait="shy"
-		#Adopted by House Caerleon after Cornwell was destroyed.
-			employer=249
-			dynasty=204 
-			#TODO: fix this to set real dad
-			#set_mother=
-			#set_real_father=121
-			effect={
-				father_even_if_dead = {				
-					ROOT = { set_real_father = PREV }
-				}
-				d_caerleon = {
-					holder_scope = {
-						ROOT = { set_father = PREV }
-					}
-				}
-				#set_father=249
-			}
+		add_trait="shy"	
+		add_trait="martial_cleric"
 	}	
 	1205.01.01={
 		death=yes
@@ -831,15 +1007,27 @@
 	
 	1120.01.01={
 		birth=yes
-	} 		
-	1134.1.1 = {
+	} 	
+	1132.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 	
+	1135.1.1 = {
+		add_trait="diligent"
+		add_trait="content"
 		add_trait="tough_soldier"
 		add_trait="cavalry_leader"
 		add_trait="inspiring_leader"
-		add_trait="diligent"
-		add_trait="content"
 		
 		employer=105 #Elbert
+	}	
+	1140.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
 	}	
 	1160.1.1 = {
 		add_trait="infirm"
@@ -858,15 +1046,25 @@
 	
 	1138.01.01={
 		birth=yes
-	} 		
-	1152.1.1 = {
-		add_trait="tough_soldier"
-		add_trait="light_foot_leader"
+	} 			
+	1150.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1153.1.1 = {
 		add_trait="humble"
 		add_trait="depressed"
+		add_trait="tough_soldier"
+		add_trait="light_foot_leader"
 		employer=105 #Elbert
 	}	
-	1160.1.1 = {
+	1159.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
 		add_trait="winter_soldier"
 		add_trait="mountain_terrain_leader"
 	}	
@@ -893,17 +1091,30 @@
 	1138.01.01={
 		birth=yes
 	} 		
+	1150.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	
 	#Harken is her fiance
-	1152.01.01 = {
-		add_trait="thrifty_clerk"
-		add_trait="cavalry_leader"
-		add_trait="defensive_leader"
+	1153.01.01 = {
 		add_trait="humble"
 		add_trait="chaste"
 		add_trait="patient"
 		add_trait="zealous"
+		add_trait="thrifty_clerk"
+		add_trait="cavalry_leader"
+		add_trait="defensive_leader"
 		employer=105 #Elbert
 		add_matrilineal_spouse = 124 
+	}	
+	1158.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
 	}	
 	1188.01.01={
 		death=yes
@@ -919,13 +1130,21 @@
 	
 	1129.01.01={
 		birth=yes
-	} 		
-	1143.1.1= {
+	} 			
+	1141.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1144.1.1= {
+		add_trait="patient"
+		add_trait="just"
 		add_trait="tough_soldier"
 		add_trait="heavy_infantry_leader"
 		add_trait="defensive_leader"
-		add_trait="patient"
-		add_trait="just"
 		employer=121 #former vassal of Cornwell before its decline
 	}
 	
@@ -948,21 +1167,28 @@
 	religion=elimine_church
 	culture=lycian
 	
-	trait="class_thief"
 	1139.01.01={
 		birth=yes
 	} 		
 	1139.01.01 = { 
 		employer=113 #Ostia 
 	}
-	1153.01.01= {
-		add_trait="elusive_shadow"
-		add_trait="schemer"
-		add_trait="trickster"
+	1151.01.01={	
+		add_trait="class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1154.01.01= {
 		add_trait="kind"
 		add_trait="just"
 		add_trait="gregarious"
-		add_trait="deceitful"		
+		add_trait="deceitful"
+		add_trait="elusive_shadow"
+		add_trait="schemer"
+		add_trait="trickster"	
 	}
 	1181.1.1= {
 		death = {
@@ -985,19 +1211,27 @@
 	} 		
 	1137.01.01 = { 
 		employer=113 #Ostia 
-	}	
-	1151.01.01= {
-		add_trait="elusive_shadow"
-		add_trait="schemer"
-		add_trait="trickster"
+	}		
+	1149.01.01={
+		add_trait="class_thief_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1152.01.01= {
 		add_trait="patient"
 		add_trait="just"
 		add_trait="deceitful"
+		add_trait="elusive_shadow"
+		add_trait="schemer"
+		add_trait="trickster"
 	}
 	1161.1.1= {
 		death = {
 			death_reason=death_battle
-			#killer= #Jaffar
+			killer=611 #Jaffar
 		}
 	}
 	disallow_random_traits="yes" 
@@ -1010,19 +1244,26 @@
 	culture=lycian
 	
 	disallow_random_traits="yes" 
-	trait="intricate_webweaver"
-	trait="defensive_leader"
-	trait="brave"
-	trait="greedy"
-	trait="deceitful"
 	1142.01.01={
 		birth=yes
 	} 		
 	1142.01.01 = { 
 		employer=113 #Ostia 
 	}	
-	1156.01.01 = { 
-		trait="intricate_webweaver"
+	1154.01.01={	
+		add_trait="class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1157.01.01 = { 
+		add_trait="brave"
+		add_trait="greedy"
+		add_trait="deceitful"
+		add_trait="intricate_webweaver"
+		add_trait="defensive_leader"
 	}
 	1162.01.01 = { 
 		employer=103 #caught stealing from Hector, got hired as a spy
@@ -1067,7 +1308,15 @@
 	1149.01.01 = { 
 		employer=113 #Ostia 
 	}	
-	1163.01.01 = {
+	1161.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1164.01.01 = {
 		add_trait="tough_soldier"
 		add_trait="heavy_infantry_leader"
 		add_trait="defensive_leader"
@@ -1089,7 +1338,7 @@
 	1126.01.01={
 		birth=yes
 	} 	
-	1130.01.01 = {
+	1131.01.01 = {
 		add_trait="midas_touched"
 		add_trait="organizer"
 		add_trait="shy"
@@ -1120,14 +1369,22 @@
 	} 			
 	1144.01.01 = { 
 		employer=105 #Elbert 
-	}
-	1158.01.01 = { 
-		add_trait="misguided_warrior"
-		add_trait="cavalry_leader"	
-		add_trait="defensive_leader"
+	}	
+	1156.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1159.01.01 = { 
 		add_trait="diligent"
 		add_trait="humble"
 		add_trait="gluttonous"
+		add_trait="misguided_warrior"
+		add_trait="cavalry_leader"	
+		add_trait="defensive_leader"
 	}	
 	1196.01.01={
 		death=yes
@@ -1147,15 +1404,23 @@
 	1138.01.01 = { 
 		employer=105 #Elbert 
 	}
-	1152.01.01 = { 
-		add_trait="thrifty_clerk"
-		add_trait="cavalry_leader"	
-		add_trait="unyielding_leader"
+	1150.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1153.01.01 = { 
 		add_trait="diligent"
 		add_trait="patient"
 		add_trait="chaste"
 		add_trait="brave"
 		add_trait="just"
+		add_trait="thrifty_clerk"
+		add_trait="cavalry_leader"	
+		add_trait="unyielding_leader"
 	}	
 	1192.01.01={
 		death=yes
@@ -1174,15 +1439,23 @@
 	} 			
 	1136.01.01 = { 
 		employer=105 #Elbert 
-	}
+	}	
+	1148.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
 	1150.01.01 = { 
-		add_trait="tough_soldier"
-		add_trait="cavalry_leader"	
-		add_trait="experimenter"
 		add_trait="gregarious"
 		add_trait="lustful"
 		add_trait="brave"
 		add_trait="just"
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"	
+		add_trait="experimenter"
 	}	
 	1191.01.01={
 		death=yes
@@ -1203,7 +1476,15 @@
 		employer=107 #Eliwood
 	}		
 	
-	1173.01.01 = { 
+	1161.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1174.01.01 = { 
 		add_trait="tough_soldier"
 		add_trait="cavalry_leader"	
 		add_trait="aggressive_leader"
@@ -1228,13 +1509,21 @@
 		birth=yes
 	} 		
 	
+	1160.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
 	1164.01.01 = {
 		effect={
-		add_friend=188 #Kruzard
+			add_friend=188 #Kruzard
 		}
 	}		
 	
-	1172.01.01 = { 
+	1173.01.01 = { 
 		add_trait="skilled_tactician"
 		add_trait="cavalry_leader"	
 		add_trait="defensive_leader"
@@ -1266,7 +1555,15 @@
 	1165.01.01 = { 
 		employer=107 #Eliwood 
 	}
-	1179.01.01 = { 	
+	1177.01.01={
+		add_trait="class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_archer"
+		}
+	} 
+	1180.01.01 = { 	
 		add_trait="misguided_warrior"
 		add_trait="flanker"	
 		add_trait="humble"
@@ -1289,7 +1586,15 @@
 		birth=yes
 	} 	
 	1157.01.01 = { employer=102 }	#Uther
-	1171.01.01 = { 	
+	1169.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1172.01.01 = { 	
 		add_trait="tough_soldier"
 		add_trait="heavy_infantry_leader"
 		add_trait="defensive_leader"
@@ -1317,7 +1622,15 @@
 	1163.01.01 = { 
 		employer=103 #Hector 
 	}	
-	1177.01.01 = { 	
+	1175.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1178.01.01 = { 	
 		add_trait="tough_soldier"
 		add_trait="heavy_infantry_leader"
 		add_trait="defensive_leader"
@@ -1342,6 +1655,14 @@
 	1137.01.01 = { 
 		employer=113 #Ostia 
 	}	
+	1149.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
 	1187.01.01={
 		death=yes
 	} 	
@@ -1359,10 +1680,18 @@
 	1142.01.01 = { 
 		employer=144 #Rebecca's father 
 	}
+	1154.01.01={
+		add_trait="class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_archer"
+		}
+	} 
 	1155.1.1 = {
 		add_trait="adventurer"
 	}
-	1156.1.1 = {	
+	1157.1.1 = {	
 		add_trait="misguided_warrior"
 		add_trait="light_foot_leader"
 		add_trait="gregarious"
@@ -1389,10 +1718,21 @@
 	1145.01.01 = { 
 		employer=144 #Rebecca's father 
 	}
+	1157.01.01={
+		add_trait="class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_archer"
+		}
+	} 
 	1159.1.1 = {	
 		add_trait="wroth"
 		add_trait="brave"
 		add_trait="chaste"
+		employer=105 #Elbert 
+	}
+	1160.1.1 = {	
 		add_trait="indulgent_wastrel"
 		add_trait="light_foot_leader"
 		employer=107 #Eliwood 
@@ -1410,15 +1750,22 @@
 	culture=lycian
 	
 	father=144
+	trait="strong"
 	1142.01.01={
 		birth=yes
 	} 		
-	add_trait="strong"
 	1142.01.01 = { 
 		employer=144 #Rebecca's father 
 	}
+	1154.01.01={
+		add_trait="class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_pirate"
+		}
+	} 
 	1155.1.1 = {
-		#give_nickname="nick_dart"
 		effect = {
 			set_name = "Dart"
 			father_even_if_dead = {				
@@ -1430,7 +1777,7 @@
 		add_trait="adventurer"
 		employer = 801 #Fargus
 	}	
-	1156.1.1 = {
+	1157.1.1 = {
 		add_trait="tough_soldier"
 		add_trait="heavy_infantry_leader"
 		add_trait="wroth"
@@ -1464,10 +1811,25 @@
 	culture=lycian
 	
 	father=152
+	trait="quick"
 	1121.01.01={
 		birth=yes
 	} 		
-	add_trait="quick"
+	1130.01.01={
+		employer=164
+	}
+	1133.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1141.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}	
 	1147.1.1= {
 		death = {
 			death_reason=death_murder
@@ -1485,9 +1847,24 @@
 	1120.01.01={
 		birth=yes
 	} 		
+	1130.01.01={
+		employer=164
+	}	
+	1132.01.01={
+		add_trait="class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
 	1137.01.01 = {
 		add_spouse=145 # Iris
 	}
+	1140.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}	
 	1147.1.1= {
 		death = {
 			death_reason=death_murder
@@ -1506,15 +1883,23 @@
 	
 	father=146
 	mother=145
+	trait="genius"
 	1146.01.01={
 		birth=yes
 	} 		
-	add_trait="genius"
 	
 	1147.01.01 = { 
 		employer=425 #Brendan Reed 
 	}
 	
+	1158.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
 	1159.01.01 = {
 		add_trait="kind"
 		add_trait="diligent"
@@ -1523,7 +1908,7 @@
 		add_trait="just"
 	}	
 	
-	1160.1.1 = {
+	1161.1.1 = {
 		add_trait="elusive_shadow"
 	}	
 	1171.01.01= {
@@ -1590,10 +1975,18 @@
 	culture=lycian
 	
 	mother=147
+	trait="twin"
 	1167.01.01={
 		birth=yes
 	} 		
-	add_trait="twin"
+	1179.01.01={
+		add_trait="class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
 	1180.01.01 = {
 		add_trait="kind"
 		add_trait="humble"
@@ -1602,7 +1995,7 @@
 		add_trait="gregarious"
 		employer=108 #Roy
 	}	
-	1181.1.1 = {
+	1182.1.1 = {
 		add_trait="grey_eminence"
 	}	
 	1227.01.01={
@@ -1619,10 +2012,18 @@
 	culture=lycian
 	
 	mother=147
+	trait="twin"
 	1167.01.01={
 		birth=yes
 	} 		
-	add_trait="twin"	
+	1179.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
 	1180.01.01 = {
 		add_trait="proud"
 		add_trait="wroth"
@@ -1630,7 +2031,7 @@
 		add_trait="cynical"
 		employer=108 #Roy
 	}	
-	1181.1.1 = {
+	1182.1.1 = {
 		add_trait="mastermind_theologian"
 	}	
 	1227.01.01={
@@ -1645,10 +2046,10 @@
 	religion=anima
 	culture=lycian
 	
+	trait="genius"
 	1100.01.01={
 		birth=yes
 	} 		
-	add_trait="genius"
 	1170.01.01={
 		death=yes
 	} 	 
@@ -1662,10 +2063,18 @@
 	culture=lycian
 	
 	father=152
+	trait="quick"
 	1140.01.01={
 		birth=yes
 	} 		
-	trait="quick"
+	1152.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
 	1163.1.1= {
 		death = {
 			death_reason=death_accident
@@ -1677,12 +2086,21 @@
 	name="Chad"
 	#Might actually be from Sacae?
 	religion=elimine_church
-	culture=lycian
+	culture=sacaean
 	
 	1165.01.01={
 		birth=yes
+		culture=lycian
 	} 		
-	1179.01.01 = {
+	1177.01.01={
+		add_trait="class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1180.01.01 = {
 		add_trait="flamboyant_schemer"
 		add_trait="schemer"
 		add_trait="poet" #He's really an artist, but close enough for now
@@ -1707,8 +2125,16 @@
 	
 	1165.01.01={
 		birth=yes
-	} 		
-	1179.01.01 = {
+	} 			
+	1177.01.01={
+		add_trait="class_thief_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1180.01.01 = {
 		add_trait="intricate_webweaver"
 		add_trait="schemer"
 		add_trait="organizer"
@@ -1745,7 +2171,15 @@
 	1105.01.01={
 		birth=yes
 	} 		
-	1119.01.01 = {
+	1117.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1120.01.01 = {
 		add_trait="brilliant_strategist"
 		add_trait="unyielding_leader"
 		add_trait="inspiring_leader"
@@ -1756,6 +2190,8 @@
 	}	
 	1121.01.01 = {
 		give_nickname="nick_the_impervious"
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
 	}	
 	# Mercenary in service to Caelin
 	1125.01.01 = {
@@ -1783,7 +2219,8 @@
 		employer=308 #Nergal
 		religion=dark
 		add_trait="mystic"
-		add_trait="immortal"
+		#add_trait="immortal"
+		health = 10
 	}	
 	
 	# Arbitrary date when the "empty vessel" morph of his friend is created. 
@@ -1793,22 +2230,28 @@
 		effect={
 			add_rival=308 #Nergal
 		}
+		remove_trait="class_hero"
+		add_trait="class_bishop"
+		effect = {
+			clr_character_flag="class_mercenary"
+			set_character_flag="class_monk"
+		}
 		remove_trait="lunatic"
-		employer=0; #TODO: replace with whoever runs the Elimine Church
+		employer=262; #filler character, head of the Elimine Church
 	}
 	
 	#1160.01.01 = {
-		#give him land on the Dread Isle?
-	#}		
+	#Steals a castle on the Dread Isle?
+	
 	
 	1161.01.01 = {
 		remove_trait="depressed"
 		remove_trait="wroth"
-		employer=0 #He vanished as though he never existed. 
+		#employer=0 #He vanished as though he never existed.
+		death = {
+			death_reason=death_missing
+		} 
 	}	
-	1310.01.01={
-		death=yes
-	} 	 #can't keep him around forever, even the Eight Legends die...
 }
 
 157 = {
@@ -1817,17 +2260,17 @@
 	religion=elimine_church
 	culture=lycian
 	
+	trait="quick"
 	1108.01.01={
 		birth=yes
 	} 		
-	add_trait="quick"
-	1122.01.01 = {
+	1123.01.01 = {
 		add_trait="skilled_tactician"
 	}	
 	# Mercenary in service to Caelin
 	1125.01.01 = {
 		effect={
-		add_friend=156 #Renault
+			add_friend=156 #Renault
 		}
 		employer=109 #Marquess Hausen of Caelin
 	}			
@@ -1844,11 +2287,11 @@
 	religion=elimine_church
 	culture=lycian
 	
+	trait="weak"
+	trait="slow" # seriously, how do you try to get to Caelin and wind up in Ilia?
 	1115.01.01={
 		birth=yes
 	} 		
-	trait="weak"
-	trait="slow" # seriously, how do you try to get to Caelin and wind up in Ilia?
 	
 	1115.01.01 = {
 		employer=109 #Marquess Hausen of Caelin
@@ -1860,6 +2303,12 @@
 		#}
 	#}		
 	1127.01.01 = {
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
 		effect = {
 			random_character = {
 				limit = { character = 156 } 
@@ -1874,7 +2323,7 @@
 		remove_trait="weak"
 		add_trait="strong"
 	}			
-	1129.01.01 = {
+	1130.01.01 = {
 		add_trait="tough_soldier"
 		add_trait="inspiring_leader"
 		add_trait="heavy_infantry_leader"
@@ -1915,6 +2364,10 @@
 	}
 	
 	#TODO: Lyn-specific events here?
+	1160.01.01 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
 	
 	1161.01.01 = {
 		#"Wallace intended to return to Caelin, but he got lost and ended up in Ilia."
@@ -1938,14 +2391,26 @@
 	} 		
 	1118.01.01 = {
 		employer=109 #Marquess Hausen of Caelin
-	}			
-	1132.01.01 = {
+	}		
+	1130.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 	
+	1133.01.01 = {
 		add_trait="skilled_tactician"
 		add_trait="cavalry_leader"
 		add_trait="unyielding_leader"
 		add_trait="just"
 	}	
 	
+	11.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
 	1154.01.01 = { 
 		give_job_title = job_marshal #Knight Commander of Caelin
 	}
@@ -1970,8 +2435,16 @@
 	} 		
 	1129.01.01 = {
 		employer=109 #Marquess Hausen of Caelin
-	}			
-	1143.01.01 = {
+	}	
+	1141.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 		
+	1144.01.01 = {
 		add_trait="misguided_warrior"
 		add_trait="arbitrary"
 		add_trait="deceitful"
@@ -1997,7 +2470,15 @@
 	1132.01.01 = {
 		employer=118 #Marquess Darin of Laus
 	}			
-	1146.01.01 = {
+	1144.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 		
+	1147.01.01 = {
 		add_trait="tough_soldier"
 		add_trait="heavy_infantry_leader"
 		add_trait="defensive_leader"
@@ -2021,11 +2502,19 @@
 	
 	1119.01.01={
 		birth=yes
-	} 		
-	1133.01.01 = {
+	} 	
+	1131.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 			
+	1134.01.01 = {
 		employer=118 #Marquess Darin of Laus
 	}			
-	1133.01.01 = {
+	1134.01.01 = {
 		add_trait="skilled_tactician"
 		add_trait="heavy_infantry_leader"
 		add_trait="unyielding_leader"
@@ -2036,6 +2525,10 @@
 		give_job_title = job_marshal #Knight Commander of Laus
 	}
 	
+	1139.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
 	1161.01.01 = { 
 		death = {
 			death_reason=death_battle
@@ -2053,8 +2546,16 @@
 	1109.01.01={
 		birth=yes
 	} 		
+	1121.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 	
 	
-	1123.01.01 = {
+	1124.01.01 = {
 		add_trait="skilled_tactician"
 		add_trait="cavalry_leader"
 		add_trait="aggressive_leader"
@@ -2069,6 +2570,8 @@
 		
 	1133.1.1 = {
 		give_nickname="nick_the_fierce_eagle"
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
 	}
 	
 	# Really loyal to Darin for some reason
@@ -2105,7 +2608,15 @@
 		birth=yes
 	} 				
 	
-	1144.01.01 = {
+	1142.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1145.01.01 = {
 		add_trait="intricate_webweaver"
 		add_trait="schemer"
 		add_trait="ambitious"
@@ -2139,7 +2650,15 @@
 		birth=yes
 	} 		
 	
-	1156.01.01 = {
+	1154.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1157.01.01 = {
 		add_trait="misguided_warrior"
 		add_trait="light_foot_leader"
 		add_trait="flanker"
@@ -2163,9 +2682,17 @@
 	
 	1125.01.01={
 		birth=yes
+	} 	
+	1137.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
 	} 		
 	
-	1139.01.01 = {
+	1140.01.01 = {
 		add_trait="misguided_warrior"
 		add_trait="aggressive_leader"
 		add_trait="greedy"
@@ -2189,8 +2716,16 @@
 	1155.01.01={
 		birth=yes
 	} 		
+	1167.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
 	
-	1169.01.01 = {
+	1170.01.01 = {
 		add_trait="misguided_warrior"
 		add_trait="aggressive_leader"
 		add_trait="greedy"
@@ -2217,7 +2752,15 @@
 	1128.01.01 = {
 		employer=109 #Marquess Hausen of Caelin
 	}			
-	1142.01.01 = {
+	1140.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1143.01.01 = {
 		add_trait="misguided_warrior"
 		add_trait="proud"
 	}	
@@ -2236,12 +2779,21 @@
 	religion=raider_pagan
 	culture=lycian
 	
+	trait="strong"	#or is it just the Killer Axe?
 	1144.01.01={
 		birth=yes
 	} 	
-	add_trait="strong"	#or is it just the Killer Axe?
 	
-	1158.01.01 = {
+	1156.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	
+	1159.01.01 = {
 		add_trait="misguided_warrior"
 		add_trait="aggressive_leader"
 		add_trait="greedy"
@@ -2269,7 +2821,15 @@
 	#1151.01.01 = { 
 		#employer=103 #Uther	
 	#}
-	1165.01.01 = { 
+	1163.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1166.01.01 = { 
 		add_trait="flamboyant_schemer"
 		add_trait="schemer"
 		add_trait="defensive_leader"
@@ -2278,7 +2838,11 @@
 		add_trait="deceitful"	
 		add_trait="proud"
 		add_trait="greedy"
-	}
+	} 
+	1171.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
 	
 	1181.1.1= {
 		death = {
@@ -2301,7 +2865,15 @@
 	#1137.01.01 = { 
 		#employer=103 #Uther	
 	#}
-	1151.01.01 = { 
+	1149.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1152.01.01 = { 
 		add_trait="misguided_warrior"
 		add_trait="defensive_leader"
 		add_trait="heavy_infantry_leader"
@@ -2339,14 +2911,23 @@
 	religion=raider_pagan
 	culture=lycian
 	
-	trait="class_fighter"
-	trait="thrifty_clerk"
-	trait="greedy"
-	trait="cruel"
-	trait="proud"
 	1130.01.01={
 		birth=yes
-	} 	
+	} 		
+	1142.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1145.01.01={
+		add_trait="thrifty_clerk"
+		add_trait="greedy"
+		add_trait="cruel"
+		add_trait="proud"
+	} 
 	1161.01.01 = { 
 		death = {
 			death_reason=death_battle
@@ -2368,10 +2949,22 @@
 	father=176
 	1151.01.01={
 		birth=yes
-	} 		
-	1164.02.01 = { 
+	} 	
+	1163.01.01={
+		add_trait="class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_monk"
+		}
+	} 	
+	1166.02.01 = { 
 		add_trait="brave"
 	}
+	1171.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}	
 	
 	1181.1.1= {
 		death = {
@@ -2406,6 +2999,11 @@
 	1120.01.01={
 		birth=yes
 	} 		
+	1132.01.01={
+		effect = {
+			set_character_flag="class_monk"
+		}
+	} 	
 	1170.01.01={
 		death=yes
 	} 	 	
@@ -2421,6 +3019,11 @@
 	1140.01.01={
 		birth=yes
 	} 		
+	1152.01.01={
+		effect = {
+			set_character_flag="class_priest"
+		}
+	} 	
 	1164.01.01 = {
 		add_spouse=175 
 	}
@@ -2445,7 +3048,15 @@
 	1164.01.01={
 		birth=yes
 	} 		
-	1178.01.01 = { 
+	1176.01.01={
+		add_trait="class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cleric"
+		}
+	} 
+	1179.01.01 = { 
 		add_trait="detached_priest" # Staff user, but didn't really like learning it.
 		add_trait="proud"
 		add_trait="wroth"
@@ -2467,9 +3078,17 @@
 	#mother=? #Ilian, died when C was a child
 	1165.01.01={
 		birth=yes
-	} 		
+	} 	
+	1177.01.01={
+		add_trait="class_pegasus_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_pegasus_knight"
+		}
+	} 	
 	
-	1179.01.01 = { 
+	1180.01.01 = { 
 		add_trait="misguided_warrior"
 		add_trait="proud"
 		add_trait="envious"
@@ -2490,6 +3109,14 @@
 	1147.01.01={
 		birth=yes
 	} 	
+	1159.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
 	1197.01.01={
 		death=yes
 	} 	 	
@@ -2501,18 +3128,25 @@
 	religion=elimine_church
 	culture=lycian
 	
+	trait="strong"
 	1130.01.01={
 		birth=yes
 	} 		
-	add_trait="strong"
-	1144.01.01 = { 
-		add_trait="scholar"
+	1145.01.01 = { 
 		add_trait="wroth"
 		add_trait="just"
+	}
+	1155.01.01 = { 
+		add_trait="scholar"
 	}
 	
 	1181.1.1= {
 		add_trait="wounded"
+	}
+	
+	1182.1.1= {
+		remove_trait="wounded"
+		add_trait="scarred"
 	}	
 	
 	1200.01.01={
@@ -2526,18 +3160,27 @@
 	religion=elimine_church
 	culture=lycian
 	
-	#father=182 #Magough
+	#father=181 #Magough
 	real_father=401 #Hartmut
 	mother=921 #Melitha
+	trait="slow" 
+	trait="dragon_blood" 
+	trait="bastard"
 	1165.01.01={
 		birth=yes
 	} 		
-		add_trait="slow" 
-	1179.01.01 = { 
+	1177.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1180.01.01 = { 
 		add_trait="misguided_warrior"
 		add_trait="inspiring_leader"
 		add_trait="light_foot_leader"
-		add_trait="bastard"
 		add_trait="proud"
 		add_trait="brave"
 		add_trait="just"
@@ -2569,7 +3212,7 @@
 		#employer=174 #Marquess Worde
 	#}			
 	
-	1149.01.01 = {
+	1150.01.01 = {
 		add_trait="intricate_webweaver"
 		add_trait="schemer"
 		add_trait="ambitious"
@@ -2606,9 +3249,18 @@
 	
 	1163.01.01 = {
 		employer=174 #Marquess Worde
-	}			
+	}	
 	
-	1177.01.01 = {
+	1175.01.01={
+		add_trait="class_soldier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_soldier"
+		}
+	} 	
+	
+	1178.01.01 = {
 		add_trait="misguided_warrior"
 		add_trait="craven"
 		add_trait="arbitrary"
@@ -2639,10 +3291,10 @@
 	culture=lycian
 	
 	father=186 #Goldor
+	trait="strong"
 	1161.01.01={
 		birth=yes
 	} 		
-		add_trait="strong"
 	
 	1161.01.01 = {
 		employer=177 #Marquess Tania
@@ -2652,9 +3304,17 @@
 		effect={
 		add_friend=178 #Tiena
 		}
-	}		
+	}	
+	1173.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 	
 	
-	1175.01.01 = {
+	1176.01.01 = {
 		add_trait="tough_soldier"
 		add_trait="gluttonous"
 		add_trait="just"
@@ -2679,21 +3339,34 @@
 	
 	religion=elimine_church
 	culture=lycian
+	trait="strong"
 	
 	1140.01.01={
 		birth=yes
 	} 		
-		add_trait="strong"
 	
 	1140.01.01 = {
 		employer=177 #Marquess Tania
-	}			
+	}	
 	
-	1154.01.01 = {
+	1152.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 	
+	
+	1155.01.01 = {
 		add_trait="tough_soldier"
 		give_job_title = job_marshal
 		
 	}		
+	1159.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
 	
 	1172.1.1= {
 		death = {
@@ -2715,9 +3388,17 @@
 	
 	1162.01.01 = {
 		employer=177 #Marquess Tania
-	}			
+	}	
+	1174.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 		
 	
-	1176.01.01 = {
+	1177.01.01 = {
 		add_trait="tough_soldier"
 		add_trait="gluttonous"
 		add_trait="just"
@@ -2743,8 +3424,16 @@
 	1159.01.01={
 		birth=yes
 	} 		
+	1171.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
 	
-	1173.01.01 = {
+	1174.01.01 = {
 		add_trait="tough_soldier"
 		add_trait="inspiring_leader"
 		add_trait="heavy_infantry_leader"
@@ -2773,6 +3462,12 @@
 		remove_trait="depressed"
 		
 		#banished by Eliwood
+		employer=202
+	}	
+	
+	1182.01.01 = {
+		remove_trait="wounded"
+		add_trait="scarred"
 	}	
 	
 	1209.01.01={
@@ -2792,7 +3487,7 @@
 		birth=yes
 	} 		
 
-	1173.01.01 = {
+	1174.01.01 = {
 		add_trait="kind"
 		add_trait="just"
 	}	
@@ -2811,7 +3506,7 @@
 	1150.01.01={
 		birth=yes
 	} 		
-	1164.01.01 = { 
+	1165.01.01 = { 
 		add_trait="ambitious"
 		add_trait="deceitful"
 		add_trait="arbitrary"
@@ -2837,7 +3532,15 @@
 	
 	1118.01.01={
 		birth=yes
-	} 		
+	}
+	1130.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	}  		
 	1198.01.01={
 		death=yes
 	} 	

@@ -12,14 +12,18 @@
 	trait="temperate"
 	trait="greedy"
 	trait="shy"
-	trait="class_shaman"
-	trait=regalia_apocalypse
-	trait=regalia_durandal
-	trait="regalia_binding_blade"
 	1140.6.24={
 		birth=yes
 		employer=601
 	}
+	1152.06.24={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
 	1240.6.24={
 		death=yes
 	}

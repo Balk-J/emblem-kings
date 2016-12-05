@@ -1,0 +1,9 @@
+1160.1.1={
+	holder=156 # Renault
+	liege=0
+}
+
+1161.1.1={
+	holder=0 
+	liege=c_virtus
+}

@@ -49,19 +49,28 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="organizer"
-	trait="skilled_tactician"
-	trait="strategist"
-	trait="patient"
-	trait="just"
-	trait="zealous"
-	trait="brave"
 	1126.01.01 = { 
 		birth=yes 
 	}
+	1138.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1141.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="organizer"
+	add_trait="skilled_tactician"
+	add_trait="strategist"
+	add_trait="patient"
+	add_trait="just"
+	add_trait="zealous"
+	add_trait="brave"
+	} 
 	
 	1146.01.01 = { 
 		remove_trait="class_horse_archer"
@@ -89,11 +98,6 @@
 	
 	father=502
 	disallow_random_traits="yes" 
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="skilled_tactician"
-	trait="adventurer"
 	
 	1141.01.01 = { 
 		birth=yes 
@@ -101,7 +105,7 @@
 	
 	#banished from his village before the age of four due to a prophecy
 	1144.01.01 = { 
-		employer=0 #???
+		employer=548 # chief of Bulgar
 		add_trait="ill"
 		add_trait="depressed"
 		add_trait="shy"
@@ -112,6 +116,21 @@
 		employer=117 # Marquess Araphen the jerk
 		remove_trait="ill"
 	}	
+	
+	1153.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1156.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="skilled_tactician"
+	add_trait="adventurer"
+	} 
 	
 	1160.01.01 = { 
 		employer=161 # Leaves Araphen at the start of Eliwood's story. Winds up with Eubans.
@@ -140,19 +159,29 @@
 	
 	father=503
 	disallow_random_traits="yes" 
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="tough_soldier"
-	trait="shy"
-	trait="patient"
-	trait="humble"
-	trait="brave"
-	trait="zealous"
-	
 	1155.01.01 = { 
 		birth=yes 
 	}
+	
+	1167.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1170.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="tough_soldier"
+	add_trait="shy"
+	add_trait="patient"
+	add_trait="humble"
+	add_trait="brave"
+	add_trait="zealous"
+	
+	} 
 	
 	#leads Kutolah women+children out of Sacae. 
 	#Gets them all massacred by Bern.
@@ -188,13 +217,6 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="tough_soldier"
-	trait="shy"
-	trait="patient"
-	trait="just"
 	
 	1159.01.01 = { 
 		birth=yes 
@@ -203,6 +225,22 @@
 	1159.01.01 = { 
 		employer=502 # Kutolah clan
 	}
+	1171.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1174.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="tough_soldier"
+	add_trait="shy"
+	add_trait="patient"
+	add_trait="just"
+	} 
 	
 	1180.02.01 = { 
 		employer=713 # Signed on with Scott (?!) while looking for Sue.
@@ -230,16 +268,6 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_myrmidon"
-	trait="flat_terrain_leader"
-	trait="light_foot_leader"
-	trait="tough_soldier"
-	trait="kind"
-	trait="diligent" 
-	trait="brave"
-	trait="just"
-	trait="ambitious" 
-	trait="proud" 
 	
 	1142.01.01 = { 
 		birth=yes 
@@ -248,10 +276,29 @@
 	1142.01.01 = { 
 		employer=502 # Kutolah clan
 	}
+	1154.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1157.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="light_foot_leader"
+	add_trait="tough_soldier"
+	add_trait="kind"
+	add_trait="diligent" 
+	add_trait="brave"
+	add_trait="just"
+	add_trait="ambitious" 
+	add_trait="proud" 
+	} 
 	
 	1157.01.01 = { 
 		add_trait="adventurer"
-		employer=502 # leaves Kutolah to train
+		employer=548 # leaves Kutolah to train; send him to Bulgar?
 	}
 	
 	1158.01.01 = { 
@@ -315,17 +362,6 @@
 	culture=bernese
 	
 	disallow_random_traits="yes" 
-	trait="class_myrmidon"
-	trait="flat_terrain_leader"
-	trait="light_foot_leader"
-	trait="tough_soldier"
-	trait="cynical"
-	trait="shy"
-	trait="ambitious" 
-	trait="proud" 
-	trait="wroth" 
-	trait="diligent" 
-	trait="patient"
 	
 	# father's mother and mother's father were Sacaean
 	father=555
@@ -334,6 +370,26 @@
 		birth=yes 
 		culture=sacaean
 	}
+	1170.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1173.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="light_foot_leader"
+	add_trait="tough_soldier"
+	add_trait="cynical"
+	add_trait="shy"
+	add_trait="ambitious" 
+	add_trait="proud" 
+	add_trait="wroth" 
+	add_trait="diligent" 
+	add_trait="patient"
+	} 
 	
 	1180.01.01 = { 
 		effect={
@@ -348,12 +404,15 @@
 	}
 	
 	1181.01.01 = { 
-		employer=0 # disappears
+		#employer=0 # disappears
+		death = {
+			death_reason=death_missing
+		}
 	}
 	
-	1209.01.01 = { 
-		death = yes
-	}
+	#1209.01.01 = { 
+	#	death = yes
+	#}
 }
 
 508 = {
@@ -365,29 +424,38 @@
 	
 	disallow_random_traits="yes" 
 	trait="quick"
-	trait="flat_terrain_leader"
-	trait="light_foot_leader"
-	trait="aggressive_leader"
-	trait="skilled_tactician"
-	trait="class_myrmidon"
-	trait="duelist"
-	trait="wroth"
-	trait="proud"
-	trait="arbitrary"
-	trait="cruel"
-	trait="brave"
-	trait="ambitious"
-	trait="diligent"
 	
 	father=511
 	mother=512
 	1139.01.01 = { 
 		birth=yes 
 	}
+	1151.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1154.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="light_foot_leader"
+	add_trait="aggressive_leader"
+	add_trait="skilled_tactician"
+	add_trait="wroth"
+	add_trait="proud"
+	add_trait="arbitrary"
+	add_trait="cruel"
+	add_trait="brave"
+	add_trait="ambitious"
+	add_trait="diligent"
+	} 
 	
 	# kills his entire clan minus Karla. There were six of them - although it's not clear how many are his immediate family, let's say the six are Karla, Karel, their parents and two more siblings.
 	# "Only one can wield the sword."
 	1156.01.01 = { 
+		add_trait="duelist"
 		remove_trait="class_myrmidon"
 		add_trait="class_swordmaster"
 		add_trait="lunatic"
@@ -423,8 +491,10 @@
 		piety=1000
 	}
 	
-	#TODO
-	# Moves to the island near the Dragon Temple
+	# Moves to the village near the Dragon Sanctuary
+	1170.01.01 = { 
+		employer = 462 
+	}
 	
 	1189.01.01 = { 
 		death=yes 
@@ -440,22 +510,36 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_myrmidon_female"
-	trait="flat_terrain_leader"
-	trait="light_foot_leader"
-	trait="skilled_tactician"
-	trait="duelist"
-	trait="patient"
-	trait="shy"
-	trait="brave"
 	
 	father=511
 	mother=512
 	1140.01.01 = { 
 		birth=yes 
 	}
+	1152.01.01={
+		add_trait="class_myrmidon_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1155.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="light_foot_leader"
+	add_trait="skilled_tactician"
+	add_trait="duelist"
+	add_trait="patient"
+	add_trait="shy"
+	add_trait="brave"
+	} 
+	
+	1159.01.01={
+		add_trait="duelist"
+	} 
 	
 	1160.1.1= {
+		add_trait="duelist"
 		remove_trait="class_myrmidon_female"
 		add_trait="class_swordmaster_female"
 		give_nickname="nick_the_princess_of_swords"
@@ -482,25 +566,34 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_myrmidon_female"
-	trait="flat_terrain_leader"
-	trait="light_foot_leader"
-	trait="tough_soldier"
-	trait="duelist"
-	trait="trusting"
-	trait="diligent"
-	trait="just"
-	trait="ambitious"
-	trait="proud"
 	
 	mother=509 #Karla
 	father=703 #Bartre
 	1164.01.01 = { 
 		birth=yes 
 	}
+	1176.01.01={
+		add_trait="class_myrmidon_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1179.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="light_foot_leader"
+	add_trait="tough_soldier"
+	add_trait="trusting"
+	add_trait="diligent"
+	add_trait="just"
+	add_trait="ambitious"
+	add_trait="proud"
+	} 
 	
 	1180.01.01 = { 
 		add_trait="adventurer"
+		add_trait="duelist"
 		employer=713 # Signed on with Scott 
 	}
 	
@@ -529,17 +622,25 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="brilliant_strategist"
-	trait="class_myrmidon"
-	trait="duelist"
-	
 	1100.01.01 = { 
 		birth=yes 
 	}
+	1112.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1115.01.01={
+	add_trait="brilliant_strategist"
+	} 
 	
 	1120.01.01 = { 
 		remove_trait="class_myrmidon"
 		add_trait="class_swordmaster"
+		add_trait="duelist"
 	}
 	
 	1130.01.01 = { 
@@ -562,17 +663,25 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="grey_eminence"
-	trait="class_myrmidon_female"
-	trait="duelist"
-	
 	1110.01.01 = { 
 		birth=yes 
 	}
+	1122.01.01={
+		add_trait="class_myrmidon_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1135.01.01={
+	add_trait="grey_eminence"
+	} 
 	
 	1130.01.01 = { 
 		remove_trait="class_myrmidon_female"
 		add_trait="class_swordmaster_female"
+		add_trait="duelist"
 	}
 	
 	# murdered by Karel
@@ -590,20 +699,28 @@
 	
 	religion=divine_sky_pagan
 	culture=sacaean
-	
-	trait="elusive_shadow"
-	trait="class_myrmidon"
-	trait="duelist"
-	
+		
 	father=511
 	mother=512
 	1132.01.01 = { 
 		birth=yes 
 	}
+	1144.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1147.01.01={
+	add_trait="elusive_shadow"
+	} 
 	
 	1152.01.01 = { 
 		remove_trait="class_myrmidon"
 		add_trait="class_swordmaster"
+	add_trait="duelist"
 	}
 	
 	# murdered by Karel
@@ -623,19 +740,27 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="mastermind_theologian"
-	trait="class_myrmidon_female"
-	trait="duelist"
-	
 	father=511
 	mother=512
 	1134.01.01 = { 
 		birth=yes 
 	}
+	1146.01.01={
+		add_trait="class_myrmidon_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1149.01.01={
+		add_trait="mastermind_theologian"
+	} 
 	
 	1154.01.01 = { 
 		remove_trait="class_myrmidon_female"
 		add_trait="class_swordmaster_female"
+		add_trait="duelist"
 	}
 	
 	# murdered by Karel
@@ -653,14 +778,21 @@
 	
 	religion=divine_sky_pagan
 	culture=sacaean
-	
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	
+		
 	1127.01.01 = { 
 		birth=yes 
 	}
+	1139.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1142.01.01={
+	add_trait="flat_terrain_leader"
+	} 
 	
 	#Elopes with Madelyn
 	1143.01.01 = { 
@@ -688,20 +820,29 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="flanker"
-	trait="jungle_terrain_leader"
-	trait="tough_soldier"
-	trait="just"
-	trait="honest"
-	trait="proud"
-	trait="charitable"
 	
 	1131.01.01 = { 
 		birth=yes 
 	}
+	1143.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1146.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="flanker"
+	add_trait="jungle_terrain_leader"
+	add_trait="tough_soldier"
+	add_trait="just"
+	add_trait="honest"
+	add_trait="proud"
+	add_trait="charitable"
+	} 
 	
 	1150.01.01 = { 
 		employer=425 # Brendan Reed
@@ -731,20 +872,29 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="flanker"
-	trait="intricate_webweaver"
-	trait="proud"
-	trait="deceitful"
-	trait="cynical"
-	trait="ambitious"
 	
 	father=524
 	1159.01.01 = { 
 		birth=yes 
 	}
+	1171.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1174.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="flanker"
+	add_trait="intricate_webweaver"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="cynical"
+	add_trait="ambitious"
+	} 
 	
 	1177.01.01 = { 
 		remove_trait="class_horse_archer"
@@ -767,19 +917,28 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="flanker"
-	trait="skilled_tactician"
-	trait="proud"
-	trait="brave"
-	trait="wroth"
-	
+		
 	father=525
 	1125.01.01 = { 
 		birth=yes 
 	}
+	1137.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1140.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="flanker"
+	add_trait="skilled_tactician"
+	add_trait="proud"
+	add_trait="brave"
+	add_trait="wroth"
+	} 
 	
 	1145.01.01 = { 
 		remove_trait="class_horse_archer"
@@ -801,15 +960,23 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="flanker"
-	
 	father=525
 	1126.01.01 = { 
 		birth=yes 
 	}
+	1138.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1141.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="flanker"
+	} 
 	
 	1146.01.01 = { 
 		remove_trait="class_horse_archer"
@@ -831,15 +998,23 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="flanker"
-	
 	father=525
 	1127.01.01 = { 
 		birth=yes 
 	}
+	1139.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1142.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="flanker"
+	} 
 	
 	1147.01.01 = { 
 		remove_trait="class_horse_archer"
@@ -861,14 +1036,22 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_shaman"
-	trait="flat_terrain_leader"
-	trait="flanker"
-	
 	father=525
 	1128.01.01 = { 
 		birth=yes 
 	}
+	1140.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1143.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="flanker"
+	} 
 	
 	1148.01.01 = { 
 		remove_trait="class_shaman"
@@ -898,6 +1081,18 @@
 	1129.01.01 = { 
 		birth=yes 
 	}
+	1141.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1144.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="flanker"
+	} 
 	
 	1149.01.01 = { 
 		remove_trait="class_shaman"
@@ -919,14 +1114,23 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_shaman"
-	trait="flat_terrain_leader"
-	trait="flanker"
 	
 	father=525
 	1130.01.01 = { 
 		birth=yes 
 	}
+	1142.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1145.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="flanker"
+	} 
 	
 	1150.01.01 = { 
 		remove_trait="class_shaman"
@@ -956,6 +1160,18 @@
 	1124.01.01 = { 
 		birth=yes 
 	}
+	1136.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1139.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	} 
 	
 	1144.01.01 = { 
 		remove_trait="class_horse_archer"
@@ -973,14 +1189,22 @@
 	
 	religion=divine_sky_pagan
 	culture=sacaean
-	
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	
+		
 	1090.01.01 = { 
 		birth=yes 
 	}
+	1102.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1105.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	} 
 	
 	1110.01.01 = { 
 		remove_trait="class_horse_archer"
@@ -1003,21 +1227,35 @@
 	culture=etrurian
 	
 	disallow_random_traits="yes" 
-	trait="class_brigand"
-	trait="flat_terrain_leader"
-	trait="light_foot_leader"
-	trait="misguided_warrior"
-	trait="proud"
-	trait="wroth"
-	trait="arbitrary"
-	trait="cruel"
 	
 	1138.01.01 = { 
 		birth=yes 
 		culture=sacaean
 	}
+	1150.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1153.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="light_foot_leader"
+	add_trait="misguided_warrior"
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait="arbitrary"
+	add_trait="cruel"
+	} 
+	
+	1158.01.01={
+	add_trait="wounded"
+	} 
 
 	1159.1.1={
+		remove_trait="wounded"
 		add_trait="scarred"
 		give_nickname=nick_the_beast
 	}
@@ -1037,17 +1275,26 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_horse_archer"
-	trait="flat_terrain_leader"
-	trait="cavalry_leader"
-	trait="tough_soldier"
-	trait="wroth"
-	trait="greedy"
-	trait="cynical"
 	
 	1135.01.01 = { 
 		birth=yes 
 	}
+	1147.01.01={
+		add_trait="class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_horse_archer"
+		}
+	} 
+	1150.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="cavalry_leader"
+	add_trait="tough_soldier"
+	add_trait="wroth"
+	add_trait="greedy"
+	add_trait="cynical"
+	} 
 	
 	1160.1.1={
 		employer=163 #Eubans
@@ -1071,21 +1318,30 @@
 	culture=etrurian
 	
 	disallow_random_traits="yes" 
-	trait="class_mercenary"
-	trait="flat_terrain_leader"
-	trait="light_foot_leader"
-	trait="misguided_warrior"
-	trait="proud"
-	trait="wroth"
-	trait="greedy"
-	trait="ambitious"
-	trait="arbitrary"
-	trait="cynical"
 	
 	1139.01.01 = { 
 		birth=yes 
 		culture=sacaean
 	}
+	1151.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1154.01.01={
+	add_trait="flat_terrain_leader"
+	add_trait="light_foot_leader"
+	add_trait="misguided_warrior"
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait="greedy"
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="cynical"
+	} 
 	1159.01.01 = { 
 		add_claim="c_mani"
 	}
@@ -1108,22 +1364,31 @@
 	disallow_random_traits="yes" 
 	trait="strong"
 	trait="quick"
-	trait="class_pirate"
-	trait="heavy_infantry_leader"
-	trait="fortune_builder"
-	trait="administrator"
-	trait="charitable"
-	trait="just"
-	trait="cynical"
-	trait="slothful"
 	
 	father=531
 	1134.01.01 = { 
 		birth=yes 
 	}
+	1146.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1149.01.01={
+	add_trait="heavy_infantry_leader"
+	add_trait="fortune_builder"
+	add_trait="administrator"
+	add_trait="charitable"
+	add_trait="just"
+	add_trait="cynical"
+	add_trait="slothful"
+	} 
 	
 	1154.01.01 = { 
-		remove_trait="class_pirate"
+		remove_trait="class_fighter"
 		add_trait="class_warrior"
 	}
 	
@@ -1144,24 +1409,33 @@
 	culture=bernese
 	
 	disallow_random_traits="yes" 
-	trait="class_pirate"
-	trait="mountain_terrain_leader"
-	trait="heavy_infantry_leader"
-	trait="indulgent_wastrel"
-	trait="charitable"
-	trait="brave"
-	trait="kind"
 	
 	father=531
 	1159.01.01 = { 
 		birth=yes 
 	}
+	1171.01.01={
+		add_trait="class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_pirate"
+		}
+	} 
+	1174.01.01={
+	add_trait="mountain_terrain_leader"
+	add_trait="heavy_infantry_leader"
+	add_trait="indulgent_wastrel"
+	add_trait="charitable"
+	add_trait="brave"
+	add_trait="kind"
+	} 
 	
-	1160.01.01 = { 
+	1180.01.01 = { 
 		religion=raider_pagan
 		culture=western_islander
 	}
-	1161.01.01 = { 
+	1181.01.01 = { 
 		religion=elimine_church
 	}
 	#starts a trade route that runs to the western isles
@@ -1178,14 +1452,24 @@
 	culture=bernese
 	
 	trait="quick"
-	trait="midas_touched"
-	trait="greedy"
-	trait="arbitrary"
-	trait="cruel"
 	
 	1114.01.01 = { 
 		birth=yes 
 	}
+	1126.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1129.01.01={
+	add_trait="midas_touched"
+	add_trait="greedy"
+	add_trait="arbitrary"
+	add_trait="cruel"
+	} 
 	
 	1186.01.01 = { 
 		death = yes
@@ -1200,11 +1484,6 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_myrmidon"
-	trait="tough_soldier"
-	trait="brave"
-	trait="just"
-	trait="cynical"
 	
 	1151.01.01 = { 
 		birth=yes 
@@ -1213,6 +1492,20 @@
 	1151.01.01 = { 
 		employer=406 # Brunnya 
 	}
+	1163.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1166.01.01={
+	add_trait="tough_soldier"
+	add_trait="brave"
+	add_trait="just"
+	add_trait="cynical"
+	} 
 	
 	1171.01.01 = { 
 		remove_trait="class_myrmidon"
@@ -1239,18 +1532,27 @@
 	
 	disallow_random_traits="yes" 
 	trait="strong"
-	trait="class_brigand"
-	trait="aggressive_leader"
-	trait="rough_terrain_leader"
-	trait="mountain_terrain_leader"
-	trait="tough_soldier"
-	trait="proud"
-	trait="wroth"
-	trait="cruel"
-	
+		
 	1130.01.01 = { 
 		birth=yes 
 	}
+	1142.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1145.01.01={
+	add_trait="aggressive_leader"
+	add_trait="rough_terrain_leader"
+	add_trait="mountain_terrain_leader"
+	add_trait="tough_soldier"
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait="cruel"
+	} 
 	
 	1159.02.01 = { 
 		death = {
@@ -1267,18 +1569,27 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_brigand"
-	trait="aggressive_leader"
-	trait="flanker"
-	trait="misguided_warrior"
-	trait="proud"
-	trait="wroth"
-	trait="cruel"
-	trait="ambitious"
 	
 	1131.01.01 = { 
 		birth=yes 
 	}
+	1143.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1146.01.01={
+	add_trait="aggressive_leader"
+	add_trait="flanker"
+	add_trait="misguided_warrior"
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait="cruel"
+	add_trait="ambitious"
+	} 
 	
 	1151.01.01 = { 
 		employer=533 #Bug
@@ -1299,17 +1610,26 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_brigand"
-	trait="aggressive_leader"
-	trait="misguided_warrior"
-	trait="proud"
-	trait="wroth"
-	trait="lustful"
-	trait="cruel"
 	
 	1136.01.01 = { 
 		birth=yes 
 	}
+	1148.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1151.01.01={
+	add_trait="aggressive_leader"
+	add_trait="misguided_warrior"
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait="lustful"
+	add_trait="cruel"
+	} 
 	
 	1156.01.01 = { 
 		employer=533 #Bug
@@ -1329,18 +1649,27 @@
 	religion=raider_pagan
 	culture=sacaean
 	
-	disallow_random_traits="yes" 
-	trait="class_brigand"
-	trait="aggressive_leader"
-	trait="flat_terrain_leader"
-	trait="misguided_warrior"
-	trait="lustful"
-	trait="wroth"
-	trait="cruel"
+	disallow_random_traits="yes"
 	
 	1111.01.01 = { 
 		birth=yes 
 	}
+	1123.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1126.01.01={
+	add_trait="aggressive_leader"
+	add_trait="flat_terrain_leader"
+	add_trait="misguided_warrior"
+	add_trait="lustful"
+	add_trait="wroth"
+	add_trait="cruel"
+	} 
 	
 	1159.02.01 = { 
 		death = {
@@ -1357,21 +1686,34 @@
 	culture=sacaean
 	
 	trait="strong"
-	trait="class_brigand"
-	trait="aggressive_leader"
-	trait="flat_terrain_leader"
-	trait="rough_terrain_leader"
-	trait="mountain_terrain_leader"
-	trait="intricate_webweaver"
-	trait="deceitful"
-	trait="cruel"
-	trait="greedy"
-	trait="patient"
-	trait="cynical"
 	
 	1125.01.01 = { 
 		birth=yes 
 	}
+	1137.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1140.01.01={
+	add_trait="aggressive_leader"
+	add_trait="flat_terrain_leader"
+	add_trait="rough_terrain_leader"
+	add_trait="mountain_terrain_leader"
+	add_trait="intricate_webweaver"
+	add_trait="deceitful"
+	add_trait="cruel"
+	add_trait="greedy"
+	add_trait="patient"
+	add_trait="cynical"
+	} 
+	1145.1.1 = {
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}	
 	
 	1160.01.01 = { 
 		death = {
@@ -1390,7 +1732,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1407,7 +1748,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1424,7 +1764,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1441,7 +1780,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1458,7 +1796,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1475,7 +1812,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1526,7 +1862,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1543,7 +1878,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_myrmidon"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1561,11 +1895,17 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_myrmidon"
 	1085.01.01 = { 
 		birth=yes 
 	}
-	
+	1097.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
 	1140.01.01 = { 
 		death=yes 
 	}
@@ -1578,11 +1918,18 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_myrmidon"
 	father=547
 	1115.01.01 = { 
 		birth=yes 
 	}
+	1127.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
 	
 	1134.01.01 = { 
 		add_spouse=549
@@ -1616,12 +1963,19 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_myrmidon"
 	father=548
 	mother=549
 	1136.01.01 = { 
 		birth=yes 
 	}
+	1148.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
 	
 	1196.01.01 = { 
 		death=yes 
@@ -1635,12 +1989,19 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_myrmidon"
 	father=548
 	mother=549
 	1137.01.01 = { 
 		birth=yes 
 	}
+	1149.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
 	
 	1199.01.01 = { 
 		death=yes 
@@ -1655,12 +2016,19 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_myrmidon_female"
 	father=548
 	mother=549
 	1138.01.01 = { 
 		birth=yes 
 	}
+	1150.01.01={
+		add_trait="class_myrmidon_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
 	
 	#died in Bern invasion
 	1180.02.01 = { 
@@ -1697,10 +2065,17 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_myrmidon_female"
 	1110.01.01 = { 
 		birth=yes 
 	}
+	1122.01.01={
+		add_trait="class_myrmidon_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
 	
 	1168.01.01 = { 
 		death=yes 
@@ -1714,7 +2089,6 @@
 	religion=elimine_church
 	culture=bernese
 	
-	trait="class_myrmidon"
 	father=553
 	mother=554
 	1130.01.01 = { 
@@ -1809,7 +2183,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1140.01.01 = { 
 		birth=yes 
 	}
@@ -1826,7 +2199,6 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_horse_archer"
 	1170.01.01 = { 
 		birth=yes 
 	}

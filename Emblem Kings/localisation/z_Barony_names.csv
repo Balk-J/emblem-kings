@@ -691,8 +691,8 @@ b_felsina;Felsina;Felsina;Felsina;;Felsina;;;;;;;;;x
 b_felsina_adj;Felsinan;;felsiner;;;;;;;;;;;x
 b_felsina_2;Felsina;Felsina;Felsina;;Felsina;;;;;;;;;x
 b_felsina_2_adj;Felsinan;;felsiner;;;;;;;;;;;x
-b_fire_dragon_temple;Fire Dragon Temple;Fire Dragon Temple;Fire Dragon Temple;;Fire Dragon Temple;;;;;;;;;x
-b_fire_dragon_temple_adj;Fire Dragon Templean;;Fire Dragon Templer;;;;;;;;;;;x
+b_dragon_sanctuary;Dragon Sanctuary;Dragon Sanctuary;Dragon Sanctuary;;Dragon Sanctuary;;;;;;;;;x
+b_dragon_sanctuary_adj;Dragon Sanctuary;;Dragon Sanctuary;;;;;;;;;;;x
 b_fort_cyaneae;Fort Cyaneae;Fort Cyaneae;Fort Cyaneae;;Fort Cyaneae;;;;;;;;;x
 b_fort_cyaneae_adj;Fort Cyaneaean;;Fort Cyaner;;;;;;;;;;;x
 b_vaud;Vaud;Vaud;Vaud;;Vaud;;;;;;;;;x

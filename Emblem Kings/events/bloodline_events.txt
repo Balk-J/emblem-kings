@@ -1,0 +1,81 @@
+namespace = bloodline
+
+# Inheriting dragon's blood
+character_event = {
+	id = bloodline.1
+	
+	hide_window = yes
+	
+	trigger = {
+		# You might be a dragon if one of your parents is a dragon.
+		OR = {
+			real_father_even_if_dead  = {
+				trait = dragon
+			}
+			mother_even_if_dead = {
+				trait = dragon
+			}
+			# ...or if they both have dragon blood
+			AND = {
+				real_father_even_if_dead  = {
+					trait = dragon_blood
+				}
+				mother_even_if_dead = {
+					trait = dragon_blood
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK	
+		
+		
+		# You're a pure-blooded dragon only if BOTH of your parents are.
+		if = {
+			limit = {
+				AND = {
+					real_father_even_if_dead  = {
+						trait = dragon
+					}
+					mother_even_if_dead = {
+						trait = dragon
+					}
+				}
+			}
+			add_trait = dragon
+		}
+		
+		# You're a partial dragon if only ONE of your parents is a full dragon, or if BOTH parents are partial dragons.
+		# This is the Ninian/Nils/Sophia example. 
+		if = {
+			limit = {
+				NAND = {
+					real_father_even_if_dead  = {
+						trait = dragon
+					}
+					mother_even_if_dead = {
+						trait = dragon
+					}
+				}
+				OR = {
+					real_father_even_if_dead  = {
+						trait = dragon
+					}
+					mother_even_if_dead = {
+						trait = dragon
+					}
+					AND = {
+						real_father_even_if_dead  = {
+							trait = dragon_blood
+						}
+						mother_even_if_dead = {
+							trait = dragon_blood
+						}
+					}
+				}
+			}
+			add_trait = dragon_blood
+		}
+	}
+}

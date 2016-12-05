@@ -6,7 +6,6 @@
 	culture=seafarer
 	
 	trait="strong"
-	trait="class_pirate"
 	trait="aggressive_leader"
 	trait="heavy_infantry_leader"
 	trait="inspiring_leader"
@@ -17,6 +16,14 @@
 	trait="proud"
 	trait="adventurer"
 	1109.01.01 = { birth=yes }
+	1121.01.01={
+		add_trait="class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_pirate"
+		}
+	} 
 	
 	1130.01.01 = { 
 		remove_trait="class_pirate"
@@ -43,6 +50,14 @@
 	1140.01.01 = { 
 		birth=yes 
 	}
+	1152.01.01={
+		add_trait="class_tactician"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_tactician"
+		}
+	} 
 	1159.01.01 = { 
 		employer=111 #Lyn
 	}
@@ -98,9 +113,14 @@
 		birth=yes
 	}
 	
-	1159.1.1={
+	1159.01.01={
 		add_trait="class_mage"
-	}
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
 	
 	1194.1.1= {
 		death = yes
@@ -122,7 +142,12 @@
 	
 	1161.1.1={
 		add_trait="class_shaman_female"
-	}
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
 	
 	1221.1.1= {
 		death = yes

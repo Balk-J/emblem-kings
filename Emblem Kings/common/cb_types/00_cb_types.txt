@@ -925,6 +925,10 @@ claim_all_lyn = {
 					}
 					character_event = { id = LoR.30 days = 12 }
 				}
+				
+				d_lyn = {
+					destroy_landed_title = THIS
+				}
 			}
 		}
 		any_attacker = {

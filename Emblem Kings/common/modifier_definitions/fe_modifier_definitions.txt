@@ -1,0 +1,71 @@
+# Definitions of the dynamically defined modifiers by other elements such as special troops
+
+pegasus_knights_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+pegasus_knights_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+pegasus_knights_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+wyvern_riders_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+wyvern_riders_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+wyvern_riders_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+magic_users_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+magic_users_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+magic_users_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}

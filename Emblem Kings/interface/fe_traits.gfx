@@ -539,6 +539,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_dragon_blood"
+		texturefile = "gfx/traits/dragon_blood.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_war_dragon"
 		texturefile = "gfx/traits/war_dragon.tga"
 		noOfFrames = 1

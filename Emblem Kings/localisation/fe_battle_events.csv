@@ -1,0 +1,20 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+battle..title;;;;;;;;;;;;;;x
+battle..desc;;;;;;;;;;;;;;x
+battle..A;;;;;;;;;;;;;;x
+battle..B;;;;;;;;;;;;;;x
+battle..C;;;;;;;;;;;;;;x
+battle..D;;;;;;;;;;;;;;x
+battle.1.title;Dragonslayer;;;;;;;;;;;;;x
+battle.1.desc;A scene out of legend is playing out on the battlefield. One of the enemy commanders is a manakete, and has assumed dragon form to fight. Many of your soldiers hesitate, unwilling to approach the fearsome beast. \n\nThe Divine Weapon you carry begins to glow with a brilliant light. It can feel the presence of its ancient foe, and it's somehow communicating an instinctive knowledge of how to defeat the dragon. If you allow the weapon to guide your hand, you have no doubt that you will be victorious.;;;;;;;;;;;;;x
+battle.1.A;My body's moving on it's own...;;;;;;;;;;;;;x
+battle.1.A.1;slaying the dragon;;;;;;;;;;;;;x
+battle.1.A.2;maiming the dragon;;;;;;;;;;;;;x
+battle.1.A.3;wounding the dragon;;;;;;;;;;;;;x
+battle.1.B;We will prevail with our own power.;;;;;;;;;;;;;x
+battle.2.desc;You gaze with satisfaction at the number of enemy soldiers who cower before you. Unfortunately, one of them is clearly NOT afraid - [From.GetTitledFirstName], who charges toward you brandishing [From.GetHerHis] Divine Weapon. You try to fend [From.GetHerHim] off, but you have no chance against a weapon forged to destroy your kind...;;;;;;;;;;;;;x
+battle.3.desc;You gaze with satisfaction at the number of enemy soldiers who cower before you. Unfortunately, one of them is clearly NOT afraid - [From.GetTitledFirstName], who charges toward you brandishing [From.GetHerHis] Divine Weapon. You manage to fend [From.GetHerHim] off and retreat from the front lines, but the encounter has left you brutally maimed.;;;;;;;;;;;;;x
+battle.4.desc;You gaze with satisfaction at the number of enemy soldiers who cower before you. Unfortunately, one of them is clearly NOT afraid - [From.GetTitledFirstName], who charges toward you brandishing [From.GetHerHis] Divine Weapon. You manage to fend [From.GetHerHim] off and retreat from the front lines, but the encounter has left you seriously wounded.;;;;;;;;;;;;;x
+battle.5.desc;The dragon roars in pain and falls to the ground, mortally wounded after a single exchange.;;;;;;;;;;;;;x
+battle.6.desc;Your brief exchange with the dragon has left it brutally maimed. You ready your weapon to deliver the finishing blow, but the beast makes a desperate lunge, knocks you off balance, and retreats toward the rear of the enemy lines. You may not have slain the dragon, but you've driven it from the front lines of this 
+battle.7.desc;Your brief exchange with the dragon has left it seriously wounded. You ready your weapon for another attack, but the beast makes a desperate lunge, knocks you off balance, and retreats toward the rear of the enemy lines. You may not have slain the dragon, but you've driven it from the front lines of this battle.;;;;;;;;;;;;;x

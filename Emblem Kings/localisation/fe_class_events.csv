@@ -1,0 +1,50 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+class..title;;;;;;;;;;;;;;x
+class..desc;;;;;;;;;;;;;;x
+class..A;;;;;;;;;;;;;;x
+class..B;;;;;;;;;;;;;;x
+class..C;;;;;;;;;;;;;;x
+class..D;;;;;;;;;;;;;;x
+class.1.title;Class;;;;;;;;;;;;;x
+class.1.desc;I am old enough to receive training as a warrior or mage.;;;;;;;;;;;;;x
+class.2.title;Class;;;;;;;;;;;;;x
+class.2.desc;It is time to decide what kind of combat or magical training my [GetFromRelation] [From.GetTitledFirstName] [From.GetOnlyDynastyName] should receive.;;;;;;;;;;;;;x
+class.2.A;[From.GetHerHisCap] talents are like [From.GetHerHis] father's.;;;;;;;;;;;;;x
+class.2.B;[From.GetHerHisCap] talents are like [From.GetHerHis] mother's.;;;;;;;;;;;;;x
+class.2.C;[From.GetSheHeCap] should be trained like any other solider in the army.;;;;;;;;;;;;;x
+class.2.D;[From.GetSheHeCap] will not receive special training.;;;;;;;;;;;;;x
+class.3.tooltip;[From.GetFirstName] will be assigned a class in [From.GetHerHis] father's class set.;;;;;;;;;;;;;x
+class.3.title;Class;;;;;;;;;;;;;x
+class.3.desc;[From.From.GetTitledFirstName] will receive similar training to [From.From.GetHerHis] father.;;;;;;;;;;;;;x
+class.3.A;As close to [From.From.GetHerHis] father as possible.;;;;;;;;;;;;;x
+class.3.B;Differently than [From.From.GetHerHis] father.;;;;;;;;;;;;;x
+class.4.tooltip;[From.GetFirstName] will be assigned a class in [From.GetHerHis] mother's class set.;;;;;;;;;;;;;x
+class.4.title;Class;;;;;;;;;;;;;x
+class.4.desc;[From.From.GetTitledFirstName] will receive similar training to [From.From.GetHerHis] mother.;;;;;;;;;;;;;x
+class.4.A;As close to [From.From.GetHerHis] mother as possible.;;;;;;;;;;;;;x
+class.4.B;Differently than [From.From.GetHerHis] mother.;;;;;;;;;;;;;x
+class.5.title;Promotion;;;;;;;;;;;;;x
+class.5.desc;You have become quite experienced in your class and you feel that your skills have reached a new level.\n\nPerhaps it's time to learn a new style of combat, or work on mastering what you already know?;;;;;;;;;;;;;x
+class.5.A.class_general;I will be a peerless knight.;;;;;;;;;;;;;x
+class.5.A.class_paladin;I will fight for justice!;;;;;;;;;;;;;x
+class.5.A.class_sniper;None will match my skill with the bow.;;;;;;;;;;;;;x
+class.5.A.class_hero;I will master all fields of combat.;;;;;;;;;;;;;x
+class.5.A.class_berserker;I will crush skulls in a single blow.;;;;;;;;;;;;;x
+class.5.A.class_swordmaster;My life is dedicated to the sword.;;;;;;;;;;;;;x
+class.5.A.class_rogue;I will be a master thief.;;;;;;;;;;;;;x
+class.5.A.class_falcon_knight;My pegasus and I will fight as one.;;;;;;;;;;;;;x
+class.5.A.class_wyvern_lord;My wyvern and I will fight as one.;;;;;;;;;;;;;x
+class.5.A.class_valkyrie;My sacred magic will aid my allies.;;;;;;;;;;;;;x
+class.5.A.class_sage;I will master anima magic.;;;;;;;;;;;;;x
+class.5.A.class_druid;I will master the dark arts.;;;;;;;;;;;;;x
+class.5.B.class_great_knight;I must balance defense and mobility.;;;;;;;;;;;;;x
+class.5.B.class_ranger;I will battle with sword and bow.;;;;;;;;;;;;;x
+class.5.B.class_warrior;I will be the strongest of all fighters!;;;;;;;;;;;;;x
+class.5.B.class_assassin;I will master the killing arts.;;;;;;;;;;;;;x
+class.5.B.class_wyvern_knight;I will pierce any defense.;;;;;;;;;;;;;x
+class.5.B.class_mage_knight;I will wield magic from horseback.;;;;;;;;;;;;;x
+class.5.B.class_bishop;Enlightenment is within reach...;;;;;;;;;;;;;x
+class.5.B.class_summoner;I will learn the summoning arts.;;;;;;;;;;;;;x
+class.5.C;I am already great!;;;;;;;;;;;;;x
+class.5.D;I'm not ready to change anything.;;;;;;;;;;;;;x
+class.7.desc;Your latest victory has given you valuable experience. You've definitely grown stronger!;;;;;;;;;;;;x

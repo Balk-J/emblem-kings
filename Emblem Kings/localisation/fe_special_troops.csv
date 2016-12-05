@@ -1,0 +1,16 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+pegasus_knights;Pegasus Knights;;;;;;;;;;;;;x
+pegasus_knights_offensive;Pegasus Knights Offensive;;;;;;;;;;;;;x
+pegasus_knights_defensive;Pegasus Knights Defensive;;;;;;;;;;;;;x
+pegasus_knights_morale;Pegasus Knights Morale;;;;;;;;;;;;;x
+pegasus_knights_modifier;Combat Modifier boost to Pegasus Knights: $PERC$;;;;;;;;;;;;;x
+wyvern_riders;Wyvern Rider;;;;;;;;;;;;;x
+wyvern_riders_offensive;Wyvern Riders Offensive;;;;;;;;;;;;;x
+wyvern_riders_defensive;Wyvern Riders Defensive;;;;;;;;;;;;;x
+wyvern_riders_morale;Wyvern Riders Morale;;;;;;;;;;;;;x
+wyvern_riders_modifier;Combat Modifier boost to Wyvern Riders: $PERC$;;;;;;;;;;;;;x
+magic_users;Magic User;;;;;;;;;;;;;x
+magic_users_offensive;Magic User Offensive;;;;;;;;;;;;;x
+magic_users_defensive;Magic User Defensive;;;;;;;;;;;;;x
+magic_users_morale;Magic User Morale;;;;;;;;;;;;;x
+magic_users_modifier;Combat Modifier boost to Magic Users: $PERC$;;;;;;;;;;;;;x

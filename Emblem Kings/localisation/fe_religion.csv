@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 HIGH_BISHOP;High Bishop;;;;;;;;;;;;;x
-k_naga;Naga's Cradle;;;;;;;;;;;;;x
-k_naga_adj;Naga's Cradle;;;;;;;;;;;;;x
+k_naga;Divine Dragon Grounds;;;;;;;;;;;;;x
+k_naga_adj;Divine Dragon;;;;;;;;;;;;;x
 NAGA;Naga;;;;;;;;;;;;;x
 THE_VOICE;The Voice;;;;;;;;;;;;;x
 VOICE_OF_NAGA;Voice;;;;;;;;;;;;;x
@@ -43,8 +43,8 @@ draconic_group;Draconic;;;;;;;;;;;;;x
 draconic_group_DESC;The power, wisdom, and longevity of dragons has made them a focal point for religion since the dawn of human civilization.;;;;;;;;;;;;;x
 dragon_gods;Dragon Gods;;;;;;;;;;;;;x
 dragon_gods_DESC;The belief system of the ancient dragons who ruled the world many thousands of years before human civilization began.;;;;;;;;;;;;;x
-divine_dragon;Divine Dragon;;;;;;;;;;;;;x
-divine_dragon_DESC;The Divine Dragon Naga has been revered since the end of the Age of Dragons, when she led the dragon tribes in the defense of humanity against the berserk Earth Dragons. Naga withdrew from mortal affairs after the war. Since then, her followers have revered the Voice of Naga - an oracle who can commune with the Divine Dragon.;;;;;;;;;;;;;x
+divine_dragon_naga;Divine Dragon;;;;;;;;;;;;;x
+divine_dragon_naga_DESC;The Divine Dragon Naga has been revered since the end of the Age of Dragons, when she led the dragon tribes in the defense of humanity against the berserk Earth Dragons. Naga withdrew from mortal affairs after the war. Since then, her followers have revered the Voice of Naga - an oracle who can commune with the Divine Dragon.;;;;;;;;;;;;;x
 light_group;Holy Light;;;;;;;;;;;;;x
 light_group_DESC;The power of light magic is derived from faith in the divine presence.;;;;;;;;;;;;;x
 elimine_church;Elimine Church;;;;;;;;;;;;;x

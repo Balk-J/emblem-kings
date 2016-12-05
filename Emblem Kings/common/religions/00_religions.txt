@@ -476,7 +476,7 @@ draconic_group = {
 	female_names = {
 	}
 	
-	divine_dragon = {
+	divine_dragon_naga = {
 		graphical_culture = westerngfx
 		
 		icon = 1

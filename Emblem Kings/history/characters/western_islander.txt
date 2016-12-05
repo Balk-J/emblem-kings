@@ -11,6 +11,7 @@
 		birth=yes
 	}
 	180.1.1 = {
+		add_trait="class_berserker"
 		give_nickname=nick_the_berserker
 		add_trait="eight_legends"
 		add_trait="regalia_armads"
@@ -37,18 +38,32 @@
 	culture=western_islander
 	religion=elimine_church
 	disallow_random_traits="yes" 
-	trait="skilled_tactician"
-	trait="inspiring_leader"
-	trait="heavy_infantry_leader"
-	trait="ambitious"
-	trait="proud"
-	trait="just"
-	trait="cynical"
-	trait="honest"
-	trait="charitable"
 	
 	1155.1.1={
 		birth=yes
+	}
+	1167.01.01={
+		add_trait="class_mercenary_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1170.01.01={
+	add_trait="skilled_tactician"
+	add_trait="inspiring_leader"
+	add_trait="heavy_infantry_leader"
+	add_trait="ambitious"
+	add_trait="proud"
+	add_trait="just"
+	add_trait="cynical"
+	add_trait="honest"
+	add_trait="charitable"
+	} 
+	1175.1.1 = {
+		remove_trait="class_mercenary_female"
+		add_trait="class_hero_female"
 	}
 	
 	1200.1.1={
@@ -67,19 +82,29 @@
 	disallow_random_traits="yes" 
 	trait="strong"
 	trait="slow" #Hard words make my head hurt!
-	trait="misguided_warrior"
-	trait="class_fighter"
-	trait="heavy_infantry_leader"
-	trait="aggressive_leader"
-	trait="unyielding_leader"
-	trait="kind"
-	trait="diligent"
-	trait="wroth"
-	trait="brave"
 	
 	1139.1.1={
 		birth=yes
 	}
+	1151.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1154.01.01={
+	add_trait="misguided_warrior"
+	add_trait="class_fighter"
+	add_trait="heavy_infantry_leader"
+	add_trait="aggressive_leader"
+	add_trait="unyielding_leader"
+	add_trait="kind"
+	add_trait="diligent"
+	add_trait="wroth"
+	add_trait="brave"
+	} 
 	
 	1161.1.1={
 		remove_trait="class_fighter"
@@ -127,13 +152,6 @@
 	
 	disallow_random_traits="yes" 
 	trait="quick"
-	trait="gamer"
-	trait="skilled_tactician"
-	trait="heavy_infantry_leader"
-	trait="rough_terrain_leader"
-	trait="narrow_flank_leader"
-	trait="patient"
-	trait="shy"
 	
 	mother=704
 	1154.1.1={
@@ -146,6 +164,23 @@
 			add_friend=709 #Mary
 		}
 	}	
+	1166.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1169.01.01={
+	add_trait="gamer"
+	add_trait="skilled_tactician"
+	add_trait="heavy_infantry_leader"
+	add_trait="rough_terrain_leader"
+	add_trait="narrow_flank_leader"
+	add_trait="patient"
+	add_trait="shy"
+	} 
 	
 	1175.1.1={
 		employer=710 # Deke
@@ -193,17 +228,27 @@
 	religion=elimine_church
 	
 	disallow_random_traits="yes" 
-	trait="misguided_warrior"
-	trait="heavy_infantry_leader"
-	trait="rough_terrain_leader"
-	trait="wroth"
-	trait="trusting"
-	trait="brave"
 	
 	mother=707
 	1156.1.1={
 		birth=yes
 	}
+	1168.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1171.01.01={
+	add_trait="misguided_warrior"
+	add_trait="heavy_infantry_leader"
+	add_trait="rough_terrain_leader"
+	add_trait="wroth"
+	add_trait="trusting"
+	add_trait="brave"
+	} 
 	
 	1175.1.1={
 		employer=710 # Deke
@@ -236,20 +281,32 @@
 	religion=elimine_church
 	
 	disallow_random_traits="yes" 
-	trait="tough_soldier"
-	trait="light_foot_leader"
-	trait="rough_terrain_leader"
-	trait="trusting"
-	trait="kind"
-	trait="patient"
-	trait="brave"
 	
 	1148.1.1={
 		birth=yes
 	}
+	1160.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1160.01.01={
+	add_trait="light_foot_leader"
+	add_trait="rough_terrain_leader"
+	add_trait="trusting"
+	add_trait="kind"
+	add_trait="patient"
+	add_trait="brave"
+	} 
 	1161.01.01 = { 
 		employer=211 # Pent
 	}	
+	1163.01.01={
+	add_trait="tough_soldier"
+	} 
 	# Saves Klein from a lion
 	1165.01.01 = { 
 		add_trait="wounded"
@@ -286,18 +343,28 @@
 	trait="stutter"
 	trait="ugly"
 	trait="imbecile"
-	trait="misguided_warrior"
-	trait="heavy_infantry_leader"
-	trait="rough_terrain_leader"
-	trait="mountain_terrain_leader"
-	trait="kind"
-	trait="trusting"
-	trait="shy"
 	
 	1159.1.1={
 		birth=yes
 		employer=225 #Nord
 	}
+	1171.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1174.01.01={
+	add_trait="misguided_warrior"
+	add_trait="heavy_infantry_leader"
+	add_trait="rough_terrain_leader"
+	add_trait="mountain_terrain_leader"
+	add_trait="kind"
+	add_trait="trusting"
+	add_trait="shy"
+	} 
 		
 	1181.01.01 = {
 		effect={
@@ -318,16 +385,30 @@
 	disallow_random_traits="yes" 
 	trait="stutter"
 	trait="strong"
-	trait="misguided_warrior"
-	trait="heavy_infantry_leader"
-	trait="rough_terrain_leader"
-	trait="mountain_terrain_leader"
-	trait="greedy"
-	trait="ambitious"
-	trait="lunatic"
 	
 	1150.1.1={
 		birth=yes
+	}
+	1162.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1165.01.01={
+	add_trait="misguided_warrior"
+	add_trait="heavy_infantry_leader"
+	add_trait="rough_terrain_leader"
+	add_trait="mountain_terrain_leader"
+	add_trait="greedy"
+	add_trait="ambitious"
+	add_trait="lunatic"
+	}  
+	1170.1.1 = {
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
 	}
 		
 	1172.01.01 = { 
@@ -349,17 +430,31 @@
 	
 	disallow_random_traits="yes" 
 	trait="strong"
-	trait="amateurish_plotter"
-	trait="rough_terrain_leader"
-	trait="greedy"
-	trait="ambitious"
-	trait="arbitrary"
-	trait="deceitful"
-	trait="gregarious"
 	
 	1148.1.1={
 		birth=yes
 	}
+	1160.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1163.01.01={
+	add_trait="amateurish_plotter"
+	add_trait="rough_terrain_leader"
+	add_trait="greedy"
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="deceitful"
+	add_trait="gregarious"
+	} 
+	1168.1.1 = {
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}	
 	
 	1181.1.1= {
 		death = {
@@ -375,16 +470,26 @@
 	religion=raider_pagan
 	
 	disallow_random_traits="yes" 
-	trait="misguided_warrior"
-	trait="rough_terrain_leader"
-	trait="greedy"
-	trait="arbitrary"
-	trait="content"
-	trait="cruel"
 	
 	1152.1.1={
 		birth=yes
 	}
+	1164.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1167.01.01={
+	add_trait="misguided_warrior"
+	add_trait="rough_terrain_leader"
+	add_trait="greedy"
+	add_trait="arbitrary"
+	add_trait="content"
+	add_trait="cruel"
+	} 
 	
 	1172.01.01 = { 
 		employer=714 # Zinque
@@ -407,13 +512,13 @@
 	
 	trait="strong"
 	trait="slow"
-	trait="wroth"
 	
 	1130.1.1={
 		birth=yes
 	}
 		
 	1150.1.1 = {
+		add_trait="wroth"
 		give_nickname="nick_the_stone_giant"
 	}
 	
@@ -433,13 +538,23 @@
 	religion=elimine_church
 	
 	disallow_random_traits="yes" 
-	trait="tough_soldier"
-	trait="wroth"
-	trait="cynical"
 	
 	1160.1.1={
 		birth=yes
 	}
+	1172.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1175.01.01={
+	add_trait="tough_soldier"
+	add_trait="wroth"
+	add_trait="cynical"
+	} 
 	
 	1178.1.1={
 		add_spouse=720
@@ -497,11 +612,13 @@
 	culture=western_islander
 	religion=elimine_church
 	
-	trait="fortune_builder"
-	trait="cynical"
 	1140.1.1={
 		birth=yes
 	}
+	1155.01.01={
+	add_trait="fortune_builder"
+	add_trait="cynical"
+	} 
 		
 	1156.1.1={
 		add_spouse=721
@@ -545,7 +662,7 @@
 	
 	1180.01.01 = { 
 		death = {
-			death_reason=death_execution
+			death_reason=death_execution_burning
 			killer=922 #Ein 
 		}
 	}
@@ -1127,3 +1244,26 @@
 }
 
 # See Lycian file, some IDs taken - 763
+
+
+#764 = {
+#	name="Elphin" #AKA Mildain
+#	religion=elimine_church
+#	culture=etrurian
+#	1161.01.01 = { 
+#		birth=yes 
+#	}
+#	1179.06.01 = {
+#		culture=western_islander
+#		employer=702 #Ekhidna
+#		add_trait="class_bard"
+#		effect = {
+#			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+#			set_character_flag="class_dancer"
+#		}
+#	}
+#	1227.01.01 = { 
+#		death=yes 
+#	}
+#}

@@ -7,7 +7,7 @@ title = c_calach
 max_settlements = 4
 
 b_calach = tribal
-b_fire_dragon_temple = temple
+b_dragon_sanctuary = temple
 #b_ticino = castle
 #b_wohlen = castle
 

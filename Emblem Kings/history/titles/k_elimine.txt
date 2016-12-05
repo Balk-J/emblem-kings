@@ -7,6 +7,10 @@
 	holder=201 # St. Elimine
 }
 #TODO: Fill in the blanks
+1100.1.1=
+{
+	holder=262 # filler
+}
 1150.1.1=
 {
 	holder=208 # Bishop Jodel

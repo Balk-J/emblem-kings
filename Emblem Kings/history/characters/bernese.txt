@@ -11,6 +11,7 @@
 	180.1.1 = {
 		give_nickname=nick_the_hero
 		add_trait="eight_legends"
+		add_trait="class_hero"
 		add_trait="regalia_binding_blade"
 		add_trait="regalia_eckesachs"
 		effect = {
@@ -49,18 +50,24 @@
 	trait="paranoid"
 	1122.1.1={
 		birth=yes
-		add_trait="regalia_eckesachs"
+		#add_trait="regalia_eckesachs"
 		add_trait="fire_emblem_elibe"
 		effect = {
-			ROOT = {
-				add_character_modifier = { name = "owns_regalia" duration = -1 }  
-				set_character_flag="regalia_inherit"
-				
-				add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-				#set_character_flag = fire_emblem_elibe	
-			}
+			#add_character_modifier = { name = "owns_regalia" duration = -1 }  
+			#set_character_flag="regalia_inherit"
+			
+			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+			#set_character_flag = fire_emblem_elibe	
 		}
 	}
+	1134.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
 	1144.1.1 = {
 		add_spouse=230 #Hellene
 	}
@@ -69,6 +76,9 @@
 			death_reason=death_murder_unknown
 			killer=403 #Zephiel
 		}
+		#effect = {
+		#	clr_global_flag="regalia_eckesachs_held"
+		#}
 	}
 }
 
@@ -82,29 +92,48 @@
 	father=402 #Desmond
 	mother=230 #Hellene
 	disallow_random_traits="yes" 
-	trait="brilliant_strategist"
-	trait="inspiring_leader"
-	trait="unyielding_leader"
-	trait="duelist"
-	trait="falconer"
 	trait="quick"	
 	trait="strong"	
-	trait="kind"
-	trait="charitable"
-	trait="content"
-	trait="just"
-	trait="gregarious"
-	trait="diligent"
-	trait="brave"
 	# Becomes an adult during FE7. Since we have the age of adulthood at 15, he should be 14 at the start
 	1146.1.1={
 		birth=yes
 	}
 	
+	1158.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
 	1159.1.1 = {
+		add_trait="falconer"
+		add_trait="kind"
+		add_trait="charitable"
+		add_trait="content"
+		add_trait="just"
+		add_trait="gregarious"
+		add_trait="diligent"
+		add_trait="brave"
 		effect = {
 			k_bern = {
 				holder_scope = { 
+					opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
 					opinion = {
 						modifier = opinion_hate
 						who = ROOT
@@ -116,6 +145,12 @@
 	
 	}
 	
+	1161.01.01={
+		add_trait="brilliant_strategist"
+		add_trait="inspiring_leader"
+		add_trait="unyielding_leader"
+		add_trait="duelist"
+	} 
 	1165.1.1 = {
 		remove_trait="kind"
 		remove_trait="charitable"
@@ -137,8 +172,11 @@
 				set_character_flag="regalia_hide"
 			}
 		}
+		remove_trait=class_knight
+		add_trait=class_general
 	}
 	1180.1.1= {
+		piety = 3000
 		effect = {
 			remove_trait="fire_emblem_elibe"
 			remove_character_modifier = holds_fire_emblem
@@ -169,6 +207,23 @@
 	1154.1.1={
 		birth=yes
 	}
+	1166.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1169.1.1 = {
+		add_trait="kind"
+		add_trait="just"
+		add_trait="erudite"
+	}	
+	1174.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}	
 	1180.1.1= {
 		effect = {
 			add_trait="fire_emblem_elibe"
@@ -184,17 +239,31 @@
 	name="Murdock"
 	culture=bernese
 	religion=elimine_church
-	trait="brilliant_strategist"
-	trait="heavy_infantry_leader"
-	trait="mountain_terrain_leader"
-	trait="rough_terrain_leader"
-	trait="strategist"
 	trait="strong"	
-	trait="content"	
-	trait="diligent"	
 	1140.1.1={
 		birth=yes
 	}
+	1152.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1155.1.1 = {
+		add_trait="brilliant_strategist"
+		add_trait="heavy_infantry_leader"
+		add_trait="mountain_terrain_leader"
+		add_trait="rough_terrain_leader"
+		add_trait="strategist"
+		add_trait="content"	
+		add_trait="diligent"	
+	}	
+	1159.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
 	1180.1.1 = {
 		add_trait="winter_soldier"
 	}
@@ -215,6 +284,18 @@
 	1140.1.1={
 		birth=yes
 	}
+	1152.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1160.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}
 	1180.1.1 = {
 		add_trait="flat_terrain_leader"
 	}
@@ -231,17 +312,31 @@
 	dynasty=403
 	culture=bernese
 	religion=elimine_church
-	trait="amateurish_plotter"
-	trait="hedonist"		
-	trait="proud"	
-	trait="ambitious"	
-	trait="lustful"	
-	trait="craven"	
-	trait="deceitful"	
-	trait="cruel"	
-	trait="arbitrary"
 	1153.1.1={
 		birth=yes
+	}	 
+	1165.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
+	1168.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="hedonist"		
+		add_trait="proud"	
+		add_trait="ambitious"	
+		add_trait="lustful"	
+		add_trait="craven"	
+		add_trait="deceitful"	
+		add_trait="cruel"	
+		add_trait="arbitrary"
+	}	 
+	1173.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
 	}	
 	1181.1.1= {
 		death = {
@@ -258,15 +353,35 @@
 	culture=bernese
 	religion=elimine_church
 	father=447 
-	trait="tough_soldier"	
-	trait="aggressive_leader"	
-	trait="mountain_terrain_leader"	
-	trait="wroth"	
-	trait="scarred"	
 	trait="bastard"	
 	1120.1.1={
 		birth=yes
 	}
+	1132.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
+	1135.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="aggressive_leader"		
+		add_trait="mountain_terrain_leader"	
+		add_trait="wroth"	
+	}	 
+	1140.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	1141.1.1 = {
+		add_trait="wounded"
+	}	
+	1142.1.1 = {
+		remove_trait="wounded"
+		add_trait="scarred"
+	}	
 	1190.1.1={
 		death=yes
 	}
@@ -277,18 +392,28 @@
 	dynasty=405
 	culture=bernese
 	religion=elimine_church
-	trait="tough_soldier"	
-	trait="mountain_terrain_leader"	
-	trait="narrow_flank_leader"	
-	trait="just"	
 	1135.1.1={
 		birth=yes
 	}
+	1147.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
+	1150.01.01={
+		add_trait="tough_soldier"	
+		add_trait="mountain_terrain_leader"	
+		add_trait="narrow_flank_leader"	
+		add_trait="just"	
+	} 
 	1160.1.1={
 		employer=163 #Eubans
 	}
 	1161.1.1={
-		employer=0 #???
+		employer=346 #moves to Ilia... let's put him with Zelots' mercs
 	}
 	1185.1.1={
 		death=yes
@@ -298,15 +423,29 @@
 455={
 	name="Galle"
 	culture=bernese
-	# actually not from Bern - Lycian, maybe? Or Jugdrali?
+	# actually not from Bern - Lycian, maybe? Or Jugdrali (as in the bishop who was possessed by Loptyr)?
 	religion=elimine_church
-	trait="skilled_tactician"
-	trait="flanker"	
-	trait="brave"	
-	trait="just"	
 	1155.1.1={
 		birth=yes
 	}
+	1167.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
+	1170.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="flanker"	
+		add_trait="brave"	
+		add_trait="just"	
+	}	
+	1175.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -321,14 +460,24 @@
 	culture=bernese
 	religion=elimine_church
 	father=448
-	trait="tough_soldier"	
-	trait="defensive_leader"	
-	trait="organizer"	
-	trait="just"	
-	trait="diligent"	
 	1153.1.1={
 		birth=yes
 	}
+	1165.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
+	1168.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="defensive_leader"	
+		add_trait="organizer"	
+		add_trait="just"		
+		add_trait="diligent"	
+	}	
 	1233.1.1={
 		death=yes
 	}
@@ -340,11 +489,21 @@
 	culture=bernese
 	religion=elimine_church
 	father=448
-	trait="tough_soldier"	
-	trait="just"	
 	1162.1.1={
 		birth=yes
 	}
+	1174.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
+	1177.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="just"		
+	}	
 	1242.1.1={
 		death=yes
 	}
@@ -357,14 +516,24 @@
 	culture=bernese
 	religion=elimine_church
 	father=449
-	trait="detached_priest"	
-	trait="kind"	
-	trait="chaste"	
-	trait="patient"	
-	trait="shy"	
 	1163.1.1={
 		birth=yes
+	}	
+	1175.01.01={
+		add_trait="class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cleric"
+		}
 	}
+	1178.01.01={
+		add_trait="detached_priest"
+		add_trait="kind"
+		add_trait="chaste"
+		add_trait="patient"
+		add_trait="shy"
+	} 
 	1243.1.1={
 		death=yes
 	}
@@ -375,16 +544,26 @@
 	dynasty=407
 	culture=bernese
 	religion=elimine_church
-	trait="flamboyant_schemer"	
-	trait="mountain_terrain_leader"	
-	trait="heavy_infantry_leader"	
-	trait="gluttonous"	
-	trait="greedy"	
-	trait="deceitful"	
-	trait="arbitrary"
 	1140.1.1={
 		birth=yes
 	}	
+	1152.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1155.01.01={
+		add_trait="flamboyant_schemer"	
+		add_trait="mountain_terrain_leader"	
+		add_trait="heavy_infantry_leader"	
+		add_trait="gluttonous"	
+		add_trait="greedy"	
+		add_trait="deceitful"	
+		add_trait="arbitrary"
+	} 
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -398,14 +577,28 @@
 	dynasty=409
 	culture=bernese
 	religion=elimine_church
-	trait="underhanded_rogue"	
-	trait="defensive_leader"
-	trait="schemer"		
-	trait="humble"	
-	trait="deceitful"
 	1135.1.1={
 		birth=yes
 	}	
+	1147.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	}  
+	1150.1.1 = {
+		add_trait="underhanded_rogue"	
+		add_trait="defensive_leader"
+		add_trait="schemer"		
+		add_trait="humble"	
+		add_trait="deceitful"
+	} 
+	1155.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -419,13 +612,23 @@
 	dynasty=410
 	culture=bernese
 	religion=elimine_church
-	trait="misguided_warrior"		
-	trait="heavy_infantry_leader"		
-	trait="content"		
-	trait="trusting"	
 	1140.1.1={
 		birth=yes
 	}
+	1152.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1155.01.01={
+		add_trait="misguided_warrior"		
+		add_trait="heavy_infantry_leader"		
+		add_trait="content"		
+		add_trait="trusting"	
+	} 
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -440,10 +643,24 @@
 	dynasty=411
 	culture=bernese
 	religion=elimine_church
-	trait="scholarly_theologian"	
 	1110.1.1={
 		birth=yes
 	}
+	1122.01.01={
+		add_trait="class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1125.01.01={
+		add_trait="scholarly_theologian"
+	} 
+	1130.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}	
 	1180.1.1 = {
 		add_trait="desert_terrain_leader"
 	}
@@ -460,12 +677,26 @@
 	dynasty=412
 	culture=bernese
 	religion=elimine_church
-	trait="tough_soldier"	
-	trait="cavalry_leader"	
-	trait="slothful"
 	1150.1.1={
 		birth=yes
 	}
+	1162.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_class_cavalier"
+		}
+	} 
+	1165.01.01={
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"
+		add_trait="slothful"
+	} 
+	1170.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -479,11 +710,25 @@
 	dynasty=413
 	culture=bernese
 	religion=elimine_church
-	trait="misguided_warrior"	
-	trait="defensive_leader"
-	trait="slothful"
 	1151.1.1={
 		birth=yes
+	}
+	1163.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1166.01.01={
+		add_trait="misguided_warrior"
+		add_trait="defensive_leader"
+		add_trait="slothful"
+	} 
+	1171.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
 	}
 	1180.1.1 = {
 		add_trait="winter_soldier"
@@ -501,10 +746,24 @@
 	dynasty=414
 	culture=bernese
 	religion=elimine_church
-	trait="mastermind_theologian"	
-	trait="mystic"	
 	1125.1.1={
 		birth=yes
+	}
+	1137.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1140.01.01={
+		add_trait="mastermind_theologian"
+	} 
+	1145.1.1 = {
+		remove_trait="class_shaman"
+		add_trait="class_druid"
+		add_trait="mystic"
 	}
 	1181.1.1= {
 		death = {
@@ -519,18 +778,34 @@
 	dynasty=415
 	culture=bernese
 	religion=elimine_church
-	trait="skilled_tactician"	
-	trait="cavalry_leader"	
-	trait="aggressive_leader"	
-	trait="cruel"	
-	trait="cynical"	
-	trait="ambitious"	
-	trait="lunatic"	
 	1121.1.1={
 		birth=yes
 	}
-	1155.1.1 = {
+	1133.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_class_cavalier"
+		}
+	} 
+	1136.01.01={
+		add_trait="skilled_tactician"	
+		add_trait="cavalry_leader"	
+		add_trait="aggressive_leader"	
+		add_trait="cruel"	
+		add_trait="cynical"	
+		add_trait="ambitious"	
+	} 
+	1141.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	1151.1.1 = {
+		add_trait="lunatic"	
 		add_trait="impaler"
+	}
+	1155.1.1 = {
 		give_nickname=nick_the_beast
 	} 	
 	1155.6.1 = {
@@ -562,13 +837,23 @@
 	name="Dorcas"
 	culture=bernese
 	religion=elimine_church
-	trait="misguided_warrior"
-	trait="shy"		
-	trait="cynical"	
-	trait="patient"	
-	trait="kind"	
 	1124.1.1={
 		birth=yes
+	}
+	1136.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1146.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="shy"		
+		add_trait="cynical"	
+		add_trait="patient"	
+		add_trait="kind"	
 	}
 	1146.1.1 = {
 		add_spouse=422
@@ -584,11 +869,13 @@
 	culture=bernese
 	religion=elimine_church
 	trait="clubfooted"	
-	trait="patient"	
-	trait="kind"	
 	trait="infirm"	
 	1130.1.1={
 		birth=yes
+	}
+	1145.1.1={
+		add_trait="patient"	
+		add_trait="kind"	
 	}
 	1170.1.1={
 		death=yes
@@ -600,12 +887,26 @@
 	dynasty=416
 	culture=bernese
 	religion=elimine_church
-	trait="martial_cleric"	
-	trait="mystic"	
-	trait="proud"	
-	trait="deceitful"
 	1137.1.1={
 		birth=yes
+	}	
+	1149.01.01={
+		add_trait="class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_monk"
+		}
+	} 
+	1152.01.01={
+		add_trait="martial_cleric"
+		add_trait="proud"
+		add_trait="deceitful"
+	} 
+	1157.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+		add_trait="mystic"
 	}	
 	1180.1.1 = {
 		add_trait="winter_soldier"
@@ -623,13 +924,31 @@
 	#dynasty= #just a merc
 	culture=bernese
 	religion=elimine_church
-	trait="skilled_tactician"	
-	trait="desert_terrain_leader"	
-	trait="mystic"	
-	trait="scarred"	
 	1148.1.1={
 		birth=yes
 	}
+	1160.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1163.01.01={
+		add_trait="desert_terrain_leader"
+		add_trait="skilled_tactician"
+		add_trait="wounded"
+	} 
+	1164.01.01={
+		remove_trait="wounded"
+		add_trait="scarred"
+	} 
+	1168.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
+		add_trait="mystic"
+	}	
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -645,21 +964,41 @@
 	dynasty=417
 	culture=bernese
 	religion=elimine_church
-	trait="tough_soldier"	
-	trait="mountain_terrain_leader"	
-	trait="inspiring_leader"	
-	trait="winter_soldier"
+	disallow_random_traits="yes" 
 	trait="strong"	
-	trait="just"	
-	trait="charitable"	
-	trait="brave"	
 	1107.1.1={
 		birth=yes
 	}
+		
+	1119.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1122.01.01={
+		add_trait="tough_soldier"	
+		add_trait="mountain_terrain_leader"	
+		add_trait="inspiring_leader"	
+		add_trait="winter_soldier"
+		add_trait="just"	
+		add_trait="charitable"	
+		add_trait="brave"	
+	} 
+	1127.1.1 = {
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	}	
 	1132.1.1 = {
 		add_spouse=426 # first wife
 	}
+	1149.1.1 = {
+		add_trait="wounded"
+	}	
 	1150.1.1 = {
+		remove_trait="wounded"
 		add_trait="scarred"
 	}	
 	1159.1.2 = {
@@ -677,12 +1016,14 @@
 	name="Barbara" #made up for Mrs. Brendan Reed the First
 	female="yes"
 	culture=bernese
-	religion=elimine_church
-	trait="intricate_webweaver"	
-	trait="just"	
-	trait="charitable"	
+	religion=elimine_church	
 	1116.1.1={
 		birth=yes
+	}	
+	1131.1.1={
+		add_trait="intricate_webweaver"	
+		add_trait="just"	
+		add_trait="charitable"
 	}
 	1159.1.1={
 		death=yes
@@ -696,18 +1037,37 @@
 	religion=elimine_church
 	father=425 #Brendan
 	mother=426
-	trait="intricate_webweaver"	
-	trait="strategist"	
-	trait="mountain_terrain_leader"	
-	trait="inspiring_leader"	
-	trait="light_foot_leader"
+	disallow_random_traits="yes" 
 	trait="quick"	
-	trait="just"	
-	trait="patient"	
-	trait="brave"
 	1133.1.1={
 		birth=yes
 	}	
+		
+	1145.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1148.01.01={
+		add_trait="intricate_webweaver"	
+		add_trait="mountain_terrain_leader"	
+		add_trait="inspiring_leader"	
+		add_trait="light_foot_leader"
+		add_trait="just"	
+		add_trait="patient"	
+		add_trait="brave"
+	} 
+	1150.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+		add_trait="strategist"	
+	}		
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}
 	1150.1.1 = {
 		give_nickname=nick_the_white_wolf
 	}
@@ -728,18 +1088,36 @@
 	religion=elimine_church
 	father=425 #Brendan
 	mother=426
-	trait="misguided_warrior"	
-	trait="duelist"	
-	trait="aggressive_leader"	
-	trait="unyielding_leader"
-	trait="mountain_terrain_leader"	
+	disallow_random_traits="yes" 
 	trait="strong"
 	trait="slow"		
-	trait="just"	
-	trait="brave"	
-	trait="wroth"	
 	1134.1.1={
 		birth=yes
+	}
+	1146.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1149.01.01={
+		add_trait="misguided_warrior"	
+		add_trait="aggressive_leader"	
+		add_trait="unyielding_leader"
+		add_trait="mountain_terrain_leader"	
+		add_trait="just"	
+		add_trait="brave"	
+		add_trait="wroth"	
+	} 
+	1150.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
+		add_trait="duelist"	
+	}		
+	1150.1.1 = {
+		employer=425 # Brendan Reed
 	}
 	1150.1.1 = {
 		give_nickname=nick_the_mad_dog
@@ -758,12 +1136,26 @@
 	name="Legault"
 	culture=bernese
 	religion=elimine_church
-	trait="elusive_shadow"	
-	trait="schemer"	
-	trait="charitable"	
-	trait="just"
+	disallow_random_traits="yes" 
 	1132.1.1={
 		birth=yes
+	}
+	1144.01.01={
+		add_trait="class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1147.01.01={
+		add_trait="elusive_shadow"	
+		add_trait="schemer"	
+		add_trait="charitable"	
+		add_trait="just"
+	} 	
+	1150.1.1 = {
+		employer=425 # Brendan Reed
 	}
 	1150.1.1 = {
 		give_nickname=nick_the_hurricane
@@ -777,15 +1169,29 @@
 	name="Jan" #brigand
 	culture=bernese
 	religion=elimine_church
-	trait="amateurish_plotter"	
-	trait="flat_terrain_leader"
-	trait="charitable"	
-	trait="just"
-	trait="kind"	
-	trait="craven"	
+	disallow_random_traits="yes" 
 	1116.1.1={
 		birth=yes
 	}	
+	1128.01.01={
+		add_trait="class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_brigand"
+		}
+	} 
+	1131.01.01={
+		add_trait="amateurish_plotter"	
+		add_trait="flat_terrain_leader"
+		add_trait="charitable"	
+		add_trait="just"
+		add_trait="kind"	
+		add_trait="craven"	
+	} 	
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}
 	1161.1.1 = {
 		trait="depressed"
 	}	
@@ -798,16 +1204,34 @@
 	name="Jerme"
 	culture=bernese
 	religion=elimine_church
-	trait="intricate_webweaver"	
-	trait="impaler"	
-	trait="winter_soldier"	
-	trait="defensive_leader"	
-	trait="cruel"	
-	trait="arbitrary"	
-	trait="lunatic"
+	disallow_random_traits="yes" 
 	1130.1.1={
 		birth=yes
 	}
+	1142.01.01={
+		add_trait="class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1145.01.01={
+		add_trait="intricate_webweaver"
+		add_trait="winter_soldier"	
+		add_trait="defensive_leader"	
+		add_trait="cruel"	
+		add_trait="arbitrary"	
+		add_trait="lunatic"
+	} 
+	1150.1.1 = {
+		remove_trait="class_thief"
+		add_trait="class_assassin"	
+		add_trait="impaler"	
+	}	
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
 	1150.1.1 = {
 		give_nickname=nick_the_death_kite
 	}
@@ -822,19 +1246,37 @@
 432={
 	name="Kenneth"
 	culture=bernese
-	religion=autotheist
-	trait="scholarly_theologian"	
-	trait="impaler"	
-	trait="theologian"	
-	trait="winter_soldier"	
-	trait="defensive_leader"	
-	trait="cruel"	
-	trait="arbitrary"	
-	trait="lunatic"
-	trait="bad_priest_christian"	
+	religion=autotheist	
+	disallow_random_traits="yes" 
 	1130.1.1={
 		birth=yes
 	}
+	1142.01.01={
+		add_trait="class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_monk"
+		}
+	} 
+	1145.01.01={
+		add_trait="scholarly_theologian"
+		add_trait="theologian"	
+		add_trait="winter_soldier"	
+		add_trait="defensive_leader"	
+		add_trait="cruel"	
+		add_trait="arbitrary"	
+		add_trait="lunatic"
+		add_trait="bad_priest_light"
+	} 
+	1150.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"	
+		add_trait="impaler"	
+	}	
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
 	1150.1.1 = {
 		give_nickname=nick_the_shrike
 	}
@@ -850,14 +1292,32 @@
 	name="Ursula"
 	female="yes"
 	culture=bernese
-	religion=anima
-	trait="intricate_webweaver"	
-	trait="flanker"	
-	trait="patient"	
-	trait="humble"		
+	religion=anima	
+	disallow_random_traits="yes" 
 	1140.1.1={
 		birth=yes
 	}
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
+	1152.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1155.01.01={
+		add_trait="intricate_webweaver"	
+		add_trait="flanker"	
+		add_trait="patient"	
+		add_trait="humble"	
+	} 
+	1159.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_mage_knight_female"
+	}	
 	1159.1.1 = {
 		give_nickname=nick_the_blue_crow
 	}
@@ -872,14 +1332,32 @@
 434={
 	name="Aion"#sage
 	culture=bernese
-	religion=anima
-	trait="skilled_tactician"	
-	trait="strategist"	
-	trait="unyielding_leader"	
-	trait="narrow_flank_leader"	
-	trait="proud"			
+	religion=anima	
+	disallow_random_traits="yes" 		
 	1116.1.1={
 		birth=yes
+	}	
+	1128.01.01={
+		add_trait="class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1131.01.01={
+		add_trait="skilled_tactician"	
+		add_trait="unyielding_leader"	
+		add_trait="narrow_flank_leader"	
+		add_trait="proud"
+	} 
+	1138.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+		add_trait="strategist"	
+	}	
+	1150.1.1 = {
+		employer=425 # Brendan Reed
 	}	
 	1159.1.1 = {
 		give_nickname=nick_the_owl
@@ -896,14 +1374,32 @@
 	name="Teodor"#druid
 	culture=bernese
 	religion=dark
-	trait="mastermind_theologian"	
-	trait="flanker"	
-	trait="scholar"	
-	trait="patient"		
-	trait="ambitious"		
-	trait="deceitful"
+	disallow_random_traits="yes" 
 	1136.1.1={
 		birth=yes
+	}		
+	1148.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
+	1151.01.01={
+		add_trait="mastermind_theologian"	
+		add_trait="flanker"	
+		add_trait="scholar"	
+		add_trait="patient"		
+		add_trait="ambitious"		
+		add_trait="deceitful"
+	} 
+	1156.1.1 = {
+		remove_trait="class_shaman"
+		add_trait="class_druid"
 	}			
 	1159.1.1 = {
 		give_nickname=nick_the_shadow_hawk
@@ -920,13 +1416,27 @@
 	name="Heintz"#shaman
 	culture=bernese
 	religion=dark
-	trait="flamboyant_schemer"	
-	trait="defensive_leader"	
-	trait="proud"
-	trait="cynical"	
-	trait="ambitious"
+	disallow_random_traits="yes" 
 	1101.1.1={
 		birth=yes
+	}	
+	1113.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1116.01.01={
+		add_trait="flamboyant_schemer"	
+		add_trait="defensive_leader"	
+		add_trait="proud"
+		add_trait="cynical"	
+		add_trait="ambitious"
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
 	}	
 	1161.1.1= {
 		death = {
@@ -940,15 +1450,29 @@
 	name="Zoldam"#shaman with boats
 	culture=bernese
 	religion=dark
-	trait="intricate_webweaver"	
-	trait="aggressive_leader"	
-	trait="flanker"	
-	trait="cruel"
-	trait="cynical"	
-	trait="shy"	
+	disallow_random_traits="yes" 
 	1099.1.1={
 		birth=yes
 	}
+	1111.01.01={
+		add_trait="class_shaman"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_shaman"
+		}
+	} 
+	1114.01.01={
+		add_trait="intricate_webweaver"	
+		add_trait="aggressive_leader"	
+		add_trait="flanker"	
+		add_trait="cruel"
+		add_trait="cynical"	
+		add_trait="shy"	
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
 	1161.1.1= {
 		death = {
 			death_reason=death_battle
@@ -961,13 +1485,27 @@
 	name="Beyard" #Mercenary
 	culture=bernese
 	religion=elimine_church
-	trait="tough_soldier"	
-	trait="light_foot_leader"	
-	trait="flanker"	
-	trait="humble"	
-	trait="patient"
+	disallow_random_traits="yes" 
 	1122.1.1={
 		birth=yes
+	}	
+	1134.01.01={
+		add_trait="class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mercenary"
+		}
+	} 
+	1137.01.01={
+		add_trait="tough_soldier"	
+		add_trait="light_foot_leader"	
+		add_trait="flanker"	
+		add_trait="humble"	
+		add_trait="patient"
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
 	}	
 	1161.1.1= {
 		death = {
@@ -981,12 +1519,26 @@
 	name="Wire" #Knight
 	culture=bernese
 	religion=elimine_church
-	trait="amateurish_plotter"	
-	trait="heavy_infantry_leader"	
-	trait="flanker"	
+	disallow_random_traits="yes" 
 	1134.1.1={
 		birth=yes
 	}
+	1146.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1149.01.01={
+		add_trait="amateurish_plotter"	
+		add_trait="heavy_infantry_leader"	
+		add_trait="flanker"	
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
 	1161.1.1= {
 		death = {
 			death_reason=death_battle
@@ -999,13 +1551,32 @@
 	name="Damian" #You're about to die. Scream if you must.
 	culture=bernese
 	religion=elimine_church
-	trait="flamboyant_schemer"	
-	trait="cavalry_leader"	
-	trait="flanker"	
-	trait="proud"	
-	trait="deceitful"
+	disallow_random_traits="yes" 
 	1133.1.1={
 		birth=yes
+	}	
+	1145.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1148.01.01={
+		add_trait="flamboyant_schemer"	
+		add_trait="cavalry_leader"	
+		add_trait="flanker"	
+		add_trait="proud"	
+		add_trait="cruel"	
+		add_trait="deceitful"
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
+	1153.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
 	}	
 	1161.1.1= {
 		death = {
@@ -1019,13 +1590,27 @@
 	name="Boies"
 	culture=bernese
 	religion=elimine_church
-	trait="amateurish_plotter"	
-	trait="heavy_infantry_leader"	
-	trait="proud"	
-	trait="greedy"	#I paid too much for that worthless pack of sellswords
+	disallow_random_traits="yes" 
 	1115.1.1={
 		birth=yes
 	}
+	1127.01.01={
+		add_trait="class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_knight"
+		}
+	} 
+	1130.01.01={
+		add_trait="amateurish_plotter"	
+		add_trait="heavy_infantry_leader"	
+		add_trait="proud"	
+		add_trait="greedy"	#I paid too much for that worthless pack of sellswords
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
 	1161.1.1= {
 		death = {
 			death_reason=death_battle
@@ -1038,12 +1623,30 @@
 	name="Cameron" #paladin, miniboss with Darin
 	culture=bernese
 	religion=elimine_church
-	trait="misguided_warrior"	
-	trait="cavalry_leader"	
-	trait="proud"	
+	disallow_random_traits="yes" 
 	1140.1.1={
 		birth=yes
 	}
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
+	1152.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1155.01.01={
+		trait="misguided_warrior"	
+		trait="cavalry_leader"	
+		trait="proud"	
+	} 
+	1159.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
 	1161.1.1= {
 		death = {
 			death_reason=death_battle
@@ -1056,12 +1659,30 @@
 	name="Maxime" #paladin, miniboss with Ursula
 	culture=bernese
 	religion=elimine_church
-	trait="tough_soldier"	
-	trait="cavalry_leader"	
-	trait="flanker"	
+	disallow_random_traits="yes" 
 	1139.1.1={
 		birth=yes
 	}
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
+	1151.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1154.01.01={
+		trait="tough_soldier"	
+		trait="cavalry_leader"	
+		trait="flanker"	
+	} 
+	1159.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
 	1161.1.1= {
 		death = {
 			death_reason=death_battle
@@ -1074,11 +1695,29 @@
 	name="Oleg" #warrior
 	culture=bernese
 	religion=elimine_church
-	trait="tough_soldier"	
-	trait="humble"	
+	disallow_random_traits="yes" 
 	1130.1.1={
 		birth=yes
 	}
+	1142.01.01={
+		add_trait="class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_fighter"
+		}
+	} 
+	1145.01.01={
+		add_trait="tough_soldier"	
+		add_trait="humble"	
+	} 
+	1150.1.1 = {
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	}	
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
 	1161.1.1= {
 		death = {
 			death_reason=death_battle
@@ -1091,12 +1730,26 @@
 	name="Igor" #myrmidon, works for Linus
 	culture=bernese
 	religion=elimine_church
-	trait="underhanded_rogue"	
-	trait="deceitful"	
-	trait="just"	
+	disallow_random_traits="yes" 
 	1138.1.1={
 		birth=yes
 	}
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
+	1150.01.01={
+		add_trait="class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_myrmidon"
+		}
+	} 
+	1153.01.01={
+		add_trait="underhanded_rogue"	
+		add_trait="deceitful"	
+		add_trait="just"	
+	} 
 	1188.1.1={
 		death=yes
 	}
@@ -1107,13 +1760,27 @@
 	female="yes"
 	culture=bernese
 	religion=elimine_church
-	trait="intricate_webweaver"	
-	trait="just"	
-	trait="charitable"	
-	trait="brave"	
+	disallow_random_traits="yes" 
 	1132.1.1={
 		birth=yes
 	}
+	1144.01.01={
+		add_trait="class_thief_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 
+	1147.01.01={
+		add_trait="intricate_webweaver"	
+		add_trait="just"	
+		add_trait="charitable"	
+		add_trait="brave"	
+	} 
+	1150.1.1 = {
+		employer=425 # Brendan Reed
+	}	
 	1159.12.30 = {
 		add_trait="maimed"
 	}	
@@ -1174,15 +1841,26 @@
 	culture=bernese
 	religion=elimine_church
 	
-	trait="misguided_warrior"	
-	trait="cavalry_leader"	
-	trait="proud"	
-	trait="gluttonous"	
-	trait="cruel"	
-	trait="arbitrary"	
 	1130.1.1={
 		birth=yes
 	}
+	
+	1142.01.01={
+		add_trait="class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_cavalier"
+		}
+	} 
+	1145.01.01={
+		add_trait="misguided_warrior"	
+		add_trait="cavalry_leader"	
+		add_trait="proud"	
+		add_trait="gluttonous"	
+		add_trait="cruel"	
+		add_trait="arbitrary"	
+	} 
 	
 	1181.1.1= {
 		death = {
@@ -1197,16 +1875,26 @@
 	culture=bernese
 	religion=elimine_church
 	father=453
-		trait="tough_soldier"
-		trait="flanker"
-		trait="lustful"
-		trait="cruel"
 	1160.1.1={
 		birth=yes
 	}
 	1160.1.1={
 		employer=407 #Narcian
 	}	
+	1172.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
+	1175.01.01={
+		add_trait="tough_soldier"
+		add_trait="flanker"
+		add_trait="lustful"
+		add_trait="cruel"
+	} 
 	
 	1181.1.1= {
 		death = {
@@ -1222,11 +1910,6 @@
 	culture=bernese
 	religion=elimine_church
 	father=453
-		trait="tough_soldier"
-		trait="gregarious"
-		trait="lustful"
-		trait="proud"
-		trait="cruel"
 	1164.1.1={
 		birth=yes
 	}
@@ -1236,7 +1919,7 @@
 	
 	1170.01.01 = {
 		effect={
-		add_friend=451 #Zeed
+			add_friend=451 #Zeed
 		}
 	}	
 	
@@ -1244,6 +1927,21 @@
 		religion=anima
 	}	
 	
+	1176.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	1179.01.01={
+		add_trait="tough_soldier"
+		add_trait="gregarious"
+		add_trait="lustful"
+		add_trait="proud"
+		add_trait="cruel"
+	} 
 	#a siege tome asshole
 	
 	1181.1.1= {
@@ -1261,6 +1959,14 @@
 	1130.1.1={
 		birth=yes
 	}
+	1142.01.01={
+		add_trait="class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_wyvern_rider"
+		}
+	} 
 	1159.1.1={
 		employer=407 #Narcian
 	}	

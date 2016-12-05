@@ -1,0 +1,3067 @@
+namespace = class
+
+# On adolescence event - decide who picks the class
+character_event = {
+	id = class.1
+	desc = "class.1.desc"
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_character_flag = class_selected }
+	}
+	
+	immediate = {
+		# If the parents are unlanded
+		if = {
+			limit = {
+				father_even_if_dead = { 
+					OR = {
+						is_alive = no
+						is_ruler = no 
+					}	
+				}	
+				mother_even_if_dead = { 
+					OR = {
+						is_alive = no
+						is_ruler = no 
+					}	
+				}
+			}
+			#Grandparents, if liege
+			if = {
+				limit = { father_even_if_dead = { father = { is_alive = yes is_ruler = yes is_liege_of = ROOT NOT = { trait = incapable } } } }
+				father_even_if_dead = {
+					father = {
+						save_event_target_as = class_selector
+					}
+				}
+				break = yes
+			}
+			if = {
+				limit = { mother_even_if_dead = { father = { is_alive = yes is_ruler = yes is_liege_of = ROOT NOT = { trait = incapable } } } }
+				mother_even_if_dead = {
+					father = {
+						save_event_target_as = class_selector
+					}
+				}
+				break = yes
+			}	
+			if = {
+				limit = { father_even_if_dead = { mother = { is_alive = yes is_ruler = yes is_liege_of = ROOT NOT = { trait = incapable } } } }
+				father_even_if_dead = {
+					mother = {
+						save_event_target_as = class_selector
+					}
+				}
+				break = yes
+			}
+			if = {
+				limit = { mother_even_if_dead = { mother = { is_alive = yes is_ruler = yes is_liege_of = ROOT NOT = { trait = incapable } } } }
+				mother_even_if_dead = {
+					mother = {
+						save_event_target_as = class_selector
+					}
+				}
+				break = yes
+			}
+			#Regent
+			if = {
+				limit = {
+					is_ruler = yes
+					has_regent = yes
+				}
+				regent = { save_event_target_as = class_selector }
+				break = yes
+			}
+		}
+		
+		#Parents
+		if = {
+			limit = {
+				father = {
+					is_alive = yes
+					NOT = { trait = incapable }
+					NOT = { #Mother has priority if higher rank
+						ROOT = {
+							mother = {
+								is_alive = yes
+								NOT = { trait = incapable }
+								OR = {
+									higher_tier_than = PREVPREV
+									AND = {
+										tier = PREVPREV
+										is_liege_of = ROOT
+									}
+								}	
+							}
+						}	
+					}
+				}	
+			}
+			father = { save_event_target_as = class_selector }
+			break = yes
+		}	
+		#Mother
+		if = {
+			limit = {
+				mother = {
+					is_alive = yes
+					NOT = { trait = incapable }
+				}	
+			}
+			mother = { save_event_target_as = class_selector }
+			break = yes
+		}
+		#Regent
+		if = {
+			limit = {
+				is_ruler = yes
+				has_regent = yes	
+			}
+			regent = { save_event_target_as = class_selector }
+			break = yes
+		}
+		#Random Relative
+		random_dynasty_member = {
+			limit = {
+				is_close_relative = ROOT
+				is_female = no
+				age = 16
+				is_alive = yes
+				NOT = { trait = incapable }
+				NOT = { trait = bastard }	
+			}	
+			save_event_target_as = class_selector
+			break = yes
+		}
+		#Liege's Regent
+		if = {
+			limit = {
+				NOT = { tier = BARON }
+				liege = { has_regent = yes }	
+			}
+			liege = { regent = { save_event_target_as = class_selector } }
+			break = yes
+		}
+		#Liege
+		if = {
+			limit = {
+				NOT = { tier = BARON }
+				liege = {
+					age = 16
+					is_alive = yes
+					NOT = { trait = incapable }
+				}	
+			}
+			liege = { save_event_target_as = class_selector }
+			break = yes
+		}		
+		#Self
+		save_event_target_as = class_selector
+	}
+	
+	option = {
+		name = "OK"
+		set_character_flag = class_selected
+		event_target:class_selector = {
+			if = {
+				character_event = {
+					id = class.2
+					tooltip = class.2.tooltip
+					days = 1
+				}
+			}	
+				
+		}
+		clear_event_target = class_selector
+	}
+}
+
+character_event = {
+	id = class.2
+	desc = "class.2.desc"
+	picture = "GFX_evt_child_sword" 
+		
+	is_triggered_only = yes
+	
+	# FROM is the child
+	immediate = {
+		if = { #If child is landed and not your child (or you are unlanded), they pay
+			limit = {
+				OR = {
+					is_ruler = no
+					NOT = { 
+						OR = {
+							any_child = { character = FROM }
+							any_child = { any_child = { character = FROM } }
+						}	
+					}
+				}	
+			}
+			FROM = { 
+				set_character_flag = pay_for_training
+			}
+		}
+	}
+	# Father's classes
+	option = {
+		name = "class.2.A"
+		trigger = {
+			FROM = {
+				father_even_if_dead = {
+					OR = {
+						has_character_flag=class_knight
+						has_character_flag=class_cavalier
+						has_character_flag=class_archer
+						has_character_flag=class_horse_archer
+						has_character_flag=class_mercenary
+						has_character_flag=class_fighter
+						has_character_flag=class_myrmidon
+						has_character_flag=class_thief
+						has_character_flag=class_pirate
+						has_character_flag=class_brigand
+						has_character_flag=class_priest
+						has_character_flag=class_monk
+						has_character_flag=class_mage
+						has_character_flag=class_shaman
+						has_character_flag=class_wyvern_rider
+						has_character_flag=class_pegasus_knight
+						has_character_flag=class_manakete
+						has_character_flag=class_soldier
+						has_character_flag=class_dancer
+					}
+				}
+			}
+		}
+		
+		# Selector pays
+		if = { 
+			limit = {
+				FROM = { 
+					NOT = { has_character_flag = pay_for_training }
+				}
+			}
+			if = {
+				limit = { yearly_income = 200 }
+				wealth = -50
+			}
+			if = {
+				limit = { 
+					NOT = { yearly_income = 200 } 
+					yearly_income = 100
+				}
+				wealth = -20
+			}
+			if = {
+				limit = { NOT = { yearly_income = 100 } }
+				wealth = -10
+			}
+		}
+		
+		# Child pays
+		if = { 
+			limit = {
+				FROM = { 
+					has_character_flag = pays_for_education
+				}
+			}
+			FROM = { 
+				if = {
+					limit = { yearly_income = 200 }
+					wealth = -50
+				}
+				if = {
+					limit = { 
+						NOT = { yearly_income = 200 } 
+						yearly_income = 10
+					}
+					wealth = -20
+				}
+				if = {
+					limit = { NOT = { yearly_income = 100 } }
+					wealth = -10
+				}
+				clr_character_flag = pays_for_education
+			}
+		}
+		
+		character_event = {
+			id = class.3
+			tooltip = class.3.tooltip
+		}
+	}
+	
+	# Mother's classes
+	option = {
+		name = "class.2.B"
+		trigger = {
+			mother_even_if_dead = {
+				OR = {
+					has_character_flag=class_knight
+					has_character_flag=class_cavalier
+					has_character_flag=class_archer
+					has_character_flag=class_horse_archer
+					has_character_flag=class_mercenary
+					has_character_flag=class_myrmidon
+					has_character_flag=class_thief
+					has_character_flag=class_troubador
+					has_character_flag=class_cleric
+					has_character_flag=class_mage
+					has_character_flag=class_shaman
+					has_character_flag=class_wyvern_rider
+					has_character_flag=class_pegasus_knight
+					has_character_flag=class_manakete
+					has_character_flag=class_soldier
+					has_character_flag=class_dancer
+				}
+			}
+		}
+		# Selector pays
+		if = { 
+			limit = {
+				FROM = { 
+					NOT = { has_character_flag = pay_for_training }
+				}
+			}
+			if = {
+				limit = { yearly_income = 200 }
+				wealth = -50
+			}
+			if = {
+				limit = { 
+					NOT = { yearly_income = 200 } 
+					yearly_income = 100
+				}
+				wealth = -20
+			}
+			if = {
+				limit = { NOT = { yearly_income = 100 } }
+				wealth = -10
+			}
+		}
+		
+		# Child pays
+		if = { 
+			limit = {
+				FROM = { 
+					has_character_flag = pays_for_education
+				}
+			}
+			FROM = { 
+				if = {
+					limit = { yearly_income = 200 }
+					wealth = -50
+				}
+				if = {
+					limit = { 
+						NOT = { yearly_income = 200 } 
+						yearly_income = 10
+					}
+					wealth = -20
+				}
+				if = {
+					limit = { NOT = { yearly_income = 100 } }
+					wealth = -10
+				}
+				clr_character_flag = pays_for_education
+			}
+		}
+		character_event = {
+			id = class.4
+			tooltip = class.4.tooltip
+		}
+		
+	}
+	
+	# Culture-appropriate solider
+	option = {
+		name = "class.2.C"
+		
+		# Selector pays
+		if = { 
+			limit = {
+				FROM = { 
+					NOT = { has_character_flag = pay_for_training }
+				}
+			}
+			wealth = -5
+		}
+		
+		# Child pays
+		if = { 
+			limit = {
+				FROM = { 
+					has_character_flag = pays_for_education
+				}
+			}
+			FROM = { 
+				wealth = -5
+				clr_character_flag = pays_for_education
+			}
+		}
+		
+		FROM = {
+			random_list = {
+				10 = {
+					add_trait = "class_soldier"
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = bernese }
+					}
+					add_trait = "class_wyvern_rider"
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = etrurian }
+					}
+					add_trait = "class_cavalier"
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = lycian }
+					}
+					add_trait = "class_knight"
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = nabatan }
+					}
+					if = {
+						limit = {
+							female = no
+						}
+						add_trait = "class_brigand"
+					}
+					if = {
+						limit = {
+							female = yes
+						}
+						add_trait = "class_archer_female"
+					}
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = sacaean }
+					}
+					if = {
+						limit = {
+							female = no
+						}
+						add_trait = "class_horse_archer"
+					}
+					if = {
+						limit = {
+							female = yes
+						}
+						add_trait = "class_horse_archer_female"
+					}
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = ilian }
+					}
+					if = {
+						limit = {
+							female = no
+						}
+						add_trait = "class_mercenary"
+					}
+					if = {
+						limit = {
+							female = yes
+						}
+						add_trait = "class_pegasus_knight"
+					}
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = western_islander }
+					}
+					if = {
+						limit = {
+							female = no
+						}
+						add_trait = "class_fighter"
+					}
+					if = {
+						limit = {
+							female = yes
+						}
+						add_trait = "class_mercenary_female"
+					}
+				}
+				10 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture = seafarer }
+					}
+					if = {
+						limit = {
+							female = no
+						}
+						add_trait = "class_pirate"
+					}
+					if = {
+						limit = {
+							female = yes
+						}
+						add_trait = "class_thief_female"
+					}
+				}
+				1 = {			
+					modifier = {
+						factor = 0
+						NOT = { culture_group = draconic }
+					}
+					if = {
+						limit = {
+							female = no
+						}
+						add_trait = "class_mage"
+					}
+					if = {
+						limit = {
+							female = yes
+						}
+						add_trait = "class_mage_female"
+					}
+				}
+			}
+		}
+	}
+	
+	#Nothing
+	option = {
+		name = "class.2.D"		
+	}
+}
+
+character_event = {
+	id = class.3
+	desc = "class.3.desc"
+	picture = "GFX_evt_child_sword" 
+		
+	is_triggered_only = yes
+	
+	# Father's class 1
+	option = {
+		name = "class.3.A"
+		trigger = {
+			FROMFROM = {
+				father_even_if_dead = {
+					OR = {
+						has_character_flag=class_knight
+						has_character_flag=class_cavalier
+						has_character_flag=class_archer
+						has_character_flag=class_horse_archer
+						has_character_flag=class_mercenary
+						has_character_flag=class_fighter
+						has_character_flag=class_myrmidon
+						has_character_flag=class_thief
+						has_character_flag=class_pirate
+						has_character_flag=class_brigand
+						has_character_flag=class_priest
+						has_character_flag=class_monk
+						has_character_flag=class_mage
+						has_character_flag=class_shaman
+						has_character_flag=class_wyvern_rider
+						has_character_flag=class_pegasus_knight
+						has_character_flag=class_manakete
+						has_character_flag=class_soldier
+						has_character_flag=class_dancer
+					}
+				}
+			}
+		}
+		# Knight 
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_knight
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_knight
+				set_character_flag = class_knight
+			}
+		}
+		# Cavalier
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_cavalier
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_cavalier
+				set_character_flag = class_cavalier
+			}
+		}
+		# Archer
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_archer
+				}
+				set_character_flag = class_archer
+			}
+		}
+		# Nomad / Bow Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_horse_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_horse_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_horse_archer
+				}
+				set_character_flag = class_horse_archer
+			}
+		}
+		# Mercenary
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_mercenary
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mercenary_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mercenary
+				}
+				set_character_flag = class_mercenary
+			}
+		}
+		# Fighter
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_fighter
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_archer_female
+					set_character_flag = class_archer
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_fighter
+					set_character_flag = class_fighter
+				}
+			}
+		}
+		# Pirate
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_pirate
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mercenary_female
+					set_character_flag = class_mercenary
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_pirate
+					set_character_flag = class_pirate
+				}
+			}
+		}
+		# Brigand
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_brigand
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_thief_female
+					set_character_flag = class_thief
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_brigand
+					set_character_flag = class_brigand
+				}
+			}
+		}
+		# Myrmidon
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_myrmidon
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_myrmidon_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_myrmidon
+				}
+				set_character_flag = class_myrmidon
+			}
+		}
+		# Thief
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_thief
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_thief_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_thief
+				}
+				set_character_flag = class_thief
+			}
+		}
+		# Wyvern Rider
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_wyvern_rider
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_wyvern_rider
+				set_character_flag = class_wyvern_rider
+			}
+		}
+		# Pegasus Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_pegasus_knight
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_pegasus_knight
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					if = {
+						limit = {
+							culture = hoshidan
+						}
+						add_trait = class_pegasus_knight
+						set_character_flag = class_pegasus_knight
+					}
+					if = {
+						limit = {
+							NOT = {culture = hoshidan}
+						}
+						add_trait = class_cavalier
+						set_character_flag = class_cavalier
+					}
+				} 
+			}
+		}
+		# Monk
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_monk
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_troubador
+					set_character_flag = class_troubador
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_monk
+					set_character_flag = class_monk
+				}
+			}
+		}
+		# Priest
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_priest
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_cleric
+					set_character_flag = class_cleric
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_priest
+					set_character_flag = class_priest
+				}
+			}
+		}
+		# Mage
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_mage
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mage_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mage
+				}
+				set_character_flag = class_mage
+			}
+		}
+		# Shaman
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_shaman
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_shaman_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_shaman
+				}
+				set_character_flag = class_shaman
+			}
+		}
+		# Solider
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_soldier
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_soldier
+				set_character_flag = class_soldier
+			}
+		}
+		# Bard
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_dancer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_dancer
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_bard
+				}
+				set_character_flag = class_dancer
+			}
+		}
+		# Manakete
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_manakete
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						OR = {
+							trait = dragon
+							trait = dragon_blood
+						}
+					}
+					if = {
+						limit = {
+							is_female = yes
+						}
+						add_trait = class_manakete_female
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						add_trait = class_manakete
+					}
+					set_character_flag = class_manakete
+				}
+				if = {
+					limit = {
+						NOR = {
+							trait = dragon
+							trait = dragon_blood
+						}
+					}
+					if = {
+						limit = {
+							is_female = yes
+						}
+						add_trait = class_shaman_female
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						add_trait = class_shaman
+					}
+					set_character_flag = class_shaman
+				}
+			}
+		}
+	}
+	
+	# Father's class 2
+	option = {
+		name = "class.3.B"
+		trigger = {
+			FROMFROM = {
+				father_even_if_dead = {
+					OR = {
+						has_character_flag=class_knight
+						has_character_flag=class_cavalier
+						has_character_flag=class_archer
+						has_character_flag=class_horse_archer
+						has_character_flag=class_mercenary
+						has_character_flag=class_fighter
+						has_character_flag=class_myrmidon
+						has_character_flag=class_thief
+						has_character_flag=class_pirate
+						has_character_flag=class_brigand
+						has_character_flag=class_priest
+						has_character_flag=class_monk
+						has_character_flag=class_mage
+						has_character_flag=class_shaman
+						has_character_flag=class_wyvern_rider
+						has_character_flag=class_pegasus_knight
+						has_character_flag=class_manakete
+						#These have only one option, sorry. They could be part of the same group, but they're kind of specialized.
+						#has_character_flag=class_soldier
+						#has_character_flag=class_dancer
+					}
+				}
+			}
+		}
+		# Knight 
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_knight
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_cavalier
+				set_character_flag = class_cavalier
+			}
+		}
+		# Cavalier
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_cavalier
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_knight
+				set_character_flag = class_knight
+			}
+		}
+		# Archer
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_horse_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_horse_archer
+				}
+				set_character_flag = class_horse_archer
+			}
+		}
+		# Nomad / Bow Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_horse_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_archer
+				}
+				set_character_flag = class_archer
+			}
+		}
+		# Mercenary
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_mercenary
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_archer_female
+					set_character_flag = class_archer
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_fighter
+					set_character_flag = class_fighter
+				}
+			}
+		}
+		# Fighter
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_fighter
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mercenary_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mercenary
+				}
+				set_character_flag = class_mercenary
+			}
+		}
+		# Pirate
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_pirate
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_thief_female
+					set_character_flag = class_thief
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_brigand
+					set_character_flag = class_brigand
+				}
+			}
+		}
+		# Brigand
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_brigand
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mercenary_female
+					set_character_flag = class_mercenary
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_pirate
+					set_character_flag = class_pirate
+				}
+			}
+		}
+		# Myrmidon
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_myrmidon
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_thief_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_thief
+				}
+				set_character_flag = class_thief
+			}
+		}
+		# Thief
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_thief
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_myrmidon_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_myrmidon
+				}
+				set_character_flag = class_myrmidon
+			}
+		}
+		# Wyvern Rider
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_wyvern_rider
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_pegasus_knight
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					if = {
+						limit = {
+							culture = hoshidan
+						}
+						add_trait = class_pegasus_knight
+						set_character_flag = class_pegasus_knight
+					}
+					if = {
+						limit = {
+							NOT = {culture = hoshidan}
+						}
+						add_trait = class_cavalier
+						set_character_flag = class_cavalier
+					}
+				} 
+			}
+		}
+		# Pegasus Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_pegasus_knight
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_wyvern_rider
+				set_character_flag = class_wyvern_rider
+			}
+		}
+		# Monk
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_monk
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_cleric
+					set_character_flag = class_cleric
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_priest
+					set_character_flag = class_priest
+				}
+			}
+		}
+		# Priest
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_priest
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_troubador
+					set_character_flag = class_troubador
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_monk
+					set_character_flag = class_monk
+				}
+			}
+		}
+		# Mage
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_mage
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_shaman_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_shaman
+				}
+				set_character_flag = class_shaman
+			}
+		}
+		# Shaman
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_shaman
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mage_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mage
+				}
+				set_character_flag = class_mage
+			}
+		}
+		# Manakete
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						has_character_flag=class_manakete
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mage_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mage
+				}
+				set_character_flag = class_mage
+			}
+		}
+	}
+}
+
+# Mother's classes
+character_event = {
+	id = class.4
+	desc = "class.4.desc"
+	picture = "GFX_evt_child_sword" 
+		
+	is_triggered_only = yes
+	
+	# Mother's class 1
+	option = {
+		name = "class.4.A"
+		trigger = {
+			FROMFROM = {
+				mother_even_if_dead = {
+					OR = {
+						has_character_flag=class_knight
+						has_character_flag=class_cavalier
+						has_character_flag=class_archer
+						has_character_flag=class_horse_archer
+						has_character_flag=class_mercenary
+						has_character_flag=class_myrmidon
+						has_character_flag=class_thief
+						has_character_flag=class_cleric
+						has_character_flag=class_troubador
+						has_character_flag=class_mage
+						has_character_flag=class_shaman
+						has_character_flag=class_wyvern_rider
+						has_character_flag=class_pegasus_knight
+						has_character_flag=class_manakete
+						has_character_flag=class_soldier
+						has_character_flag=class_dancer
+					}
+				}
+			}
+		}
+		# Knight 
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_knight
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_knight
+				set_character_flag = class_knight
+			}
+		}
+		# Cavalier
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_cavalier
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_cavalier
+				set_character_flag = class_cavalier
+			}
+		}
+		# Archer
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_archer
+				}
+				set_character_flag = class_archer
+			}
+		}
+		# Nomad / Bow Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_horse_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_horse_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_horse_archer
+				}
+				set_character_flag = class_horse_archer
+			}
+		}
+		# Mercenary
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_mercenary
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mercenary_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mercenary
+				}
+				set_character_flag = class_mercenary
+			}
+		}
+		# Myrmidon
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_myrmidon
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_myrmidon_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_myrmidon
+				}
+				set_character_flag = class_myrmidon
+			}
+		}
+		# Thief
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_thief
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_thief_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_thief
+				}
+				set_character_flag = class_thief
+			}
+		}
+		# Wyvern Rider
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_wyvern_rider
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_wyvern_rider
+				set_character_flag = class_wyvern_rider
+			}
+		}
+		# Pegasus Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_pegasus_knight
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_pegasus_knight
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					if = {
+						limit = {
+							culture = hoshidan
+						}
+						add_trait = class_pegasus_knight
+						set_character_flag = class_pegasus_knight
+					}
+					if = {
+						limit = {
+							NOT = {culture = hoshidan}
+						}
+						add_trait = class_cavalier
+						set_character_flag = class_cavalier
+					}
+				} 
+			}
+		}
+		# Troubador
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_troubador
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_troubador
+					set_character_flag = class_troubador
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_monk
+					set_character_flag = class_monk
+				}
+			}
+		}
+		# Cleric
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_cleric
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_cleric
+					set_character_flag = class_cleric
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_priest
+					set_character_flag = class_priest
+				}
+			}
+		}
+		# Mage
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_mage
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mage_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mage
+				}
+				set_character_flag = class_mage
+			}
+		}
+		# Shaman
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_shaman
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_shaman_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_shaman
+				}
+				set_character_flag = class_shaman
+			}
+		}
+		# Solider
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_soldier
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_soldier
+				set_character_flag = class_soldier
+			}
+		}
+		# Dancer
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_dancer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_dancer
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_bard
+				}
+				set_character_flag = class_dancer
+			}
+		}
+		# Manakete
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_manakete
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						OR = {
+							trait = dragon
+							trait = dragon_blood
+						}
+					}
+					if = {
+						limit = {
+							is_female = yes
+						}
+						add_trait = class_manakete_female
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						add_trait = class_manakete
+					}
+					set_character_flag = class_manakete
+				}
+				if = {
+					limit = {
+						NOR = {
+							trait = dragon
+							trait = dragon_blood
+						}
+					}
+					if = {
+						limit = {
+							is_female = yes
+						}
+						add_trait = class_shaman_female
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						add_trait = class_shaman
+					}
+					set_character_flag = class_shaman
+				}
+			}
+		}
+	}
+	
+	# Mother's class 2
+	option = {
+		name = "class.4.B"
+		trigger = {
+			FROMFROM = {
+				mother_even_if_dead = {
+					OR = {
+						has_character_flag=class_knight
+						has_character_flag=class_cavalier
+						has_character_flag=class_archer
+						has_character_flag=class_horse_archer
+						has_character_flag=class_mercenary
+						has_character_flag=class_myrmidon
+						has_character_flag=class_thief
+						has_character_flag=class_cleric
+						has_character_flag=class_troubador
+						has_character_flag=class_mage
+						has_character_flag=class_shaman
+						has_character_flag=class_wyvern_rider
+						has_character_flag=class_pegasus_knight
+						has_character_flag=class_manakete
+						#These have only one option, sorry. They could be part of the same group, but they're kind of specialized.
+						#has_character_flag=class_soldier
+						#has_character_flag=class_dancer
+					}
+				}
+			}
+		}
+		# Knight 
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_knight
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_cavalier
+				set_character_flag = class_cavalier
+			}
+		}
+		# Cavalier
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_cavalier
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_knight
+				set_character_flag = class_knight
+			}
+		}
+		# Archer
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_horse_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_horse_archer
+				}
+				set_character_flag = class_horse_archer
+			}
+		}
+		# Nomad / Bow Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_horse_archer
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_archer_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_archer
+				}
+				set_character_flag = class_archer
+			}
+		}
+		# Mercenary
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_mercenary
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_archer_female
+					set_character_flag = class_archer
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_fighter
+					set_character_flag = class_fighter
+				}
+			}
+		}
+		# Myrmidon
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_myrmidon
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_thief_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_thief
+				}
+				set_character_flag = class_thief
+			}
+		}
+		# Thief
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_thief
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_myrmidon_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_myrmidon
+				}
+				set_character_flag = class_myrmidon
+			}
+		}
+		# Wyvern Rider
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_wyvern_rider
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_pegasus_knight
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					if = {
+						limit = {
+							culture = hoshidan
+						}
+						add_trait = class_pegasus_knight
+						set_character_flag = class_pegasus_knight
+					}
+					if = {
+						limit = {
+							NOT = {culture = hoshidan}
+						}
+						add_trait = class_cavalier
+						set_character_flag = class_cavalier
+					}
+				} 
+			}
+		}
+		# Pegasus Knight
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_pegasus_knight
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_wyvern_rider
+				set_character_flag = class_wyvern_rider
+			}
+		}
+		# Troubador
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_troubador
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_cleric
+					set_character_flag = class_cleric
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_priest
+					set_character_flag = class_priest
+				}
+			}
+		}
+		# Cleric
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_cleric
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_troubador
+					set_character_flag = class_troubador
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_monk
+					set_character_flag = class_monk
+				}
+			}
+		}
+		# Mage
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_shaman
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_shaman_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_shaman
+				}
+				set_character_flag = class_shaman
+			}
+		}
+		# Shaman
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_shaman
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mage_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mage
+				}
+				set_character_flag = class_mage
+			}
+		}
+		# Manakete
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						has_character_flag=class_manakete
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mage_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mage
+				}
+				set_character_flag = class_mage
+			}
+		}
+	}
+}
+
+# Promotion
+character_event = {
+	id = class.5
+	desc = "class.5.desc"
+	picture = "GFX_evt_battle" 
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		# Reset level to 1
+		set_variable = { which = "level" value = 1 }
+	}
+	
+	option = {
+		# If they can promote
+		trigger = {
+			OR = {
+				trait=class_archer
+				trait=class_archer_female
+				trait=class_brigand
+				trait=class_cavalier
+				trait=class_cleric
+				trait=class_fighter
+				trait=class_knight
+				trait=class_mage
+				trait=class_mage_female
+				trait=class_mercenary
+				trait=class_mercenary_female
+				trait=class_monk
+				trait=class_myrmidon
+				trait=class_myrmidon_female
+				trait=class_horse_archer
+				trait=class_horse_archer_female
+				trait=class_pegasus_knight
+				trait=class_pirate
+				trait=class_priest
+				trait=class_shaman
+				trait=class_shaman_female
+				trait=class_thief
+				trait=class_thief_female
+				trait=class_troubador
+				trait=class_wyvern_rider	
+			}
+		}
+		name= {
+			text = class.5.A.class_general
+			trigger = {
+				trait=class_knight
+			}
+		}
+
+		name = {
+			text = class.5.A.class_paladin
+			trigger = {
+				trait=class_cavalier
+			}
+		}
+
+		name = {
+			text = class.5.A.class_sniper
+			trigger = {
+				OR = {
+					trait=class_archer
+					trait=class_archer_female
+					trait=class_horse_archer
+					trait=class_horse_archer_female
+				}
+			}
+		}
+
+		name = {
+			text = class.5.A.class_hero
+			trigger = {
+				OR = {
+					trait=class_mercenary
+					trait=class_mercenary_female
+					trait=class_fighter
+				}
+			}
+		}
+
+		name = {
+			text = class.5.A.class_berserker
+			trigger = {
+				OR = {
+					trait=class_pirate
+					trait=class_brigand
+				}
+			}
+		}
+
+		name = {
+			text = class.5.A.class_swordmaster
+			trigger = {
+				trait=class_myrmidon
+				trait=class_myrmidon_female
+			}
+		}
+
+		name = {
+			text = class.5.A.class_rogue
+			trigger = {
+				trait=class_thief
+				trait=class_thief_female
+			}
+		}
+
+		name = {
+			text = class.5.A.class_falcon_knight
+			trigger = {
+				trait=class_pegasus_knight
+			}
+		}
+
+		name = {
+			text = class.5.A.class_wyvern_lord
+			trigger = {
+				trait=class_wyvern_rider
+			}
+		}
+
+		name = {
+			text = class.5.A.class_valkyrie
+			trigger = {
+				OR = {
+					trait=class_troubador
+					trait=class_cleric
+				}
+			}
+		}
+
+		name = {
+			text = class.5.A.class_sage
+			trigger = {
+				OR = {
+					trait=class_priest
+					trait=class_monk
+					trait=class_mage
+					trait=class_mage_female
+				}
+			}
+		}
+
+		name = {
+			text = class.5.A.class_druid
+			trigger = {
+				trait=class_shaman
+				trait=class_shaman_female
+			}
+		}
+		
+		if = {
+			limit = {
+				trait=class_knight
+			}
+			remove_trait=class_knight
+			add_trait=class_general
+		}
+		
+		if = {
+			limit = {
+				trait=class_cavalier
+			}
+			remove_trait=class_cavalier
+			add_trait=class_paladin
+		}
+		
+		if = {
+			limit = {
+				trait=class_archer
+			}
+			remove_trait=class_archer
+			add_trait=class_sniper
+		}
+		
+		if = {
+			limit = {
+				trait=class_horse_archer
+			}
+			remove_trait=class_horse_archer
+			add_trait=class_sniper
+		}
+		
+		if = {
+			limit = {
+				trait=class_archer_female
+			}
+			remove_trait=class_archer_female
+			add_trait=class_sniper_female
+		}
+		
+		if = {
+			limit = {
+				trait=class_horse_archer_female
+			}
+			remove_trait=class_horse_archer_female
+			add_trait=class_sniper_female
+		}
+		
+		if = {
+			limit = {
+				trait=class_mercenary
+			}
+			remove_trait=class_mercenary
+			add_trait=class_hero
+		}
+		
+		if = {
+			limit = {
+				trait=class_fighter
+			}
+			remove_trait=class_fighter
+			add_trait=class_hero
+		}
+		
+		if = {
+			limit = {
+				trait=class_mercenary_female
+			}
+			remove_trait=class_mercenary_female
+			add_trait=class_hero_female
+		}
+		
+		if = {
+			limit = {
+				trait=class_pirate
+			}
+			remove_trait=class_pirate
+			add_trait=class_berserker
+		}
+		
+		if = {
+			limit = {
+				trait=class_brigand
+			}
+			remove_trait=class_brigand
+			add_trait=class_berserker
+		}
+		
+		if = {
+			limit = {
+				trait=class_myrmidon
+			}
+			remove_trait=class_myrmidon
+			add_trait=class_swordmaster
+		}
+		
+		if = {
+			limit = {
+				trait=class_myrmidon_female
+			}
+			remove_trait=class_myrmidon_female
+			add_trait=class_swordmaster_female
+		}
+		
+		if = {
+			limit = {
+				trait=class_thief
+			}
+			remove_trait=class_thief
+			add_trait=class_rogue
+		}
+		
+		if = {
+			limit = {
+				trait=class_thief
+			}
+			remove_trait=class_thief_female
+			add_trait=class_rogue
+		}
+		
+		if = {
+			limit = {
+				trait=class_pegasus_knight
+			}
+			remove_trait=class_pegasus_knight
+			add_trait=class_falcon_knight
+		}
+		
+		if = {
+			limit = {
+				trait=class_wyvern_rider
+			}
+			remove_trait=class_wyvern_rider
+			add_trait=class_wyvern_lord
+		}
+		
+		if = {
+			limit = {
+				trait=class_troubador
+			}
+			remove_trait=class_troubador
+			add_trait=class_valkyrie
+		}
+		
+		if = {
+			limit = {
+				trait=class_cleric
+			}
+			remove_trait=class_cleric
+			add_trait=class_valkyrie
+		}
+		
+		if = {
+			limit = {
+				trait=class_priest
+			}
+			remove_trait=class_priest
+			add_trait=class_sage
+		}
+		
+		if = {
+			limit = {
+					trait=class_monk
+			}
+			remove_trait=class_monk
+			add_trait=class_sage
+		}
+		
+		if = {
+			limit = {
+					trait=class_mage
+			}
+			remove_trait=class_mage
+			add_trait=class_sage
+		}
+		
+		if = {
+			limit = {
+				trait=class_mage_female
+			}
+			remove_trait=class_mage_female
+			add_trait=class_sage_female
+		}
+		
+		if = {
+			limit = {
+				trait=class_shaman
+			}
+			remove_trait=class_shaman
+			add_trait=class_druid
+		}
+		
+		if = {
+			limit = {
+				trait=class_shaman_female
+			}
+			remove_trait=class_shaman_female
+			add_trait=class_druid_female
+		}
+	}
+	
+	# Option 2
+	option = {
+		# If they can promote
+		trigger = {
+			OR = {
+				trait=class_archer
+				trait=class_archer_female
+				trait=class_brigand
+				trait=class_cavalier
+				trait=class_cleric
+				trait=class_fighter
+				trait=class_knight
+				trait=class_mage
+				trait=class_mage_female
+				trait=class_mercenary
+				trait=class_mercenary_female
+				trait=class_monk
+				trait=class_myrmidon
+				trait=class_myrmidon_female
+				trait=class_horse_archer
+				trait=class_horse_archer_female
+				trait=class_pegasus_knight
+				trait=class_pirate
+				trait=class_priest
+				trait=class_shaman
+				trait=class_shaman_female
+				trait=class_thief
+				trait=class_thief_female
+				trait=class_troubador
+				trait=class_wyvern_rider	
+			}
+		}
+		name= {
+			text = class.5.B.class_great_knight
+			trigger = {
+				OR = {
+					trait=class_knight
+					trait=class_cavalier
+				}
+			}
+		}
+
+		name = {
+			text = class.5.B.class_ranger
+			trigger = {
+				OR = {
+					trait=class_archer
+					trait=class_archer_female
+					trait=class_horse_archer
+					trait=class_horse_archer_female
+					trait=class_mercenary
+					trait=class_mercenary_female
+				}
+			}
+		}
+
+		name = {
+			text = class.5.B.class_warrior
+			trigger = {
+				OR = {
+					trait=class_fighter
+					trait=class_pirate
+					trait=class_brigand
+				}
+			}
+		}
+
+		name = {
+			text = class.5.B.class_assassin
+			trigger = {
+				OR = {
+					trait=class_myrmidon
+					trait=class_myrmidon_female
+					trait=class_thief
+					trait=class_thief_female
+				}
+			}
+		}
+
+		name = {
+			text = class.5.B.class_wyvern_knight
+			trigger = {
+				OR = {
+					trait=class_pegasus_knight
+					trait=class_wyvern_rider
+				}
+			}
+		}
+
+		name = {
+			text = class.5.B.class_mage_knight
+			trigger = {
+				OR = {
+					trait=class_troubador
+					trait=class_mage
+					trait=class_mage_female
+				}
+			}
+		}
+
+		name = {
+			text = class.5.B.class_bishop
+			trigger = {
+				OR = {
+					trait=class_cleric
+					trait=class_priest
+					trait=class_monk
+				}
+			}
+		}
+
+		name = {
+			text = class.5.B.class_summoner
+			trigger = {
+				trait=class_shaman
+				trait=class_shaman_female
+			}
+		}
+		
+		if = {
+			limit = {
+					trait=class_knight
+			}
+			remove_trait=class_knight
+			add_trait=class_great_knight
+		}
+		
+		if = {
+			limit = {
+					trait=class_cavalier
+			}
+			remove_trait=class_cavalier
+			add_trait=class_great_knight
+		}
+		
+		if = {
+			limit = {
+					trait=class_archer
+			}
+			remove_trait=class_archer
+			add_trait=class_ranger
+		}
+		
+		if = {
+			limit = {
+					trait=class_horse_archer
+			}
+			remove_trait=class_horse_archer
+			add_trait=class_ranger
+		}
+		
+		if = {
+			limit = {
+					trait=class_mercenary
+			}
+			remove_trait=class_mercenary
+			add_trait=class_ranger
+		}
+		
+		if = {
+			limit = {
+					trait=class_archer_female
+			}
+			remove_trait=class_archer_female
+			add_trait=class_ranger_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_horse_archer_female
+			}
+			remove_trait=class_horse_archer_female
+			add_trait=class_ranger_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_mercenary_female
+			}
+			remove_trait=class_mercenary_female
+			add_trait=class_ranger_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_fighter
+			}
+			remove_trait=class_fighter
+			add_trait=class_warrior
+		}
+		
+		if = {
+			limit = {
+					trait=class_pirate
+			}
+			remove_trait=class_pirate
+			add_trait=class_warrior
+		}
+		
+		if = {
+			limit = {
+					trait=class_brigand
+			}
+			remove_trait=class_brigand
+			add_trait=class_warrior
+		}
+		
+		if = {
+			limit = {
+					trait=class_myrmidon
+			}
+			remove_trait=class_myrmidon
+			add_trait=class_assassin
+		}
+		
+		if = {
+			limit = {
+					trait=class_thief
+			}
+			remove_trait=class_thief
+			add_trait=class_assassin
+		}
+		
+		if = {
+			limit = {
+					trait=class_myrmidon_female
+			}
+			remove_trait=class_myrmidon_female
+			add_trait=class_assassin_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_thief_female
+			}
+			remove_trait=class_thief_female
+			add_trait=class_assassin_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_pegasus_knight
+			}
+			remove_trait=class_pegasus_knight
+			add_trait=class_wyvern_knight
+		}
+		
+		if = {
+			limit = {
+					trait=class_wyvern_rider
+			}
+			remove_trait=class_wyvern_rider
+			add_trait=class_wyvern_knight
+		}
+		
+		if = {
+			limit = {
+				trait=class_mage
+			}
+			remove_trait=class_mage
+			add_trait=class_mage_knight
+		}
+		
+		if = {
+			limit = {
+					trait=class_mage_female
+			}
+			remove_trait=class_mage_female
+			add_trait=class_mage_knight_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_troubador
+			}
+			remove_trait=class_troubador
+			add_trait=class_mage_knight_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_priest
+			}
+			remove_trait=class_priest
+			add_trait=class_bishop
+		}
+		
+		if = {
+			limit = {
+					trait=class_monk
+			}
+			remove_trait=class_monk
+			add_trait=class_bishop
+		}
+		
+		if = {
+			limit = {
+				trait=class_cleric
+			}
+			remove_trait=class_cleric
+			add_trait=class_bishop_female
+		}
+		
+		if = {
+			limit = {
+					trait=class_shaman
+			}
+			remove_trait=class_shaman
+			add_trait=class_summoner
+		}
+		
+		if = {
+			limit = {
+					trait=class_shaman_female
+			}
+			remove_trait=class_shaman_female
+			add_trait=class_summoner
+		}
+	}
+	
+	# This should never happen, but just in case...
+	option = {
+		name = "class.5.C"
+		trigger = {
+			NOR = {
+				trait=class_archer
+				trait=class_archer_female
+				trait=class_brigand
+				trait=class_cavalier
+				trait=class_cleric
+				trait=class_fighter
+				trait=class_knight
+				trait=class_mage
+				trait=class_mage_female
+				trait=class_mercenary
+				trait=class_mercenary_female
+				trait=class_monk
+				trait=class_myrmidon
+				trait=class_myrmidon_female
+				trait=class_horse_archer
+				trait=class_horse_archer_female
+				trait=class_pegasus_knight
+				trait=class_pirate
+				trait=class_priest
+				trait=class_shaman
+				trait=class_shaman_female
+				trait=class_thief
+				trait=class_thief_female
+				trait=class_troubador
+				trait=class_wyvern_rider	
+			}
+		}
+		prestige = 1000
+	}		
+	
+	option = {
+		name = "class.5.D"
+	}		
+}
+
+# Trigger promotion for non-playable characters
+character_event = {
+	id = class.6
+	
+	hide_window = yes
+	is_triggered_only = yes
+		
+	trigger = {
+		is_playable = no
+		OR = {
+			has_character_flag=class_knight
+			has_character_flag=class_cavalier
+			has_character_flag=class_archer
+			has_character_flag=class_horse_archer
+			has_character_flag=class_mercenary
+			has_character_flag=class_fighter
+			has_character_flag=class_myrmidon
+			has_character_flag=class_thief
+			has_character_flag=class_pirate
+			has_character_flag=class_brigand
+			has_character_flag=class_priest
+			has_character_flag=class_monk
+			has_character_flag=class_mage
+			has_character_flag=class_shaman
+			has_character_flag=class_wyvern_rider
+			has_character_flag=class_pegasus_knight
+		}
+		check_variable = { which = "level" value = 20 }
+	}
+	
+	option = {
+		name = OK
+		character_event = { id = class.5 days=1 random=350}
+	}		
+}
+
+# Level UP!
+character_event = {
+	id = class.7
+	desc = class.7.desc
+	picture = "GFX_evt_battle" 	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+		change_variable = { which = "level" value = 1 }
+	}
+}

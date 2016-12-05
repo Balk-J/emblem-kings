@@ -1,7 +1,7 @@
 draconic = {
 	graphical_cultures = { westerngfx }# buildings, portraits, units
 	
-	divine_dragon = {
+	divine_dragon_culture = {
 		graphical_cultures = { englishgfx} # units
 		
 		color = { 0 0 0 }
@@ -34,7 +34,7 @@ draconic = {
 		modifier = default_culture_modifier
 	}
 	
-	war_dragon = {
+	war_dragon_culture = {
 		graphical_cultures = { southerngfx occitangfx }# Fallback type
 		
 		color = { 0.5 0 0.1 }
@@ -99,7 +99,7 @@ draconic = {
 		modifier = default_culture_modifier
 	}
 	
-	fire_dragon = {
+	fire_dragon_culture = {
 		graphical_cultures = { southerngfx occitangfx }# Fallback type
 		
 		color = { 0.5 0 0.1 }
@@ -126,7 +126,7 @@ draconic = {
 		modifier = default_culture_modifier
 	}
 	
-	ice_dragon = {
+	ice_dragon_culture = {
 		graphical_cultures = { easternslavicgfx}
 		graphical_unit_culture = western
 		

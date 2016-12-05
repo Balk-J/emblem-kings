@@ -1,4 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+promote;Promote;;;;;;;;;;;;;x
+promote_desc;Promote to an advanced class.;;;;;;;;;;;;;x
 decide_what_to_do_with_regalia;Decide on regalia inheritance;;;;;;;;;;;;;x
 decide_what_to_do_with_regalia_desc;Decide what to do with your regalia after your death.;;;;;;;;;;;;;x
 decide_what_to_do_with_regalia_tooltip;You have a decision to make.;;;;;;;;;;;;;x
@@ -11,5 +13,5 @@ create_war_dragons_desc;Your Demon Dragon can be called upon to create War Drago
 create_morph;Create Morph;;;;;;;;;;;;;x
 create_morph_desc;Use your arcane knowledge to create an artificial human.;;;;;;;;;;;;;x
 return_elibe_to_dragons;Return Elibe to the Dragons;;;;;;;;;;;;;x
-return_elibe_to_dragons_desc;With control over enough of the continent and the support of a true dragon, I can give this land a ruler who can free us from misery and suffering.;;;;;;;;;;;;;x
+return_elibe_to_dragons_desc;With control over enough of the continent and the support of a true dragon, I can give this land a ruler who will free us from misery and suffering.;;;;;;;;;;;;;x
 return_elibe_to_dragons_TOOLTIP;Any empire-level titles you hold are forfeit.\nThe Hierophant will become your new liege, and the liege of any king-level vassals you have.;;;;;;;;;;;;;x

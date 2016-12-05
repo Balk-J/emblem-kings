@@ -345,8 +345,8 @@
 }
 
 122={
-	can_appear=no
-	name="Juge" # for Nino's family
+	#can_appear=no
+	name="of Myra" # for Nino's family
 	culture="lycian"
     coat_of_arms = {
         template = 0

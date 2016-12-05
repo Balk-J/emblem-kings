@@ -3423,7 +3423,7 @@ k_calach = {
 			
 			b_calach = {
 			}
-			b_fire_dragon_temple = {
+			b_dragon_sanctuary = {
 			}
 			b_ticino = {
 			}

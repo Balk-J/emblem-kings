@@ -1,0 +1,646 @@
+### At the moment we have a pretty basic icon system for combat tactics showing
+### the uniticon which has the biggest bonus value in the tactic.
+### This is the sprite number for each unit:
+### 1=LI 2=HI 3=PIKE 4=LC 5=KNIGHTS 6=ARCHERS 7=HORSE ARCH.
+
+# Must be first in file. This tactic will be set if anything goes wrong
+no_tactic = {
+	days = 1 # tactic lasts one day
+	sprite = 1 # index of icon
+
+	trigger = {
+		always = no # never use unless set explicitly by code
+	}
+}
+
+##############
+# FE Tactics #
+##############
+
+manakete_harass_tactic = {
+	days = 18
+	sprite = 5
+	group = charge
+
+	trigger = {
+		phase = skirmish 
+		flank_has_leader = yes
+		leader = {
+			OR = {
+				trait = class_manakete
+				trait = class_manakete_female
+			}
+			NOT = { has_character_flag = divine_weapon_dragon_battle_lost }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 100000
+	}	
+	
+	knights_offensive = 1
+	horse_archers_offensive = 1
+	light_infantry_offensive = 1
+	heavy_infantry_offensive = 1
+	pikemen_offensive = 1
+	archers_offensive = 1
+	camel_cavalry_offensive = 1
+	war_elephants_offensive = 1
+	pegasus_knights_offensive = 1
+	wyvern_riders_offensive = 1
+	magic_users_offensive = 1
+
+	knights_defensive = 1
+	horse_archers_defensive = 1
+	light_infantry_defensive = 1
+	heavy_infantry_defensive = 1
+	pikemen_defensive = 1
+	archers_defensive = 1
+	camel_cavalry_defensive = 1
+	war_elephants_defensive = 1
+	pegasus_knights_defensive = 1
+	wyvern_riders_defensive = 1
+	magic_users_defensive = 1
+}
+
+manakete_crush_tactic = {
+	days = 18
+	sprite = 5
+	group = charge
+
+	trigger = {
+		phase = melee 
+		flank_has_leader = yes
+		leader = {
+			OR = {
+				trait = class_manakete
+				trait = class_manakete_female
+			}
+			NOT = { has_character_flag = divine_weapon_dragon_battle_lost }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 100000
+	}	
+	
+	knights_offensive = 3
+	horse_archers_offensive = 3
+	light_infantry_offensive = 3
+	heavy_infantry_offensive = 3
+	pikemen_offensive = 3
+	archers_offensive = 3
+	camel_cavalry_offensive = 3
+	war_elephants_offensive = 3
+	pegasus_knights_offensive = 3
+	wyvern_riders_offensive = 3
+	magic_users_offensive = 3
+
+	knights_defensive = 1
+	horse_archers_defensive = 1
+	light_infantry_defensive = 1
+	heavy_infantry_defensive = 1
+	pikemen_defensive = 1
+	archers_defensive = 1
+	camel_cavalry_defensive = 1
+	war_elephants_defensive = 1
+	pegasus_knights_defensive = 1
+	wyvern_riders_defensive = 1
+	magic_users_defensive = 1
+}
+
+air_harass_tactic = {
+	days = 18
+	sprite = 4
+	group = harass
+
+	trigger = {
+		phase = skirmish
+		OR = {
+			wyvern_riders = 0.45
+			pegasus_knights = 0.45
+		}
+		AND = {
+			flank_has_leader = yes
+			leader = { martial = 10 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_pegasus_knight
+					trait = class_wyvern_rider
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_falcon_knight
+					trait = class_wyvern_lord
+					trait = class_wyvern_knight
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				martial = 8
+			}
+			OR = {
+				heavy_troops = { 
+					who = wyvern_riders
+					value = 0.5
+				}
+				light_troops = { 
+					who = pegasus_knights
+					value = 0.5
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				martial = 10
+			}
+			OR = {
+				heavy_troops = { 
+					who = wyvern_riders
+					value = 0.6
+				}
+				light_troops = { 
+					who = pegasus_knights
+					value = 0.6
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				martial = 16
+			}
+			OR = {
+				heavy_troops = { 
+					who = wyvern_riders
+					value = 0.7
+				}
+				light_troops = { 
+					who = pegasus_knights
+					value = 0.7
+				}
+			}
+		}
+	}
+
+	pegasus_knights_offensive = 4
+	pegasus_knights_defensive = -0.2
+	wyvern_riders_offensive = 4
+	wyvern_riders_defensive = -0.2
+	light_cavalry_offensive = -1.0
+	knights_offensive = -1.0
+	horse_archers_offensive = -1.0
+	archers_offensive = -1.0
+	enemy = {
+		group = swarm
+		factor = 1
+	}
+}
+
+disorganised_air_harass_tactic = {
+	days = 18
+	sprite = 4
+	group = harass
+
+	trigger = {
+		phase = skirmish
+		
+		OR = {
+			wyvern_riders = 0.45
+			pegasus_knights = 0.45
+		}
+		OR = {
+			flank_has_leader = no
+			NOT = { leader = { Martial = 10 } }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+		modifier = {
+			factor = 1.5
+			OR = {
+				light_troops = { 
+					who = pegasus_knights
+					value = 0.5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				light_troops = { 
+					who = pegasus_knights
+					value = 0.7
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				light_troops = { 
+					who = pegasus_knights
+					value = 0.9
+				}
+			}
+		}
+	}
+	
+	pegasus_knights_offensive = 1.0
+	pegasus_knights_defensive = -0.4
+	wyvern_riders_offensive = 1.0
+	wyvern_riders_defensive = -0.4
+	light_cavalry_offensive = -1.0
+	knights_offensive = -1.0
+	horse_archers_offensive = -1.0
+	archers_offensive = -1.0
+	enemy = {
+		group = swarm
+		factor = 1
+	}
+}
+
+air_assault_tactic = {
+	days = 18
+	sprite = 5
+	group = charge
+
+	trigger = {
+		phase = melee
+		OR = {
+			pegasus_knights = 0.01
+			wyvern_riders = 0.01		
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 8
+			}
+			OR = {
+				light_troops = {
+					who = pegasus_knights
+					value = 0.7
+				}
+				heavy_troops = {
+					who = wyvern_riders
+					value = 0.7
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 12
+			}
+			OR = {
+				light_troops = {
+					who = pegasus_knights
+					value = 0.6
+				}
+				heavy_troops = {
+					who = wyvern_riders
+					value = 0.6
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 16
+			}
+			OR = {
+				light_troops = {
+					who = pegasus_knights
+					value = 0.5
+				}
+				heavy_troops = {
+					who = wyvern_riders
+					value = 0.5
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_pegasus_knight
+					trait = class_wyvern_rider
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_falcon_knight
+					trait = class_wyvern_lord
+					trait = class_wyvern_knight
+				}
+			}
+		}
+	}
+
+	pegasus_knights_offensive = 4
+	wyvern_riders_offensive = 4
+	heavy_infantry_offensive = -1.0
+	light_infantry_offensive = -1.0
+	pikemen_offensive = -1.0
+	enemy = {
+		group = advance
+		factor = 3
+	}
+}
+
+awesome_air_assault_tactic = {
+	days = 18
+	sprite = 5
+	group = charge
+
+	trigger = {
+		phase = melee 
+		OR = {
+			pegasus_knights = 0.01
+			wyvern_riders = 0.01		
+		}
+		pikemen = 0.01
+	}
+
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 9
+			}
+			OR = {
+				light_troops = {
+					who = pegasus_knights
+					value = 0.7
+				}
+				heavy_troops = {
+					who = wyvern_riders
+					value = 0.7
+				}
+			}
+			heavy_troops = {
+				who = pikemen
+				value = 0.3
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 13
+			}
+			OR = {
+				light_troops = {
+					who = pegasus_knights
+					value = 0.6
+				}
+				heavy_troops = {
+					who = wyvern_riders
+					value = 0.6
+				}
+			}
+			heavy_troops = {
+				who = pikemen
+				value = 0.3
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 17
+			}
+			OR = {
+				light_troops = {
+					who = pegasus_knights
+					value = 0.5
+				}
+				heavy_troops = {
+					who = wyvern_riders
+					value = 0.5
+				}
+			}
+			heavy_troops = {
+				who = pikemen
+				value = 0.3
+			}
+		}
+		
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_pegasus_knight
+					trait = class_wyvern_rider
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_falcon_knight
+					trait = class_wyvern_lord
+					trait = class_wyvern_knight
+				}
+			}
+		}
+	}
+
+	pegasus_knights_offensive = 3.5
+	wyvern_riders_offensive = 3.5
+	heavy_infantry_offensive = -1.8
+	light_infantry_offensive = -1.8
+	pikemen_offensive = 0.6
+	enemy = {
+		group = advance
+		factor = 3
+	}
+}
+
+shoot_down_flyers_tactic = {
+	days = 18
+	sprite = 6
+	group = volley
+
+	trigger = {
+		phase = skirmish  
+		OR = {
+			archers = 0.01
+			horse_archers = 0.01
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 100
+			enemy = {
+				OR = {
+					troops = {
+						who = wyvern_riders
+						value = 0.75
+					}
+					troops = {
+						who = pegasus_knights
+						value = 0.75
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			enemy = {
+				NOR = {
+					troops = {
+						who = wyvern_riders
+						value = 0.75
+					}
+					troops = {
+						who = pegasus_knights
+						value = 0.75
+					}
+				}
+			}
+		}
+	}
+
+	archers_offensive = 3.0
+	horse_archers_offensive = 3.0
+}
+
+magic_volley_tactic = {
+	days = 18
+	sprite = 6
+	group = volley
+
+	trigger = {
+		phase = skirmish  
+		magic_users = 0.01
+	}
+
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 8
+			}
+			troops = { 
+				who = magic_users
+				value = 0.1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 12
+			}
+			troops = { 
+				who = magic_users
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 16
+			}
+			troops = { 
+				who = magic_users
+				value = 0.3
+			}
+		}
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_mage
+					trait = class_mage_female
+					trait = class_monk
+					trait = class_shaman
+					trait = class_shaman_female
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_bishop
+					trait = class_bishop_female
+					trait = class_druid
+					trait = class_druid_female
+					trait = class_mage_knight
+					trait = class_mage_knight_female
+					trait = class_sage
+					trait = class_sage_female
+					trait = class_summoner
+					trait = class_valkyrie
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			flank_has_leader = yes
+			leader = {
+				OR = {
+					trait = class_archdruid
+					trait = class_archsage
+					trait = class_dark_druid
+				}
+			}
+		}
+	}
+
+	light_cavalry_offensive = -1.5
+	camel_cavalry_offensive = -1.5
+	pegasus_knights_offensive = -1.5
+	horse_archers_offensive = -1.5
+	magic_users_offensive = 3.0
+	enemy = {
+		group = harass
+		factor = 1
+	}
+}

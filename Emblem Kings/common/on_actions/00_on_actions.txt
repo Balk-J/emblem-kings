@@ -19,6 +19,9 @@ on_yearly_pulse = {
 		RIP.10012 # Check for plague notifications
 		RIP.11700 # Prosperity system
 		RIP.5050 # Scurvy event
+		
+		# FE
+		class.6 # Promotion for non-playable characters
 	}
 
 	
@@ -970,6 +973,11 @@ on_combat_pulse = {
 		15 = 79009 # Shieldmaiden can save liege on battlefield
 		15 = 79001 # Shieldmaiden saves liege, but she is injured (small chain)
 	}
+	
+	# FE
+	events = {
+		battle.1
+	}
 }
 
 #on siege pulse
@@ -1003,6 +1011,11 @@ on_battle_won = {
 		100 = 8310 # Crusader becomes zealous
 		50 = CM.1054 # Death of Roland
 	}
+	# FE
+	events = {
+		battle.8
+		battle.9
+	}
 }
 
 # any leader in battle on winning side is ROOT - opponent army leader is FROM
@@ -1014,6 +1027,10 @@ on_major_battle_won = {
 
 # Winning army leader is ROOT - opponent army leader is FROM
 on_battle_won_leader = {
+	# FE
+	events = {
+		battle.9 # on_battle_won seems to not trigger for the war leader...
+	}
 }
 
 # Winning army leader is ROOT - opponent army leader is FROM
@@ -1037,6 +1054,10 @@ on_battle_lost = {
 		50 = 250 # Imprisoned by the enemy
 		50 = 8320 # Crusader becomes cynical
 		200 = CM.1056 # Death of Roland
+	}
+	# FE
+	events = {
+		battle.8
 	}
 }
 
@@ -1186,6 +1207,8 @@ on_birth = {
 		CM.10011 # Chronicle entry
 		HL.1000 # Child born with Wolf's Blood
 		HL.1700 # Wolf's Blood inheritance
+		# FE
+		bloodline.1 # Inherit bloodline traits
 		
 
 		RIP.11064 # Babies born in seclusion get seclusion modifier
@@ -1235,6 +1258,8 @@ on_adulthood = {
 on_adolescence = { # Checked on 12th birthday.
 	events = {
 		ZE.12998 # Clear childhood event chain flags
+		# FE
+		class.1
 	}
 }
 

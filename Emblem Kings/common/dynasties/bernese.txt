@@ -1,5 +1,6 @@
 # Canon
 401={
+	can_appear=no
 	name="of Bern"
 	culture="bernese"
 	coat_of_arms = {
@@ -16,6 +17,7 @@
 }
 
 415={
+	can_appear=no
 	name="Grentzer" #Pascal
 	culture="bernese"
     coat_of_arms = {
@@ -32,6 +34,7 @@
 }
 
 417={
+	can_appear=no
 	name="Reed"
 	culture="bernese"
     coat_of_arms = {
@@ -49,6 +52,7 @@
 
 # Canon-ish
 402={
+	can_appear=no
 	name="of Appenzell" # Brunnya
 	culture="bernese"
     coat_of_arms = {
@@ -64,6 +68,7 @@
     }
 }
 403={
+	can_appear=no
 	name="of Glarus" # Narcian
 	culture="bernese"    
 	coat_of_arms = {
@@ -79,6 +84,7 @@
     }
 }
 404={
+	can_appear=no
 	name="of Unterwalden" # Vaida
 	culture="bernese"
     coat_of_arms = {
@@ -94,6 +100,7 @@
     }	
 }
 405={
+	can_appear=no
 	name="of Obwalden" # Heath
 	culture="bernese"
     coat_of_arms = {
@@ -109,6 +116,7 @@
     }	
 }
 406={
+	can_appear=no
 	name="of Basel" # Milady, Zeiss
 	culture="bernese"
     coat_of_arms = {
@@ -124,6 +132,7 @@
     }
 }
 407={
+	can_appear=no
 	name="of Jura" # Ruud
 	culture="bernese"
     coat_of_arms = {
@@ -139,6 +148,7 @@
     }	
 }
 408={
+	can_appear=no
 	name="of Bettingen" # Elen (actually supposed to be from the same town as Zeiss, but same duchy is close enough here)
 	culture="bernese"
     coat_of_arms = {
@@ -154,6 +164,7 @@
     }	
 }
 409={
+	can_appear=no
 	name="of Ennenda" #Flaer
 	culture="bernese"
     coat_of_arms = {
@@ -169,6 +180,7 @@
     }	
 }
 410={
+	can_appear=no
 	name="of Netstal" #Slater
 	culture="bernese"
     coat_of_arms = {
@@ -184,6 +196,7 @@
     }	
 }
 411={
+	can_appear=no
 	name="of Isenthal" #Oates
 	culture="bernese"
     coat_of_arms = {
@@ -200,6 +213,7 @@
 }
 
 412={
+	can_appear=no
 	name="of Solothurn" #Raith
 	culture="bernese"
     coat_of_arms = {
@@ -216,6 +230,7 @@
 }
 
 413={
+	can_appear=no
 	name="of Zug" #Tick
 	culture="bernese"
     coat_of_arms = {
@@ -232,6 +247,7 @@
 }
 
 414={
+	can_appear=no
 	name="of Fribourg" #Peres
 	culture="bernese"
     coat_of_arms = {
@@ -248,6 +264,7 @@
 }
 
 416={
+	can_appear=no
 	name="of Bauen" #Martel
 	culture="bernese"
     coat_of_arms = {
@@ -264,6 +281,7 @@
 }
 
 418={
+	can_appear=no
 	name="of Nidwalden" #Richten
 	culture="bernese"
     coat_of_arms = {
@@ -280,6 +298,7 @@
 }
 
 498={
+	can_appear=no
 	name="Blackbone" #Audamorze
 	culture="bernese"    
 	coat_of_arms = {

@@ -1,5 +1,6 @@
 # Canon
 801={
+	can_appear=no
 	name="Davros"
 	culture="seafarer"
 	coat_of_arms = {
