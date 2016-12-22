@@ -1,10 +1,4 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-class..title;;;;;;;;;;;;;;x
-class..desc;;;;;;;;;;;;;;x
-class..A;;;;;;;;;;;;;;x
-class..B;;;;;;;;;;;;;;x
-class..C;;;;;;;;;;;;;;x
-class..D;;;;;;;;;;;;;;x
 class.1.title;Class;;;;;;;;;;;;;x
 class.1.desc;I am old enough to receive training as a warrior or mage.;;;;;;;;;;;;;x
 class.2.title;Class;;;;;;;;;;;;;x
@@ -12,6 +6,7 @@ class.2.desc;It is time to decide what kind of combat or magical training my [Ge
 class.2.A;[From.GetHerHisCap] talents are like [From.GetHerHis] father's.;;;;;;;;;;;;;x
 class.2.B;[From.GetHerHisCap] talents are like [From.GetHerHis] mother's.;;;;;;;;;;;;;x
 class.2.C;[From.GetSheHeCap] should be trained like any other solider in the army.;;;;;;;;;;;;;x
+class.2.C.tooltip;[From.GetTitledFirstName] will likely become a Soldier. [From.GetSheHeCap] may learn a different class based on [From.GetHerHis] culture.;;;;;;;;;;;;;x
 class.2.D;[From.GetSheHeCap] will not receive special training.;;;;;;;;;;;;;x
 class.3.tooltip;[From.GetFirstName] will be assigned a class in [From.GetHerHis] father's class set.;;;;;;;;;;;;;x
 class.3.title;Class;;;;;;;;;;;;;x
@@ -48,3 +43,95 @@ class.5.B.class_summoner;I will learn the summoning arts.;;;;;;;;;;;;;x
 class.5.C;I am already great!;;;;;;;;;;;;;x
 class.5.D;I'm not ready to change anything.;;;;;;;;;;;;;x
 class.7.desc;Your latest victory has given you valuable experience. You've definitely grown stronger!;;;;;;;;;;;;x
+class.8.desc;While out for a walk in [Root.Location.GetName], you notice some of your men drilling in a field. You've always regretted not training as a soldier... perhaps you could pick up some skills by practicing with your troops?;;;;;;;;;;;;x
+class.8.A;It's the army for me!;;;;;;;;;;;;;x
+class.8.B;Train as a common solider? I think not.;;;;;;;;;;;;;x
+class.9.desc.1;You approach the captain of the guard and announce your intention to train with your soldiers. He clearly doesn't think you know which end of a sword to hold. It takes some convincing, but he agrees to include you in his next class of recruits.;;;;;;;;;;;;;x
+class.9.desc.2;You approach the captain of the guard and announce your intention to train with your soldiers. He seems to doubt that you have the makings of a warrior, but he agrees to include you in his next class of recruits.;;;;;;;;;;;;;x
+class.9.desc.3;You approach the captain of the guard and announce your intention to train with your soldiers. He seems interested by the prospect, agrees to include you in his next class of recruits.;;;;;;;;;;;;;x
+class.9.desc.4;You approach the captain of the guard and announce your intention to train with your soldiers. He's very enthusiastic about the idea - he thinks you have the makings of a fine warrior, and invites you to train with his next class of recruits.;;;;;;;;;;;;;x
+class.9.A;Let's go!;;;;;;;;;;;;;x
+class.11.title;A Friendly Master;;;;;;;;;;;;;x
+class.11.desc;It occurs to you that one of your friends has the combat training you lack. Perhaps you could ask them to teach you what they know?;;;;;;;;;;;;;x
+class.11.A;My friend, will you teach me your skills?;;;;;;;;;;;;;x
+class.11.A.tooltip;[Root.GetTitledFirstName] asks [This.GetTitledFirstName] for lessons.;;;;;;;;;;;;;x
+class.11.B;I can't ask my friends for help with this.;;;;;;;;;;;;;x
+class.12.title;Training Master;;;;;;;;;;;;;x
+class.12.desc;My friend [From.GetTitledFirstName] wants to be a soldier, it seems. [From.GetSheHe] spoke to me recently and asked me to teach [From.GetHerHim] everything I know!;;;;;;;;;;;;;x
+class.12.A;I'll help you in any way I can!;Je ferai tout ce qui est en mon pouvoir pour vous aider !;Ich werde Euch auf jede erdenkliche Art helfen!;;¡Te ayudaré en todo lo que pueda!;;;;;;;;;x
+class.12.A.tooltip;[Root.GetTitledFirstName] decides to train [This.GetTitledFirstName].;;;;;;;;;;;;;x
+class.12.B;My apologies, but I am not the right teacher for you.;;;;;;;;;;;;;x
+class.12.B.tooltip;is forced to find another teacher.;;;;;;;;;;;;;x
+class.12.C;All right, but I'll need some gold for... supplies.;;;;;;;;;;;;;x
+class.12.C.tooltip;is grateful for [Root.GetTitledFirstName] help but not happy about having to pay for it.;;;;;;;;;;;;;x
+class.13.title;;;;;;;;;;;;;;x
+class.13.desc;[From.GetTitledFirstName] has agreed to train me!;;;;;;;;;;;;;x
+class.13.A;I can't wait!;;;;;;;;;;;;;x
+class.14.title;;;;;;;;;;;;;;x
+class.14.desc;[From.GetTitledFirstName] declined to teach me anything, claiming that [From.GetSheHe]'s not the right person to train me.;;;;;;;;;;;;;x
+class.14.A;That's disappointing...;;;;;;;;;;;;;x
+class.15.title;;;;;;;;;;;;;;x
+class.15.desc;[From.GetTitledFirstName] is willing to train me, but insists on being compensated for [From.GetHerHis] time...;;;;;;;;;;;;;x
+class.15.A;Friends help each other without charging for it!;Les amis s'entraident gratuitement !;Freunde helfen sich, ohne etwas dafür zu verlangen!;;¡Los amigos se ayudan unos a otros sin cobrar por ello!;;;;;;;;;x
+class.15.A.tooltip;tried to charge [Root.GetTitledFirstName] for [This.GetHerHis] help;a demandé de l'argent à [Root.GetTitledFirstName] en échange de son aide.;versuchte [Root.GetTitledFirstName] für [This.GetHerHis] Hilfe bezahlen zu lassen;;intentó cobrar a [Root.GetTitledFirstName] por [This.GetHerHis] ayuda;;;;;;;;;x
+class.15.B;I suppose that's fair.;;;;;;;;;;;;;x
+class.15.B.tooltip;is paid for [This.GetHerHis] services.;;;;;;;;;;;;;x
+class.16.title;;;;;;;;;;;;;;x
+class.16.desc;I agreed to train [From.GetTitledFirstName] if I was paid for my time, and [From.GetSheHe] has finally reached a decision.;;;;;;;;;;;;;x
+class.16.A;No gold, no lessons.;;;;;;;;;;;;;x
+class.16.B;Now that I have the gold, let's start your training!;;;;;;;;;;;;;x
+class.17.title;Training Aborted;;;;;;;;;;;;;x
+class.17.desc;I am no longer receiving lessons from my old friend.;;;;;;;;;;;;;x
+class.17.A;Oh well...;;;;;;;;;;;;;x
+class.18.title;;;;;;;;;;;;;;x
+class.18.desc;I am no longer teaching my old friend.;;;;;;;;;;;;;x
+class.18.A;I'll have more time to myself now.;;;;;;;;;;;;;x
+class.19.title;;;;;;;;;;;;;;x
+class.19.desc;I have finally succeeded in training my friend how to fight!;;;;;;;;;;;;;x
+class.19.A;I learned a few things myself along the way.;;;;;;;;;;;;;x
+class.19.A.tooltip;[This.GetTitledFirstName] gains a class.;;;;;;;;;;;;;x
+class.20.title;;;;;;;;;;;;;;x
+class.20.desc;After many hours of training and plenty of practice on my own, I am confident that I have nothing left to learn. My training is complete!;;;;;;;;;;;;;x
+class.20.A;My hard work has paid off!;;;;;;;;;;;;;x
+class.21.title;;;;;;;;;;;;;;x
+class.21.desc;Today I told one of my courtiers that I want to learn how to fight. [Root.GetSheHeCap] suggested that I send for an instructor to train me properly.;;;;;;;;;;;;;x
+class.21.A;A fine idea!;;;;;;;;;;;;;x
+class.21.B;No, that would be too expensive.;;;;;;;;;;;;;x
+MORE_OPTIONS;More...;;;;;;;;;;;;;x
+class.22.title;;;;;;;;;;;;;;x
+class.22.desc;I want to learn from:;;;;;;;;;;;;;x
+class.22.A;A valiant knight.;;;;;;;;;;;;;x
+class.22.A.tooltip;Your training begins.;;;;;;;;;;;;;x
+class.22.B;A battle-tested fighter.;;;;;;;;;;;;;x
+class.22.C;A nimble warrior.;;;;;;;;;;;;;x
+class.23.title;;;;;;;;;;;;;;x
+class.23.desc;;;;;;;;;;;;;;x
+class.23.A;A holy warrior.;;;;;;;;;;;;;x
+class.23.B;A healer.;;;;;;;;;;;;;x
+class.23.C;A musician.;;;;;;;;;;;;;x
+class.24.title;;;;;;;;;;;;;;x
+class.24.desc;;;;;;;;;;;;;;x
+class.24.A;An expert marksman.;;;;;;;;;;;;;x
+class.24.B;A savage raider.;;;;;;;;;;;;;x
+class.24.C;A knight who soars the skies.;;;;;;;;;;;;;x
+class.25.title;;;;;;;;;;;;;;x
+class.25.desc;;;;;;;;;;;;;;x
+class.25.A;A magic user.;;;;;;;;;;;;;x
+class.25.B;A common soldier.;;;;;;;;;;;;;x
+class.25.C;Somone who knows dragon lore.;;;;;;;;;;;;;x
+class.26.title;;;;;;;;;;;;;;x
+class.26.desc;;;;;;;;;;;;;;x
+class.26.A;I should go over this again.;;;;;;;;;;;;;x
+class.26.B;Forget the whole idea.;;;;;;;;;;;;;x
+class.27.title;;;;;;;;;;;;;;x
+class.27.desc;I'm good with a spear, but there's something a little... ordinary about fighting as a common foot soldier.;;;;;;;;;;;;;x
+class.27.A;I'll train with some new people.;;;;;;;;;;;;;x
+class.27.A.tooltip;[Root.GetTitledFirstName] changes to a new class determined by [Root.GetHerHis] culture.;;;;;;;;;;;;;x
+class.27.B;I don't want to change how I fight.;;;;;;;;;;;;;x
+class.28.desc;;;;;;;;;;;;;;x
+class..title;;;;;;;;;;;;;;x
+class..desc;;;;;;;;;;;;;;x
+class..A;;;;;;;;;;;;;;x
+class..B;;;;;;;;;;;;;;x
+class..C;;;;;;;;;;;;;;x
+class..D;;;;;;;;;;;;;;x

@@ -32,5 +32,38 @@ character_event = {
 				add_province_modifier = { name = ancient_ruins duration = -1 }
 			}
 		}
+		
+		if = { # Binding Blade
+			limit = { 
+				year = 1180
+				NOT = { year = 1181 }
+			}
+			character_event = {
+				id =  startup.2
+			}
+		}
+	}
+}
+
+# Binding Blade setup
+character_event = {
+	id = startup.2
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		set_global_flag = scenario_fe6_binding_blade	
+	}
+	option = {
+		random_character = {
+			limit = {
+				has_character_flag = is_fe6_zephiel
+			}
+			set_character_flag = searching_for_demon_dragon
+			character_event = {
+				id =  fe6.6
+				days = 1
+			}
+		}
 	}
 }

@@ -117,7 +117,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cleric"
+			set_character_flag="class_priest"
 		}
 	} 
 	1141.05.01= {
@@ -272,7 +272,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cleric"
+			set_character_flag="class_priest"
 		}
 	} 
 	1159.01.01= {
@@ -328,7 +328,15 @@
 		remove_trait="class_mage"
 		add_trait="class_sage"
 		#employer = 111 # Lyn
+		effect = {
+			give_minor_title = title_mage_general
+		}
 	}	
+	1179.1.1 = {
+		effect = {
+			remove_title = title_mage_general
+		}
+	}
 	1221.01.01 = { 
 		death=yes 
 	}
@@ -438,7 +446,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_troubador"
+			set_character_flag="class_monk"
 		}
 	} 
 	1178.01.01={
@@ -573,6 +581,11 @@
 		remove_trait="class_mage_female"
 		add_trait="class_mage_knight_female"
 	}
+	1180.01.01= {
+		effect = {
+			give_minor_title = title_mage_general
+		}
+	}	
 	1230.01.01 = { 
 		death=yes 
 	}
@@ -613,7 +626,15 @@
 	1152.1.1 = {
 		remove_trait="class_knight"
 		add_trait="class_general"
-	}	
+		effect = {
+			give_minor_title = title_great_general
+		}
+	}
+	1181.1.1 = {
+		effect = {
+			remove_title = title_great_general
+		}
+	}
 	1198.1.1= {
 		death = yes
 	}
@@ -654,7 +675,16 @@
 	1160.1.1 = {
 		remove_trait="class_cavalier"
 		add_trait="class_paladin"
-	}	
+		effect = {
+			give_minor_title = title_knight_general
+		}
+	}
+	1181.1.1 = {
+		effect = {
+			remove_title = title_knight_general
+			give_minor_title = title_great_general
+		}
+	}
 	1198.1.1= {
 		death = yes
 	}

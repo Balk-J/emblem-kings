@@ -10,10 +10,10 @@
 440.1.1={
 	liege=0
 }
-1000.1.1={
-	liege=k_lycian_league
+#1000.1.1={
+	#liege=k_lycian_league
 	#liege=d_caelin
-}
+#}
 1150.1.1={
 	holder=761
 }

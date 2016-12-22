@@ -482,370 +482,885 @@ character_event = {
 	}
 }
 
+# If Lundgren leaves the throne to Hausen while at war with Lyn
 character_event = {
-	id = fe7.998
+	id = fe7.4
+	#desc = fe7.4.desc
 	
-	hide_window = yes # Only fires for unplayable landless characters
-	
-	is_triggered_only = yes
-
-	capable_only = yes
-	prisoner = no
+	hide_window = yes
+	is_triggered_only = yes 
+  
 	
 	trigger = {
-		character = 111 # Lyn
-		is_ruler = no
-		NOT = { any_spouse = { is_ruler = yes } }
-		
-		any_claim = {
-			title = d_caelin
-			has_holder = yes
-			holder_scope = {
-				reverse_has_opinion_modifier = {
-					who = ROOT
-					modifier = opinion_claimant_adventure_target
-				}
+		ROOT = {
+			character = 109 # Hausen
+		}
+		FROMFROM = {
+			character = 112 # Lundgren
+			primary_title = {
+				title = FROM
+			}
+			any_war = {
+				using_cb = claim_all_lyn
 			}
 		}
 	}
 	
 	immediate = {
-		
-		wealth = 500
-		clr_character_flag = do_not_disturb
-		
-		liege = {
+		ROOT = {
 			character_event = {
-				id = TOG.1203
-				days = 1
+				id=fe7.5
+				days=1
 			}
 		}
-		
-		liege = {
-			capital_scope = {
-				ROOT = {
-					set_defacto_liege = ROOT
-					
-					d_lyn = {
-						grant_title = ROOT
-						make_primary_title = yes
+	}
+	option = {
+		name = OK
+	}
+}
+
+# Hausen decides how to settle the war
+narrative_event = {
+	id = fe7.5
+	title = fe7.5.title
+	desc = fe7.5.desc
+	picture = GFX_evt_mongols
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		#remove_trait=slothful
+		remove_trait=infirm
+	}
+	
+	# offer her a place
+	option = {
+		name = fe7.5.A
+		ai_chance = {
+			factor = 100
+		}
+		any_war = {
+			limit = {
+				using_cb = claim_all_lyn
+			}
+			attacker = {
+				character_event = {id=fe7.6}
+			}
+		}
+	}
+	
+	# make her go back to Sacae
+	option = {
+		name = fe7.5.B
+		ai_chance = {
+			factor = 1
+		}
+		any_war = {
+			limit = {
+				using_cb = claim_all_lyn
+			}
+			attacker = {
+				set_character_flag = lyn_rejected
+				character_event = {id=fe7.7}
+			}
+		}
+	}
+
+}
+
+# Lyn gets offer to return to Caelin
+character_event = {
+	id = fe7.6
+	desc = fe7.6.desc
+	picture = GFX_evt_family
+	
+	is_triggered_only = yes
+	
+	# Accept
+	# Hausen gives Lyn a county in his realm, and becomes her liege if he's still a duke.
+	# If for some odd reason Hausen only HAS one county in his realm:
+	# If Lyn is the player and Hausen is an AI, Lyn takes his last title and the duchy.
+	# If Hausen is the player and Lyn is an AI, Lyn just moves to Hausen's court.
+	option = {
+		name = fe7.6.A		
+		custom_tooltip = {
+			text = fe7.6.A.tooltip
+			hidden_tooltip = {
+				# end the war
+				any_war = {
+					limit = {
+						using_cb = claim_all_lyn
 					}
-					
-					random_claim = {
+					defender = {
+						save_event_target_as = target_lyn_claim_defender
+						add_friend = ROOT
+						end_war = invalid
+					}
+				}
+				any_demesne_title = {
+					limit = {
+						is_landless_type_title = yes
+					}
+					unsafe_destroy_landed_title = ROOT
+				}	
+
+				# give Lyn a county
+				event_target:target_lyn_claim_defender = {
+					# If Hausen has a spare county that could go to Lyn
+					if = {
 						limit = {
-							title = d_caelin
-							has_holder = yes
-							holder_scope = {
-								reverse_has_opinion_modifier = {
-									who = ROOT
-									modifier = opinion_claimant_adventure_target
+							num_of_count_titles_in_realm = 2
+						}
+						# Prefer screwing over someone else in Hausen's realm (probably Eagler) over Hausen himself giving up a county
+						
+						if = {
+							limit = {
+								any_vassal = {
+									tier = COUNT
 								}
+							}
+							
+							random_vassal = {
+								limit = {
+									tier = COUNT
+								}
+								random_demesne_title = {
+									limit = {
+										tier = COUNT
+									}
+									grant_title = ROOT					
+								}
+							}
+							set_character_flag = lyn_war_title_resolved
+						}
+						if = {
+							limit = {
+								NOR = {
+									any_vassal = {
+										tier = COUNT
+									}
+									has_character_flag = lyn_war_title_resolved
+								}
+							}
+							random_demesne_title = {
+								limit = {
+									tier = COUNT
+								}
+								grant_title = ROOT
 							}
 						}
-						holder_scope = {
-							ROOT = {
-								set_character_flag = claimant_adventurer
-								random_list = {
-									34 = {
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											#leader = THIS
-											match_character = PREV
-											match_mult = 0.125
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.125
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.125
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.125
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.125
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.125
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-									}
-									33 = {
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											#leader = THIS
-											match_character = PREV
-											match_mult = 0.1
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.1
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.1
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.1
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.1
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.1
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-									}
-									33 = {
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											#leader = THIS
-											match_character = PREV
-											match_mult = 0.075
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.075
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.075
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.075
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.075
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-										spawn_unit = {
-											province = PREVPREVPREVPREV
-											home = PREVPREVPREVPREV
-											owner = THIS
-											match_character = PREV
-											match_mult = 0.075
-											match_min = 300
-											match_max = 5000
-											attrition = 0.25
-											earmark = claimant_adventure
-										}
-									}
-								}
+						if = {
+							limit = {
+								primary_title = { higher_tier_than = COUNT } 
 							}
+							ROOT = {
+								set_defacto_liege = FROM
+							}
+						}
+					}
+					
+					# If Hausen does NOT have a spare county that could go for Lyn
+					if = {
+						limit = {
+							NOT = {num_of_count_titles_in_realm = 2}
+						}
+						
+						# if Hausen is an AI
+						if = {
+							limit = {
+								ai = yes
+							}
+							
+							abdicate_to = ROOT
+						}
+						# if Hausen is NOT an AI
+						if = {
+							limit = {
+								ai = no
+							}
+							
+							# Lyn becomes a courtier
+							ROOT = { move_character = PREV } 
 						}
 					}
 				}
 			}
 		}
 		
-		# I no longer have a valid claim on the target
+	}
+	
+	# reject
+	option = {
+		name = fe7.6.B
+		custom_tooltip = {
+			text = fe7.6.B.tooltip
+			hidden_tooltip = {
+				character_event = { id = fe7.7 }
+			}
+		}
+	}
+
+}
+
+# Lyn goes back to Sacae
+character_event = {
+	id = fe7.7
+	#desc = fe7.7.desc
+	picture = GFX_evt_mongols
+	
+	is_triggered_only = yes
+	
+	desc = {
+		trigger = {
+			has_character_flag = lyn_rejected
+		}
+		text = fe7.7.desc.1
+	}
+	
+	desc = {
+		trigger = {
+			NOT = { has_character_flag = lyn_rejected }
+		}
+		text = fe7.7.desc.2
+	}
+	
+	# accept
+	option = {
+		name= {
+			text = fe7.7.A.1
+			trigger = {
+				has_character_flag = lyn_rejected
+			}
+		}
+
+		name = {
+			text = fe7.7.A.2
+			trigger = {
+				NOT = { has_character_flag = lyn_rejected }
+			}
+		}
+		custom_tooltip = {
+			text = fe7.7.A.tooltip
+			hidden_tooltip = {
+				clr_character_flag = lyn_rejected
+				set_character_flag = lyn_story_war
+				
+				# end the war with Caelin
+				any_war = {
+					limit = {
+						using_cb = claim_all_lyn
+					}
+					end_war = invalid
+				}
+				
+				# start a new one for one of the counties Hassar held
+				random_claim = {
+					limit = {
+						tier = COUNT
+						de_jure_liege = d_tarim
+					}
+					holder_scope = {
+						top_liege = {
+							reverse_war = {
+								target = ROOT
+								casus_belli = claim_all_lyn
+							}
+						}
+					}
+				}	
+				clr_character_flag = lyn_story_war
+			}
+		}
+	}
+}
+
+# The Black Fang are founded!
+character_event = {
+	id = fe7.8
+	
+	#hide_from = yes
+	hide_window = yes
+	
+	only_playable = yes
+	min_age = 16
+	culture = bernese
+	
+	trigger = {
+		year = 1150
+		k_bern = {
+			has_holder = yes
+			holder_scope = {
+				any_realm_lord = {
+					OR = {
+						trait = cruel
+						trait = arbitrary
+						trait = lunatic
+						trait = impaler
+						trait = possessed
+					}
+				}
+			}
+		}
+		NOT = { 
+			has_global_flag = black_fang_setup
+			has_global_flag = black_fang_founded 
+			has_global_flag = black_fang_destroyed
+		}
+		b_fang_tower = {
+			has_holder = no
+		}
+		57 = { # Vaud
+			NOR = {
+				num_of_settlements = 4
+				AND = {
+					num_of_settlements = 3
+					has_settlement_construction = yes
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		# Set a flag so we don't do this ever again. If Brendan bought it or became a ruler, no Fang in this timeline.
+		set_global_flag = black_fang_setup
+		
+		# Does Brendan exist? If so, grab him and create the Fang.
 		if = {
 			limit = {
-				NOT = { has_character_flag = claimant_adventurer }
+				has_global_flag = fe7_brendan_reed_spawned
 			}
-			break = yes
-		}
 		
-		# Create some decent commander characters
-		create_random_soldier = {
-			random_traits = yes
-			dynasty = none
-			religion = ROOT
-			culture = ROOT
-			female = no
-			age = 30
-		}
-		create_random_soldier = {
-			random_traits = yes
-			dynasty = none
-			religion = ROOT
-			culture = ROOT
-			female = no
-			age = 25
-		}
-		create_random_soldier = {
-			random_traits = yes
-			dynasty = none
-			religion = ROOT
-			culture = ROOT
-			female = no
-			age = 33
-		}
-		create_random_soldier = {
-			random_traits = yes
-			dynasty = none
-			religion = ROOT
-			culture = ROOT
-			female = no
-			age = 29
-		}
-		
-		# Create a fleet, just to be sure
-		spawn_fleet = {
-			province = closest # closest sea zone
-			owner = ROOT
-			disband_on_peace = yes
-			troops =
-			{
-				galleys = { 150 150 }
-			}
-			earmark = claimant_adventure
-		}
-		
-		random_claim = {
-			limit = {
-				title = d_caelin
-				has_holder = yes
-				holder_scope = {
-					reverse_has_opinion_modifier = {
-						who = ROOT
-						modifier = opinion_claimant_adventure_target
+			random_character = {
+				limit = {
+					has_character_flag = fe7_brendan_reed
+					is_landed = no
+					is_heir = no
+					OR = {
+						is_married = no
+						spouse = {
+							is_landed = no	
+							is_heir = no					
+						}
 					}
 				}
-			}
-			
-#			log = "TOG.1202: [Root.GetBestName] starts claim adventure for [This.GetName]"
-			
-			holder_scope = {
-				reverse_war = {
-					target = ROOT
-					casus_belli = claim
-					thirdparty_title = PREV
+				#save_event_target_as = target_fe7_brendan_reed
+				narrative_event = {
+					id = fe7.9
 				}
-				reverse_remove_opinion = {
-					who = ROOT
-					modifier = opinion_claimant_adventure_target
+			}
+		}
+		
+		# If Brendan does not exist, create him and his people.
+		if = {
+			limit = {
+				NOT = { has_global_flag = fe7_brendan_reed_spawned }
+			}
+			# Create Brendan
+			create_character = {
+				random_traits = no
+				name = "Brendan"
+				dynasty = 417 # Reed
+				religion = ROOT
+				culture = bernese
+				female = no
+				age = 43
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					stewardship = 2
+					intrigue = 6
+					learning = 2
+				}
+				health = 6
+				#fertility = 0.8
+				trait="tough_soldier"	
+				trait="mountain_terrain_leader"	
+				trait="inspiring_leader"	
+				trait="winter_soldier"
+				trait="strong"	
+				trait="just"	
+				trait="charitable"	
+				trait="brave"
+				trait="scarred"
+				trait="class_warrior"
+			}
+			new_character = {	
+				#save_event_target_as = target_fe7_brendan_reed
+				
+				set_variable = { which = "level" value = 1 }
+				set_character_flag = fe7_brendan_reed
+				set_character_flag="class_selected"
+				set_character_flag="class_fighter"
+				
+				create_character = {
+					random_traits = no
+					name = "Barbara"
+					dynasty = NONE
+					religion = ROOT
+					culture = bernese
+					female = yes
+					age = 34
+					trait="intricate_webweaver"	
+					trait="just"	
+					trait="charitable"	
+					trait="class_thief_female"	
+				}
+				new_character = {
+					set_variable = { which = "level" value = 1 }
+					set_character_flag="class_selected"
+					set_character_flag="class_thief"
+					set_character_flag="black_fang_old"
+					add_spouse = PREV
+					create_character = {
+						random_traits = no
+						name="Lloyd"
+						dynasty = 417
+						religion = ROOT
+						culture = bernese
+						female = no
+						age = 17
+						trait="intricate_webweaver"	
+						trait="strategist"	
+						trait="mountain_terrain_leader"	
+						trait="inspiring_leader"	
+						trait="light_foot_leader"
+						trait="quick"	
+						trait="just"	
+						trait="patient"	
+						trait="brave"
+						trait="class_swordmaster"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_myrmidon"
+						set_character_flag="black_fang_old"
+						set_character_flag="four_fang_old"
+						give_nickname=nick_the_white_wolf
+						set_father = PREVPREV
+						set_mother = PREV
+					}
+					
+					create_character = {
+						random_traits = no
+						name="Linus"
+						dynasty = 417
+						religion = ROOT
+						culture = bernese
+						female = no
+						age = 16
+						trait="misguided_warrior"	
+						trait="duelist"	
+						trait="aggressive_leader"	
+						trait="unyielding_leader"
+						trait="mountain_terrain_leader"	
+						trait="strong"
+						trait="slow"		
+						trait="just"	
+						trait="brave"	
+						trait="wroth"
+						trait="class_hero"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_mercenary"
+						set_character_flag="black_fang_old"
+						set_character_flag="four_fang_old"
+						give_nickname=nick_the_mad_dog
+						set_father = PREVPREV
+						set_mother = PREV
+					}
+				}
+				narrative_event = {
+					id = fe7.9
 				}
 			}
 		}
 	}
 	
 	option = {
-		name = OK
+		name=OK
 	}
 }
 
 # Birth of the Black Fang
+narrative_event = {
+	id = fe7.9
+	title = "fe7.9.title"
+	desc = "fe7.9.desc"
+	picture = GFX_evt_shadow
+	major = yes	
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = black_fang_founded
+		
+		# Create the title and holding, hand them out to Brendan
+		activate_title = { title = d_black_fang status = yes }
+		wealth = 500
+		prestige = 200
+		d_black_fang = {
+			grant_title = ROOT
+		}
+		set_government_type = feudal_government
+		57 = { # Vaud
+			build_holding = {
+				title = b_fang_tower
+				type = castle
+				holder = ROOT
+			}
+		}
+		
+		# Move all of his canon followers (who haven't gone off the rails somehow) to his court
+		any_character = { # I know, it's bad
+			limit = {
+				has_character_flag = black_fang_old
+				is_landed = no
+				is_heir = no
+				OR = {
+					is_married = no
+					spouse = {
+						is_landed = no	
+						is_heir = no					
+					}
+				}
+			}
+			move_character = ROOT
+		}
+		
+		any_courtier = {
+			limit = {
+				has_character_flag = four_fang_old
+			}
+			give_minor_title = title_fang
+			character_event = { id = class.5 } # Promote Lloyd, Linus, and Jerme
+			
+			if = {
+				limit = {
+					has_character_flag = fe7_lloyd
+				}
+				give_nickname = nick_the_white_wolf
+			}
+			if = {
+				limit = {
+					has_character_flag = fe7_linus
+				}
+				give_nickname = nick_the_mad_dog
+			}
+			if = {
+				limit = {
+					has_character_flag = fe7_jerme
+				}
+				give_nickname = nick_the_death_kite
+			}
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = fe7_legault
+			}
+			give_nickname = nick_the_hurricane
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = is_fe7_uhai
+			}
+			give_nickname = nick_the_soaring_hawk
+			character_event = { id = class.5 } # Promote 
+		}
+	}
+	
+
+	option = {
+		name = "fe7.9.A"
+	}
+}
+
+# Fang grows
+narrative_event = {
+	id = fe7.10
+	title = "fe7.10.title"
+	desc = "fe7.10.desc"
+	major = yes
+	
+	picture = "GFX_evt_shadow"
+	
+	only_playable = yes
+	culture = bernese
+	has_global_flag = black_fang_founded
+	
+	trigger = {
+		year = 1156
+		has_landed_title = d_black_fang
+		NOR = {
+			has_global_flag = black_fang_destroyed
+			has_global_flag = black_fang_grows
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "OK"
+		trigger = { has_landed_title = d_black_fang }
+		set_global_flag = black_fang_grows
+		
+		# Build new forts
+		if = {
+			limit = {
+				b_fort_kite = {
+					has_holder = no
+				}
+				57 = { # Vaud
+					NOR = {
+						num_of_settlements = 4
+						AND = {
+							num_of_settlements = 3
+							has_settlement_construction = yes
+						}
+					}
+				}
+			}
+			57 = { # Vaud
+				build_holding = {
+					title = b_fort_kite
+					type = castle
+					holder = ROOT
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				b_fort_shrike = {
+					has_holder = no
+				}
+				57 = { # Vaud
+					NOR = {
+						num_of_settlements = 4
+						AND = {
+							num_of_settlements = 3
+							has_settlement_construction = yes
+						}
+					}
+				}
+			}
+			57 = { # Vaud
+				build_holding = {
+					title = b_fort_shrike
+					type = castle
+					holder = ROOT
+				}
+			}
+		}
+		
+		# Move in the new people
+		
+		# Move all of his canon followers (who haven't gone off the rails somehow) to his court
+		any_character = { # I know, it's bad
+			limit = {
+				has_character_flag = black_fang_new
+				is_landed = no
+				is_heir = no
+				OR = {
+					is_married = no
+					spouse = {
+						is_landed = no	
+						is_heir = no					
+					}
+				}
+			}
+			move_character = ROOT
+		}
+		
+		# Kick out a Fang
+		random_courtier = {
+			limit = {
+				has_character_flag = four_fang_old
+				NOR = {
+					has_character_flag = fe7_lloyd
+					has_character_flag = fe7_linus
+				}
+			}
+			remove_title = title_fang
+		}
+		
+		
+		any_courtier = {
+			limit = {
+				has_character_flag = four_fang_new
+			}
+			give_minor_title = title_fang
+			character_event = { id = class.5 } # Promote Ursula 
+			
+			if = {
+				limit = {
+					has_character_flag = is_fe7_ursula
+				}
+				give_nickname = nick_the_blue_crow
+			}
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = is_fe7_kenneth
+			}
+			give_nickname = nick_the_shrike
+			character_event = { id = class.5 } # Promote 
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = is_fe7_aion
+			}
+			give_nickname = nick_the_owl
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = is_fe7_teodor
+			}
+			give_nickname = nick_the_shadow_hawk
+			character_event = { id = class.5 } # Promote 
+		}
+	}
+	option = {
+		name = "fe7.10.A"
+		trigger = { 
+			NOT = { has_landed_title = d_black_fang }
+		}
+	}
+}
+
+# Nergal takes over the Fang
+
+# Fang strikes at unjust ruler #
+# Unjust ruler is warned
+character_event = {
+	id = fe7.11
+	desc = "fe7.11.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	ai = no
+	only_playable = yes
+	only_independent = yes
+	culture_group = elibian
+	has_global_flag = black_fang_founded
+	
+	trigger = {
+		NOT = { has_character_flag = warned_by_black_fang }
+		NOT = { has_global_flag = black_fang_destroyed }
+		OR = {
+			trait = arbitrary
+			trait = cruel
+			trait = greedy
+			trait = impaler
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 160
+	}
+	
+	option = {
+		name = "fe7.11.A"
+		set_character_flag = warned_by_black_fang
+	}
+}
+
+# Assassins kill random courtier
+character_event = {
+	id = fe7.12
+	desc = "fe7.12.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	only_playable = yes
+	only_independent = yes
+	prisoner = no
+	min_age = 16
+	only_capable = yes
+	ai = no
+	culture_group = elibian
+	has_character_flag = warned_by_black_fang
+	has_global_flag = black_fang_founded
+	
+	trigger = {
+		uses_decadence = yes
+		decadence = 70
+		
+		any_courtier = {
+			is_ruler = no
+			NOT = { spouse = { character = ROOT } }
+			is_primary_heir = no
+			in_command = no
+		}
+		NOT = { has_global_flag = black_fang_destroyed }
+	}
+	
+	immediate = {
+		any_courtier = {
+			limit = {
+				is_ruler = no
+				NOT = { spouse = { character = ROOT } }
+				is_primary_heir = no
+				in_command = no
+			}
+			save_event_target_as = assassin_target
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 22
+	}
+	
+	option = {
+		name = "fe7.12.A"
+		event_target:assassin_target = {
+			death = { death_reason = death_black_fang }
+		}
+		set_character_flag = black_fang_courtier_killed
+	}
+}
+
+# Assassins kill ruler
+character_event = {
+	id = fe7.13
+	desc = "EVTDESC88012"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+
+	only_rulers = yes
+	min_age = 16
+	prisoner = no
+	only_capable = yes
+	religion_group = muslim
+	has_character_flag = decadence_courtier_killed
+	has_global_flag = assassins_founded
+	
+	trigger = {
+		uses_decadence = yes
+		decadence = 90
+		OR = {
+			NOT = { has_global_flag = assassins_scatter }
+			has_global_flag = assassins_resurface
+		}
+		NOT = { has_global_flag = assassins_destroyed }
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "EVTOPTA88012"
+		death = { death_reason = death_hashshashin }
+	}
+}

@@ -42,64 +42,64 @@
 	}
 }
 
-919={
-	name="Idenn"
-	female="yes"
-	culture=divine_dragon_culture
-	religion=dragon_gods
-	disallow_random_traits="yes" 
-	trait="dragon"
-	trait="class_manakete_female"
-	
-	1.1.1={
-		birth=yes
-	}
-	180.1.1={
-		add_trait="demon_dragon"
-		add_trait="naive_appeaser"
-	}
-	
-	1175.1.1={
-		employer=403 #Zephiel
-		religion=dragon_liberation
-		#culture=bernese
-	}
-	
-	3001.1.1={
-		death=yes
-	}
-}
+#919={
+#	name="Idenn"
+#	female="yes"
+#	culture=divine_dragon_culture
+#	religion=dragon_gods
+#	disallow_random_traits="yes" 
+#	trait="dragon"
+#	trait="class_manakete_female"
+#	
+#	1.1.1={
+#		birth=yes
+#	}
+#	180.1.1={
+#		add_trait="demon_dragon"
+#		add_trait="naive_appeaser"
+#	}
+#	
+#	1175.1.1={
+#		employer=403 #Zephiel
+#		religion=dragon_liberation
+#		#culture=bernese
+#	}
+#	
+#	3001.1.1={
+#		death=yes
+#	}
+#}
 
-920={
-	name="Jahn"
-	dynasty=920
-	culture=fire_dragon_culture
-	religion=dragon_gods#dragon_liberation
-	disallow_random_traits="yes"
-	
-	trait="dragon"
-	trait="class_manakete"
-	
-	1.1.1={
-		birth=yes
-	}
-	21.1.1={ 
-		add_trait="tough_soldier"
-		add_trait="patient"
-		add_trait="honest"
-		add_trait="shy" # More like stoic. Although he does like a good monologue.
-	}
-	1180.1.1={
-		religion=dragon_liberation
-		#employer = 403 # Zephiel
-	}
-	1181.1.1= {
-		death = {
-			death_reason=death_battle
-			killer=108 #Roy
-		}
-	}
-}
+#920={
+#	name="Jahn"
+#	dynasty=920
+#	culture=fire_dragon_culture
+#	religion=dragon_gods#dragon_liberation
+#	disallow_random_traits="yes"
+#	
+#	trait="dragon"
+#	trait="class_manakete"
+#	
+#	1.1.1={
+#		birth=yes
+#	}
+#	21.1.1={ 
+#		add_trait="tough_soldier"
+#		add_trait="patient"
+#		add_trait="honest"
+#		add_trait="shy" # More like stoic. Although he does like a good monologue.
+#	}
+#	1180.1.1={
+#		religion=dragon_liberation
+#		#employer = 403 # Zephiel
+#	}
+#	1181.1.1= {
+#		death = {
+#			death_reason=death_battle
+#			killer=108 #Roy
+#		}
+#	}
+#}
 
 921={
 	name="Melitha"
@@ -116,6 +116,9 @@
 		add_trait="grey_eminence"
 		add_trait="kind"
 		add_trait="honest"
+	}
+	700.2.28 = {
+		employer = 902 # Tiki. Just to get her out of the way.
 	}
 	1159.1.1= {
 		death = {

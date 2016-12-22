@@ -5,7 +5,7 @@ character_event = {
 	id = bloodline.1
 	
 	hide_window = yes
-	
+	is_triggered_only = yes
 	trigger = {
 		# You might be a dragon if one of your parents is a dragon.
 		OR = {

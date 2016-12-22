@@ -136,3 +136,440 @@ character_event  = {
 		}
 	}
 }
+
+# Investigate Shrine of Seals
+narrative_event = {
+	id = fe6.4
+	title = fe6.4.title
+	desc = fe6.4.desc
+	
+	picture = GFX_evt_pagan
+	
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	#religion = dragon_liberation
+	
+	trigger = {
+		has_landed_title = c_uri
+		b_temple_of_seals = {
+			holder_scope = {
+				NOT = { has_character_flag = is_fe7_brammimond }
+			}
+		}
+		NOR = { 
+			has_global_flag = demon_dragon_discovered
+			has_character_flag = searching_for_demon_dragon
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		
+		modifier = {
+			factor = 0.001
+			has_game_rule = {
+				name = RULE_FE_STORY
+				value = on
+			}
+			has_character_flag = is_fe6_zephiel
+		}
+	}
+	
+	option = {
+		name = fe6.4.A
+		ai_chance = {
+			factor = 1
+		}
+		hidden_tooltip = {
+			set_character_flag = searching_for_demon_dragon
+			narrative_event = {
+				id = fe6.5
+				days = 7
+				random = 3
+			}
+		}
+	}
+	
+	option = {
+		name = fe6.4.B
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = RULE_FE_STORY
+					value = on
+				}
+				has_character_flag = is_fe6_zephiel
+			}
+		}
+	}
+}
+
+# Find Idenn
+narrative_event = {
+	id = fe6.5
+	title = fe6.5.title
+	desc = fe6.5.desc
+	
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	
+	# Zephiel option
+	option = {
+		name = fe6.5.A
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100			
+				has_game_rule = {
+					name = RULE_FE_STORY
+					value = on
+				}
+				has_character_flag = is_fe6_zephiel
+			}
+			modifier = {
+				factor = 100			
+				religion = dragon_liberation
+			}
+			modifier = {
+				factor = 2			
+				trait = depressed
+			}
+		}
+		religion = dragon_liberation
+		random = {
+			chance = 50
+			if = {
+				limit = {
+					trait = cynical
+				}
+				remove_trait = cynical
+			}
+			if = {
+				limit = {
+					NOT = { trait = zealous }
+				}
+				add_trait = zealous
+			}
+		}
+		
+		custom_tooltip = {
+			text = fe6.5.A.tooltip
+			hidden_tooltip = {
+				character_event = {
+					id = fe6.6
+				}
+			}
+		}
+	}
+	
+	# Just wake her up
+	option = {
+		name = fe6.5.B
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 2			
+				OR = {
+					trait = ambitious
+				}
+			}
+		}
+		
+		custom_tooltip = {
+			text = fe6.5.A.tooltip
+			hidden_tooltip = {
+				character_event = {
+					id = fe6.6
+				}
+			}
+		}
+	}
+	
+	# Kill her
+	option = {
+		name = fe6.5.C
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2			
+				OR = {
+					trait = cruel
+					AND = {
+						religion = elimine_church
+						trait = zealous
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = fe6.5.C.tooltip
+			set_global_flag = demon_dragon_discovered
+		}
+	}
+	
+	# Let her sleep
+	option = {
+		name = fe6.5.D
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 2			
+				OR = {
+					trait = craven
+					trait = content
+					trait = shy
+				}
+			}
+		}
+	}
+}
+
+# Create Idenn
+character_event = {
+	id = fe6.6
+	title = fe6.6.title
+	desc = fe6.6.desc
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	immediate = {
+		set_global_flag = demon_dragon_discovered
+		set_character_flag = demon_dragon_master
+		create_character = {
+			random_traits = no
+			name = "Idenn"
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT #divine_dragon_culture
+			female = yes
+			age = 2000
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				stewardship = 0
+				intrigue = 0
+				learning = 0
+			}
+			health = 6
+			trait="naive_appeaser"	
+			trait="dragon"	
+			trait="demon_dragon"	
+			trait="class_manakete_female"	
+		}
+		
+		new_character = {
+			set_variable = { which = "level" value = 20 }
+			set_character_flag="class_selected"
+			set_character_flag="class_manakete"
+			set_character_flag="is_fe6_idenn"
+			move_character = ROOT		
+		}
+	}
+	
+	option = {
+		name = fe6.6.A
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOR = { 
+						has_global_flag = fe6_jahn_spawned 
+						has_character_flag = met_with_jahn
+					}
+				}
+				narrative_event = {
+					id = fe6.7
+					days = 14
+					random = 7
+				}
+			}
+		}
+	}
+}
+
+# Jahn appears
+narrative_event = {
+	id = fe6.7
+	title = fe6.7.title
+	desc = fe6.7.desc
+	
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes	
+	hide_from = yes
+	
+	immediate = {
+		set_character_flag = met_with_jahn
+	}
+	
+	option = {
+		name = fe6.7.A
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.8
+			}
+		}
+	}
+	option = {
+		name = fe6.7.B
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.10
+			}
+		}
+	}
+	option = {
+		name = fe6.7.C
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.10
+			}
+		}
+	}
+	option = {
+		name = fe6.7.D
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.10
+			}
+		}
+	}
+}
+
+# Jahn speaks
+narrative_event = {
+	id = fe6.8
+	title = fe6.8.title
+	desc = fe6.8.desc
+	
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.8.A
+		trigger = {
+			religion = dragon_liberation
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.9
+			}
+		}
+	}
+	option = {
+		name = fe6.8.B
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.10
+			}
+		}
+	}
+	option = {
+		name = fe6.8.C
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.10
+			}
+		}
+	}
+	option = {
+		name = fe6.8.D
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.10
+			}
+		}
+	}
+}
+
+# Jahn joins
+narrative_event = {
+	id = fe6.9
+	title = fe6.9.title
+	desc = fe6.9.desc
+	
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.9.A
+		
+		set_global_flag = fe6_jahn_spawned
+		create_character = {
+			random_traits = no
+			name = "Jahn"
+			dynasty = 920
+			religion = dragon_liberation
+			culture = fire_dragon_culture
+			female = no
+			age = 2200
+			attributes = {
+				diplomacy = 8
+				martial = 17
+				stewardship = 0
+				intrigue = 11
+				learning = 10
+			}
+			health = 6
+			trait="tough_soldier"	
+			trait="dragon"		
+			trait="class_manakete"
+			trait="patient"	
+			trait="honest"	
+			trait="shy" # More like stoic. Although he does like a good monologue.	
+		}
+		
+		new_character = {
+			set_variable = { which = "level" value = 20 }
+			set_character_flag="class_selected"
+			set_character_flag="class_manakete"
+			set_character_flag="is_fe6_jahn"
+			#move_character = ROOT		
+			
+			b_dragon_sanctuary = {
+				grant_title = PREV
+			}
+			set_defacto_liege = ROOT
+			opinion = {
+				modifier = opinion_mutual_respect
+				who = ROOT
+				years = 100
+			}
+			reverse_opinion = {
+				modifier = opinion_mutual_respect
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+	option = {
+		name = fe6.9.B
+		hidden_tooltip = {
+			character_event = {
+				id = fe6.10
+			}
+		}
+	}
+}
+
+# Jahn leaves
+narrative_event = {
+	id = fe6.10
+	desc = fe6.10.desc
+	
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.10.A
+	}
+}

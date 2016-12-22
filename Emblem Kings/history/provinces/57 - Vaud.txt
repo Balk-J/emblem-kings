@@ -18,6 +18,10 @@ religion = elimine_church
 #History
 1150.1.1={
 	b_fang_tower = castle
+	#b_fort_kite = castle
+	#b_fort_shrike = castle
+}
+1155.1.1={
 	b_fort_kite = castle
 	b_fort_shrike = castle
 }

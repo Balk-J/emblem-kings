@@ -75,7 +75,10 @@
 	trait="celibate"
 	trait="dark_selfless"
 	123.01.01 = { 
-	birth=yes 
+		birth=yes 
+		effect = {
+			set_character_flag = is_fe7_brammimond
+		}
 	}
 	180.01.01 = {
 		culture=nabatan

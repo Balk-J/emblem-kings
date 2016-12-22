@@ -75,15 +75,15 @@ technology = {
 		d_zug
 	}
 	440 = {
-		#military = 1.2
-		military = 1.5
+		military = 1.2
+		#military = 1.5
 		economy = 1.0
 		culture = 1.0
-		TECH_FORTIFICATIONS_CONSTRUCTION = 3.0
-		TECH_CASTLE_CONSTRUCTION = 3.0
+		#TECH_FORTIFICATIONS_CONSTRUCTION = 3.0
+		#TECH_CASTLE_CONSTRUCTION = 3.0
 		
-		#TECH_FORTIFICATIONS_CONSTRUCTION = 2.0
-		#TECH_CASTLE_CONSTRUCTION = 2.0
+		TECH_FORTIFICATIONS_CONSTRUCTION = 2.0
+		TECH_CASTLE_CONSTRUCTION = 2.0
 	}
 	3680 = {
 		military = 5.0

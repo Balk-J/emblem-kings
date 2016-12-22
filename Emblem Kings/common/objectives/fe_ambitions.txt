@@ -265,6 +265,41 @@ obj_class = {
 	success = {
 		custom_tooltip = {
 			text = obj_class_success
+			hidden_tooltip = {
+				
+				OR = {
+					trait=class_archer
+					trait=class_archer_female
+					trait=class_bard
+					trait=class_brigand
+					trait=class_cavalier
+					trait=class_cleric
+					trait=class_dancer
+					trait=class_fighter
+					trait=class_knight
+					trait=class_mage
+					trait=class_mage_female
+					trait=class_manakete
+					trait=class_manakete_female
+					trait=class_mercenary
+					trait=class_mercenary_female
+					trait=class_monk
+					trait=class_myrmidon
+					trait=class_myrmidon_female
+					trait=class_horse_archer
+					trait=class_horse_archer_female
+					trait=class_pegasus_knight
+					trait=class_pirate
+					trait=class_priest
+					trait=class_shaman
+					trait=class_shaman_female
+					trait=class_soldier
+					trait=class_thief
+					trait=class_thief_female
+					trait=class_troubador
+					trait=class_wyvern_rider	
+				}
+			}
 		}	
 	}
 	abort = {
@@ -275,10 +310,31 @@ obj_class = {
 		}
 	}
 	abort_effect = {
-		clr_character_flag = improve_martial_success
-		clr_character_flag = toy_army_prepare
-		clr_character_flag = toy_army
+		clr_character_flag = class_training
+		clr_character_flag = class_training_soldiers
+		clr_character_flag = class_training_taught_by_friend
+		clr_character_flag = class_training_taught_by_school
+clr_character_flag=class_knight
+clr_character_flag=class_cavalier
+clr_character_flag=class_archer
+clr_character_flag=class_horse_archer
+clr_character_flag=class_mercenary
+clr_character_flag=class_fighter
+clr_character_flag=class_myrmidon
+clr_character_flag=class_thief
+clr_character_flag=class_pirate
+clr_character_flag=class_brigand
+clr_character_flag=class_priest
+clr_character_flag=class_monk
+clr_character_flag=class_mage
+clr_character_flag=class_shaman
+clr_character_flag=class_wyvern_rider
+clr_character_flag=class_pegasus_knight
+clr_character_flag=class_manakete
+clr_character_flag=class_soldier
+clr_character_flag=class_dancer		
 		clr_character_flag = street_ruffians
+		remove_character_modifier = training_with_soldiers 
 	}
 	effect = {
 		prestige = 100
@@ -415,7 +471,40 @@ obj_promote = {
 	}
 	success = {
 		custom_tooltip = {
-			text = obj_promote_success
+			text = obj_promote_success			
+			hidden_tooltip = { 			
+				OR = { 
+					trait=class_assassin
+					trait=class_assassin_female
+					trait=class_berserker
+					trait=class_bishop
+					trait=class_bishop_female
+					trait=class_druid
+					trait=class_druid_female
+					trait=class_falcon_knight
+					trait=class_general
+					trait=class_great_knight
+					trait=class_hero
+					trait=class_hero_female
+					trait=class_mage_knight
+					trait=class_mage_knight_female
+					trait=class_paladin
+					trait=class_ranger
+					trait=class_ranger_female
+					trait=class_rogue
+					trait=class_sage
+					trait=class_sage_female
+					trait=class_sniper
+					trait=class_sniper_female
+					trait=class_summoner
+					trait=class_swordmaster
+					trait=class_swordmaster_female
+					trait=class_valkyrie
+					trait=class_warrior
+					trait=class_wyvern_knight
+					trait=class_wyvern_lord	
+				}
+			}
 		}	
 	}
 	abort = {

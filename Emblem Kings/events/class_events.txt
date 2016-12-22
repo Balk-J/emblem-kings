@@ -403,138 +403,10 @@ character_event = {
 		}
 		
 		FROM = {
-			random_list = {
-				10 = {
-					add_trait = "class_soldier"
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = bernese }
-					}
-					add_trait = "class_wyvern_rider"
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = etrurian }
-					}
-					add_trait = "class_cavalier"
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = lycian }
-					}
-					add_trait = "class_knight"
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = nabatan }
-					}
-					if = {
-						limit = {
-							female = no
-						}
-						add_trait = "class_brigand"
-					}
-					if = {
-						limit = {
-							female = yes
-						}
-						add_trait = "class_archer_female"
-					}
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = sacaean }
-					}
-					if = {
-						limit = {
-							female = no
-						}
-						add_trait = "class_horse_archer"
-					}
-					if = {
-						limit = {
-							female = yes
-						}
-						add_trait = "class_horse_archer_female"
-					}
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = ilian }
-					}
-					if = {
-						limit = {
-							female = no
-						}
-						add_trait = "class_mercenary"
-					}
-					if = {
-						limit = {
-							female = yes
-						}
-						add_trait = "class_pegasus_knight"
-					}
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = western_islander }
-					}
-					if = {
-						limit = {
-							female = no
-						}
-						add_trait = "class_fighter"
-					}
-					if = {
-						limit = {
-							female = yes
-						}
-						add_trait = "class_mercenary_female"
-					}
-				}
-				10 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture = seafarer }
-					}
-					if = {
-						limit = {
-							female = no
-						}
-						add_trait = "class_pirate"
-					}
-					if = {
-						limit = {
-							female = yes
-						}
-						add_trait = "class_thief_female"
-					}
-				}
-				1 = {			
-					modifier = {
-						factor = 0
-						NOT = { culture_group = draconic }
-					}
-					if = {
-						limit = {
-							female = no
-						}
-						add_trait = "class_mage"
-					}
-					if = {
-						limit = {
-							female = yes
-						}
-						add_trait = "class_mage_female"
-					}
+			custom_tooltip = {
+				name = class.2.C.tooltip
+				character_event = {
+					id = class.28
 				}
 			}
 		}
@@ -552,6 +424,11 @@ character_event = {
 	picture = "GFX_evt_child_sword" 
 		
 	is_triggered_only = yes
+	
+	immediate = {
+		# Set level to 1
+		set_variable = { which = "level" value = 1 }
+	}
 	
 	# Father's class 1
 	option = {
@@ -1513,6 +1390,11 @@ character_event = {
 		
 	is_triggered_only = yes
 	
+	immediate = {
+		# Set level to 1
+		set_variable = { which = "level" value = 1 }
+	}
+	
 	# Mother's class 1
 	option = {
 		name = "class.4.A"
@@ -2348,6 +2230,9 @@ character_event = {
 				trait=class_wyvern_rider	
 			}
 		}
+		ai_chance = {
+			factor = 100
+		}
 		name= {
 			text = class.5.A.class_general
 			trigger = {
@@ -2688,6 +2573,9 @@ character_event = {
 				trait=class_wyvern_rider	
 			}
 		}
+		ai_chance = {
+			factor = 100
+		}
 		name= {
 			text = class.5.B.class_great_knight
 			trigger = {
@@ -3008,11 +2896,17 @@ character_event = {
 				trait=class_wyvern_rider	
 			}
 		}
+		ai_chance = {
+			factor = 1
+		}
 		prestige = 1000
 	}		
 	
 	option = {
 		name = "class.5.D"
+		ai_chance = {
+			factor = 1
+		}
 	}		
 }
 
@@ -3065,3 +2959,1817 @@ character_event = {
 		change_variable = { which = "level" value = 1 }
 	}
 }
+
+###
+# Events for a ruler who wasn't trained in a class and wants to get one.
+###
+
+# Go train with your soldiers
+character_event = {
+	id = class.8
+	desc = class.8.desc
+	picture = "GFX_evt_melee" 
+	
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		has_ambition = obj_class
+		NOT = { has_character_flag = class_training }
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 280
+	}
+	
+	option = {
+		name = class.8.A
+		
+		hidden_tooltip = {
+			set_character_flag = class_training
+			set_character_flag = class_training_soldiers
+			character_event = {
+				id = class.9
+				days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = class.8.B
+	}
+}
+
+# Pitch the idea
+character_event = {
+	id = class.9
+	desc = class.9.desc
+	picture = "GFX_evt_melee" 
+	
+	is_triggered_only = yes
+	# Captain of the Guard's reaction:
+	
+	# oh gods
+	desc = {
+		trigger = {
+			NOT = { combat_rating = 1 }
+		}
+		text = class.9.desc.1
+	}
+	
+	# eh, maybe
+	desc = {
+		trigger = {
+			combat_rating = 1 
+			NOT = { combat_rating = 2 }
+		}
+		text = class.9.desc.2
+	}
+	
+	# This can work...
+	desc = {
+		trigger = {
+			combat_rating = 2 
+			NOT = { combat_rating = 3 }
+		}
+		text = class.9.desc.3
+	}
+	
+	# YES!
+	desc = {
+		trigger = {
+			combat_rating = 3
+		}
+		text = class.9.desc.4
+	}
+	
+	option = {
+		name = class.9.A
+		add_character_modifier = { name = training_with_soldiers duration = -1 } 
+	}
+}
+
+character_event = {
+	id = class.10
+	desc = class.10.desc
+	picture = "GFX_evt_melee" 
+	
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		has_ambition = obj_class
+		has_character_flag = class_training 
+		has_character_flag = class_training_soldiers 
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 36 
+		
+		modifier = {
+			factor = 2
+			trait = weak
+		}
+		modifier = {
+			factor = 2
+			trait = infirm
+		}
+		modifier = {
+			factor = 2
+			trait = maimed
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			trait = content
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			combat_rating = 3
+		}
+		modifier = {
+			factor = 0.5
+			combat_rating = 4
+		}
+	}
+	
+	option = {
+		name = class.10.A
+		add_trait = "class_soldier"
+		set_variable = { which = "level" value = 1 }
+		set_character_flag="class_selected"
+		set_character_flag="class_soldier"
+	}
+}
+
+character_event = {
+	id = class.11
+	desc = class.11.desc
+	picture = "GFX_evt_melee" 
+	
+	trigger = {
+		in_command = no
+		has_ambition = obj_class
+		NOT = { has_character_flag = class_training }
+		NOT = { is_inaccessible_trigger = yes }
+		
+		is_inaccessible_trigger = no
+		NOT = {
+			has_character_modifier = friend_class_timer
+		}
+		any_friend = {
+			war = no
+			in_command = no
+			prisoner = no
+			has_character_flag = class_selected
+			NOT = {
+				has_character_flag = class_training_teaching_friend
+			}
+			is_inaccessible_trigger = no
+		}		
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+		
+		modifier = {
+			factor = 0.5
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		
+		modifier = {
+			factor = 2
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = friend_class_timer
+				duration = 1825
+				hidden = yes
+			}
+		}
+	
+	}
+	
+	option = {
+		name = class.11.A
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				has_character_flag = class_selected
+				is_inaccessible_trigger = no
+				NOT = {
+					has_character_flag = class_training_teaching_friend
+				}
+			}
+			character_event = {
+				id = class.12
+				days = 15
+				random = 15
+				tooltip = class.11.A.tooltip
+			}
+		}
+	}
+	option = {
+		name = class.11.B
+		if = {
+			limit = {
+				NOT = {
+					num_of_traits = 5
+				}
+				NOT = {
+					trait = proud
+				}
+			}
+			add_trait = proud
+		}
+		
+		random = {
+			chance = 10
+			add_trait = stressed
+			hidden_tooltip = {
+				character_event = {
+					id = 38282 #Notify Stressed
+				}
+			}
+		}
+	}
+}
+
+#Friend is asked by ROOT for help
+character_event = {
+	id = class.12
+	desc = class.12.desc
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = class.12.A
+		FROM = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = class.13
+				days = 7
+				random = 7
+				tooltip = class.12.A.tooltip
+			}
+		}
+	}
+	option = {
+		name = class.12.B
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = class.14
+				days = 7
+				random = 7
+				tooltip = class.12.B.tooltip
+			}
+		}
+	}
+	option = {
+		name = class.12.C
+		FROM = {
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = class.15
+				days = 7
+				random = 7
+				tooltip = class.12.C.tooltip
+			}
+		}
+	}
+}
+
+#ROOT gets help from friend
+character_event = {
+	id = class.13
+	desc = class.13.desc
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = class.13.A
+		tooltip = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		set_character_flag = class_training
+		set_character_flag = class_training_taught_by_friend
+		
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_knight
+				}
+			}
+			set_character_flag=class_knight
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_cavalier
+				}
+			}
+			set_character_flag=class_cavalier
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_archer
+				}
+			}
+			set_character_flag=class_archer
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_horse_archer
+				}
+			}
+			set_character_flag=class_horse_archer
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_mercenary
+				}
+			}
+			set_character_flag=class_mercenary
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_fighter
+				}
+			}
+			set_character_flag=class_fighter
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_myrmidon
+				}
+			}
+			set_character_flag=class_myrmidon
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_thief
+				}
+			}
+			set_character_flag=class_thief
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_pirate
+				}
+			}
+			set_character_flag=class_pirate
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_brigand
+				}
+			}
+			set_character_flag=class_brigand
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_priest
+				}
+			}
+			set_character_flag=class_priest
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_cleric
+				}
+			}
+			set_character_flag=class_cleric
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_monk
+				}
+			}
+			set_character_flag=class_monk
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_troubador
+				}
+			}
+			set_character_flag=class_troubador
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_mage
+				}
+			}
+			set_character_flag=class_mage
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_shaman
+				}
+			}
+			set_character_flag=class_shaman
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_wyvern_rider
+				}
+			}
+			set_character_flag=class_wyvern_rider
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_pegasus_knight
+				}
+			}
+			set_character_flag=class_pegasus_knight
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_soldier
+				}
+			}
+			set_character_flag=class_soldier
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_dancer
+				}
+			}
+			set_character_flag=class_dancer
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_bard
+				}
+			}
+			set_character_flag=class_bard
+		}
+		if={
+			limit={
+				FROM={
+					has_character_flag=class_manakete
+				}
+			}
+			set_character_flag=class_manakete
+		}
+		
+		hidden_tooltip = {
+			character_event = {
+				id = class.20
+				days = 360
+				random = 60
+			}
+		}
+	}
+}
+
+#ROOT did not get help from friend
+character_event = {
+	id = class.14
+	desc = class.14.desc
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = class.14.A
+		prestige = -15
+		random = {
+			chance = 10
+			add_trait = depressed
+			hidden_tooltip = {
+				character_event = {
+					id = 38288 #Notify Depressed
+				}
+			}
+		}
+		tooltip = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = FROM
+				years = 5
+			}
+		}
+	}
+}
+
+#ROOT only gets help from friend if friend is paid
+character_event = {
+	id = class.15
+	desc = class.15.desc
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = class.15.A
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 0.01
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+			years = 5
+		}
+		FROM = {
+			character_event = {
+				id = class.16
+				days = 7
+				random = 7
+				tooltip = class.15.A.tooltip
+			}
+		}
+	}
+	option = {
+		name = class.15.B
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 0.01
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}		
+		tooltip = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 0.25
+			}
+		}
+		FROM = {
+			set_character_flag = paid_training
+			character_event = {
+				id = class.16
+				days = 7
+				random = 7
+				tooltip = class.15.B.tooltip
+			}
+		}
+	}
+}
+
+#Friend is/n't paid by ROOT
+character_event = {
+	id = class.16
+	desc = class.16.desc
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = class.16.A
+		trigger = {
+			NOT = {
+				has_character_flag = paid_training
+			}
+		}
+		tooltip = {
+			reverse_opinion = {
+				modifier = opinion_disappointed
+				who = FROM
+				years = 5
+			}
+		}
+	}
+	option = {
+		name = class.16.B
+		trigger = {
+			has_character_flag = paid_training
+		}
+		clr_character_flag = paid_training
+		if={
+			limit={
+				has_character_flag=class_knight
+			}
+			FROM={set_character_flag=class_knight}
+		}
+		if={
+			limit={
+				has_character_flag=class_archer
+			}
+			FROM={set_character_flag=class_archer}
+		}
+		if={
+			limit={
+				has_character_flag=class_horse_archer
+			}
+			FROM={set_character_flag=class_horse_archer}
+		}
+		if={
+			limit={
+				has_character_flag=class_mercenary
+			}
+			FROM={set_character_flag=class_mercenary}
+		}
+		if={
+			limit={
+				has_character_flag=class_fighter
+			}
+			FROM={set_character_flag=class_fighter}
+		}
+		if={
+			limit={
+				has_character_flag=class_myrmidon
+			}
+			FROM={set_character_flag=class_myrmidon}
+		}
+		if={
+			limit={
+				has_character_flag=class_thief
+			}
+			FROM={set_character_flag=class_thief}
+		}
+		if={
+			limit={
+				has_character_flag=class_pirate
+			}
+			FROM={set_character_flag=class_pirate}
+		}
+		if={
+			limit={
+				has_character_flag=class_brigand
+			}
+			FROM={set_character_flag=class_brigand}
+		}
+		if={
+			limit={
+				has_character_flag=class_priest
+			}
+			FROM={set_character_flag=class_priest}
+		}
+		if={
+			limit={
+				has_character_flag=class_cleric
+			}
+			FROM={set_character_flag=class_cleric}
+		}
+		if={
+			limit={
+				has_character_flag=class_monk
+			}
+			FROM={set_character_flag=class_monk}
+		}
+		if={
+			limit={
+				has_character_flag=class_troubador
+			}
+			FROM={set_character_flag=class_troubador}
+		}
+		if={
+			limit={
+				has_character_flag=class_mage
+			}
+			FROM={set_character_flag=class_mage}
+		}
+		if={
+			limit={
+				has_character_flag=class_shaman
+			}
+			FROM={set_character_flag=class_shaman}
+		}
+		if={
+			limit={
+				has_character_flag=class_wyvern_rider
+			}
+			FROM={set_character_flag=class_wyvern_rider}
+		}
+		if={
+			limit={
+				has_character_flag=class_pegasus_knight
+			}
+			FROM={set_character_flag=class_pegasus_knight}
+		}
+		if={
+			limit={
+				has_character_flag=class_soldier
+			}
+			FROM={set_character_flag=class_soldier}
+		}
+		if={
+			limit={
+				has_character_flag=class_dancer
+			}
+			FROM={set_character_flag=class_dancer}
+		}
+		if={
+			limit={
+				has_character_flag=class_bard
+			}
+			FROM={set_character_flag=class_bard}
+		}
+		if={
+			limit={
+				has_character_flag=class_manakete
+			}
+			FROM={set_character_flag=class_manakete}
+		}
+		
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.25
+			}
+			set_character_flag = class_training
+			set_character_flag = class_training_taught_by_friend
+			
+			
+			
+			hidden_tooltip = {
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}
+	}
+}
+
+# Training complete
+character_event = {
+	id = class.20
+	desc = class.20.desc
+	picture = GFX_evt_melee
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = class.20.A
+		clr_character_flag=class_training_taught_by_friend
+		clr_character_flag=class_training_taught_by_school
+		clr_character_flag=class_training
+		set_character_flag=class_selected
+		set_variable = { which = "level" value = 1 }
+		random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+						NOR = { 
+							has_character_flag=class_knight
+							has_character_flag=class_cavalier
+						} 
+				}
+				set_character_flag=class_knight
+				add_trait=class_knight
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					NOR = { 
+						has_character_flag=class_knight
+						has_character_flag=class_cavalier
+						AND = {
+							has_character_flag=class_pegasus_knight
+							is_female=no
+							NOT={culture=hoshidan}
+						}
+					} 
+				}
+				set_character_flag=class_cavalier
+				add_trait=class_cavalier
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					NOR={
+						has_character_flag=class_archer
+						has_character_flag=class_horse_archer
+						AND = {
+							is_female=yes
+							OR={
+								has_character_flag=class_fighter
+								has_character_flag=class_mercenary
+							}
+						}
+					}
+				}
+				set_character_flag=class_archer
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_archer
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_archer_female
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+						NOR = { 
+							has_character_flag=class_archer
+							has_character_flag=class_horse_archer
+						} 
+				}
+				set_character_flag=class_horse_archer
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_horse_archer
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_horse_archer_female
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+						NOR = { 
+							has_character_flag=class_mercenary
+							has_character_flag=class_fighter
+						} 
+				}
+				set_character_flag=class_mercenary
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_mercenary
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_mercenary_female
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { 
+							has_character_flag=class_fighter
+						} 
+						is_female=yes
+					}
+				}
+				set_character_flag=class_fighter
+				add_trait=class_fighter
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							has_character_flag=class_brigand
+							has_character_flag=class_pirate
+						} 
+						is_female=yes
+					}
+				}
+				set_character_flag=class_brigand
+				add_trait=class_brigand
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							has_character_flag=class_pirate
+							has_character_flag=class_brigand
+						} 
+						is_female=yes
+					}
+				}
+				set_character_flag=class_pirate
+				add_trait=class_pirate
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					NOR={
+						has_character_flag=class_myrmidon
+						has_character_flag=class_thief
+						AND = {
+							is_female=yes
+							has_character_flag=class_pirate
+						}
+					}
+				}
+				set_character_flag=class_myrmidon
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_myrmidon
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_myrmidon_female
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+						NOR = { 
+							has_character_flag=class_myrmidon
+							has_character_flag=class_thief
+							AND = {
+								is_female=yes
+								has_character_flag=class_brigand
+							}
+						} 
+				}
+				set_character_flag=class_thief
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_thief
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_thief_female
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+							NOT = { 
+								has_character_flag=class_pegasus_knight
+							} 
+						AND = {
+							is_female=no
+							NOT={culture=hoshidan}
+						}
+					}
+				}
+				set_character_flag=class_pegasus_knight
+				add_trait=class_pegasus_knight
+			}
+			1 = {
+				modifier = {
+					factor = 0
+						NOR = { 
+							has_character_flag=class_pegasus_knight
+							has_character_flag=class_wyvern_rider
+						} 
+				}
+				set_character_flag=class_wyvern_rider
+				add_trait=class_wyvern_rider
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							has_character_flag=class_monk
+							has_character_flag=class_troubador
+						} 
+						is_female=no
+					}
+				}
+				set_character_flag=class_troubador
+				add_trait=class_troubador
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							has_character_flag=class_priest
+							has_character_flag=class_cleric
+						} 
+						is_female=no
+					}
+				}
+				set_character_flag=class_cleric
+				add_trait=class_cleric
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							has_character_flag=class_monk
+							has_character_flag=class_troubador
+						} 
+						is_female=yes
+					}
+				}
+				set_character_flag=class_monk
+				add_trait=class_monk
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					NOR={ 
+							has_character_flag=class_mage
+							has_character_flag=class_shaman
+						AND = {
+							NOR = {
+								trait=dragon
+								trait=dragon_blood
+							}
+								has_character_flag=class_manakete
+						}
+					}
+				}
+				set_character_flag=class_mage
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_mage
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_mage_female
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+						NOR = { 
+							has_character_flag=class_mage
+							has_character_flag=class_shaman
+						} 
+				}
+				set_character_flag=class_shaman
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_shaman
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_shaman_female
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+						NOT = { 
+							has_character_flag=class_soldier
+						} 
+				}
+				set_character_flag=class_soldier
+				add_trait=class_soldier
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					NOR = { 
+						has_character_flag=class_dancer
+						has_character_flag=class_bard
+					} 
+				}
+				set_character_flag=class_dancer
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_bard
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_dancer
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+							NOT = { 
+								has_character_flag=class_manakete
+							} 
+						NOR = {
+							trait=dragon
+							trait=dragon_blood
+						}
+					}
+				}
+				set_character_flag=class_manakete
+				
+				if={
+					limit={
+						is_female=no
+					}
+					add_trait=class_manakete
+				}
+				if={
+					limit={
+						is_female=yes
+					}
+					add_trait=class_manakete_female
+				}
+			}
+		}
+	}
+}
+
+# Go take class
+character_event = {
+	id = class.21
+	desc = class.21.desc
+	picture = "GFX_evt_melee" 
+	
+	trigger = {
+		in_command = no
+		has_ambition = obj_class
+		NOT = { has_character_flag = class_training }
+		NOT = { is_inaccessible_trigger = yes }		
+		is_inaccessible_trigger = no	
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+	}
+		
+	option = {
+		name = class.21.A
+		
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				scaled_wealth = 1
+			}
+			modifier = {
+				factor = 0.01
+				NOT = {
+					scaled_wealth = 1
+				}
+			}
+		}		
+		
+		character_event = {
+			id = class.22
+		}
+	}
+	option = {
+		name = class.21.B		
+	}
+}
+
+# Tutor selector
+character_event = {
+	id = class.22
+	desc = class.22.desc
+	picture = "GFX_evt_melee" 
+	
+	is_triggered_only=yes
+		
+	#Knight/Cav
+	option = {
+		name = class.22.A
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_knight
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}		
+	}
+	#Fighter/Merc
+	option = {
+		name = class.22.B	
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_mercenary
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Myrmidon/Thief
+	option = {
+		name = class.22.C	
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_myrmidon
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Next
+	option = {
+		name = MORE_OPTIONS
+		character_event = {id = class.23}		
+	}
+}
+# Tutor selector
+character_event = {
+	id = class.23
+	desc = class.22.desc
+	picture = "GFX_evt_melee" 
+	
+	is_triggered_only=yes
+		
+	#Monk/Troubador
+	option = {
+		name = class.23.A
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_monk
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Cleric/Priest
+	option = {
+		name = class.23.B		
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_priest
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Dancer/Bard
+	option = {
+		name = class.23.C	
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_dancer
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Next
+	option = {
+		name = MORE_OPTIONS
+		character_event = {id = class.24}		
+	}
+}
+# Tutor selector
+character_event = {
+	id = class.24
+	desc = class.22.desc
+	picture = "GFX_evt_melee" 
+	
+	is_triggered_only=yes
+		
+	#Archer/Nomad
+	option = {
+		name = class.24.A
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_archer
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Bandit/Pirate
+	option = {
+		name = class.24.B	
+		trigger = {
+			is_female=no
+		}
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_bandit
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}		
+	}
+	#Pegasus/Wyvern
+	option = {
+		name = class.24.C	
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_wyvern_rider
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Next
+	option = {
+		name = MORE_OPTIONS
+		character_event = {id = class.25}		
+	}
+}
+# Tutor selector
+character_event = {
+	id = class.25
+	desc = class.22.desc
+	picture = "GFX_evt_melee" 
+	
+	is_triggered_only=yes
+		
+	#Mage/Shaman
+	option = {
+		name = class.25.A
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_mage
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Soldier
+	option = {
+		name = class.25.B		
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_soldier
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Dragon
+	option = {
+		name = class.25.C	
+		trigger={
+			trait=dragon
+			always=no
+		}
+		scaled_wealth = -0.5
+		custom_tooltip = {
+			name=class.22.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=class_training
+				set_character_flag=class_training_taught_by_school
+				set_character_flag=class_manakete
+				character_event = {
+					id = class.20
+					days = 360
+					random = 60
+				}
+			}
+		}	
+	}
+	#Next
+	option = {
+		name = MORE_OPTIONS
+		character_event = {id = class.26}		
+	}
+}
+# Tutor selector
+character_event = {
+	id = class.26
+	desc = class.22.desc
+	picture = "GFX_evt_melee" 
+	
+	is_triggered_only=yes
+		
+	#Start over
+	option = {
+		name = class.26.A
+		character_event = {id = class.22}
+	}
+	#call the whole thing off
+	option = {
+		name = class.26.B		
+	}
+}
+
+# Switch soldier to something else
+character_event = {
+	id = class.27
+	desc = class.27.desc
+	picture = "GFX_evt_melee" 
+	
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		trait = class_soldier
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = content
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			has_focus = focus_war
+		}
+		modifier = {
+			factor = 0.5
+			war = yes
+		}
+	}
+	
+	option = {
+		name = class.27.A
+		
+		custom_tooltip = {
+			name=class.27.A.tooltip
+			hidden_tooltip = {
+				set_character_flag = change_soldier
+				clr_character_flag=class_soldier
+				remove_trait=class_soldier
+				
+				character_event = {
+					id = class.28
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = class.27.B
+	}
+}
+
+# Add a random class. Soldier or something culture appropriate.
+character_event = {
+	id = class.28
+	desc = class.28.desc
+	picture = "GFX_evt_melee" 
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_variable = { which = "level" value = 1 }
+		random_list = {
+			90 = {
+				modifier = {
+					factor = 0
+					has_character_flag = change_soldier
+				}
+				add_trait = "class_soldier"
+				set_character_flag = "class_soldier"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = bernese }
+				}
+				add_trait = "class_wyvern_rider"
+				set_character_flag = "class_wyvern_rider"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = etrurian }
+				}
+				add_trait = "class_cavalier"
+				set_character_flag = "class_cavalier"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = lycian }
+				}
+				add_trait = "class_knight"
+				set_character_flag = "class_knight"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = nabatan }
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = "class_brigand"
+					set_character_flag = "class_brigand"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = "class_archer_female"
+					set_character_flag = "class_archer"
+				}
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = sacaean }
+				}
+				set_character_flag = "class_horse_archer"
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = "class_horse_archer"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = "class_horse_archer_female"
+				}
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = ilian }
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = "class_mercenary"
+					set_character_flag = "class_mercenary"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = "class_pegasus_knight"
+					set_character_flag = "class_pegasus_knight"
+				}
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = western_islander }
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = "class_fighter"
+					set_character_flag = "class_fighter"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = "class_mercenary_female"
+					set_character_flag = "class_mercenary"
+				}
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = seafarer }
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = "class_pirate"
+					set_character_flag = "class_pirate"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = "class_thief_female"
+					set_character_flag = "class_thief"
+				}
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture_group = draconic }
+				}
+				set_character_flag = "class_mage"
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = "class_mage"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = "class_mage_female"
+				}
+			}
+		}
+		clr_character_flag = change_soldier
+	}
+	
+	option = {
+		name = OK
+	}
+}
+

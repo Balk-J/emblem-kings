@@ -27,6 +27,14 @@ eight_legends = {
 	customizer = no
 	random = no
 }
+teacher = {
+	cannot_marry = yes 
+	cannot_inherit = yes 
+	can_hold_titles = no
+	is_hidden = yes 
+	customizer = no
+	random = no
+}
 
 dragon_blood = {
 	immortal = yes

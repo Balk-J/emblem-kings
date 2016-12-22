@@ -74,6 +74,9 @@ negative_money = {
 
 #
 
+friend_class_timer = {
+	icon = 18
+}
 created_war_dragons = {
 	icon = 18
 }
@@ -91,6 +94,11 @@ owns_regalia = {
 
 declined_regalia_search = {
 	icon = 25
+}
+
+training_with_soldiers = {
+	martial = 1
+	icon = 1
 }
 
 ancient_ruins = {

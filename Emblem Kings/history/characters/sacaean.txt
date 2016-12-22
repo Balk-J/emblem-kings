@@ -800,8 +800,8 @@
 	}
 	
 	1144.01.01 = { 
-		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
 	}
 	
 	# Killed 6 months before Lyn's story
@@ -823,6 +823,12 @@
 	
 	1131.01.01 = { 
 		birth=yes 
+		employer=489
+		effect={
+			set_character_flag=black_fang_old
+			#set_character_flag=four_fang_old
+			set_character_flag=is_fe7_uhai
+		}
 	}
 	1143.01.01={
 		add_trait="class_horse_archer"

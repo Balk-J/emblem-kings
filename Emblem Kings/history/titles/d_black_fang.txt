@@ -10,7 +10,11 @@
 	holder=425 #Brendan Reed
 	set_global_flag = black_fang_founded
 }
+1155.1.1={
+	set_global_flag = black_fang_grows
+}
 1159.1.1={
+	set_global_flag = black_fang_corrupted
 	liege=e_nergal
 }
 1161.1.1={

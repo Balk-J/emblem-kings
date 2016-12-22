@@ -20,6 +20,9 @@
 1165.1.1={
 	holder=403 #Zephiel
 }
+1180.1.1={
+	set_global_flag = demon_dragon_discovered
+}
 1181.1.1={
 	holder=404 #Guinivere
 }

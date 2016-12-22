@@ -9,7 +9,8 @@
 }
 
 1000.1.1={
-	liege=k_lycian_league
+	liege=0
+	#liege=k_lycian_league
 	#liege=d_santaruz
 }
 1150.1.1={

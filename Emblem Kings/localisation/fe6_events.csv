@@ -1,0 +1,39 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe6..title;;;;;;;;;;;;;;x
+fe6..desc;;;;;;;;;;;;;;x
+fe6..A;;;;;;;;;;;;;;x
+fe6..B;;;;;;;;;;;;;;x
+fe6..C;;;;;;;;;;;;;;x
+fe6..D;;;;;;;;;;;;;;x
+fe6.4.title;The Shrine of Seals;;;;;;;;;;;;;x
+fe6.4.desc;The Shrine of Seals was built by Hartmut after the Scouring. Its existence is not widely known, and its exact location is one of the realm's most closely guarded secrets. \n\nThe full details of what is sealed within its depths are long lost to time. Whatever is in there must be important, or valuable... or dangerous. \n\nYou could take a small group of trusted retainers and investigate the shrine, if you want to know for sure...;;;;;;;;;;;;;x
+fe6.4.A;Yes, I have to know!;;;;;;;;;;;;;x
+fe6.4.B;No, it must be sealed for a good reason.;;;;;;;;;;;;;x
+fe6.5.title;The Girl;;;;;;;;;;;;;x
+fe6.5.desc;Your search of the Shrine of Seals has turned up some unexpected results. You have discovered a hidden chamber in the depths of the shrine. Inside the chamber, there's a young girl, lying on top of a raised platform. Although the room has been locked for a very long time, the girl is alive. In fact, she seems to be sleeping peacefully. \n\nThe room is covered in strange inscriptions, but your scholars have only been able to make out one of them. It's some sort of label, or epitaph, or warning, on the girl's platform. It reads "Demon Dragon.";;;;;;;;;;;;;x
+fe6.5.A;Our savior is at hand! We have to wake her up!;;;;;;;;;;;;;x
+fe6.5.A.tooltip;The Demon Dragon is awakened.;;;;;;;;;;;;;x
+fe6.5.B;I think I can find a use for her. Wake her up.;;;;;;;;;;;;;x
+fe6.5.C;A demon AND a dragon? Kill her and seal this wretched hole.;;;;;;;;;;;;;x
+fe6.5.C.tooltip;The Demon Dragon is slain.;;;;;;;;;;;;;x
+fe6.5.D;I'm not meddling with this. Close the chamber and let her sleep.;;;;;;;;;;;;;x
+fe6.6.desc;The girl found in the Shrine of Seals has been awakened, seemingly no worse for wear after her centuries-long sleep. She tells you that her name is Idenn, and her role is to create dragons for war.;;;;;;;;;;;;;x
+fe6.6.A;Excellent...;;;;;;;;;;;;;x
+fe6.7.title;Enigmatic Man;;;;;;;;;;;;;x
+fe6.7.desc;You are sitting by yourself late one evening. It's eerily quiet - the courtiers and servants who usually surround you are nowhere to be found. You're about to leave, but a flicker of movement catches your eye and you stop suddenly. \n\nStanding by the wall is a tall man in a hooded cloak as red as flames. You're sure he wasn't there a moment ago. The man speaks.\n\n"For what reason have you awakened a demon dragon?";;;;;;;;;;;;;x
+fe6.7.A;Who are you?;;;;;;;;;;;;;x
+fe6.7.B;That's no concern of yours.;;;;;;;;;;;;;x
+fe6.7.C;I have only the best of intentions, believe me...;;;;;;;;;;;;;x
+fe6.7.D;An intruder! Guards! Guards!;;;;;;;;;;;;;x
+fe6.8.title;Enigmatic Man;;;;;;;;;;;;;x
+fe6.8.desc;The man is silent for a moment. The air around him seems to shimmer, as if he's radiating heat. \n\n"...Dragon," he finally replies.;;;;;;;;;;;;;x
+fe6.8.A;I will give the world to your kind.;;;;;;;;;;;;;x
+fe6.8.B;I thought we killed all of you.;;;;;;;;;;;;;x
+fe6.8.C;Interesting. Just how did you get in here?;;;;;;;;;;;;;x
+fe6.8.D;Back, monster!;;;;;;;;;;;;;x
+fe6.9.title;The Last Dragon;;;;;;;;;;;;;x
+fe6.9.desc;"I don't trust your kind," the man says. "And I am not convinced that you can deliver on that promise. Although if you remain the master of that 'object,' there is a possibility."\n\nThe man lowers his hood and looks you in the eyes. "[Root.GetTitledFirstName], my name is Jahn. I am the last true dragon in these lands. If your goal is to return them to my people, you have my cooperation.";;;;;;;;;;;;;x
+fe6.9.A;I look forward to working with you.;;;;;;;;;;;;;x
+fe6.9.B;If you don't trust me, I don't want your help.;;;;;;;;;;;;;x
+fe6.10.desc;The man lowers his head, then disappears before your eyes. Your guards search the area, but report no sightings of the man or signs of a break-in. Was he really there?;;;;;;;;;;;;;x
+fe6.10.A;Disturbing.;;;;;;;;;;;;;x

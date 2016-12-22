@@ -7,9 +7,9 @@
 #180.1.1={
 #	liege=k_lycia
 #}
-180.1.1={
-	liege=k_lycian_league
-}
+#180.1.1={
+#	liege=k_lycian_league
+#}
 
 
 180.1.1={

@@ -1,5 +1,5 @@
 1180.1.1={
-	holder=920 # Jahn
+	holder=0#920 # Jahn
 }
 1181.1.1={
 	holder=0 # Jahn's dead

@@ -97,6 +97,9 @@
 	# Becomes an adult during FE7. Since we have the age of adulthood at 15, he should be 14 at the start
 	1146.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe6_zephiel		
+		}
 	}
 	
 	1158.01.01={
@@ -106,16 +109,6 @@
 			set_character_flag="class_selected"
 			set_character_flag="class_knight"
 		}
-	} 
-	1159.1.1 = {
-		add_trait="falconer"
-		add_trait="kind"
-		add_trait="charitable"
-		add_trait="content"
-		add_trait="just"
-		add_trait="gregarious"
-		add_trait="diligent"
-		add_trait="brave"
 		effect = {
 			k_bern = {
 				holder_scope = { 
@@ -142,6 +135,16 @@
 				}
 			}	
 		}
+	} 
+	1159.1.1 = {
+		add_trait="falconer"
+		add_trait="kind"
+		add_trait="charitable"
+		add_trait="content"
+		add_trait="just"
+		add_trait="gregarious"
+		add_trait="diligent"
+		add_trait="brave"
 	
 	}
 	
@@ -242,6 +245,7 @@
 	trait="strong"	
 	1140.1.1={
 		birth=yes
+		employer=402 #Desmond
 	}
 	1152.01.01={
 		add_trait="class_knight"
@@ -263,6 +267,28 @@
 	1159.1.1 = {
 		remove_trait="class_knight"
 		add_trait="class_general"
+		
+		effect = {
+			random_character = {
+				limit = { character = 403 } # Zephiel
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 40
+				}
+			}
+		}
+	}	
+	1165.1.1 = {
+		employer=403 #Zephiel
+		effect = {
+			give_minor_title = title_wyvern_general
+		}	
 	}	
 	1180.1.1 = {
 		add_trait="winter_soldier"
@@ -298,6 +324,9 @@
 	}
 	1180.1.1 = {
 		add_trait="flat_terrain_leader"
+		effect = {
+			give_minor_title = title_wyvern_general
+		}
 	}
 	1181.1.1= {
 		death = {
@@ -338,6 +367,11 @@
 		remove_trait="class_wyvern_rider"
 		add_trait="class_wyvern_lord"
 	}	
+	1180.1.1 = {
+		effect = {
+			give_minor_title = title_wyvern_general
+		}
+	}
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -352,6 +386,7 @@
 	dynasty=404
 	culture=bernese
 	religion=elimine_church
+	disallow_random_traits="yes" 
 	father=447 
 	trait="bastard"	
 	1120.1.1={
@@ -392,6 +427,7 @@
 	dynasty=405
 	culture=bernese
 	religion=elimine_church
+	disallow_random_traits="yes" 
 	1135.1.1={
 		birth=yes
 	}
@@ -425,6 +461,7 @@
 	culture=bernese
 	# actually not from Bern - Lycian, maybe? Or Jugdrali (as in the bishop who was possessed by Loptyr)?
 	religion=elimine_church
+	disallow_random_traits="yes" 
 	1155.1.1={
 		birth=yes
 	}
@@ -459,6 +496,7 @@
 	dynasty=406
 	culture=bernese
 	religion=elimine_church
+	disallow_random_traits="yes" 
 	father=448
 	1153.1.1={
 		birth=yes
@@ -488,6 +526,7 @@
 	dynasty=406
 	culture=bernese
 	religion=elimine_church
+	disallow_random_traits="yes" 
 	father=448
 	1162.1.1={
 		birth=yes
@@ -515,6 +554,7 @@
 	dynasty=408
 	culture=bernese
 	religion=elimine_church
+	disallow_random_traits="yes" 
 	father=449
 	1163.1.1={
 		birth=yes
@@ -524,7 +564,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cleric"
+			set_character_flag="class_priest"
 		}
 	}
 	1178.01.01={
@@ -801,16 +841,21 @@
 		remove_trait="class_cavalier"
 		add_trait="class_paladin"
 	}
-	1151.1.1 = {
+	1149.1.1 = {
 		add_trait="lunatic"	
 		add_trait="impaler"
-	}
-	1155.1.1 = {
 		give_nickname=nick_the_beast
+		effect={
+			set_character_flag=black_fang_old
+			set_character_flag=four_fang_old
+		}
+	} 
+	1149.1.2 = {
+		employer=425 # Brendan Reed
 	} 	
 	1155.6.1 = {
 		effect = {
-			k_bern = {
+			d_black_fang = {
 				holder_scope = {
 					ROOT = { 
 						imprison = PREV 
@@ -968,6 +1013,10 @@
 	trait="strong"	
 	1107.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=fe7_brendan_reed
+		}
 	}
 		
 	1119.01.01={
@@ -1001,7 +1050,8 @@
 		remove_trait="wounded"
 		add_trait="scarred"
 	}	
-	1159.1.2 = {
+	#1159.1.2 = {
+	1158.1.1 = {
 		add_spouse=609 #Sonia
 	}
 	1161.1.1= {
@@ -1019,13 +1069,23 @@
 	religion=elimine_church	
 	1116.1.1={
 		birth=yes
-	}	
+		employer=489
+		effect={set_character_flag=black_fang_old}
+	}
+	1128.01.01={
+		add_trait="class_thief_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_thief"
+		}
+	} 	
 	1131.1.1={
 		add_trait="intricate_webweaver"	
 		add_trait="just"	
 		add_trait="charitable"
 	}
-	1159.1.1={
+	1157.1.1={
 		death=yes
 	}
 }
@@ -1041,6 +1101,12 @@
 	trait="quick"	
 	1133.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=black_fang_old
+			set_character_flag=four_fang_old
+			set_character_flag=fe7_lloyd
+		}
 	}	
 		
 	1145.01.01={
@@ -1093,6 +1159,12 @@
 	trait="slow"		
 	1134.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=black_fang_old
+			set_character_flag=four_fang_old
+			set_character_flag=fe7_linus
+		}
 	}
 	1146.01.01={
 		add_trait="class_mercenary"
@@ -1139,6 +1211,11 @@
 	disallow_random_traits="yes" 
 	1132.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=black_fang_old
+			set_character_flag=fe7_legault
+		}
 	}
 	1144.01.01={
 		add_trait="class_thief"
@@ -1172,6 +1249,8 @@
 	disallow_random_traits="yes" 
 	1116.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_old}
 	}	
 	1128.01.01={
 		add_trait="class_brigand"
@@ -1207,6 +1286,12 @@
 	disallow_random_traits="yes" 
 	1130.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=black_fang_old
+			set_character_flag=four_fang_old
+			set_character_flag=fe7_jerme
+		}
 	}
 	1142.01.01={
 		add_trait="class_thief"
@@ -1250,6 +1335,11 @@
 	disallow_random_traits="yes" 
 	1130.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=black_fang_new
+			set_character_flag=is_fe7_kenneth
+		}
 	}
 	1142.01.01={
 		add_trait="class_monk"
@@ -1296,6 +1386,12 @@
 	disallow_random_traits="yes" 
 	1140.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=black_fang_new
+			set_character_flag=four_fang_new			
+			set_character_flag=is_fe7_ursula
+		}
 	}
 	1150.1.1 = {
 		employer=425 # Brendan Reed
@@ -1336,6 +1432,10 @@
 	disallow_random_traits="yes" 		
 	1116.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new
+			set_character_flag=is_fe7_aion
+		}
 	}	
 	1128.01.01={
 		add_trait="class_mage"
@@ -1377,6 +1477,12 @@
 	disallow_random_traits="yes" 
 	1136.1.1={
 		birth=yes
+		employer=489
+		effect={
+			set_character_flag=black_fang_new
+			set_character_flag=is_fe7_teodor
+		
+		}
 	}		
 	1148.01.01={
 		add_trait="class_shaman"
@@ -1419,8 +1525,10 @@
 	disallow_random_traits="yes" 
 	1101.1.1={
 		birth=yes
+		effect={set_character_flag=black_fang_new}
 	}	
 	1113.01.01={
+		employer=489
 		add_trait="class_shaman"
 		effect = {
 			set_variable = { which = "level" value = 1 }
@@ -1453,8 +1561,10 @@
 	disallow_random_traits="yes" 
 	1099.1.1={
 		birth=yes
+		effect={set_character_flag=black_fang_new}
 	}
 	1111.01.01={
+		employer=489
 		add_trait="class_shaman"
 		effect = {
 			set_variable = { which = "level" value = 1 }
@@ -1488,6 +1598,8 @@
 	disallow_random_traits="yes" 
 	1122.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}	
 	1134.01.01={
 		add_trait="class_mercenary"
@@ -1522,6 +1634,8 @@
 	disallow_random_traits="yes" 
 	1134.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}
 	1146.01.01={
 		add_trait="class_knight"
@@ -1554,6 +1668,8 @@
 	disallow_random_traits="yes" 
 	1133.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}	
 	1145.01.01={
 		add_trait="class_cavalier"
@@ -1593,6 +1709,8 @@
 	disallow_random_traits="yes" 
 	1115.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}
 	1127.01.01={
 		add_trait="class_knight"
@@ -1626,6 +1744,8 @@
 	disallow_random_traits="yes" 
 	1140.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}
 	1150.1.1 = {
 		employer=425 # Brendan Reed
@@ -1662,6 +1782,8 @@
 	disallow_random_traits="yes" 
 	1139.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}
 	1150.1.1 = {
 		employer=425 # Brendan Reed
@@ -1698,6 +1820,8 @@
 	disallow_random_traits="yes" 
 	1130.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}
 	1142.01.01={
 		add_trait="class_fighter"
@@ -1733,6 +1857,8 @@
 	disallow_random_traits="yes" 
 	1138.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_new}
 	}
 	1150.1.1 = {
 		employer=425 # Brendan Reed
@@ -1763,6 +1889,8 @@
 	disallow_random_traits="yes" 
 	1132.1.1={
 		birth=yes
+		employer=489
+		effect={set_character_flag=black_fang_old}
 	}
 	1144.01.01={
 		add_trait="class_thief_female"
@@ -2311,7 +2439,7 @@
 475={
 	name="Viktor" 
 	dynasty=438
-	
+	father=489
 	culture=bernese
 	religion=elimine_church
 		
@@ -2320,6 +2448,21 @@
 	}
 	
 	1189.1.1= {
+		death = yes
+	}
+}
+489={
+	name="Waldemar" 
+	dynasty=438
+	
+	culture=bernese
+	religion=elimine_church
+		
+	1090.1.1={
+		birth=yes
+	}
+	
+	1156.1.1= {
 		death = yes
 	}
 }
@@ -2545,3 +2688,4 @@
 		death = yes
 	}
 }
+#489 taken, Vaud

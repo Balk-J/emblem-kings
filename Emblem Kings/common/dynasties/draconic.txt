@@ -1,6 +1,6 @@
 # Canon
 920={
-	name="of the Dragon Temple"
+	name="of the Dragon Sanctuary"
 	culture="fire_dragon"
 	coat_of_arms = {
 		religion="dragon_gods"

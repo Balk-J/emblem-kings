@@ -855,22 +855,11 @@ claim_all_lyn = {
  	apply_short_occ_mod = no 
 	coalition_threat = no
 
-	#can_use = {
-	#	ROOT = { has_character_flag = lyn_story }
-	#}
-
 	can_use = {
-		always = no
+		ROOT = { has_character_flag = lyn_story_war }
 	}
 	is_valid = {
 		ROOT = { has_character_flag = lyn_story }
-#		ROOT = {
-#			total_claims = {
-#				who = FROM
-#				strong = yes # Count only strong claims
-#				value = 1 # must have at least one claim left
-#			}
-#		}
 	}
 
 	on_add = {
@@ -926,9 +915,13 @@ claim_all_lyn = {
 					character_event = { id = LoR.30 days = 12 }
 				}
 				
-				d_lyn = {
-					destroy_landed_title = THIS
-				}
+				
+				any_demesne_title = {
+					limit = {
+						is_landless_type_title = yes
+					}
+					unsafe_destroy_landed_title = ROOT
+				}		
 			}
 		}
 		any_attacker = {
@@ -974,6 +967,15 @@ claim_all_lyn = {
 				}
 				remove_claim = ROOT
 			}
+				
+			hidden_tooltip = {
+				any_demesne_title = {
+					limit = {
+						is_landless_type_title = yes
+					}
+					unsafe_destroy_landed_title = ROOT
+				}		
+			}
 		}
 		any_defender = {
 			limit = { character = FROM }
@@ -1012,6 +1014,10 @@ claim_all_lyn = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	on_attacker_leader_death = {
+		end_war = invalid
 	}
 }
 

@@ -285,7 +285,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cleric"
+			set_character_flag="class_priest"
 		}
 	} 	
 	1142.01.01 = { 
@@ -497,11 +497,13 @@
 	1158.06.01 = { 
 		employer = 526 # living on Batta's turf
 		
-		add_pressed_claim="d_caelin"
-		add_pressed_claim="c_caelin"
-		add_pressed_claim="c_alta"
 		
 		effect = {
+			add_pressed_claim="d_caelin"
+			add_pressed_claim="c_caelin"
+			add_pressed_claim="c_alta"
+			add_pressed_claim="c_tarim"
+			add_pressed_claim="c_kashgar"
 			d_caelin = {
 				holder_scope = { 
 					opinion = {
@@ -925,12 +927,12 @@
 	1158.1.1 = {
 		add_trait="cynical"
 		add_trait="adventurer"
-		add_pressed_claim="d_cornwell"
-		add_pressed_claim="c_cornwell"
-		add_pressed_claim="c_dias"
-		add_pressed_claim="c_telmessus"
-		add_pressed_claim="c_trebenna"
 		effect = {
+			add_pressed_claim="d_cornwell"
+			add_pressed_claim="c_cornwell"
+			add_pressed_claim="c_dias"
+			add_pressed_claim="c_telmessus"
+			add_pressed_claim="c_trebenna"
 			set_name = "Raven"
 		}
 	}	
@@ -961,21 +963,20 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_troubador"
+			set_character_flag="class_monk"
 		}
 	} 
 	1158.01.01 = {
-		add_pressed_claim="d_cornwell"
-		add_pressed_claim="c_cornwell"
-		add_pressed_claim="c_dias"
-		add_pressed_claim="c_telmessus"
-		add_pressed_claim="c_trebenna"
-		
 		#Adopted by House Caerleon after Cornwell was destroyed.
 		employer=249
 		dynasty=204 
 		#TODO: fix this to set real dad?
 		effect={
+			add_pressed_claim="d_cornwell"
+			add_pressed_claim="c_cornwell"
+			add_pressed_claim="c_dias"
+			add_pressed_claim="c_telmessus"
+			add_pressed_claim="c_trebenna"
 			father_even_if_dead = {				
 				ROOT = { set_real_father = PREV }
 			}
@@ -2050,7 +2051,8 @@
 	1100.01.01={
 		birth=yes
 	} 		
-	1170.01.01={
+	#1170.01.01={
+	1158.01.01={
 		death=yes
 	} 	 
 }
@@ -3053,7 +3055,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cleric"
+			set_character_flag="class_priest"
 		}
 	} 
 	1179.01.01 = { 
