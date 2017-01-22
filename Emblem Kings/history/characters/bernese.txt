@@ -48,6 +48,7 @@
 	trait="cruel"
 	trait="deceitful"
 	trait="paranoid"
+	intrigue = 90
 	1122.1.1={
 		birth=yes
 		#add_trait="regalia_eckesachs"
@@ -1085,8 +1086,12 @@
 		add_trait="just"	
 		add_trait="charitable"
 	}
-	1157.1.1={
+	1158.1.1={
 		death=yes
+		death = {
+			death_reason=death_murder#_unknown
+			#killer=308 #Nergal
+		}
 	}
 }
 

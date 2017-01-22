@@ -1,0 +1,51 @@
+decisions = {
+
+	hire_black_fang = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			has_global_flag = black_fang_founded
+			NOT = { has_global_flag = black_fang_destroyed }
+			OR = {
+				has_plot = plot_kill_character
+				has_plot = plot_kill_spouse
+				has_plot = plot_kill_child
+			}
+			location = {
+				region = world_elibe
+			}
+			OR = {
+				has_global_flag = black_fang_grows
+
+				location = {
+					OR = {
+						region = world_elibe_greater_bern
+						region = world_elibe_lycia
+						region = world_elibe_sacae
+					}
+				}
+			}
+			OR = {
+				NOT = { has_character_flag = contacting_black_fang }
+				had_character_flag = { flag = contacting_black_fang days = 75 }
+			}
+			OR = {
+				NOT = { has_character_flag = black_fang_declined }
+				had_character_flag = { flag = black_fang_declined days = 2920 }
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			wealth = 100
+		}
+		effect = {
+			wealth = -100
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+}
+

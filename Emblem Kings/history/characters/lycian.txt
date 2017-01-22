@@ -1890,7 +1890,11 @@
 	} 		
 	
 	1147.01.01 = { 
-		employer=425 #Brendan Reed 
+		#employer=425 #Brendan Reed 
+		employer=308 # Nergal - was kidnapped by Sonia, prior to her marriage to Brendan
+		effect = {
+			set_character_flag=black_fang_nergal
+		}
 	}
 	
 	1158.01.01={
@@ -1899,7 +1903,103 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 			set_character_flag="class_mage"
+
+
+			random_character = {
+				limit = { character = 425 } # Brendan
+				reverse_opinion = {
+					modifier = opinion_father_child
+					who = ROOT
+					years = -1
+				}
+				opinion = {
+					modifier = opinion_father_of_child
+					who = ROOT
+					years = -1
+				}
+			}
+			random_character = {
+				limit = { character = 608 } # Sonia
+				reverse_opinion = {
+					modifier = opinion_mother_child
+					who = ROOT
+					years = -1
+				}
+				opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 20
+				} 
+				opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 20
+				} 
+				opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 20
+				} 
+				opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 20
+				} 
+			}
+			random_character = {
+				limit = { character = 427 } # Lloyd
+				reverse_opinion = {
+					modifier = opinion_brother
+					who = ROOT
+					years = -1
+				}
+				opinion = {
+					modifier = opinion_sister
+					who = ROOT
+					years = -1
+				}
+			}
+			random_character = {
+				limit = { character = 428 } # Linus
+				reverse_opinion = {
+					modifier = opinion_brother
+					who = ROOT
+					years = -1
+				}
+				opinion = {
+					modifier = opinion_sister
+					who = ROOT
+					years = -1
+				}
+			}
+			random_character = {
+				limit = { character = 429 } # Legault
+				reverse_opinion = {
+					modifier = opinion_uncle
+					who = ROOT
+					years = -1
+				}
+				opinion = {
+					modifier = opinion_niece
+					who = ROOT
+					years = -1
+				}
+			}
+			random_character = {
+				limit = { character = 430 } # Jan
+				reverse_opinion = {
+					modifier = opinion_uncle
+					who = ROOT
+					years = -1
+				}
+				opinion = {
+					modifier = opinion_niece
+					who = ROOT
+					years = -1
+				}
+			}
 		}
+		employer=425 #Brendan Reed 
 	} 
 	1159.01.01 = {
 		add_trait="kind"

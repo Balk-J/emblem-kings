@@ -32,6 +32,7 @@
 				set_character_flag="regalia_forblaze_failure"
 		#		set_global_flag="regalia_forblaze_held"	
 			}
+			set_variable = { which = "level" value = 20 }
 		}
 	}
 	
@@ -335,6 +336,10 @@
 	
 	1141.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag=is_fe7_sonia
+			set_character_flag=black_fang_nergal
+		}
 	}
 	
 	1141.01.01 = { 
@@ -394,6 +399,11 @@
 	
 	1143.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag=is_fe7_jaffar
+			set_character_flag=black_fang_nergal
+			set_character_flag=four_fang_nergal
+		}
 	}
 	
 	# found by Nergal as an infant
@@ -414,9 +424,9 @@
 		give_nickname=nick_the_angel_of_death
 	}
 	1158.01.01={
-	add_trait="elusive_shadow"
-	add_trait="content"
-	add_trait="shy"
+		add_trait="elusive_shadow"
+		add_trait="content"
+		add_trait="shy"
 	} 
 	1161.01.01 = { 
 		add_trait="kind"

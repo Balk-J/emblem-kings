@@ -14,3 +14,8 @@ death_lava = {
 		}
 	}
 }
+
+death_black_fang = {
+	violent = yes
+	long_desc = "DEATH_MURDER_BLACK_FANG"
+}

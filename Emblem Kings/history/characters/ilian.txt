@@ -330,6 +330,9 @@
 	500.01.01 = { 
 		remove_trait="class_druid"
 		add_trait="class_dark_druid"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
 	}
 	
 	# About 500 years before FE7, meets Athos wandering the desert...

@@ -1238,11 +1238,211 @@ narrative_event = {
 }
 
 # Nergal takes over the Fang
+narrative_event = {
+	id = fe7.11
+	title = "fe7.11.title"
+	desc = "fe7.11.desc"
+	major = yes
+	
+	picture = "GFX_evt_shadow"
+	
+	only_playable = yes
+	culture = bernese
+	has_global_flag = black_fang_founded
+	has_global_flag = black_fang_grows
+	
+	trigger = {
+		year = 1158
+		has_landed_title = d_black_fang
+		NOR = {
+			has_global_flag = black_fang_destroyed
+			has_global_flag = black_fang_corrupted
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "OK"
+		trigger = { has_landed_title = d_black_fang }
+		set_global_flag = black_fang_corrupted
+		
+		e_nergal = {
+			holder_scope = {
+				ROOT = {
+					set_defacto_liege = PREV
+				}
+				# Move in the new people
+
+				# Move all of his canon followers (who haven't gone off the rails somehow) to his court.
+				# Should be Sonia and Jaffar
+				any_courtier = { 
+					limit = {
+						has_character_flag = black_fang_nergal
+						is_landed = no
+						is_heir = no
+						OR = {
+							is_married = no
+							spouse = {
+								is_landed = no	
+								is_heir = no					
+							}
+						}
+					}
+					move_character = ROOT
+				}
+			}
+		}
+
+		# Kill Brendan's wife if she's still around
+		if = {
+			limit = {
+				is_married = yes
+			}
+			spouse = {
+				death = {
+					death_reason=death_murder
+					#killer=308 # Nergal
+				}
+			}
+		}
+
+		# If Sonia didn't come over because she's married off/dead/never existed, create a new Morph wife for Brendan
+		if = {
+			limit = {
+				NOT = {
+					any_courtier = {
+						has_character_flag = is_fe7_sonia 
+					}
+				}
+			}		
+			e_nergal = {
+				holder_scope = {
+					create_character = {
+						random_traits = no
+						religion = PREV #THIS?
+						culture = PREV
+						female = yes
+						dynasty=none
+						age = 20
+						attributes = {
+							martial = 10
+							diplomacy = 10
+							stewardship = 10
+							intrigue = 10
+							learning = 10
+						}
+						trait="class_sage_female"
+						trait="flamboyant_schemer"
+						trait="morph"
+						trait="fair"
+						trait="cruel"
+						trait="proud"
+						employer = PREV
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_mage"
+						set_character_flag=is_fe7_sonia
+
+						move_character = ROOT
+					}
+				}
+			}
+		}
+#		e_nergal = {
+#			holder_scope = {
+#				d_black_fang = {
+#					grant_title = PREV
+#				}
+#			}
+#		}
+		# Marry the morph to Brendan
+		random_courtier = {
+			limit = {
+				has_character_flag = is_fe7_sonia
+			}
+			add_spouse=ROOT
+		}
+#		d_black_fang = {
+#			grant_title = ROOT
+#		}
+		
+		# If Jaffar didn't come over, create a new Assassin to take over a Fang slot
+		if = {
+			limit = {
+				NOT = {
+					any_courtier = {
+						has_character_flag = { is_fe7_jaffar }
+					}
+				}
+			}
+			e_nergal = {
+				holder_scope = {
+					create_character = {
+						random_traits = yes
+						religion = PREV #THIS?
+						culture = PREV
+						female = no
+						dynasty=none
+						age = 16
+						trait="class_assassin"
+						trait="elusive_shadow"
+						employer = PREV
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_thief"
+						set_character_flag=four_fang_nergal
+						give_nickname=nick_the_angel_of_death#nick_the_viper
+						
+						move_character = ROOT
+					}
+				}
+			}
+		}
+
+		# Kick out a Fang
+		random_courtier = {
+			limit = {
+				OR = {
+					has_character_flag = four_fang_old
+					has_character_flag = four_fang_new
+				}
+				NOR = {
+					has_character_flag = fe7_lloyd
+					has_character_flag = fe7_linus
+					has_character_flag = is_fe7_ursula
+				}
+			}
+			remove_title = title_fang
+		}
+		
+		any_courtier = {
+			limit = {
+				has_character_flag = four_fang_nergal
+			}
+			give_minor_title = title_fang
+			character_event = { id = class.5 } # Promote Jaffar if unpromoted 
+		}
+	}
+	option = {
+		name = "fe7.11.A"
+		trigger = { 
+			NOT = { has_landed_title = d_black_fang }
+		}
+	}
+}
 
 # Fang strikes at unjust ruler #
 # Unjust ruler is warned
 character_event = {
-	id = fe7.11
+	id = fe7.12
 	desc = "fe7.11.desc"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
@@ -1276,7 +1476,7 @@ character_event = {
 
 # Assassins kill random courtier
 character_event = {
-	id = fe7.12
+	id = fe7.13
 	desc = "fe7.12.desc"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
@@ -1331,7 +1531,7 @@ character_event = {
 
 # Assassins kill ruler
 character_event = {
-	id = fe7.13
+	id = fe7.14
 	desc = "EVTDESC88012"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue

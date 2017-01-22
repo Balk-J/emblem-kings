@@ -35,4 +35,7 @@ fe7.9.desc;Rumors are spreading that a Bernese mercenary, Brendan Reed, has foun
 fe7.9.A;They're nothing more than common thugs.;;;;;;;;;;;;;x
 fe7.10.title;The Black Fang Grows;;;;;;;;;;;;;x
 fe7.10.desc;The league of assassins known as the Black Fang has been growing more bold. Their activities enjoy wide support among the masses, who see them as chivalrous defenders of the common man. Many talented warriors have joined their ranks, allowing them to reinforce and expand their mountain stronghold. Lords and ladies across the land sit uneasily in their thrones, wondering where they will strike next...;;;;;;;;;;;;;x
-fe7.10.A;Perhaps this band should be taken seriously.;;;;;;;;;;;;;x
+fe7.11.title;The Black Fang Changes;;;;;;;;;;;;;x
+fe7.11.desc;Strange stories have been circulating about the Black Fang recently. Their leader has taken a new wife, a hauntingly beautiful sorceress with a cruel streak. Most orders are now issued by her, in her husband's name. Under her guidance, the Fang has... changed. They have stepped up recruitment, and are now accepting people of dubious character - the sort of brigands and butchers they once scorned. The Fang is now accepting jobs from anyone who will pay, regardless of the target's virtue or lack thereof. Many of their new members have been whispering about a powerful sorcerer, who may be the mastermind behind these recent developments...;;;;;;;;;;;;;x
+#A strange band of warriors have joined their ranks, with the same black hair and gold eyes as their new lady.
+fe7.11.A;Disturbing news.;;;;;;;;;;;;;x

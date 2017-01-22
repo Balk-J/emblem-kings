@@ -1,6 +1,6 @@
 namespace = fe_plot
 
-# Falling accident - The plotter sees an opportunity
+# Steal Emblem - The plotter sees an opportunity
 character_event = {
 	id = fe_plot.1
 	desc = "fe_plot.1.desc"
@@ -1206,5 +1206,27 @@ character_event = {
 				}
 			}
 		}
+	}
+}
+
+# Success in murdering child
+character_event = {
+	id = fe_plot.19	
+	hide_window = yes	
+	is_triggered_only = yes
+	
+	immediate = {
+		piety = -1000
+	}
+}
+
+# Attempted to murder child and discovered
+character_event = {
+	id = fe_plot.20
+	hide_window = yes	
+	is_triggered_only = yes
+	
+	immediate = {
+		piety = -100
 	}
 }

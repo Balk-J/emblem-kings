@@ -32,7 +32,7 @@ fe6.8.B;I thought we killed all of you.;;;;;;;;;;;;;x
 fe6.8.C;Interesting. Just how did you get in here?;;;;;;;;;;;;;x
 fe6.8.D;Back, monster!;;;;;;;;;;;;;x
 fe6.9.title;The Last Dragon;;;;;;;;;;;;;x
-fe6.9.desc;"I don't trust your kind," the man says. "And I am not convinced that you can deliver on that promise. Although if you remain the master of that 'object,' there is a possibility."\n\nThe man lowers his hood and looks you in the eyes. "[Root.GetTitledFirstName], my name is Jahn. I am the last true dragon in these lands. If your goal is to return them to my people, you have my cooperation.";;;;;;;;;;;;;x
+fe6.9.desc;"I don't trust you," the man says. "And I am not convinced that you can deliver on that promise. Although if you remain the master of that 'object,' there is a possibility."\n\nThe man lowers his hood and looks you in the eyes. "[Root.GetTitledFirstName], my name is Jahn. I am the last true dragon in these lands. If your goal is to return them to my kind, you have my cooperation.";;;;;;;;;;;;;x
 fe6.9.A;I look forward to working with you.;;;;;;;;;;;;;x
 fe6.9.B;If you don't trust me, I don't want your help.;;;;;;;;;;;;;x
 fe6.10.desc;The man lowers his head, then disappears before your eyes. Your guards search the area, but report no sightings of the man or signs of a break-in. Was he really there?;;;;;;;;;;;;;x
