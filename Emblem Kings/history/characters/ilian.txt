@@ -397,7 +397,7 @@
 			set_character_flag="class_pegasus_knight"
 		}
 	} 
-	11.01.01={
+	1156.01.01={
 		add_trait="tough_soldier"
 		add_trait="unyielding_leader"
 		add_trait="winter_soldier"
@@ -473,7 +473,8 @@
 	
 	#hired by Hector
 	1160.02.01 = { 
-		wealth=20000
+		#wealth=20000
+		wealth=200
 	}
 	
 	
@@ -497,6 +498,9 @@
 	
 	1144.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag="is_fe7_florina"
+		}
 	}
 	1156.01.01={
 		add_trait="class_pegasus_knight"
@@ -518,10 +522,13 @@
 	} 
 	
 	1159.01.01 = { 
-		employer=111 #Lyn
+		#employer=111 #Lyn
+		employer=548 #Bulgar
+		employer=310 #Farina
 	}
 	
 	1160.01.01 = { 
+		employer=109 #Hausen
 		remove_trait="craven"
 	}
 	
@@ -546,6 +553,9 @@
 	trait="dragon_blood"
 	170.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag="is_fe7_ninian"
+		}
 	}
 	182.01.01={
 		add_trait="class_dancer"
@@ -632,6 +642,9 @@
 	
 	175.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag="is_fe7_nils"
+		}
 	}
 	187.01.01={
 		add_trait="class_bard"
@@ -1553,37 +1566,37 @@
 	}
 	
 	
-	1159.01.01={
-		effect = {
-			spawn_unit = {
-				owner = ROOT
-				province = 281
-				troops = {
-					pegasus_knights = { 500 500 }
-				}
-				attrition = 0
-				maintenance_multiplier = 0
-			}
-			spawn_unit = {
-				owner = ROOT
-				province = 281
-				troops = {
-					pegasus_knights = { 500 500 }
-				}
-				attrition = 0
-				maintenance_multiplier = 0
-			}
-			spawn_unit = {
-				owner = ROOT
-				province = 281
-				troops = {
-					pegasus_knights = { 500 500 }
-				}
-				attrition = 0
-				maintenance_multiplier = 0
-			}
-		}
-	}
+#	1159.01.01={
+#		effect = {
+#			spawn_unit = {
+#				owner = ROOT
+#				province = 281
+#				troops = {
+#					pegasus_knights = { 500 500 }
+#				}
+#				attrition = 0
+#				maintenance_multiplier = 0
+#			}
+#			spawn_unit = {
+#				owner = ROOT
+#				province = 281
+#				troops = {
+#					pegasus_knights = { 500 500 }
+#				}
+#				attrition = 0
+#				maintenance_multiplier = 0
+#			}
+#			spawn_unit = {
+#				owner = ROOT
+#				province = 281
+#				troops = {
+#					pegasus_knights = { 500 500 }
+#				}
+#				attrition = 0
+#				maintenance_multiplier = 0
+#			}
+#		}
+#	}
 	
 	1170.01.01 = { 
 		death = {

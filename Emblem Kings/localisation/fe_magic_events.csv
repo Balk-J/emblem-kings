@@ -1,0 +1,18 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+magic..title;;;;;;;;;;;;;;x
+magic..desc;;;;;;;;;;;;;;x
+magic..A;;;;;;;;;;;;;;x
+magic..B;;;;;;;;;;;;;;x
+magic..C;;;;;;;;;;;;;;x
+magic..D;;;;;;;;;;;;;;x
+magic.1.desc;Although you are a practicioner of anima magic, you follow the teachings of [Root.Religion.GetHighGodName] first. However, you've been wondering if there's something to all those philosophies about elemental spirits, communion with forces of nature, and the like. Perhaps it's time to leave behind the [Root.Religion.GetName] faith and dedicate yourself to the study of magic?;;;;;;;;;;;;;x
+magic.1.A;I must become a greater mage.;;;;;;;;;;;;;x
+magic.1.B;I will not turn away from the wisdom of [Root.Religion.GetScriptureName].;;;;;;;;;;;;;x
+magic.2.desc;Although you are a practicioner of elder magic, you follow the teachings of [Root.Religion.GetHighGodName] first. However, searching for the great mysteries of the arcane does seem quite rewarding. Perhaps it's time to leave behind the [Root.Religion.GetName] faith and dedicate yourself to the study of magic?;;;;;;;;;;;;;x
+magic.2.A;I must become a greater mage.;;;;;;;;;;;;;x
+magic.2.B;I will not turn away from the wisdom of [Root.Religion.GetScriptureName].;;;;;;;;;;;;;x
+magic.3.desc;You follow the teachings of [Root.Religion.GetName] over a true religion, even though you are not a mage.;;;;;;;;;;;;;x
+magic.3.A;It seems a bit silly.;;;;;;;;;;;;;x
+magic.3.B;But it's so fascinating!;;;;;;;;;;;;;x
+magic.4.desc;You have made a breakthrough in your arcane studies! After many hours of practice, you have mastered long-range lightning magic. It will be helpful at breaking through fortifications from a safe distance.;;;;;;;;;;;;;x
+magic.4.A;Thunder, hear my cry!;;;;;;;;;;;;;x

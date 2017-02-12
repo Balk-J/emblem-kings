@@ -29,3 +29,43 @@
 	}
 }
 
+2={
+	name="Mark"
+	culture=etrurian
+	religion=elimine_church
+	disallow_random_traits="yes" 
+	trait="brilliant_strategist"
+	trait="organizer"
+	trait="siege_leader"
+	trait="narrow_flank_leader"
+	trait="inspiring_leader"
+	trait="genius"
+	trait="gamer"
+	trait="strategist"
+	trait="diligent"
+	1140.01.01 = { 
+		birth=yes 
+	}
+	1152.01.01={
+		add_trait="class_tactician"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_tactician"
+		}
+	} 
+	1159.01.01 = { 
+		employer=111 #Lyn
+	}
+	1160.01.01 = { 
+		employer=107 #Eliwood
+	}
+	1161.01.01 = { 
+		#Somewhere totally uninvolved in future events. Not Bern or Etruria.
+		employer=618 #Mayor of Kafti
+	}
+	1230.01.01={
+		death=yes
+	}
+}
+

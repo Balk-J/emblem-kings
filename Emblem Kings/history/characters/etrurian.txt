@@ -138,12 +138,14 @@
 	
 	father=204
 	mother=205
-	trait="scholarly_theologian"
 	trait="fair"
 	trait="weak" #"Spiritual ailment"?
 	disallow_random_traits="yes" 
 	1133.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag="is_fe7_lucius"
+		}
 	}		
 	1140.01.01= {
 		employer = 121 # Served house Cornwell for 10 years
@@ -160,6 +162,7 @@
 		add_trait="zealous"
 		add_trait="chaste"
 		add_trait="kind"
+		add_trait="scholarly_theologian"
 	} 
 	
 	1181.1.1= {
@@ -266,6 +269,9 @@
 	disallow_random_traits="yes" 
 	1144.01.01 = { # 16 at some point in FE7
 		birth=yes 
+		effect = {
+			set_character_flag="is_fe7_serra"
+		}
 	}		
 	1156.01.01={
 		add_trait="class_cleric"
@@ -301,6 +307,9 @@
 	disallow_random_traits="yes" 
 	1131.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
 	}	
 	
 	1143.01.01={
@@ -565,6 +574,9 @@
 	trait="just"
 	1153.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
 	}	
 	1165.01.01={
 		add_trait="class_mage_female"
@@ -783,6 +795,7 @@
 	
 	1145.01.01 = { # 15 as of Eliwood's story in FE7. "Three years ago... Yes, on a snowy night... Lord Pent brought you home and said, 'This is my student.' You were only 12..."
 		birth=yes 
+		set_character_flag="is_fe7_erk"
 	}	
 	
 	1157.01.01 = {
@@ -1073,6 +1086,20 @@
 	1165.01.01 = { 
 		birth=yes 
 	}	
+	
+	#Adopted by Douglas
+	1171.01.01 = { 
+		dynasty=208 
+		effect={
+			d_arritim = {
+				holder_scope = {
+					ROOT = { set_father = PREV }
+				}
+			}
+			#set_father=218
+		}
+	}	
+	
 	1177.01.01={
 		add_trait="class_dancer"
 		effect = {
@@ -1088,19 +1115,6 @@
 		add_trait="lustful"
 		add_trait="charitable"
 	} 
-	
-	#Adopted by Douglas
-	1171.01.01 = { 
-		dynasty=208 
-		effect={
-			d_arritim = {
-				holder_scope = {
-					ROOT = { set_father = PREV }
-				}
-			}
-			#set_father=218
-		}
-	}	
 	
 	1229.1.1= {
 		death = yes

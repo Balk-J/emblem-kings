@@ -26,6 +26,7 @@ e_nergal = {
 	assimilate = no # Nothing drifts in or out
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	is_conquered = yes
 }
 
 # Lyndis' Legion
@@ -76,20 +77,6 @@ d_blackbone_clan = {
 	}
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-}
-
-
-
-# The Kingdom of Lycia proper. In canon, formed by Lilina after the events of FE6
-k_lycia = {
-	color={ 20 80 162 }
-	allow = {
-		FROM = {
-			any_previous_holder = {
-				always = yes
-			}
-		}
-	}
 }
 
 # The new nation formed by Ekhidna after kicking Etruria out of the Western Isles

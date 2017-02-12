@@ -5,8 +5,8 @@ class.2.title;Class;;;;;;;;;;;;;x
 class.2.desc;It is time to decide what kind of combat or magical training my [GetFromRelation] [From.GetTitledFirstName] [From.GetOnlyDynastyName] should receive.;;;;;;;;;;;;;x
 class.2.A;[From.GetHerHisCap] talents are like [From.GetHerHis] father's.;;;;;;;;;;;;;x
 class.2.B;[From.GetHerHisCap] talents are like [From.GetHerHis] mother's.;;;;;;;;;;;;;x
-class.2.C;[From.GetSheHeCap] should be trained like any other solider in the army.;;;;;;;;;;;;;x
-class.2.C.tooltip;[From.GetTitledFirstName] will likely become a Soldier. [From.GetSheHeCap] may learn a different class based on [From.GetHerHis] culture.;;;;;;;;;;;;;x
+class.2.C;Send [From.GetHerHim] to train with the army.;;;;;;;;;;;;;x
+class.2.C.tooltip;[From.GetTitledFirstName] will be assigned a random class based on [From.GetHerHis] culture.;;;;;;;;;;;;;x
 class.2.D;[From.GetSheHeCap] will not receive special training.;;;;;;;;;;;;;x
 class.3.tooltip;[From.GetFirstName] will be assigned a class in [From.GetHerHis] father's class set.;;;;;;;;;;;;;x
 class.3.title;Class;;;;;;;;;;;;;x
@@ -129,6 +129,7 @@ class.27.A;I'll train with some new people.;;;;;;;;;;;;;x
 class.27.A.tooltip;[Root.GetTitledFirstName] changes to a new class determined by [Root.GetHerHis] culture.;;;;;;;;;;;;;x
 class.27.B;I don't want to change how I fight.;;;;;;;;;;;;;x
 class.28.desc;;;;;;;;;;;;;;x
+class.29.desc;Your training has given you valuable experience. You've definitely grown stronger!;;;;;;;;;;;;x
 class..title;;;;;;;;;;;;;;x
 class..desc;;;;;;;;;;;;;;x
 class..A;;;;;;;;;;;;;;x

@@ -698,92 +698,7 @@ character_event = {
 	option = {
 		name = "fe_plot.7.A"
 		#
-		hidden_tooltip = {
-			random_independent_ruler = {
-				limit = {
-					ai = yes
-					controls_religion = no
-					is_adult = yes
-					is_within_diplo_range = ROOT
-					mercenary = no
-					holy_order = no
-					primary_title = {
-						is_landless_type_title = no
-					}
-					NOT = {
-						ROOT = {
-							any_liege = {
-								character = PREVPREV
-							}
-						}
-					}
-				}
-					
-				create_character = {
-					random_traits = yes
-					religion = PREV
-					culture = PREV
-					female = no
-					dynasty=none
-					age = 30
-					trait = intricate_webweaver
-					trait = class_rogue
-					employer = PREV
-				}
-				
-				new_character = {
-					set_character_flag = fire_emblem_thief
-					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-					if = {
-						limit = {
-							ROOT = {
-								liege = {
-									primary_title = {
-										region = world_elibe
-									}
-								}
-							}
-						}
-						add_trait = fire_emblem_elibe
-						
-						ROOT = {
-							liege = {
-								if = {
-									limit = {
-										NOT = {trait = fire_emblem_elibe}
-									}
-									random_realm_character = {
-										limit = {
-											trait = fire_emblem_elibe
-										}
-										remove_trait = fire_emblem_elibe
-										remove_character_modifier = holds_fire_emblem
-									}
-								}
-								if = {
-									limit = {
-										trait = fire_emblem_elibe
-									}
-									remove_trait = fire_emblem_elibe
-									remove_character_modifier = holds_fire_emblem
-								}
-								opinion = {
-									modifier = opinion_dirty_thief
-									who = PREVPREV
-									years = 10
-								} 
-								reverse_opinion = {
-									modifier = opinion_job_target
-									who = PREVPREV
-									years = 10
-								}
-							}
-						}
-					}	
-				}				
-			}
 		
-		}
 		#
 	}
 	
@@ -802,95 +717,6 @@ character_event = {
 	
 	option = {
 		name = "fe_plot.8.A"
-		
-		#
-		hidden_tooltip = {
-			random_independent_ruler = {
-				limit = {
-					ai = yes
-					controls_religion = no
-					is_adult = yes
-					is_within_diplo_range = ROOT
-					mercenary = no
-					holy_order = no
-					primary_title = {
-						is_landless_type_title = no
-					}
-					NOT = {
-						ROOT = {
-							any_liege = {
-								character = PREVPREV
-							}
-						}
-					}
-				}
-					
-				create_character = {
-					random_traits = yes
-					religion = PREV
-					culture = PREV
-					female = no
-					dynasty=none
-					age = 30
-					trait = intricate_webweaver
-					trait = class_rogue
-					employer = PREV
-				}
-				
-				new_character = {
-					set_character_flag = fire_emblem_thief
-					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-					if = {
-						limit = {
-							ROOT = {
-								liege = {
-									primary_title = {
-										region = world_elibe
-									}
-								}
-							}
-						}
-						add_trait = fire_emblem_elibe
-						
-						ROOT = {
-							liege = {
-								if = {
-									limit = {
-										NOT = {trait = fire_emblem_elibe}
-									}
-									random_realm_character = {
-										limit = {
-											trait = fire_emblem_elibe
-										}
-										remove_trait = fire_emblem_elibe
-										remove_character_modifier = holds_fire_emblem
-									}
-								}
-								if = {
-									limit = {
-										trait = fire_emblem_elibe
-									}
-									remove_trait = fire_emblem_elibe
-									remove_character_modifier = holds_fire_emblem
-								}
-								opinion = {
-									modifier = opinion_dirty_thief
-									who = PREVPREV
-									years = 10
-								} 
-								reverse_opinion = {
-									modifier = opinion_job_target
-									who = PREVPREV
-									years = 10
-								}
-							}
-						}
-					}	
-				}		
-			}
-		
-		}
-		#
 	}
 }
 
@@ -1016,6 +842,108 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA8163"
+		
+		#
+		hidden_tooltip = {
+			random_independent_ruler = {
+				limit = {
+					ai = yes
+					controls_religion = no
+					is_adult = yes
+					is_within_diplo_range = ROOT
+					mercenary = no
+					holy_order = no
+					primary_title = {
+						is_landless_type_title = no
+					}
+					NOT = {
+						is_liege_or_above = ROOT
+					}
+				}
+					
+				create_character = {
+					random_traits = yes
+					religion = THIS
+					culture = THIS
+					female = no
+					dynasty=none
+					age = 30
+					trait = intricate_webweaver
+					trait = class_rogue
+					employer = THIS
+				}
+				
+				new_character = {
+					set_character_flag = fire_emblem_thief
+					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+					
+					opinion = {
+						modifier = opinion_employer
+						who = ROOT
+						years = 10
+					} 
+					
+					if = {
+						limit = {
+							FROM = {
+								liege = {
+									primary_title = {
+										region = world_elibe
+									}
+								}
+							}
+						}
+						add_trait = fire_emblem_elibe
+						
+						FROM = {
+							liege = {
+								if = {
+									limit = {
+										NOT = {trait = fire_emblem_elibe}
+									}
+									random_realm_character = {
+										limit = {
+											trait = fire_emblem_elibe
+										}
+										remove_trait = fire_emblem_elibe
+										remove_character_modifier = holds_fire_emblem
+										opinion = {
+											modifier = opinion_dirty_thief
+											who = PREVPREVPREV
+											years = 10
+										} 
+										reverse_opinion = {
+											modifier = opinion_job_target
+											who = PREVPREVPREV
+											years = 10
+										}
+									}
+								}
+								if = {
+									limit = {
+										trait = fire_emblem_elibe
+									}
+									remove_trait = fire_emblem_elibe
+									remove_character_modifier = holds_fire_emblem
+									opinion = {
+										modifier = opinion_dirty_thief
+										who = PREVPREV
+										years = 10
+									} 
+									reverse_opinion = {
+										modifier = opinion_job_target
+										who = PREVPREV
+										years = 10
+									}
+								}
+							}
+						}
+					}	
+				}				
+			}
+		
+		}
+		#
 	}
 }
 
@@ -1030,6 +958,108 @@ character_event = {
 	
 	option = {
 		name = "fe_plot.15.A"
+		
+		#
+		hidden_tooltip = {
+			random_independent_ruler = {
+				limit = {
+					ai = yes
+					controls_religion = no
+					is_adult = yes
+					is_within_diplo_range = ROOT
+					mercenary = no
+					holy_order = no
+					primary_title = {
+						is_landless_type_title = no
+					}
+					NOT = {
+						is_liege_or_above = ROOT
+					}
+				}
+					
+				create_character = {
+					random_traits = yes
+					religion = THIS
+					culture = THIS
+					female = no
+					dynasty=none
+					age = 30
+					trait = intricate_webweaver
+					trait = class_rogue
+					employer = THIS
+				}
+				
+				new_character = {
+					set_character_flag = fire_emblem_thief
+					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+					
+					opinion = {
+						modifier = opinion_employer
+						who = ROOT
+						years = 10
+					} 
+					
+					if = {
+						limit = {
+							FROM = {
+								liege = {
+									primary_title = {
+										region = world_elibe
+									}
+								}
+							}
+						}
+						add_trait = fire_emblem_elibe
+						
+						FROM = {
+							liege = {
+								if = {
+									limit = {
+										NOT = {trait = fire_emblem_elibe}
+									}
+									random_realm_character = {
+										limit = {
+											trait = fire_emblem_elibe
+										}
+										remove_trait = fire_emblem_elibe
+										remove_character_modifier = holds_fire_emblem
+										opinion = {
+											modifier = opinion_dirty_thief
+											who = PREVPREVPREV
+											years = 10
+										} 
+										reverse_opinion = {
+											modifier = opinion_job_target
+											who = PREVPREVPREV
+											years = 10
+										}
+									}
+								}
+								if = {
+									limit = {
+										trait = fire_emblem_elibe
+									}
+									remove_trait = fire_emblem_elibe
+									remove_character_modifier = holds_fire_emblem
+									opinion = {
+										modifier = opinion_dirty_thief
+										who = PREVPREV
+										years = 10
+									} 
+									reverse_opinion = {
+										modifier = opinion_job_target
+										who = PREVPREV
+										years = 10
+									}
+								}
+							}
+						}
+					}	
+				}				
+			}
+		
+		}
+		#
 	}
 }
 
@@ -1209,24 +1239,695 @@ character_event = {
 	}
 }
 
-# Success in murdering child
+
+# Starting point of personal assassination event chain
 character_event = {
-	id = fe_plot.19	
-	hide_window = yes	
+	id = fe_plot.40
+	hide_window = yes
 	is_triggered_only = yes
 	
 	immediate = {
-		piety = -1000
+		# Check plotter's intrigue against target's STATE intrigue to see if plotter is spotted on the approach.
+		random_list = {
+			75 = {
+				modifier = {
+					factor = 0
+					plot_target_char = { 
+						trait = in_hiding
+					}
+				}
+				modifier = {
+					factor = 1.25
+					intrigue = 5
+					NOT = { intrigue = 10 }
+				}
+				modifier = {
+					factor = 1.5
+					intrigue = 10
+					NOT = { intrigue = 15 }
+				}
+				modifier = {
+					factor = 2
+					intrigue = 15
+					NOT = { intrigue = 20 }
+				}
+				modifier = {
+					factor = 3
+					intrigue = 20
+					NOT = { intrigue = 25 }
+				}
+				modifier = {
+					factor = 4
+					intrigue = 25
+					NOT = { intrigue = 30 }
+				}
+				modifier = {
+					factor = 5
+					intrigue = 30
+				}
+				
+				character_event = { id = fe_plot.43 }
+			}
+			25 = {
+				modifier = {
+					factor = 1.25
+					plot_target_char = { realm_intrigue = 5 }
+					NOT = { plot_target_char = { realm_intrigue = 10 } }
+				}
+				modifier = {
+					factor = 1.5
+					plot_target_char = { realm_intrigue = 10 }
+					NOT = { plot_target_char = { realm_intrigue = 15 } }
+				}
+				modifier = {
+					factor = 2
+					plot_target_char = { realm_intrigue = 15 }
+					NOT = { plot_target_char = { realm_intrigue = 20 } }
+				}
+				modifier = {
+					factor = 3
+					plot_target_char = { realm_intrigue = 20 }
+					NOT = { plot_target_char = { realm_intrigue = 25 } }
+				}
+				modifier = {
+					factor = 4
+					plot_target_char = { realm_intrigue = 25 }
+					NOT = { plot_target_char = { realm_intrigue = 30 } }
+				}
+				modifier = {
+					factor = 5
+					plot_target_char = { realm_intrigue = 30 }
+					NOT = { plot_target_char = { realm_intrigue = 35 } }
+				}
+				modifier = {
+					factor = 6
+					plot_target_char = { realm_intrigue = 35 }
+					NOT = { plot_target_char = { realm_intrigue = 40 } }
+				}
+				modifier = {
+					factor = 7
+					plot_target_char = { realm_intrigue = 40 }
+				}
+				character_event = { id = fe_plot.41 }
+				plot_target_char = { character_event = { id = fe_plot.42 } }
+			}
+		}
 	}
 }
 
-# Attempted to murder child and discovered
+# Notify plotter of failed infiltration
 character_event = {
-	id = fe_plot.20
-	hide_window = yes	
+	id = fe_plot.41
+	desc = "fe_plot.41.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.41.A"		
+	}
+}
+
+# Notify target of infiltration attempt
+character_event = {
+	id = fe_plot.42
+	desc = "fe_plot.42.desc"
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.42.A"
+		random = {
+			chance = 20
+			if = {
+				limit = {
+					NOT = {trait = trusting}
+				}
+				add_trait = paranoid
+			}
+			if = {
+				limit = {
+					trait = trusting
+				}
+				remove_trait = trusting
+			}
+		}
+	}
+}
+
+# Plotter has gained access to target's castle and attempts assassination
+character_event = {
+	id = fe_plot.43
+	hide_window = yes
 	is_triggered_only = yes
 	
 	immediate = {
-		piety = -100
+		# Check plotter's intrigue against target's intrigue to see if plotter stabs them
+		random_list = {
+			# Stabs target without alerting them.
+			50 = {
+				modifier = {
+					factor = 1.25
+					intrigue = 5
+					NOT = { intrigue = 10 }
+				}
+				modifier = {
+					factor = 1.5
+					intrigue = 10
+					NOT = { intrigue = 15 }
+				}
+				modifier = {
+					factor = 2
+					intrigue = 15
+					NOT = { intrigue = 20 }
+				}
+				modifier = {
+					factor = 3
+					intrigue = 20
+					NOT = { intrigue = 25 }
+				}
+				modifier = {
+					factor = 4
+					intrigue = 25
+					NOT = { intrigue = 30 }
+				}
+				modifier = {
+					factor = 5
+					intrigue = 30
+				}
+				
+				set_character_flag = murder_in_motion
+				plot_target_char = { character_event = { id = fe_plot.48 } }			
+				
+			}
+			50 = {
+				modifier = {
+					factor = 0
+					plot_target_char = { 
+						OR = {
+							trait = incapable
+							trait = dark_incapable							
+						}
+					}
+				}
+				modifier = {
+					factor = 1.25
+					plot_target_char = { trait = shrewd }
+				}
+				modifier = {
+					factor = 1.5
+					plot_target_char = { trait = quick }
+				}
+				modifier = {
+					factor = 2
+					plot_target_char = { trait = genius }
+				}
+				modifier = {
+					factor = 5
+					plot_target_char = { trait = paranoid }
+				}
+				modifier = {
+					factor = 1.25
+					plot_target_char = { intrigue = 5 }
+					NOT = { plot_target_char = { intrigue = 10 } }
+				}
+				modifier = {
+					factor = 1.5
+					plot_target_char = { intrigue = 10 }
+					NOT = { plot_target_char = { intrigue = 15 } }
+				}
+				modifier = {
+					factor = 2
+					plot_target_char = { intrigue = 15 }
+					NOT = { plot_target_char = { intrigue = 20 } }
+				}
+				modifier = {
+					factor = 3
+					plot_target_char = { intrigue = 20 }
+					NOT = { plot_target_char = { intrigue = 25 } }
+				}
+				modifier = {
+					factor = 4
+					plot_target_char = { intrigue = 25 }
+					NOT = { plot_target_char = { intrigue = 30 } }
+				}
+				modifier = {
+					factor = 5
+					plot_target_char = { intrigue = 30 }
+				}
+				character_event = { id = fe_plot.49 }
+			}
+		}
+	}
+}
+
+# Notify target they were stabbed.
+character_event = {
+	id = fe_plot.44
+	desc = "fe_plot.44.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.44.A"
+		
+		death = { 
+			death_reason = death_murder_unknown
+			killer = FROMFROM
+		}		
+	}
+}
+
+# Notify target they were stabbed, but they saw who did it.
+character_event = {
+	id = fe_plot.45
+	desc = "fe_plot.45.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.45.A"
+		
+		save_event_target_as = target_victim
+		FROMFROM = { character_event = { id = 10 } } # Consequences of discovery
+		clear_event_target = target_victim
+		
+		death = { 
+			death_reason = death_murder
+			killer = FROMFROM
+		}		
+	}
+}
+
+# Notify plotter; success, not discovered.
+character_event = {
+	id = fe_plot.46
+	desc = "fe_plot.46.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.46.A"
+	}
+}
+
+# Notify plotter; success, but discovered
+character_event = {
+	id = fe_plot.47
+	desc = "fe_plot.47.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.47.A"
+	}
+}
+
+# Plotter has snuck up on target and will kill them - do they get away with it?
+character_event = {
+	id = fe_plot.48
+	desc = "fe_plot.48.desc"
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	immediate = {
+		# Did the plotter get away clean?
+		FROM = {
+			random = {
+				chance = 50
+				modifier = {
+					factor = 1.3
+					intrigue = 10
+					NOT = { intrigue = 15 }
+				}
+				modifier = {
+					factor = 1.5
+					intrigue = 15
+					NOT = { intrigue = 20 }
+				}
+				modifier = {
+					factor = 1.75
+					intrigue = 20
+					NOT = { intrigue = 25 }
+				}
+				modifier = {
+					factor = 1.8
+					intrigue = 25
+					NOT = { intrigue = 30 }
+				}
+				modifier = {
+					factor = 1.9
+					intrigue = 30
+				}
+				ROOT = { set_character_flag = assassinated_in_silence }				
+			}
+		}
+		
+	}
+	
+	option = {
+		name = "fe_plot.48.A"
+		trigger = { has_character_flag = assassinated_in_silence }		
+		character_event = { id = fe_plot.44 }
+		FROM = { character_event = { id = fe_plot.46 } }
+	}
+	option = {
+		name = "fe_plot.48.B"
+		trigger = { NOT = { has_character_flag = assassinated_in_silence } }
+		character_event = { id = fe_plot.45 }
+		FROM = { character_event = { id = fe_plot.47 } }
+	}
+}
+
+# Plotter was spotted by the assassination target!
+character_event = {
+	id = fe_plot.49
+	desc = "fe_plot.49.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	# Run
+	option = {
+		name = "fe_plot.49.A"
+		plot_target_char = {			
+			save_event_target_as = target_victim
+		}
+		character_event = { id = 11 } # Consequences of discovery
+		clear_event_target = target_victim
+		
+		reveal_plot = yes
+			
+		plot_target_char = {			
+			character_event = { id = fe_plot.50 }
+		}
+	}
+	# Fight
+	option = {
+		name = "fe_plot.49.B"
+		#character_event = { id = 11 } # Consequences of discovery
+		#clear_event_target = target_victim
+		
+		#reveal_plot = yes
+		custom_tooltip = {
+			text = fe_plot.49.B.tooltip 
+			hidden_tooltip = {
+				plot_target_char = {			
+					character_event = { id = fe_plot.51 }
+				}
+			}
+		}
+	}
+}
+
+# Notify target of the murder attempt
+character_event = {
+	id = fe_plot.50
+	desc = "fe_plot.50.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.50.A"
+	}
+}
+
+# Target attacked by assassin. ROOT = target, FROM = plotter
+character_event = {
+	id = fe_plot.51
+	desc = "fe_plot.51.desc"
+	picture = GFX_evt_shadow
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		# Did the plotter win the fight?
+		random = {
+			# start with 50/50 odds, and modify based on combat rating difference
+			chance = 50
+			modifier = {
+				factor = 0.8
+				combat_rating_diff = { character = FROM value = 1 }
+				NOT = { combat_rating_diff = { character = FROM value = 2 } }
+			}
+			modifier = {
+				factor = 0.5
+				combat_rating_diff = { character = FROM value = 2 }
+				NOT = { combat_rating_diff = { character = FROM value = 3 } }
+			}
+			modifier = {
+				factor = 0.3
+				combat_rating_diff = { character = FROM value = 3 }
+				NOT = { combat_rating_diff = { character = FROM value = 4 } }
+			}
+			modifier = {
+				factor = 0.2
+				combat_rating_diff = { character = FROM value = 4 }
+				NOT = { combat_rating_diff = { character = FROM value = 5 } }
+			}
+			modifier = {
+				factor = 0.1
+				combat_rating_diff = { character = FROM value = 5 }
+			}
+			modifier = { #60/40
+				factor = 1.2
+				FROM = { combat_rating_diff = { character = ROOT value = 1 } }
+				NOT = { FROM = { combat_rating_diff = { character = ROOT value = 2 } } }
+			}
+			modifier = {#75/25
+				factor = 1.5
+				FROM = { combat_rating_diff = { character = ROOT value = 2 } }
+				NOT = { FROM = { combat_rating_diff = { character = ROOT value = 3 } } }
+			}
+			modifier = {#85/15
+				factor = 1.7
+				FROM = { combat_rating_diff = { character = ROOT value = 3 } }
+				NOT = { FROM = { combat_rating_diff = { character = ROOT value = 4 } } }
+			}
+			modifier = {#90/10
+				factor = 1.8
+				FROM = { combat_rating_diff = { character = ROOT value = 4 } }
+				NOT = { FROM = { combat_rating_diff = { character = ROOT value = 5 } } }
+			}
+			modifier = { #95/5
+				factor = 1.9
+				FROM = { combat_rating_diff = { character = ROOT value = 5 } }
+			}
+			set_character_flag = assassinated 			
+		}
+		
+	}
+	
+	option = {
+		name = "fe_plot.51.A"
+		trigger = { has_character_flag = assassinated }		
+		hidden_tooltip = {
+			character_event = { id = fe_plot.52 }
+			FROM = { 
+				set_character_flag = murder_in_motion
+				character_event = { id = fe_plot.53 } 
+			}
+		}
+	}
+	option = {
+		name = "fe_plot.51.B"
+		trigger = { NOT = { has_character_flag = assassinated } }
+		
+		hidden_tooltip = {
+			
+			# Did the plotter get killed in the fight?
+			random = {
+				chance = 30
+				FROM = { set_character_flag = assassinated }
+			}
+			
+			if = {
+				limit = {
+					FROM = {
+						has_character_flag = assassinated
+					}
+				}
+				character_event = { id = fe_plot.54 }
+				FROM = { character_event = { id = fe_plot.55 } }
+			}
+			if = {
+				limit = {
+					FROM = {
+						NOT = { has_character_flag = assassinated }
+					}
+				}
+				character_event = { id = fe_plot.56 }
+				FROM = { character_event = { id = fe_plot.57 } }
+			}
+		}
+	}
+}
+
+
+# Notify target they lost the fight
+character_event = {
+	id = fe_plot.52
+	desc = "fe_plot.52.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.52.A"
+		
+		hidden_tooltip = {
+			save_event_target_as = target_victim
+			FROMFROM = { character_event = { id = 10 } } # Consequences of discovery
+			clear_event_target = target_victim
+		}
+		
+		death = { 
+			death_reason = death_murder
+			killer = FROMFROM
+		}		
+	}
+}
+
+# Notify plotter; won the fight
+character_event = {
+	id = fe_plot.53
+	desc = "fe_plot.53.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.53.A"
+		
+		random = {
+			chance = 20
+			add_trait = wounded
+			hidden_tooltip = {
+				character_event = {
+					id = 38280 #Notify Wounded
+				}
+			}
+		}
+	}
+}
+
+# Notify target they won the fight and killed the plotter
+character_event = {
+	id = fe_plot.54
+	desc = "fe_plot.54.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.54.A"
+				
+		random = {
+			chance = 20
+			add_trait = wounded
+			hidden_tooltip = {
+				character_event = {
+					id = 38280 #Notify Wounded
+				}
+			}
+		}
+	}
+}
+
+# Notify plotter; lost the fight and died
+character_event = {
+	id = fe_plot.55
+	desc = "fe_plot.55.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "CURSES"
+		
+		death = { 
+			death_reason = death_battle
+			killer = FROM
+		}		
+	}
+}
+
+# Notify target they won the fight and imprisoned the plotter
+character_event = {
+	id = fe_plot.56
+	desc = "fe_plot.56.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		save_event_target_as = target_victim
+		FROMFROM = { character_event = { id = 11 } } # Consequences of discovery
+		clear_event_target = target_victim
+	}
+	
+	option = {
+		name = "fe_plot.56.A"
+		FROMFROM = { 
+			reveal_plot = yes 
+			#imprison = ROOT
+		}
+		custom_tooltip = { text = fe_plot.56.A.tooltip }
+		random = {
+			chance = 20
+			add_trait = wounded
+			hidden_tooltip = {
+				character_event = {
+					id = 38280 #Notify Wounded
+				}
+			}
+		}
+	}
+}
+
+# Notify plotter; lost the fight and was imprisoned
+character_event = {
+	id = fe_plot.57
+	desc = "fe_plot.57.desc"
+	picture = GFX_evt_shadow
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_plot.57.A"
+			
+		random = {
+			chance = 20
+			add_trait = wounded
+			hidden_tooltip = {
+				character_event = {
+					id = 38280 #Notify Wounded
+				}
+			}
+		}
+		imprison = FROM
 	}
 }

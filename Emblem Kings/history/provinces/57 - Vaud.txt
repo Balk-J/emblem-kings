@@ -21,7 +21,7 @@ religion = elimine_church
 	#b_fort_kite = castle
 	#b_fort_shrike = castle
 }
-1155.1.1={
+1156.1.1={
 	b_fort_kite = castle
 	b_fort_shrike = castle
 }

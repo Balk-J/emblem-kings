@@ -1,0 +1,293 @@
+namespace = fe7_lyn
+
+##################################
+# FE7 / The Blazing Sword Events #
+##################################
+# For Lyn's story.
+
+# Some are in the FE7 file - move those here later.
+
+
+#Ly
+character_event = {
+	id = fe7_lyn.1
+	desc = fe7_lyn.1.desc
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+		d_caelin = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_kent"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = THIS
+						culture = lycian
+						female = no
+						age = 21
+						trait="diligent"
+						trait="patient"
+						trait="chaste"
+						trait="brave"
+						trait="just"
+						trait="thrifty_clerk"
+						trait="cavalry_leader"	
+						trait="unyielding_leader"
+						trait="class_cavalier"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_cavalier"
+						set_character_flag = "is_fe7_kent"
+					}
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_sain"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = THIS
+						culture = lycian
+						female = no
+						age = 23
+						trait="gregarious"
+						trait="lustful"
+						trait="brave"
+						trait="just"
+						trait="tough_soldier"
+						trait="cavalry_leader"	
+						trait="experimenter"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_cavalier"
+						set_character_flag = "is_fe7_sain"
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = fe7_lyn.1.A
+		
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_kent"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_loyal_retainer
+				who = ROOT
+				years = 100
+			}  
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_sain"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_loyal_retainer
+				who = ROOT
+				years = 100
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+		hidden_tooltip = {
+			character_event = { id = fe7_lyn.2 days = 10 random = 4 }
+		}
+	}
+	option = {
+		name = fe7_lyn.1.B
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 200
+	}
+}
+
+# Recruit Florina & Wil
+character_event = {
+	id = fe7_lyn.2
+	desc = fe7_lyn.2.desc
+	picture = GFX_evt_pilgrims_epic_journey
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+		c_bulgar = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_florina"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = elimine_church
+						culture = ilian
+						female = yes
+						age = 15
+						trait="naive_appeaser"
+						trait="winter_soldier"
+						trait="mountain_terrain_leader"
+						trait="rough_terrain_leader"
+						trait="shy"
+						trait="kind"
+						trait="chaste"
+						trait="craven"
+						trait="class_pegasus_knight"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_pegasus_knight"
+						set_character_flag = "is_fe7_florina"
+						add_friend = ROOT
+					}
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_wil"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = elimine_church
+						culture = lycian
+						female = no
+						age = 17						
+						trait="class_archer"
+						trait="adventurer"	
+						trait="misguided_warrior"
+						trait="light_foot_leader"
+						trait="gregarious"
+						trait="brave"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_archer"
+						set_character_flag = "is_fe7_wil"
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = fe7_lyn.2.A
+		
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_florina"
+			}
+			move_character = ROOT
+		}
+		
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_wil"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_gained_respect
+				who = ROOT
+				years = 5
+			} 
+			opinion = {
+				modifier = opinion_gained_respect
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+		hidden_tooltip = {
+			wealth=1#character_event = { id = fe7_lyn.3 days = 10 random = 4 }
+		}
+	}
+	option = {
+		name = fe7_lyn.2.B
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 200
+	}
+}
+
+# Recruit Dorcas
+
+# Recruit Erk & Serra
+
+# Recruit Matthew & Rath
+
+# Recruit Nils, Ninian & Lucius
+
+# Recruit Wallace
+
+# After victory - split the party:
+# Kent, Sain, Florina, Wil - with Lyn
+# Dorcas - Bern
+# Erk - Pent
+# Serra, Matthew, Rath - Ostia
+# Lucius - ??? with Raven
+# Wallace - ??? kill Taliver Bandits
+# Ninian, Nils - captured by Nergal.
+
+

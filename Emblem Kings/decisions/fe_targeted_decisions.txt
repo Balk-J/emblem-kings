@@ -1,0 +1,198 @@
+targetted_decisions = {
+	demand_fire_emblem = {
+		only_playable = yes
+		filter = sub_realm
+		ai_target_filter = sub_realm
+		
+		from_potential = {
+			is_adult = yes
+			is_ruler = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			primary_title = {
+				has_title_flag = fire_emblem_succession	
+			}	
+			NOT={#NOR = {
+				has_character_modifier = holds_fire_emblem
+				#any_realm_character  = {
+				#	has_character_modifier = holds_fire_emblem
+				#}
+			}
+			NOR = {
+				AND = {
+					primary_title = {
+						region = world_elibe
+					}	
+					#OR = {
+						trait = fire_emblem_elibe
+					#	any_realm_character = {
+					#		trait = fire_emblem_elibe
+					#		prisoner = no
+					#	}
+					#}
+					
+				}
+			}
+		}
+		
+		potential = {	
+			has_character_modifier = holds_fire_emblem
+			OR = {
+				AND = {
+					FROM = {
+						primary_title = {
+							region = world_elibe
+						}	
+					}
+					trait = fire_emblem_elibe					
+				}
+			}
+		}
+		
+		allow = {
+			OR = {
+				NOT = {
+					reverse_has_opinion_modifier = { who = FROM modifier = opinion_denied_fire_emblem_request }
+				}
+				owes_favor_to = FROM
+			}
+		}
+		
+		effect = {			
+			custom_tooltip = {			
+				text = "demand_fire_emblem.tooltip"
+				hidden_tooltip = {
+					if = {
+						limit = {
+							owes_favor_to = FROM
+						}
+						FROM = {character_event = { id = fire_emblem.9 }}
+					}
+					if = {
+						limit = {
+							NOT = {owes_favor_to = FROM}
+						}
+						character_event = { id = fire_emblem.6 days = 10 random = 3 }
+					}
+				}
+			}
+		}
+		
+		
+		ai_will_do = {
+			factor = 0.1
+			
+			# I don't care, or I WANT it gone
+			modifier = {
+				factor = 0
+				FROM = {
+					OR = {
+						trait = content
+						has_plot = plot_disinherit_character
+					}
+				}
+			}
+			
+			# As long as it's in the realm, I'm okay
+			modifier = {
+				factor = 0.01
+				FROM = {
+					any_realm_character  = {
+						has_character_modifier = holds_fire_emblem
+						OR = {
+							AND = {
+								primary_title = {
+									region = world_elibe
+								}	
+								any_realm_character = {
+									trait = fire_emblem_elibe
+									prisoner = no
+								}					
+							}
+						}
+					}
+				}
+			}
+			# Important to me
+			modifier = {
+				factor = 5
+				FROM = {
+					OR = {
+						trait = just
+						trait = proud
+					}
+				}
+			}
+			# Eh, whatever
+			modifier = {
+				factor = 0.5 # Less likely to do it
+				FROM = {
+					trait = arbitrary
+					trait = humble
+					trait = slothful
+					trait = craven
+				}
+			}
+		}
+	}
+	
+	take_fire_emblem_from_prisoner = {
+		only_playable = yes
+		filter = court
+		ai_target_filter = court
+
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+
+		potential = {
+			host = { character = FROM }
+			prisoner = yes
+			age = 6
+		}
+
+		allow = {
+			prisoner = yes
+			has_character_modifier = holds_fire_emblem
+		}
+
+		effect = {
+			FROM = { add_character_modifier = { name = holds_fire_emblem duration = -1 } }
+			if = {
+				limit = {
+					trait = fire_emblem_elibe
+				}
+				remove_trait = fire_emblem_elibe
+				remove_character_modifier = holds_fire_emblem
+				FROM = { add_trait = fire_emblem_elibe }
+			}
+
+			prisoner = no
+			hidden_tooltip = { remove_prison_reason_effect = yes }
+		}
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0.2
+			
+			modifier = {
+				factor = 0
+				reverse_opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0.2 # Less likely to do it
+			}
+			modifier = {
+				factor = 5
+				FROM = {
+					trait = proud
+				}
+			}
+		}
+	}
+}

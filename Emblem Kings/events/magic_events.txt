@@ -1,0 +1,328 @@
+namespace = magic
+
+# I'm a mage, but I follow a different religion...
+character_event = {
+	id = magic.1
+	desc = "magic.1.desc"
+	picture = "GFX_evt_monk" 	
+
+	is_triggered_only = yes
+	
+	trigger = {
+		age = 12
+		NOT = { trait = zealous }
+		has_character_flag = class_selected 
+		NOT = {	has_character_flag = magic_or_faith_question }
+		NOT = { trait = zealous }
+		NOT = { religion = anima }
+		OR = {
+			trait = class_mage
+			trait = class_mage_female
+			trait = class_sage
+			trait = class_sage_female
+			trait = class_mage_knight
+			trait = class_mage_knight_female
+			trait = class_archsage
+		}
+	}
+	
+	immediate = {
+		set_character_flag = magic_or_faith_question
+	}
+	
+	option = {
+		name = "magic.1.A"
+		ai_chance = {
+			factor = 60
+		}
+		if = {
+			limit = {
+				religion_group = light_group
+			}
+			add_trait = sympathy_light
+		}
+		if = {
+			limit = {
+				religion_group = pagan_group
+			}
+			add_trait = sympathy_pagans
+		}
+		
+		religion = anima
+		piety = 50
+		prestige = -100
+	}
+	
+	option = {
+		name = "magic.1.B"	
+		ai_chance = {
+			factor = 40
+		}	
+		
+		random = {
+			chance = 20
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				add_trait = zealous
+			}
+			if = {
+				limit = {
+					trait = cynical
+				}
+				remove_trait = cynical
+			}
+		}
+	}
+}
+
+# I'm a dark mage, but I follow a different religion...
+character_event = {
+	id = magic.2
+	desc = "magic.2.desc"
+	picture = "GFX_evt_monk" 	
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		age = 12
+		has_character_flag = class_selected 
+		NOT = {	has_character_flag = magic_or_faith_question }
+		NOT = { trait = zealous }
+		NOT = { religion = dark }
+		OR = {
+			trait = class_shaman
+			trait = class_shaman_female
+			trait = class_druid
+			trait = class_druid_female
+			trait = class_archdruid
+			trait = class_dark_druid
+		}
+	}
+	
+	immediate = {
+		set_character_flag = magic_or_faith_question
+	}
+	
+	option = {
+		name = "magic.2.A"
+		ai_chance = {
+			factor = 60
+		}
+		
+		if = {
+			limit = {
+				religion_group = light_group
+			}
+			add_trait = sympathy_light
+		}
+		if = {
+			limit = {
+				religion_group = pagan_group
+			}
+			add_trait = sympathy_pagans
+		}
+		
+		religion = dark
+		piety = 50
+		prestige = -100
+	}
+	
+	option = {
+		name = "magic.2.B"	
+		ai_chance = {
+			factor = 40
+		}	
+		
+		random = {
+			chance = 20
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				add_trait = zealous
+			}
+			if = {
+				limit = {
+					trait = cynical
+				}
+				remove_trait = cynical
+			}
+		}
+	}
+}
+
+# I'm not a mage, but I follow a magic religion...
+character_event = {
+	id = magic.3
+	desc = "magic.3.desc"
+	picture = "GFX_evt_bishop" 	
+
+	is_triggered_only = yes
+	
+	trigger = {
+		age = 12
+		religion_group = magic_group
+		NOT = {	has_character_flag = magic_or_faith_question }
+		NOR = {
+			trait = class_mage
+			trait = class_mage_female
+			trait = class_sage
+			trait = class_sage_female
+			trait = class_mage_knight
+			trait = class_mage_knight_female
+			trait = class_archsage
+			trait = class_shaman
+			trait = class_shaman_female
+			trait = class_druid
+			trait = class_druid_female
+			trait = class_archdruid
+			trait = class_dark_druid
+		}
+	}
+	
+	immediate = {
+		set_character_flag = magic_or_faith_question
+	}
+	
+	option = {
+		name = "magic.3.A"
+		ai_chance = {
+			factor = 0
+		}
+		
+		# Switch to liege's religion, if vassal and liege is not a mage
+		if = {
+			limit = {
+				independent = no
+				liege = {
+					NOT = { religion_group = magic_group }
+				}
+			}
+			liege = {
+				ROOT = { religion = PREV }
+			}
+			piety = 100
+		}
+		
+		# Else switch to a province religion
+		if = {
+			limit = {
+				OR = {
+					independent = yes
+					liege = {
+						religion_group = magic_group 
+					}
+				}
+			}
+			
+			# This should be safe, since provinces won't flip to magic religions
+			capital_scope = {
+				ROOT = { religion = PREV }
+			}
+			piety = 100
+		}
+		
+	}
+	
+	option = {
+		name = "magic.3.B"		
+		ai_chance = {
+			factor = 0
+		}
+		
+		random = {
+			chance = 20
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				add_trait = zealous
+			}
+			if = {
+				limit = {
+					trait = cynical
+				}
+				remove_trait = cynical
+			}
+		}
+	}
+}
+
+# Siege magic
+character_event = {
+	id = magic.4
+	desc = "magic.4.desc"
+	picture = "GFX_evt_monk" 	
+
+	
+	only_rulers = yes
+	religion = anima
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		OR = {
+			has_focus = focus_war
+			has_focus = focus_scholarship
+			has_focus = focus_war
+		}
+		NOT = { has_character_modifier = siege_magic }
+		OR = {
+			trait = class_mage
+			trait = class_mage_female
+			trait = class_sage
+			trait = class_sage_female
+			trait = class_mage_knight
+			trait = class_mage_knight_female
+			trait = class_archsage
+		}
+	}
+	
+	mean_time_to_happen = {
+		#months = 600
+		years = 50
+		
+		modifier = {
+			factor = 5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.75
+			trait = ambitious
+		}
+		
+		modifier = {
+			factor = 0.5
+			any_demesne_province = {
+				has_province_modifier = ancient_ruins
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = class_sage
+				trait = class_sage_female
+				trait = class_mage_knight
+				trait = class_mage_knight_female
+				trait = class_archsage			
+			}
+		}
+	}
+	
+	option = {
+		name = "magic.4.A"
+		
+		add_character_modifier = { name = siege_magic duration = -1 } 
+	}
+}

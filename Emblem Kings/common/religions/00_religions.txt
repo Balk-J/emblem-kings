@@ -176,6 +176,46 @@ pagan_group = {
 		dislike_tribal_organization = yes
 	}
 	
+	elibe_spirits_pagan = { 		
+		ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+		
+		ai_convert_same_group = 0 
+		ai_convert_other_group = 0	# never try to convert
+		#c_arcadia, c_durandal, c_jutes, c_uri, c_aquelia
+		#graphical_culture = jaingfx
+		graphical_culture = norsegfx
+		
+		pacifist = yes # Makes the AI less likely to start wars, plots and factions
+
+		icon = 10
+		
+		color = { 0.6 0.0 0.0 }
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		god_names = {
+			GOD_NINIS GOD_SET GOD_THOR GOD_FILLA
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+
+		has_heir_designation = yes
+		priests_can_inherit = no
+		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
 	raider_pagan = {
 		#c_badon, c_ganelon, c_taliver, c_marciana, c_calynda
 		graphical_culture = norsegfx
@@ -326,8 +366,8 @@ magic_group = {
 	graphical_culture = westerngfx
 	playable = yes
 	
-	ai_convert_same_group = 2 # always try to convert
-	ai_convert_other_group = 2	# always try to convert
+	ai_convert_same_group = 0 # always try to convert
+	ai_convert_other_group = 0	# always try to convert
 	
 	# Names given only to these characters (base names)
 	male_names = {
@@ -401,61 +441,6 @@ magic_group = {
 		intermarry = anima
 		
 		has_heir_designation = yes
-	}
-}
-
-guardian_group = {
-	has_coa_on_barony_only = yes
-	graphical_culture = indiangfx
-	playable = yes
-	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
-	
-	ai_convert_same_group = 0 
-	ai_convert_other_group = 0	# never try to convert
-	
-	# Names given only to Pagan characters (base names)
-	male_names = {
-	}
-	female_names = {
-	}
-
-	guardian = { 
-		#c_arcadia, c_durandal, c_jutes, c_uri, c_aquelia
-		graphical_culture = jaingfx
-		#secondary_event_pictures = sunni
-		
-		pacifist = yes # Makes the AI less likely to start wars, plots and factions
-
-		icon = 10
-		
-		color = { 0.6 0.0 0.0 }
-		
-		high_god_name = GOD_THE_CREATOR
-		
-		god_names = {
-			GOD_THE_SPIRITS GOD_THE_ANCESTORS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-
-		has_heir_designation = yes
-		priests_can_inherit = no
-		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
-		short_reign_opinion_year_mult = 0 # No short reign penalty
-		
-		scripture_name = THE_LEGENDS
-		priest_title = PRIEST
-		priests_can_marry = yes
-		female_temple_holders = yes
-		
-		defensive_attrition = yes
-		
-		#camel_cavalry_DEFENSIVE = 0.8
-		#war_elephants_DEFENSIVE = 0.8
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
 	}
 }
 

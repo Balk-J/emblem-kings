@@ -56,7 +56,14 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
-			NOT = { has_global_flag = lycia_formed }
+			#NOT = { has_global_flag = lycia_formed }
+			NOT = { 
+				k_lycia = {
+					any_previous_holder = {
+						always = yes
+					}
+				}
+			}
 		}
 		allow = {
 			ROOT = {
@@ -64,7 +71,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -72,7 +79,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -80,7 +87,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -88,7 +95,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -96,7 +103,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -104,7 +111,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -112,7 +119,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -120,7 +127,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -128,7 +135,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -136,7 +143,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -144,7 +151,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -152,7 +159,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -160,7 +167,7 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
@@ -168,16 +175,16 @@ decisions = {
 					OR = {
 						has_holder = no
 						holder_scope = {
-							opinion = { who = ROOT value = 75 } # King of Lycia popularity 
+							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
 						}
 					}
 				}
 			}
-			primary_title = { title = k_lycian_league }
+			#primary_title = { title = k_lycian_league }
 			prestige = 1000
 		}
 		effect = {
-			set_global_flag = lycia_formed
+			#set_global_flag = lycia_formed
 			narrative_event = { id = fe6.1 tooltip = EVTTOOLTIPfe6.1 }
 		}
 		ai_will_do = {
@@ -423,53 +430,6 @@ decisions = {
 		}
 	}
 
-	demand_fire_emblem = {
-		only_playable = yes
-		
-		potential = {
-			always=no
-			is_adult = yes
-			is_ruler = yes
-			prisoner = no
-			NOT = { trait = incapable }
-			primary_title = {
-				has_title_flag = fire_emblem_succession	
-			}	
-			NOR = {
-				has_character_modifier = holds_fire_emblem
-				any_realm_character  = {
-					has_character_modifier = holds_fire_emblem
-				}
-			}
-			NOR = {
-				AND = {
-					primary_title = {
-						region = world_elibe
-					}	
-					OR = {
-						trait = fire_emblem_elibe
-						any_realm_character = {
-							trait = fire_emblem_elibe
-							prisoner = no
-						}
-					}
-					
-				}
-			}
-		}
-		allow = {
-			piety = 500
-			is_adult = yes
-			prisoner = no
-		}
-		effect = {
-			piety = -1
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
-
 	promote = {
 		is_high_prio = yes
 		only_playable = yes
@@ -526,23 +486,30 @@ decisions = {
 				trait=class_warrior
 				trait=class_wyvern_knight
 				trait=class_wyvern_lord	
+				trait=class_archsage
+				trait=class_archdruid
+				trait=class_dark_druid
 			}
 		}
 		allow = {
 			is_adult = yes
 			prisoner = no
-			wealth = 100
+			wealth = 50
 			check_variable = { which = "level" value = 20 }
 		}
 		effect = {
-			wealth = -100
+			wealth = -50
 			#hidden_tooltip = {
 				character_event = { id = class.5 }
 			#}
 		}
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { wealth = 50 }
+			}
 		}
 	}	
 }
-

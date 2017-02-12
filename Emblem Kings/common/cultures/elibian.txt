@@ -5,7 +5,8 @@ elibian = {
 		graphical_cultures = { frankishgfx}
 		graphical_unit_culture = western
 		
-		color = { 0.1 0.3 0.6 }
+		#color = { 0.1 0.3 0.6 }
+		color = { 0 0.5 0 }
 		# Raven Dart
 		male_names = {
 			Astore Alen Al
@@ -253,7 +254,6 @@ elibian = {
 		#color = { 0 1 0.3 }#Egypt
 		#color = { 0.7 0.6 0.3 }#Sicily
 		color = { 0.47 0.24 0.07 }
-		
 		male_names = {
 			Athos
 			Denning
@@ -307,6 +307,7 @@ elibian = {
 		mother_name_chance = 10
 		
 		modifier = default_culture_modifier
+		baron_titles_hidden = yes
 	}
 	
 	sacaean = {

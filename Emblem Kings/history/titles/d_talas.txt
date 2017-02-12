@@ -8,6 +8,7 @@
 #	liege=k_sacae
 #}
 
-1156.1.1={
-	holder=546 #filler
-}
+# Commenting out; putting this guy under Djute clan
+#1156.1.1={ 
+#	holder=546 #filler
+#}

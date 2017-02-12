@@ -2,7 +2,7 @@
 	name="Roland"
 	dynasty=101
 	
-	religion=pagan
+	religion=elimine_church
 	culture=lycian
 	
 	#trait="regalia_durandal"
@@ -260,6 +260,7 @@
 				}
 			}
 		}
+		#employer = 308 # So AI Nergal won't try to ransom him back?
 	} 	
 	1160.02.01 = { 
 		death = {
@@ -479,10 +480,15 @@
 	
 	father=515 #Hassar
 	mother=110 #Madelyn
+	disallow_random_traits="yes" 
+	
 	1144.01.01={
 		birth=yes
 		culture=sacaean
 		religion=divine_sky_pagan
+		effect = {
+			set_character_flag="is_fe7_lyn"
+		}
 	} 	
 	1156.01.01={
 		add_trait="class_myrmidon_female"
@@ -490,6 +496,7 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 			set_character_flag="class_myrmidon"
+			add_friend=311 # Florina
 		}
 	} 
 	
@@ -602,7 +609,6 @@
 	1186.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 112 = {
@@ -617,6 +623,9 @@
 	father=198
 	1109.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_lundgren"
+		}
 	} 	
 	
 	1121.01.01={
@@ -1170,6 +1179,9 @@
 	
 	1139.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_matthew"
+		}
 	} 		
 	1139.01.01 = { 
 		employer=113 #Ostia 
@@ -1401,6 +1413,9 @@
 	
 	1138.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_kent"
+		}
 	} 		
 	1138.01.01 = { 
 		employer=105 #Elbert 
@@ -1437,6 +1452,9 @@
 	
 	1136.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_sain"
+		}
 	} 			
 	1136.01.01 = { 
 		employer=105 #Elbert 
@@ -1677,6 +1695,9 @@
 	
 	1142.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_wil"
+		}
 	} 	
 	1142.01.01 = { 
 		employer=144 #Rebecca's father 
@@ -2393,6 +2414,9 @@
 	trait="slow" # seriously, how do you try to get to Caelin and wind up in Ilia?
 	1115.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_wallace"
+		}
 	} 		
 	
 	1115.01.01 = {
@@ -2462,7 +2486,7 @@
 	#Let's say he retired after that to become a farmer
 	1143.08.01 = { 
 		add_trait="gardener"
-		employer=0
+		#employer=0
 	}
 	
 	#TODO: Lyn-specific events here?
@@ -2473,7 +2497,7 @@
 	
 	1161.01.01 = {
 		#"Wallace intended to return to Caelin, but he got lost and ended up in Ilia."
-		employer=0
+		employer=310 # Farina, because why not.
 	}	
 	1200.01.01={
 		death=yes
@@ -2509,7 +2533,7 @@
 		add_trait="just"
 	}	
 	
-	11.1.1 = {
+	1138.1.1 = {
 		remove_trait="class_cavalier"
 		add_trait="class_paladin"
 	}	
@@ -3268,6 +3292,7 @@
 	trait="slow" 
 	trait="dragon_blood" 
 	trait="bastard"
+	disallow_random_traits="yes" 
 	1165.01.01={
 		birth=yes
 	} 		
@@ -3305,6 +3330,7 @@
 	dynasty=124
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1135.01.01={
 		birth=yes
@@ -3336,7 +3362,6 @@
 			#killer=? #That random Bernese fire mage
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 184 = {
@@ -3344,6 +3369,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1163.01.01={
 		birth=yes
@@ -3383,7 +3409,6 @@
 	1202.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 185 = {
@@ -3394,6 +3419,7 @@
 	
 	father=186 #Goldor
 	trait="strong"
+	disallow_random_traits="yes" 
 	1161.01.01={
 		birth=yes
 	} 		
@@ -3433,7 +3459,6 @@
 	1202.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 186 = {
@@ -3447,7 +3472,7 @@
 		birth=yes
 	} 		
 	
-	1140.01.01 = {
+	1140.01.02 = {
 		employer=177 #Marquess Tania
 	}	
 	
@@ -3483,6 +3508,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1162.01.01={
 		birth=yes
@@ -3513,7 +3539,6 @@
 	1202.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 188 = {
@@ -3522,6 +3547,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1159.01.01={
 		birth=yes
@@ -3575,7 +3601,6 @@
 	1209.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 189 = {
@@ -3755,7 +3780,6 @@
 }
 
 #Random shmucks to rule the smoking ruins of Cornwell.
-#May not need these now that it's vassal to the Lycian League...
 757 = {
 	name="Bath" 
 	dynasty=125
@@ -3844,6 +3868,86 @@
 		birth=yes
 	} 		
 	1209.01.01 = { 
+		death = yes
+	}
+}
+
+764 = {
+	name="Fargus"
+	#dynasty=801
+	
+	religion=raider_pagan
+	culture=lycian
+	
+	trait="strong"
+	trait="aggressive_leader"
+	trait="heavy_infantry_leader"
+	trait="inspiring_leader"
+	trait="tough_soldier"
+	trait="brave"
+	trait="wroth"
+	trait="charitable"
+	trait="proud"
+	trait="adventurer"
+	1109.01.01 = { birth=yes }
+	1121.01.01={
+		add_trait="class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_pirate"
+		}
+	} 
+	
+	1130.01.01 = { 
+		remove_trait="class_pirate"
+		add_trait="class_berserker"
+	}
+	
+	1176.01.01 = { death=yes }
+}
+
+
+##Valor
+#Dragon's Gate
+765={
+	name="Bernard" 
+	dynasty=134
+	
+	culture=lycian
+	religion=anima
+		
+	1140.1.1={
+		birth=yes
+	}
+	
+	1159.01.01={
+		add_trait="class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	
+	1194.1.1= {
+		death = yes
+	}
+}
+
+#The part no one ever goes to
+766={
+	name="Kaim" 
+	dynasty=135
+	
+	culture=lycian
+	religion=elimine_church
+		
+	1138.1.1={
+		birth=yes
+	}
+	
+	1187.1.1= {
 		death = yes
 	}
 }

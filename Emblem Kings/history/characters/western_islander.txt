@@ -1243,10 +1243,36 @@
 	}
 }
 
-# See Lycian file, some IDs taken - 763
+# See Lycian file, some IDs taken - 766
 
+#Filler landholders
+#Marciana
+767 = {
+	name="Kelles"
+	dynasty=767
+	
+	religion=raider_pagan
+	culture=western_islander
+	
+	1139.01.01 = { birth=yes }
+	
+	1189.01.01 = { death=yes }
+}
 
-#764 = {
+#Calynda
+768 = {
+	name="Morleo"
+	dynasty=768
+	
+	religion=raider_pagan
+	culture=western_islander
+	
+	1138.01.01 = { birth=yes }
+	
+	1191.01.01 = { death=yes }
+}
+
+#7xx = {
 #	name="Elphin" #AKA Mildain
 #	religion=elimine_church
 #	culture=etrurian
@@ -1259,7 +1285,7 @@
 #		add_trait="class_bard"
 #		effect = {
 #			set_variable = { which = "level" value = 1 }
-			set_character_flag="class_selected"
+#			set_character_flag="class_selected"
 #			set_character_flag="class_dancer"
 #		}
 #	}

@@ -231,10 +231,10 @@ on_yearly_pulse = {
 		100 = RoI.180
 #		100 = RoI.190 # Indus U-boat CTD
 		50 = RoI.401
-		100 = RoI.403
+#		100 = RoI.403 # Visit the Ganges event, also checks for a nonexistant province
 		100 = RoI.410
 		100 = RoI.411
-		200 = RoI.412
+#		200 = RoI.412 # Can fire when Indian religions are removed, and we don't want it to.
 		500 = RoI.500
 		
 		# Indian low religious authority events
@@ -458,6 +458,12 @@ on_bi_yearly_pulse = {
 		SoA.5303 # Tengri becoming an unworthy priest
 		SoA.5304 # Zoroastrian becoming an immoral priest
 		SoA.5305 # Aztec becoming an unworthy priest
+	# FE
+	
+		magic.1 # Clean up religions
+		magic.2 
+		magic.3
+	
 	}
 	
 	

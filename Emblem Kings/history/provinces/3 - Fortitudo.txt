@@ -12,7 +12,7 @@ b_fortitudo = tribal
 #b_fortitudo_3 = temple
 
 # Misc
-culture = ilian
+culture = bernese
 religion = elimine_church
 
 #History

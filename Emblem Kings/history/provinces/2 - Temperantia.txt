@@ -12,7 +12,7 @@ b_prudentia = temple
 #b_clementia = castle
 
 # Misc
-culture = ilian
+culture = bernese
 religion = elimine_church
 
 #History

@@ -119,41 +119,44 @@
 	}
 	700.2.28 = {
 		employer = 902 # Tiki. Just to get her out of the way.
-	}
-	1159.1.1= {
 		death = {
-			death_reason=death_murder
-			#killer= #random Blackbone Clan member
+			death_reason=death_missing
 		}
 	}
+#	1159.1.1= {
+#		death = {
+#			death_reason=death_murder
+#			#killer= #random Blackbone Clan member
+#		}
+#	}
 }
 
-922={
-	name="Ein" # War dragon
-	culture=war_dragon_culture
-	religion=dragon_liberation
-	
-	disallow_random_traits="yes"
-	trait="war_dragon"
-	trait="class_manakete"
-	trait="tough_soldier"
-	
-	1160.1.1={
-		birth=yes
-	}
-	1181.1.1= {
-		death = {
-			death_reason=death_battle
-			killer=108 # Roy
-		}
-	}
-}
+#922={
+#	name="Ein" # War dragon
+#	culture=war_dragon_culture
+#	religion=dragon_liberation
+#	
+#	disallow_random_traits="yes"
+#	trait="war_dragon"
+#	trait="class_manakete"
+#	trait="tough_soldier"
+#	
+#	1160.1.1={
+#		birth=yes
+#	}
+#	1181.1.1= {
+#		death = {
+#			death_reason=death_battle
+#			killer=108 # Roy
+#		}
+#	}
+#}
 
 923={
 	name="Fae"
 	female="yes"
 	culture=divine_dragon_culture
-	religion=guardian
+	religion=elibe_spirits_pagan
 	disallow_random_traits="yes" 
 	trait="dragon"
 	845.1.1={

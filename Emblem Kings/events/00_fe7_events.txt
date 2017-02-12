@@ -167,57 +167,71 @@ character_event = {
 					random_list = {
 						6 = {
 							add_trait=class_assassin
+							set_character_flag = class_thief
 						}
 						5 = {
 							add_trait=class_berserker
+							set_character_flag = class_brigand
 						}
 						5 = {
 							add_trait=class_bishop
+							set_character_flag = class_priest
 						}
 						6 = {
 							add_trait=class_druid
+							set_character_flag = class_shaman
 						}
 						6 = {
 							add_trait=class_general
+							set_character_flag = class_knight
 						}
 						5 = {
 							add_trait=class_great_knight
+							set_character_flag = class_cavalier
 						}
 						6 = {
 							add_trait=class_hero
+							set_character_flag = class_mercenary
 						}
 						5 = {
 							add_trait=class_mage_knight
+							set_character_flag = class_mage
 						}
 						6 = {
 							add_trait=class_paladin
+							set_character_flag = class_cavalier
 						}
 						5 = {
 							add_trait=class_ranger
+							set_character_flag = class_horse_archer
 						}
 						5 = {
 							add_trait=class_rogue
+							set_character_flag = class_thief
 						}
 						6 = {
 							add_trait=class_sage
+							set_character_flag = class_mage
 						}
 						6 = {
 							add_trait=class_sniper
-						}
-						5 = {
-							add_trait=class_summoner
+							set_character_flag = class_archer
 						}
 						6 = {
 							add_trait=class_swordmaster
+							set_character_flag = class_myrmidon
 						}
 						6 = {
 							add_trait=class_warrior
+							set_character_flag = class_fighter
 						}
 						5 = {
 							add_trait=class_wyvern_knight
+							set_character_flag = class_wyvern_rider
 						}
 						6 = {
 							add_trait=class_wyvern_lord
+							set_character_flag = class_wyvern_rider
 						}
 					}
 				}
@@ -246,63 +260,71 @@ character_event = {
 					random_list = {
 						5 = {
 							add_trait=class_assassin_female
-						}
-						5 = {
-							add_trait=class_berserker		
+							set_character_flag = class_thief
 						}
 						5 = {
 							add_trait=class_bishop_female		
+							set_character_flag = class_cleric
 						}
 						5 = {
 							add_trait=class_druid_female		
+							set_character_flag = class_shaman
 						}
 						5 = {
 							add_trait=class_falcon_knight		
+							set_character_flag = class_pegasus_knight
 						}
 						5 = {
 							add_trait=class_general		
+							set_character_flag = class_knight
 						}
 						5 = {
-							add_trait=class_great_knight		
+							add_trait=class_great_knight	
+							set_character_flag = class_cavalier
 						}
 						5 = {
 							add_trait=class_hero_female		
+							set_character_flag = class_mercenary
 						}
 						5 = {
 							add_trait=class_mage_knight_female		
+							set_character_flag = class_mage
 						}
 						5 = {
 							add_trait=class_paladin		
+							set_character_flag = class_cavalier
 						}
 						5 = {
-							add_trait=class_ranger_female		
+							add_trait=class_ranger_female	
+							set_character_flag = class_horse_archer
 						}
 						5 = {
 							add_trait=class_rogue		
+							set_character_flag = class_thief
 						}
 						5 = {
 							add_trait=class_sage_female		
+							set_character_flag = class_mage
 						}
 						5 = {
 							add_trait=class_sniper_female		
-						}
-						5 = {
-							add_trait=class_summoner		
+							set_character_flag = class_archer
 						}
 						5 = {
 							add_trait=class_swordmaster_female		
+							set_character_flag = class_myrmidon
 						}
 						5 = {
-							add_trait=class_valkyrie		
+							add_trait=class_valkyrie	
+							set_character_flag = class_troubador
 						}
 						5 = {
-							add_trait=class_warrior		
-						}
-						5 = {
-							add_trait=class_wyvern_knight		
+							add_trait=class_wyvern_knight	
+							set_character_flag = class_wyvern_rider
 						}
 						5 = {
 							add_trait=class_wyvern_lord		
+							set_character_flag = class_wyvern_rider
 						}
 					}
 				}
@@ -310,17 +332,19 @@ character_event = {
 		}
 		# Assign education trait
 		new_character = {
-		random_list = {
-			40 = {
-				add_trait=brilliant_strategist
+			random_list = {
+				40 = {
+					add_trait=brilliant_strategist
+				}
+				50 = {
+					add_trait=skilled_tactician
+				}
+				10 = {
+					add_trait=tough_soldier
+				}
 			}
-			50 = {
-				add_trait=skilled_tactician
-			}
-			10 = {
-				add_trait=tough_soldier
-			}
-		}
+			set_character_flag = class_selected
+			set_variable = { which = "level" value = 1 }
 		}
 	}
 	option = {
@@ -353,33 +377,39 @@ character_event = {
 					random_list = {
 						10 = {
 							add_trait=class_assassin
+							set_character_flag = class_thief
 						}
 						10 = {
 							add_trait=class_bishop
+							set_character_flag = class_priest
 						}
 						10 = {
 							add_trait=class_druid
+							set_character_flag = class_shaman
 						}
 						10 = {
 							add_trait=class_hero
+							set_character_flag = class_mercenary
 						}
 						10 = {
 							add_trait=class_mage_knight
+							set_character_flag = class_mage
 						}
 						10 = {
 							add_trait=class_rogue
+							set_character_flag = class_thief
 						}
 						10 = {
 							add_trait=class_sage
+							set_character_flag = class_mage
 						}
 						10 = {
 							add_trait=class_sniper
-						}
-						10 = {
-							add_trait=class_summoner
+							set_character_flag = class_archer
 						}
 						10 = {
 							add_trait=class_swordmaster
+							set_character_flag = class_myrmidon
 						}
 					}
 				}
@@ -408,36 +438,43 @@ character_event = {
 					random_list = {
 						9 = {
 							add_trait=class_assassin_female
+							set_character_flag = class_thief
 						}
 						9 = {
-							add_trait=class_bishop_female		
+							add_trait=class_bishop_female	
+							set_character_flag = class_cleric
 						}
 						9 = {
-							add_trait=class_druid_female		
+							add_trait=class_druid_female	
+							set_character_flag = class_shaman
 						}
 						9 = {
 							add_trait=class_hero_female		
+							set_character_flag = class_mercenary
 						}
 						9 = {
 							add_trait=class_mage_knight_female		
+							set_character_flag = class_mage
 						}
 						9 = {
 							add_trait=class_rogue		
+							set_character_flag = class_thief
 						}
 						10 = {
-							add_trait=class_sage_female		
+							add_trait=class_sage_female	
+							set_character_flag = class_mage
 						}
 						9 = {
-							add_trait=class_sniper_female		
-						}
-						9 = {
-							add_trait=class_summoner		
+							add_trait=class_sniper_female	
+							set_character_flag = class_archer
 						}
 						9 = {
 							add_trait=class_swordmaster_female		
+							set_character_flag = class_myrmidon	
 						}
 						9 = {
-							add_trait=class_valkyrie		
+							add_trait=class_valkyrie
+							set_character_flag = class_troubador
 						}
 					}
 				}
@@ -465,6 +502,8 @@ character_event = {
 					add_trait=flamboyant_schemer
 				}
 			}
+			set_character_flag = class_selected
+			set_variable = { which = "level" value = 1 }
 		}
 	}
 	option = {
@@ -492,6 +531,10 @@ character_event = {
   
 	
 	trigger = {
+		has_game_rule = {
+			name = RULE_FE_STORY
+			value = on
+		}
 		ROOT = {
 			character = 109 # Hausen
 		}
@@ -696,6 +739,7 @@ character_event = {
 			text = fe7.6.B.tooltip
 			hidden_tooltip = {
 				character_event = { id = fe7.7 }
+				FROM = { character_event = { id = fe7.32 } }
 			}
 		}
 	}
@@ -786,6 +830,10 @@ character_event = {
 	culture = bernese
 	
 	trigger = {
+		has_game_rule = {
+			name = RULE_FE_STORY
+			value = on
+		}
 		year = 1150
 		k_bern = {
 			has_holder = yes
@@ -1055,7 +1103,7 @@ narrative_event = {
 			}
 			if = {
 				limit = {
-					has_character_flag = fe7_jerme
+					has_character_flag = is_fe7_jerme
 				}
 				give_nickname = nick_the_death_kite
 			}
@@ -1095,6 +1143,10 @@ narrative_event = {
 	has_global_flag = black_fang_founded
 	
 	trigger = {
+		has_game_rule = {
+			name = RULE_FE_STORY
+			value = on
+		}
 		year = 1156
 		has_landed_title = d_black_fang
 		NOR = {
@@ -1214,6 +1266,9 @@ narrative_event = {
 			}
 			give_nickname = nick_the_shrike
 			character_event = { id = class.5 } # Promote 
+			b_fort_shrike = {
+				grant_title = PREV
+			}
 		}
 		random_courtier = {
 			limit = {
@@ -1227,6 +1282,14 @@ narrative_event = {
 			}
 			give_nickname = nick_the_shadow_hawk
 			character_event = { id = class.5 } # Promote 
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = is_fe7_jerme
+			}
+			b_fort_kite = {
+				grant_title = PREV
+			}
 		}
 	}
 	option = {
@@ -1252,6 +1315,10 @@ narrative_event = {
 	has_global_flag = black_fang_grows
 	
 	trigger = {
+		has_game_rule = {
+			name = RULE_FE_STORY
+			value = on
+		}
 		year = 1158
 		has_landed_title = d_black_fang
 		NOR = {
@@ -1304,8 +1371,9 @@ narrative_event = {
 			}
 			spouse = {
 				death = {
-					death_reason=death_murder
-					#killer=308 # Nergal
+					#death_reason=death_murder_known_trigger
+					death_reason=death_murder_unknown
+					killer=PREV # Nergal
 				}
 			}
 		}
@@ -1377,7 +1445,7 @@ narrative_event = {
 			limit = {
 				NOT = {
 					any_courtier = {
-						has_character_flag = { is_fe7_jaffar }
+						has_character_flag = is_fe7_jaffar 
 					}
 				}
 			}
@@ -1399,7 +1467,7 @@ narrative_event = {
 						set_character_flag="class_selected"
 						set_character_flag="class_thief"
 						set_character_flag=four_fang_nergal
-						give_nickname=nick_the_angel_of_death#nick_the_viper
+						give_nickname=nick_the_viper
 						
 						move_character = ROOT
 					}
@@ -1443,7 +1511,7 @@ narrative_event = {
 # Unjust ruler is warned
 character_event = {
 	id = fe7.12
-	desc = "fe7.11.desc"
+	desc = "fe7.12.desc"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
 	
@@ -1462,6 +1530,25 @@ character_event = {
 			trait = greedy
 			trait = impaler
 		}
+		OR = {
+			location = {
+				region = world_elibe_greater_bern
+			}
+			AND = {
+				has_global_flag = black_fang_grows
+				OR = {
+					location = {
+						region = world_elibe_taliver
+					}
+					location = {
+						region = world_elibe_sacae
+					}
+					location = {
+						region = world_elibe_lycia
+					}
+				}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1469,15 +1556,20 @@ character_event = {
 	}
 	
 	option = {
-		name = "fe7.11.A"
+		name = "fe7.12.A"
 		set_character_flag = warned_by_black_fang
+		add_character_modifier = {
+			name = suspected_murder_plot
+			months = 48
+			hidden = yes
+		}
 	}
 }
 
 # Assassins kill random courtier
 character_event = {
 	id = fe7.13
-	desc = "fe7.12.desc"
+	desc = "fe7.13.desc"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
 	
@@ -1492,8 +1584,31 @@ character_event = {
 	has_global_flag = black_fang_founded
 	
 	trigger = {
-		uses_decadence = yes
-		decadence = 70
+		OR = {
+			trait = arbitrary
+			trait = cruel
+			trait = greedy
+			trait = impaler
+		}
+		OR = {
+			location = {
+				region = world_elibe_greater_bern
+			}
+			AND = {
+				has_global_flag = black_fang_grows
+				OR = {
+					location = {
+						region = world_elibe_taliver
+					}
+					location = {
+						region = world_elibe_sacae
+					}
+					location = {
+						region = world_elibe_lycia
+					}
+				}
+			}
+		}
 		
 		any_courtier = {
 			is_ruler = no
@@ -1521,7 +1636,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "fe7.12.A"
+		name = "fe7.13.A"
 		event_target:assassin_target = {
 			death = { death_reason = death_black_fang }
 		}
@@ -1532,7 +1647,7 @@ character_event = {
 # Assassins kill ruler
 character_event = {
 	id = fe7.14
-	desc = "EVTDESC88012"
+	desc = "fe7.14.desc"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
 
@@ -1540,18 +1655,37 @@ character_event = {
 	min_age = 16
 	prisoner = no
 	only_capable = yes
-	religion_group = muslim
-	has_character_flag = decadence_courtier_killed
-	has_global_flag = assassins_founded
+	culture_group = elibian
+	has_character_flag = black_fang_courtier_killed
+	has_global_flag = black_fang_founded
 	
 	trigger = {
-		uses_decadence = yes
-		decadence = 90
 		OR = {
-			NOT = { has_global_flag = assassins_scatter }
-			has_global_flag = assassins_resurface
+			trait = arbitrary
+			trait = cruel
+			trait = greedy
+			trait = impaler
 		}
-		NOT = { has_global_flag = assassins_destroyed }
+		OR = {
+			location = {
+				region = world_elibe_greater_bern
+			}
+			AND = {
+				has_global_flag = black_fang_grows
+				OR = {
+					location = {
+						region = world_elibe_taliver
+					}
+					location = {
+						region = world_elibe_sacae
+					}
+					location = {
+						region = world_elibe_lycia
+					}
+				}
+			}
+		}
+		NOT = { has_global_flag = black_fang_destroyed }
 		NOT = { is_inaccessible_trigger = yes }
 	}
 	
@@ -1560,7 +1694,1062 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA88012"
-		death = { death_reason = death_hashshashin }
+		name = "fe7.14.A"
+		death = { death_reason = death_black_fang }
+	}
+}
+
+##########################
+# War with the Assassins #
+##########################
+
+# Courtier is killed
+character_event = {
+	id = fe7.15
+	hide_window = yes
+	
+	prisoner = no
+	only_capable = yes
+	min_age = 16
+	ai = yes
+	has_global_flag = black_fang_founded
+	
+	trigger = {
+		is_ruler = no
+		employer = {
+			war = yes
+			is_playable = yes
+			independent = yes
+			prisoner = no
+			NOT = { spouse = { character = ROOT } }
+			d_black_fang = {
+				holder_scope = {
+					war_with = PREVPREV
+				}
+			}
+		}
+		
+		is_primary_heir = no
+		is_pretender = no
+		in_command = no
+		
+		NOT = { has_global_flag = black_fang_destroyed }
+	}
+	
+	mean_time_to_happen = {
+		months = 880
+	}
+	
+	immediate = {
+		if = {
+			limit = { liege = { NOT = { is_inaccessible_trigger = yes } } }
+			random_list = {
+				33 = {
+					liege = {
+						character_event = { id = fe7.16 }
+					}
+				}
+				33 = {
+					liege = {
+						character_event = { id = fe7.17 }
+					}
+				}
+				33 = {
+					liege = {
+						character_event = { id = fe7.18 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = { liege = { is_inaccessible_trigger = yes } }
+			random_list = {
+				50 = {
+					liege = {
+						character_event = { id = fe7.16 }
+					}
+				}
+				50 = {
+					liege = {
+						character_event = { id = fe7.17 }
+					}
+				}
+			}
+		}
+	}
+}
+
+# Assassins kill random courtier 1
+character_event = {
+	id = fe7.16
+	desc = "fe7.16.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe7.16.A"
+		FROM = {
+			death = { death_reason = death_black_fang }
+		}
+	}
+}
+
+# Assassins kill random courtier 2
+character_event = {
+	id = fe7.17
+	desc = "fe7.17.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOR = { 
+				has_character_modifier = cannibal 
+				trait = cannibal_trait
+			}
+		}
+		name = "fe7.17.A"
+		FROM = {
+			death = { death_reason = death_black_fang }
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				has_character_modifier = cannibal
+				trait = cannibal_trait
+			}
+		}
+		name = "fe7.17.A.cannibal"
+		FROM = {
+			death = { death_reason = death_black_fang }
+		}
+	}
+}
+
+# Assassins kill random courtier 3
+character_event = {
+	id = fe7.18
+	desc = "fe7.18.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe7.18.A"
+		FROM = {
+			death = { death_reason = death_black_fang }
+		}
+	}
+}
+
+# Assassins warn ruler
+character_event = {
+	id = fe7.19
+	desc = "fe7.19.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	ai = no
+	only_playable = yes
+	only_independent = yes
+	war = yes
+	
+	trigger = {
+		NOT = { has_character_flag = warned_by_black_fang }
+		d_black_fang = {
+			holder_scope = {
+				war_with = ROOT
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 160
+	}
+	
+	option = {
+		name = "fe7.19.A"
+		set_character_flag = warned_by_black_fang
+		add_character_modifier = {
+			name = suspected_murder_plot
+			months = 48
+			hidden = yes
+		}
+	}
+}
+
+# Assassins kill ruler
+character_event = {
+	id = fe7.20
+	desc = "fe7.14.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	only_rulers = yes
+	prisoner = no
+	min_age = 16
+	has_character_flag = warned_by_black_fang
+
+	trigger = {
+		d_black_fang = {
+			holder_scope = {
+				war_with = ROOT
+			}
+		}
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 1400
+	}
+	
+	option = {
+		name = "fe7.14.A"
+		death = { death_reason = death_black_fang } 
+	}
+}
+
+##########
+# Random #
+##########
+
+# Courtier is killed
+character_event = {
+	id = fe7.21
+	desc = "fe7.16.desc"
+	picture = "GFX_evt_shadow"
+	border = GFX_event_normal_frame_intrigue
+	
+	ai = yes
+	min_age = 16
+	prisoner = no
+	only_capable = yes
+	has_global_flag = black_fang_founded
+	culture_group = elibian
+	
+	trigger = {
+		host = { 
+			character = liege
+			prisoner = no
+		}
+		NOT = { has_global_flag = black_fang_destroyed }
+		OR = {
+			trait = arbitrary
+			trait = cruel
+			trait = greedy
+			trait = impaler
+		}
+		OR = {
+			location = {
+				region = world_elibe_greater_bern
+			}
+			AND = {
+				has_global_flag = black_fang_grows
+				OR = {
+					location = {
+						region = world_elibe_taliver
+					}
+					location = {
+						region = world_elibe_sacae
+					}
+					location = {
+						region = world_elibe_lycia
+					}
+				}
+			}
+		}
+		
+		is_primary_heir = no
+		is_pretender = no
+		in_command = no
+		NOT = { spouse = { character = host } }
+	}
+	
+	mean_time_to_happen = {
+		months = 5500
+		modifier = {
+			factor = 0.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.75
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.75
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = just
+		}
+		modifier = {
+			factor = 2.0
+			trait = charitable
+		}
+		modifier = {
+			factor = 2.0
+			is_female = yes
+		}
+	}
+	
+	option = {
+		name = "OK"
+		if = {
+			limit = { liege = { NOT = { is_inaccessible_trigger = yes } } }
+			random_list = {
+				33 = {
+					liege = {
+						character_event = { id = fe7.16 }
+					}
+				}
+				33 = {
+					liege = {
+						character_event = { id = fe7.17 }
+					}
+				}
+				33 = {
+					liege = {
+						character_event = { id = fe7.18 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = { liege = { is_inaccessible_trigger = yes } }
+			random_list = {
+				50 = {
+					liege = {
+						character_event = { id = fe7.16 }
+					}
+				}
+				50 = {
+					liege = {
+						character_event = { id = fe7.17 }
+					}
+				}
+			}
+		}
+	}	
+}
+
+# The Black Fang destroyed!
+narrative_event = {
+	id = fe7.22
+	title = "fe7.22.title"
+	desc = "fe7.22.desc"
+	major = yes
+	
+	picture = "GFX_evt_shadow"
+	
+	only_rulers = yes
+	culture_group = elibian
+	has_global_flag = black_fang_founded
+	
+	trigger = {
+		has_game_rule = {
+			name = RULE_FE_STORY
+			value = on
+		}
+		year = 1150
+		has_landed_title = d_black_fang
+		NOT = { demesne_size = 1 }
+		NOT = {
+			has_global_flag = black_fang_destroyed
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "OK"
+		trigger = { has_landed_title = d_black_fang }
+		set_global_flag = black_fang_destroyed
+		activate_title = { title = d_black_fang status = no }
+		death = { death_reason = death_battle }
+	}
+	option = {
+		name = "fe7.22.A"
+		trigger = { 
+			NOT = { has_landed_title = d_black_fang }
+		}
+	}
+}
+
+# Interaction events
+
+# Contact attempt notification
+character_event = {
+	id = fe7.23
+	desc = "fe7.23.desc" # Contact the Fang
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {	 
+		name = "fe7.23.A" 
+	}	
+}
+
+# Take out a contract
+character_event = {
+	id = fe7.24
+	desc = "fe7.24.desc"
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		has_landed_title = d_black_fang 
+		FROM = {
+			OR = {
+				has_plot = plot_kill_character
+				has_plot = plot_kill_spouse
+			}
+		}	
+	}
+	
+	immediate = {
+		diplomatic_immunity = yes 
+		wealth = 100
+		# Add assassins if short.
+		if = {
+			limit = {
+				has_landed_title = d_black_fang 
+				NOT = {
+					any_courtier = {
+						age = 16
+						has_character_flag="class_selected"						
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					create_random_intriguer = {
+						random_traits = yes
+						dynasty = none
+						female = no
+					}
+				}	
+				50 = {
+					create_random_intriguer = {
+						random_traits = yes
+						dynasty = none
+						female = yes
+					}
+				}
+			}	
+			new_character = {
+				change_intrigue = 8
+				remove_trait = craven
+				remove_trait = content
+				
+				set_character_flag = class_selected
+				set_variable = { which = "level" value = 1 }
+				
+				if = {
+					limit = {
+						is_female = no
+					}
+					random_list = {
+						25 = {
+							set_character_flag = class_mage
+							add_trait = class_sage						
+						}		
+						30 = {
+							set_character_flag = class_myrmidon
+							add_trait = class_swordmaster						
+						}	
+						45 = {
+							set_character_flag = class_thief
+							add_trait = class_assassin						
+						}	
+					}	
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					random_list = {
+						25 = {
+							set_character_flag = class_mage
+							add_trait = class_sage_female						
+						}	
+						30 = {
+							set_character_flag = class_myrmidon
+							add_trait = class_swordmaster_female						
+						}	
+						45 = {
+							set_character_flag = class_thief
+							add_trait = class_assassin_female						
+						}	
+					}	
+				}
+			}
+		}
+		
+		# Pick a price for the plot target.
+		FROM = {
+			plot_target_char = {
+				if = {
+					limit = { tier = EMPEROR }
+					PREV = { 
+						set_character_flag = target_priced
+						set_character_flag = target_price_emperor 
+					}
+				}
+				if = {
+					limit = { 
+						PREV = { NOT = { has_character_flag = target_priced } }
+						OR = {
+							tier = KING
+							any_claim = { tier = EMPEROR }
+							any_dynasty_member = { is_close_relative = PREV tier = EMPEROR }
+							liege = { is_close_relative = PREV tier = EMPEROR }
+							any_spouse = { tier = EMPEROR }
+						}	
+					}
+					PREV = { 
+						set_character_flag = target_priced
+						set_character_flag = target_price_king
+					}
+				}
+				if = {
+					limit = { 
+						PREV = { NOT = { has_character_flag = target_priced } }
+						OR = {
+							tier = DUKE
+							any_claim = { tier = KING }
+							any_dynasty_member = { is_close_relative = PREV tier = KING }
+							liege = { is_close_relative = PREV tier = KING }
+							any_spouse = { tier = KING }
+							AND = {
+								is_councillor = yes
+								liege = { tier = EMPEROR }
+							}
+						}	
+					}
+					PREV = { 
+						set_character_flag = target_priced
+						set_character_flag = target_price_duke
+					}
+				}
+				if = {
+					limit = { 
+						PREV = { NOT = { has_character_flag = target_priced } }
+						OR = {
+							tier = COUNT
+							any_claim = { tier = DUKE }
+							any_dynasty_member = { is_close_relative = PREV tier = DUKE }
+							liege = { is_close_relative = PREV tier = DUKE }
+							any_spouse = { tier = DUKE }
+							AND = {
+								is_councillor = yes
+								liege = { tier = KING }
+							}
+						}	
+					}
+					PREV = { 
+						set_character_flag = target_priced
+						set_character_flag = target_price_count
+					}
+				}
+				if = {
+					limit = { 
+						PREV = { NOT = { has_character_flag = target_priced } }
+						OR = {
+							tier = BARON
+							any_claim = { tier = COUNT }
+							any_dynasty_member = { is_close_relative = PREV tier = COUNT }
+							liege = { is_close_relative = PREV tier = COUNT }
+							any_spouse = { tier = COUNT }
+							AND = {
+								is_councillor = yes
+								liege = { tier = DUKE }
+							}
+						}	
+					}
+					PREV = {
+						set_character_flag = target_priced
+						set_character_flag = target_price_baron
+					}
+				}
+				if = {
+					limit = { 
+						PREV = { NOT = { has_character_flag = target_priced } }
+					}
+					PREV = { 
+						set_character_flag = target_price_courtier
+					}
+				}
+			}
+			clr_character_flag = target_priced
+		}	
+	}
+	
+	option = {
+		name = fe7.24.A	
+		trigger = {
+			# Only accept contracts on people who deserve it.
+			# Or, accept contracts on anyone if we've dispensed with morality.
+			OR = {
+				has_global_flag = black_fang_corrupted
+				FROM = { 
+					plot_target_char = {
+						OR = {
+							trait = arbitrary
+							trait = cruel
+							trait = greedy
+							trait = impaler
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10	
+			
+			# Who WON'T they kill?
+			# Lovers, friends, and family of the chief, fellow Fang members, liege...
+			modifier = {
+				factor = 0
+				FROM = {
+					plot_target_char = {
+						OR = {
+							is_friend = ROOT
+							is_lover = ROOT
+							is_close_relative = ROOT
+							is_liege_or_above = ROOT
+							employer = {
+								character = ROOT
+							}
+						}
+					}
+				}
+			}	
+		}
+		FROM = { 
+			character_event = { id = fe7.25 } 
+		}
+	}
+	
+	# Not sending assassin
+	option = {
+		name = fe7.24.B
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				NOT = { has_global_flag = black_fang_corrupted }
+				FROM = {
+					plot_target_char = {
+						trait = kind
+					}
+				}
+			}	
+			modifier = {
+				factor = 2
+				NOT = { has_global_flag = black_fang_corrupted }
+				FROM = {
+					plot_target_char = {
+						trait = just
+					}
+				}
+			}	
+			modifier = {
+				factor = 2
+				NOT = { has_global_flag = black_fang_corrupted }
+				FROM = {
+					plot_target_char = {
+						trait = charitable
+					}
+				}
+			}	
+			modifier = {
+				factor = 1.5
+				NOT = { has_global_flag = black_fang_corrupted }
+				FROM = {
+					plot_target_char = {
+						trait = humble
+					}
+				}
+			}	
+			modifier = {
+				factor = 1.5
+				NOT = { has_global_flag = black_fang_corrupted }
+				FROM = {
+					plot_target_char = {
+						trait = honest
+					}
+				}
+			}	
+		}	
+		FROM = { 
+			character_event = { id = fe7.28 } 
+		}	
+	}	
+}
+
+# Black Fang take the contract, name their price
+character_event = {
+	id = fe7.25
+	desc = "fe7.25.desc"
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {	 
+		name = "fe7.25.A" # Pay them
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+							trait = lunatic
+						}	
+					}	
+				}	
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { trait = lunatic }
+				NOT = { trait = wroth }
+				plot_power = 0.75
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = target_price_courtier
+				NOT = { wealth = 100 }
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = target_price_baron
+				NOT = { wealth = 150 }
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = target_price_count
+				NOT = { wealth = 300 }
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = target_price_duke
+				NOT = { wealth = 500 }
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = target_price_king
+				NOT = { wealth = 750 }
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = target_price_emperor
+				NOT = { wealth = 1000 }
+			}
+		}	
+		if = {
+			limit = { has_character_flag = target_price_courtier }
+			wealth = -100
+			hidden_tooltip = { FROM = { wealth = 100 } }
+		}
+		if = {
+			limit = { has_character_flag = target_price_baron }
+			wealth = -150
+			hidden_tooltip = { FROM = { wealth = 150 } }
+		}
+		if = {
+			limit = { has_character_flag = target_price_count }
+			wealth = -300
+			hidden_tooltip = { FROM = { wealth = 300 } }
+		}
+		if = {
+			limit = { has_character_flag = target_price_duke }
+			wealth = -500
+			hidden_tooltip = { FROM = { wealth = 500 } }
+		}
+		if = {
+			limit = { has_character_flag = target_price_king }
+			wealth = -750
+			hidden_tooltip = { FROM = { wealth = 750 } }
+		}
+		if = {
+			limit = { has_character_flag = target_price_emperor }
+			wealth = -1000
+			hidden_tooltip = { FROM = { wealth = 1000 } }
+		}
+		character_event = { id = fe7.26 }
+	}
+	option = {	 
+		name = "fe7.25.B" # Decline
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 3
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+		}
+		set_character_flag = black_fang_declined	
+		clr_character_flag = contacting_black_fang
+		clr_character_flag = target_price_courtier
+		clr_character_flag = target_price_baron
+		clr_character_flag = target_price_count
+		clr_character_flag = target_price_duke
+		clr_character_flag = target_price_king
+		clr_character_flag = target_price_emperor
+	}	
+}
+
+# Black Fang paid for and dispatched.
+character_event = {
+	id = fe7.26
+	desc = "fe7.26.desc" 
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+		
+	option = {	
+		name = "fe7.26.A"
+		hidden_tooltip = {
+			random_list = {
+				100 = {
+					# They're usually money in the bank, but they're not perfect.
+					modifier = {
+						factor = 0
+						plot_target_char = { # Powerful mages and true dragons are right out.
+							OR = {
+								trait = class_archsage
+								trait = class_archdruid
+								trait = class_dark_druid
+								trait = dragon
+							}
+						}
+					}
+					modifier = {
+						factor = 0.01
+						plot_target_char = { # The best fighters (Hector, Zephiel, etc.) are a coinflip.
+							OR = {
+								combat_rating = 10
+							}
+						}
+					}
+					modifier = {
+						factor = 0.1
+						plot_target_char = { # Very good fighters, talented people, paranoiacs, and schemers are lower odds.
+							OR = {
+								AND = {
+									combat_rating = 6
+									NOT = { combat_rating = 10 }
+								}
+								trait = strong
+								trait = genius
+								trait = paranoid	
+								intrigue = 20
+							}
+						}
+					}
+					set_character_flag = murder_in_motion
+					plot_target_char = {
+						character_event = { id = fe7.27 tooltip = fe7.26.A.tooltip days = 3 }
+					}
+				
+				}
+				1 = {
+					# Notify target
+					plot_target_char = {
+						character_event = { id = fe7.29 days = 3 }
+					}
+					# Notify plotter
+					character_event = { id = fe7.30 days = 7 }		
+				}
+			}
+		}
+	}
+}
+
+# Black Fang murder plot target
+character_event = {
+	id = fe7.27	
+	desc = "fe7.27.desc" 
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	hide_from = yes
+		
+	option = {
+		name = "fe7.27.A"
+		# Report success? Not necessary, they get the plot success notification. Maybe put it in if we have good flavor text...
+		#hidden_tooltip = { 
+		#	FROM = { character_event = { id = fe7.xx } }
+		#}
+		death = { 
+			death_reason = death_murder_unknown
+			killer = FROM
+		}			
+	}
+}
+
+# Won't take the contract notification
+character_event = {
+	id = fe7.28
+	desc = "fe7.28.desc" 
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {	 
+		name = "fe7.28.A" 
+	}	
+}
+
+# Notify target of failed assassination attempt
+character_event = {
+	id = fe7.29
+	desc = "fe7.29.desc" 
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {	 
+		name = "fe7.29.A" 
+		d_black_fang = {
+			holder_scope = { 				
+				random_courtier = {
+					limit = {
+						prisoner = no
+						is_adult = yes
+						NAND = {
+							trait = incapable
+							trait = dark_incapable
+						}
+						has_character_flag = class_selected
+					}
+					death = { 
+						death_reason = death_battle
+						killer = ROOT
+					}	
+				}
+			}
+		}	
+	}	
+}
+
+# Notify plotter of failed assassination attempt
+character_event = {
+	id = fe7.30
+	desc = "fe7.30.desc" 
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {	 
+		name = "fe7.30.A" 
+		d_black_fang = {
+			holder_scope = { 
+				reverse_opinion = {
+					modifier = opinion_furious
+					who = ROOT
+					years = 5
+				} 
+			}
+		}	
+	}	
+}
+
+# Remove warned status if you've lain low long enough
+character_event = {
+	id = fe7.31
+	desc = "fe7.31.desc" 
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_intrigue
+	 
+	only_rulers = yes
+	is_inaccessible_trigger = yes
+	trigger = {
+		trait = in_hiding
+		has_character_flag = warned_by_black_fang
+	}
+	
+	mean_time_to_happen = {
+		days = 150		
+	}	
+	
+	option = {	 
+		name = "fe7.31.A" 
+		clr_character_flag = warned_by_black_fang
+		random_list = {
+			10 = {}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = { trait = arbitrary }
+				}
+				remove_trait = arbitrary
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = { trait = cruel }
+				}
+				remove_trait = cruel
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = { trait = greedy }
+				}
+				remove_trait = greedy
+			}
+		}
+	}	
+}
+
+# Lyn goes back to Sacae; notify Hausen
+character_event = {
+	id = fe7.32
+	desc = fe7.32.desc
+	picture = GFX_evt_mongols
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe7.32.A
 	}
 }

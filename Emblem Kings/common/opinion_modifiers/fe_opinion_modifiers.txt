@@ -28,9 +28,28 @@ opinion_job_target = {
 	months = 120
 }
 
+opinion_employer = {
+	opinion = 30
+}
+
 opinion_dirty_thief = {
 	opinion = -50
 	prison_reason = yes
 	execute_reason = yes
 	months = 120
+}
+
+opinion_forgave_attempted_murder = {
+	opinion = 100
+	months = 1200
+}
+
+opinion_denied_fire_emblem_request = {
+	opinion = -20
+	months = 120
+}
+
+opinion_loyal_retainer = {
+	opinion = 70
+	months = 1200	# For life
 }

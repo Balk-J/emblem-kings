@@ -1,41 +1,13 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-EVTNAMEfe7.1;The Death of Nergal;;;;;;;;;;;;;x
-EVTDESCfe7.1;With the death of Nergal, the holdings he once controlled have been taken over by opportunistic locals. The fiend's empire is no more.;;;;;;;;;;;;;x
-EVTOPTAfe7.1;Good riddance!;;;;;;;;;;;;;x
-EVTNAMEfe7.2;Crafting New Life;;;;;;;;;;;;;x
-EVTDESCfe7.2;Quintessence can be used to create several different varieties of morphs. You could create a small army of emotionless puppets fit for nothing but combat, or focus your efforts on creating one morph with superior skills.;;;;;;;;;;;;;x
-EVTOPTAfe7.2;I will craft a single morph of great power.;;;;;;;;;;;;;x
-EVTOPTBfe7.2;I will craft an army of lesser morphs.;;;;;;;;;;;;;x
-EVTOPTCfe7.2;On second thought, I should conserve my strength.;;;;;;;;;;;;;x
-EVTNAMEfe7.3;Crafting New Life;;;;;;;;;;;;;x
-EVTDESCfe7.3;Morphs can be created with strength, beauty, and intelligence beyond that of normal humans. As you prepare the ritual to create such a masterpiece, you decide that your newest morph will be:;;;;;;;;;;;;;x
-EVTOPTAfe7.3;A mighty warrior.;;;;;;;;;;;;;x
-EVTOPTBfe7.3;A calculating plotter.;;;;;;;;;;;;;x
-EVTOPTCfe7.3;Something... special.;;;;;;;;;;;;;x
-EVTOPTDfe7.3;On second thought, I should conserve my strength.;;;;;;;;;;;;;x
-fe7.4.desc;hi!;;;;;;;;;;;;;x
-fe7.4.A;yes;;;;;;;;;;;;;x
-fe7.4.B;no;;;;;;;;;;;;;x
-fe7.5.title;The Nearby Plains;;;;;;;;;;;;;x
-fe7.5.desc;I have finally managed to get control of my lands back from my treacherous younger brother. My guardsmen have reported that a young woman who claims to be my granddaughter has been leading an army against him, seeking to remove him from power and return to my side. \n\nWith Lundgren gone, there is no reason to fight anymore. I could open the gates of [Root.Capital.GetName] and let her return home...;;;;;;;;;;;;;x
-fe7.5.A;Family comes first. I will prepare a place for my granddaughter.;;;;;;;;;;;;;x
-fe7.5.B;That child is no kin of mine. Turn her away.;;;;;;;;;;;;;x
-fe7.6.desc;I have received a message from my grandfather! He has regained control of his realm and has invited me to come home.;;;;;;;;;;;;;x
-fe7.6.A;I will join him immediately!;;;;;;;;;;;;;x
-fe7.6.A.tooltip;The war ends and Lady Lyndis gains land in her grandfather's realm.;;;;;;;;;;;;;x
-fe7.6.B;I am glad he is safe, but the plains are my true home.;;;;;;;;;;;;;x
-fe7.6.B.tooltip;Lady Lyndis returns to Sacae.;;;;;;;;;;;;;x
-fe7.7.desc.1;I have received word from my grandfather. He has regained control of his lands from Lundgren, but refuses to see me! He suggests that I return to Sacae...;;;;;;;;;;;;;x
-fe7.7.desc.2;It is time to reclaim the lands of my father's clan from the bandits who have seized them.;;;;;;;;;;;;;x
-fe7.7.A.1;I will build my true family on the plains.;;;;;;;;;;;;;x
-fe7.7.A.2;To the plains!;;;;;;;;;;;;;x
-fe7.7.A.tooltip;The war with Caelin ends. Lady Lyndis declares a new war to reclaim her father's lands in Sacae.;;;;;;;;;;;;;x
-fe7.9.title;Birth of the Black Fang;;;;;;;;;;;;;x
-fe7.9.desc;Rumors are spreading that a Bernese mercenary, Brendan Reed, has founded a new company called the "Black Fang" somewhere in the mountains of Bern. Reed's soldiers style themselves as champions of the people, out to protect the common folk from corrupt nobles who would exploit them. Already a string of murders can be traced to the Fang's so-called justice...;;;;;;;;;;;;;x
-fe7.9.A;They're nothing more than common thugs.;;;;;;;;;;;;;x
-fe7.10.title;The Black Fang Grows;;;;;;;;;;;;;x
-fe7.10.desc;The league of assassins known as the Black Fang has been growing more bold. Their activities enjoy wide support among the masses, who see them as chivalrous defenders of the common man. Many talented warriors have joined their ranks, allowing them to reinforce and expand their mountain stronghold. Lords and ladies across the land sit uneasily in their thrones, wondering where they will strike next...;;;;;;;;;;;;;x
-fe7.11.title;The Black Fang Changes;;;;;;;;;;;;;x
-fe7.11.desc;Strange stories have been circulating about the Black Fang recently. Their leader has taken a new wife, a hauntingly beautiful sorceress with a cruel streak. Most orders are now issued by her, in her husband's name. Under her guidance, the Fang has... changed. They have stepped up recruitment, and are now accepting people of dubious character - the sort of brigands and butchers they once scorned. The Fang is now accepting jobs from anyone who will pay, regardless of the target's virtue or lack thereof. Many of their new members have been whispering about a powerful sorcerer, who may be the mastermind behind these recent developments...;;;;;;;;;;;;;x
-#A strange band of warriors have joined their ranks, with the same black hair and gold eyes as their new lady.
-fe7.11.A;Disturbing news.;;;;;;;;;;;;;x
+fe7_lyn.1.desc;While purchasing supplies for my journey, I met a pair of knights from Lycia. My grandfather sent them to the plains to find my mother and her family. After learning of my parents' death, they decided to search for me instead. They have offered to accompany me to Caelin.;;;;;;;;;;;;;x
+fe7_lyn.1.A;Let us go together.;;;;;;;;;;;;;x
+fe7_lyn.1.B;No, I do not trust you.;;;;;;;;;;;;;x
+fe7_lyn.2.desc;While making my way through the countryside, I came upon a village being accosted by bandits. An old friend of mine and a Pherean archer helped me fend them off. They want to travel with me to gain experience as mercenaries...;;;;;;;;;;;;;x
+fe7_lyn.2.A;Lyndis' Legion, is it?;;;;;;;;;;;;;x
+fe7_lyn.2.B;We should go our separate way.;;;;;;;;;;;;;x
+fe7_lyn..title;;;;;;;;;;;;;;x
+fe7_lyn..desc;;;;;;;;;;;;;;x
+fe7_lyn..A;;;;;;;;;;;;;;x
+fe7_lyn..B;;;;;;;;;;;;;;x
+fe7_lyn..C;;;;;;;;;;;;;;x
+fe7_lyn..D;;;;;;;;;;;;;;x

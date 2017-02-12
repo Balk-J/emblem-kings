@@ -1,0 +1,74 @@
+decisions = {
+	
+	convert_to_anima = {
+		only_playable = yes
+		potential = {
+			ai = no
+			is_playable = yes
+			OR = {
+				trait = class_mage
+				trait = class_mage_female
+				trait = class_sage
+				trait = class_sage_female
+				trait = class_mage_knight
+				trait = class_mage_knight_female
+				trait = class_archsage
+			}
+			NOT = { religion = anima }
+			controls_religion = no
+		}
+		allow = {
+			NOT = { trait = zealous }
+		}
+		effect = {
+			prestige = -500
+			piety = 250
+			
+			religion = anima
+			#piety = 50
+			#prestige = -100
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	convert_to_dark = {
+		only_playable = yes
+		potential = {
+			ai = no
+			is_playable = yes
+			OR = {
+				trait = class_shaman
+				trait = class_shaman_female
+				trait = class_druid
+				trait = class_druid_female
+				trait = class_archdruid
+				trait = class_dark_druid
+			}
+			NOT = { religion = dark }
+			controls_religion = no
+		}
+		allow = {
+			NOT = { trait = zealous }
+		}
+		effect = {
+			prestige = -500
+			piety = 250
+			
+			religion = dark
+			#piety = 50
+			#prestige = -100
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

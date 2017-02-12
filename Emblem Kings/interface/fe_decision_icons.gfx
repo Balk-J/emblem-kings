@@ -32,4 +32,20 @@ spriteTypes = {
 		name = "GFX_promote"
 		texturefile = "gfx\\interface\\decision_icon_promote.dds"
 	}
+	spriteType = {
+		name = "GFX_hire_black_fang"
+		texturefile = "gfx\\interface\\decision_icon_bronze_knife.dds"
+	}
+	spriteType = {
+		name = "GFX_assassinate_personally"
+		texturefile = "gfx\\interface\\decision_icon_assassin.dds"
+	}
+	spriteType = {
+		name = "GFX_convert_to_anima"
+		texturefile = "gfx\\interface\\decision_icon_anima.dds"
+	}
+	spriteType = {
+		name = "GFX_convert_to_dark"
+		texturefile = "gfx\\interface\\decision_icon_dark.dds"
+	}
 }

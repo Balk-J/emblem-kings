@@ -2,7 +2,7 @@
 	name="Athos"
 	dynasty=601
 	
-	religion=guardian
+	religion=anima
 	culture=etrurian
 	
 	disallow_random_traits="yes" 
@@ -51,6 +51,9 @@
 			add_rival=308 # Nergal
 		}
 	}
+	1159.01.01 = {
+		employer = 644 # Arcadia temple holder
+	}
 	1161.01.01 = { 
 		death=yes 
 		#effect = {
@@ -64,7 +67,7 @@
 	#female=yes
 	dynasty=602
 	
-	religion=guardian
+	religion=dark
 	culture=bernese
 	
 	disallow_random_traits="yes"
@@ -84,12 +87,9 @@
 	180.01.01 = {
 		culture=nabatan
 		give_nickname=nick_the_enigma
+		add_trait="eight_legends"
 		effect={
 			add_friend=601 # Athos
-		}
-		add_trait="eight_legends"
-		#add_trait="regalia_apocalypse"
-		effect = {
 			ROOT = {
 				#add_character_modifier = { name = "owns_regalia" duration = -1 }  
 				set_character_flag="regalia_hide"	 
@@ -97,6 +97,9 @@
 				#set_global_flag="regalia_apocalypse_held"	
 			}
 		}
+	}
+	1159.01.01 = {
+		employer = 491 # Shrine of Seals
 	}
 	
 	1162.01.01 = { 
@@ -113,7 +116,7 @@
 	dna="bdbfarlbaay" 
 	properties="cc0ded00000000"
 	
-	religion=guardian
+	religion=elibe_spirits_pagan
 	culture=nabatan
 	
 	disallow_random_traits="yes" 
@@ -151,7 +154,7 @@
 	female=yes
 	dynasty=603
 	
-	religion=guardian
+	religion=elibe_spirits_pagan
 	culture=nabatan
 	
 	father=603
@@ -193,7 +196,7 @@
 	female=yes
 	dynasty=603
 	
-	religion=guardian
+	religion=elibe_spirits_pagan
 	culture=nabatan
 	
 	real_father=129 #Astore
@@ -231,6 +234,10 @@
 	1141.02.01 = { 
 		birth=yes 
 		employer=308 # Nergal 
+		effect = {
+			set_variable = { which = "level" value = 20 }
+			set_character_flag="class_selected"
+		}
 	}
 	
 	1155.01.01 = { 
@@ -248,8 +255,8 @@
 607 = {
 	name="Ephidel" #
 	
-	#religion=anima
-	religion=dark
+	religion=anima
+	#religion=dark
 	culture=nabatan
 	
 	disallow_random_traits="yes"
@@ -258,8 +265,6 @@
 	stewardship = 10
 	intrigue = 10
 	learning = 10
-	trait="class_sage"
-	trait="intricate_webweaver"
 	trait="morph"
 	trait="fair"
 	
@@ -270,6 +275,21 @@
 	1141.01.01 = { 
 		employer=308 # Nergal 
 	}
+	
+	1153.01.01={
+		add_trait="class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	
+	1156.01.01={
+		add_trait="intricate_webweaver"
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	} 
 		
 	1161.01.01 = { 
 		death = {
@@ -282,8 +302,8 @@
 	name="Limstella" #
 	female=yes
 	
-	#religion=anima
-	religion=dark
+	religion=anima
+	#religion=dark
 	culture=nabatan
 	
 	disallow_random_traits="yes"
@@ -292,8 +312,8 @@
 	stewardship = 10
 	intrigue = 10
 	learning = 10
-	trait="class_sage_female"
-	trait="elusive_shadow"
+	#trait="class_sage_female"
+	#trait="elusive_shadow"
 	trait="morph"
 	trait="fair"
 	
@@ -304,6 +324,21 @@
 	1141.01.01 = { 
 		employer=308 # Nergal 
 	}
+	
+	1153.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	
+	1156.01.01={
+		add_trait="elusive_shadow"
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	} 
 		
 	1161.01.01 = { 
 		death = {
@@ -317,8 +352,8 @@
 	name="Sonia" #
 	female=yes
 	
-	#religion=anima
-	religion=dark
+	religion=anima
+	#religion=dark
 	culture=nabatan
 	
 	disallow_random_traits="yes"
@@ -327,12 +362,12 @@
 	stewardship = 10
 	intrigue = 10
 	learning = 10
-	trait="class_sage_female"
-	trait="flamboyant_schemer"
+	#trait="class_sage_female"
+	#trait="flamboyant_schemer"
 	trait="morph"
 	trait="fair"
-	trait="cruel"
-	trait="proud"
+	#trait="cruel"
+	#trait="proud"
 	
 	1141.01.01 = { 
 		birth=yes 
@@ -345,6 +380,23 @@
 	1141.01.01 = { 
 		employer=308 # Nergal 
 	}
+	
+	1153.01.01={
+		add_trait="class_mage_female"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_mage"
+		}
+	} 
+	
+	1156.01.01={
+		add_trait="flamboyant_schemer"
+		add_trait="cruel"
+		add_trait="proud"
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	} 
 		
 	1161.01.01 = { 
 		death = {
@@ -368,8 +420,6 @@
 	stewardship = 0
 	intrigue = 0
 	learning = 0
-	trait="class_sniper"
-	trait="tough_soldier"
 	trait="morph"
 	trait="stutter"
 	
@@ -380,6 +430,21 @@
 	1142.01.01 = { 
 		employer=308 # Nergal 
 	}
+	
+	1154.01.01={
+		add_trait="class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="class_archer"
+		}
+	} 
+	
+	1155.01.01={
+		add_trait="tough_soldier"
+		remove_trait="class_archer"
+		add_trait="class_sniper"
+	} 
 		
 	1161.01.01 = { 
 		death = {
@@ -468,10 +533,10 @@
 		}
 	} 
 	920.01.01={
-	add_trait="detached_priest"
-	add_trait="shy"
-	add_trait="kind"
-	add_trait="humble"
+		add_trait="detached_priest"
+		add_trait="shy"
+		add_trait="kind"
+		add_trait="humble"
 	} 
 	
 	1000.01.01 = { 
@@ -1126,6 +1191,26 @@
 	}
 	
 	1198.01.01 = { 
+		death = yes
+	}
+}
+# for temples in Arcadia, since we're not letting Athos have them
+644 = {
+	name="Aiza" 
+	female=yes
+	
+	religion=elibe_spirits_pagan
+	culture=nabatan
+	
+	1140.01.01 = { 
+		birth=yes 
+	}
+	
+	1159.1.1={
+		add_trait=sympathy_magic
+	}
+	
+	1202.01.01 = { 
 		death = yes
 	}
 }

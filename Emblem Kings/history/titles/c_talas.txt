@@ -9,4 +9,5 @@
 }
 1156.1.1={
 	holder=546 #filler
+	liege=d_media
 }

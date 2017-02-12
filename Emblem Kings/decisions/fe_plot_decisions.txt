@@ -10,21 +10,9 @@ decisions = {
 			OR = {
 				has_plot = plot_kill_character
 				has_plot = plot_kill_spouse
-				has_plot = plot_kill_child
 			}
 			location = {
 				region = world_elibe
-			}
-			OR = {
-				has_global_flag = black_fang_grows
-
-				location = {
-					OR = {
-						region = world_elibe_greater_bern
-						region = world_elibe_lycia
-						region = world_elibe_sacae
-					}
-				}
 			}
 			OR = {
 				NOT = { has_character_flag = contacting_black_fang }
@@ -38,13 +26,97 @@ decisions = {
 		allow = {
 			is_adult = yes
 			prisoner = no
-			wealth = 100
+			#wealth = 100
+			OR =  {
+				intrigue = 12				
+				job_spymaster = { 
+					custom_tooltip = {
+						text = hire_black_fang_SPYMASTER
+						hidden_tooltip = { intrigue = 18 }
+					}
+				}	
+			}	
 		}
 		effect = {
-			wealth = -100
+			#wealth = -100
+			set_character_flag = contacting_black_fang
+			hidden_tooltip = { character_event = { id = fe7.23 } }
+			
+			d_black_fang = {			
+				holder_scope = {
+					character_event = { id = fe7.24 days = 50 random = 20 tooltip = hire_black_fang_tooltip }
+				}
+			}		
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
+			modifier = {
+				factor = 0
+				NOT = {
+					d_black_fang = {
+						holder_scope = {
+							is_vassal_or_below = FROM
+						}
+					}
+				}
+			}
+		}
+	}
+	assassinate_personally = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			OR = {
+				has_plot = plot_kill_character
+				has_plot = plot_kill_spouse
+			}
+			OR = {
+				trait = class_assassin
+				trait = class_assassin_female
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			is_ill = no
+			NOT = { has_character_modifier = recent_assassination_attempt }
+			NOT = {trait = in_hiding}
+			scaled_wealth = 0.08
+			plot_target_char = {
+				NOT = {trait = in_hiding}
+				age = 6
+			}
+		}
+		effect = {
+			add_character_modifier = { name = recent_assassination_attempt duration = 360 }
+			scaled_wealth = -0.08
+			custom_tooltip = {
+				text = assassinate_personally.tooltip
+				hidden_tooltip = {
+					character_event = { id = fe_plot.40 days = 10 random = 4 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 0
+				OR = {
+					trait = craven
+					trait = content
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					trait = brave
+					trait = wroth
+					trait = lunatic
+					trait = ambitious
+					NOT = { opinion = { who = plot_target_char value = -90 } }
+				}
+			}
 		}
 	}	
 }

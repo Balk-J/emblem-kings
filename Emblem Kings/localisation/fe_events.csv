@@ -1,10 +1,10 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 EVTNAMEfe6.1;The Kingdom of Lycia;;;;;;;;;;;;;x
-EVTDESCfe6.1;Since the time of Roland, the Lycian League has been a federation of small marches, governed by largely autonomous nobles. Now, these territories have been formally united into a new nation - the Kingdom of Lycia. Under your leadership, the people of the new state hope this marks the beginning of an era of peace, prosperity, and harmony in Lycia.;;;;;;;;;;;;;x
+EVTDESCfe6.1;Since the time of Roland, the Lycian League has been a federation of small marches, governed by largely autonomous nobles. Now these territories have been formally united into a new nation - the Kingdom of Lycia. Under your leadership, the people of the new state hope this marks the beginning of an era of peace, prosperity, and harmony in Lycia.;;;;;;;;;;;;;x
 EVTOPTAfe6.1;Long may it endure!;;;;;;;;;;;;;x
 EVTTOOLTIPfe6.1;The Kingdom of Lycia is formed.;;;;;;;;;;;;;x
 EVTNAMEfe6.2;The Kingdom of Lycia;;;;;;;;;;;;;x
-EVTDESCfe6.2;Since the time of Roland, the Lycian League has been a federation of small marches, governed by largely autonomous nobles. Now, these territories have been formally united into a new nation - the Kingdom of Lycia. Lead by [Root.GetTitle] [Root.GetTitledFirstName], the people of the new state hope this marks the beginning of an era of peace, prosperity, and harmony in Lycia.;;;;;;;;;;;;;x
+EVTDESCfe6.2;Since the time of Roland, the Lycian League has been a federation of small marches, governed by largely autonomous nobles. Now these territories have been formally united into a new nation - the Kingdom of Lycia. Lead by [Root.GetTitle] [Root.GetTitledFirstName], the people of the new state hope this marks the beginning of an era of peace, prosperity, and harmony in Lycia.;;;;;;;;;;;;;x
 EVTOPTAfe6.2;We shall see.;;;;;;;;;;;;;x
 EVTDESCfe6.3;At your command, the Demon Dragon has created several new war dragons. They will surely prove to be capable commanders - and fearsome warriors - for your army.;;;;;;;;;;;;;x
 EVTOPTAfe6.3;My enemies shall burn.;;;;;;;;;;;;;x
@@ -208,7 +208,7 @@ regalia.53.A;Begin looking into the matter immediately.;;;;;;;;;;;;;x
 regalia.53.B;I know exactly where it is.;;;;;;;;;;;;;x
 regalia.53.C;I don't have time for this right now.;;;;;;;;;;;;;x
 regalia.54.title;Descendants of the Hero;;;;;;;;;;;;;x
-regalia.54.desc;The scholar you dispatched to investigate the history of Hartmut's sword has returned. He reports that the weapon was passed down through the royal line of Bern after Hartmut's death. Although they clearly misplaced it at some point, the sword may still be the country. \n\nYour scholar found references to a small and secretive order of knights operating out of a fortress near Bern Keep. These men have attempted to collect and preserve artifacts related to Hartmut and his fellow legends throughout the years.\n\nIf they don't have Hartmut's blade, they should at least know something about its location.;;;;;;;;;;;;;x
+regalia.54.desc;The scholar you dispatched to investigate the history of Hartmut's sword has returned. He reports that the weapon was passed down through the royal line of Bern after Hartmut's death. Although they clearly misplaced it at some point, the sword may still be in the country. \n\nYour scholar found references to a small and secretive order of knights operating out of a fortress near Bern Keep. These men have attempted to collect and preserve artifacts related to Hartmut and his fellow legends throughout the years.\n\nIf they do not possess Hartmut's blade, they should at least know something about its location.;;;;;;;;;;;;;x
 regalia.54.A;I will visit these knights.;;;;;;;;;;;;;x
 regalia.54.B;This hunt has gone far enough.;;;;;;;;;;;;;x
 regalia.55.title;Eckesachs;;;;;;;;;;;;;x

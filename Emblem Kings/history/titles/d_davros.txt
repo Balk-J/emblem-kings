@@ -3,5 +3,5 @@
 }
 1130.1.1={
 	active = yes
-	holder=801 # Fargus
+	holder=764 # Fargus
 }

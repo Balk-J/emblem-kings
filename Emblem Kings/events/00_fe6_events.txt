@@ -22,20 +22,235 @@ narrative_event = {
 				}
 			}
 		}
-		k_lycia = {
-			grant_title = ROOT
-			#make_primary_title = yes
-			copy_title_laws = k_lycian_league
-			copy_title_history = k_lycian_league
+		primary_title = {
+			k_lycia = {
+				grant_title = ROOT
+				copy_title_laws = PREV
+				copy_title_history = PREV
+				#make_primary_title = yes
+				#copy_title_laws = k_lycian_league
+				#copy_title_history = k_lycian_league
+			}
 		}
-		k_lycian_league = {
-			destroy_landed_title = THIS
+		
+		if = {
+			limit = {
+				d_ostia = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_ostia = {
+				set_defacto_liege = ROOT			
+			}
 		}
+		if = {
+			limit = {
+				d_caelin = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_caelin = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_badon = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_badon = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_araphen = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_araphen = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_cornwell = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_cornwell = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_khathalet = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_khathalet = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_laus = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_laus = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_pherae = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_pherae = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_ryerde = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_ryerde = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_santaruz = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_santaruz = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_tania = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_tania = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_thria = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_thria = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_tuscana = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_tuscana = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		if = {
+			limit = {
+				d_worde = {
+					has_holder = yes
+					holder_scope = {
+						opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						independent = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}
+			d_worde = {
+				set_defacto_liege = ROOT			
+			}
+		}
+		#k_lycian_league = {
+		#	destroy_landed_title = THIS
+		#}
 		hidden_tooltip = {
-			activate_title = { title = k_lycian_league status = no }
+			#activate_title = { title = k_lycian_league status = no }
 			any_playable_ruler = {
 				limit = {
-					NOT = { has_landed_title = k_lycian_league }
+					NOT = { has_landed_title = k_lycia }
 					ai = no
 				}
 				narrative_event = { id = fe6.2 }
@@ -62,7 +277,7 @@ narrative_event = {
 #Spawn war dragons
 character_event  = {
 	id = fe6.3
-	title = EVTNAMEfe6.3
+	#title = EVTNAMEfe6.3
 	desc = EVTDESCfe6.3
 	
 	picture = GFX_evt_shadowy_cabal
@@ -332,7 +547,7 @@ narrative_event = {
 # Create Idenn
 character_event = {
 	id = fe6.6
-	title = fe6.6.title
+	#title = fe6.6.title
 	desc = fe6.6.desc
 	picture = GFX_evt_throne_room
 	
@@ -410,6 +625,17 @@ narrative_event = {
 	
 	option = {
 		name = fe6.7.A
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_game_rule = {
+					name = RULE_FE_STORY
+					value = on
+				}
+				has_character_flag = is_fe6_zephiel
+			}
+		}
 		hidden_tooltip = {
 			character_event = {
 				id = fe6.8
@@ -418,6 +644,9 @@ narrative_event = {
 	}
 	option = {
 		name = fe6.7.B
+		ai_chance = {
+			factor = 1
+		}
 		hidden_tooltip = {
 			character_event = {
 				id = fe6.10
@@ -426,6 +655,9 @@ narrative_event = {
 	}
 	option = {
 		name = fe6.7.C
+		ai_chance = {
+			factor = 1
+		}
 		hidden_tooltip = {
 			character_event = {
 				id = fe6.10
@@ -434,6 +666,9 @@ narrative_event = {
 	}
 	option = {
 		name = fe6.7.D
+		ai_chance = {
+			factor = 1
+		}
 		hidden_tooltip = {
 			character_event = {
 				id = fe6.10
@@ -454,6 +689,17 @@ narrative_event = {
 	
 	option = {
 		name = fe6.8.A
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_game_rule = {
+					name = RULE_FE_STORY
+					value = on
+				}
+				has_character_flag = is_fe6_zephiel
+			}
+		}
 		trigger = {
 			religion = dragon_liberation
 		}
@@ -465,6 +711,9 @@ narrative_event = {
 	}
 	option = {
 		name = fe6.8.B
+		ai_chance = {
+			factor = 1
+		}
 		hidden_tooltip = {
 			character_event = {
 				id = fe6.10
@@ -473,6 +722,9 @@ narrative_event = {
 	}
 	option = {
 		name = fe6.8.C
+		ai_chance = {
+			factor = 1
+		}
 		hidden_tooltip = {
 			character_event = {
 				id = fe6.10
@@ -481,6 +733,9 @@ narrative_event = {
 	}
 	option = {
 		name = fe6.8.D
+		ai_chance = {
+			factor = 1
+		}
 		hidden_tooltip = {
 			character_event = {
 				id = fe6.10

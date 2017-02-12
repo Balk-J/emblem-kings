@@ -8,3 +8,15 @@ fire_emblem.4.desc;It is traditional for the heir to the [Root.PrimaryTitle.GetF
 fire_emblem.4.A;We shall conduct the ceremony without it. [Root.Heir.GetFirstName] remains my heir.;;;;;;;;;;;;;x
 fire_emblem.4.B;This is reason enough to declare [Root.Heir.GetHerHim] unfit to inherit...;;;;;;;;;;;;;x
 fire_emblem.1.C;.;;;;;;;;;;;;;x
+fire_emblem.6.desc;[FromFrom.GetTitledName] has sent you an envoy to request that you return the Fire Emblem to [FromFrom.PrimaryTitle.GetName]. It is their national treasure, and by all rights is the property of the [FromFrom.GetTitle].;;;;;;;;;;;;;x
+fire_emblem.6.A;[FromFrom.GetTitledFirstName] may have it with my compliments.;;;;;;;;;;;;;x
+fire_emblem.6.A.tooltip;You return the Fire Emblem to [FromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
+fire_emblem.6.B;No. It is safer in my hands.;;;;;;;;;;;;;x
+fire_emblem.7.desc;A band of guards from [From.Location.GetName] has arrived. They have come to deliver the Fire Emblem, with the compliments of [From.GetTitledFirstName].;;;;;;;;;;;;;x
+fire_emblem.8.desc;A messenger from [From.Location.GetName] has arrived. [From.GetTitledFirstName] wishes to inform you that [From.GetSheHe] will be keeping the Fire Emblem. [From.GetSheHeCap] believes it will be safer in [From.GetHerHis] hands than yours.;;;;;;;;;;;;;x
+fire_emblem.8.A;That [GetRootFromInsult]!;;;;;;;;;;;;;x
+fire_emblem.9.desc;[From.GetTitledName] owes you a favor. You could take advantage of that and force [From.GetHerHim] to return the Fire Emblem.;;;;;;;;;;;;;x
+fire_emblem.9.A;Time to call in the debt.;;;;;;;;;;;;;x
+fire_emblem.9.B;A polite request should suffice.;;;;;;;;;;;;;x
+fire_emblem.11.desc;[From.GetTitledName] has sent you an envoy demanding the return of the Fire Emblem to [From.PrimaryTitle.GetName]. The envoy makes it clear that [From.GetTitledFirstName] is calling in the favor you owe [From.GetHerHim].;;;;;;;;;;;;;x
+fire_emblem.11.A;I suppose I have no choice.;;;;;;;;;;;;;x

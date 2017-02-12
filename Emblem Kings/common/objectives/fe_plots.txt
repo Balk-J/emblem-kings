@@ -10,7 +10,8 @@
 
 # Get a character disinherited
 plot_disinherit_character = {
-	type = realm_characters_plus # All characters in the same realm, plus rivals and relatives of self, parents, children and spouse
+	#type = realm_characters_plus # All characters in the same realm, plus rivals and relatives of self, parents, children and spouse
+	type = realm_characters # (characters in the plotter's realm)
 	intrigue_plot = yes
 	
 	# Plotter scope
@@ -96,7 +97,6 @@ plot_disinherit_character = {
 	}
 	
 	target_potential = {
-		NOT = { any_spouse = { character = FROM } } # This case is covered by another plot
 		# Only if the presence of the Fire Emblem affects the succession
 		liege = {
 			primary_title = {
@@ -105,13 +105,33 @@ plot_disinherit_character = {
 			current_heir = {
 				character = ROOT
 			}		
+			OR = {
+				has_character_modifier = holds_fire_emblem
+				any_realm_character  = {
+					has_character_modifier = holds_fire_emblem
+				}
+			}
+			OR = {
+				AND = {
+					primary_title = {
+						region = world_elibe
+					}	
+					OR = {
+						trait = fire_emblem_elibe
+						any_realm_character = {
+							trait = fire_emblem_elibe
+							prisoner = no
+						}
+					}
+					
+				}
+			}
 		}
 		is_adult = no
 	}
 	
 	# Target character scope
-	allow = {
-		
+	allow = {		
 		#NOT = { is_child_of = FROM } # YES my own children! That's the point!
 		OR = {
 			NOT = { character = FROM }  # Not against myself! (unself I am bonkers)

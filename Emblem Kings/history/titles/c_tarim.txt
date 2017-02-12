@@ -25,6 +25,10 @@
 	historical_nomad = no
 }
 1159.02.01 = {
-	holder=538 # Glass is dead
+	#holder=538 # Glass is dead
 	historical_nomad = yes
+	holder=502 #Dayan
+}
+1189.1.1={
+	holder=505 # Sin
 }

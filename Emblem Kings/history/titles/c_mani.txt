@@ -6,4 +6,5 @@
 
 1125.1.1={
 	holder=544
+	liege=d_gelonus
 }

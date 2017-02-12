@@ -22,6 +22,10 @@ THE_TOMES;The Tomes;;;;;;;;;;;;;x
 GOD_FATHER_SKY;Father Sky;;;;;;;;;;;;;x
 GOD_MOTHER_EARTH;Mother Earth;;;;;;;;;;;;;x
 GOD_DELPHI;Delphi;;;;;;;;;;;;;x
+GOD_NINIS;Ninis;;;;;;;;;;;;;x
+GOD_SET;Set;;;;;;;;;;;;;x
+GOD_THOR;Thor;;;;;;;;;;;;;x
+GOD_FILLA;Filla;;;;;;;;;;;;;x
 GOD_THE_GODS;the Gods;;;;;;;;;;;;;x
 ARCHBISHOP;Archbishop;;;;;;;;;;;;;x
 ARCHBISHOP_GOLDEN_CHURCH;Golden Bishop;;;;;;;;;;;;;x
@@ -67,7 +71,7 @@ e_dragon_liberation;The Last Dragons;;;;;;;;;;;;;x
 e_dragon_liberation_adj;Last Dragon;;;;;;;;;;;;;x
 magic_group;Mage;;;;;;;;;;;;;x
 dark;Elder Magic;;;;;;;;;;;;;x
-dark_DESC;Elder or "dark" magic is an ancient magical discipline whose power stems from deep knowledge and understanding of the arcane. The common folk widely believe elder magic to be evil - perhaps due to the number of shamans who have had their minds erased by the forces they sought to command, or been twisted into power-hungry maniacs.;;;;;;;;;;;;;x
+dark_DESC;Elder or "dark" magic is an ancient magical discipline whose power stems from deep knowledge and understanding of the arcane. The common folk widely believe elder magic to be evil - perhaps due to the number of mages who have had their minds erased by the forces they sought to command, or been twisted into power-hungry maniacs.;;;;;;;;;;;;;x
 anima;Anima Magic;;;;;;;;;;;;;x
 anima_DESC;Anima magic is a magical discipline centered around communion with and mastery of the forces of nature itself. In addition to controlling the formidable powers of the elements, practicioners of anima magic claim that their powers allow communion with the spirit of all things.;;;;;;;;;;;;;x
 divine_sky_pagan;Divine Sky;;;;;;;;;;;;;x
@@ -86,4 +90,6 @@ raider_pagan;Raider;;;;;;;;;;;;;x
 raider_pagan_DESC;The brigands and pirates of the world have only one god - plunder.;;;;;;;;;;;;;x
 guardian_group;Guardians;;;;;;;;;;;;;x
 guardian;Guardian;;;;;;;;;;;;;x
-guardian_DESC;Guardians are men and women dedicated to the defense of a particular region or people. Generally peaceful until provoked, Guardians struggle with offensive wars but have an easier time than most keeping order in the lands they protect.;;;;;;;;;;;;;x
+guardian_DESC;Guardians are men and women dedicated to protecting a particular region or people. Generally peaceful until provoked, Guardians struggle with offensive wars but have an easier time than most keeping order in the lands they protect.;;;;;;;;;;;;;x
+elibe_spirits_pagan;Old Elibian;;;;;;;;;;;;;x
+elibe_spirits_pagan_DESC;Old Elibians revere the nature spirits of Elibe, including Ninis, Set, Thor, and Filla. They are generally peaceful and focus on protecting areas of spiritual signifigance. They tend to struggle with offensive wars but have an easier time than most keeping order in the lands they protect.;;;;;;;;;;;;;x

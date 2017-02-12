@@ -10,7 +10,7 @@ b_marciana = tribal
 #b_marciana_2 = city
 
 # Misc
-culture = seafarer
+culture = western_islander
 religion = elimine_church
 
 #History

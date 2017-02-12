@@ -17,6 +17,14 @@
 	#health = -1
 	#is_health = yes 
 #}
+retired = {
+	customizer = no
+	random = no
+	can_hold_titles = no 
+	cannot_inherit = yes 
+	cannot_marry = yes
+	is_hidden = yes 
+}
 sleeping = {
 	customizer = no
 	random = no
@@ -26,6 +34,9 @@ eight_legends = {
 	monthly_character_prestige = 0.5
 	customizer = no
 	random = no
+	can_hold_titles = no 
+	cannot_inherit = yes 
+	cannot_marry = yes
 }
 teacher = {
 	cannot_marry = yes 

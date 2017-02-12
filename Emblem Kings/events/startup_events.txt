@@ -31,6 +31,20 @@ character_event = {
 			265 = { #Neandreia
 				add_province_modifier = { name = ancient_ruins duration = -1 }
 			}
+			# Arcadia
+			120 = { 
+				add_province_modifier = { name = ancient_ruins duration = -1 }
+			}
+		}
+		
+		if = { # Lyn's Story
+			limit = { 
+				year = 1159
+				NOT = { year = 1160 }
+			}
+			character_event = {
+				id =  startup.3
+			}
 		}
 		
 		if = { # Binding Blade
@@ -65,5 +79,48 @@ character_event = {
 				days = 1
 			}
 		}
+	}
+}
+
+# The Girl from the Plains setup
+character_event = {
+	id = startup.3
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_fe7_the_girl_from_the_plains }
+				d_lyn = {
+					has_holder = yes
+					holder_scope = {						
+						has_character_flag = is_fe7_lyn
+						any_current_enemy = {
+							has_landed_title = d_caelin
+							has_character_flag = is_fe7_lundgren
+						}
+					}
+				}
+			}
+			set_global_flag = scenario_fe7_the_girl_from_the_plains
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						name = RULE_FE_STORY
+						value = on
+					}
+				}
+				d_lyn = {
+					holder_scope = {
+						character_event = { id = fe7_lyn.1 days = 20 random = 5 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = OK
 	}
 }

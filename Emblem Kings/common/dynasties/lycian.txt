@@ -427,12 +427,12 @@
 }
 
 134={
-	name="Hetanid"
+	name="of Betoricas"
 	culture="lycian"
 }
 
 135={
-	name="Emichid"
+	name="Walthars"
 	culture="lycian"
 }
 
@@ -547,7 +547,7 @@
 }
 
 158={
-	name="of Betoricas"
+	name="Hetanid"
 	culture="lycian"
 }
 
@@ -587,7 +587,7 @@
 }
 
 166={
-	name="Walthars"
+	name="Emichid"
 	culture="lycian"
 }
 

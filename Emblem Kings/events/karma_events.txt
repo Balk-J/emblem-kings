@@ -1,0 +1,1130 @@
+namespace = karma
+#test
+character_event = {
+	id = karma.0
+	desc = "OK"
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK" 
+		set_character_flag = attempted_filicide
+		random_child = {
+			set_character_flag = parent_attempted_filicide
+			opinion = {
+				who = ROOT
+				modifier = attempted_murder
+				months = 1200
+			}
+			
+		}
+		character_event = { id = karma.1 }
+	}
+}
+
+# Peasant rebellion against the filicide
+character_event = {
+	id = karma.1
+	desc = "karma.1.desc"
+	picture = GFX_evt_peasants
+	#border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = filicide_problem_levies
+		clr_character_flag = filicide_problem_tax
+		clr_character_flag = filicide_problem_revolt
+		random_realm_province = {
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 25
+				attributes = {
+					martial = 5
+				}
+				trait = peasant_leader
+				trait = tough_soldier
+				trait = class_soldier
+			}
+			
+			new_character = {
+				set_variable = { which = "level" value = 1 }
+				set_character_flag="class_selected"
+				set_character_flag="class_soldier"
+				
+				create_title = {
+					tier = DUKE
+					landless = yes
+					temporary = yes
+					rebel = yes
+					culture = ROOT
+					name = "FILICIDE_REVOLT"
+					holder = THIS
+				}
+				
+				wealth = 100
+				
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = THIS
+					match_character = ROOT
+					match_mult = 1.0
+					attrition = 0
+					disband_on_peace = yes
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 30
+					trait = peasant_leader
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREVPREV
+						home = PREVPREV
+						owner = PREV
+						match_character = ROOT
+						match_mult = 1.0
+						attrition = 0
+						disband_on_peace = yes
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 31
+					trait = peasant_leader
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREVPREV
+						home = PREVPREV
+						owner = PREV
+						match_character = ROOT
+						match_mult = 1.0
+						attrition = 0
+						disband_on_peace = yes
+					}
+				}
+		
+				war = {
+					target = ROOT
+					casus_belli = filicide_revolt
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_evil_tyrant
+				}
+					
+				
+			}
+		}		
+	
+	}
+	
+	option = {
+		name = "karma.1.A" 
+	}
+}
+
+# Ruler loses rebellion
+character_event = {
+	id = karma.2
+	desc = "karma.2.desc"
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.2.A" 
+		clr_character_flag = attempted_filicide
+		clr_character_flag = committed_filicide
+		if = {
+			limit = { 
+				NOT = {
+					any_child = {
+						has_character_flag = parent_attempted_filicide
+					}
+				}
+			}
+			abdicate = yes
+		}
+		
+		if = {
+			limit = { 
+				any_child = {
+					has_character_flag = parent_attempted_filicide
+				}
+			}
+			random_child = {
+				limit = {
+					has_character_flag = parent_attempted_filicide
+				}
+				clr_character_flag = parent_attempted_filicide
+				ROOT = {
+					abdicate_to = PREV
+				}
+			}
+		}
+		
+		random_list = {
+			30 = {}
+			50 = {
+				add_trait = wounded
+			}
+			20 = {
+				death = {
+					death_reason = death_rabble				
+				}
+			}
+		}
+	}
+}
+
+# Vicious rumors start...
+character_event = {
+	id = karma.3
+	desc = "karma.3.desc"
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_realm_lord = {
+			character_event = { id = karma.4 }
+		}	
+		random_list = {		
+			30 = {
+				modifier = {
+					factor = 0
+					has_character_flag = filicide_problem_levies
+				}				
+				character_event = { id = karma.5 days = 30 random = 10 }
+			}
+			30 = {
+				modifier = {
+					factor = 0
+					has_character_flag = filicide_problem_tax
+				}
+				character_event = { id = karma.6 days = 30 random = 10 }
+			}
+			30 = {
+				modifier = {
+					factor = 0
+					has_character_flag = filicide_problem_revolt
+				}
+				character_event = { id = karma.7 days = 30 random = 10 }
+			}
+			10 = {
+				character_event = { id = karma.1 days = 30 random = 10 }					
+			}
+		}	
+	}
+	
+	option = {
+		name = "karma.3.A" 
+		add_character_modifier = {
+			modifier = vicious_rumors
+			years = 10
+		}
+		
+		add_character_modifier = {
+			modifier = disloyal_peasantry
+			years = 10
+		}
+	}
+	option = {
+		name = "karma.3.B" 
+		add_character_modifier = {
+			modifier = vicious_rumors
+			years = 10
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				duration = 1825 # 5 years
+			}
+		}
+	}
+	option = {
+		name = "karma.3.C" 
+		trigger = {
+			OR = {
+				diplomacy = 15
+				intrigue = 15
+			}
+		}
+		add_character_modifier = {
+			modifier = vicious_rumors
+			years = 10
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasants_upset
+				duration = 1825 # 5 years
+			}
+		}
+	}
+}
+
+# Rulers get wind of the rumors...
+character_event = {
+	id = karma.4
+	desc = "karma.4.desc"
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.4.A" 
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 3
+				NOT = { opinion = { who = FROM value = 20 } }
+			}
+		}
+		
+		opinion = {
+			modifier = opinion_dishonorable_scum
+			who = FROM
+			years = 5
+		} 
+	}
+	option = {
+		name = "karma.4.B" 
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = trusting
+			}
+			modifier = {
+				factor = 5
+				opinion = { who = FROM value = 40 } 
+			}
+		}
+	}
+}
+
+# Wreck armies
+character_event = {
+	id = karma.5
+	desc = "karma.5.desc"
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		# Kill all holding levies using a modifer
+		any_demesne_title = {
+			limit = {
+				tier = BARON
+			}
+			add_holding_modifier = {
+				name = mass_desertions
+				duration = 1
+			}
+		}
+		set_character_flag = filicide_problem_levies
+	}
+	
+	option = {
+		name = "karma.5.A" 
+		
+		any_demesne_province = {
+			add_province_modifier = {
+				name = recruitment_difficulties
+				duration = 1825 # 5 years
+			}
+		}
+				
+		if = {
+			limit = {
+				NOT = { trait = stressed }
+			}
+			random = {
+				chance = 30
+				add_trait = stressed
+			}
+		}
+		# Take away the anti-levy modifer. Wish we had an empty_levies command like the refill one...
+		hidden_tooltip = {			
+			any_demesne_title = {
+				remove_holding_modifier = mass_desertions
+			}
+			random_list = {		
+				40 = {
+					modifier = {
+						factor = 0
+						has_character_flag = filicide_problem_tax
+					}				
+					character_event = { id = karma.6 days = 30 random = 10 }
+				}
+				40 = {
+					modifier = {
+						factor = 0
+						has_character_flag = filicide_problem_revolt
+					}
+					character_event = { id = karma.7 days = 30 random = 10 }
+				}
+				20 = {
+					character_event = { id = karma.1 days = 30 random = 10 }					
+				}
+			}	
+		}
+	}
+}
+
+# Wreck taxes
+character_event = {
+	id = karma.6
+	desc = "karma.6.desc"
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = filicide_problem_tax
+	}
+		
+	option = {
+		name = "karma.6.A" 
+		
+		any_demesne_province = {
+			add_province_modifier = {
+				name = uncollectable_taxes
+				duration = 1825 # 5 years
+			}
+		}
+		
+		job_treasurer = {
+			if = {
+				limit = {
+					ai = yes
+					has_job_action = action_squeeze_peasants
+				}
+				random = {
+					chance = 60
+					add_trait = wounded
+				}
+			}
+		}
+	
+		if = {
+			limit = {
+				NOT = { trait = stressed }
+			}
+			random = {
+				chance = 30
+				add_trait = stressed
+			}
+		}
+		hidden_tooltip = {			
+			random_list = {		
+				40 = {
+					modifier = {
+						factor = 0
+						has_character_flag = filicide_problem_levies
+					}				
+					character_event = { id = karma.5 days = 30 random = 10 }
+				}
+				40 = {
+					modifier = {
+						factor = 0
+						has_character_flag = filicide_problem_revolt
+					}
+					character_event = { id = karma.7 days = 30 random = 10 }
+				}
+				20 = {
+					character_event = { id = karma.1 days = 30 random = 10 }					
+				}
+			}	
+		}
+	}
+}
+
+# Wreck opinion
+character_event = {
+	id = karma.7
+	desc = "karma.7.desc"
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = filicide_problem_revolt
+	}
+		
+	option = {
+		name = "karma.7.A" 
+		
+		any_demesne_province = {
+			add_province_modifier = {
+				name = peasants_enraged
+				duration = 1825 # 5 years
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = { trait = stressed }
+			}
+			random = {
+				chance = 30
+				add_trait = stressed
+			}
+		}
+		
+		hidden_tooltip = {			
+			random_list = {		
+				40 = {
+					modifier = {
+						factor = 0
+						has_character_flag = filicide_problem_levies
+					}				
+					character_event = { id = karma.5 days = 30 random = 10 }
+				}
+				40 = {
+					modifier = {
+						factor = 0
+						has_character_flag = filicide_problem_tax
+					}
+					character_event = { id = karma.6 days = 30 random = 10 }
+				}
+				20 = {
+					character_event = { id = karma.1 days = 30 random = 10 }					
+				}
+			}	
+		}
+	}
+}
+
+# Success in murdering child. ROOT = plotter
+character_event = {
+	id = karma.19	
+	desc = "karma.19.desc"
+	picture = GFX_evt_whispers
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.19.A"		
+		hidden_tooltip = {
+			set_character_flag = committed_filicide 
+			# Spin the wheel of karma...
+			if = {
+				limit = {
+					is_landed = yes
+					higher_tier_than = BARON
+				}
+				# Kick off a revolt event chain
+				character_event = { id = karma.3 days = 15 random = 5 }
+			}
+			if = {
+				limit = {
+					NAND = {
+						is_landed = yes
+						higher_tier_than = BARON
+					}
+				}
+				random_list = {
+					10 = {} # Nothing happens; bullet dodged
+					10 = {
+						# Death
+						character_event = { id = karma.21 days = 30 random = 20 }
+					}
+					30 = {
+						# Leprosy
+						character_event = { id = 6010 days = 30 random = 20 }
+					}
+					30 = {
+						# Nervous breakdown
+						character_event = { id = karma.22 days = 30 random = 20 }
+					}
+					#10 = {
+						# PLAGUE 
+					#	character_event = { id = karma.24 days = 30 random = 20 }
+					#}
+					20 = {
+						# Incapable
+						character_event = { id = 6110 days = 30 random = 20 }
+					}
+				}
+			}
+		}
+	}
+}
+
+# Attempted to murder child and discovered. ROOT = victim, FROM = plotter
+character_event = {
+	id = karma.20
+	desc = "karma.20.desc"
+	picture = GFX_evt_bad_news
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {set_character_flag = attempted_filicide}
+		set_character_flag = parent_attempted_filicide
+	}
+	
+	# What to do about it?
+	
+	# Immediately make an assassination attempt of your own. 
+	# Odds of success are nearly certain.
+	option = {
+		name = "karma.20.A"
+		ai_chance = {
+			factor = 90
+		}
+		custom_tooltip = { 
+			text = karma.20.A.tooltip 
+			hidden_tooltip = {			
+				FROM = { character_event = { id = karma.25 days = 3} }
+			}
+		}		
+	}
+	
+	# Confront the plotter. 
+	# This will probably lead to a fight likely to end poorly for the plotter.
+	option = {
+		name = "karma.20.B"
+		ai_chance = {
+			factor = 9
+		}
+		custom_tooltip = { 
+			text = karma.20.B.tooltip 
+			hidden_tooltip = {			
+				FROM = { character_event = { id = karma.30 days = 3 } }
+			}
+		}		
+		
+	}
+	
+	# Try to reconcile.
+	# You never know. It might work.
+	option = {
+		name = "karma.20.C"
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = { 
+			text = karma.20.C.tooltip 
+			hidden_tooltip = {			
+				FROM = { character_event = { id = karma.36 days = 3 } }
+			}
+		}		
+		
+	}
+	
+	# Ignore it!
+	option = {
+		name = "karma.20.D"
+		ai_chance = {
+			factor = 0
+		}
+		custom_tooltip = { text = karma.20.D.tooltip }
+	}
+}
+
+# Die of karma
+character_event = {
+	id = karma.21	
+	desc = "karma.21.desc"
+	picture = GFX_evt_illness
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.21.A"
+		if = {
+			limit = {
+				NOT = { age = 45 }
+			}
+			death = {
+				death_reason = death_poor_health
+			}
+		}
+		if = {
+			limit = {
+				age = 45
+			}
+			death = {
+				death_reason = death_natural
+			}
+		}
+	}
+}
+
+# Nervous breakdown. Stressed, Paranoid, wroth, craven
+character_event = {
+	id = karma.22	
+	desc = "karma.22.desc"
+	picture = GFX_evt_bad_news
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.22.A"
+		if = {
+			limit = {
+				NOT = { trait = stressed }
+			}
+			add_trait = stressed
+		}
+		add_trait = stressed
+		if = {
+			limit = {
+				trait = trusting
+			}
+			remove_trait = trusting
+		}
+		if = {
+			limit = {
+				NOT = { trait = paranoid }
+			}
+			add_trait = paranoid
+		}
+		if = {
+			limit = {
+				trait = brave
+			}
+			remove_trait = brave
+		}
+		if = {
+			limit = {
+				NOT = { trait = craven }
+			}
+			add_trait = craven
+		}
+		if = {
+			limit = {
+				trait = patient
+			}
+			remove_trait = patient
+		}
+		if = {
+			limit = {
+				NOT = { trait = wroth }
+			}
+			add_trait = wroth
+		}
+		hidden_tooltip = {
+			health = -3
+		}
+	}
+}
+
+# infirm
+character_event = {
+	id = karma.23	
+	desc = EVTDESC6100
+	picture = GFX_evt_illness
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = EVTOPTA6100
+		add_trait = infirm
+		hidden_tooltip = {
+			health = -2
+		}
+	}
+}
+
+# Plague
+character_event = {
+	id = karma.24	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			spawn_disease = bubonic_plague
+		}
+		health = -2
+	}
+}
+
+# Plotter is attacked in retaliation by the child they were trying to kill.
+character_event = {
+	id = karma.25
+	desc = "karma.25.desc"
+	picture = GFX_evt_death
+	is_triggered_only = yes
+	
+	# Plan works and the plotter meets the same end as Desmond.
+	option = {
+		name = "karma.25.A"
+		character_event = { id = karma.26 }
+	}
+	# High intrigue characters can see through it and have a chance!
+	option = {
+		name = "karma.25.B"
+		trigger = {
+			intrigue = 20
+		}
+		hidden_tooltip = {
+			random_list = {
+				# Dead anyway
+				50 = {				
+					modifier = {
+						factor = 1.25
+						FROM = { 
+							intrigue = 10
+						}
+					}
+					modifier = {
+						factor = 1.5
+						FROM = { 
+							intrigue = 15
+						}
+					}
+					modifier = {
+						factor = 2
+						FROM = { 
+							intrigue = 20
+						}
+					}
+					set_character_flag = noticed_child_murder_plot_too_late
+					character_event = { id = karma.26 }
+				}
+				# Survives the assault! ...sort of.
+				50 = {
+					character_event = { id = karma.27 }
+				}
+			}
+		}
+	}
+}
+
+# Plotter murdered by child in revenge for murder attempt
+character_event = {
+	id = karma.26
+	desc = {
+		trigger = {
+			NOT = { has_character_flag = noticed_child_murder_plot_too_late }
+		}
+		text = "karma.26.desc"
+	}
+	desc = {
+		trigger = {
+			has_character_flag = noticed_child_murder_plot_too_late 
+		}
+		text = "karma.26.desc.2"
+	}
+	picture = GFX_evt_death
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.26.A"
+		FROMFROM = {
+			character_event = { id = karma.29 }
+		}
+		death = {
+			death_reason=death_murder_unknown
+			killer=FROMFROM
+		}
+	}
+}
+
+# Plotter rendered incapable by child in revenge for murder attempt
+character_event = {
+	id = karma.27
+	desc = "karma.27.desc"
+	picture = GFX_evt_death
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.27.A"
+		FROMFROM = {
+			character_event = { id = karma.28 }
+		}
+		add_trait = incapable
+	}
+}
+
+# notify child of success
+character_event = {
+	id = karma.28
+	desc = "karma.28.desc"
+	picture = GFX_evt_death
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.28.A"
+		piety = -50
+	}
+}
+
+# notify child of success
+character_event = {
+	id = karma.29
+	desc = "karma.29.desc"
+	picture = GFX_evt_death
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.29.A"
+		piety = -100
+	}
+}
+
+# Plotter is confronted by the child they were trying to kill.
+character_event = {
+	id = karma.30
+	desc = "karma.30.desc"
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 99
+		}
+		name = "karma.30.A"
+		hidden_tooltip = {
+			character_event = { id = karma.31 }
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = "karma.30.B"
+		hidden_tooltip = {
+			character_event = { id = karma.31 }
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = "karma.30.C"
+		hidden_tooltip = {
+			character_event = { id = karma.31 }
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = "karma.30.D"
+		hidden_tooltip = {
+			FROM = { character_event = { id = karma.33 } }
+		}
+	}
+}
+
+# Plotter gets killed in the fight
+character_event = {
+	id = karma.31
+	desc = "karma.31.desc"
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.31.A"
+		
+		FROMFROM = {
+			character_event = { id = karma.32 }
+		}
+		death = {
+			death_reason=death_murder_unknown
+			killer=FROMFROM
+		}
+	}
+}
+
+# notify child of outcome
+character_event = {
+	id = karma.32
+	desc = "karma.32.desc"
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.32.A"
+		piety = -50
+	}
+}
+
+
+# Child responds to plotter's repentance
+character_event = {
+	id = karma.33
+	desc = "karma.33.desc"
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+		name = "karma.33.A"
+		remove_opinion = { who = FROM modifier = opinion_murder_attempt }
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = karma.34 }
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = "karma.33.B"
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = karma.35 }
+			}
+		}
+	}
+}
+
+# Plotter responds to... forgiveness?
+character_event = {
+	id = karma.34
+	desc = "karma.34.desc"
+	picture = GFX_evt_family
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.34.A"
+		opinion = {
+			who = FROM
+			modifier = opinion_forgave_attempted_murder
+			months = 600
+		}
+	}
+}
+
+# Child will not forgive.
+character_event = {
+	id = karma.35
+	desc = "karma.35.desc"
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.35.A"
+		death = {
+			death_reason=death_murder_unknown
+			killer=FROM
+		}
+	}
+}
+
+# Child attempts to reconcile with murderous parent
+character_event = {
+	id = karma.36
+	desc = "karma.36.desc"
+	picture = GFX_evt_courtiers_talking
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 80
+		}
+		name = "karma.36.A"
+		hidden_tooltip = {
+			if = {
+				limit = {
+					is_landed = yes
+					higher_tier_than = BARON
+				}
+				# Kick off a revolt event chain
+				character_event = { id = karma.3 days = 15 random = 5 }
+			}
+			if = {
+				limit = {
+					NAND = {
+						is_landed = yes
+						higher_tier_than = BARON
+					}
+				}
+				character_event = { id = karma.37 }
+			}
+			FROM = {
+				character_event = { id = karma.38 }
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 20
+		}
+		name = "karma.36.B"
+		hidden_tooltip = {
+			opinion = {
+				who = FROM
+				modifier = opinion_forgave_attempted_murder
+				months = 600
+			}
+			character_event = { id = karma.39 }
+		}
+	}
+}
+
+# notify plotter - incoming death by karma
+character_event = {
+	id = karma.37
+	desc = "karma.37.desc"
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.37.A"
+		character_event = { id = karma.21 days = 20 random = 5 }
+	}
+}
+
+# notify child - plotter would not reconcile.
+character_event = {
+	id = karma.38
+	desc = "karma.38.desc"
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.38.A"
+
+		opinion = {
+			modifier = opinion_hate
+			who = FROM
+			years = 20
+		} 
+	}
+}
+
+# notify child - plotter would reconcile.
+character_event = {
+	id = karma.39
+	desc = "karma.39.desc"
+	picture = GFX_evt_family
+	is_triggered_only = yes
+	
+	option = {
+		name = "karma.39.A"
+		remove_opinion = { who = FROM modifier = opinion_murder_attempt }
+	}
+}

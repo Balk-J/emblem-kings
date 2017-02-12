@@ -12,6 +12,15 @@
 	liege=0
 }
 
-1152.1.1={
-	holder=563 # generic nomad
+#1152.1.1={
+#	holder=563 # generic nomad
+#}
+1110.1.1={
+	holder=525 # Djute
+}
+1144.1.1={
+	holder=524 # Djute
+}
+1180.1.1={
+	holder=517 # Monke
 }

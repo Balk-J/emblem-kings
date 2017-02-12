@@ -103,5 +103,34 @@ training_with_soldiers = {
 
 ancient_ruins = {
 	tech_growth_modifier_culture = 0.05
-	icon = 15
+	icon = 48
+}
+recent_assassination_attempt = {
+	icon = 14
+}
+recruitment_difficulties = {
+	#levy_size = -0.5
+	levy_reinforce_rate = -0.99
+	icon = 31	
+}
+uncollectable_taxes = {
+	local_tax_modifier = -0.9
+	icon = 24
+}
+empty_levies = {
+	levy_size = -1.0
+	icon = 31	
+}
+mass_desertions = {
+	levy_size = -1.0
+	icon = 31	
+}
+peasants_enraged = {
+	local_revolt_risk = 0.2
+	icon = 31
+}
+siege_magic = {
+	siege_speed  = 0.5
+	magic_users_offensive = 0.1
+	icon = 52
 }

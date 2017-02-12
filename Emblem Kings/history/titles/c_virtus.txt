@@ -17,5 +17,5 @@
 }
 #Nergal's dead, free-for-all on his holdings
 1161.1.1={
-	holder=805
+	holder=765
 }

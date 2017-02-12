@@ -14,5 +14,9 @@
 	liege=0
 	historical_nomad = yes
 	#holder=0 # everyone's dead
-	holder=543 # filler
+	#holder=543 # filler
+	holder=502 #Dayan
+}
+1189.1.1={
+	holder=505 # Sin
 }

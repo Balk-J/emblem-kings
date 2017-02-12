@@ -6,4 +6,19 @@ holds_fire_emblem;Holds Fire Emblem;;;;;;;;;;;;;x
 holds_fire_emblem_desc;This character is the current holder of the national treasure known as the Fire Emblem.;;;;;;;;;;;;;x
 declined_regalia_search;Declined regalia search;;;;;;;;;;;;;x
 ancient_ruins;Ancient Ruins;;;;;;;;;;;;;x
-desc_ancient_ruins;The ruined buildings of a long-forgotten kingdom can be found in this county.;;;;;;;;;;;;;x
+desc_ancient_ruins;The ruined buildings of a long-forgotten kingdom can be found in this province.;;;;;;;;;;;;;x
+training_with_soldiers;Training with Soliders;;;;;;;;;;;;;x
+#desc_training_with_soldiers;;;;;;;;;;;;;;x
+recent_assassination_attempt;Recent Assassination Attempt;;;;;;;;;;;;;x
+mass_desertions;Mass Desertions;;;;;;;;;;;;;x
+desc_mass_desertions;Most soldiers at this holding have abandoned their posts.;;;;;;;;;;;;;x
+recruitment_difficulties;Recruitment Difficulties;;;;;;;;;;;;;x
+desc_mass_desertions;It is extremely difficult to recruit troops in this province.;;;;;;;;;;;;;x
+uncollectable_taxes;Tax Problems;;;;;;;;;;;;;x
+desc_uncollectable_taxes;Hostile peasants are preventing the normal collection of taxes in this province.;;;;;;;;;;;;;x
+peasants_enraged;Peasants Enraged;;;;;;;;;;;;;x
+desc_peasants_enraged;Angry mobs are a common sight. Tensions may escalate into outright revolt.;;;;;;;;;;;;;x
+empty_levies;Empty Levies;;;;;;;;;;;;;x
+desc_empty_levies;The banners are called, but not a soul turns up.;;;;;;;;;;;;;x
+siege_magic;Siege Magic;;;;;;;;;;;;;x
+desc_siege_magic;This character is proficient in the use of long-range combat magic.;;;;;;;;;;;;;x

@@ -2,7 +2,6 @@
 # Reserved IDs: 0-999, 40000 - 44999
 ####################################
 #FE overrides:
-# Killer discovered after murder - consequences.
 # Attacker discovered after failed murder - consequences.
 
 # ID 1 and 2 are empty dummy events that are used by the message system to spawn messages
@@ -176,20 +175,6 @@ character_event = {
 					months = 1200
 				}
 			}
-			
-			if = {
-				limit = {
-					OR = {
-						father = {
-							character = ROOT 
-						}
-						mother = {
-							character = ROOT 
-						}
-					}
-				}
-				ROOT = { character_event = { id = fe_plot.19 } }
-			}
 		}
 	}
 }
@@ -304,7 +289,7 @@ character_event = {
 						}
 					}
 				}
-				character_event = { id = fe_plot.20 }
+				character_event = { id = karma.20 days = 7 random = 3 }
 			}
 		}
 	}

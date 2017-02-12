@@ -186,25 +186,6 @@ character_event = {
 		
 	is_triggered_only = yes
 	
-	# FROM is the child
-	immediate = {
-		if = { #If child is landed and not your child (or you are unlanded), they pay
-			limit = {
-				OR = {
-					is_ruler = no
-					NOT = { 
-						OR = {
-							any_child = { character = FROM }
-							any_child = { any_child = { character = FROM } }
-						}	
-					}
-				}	
-			}
-			FROM = { 
-				set_character_flag = pay_for_training
-			}
-		}
-	}
 	# Father's classes
 	option = {
 		name = "class.2.A"
@@ -235,55 +216,11 @@ character_event = {
 				}
 			}
 		}
-		
-		# Selector pays
-		if = { 
-			limit = {
-				FROM = { 
-					NOT = { has_character_flag = pay_for_training }
-				}
-			}
-			if = {
-				limit = { yearly_income = 200 }
-				wealth = -50
-			}
-			if = {
-				limit = { 
-					NOT = { yearly_income = 200 } 
-					yearly_income = 100
-				}
-				wealth = -20
-			}
-			if = {
-				limit = { NOT = { yearly_income = 100 } }
-				wealth = -10
-			}
-		}
-		
-		# Child pays
-		if = { 
-			limit = {
-				FROM = { 
-					has_character_flag = pays_for_education
-				}
-			}
-			FROM = { 
-				if = {
-					limit = { yearly_income = 200 }
-					wealth = -50
-				}
-				if = {
-					limit = { 
-						NOT = { yearly_income = 200 } 
-						yearly_income = 10
-					}
-					wealth = -20
-				}
-				if = {
-					limit = { NOT = { yearly_income = 100 } }
-					wealth = -10
-				}
-				clr_character_flag = pays_for_education
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_female = yes
 			}
 		}
 		
@@ -318,56 +255,14 @@ character_event = {
 				}
 			}
 		}
-		# Selector pays
-		if = { 
-			limit = {
-				FROM = { 
-					NOT = { has_character_flag = pay_for_training }
-				}
-			}
-			if = {
-				limit = { yearly_income = 200 }
-				wealth = -50
-			}
-			if = {
-				limit = { 
-					NOT = { yearly_income = 200 } 
-					yearly_income = 100
-				}
-				wealth = -20
-			}
-			if = {
-				limit = { NOT = { yearly_income = 100 } }
-				wealth = -10
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_female = no
 			}
 		}
 		
-		# Child pays
-		if = { 
-			limit = {
-				FROM = { 
-					has_character_flag = pays_for_education
-				}
-			}
-			FROM = { 
-				if = {
-					limit = { yearly_income = 200 }
-					wealth = -50
-				}
-				if = {
-					limit = { 
-						NOT = { yearly_income = 200 } 
-						yearly_income = 10
-					}
-					wealth = -20
-				}
-				if = {
-					limit = { NOT = { yearly_income = 100 } }
-					wealth = -10
-				}
-				clr_character_flag = pays_for_education
-			}
-		}
 		character_event = {
 			id = class.4
 			tooltip = class.4.tooltip
@@ -378,28 +273,8 @@ character_event = {
 	# Culture-appropriate solider
 	option = {
 		name = "class.2.C"
-		
-		# Selector pays
-		if = { 
-			limit = {
-				FROM = { 
-					NOT = { has_character_flag = pay_for_training }
-				}
-			}
-			wealth = -5
-		}
-		
-		# Child pays
-		if = { 
-			limit = {
-				FROM = { 
-					has_character_flag = pays_for_education
-				}
-			}
-			FROM = { 
-				wealth = -5
-				clr_character_flag = pays_for_education
-			}
+		ai_chance = {
+			factor = 5
 		}
 		
 		FROM = {
@@ -414,6 +289,9 @@ character_event = {
 	
 	#Nothing
 	option = {
+		ai_chance = {
+			factor = 0
+		}
 		name = "class.2.D"		
 	}
 }
@@ -2656,7 +2534,8 @@ character_event = {
 		}
 
 		name = {
-			text = class.5.B.class_summoner
+			#text = class.5.B.class_summoner
+			text = class.5.B.class_mage_knight
 			trigger = {
 				trait=class_shaman
 				trait=class_shaman_female
@@ -2852,7 +2731,7 @@ character_event = {
 					trait=class_shaman
 			}
 			remove_trait=class_shaman
-			add_trait=class_summoner
+			add_trait=class_mage_knight
 		}
 		
 		if = {
@@ -2860,7 +2739,7 @@ character_event = {
 					trait=class_shaman_female
 			}
 			remove_trait=class_shaman_female
-			add_trait=class_summoner
+			add_trait=class_mage_knight_female
 		}
 	}
 	
@@ -4614,7 +4493,7 @@ character_event = {
 	immediate = {
 		set_variable = { which = "level" value = 1 }
 		random_list = {
-			90 = {
+			10 = { #90?
 				modifier = {
 					factor = 0
 					has_character_flag = change_soldier
@@ -4625,23 +4504,11 @@ character_event = {
 			10 = {			
 				modifier = {
 					factor = 0
-					NOT = { culture = bernese }
-				}
-				add_trait = "class_wyvern_rider"
-				set_character_flag = "class_wyvern_rider"
-			}
-			10 = {			
-				modifier = {
-					factor = 0
-					NOT = { culture = etrurian }
-				}
-				add_trait = "class_cavalier"
-				set_character_flag = "class_cavalier"
-			}
-			10 = {			
-				modifier = {
-					factor = 0
-					NOT = { culture = lycian }
+					NOR = { 
+						culture = lycian 
+						culture = etrurian 
+						culture = bernese 				
+					}
 				}
 				add_trait = "class_knight"
 				set_character_flag = "class_knight"
@@ -4649,21 +4516,37 @@ character_event = {
 			10 = {			
 				modifier = {
 					factor = 0
-					NOT = { culture = nabatan }
+					NOR = { 
+						culture = etrurian 
+						culture = lycian 
+						culture = bernese 
+						culture = ilian						
+					}
 				}
+				add_trait = "class_cavalier"
+				set_character_flag = "class_cavalier"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOR = { 
+						culture = etrurian 
+						culture = lycian 
+						culture = nabatan 				
+					}
+				}
+				set_character_flag = "class_archer"
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = "class_brigand"
-					set_character_flag = "class_brigand"
+					add_trait = "class_archer"
 				}
 				if = {
 					limit = {
 						is_female = yes
 					}
 					add_trait = "class_archer_female"
-					set_character_flag = "class_archer"
 				}
 			}
 			10 = {			
@@ -4688,67 +4571,174 @@ character_event = {
 			10 = {			
 				modifier = {
 					factor = 0
-					NOT = { culture = ilian }
+					OR = {
+						NOR = { 
+							culture = lycian 
+							culture = sacaean 
+							culture = bernese 
+							culture = western_islander 
+						}
+						is_female = yes
+					}
 				}
+				add_trait = "class_fighter"
+				set_character_flag = "class_fighter"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							culture = lycian 
+							culture = sacaean 
+							culture = bernese 
+							culture = western_islander 
+							culture = nabatan 				
+						}
+						is_female = yes
+					}
+				}
+				add_trait = "class_brigand"
+				set_character_flag = "class_brigand"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							culture = lycian 
+							culture = western_islander 
+						}
+						is_female = yes
+					}
+				}
+				add_trait = "class_pirate"
+				set_character_flag = "class_pirate"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOR = { 
+						culture = etrurian 
+						culture = bernese 
+						culture = western_islander
+						culture = sacaean
+					}
+				}
+				set_character_flag = "class_myrmidon"
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = "class_mercenary"
-					set_character_flag = "class_mercenary"
+					add_trait = "class_myrmidon"
 				}
 				if = {
 					limit = {
 						is_female = yes
 					}
-					add_trait = "class_pegasus_knight"
-					set_character_flag = "class_pegasus_knight"
+					add_trait = "class_myrmidon_female"
 				}
 			}
 			10 = {			
 				modifier = {
 					factor = 0
-					NOT = { culture = western_islander }
+					NOR = { 
+						culture = lycian 
+						culture = bernese 
+						culture = western_islander
+						culture = nabatan
+					}
 				}
+				set_character_flag = "class_thief"
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = "class_fighter"
-					set_character_flag = "class_fighter"
-				}
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = "class_mercenary_female"
-					set_character_flag = "class_mercenary"
-				}
-			}
-			10 = {			
-				modifier = {
-					factor = 0
-					NOT = { culture = seafarer }
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
-					add_trait = "class_pirate"
-					set_character_flag = "class_pirate"
+					add_trait = "class_thief"
 				}
 				if = {
 					limit = {
 						is_female = yes
 					}
 					add_trait = "class_thief_female"
-					set_character_flag = "class_thief"
 				}
 			}
 			10 = {			
 				modifier = {
 					factor = 0
-					NOT = { culture_group = draconic }
+					OR = {
+						NOT = { culture = ilian }
+						is_female = no
+					}
+				}
+				add_trait = "class_pegasus_knight"
+				set_character_flag = "class_pegasus_knight"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOT = { culture = bernese }
+				}
+				add_trait = "class_wyvern_rider"
+				set_character_flag = "class_wyvern_rider"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { culture = etrurian }
+						is_female = no
+					}
+				}
+				add_trait = "class_troubador"
+				set_character_flag = "class_troubador"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOR = { 
+						culture = lycian 
+						culture = etrurian 
+						culture = bernese 
+					}
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					set_character_flag = "class_priest"
+					add_trait = "class_priest"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					set_character_flag = "class_cleric"
+					add_trait = "class_cleric"
+				}
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { culture = etrurian }
+						is_female = yes
+					}
+				}
+				add_trait = "class_monk"
+				set_character_flag = "class_monk"
+			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOR = { 
+						culture_group = draconic 
+						culture = lycian 
+						culture = etrurian 
+						culture = bernese 
+						culture = western_islander
+						culture = nabatan
+					}
 				}
 				set_character_flag = "class_mage"
 				if = {
@@ -4764,6 +4754,32 @@ character_event = {
 					add_trait = "class_mage_female"
 				}
 			}
+			10 = {			
+				modifier = {
+					factor = 0
+					NOR = { 
+						culture = lycian 
+						culture = etrurian 
+						culture = ilian 
+						culture = bernese 
+						culture = sacaean
+						culture = nabatan
+					}
+				}
+				set_character_flag = "class_shaman"
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = "class_shaman"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = "class_shaman_female"
+				}
+			}
 		}
 		clr_character_flag = change_soldier
 	}
@@ -4773,3 +4789,29 @@ character_event = {
 	}
 }
 
+# Level up a character who wants to promote
+character_event = {
+	id = class.29
+	desc = "class.29.desc"
+	picture = "GFX_evt_battle" 	
+	
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		has_ambition = obj_promote
+		has_character_flag = class_selected 
+		NOT = { is_inaccessible_trigger = yes }
+		NOT = { check_variable = { which = "level" value = 20 } } 
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+		
+	option = {
+		name = EXCELLENT
+		change_variable = { which = "level" value = 1 }
+	}
+}

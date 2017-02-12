@@ -438,7 +438,7 @@ e_elibe = {
 			c_uri = { # 17
 				color={ 131 42 67 }
 				color2={ 255 255 255 }	
-				holy_site = guardian
+				holy_site = elibe_spirits_pagan
 				holy_site = anima
 				holy_site = dark
 				
@@ -552,7 +552,7 @@ e_elibe = {
 				color={ 86 31 65 }
 				color2={ 255 255 255 }	
 				holy_site = elimine_church
-				holy_site = guardian
+				holy_site = elibe_spirits_pagan
 				holy_site = anima
 				
 				b_aquleia_palace = {
@@ -1658,12 +1658,12 @@ e_elibe = {
 			}
 		}
 	}
-	k_lycian_league = {
+	k_lycia = {
 		color={ 6 127 2 }
 		color2={ 255 255 255 }
 		
-		short_name = yes
-		name_tier = duke
+		#short_name = yes
+		#name_tier = duke
 		capital = 82 # c_ostia
 		culture = lycian
 		
@@ -1723,7 +1723,7 @@ e_elibe = {
 				color={ 4 62 2 }
 				color2={ 255 255 255 }
 				holy_site = elimine_church
-				holy_site = guardian
+				holy_site = elibe_spirits_pagan
 				
 				b_fort_roland = {
 				}
@@ -2342,7 +2342,7 @@ e_elibe = {
 			c_arcadia = { # 120
 				color={ 78 233 191 }
 				color2={ 255 255 255 }		
-				holy_site = guardian
+				holy_site = elibe_spirits_pagan
 				holy_site = anima
 				holy_site = dark
 				
@@ -2914,7 +2914,7 @@ e_elibe = {
 				color={ 167 119 51 }
 				color2={ 255 255 255 }
 				holy_site = elimine_church
-				holy_site = guardian	
+				holy_site = elibe_spirits_pagan	
 				
 				b_castle_jutes = {
 				}

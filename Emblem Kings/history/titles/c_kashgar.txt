@@ -23,6 +23,10 @@
 }
 1159.02.01 = {
 	liege=0
-	holder=539 # Batta is dead
+	#holder=539 # Batta is dead
+	holder=524 # Djute
 	historical_nomad = yes
+}
+1180.1.1={
+	holder=517 # Monke
 }

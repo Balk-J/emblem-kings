@@ -1,9 +1,9 @@
 180.1.1={
 	holder=602 # Brammimond
-	#liege=0
+	liege=0
 }
 
-1162.1.1={
-	#liege=c_uri
-	holder=0 # Brammimond is dead
+1159.1.1={
+	liege=c_uri
+	holder=491 # filler
 }
