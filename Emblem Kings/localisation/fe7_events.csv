@@ -1,13 +1,85 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-fe7_lyn.1.desc;While purchasing supplies for my journey, I met a pair of knights from Lycia. My grandfather sent them to the plains to find my mother and her family. After learning of my parents' death, they decided to search for me instead. They have offered to accompany me to Caelin.;;;;;;;;;;;;;x
-fe7_lyn.1.A;Let us go together.;;;;;;;;;;;;;x
-fe7_lyn.1.B;No, I do not trust you.;;;;;;;;;;;;;x
-fe7_lyn.2.desc;While making my way through the countryside, I came upon a village being accosted by bandits. An old friend of mine and a Pherean archer helped me fend them off. They want to travel with me to gain experience as mercenaries...;;;;;;;;;;;;;x
-fe7_lyn.2.A;Lyndis' Legion, is it?;;;;;;;;;;;;;x
-fe7_lyn.2.B;We should go our separate way.;;;;;;;;;;;;;x
-fe7_lyn..title;;;;;;;;;;;;;;x
-fe7_lyn..desc;;;;;;;;;;;;;;x
-fe7_lyn..A;;;;;;;;;;;;;;x
-fe7_lyn..B;;;;;;;;;;;;;;x
-fe7_lyn..C;;;;;;;;;;;;;;x
-fe7_lyn..D;;;;;;;;;;;;;;x
+EVTNAMEfe7.1;The Death of Nergal;;;;;;;;;;;;;x
+EVTDESCfe7.1;With the death of Nergal, the holdings he once controlled have been taken over by opportunistic locals. The fiend's empire is no more.;;;;;;;;;;;;;x
+EVTOPTAfe7.1;Good riddance!;;;;;;;;;;;;;x
+EVTNAMEfe7.2;Crafting New Life;;;;;;;;;;;;;x
+EVTDESCfe7.2;Quintessence can be used to create several different varieties of morphs. You could create a small army of emotionless puppets fit for nothing but combat, or focus your efforts on creating one morph with superior skills.;;;;;;;;;;;;;x
+EVTOPTAfe7.2;I will craft a single morph of great power.;;;;;;;;;;;;;x
+EVTOPTBfe7.2;I will craft an army of lesser morphs.;;;;;;;;;;;;;x
+EVTOPTCfe7.2;On second thought, I should conserve my strength.;;;;;;;;;;;;;x
+EVTNAMEfe7.3;Crafting New Life;;;;;;;;;;;;;x
+EVTDESCfe7.3;Morphs can be created with strength, beauty, and intelligence beyond that of normal humans. As you prepare the ritual to create such a masterpiece, you decide that your newest morph will be:;;;;;;;;;;;;;x
+EVTOPTAfe7.3;A mighty warrior.;;;;;;;;;;;;;x
+EVTOPTBfe7.3;A calculating plotter.;;;;;;;;;;;;;x
+EVTOPTCfe7.3;Something... special.;;;;;;;;;;;;;x
+EVTOPTDfe7.3;On second thought, I should conserve my strength.;;;;;;;;;;;;;x
+fe7.4.desc;hi!;;;;;;;;;;;;;x
+fe7.4.A;yes;;;;;;;;;;;;;x
+fe7.4.B;no;;;;;;;;;;;;;x
+fe7.5.title;The Nearby Plains;;;;;;;;;;;;;x
+fe7.5.desc;I have finally managed to get control of my lands back from my treacherous younger brother. My guardsmen have reported that a young woman who claims to be my granddaughter has been leading an army against him, seeking to remove him from power and return to my side. \n\nWith Lundgren gone, there is no reason to fight anymore. I could open the gates of [Root.Capital.GetName] and let her return home...;;;;;;;;;;;;;x
+fe7.5.A;Family comes first. I will prepare a place for my granddaughter.;;;;;;;;;;;;;x
+fe7.5.B;That child is no kin of mine. Turn her away.;;;;;;;;;;;;;x
+fe7.6.desc;I have received a message from my grandfather! He has regained control of his realm and has invited me to come home.;;;;;;;;;;;;;x
+fe7.6.A;I will join him immediately!;;;;;;;;;;;;;x
+fe7.6.A.tooltip;The war ends and Lady Lyndis gains land in her grandfather's realm.;;;;;;;;;;;;;x
+fe7.6.B;I am glad he is safe, but the plains are my true home.;;;;;;;;;;;;;x
+fe7.6.B.tooltip;Lady Lyndis returns to Sacae.;;;;;;;;;;;;;x
+fe7.7.desc.1;I have received word from my grandfather. He has regained control of his lands from Lundgren, but refuses to see me! He suggests that I return to Sacae...;;;;;;;;;;;;;x
+fe7.7.desc.2;It is time to reclaim the lands of my father's clan from the bandits who have seized them.;;;;;;;;;;;;;x
+fe7.7.A.1;I will build my true family on the plains.;;;;;;;;;;;;;x
+fe7.7.A.2;To the plains!;;;;;;;;;;;;;x
+fe7.7.A.tooltip;The war with Caelin ends. Lady Lyndis declares a new war to reclaim her father's lands in Sacae.;;;;;;;;;;;;;x
+fe7.9.title;Birth of the Black Fang;;;;;;;;;;;;;x
+fe7.9.desc;Rumors are spreading that a Bernese mercenary, Brendan Reed, has founded a new company called the "Black Fang" somewhere in the mountains of Bern. Reed's soldiers style themselves as champions of the people, out to protect the common folk from corrupt nobles who would exploit them. Already a string of murders can be traced to the Fang's so-called justice...;;;;;;;;;;;;;x
+fe7.9.A;They're nothing more than common thugs.;;;;;;;;;;;;;x
+fe7.10.title;The Black Fang Grows;;;;;;;;;;;;;x
+fe7.10.desc;The league of assassins known as the Black Fang has been growing more bold. Their activities enjoy wide support among the masses, who see them as chivalrous defenders of the common man. Many talented warriors have joined their ranks, allowing them to reinforce and expand their mountain stronghold. Lords and ladies across the land sit uneasily in their thrones, wondering where they will strike next...;;;;;;;;;;;;;x
+fe7.11.title;The Black Fang Changes;;;;;;;;;;;;;x
+fe7.11.desc;Strange stories have been circulating about the Black Fang recently. Their leader has taken a new wife, a hauntingly beautiful sorceress with a cruel streak. Most orders are now issued by her, in her husband's name. Under her guidance, the Fang has... changed. They have stepped up recruitment, and are now accepting people of dubious character - the sort of brigands and butchers they once scorned. The Fang is now accepting jobs from anyone who will pay, regardless of the target's virtue or lack thereof. Many of their new members have been whispering about a powerful sorcerer, who may be the mastermind behind these recent developments...;;;;;;;;;;;;;x
+#A strange band of warriors have joined their ranks, with the same black hair and gold eyes as their new lady.
+fe7.11.A;Disturbing news.;;;;;;;;;;;;;x
+fe7.12.desc;You wake suddenly in cold sweat with a strong sensation that something is amiss. The flickering candlelight in your tent reveals a plate of hot biscuits and a note pinned by a poisoned dagger next to your bed. It reads: "Mend your evil ways before it is too late, [Root.GetFirstName]. The Black Fang are watching.";;;;;;;;;;;;;x
+fe7.12.A;Perhaps the time for change has come...;L'heure du changement a peut-être sonné...;Vielleicht ist jetzt eine gute Zeit für Veränderungen...;;Puede que haya llegado la hora de cambiar...;;;;;;;;;x
+fe7.13.desc;My [Root.GetLordLady], terrible news! One of your courtiers has been murdered, no doubt at the hands of the vile Black Fang. Carved by knife into the walls of their bedchamber were the words: "[Root.GetFirstName] - You were warned.";;;;;;;;;;;;;x
+fe7.13.A;How dare they?!;Comment ont-ils osé ?!;Wie können sie es nur wagen?!;;¡¿Cómo se atreven?!;;;;;;;;;x
+fe7.14.desc;As you turn a street corner in [Root.Location.GetName], a strange whistling sound swishes past your ear. Your bodyguards topple over, knives in their throats, and before you can react you are surrounded by cloaked Black Fang. Their leader approaches you with a curved sword. "You're about to die," he says. "Scream if you must.";;;;;;;;;;;;;x
+fe7.14.desc.2;As you turn a street corner in [Root.Location.GetName], a strange whistling sound swishes past your ear. Your bodyguards topple over, knives in their throats, and before you can react you are surrounded by cloaked Black Fang. Their leader approaches you with a icy look on her face. "Tell me... are you afraid to die?";;;;;;;;;;;;;x
+fe7.14.A;But... but I am not ready!;Mais... Mais je ne suis pas prêt !;Aber...aber ich bin nicht bereit!;;¡Pero... pero no estoy preparado!;;;;;;;;;x
+fe7.16.desc;[From.GetTitledName] staggers past your guards, bleeding profusely from a dozen stab-wounds. As [From.GetSheHe] collapses in a pool of blood at your feet, [From.GetSheHe] gasps with [From.GetHerHis] last breath: "The B-Black Fang...";;;;;;;;;;;;;x
+fe7.16.A;Oh my.;Malédiction.;Meine Güte.;;Oh, cielos.;;;;;;;;;x
+fe7.17.desc;Your guards bring in a covered basket left just outside your palace. Believing it to be confections from one of your subjects, you hungrily pull away the covering blanket only to reveal the severed, gaping head of [From.GetTitledName]. The mark of the Black Fang has been carved into the forehead.;;;;;;;;;;;;;x
+fe7.17.A;I think I've lost my appetite...;Je crois que je vais me sentir mal...;Ich denke, mir ist der Appetit vergangen...;;Creo que he perdido el hambre...;;;;;;;;;x
+fe7.17.A.cannibal;A shame about [From.GetBestName], but at least I have a snack!;Dommage pour [From.GetBestName], mais au moins j'ai un casse-croûte !;Schade um[From.GetBestName], aber immerhin habe ich einen kleinen Imbiss!;;Me da pena por [From.GetBestName], ¡pero al menos tengo un tentempié!;;;;;;;;;x
+fe7.18.desc;As you stroll through your palace garden with [From.GetTitledFirstName], you see the brief glint of reflected sunlight on metal as a thrown dagger flashes past and buries itself in your friend's throat. Your bodyguards rush you to safety, but you glimpse a robed assassin scurrying over the palace walls...;Alors que vous vous promenez dans le jardin de votre palais en compagnie de [From.GetTitledFirstName], vous apercevez un fugace reflet scintillant. Une dague file à toute vitesse vers vous pour finir sa course dans la gorge de votre ami. Vos gardes vous mettent précipitamment en sûreté, mais vous aperçevez la robe d'un assassin de se précipiter vers les murs du palais ...;Während Ihr mit [From.GetTitledFirstName] durch Euren Schlossgarten schlendert, seht Ihr das kurze Aufblitzen von reflektiertem Sonnenlicht auf Metall, als plötzlich ein Dolch vorbeifliegt und die Kehle Eures Freundes durchbohrt. Eure Leibwächter bringen ;;Mientras paseas por el jardín de palacio con [From.GetTitledFirstName], ves el leve destello de sol reflejarse en el metal... Una daga vuela y se clava en la garganta de tu amigo. Tus guardaespaldas te llevan a lugar seguro, mientras un asesino con túnica pasa a toda velocidad sobre las murallas de palacio...;;;;;;;;;x
+fe7.18.A;The Black Fang! Was I the intended target?;;;;;;;;;;;;;x
+fe7.19.desc;You wake suddenly in cold sweat with a strong sensation that something is amiss. The flickering candlelight in your tent reveals a plate of hot biscuits and a note pinned by a poisoned dagger next to your bed. It reads: "There are a thousand ways to kill a [Root.GetManWoman], [Root.GetFirstName]. The Black Fang know them all.";;;;;;;;;;;;;x
+fe7.19.A;Guards! Search the area!;Gardes ! Fouillez l'enceinte du palais !;Wache! Sucht die Umgebung ab!;;¡Guardas! ¡Registrad la zona!;;;;;;;;;x
+fe7.22.title;The Black Fang Destroyed!;;;;;;;;;;;;;x
+fe7.22.desc;The Black Fang are no more. Their fortresses and mountain hideouts have been reduced to rubble once more, and the last members of the once feared mercenary company have scattered to all corners of the land. Their legacy now survives only in the legends and stories spawned from their exploits.;;;;;;;;;;;;;x
+fe7.22.A;Good riddance!;Bon débarras !;Die wären wir los!;;¡Ya era hora!;;;;;;;;;x
+fe7.23.desc;You have sent word to the Black Fang that you require their services. The method is somewhat indirect, but it's all to ensure no one finds out you want to hire them.;;;;;;;;;;;;;x
+fe7.23.A;Now to await their reply.;;;;;;;;;;;;;x
+fe7.24.desc;My [Root.GetLordLady], [From.GetTitledName] has asked us to assassinate [From.PlotTarget.GetTitledName].;;;;;;;;;;;;;x
+fe7.24.A;Very well.;;;;;;;;;;;;;x
+fe7.24.B;No.;;;;;;;;;;;;;x
+fe7.25.desc;You return to your chambers late one night and find a note on you bed. It reads, "The Black Fang will deliver the justice you desire, for a price." It goes on to name a sum and a location to deliver the gold...;;;;;;;;;;;;;x
+fe7.25.A;Very well.;;;;;;;;;;;;;x
+fe7.25.B;Their price is too high.;;;;;;;;;;;;;x
+fe7.26.desc;The Black Fang have been paid. The only thing left to do is wait for news of their success.;;;;;;;;;;;;;x
+fe7.26.A;[Root.PlotTarget.GetTitledFirstName], your days are numbered!;;;;;;;;;;;;;x
+fe7.26.A.tooltip;will be visited by Black Fang assassins;;;;;;;;;;;;;x
+fe7.27.desc;As you head for bed after another long day, you notice that it's unusually quiet. You have't seen any guards or servants in some time.;;;;;;;;;;;;;x
+fe7.27.A;And why is it so blasted dark in here?;;;;;;;;;;;;;x
+fe7.28.desc;The Black Fang have sent a response to your request. Apparently, they will only take contracts on nobles who mistreat the common people. They have no intention of doing your bidding.;;;;;;;;;;;;;x
+fe7.28.A;Assassins with morals?;;;;;;;;;;;;;x
+fe7.29.desc;Some assassins broke into your rooms at [Root.Location.GetName] last night. You made short work of them, of course, but they were true professionals - they fought to the last man, and they left no evidence of their employer.;;;;;;;;;;;;;x
+fe7.29.A;Was this the work of the Black Fang? Who hired them?;;;;;;;;;;;;;x
+fe7.30.desc;Your contact at the Black Fang had been silent for longer than expected. Now [Root.GetSheHe] is here to report, and the news is not good. None of the assassins sent after [Root.PlotTarget.GetTitledFirstName] have returned, and the Black Fang will not be sending any more.\n\nThey are also keeping your gold to "cover their expenses.";;;;;;;;;;;;;x
+fe7.30.A;Those useless thugs!;;;;;;;;;;;;;x
+fe7.31.desc;You believe that you have kept a low profile long enough for the Black Fang to move on to easier targets.;;;;;;;;;;;;;x
+fe7.31.A;Hiding from assassins gives one a new perspective on life.;;;;;;;;;;;;;x
+fe7.32.desc;My granddaughter sends her thanks, but says that she does not want to stay in Lycia. She plans to turn her makeshift company around and reclaim her father's lands in Sacae from the brigands who took them after her clan was destroyed.;;;;;;;;;;;;;x
+fe7.32.A;Best of luck to you, child.;;;;;;;;;;;;;x
+fe7.33.desc;When you enter your bedchamber, the few lights that are still burning suddenly go out. As you look around in the darkness, confused and disoriented, you hear the sound of rustling fabric and footsteps rushing toward you. You never see where the attack comes from - you only feel the knife slide between your ribs.;;;;;;;;;;;;;x
+fe7.33.A;What?! Villain...;;;;;;;;;;;;;x
