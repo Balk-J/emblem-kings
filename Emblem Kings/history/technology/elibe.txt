@@ -103,7 +103,7 @@ technology = {
 		d_badon
 		d_caelin
 		d_cornwell
-		d_khathalet
+		d_khathelet
 		d_laus
 		d_pherae
 		d_ryerde

@@ -519,7 +519,7 @@
    terrain=plains
 }
 105 = {
-   title=c_khathalet
+   title=c_khathelet
    max_settlements=4
    terrain=plains
 }

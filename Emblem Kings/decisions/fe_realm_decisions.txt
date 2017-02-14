@@ -43,7 +43,7 @@ decisions = {
 				has_landed_title = d_badon
 				has_landed_title = d_caelin
 				has_landed_title = d_cornwell
-				has_landed_title = d_khathalet
+				has_landed_title = d_khathelet
 				has_landed_title = d_laus
 				has_landed_title = d_pherae
 				has_landed_title = d_ryerde
@@ -107,7 +107,7 @@ decisions = {
 						}
 					}
 				}
-				d_khathalet = {
+				d_khathelet = {
 					OR = {
 						has_holder = no
 						holder_scope = {

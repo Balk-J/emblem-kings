@@ -113,7 +113,7 @@
 }
 109={
 	can_appear=no
-	name="Khathalet"
+	name="Khathelet"
 	culture="lycian"
     coat_of_arms = {
         template = 0
@@ -697,7 +697,7 @@
 }
 
 188={
-	name="of Khathalet"
+	name="of Khathelet"
 	culture="lycian"
 }
 

@@ -326,10 +326,6 @@
 		add_trait="schemer"
 		remove_trait="kind"
 		remove_trait="depressed"
-	}
-	500.01.01 = { 
-		remove_trait="class_druid"
-		add_trait="class_dark_druid"
 		effect = {
 			set_variable = { which = "level" value = 20 }
 		}
@@ -595,7 +591,7 @@
 	} 	
 	
 	# recaptured?
-	1160.01.01 = {
+	1160.01.02 = {
 		employer = 308
 		effect = {
 			e_nergal = {
@@ -639,7 +635,6 @@
 	disallow_random_traits="yes" 
 	#trait="immortal"
 	trait="dragon_blood"
-	
 	175.01.01 = { 
 		birth=yes 
 		effect = {
@@ -683,7 +678,7 @@
 	} 	
 	
 	# NOT recaptured with Ninian. Where exactly was he? Somewhere on Valor?
-	1160.01.01 = {
+	1160.01.02 = {
 		employer = 197 #still kathalet
 	} 	
 	

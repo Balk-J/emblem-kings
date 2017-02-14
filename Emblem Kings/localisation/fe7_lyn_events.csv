@@ -1,0 +1,31 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe7_lyn.1.desc;While purchasing supplies for my journey, I met a pair of knights from Lycia. My grandfather sent them to the plains to find my mother and her family. After learning of my parents' death, they decided to search for me instead. They have offered to accompany me to Caelin.;;;;;;;;;;;;;x
+fe7_lyn.1.A;Let us go together.;;;;;;;;;;;;;x
+fe7_lyn.1.B;No, I don't trust you.;;;;;;;;;;;;;x
+fe7_lyn.2.desc;While making my way through the countryside, I came upon a village being accosted by bandits. An old friend of mine and a Pherean archer helped me fend them off. They want to travel with me to gain experience as mercenaries...;;;;;;;;;;;;;x
+fe7_lyn.2.A;Lyndis' Legion, is it?;;;;;;;;;;;;;x
+fe7_lyn.2.B;We should go our separate ways.;;;;;;;;;;;;;x
+fe7_lyn.3.desc;We were accosted by bandits when we made camp in an old fortress. One of the bandits seems familiar - he might be the husband of a villager who also sought shelter in the fort.;;;;;;;;;;;;;x
+fe7_lyn.3.A;I must speak with that man!;;;;;;;;;;;;;x
+fe7_lyn.3.B;Take no chances. Slay anyone carrying a weapon.;;;;;;;;;;;;;x
+fe7_lyn.4.desc;Today, I encountered an Etrurian noblewoman and a mage. They are supposedly on their way to Ostia and have found themselves somewhat lost. The lady has asked to travel with us. She is a cleric - her healing abilities and her companion's magic could prove useful.;;;;;;;;;;;;;x
+fe7_lyn.4.A;You would be extremely helpful!;;;;;;;;;;;;;x
+fe7_lyn.4.B;I would not dream of keeping you from your own journey.;;;;;;;;;;;;;x
+fe7_lyn.5.desc;There was a skirmish with some assassins in the lands of a local lord. A thief I hired during the battle and the former captain of the lord's guard now want to journey with me...;;;;;;;;;;;;;x
+fe7_lyn.5.A;Thank you.;;;;;;;;;;;;;x
+fe7_lyn.5.B;Begone, the lot of you!;;;;;;;;;;;;;x
+fe7_lyn.6.desc;A young bard stopped my group on the road today. He and his sister have been accosted by some strange men. He hopes that a strong mercenary company like mine can keep them safe...;;;;;;;;;;;;;x
+#fe7_lyn.6.A;I cannot stand by and let children be taken from their home!;;;;;;;;;;;;;x
+fe7_lyn.6.A;I cannot stand by and let children be taken!;;;;;;;;;;;;;x
+fe7_lyn.6.B;Forgive me, but we're in a hurry. Is there someone else you can ask?;;;;;;;;;;;;;x
+fe7_lyn.7.desc;I met a boisterous man who used to be the Knight Commander of Caelin. He says he likes the look in my eyes, and wants to join my band of mercenaries.;;;;;;;;;;;;;x
+fe7_lyn.7.A;I like him. He's... honest.;;;;;;;;;;;;;x
+fe7_lyn.7.B;I don't trust him.;;;;;;;;;;;;;x
+fe7_lyn.8.desc;Now that my battle is over, several members of my band have left on their own journies.;;;;;;;;;;;;;x
+fe7_lyn.8.A;Safe travels, everyone!;;;;;;;;;;;;;x
+fe7_lyn..title;;;;;;;;;;;;;;x
+fe7_lyn..desc;;;;;;;;;;;;;;x
+fe7_lyn..A;;;;;;;;;;;;;;x
+fe7_lyn..B;;;;;;;;;;;;;;x
+fe7_lyn..C;;;;;;;;;;;;;;x
+fe7_lyn..D;;;;;;;;;;;;;;x

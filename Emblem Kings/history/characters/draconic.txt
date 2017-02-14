@@ -200,7 +200,7 @@
 	religion=dragon_gods
 	trait="dragon"
 	trait="fair"
-	1.1.1={
+	120.1.1={
 		birth=yes
 	}
 	180.1.1={

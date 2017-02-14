@@ -1,4 +1,5 @@
-
+# FE changes:
+# Replaced the bad_priest_christian with bad_priest_light, bad_priest_tengri with bad_priest_divine_sky
 ###########################################
 #                                         #
 # SoA minor religious events              #             

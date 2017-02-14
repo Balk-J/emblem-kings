@@ -1000,31 +1000,21 @@ claim_all_lyn = {
 						higher_tier_than = BARON
 						NOT = { culture = ROOT }
 					}
-					hidden_tooltip = { conquest_culture = ROOT }
+					#hidden_tooltip = { conquest_culture = ROOT }
 				}
 			}
+			
 		}
 		hidden_tooltip = {
-			ROOT = {
-				if = {
-					limit = {
-						has_dlc = "Legacy of Rome"
-						OR = { 
-							has_landed_title = e_byzantium
-							has_landed_title = e_roman_empire
-						}
-						religion_group = christian
-					}
-					character_event = { id = LoR.30 days = 12 }
-				}
-				
-				
+			ROOT = {				
 				any_demesne_title = {
 					limit = {
 						is_landless_type_title = yes
 					}
 					unsafe_destroy_landed_title = ROOT
 				}		
+				# Kick off Eliwood's story now that Lyn is done
+				character_event = { id = fe7_lyn.9 }
 			}
 		}
 		any_attacker = {
@@ -1040,6 +1030,10 @@ claim_all_lyn = {
 	on_fail = {
 		ROOT = {
 			prestige = -150
+			hidden_tooltip = {
+				# Kick off Eliwood's story now that Lyn is done
+				character_event = { id = fe7_lyn.9 days = 3 }
+			}
 		}
 		any_defender = {
 			limit = { character = FROM }
@@ -1078,31 +1072,38 @@ claim_all_lyn = {
 					}
 					unsafe_destroy_landed_title = ROOT
 				}		
+				# Kick off Eliwood's story now that Lyn is done
+				character_event = { id = fe7_lyn.9 }
 			}
 		}
 		any_defender = {
 			limit = { character = FROM }
 			participation_scaled_prestige = 200
 		}
-		FROM = {
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-					religion_group = christian
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
-		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 200 }
 		}
 	}
-
+	on_invalidation = {
+		hidden_tooltip = {
+			ROOT = {		
+				if = {
+					limit = {
+						NOT = { has_character_flag = lyn_story }
+					}
+					any_demesne_title = {
+						limit = {
+							is_landless_type_title = yes
+						}
+						unsafe_destroy_landed_title = ROOT
+					}		
+					# Kick off Eliwood's story now that Lyn is done
+					character_event = { id = fe7_lyn.9 }
+				}
+			}
+		}
+	}
 	attacker_ai_victory_worth = {
 		factor = -1 # always accept
 	}

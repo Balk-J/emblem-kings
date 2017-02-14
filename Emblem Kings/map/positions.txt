@@ -1350,7 +1350,7 @@
 		{
 0.000 0.000 0.000 20.000 0.000 		}
 	}
-#Khathalet
+#Khathelet
 	105=
 	{
 		position=

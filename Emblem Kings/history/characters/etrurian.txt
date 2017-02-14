@@ -272,6 +272,8 @@
 		effect = {
 			set_character_flag="is_fe7_serra"
 		}
+		#employer = 202 # King Mordred
+		employer = 211 # Pent
 	}		
 	1156.01.01={
 		add_trait="class_cleric"
@@ -287,7 +289,7 @@
 		add_trait="wroth"
 		add_trait="brave"
 		add_trait="chaste"
-		employer = 111 # Lyn
+		#employer = 111 # Lyn
 	}	
 	1160.01.01= {
 		employer = 102 # Uther
@@ -795,7 +797,9 @@
 	
 	1145.01.01 = { # 15 as of Eliwood's story in FE7. "Three years ago... Yes, on a snowy night... Lord Pent brought you home and said, 'This is my student.' You were only 12..."
 		birth=yes 
-		set_character_flag="is_fe7_erk"
+		effect = {
+			set_character_flag="is_fe7_erk"
+		}
 	}	
 	
 	1157.01.01 = {
@@ -829,11 +833,8 @@
 		add_trait="scholarly_theologian"
 	}
 	
-	1181.1.1= {
-		death = {
-			death_reason=death_battle
-			killer=108 #Roy
-		}
+	1235.1.1= {
+		death = yes
 	}
 }
 

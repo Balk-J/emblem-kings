@@ -2,7 +2,7 @@ draconic = {
 	graphical_cultures = { westerngfx }# buildings, portraits, units
 	
 	divine_dragon_culture = {
-		graphical_cultures = { southindiangfx englishgfx} # units
+		graphical_cultures = { englishgfx} # units
 		
 		color = { 0 0 0 }
 		male_names = {

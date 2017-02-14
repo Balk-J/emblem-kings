@@ -79,6 +79,7 @@
 	
 	1159.01.01 = {
 		give_nickname="nick_the_silver_wolf"
+		prestige = 500
 	}
 	
 	1181.01.01 = { 
@@ -893,6 +894,7 @@
 			set_character_flag="class_selected"
 			set_character_flag="class_horse_archer"
 		}
+		prestige = 300
 	} 
 	1174.01.01={
 	add_trait="flat_terrain_leader"
@@ -1176,6 +1178,7 @@
 			set_character_flag="class_selected"
 			set_character_flag="class_horse_archer"
 		}
+		prestige = 300
 	} 
 	1139.01.01={
 	add_trait="flat_terrain_leader"
@@ -1209,6 +1212,7 @@
 			set_character_flag="class_selected"
 			set_character_flag="class_horse_archer"
 		}
+		prestige = 300
 	} 
 	1105.01.01={
 	add_trait="flat_terrain_leader"

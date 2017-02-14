@@ -909,10 +909,10 @@ b_kavi_2;Kavi;Kavi;Kavi;;Kavi;;;;;;;;;x
 b_kavi_2_adj;Kavian;;kaver;;;;;;;;;;;x
 b_kaya;Kaya;Kaya;Kaya;;Kaya;;;;;;;;;x
 b_kaya_adj;Kayan;;kaer;;;;;;;;;;;x
-b_khathalet;Khathalet;Khathalet;Khathalet;;Khathalet;;;;;;;;;x
-b_khathalet_adj;Khathaletian;;khathaleter;;;;;;;;;;;x
-b_khathalet_castle;Khathalet Castle;Khathalet Castle;Khathalet Castle;;Khathalet Castle;;;;;;;;;x
-b_khathalet_castle_adj;Khathalet Castlean;;Khathalet Castler;;;;;;;;;;;x
+b_khathelet;Khathelet;Khathelet;khathelet;;Khathelet;;;;;;;;;x
+b_khathelet_adj;Khathelet;;khatheleter;;;;;;;;;;;x
+b_khathelet_castle;Khathelet Castle;Khathelet Castle;Khathelet Castle;;Khathelet Castle;;;;;;;;;x
+b_khathelet_castle_adj;Khathelet Castlean;;Khathelet Castler;;;;;;;;;;;x
 b_kisra;Kisra;Kisra;Kisra;;Kisra;;;;;;;;;x
 b_kisra_adj;Kisran;;kisrer;;;;;;;;;;;x
 b_kokkoras;Kokkoras;Kokkoras;Kokkoras;;Kokkoras;;;;;;;;;x

@@ -1964,7 +1964,7 @@ e_elibe = {
 				}
 			}
 		}
-		d_khathalet = {
+		d_khathelet = {
 			color={ 119 169 67 }
 			color2={ 255 255 255 }
 			dynasty_title_names = no 
@@ -1975,15 +1975,15 @@ e_elibe = {
 		#			any_demesne_province = { OR = { province_id = 105 province_id = 106 } }
 		#		}
 		#	}
-			capital = 105 # c_khathalet
+			capital = 105 # c_khathelet
 			
-			c_khathalet = { # 105
+			c_khathelet = { # 105
 				color={ 109 179 62 }
 				color2={ 255 255 255 }
 				
-				b_khathalet_castle = {
+				b_khathelet_castle = {
 				}
-				b_khathalet = {
+				b_khathelet = {
 				}
 				b_dalisan = {
 				}

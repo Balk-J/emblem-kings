@@ -200,6 +200,9 @@
 	
 	1125.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_elbert"
+		}
 	} 	
 	
 	1137.01.01={
@@ -405,6 +408,9 @@
 	father=198
 	1098.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_hausen"
+		}
 	} 	
 	
 	1112.01.01 = {
@@ -507,8 +513,8 @@
 		
 		effect = {
 			add_pressed_claim="d_caelin"
-			add_pressed_claim="c_caelin"
-			add_pressed_claim="c_alta"
+			#add_pressed_claim="c_caelin"
+			#add_pressed_claim="c_alta"
 			add_pressed_claim="c_tarim"
 			add_pressed_claim="c_kashgar"
 			d_caelin = {
@@ -915,8 +921,12 @@
 	culture=lycian
 	
 	father=121
+	disallow_random_traits="yes" 
 	1141.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_raven"
+		}
 	} 		
 	
 	1153.01.01={
@@ -934,6 +944,7 @@
 	} 
 	
 	1158.1.1 = {
+		employer = 109 # works for Caelin as of Eliwood's story
 		add_trait="cynical"
 		add_trait="adventurer"
 		effect = {
@@ -948,7 +959,6 @@
 	1188.01.01={
 		death=yes
 	}
-	disallow_random_traits="yes" 
 }
 
 123 = {
@@ -1418,7 +1428,7 @@
 		}
 	} 		
 	1138.01.01 = { 
-		employer=105 #Elbert 
+		employer=109 #Hausen 
 	}
 	1150.01.01={
 		add_trait="class_cavalier"
@@ -1457,7 +1467,7 @@
 		}
 	} 			
 	1136.01.01 = { 
-		employer=105 #Elbert 
+		employer=109 #Hausen 
 	}	
 	1148.01.01={
 		add_trait="class_cavalier"

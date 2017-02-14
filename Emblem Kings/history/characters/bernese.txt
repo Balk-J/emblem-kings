@@ -885,7 +885,9 @@
 	religion=elimine_church
 	1124.1.1={
 		birth=yes
-		set_character_flag="is_fe7_dorcas"
+		effect = {
+			set_character_flag="is_fe7_dorcas"
+		}
 	}
 	1136.01.01={
 		add_trait="class_fighter"

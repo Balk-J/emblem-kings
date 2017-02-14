@@ -32,7 +32,6 @@ fe_plot.15.A;The perfect crime.;;;;;;;;;;;;;x;
 fe_plot.16.desc;Failure! The thief was caught red-handed. My complicity was discovered.;;;;;;;;;;;;;x;
 fe_plot.16.A;Curses!;Zut !;Verflucht!;;¡Maldición!;;;;;;;;;x;
 fe_plot.17.desc;Failure! The thief was unable to access the room where the Fire Emblem is kept, and will not be making another attempt. At least he managed to evade the guards and keep the plot undetected...;;;;;;;;;;;;;x;
-
 fe_plot.41.desc;Your attempts to infiltrate [Root.PlotTarget.Location.GetName] have been unsuccessful. [Root.PlotTarget.GetTitledFirstName] was too heavily guarded for you to approach undetected. You'll have to call off the assassination plan for now.;;;;;;;;;;;;;x;
 fe_plot.41.A;Those guards can't stay awake forever.;;;;;;;;;;;;;x;
 fe_plot.42.desc;For the past several days, the night watchmen at [Root.Location.GetName] have seen a suspicious figure lurking in the area, watching the guards' movements and fleeing when spotted. It stopped appearing last night, but your guards advise caution.;;;;;;;;;;;;;x;

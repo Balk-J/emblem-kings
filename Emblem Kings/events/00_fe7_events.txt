@@ -532,7 +532,7 @@ character_event = {
 	
 	trigger = {
 		has_game_rule = {
-			name = RULE_FE_STORY
+			name = fe_story
 			value = on
 		}
 		ROOT = {
@@ -580,7 +580,7 @@ narrative_event = {
 	option = {
 		name = fe7.5.A
 		ai_chance = {
-			factor = 100
+			factor = 99
 		}
 		any_war = {
 			limit = {
@@ -626,6 +626,9 @@ character_event = {
 	# If Hausen is the player and Lyn is an AI, Lyn just moves to Hausen's court.
 	option = {
 		name = fe7.6.A		
+		ai_chance = {
+			factor = 80
+		}
 		custom_tooltip = {
 			text = fe7.6.A.tooltip
 			hidden_tooltip = {
@@ -735,6 +738,9 @@ character_event = {
 	# reject
 	option = {
 		name = fe7.6.B
+		ai_chance = {
+			factor = 20
+		}
 		custom_tooltip = {
 			text = fe7.6.B.tooltip
 			hidden_tooltip = {
@@ -831,7 +837,7 @@ character_event = {
 	
 	trigger = {
 		has_game_rule = {
-			name = RULE_FE_STORY
+			name = fe_story
 			value = on
 		}
 		year = 1150
@@ -1144,7 +1150,7 @@ narrative_event = {
 	
 	trigger = {
 		has_game_rule = {
-			name = RULE_FE_STORY
+			name = fe_story
 			value = on
 		}
 		year = 1156
@@ -1311,12 +1317,11 @@ narrative_event = {
 	
 	only_playable = yes
 	culture = bernese
-	has_global_flag = black_fang_founded
 	has_global_flag = black_fang_grows
 	
 	trigger = {
 		has_game_rule = {
-			name = RULE_FE_STORY
+			name = fe_story
 			value = on
 		}
 		year = 1158
@@ -1325,6 +1330,8 @@ narrative_event = {
 			has_global_flag = black_fang_destroyed
 			has_global_flag = black_fang_corrupted
 		}
+		has_global_flag = black_fang_founded
+		has_global_flag = black_fang_grows
 		
 	}
 	
@@ -1549,6 +1556,8 @@ character_event = {
 				}
 			}
 		}
+		NOT = { is_inaccessible_trigger = yes }
+		NOT = { realm_intrigue = 30 }
 	}
 	
 	mean_time_to_happen = {
@@ -1617,6 +1626,8 @@ character_event = {
 			in_command = no
 		}
 		NOT = { has_global_flag = black_fang_destroyed }
+		NOT = { is_inaccessible_trigger = yes }
+		NOT = { realm_intrigue = 30 }
 	}
 	
 	immediate = {
@@ -1687,6 +1698,7 @@ character_event = {
 		}
 		NOT = { has_global_flag = black_fang_destroyed }
 		NOT = { is_inaccessible_trigger = yes }
+		NOT = { realm_intrigue = 30 }
 	}
 	
 	mean_time_to_happen = {
@@ -1734,6 +1746,8 @@ character_event = {
 		in_command = no
 		
 		NOT = { has_global_flag = black_fang_destroyed }
+		NOT = { is_inaccessible_trigger = yes }
+		NOT = { realm_intrigue = 30 }
 	}
 	
 	mean_time_to_happen = {
@@ -1969,6 +1983,8 @@ character_event = {
 		is_pretender = no
 		in_command = no
 		NOT = { spouse = { character = host } }
+		NOT = { host = { is_inaccessible_trigger = yes } }
+		NOT = { host = { realm_intrigue = 30 } }
 	}
 	
 	mean_time_to_happen = {
@@ -2058,7 +2074,7 @@ narrative_event = {
 	
 	trigger = {
 		has_game_rule = {
-			name = RULE_FE_STORY
+			name = fe_story
 			value = on
 		}
 		year = 1150
@@ -2506,7 +2522,9 @@ character_event = {
 			wealth = -1000
 			hidden_tooltip = { FROM = { wealth = 1000 } }
 		}
+		hidden_tooltip = {
 		character_event = { id = fe7.26 }
+		}
 	}
 	option = {	 
 		name = "fe7.25.B" # Decline
@@ -2612,14 +2630,9 @@ character_event = {
 		
 	option = {
 		name = "fe7.27.A"
-		# Report success? Not necessary, they get the plot success notification. Maybe put it in if we have good flavor text...
-		#hidden_tooltip = { 
-		#	FROM = { character_event = { id = fe7.xx } }
-		#}
-		death = { 
-			death_reason = death_murder_unknown
-			killer = FROM
-		}			
+		hidden_tooltip = { 
+			character_event = { id = fe7.33 } 
+		}
 	}
 }
 
@@ -2751,5 +2764,25 @@ character_event = {
 	
 	option = {
 		name = fe7.32.A
+	}
+}
+# killed by unseen Fang assassin
+character_event = {
+	id = fe7.33
+	desc = fe7.33.desc
+	picture = GFX_evt_shadow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe7.33.A
+		# Report success? Not necessary, they get the plot success notification. Maybe put it in if we have good flavor text...
+		#hidden_tooltip = { 
+		#	FROM = { character_event = { id = fe7.xx } }
+		#}
+		death = { 
+			death_reason = death_murder_unknown
+			killer = FROMFROM
+		}		
 	}
 }

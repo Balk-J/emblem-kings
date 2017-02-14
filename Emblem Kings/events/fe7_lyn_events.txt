@@ -7,7 +7,6 @@ namespace = fe7_lyn
 
 # Some are in the FE7 file - move those here later.
 
-
 #Ly
 character_event = {
 	id = fe7_lyn.1
@@ -84,6 +83,17 @@ character_event = {
 				}
 			}
 		}
+		
+		# Make sure we're still on the rails before firing the next event!
+		if = {
+			limit = {
+				any_current_enemy = {
+					has_landed_title = d_caelin
+					has_character_flag = is_fe7_lundgren
+				}
+			}
+			character_event = { id = fe7_lyn.2 days = 10 random = 4 }
+		}
 	}
 	
 	option = {
@@ -99,11 +109,6 @@ character_event = {
 				who = ROOT
 				years = 100
 			}  
-			reverse_opinion = {
-				modifier = opinion_grateful
-				who = ROOT
-				years = 5
-			} 
 			reverse_opinion = {
 				modifier = opinion_grateful
 				who = ROOT
@@ -125,14 +130,6 @@ character_event = {
 				who = ROOT
 				years = 5
 			} 
-			reverse_opinion = {
-				modifier = opinion_grateful
-				who = ROOT
-				years = 5
-			} 
-		}
-		hidden_tooltip = {
-			character_event = { id = fe7_lyn.2 days = 10 random = 4 }
 		}
 	}
 	option = {
@@ -220,6 +217,16 @@ character_event = {
 				}
 			}
 		}
+		# Make sure we're still on the rails before firing the next event!
+		if = {
+			limit = {
+				any_current_enemy = {
+					has_landed_title = d_caelin
+					has_character_flag = is_fe7_lundgren
+				}
+			}
+			character_event = { id = fe7_lyn.3 days = 10 random = 4 }
+		}
 	}
 	
 	option = {
@@ -242,24 +249,11 @@ character_event = {
 				who = ROOT
 				years = 5
 			} 
-			opinion = {
-				modifier = opinion_gained_respect
-				who = ROOT
-				years = 5
-			} 
 			reverse_opinion = {
 				modifier = opinion_grateful
 				who = ROOT
 				years = 5
 			} 
-			reverse_opinion = {
-				modifier = opinion_grateful
-				who = ROOT
-				years = 5
-			} 
-		}
-		hidden_tooltip = {
-			wealth=1#character_event = { id = fe7_lyn.3 days = 10 random = 4 }
 		}
 	}
 	option = {
@@ -272,22 +266,755 @@ character_event = {
 }
 
 # Recruit Dorcas
+character_event = {
+	id = fe7_lyn.3
+	desc = fe7_lyn.3.desc
+	picture = GFX_evt_bandits
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+		c_haslen = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_dorcas"
+							}
+						}
+					}
+					
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = elimine_church
+						culture = bernese
+						female = no
+						age = 35		
+						trait="class_fighter"
+						trait="misguided_warrior"
+						trait="shy"		
+						trait="cynical"	
+						trait="patient"	
+						trait="kind"	
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_fighter"
+						set_character_flag = "is_fe7_dorcas"
+						
+						create_character = {
+							random_traits = no
+							dynasty = none
+							religion = elimine_church
+							culture = bernese
+							female = yes
+							trait="clubfooted"	
+							trait="infirm"	
+							trait="patient"	
+							trait="kind"	
+						}
+						new_character = {
+							add_spouse = PREV
+						}
+					}
+				}
+			}
+		}
+		# Make sure we're still on the rails before firing the next event!
+		if = {
+			limit = {
+				any_current_enemy = {
+					has_landed_title = d_caelin
+					has_character_flag = is_fe7_lundgren
+				}
+			}
+			character_event = { id = fe7_lyn.4 days = 15 random = 5 }
+		}
+	}
+	
+	option = {
+		name = fe7_lyn.3.A
+				
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_dorcas"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_gained_respect
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+	}
+	option = {
+		name = fe7_lyn.3.B
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 300
+		piety = -50
+		
+		random_character = {
+			limit = {
+				has_character_flag = "is_fe7_dorcas"			
+			}		
+			death = { 
+				death_reason = death_battle
+				killer = ROOT
+			} 
+		}
+	}
+}
 
 # Recruit Erk & Serra
+character_event = {
+	id = fe7_lyn.4
+	desc = fe7_lyn.4.desc
+	picture = GFX_evt_pilgrims_epic_journey
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+		c_ennenda = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_serra"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = 219
+						religion = elimine_church
+						culture = etrurian
+						female = yes
+						age = 15
+						trait="class_cleric"
+						trait="indulgent_wastrel"
+						trait="light_foot_leader"
+						trait="wroth"
+						trait="brave"
+						trait="chaste"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_priest"
+						set_character_flag = "is_fe7_serra"
+					}
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_erk"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = anima
+						culture = etrurian
+						female = no
+						age = 14						
+						trait="class_mage"
+						trait="scholar"
+						trait="diligent"
+						trait="shy"
+						trait="humble"
+						trait="stressed"
+						trait="temperate"
+						trait="chaste"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_mage"
+						set_character_flag = "is_fe7_erk"
+					}
+				}
+			}
+		}
+		# Make sure we're still on the rails before firing the next event!
+		if = {
+			limit = {
+				any_current_enemy = {
+					has_landed_title = d_caelin
+					has_character_flag = is_fe7_lundgren
+				}
+			}
+			character_event = { id = fe7_lyn.5 days = 15 random = 3 }
+		}
+	}
+	
+	option = {
+		name = fe7_lyn.4.A
+		
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_serra"
+			}
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+			move_character = ROOT
+		}
+		
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_erk"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_gained_respect
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+	}
+	option = {
+		name = fe7_lyn.4.B
+		ai_chance = {
+			factor = 0
+		}
+		piety = 100
+	}
+}
 
 # Recruit Matthew & Rath
+character_event = {
+	id = fe7_lyn.5
+	desc = fe7_lyn.5.desc
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+		c_araphen = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_rath"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = 502
+						religion = divine_sky_pagan
+						culture = sacaean
+						female = no
+						age = 18
+						trait="depressed"
+						trait="flat_terrain_leader"
+						trait="cavalry_leader"
+						trait="skilled_tactician"
+						trait="adventurer"
+						trait="class_horse_archer"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_horse_archer"
+						set_character_flag = "is_fe7_rath"
+					}
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_matthew"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = THIS
+						culture = lycian
+						female = no
+						age = 20
+						trait="kind"
+						trait="just"
+						trait="gregarious"
+						trait="deceitful"
+						trait="elusive_shadow"
+						trait="schemer"
+						trait="trickster"		
+						trait="class_thief"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_thief"
+						set_character_flag = "is_fe7_matthew"
+					}
+				}
+			}
+		}
+		
+		# Make sure we're still on the rails before firing the next event!
+		if = {
+			limit = {
+				any_current_enemy = {
+					has_landed_title = d_caelin
+					has_character_flag = is_fe7_lundgren
+				}
+			}
+			character_event = { id = fe7_lyn.6 days = 10 random = 4 }
+		}
+	}
+	
+	option = {
+		name = fe7_lyn.5.A
+		
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_rath"
+			}
+			move_character = ROOT
+			
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_matthew"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_gained_respect
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+	}
+	option = {
+		name = fe7_lyn.5.B
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 200
+	}
+}
 
 # Recruit Nils, Ninian & Lucius
+character_event = {
+	id = fe7_lyn.6
+	desc = fe7_lyn.6.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+		c_khathelet = {
+			holder_scope = {				
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_lucius"
+							}
+						}
+					}
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = THIS
+						culture = etrurian
+						female = no
+						age = 26		
+						trait="fair"
+						trait="weak" 
+						trait="zealous"
+						trait="chaste"
+						trait="kind"
+						trait="scholarly_theologian"
+						trait="class_monk"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 1 }
+						set_character_flag="class_selected"
+						set_character_flag="class_monk"
+						set_character_flag = "is_fe7_lucius"
+					}
+				}
+			}
+		}
+		
+		# Make sure we're still on the rails before firing the next event!
+		if = {
+			limit = {
+				any_current_enemy = {
+					has_landed_title = d_caelin
+					has_character_flag = is_fe7_lundgren
+				}
+			}
+			character_event = { id = fe7_lyn.7 days = 15 random = 5 }
+		}
+	}
+	
+	option = {
+		name = fe7_lyn.6.A
+		if = {
+			limit = {
+				NOT = {
+					any_character = { 
+						has_character_flag = "is_fe7_ninian"
+					}
+				}
+				NOT = {
+					any_character = { 
+						has_character_flag = "is_fe7_nils"
+					}
+				}
+			}
+			piety = 200
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_ninian"
+			}
+			move_character = ROOT
+			
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_nils"
+			}
+			move_character = ROOT
+			
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_lucius"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_gained_respect
+				who = ROOT
+				years = 5
+			} 
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+	}
+	option = {
+		name = fe7_lyn.6.B
+		ai_chance = {
+			factor = 0
+		}
+		prestige = -50
+		piety = -50
+	}
+}
 
 # Recruit Wallace
+character_event = {
+	id = fe7_lyn.7
+	desc = fe7_lyn.7.desc
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+		c_alta = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = {
+							any_character = { 
+								has_character_flag = "is_fe7_wallace"
+							}
+						}
+					}
+					
+					create_character = {
+						random_traits = no
+						dynasty = none
+						religion = elimine_church
+						culture = lycian
+						female = no
+						age = 44		
+						trait="class_knight"
+						trait="slow"
+						trait="strong"		
+						trait="gardener"	
+						trait="tough_soldier"
+						trait="inspiring_leader"
+						trait="heavy_infantry_leader"
+						trait="aggressive_leader"
+						trait="proud"
+						trait="patient"
+						trait="diligent"
+						trait="brave"
+						trait="just"
+					}
+					new_character = {
+						set_variable = { which = "level" value = 20 }
+						set_character_flag="class_selected"
+						set_character_flag="class_knight"
+						set_character_flag = "is_fe7_wallace"
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = fe7_lyn.7.A
+				
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_wallace"
+			}
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_loyal_retainer
+				who = ROOT
+				years = 100
+			}  
+			reverse_opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			} 
+		}
+	}
+	option = {
+		name = fe7_lyn.7.B
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 100
+		if = {
+			limit = {
+				NOT = { trait = cynical }
+			}
+			random = {
+				chance = 30
+				add_trait = cynical
+			}
+		}
+	}
+}
 
 # After victory - split the party:
 # Kent, Sain, Florina, Wil - with Lyn
-# Dorcas - Bern
+# Dorcas - Bern? Pherae by Eliwood's story
 # Erk - Pent
 # Serra, Matthew, Rath - Ostia
 # Lucius - ??? with Raven
 # Wallace - ??? kill Taliver Bandits
 # Ninian, Nils - captured by Nergal.
+character_event = {
+	id = fe7_lyn.8
+	desc = fe7_lyn.8.desc
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe7_lyn.8.A
+		
+		c_haslen = {
+			holder_scope = {
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_dorcas"
+					}
+					move_character = PREV
+				}
+			}
+		}
+		c_ostia = {
+			holder_scope = {
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_erk"
+					}
+					move_character = PREV
+				}
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_serra"
+					}
+					move_character = PREV
+				}
+			}
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = "is_fe7_raven"
+			}
+			employer = {
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_lucius"
+					}
+					move_character = PREV
+				}			
+			}
+		}
+		c_caelin = {
+			holder_scope = {
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_wallace"
+					}
+					move_character = PREV
+				}
+			}
+		}
+		c_badon = {
+			holder_scope = {
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_ninian"
+					}
+					move_character = PREV
+				}
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_nils"
+					}
+					move_character = PREV
+				}
+			}
+		}
+		#hidden_tooltip = {
+		#	e_nergal = {
+		#		holder_scope = {
+		#			random_character = { 
+		#				limit = {
+		#					has_character_flag = "is_fe7_ninian"
+		#				}
+		#				move_character = PREV
+		#				reverse_imprison = PREV
+		#			}
+		#			random_character = { 
+		#				limit = {
+		#					has_character_flag = "is_fe7_nils"
+		#				}
+		#				move_character = PREV
+		#				reverse_imprison = PREV
+		#			}	
+		#		}
+		#	}
+		#}
+	}
+}
 
-
+# Are we done with Lyn's story?
+character_event = {
+	id = fe7_lyn.9
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		# If the war with Caelin/bandits is over and the temporary title is gone, yes.
+		if = {
+			limit = {
+				d_lyn = {
+					has_holder = no
+				}
+				e_nergal = {
+					has_holder = yes
+				}
+			}
+			
+			# Kick of Eliwood's story.
+			if = {
+				limit = {
+					any_character = {
+						has_character_flag = is_fe7_lyn
+					}
+				}
+				random_character = { 
+					limit = {
+						has_character_flag = "is_fe7_lyn"
+					}
+					clr_character_flag = lyn_story
+					clr_character_flag = lyn_story_war
+					
+					# Make sure Hausen stays!
+					if = {
+						limit = {
+							has_landed_title = d_caelin
+							any_character = {
+								has_character_flag = is_fe7_hausen
+							}
+						}
+						random_character = { 
+							limit = {
+								has_character_flag = "is_fe7_hausen"
+							}
+							add_friend = PREV
+							move_character = PREV
+						}
+					}
+					
+					# Split the party
+					character_event = { id = fe7_lyn.8 days = 20 random = 10 }
+				}
+				
+			}
+			
+			# Start the consipracy!
+			e_nergal = {
+				holder_scope = {
+					character_event = { id = fe7_eliwood.1 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}

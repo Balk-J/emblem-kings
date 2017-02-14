@@ -51,6 +51,9 @@ class.9.desc.2;You approach the captain of the guard and announce your intention
 class.9.desc.3;You approach the captain of the guard and announce your intention to train with your soldiers. He seems interested by the prospect, agrees to include you in his next class of recruits.;;;;;;;;;;;;;x
 class.9.desc.4;You approach the captain of the guard and announce your intention to train with your soldiers. He's very enthusiastic about the idea - he thinks you have the makings of a fine warrior, and invites you to train with his next class of recruits.;;;;;;;;;;;;;x
 class.9.A;Let's go!;;;;;;;;;;;;;x
+class.10.desc;Your training has finally paid off. You can wield a spear as well as anyone!;;;;;;;;;;;;;x
+class.10.A;At last!;;;;;;;;;;;;;x
+class.11.A.tooltip;[Root.GetTitledFirstName] asks [This.GetTitledFirstName] for lessons.;;;;;;;;;;;;;x
 class.11.title;A Friendly Master;;;;;;;;;;;;;x
 class.11.desc;It occurs to you that one of your friends has the combat training you lack. Perhaps you could ask them to teach you what they know?;;;;;;;;;;;;;x
 class.11.A;My friend, will you teach me your skills?;;;;;;;;;;;;;x

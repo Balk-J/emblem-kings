@@ -43,7 +43,17 @@ character_event = {
 				NOT = { year = 1160 }
 			}
 			character_event = {
-				id =  startup.3
+				id = startup.3
+			}
+		}
+		
+		if = { # Blazing Sword
+			limit = { 
+				year = 1160
+				NOT = { year = 1161 }
+			}
+			character_event = {
+				id =  startup.4
 			}
 		}
 		
@@ -69,14 +79,23 @@ character_event = {
 		set_global_flag = scenario_fe6_binding_blade	
 	}
 	option = {
-		random_character = {
+		
+		if = {
 			limit = {
-				has_character_flag = is_fe6_zephiel
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
 			}
-			set_character_flag = searching_for_demon_dragon
-			character_event = {
-				id =  fe6.6
-				days = 1
+			random_character = {
+				limit = {
+					has_character_flag = is_fe6_zephiel
+				}
+				set_character_flag = searching_for_demon_dragon
+				character_event = {
+					id =  fe6.6
+					days = 1
+				}
 			}
 		}
 	}
@@ -108,13 +127,46 @@ character_event = {
 			if = {
 				limit = {
 					has_game_rule = {
-						name = RULE_FE_STORY
+						name = fe_story
 						value = on
 					}
 				}
 				d_lyn = {
 					holder_scope = {
 						character_event = { id = fe7_lyn.1 days = 20 random = 5 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+
+# Blazing Sword setup
+character_event = {
+	id = startup.4
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_fe7_blazing_sword }
+			}
+			set_global_flag = scenario_fe7_blazing_sword
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						name = fe_story
+						value = on
+					}
+				}
+				e_nergal = {
+					holder_scope = {
+						character_event = { id = fe7_eliwood.1 }
 					}
 				}
 			}

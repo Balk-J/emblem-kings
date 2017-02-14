@@ -1,0 +1,71 @@
+namespace = fe7_eliwood
+
+##################################
+# FE7 / The Blazing Sword Events #
+##################################
+# For Eliwood/Hector's story.
+
+character_event = {
+	id = fe7_eliwood.1
+	desc = fe7_eliwood.1.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	immediate = {
+	
+		hidden_tooltip = {
+			e_nergal = {
+				holder_scope = {
+					random_character = { 
+						limit = {
+							has_character_flag = "is_fe7_ninian"
+						}
+						move_character = PREV
+						imprison = PREV
+					}
+					random_character = { 
+						limit = {
+							has_character_flag = "is_fe7_nils"
+						}
+						move_character = PREV
+						imprison = PREV
+					}	
+				}
+			}
+		}
+	}
+	# Start the conspiracy!
+	option = {
+		name = fe7_eliwood.1.A
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = {
+			text = fe7_eliwood.1.A.tooltip
+			hidden_tooltip = {
+			
+			}
+		}
+	}
+	# Do nothing
+	option = {
+		name = fe7_eliwood.1.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}
+	}
+}
+
+# Ping all the Marquesses except Ostia.
+# Give them the chance to jump in the conspiracy. Yes / No / Double Agent
+# Laus and Santaruz pick A, Elbert picks C, everyone else picks B.
+# Conspirators get some event troops and cash.
+# Double agents get an event chain to investigate. AI will flub this and get captured. Humans could expose the conspiracy? 
