@@ -1,8 +1,11 @@
+#FE overrides:
+# Attacker discovered after failed murder - consequences. 
+
 ####################################
 # Reserved IDs: 0-999, 40000 - 44999
 ####################################
-#FE overrides:
-# Attacker discovered after failed murder - consequences.
+
+namespace = diploresponse
 
 # ID 1 and 2 are empty dummy events that are used by the message system to spawn messages
 # that should be displayed as events, their descriptions are filled in by the message system
