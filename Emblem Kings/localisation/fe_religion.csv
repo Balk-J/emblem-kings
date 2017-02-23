@@ -93,3 +93,7 @@ guardian;Guardian;;;;;;;;;;;;;x
 guardian_DESC;Guardians are men and women dedicated to protecting a particular region or people. Generally peaceful until provoked, Guardians struggle with offensive wars but have an easier time than most keeping order in the lands they protect.;;;;;;;;;;;;;x
 elibe_spirits_pagan;Old Elibian;;;;;;;;;;;;;x
 elibe_spirits_pagan_DESC;Old Elibians revere the nature spirits of Elibe, including Ninis, Set, Thor, and Filla. They are generally peaceful and focus on protecting areas of spiritual signifigance. They tend to struggle with offensive wars but have an easier time than most keeping order in the lands they protect.;;;;;;;;;;;;;x
+STAT_PIETY_MENU_QUINTESSENCE;§YQuintessence§!;§YQuintessence§!;§YQuintessence§!;;§YQuintessence§!;;;;;;;;;x
+STAT_PIETY_QUINTESSENCE;Quintessence;Quintessence;Quintessence;;Quintessence;;;;;;;;;x
+STAT_PIETY_DESC_QUINTESSENCE;Quintessence is respected by your fellow mages. Like Prestige, it is added to your score on the death of a ruler.;;;;;;;;;;;;;x
+MONTHLY_PIETY_QUINTESSENCE;Monthly Quintessence Increase;;;;;;;;;;;;;x

@@ -344,6 +344,7 @@
 	# An unspecified amount of time later, starts making morphs and has a falling out with Athos
 	800.01.01 = {  
 		effect={
+			set_character_flag=lore_quintessence
 			set_character_flag=lore_morphs
 			piety=500
 		}
@@ -360,6 +361,19 @@
 	820.01.01 = {  
 		add_trait="scarred"
 		remove_trait="maimed"
+	}
+	
+	900.01.01 = {  
+		effect = {
+			spawn_fleet = {
+				province = closest
+				owner = ROOT
+				disband_on_peace = no
+				troops = {
+					galleys = { 20 20 }
+				}
+			}
+		}
 	}
 	1161.01.01 = { 
 		death = {

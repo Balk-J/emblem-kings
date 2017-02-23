@@ -450,10 +450,6 @@ obj_promote = {
 			trait = brave
 		}
 		modifier = {
-			factor = 2.0
-			trait = ambitious
-		}
-		modifier = {
 			factor = 1.5
 			trait = misguided_warrior
 		}
@@ -527,5 +523,81 @@ obj_promote = {
 		change_stewardship = 1
 		change_martial = 1
 		change_learning = 1
+	}
+}
+
+obj_gather_quintessence = {
+	type = character
+	
+	potential = {
+		is_adult = yes
+		is_playable = yes
+		has_character_flag = lore_quintessence
+		NOT = {piety = 10000}		
+	}
+	
+	allow = {
+		is_adult = yes
+		prisoner = no		
+		NOT = { trait = incapable }
+		NOT = { trait = dark_incapable }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 100
+			trait = dark_power_hungry
+		}		
+		modifier = {
+			factor = 0.01
+			trait = content
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.01
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 2.0
+			trait = mystic
+		}
+	}
+	success = {
+		custom_tooltip = {
+			text = obj_gather_quintessence_success			
+			hidden_tooltip = { 			
+				piety = 10000
+			}
+		}	
+	}
+	abort = {
+		OR = {
+			prisoner = yes
+			trait = incapable
+			trait = dark_incapable
+		}
+	}
+	abort_effect = {
+	
+	}
+	effect = {
+		custom_tooltip = {
+			text = obj_gather_quintessence_effect			
+			hidden_tooltip = { 			
+				#prestige = 1000
+			}
+		}	
 	}
 }

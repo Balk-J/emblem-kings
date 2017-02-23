@@ -14,7 +14,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_create_morph"
-		texturefile = "gfx\\interface\\decision_icon_convert_to_liege_religion.dds"
+		texturefile = "gfx\\interface\\decision_icon_morphs.dds"
 	}
 	spriteType = {
 		name = "GFX_create_golden_church"
@@ -47,5 +47,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_convert_to_dark"
 		texturefile = "gfx\\interface\\decision_icon_dark.dds"
+	}
+	spriteType = {
+		name = "GFX_open_the_dragons_gate"
+		texturefile = "gfx\\interface\\decision_icon_pick_main_deity.dds"
 	}
 }

@@ -23,7 +23,7 @@ demand_fire_emblem;Demand Fire Emblem;;;;;;;;;;;;;x
 demand_fire_emblem_desc;Demand that [Root.GetTitledFirstName] hand over your realm's national treasure.;;;;;;;;;;;;;x
 demand_fire_emblem.tooltip;[Root.GetTitledFirstName] is unlikely to agree unless you are on good terms, [Root.GetSheHe] owes you a favor, or you allowed [Root.GetHerHim] to take it.;;;;;;;;;;;;;x
 take_fire_emblem_from_prisoner;Take Fire Emblem;;;;;;;;;;;;;x
-take_fire_emblem_from_prisoner_desc;Demand that [Root.GetTitledFirstName] surrender the Fire Emblem as a condition of [Root.GetHerHis] release..;;;;;;;;;;;;;x
+take_fire_emblem_from_prisoner_desc;Demand that [Root.GetTitledFirstName] surrender the Fire Emblem as a condition of [Root.GetHerHis] release.;;;;;;;;;;;;;x
 assassinate_personally;Assassinate Plot Target;;;;;;;;;;;;;x
 assassinate_personally_desc;There's someone who needs to die, and I happen to be a trained assassin. I could see to [Root.PlotTarget.GetHerHis] death personally.;;;;;;;;;;;;;x
 assassinate_personally.tooltip;You will attempt to sneak into [Root.PlotTarget.Capital.GetName] and assassinate [Root.PlotTarget.GetTitledFirstName]. Failure may result in your plot being exposed, along with your death or imprisonment.;;;;;;;;;;;;;x
@@ -31,3 +31,8 @@ convert_to_anima;Embrace Anima Magic;;;;;;;;;;;;;x
 convert_to_anima_desc;I could abandon the [Root.Religion.GetName] faith and focus my studies on anima magic.;;;;;;;;;;;;;x
 convert_to_dark;Embrace Elder Magic;;;;;;;;;;;;;x
 convert_to_dark_desc;I could abandon the [Root.Religion.GetName] faith and focus my studies on elder magic.;;;;;;;;;;;;;x
+open_the_dragons_gate;Open the Dragon's Gate;;;;;;;;;;;;;x
+open_the_dragons_gate_desc;With enough quintessence and the collaboration - willing or not - of a dragon, I can open the gate to the realm of dragons.;;;;;;;;;;;;;x
+drain_soldiers;Drain Soldiers;;;;;;;;;;;;;x
+drain_soldiers_desc;Monitor the soldiers of [Root.GetTitledFirstName]'s realm and look for chances to drain the strong ones of quintessence.;;;;;;;;;;;;;x
+drain_soldiers.tooltip;[Root.GetTitledFirstName] will need to be involved in a war to create opportunities for your agents.;;;;;;;;;;;;;x

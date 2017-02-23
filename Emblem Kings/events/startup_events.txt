@@ -23,6 +23,7 @@ character_event = {
 			# Structures on Valor
 			1 = { #Virtus
 				add_province_modifier = { name = ancient_ruins duration = -1 }
+				add_province_modifier = { name = dragons_gate_elibe duration = -1 }
 			}
 			2 = { #Temperantia
 				add_province_modifier = { name = ancient_ruins duration = -1 }
@@ -166,7 +167,7 @@ character_event = {
 				}
 				e_nergal = {
 					holder_scope = {
-						character_event = { id = fe7_eliwood.1 }
+						character_event = { id = fe7_eliwood.1 days = 1 }
 					}
 				}
 			}

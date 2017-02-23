@@ -214,6 +214,10 @@ decisions = {
 				NOT = { trait = incapable }
 				NOT = { has_character_modifier = created_war_dragons }
 			}
+			any_courtier = {
+				trait = war_dragon
+				NOT = { count = 9 }
+			}
 		}
 		effect = {		
 			random_courtier  = {
@@ -225,32 +229,9 @@ decisions = {
 					NOT = { has_character_modifier = created_war_dragons }
 				}
 				add_character_modifier = { name = created_war_dragons duration = 1825 } 
+				#add_character_modifier = { name = created_war_dragons duration = 3650 } 
 			}
 			character_event = { id = fe6.3 }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
-
-	create_morph = {
-		only_playable = yes
-		
-		potential = {
-			is_adult = yes
-			prisoner = no
-			has_character_flag = lore_morphs 
-			NOT = { trait = incapable }
-		}
-		allow = {
-			piety = 500
-			is_adult = yes
-			prisoner = no
-			has_character_flag = lore_morphs 
-		}
-		effect = {
-			piety = -500
-			character_event = { id = fe7.2 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -416,6 +397,7 @@ decisions = {
 			
 			modifier = {
 				factor = 0.1
+				trait = greedy
 			}
 			
 			modifier = {

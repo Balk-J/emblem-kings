@@ -5,6 +5,18 @@ namespace = fe7_eliwood
 ##################################
 # For Eliwood/Hector's story.
 
+# Ping all the Marquesses except Ostia.
+# Give them the chance to jump in the conspiracy. Yes / No / Double Agent
+# Laus and Santaruz pick A, Elbert picks C, everyone else picks B.
+# Conspirators get some event troops and cash. Maybe? Ganging up in a war may be enough...
+# Double agents get an event chain to investigate. AI will flub this and get captured. Humans could expose the conspiracy? CB on Nergal and/or the conspirators?
+# Failed double agent is imprisoned and abdicates to heir, who gets an event to investigate.
+# ^ kick off Blazing Sword here.
+# CB on lead conspirator. Win war = CB on Nergal.
+# Win war = Nergal explodes? Or set up Act 2?
+# Rest, grow in power - need to have character with regalia win war against him.
+# If ignored long enough, conspirators get a claim on the target and the option to launch a war (backed by Nergal or vassals?)
+# If Nergal is ignored long enough and has the kids, he can open the Gate and chow down on dragons. From there, Bad Things happen. Mega-army of morphs? 
 character_event = {
 	id = fe7_eliwood.1
 	desc = fe7_eliwood.1.desc
@@ -44,7 +56,7 @@ character_event = {
 		custom_tooltip = {
 			text = fe7_eliwood.1.A.tooltip
 			hidden_tooltip = {
-			
+				character_event = { id = fe7_eliwood.2 }
 			}
 		}
 	}
@@ -63,9 +75,897 @@ character_event = {
 		}
 	}
 }
+# Where are we going with this?
+# We could target randomly chosen kingdoms in Elibe - see "immediate" logic - but it probably makes more sense for Nergal to go after one of the big three.
+character_event = {
+	id = fe7_eliwood.2
+	desc = fe7_eliwood.2.desc
+	picture = GFX_evt_shadowy_cabal
+	hide_from = yes
+	is_triggered_only = yes
+	immediate = {	
+#		random_landed_title = {
+#			limit = {
+#				region = world_elibe
+#				tier = king
+#			}
+#			set_title_flag = possible_nergal_target
+#		}
+		any_playable_ruler = {
+			limit = {
+				OR = {
+					has_character_flag = quintessence_conspiracy_leader
+					has_character_flag = quintessence_conspiracy_member
+					has_character_flag = quintessence_conspiracy_double_agent
+					has_character_flag = quintessence_conspiracy_uncovered
+				}
+			}
+			clr_character_flag = quintessence_conspiracy_leader
+			clr_character_flag = quintessence_conspiracy_member
+			clr_character_flag = quintessence_conspiracy_double_agent
+			clr_character_flag = quintessence_conspiracy_uncovered
+		}
+#		random_landed_title = {
+#			limit = {
+#				has_title_flag = quintessence_conspiracy_zone
+#			}
+#			clr_title_flag = quintessence_conspiracy_zone
+#		}
+	}
+	# Lycia
+	option = {
+		name = fe7_eliwood.2.A
+		trigger = {
+			k_lycia = {
+				NOT = { has_title_flag = quintessence_conspiracy_zone }
+			}
+		}
+		ai_chance = {
+			factor = 33
+		}
+		#hidden_tooltip = {
+			k_lycia = {
+				set_title_flag = quintessence_conspiracy_zone 
+				
+				# Flag the owner of the capital as the target. Really wish we had a better way figure out who the most powerful ruler in the area is, but when this gets run it should grab Ostia.
+				capital_scope = {
+					county = {
+						holder_scope = {
+							top_liege = {
+								primary_title = {									
+									set_title_flag = quintessence_conspiracy_target 
+								}
+							}
+						}
+					}
+				}
+				random_playable_ruler = {
+					limit = {
+						primary_title = {									
+							has_title_flag = quintessence_conspiracy_target 
+						}
+					}
+					character_event = { id = fe7_eliwood.3 }
+				}
+				
+			}
+			# Check back once Ephidel does his little tour...
+			set_character_flag = quintessence_conspiracy_leader
+			character_event = { id = fe7_eliwood.5 days = 60 }
+		#}
+	}
+	# Bern
+	option = {
+		name = fe7_eliwood.2.B
+		trigger = {
+			k_bern = {
+				NOT = { has_title_flag = quintessence_conspiracy_zone }
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}
+	}
+	# Etruria
+	option = {
+		name = fe7_eliwood.2.C
+		trigger = {
+			k_etruria = {
+				NOT = { has_title_flag = quintessence_conspiracy_zone }
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}
+	}
+	# Do nothing
+	option = {
+		name = fe7_eliwood.2.D
+		ai_chance = {
+			factor = 0
+		}
+		prestige = -10 
+	}
+}
 
-# Ping all the Marquesses except Ostia.
-# Give them the chance to jump in the conspiracy. Yes / No / Double Agent
-# Laus and Santaruz pick A, Elbert picks C, everyone else picks B.
-# Conspirators get some event troops and cash.
-# Double agents get an event chain to investigate. AI will flub this and get captured. Humans could expose the conspiracy? 
+# Ping event for Lycia conspiracy
+character_event = {
+	id = fe7_eliwood.3
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {					
+		# Who do we pitch the offer to?
+		# Lords who aren't quite as strong as the target...
+		any_independent_ruler = {
+			limit = {
+				de_jure_liege_or_above = k_lycia
+				NOT = { character = ROOT }
+				NOT = { relative_power = { who = ROOT power = 1.0 } }
+				relative_power = { who = ROOT power = 0.4 } 
+				war = no
+				NOT = { has_non_aggression_pact_with = ROOT }
+			}
+			character_event = { id = fe7_eliwood.4 days = 30 random = 10 }
+		}
+	}
+}
+
+# Conspiracy offer for Lycia
+narrative_event = {
+	id = fe7_eliwood.4
+	title = fe7_eliwood.4.title
+	desc = fe7_eliwood.4.desc
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	# Join
+	option = {
+		name = fe7_eliwood.4.A
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				NOR = { 
+					primary_title = {title=d_laus}
+					primary_title = {title=d_santaruz}				
+				}
+			}
+		}
+		set_character_flag = quintessence_conspiracy_member
+	}
+	# Nope
+	option = {
+		name = fe7_eliwood.4.B
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = { 
+					primary_title = {title=d_laus}
+					primary_title = {title=d_santaruz}	
+					primary_title = {title=d_pherae}			
+				}
+			}
+		}
+		set_character_flag = quintessence_conspiracy_denied
+	}
+	# Double agent
+	option = {
+		name = fe7_eliwood.4.C
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				NOT = { primary_title = {title=d_pherae} }
+			}
+		}
+		set_character_flag = quintessence_conspiracy_double_agent
+	}
+}
+
+# Check back on conspirators..
+character_event = {
+	id = fe7_eliwood.5
+	
+	is_triggered_only = yes
+	hide_from = yes
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					any_independent_ruler = {
+						#OR = {
+							has_character_flag = quintessence_conspiracy_member
+						#	has_character_flag = quintessence_conspiracy_double_agent
+						#}
+						count = 2
+					}
+				}
+			}
+			character_event = { id = fe7_eliwood.6 }
+			random_independent_ruler = {
+				limit = {
+					#OR = {
+						has_character_flag = quintessence_conspiracy_member
+					#	has_character_flag = quintessence_conspiracy_double_agent
+					#}
+				}
+			character_event = { id = fe7_eliwood.8 }
+				
+			}
+		}
+		if = {
+			limit = {
+				any_independent_ruler = {
+					OR = {
+						has_character_flag = quintessence_conspiracy_member
+						has_character_flag = quintessence_conspiracy_double_agent
+					}
+					count = 2
+				}
+			}
+			character_event = { id = fe7_eliwood.7 }
+		}
+	}
+}
+# Nobody trusts the creepy guy in the cloak
+character_event = {
+	id = fe7_eliwood.6
+	desc = fe7_eliwood.6.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	
+	option = {
+		name = fe7_eliwood.6.A
+	}
+}
+
+# People signed on to the conspiracy
+character_event = {
+	id = fe7_eliwood.7
+	desc = fe7_eliwood.7.desc
+	picture = GFX_evt_shadowy_cabal
+	is_triggered_only = yes
+	hide_from = yes
+	
+	
+	option = {
+		name = fe7_eliwood.7.A
+		
+		any_playable_ruler = {
+			limit = {
+				OR = {
+					has_character_flag = quintessence_conspiracy_member
+					has_character_flag = quintessence_conspiracy_double_agent
+				}
+			}
+		}
+		hidden_tooltip = {
+		
+			any_playable_ruler = {
+				limit = {
+					has_character_flag = quintessence_conspiracy_double_agent
+				}
+				character_event = { id = fe7_eliwood.9 }				
+			}
+				character_event = { id = fe7_eliwood.13 days = 90 random = 10 }
+		}
+	}
+}
+
+# Inform Nergal that the plot is proceeding
+character_event = {
+	id = fe7_eliwood.8
+	desc = fe7_eliwood.8.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.8.A
+		
+	}
+}
+
+# Double agent gets the chance to investigate
+character_event = {
+	id = fe7_eliwood.9
+	desc = fe7_eliwood.9.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	# Take some knights and investigate! (It's not going to work.)
+	option = {
+		name = fe7_eliwood.9.A
+		ai_chance = {
+			factor = 25
+		}
+		
+		random_playable_ruler = {
+			limit = {
+				OR = {
+					has_character_flag = quintessence_conspiracy_member
+					has_character_flag = quintessence_conspiracy_double_agent
+				}
+				NOT = { character = ROOT }
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = fe7_eliwood.10 days = 10 random = 4 }
+		}
+	}
+	# Spy on the morph.
+	option = {
+		name = fe7_eliwood.9.B
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				primary_title = {title=d_pherae} 
+			}
+		}
+		hidden_tooltip = {
+			set_character_flag = quintessence_conspiracy_investigate
+		}
+	}
+	# Do nothing. 
+	option = {
+		name = fe7_eliwood.9.C
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				primary_title = {title=d_pherae} 
+			}
+		}
+	}
+	# Sign on for real
+	option = {
+		name = fe7_eliwood.9.D
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				primary_title = {title=d_pherae} 
+			}
+		}
+		set_character_flag = quintessence_conspiracy_member
+		clr_character_flag = quintessence_conspiracy_double_agent
+	}
+}
+
+# Oops, Elbert got caught.
+narrative_event = {
+	id = fe7_eliwood.10
+	title = fe7_eliwood.10.title
+	desc = fe7_eliwood.10.desc
+	picture = GFX_evt_bandits
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.10.A
+		hidden_tooltip = {
+			random_independent_ruler = {
+				limit = {
+					has_character_flag = quintessence_conspiracy_leader
+				}
+				reverse_imprison = ROOT
+			}
+			current_heir = {
+				character_event = { id = fe7_eliwood.11 days = 1 }			
+			}
+			clr_character_flag = quintessence_conspiracy_double_agent
+		}
+		abdicate = yes
+	}
+}
+
+# This starts Eliwood's story. Investigate disappearance of double agent?
+character_event = {
+	id = fe7_eliwood.11
+	desc = fe7_eliwood.11.desc
+	picture = GFX_evt_council
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.11.A
+		ai_chance = {
+			factor = 50
+		}
+		
+		hidden_tooltip = {
+			character_event = { id = fe7_eliwood.12 days = 3 random = 2 }	
+		}
+	}
+	option = {
+		name = fe7_eliwood.11.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}
+		
+		random = {
+			chance = 30
+			add_trait = stressed
+		}
+	}
+}
+
+# We found out who's in on it. What to do?
+character_event = {
+	id = fe7_eliwood.12
+	desc = fe7_eliwood.12.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	immediate = {
+		random_playable_ruler = {
+			limit = {
+				has_character_flag = quintessence_conspiracy_member
+			}
+			set_character_flag = quintessence_conspiracy_front
+		}
+	}
+	
+	option = {
+		name = fe7_eliwood.12.A
+		ai_chance = {
+			factor = 50
+		}
+		prestige = 100
+		
+		random_playable_ruler = {
+			limit = {
+				has_character_flag = quintessence_conspiracy_front
+			}
+			remove_character_flag = quintessence_conspiracy_front
+			
+			reverse_opinion = {
+				modifier = opinion_conspirator
+				who = ROOT
+				years = 100
+			}
+			opinion = {
+				modifier = opinion_uncovered_conspiracy
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+	option = {
+		name = fe7_eliwood.12.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}
+		prestige = -50
+		random = {
+			chance = 20
+			if = {
+				limit = {
+					NOT = { trait = craven }
+				}
+				add_trait = craven
+			}
+		}
+	}
+}
+
+# Checker for Nergal to see when to launch the plot.
+character_event = {
+	id = fe7_eliwood.13
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		# add check to see if the conspiracy war is already done
+	
+		
+		
+		# We only have stuff to do here if the plot hasn't been blown yet.
+		if = {
+			limit = {
+				NOT = { has_character_flag = quintessence_conspiracy_exposed }
+			}
+			
+			# Is someone on to us? If so, follow that thread
+			if = {
+				limit = {
+					any_playable_ruler = {
+						has_character_flag = quintessence_conspiracy_investigate
+					}
+				}
+				any_playable_ruler = {
+					limit = {
+						has_character_flag = quintessence_conspiracy_investigate
+					}
+					
+					clr_character_flag = quintessence_conspiracy_investigate
+					character_event = { id = fe7_eliwood.22 }
+				}
+			}
+			
+			# if not, see if any conspirators have been attacked
+			if = {
+				limit = {
+					NOT = {
+						any_playable_ruler = {
+							has_character_flag = quintessence_conspiracy_investigate
+						}
+					}
+				}
+				
+				# The jig is up - someone is attacking a conspirator
+				if = {
+					limit = {
+						any_playable_ruler = {
+							war = yes
+							any_war = { using_cb = conspiracy_cb }
+						}
+					}
+					character_event = { id = fe7_eliwood.14 }
+				}
+				
+				# Go, go, go
+				if = {
+					limit = {
+						NOT = {
+							any_playable_ruler = {
+								war = yes
+								any_war = { using_cb = conspiracy_cb }
+							}
+						}
+					}
+					character_event = { id = fe7_eliwood.15 }
+				}
+			
+			}
+		}
+		
+		
+		clr_character_flag = quintessence_conspiracy_exposed
+	}
+	
+}
+
+# We've been made - someone is attacking a conspirator
+character_event = {
+	id = fe7_eliwood.14
+	desc = fe7_eliwood.14.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.14.A
+		
+		custom_tooltip = {
+			text = fe7_eliwood.14.A.tooltip
+			#set_character_flag = quintessence_conspiracy_exposed
+			random_playable_ruler = {
+				war = yes
+				any_war = { using_cb = conspiracy_cb }
+				is_primary_war_attacker = yes
+			}
+			random_playable_ruler = {
+				war = yes
+				any_war = { using_cb = conspiracy_cb }
+				is_primary_war_defender = yes
+			}
+		}
+	}
+}
+
+# Turn loose the conspirators
+character_event = {
+	id = fe7_eliwood.15
+	desc = fe7_eliwood.15.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.15.A
+		any_playable_ruler = {
+			limit = {
+				OR = {
+					has_character_flag = quintessence_conspiracy_member
+					has_character_flag = quintessence_conspiracy_double_agent
+				}
+			}
+		}
+		hidden_tooltip = {
+			random_playable_ruler = {
+				limit = {
+					any_realm_title = {
+						has_title_flag = quintessence_conspiracy_target
+					}
+				}
+				character_event = { id = fe7_eliwood.17 }
+			}
+		}
+	}
+}
+
+# Conspirators are informed they can attack.
+character_event = {
+	id = fe7_eliwood.16
+	desc = fe7_eliwood.16.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	
+	option = {
+		name = fe7_eliwood.16.A
+		custom_tooltip = {
+			text = fe7_eliwood.16.A.tooltip
+			set_character_flag = quintessence_conspiracy_ready
+			clr_character_flag = quintessence_conspiracy_member
+			clr_character_flag = quintessence_conspiracy_double_agent
+		}
+	}
+	
+	option = {
+		name = fe7_eliwood.16.B
+		trigger = {
+			has_character_flag = quintessence_conspiracy_double_agent
+		}
+		custom_tooltip = {
+			text = fe7_eliwood.16.B.tooltip
+			hidden_tooltip = {
+				clr_character_flag = quintessence_conspiracy_double_agent
+			}
+		}
+	}
+}
+
+# Ping event for conspiracy starting
+character_event = {
+	id = fe7_eliwood.17
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {			
+		any_playable_ruler = {
+			limit = {
+				OR = {
+					has_character_flag = quintessence_conspiracy_member
+					has_character_flag = quintessence_conspiracy_double_agent
+				}
+			}
+			character_event = { id = fe7_eliwood.16 }
+		}
+	}
+}
+
+# Inform the rest of the conspiracy they need to join
+character_event = {
+	id = fe7_eliwood.18
+	desc = fe7_eliwood.18.desc
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe7_eliwood.18.A
+		ai_chance = {
+			factor = 50
+		}
+		join_attacker_wars = FROM
+	}
+	option = {
+		name = fe7_eliwood.18.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}
+		custom_tooltip = {
+			text = fe7_eliwood.18.B.tooltip
+			
+			prestige = -100
+			
+			random_list = {
+				55 = {}
+				15 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = deceitful
+					}
+				}
+				15 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = craven
+					}
+				}
+				15 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = arbitrary
+					}
+				}
+			}
+		}
+	}
+}
+
+# War ends, Nergal's mission accomplished
+character_event = {
+	id = fe7_eliwood.19
+	desc = fe7_eliwood.19.desc
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.19.A
+		clr_character_flag = quintessence_conspiracy_leader
+		
+		piety = 8000
+	}
+}
+
+# War ends in white peace. Not quite as good
+character_event = {
+	id = fe7_eliwood.20
+	desc = fe7_eliwood.20.desc
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.20.A
+		clr_character_flag = quintessence_conspiracy_leader
+		
+		piety = 4000
+	}
+}
+
+# Ping event for Nergal's cover getting blown
+character_event = {
+	id = fe7_eliwood.21
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {		
+		set_character_flag = quintessence_conspiracy_exposed
+		FROM = {
+			character_event = { id = fe7_eliwood.22 }
+		}
+	}
+}
+
+# Conspiracy is exposed, attack the mastermind?
+narrative_event = {
+	id = fe7_eliwood.22
+	title = fe7_eliwood.22.title
+	desc = fe7_eliwood.22.desc
+	#picture = GFX_evt_nergal_power
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe7_eliwood.22.A
+		
+		prestige = 300
+		
+		FROM = {
+			set_character_flag = destroy_realm_target
+			add_rival = ROOT
+			
+			hidden_tooltip = {
+				character_event = { id = fe7_eliwood.23 }
+			}
+		}
+	}
+	option = {
+		name = fe7_eliwood.22.B
+		prestige = -300
+		piety = -100
+	}
+}
+
+# Inform Nergal he has a target on his back.
+character_event = {
+	id = fe7_eliwood.23
+	desc = fe7_eliwood.23.desc
+	picture = GFX_evt_spymaster
+	
+	#hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = fe7_eliwood.23.A
+	}
+}

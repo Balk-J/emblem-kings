@@ -8,3 +8,7 @@ obj_class_success;[This.GetTitledFirstName] completes training in a job class.;;
 obj_promote_title;Promote;;;;;;;;;;;;;x
 obj_promote_desc;[This.GetTitledFirstName] wants to become more experienced in [This.GetHerHis] chosen class.;;;;;;;;;;;;;x
 obj_promote_success;[This.GetTitledFirstName] has been promoted to the next level in [This.GetHerHis] class.;;;;;;;;;;;;;x
+obj_gather_quintessence_title;Gather Quintessence;;;;;;;;;;;;;x
+obj_gather_quintessence_desc;[This.GetTitledFirstName] wants to gather a large amount of quintessence - the magical energy behind all living things.;;;;;;;;;;;;;x
+obj_gather_quintessence_success;[This.GetTitledFirstName] has gathered all the quintessence [This.GetSheHe] desires.;;;;;;;;;;;;;x
+obj_gather_quintessence_effect;[This.GetTitledFirstName] will be able to take new actions based on the amount of quintessence collected.;;;;;;;;;;;;;x

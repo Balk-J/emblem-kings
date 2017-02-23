@@ -10,6 +10,8 @@ character_event = {
 	trigger = {
 		trait = dragon
 		NOT = { trait = war_dragon }
+		#NOT = { trait = supreme_essence } # Truly immortal
+		NOT = { has_character_flag = lore_quintessence }
 		OR = { 
 			age = 6000
 			health_traits = 1 
@@ -78,6 +80,8 @@ character_event = {
 	trigger = {
 		trait = dragon_blood
 		NOT = { trait = war_dragon }
+		#NOT = { trait = supreme_essence } # Truly immortal
+		NOT = { has_character_flag = lore_quintessence }
 		OR = { 
 			age = 1000
 			health_traits = 1 
@@ -213,6 +217,7 @@ character_event = {
 			age = 1000
 			health_traits = 1 
 		}		
+		NOT = { trait = supreme_essence } # Truly immortal
 		# Again, it's not totally clear how long they can live.
 		# Nergal was in his 1000s and looked middle-aged.
 		# Athos and Brammimond are in their 1000s minimum as of FE7 and died during/shortly after the events of that game.

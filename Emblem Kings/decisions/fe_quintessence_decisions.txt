@@ -1,0 +1,92 @@
+decisions = {
+
+	create_morph = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_morphs 
+			NOT = { trait = incapable }
+		}
+		allow = {
+			piety = 500
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_morphs 
+		}
+		effect = {
+			piety = -500
+			character_event = { id = fe7.2 }
+		}
+		ai_will_do = {
+			factor = 1
+			
+			
+			modifier = {
+				factor = 0
+				OR = {
+					# Build up to 10K if at peace
+					AND = {
+						realm_levies = 10000
+						war = no
+					}
+					# Build up to the most powerful foe's strength if at war
+					AND = {
+						war = yes
+						NOT = {
+							any_current_enemy = {
+								 relative_power = { who = ROOT power = 1.0 } 
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+	
+	open_the_dragons_gate = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence
+			trait = dark_power_hungry
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			NOT = { trait = supreme_essence }
+			any_demesne_province = {
+				#province = 1 # The Dragon's Gate, Valor
+				has_province_modifier = dragons_gate_elibe
+			}
+		}
+		allow = {
+			piety = 10000
+			is_adult = yes
+			prisoner = no
+			OR = {
+				OR = {
+					trait = dragon
+					trait = dragon_blood
+				}
+				any_courtier = {
+					OR = {
+						trait = dragon
+						trait = dragon_blood
+					}
+					is_adult = yes
+					NOT = { trait = incapable }
+					NOT = { trait = war_dragon }
+				}
+			}
+		}
+		effect = {
+			piety = -10000
+			#character_event = { id = quintessence.3 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+}

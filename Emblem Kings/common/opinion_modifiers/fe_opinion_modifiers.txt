@@ -18,6 +18,10 @@
 # non_aggression_pact = yes # This gives a temporary non-aggression pact betweem the two characters
 
 
+opinion_draining_soldiers = {
+	opinion = 0
+}
+
 opinion_regalia_trespasser = {
 	opinion = -100
 	months = 1200
@@ -52,4 +56,14 @@ opinion_denied_fire_emblem_request = {
 opinion_loyal_retainer = {
 	opinion = 70
 	months = 1200	# For life
+}
+
+opinion_conspirator = {
+	opinion = -50
+	months = 1200
+}
+
+opinion_uncovered_conspiracy = {
+	opinion = -50
+	months = 1200
 }

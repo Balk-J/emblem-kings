@@ -539,8 +539,11 @@ character_event = {
 					is_landed = yes
 					higher_tier_than = BARON
 				}
-				# Kick off a revolt event chain
-				character_event = { id = karma.3 days = 15 random = 5 }
+				random = {
+					chance = 90
+					# Kick off a revolt event chain
+					character_event = { id = karma.3 days = 15 random = 5 }
+				}
 			}
 			if = {
 				limit = {

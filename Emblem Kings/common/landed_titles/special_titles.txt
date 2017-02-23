@@ -26,7 +26,6 @@ e_nergal = {
 	assimilate = no # Nothing drifts in or out
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	is_conquered = yes
 }
 
 # Lyndis' Legion

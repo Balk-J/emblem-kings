@@ -32,7 +32,7 @@ karma.21.desc;You have been getting tired more easily these days. Simple tasks a
 karma.21.A;I'll just close my eyes for a few minutes.;;;;;;;;;;;;;x;
 karma.22.desc;Lately, you've been unable to focus. What if someone finds out what you did? Maybe they already know... that might be why they're always whispering about you when they think you can't hear. Why can't they understand that you had no choice?!;;;;;;;;;;;;;x;
 karma.22.A;What should I do?;;;;;;;;;;;;;x;
-karma.25.desc;One of your [From.GetSonDaughter]'s servants has reported to you that another attempt has been made on your [From.GetHerHis] life. Apparently, [From.GetFirstName] was mortally wounded and has since passed away. The servant brought [From.GetHerHis] corpse back so you can confirm this for yourself.;;;;;;;;;;;;;x;
+karma.25.desc;One of your [From.GetSonDaughter]'s servants has reported to you that another attempt has been made on [From.GetHerHis] life. Apparently, [From.GetFirstName] was mortally wounded and has since passed away. The servant brought [From.GetHerHis] corpse back so you can confirm this for yourself.;;;;;;;;;;;;;x;
 karma.25.A;I won't be satisfied until I see the body.;;;;;;;;;;;;;x;
 karma.25.B;Do you honestly expect me to believe this fantasy?!;;;;;;;;;;;;;x;
 karma.26.desc;The servant shows you to a small room, containing a bier with a sheet-covered body. You lift the sheet off the body's face - it's truly [FromFrom.GetFirstName], silent and unmoving. For a moment. [FromFrom.GetFirstName] suddenly surges into action, pulling a dagger from beneath the sheet and plunging it into your heart. The last thing you see is [FromFrom.GetHerHis] pitiless gaze...;;;;;;;;;;;;;x;

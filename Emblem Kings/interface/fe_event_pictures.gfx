@@ -26,4 +26,14 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\armads_sketch.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_nergal_power"
+		texturefile = "gfx\\event_pictures\nergal_power.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_fire_dragons_gate"
+		texturefile = "gfx\\event_pictures\fire_dragons_gate.tga"
+		allwaystransparent = yes
+	}
 }

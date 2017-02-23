@@ -1,0 +1,40 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+quintessence.2.desc.0;[From.GetFullName]... you have no essence to harvest.;;;;;;;;;;;;;x
+quintessence.2.desc.1;[From.GetFullName]... even your paltry quintessence adds to my power.;;;;;;;;;;;;;x
+quintessence.2.desc.2;[From.GetFullName]... your quintessence adds to my power.;;;;;;;;;;;;;x
+quintessence.2.desc.3;[From.GetFullName]... such magnificent quintessence.;;;;;;;;;;;;;x
+quintessence.2.desc.4;[From.GetFullName]... your quintessence was glorious.;;;;;;;;;;;;;x
+quintessence.2.A;Such a waste.;;;;;;;;;;;;;x
+quintessence.2.B;I grow stronger.;;;;;;;;;;;;;x
+quintessence.2.B.2;Heh heh heh... Haaa haa haha haha hah!!!;;;;;;;;;;;;;x
+quintessence.3.title;The Dragon's Gate;;;;;;;;;;;;;x
+quintessence.3.desc;All my preparations are complete. I will open the gate. I will claim the mighty quintessence of dragons. I will become stronger and move ever closer to perfection.;;;;;;;;;;;;;x
+quintessence.3.A;It's time.;;;;;;;;;;;;;x
+quintessence.3.A.tooltip;[Root.GetTitledFirstName] will attempt to open the Dragon's Gate and call forth the ancient masters of Elibe, for the purpose of draining their quintessence. If successful, the ritual may confer godlike power. Failure could result in the dragons going on an uncontrollable rampage...;;;;;;;;;;;;;x
+quintessence.3.B;Not yet.;;;;;;;;;;;;;x
+quintessence.4.title;Conflagration;;;;;;;;;;;;;x
+quintessence.4.desc;The worst has happened. Despite my careful preparation, the power I was attempting to harness proved uncontrollable. Quintessence built up within the gate, looping again and again until even dragon architecture could stand no more. The gate was destroyed in a massive explosion.\n\nMuch of the surrounding complex has also been reduced to rubble. My only consolation is that I could recover some power from the smoldering ruins.;;;;;;;;;;;;;x
+quintessence.4.A;What?! Impossible!;;;;;;;;;;;;;x
+quintessence.5.title;Power Runs Wild;;;;;;;;;;;;;x
+quintessence.5.desc;At first, I thought I had succeeded. The gate shook, the first dragon stepped through, and its shape began to solidify. Then... something went wrong. Perhaps the rift the beast passed through was unstable, or our world is no longer suitable for them, or someone deliberately sabotaged my work, or... who can say.\n\nAt any rate, the the portal emitted a powerful burst of energy and the dragon crumbled to pieces before it could truly cross over. Along with that poor fool who was standing too close to the gate.;;;;;;;;;;;;;x
+quintessence.5.A;No! I've failed!;;;;;;;;;;;;;x
+quintessence.6.title;Children of Flame;;;;;;;;;;;;;x
+quintessence.6.desc;Success, of a sort. I was able to call forth a dragon from the other side of the gate. Before I could finish binding it to my will, the beast slipped my control and went on a rampage through the countryside! \n\nI was able to bring it down and drain it without much trouble, but the gate closed while I was dealing with the dragon. It will be some time before I recover enough power to open it again. \n\nIn less important matters, the area surrounding the gate took some damage during the battle.;;;;;;;;;;;;;x
+quintessence.6.A;A temporary setback, nothing more.;;;;;;;;;;;;;x
+quintessence.7.title;Tremble and Despair;;;;;;;;;;;;;x
+quintessence.7.desc;Success! The gate is open, the portal is stable, and the dragons come like moths to the flame. Once they're through, binding them and harvesting their essence is a simple matter. And oh, what glorious quintessence it is!\n\nI suspect they will close the gate from their end eventually, but until they do, I will have access to all the power I could dream of. The world is mine!;;;;;;;;;;;;;x
+quintessence.7.A;Heh heh heh... Haaa haa haha haha hah!!!;;;;;;;;;;;;;x
+quintessence.8.title;All For Naught;;;;;;;;;;;;;x
+quintessence.8.desc;One must be fully prepared when dealing with dragons. In retrospect, I was somewhat hasty. The ritual progressed well at first and I soon had a small pack summoned and bound to my will. Then they started to resist.\n\nI had counted on ensnaring the younger and more naive creatures at first, and draining them before trapping the greater dragons. Unfortunately, one of the initial batch was powerful enough to shatter my hold on it and its fellows. My retainers and I were no match for their fury...;;;;;;;;;;;;;x
+quintessence.8.A;No. NO! Ultimate power was within reach!;;;;;;;;;;;;;x
+quintessence.9.title;Light;;;;;;;;;;;;;x
+quintessence.9.desc;Last night, something happened. People with keen senses say they heard a rumble or saw a flash in the distance. Mages claim to feel a new and troubling distortion in the flow of magic. Priests report bad dreams, diviners and fortune tellers whisper of an ill wind blowing from the south, and there's a street preacher in [Root.Capital.GetName] who's ranting about a newborn god.\n\nWhatever the event was, the tidings are ill. If there really is a new threat on the horizon, perhaps it would be prudent to find and destroy it. Or to hunker down and prepare for the worst...;;;;;;;;;;;;;x
+quintessence.9.A;We will overcome any challenge.;;;;;;;;;;;;;x
+quintessence.11.desc;My agents and I will watch the warriors of [From.GetTitledName] closely. Should we get the chance, we will isolate and kill the strong ones to drain their quintessence. This will be much simpler if we can catch them in the middle of a battle.;;;;;;;;;;;;;x
+quintessence.11.A;I will add their might to my own.;;;;;;;;;;;;;x
+quintessence..title;;;;;;;;;;;;;;x
+quintessence..desc;;;;;;;;;;;;;;x
+quintessence..A;;;;;;;;;;;;;;x
+quintessence..B;;;;;;;;;;;;;;x
+quintessence..C;;;;;;;;;;;;;;x
+quintessence..D;;;;;;;;;;;;;;x

@@ -75,10 +75,30 @@ character_event = {
 
 	option = {
 		name = "EVTOPTAfe7.2"	
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 0
+				any_courtier = {
+					trait = morph
+				}
+			}
+		}
 		character_event = { id = fe7.3 }
 	}
 	option = {
 		name = "EVTOPTBfe7.2"
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					any_courtier = {
+						trait = morph
+					}
+				}
+			}
+		}
 		location = {
 			ROOT = {
 				spawn_unit = {
@@ -86,8 +106,9 @@ character_event = {
 					province = PREV
 					home = PREV
 					troops = {
+						magic_users = { 50 50 }
+						knights = { 50 50 }
 						archers = { 150 150 }
-						knights = { 100 100 }
 						heavy_infantry = { 250 250 }
 					}
 					attrition = 0
@@ -98,8 +119,9 @@ character_event = {
 					province = PREV
 					home = PREV
 					troops = {
+						magic_users = { 50 50 }
+						knights = { 50 50 }
 						archers = { 150 150 }
-						knights = { 100 100 }
 						heavy_infantry = { 250 250 }
 					}
 					attrition = 0
@@ -110,8 +132,9 @@ character_event = {
 					province = PREV
 					home = PREV
 					troops = {
+						magic_users = { 50 50 }
+						knights = { 50 50 }
 						archers = { 150 150 }
-						knights = { 100 100 }
 						heavy_infantry = { 250 250 }
 					}
 					attrition = 0
@@ -1659,6 +1682,7 @@ character_event = {
 character_event = {
 	id = fe7.14
 	desc = "fe7.14.desc"
+	desc = "fe7.14.desc.2"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
 
@@ -1902,6 +1926,7 @@ character_event = {
 character_event = {
 	id = fe7.20
 	desc = "fe7.14.desc"
+	desc = "fe7.14.desc.2"
 	picture = "GFX_evt_shadow"
 	border = GFX_event_normal_frame_intrigue
 	

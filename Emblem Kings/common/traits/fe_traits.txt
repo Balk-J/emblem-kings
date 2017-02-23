@@ -277,3 +277,22 @@ fire_emblem_elibe = {
 	customizer = no
 	random = no
 }
+
+supreme_essence = {
+	customizer = no
+	random = no
+	immortal = yes
+	monthly_character_prestige = 1
+	monthly_character_piety = 10
+	health = 10
+	martial = 30
+	combat_rating = 20
+	command_modifier = {
+		morale_offence = 1.0
+		morale_defence = 1.0
+		damage = 1.0
+		defense = 1.0
+		siege = 1.0
+		speed = 0.5
+	}
+}

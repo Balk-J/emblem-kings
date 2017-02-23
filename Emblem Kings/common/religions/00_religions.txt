@@ -372,7 +372,7 @@ magic_group = {
 	# Names given only to these characters (base names)
 	male_names = {
 	}
-
+	piety_name = QUINTESSENCE
 	anima = {
 		graphical_culture = westerngfx
 		#c_aquelia, c_arcadia, c_virtus, c_temperantia, c_uri

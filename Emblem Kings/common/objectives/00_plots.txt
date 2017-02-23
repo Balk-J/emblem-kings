@@ -1072,6 +1072,16 @@ plot_kill_character = {
 					character_event = { id = karma.19 days = 10 random = 5 }
 					clr_character_flag = plot_murder_child
 				}
+				
+				if = {
+					limit = {
+						has_ambition = obj_gather_quintessence
+					}
+					random = {
+						chance = 75
+						character_event = { id = quintessence.2 }
+					}
+				}
 				clr_character_flag = murder_in_motion
 			}
 		}

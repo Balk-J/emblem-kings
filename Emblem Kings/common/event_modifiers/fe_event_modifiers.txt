@@ -103,7 +103,7 @@ training_with_soldiers = {
 
 ancient_ruins = {
 	tech_growth_modifier_culture = 0.05
-	icon = 48
+	icon = 12
 }
 recent_assassination_attempt = {
 	icon = 14
@@ -133,4 +133,16 @@ siege_magic = {
 	siege_speed  = 0.5
 	magic_users_offensive = 0.1
 	icon = 52
+}
+dragons_gate_elibe = {
+	icon = 52
+}
+burned_land = {
+	levy_size = -0.25
+	local_tax_modifier = -0.5
+	icon = 19	
+}
+dragons_gate_elibe_harvest = {
+	icon = 52
+	monthly_character_piety = 1000
 }

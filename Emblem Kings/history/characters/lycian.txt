@@ -1500,12 +1500,12 @@
 	
 	1159.01.01={
 		birth=yes
-	} 		
+	} 			
 	1159.01.01 = {
-		employer=107 #Eliwood
-	}		
+		employer=105 #Elbert
+	}	
 	
-	1161.01.01={
+	1171.01.01={
 		add_trait="class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
@@ -1537,8 +1537,11 @@
 	1158.01.01={
 		birth=yes
 	} 		
+	1158.01.01 = {
+		employer=105 #Elbert
+	}	
 	
-	1160.01.01={
+	1170.01.01={
 		add_trait="class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
@@ -1546,11 +1549,6 @@
 			set_character_flag="class_cavalier"
 		}
 	} 
-	1164.01.01 = {
-		effect={
-			add_friend=188 #Kruzard
-		}
-	}		
 	
 	1173.01.01 = { 
 		add_trait="skilled_tactician"
@@ -1561,6 +1559,11 @@
 		add_trait="humble"
 		add_trait="brave"
 	}	
+	1174.01.01 = {
+		effect={
+			add_friend=188 #Kruzard
+		}
+	}		
 	1180.01.01 = {
 		employer=108 #Roy
 	}		
