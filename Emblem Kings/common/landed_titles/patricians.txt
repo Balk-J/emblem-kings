@@ -28,3 +28,11 @@ b_commius = {
 b_ortogh = {
 	culture = sacaean
 }
+
+b_drest = {
+	culture = western_islander
+}
+
+b_aretas = {
+	culture = nabatan
+}

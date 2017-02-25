@@ -122,7 +122,7 @@ e_dragon_liberation = {
 	controls_religion = dragon_liberation	
 	religion = dragon_liberation
 	graphical_culture = holygfx 
-	culture=fire_dragon
+	culture=fire_dragon_culture
 	
 	# Cannot be held as a secondary title
 	primary = yes

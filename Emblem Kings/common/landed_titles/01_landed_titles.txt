@@ -1049,7 +1049,7 @@ e_elibe = {
 				}
 				b_blera_3 = {
 				}
-				b_phlera = {
+				b_flera = {
 				}
 			}
 			c_catuna = { # 233
@@ -1276,7 +1276,7 @@ e_elibe = {
 				color={ 85 85 98 }
 				color2={ 255 255 255 }
 				
-				b_phlera_2 = {
+				b_phlera = {
 				}
 			}
 			c_sabate = { # 280
@@ -1301,7 +1301,7 @@ e_elibe = {
 		#	}
 			capital = 259 # c_carrhae
 			
-			c_carrhae = { # 259
+			c_carrhae = { # 256
 				color={ 120 120 185 }
 				color2={ 255 255 255 }
 				
@@ -1312,14 +1312,18 @@ e_elibe = {
 				b_carrhae_3 = {
 				}
 			}
-			c_aisarna = { # 258
-				color={ 115 115 165 }
+			c_melas = { # 257
+				color={ 178 178 232 }
 				color2={ 255 255 255 }
 				
-				b_aisarna = {
+				b_melas = {
+				}
+				b_melas_2 = {
+				}
+				b_melas_3 = {
 				}
 			}
-			c_ida = { # 256
+			c_ida = { # 258
 				color={ 87 87 122 }
 				color2={ 255 255 255 }
 				
@@ -1330,15 +1334,11 @@ e_elibe = {
 				b_ida_3 = {
 				}
 			}
-			c_melas = { # 255
-				color={ 178 178 232 }
+			c_aisarna = { # 259
+				color={ 115 115 165 }
 				color2={ 255 255 255 }
 				
-				b_melas = {
-				}
-				b_melas_2 = {
-				}
-				b_melas_3 = {
+				b_aisarna = {
 				}
 			}
 		}
@@ -1638,15 +1638,6 @@ e_elibe = {
 				b_taruisa = {
 				}
 			}
-			c_antigonia = { # 257
-				color={ 73 73 123 }
-				color2={ 255 255 255 }
-				
-				b_antigonia = {
-				}
-				b_antigonia_2 = {
-				}
-			}
 			c_sigeia = { # 254
 				color={ 109 109 219 }
 				color2={ 255 255 255 }
@@ -1654,6 +1645,15 @@ e_elibe = {
 				b_sigeia = {
 				}
 				b_sigeia_2 = {
+				}
+			}
+			c_antigonia = { # 255
+				color={ 73 73 123 }
+				color2={ 255 255 255 }
+				
+				b_antigonia = {
+				}
+				b_antigonia_2 = {
 				}
 			}
 		}
