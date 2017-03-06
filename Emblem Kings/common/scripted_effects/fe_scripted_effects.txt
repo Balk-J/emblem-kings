@@ -1,0 +1,375 @@
+heal_effect = {
+	if = {
+		limit = { 
+			#OR = {
+				trait = wounded 
+				#trait = maimed 
+				#trait = severely_injured 
+			#}
+		}
+		add_trait = scarred
+	}
+	if = {
+		limit = { trait = wounded }
+		remove_trait = wounded
+	}
+	#if = {
+	#	limit = { trait = maimed }
+	#	remove_trait = maimed
+	#}
+	#if = {
+	#	limit = { trait = severely_injured }
+	#	remove_trait = severely_injured
+	#}
+	if = {
+		limit = { trait = depressed }
+		remove_trait = depressed
+	}
+	if = {
+		limit = { trait = stressed }
+		remove_trait = stressed
+	}
+	if = {
+		limit = { trait = lovers_pox }
+		remove_trait = lovers_pox
+	}
+	if = {
+		limit = { trait = ill }
+		remove_trait = ill
+	}
+	if = {
+		limit = { trait = pneumonic }
+		remove_trait = pneumonic
+	}
+	if = {
+		limit = { trait = leper }
+		remove_trait = leper
+	}
+	if = {
+	 	limit = { trait = has_typhoid_fever }
+	 	remove_trait = has_typhoid_fever
+		set_character_flag = immune_typhoid_fever
+	}
+	if = {
+	 	limit = { trait = has_bubonic_plague }
+	 	remove_trait = has_bubonic_plague
+		set_character_flag = immune_bubonic_plague
+	}
+	if = {
+	 	limit = { trait = has_measles }
+	 	remove_trait = has_measles
+		set_character_flag = immune_measles
+	}
+	if = {
+	 	limit = { trait = has_small_pox }
+	 	remove_trait = has_small_pox
+		set_character_flag = immune_small_pox
+	}
+	if = {
+	 	limit = { trait = has_aztec_disease }
+	 	remove_trait = has_aztec_disease
+		set_character_flag = immune_aztec_disease
+	}
+	if = {
+	 	limit = { trait = syphilitic }
+	 	remove_trait = syphilitic
+		set_character_flag = immune_syphilitic
+	}				
+	if = {
+		limit = { trait = sickly }
+		remove_trait = sickly
+	}			
+	if = {
+		limit = { trait = abdominal_pain }
+		remove_trait = abdominal_pain
+	}
+	if = {
+		limit = { trait = cough }
+		remove_trait = cough
+	}
+	if = {
+		limit = { trait = fever }
+		remove_trait = fever
+	}
+	if = {
+		limit = { trait = malaise }
+		remove_trait = malaise
+	}
+	if = {
+		limit = { trait = fatigue }
+		remove_trait = fatigue
+	}
+	if = {
+		limit = { trait = chest_pain }
+		remove_trait = chest_pain
+	}
+	if = {
+		limit = { trait = vomiting }
+		remove_trait = vomiting
+	}
+	if = {
+		limit = { trait = diarrhea }
+		remove_trait = diarrhea
+	}
+	if = {
+		limit = { trait = headache }
+		remove_trait = headache
+	}
+	if = {
+		limit = { trait = cramps }
+		remove_trait = cramps
+	}
+	if = {
+		limit = { trait = rash }
+		remove_trait = rash
+	}
+	if = {
+		limit = { trait = infection }
+		remove_trait = infection
+	}
+	if = {
+	 	limit = { trait = cancer }
+	 	remove_trait = cancer
+	}  
+	if = {
+	 	limit = { trait = flu }
+	 	remove_trait = flu
+	}  
+	if = {
+	 	limit = { trait = dysentery }
+	 	remove_trait = dysentery
+	}  
+	if = {
+	 	limit = { trait = gout }
+	 	remove_trait = gout
+	}  
+	if = {
+	 	limit = { trait = food_poisoning }
+	 	remove_trait = food_poisoning
+	}  
+	if = {
+	 	limit = { trait = rabies }
+	 	remove_trait = rabies
+	}  
+	if = {
+	 	limit = { trait = scurvy }
+	 	remove_trait = scurvy
+	}
+	hidden_tooltip = {
+		remove_character_modifier = symptom_treatment_1
+		remove_character_modifier = symptom_treatment_2
+		remove_character_modifier = symptom_treatment_3
+		remove_character_modifier = symptom_treatment_4
+		clr_character_flag = developing_illness		
+		remove_disease_flags_effect = yes
+		clear_disease_level_effect = yes
+		remove_treatment_modifiers_effect = yes
+	}
+}
+
+mend_effect = {
+	add_trait = scarred
+	
+	if = {
+		limit = { trait = infirm }
+		remove_trait = infirm
+	}	
+	if = {
+		limit = { trait = maimed }
+		remove_trait = maimed
+	}
+	if = {
+		limit = { trait = incapable }
+		remove_trait = incapable
+	}	
+	if = {
+		limit = { trait = disfigured }
+		remove_trait = disfigured
+	}
+	if = {
+		limit = { trait = mangled }
+		remove_trait = mangled
+	}
+	if = {
+		limit = { trait = severely_injured }
+		remove_trait = severely_injured
+	}	
+}
+remove_personality_effect = {
+	if = {
+		limit = { trait = ambitious }
+		remove_trait = ambitious
+	}
+	if = {
+		limit = { trait = arbitrary }
+		remove_trait = arbitrary
+	}
+	if = {
+		limit = { trait = brave }
+		remove_trait = brave
+	}
+	if = {
+		limit = { trait = charitable }
+		remove_trait = charitable
+	}
+	if = {
+		limit = { trait = chaste }
+		remove_trait = chaste
+	}
+	if = {
+		limit = { trait = content }
+		remove_trait = content
+	}
+	if = {
+		limit = { trait = craven }
+		remove_trait = craven
+	}
+	if = {
+		limit = { trait = cruel }
+		remove_trait = cruel
+	}
+	if = {
+		limit = { trait = curious }
+		remove_trait = curious
+	}
+	if = {
+		limit = { trait = cynical }
+		remove_trait = cynical
+	}
+	if = {
+		limit = { trait = deceitful }
+		remove_trait = deceitful
+	}
+	if = {
+		limit = { trait = depressed }
+		remove_trait = depressed
+	}
+	if = {
+		limit = { trait = diligent }
+		remove_trait = diligent
+	}
+	if = {
+		limit = { trait = drunkard }
+		remove_trait = drunkard
+	}
+	if = {
+		limit = { trait = envious }
+		remove_trait = envious
+	}
+	if = {
+		limit = { trait = erudite }
+		remove_trait = erudite
+	}
+	if = {
+		limit = { trait = fussy }
+		remove_trait = fussy
+	}
+	if = {
+		limit = { trait = gluttonous }
+		remove_trait = gluttonous
+	}
+	if = {
+		limit = { trait = greedy }
+		remove_trait = greedy
+	}
+	if = {
+		limit = { trait = gregarious }
+		remove_trait = gregarious
+	}
+	if = {
+		limit = { trait = haughty }
+		remove_trait = haughty
+	}
+	if = {
+		limit = { trait = honest }
+		remove_trait = honest
+	}
+	if = {
+		limit = { trait = humble }
+		remove_trait = humble
+	}
+	if = {
+		limit = { trait = idolizer }
+		remove_trait = idolizer
+	}
+	if = {
+		limit = { trait = indolent }
+		remove_trait = indolent
+	}
+	if = {
+		limit = { trait = just }
+		remove_trait = just
+	}
+	if = {
+		limit = { trait = kind }
+		remove_trait = kind
+	}
+	if = {
+		limit = { trait = lunatic }
+		remove_trait = lunatic
+	}
+	if = {
+		limit = { trait = lustful }
+		remove_trait = lustful
+	}
+	if = {
+		limit = { trait = paranoid }
+		remove_trait = paranoid
+	}
+	if = {
+		limit = { trait = patient }
+		remove_trait = patient
+	}
+	if = {
+		limit = { trait = playful }
+		remove_trait = playful
+	}
+	if = {
+		limit = { trait = proud }
+		remove_trait = proud
+	}
+	if = {
+		limit = { trait = rowdy }
+		remove_trait = rowdy
+	}
+	if = {
+		limit = { trait = shy }
+		remove_trait = shy
+	}
+	if = {
+		limit = { trait = slothful }
+		remove_trait = slothful
+	}
+	if = {
+		limit = { trait = stressed }
+		remove_trait = stressed
+	}
+	if = {
+		limit = { trait = stubborn }
+		remove_trait = stubborn
+	}
+	if = {
+		limit = { trait = temperate }
+		remove_trait = temperate
+	}
+	if = {
+		limit = { trait = timid }
+		remove_trait = timid
+	}
+	if = {
+		limit = { trait = trusting }
+		remove_trait = trusting
+	}
+	if = {
+		limit = { trait = willful }
+		remove_trait = willful
+	}
+	if = {
+		limit = { trait = wroth }
+		remove_trait = wroth
+	}
+	if = {
+		limit = { trait = zealous }
+		remove_trait = zealous
+	}
+}

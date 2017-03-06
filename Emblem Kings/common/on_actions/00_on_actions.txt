@@ -22,6 +22,11 @@ on_yearly_pulse = {
 		
 		# FE
 		class.6 # Promotion for non-playable characters
+		magic.8 # Druid Promotion path choice
+		magic.6 # Druid Promotion for AI
+		magic.13 # Promoted Druids are slipping... 
+		magic.16 # Archdruid grows a personality
+		magic.17 # Sage Promotion for AI
 	}
 
 	
@@ -442,6 +447,9 @@ on_yearly_pulse = {
 		120 = TOG.3132 # Son returns with loot (Son) - Formerly 160 month MTTH
 		50 = SoA.5219 # Donate to local monastery - Formerly 2000 month MTTH
 
+		# FE
+		1 = quintessence.24 # Creation of magic seal
+		100 = quintessence.26 # Banish magic seal
 		5000 = 0 # Chance of no yearly event
 
 	}
@@ -813,6 +821,10 @@ on_decade_pulse = {
 	events = {
 		RIP.10031 # clear global flags from bubonic plague
 	}
+	random_events = {
+		10 = magic.7 # Sage or Druid gets the chance to go further
+		1000 = 0
+	}
 }
 
 # For characters 2 to 16 years old
@@ -1160,6 +1172,9 @@ on_siege_over_winner = {
 on_siege_over_loc_chars = {
 	events = {
 		SoA.5406 # Shepherds' Crusade kills Jews and priests
+		
+		# FE
+		fe7_eliwood.27 # Elbert freed!
 	}
 	random_events = {
  		1000 = 0 # Nothing happens
@@ -1362,6 +1377,9 @@ on_released_from_prison = {
 		CM.10025  # Chronicle entry
 		CM.15002  # Free anyone thrown into the desert
 		ZE.12219  # Released from dungeon must choose whether to leave pet rat behind
+		
+		# FE
+		fe7_eliwood.27 # Elbert escapes
  	}
 }
 
@@ -1376,6 +1394,9 @@ on_executed = {
 on_exiled = {
 	events = {
  		155
+		
+		# FE
+		fe7_eliwood.27 # Elbert escapes
  	}
 }
 
@@ -2159,6 +2180,9 @@ on_reform_religion = {
 on_county_religion_change = {
 	events = {
 		SoA.4121
+		
+		#FE
+		magic.5
 	}
 }
 

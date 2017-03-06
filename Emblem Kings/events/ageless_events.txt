@@ -10,11 +10,36 @@ character_event = {
 	trigger = {
 		trait = dragon
 		NOT = { trait = war_dragon }
-		#NOT = { trait = supreme_essence } # Truly immortal
-		NOT = { has_character_flag = lore_quintessence }
+		NOT = { has_character_modifier = immortal_from_quintessence }
 		OR = { 
 			age = 6000
-			health_traits = 1 
+			OR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 		}		
 		# Manaketes:
 		# 1000 = child
@@ -52,13 +77,65 @@ character_event = {
 	immediate = {	
 		if = {
 			limit = { 
-				NOT = { health_traits = 1 } 
+				NOR = {
+					trait = stressed
+					trait = depressed
+					trait = ill
+					trait = pneumonic
+					trait = syphilitic
+					trait = leper
+					trait = wounded
+					trait = maimed
+					trait = incapable
+					trait = has_tuberculosis
+					trait = has_typhoid_fever
+					trait = has_typhus
+					trait = has_bubonic_plague
+					trait = has_measles
+					trait = has_small_pox
+					trait = has_aztec_disease
+					trait = sickly
+					trait = infection
+					trait = mangled
+					trait = severely_injured
+					trait = dysentery
+					trait = food_poisoning
+					trait = rabies
+					trait = cancer
+					trait = sick_incapable
+				}
 			}
 			death = yes
 		}
 		if = {
 			limit = { 
-				health_traits = 1	
+				OR = {
+					trait = stressed
+					trait = depressed
+					trait = ill
+					trait = pneumonic
+					trait = syphilitic
+					trait = leper
+					trait = wounded
+					trait = maimed
+					trait = incapable
+					trait = has_tuberculosis
+					trait = has_typhoid_fever
+					trait = has_typhus
+					trait = has_bubonic_plague
+					trait = has_measles
+					trait = has_small_pox
+					trait = has_aztec_disease
+					trait = sickly
+					trait = infection
+					trait = mangled
+					trait = severely_injured
+					trait = dysentery
+					trait = food_poisoning
+					trait = rabies
+					trait = cancer
+					trait = sick_incapable
+				}
 			}
 			death = {					
 				death_reason = death_trait
@@ -80,11 +157,36 @@ character_event = {
 	trigger = {
 		trait = dragon_blood
 		NOT = { trait = war_dragon }
-		#NOT = { trait = supreme_essence } # Truly immortal
-		NOT = { has_character_flag = lore_quintessence }
+		NOT = { has_character_modifier = immortal_from_quintessence }
 		OR = { 
 			age = 1000
-			health_traits = 1 
+			OR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 		}		
 		# It's not fully clear how fast these guys age.
 		# Sophia is a few centuries old and looks like a teenager.
@@ -122,13 +224,65 @@ character_event = {
 	immediate = {	
 		if = {
 			limit = { 
-				NOT = { health_traits = 1 } 
+			NOR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 			}
 			death = yes
 		}
 		if = {
 			limit = { 
-				health_traits = 1	
+			OR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 			}
 			death = {					
 				death_reason = death_trait
@@ -151,7 +305,33 @@ character_event = {
 		trait = war_dragon
 		OR = { 
 			age = 40
-			health_traits = 1 
+			OR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 		}		
 	}
 	
@@ -182,13 +362,65 @@ character_event = {
 	immediate = {	
 		if = {
 			limit = { 
-				NOT = { health_traits = 1 } 
+			NOR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 			}
 			death = yes
 		}
 		if = {
 			limit = { 
-				health_traits = 1	
+			OR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 			}
 			death = {					
 				death_reason = death_trait
@@ -208,6 +440,7 @@ character_event = {
 	hide_window = yes
 	
 	trigger = {
+		NOT = { has_character_modifier = immortal_from_quintessence }
 		OR = { 
 			trait = class_archdruid
 			trait = class_archsage
@@ -215,13 +448,38 @@ character_event = {
 		}		
 		OR = { 
 			age = 1000
-			health_traits = 1 
+			OR = {
+				trait = stressed
+				trait = depressed
+				trait = ill
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = has_aztec_disease
+				trait = sickly
+				trait = infection
+				trait = mangled
+				trait = severely_injured
+				trait = dysentery
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = sick_incapable
+			}
 		}		
-		NOT = { trait = supreme_essence } # Truly immortal
 		# Again, it's not totally clear how long they can live.
-		# Nergal was in his 1000s and looked middle-aged.
+		# Nergal was in his 1000s and looked middle-aged, although he had quintessence.
 		# Athos and Brammimond are in their 1000s minimum as of FE7 and died during/shortly after the events of that game.
-		# Let's say they can start dying at 1000... Nergal's apparent youth could be due to quintessence shenanigans?
+		# Let's say they can start dying at 1000.
 	}
 	
 	mean_time_to_happen = {
@@ -251,13 +509,65 @@ character_event = {
 	immediate = {	
 		if = {
 			limit = { 
-				NOT = { health_traits = 1 } 
+				NOR = {
+					trait = stressed
+					trait = depressed
+					trait = ill
+					trait = pneumonic
+					trait = syphilitic
+					trait = leper
+					trait = wounded
+					trait = maimed
+					trait = incapable
+					trait = has_tuberculosis
+					trait = has_typhoid_fever
+					trait = has_typhus
+					trait = has_bubonic_plague
+					trait = has_measles
+					trait = has_small_pox
+					trait = has_aztec_disease
+					trait = sickly
+					trait = infection
+					trait = mangled
+					trait = severely_injured
+					trait = dysentery
+					trait = food_poisoning
+					trait = rabies
+					trait = cancer
+					trait = sick_incapable
+				}
 			}
 			death = yes
 		}
 		if = {
 			limit = { 
-				health_traits = 1	
+				OR = {
+					trait = stressed
+					trait = depressed
+					trait = ill
+					trait = pneumonic
+					trait = syphilitic
+					trait = leper
+					trait = wounded
+					trait = maimed
+					trait = incapable
+					trait = has_tuberculosis
+					trait = has_typhoid_fever
+					trait = has_typhus
+					trait = has_bubonic_plague
+					trait = has_measles
+					trait = has_small_pox
+					trait = has_aztec_disease
+					trait = sickly
+					trait = infection
+					trait = mangled
+					trait = severely_injured
+					trait = dysentery
+					trait = food_poisoning
+					trait = rabies
+					trait = cancer
+					trait = sick_incapable
+				}
 			}
 			death = {					
 				death_reason = death_trait

@@ -32,6 +32,11 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_nergal_ritual"
+		texturefile = "gfx\\event_pictures\nergal_ritual.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_fire_dragons_gate"
 		texturefile = "gfx\\event_pictures\fire_dragons_gate.tga"
 		allwaystransparent = yes

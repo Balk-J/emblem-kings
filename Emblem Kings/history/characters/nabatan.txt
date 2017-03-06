@@ -1,114 +1,118 @@
-601 = {
-	name="Athos"
-	dynasty=601
-	
-	religion=anima
-	culture=etrurian
-	
-	disallow_random_traits="yes" 
-	trait="class_archsage"
-	trait="genius"
-	trait="mastermind_theologian"
-	trait="mystic"
-	trait="scholar"
-	trait="diligent"
-	trait="kind"
-	trait="patient"
-	trait="temperate"
-	trait="just"
-	trait="honest"
-	120.01.01 = { 
-		birth=yes 
-		culture=nabatan
-	}
-	180.01.01 = {
-		give_nickname=nick_the_archsage
-		add_trait="eight_legends"
-		#add_trait="regalia_forblaze"
-		effect = {
-			ROOT = {
-		#		add_character_modifier = { name = "owns_regalia" duration = -1 } 
-				set_character_flag="regalia_hide"	
-				set_character_flag="regalia_forblaze_failure"
-		#		set_global_flag="regalia_forblaze_held"	
-			}
-			set_variable = { which = "level" value = 20 }
-		}
-	}
-	
-	# About 500 years before FE7, meets Nergal wandering the desert...
-	660.01.01 = {  
-		effect={
-			add_friend=308 # Nergal
-		}
-	}
-	
-	# A little bit later, they stumble across Arcadia
-	
-	# An unspecified amount of time later (still hundreds of years before FE7? Canas: "Nergal began creating morphs centuries ago"), they fight over morph research
-	800.01.01 = {  
-		effect={
-			add_rival=308 # Nergal
-		}
-	}
-	1159.01.01 = {
-		employer = 644 # Arcadia temple holder
-	}
-	1161.01.01 = { 
-		death=yes 
-		#effect = {
-		#	clr_global_flag="regalia_forblaze_held"
-		#}
-	}
-}
-
-602 = {
-	name="Bramimond"
-	#female=yes
-	dynasty=602
-	
-	religion=dark
-	culture=bernese
-	
-	disallow_random_traits="yes"
-	trait="class_archdruid"
-	trait="genius"
-	trait="mastermind_theologian"
-	trait="mystic"
-	trait="scholar"
-	trait="celibate"
-	trait="dark_selfless"
-	123.01.01 = { 
-		birth=yes 
-		effect = {
-			set_character_flag = is_fe7_brammimond
-		}
-	}
-	180.01.01 = {
-		culture=nabatan
-		give_nickname=nick_the_enigma
-		add_trait="eight_legends"
-		effect={
-			add_friend=601 # Athos
-			ROOT = {
-				#add_character_modifier = { name = "owns_regalia" duration = -1 }  
-				set_character_flag="regalia_hide"	 
-				set_character_flag="regalia_apocalypse_failure"	
-				#set_global_flag="regalia_apocalypse_held"	
-			}
-		}
-	}
-	1159.01.01 = {
-		employer = 491 # Shrine of Seals
-	}
-	
-	1162.01.01 = { 
-		death=yes 
-		#effect = {
-		#	clr_global_flag="regalia_apocalypse_held"
-		#}
-	}
-}
+#601 = {
+#	name="Athos"
+#	dynasty=601
+#	
+#	religion=anima
+#	culture=etrurian
+#	
+#	disallow_random_traits="yes" 
+#	trait="class_archsage"
+#	trait="base_class_mage"
+#	trait="genius"
+#	trait="mastermind_theologian"
+#	trait="mystic"
+#	trait="scholar"
+#	trait="diligent"
+#	trait="kind"
+#	trait="patient"
+#	trait="temperate"
+#	trait="just"
+#	trait="honest"
+#	trait="celibate"
+#	120.01.01 = { 
+#		birth=yes 
+#		culture=nabatan
+#		set_character_flag = is_fe7_athos
+#	}
+#	180.01.01 = {
+#		give_nickname=nick_the_archsage
+#		add_trait="eight_legends"
+#		#add_trait="regalia_forblaze"
+#		effect = {
+#			ROOT = {
+#		#		add_character_modifier = { name = "owns_regalia" duration = -1 } 
+#				set_character_flag="regalia_hide"	
+#				set_character_flag="regalia_forblaze_failure"
+#		#		set_global_flag="regalia_forblaze_held"	
+#			}
+#			set_variable = { which = "level" value = 20 }
+#		}
+#	}
+#	
+#	# About 500 years before FE7, meets Nergal wandering the desert...
+#	660.01.01 = {  
+#		effect={
+#			add_friend=308 # Nergal
+#		}
+#	}
+#	
+#	# A little bit later, they stumble across Arcadia
+#	
+#	# An unspecified amount of time later (still hundreds of years before FE7? Canas: "Nergal began creating morphs centuries ago"), they fight over morph research
+#	800.01.01 = {  
+#		effect={
+#			add_rival=308 # Nergal
+#		}
+#	}
+#	1159.01.01 = {
+#		employer = 644 # Arcadia temple holder
+#	}
+#	1161.01.01 = { 
+#		death=yes 
+#		#effect = {
+#		#	clr_global_flag="regalia_forblaze_held"
+#		#}
+#	}
+#}
+#
+#602 = {
+#	name="Bramimond"
+#	#female=yes
+#	dynasty=602
+#	
+#	religion=dark
+#	culture=bernese
+#	
+#	disallow_random_traits="yes"
+#	trait="class_archdruid"
+#	trait="base_class_dark_mage"
+#	trait="genius"
+#	trait="mastermind_theologian"
+#	trait="mystic"
+#	trait="scholar"
+#	trait="celibate"
+#	trait="dark_selfless"
+#	123.01.01 = { 
+#		birth=yes 
+#		effect = {
+#			set_character_flag = is_fe7_brammimond
+#		}
+#	}
+#	180.01.01 = {
+#		culture=nabatan
+#		give_nickname=nick_the_enigma
+#		add_trait="eight_legends"
+#		effect={
+#			add_friend=601 # Athos
+#			ROOT = {
+#				#add_character_modifier = { name = "owns_regalia" duration = -1 }  
+#				set_character_flag="regalia_hide"	 
+#				set_character_flag="regalia_apocalypse_failure"	
+#				#set_global_flag="regalia_apocalypse_held"	
+#			}
+#		}
+#	}
+#	1159.01.01 = {
+#		employer = 491 # Shrine of Seals
+#	}
+#	
+#	1162.01.01 = { 
+#		death=yes 
+#		#effect = {
+#		#	clr_global_flag="regalia_apocalypse_held"
+#		#}
+#	}
+#}
 
 603 = {
 	name="Hawkeye"
@@ -126,10 +130,10 @@
 	}
 	1137.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1140.01.01={
@@ -163,10 +167,10 @@
 	}
 	1159.01.01={
 		add_trait="class_archer_female"
+			add_trait="base_class_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_archer"
 		}
 	} 
 	1162.01.01={
@@ -278,10 +282,10 @@
 	
 	1153.01.01={
 		add_trait="class_mage"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	
@@ -327,10 +331,10 @@
 	
 	1153.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	
@@ -383,10 +387,10 @@
 	
 	1153.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	
@@ -407,9 +411,8 @@
 }
 
 610 = {
-	name="Denning" #This is a message from Lord Nergal...
+	name="Denning" #This is a message from Lord Nergal.
 	
-	#religion=elimine_church
 	religion=dark
 	culture=nabatan
 	
@@ -433,10 +436,10 @@
 	
 	1154.01.01={
 		add_trait="class_archer"
+			add_trait="base_class_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_archer"
 		}
 	} 
 	
@@ -450,6 +453,7 @@
 		death = {
 			death_reason=death_battle
 			killer=107 #Eliwood 
+			# This is... a message... from... Lo... rd... Nerga...
 		}
 	}
 }
@@ -477,10 +481,10 @@
 	}
 	1155.01.01={
 		add_trait="class_thief"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1157.1.1 = {
@@ -506,56 +510,57 @@
 	}
 }
 
-612 = {
-	name="Sophia" #priestess of Nabata. Dragon mother, human father.
-	female=yes
-	
-	religion=dark
-	culture=nabatan
-	
-	disallow_random_traits="yes"
-	trait="dragon_blood"
-	
-	# centuries old, but younger than Fae
-	905.1.1={
-		birth=yes
-	}
-	
-	905.01.01 = { 
-		employer=601 # Athos 
-	}
-	917.01.01={
-		add_trait="class_shaman_female"
-		effect = {
-			set_variable = { which = "level" value = 1 }
-			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
-		}
-	} 
-	920.01.01={
-		add_trait="detached_priest"
-		add_trait="shy"
-		add_trait="kind"
-		add_trait="humble"
-	} 
-	
-	1000.01.01 = { 
-		effect={
-			add_friend=922 # Fae
-		}
-	}
-	
-	1125.01.01 = { 
-		employer=603 # Hawkeye 
-	}
-	1170.01.01 = { 
-		employer=604 # Igrene 
-	}
-		
-	1400.01.01 = { 
-		death = yes
-	}
-}
+#612 = {
+#	name="Sophia" #priestess of Nabata. Dragon mother, human father.
+#	female=yes
+#	
+#	religion=dark
+#	culture=divine_dragon_culture
+#	
+#	disallow_random_traits="yes"
+#	trait="dragon_blood"
+#	
+#	# centuries old, but younger than Fae
+#	905.1.1={
+#		birth=yes
+#		set_character_flag = is_fe6_sophia
+#	}
+#	
+#	905.01.01 = { 
+#		employer=601 # Athos 
+#	}
+#	917.01.01={
+#		add_trait="class_dark_mage_female"
+#			add_trait="base_class_dark_mage"
+#		effect = {
+#			set_variable = { which = "level" value = 1 }
+#			set_character_flag="class_selected"
+#		}
+#	} 
+#	920.01.01={
+#		add_trait="detached_priest"
+#		add_trait="shy"
+#		add_trait="kind"
+#		add_trait="humble"
+#	}
+#	
+#	1000.01.01 = { 
+#		effect={
+#			add_friend=922 # Fae
+#		}
+#	}
+#	
+#	1125.01.01 = { 
+#		employer=603 # Hawkeye 
+#	}
+#	1170.01.01 = { 
+#		employer=604 # Igrene 
+#	}
+#		
+#	1400.01.01 = { 
+#		death = yes
+#	}
+#}
 
 613={
 	name="Paul" # Wacky Berserker Twin #1
@@ -570,10 +575,10 @@
 	}
 	1147.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1150.01.01={
@@ -616,10 +621,10 @@
 	}	
 	1147.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1150.01.01={
@@ -658,10 +663,10 @@
 	}
 	1167.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1170.01.01={
@@ -704,10 +709,10 @@
 	}
 	1167.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1170.01.01={
@@ -745,10 +750,10 @@
 	}
 	1165.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1168.01.01={

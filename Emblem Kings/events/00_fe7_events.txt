@@ -190,71 +190,71 @@ character_event = {
 					random_list = {
 						6 = {
 							add_trait=class_assassin
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						5 = {
 							add_trait=class_berserker
-							set_character_flag = class_brigand
+							add_trait = base_class_brigand
 						}
 						5 = {
 							add_trait=class_bishop
-							set_character_flag = class_priest
+							add_trait = base_class_priest
 						}
 						6 = {
 							add_trait=class_druid
-							set_character_flag = class_shaman
+							add_trait = base_class_shaman
 						}
 						6 = {
 							add_trait=class_general
-							set_character_flag = class_knight
+							add_trait = base_class_knight
 						}
 						5 = {
 							add_trait=class_great_knight
-							set_character_flag = class_cavalier
+							add_trait = base_class_cavalier
 						}
 						6 = {
 							add_trait=class_hero
-							set_character_flag = class_mercenary
+							add_trait = base_class_mercenary
 						}
 						5 = {
 							add_trait=class_mage_knight
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						6 = {
 							add_trait=class_paladin
-							set_character_flag = class_cavalier
+							add_trait = base_class_cavalier
 						}
 						5 = {
 							add_trait=class_ranger
-							set_character_flag = class_horse_archer
+							add_trait = base_class_horse_archer
 						}
 						5 = {
 							add_trait=class_rogue
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						6 = {
 							add_trait=class_sage
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						6 = {
 							add_trait=class_sniper
-							set_character_flag = class_archer
+							add_trait = base_class_archer
 						}
 						6 = {
 							add_trait=class_swordmaster
-							set_character_flag = class_myrmidon
+							add_trait = base_class_myrmidon
 						}
 						6 = {
 							add_trait=class_warrior
-							set_character_flag = class_fighter
+							add_trait = base_class_fighter
 						}
 						5 = {
 							add_trait=class_wyvern_knight
-							set_character_flag = class_wyvern_rider
+							add_trait = base_class_wyvern_rider
 						}
 						6 = {
 							add_trait=class_wyvern_lord
-							set_character_flag = class_wyvern_rider
+							add_trait = base_class_wyvern_rider
 						}
 					}
 				}
@@ -283,71 +283,71 @@ character_event = {
 					random_list = {
 						5 = {
 							add_trait=class_assassin_female
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						5 = {
 							add_trait=class_bishop_female		
-							set_character_flag = class_cleric
+							add_trait = base_class_cleric
 						}
 						5 = {
 							add_trait=class_druid_female		
-							set_character_flag = class_shaman
+							add_trait = base_class_shaman
 						}
 						5 = {
 							add_trait=class_falcon_knight		
-							set_character_flag = class_pegasus_knight
+							add_trait = base_class_pegasus_knight
 						}
 						5 = {
 							add_trait=class_general		
-							set_character_flag = class_knight
+							add_trait = base_class_knight
 						}
 						5 = {
 							add_trait=class_great_knight	
-							set_character_flag = class_cavalier
+							add_trait = base_class_cavalier
 						}
 						5 = {
 							add_trait=class_hero_female		
-							set_character_flag = class_mercenary
+							add_trait = base_class_mercenary
 						}
 						5 = {
 							add_trait=class_mage_knight_female		
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						5 = {
 							add_trait=class_paladin		
-							set_character_flag = class_cavalier
+							add_trait = base_class_cavalier
 						}
 						5 = {
 							add_trait=class_ranger_female	
-							set_character_flag = class_horse_archer
+							add_trait = base_class_horse_archer
 						}
 						5 = {
 							add_trait=class_rogue		
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						5 = {
 							add_trait=class_sage_female		
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						5 = {
 							add_trait=class_sniper_female		
-							set_character_flag = class_archer
+							add_trait = base_class_archer
 						}
 						5 = {
 							add_trait=class_swordmaster_female		
-							set_character_flag = class_myrmidon
+							add_trait = base_class_myrmidon
 						}
 						5 = {
 							add_trait=class_valkyrie	
-							set_character_flag = class_troubador
+							add_trait = base_class_troubador
 						}
 						5 = {
 							add_trait=class_wyvern_knight	
-							set_character_flag = class_wyvern_rider
+							add_trait = base_class_wyvern_rider
 						}
 						5 = {
 							add_trait=class_wyvern_lord		
-							set_character_flag = class_wyvern_rider
+							add_trait = base_class_wyvern_rider
 						}
 					}
 				}
@@ -400,39 +400,39 @@ character_event = {
 					random_list = {
 						10 = {
 							add_trait=class_assassin
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						10 = {
 							add_trait=class_bishop
-							set_character_flag = class_priest
+							add_trait = base_class_priest
 						}
 						10 = {
 							add_trait=class_druid
-							set_character_flag = class_shaman
+							add_trait = base_class_shaman
 						}
 						10 = {
 							add_trait=class_hero
-							set_character_flag = class_mercenary
+							add_trait = base_class_mercenary
 						}
 						10 = {
 							add_trait=class_mage_knight
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						10 = {
 							add_trait=class_rogue
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						10 = {
 							add_trait=class_sage
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						10 = {
 							add_trait=class_sniper
-							set_character_flag = class_archer
+							add_trait = base_class_archer
 						}
 						10 = {
 							add_trait=class_swordmaster
-							set_character_flag = class_myrmidon
+							add_trait = base_class_myrmidon
 						}
 					}
 				}
@@ -461,43 +461,43 @@ character_event = {
 					random_list = {
 						9 = {
 							add_trait=class_assassin_female
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						9 = {
 							add_trait=class_bishop_female	
-							set_character_flag = class_cleric
+							add_trait = base_class_cleric
 						}
 						9 = {
 							add_trait=class_druid_female	
-							set_character_flag = class_shaman
+							add_trait = base_class_shaman
 						}
 						9 = {
 							add_trait=class_hero_female		
-							set_character_flag = class_mercenary
+							add_trait = base_class_mercenary
 						}
 						9 = {
 							add_trait=class_mage_knight_female		
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						9 = {
 							add_trait=class_rogue		
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 						}
 						10 = {
 							add_trait=class_sage_female	
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 						}
 						9 = {
 							add_trait=class_sniper_female	
-							set_character_flag = class_archer
+							add_trait = base_class_archer
 						}
 						9 = {
 							add_trait=class_swordmaster_female		
-							set_character_flag = class_myrmidon	
+							add_trait = base_class_myrmidon	
 						}
 						9 = {
 							add_trait=class_valkyrie
-							set_character_flag = class_troubador
+							add_trait = base_class_troubador
 						}
 					}
 				}
@@ -964,6 +964,7 @@ character_event = {
 				trait="brave"
 				trait="scarred"
 				trait="class_warrior"
+				trait="base_class_fighter"
 			}
 			new_character = {	
 				#save_event_target_as = target_fe7_brendan_reed
@@ -971,7 +972,6 @@ character_event = {
 				set_variable = { which = "level" value = 1 }
 				set_character_flag = fe7_brendan_reed
 				set_character_flag="class_selected"
-				set_character_flag="class_fighter"
 				
 				create_character = {
 					random_traits = no
@@ -985,6 +985,7 @@ character_event = {
 					trait="just"	
 					trait="charitable"	
 					trait="class_thief_female"	
+					trait="base_class_thief"	
 				}
 				new_character = {
 					set_variable = { which = "level" value = 1 }
@@ -1010,6 +1011,7 @@ character_event = {
 						trait="patient"	
 						trait="brave"
 						trait="class_swordmaster"
+						trait="base_class_myrmidon"
 					}
 					new_character = {
 						set_variable = { which = "level" value = 1 }
@@ -1041,6 +1043,7 @@ character_event = {
 						trait="brave"	
 						trait="wroth"
 						trait="class_hero"
+						trait="base_class_mercenary"
 					}
 					new_character = {
 						set_variable = { which = "level" value = 1 }
@@ -1434,6 +1437,7 @@ narrative_event = {
 							learning = 10
 						}
 						trait="class_sage_female"
+						trait="base_class_mage"
 						trait="flamboyant_schemer"
 						trait="morph"
 						trait="fair"
@@ -1489,6 +1493,7 @@ narrative_event = {
 						dynasty=none
 						age = 16
 						trait="class_assassin"
+						trait="base_class_thief"
 						trait="elusive_shadow"
 						employer = PREV
 					}
@@ -1579,7 +1584,8 @@ character_event = {
 				}
 			}
 		}
-		NOT = { is_inaccessible_trigger = yes }
+		#NOT = { is_inaccessible_trigger = yes }
+		NOT = { trait = in_hiding }
 		NOT = { realm_intrigue = 30 }
 	}
 	
@@ -2208,15 +2214,15 @@ character_event = {
 					}
 					random_list = {
 						25 = {
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 							add_trait = class_sage						
 						}		
 						30 = {
-							set_character_flag = class_myrmidon
+							add_trait = base_class_myrmidon
 							add_trait = class_swordmaster						
 						}	
 						45 = {
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 							add_trait = class_assassin						
 						}	
 					}	
@@ -2227,15 +2233,15 @@ character_event = {
 					}
 					random_list = {
 						25 = {
-							set_character_flag = class_mage
+							add_trait = base_class_mage
 							add_trait = class_sage_female						
 						}	
 						30 = {
-							set_character_flag = class_myrmidon
+							add_trait = base_class_myrmidon
 							add_trait = class_swordmaster_female						
 						}	
 						45 = {
-							set_character_flag = class_thief
+							add_trait = base_class_thief
 							add_trait = class_assassin_female						
 						}	
 					}	
@@ -2810,4 +2816,51 @@ character_event = {
 			killer = FROMFROM
 		}		
 	}
-}
+}	
+
+# Create Ninian and Nils
+character_event = {
+	id = fe7.34
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_character_flag = is_fe7_ninian
+					}
+				}
+			}
+			c_kathelet = {
+				create_character = {
+					random_traits = no
+					name = "Ninian"
+					dynasty = 304
+					religion = elimine_church
+					culture = ilian
+					female = yes
+					age = 989
+					immortal_age = 16
+					mother = 924 # Aenir
+					trait="tough_soldier"	
+					trait="dragon_blood"		
+					trait="class_dancer"
+					trait="base_class_dancer"
+					trait="scholarly_theologian"
+					trait="kind"
+					trait="shy"
+					trait="chaste"
+				}
+				
+				new_character = {
+					
+				}
+			}
+		}
+	}
+}		
+
+

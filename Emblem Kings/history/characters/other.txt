@@ -17,11 +17,11 @@
 		employer=601
 	}
 	1152.06.24={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1240.6.24={
@@ -46,14 +46,14 @@
 	1140.01.01 = { 
 		birth=yes 
 	}
-	1152.01.01={
-		add_trait="class_tactician"
-		effect = {
-			set_variable = { which = "level" value = 1 }
-			set_character_flag="class_selected"
-			set_character_flag="class_tactician"
-		}
-	} 
+#	1152.01.01={
+#		add_trait="class_tactician"
+#		effect = {
+#			set_variable = { which = "level" value = 1 }
+#			set_character_flag="class_selected"
+#			set_character_flag="class_tactician"
+#		}
+#	} 
 	1159.01.01 = { 
 		employer=111 #Lyn
 	}

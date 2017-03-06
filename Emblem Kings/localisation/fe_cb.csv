@@ -13,6 +13,7 @@ filicide_revolt.tooltip.1;[This.GetTitledName] abdicates to the child [This.GetS
 filicide_revolt.tooltip.2;[This.GetTitledName] abdicates to [This.Heir.GetTitledName].;;;;;;;;;;;;;x
 conqueror_invasion_desc;We do not need to bother with just causes - might makes right! §Y$CLAIMANT$§! can invade the lands of §Y$TARGET$§!. If successful, the titles to all currently occupied holdings will be seized and all vassals will become our vassals.;Inutile de s'embêter à trouver de justes casus belli, la force fait loi ! §Y$CLAIMANT$§! peut envahir les terres de §Y$TARGET$§!. S'il réussit, les titres de toutes les propriétés occupées par ses troupes seront saisis et les autres seigneurs passeront sous son autorité.;Wir brauchen uns nicht nicht mit gerechten Gründen befassen – Macht geht vor Recht! §Y$CLAIMANT$§! kann in die Länder von §Y$TARGET$§! einmarschieren. Falls dies erfolgreich ist, werden alle derzeit besetzten Gebiete beschlagnahmt und alle Vasallen werden;;¡No hemos de preocuparnos por la justicia de las causas! ¡La fuerza otorga el derecho! §Y$CLAIMANT$§! puede invadir las tierras de §Y$TARGET$§!. De tener éxito, los títulos de todas las propiedades ocupadas se confiscarán y todos sus vasallos se convertirán en nuestros vasallos.;;;;;;;;;x
 conspiracy_cb_desc;§Y$TARGET$§! is part of a dastardly plot to start a dishonorable war in your homeland. The villain must be brought to justice!;;;;;;;;;;;;;x
+conspiracy_cb_tooltip;The mastermind of the conspiracy will be revealed.;;;;;;;;;;;;;x
 CB_NAME_CONSPIRACY;Conspiracy;;;;;;;;;;;;;x
 conspiracy_invasion_desc;We have been plotting to invade §Y$TARGET$§! for some time. Our co-conspirators will join us in battle as soon as the war begins.;;;;;;;;;;;;;x
 WAR_NAME_CONSPIRACY;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ Conspiracy War;;;;;;;;;;;;;x
@@ -20,3 +21,4 @@ destroy_realm_desc;§Y$TARGET$§! is an inhuman monster and must be stopped for th
 CB_NAME_DESTROY_REALM;Destroy Realm;;;;;;;;;;;;;x
 destroy_realm_success_tooltip;The [From.PrimaryTitle.GetFullBaseName] will be destroyed and all its vassals will be released. [From.GetTitledFirstName] will be killed, if we can manage it.\n;;;;;;;;;;;;;x
 WAR_NAME_DESTROY_REALM;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ War;;;;;;;;;;;;;x
+destroy_realm_tooltip.on_reverse_demand;No future wars of this type will be possible against [From.GetTitledFirstName].;;;;;;;;;;;;;x

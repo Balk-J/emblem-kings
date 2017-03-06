@@ -27,6 +27,16 @@ character_event = {
 	immediate = {
 	
 		hidden_tooltip = {
+			c_iustitia = {
+				holder_scope = {
+					random_character = { 
+						limit = {
+							has_character_flag = "is_fe7_nils"
+						}
+						move_character = PREV
+					}
+				}
+			}
 			e_nergal = {
 				holder_scope = {
 					random_character = { 
@@ -36,13 +46,13 @@ character_event = {
 						move_character = PREV
 						imprison = PREV
 					}
-					random_character = { 
-						limit = {
-							has_character_flag = "is_fe7_nils"
-						}
-						move_character = PREV
-						imprison = PREV
-					}	
+#					random_character = { 
+#						limit = {
+#							has_character_flag = "is_fe7_nils"
+#						}
+#						move_character = PREV
+#						imprison = PREV
+#					}	
 				}
 			}
 		}
@@ -56,7 +66,36 @@ character_event = {
 		custom_tooltip = {
 			text = fe7_eliwood.1.A.tooltip
 			hidden_tooltip = {
-				character_event = { id = fe7_eliwood.2 }
+				#character_event = { id = fe7_eliwood.2 }
+				
+				k_lycia = {
+					set_title_flag = quintessence_conspiracy_zone 
+					
+					# Flag the owner of the capital as the target. Really wish we had a better way figure out who the most powerful ruler in the area is, but when this gets run it should grab Ostia.
+					capital_scope = {
+						county = {
+							holder_scope = {
+								top_liege = {
+									primary_title = {									
+										set_title_flag = quintessence_conspiracy_target 
+									}
+								}
+							}
+						}
+					}
+					random_playable_ruler = {
+						limit = {
+							primary_title = {									
+								has_title_flag = quintessence_conspiracy_target 
+							}
+						}
+						character_event = { id = fe7_eliwood.3 }
+					}
+					
+				}
+				# Check back once Ephidel does his little tour...
+				set_character_flag = quintessence_conspiracy_leader
+				character_event = { id = fe7_eliwood.5 days = 60 }
 			}
 		}
 	}
@@ -218,7 +257,7 @@ character_event = {
 				NOT = { character = ROOT }
 				NOT = { relative_power = { who = ROOT power = 1.0 } }
 				relative_power = { who = ROOT power = 0.4 } 
-				war = no
+				#war = no
 				NOT = { has_non_aggression_pact_with = ROOT }
 			}
 			character_event = { id = fe7_eliwood.4 days = 30 random = 10 }
@@ -293,7 +332,7 @@ narrative_event = {
 	}
 }
 
-# Check back on conspirators..
+# Check back on conspirators
 character_event = {
 	id = fe7_eliwood.5
 	
@@ -322,7 +361,7 @@ character_event = {
 					#	has_character_flag = quintessence_conspiracy_double_agent
 					#}
 				}
-			character_event = { id = fe7_eliwood.8 }
+				character_event = { id = fe7_eliwood.8 }
 				
 			}
 		}
@@ -340,7 +379,8 @@ character_event = {
 		}
 	}
 }
-# Nobody trusts the creepy guy in the cloak
+
+# Nobody trusts the creepy guy in the cloak - no conspiracy
 character_event = {
 	id = fe7_eliwood.6
 	desc = fe7_eliwood.6.desc
@@ -383,7 +423,7 @@ character_event = {
 				}
 				character_event = { id = fe7_eliwood.9 }				
 			}
-				character_event = { id = fe7_eliwood.13 days = 90 random = 10 }
+			character_event = { id = fe7_eliwood.13 days = 90 random = 10 }
 		}
 	}
 }
@@ -497,25 +537,41 @@ narrative_event = {
 	option = {
 		name = fe7_eliwood.10.A
 		hidden_tooltip = {
-			random_independent_ruler = {
-				limit = {
-					has_character_flag = quintessence_conspiracy_leader
-				}
-				reverse_imprison = ROOT
-			}
+#			random_independent_ruler = {
+#				limit = {
+#					has_character_flag = quintessence_conspiracy_leader
+#				}
+#				reverse_imprison = ROOT
+#			}
 			current_heir = {
 				character_event = { id = fe7_eliwood.11 days = 1 }			
 			}
 			clr_character_flag = quintessence_conspiracy_double_agent
 		}
-		abdicate = yes
+		#abdicate = yes
+		hidden_tooltip = {			
+			# hidden character switcheroo
+			character_event = { id = fe7_eliwood.25 }
+		}
 	}
 }
 
 # This starts Eliwood's story. Investigate disappearance of double agent?
 character_event = {
 	id = fe7_eliwood.11
-	desc = fe7_eliwood.11.desc
+	#desc = fe7_eliwood.11.desc
+	desc = {
+		trigger = {
+			NOT = { has_character_flag = blazing_sword_startup }
+		}
+		text = "fe7_eliwood.11.desc"
+	}
+	desc = {
+		trigger = {
+			has_character_flag = blazing_sword_startup
+		}
+		text = "fe7_eliwood.11.desc.1"
+	}
 	picture = GFX_evt_council
 	
 	is_triggered_only = yes
@@ -530,6 +586,7 @@ character_event = {
 		hidden_tooltip = {
 			character_event = { id = fe7_eliwood.12 days = 3 random = 2 }	
 		}
+		clr_character_flag = blazing_sword_startup
 	}
 	option = {
 		name = fe7_eliwood.11.B
@@ -548,6 +605,7 @@ character_event = {
 			chance = 30
 			add_trait = stressed
 		}
+		clr_character_flag = blazing_sword_startup
 	}
 }
 
@@ -561,11 +619,25 @@ character_event = {
 	hide_from = yes
 	
 	immediate = {
+		# Pick a random conspirator
 		random_playable_ruler = {
 			limit = {
 				has_character_flag = quintessence_conspiracy_member
+				OR = {
+					# Prefer Darin, unless story events got turned off or he's no longer in charge of Laus.
+					has_character_flag = is_fe7_darin
+					has_game_rule = {
+						name = fe_story
+						value = off
+					}
+					d_laus = {
+						holder_scope = {
+							NOT = { has_character_flag = is_fe7_darin }
+						}
+					}
+				}
 			}
-			set_character_flag = quintessence_conspiracy_front
+			save_event_target_as = target_quintessence_conspirator
 		}
 	}
 	
@@ -576,12 +648,7 @@ character_event = {
 		}
 		prestige = 100
 		
-		random_playable_ruler = {
-			limit = {
-				has_character_flag = quintessence_conspiracy_front
-			}
-			remove_character_flag = quintessence_conspiracy_front
-			
+		event_target:target_quintessence_conspirator = {			
 			reverse_opinion = {
 				modifier = opinion_conspirator
 				who = ROOT
@@ -592,6 +659,10 @@ character_event = {
 				who = ROOT
 				years = 100
 			}
+		}
+		clear_event_target = target_quintessence_conspirator
+		custom_tooltip = {
+			name = fe7_eliwood.12.A.tooltip
 		}
 	}
 	option = {
@@ -770,6 +841,11 @@ character_event = {
 	
 	option = {
 		name = fe7_eliwood.16.A
+		any_playable_ruler = {
+			limit = {
+				has_character_flag = quintessence_conspiracy_ready
+			}
+		}
 		custom_tooltip = {
 			text = fe7_eliwood.16.A.tooltip
 			set_character_flag = quintessence_conspiracy_ready
@@ -824,6 +900,23 @@ character_event = {
 		name = fe7_eliwood.18.A
 		ai_chance = {
 			factor = 50
+			
+			modifier = {
+				factor = 2
+				opinion = { who = FROM value = 25 } 
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = FROM value = 50 } 
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { opinion = { who = FROM value = 20 } }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { opinion = { who = FROM value = 0 } }
+			}
 		}
 		join_attacker_wars = FROM
 	}
@@ -843,6 +936,12 @@ character_event = {
 			text = fe7_eliwood.18.B.tooltip
 			
 			prestige = -100
+			
+			reverse_opinion = {
+				modifier = broke_alliance
+				who = FROM
+				years = 10
+			}
 			
 			random_list = {
 				55 = {}
@@ -929,30 +1028,126 @@ narrative_event = {
 	id = fe7_eliwood.22
 	title = fe7_eliwood.22.title
 	desc = fe7_eliwood.22.desc
-	#picture = GFX_evt_nergal_power
-	picture = GFX_evt_lunatic
+	picture = GFX_evt_nergal_power
+	#picture = GFX_evt_lunatic
 	
 	is_triggered_only = yes
 	hide_from = yes
 	
 	option = {
 		name = fe7_eliwood.22.A
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				NOR = { 
+					primary_title = {title=d_pherae}
+					primary_title = {title=d_ostia}	
+					primary_title = {title=d_caelin}		
+					primary_title = {title=k_lycia}				
+				}
+			}
+		}
 		
 		prestige = 300
+
+		opinion = {
+			modifier = opinion_dishonorable_provocateur
+			who = FROM
+			years = 10
+		}
 		
-		FROM = {
-			set_character_flag = destroy_realm_target
-			add_rival = ROOT
+		custom_tooltip = {
+			text = fe7_eliwood.22.A.tooltip
 			
-			hidden_tooltip = {
-				character_event = { id = fe7_eliwood.23 }
+			FROM = {
+				add_rival = ROOT	
+				
+				hidden_tooltip = {
+					set_character_flag = destroy_realm_target
+					character_event = { id = fe7_eliwood.23 }
+				}
 			}
 		}
 	}
 	option = {
 		name = fe7_eliwood.22.B
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = { 
+					primary_title = {title=d_pherae}
+					primary_title = {title=d_ostia}	
+					primary_title = {title=d_caelin}		
+					primary_title = {title=k_lycia}				
+				}
+			}
+		}
+		
+		piety = 50
+		opinion = {
+			modifier = opinion_dishonorable_provocateur
+			who = FROM
+			years = 10
+		}
+		
+		custom_tooltip = {
+			text = fe7_eliwood.22.B.tooltip
+			
+			hidden_tooltip = {
+				primary_title = {
+					kingdom = {
+						
+						any_independent_ruler = {
+							limit = {
+								de_jure_liege_or_above = PREV
+								NOT = { character = FROM }
+							}
+							character_event = { id = fe7_eliwood.24 days = 1 }
+						}
+					}
+				}
+				
+				FROM = {
+					set_character_flag = destroy_realm_target
+					character_event = { id = fe7_eliwood.23 }
+				}
+			}
+		}
+	}
+	option = {
+		name = fe7_eliwood.22.C
+		ai_chance = {
+			factor = 34
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = { 
+					primary_title = {title=d_pherae}
+					primary_title = {title=d_ostia}	
+					primary_title = {title=d_caelin}		
+					primary_title = {title=k_lycia}				
+				}
+			}
+		}
+		
 		prestige = -300
-		piety = -100
+		piety = -200
+		custom_tooltip = {
+			text = fe7_eliwood.22.C.tooltip
+		}
 	}
 }
 
@@ -968,4 +1163,240 @@ character_event = {
 	option = {
 		name = fe7_eliwood.23.A
 	}
+}
+
+# Inform lords of the conspiracy
+narrative_event = {
+	id = fe7_eliwood.24
+	title = fe7_eliwood.24.title
+	desc = fe7_eliwood.24.desc
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe7_eliwood.24.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				NOR = { 
+					primary_title = {title=d_pherae}
+					primary_title = {title=d_ostia}	
+					primary_title = {title=d_caelin}		
+					primary_title = {title=k_lycia}				
+				}
+			}
+		}
+		
+		prestige = 50
+
+		opinion = {
+			modifier = opinion_dishonorable_provocateur
+			who = FROMFROM
+			years = 10
+		}
+	}
+	option = {
+		name = fe7_eliwood.24.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = { 
+					primary_title = {title=d_pherae}
+					primary_title = {title=d_ostia}	
+					primary_title = {title=d_caelin}		
+					primary_title = {title=k_lycia}				
+				}
+			}
+		}
+		
+		opinion = {
+			modifier = opinion_liar
+			who = FROM
+			years = 5
+		}
+	}
+}
+
+# Elbert's vanishing act event
+character_event = {
+	id = fe7_eliwood.25
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		# Only create the hidden character for Marquess Elbert. I don't think there's a way to create a dynamic clone-a-character event we'd need to make this work for a random ruler.
+		if = {
+			limit = {
+				has_character_flag = is_fe7_elbert
+			}
+			add_trait = went_missing
+			d_black_fang = {
+				create_character = { #Create hidden character
+					name = "Elbert"
+					dna="bmlmkchfegc"
+					culture = ROOT
+					religion = ROOT
+					female = no
+					dynasty = none
+					age = 35
+				}
+				new_character = { 
+					set_character_flag = is_fe7_elbert
+					set_character_flag = is_fe7_elbert_missing  
+					
+					set_variable = { which = "level" value = 1 }
+					set_character_flag="class_selected"
+						
+					add_trait="base_class_cavalier"
+					add_trait="class_paladin"
+					add_trait="charismatic_negotiator"
+					#add_trait="kind"
+					#add_trait="brave"
+					#add_trait="just"
+			
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					
+					character_event = { id = util.1 } 	
+					e_nergal = {
+						holder_scope = {
+							#reverse_banish = PREVPREV
+							reverse_imprison = PREVPREV	
+							
+							opinion = {
+								modifier = opinion_betrayed
+								who = PREVPREV
+								years = 100
+							}
+							reverse_opinion = {
+								modifier = opinion_evil_tyrant
+								who = PREVPREV
+								years = 10
+							}
+							character_event = { id = fe7_eliwood.26 }
+						}
+					}		
+				}
+			}
+		}
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+
+# Notify Nergal that he imprisoned Elbert
+character_event = {
+	id = fe7_eliwood.26
+	desc = fe7_eliwood.26.desc
+	picture = GFX_evt_into_the_dungeon
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = fe7_eliwood.26.A
+		piety = 500 
+		FROM = {
+#			imprison = ROOT
+#			add_character_modifier = { 
+#				name = house_arrest
+#				duration = -1
+#			}	
+			
+		}
+	}
+}
+
+# Elbert leaves
+character_event = {
+	id = fe7_eliwood.27
+
+	is_triggered_only = yes
+	hide_window = yes 
+	
+	trigger = {
+		has_character_flag = is_fe7_elbert_missing
+	}
+	
+	immediate = {
+		prisoner = no
+		clr_character_flag = is_fe7_elbert_missing
+		went_missing = {
+			limit = {
+				character = 105 # Elbert
+			}
+			#father_even_if_dead = { ROOT = { set_father = PREV } }
+			#mother_even_if_dead = { ROOT = { set_mother = PREV } }
+			spouse_even_if_dead = {
+				if = {
+					limit = {
+						is_alive = yes
+						is_married = no
+					}
+					add_spouse = ROOT
+				}
+			}
+			
+			remove_spouse = yes
+			
+			any_child_even_if_dead  = {
+				set_father = ROOT
+			}
+			
+			ROOT = {
+				dynasty = PREV
+				set_father = 0 # TODO: remove this if we ever get a character history built out
+			}
+			
+			dynasty_head = {
+				ROOT = {
+					move_character = PREV					
+				}
+				character_event = { id = fe7_eliwood.28 }
+			}
+			
+			remove_trait = went_missing
+			#remove_trait = dead_event_target 
+		}
+	}
+	
+	option = {
+		name =  OK
+	}
+	
+}
+
+# Inform Eliwood that Elbert returned
+character_event = {
+	id = fe7_eliwood.28
+	desc = fe7_eliwood.28.desc
+	picture = "GFX_evt_into_the_dungeon" 	
+
+	is_triggered_only = yes
+		
+	option = {
+		name = fe7_eliwood.28.A
+		recalc_succession = yes	
+	}
+	
 }

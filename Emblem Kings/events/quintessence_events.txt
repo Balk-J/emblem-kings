@@ -49,8 +49,8 @@ character_event = {
 					trait=class_pegasus_knight
 					trait=class_pirate
 					trait=class_priest
-					trait=class_shaman
-					trait=class_shaman_female
+					trait=class_dark_mage
+					trait=class_dark_mage_female
 					trait=class_thief
 					trait=class_thief_female
 					trait=class_troubador
@@ -64,8 +64,8 @@ character_event = {
 					trait=class_berserker
 					trait=class_bishop
 					trait=class_bishop_female
-					trait=class_druid
-					trait=class_druid_female
+					trait=class_sorceror
+					trait=class_sorceror_female
 					trait=class_falcon_knight
 					trait=class_general
 					trait=class_great_knight
@@ -74,8 +74,8 @@ character_event = {
 					trait=class_mage_knight
 					trait=class_mage_knight_female
 					trait=class_paladin
-					trait=class_ranger
-					trait=class_ranger_female
+					trait=class_bow_knight
+					trait=class_bow_knight_female
 					trait=class_rogue
 					trait=class_sage
 					trait=class_sage_female
@@ -85,11 +85,14 @@ character_event = {
 					trait=class_swordmaster
 					trait=class_swordmaster_female
 					trait=class_valkyrie
+					trait=class_war_cleric
+					trait=class_war_priest
 					trait=class_warrior
 					trait=class_wyvern_knight
 					trait=class_wyvern_lord
 					trait=class_manakete
 					trait=class_manakete_female
+					trait=class_tactician
 					#
 					trait = class_archsage
 					trait = class_archdruid
@@ -128,8 +131,8 @@ character_event = {
 					trait=class_pegasus_knight
 					trait=class_pirate
 					trait=class_priest
-					trait=class_shaman
-					trait=class_shaman_female
+					trait=class_dark_mage
+					trait=class_dark_mage_female
 					trait=class_thief
 					trait=class_thief_female
 					trait=class_troubador
@@ -158,8 +161,8 @@ character_event = {
 						trait=class_berserker
 						trait=class_bishop
 						trait=class_bishop_female
-						trait=class_druid
-						trait=class_druid_female
+						trait=class_sorceror
+						trait=class_sorceror_female
 						trait=class_falcon_knight
 						trait=class_general
 						trait=class_great_knight
@@ -168,8 +171,8 @@ character_event = {
 						trait=class_mage_knight
 						trait=class_mage_knight_female
 						trait=class_paladin
-						trait=class_ranger
-						trait=class_ranger_female
+						trait=class_bow_knight
+						trait=class_bow_knight_female
 						trait=class_rogue
 						trait=class_sage
 						trait=class_sage_female
@@ -179,11 +182,14 @@ character_event = {
 						trait=class_swordmaster
 						trait=class_swordmaster_female
 						trait=class_valkyrie
+						trait=class_war_cleric
+						trait=class_war_priest
 						trait=class_warrior
 						trait=class_wyvern_knight
 						trait=class_wyvern_lord
 						trait=class_manakete
 						trait=class_manakete_female
+						trait=class_tactician
 					}
 				}
 			} 		
@@ -223,7 +229,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EXCELLENT
+		name = quintessence.2.B
 		#{
 		#	text = quintessence.2.B
 		#	trigger = { NOT = { trait = lunatic } }
@@ -265,8 +271,8 @@ character_event = {
 						trait=class_pegasus_knight
 						trait=class_pirate
 						trait=class_priest
-						trait=class_shaman
-						trait=class_shaman_female
+						trait=class_dark_mage
+						trait=class_dark_mage_female
 						trait=class_thief
 						trait=class_thief_female
 						trait=class_troubador
@@ -280,8 +286,8 @@ character_event = {
 						trait=class_berserker
 						trait=class_bishop
 						trait=class_bishop_female
-						trait=class_druid
-						trait=class_druid_female
+						trait=class_sorceror
+						trait=class_sorceror_female
 						trait=class_falcon_knight
 						trait=class_general
 						trait=class_great_knight
@@ -290,8 +296,8 @@ character_event = {
 						trait=class_mage_knight
 						trait=class_mage_knight_female
 						trait=class_paladin
-						trait=class_ranger
-						trait=class_ranger_female
+						trait=class_bow_knight
+						trait=class_bow_knight_female
 						trait=class_rogue
 						trait=class_sage
 						trait=class_sage_female
@@ -301,11 +307,14 @@ character_event = {
 						trait=class_swordmaster
 						trait=class_swordmaster_female
 						trait=class_valkyrie
+						trait=class_war_cleric
+						trait=class_war_priest
 						trait=class_warrior
 						trait=class_wyvern_knight
 						trait=class_wyvern_lord
 						trait=class_manakete
 						trait=class_manakete_female
+						trait=class_tactician
 						#
 						trait = class_archsage
 						trait = class_archdruid
@@ -338,8 +347,8 @@ character_event = {
 						trait=class_pegasus_knight
 						trait=class_pirate
 						trait=class_priest
-						trait=class_shaman
-						trait=class_shaman_female
+						trait=class_dark_mage
+						trait=class_dark_mage_female
 						trait=class_thief
 						trait=class_thief_female
 						trait=class_troubador
@@ -361,8 +370,8 @@ character_event = {
 						trait=class_berserker
 						trait=class_bishop
 						trait=class_bishop_female
-						trait=class_druid
-						trait=class_druid_female
+						trait=class_sorceror
+						trait=class_sorceror_female
 						trait=class_falcon_knight
 						trait=class_general
 						trait=class_great_knight
@@ -371,8 +380,8 @@ character_event = {
 						trait=class_mage_knight
 						trait=class_mage_knight_female
 						trait=class_paladin
-						trait=class_ranger
-						trait=class_ranger_female
+						trait=class_bow_knight
+						trait=class_bow_knight_female
 						trait=class_rogue
 						trait=class_sage
 						trait=class_sage_female
@@ -382,11 +391,14 @@ character_event = {
 						trait=class_swordmaster
 						trait=class_swordmaster_female
 						trait=class_valkyrie
+						trait=class_war_cleric
+						trait=class_war_priest
 						trait=class_warrior
 						trait=class_wyvern_knight
 						trait=class_wyvern_lord
 						trait=class_manakete
 						trait=class_manakete_female
+						trait=class_tactician
 					}
 				}
 			}
@@ -414,8 +426,7 @@ character_event = {
 	desc = "quintessence.3.desc"
 	picture = "GFX_evt_cathedral_indian_group"
 	is_triggered_only = yes
-	
-	
+		
 	option = {
 		name = "quintessence.3.A"
 		ai_chance = {
@@ -563,6 +574,9 @@ narrative_event = {
 			months = 10
 		}	
 		add_trait = supreme_essence
+		custom_tooltip = {
+			name = quintessence.7.tooltip
+		}
 	}
 }
 
@@ -597,45 +611,515 @@ narrative_event = {
 	}
 }
 
-# Events for Nergal to provoke a war and get piety from fallen soldiers:
-
-# End of event to clear out flags, etc
+# Heal
 character_event = {
 	id = quintessence.10
-	hide_window = yes
+	desc = quintessence.10.desc
+	picture = GFX_evt_recovery
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		remove_opinion = {
-			who = event_target:target_drain_soldiers
-			modifier = opinion_drain_soldiers
-		}
-		
-		#clear_delayed_event = { id = WoL.2060 }
+	option = {
+		name = quintessence.10.A
+		heal_effect = yes
+		clr_character_flag = quintessence_heal
 	}
 }
 
-# "Drain Soldiers" Decision event START
+# Mend
 character_event = {
 	id = quintessence.11
 	desc = quintessence.11.desc
-	picture = GFX_evt_shadowy_cabal
-	
-	capable_only = yes
-	prisoner = no
+	picture = GFX_evt_recovery
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		FROM = {
-			save_event_target_as = target_drain_soldiers
+	option = {
+		name = quintessence.11.A
+		mend_effect = yes
+		clr_character_flag = quintessence_mend
+	}
+}
+
+# Quintessence Discovered
+narrative_event = {
+	id = quintessence.20
+	title = quintessence.20.title
+	desc = quintessence.20.desc
+	picture = "GFX_evt_ritual_scroll" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = quintessence.20.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				trait = dark_power_hungry
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+		}	
+		set_character_flag = quintessence_discovered
+		hidden_tooltip = {
+			character_event = { id = quintessence.21 days = 1095 random = 730 }
 		}
-		save_event_target_as = target_drainer_of_soldiers
 	}
 	
 	option = {
-		name = quintessence.11.A
-		#character_event = { id = WoL.2060 days = 20 random = 20 tooltip = EVTTOOLTIP_WoL_110 }
+		name = quintessence.20.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 10
+				trait = kind
+			}
+		}		
+		set_character_flag = quintessence_rejected
+	}
+}
+
+# Quintessence mastered
+character_event = {
+	id = quintessence.21
+	desc = quintessence.21.desc
+	picture = "GFX_evt_ritual_scroll" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+		set_character_flag = lore_quintessence
+		clr_character_flag = quintessence_discovered
+		
+		hidden_tooltip = {
+			character_event = { id = quintessence.22 days = 1825 random = 1095 }
+		}
+	}
+	
+}
+
+# Morphs Discovered
+character_event = {
+	id = quintessence.22
+	#title = quintessence.22.title
+	desc = quintessence.22.desc
+	picture = "GFX_evt_ritual_scroll" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = quintessence.22.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				trait = dark_power_hungry
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+		}	
+		set_character_flag = morphs_discovered
+		
+		hidden_tooltip = {
+			character_event = { id = quintessence.23 days = 1825 random = 730 }
+		}
+		
+		if = {
+			limit = {
+				any_character = {
+					has_character_flag = is_fe7_renault
+					NOT = { has_character_flag = morph_experiment_subject }
+					is_married = no
+					is_ruler = no
+					trait = lunatic
+				}
+			}
+				
+			random_character = {
+				limit = {
+					has_character_flag = is_fe7_renault
+				}
+				
+				religion=dark
+				add_trait="mystic"
+				health = 10
+				move_character = ROOT
+				set_character_flag = morph_experiment_subject 
+			}
+			break = yes
+		}
+		
+		create_character = { 
+			culture = ROOT
+			religion = ROOT
+			female = no
+			dynasty = none
+			age = 25
+			trait = tough_soldier
+			trait = class_mercenary
+			trait = base_class_mercenary
+			trait = lunatic
+			trait = depressed
+			trait = wroth
+		}
+		new_character = { 			
+			set_variable = { which = "level" value = 1 }
+			set_character_flag=class_selected
+		}
+		
+	}
+	
+	option = {
+		name = quintessence.22.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 10
+				trait = kind
+			}
+		}		
+		set_character_flag = morphs_rejected
+	}
+}
+
+# Morphs mastered
+narrative_event = {
+	id = quintessence.23
+	title = quintessence.23.title
+	desc = quintessence.23.desc
+	picture = "GFX_evt_nergal_ritual" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = quintessence.23.A
+		set_character_flag = lore_morphs
+		clr_character_flag = morphs_discovered
+		
+		
+		create_character = { 
+			culture = ROOT
+			religion = ROOT
+			female = no
+			dynasty = none
+			age = 25
+			trait = tough_soldier
+			trait = morph
+			attributes = {
+				martial = 5
+				diplomacy = 0
+				stewardship = 0
+				intrigue = 0
+				learning = 0
+			}
+		}
+		new_character = { 			
+			set_variable = { which = "level" value = 1 }
+			set_character_flag=class_selected
+		}
+		
+		random_courtier = {
+			limit = {
+				has_character_flag = morph_experiment_subject
+			}
+			add_rival = ROOT
+			
+			hidden_tooltip = {
+				remove_trait = lunatic
+				remove_trait = base_class_mercenary
+				add_trait = base_class_monk
+				
+				if = {
+					limit = {
+						trait = class_mercenary
+					}
+					remove_trait = class_mercenary
+					add_trait = class_monk
+				}
+				if = {
+					limit = {
+						trait = class_hero
+					}
+					remove_trait = class_hero
+					add_trait = class_bishop
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							region = world_elibe
+						}
+					}
+				}
+				
+				religion = elimine_church
+				k_elimine = {
+					holder_scope = {
+						reverse_banish = PREVPREV
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# Create the Magic Seal?
+character_event = {
+	id = quintessence.24
+	desc = quintessence.24.desc
+	picture = "GFX_evt_monk" 
+
+	is_triggered_only = yes
+
+	#only_rulers = yes
+	religion_group = magic_group
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		is_ruler = yes
+		has_character_flag = lore_morphs 
+		NOT = { has_character_flag = magic_seal_created }
+		NOT = { has_character_flag = magic_seal_rejected }
+		NOR = {
+			trait = incapable
+			trait = dark_incapable
+		}
+	}
+	
+	option = {
+		name = quintessence.24.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+		}	
+		set_character_flag = magic_seal_created
+		hidden_tooltip = {
+			character_event = { id = quintessence.25 days = 365 random = 60 }
+		}
+	}
+	
+	option = {
+		name = quintessence.24.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				trait = dark_power_hungry
+			}
+			modifier = {
+				factor = 5
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 10
+				trait = content
+			}
+		}		
+		set_character_flag = magic_seal_rejected
+	}
+}
+
+# Birth of the magic seal
+character_event = {
+	id = quintessence.25
+	desc = quintessence.25.desc
+	picture = "GFX_evt_nergal_ritual" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = quintessence.25.A
+		
+		create_character = { 
+			culture = ROOT
+			religion = ROOT
+			female = no
+			dynasty = none
+			age = 16
+			trait = mastermind_theologian
+			trait = class_magic_seal
+			trait = morph
+		}
+		new_character = { 			
+			set_variable = { which = "level" value = 1 }
+			set_character_flag=class_selected
+		}
+	}
+}
+
+# Magic Seal banished
+character_event = {
+	id = quintessence.26
+	desc = quintessence.26.desc
+	picture = "GFX_evt_lunatic" 
+
+	is_triggered_only = yes
+	
+	religion_group = magic_group
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		is_ruler = yes
+		trait = dark_power_hungry
+		has_character_flag = lore_morphs 
+		has_character_flag = magic_seal_created 
+		any_courtier = {
+			trait = class_magic_seal
+		}
+		NOR = {
+			trait = incapable
+			trait = dark_incapable
+		}
+	}
+	
+	option = {
+		name = quintessence.26.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				trait = dark_power_hungry
+			}
+			modifier = {
+				factor = 10
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+		}	
+		
+		random_courtier = {
+			limit = {
+				trait = class_magic_seal
+			}
+			add_trait = depressed
+			opinion = {
+				modifier = opinion_expelled_from_realm
+				who = ROOT
+				years = 100
+			}
+			reverse_opinion = {
+				modifier = opinion_very_disappointed
+				who = ROOT
+				years = 1000
+			}
+			random_independent_ruler = {
+				limit = {
+					is_within_diplo_range = ROOT
+				}
+				reverse_banish = PREV
+			}
+		}
+	}
+	option = {
+		name = quintessence.26.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 10
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+		}		
+		
+		random_courtier = {
+			limit = {
+				trait = class_magic_seal
+			}
+			add_trait = depressed
+			opinion = {
+				modifier = not_feeling_apreciated
+				who = ROOT
+				years = 100
+			}
+			reverse_opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 1000
+			}
+		}
 	}
 }

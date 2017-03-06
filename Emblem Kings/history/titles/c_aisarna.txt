@@ -4,9 +4,9 @@
 	law = enatic_succession
 	law = succ_primogeniture
 }
-180.1.1={
-	liege=d_carrhae
-}
+#180.1.1={
+#	liege=d_carrhae
+#}
 
 180.1.1={
 	liege=d_ilia_pegasus_knights_1

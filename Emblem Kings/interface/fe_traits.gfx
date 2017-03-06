@@ -189,15 +189,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_class_druid"
-		texturefile = "gfx/traits/class_druid.tga"
+		name = "GFX_trait_class_sorceror"
+		texturefile = "gfx/traits/class_sorceror.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_class_druid_female"
-		texturefile = "gfx/traits/class_druid_female.tga"
+		name = "GFX_trait_class_sorceror_female"
+		texturefile = "gfx/traits/class_sorceror_female.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -378,15 +378,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_class_ranger"
-		texturefile = "gfx/traits/class_ranger.tga"
+		name = "GFX_trait_class_bow_knight"
+		texturefile = "gfx/traits/class_bow_knight.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_class_ranger_female"
-		texturefile = "gfx/traits/class_ranger_female.tga"
+		name = "GFX_trait_class_bow_knight_female"
+		texturefile = "gfx/traits/class_bow_knight_female.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -413,15 +413,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_class_shaman"
-		texturefile = "gfx/traits/class_shaman.tga"
+		name = "GFX_trait_class_dark_mage"
+		texturefile = "gfx/traits/class_dark_mage.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_class_shaman_female"
-		texturefile = "gfx/traits/class_shaman_female.tga"
+		name = "GFX_trait_class_dark_mage_female"
+		texturefile = "gfx/traits/class_dark_mage_female.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -499,6 +499,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_class_valkyrie"
 		texturefile = "gfx/traits/class_valkyrie.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_class_war_cleric"
+		texturefile = "gfx/traits/class_war_cleric.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_class_war_priest"
+		texturefile = "gfx/traits/class_war_priest.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

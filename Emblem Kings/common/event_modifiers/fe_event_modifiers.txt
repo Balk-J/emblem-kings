@@ -146,3 +146,6 @@ dragons_gate_elibe_harvest = {
 	icon = 52
 	monthly_character_piety = 1000
 }
+immortal_from_quintessence = {
+	icon = 41
+}

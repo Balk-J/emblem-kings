@@ -17,7 +17,7 @@
 		add_trait="regalia_durandal"
 		effect = {
 			ROOT = {
-		set_character_flag="class_mercenary"
+		add_trait="base_class_mercenary"
 		add_character_modifier = { name = "owns_regalia" duration = -1 } 
 		set_character_flag="regalia_hide"
 		set_global_flag="regalia_durandal_held"
@@ -50,10 +50,10 @@
 	
 	1142.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 	
 	
@@ -107,10 +107,10 @@
 	
 	1155.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	
@@ -171,10 +171,10 @@
 	}	
 	1177.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1180.01.01={
@@ -197,6 +197,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1125.01.01={
 		birth=yes
@@ -207,10 +208,10 @@
 	
 	1137.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 	
 	1140.01.01 = {
@@ -229,49 +230,29 @@
 	
 	#Imprisoned by Nergal
 	1160.01.01 = {
-		effect = {
-			e_nergal = {
-				holder_scope = {
-					ROOT = { 
-						imprison = PREV 
-					}
-					opinion = {
-						modifier = opinion_annoyed
-						who = ROOT
-						years = 20
-					} 
-					opinion = {
-						modifier = opinion_annoyed
-						who = ROOT
-						years = 20
-					} 
-					opinion = {
-						modifier = opinion_annoyed
-						who = ROOT
-						years = 20
-					} 
-					opinion = {
-						modifier = opinion_annoyed
-						who = ROOT
-						years = 20
-					} 
-					opinion = {
-						modifier = opinion_annoyed
-						who = ROOT
-						years = 20
-					} 
-				}
-			}
-		}
-		#employer = 308 # So AI Nergal won't try to ransom him back?
+		add_trait = went_missing
+#		effect = {
+#			e_nergal = {
+#				holder_scope = {
+#					ROOT = { 
+#						imprison = PREV 
+#					}
+#					opinion = {
+#						modifier = opinion_annoyed
+#						who = ROOT
+#						years = 20
+#					} 
+#				}
+#			}
+#		}
 	} 	
-	1160.02.01 = { 
+	1161.01.01 = { 
 		death = {
-			death_reason=death_battle
-			killer=308 #Nergal
+			death_reason=death_missing
+			#death_reason=death_battle
+			#killer=308 #Nergal
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 106 = {
@@ -280,20 +261,20 @@
 	
 	religion=elimine_church
 	culture=lycian
+	trait="fair"	
 	
 	1127.01.01={
 		birth=yes
 	}	
 	1139.01.01={		
 		add_trait="class_cleric"
+			add_trait="base_class_cleric"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_priest"
 		}
 	} 	
-	1142.01.01 = { 
-		add_trait="fair"		
+	1142.01.01 = { 	
 		add_trait="kind"	
 		add_trait="patient"
 		add_trait="underhanded_rogue"	
@@ -325,10 +306,10 @@
 	} 	
 	1155.01.01={	
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 		
@@ -378,10 +359,10 @@
 	}	
 	1177.01.01={	
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1180.01.01 = {  
@@ -498,10 +479,10 @@
 	} 	
 	1156.01.01={
 		add_trait="class_myrmidon_female"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 			add_friend=311 # Florina
 		}
 	} 
@@ -608,6 +589,8 @@
 				}
 			}	
 			add_friend=109 # Hausen
+			add_friend=133 # Kent
+			add_friend=134 # Sain
 		}
 		employer = 109 # Hausen
 	}
@@ -636,10 +619,10 @@
 	
 	1121.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 
@@ -678,10 +661,10 @@
 	} 		
 	1122.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1129.1.1 = {
@@ -752,7 +735,7 @@
 	1180.02.01 = { 
 		death = {
 			death_reason=death_murder
-			killer=164 #Wagner, the shaman 
+			killer=164 #Wagner, the dark_mage 
 		}
 	}
 }
@@ -789,18 +772,21 @@
 	
 	1126.01.01={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe7_darin"
+		}
 	} 	
 
 	1138.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1141.01.01 = { 
-		add_trait="proud"
+		add_trait="proud" # I am Darin, Marquess Laus! Ruler of this world!
 		add_trait="lustful"
 		add_trait="patient"
 		add_trait="deceitful"
@@ -836,10 +822,10 @@
 	} 		
 	1155.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1158.01.01 = { 
@@ -931,10 +917,10 @@
 	
 	1153.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1156.01.01={
@@ -947,6 +933,8 @@
 		employer = 109 # works for Caelin as of Eliwood's story
 		add_trait="cynical"
 		add_trait="adventurer"
+		dynasty = 199
+		
 		effect = {
 			add_pressed_claim="d_cornwell"
 			add_pressed_claim="c_cornwell"
@@ -954,6 +942,10 @@
 			add_pressed_claim="c_telmessus"
 			add_pressed_claim="c_trebenna"
 			set_name = "Raven"
+			father_even_if_dead = {				
+				ROOT = { set_real_father = PREV }
+			}
+			set_father = none
 		}
 	}	
 	1188.01.01={
@@ -979,10 +971,10 @@
 	}	
 	1156.01.01={
 		add_trait="class_troubador"
+			add_trait="base_class_troubador"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_monk"
 		}
 	} 
 	1158.01.01 = {
@@ -1030,10 +1022,10 @@
 	} 	
 	1132.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 	
 	1135.1.1 = {
@@ -1063,16 +1055,17 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1138.01.01={
 		birth=yes
 	} 			
 	1150.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1153.1.1 = {
@@ -1096,7 +1089,6 @@
 			#death_reason=death_trait
 		#}
 	#}
-	disallow_random_traits="yes" 
 }
 
 125 = {
@@ -1106,6 +1098,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	father=191
 	1138.01.01={
@@ -1113,10 +1106,10 @@
 	} 		
 	1150.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	
@@ -1139,7 +1132,6 @@
 	1188.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 126 = {
@@ -1147,16 +1139,17 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1129.01.01={
 		birth=yes
 	} 			
 	1141.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1144.1.1= {
@@ -1172,7 +1165,6 @@
 		employer=102 #goes to work for Ostia after the Cornwell thing
 	}
 	
-	disallow_random_traits="yes" 
 	1181.1.1= {
 		death = {
 			death_reason=death_battle
@@ -1186,6 +1178,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1139.01.01={
 		birth=yes
@@ -1198,10 +1191,10 @@
 	}
 	1151.01.01={	
 		add_trait="class_thief"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1154.01.01= {
@@ -1219,7 +1212,6 @@
 			killer=403 #Zephiel?
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 128 = {
@@ -1228,6 +1220,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1137.01.01={
 		birth=yes
@@ -1237,10 +1230,10 @@
 	}		
 	1149.01.01={
 		add_trait="class_thief_female"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1152.01.01= {
@@ -1257,7 +1250,6 @@
 			killer=611 #Jaffar
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 129 = {
@@ -1275,10 +1267,10 @@
 	}	
 	1154.01.01={	
 		add_trait="class_thief"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1157.01.01 = { 
@@ -1324,6 +1316,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1149.01.01={
 		birth=yes
@@ -1333,10 +1326,10 @@
 	}	
 	1161.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1164.01.01 = {
@@ -1349,7 +1342,6 @@
 	1193.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 131 = {
@@ -1357,6 +1349,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1126.01.01={
 		birth=yes
@@ -1378,7 +1371,6 @@
 	1205.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 132 = {
@@ -1386,6 +1378,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1144.01.01={
 		birth=yes
@@ -1395,10 +1388,10 @@
 	}	
 	1156.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1159.01.01 = { 
@@ -1412,7 +1405,6 @@
 	1196.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 133 = {
@@ -1420,6 +1412,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1138.01.01={
 		birth=yes
@@ -1432,10 +1425,10 @@
 	}
 	1150.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1153.01.01 = { 
@@ -1451,7 +1444,6 @@
 	1192.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 134 = {
@@ -1459,6 +1451,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1136.01.01={
 		birth=yes
@@ -1471,10 +1464,10 @@
 	}	
 	1148.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1150.01.01 = { 
@@ -1489,7 +1482,6 @@
 	1191.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 135 = {
@@ -1497,6 +1489,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1159.01.01={
 		birth=yes
@@ -1507,10 +1500,10 @@
 	
 	1171.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1174.01.01 = { 
@@ -1525,7 +1518,6 @@
 	1209.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 136 = {
@@ -1533,6 +1525,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1158.01.01={
 		birth=yes
@@ -1543,10 +1536,10 @@
 	
 	1170.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	
@@ -1571,7 +1564,6 @@
 	1209.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 137 = {
@@ -1581,6 +1573,7 @@
 	culture=lycian
 	
 	mother=142 #Rebecca
+	disallow_random_traits="yes" 
 	1165.01.01={
 		birth=yes
 	} 	
@@ -1589,10 +1582,10 @@
 	}
 	1177.01.01={
 		add_trait="class_archer"
+			add_trait="base_class_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_archer"
 		}
 	} 
 	1180.01.01 = { 	
@@ -1604,7 +1597,6 @@
 	1212.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 138 = {
@@ -1614,16 +1606,17 @@
 	culture=lycian
 	
 	father=140
+	disallow_random_traits="yes" 
 	1157.01.01={
 		birth=yes
 	} 	
 	1157.01.01 = { employer=102 }	#Uther
 	1169.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1172.01.01 = { 	
@@ -1637,7 +1630,6 @@
 	1207.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 139 = {
@@ -1648,6 +1640,7 @@
 	culture=lycian
 	
 	father=140
+	disallow_random_traits="yes" 
 	1163.01.01={
 		birth=yes
 	} 		
@@ -1656,10 +1649,10 @@
 	}	
 	1175.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1178.01.01 = { 	
@@ -1672,7 +1665,6 @@
 	1221.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 140 = {
@@ -1689,10 +1681,10 @@
 	}	
 	1149.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1187.01.01={
@@ -1705,6 +1697,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1142.01.01={
 		birth=yes
@@ -1717,10 +1710,10 @@
 	}
 	1154.01.01={
 		add_trait="class_archer"
+			add_trait="base_class_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_archer"
 		}
 	} 
 	1155.1.1 = {
@@ -1733,10 +1726,12 @@
 		add_trait="brave"
 		employer=105 #Elbert 
 	}
+	1160.1.1 = {	
+		employer=109 #Hausen 
+	}
 	1198.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 142 = {
@@ -1745,6 +1740,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	father=144
 	1145.01.01={
@@ -1755,10 +1751,10 @@
 	}
 	1157.01.01={
 		add_trait="class_archer"
+			add_trait="base_class_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_archer"
 		}
 	} 
 	1159.1.1 = {	
@@ -1775,7 +1771,6 @@
 	1221.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 143 = {
@@ -1786,6 +1781,7 @@
 	
 	father=144
 	trait="strong"
+	disallow_random_traits="yes" 
 	1142.01.01={
 		birth=yes
 	} 		
@@ -1794,10 +1790,10 @@
 	}
 	1154.01.01={
 		add_trait="class_pirate"
+			add_trait="base_class_pirate"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_pirate"
 		}
 	} 
 	1155.1.1 = {
@@ -1808,7 +1804,7 @@
 			}
 			set_father = 0
 		}
-		culture=seafarer
+		#culture=seafarer
 		add_trait="adventurer"
 		employer = 801 #Fargus
 	}	
@@ -1821,7 +1817,6 @@
 	1221.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 144 = {
@@ -1855,10 +1850,10 @@
 	}
 	1133.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1141.1.1 = {
@@ -1887,10 +1882,10 @@
 	}	
 	1132.01.01={
 		add_trait="class_mage"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1137.01.01 = {
@@ -1919,6 +1914,7 @@
 	father=146
 	mother=145
 	trait="genius"
+	disallow_random_traits="yes" 
 	1146.01.01={
 		birth=yes
 	} 		
@@ -1933,10 +1929,10 @@
 	
 	1158.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 
 
 			random_character = {
@@ -2052,7 +2048,6 @@
 			#killer= #bounty hunters?
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 #148 = {
@@ -2111,15 +2106,16 @@
 	
 	mother=147
 	trait="twin"
+	disallow_random_traits="yes" 
 	1167.01.01={
 		birth=yes
 	} 		
 	1179.01.01={
 		add_trait="class_mage"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1180.01.01 = {
@@ -2136,7 +2132,6 @@
 	1227.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 151 = {
@@ -2148,15 +2143,16 @@
 	
 	mother=147
 	trait="twin"
+	disallow_random_traits="yes" 
 	1167.01.01={
 		birth=yes
 	} 		
 	1179.01.01={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1180.01.01 = {
@@ -2172,7 +2168,6 @@
 	1227.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 152 = {
@@ -2205,15 +2200,15 @@
 	} 		
 	1152.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1163.1.1= {
 		death = {
-			death_reason=death_accident
+			death_reason=death_accident # Collateral damage from the continuity errors
 		}
 	}
 }
@@ -2223,6 +2218,7 @@
 	#Might actually be from Sacae?
 	religion=elimine_church
 	culture=sacaean
+	disallow_random_traits="yes" 
 	
 	1165.01.01={
 		birth=yes
@@ -2230,10 +2226,10 @@
 	} 		
 	1177.01.01={
 		add_trait="class_thief"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1180.01.01 = {
@@ -2249,7 +2245,6 @@
 	1216.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 155 = {
@@ -2258,16 +2253,17 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1165.01.01={
 		birth=yes
 	} 			
 	1177.01.01={
 		add_trait="class_thief_female"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1180.01.01 = {
@@ -2286,7 +2282,6 @@
 	1216.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 156 = {
@@ -2306,13 +2301,14 @@
 	trait="strong"
 	1105.01.01={
 		birth=yes
+		set_character_flag="is_fe7_renault"
 	} 		
 	1117.01.01={
 		add_trait="class_mercenary"
+		add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1120.01.01 = {
@@ -2357,6 +2353,7 @@
 		add_trait="mystic"
 		#add_trait="immortal"
 		health = 10
+		set_character_flag="morph_experiment_subject"
 	}	
 	
 	# Arbitrary date when the "empty vessel" morph of his friend is created. 
@@ -2369,8 +2366,8 @@
 		remove_trait="class_hero"
 		add_trait="class_bishop"
 		effect = {
-			clr_character_flag="class_mercenary"
-			set_character_flag="class_monk"
+			remove_trait="base_class_mercenary"
+			add_trait="base_class_monk"
 		}
 		remove_trait="lunatic"
 		employer=262; #filler character, head of the Elimine Church
@@ -2425,6 +2422,7 @@
 	
 	trait="weak"
 	trait="slow" # seriously, how do you try to get to Caelin and wind up in Ilia?
+	disallow_random_traits="yes" 
 	1115.01.01={
 		birth=yes
 		effect = {
@@ -2443,10 +2441,10 @@
 	#}		
 	1127.01.01 = {
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 		effect = {
 			random_character = {
@@ -2502,10 +2500,15 @@
 		#employer=0
 	}
 	
+	1115.01.01 = {
+		employer=112 #Lundgren
+	}		
+	
 	#TODO: Lyn-specific events here?
 	1160.01.01 = {
 		remove_trait="class_knight"
 		add_trait="class_general"
+		employer=111 #Lyn
 	}	
 	
 	1161.01.01 = {
@@ -2515,7 +2518,6 @@
 	1200.01.01={
 		death=yes
 	} 	 
-	disallow_random_traits="yes" 
 }
 
 159 = {
@@ -2524,6 +2526,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1118.01.01={
 		birth=yes
@@ -2533,10 +2536,10 @@
 	}		
 	1130.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 	
 	1133.01.01 = {
@@ -2560,7 +2563,6 @@
 			killer=111 #Lyn 
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 160 = {
@@ -2577,10 +2579,10 @@
 	}	
 	1141.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 		
 	1144.01.01 = {
@@ -2611,10 +2613,10 @@
 	}			
 	1144.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 		
 	1147.01.01 = {
@@ -2644,10 +2646,10 @@
 	} 	
 	1131.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 			
 	1134.01.01 = {
@@ -2682,15 +2684,16 @@
 	religion=elimine_church
 	culture=lycian
 	
+	disallow_random_traits="yes" 
 	1109.01.01={
 		birth=yes
 	} 		
 	1121.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 	
 	
@@ -2734,25 +2737,25 @@
 			killer=107 #Eliwood 
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 164 = {
-	name="Wagner" #shaman, treacherous retainer of Orun  
+	name="Wagner" # Shaman, treacherous retainer of Orun  
 	dynasty=123
 	religion=dark
 	culture=lycian
 	
+	disallow_random_traits="yes" 
 	1130.01.01={
 		birth=yes
 	} 				
 	
 	1142.01.01={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1145.01.01 = {
@@ -2767,7 +2770,7 @@
 	}	
 	
 	1146.01.01 = { 
-		give_job_title = job_spymaster 
+		give_job_title = job_spymaster # He needs opportunity!
 	}
 	
 	1181.1.1= {
@@ -2776,7 +2779,6 @@
 			killer=108 #Roy
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 165 = {
@@ -2791,10 +2793,10 @@
 	
 	1154.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1157.01.01 = {
@@ -2824,10 +2826,10 @@
 	} 	
 	1137.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 		
 	
@@ -2857,10 +2859,10 @@
 	} 		
 	1167.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	
@@ -2893,10 +2895,10 @@
 	}			
 	1140.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1143.01.01 = {
@@ -2925,10 +2927,10 @@
 	
 	1156.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	
@@ -2953,6 +2955,7 @@
 	dynasty=120
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1151.01.01={
 		birth=yes
@@ -2962,10 +2965,10 @@
 	#}
 	1163.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1166.01.01 = { 
@@ -2989,7 +2992,6 @@
 			killer=108 #Roy
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 171 = {
@@ -2997,6 +2999,7 @@
 	dynasty=121
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1137.01.01={
 		birth=yes
@@ -3006,10 +3009,10 @@
 	#}
 	1149.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1152.01.01 = { 
@@ -3041,7 +3044,6 @@
 			killer=108 #Roy
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 173 = {
@@ -3055,10 +3057,10 @@
 	} 		
 	1142.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1145.01.01={
@@ -3091,10 +3093,10 @@
 	} 	
 	1163.01.01={
 		add_trait="class_monk"
+			add_trait="base_class_monk"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_monk"
 		}
 	} 	
 	1166.02.01 = { 
@@ -3139,9 +3141,7 @@
 		birth=yes
 	} 		
 	1132.01.01={
-		effect = {
-			set_character_flag="class_monk"
-		}
+		add_trait="base_class_monk"
 	} 	
 	1170.01.01={
 		death=yes
@@ -3159,9 +3159,7 @@
 		birth=yes
 	} 		
 	1152.01.01={
-		effect = {
-			set_character_flag="class_priest"
-		}
+		add_trait="base_class_priest"
 	} 	
 	1164.01.01 = {
 		add_spouse=175 
@@ -3189,10 +3187,10 @@
 	} 		
 	1176.01.01={
 		add_trait="class_cleric"
+			add_trait="base_class_cleric"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_priest"
 		}
 	} 
 	1179.01.01 = { 
@@ -3220,10 +3218,10 @@
 	} 	
 	1177.01.01={
 		add_trait="class_pegasus_knight"
+			add_trait="base_class_pegasus_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_pegasus_knight"
 		}
 	} 	
 	
@@ -3250,10 +3248,10 @@
 	} 	
 	1159.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1197.01.01={
@@ -3311,10 +3309,10 @@
 	} 		
 	1177.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1180.01.01 = { 
@@ -3394,10 +3392,10 @@
 	
 	1175.01.01={
 		add_trait="class_soldier"
+			add_trait="base_class_soldier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_soldier"
 		}
 	} 	
 	
@@ -3448,10 +3446,10 @@
 	}	
 	1173.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 	
 	
@@ -3491,10 +3489,10 @@
 	
 	1152.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 	
 	
@@ -3532,10 +3530,10 @@
 	}	
 	1174.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 		
 	
@@ -3567,10 +3565,10 @@
 	} 		
 	1171.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	
@@ -3675,10 +3673,10 @@
 	}
 	1130.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	}  		
 	1198.01.01={
@@ -3905,10 +3903,10 @@
 	1109.01.01 = { birth=yes }
 	1121.01.01={
 		add_trait="class_pirate"
+		add_trait="base_class_pirate"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_pirate"
 		}
 	} 
 	
@@ -3936,10 +3934,10 @@
 	
 	1159.01.01={
 		add_trait="class_mage"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	

@@ -63,10 +63,10 @@
 	}
 	1134.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1144.1.1 = {
@@ -105,10 +105,10 @@
 	
 	1158.01.01={
 		add_trait="class_knight"
+		add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 			
 			k_bern = {
 				holder_scope = { 
@@ -212,10 +212,10 @@
 	}
 	1166.01.01={
 		add_trait="class_mage_female"
+		add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1169.1.1 = {
@@ -250,10 +250,10 @@
 	}
 	1152.01.01={
 		add_trait="class_knight"
+		add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1155.1.1 = {
@@ -313,16 +313,42 @@
 	}
 	1152.01.01={
 		add_trait="class_mage_female"
+		add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
+		}
+	} 	
+	1159.01.01={
+		effect = {			
+			k_bern = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 100
+					} 
+				}
+			}	
 		}
 	} 
 	1160.1.1 = {
 		remove_trait="class_mage_female"
 		add_trait="class_sage_female"
 	}
+	1165.01.01={
+		effect = {			
+			k_bern = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 100
+					} 
+				}
+			}	
+		}
+	} 
 	1180.1.1 = {
 		add_trait="flat_terrain_leader"
 		effect = {
@@ -347,10 +373,10 @@
 	}	 
 	1165.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1168.1.1 = {
@@ -395,10 +421,10 @@
 	}
 	1132.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1135.1.1 = {
@@ -434,10 +460,10 @@
 	}
 	1147.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1150.01.01={
@@ -468,10 +494,10 @@
 	}
 	1167.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1170.1.1 = {
@@ -504,10 +530,10 @@
 	}
 	1165.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1168.1.1 = {
@@ -534,10 +560,10 @@
 	}
 	1174.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1177.1.1 = {
@@ -562,10 +588,10 @@
 	}	
 	1175.01.01={
 		add_trait="class_cleric"
+			add_trait="base_class_priest"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_priest"
 		}
 	}
 	1178.01.01={
@@ -590,10 +616,10 @@
 	}	
 	1152.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1155.01.01={
@@ -623,10 +649,10 @@
 	}	
 	1147.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	}  
 	1150.1.1 = {
@@ -658,10 +684,10 @@
 	}
 	1152.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1155.01.01={
@@ -689,10 +715,10 @@
 	}
 	1122.01.01={
 		add_trait="class_mage"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1125.01.01={
@@ -723,10 +749,10 @@
 	}
 	1162.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_class_cavalier"
 		}
 	} 
 	1165.01.01={
@@ -756,10 +782,10 @@
 	}
 	1163.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1166.01.01={
@@ -783,7 +809,7 @@
 }
 
 419={
-	name="Peres" #druid
+	name="Peres" #sorceror
 	dynasty=414
 	culture=bernese
 	religion=elimine_church
@@ -791,19 +817,19 @@
 		birth=yes
 	}
 	1137.01.01={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1140.01.01={
 		add_trait="mastermind_theologian"
 	} 
 	1145.1.1 = {
-		remove_trait="class_shaman"
-		add_trait="class_druid"
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
 		add_trait="mystic"
 	}
 	1181.1.1= {
@@ -824,10 +850,10 @@
 	}
 	1133.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_class_cavalier"
 		}
 	} 
 	1136.01.01={
@@ -891,10 +917,10 @@
 	}
 	1136.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1146.1.1 = {
@@ -941,10 +967,10 @@
 	}	
 	1149.01.01={
 		add_trait="class_monk"
+			add_trait="base_class_monk"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_monk"
 		}
 	} 
 	1152.01.01={
@@ -978,10 +1004,10 @@
 	}
 	1160.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1163.01.01={
@@ -1025,10 +1051,10 @@
 		
 	1119.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1122.01.01={
@@ -1078,10 +1104,10 @@
 	}
 	1128.01.01={
 		add_trait="class_thief_female"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 	
 	1131.1.1={
@@ -1119,10 +1145,10 @@
 		
 	1145.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1148.01.01={
@@ -1176,10 +1202,10 @@
 	}
 	1146.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1149.01.01={
@@ -1227,10 +1253,10 @@
 	}
 	1144.01.01={
 		add_trait="class_thief"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1147.01.01={
@@ -1262,10 +1288,10 @@
 	}	
 	1128.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1131.01.01={
@@ -1303,10 +1329,10 @@
 	}
 	1142.01.01={
 		add_trait="class_thief"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1145.01.01={
@@ -1351,10 +1377,10 @@
 	}
 	1142.01.01={
 		add_trait="class_monk"
+			add_trait="base_class_monk"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_monk"
 		}
 	} 
 	1145.01.01={
@@ -1406,10 +1432,10 @@
 	}	
 	1152.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1155.01.01={
@@ -1447,10 +1473,10 @@
 	}	
 	1128.01.01={
 		add_trait="class_mage"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1131.01.01={
@@ -1479,7 +1505,7 @@
 }
 
 435={
-	name="Teodor"#druid
+	name="Teodor"#sorceror
 	culture=bernese
 	religion=dark
 	disallow_random_traits="yes" 
@@ -1493,11 +1519,11 @@
 		}
 	}		
 	1148.01.01={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1150.1.1 = {
@@ -1512,8 +1538,8 @@
 		add_trait="deceitful"
 	} 
 	1156.1.1 = {
-		remove_trait="class_shaman"
-		add_trait="class_druid"
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
 	}			
 	1159.1.1 = {
 		give_nickname=nick_the_shadow_hawk
@@ -1527,7 +1553,7 @@
 }
 
 436={
-	name="Heintz"#shaman
+	name="Heintz"#dark_mage
 	culture=bernese
 	religion=dark
 	disallow_random_traits="yes" 
@@ -1537,11 +1563,11 @@
 	}	
 	1113.01.01={
 		employer=489
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1116.01.01={
@@ -1563,7 +1589,7 @@
 }
 
 437={
-	name="Zoldam"#shaman with boats
+	name="Zoldam" # shaman with boats
 	culture=bernese
 	religion=dark
 	disallow_random_traits="yes" 
@@ -1573,11 +1599,11 @@
 	}
 	1111.01.01={
 		employer=489
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1114.01.01={
@@ -1611,10 +1637,10 @@
 	}	
 	1134.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1137.01.01={
@@ -1647,10 +1673,10 @@
 	}
 	1146.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1149.01.01={
@@ -1681,10 +1707,10 @@
 	}	
 	1145.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1148.01.01={
@@ -1722,10 +1748,10 @@
 	}
 	1127.01.01={
 		add_trait="class_knight"
+			add_trait="base_class_knight"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_knight"
 		}
 	} 
 	1130.01.01={
@@ -1760,10 +1786,10 @@
 	}	
 	1152.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1155.01.01={
@@ -1798,10 +1824,10 @@
 	}	
 	1151.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1154.01.01={
@@ -1833,10 +1859,10 @@
 	}
 	1142.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1145.01.01={
@@ -1873,10 +1899,10 @@
 	}	
 	1150.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1153.01.01={
@@ -1902,10 +1928,10 @@
 	}
 	1144.01.01={
 		add_trait="class_thief_female"
+			add_trait="base_class_thief"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_thief"
 		}
 	} 
 	1147.01.01={
@@ -1983,10 +2009,10 @@
 	
 	1142.01.01={
 		add_trait="class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_cavalier"
 		}
 	} 
 	1145.01.01={
@@ -2019,10 +2045,10 @@
 	}	
 	1172.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1175.01.01={
@@ -2065,10 +2091,10 @@
 	
 	1176.01.01={
 		add_trait="class_mage_female"
+			add_trait="base_class_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mage"
 		}
 	} 
 	1179.01.01={
@@ -2097,10 +2123,10 @@
 	}
 	1142.01.01={
 		add_trait="class_wyvern_rider"
+			add_trait="base_class_wyvern_rider"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_wyvern_rider"
 		}
 	} 
 	1159.1.1={
@@ -2712,11 +2738,11 @@
 	}
 	
 	1161.1.1={
-		add_trait="class_shaman_female"
+		add_trait="class_dark_mage_female"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	

@@ -73,11 +73,11 @@ class_dancer;Dancer;;;;;;;;;;;;;x
 class_dancer_desc;Dancers whose grace soothes allies. They do not fight in combat.;;;;;;;;;;;;;x
 class_dark_druid;Dark Druid;;;;;;;;;;;;;x
 class_dark_druid_desc;A druid whose soul has been sacrificed to darkness in an appeal for power.;;;;;;;;;;;;;x
-class_druid;Druid;;;;;;;;;;;;;x
-class_druid_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
+class_sorceror;Druid;;;;;;;;;;;;;x
+class_sorceror_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
 #class_druid_desc;A title granted to powerful shamans. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
-class_druid_female;Druid;;;;;;;;;;;;;x
-class_druid_female_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
+class_sorceror_female;Druid;;;;;;;;;;;;;x
+class_sorceror_female_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
 #class_druid_female_desc;A title granted to powerful shamans. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
 class_falcon_knight;Falcon Knight;;;;;;;;;;;;;x
 class_falcon_knight_desc;A title bestowed upon skilled pegasus knights. They have superb speed and magic resistance.;;;;;;;;;;;;;x
@@ -133,13 +133,13 @@ class_pirate;Pirate;;;;;;;;;;;;;x
 class_pirate_desc;Axe-wielding privateers trained to fight on the high seas.;;;;;;;;;;;;;x
 class_priest;Priest;;;;;;;;;;;;;x
 class_priest_desc;Members of the clergy who wield sacred staves to aid allies. They carry no weapons.;;;;;;;;;;;;;x
-class_ranger;Nomad Trooper;;;;;;;;;;;;;x
+class_bow_knight;Nomad Trooper;;;;;;;;;;;;;x
 #class_ranger;Ranger;;;;;;;;;;;;;x
-class_ranger_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
+class_bow_knight_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
 #class_ranger_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
-class_ranger_female;Nomad Trooper;;;;;;;;;;;;;x
+class_bow_knight_female;Nomad Trooper;;;;;;;;;;;;;x
 #class_ranger_female;Ranger;;;;;;;;;;;;;x
-class_ranger_female_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
+class_bow_knight_female_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
 #class_ranger_female_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
 class_rogue;Rogue;;;;;;;;;;;;;x
 class_rogue_desc;Adventurer-thieves with skills so great they can open chests and doors without tools.;;;;;;;;;;;;;x
@@ -147,10 +147,10 @@ class_sage;Sage;;;;;;;;;;;;;x
 class_sage_desc;A title given to advanced mages. They wield magic and can carry staves.;;;;;;;;;;;;;x
 class_sage_female;Sage;;;;;;;;;;;;;x
 class_sage_female_desc;A title given to advanced mages. They wield magic and can carry staves.;;;;;;;;;;;;;x
-class_shaman;Shaman;;;;;;;;;;;;;x
-class_shaman_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
-class_shaman_female;Shaman;;;;;;;;;;;;;x
-class_shaman_female_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
+class_dark_mage;Shaman;;;;;;;;;;;;;x
+class_dark_mage_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
+class_dark_mage_female;Shaman;;;;;;;;;;;;;x
+class_dark_mage_female_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
 class_sniper;Sniper;;;;;;;;;;;;;x
 class_sniper_desc;Archers dedicated to mastering their art. None can match their skill with the bow.;;;;;;;;;;;;;x
 #class_sniper_desc;A title won by veteran archers. None can match their skill with the bow..;;;;;;;;;;;;;x
@@ -167,18 +167,22 @@ class_swordmaster_desc;A title given to those dedicated to the sword. They are c
 class_swordmaster_female;Swordmaster;;;;;;;;;;;;;x
 class_swordmaster_female_desc;A title given to those dedicated to the sword. They are capable of incredible speed and killing strokes.;;;;;;;;;;;;;x
 class_tactician;Tactician;;;;;;;;;;;;;x
-class_tactician_desc;.;;;;;;;;;;;;;x
+class_tactician_desc;A tactician gifted with exceptional commanding ability. A pivotal unit in any army.;;;;;;;;;;;;;x
 class_thief;Thief;;;;;;;;;;;;;x
 class_thief_desc;Rogues and fortune hunters. They possess weak attacks but many other skills.;;;;;;;;;;;;;x
 class_thief_female;Thief;;;;;;;;;;;;;x
 class_thief_female_desc;Rogues and fortune hunters. They possess weak attacks but many other skills.;;;;;;;;;;;;;x
 class_troubador;Troubador;;;;;;;;;;;;;x
-#class_troubador_desc;Mounted warriors whose sacred staves aid allies. They are swift but will not fight.;;;;;;;;;;;;;x
-class_troubador_desc;Mounted maidens whose sacred staves aid allies. They are swift but will not fight.;;;;;;;;;;;;;x
+class_troubador_desc;Mounted healers whose sacred staves aid allies. They are swift but will not fight.;;;;;;;;;;;;;x
+#class_troubador_desc;Mounted maidens whose sacred staves aid allies. They are swift but will not fight.;;;;;;;;;;;;;x
 class_valkyrie;Valkyrie;;;;;;;;;;;;;x
 #class_valkyrie_desc;Warriors who ride into combat wielding light magic and sacred staves.;;;;;;;;;;;;;x
 class_valkyrie_desc;Battle maidens who ride into combat wielding light magic and sacred staves.;;;;;;;;;;;;;x
 #class_valkyrie_desc;A title given to the finest troubadours. Wields sacred magic to aid allies.;;;;;;;;;;;;;x
+class_war_cleric;War Cleric;;;;;;;;;;;;;x
+class_war_cleric_desc;A holy warrior who wields weapons and healing staves.;;;;;;;;;;;;;x
+class_war_priest;War Priest;;;;;;;;;;;;;x
+class_war_priest_desc;A holy warrior who wields weapons and healing staves.;;;;;;;;;;;;;x
 class_warrior;Warrior;;;;;;;;;;;;;x
 class_warrior_desc;A title awarded to battle-tested warriors. The strongest of all fighters.;;;;;;;;;;;;;x
 class_wyvern_knight;Wyvern Knight;;;;;;;;;;;;;x

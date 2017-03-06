@@ -17,13 +17,26 @@
 	#health = -1
 	#is_health = yes 
 #}
+went_missing = {
+	customizer = no
+	random = no
+	hidden = yes 
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger
+	pilgrimage = yes
+}
+dead_event_target = {
+	customizer = no
+	random = no
+	hidden = yes 
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+}
 retired = {
 	customizer = no
 	random = no
 	can_hold_titles = no 
 	cannot_inherit = yes 
 	cannot_marry = yes
-	is_hidden = yes 
+	hidden = yes 
 }
 sleeping = {
 	customizer = no

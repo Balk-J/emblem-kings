@@ -92,10 +92,10 @@ character_event = {
 		NOT = { trait = zealous }
 		NOT = { religion = dark }
 		OR = {
-			trait = class_shaman
-			trait = class_shaman_female
-			trait = class_druid
-			trait = class_druid_female
+			trait = class_dark_mage
+			trait = class_dark_mage_female
+			trait = class_sorceror
+			trait = class_sorceror_female
 			trait = class_archdruid
 			trait = class_dark_druid
 		}
@@ -173,10 +173,10 @@ character_event = {
 			trait = class_mage_knight
 			trait = class_mage_knight_female
 			trait = class_archsage
-			trait = class_shaman
-			trait = class_shaman_female
-			trait = class_druid
-			trait = class_druid_female
+			trait = class_dark_mage
+			trait = class_dark_mage_female
+			trait = class_sorceror
+			trait = class_sorceror_female
 			trait = class_archdruid
 			trait = class_dark_druid
 		}
@@ -266,7 +266,7 @@ character_event = {
 		OR = {
 			has_focus = focus_war
 			has_focus = focus_scholarship
-			has_focus = focus_war
+			#has_focus = focus_theology
 		}
 		NOT = { has_character_modifier = siege_magic }
 		OR = {
@@ -324,5 +324,836 @@ character_event = {
 		name = "magic.4.A"
 		
 		add_character_modifier = { name = siege_magic duration = -1 } 
+	}
+}
+
+# Province flipped to magic religion despite our best efforts. Flip it back.
+province_event = {
+	id = magic.5
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = magic_group
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				any_neighbor_province = {
+					is_land = yes
+					NOT = { religion_group = magic_group }
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					is_land = yes
+					NOT = { religion_group = magic_group }
+				}
+				reverse_religion = ROOT
+			}
+		}
+		
+		if = {
+			limit = {
+				religion_group = magic_group
+				owner = {
+					any_realm_province = {
+						is_land = yes
+						NOT = { religion_group = magic_group }
+					}
+				}
+			}
+			owner = {
+				random_realm_province = {
+					limit = {
+						is_land = yes
+						NOT = { religion_group = magic_group }
+					}
+					reverse_religion = ROOT
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				religion_group = magic_group
+			}
+			random_province = {
+				limit = {
+					is_land = yes
+					NOT = { religion_group = magic_group }
+				}
+				reverse_religion = ROOT
+			}
+		}
+	}
+}
+
+# Druid, for AI
+character_event = {
+	id = magic.6
+
+	hide_window = yes
+	is_triggered_only = yes
+	
+	religion = dark
+	prisoner = no
+	capable_only = yes
+	ai = yes # players kick this off via a decision
+	
+	trigger = {
+		ai = yes
+		is_ruler = yes
+		has_focus = focus_scholarship
+		OR = {
+			#has_character_flag = lore_archdruid 
+			#has_character_flag = lore_dark_druid
+			had_character_flag = { flag = lore_archdruid days = 1500 }
+			had_character_flag = { flag = lore_dark_druid days = 1500 }
+		}
+	}
+	
+	option = {
+		name = OK
+		character_event = { id = magic.9 }
+	}
+}
+
+# Arch-something
+character_event = {
+	id = magic.7
+	desc = "magic.7.desc"
+	picture = "GFX_evt_monk" 	
+	
+	is_triggered_only = yes
+
+	#only_rulers = yes
+	religion_group = magic_group
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		is_ruler = yes
+		has_focus = focus_scholarship
+#		OR = {
+#			has_focus = focus_scholarship
+#			has_focus = focus_theology
+#		}
+		OR = {
+			AND = {
+				religion = anima
+				OR = {
+					trait = class_sage
+					trait = class_sage_female
+					#trait = class_mage_knight
+					#trait = class_mage_knight_female
+				}
+			}
+			AND = {
+				religion = dark
+				OR = {
+					trait = class_sorceror
+					trait = class_sorceror_female
+				}
+			}
+		}
+		any_demesne_province = {
+			has_province_modifier = ancient_ruins
+		}
+		check_variable = { which = "level" value = 20 }
+		NOT = { has_character_flag = archmage }
+		NOR = {
+			trait = incapable
+			trait = dark_incapable
+			trait = class_archsage
+			trait = class_archdruid
+			trait = class_dark_druid
+		}
+	}
+	
+#	mean_time_to_happen = {
+#		years = 500
+#		modifier = {
+#			factor = 100
+#			trait = slothful
+#		}
+#		modifier = {
+#			factor = 10
+#			trait = content
+#		}
+#		modifier = {
+#			factor = 0.9
+#			trait = diligent
+#		}
+#		modifier = {
+#			factor = 0.9
+#			trait = ambitious
+#		}
+#		modifier = {
+#			factor = 0.75
+#			any_demesne_province = {
+#				has_province_modifier = ancient_ruins
+#			}
+#		}		
+#		modifier = {
+#			factor = 0.5
+#			age = 100
+#		}
+#	}
+	
+	option = {
+		name = "magic.7.A"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				OR = { 
+					trait = genius
+					trait = quick
+					trait = shrewd
+					trait = ambitious
+					trait = proud
+					trait = diligent
+					trait = zealous
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = humble
+					trait = content
+					trait = slothful
+					trait = cynical
+					trait = dull
+					trait = slow
+					trait = imbecile
+				}
+			}
+		}
+		hidden_tooltip = {
+			set_character_flag = archmage
+			#if = { Handled via on action event
+			#	limit = {
+			#		religion = dark
+			#	}
+			#	character_event = { id = magic.8 days = 360 random = 90 }
+			#}
+		} 
+	}
+	
+	option = {
+		name = "magic.7.B"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				OR = { 
+					trait = wroth
+					trait = craven
+				}
+			}
+		}
+		
+		piety = 100
+		
+		random_list = {
+			70 = {}
+			15 = {
+				if = {
+					limit = {
+						NOT = { trait = proud }
+					}
+					add_trait = humble
+				}
+				if = {
+					limit = {
+						trait = proud 
+					}
+					remove_trait = proud
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = { trait = ambitious }
+					}
+					add_trait = content
+				}
+				if = {
+					limit = {
+						trait = ambitious 
+					}
+					remove_trait = ambitious
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						NOT = { trait = diligent }
+					}
+					add_trait = slothful
+				}
+				if = {
+					limit = {
+						trait = diligent 
+					}
+					remove_trait = diligent
+				}
+			}
+		}
+	}
+}
+
+# Druid path selection
+narrative_event = {
+	id = magic.8
+	title = "magic.8.title"
+	desc = "magic.8.desc"
+	picture = "GFX_evt_ritual_scroll" 	
+
+	#only_rulers = yes
+	religion = dark
+	prisoner = no
+	capable_only = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ruler = yes
+		has_focus = focus_scholarship
+#		OR = {
+#			has_focus = focus_scholarship
+#			has_focus = focus_theology
+#		}
+		#has_character_flag = archmage 
+		had_character_flag = { flag = archmage days = 240 }
+		NOT = { has_character_flag = lore_dark_druid }
+		NOT = { has_character_flag = lore_archdruid }
+	}
+	
+	option = {
+		name = "magic.8.A"
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+		}
+		set_character_flag = lore_dark_druid 
+	}
+	
+	option = {
+		name = "magic.8.B"	
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+		}	
+		set_character_flag = lore_archdruid 		
+	}
+	
+	option = {
+		name = "magic.8.C"	
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 100
+				trait = craven
+			}
+			modifier = {
+				factor = 100
+				trait = hedonist
+			}
+			modifier = {
+				factor = 5
+				trait = content
+			}
+			modifier = {
+				factor = 3
+				trait = gregarious
+			}
+			modifier = {
+				factor = 5
+				trait = lustful
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+		}	
+		clr_character_flag = archmage 
+	}
+}
+
+# Druid - ascencion
+character_event = {
+	id = magic.9
+
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {	
+		
+		clr_character_flag = archmage 
+		random_list = {
+			# Failure. Darkness overwhelms you and you become incapable (like Canas's brothers)
+			20 = {
+				modifier = {
+					factor = 5
+					ai = yes
+				}
+				character_event = { id = magic.10 }
+			}
+			# Success
+			80 = {
+				if = {
+					limit = {
+						has_character_flag = lore_dark_druid 
+					}
+					character_event = { id = magic.11 }
+				}
+				if = {
+					limit = {
+						has_character_flag = lore_archdruid 
+					}
+					character_event = { id = magic.12 }
+				}
+			}
+		}
+		clr_character_flag = lore_archdruid 
+		clr_character_flag = lore_dark_druid
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = magic.10
+	desc = "magic.10.desc"
+	picture = "GFX_evt_illness" 	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "magic.10.A"
+		add_trait = dark_incapable
+	}
+	
+}
+
+character_event = {
+	id = magic.11
+	desc = "magic.11.desc"
+	#picture = "GFX_evt_nergal_power" 
+	picture = "GFX_evt_lunatic" 	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "magic.11.A"
+		#add_trait = dark_power_hungry
+		if = {
+			limit = {
+				trait = class_sorceror_female
+			}
+			remove_trait = class_sorceror_female
+		}
+		if = {
+			limit = {
+				trait = class_sorceror
+			}
+			remove_trait = class_sorceror
+		}
+		add_trait = class_dark_druid
+	}
+	
+}
+character_event = {
+	id = magic.12
+	desc = "magic.12.desc"
+	picture = "GFX_evt_monk" 	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "magic.12.A"
+		#add_trait = dark_selfless
+		if = {
+			limit = {
+				trait = class_sorceror_female
+			}
+			remove_trait = class_sorceror_female
+		}
+		if = {
+			limit = {
+				trait = class_sorceror
+			}
+			remove_trait = class_sorceror
+		}
+		add_trait = class_archdruid
+		prestige = 500
+	}
+	
+}
+
+# Fired yearly, random chance of the Dark/Arch sorceror going bonkers
+character_event = {
+	id = magic.13
+	#desc = "magic.13.desc"
+	#picture = "GFX_evt_recovery" 	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			trait = class_archdruid
+			trait = class_dark_druid
+		}
+		NOR = {
+			trait = dark_selfless
+			trait = dark_power_hungry
+		}
+	}
+	
+	immediate = {
+		random = {
+			chance = 30
+			character_event = { id = magic.14 days = 160 random = 150 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+
+# sorceror goes nuts
+character_event = {
+	id = magic.14
+	#desc = "magic.14.desc"
+	desc = {
+		trigger = {
+			trait = class_archdruid
+		}
+		text = "magic.14.desc.1"
+	}
+	desc = {
+		trigger = {
+			trait = class_dark_druid
+		}
+		text = "magic.14.desc.2"
+	}
+	picture = "GFX_evt_ritual_scroll" 	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = {
+			trigger = {
+				trait = class_archdruid
+			}
+			text = "magic.14.A.1"
+		}
+		name = {
+			trigger = {
+				trait = class_dark_druid
+			}
+			text = "magic.14.A.2"
+		}
+		if = {
+			limit = {
+				trait = class_archdruid
+			}
+			
+			custom_tooltip = {
+				name = magic.15.tooltip
+				hidden_tooltip = {
+					character_event = { id = magic.15 }
+				}
+			}
+			add_trait = dark_selfless
+		}
+		if = {
+			limit = {
+				trait = class_dark_druid
+			}
+			add_trait = dark_power_hungry
+		}
+	}
+	
+}
+
+# Clear personality traits that archdruids (Bramimond) should not have.
+character_event = {
+	id = magic.15
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		if = {
+			limit = {
+				trait = class_archdruid
+			}
+			remove_personality_effect = yes
+		}
+	}
+}
+
+# If the archdruid is picking up traits they should not have
+character_event = {
+	id = magic.16
+	desc = "magic.16.desc"
+	picture = "GFX_evt_recovery" 	
+	
+	is_triggered_only = yes
+
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		trait = dark_selfless
+		OR = {
+			trait = ambitious
+			trait = arbitrary
+			trait = brave
+			trait = charitable
+			trait = chaste
+			trait = content
+			trait = craven
+			trait = cruel
+			trait = curious
+			trait = cynical
+			trait = deceitful
+			trait = depressed
+			trait = diligent
+			trait = drunkard
+			trait = envious
+			trait = erudite
+			trait = fussy
+			trait = gluttonous
+			trait = greedy
+			trait = gregarious
+			trait = haughty
+			trait = honest
+			trait = humble
+			trait = idolizer
+			trait = indolent
+			trait = just
+			trait = kind
+			trait = lunatic
+			trait = lustful
+			trait = paranoid
+			trait = patient
+			trait = playful
+			trait = proud
+			trait = rowdy
+			trait = shy
+			trait = slothful
+			trait = stressed
+			trait = stubborn
+			trait = temperate
+			trait = timid
+			trait = trusting
+			trait = willful
+			trait = wroth
+			trait = zealous
+		}
+	}
+	
+	
+	option = {
+		name = "magic.16.A"
+		
+		custom_tooltip = {
+			name = magic.15.tooltip
+			hidden_tooltip = {
+				#character_event = { id = magic.15 }
+				remove_personality_effect = yes
+			}
+		}
+	}
+}
+
+# Sage - ascencion, for AI
+character_event = {
+	id = magic.17
+
+	hide_window = yes
+	is_triggered_only = yes
+	
+	religion = anima
+	prisoner = no
+	capable_only = yes
+	ai = yes # players kick this off via a decision
+	
+	trigger = {
+		is_ruler = yes
+		has_focus = focus_scholarship
+		#has_character_flag = archmage
+		had_character_flag = { flag = archmage days = 1800 }
+	}
+	
+	option = {
+		name = OK
+		character_event = { id = magic.18 }
+	}
+}
+
+# Sage - ascencion
+character_event = {
+	id = magic.18
+	desc = magic.18.desc
+	picture = "GFX_evt_monk" 
+
+	is_triggered_only = yes
+	
+	immediate = {			
+		clr_character_flag = archmage 
+	}
+	
+	option = {
+		name = magic.18.A
+		if = {
+			limit = {
+				trait = class_sage
+			}
+			remove_trait = class_sage
+		}
+		if = {
+			limit = {
+				trait = class_sage_female
+			}
+			remove_trait = class_sage_female
+		}
+		add_trait = class_archsage
+		prestige = 1000
+	}
+}
+
+# Studies of Quintessence
+character_event = {
+	id = magic.19
+	desc = magic.19.desc
+	picture = "GFX_evt_ritual_scroll" 
+
+	is_triggered_only = yes
+
+	#only_rulers = yes
+	religion_group = magic_group
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		is_ruler = yes
+		OR = {
+			has_focus = focus_scholarship
+			has_focus = focus_theology
+		}
+		OR = {
+			AND = {
+				religion = anima
+				trait = class_archsage
+			}
+			AND = {
+				religion = dark
+				OR = {
+					trait = class_archdruid
+					trait = class_dark_druid
+				}
+			}
+		}
+		any_demesne_province = {
+			has_province_modifier = ancient_ruins
+		}
+		NOT = { has_character_flag = lore_quintessence }
+		NOT = { has_character_flag = quintessence_discovered }
+		NOT = { has_character_flag = quintessence_rejected }
+		NOR = {
+			trait = incapable
+			trait = dark_incapable
+		}
+	}
+	
+	option = {
+		name = magic.19.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+		}		
+		set_character_flag = quintessence_discovered
+		hidden_tooltip = {
+			character_event = { id = quintessence.20 days = 730 random = 365 }
+		}
+	}
+	
+	option = {
+		name = magic.19.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+		}		
+		set_character_flag = quintessence_rejected
 	}
 }

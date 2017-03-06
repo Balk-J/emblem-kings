@@ -870,10 +870,12 @@ character_event = {
 					age = 30
 					trait = intricate_webweaver
 					trait = class_rogue
+					trait = base_class_thief
 					employer = THIS
 				}
 				
 				new_character = {
+					set_variable = { which = "level" value = 1 }
 					set_character_flag = fire_emblem_thief
 					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
 					
@@ -986,10 +988,12 @@ character_event = {
 					age = 30
 					trait = intricate_webweaver
 					trait = class_rogue
+					trait = base_class_thief
 					employer = THIS
 				}
 				
 				new_character = {
+					set_variable = { which = "level" value = 1 }
 					set_character_flag = fire_emblem_thief
 					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
 					

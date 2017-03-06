@@ -16,7 +16,7 @@ quintessence.4.title;Conflagration;;;;;;;;;;;;;x
 quintessence.4.desc;The worst has happened. Despite my careful preparation, the power I was attempting to harness proved uncontrollable. Quintessence built up within the gate, looping again and again until even dragon architecture could stand no more. The gate was destroyed in a massive explosion.\n\nMuch of the surrounding complex has also been reduced to rubble. My only consolation is that I could recover some power from the smoldering ruins.;;;;;;;;;;;;;x
 quintessence.4.A;What?! Impossible!;;;;;;;;;;;;;x
 quintessence.5.title;Power Runs Wild;;;;;;;;;;;;;x
-quintessence.5.desc;At first, I thought I had succeeded. The gate shook, the first dragon stepped through, and its shape began to solidify. Then... something went wrong. Perhaps the rift the beast passed through was unstable, or our world is no longer suitable for them, or someone deliberately sabotaged my work, or... who can say.\n\nAt any rate, the the portal emitted a powerful burst of energy and the dragon crumbled to pieces before it could truly cross over. Along with that poor fool who was standing too close to the gate.;;;;;;;;;;;;;x
+quintessence.5.desc;At first, I thought I had succeeded. The gate shook, the first dragon stepped through, and its shape began to solidify. Then... something went wrong. Perhaps the rift the beast passed through was unstable, or it could not maintain its true form in our world, or someone deliberately sabotaged my work, or... who can say.\n\nAt any rate, the the portal emitted a powerful burst of energy and the dragon crumbled to pieces before it could truly cross over. Along with that poor fool who was standing too close to the gate.;;;;;;;;;;;;;x
 quintessence.5.A;No! I've failed!;;;;;;;;;;;;;x
 quintessence.6.title;Children of Flame;;;;;;;;;;;;;x
 quintessence.6.desc;Success, of a sort. I was able to call forth a dragon from the other side of the gate. Before I could finish binding it to my will, the beast slipped my control and went on a rampage through the countryside! \n\nI was able to bring it down and drain it without much trouble, but the gate closed while I was dealing with the dragon. It will be some time before I recover enough power to open it again. \n\nIn less important matters, the area surrounding the gate took some damage during the battle.;;;;;;;;;;;;;x
@@ -24,14 +24,38 @@ quintessence.6.A;A temporary setback, nothing more.;;;;;;;;;;;;;x
 quintessence.7.title;Tremble and Despair;;;;;;;;;;;;;x
 quintessence.7.desc;Success! The gate is open, the portal is stable, and the dragons come like moths to the flame. Once they're through, binding them and harvesting their essence is a simple matter. And oh, what glorious quintessence it is!\n\nI suspect they will close the gate from their end eventually, but until they do, I will have access to all the power I could dream of. The world is mine!;;;;;;;;;;;;;x
 quintessence.7.A;Heh heh heh... Haaa haa haha haha hah!!!;;;;;;;;;;;;;x
+quintessence.7.tooltip;[Root.GetTitledFirstName] gains the Invasion casus belli against all rulers.;;;;;;;;;;;;;x
 quintessence.8.title;All For Naught;;;;;;;;;;;;;x
-quintessence.8.desc;One must be fully prepared when dealing with dragons. In retrospect, I was somewhat hasty. The ritual progressed well at first and I soon had a small pack summoned and bound to my will. Then they started to resist.\n\nI had counted on ensnaring the younger and more naive creatures at first, and draining them before trapping the greater dragons. Unfortunately, one of the initial batch was powerful enough to shatter my hold on it and its fellows. My retainers and I were no match for their fury...;;;;;;;;;;;;;x
+quintessence.8.desc;One must be fully prepared when dealing with dragons. In retrospect, I was somewhat hasty. The ritual progressed well at first and I soon had a small pack summoned and bound to my will. Then they started to resist.\n\nI had counted on ensnaring the younger and more naive creatures at first, to harvest them before trapping the greater dragons. Unfortunately, one of the initial batch was powerful enough to shatter my hold on it and its fellows. My retainers and I were no match for their fury...;;;;;;;;;;;;;x
 quintessence.8.A;No. NO! Ultimate power was within reach!;;;;;;;;;;;;;x
 quintessence.9.title;Light;;;;;;;;;;;;;x
 quintessence.9.desc;Last night, something happened. People with keen senses say they heard a rumble or saw a flash in the distance. Mages claim to feel a new and troubling distortion in the flow of magic. Priests report bad dreams, diviners and fortune tellers whisper of an ill wind blowing from the south, and there's a street preacher in [Root.Capital.GetName] who's ranting about a newborn god.\n\nWhatever the event was, the tidings are ill. If there really is a new threat on the horizon, perhaps it would be prudent to find and destroy it. Or to hunker down and prepare for the worst...;;;;;;;;;;;;;x
 quintessence.9.A;We will overcome any challenge.;;;;;;;;;;;;;x
-quintessence.11.desc;My agents and I will watch the warriors of [From.GetTitledName] closely. Should we get the chance, we will isolate and kill the strong ones to drain their quintessence. This will be much simpler if we can catch them in the middle of a battle.;;;;;;;;;;;;;x
-quintessence.11.A;I will add their might to my own.;;;;;;;;;;;;;x
+quintessence.10.desc;The quintessence I used has taken full effect. My recovery is complete.;;;;;;;;;;;;;x
+quintessence.10.A;At last!;;;;;;;;;;;;;x
+quintessence.11.desc;The quintessence I used has taken full effect. My recovery is complete.;;;;;;;;;;;;;x
+quintessence.11.A;At last!;;;;;;;;;;;;;x
+quintessence.20.title;Quintessence;;;;;;;;;;;;;x
+quintessence.20.desc;You have solved the mystery behind the primal force spoken of in that old book. Ancient sages called the power "quintessence," and it is the energy behind all living things. The stronger a person is in mind and body, the more quintessence they have. It has a variety of uses - strengthening spells, healing wounds, and even creating new life. \n\nWith more research, you may be able to discover exactly how these feats can be accomplished. However, the art is somewhat... messy. The best and fastest way to accumulate quintessence is to steal it from another living creature, through a ritual that is always fatal for the victim.;;;;;;;;;;;;;x
+quintessence.20.A;A minor detail, compared to gaining the power of a god.;;;;;;;;;;;;;x
+quintessence.20.A.tooltip;You continue your research of quintessence.;;;;;;;;;;;;;x
+quintessence.20.B;Unsettling. I'll have nothing to do with this.;;;;;;;;;;;;;x
+quintessence.20.B.tooltip;You stop all research of quintessence for good.;;;;;;;;;;;;;x
+quintessence.21.desc;Your research into quintessence has made considerable progress. You are now confident in your ability to use it to heal, prolong life, and of course to drain it from those less worthy of its power.;;;;;;;;;;;;;x
+quintessence.22.desc;Some notes written by a long-dead dragon mage could be the key to a breakthrough in your work with quintessence. The notes mention a process by which quintessence can be used to create new life - soulless puppets given form for a single purpose, or possibly something nearly human. It will take some experimentation to work out the details...;;;;;;;;;;;;;x
+quintessence.22.A;I'll find a volunteer or two...;;;;;;;;;;;;;x
+quintessence.22.B;This is not wisdom, but an abomination.;;;;;;;;;;;;;x
+quintessence.23.title;New Life;;;;;;;;;;;;;x
+quintessence.23.desc;My experiment was a great success! I have given life to a new creature, a being formed of quintessence that will obey my every command. I have decided to call these creatures "morphs." My first one was a bit rough, but I believe I can refine the process to create skilled warriors and spies, perfect in mind and body. I could even create an entire legion of morph soldiers to bolster my forces. \n\nOne of the idealistic fools who was helping with my experiment has left my service, disgusted about the "soulless puppet" he helped me create. I may have to deal with him later, after I complete my work.;;;;;;;;;;;;;x
+quintessence.23.A;Thanks to him, I gained power.;;;;;;;;;;;;;x
+quintessence.24.desc;It is said that man was sculpted by the hands of the gods. I have sculpted life myself, but my morphs are nothing more than soulless puppets. Is this truly the limit of my skill? Perhaps I should prove my power by creating a morph that can truly feel...;;;;;;;;;;;;;x
+quintessence.24.A;I will do it!;;;;;;;;;;;;;x
+quintessence.24.B;That would be pointless.;;;;;;;;;;;;;x
+quintessence.25.desc;"You are the only morph to whom I've given emotions. It is said that man was sculpted by the hands of the gods. If so, then you, who were sculpted by these, my hands... And I, whose labors gave you breath and life... What are we, then? What does that make us?";;;;;;;;;;;;;x
+quintessence.25.A;In your fabricated heart, what is it that you believe?;;;;;;;;;;;;;x
+quintessence.26.desc;"What do you want, monster? You can't fight. You can't harvest quintessence. Powerless and frail, you're naught but a false puppet, a pale imitation. Is this all I was capable of creating in the past? This fool? Absolutely worthless. You are my blunder, my failed morph. You are of no use to me.";;;;;;;;;;;;;x
+quintessence.26.A;Go somewhere and rot away into dust.;;;;;;;;;;;;;x
+quintessence.26.B;You are a disappointment. Stay out of my sight.;;;;;;;;;;;;;x
 quintessence..title;;;;;;;;;;;;;;x
 quintessence..desc;;;;;;;;;;;;;;x
 quintessence..A;;;;;;;;;;;;;;x

@@ -1,7 +1,7 @@
 # Canon
 920={
 	name="of the Dragon Sanctuary"
-	culture="fire_dragon"
+	culture="fire_dragon_culture"
 	coat_of_arms = {
 		religion="dragon_gods"
         template = 0

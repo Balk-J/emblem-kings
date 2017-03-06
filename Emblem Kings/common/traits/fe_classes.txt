@@ -8,6 +8,10 @@ class_archdruid= {
 	random = no
 	combat_rating = 3
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_defensive = 0.1
 	magic_users_morale = 0.1
 }
@@ -30,6 +34,10 @@ class_archsage= {
 	customizer = no
 	random = no
 	combat_rating = 3
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	magic_users_offensive = 0.1
 	command_modifier = {
@@ -80,6 +88,10 @@ class_bishop= {
 	random = no
 	combat_rating = 2
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_morale = 0.05
 	command_modifier = {
 		morale_defence = 0.05
@@ -90,6 +102,10 @@ class_bishop_female= {
 	customizer = no
 	random = no
 	combat_rating = 2
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	magic_users_morale = 0.05
 	command_modifier = {
@@ -115,6 +131,10 @@ class_cleric= {
 	customizer = no
 	random = no
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	command_modifier = {
 		morale_defence = 0.05
 	}
@@ -135,25 +155,37 @@ class_dark_druid= {
 	random = no
 	combat_rating = 3
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_defensive = 0.1
 	command_modifier = {
 		morale_offence = 0.1
 	}
 
 }
-class_druid= {
+class_sorceror= {
 	health = 2
 	customizer = no
 	random = no
 	combat_rating = 2
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_defensive = 0.1
 }
-class_druid_female= {
+class_sorceror_female= {
 	health = 2
 	customizer = no
 	random = no
 	combat_rating = 2
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	magic_users_defensive = 0.1
 }
@@ -218,12 +250,20 @@ class_mage= {
 	random = no
 	combat_rating = 1
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_offensive = 0.05
 }
 class_mage_female= {
 	customizer = no
 	random = no
 	combat_rating = 1
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	magic_users_offensive = 0.05
 }
@@ -233,6 +273,10 @@ class_mage_knight= {
 	random = no
 	combat_rating = 2
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_offensive = 0.05
 	light_cavalry_offensive = 0.05
 }
@@ -241,6 +285,10 @@ class_mage_knight_female= {
 	customizer = no
 	random = no
 	combat_rating = 2
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	magic_users_offensive = 0.05
 	light_cavalry_offensive = 0.05
@@ -261,6 +309,7 @@ class_magic_seal= {
 		class_bishop class_bishop_female
 		class_troubador
 		class_valkyrie
+		class_war_priest class_war_cleric
 		class_archsage class_archdruid class_dark_druid
 	}
 	opposite_opinion = -50
@@ -303,6 +352,10 @@ class_monk= {
 	customizer = no
 	random = no
 	combat_rating = 1
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	magic_users_morale = 0.05
 }
@@ -369,11 +422,15 @@ class_priest= {
 	customizer = no
 	random = no
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	command_modifier = {
 		morale_defence = 0.05
 	}
 }
-class_ranger= {
+class_bow_knight= {
 	customizer = no
 	random = no
 	combat_rating = 2
@@ -404,6 +461,10 @@ class_sage= {
 	random = no
 	combat_rating = 2
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_offensive = 0.1
 }
 class_sage_female= {
@@ -412,19 +473,31 @@ class_sage_female= {
 	random = no
 	combat_rating = 2
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_offensive = 0.1
 }
-class_shaman= {
+class_dark_mage= {
 	customizer = no
 	random = no
 	combat_rating = 1
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	magic_users_defensive = 0.05
 }
-class_shaman_female= {
+class_dark_mage_female= {
 	customizer = no
 	random = no
 	combat_rating = 1
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	magic_users_defensive = 0.05
 }
@@ -460,6 +533,10 @@ class_summoner= {
 	customizer = no
 	random = no
 	combat_rating = 2
+	
+	opposites =  {
+		class_magic_seal
+	}
 	
 	command_modifier = {
 		morale_offence = 0.025
@@ -513,6 +590,10 @@ class_troubador= {
 	customizer = no
 	random = no
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	command_modifier = {
 		morale_defence = 0.05
 	}
@@ -523,8 +604,38 @@ class_valkyrie= {
 	random = no
 	combat_rating = 2
 	
+	opposites =  {
+		class_magic_seal
+	}
+	
 	command_modifier = {
 		morale_defence = 0.1
+	}
+}
+class_war_cleric= {
+	customizer = no
+	random = no
+	
+	opposites =  {
+		class_magic_seal
+	}
+	
+	heavy_infantry_offensive = 0.05
+	command_modifier = {
+		morale_defence = 0.05
+	}
+}
+class_war_priest= {
+	customizer = no
+	random = no
+	
+	opposites =  {
+		class_magic_seal
+	}
+	
+	heavy_infantry_offensive = 0.05
+	command_modifier = {
+		morale_defence = 0.05
 	}
 }
 class_warrior= {
@@ -557,4 +668,127 @@ class_wyvern_rider= {
 	combat_rating = 1
 	
 	wyvern_riders_offensive = 0.05
+}
+
+# Hidden traits to keep track of base class, since character flags won't work - they get cleared from dead people.
+
+base_class_knight = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_cavalier = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_archer = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_horse_archer = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_mercenary = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_fighter = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_pirate = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_brigand = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_myrmidon = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_thief = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_pegasus_knight = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_wyvern_rider = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_troubador = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_cleric = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_priest = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_monk = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_mage = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_dark_mage = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_shaman = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_soldier = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_dancer = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_bard = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_manakete = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+base_class_tactician = {
+	customizer = no
+	random = no
+	hidden = yes 
 }

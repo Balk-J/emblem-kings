@@ -67,3 +67,13 @@ opinion_uncovered_conspiracy = {
 	opinion = -50
 	months = 1200
 }
+
+opinion_dishonorable_provocateur = {
+	opinion = -30
+	months = 120
+}
+
+opinion_betrayed = {
+	opinion = -50
+	months = 120
+}

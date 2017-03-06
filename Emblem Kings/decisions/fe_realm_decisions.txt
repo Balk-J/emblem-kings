@@ -66,120 +66,126 @@ decisions = {
 			}
 		}
 		allow = {
-			ROOT = {
-				d_ostia = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+			custom_tooltip = {
+				text = form_kingdom_of_lycia.tooltip.allow
+				hidden_tooltip = {
+					ROOT = {
+						d_ostia = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_caelin = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_caelin = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_badon = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_badon = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_araphen = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_araphen = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_cornwell = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_cornwell = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_khathelet = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_khathelet = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_laus = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_laus = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_pherae = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_pherae = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_ryerde = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_ryerde = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_santaruz = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_santaruz = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_tania = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_tania = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_thria = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_thria = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_tuscana = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_tuscana = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
-					}
-				}
-				d_worde = {
-					OR = {
-						has_holder = no
-						holder_scope = {
-							opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+						d_worde = {
+							OR = {
+								has_holder = no
+								holder_scope = {
+									opinion = { who = ROOT value = 50 } # King of Lycia popularity 
+								}
+							}
 						}
 					}
 				}
 			}
+			
 			#primary_title = { title = k_lycian_league }
 			prestige = 1000
 		}
@@ -214,24 +220,36 @@ decisions = {
 				NOT = { trait = incapable }
 				NOT = { has_character_modifier = created_war_dragons }
 			}
-			any_courtier = {
-				trait = war_dragon
-				NOT = { count = 9 }
+			custom_tooltip = {
+				text = create_war_dragons.tooltip.allow
+				hidden_tooltip = {
+					NOT = {
+						any_courtier = {
+							trait = war_dragon
+							count = 9 
+						}
+					}
+				}
 			}
 		}
 		effect = {		
-			random_courtier  = {
-				limit = {
-					trait = demon_dragon
-					is_adult = yes
-					prisoner = no
-					NOT = { trait = incapable }
-					NOT = { has_character_modifier = created_war_dragons }
-				}
-				add_character_modifier = { name = created_war_dragons duration = 1825 } 
-				#add_character_modifier = { name = created_war_dragons duration = 3650 } 
+			custom_tooltip = {
+				text = create_war_dragons.tooltip
+				hidden_tooltip = {
+					
+					random_courtier  = {
+						limit = {
+							trait = demon_dragon
+							is_adult = yes
+							prisoner = no
+							NOT = { trait = incapable }
+							NOT = { has_character_modifier = created_war_dragons }
+						}
+						add_character_modifier = { name = created_war_dragons duration = 1825 } 
+						#add_character_modifier = { name = created_war_dragons duration = 3650 } 
+					}
+					character_event = { id = fe6.3 }
 			}
-			character_event = { id = fe6.3 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -311,18 +329,23 @@ decisions = {
 		}
 		
 		allow = {
-			calc_true_if = {
-				amount = 4
-				completely_controls_region = world_elibe_bern
-				completely_controls_region = world_elibe_lycia
-				completely_controls_region = world_elibe_etruria
-				completely_controls_region = world_elibe_ilia
-				completely_controls_region = world_elibe_nabata
-				completely_controls_region = world_elibe_sacae
-			}			
+			custom_tooltip = {
+				text = return_elibe_to_dragons.tooltip.allow
+				hidden_tooltip = {
+					calc_true_if = {
+						amount = 4
+						completely_controls_region = world_elibe_bern
+						completely_controls_region = world_elibe_lycia
+						completely_controls_region = world_elibe_etruria
+						completely_controls_region = world_elibe_ilia
+						completely_controls_region = world_elibe_nabata
+						completely_controls_region = world_elibe_sacae
+					}	
+				}
+			}		
 			any_realm_character  = {
 				trait = dragon
-				culture_group = draconic
+				#culture_group = draconic
 				religion = dragon_liberation
 				NOT = { trait = demon_dragon }
 				NOT = { trait = war_dragon }
@@ -343,7 +366,7 @@ decisions = {
 						limit={
 							trait = dragon
 							religion = dragon_liberation
-							culture_group = draconic
+							#culture_group = draconic
 							NOT = { trait = demon_dragon }
 							NOT = { trait = war_dragon }
 							opinion = { who = ROOT value = 80 }
@@ -421,22 +444,23 @@ decisions = {
 			prisoner = no
 			NOT = { trait = incapable }
 			OR = {
-				has_character_flag=class_knight
-				has_character_flag=class_cavalier
-				has_character_flag=class_archer
-				has_character_flag=class_horse_archer
-				has_character_flag=class_mercenary
-				has_character_flag=class_fighter
-				has_character_flag=class_myrmidon
-				has_character_flag=class_thief
-				has_character_flag=class_pirate
-				has_character_flag=class_brigand
-				has_character_flag=class_priest
-				has_character_flag=class_monk
-				has_character_flag=class_mage
-				has_character_flag=class_shaman
-				has_character_flag=class_wyvern_rider
-				has_character_flag=class_pegasus_knight
+				trait = base_class_knight
+				trait = base_class_cavalier
+				trait = base_class_archer
+				trait = base_class_horse_archer
+				trait = base_class_mercenary
+				trait = base_class_fighter
+				trait = base_class_myrmidon
+				trait = base_class_thief
+				trait = base_class_pirate
+				trait = base_class_brigand
+				trait = base_class_priest
+				trait = base_class_cleric
+				trait = base_class_monk
+				trait = base_class_mage
+				trait = base_class_dark_mage
+				trait = base_class_wyvern_rider
+				trait = base_class_pegasus_knight
 			}
 			NOR = {
 				trait=class_assassin
@@ -444,8 +468,8 @@ decisions = {
 				trait=class_berserker
 				trait=class_bishop
 				trait=class_bishop_female
-				trait=class_druid
-				trait=class_druid_female
+				trait=class_sorceror
+				trait=class_sorceror_female
 				trait=class_falcon_knight
 				trait=class_general
 				trait=class_great_knight
@@ -454,8 +478,8 @@ decisions = {
 				trait=class_mage_knight
 				trait=class_mage_knight_female
 				trait=class_paladin
-				trait=class_ranger
-				trait=class_ranger_female
+				trait=class_bow_knight
+				trait=class_bow_knight_female
 				trait=class_rogue
 				trait=class_sage
 				trait=class_sage_female
@@ -465,6 +489,8 @@ decisions = {
 				trait=class_swordmaster
 				trait=class_swordmaster_female
 				trait=class_valkyrie
+				trait=class_war_cleric
+				trait=class_war_priest
 				trait=class_warrior
 				trait=class_wyvern_knight
 				trait=class_wyvern_lord	
@@ -477,7 +503,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			wealth = 50
-			check_variable = { which = "level" value = 20 }
+			check_variable = { which = "level" value = 10 }
 		}
 		effect = {
 			wealth = -50

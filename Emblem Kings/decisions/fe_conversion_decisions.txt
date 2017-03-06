@@ -42,10 +42,10 @@ decisions = {
 			ai = no
 			is_playable = yes
 			OR = {
-				trait = class_shaman
-				trait = class_shaman_female
-				trait = class_druid
-				trait = class_druid_female
+				trait = class_dark_mage
+				trait = class_dark_mage_female
+				trait = class_sorceror
+				trait = class_sorceror_female
 				trait = class_archdruid
 				trait = class_dark_druid
 			}

@@ -7,7 +7,7 @@
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
-	trait="class_ranger"
+	trait="class_bow_knight"
 	trait="flat_terrain_leader"
 	trait="cavalry_leader"
 	trait="organizer"
@@ -54,10 +54,10 @@
 	}
 	1138.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1141.01.01={
@@ -74,7 +74,7 @@
 	
 	1146.01.01 = { 
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 	}
 	
 	1159.01.01 = {
@@ -123,10 +123,10 @@
 	
 	1153.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1156.01.01={
@@ -169,10 +169,10 @@
 	
 	1176.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1179.01.01={
@@ -231,10 +231,10 @@
 	}
 	1176.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1179.01.01={
@@ -282,10 +282,10 @@
 	}
 	1154.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1157.01.01={
@@ -376,10 +376,10 @@
 	}
 	1170.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1173.01.01={
@@ -436,10 +436,10 @@
 	}
 	1151.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1154.01.01={
@@ -522,10 +522,10 @@
 	}
 	1152.01.01={
 		add_trait="class_myrmidon_female"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1155.01.01={
@@ -578,10 +578,10 @@
 	}
 	1176.01.01={
 		add_trait="class_myrmidon_female"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1179.01.01={
@@ -631,10 +631,10 @@
 	}
 	1112.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1115.01.01={
@@ -672,10 +672,10 @@
 	}
 	1122.01.01={
 		add_trait="class_myrmidon_female"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1135.01.01={
@@ -711,10 +711,10 @@
 	}
 	1144.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1147.01.01={
@@ -751,10 +751,10 @@
 	}
 	1146.01.01={
 		add_trait="class_myrmidon_female"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1149.01.01={
@@ -788,10 +788,10 @@
 	}
 	1139.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1142.01.01={
@@ -836,10 +836,10 @@
 	}
 	1143.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1146.01.01={
@@ -857,7 +857,7 @@
 	1150.01.01 = { 
 		employer=425 # Brendan Reed
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 		give_nickname="nick_the_soaring_hawk"
 	}
 	
@@ -889,10 +889,10 @@
 	}
 	1171.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 		prestige = 300
 	} 
@@ -909,7 +909,7 @@
 	
 	1177.01.01 = { 
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 	}
 	
 	1181.1.1= {
@@ -935,10 +935,10 @@
 	}
 	1137.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1140.01.01={
@@ -953,7 +953,7 @@
 	
 	1145.01.01 = { 
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 	}
 	
 	1181.1.1= {
@@ -977,10 +977,10 @@
 	}
 	1138.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1141.01.01={
@@ -991,7 +991,7 @@
 	
 	1146.01.01 = { 
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 	}
 	
 	1181.1.1= {
@@ -1015,10 +1015,10 @@
 	}
 	1139.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1142.01.01={
@@ -1029,7 +1029,7 @@
 	
 	1147.01.01 = { 
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 	}
 	
 	1181.1.1= {
@@ -1052,11 +1052,11 @@
 		birth=yes 
 	}
 	1140.01.01={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1143.01.01={
@@ -1065,8 +1065,8 @@
 	} 
 	
 	1148.01.01 = { 
-		remove_trait="class_shaman"
-		add_trait="class_druid"
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
 	}
 	
 	1181.1.1= {
@@ -1084,7 +1084,7 @@
 	religion=divine_sky_pagan
 	culture=sacaean
 	
-	trait="class_shaman"
+	trait="class_dark_mage"
 	trait="flat_terrain_leader"
 	trait="flanker"
 	
@@ -1093,11 +1093,11 @@
 		birth=yes 
 	}
 	1141.01.01={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1144.01.01={
@@ -1106,8 +1106,8 @@
 	} 
 	
 	1149.01.01 = { 
-		remove_trait="class_shaman"
-		add_trait="class_druid"
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
 	}
 	
 	1181.1.1= {
@@ -1131,11 +1131,11 @@
 		birth=yes 
 	}
 	1142.01.01={
-		add_trait="class_shaman"
+		add_trait="class_dark_mage"
+			add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_shaman"
 		}
 	} 
 	1145.01.01={
@@ -1144,8 +1144,8 @@
 	} 
 	
 	1150.01.01 = { 
-		remove_trait="class_shaman"
-		add_trait="class_druid"
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
 	}
 	
 	1181.1.1= {
@@ -1173,10 +1173,10 @@
 	}
 	1136.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 		prestige = 300
 	} 
@@ -1187,7 +1187,7 @@
 	
 	1144.01.01 = { 
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 	}
 	
 	1180.1.1= {
@@ -1207,10 +1207,10 @@
 	}
 	1102.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 		prestige = 300
 	} 
@@ -1221,7 +1221,7 @@
 	
 	1110.01.01 = { 
 		remove_trait="class_horse_archer"
-		add_trait="class_ranger"
+		add_trait="class_bow_knight"
 	}
 	
 	1144.1.1= {
@@ -1247,10 +1247,10 @@
 	}
 	1150.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1153.01.01={
@@ -1294,10 +1294,10 @@
 	}
 	1147.01.01={
 		add_trait="class_horse_archer"
+			add_trait="base_class_horse_archer"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_horse_archer"
 		}
 	} 
 	1150.01.01={
@@ -1338,10 +1338,10 @@
 	}
 	1151.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1154.01.01={
@@ -1384,10 +1384,10 @@
 	}
 	1146.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1149.01.01={
@@ -1429,10 +1429,10 @@
 	}
 	1171.01.01={
 		add_trait="class_pirate"
+			add_trait="base_class_pirate"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_pirate"
 		}
 	} 
 	1174.01.01={
@@ -1471,10 +1471,10 @@
 	}
 	1126.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1129.01.01={
@@ -1507,10 +1507,10 @@
 	}
 	1163.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1166.01.01={
@@ -1551,10 +1551,10 @@
 	}
 	1142.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1145.01.01={
@@ -1588,10 +1588,10 @@
 	}
 	1143.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1146.01.01={
@@ -1629,10 +1629,10 @@
 	}
 	1148.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1151.01.01={
@@ -1669,10 +1669,10 @@
 	}
 	1123.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1126.01.01={
@@ -1705,10 +1705,10 @@
 	}
 	1137.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1140.01.01={
@@ -1913,10 +1913,10 @@
 	}
 	1097.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1140.01.01 = { 
@@ -1937,10 +1937,10 @@
 	}
 	1127.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	
@@ -1983,10 +1983,10 @@
 	}
 	1148.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	
@@ -2009,10 +2009,10 @@
 	}
 	1149.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	
@@ -2036,10 +2036,10 @@
 	}
 	1150.01.01={
 		add_trait="class_myrmidon_female"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	
@@ -2083,10 +2083,10 @@
 	}
 	1122.01.01={
 		add_trait="class_myrmidon_female"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	

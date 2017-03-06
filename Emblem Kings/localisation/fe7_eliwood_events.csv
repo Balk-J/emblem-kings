@@ -1,15 +1,17 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-fe7_eliwood.1.desc;My agents have recaptured the dragon twins and brought them to me. When the time comes, they will open the gate. Until that glorious day, there are other sources of quintessence. Instigating a large enough conflict will provide plenty of opportunities to drain the fallen warriors...;;;;;;;;;;;;;x
-fe7_eliwood.1.A;The right spark will set off a massive blaze.;;;;;;;;;;;;;x
-fe7_eliwood.1.A.tooltip;[Root.GetTitledFirstName] will attempt to provoke a war among the nobles of one of the kingdoms of Elibe. Should the war happen, [Root.GetHerHis] agents will be positioned to absorb a great deal of [Root.GetPietyName] from the soldiers involved. If the conspiracy is discovered, the lords and ladies targeted may attempt to retaliate.;;;;;;;;;;;;;x
+#fe7_eliwood.1.desc;My agents have recaptured the dragon twins and brought them to me. When the time comes, they will open the gate. Until that glorious day, there are other sources of quintessence. Instigating a large enough conflict will provide plenty of opportunities to drain the fallen warriors...;;;;;;;;;;;;;x
+fe7_eliwood.1.desc;My agents have recaptured the dragon girl and brought her to me. When the time comes, she will open the gate. Until that glorious day, there are other sources of quintessence. Instigating a large enough conflict will provide plenty of opportunities to drain the fallen warriors...;;;;;;;;;;;;;x
+fe7_eliwood.1.A;The right spark will set Lycia ablaze.;;;;;;;;;;;;;x
+fe7_eliwood.1.A.tooltip;[Root.GetTitledFirstName] will attempt to provoke a war among the nobles of Lycia. Should the war happen, [Root.GetHerHis] agents will be positioned to absorb a great deal of [Root.Religion.GetPietyName] from the warriros involved. If the conspiracy is discovered, the lords and ladies targeted may attempt to retaliate.;;;;;;;;;;;;;x
+#fe7_eliwood.1.A.tooltip;[Root.GetTitledFirstName] will attempt to provoke a war among the nobles of one of the kingdoms of Elibe. Should the war happen, [Root.GetHerHis] agents will be positioned to absorb a great deal of [Root.Religion.GetPietyName] from the soldiers involved. If the conspiracy is discovered, the lords and ladies targeted may attempt to retaliate.;;;;;;;;;;;;;x
 fe7_eliwood.1.B;That would be far too risky. I should bide my time.;;;;;;;;;;;;;x
-fe7_eliwood.2.desc;There are several regions in Elibe where a war of the proper scale could be engineered. Where should I focus my efforts?;;;;;;;;;;;;;x
-fe7_eliwood.2.A;I will provoke a war among the nobles of Lycia.;;;;;;;;;;;;;x
-fe7_eliwood.2.B;Perhaps a civil war in Bern?;;;;;;;;;;;;;x
-fe7_eliwood.2.C;Surely some Etrurian dukes would make a play for the crown.;;;;;;;;;;;;;x
-fe7_eliwood.2.D;Never mind, this was a poor idea.;;;;;;;;;;;;;x
+#fe7_eliwood.2.desc;There are several regions in Elibe where a war of the proper scale could be engineered. Where should I focus my efforts?;;;;;;;;;;;;;x
+#fe7_eliwood.2.A;I will provoke a war among the nobles of Lycia.;;;;;;;;;;;;;x
+#fe7_eliwood.2.B;Perhaps a civil war in Bern?;;;;;;;;;;;;;x
+#fe7_eliwood.2.C;Surely some Etrurian dukes would make a play for the crown.;;;;;;;;;;;;;x
+#fe7_eliwood.2.D;Never mind, this was a poor idea.;;;;;;;;;;;;;x
 fe7_eliwood.4.title;The Black Shadow;;;;;;;;;;;;;x
-fe7_eliwood.4.desc;A strange man has come to your court at [Root.Capital.GetName]. He wears a cloak that covers his face, but his eyes glow with an odd golden light. They seem... ihuman. \n\nUnnerving appearance aside, has has brought an interesting proposal. He claims to represent an organization that is dissatisfied with the amount of influence [From.GetTitledName] holds in [From.PrimaryTitle.Kingdom.GetName]. They are looking for lords and ladies willing to raise arms against [From.GetHerHim]. After [From.GetTitledFirstName] inevitably falls, [From.GetHerHis] lands and titles would of course go to one of the lords who brought [From.GetHerHim] down.\n\nThe man says he requires your answer immediately.;;;;;;;;;;;;;x
+fe7_eliwood.4.desc;A strange man has come to your court at [Root.Capital.GetName]. He wears a cloak that covers his face, but his eyes glow with an odd golden light. They seem... inhuman. \n\nUnnerving appearance aside, has has brought an interesting proposal. He claims to represent an organization that is dissatisfied with the amount of influence [From.GetTitledName] holds in [From.PrimaryTitle.Kingdom.GetName]. They are looking for lords and ladies willing to raise arms against [From.GetHerHim]. After [From.GetTitledFirstName] inevitably falls, [From.GetHerHis] lands and titles would of course go to one of the lords who brought [From.GetHerHim] down.\n\nThe man says he requires your answer immediately.;;;;;;;;;;;;;x
 fe7_eliwood.4.A;You shall have my support.;;;;;;;;;;;;;x
 fe7_eliwood.4.B;I want no part of this conspiracy!;;;;;;;;;;;;;x
 fe7_eliwood.4.C;I'll pretend to go along with this until I find the mastermind...;;;;;;;;;;;;;x
@@ -28,13 +30,14 @@ fe7_eliwood.10.title;Whereabouts Unknown;;;;;;;;;;;;;x
 fe7_eliwood.10.desc;Your soldiers are barely out of [Root.Capital.GetName] when you're ambushed by a large group of men. They're incredibly strong, and with the element of surprise they carve through your party in no time. You they take prisoner, and most - perhaps all - of your soldiers lie dead. \n\nEvery one of these mysterious warriors has the same golden eyes as the man who recruited you into the conspiracy. They must have learned of your misgivings and plans to investigate, and then prepared their own trap. You get the feeling that you will meet the mastermind sooner than you expected, although on different terms than you hoped...;;;;;;;;;;;;;x
 fe7_eliwood.10.A;Blast!;;;;;;;;;;;;;x
 fe7_eliwood.11.desc;[From.GetTitledFirstName] took [From.GetHerHis] best soldiers and left [Root.Capital.GetName] several days ago. [From.GetSheHeCap] did not tell anyone where [From.GetSheHe] was going, and there is no sign of [From.GetHerHis] party in any of the nearby territories. They seem to have vanished without reaching their destination, whatever that was.;;;;;;;;;;;;;x
+fe7_eliwood.11.desc.1;My father took his best soldiers and left [Root.Capital.GetName] several days ago. He did not tell anyone where he was going, and there is no sign of his party in any of the nearby territories. They seem to have vanished without reaching their destination, wherever that was.;;;;;;;;;;;;;x
 fe7_eliwood.11.A;I must find out what happened!;;;;;;;;;;;;;x
-fe7_eliwood.11.B;I need to make sure the realm runs smoothly in [From.GetHerHis] absence...;;;;;;;;;;;;;x
+fe7_eliwood.11.B;I need to focus on ruling [Root.PrimaryTitle.GetName].;;;;;;;;;;;;;x
 fe7_eliwood.12.desc;You have found a lead! A local noble was assassinated, but not before pointing you at another nearby ruler who has been acting suspiciously lately. They have been consulting regularly with a mysterious stranger, and their realm prepares for war...;;;;;;;;;;;;;x
 fe7_eliwood.12.A;Ready the army. We're going to find answers.;;;;;;;;;;;;;x
-fe7_eliwood.12.A.tooltip;[Root.GetTitledFirstName] will gain a casus belli against one of the conspirators. Be sure to take action before their plot progresses any further!;;;;;;;;;;;;;x
+fe7_eliwood.12.A.tooltip;[Root.GetTitledFirstName] will gain a casus belli against one of the conspirators. Winning the war will reveal the identity of the the mastermind. [Root.GetSheHeCap] must take action before their plot progresses any further!;;;;;;;;;;;;;x
 fe7_eliwood.12.B;We will do nothing for now.;;;;;;;;;;;;;x
-fe7_eliwood.14.desc;My plan to start a war has run into problems. One of the conspirators has been found out, and is now under attack by a disgustingly chivalrous fool. With the plot uncovered, my scheme to harvest quintessence falls apart. I can only hope no one realizes I was behind all this.;;;;;;;;;;;;;x
+fe7_eliwood.14.desc;My plan to start a war has run into problems. One of the conspirators has been found out, and is now under attack by a disgustingly chivalrous fool. With the plot uncovered, my scheme to harvest quintessence has fallen apart. I can only hope no one realizes I was behind all this.;;;;;;;;;;;;;x
 fe7_eliwood.14.A;Perhaps if one of them meets with an accident?;;;;;;;;;;;;;x
 fe7_eliwood.14.A.tooltip;Assassinating one or both rulers involved may confuse the issue enough to keep anyone from discovering your involvement.;;;;;;;;;;;;;x
 fe7_eliwood.15.desc;At least, we are ready to move. My loyal servants are in place to pick up the quintessence of any soldiers unfortunate enough to fall in the coming war - and to hasten the demise of the strong ones who are more resilient. All that's left to do is turn loose my unwitting pawns.;;;;;;;;;;;;;x
@@ -45,7 +48,7 @@ fe7_eliwood.16.A.tooltip;[Root.GetTitledFirstName] gains a casus belli on [From.
 fe7_eliwood.16.B;They can do as they please. I will have no part of this war.;;;;;;;;;;;;;x
 fe7_eliwood.16.B.tooltip;[Root.GetTitledFirstName] will not participate in the war against [From.GetTitledFirstName].;;;;;;;;;;;;;x
 fe7_eliwood.18.desc;[From.GetTitledName] has made [From.GetHerHis] move on our mutual foe. We have pledged our support to this effort...;;;;;;;;;;;;;x
-fe7_eliwood.18.A;Call the banners.;;;;;;;;;;;;;x
+fe7_eliwood.18.A;Ready the troops.;;;;;;;;;;;;;x
 fe7_eliwood.18.A.tooltip;[Root.GetTitledFirstName] joins [From.GetTitledFirstName] in [From.GetHerHis] war.;;;;;;;;;;;;;x
 fe7_eliwood.18.B;Good luck with that, [From.GetFirstName].;;;;;;;;;;;;;x
 fe7_eliwood.18.B.tooltip;[Root.GetTitledFirstName] leaves [From.GetTitledFirstName] to fight alone.;;;;;;;;;;;;;x
@@ -54,11 +57,25 @@ fe7_eliwood.19.A;Exquisite.;;;;;;;;;;;;;x
 fe7_eliwood.20.desc;The war I orchestrated has ended in a white peace. The fighting was not as fierce as I had hoped, but my morphs still found chances to gather a great deal of quintessence.;;;;;;;;;;;;;x
 fe7_eliwood.20.A;Excellent.;;;;;;;;;;;;;x
 fe7_eliwood.22.title;Mastermind;;;;;;;;;;;;;x
-fe7_eliwood.22.desc;We have discovered that the [From.GetManWoman] behind the conspiracy to provoke a war in [Root.Capital.Kingdom.GetName] is a mage named [From.GetFirstName], who makes [From.GetHerHis] lair in [From.Capital.Duchy.GetName]. \n\n[From.GetHerHisCap] motives are unclear, but [From.GetHerHis] actions have proven [From.GetHerHis] hostility. The only way to ensure peace in [Root.Capital.Kingdom.GetName] is to take the fight to this villain.;;;;;;;;;;;;;x
+fe7_eliwood.22.desc;We have discovered that the [From.GetManWoman] behind the conspiracy to provoke a war in [Root.Capital.Kingdom.GetName] is a mage named [From.GetFirstName], who makes [From.GetHerHis] lair in [From.Capital.Duchy.GetName]. \n\n[From.GetHerHisCap] motives are unclear, but [From.GetHerHis] actions have proven [From.GetHerHis] hostility. The only way to ensure peace in [Root.Capital.Kingdom.GetName] is to take the fight to this villain!;;;;;;;;;;;;;x
 fe7_eliwood.22.A;I will not let you move unopposed!;;;;;;;;;;;;;x
-fe7_eliwood.22.B;I don't think I can afford to provoke [From.GetHerHim].;;;;;;;;;;;;;x
-fe7_eliwood.23.desc;[From.GetTitledName] has managed to uncover evidence that I attempted to incite a war. If [From.GetSheHe] has a foothold near my realm, [From.GetSheHe] could launch a war to destroy everything I have built!;;;;;;;;;;;;;x
+fe7_eliwood.22.A.tooltip;[Root.GetTitledFirstName] gains a casus belli against [From.GetTitledFirstName].;;;;;;;;;;;;;x
+fe7_eliwood.22.B;Spread the word. One of us will deal with this [From.GetFirstName].;;;;;;;;;;;;;x
+fe7_eliwood.22.B.tooltip;[Root.GetTitledFirstName] will inform the other rulers of [Root.PrimaryTitle.Kingdom.GetName] about [From.GetFirstName]'s actions. Anyone who believes [Root.GetHerHim] will gain a casus belli against [From.GetFirstName].;;;;;;;;;;;;;x
+fe7_eliwood.22.C;I don't think I can afford to provoke [From.GetHerHim].;;;;;;;;;;;;;x
+fe7_eliwood.22.C.tooltip;[Root.GetTitledFirstName] will do nothing.;;;;;;;;;;;;;x
+fe7_eliwood.23.desc;[From.GetTitledName] has managed to uncover evidence that I attempted to incite a war. [From.GetSheHeCap] - and anyone else who believes [From.GetHerHis] tales - could launch a war to destroy everything I have built!;;;;;;;;;;;;;x
 fe7_eliwood.23.A;I may have miscalculated.;;;;;;;;;;;;;x
+#fe7_eliwood.24.title;The Fiend of [FromFrom.Capital.Duchy.GetName];;;;;;;;;;;;;x
+fe7_eliwood.24.title;Fiend;;;;;;;;;;;;;x
+fe7_eliwood.24.desc;[From.GetTitledName] has sent a rather interesting letter to the lords and ladies of [From.Capital.Kingdom.GetName]. [From.GetSheHeCap] writes of a dark mage by the name of [FromFrom.GetFirstName], and claims [FromFrom.GetSheHe] attempted to provoke a large-scale war between the nobles of [From.Capital.Kingdom.GetName] for some unclear - yet sinister - purpose. \n\n[From.GetFirstName] urges us to attack [FromFrom.GetFirstName] at [FromFrom.GetHerHis] lair in [FromFrom.Capital.Duchy.GetName] before [FromFrom.GetSheHe] attempts an even worse plot.;;;;;;;;;;;;;x
+fe7_eliwood.24.A;We cannot let this fiend do as [FromFrom.GetSheHe] pleases.;;;;;;;;;;;;;x
+fe7_eliwood.24.A.tooltip;[Root.GetTitledFirstName] gains a casus belli against [FromFrom.GetTitledFirstName].\n;;;;;;;;;;;;;x
+fe7_eliwood.24.B;An amusing tale. What next? Dragons returning to the land?;;;;;;;;;;;;;x
+fe7_eliwood.26.desc;One of the nobles who supported my plan has betrayed me! [From.GetLordLady] [From.GetFirstName] came after me with a band of knights. Fortunately, my loyal servants slaughtered [From.GetHerHis] retinue and brought [From.GetHerHim] to me in chains.;;;;;;;;;;;;;x
+fe7_eliwood.26.A;At least those knights had good quintessence.;;;;;;;;;;;;;x
+fe7_eliwood.28.desc;My [Root.GetLordLady], good news! [From.GetLordLady] [From.GetFirstName] has escaped from [From.GetHerHis] captor and returned to us!;;;;;;;;;;;;;x
+fe7_eliwood.28.A;Fantastic!;;;;;;;;;;;;;x
 fe7_eliwood..title;;;;;;;;;;;;;;x
 fe7_eliwood..desc;;;;;;;;;;;;;;x
 fe7_eliwood..A;;;;;;;;;;;;;;x

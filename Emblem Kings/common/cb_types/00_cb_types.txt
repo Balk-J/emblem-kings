@@ -30,69 +30,70 @@ destroy_realm = {
 	allowed_to_target_suzerains = no
 	
 	can_use = {
+		ROOT = {
+			has_opinion_modifier = {
+				who = FROM
+				modifier = opinion_dishonorable_provocateur
+			}
+		}
 		FROM = {
 			has_character_flag = destroy_realm_target
 			
-			any_realm_title = {
-				
-				any_direct_de_jure_vassal_title = {
-					OR = {
-						holder_scope = {
-							OR = {
-								character = ROOT
-								is_liege_or_above = ROOT
-							}
-						}
-						location = {
-							any_neighbor_province = {
-								OR = {
-									AND = {
-										has_owner = yes
-										owner = {
-											OR = {
-												character = ROOT
-												is_liege_or_above = ROOT
-											}
-										}
-									}
-									AND = {
-										is_land = no
-										any_neighbor_province = {
-											OR = {
-												AND = {
-													has_owner = yes
-													owner = {
-														OR = {
-															character = ROOT
-															is_liege_or_above = ROOT
-														}
-													}
-												}
-												AND = {
-													is_land = no
-													any_neighbor_province = {
-														owner = {
-															OR = {
-																character = ROOT
-																is_liege_or_above = ROOT
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+#			any_realm_title = {			
+#				any_direct_de_jure_vassal_title = {
+#					OR = {
+#						holder_scope = {
+#							OR = {
+#								character = ROOT
+#								is_liege_or_above = ROOT
+#							}
+#						}
+#						location = {
+#							any_neighbor_province = {
+#								OR = {
+#									AND = {
+#										has_owner = yes
+#										owner = {
+#											OR = {
+#												character = ROOT
+#												is_liege_or_above = ROOT
+#											}
+#										}
+#									}
+#									AND = {
+#										is_land = no
+#										any_neighbor_province = {
+#											OR = {
+#												AND = {
+#													has_owner = yes
+#													owner = {
+#														OR = {
+#															character = ROOT
+#															is_liege_or_above = ROOT
+#														}
+#													}
+#												}
+#												AND = {
+#													is_land = no
+#													any_neighbor_province = {
+#														owner = {
+#															OR = {
+#																character = ROOT
+#																is_liege_or_above = ROOT
+#															}
+#														}
+#													}
+#												}
+#											}
+#										}
+#									}
+#								}
+#							}
+#						}
+#					}
+#				}
+#			}
 		}
-	}
-	can_use_title = {
-		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
-		
 	}
 	is_valid = {
 		FROM = {
@@ -152,6 +153,14 @@ destroy_realm = {
 		ROOT = {
 			prestige = -250
 			imprison = FROM
+		}
+		custom_tooltip = {
+			text = destroy_realm_tooltip.on_reverse_demand
+			hidden_tooltip = {
+				FROM = {
+					clr_character_flag = destroy_realm_target
+				}
+			}
 		}
 	}
 
@@ -345,6 +354,21 @@ conspiracy_invasion = {
 	
 	ai_will_do = { 
 		factor = 1
+		
+		modifier = {
+			factor = 0
+			has_game_rule = {
+				name = fe_story
+				value = on
+			}
+			NOR = { 
+				primary_title = {title=e_elibe}
+				primary_title = {title=k_lycia}
+				primary_title = {title=d_caelin}
+				primary_title = {title=d_ostia}	
+				primary_title = {title=d_pherae}			
+			}
+		}
 	}
 }
 
@@ -424,10 +448,10 @@ conspiracy_cb = {
 					imprison = ROOT
 				}
 			}
-			
-			hidden_tooltip = {
-			
-			}
+		}
+		
+		custom_tooltip = {
+			name = conspiracy_cb_tooltip
 		}
 	}
 

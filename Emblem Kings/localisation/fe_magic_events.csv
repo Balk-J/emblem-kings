@@ -1,10 +1,4 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-magic..title;;;;;;;;;;;;;;x
-magic..desc;;;;;;;;;;;;;;x
-magic..A;;;;;;;;;;;;;;x
-magic..B;;;;;;;;;;;;;;x
-magic..C;;;;;;;;;;;;;;x
-magic..D;;;;;;;;;;;;;;x
 magic.1.desc;Although you are a practicioner of anima magic, you follow the teachings of [Root.Religion.GetHighGodName] first. However, you've been wondering if there's something to all those philosophies about elemental spirits, communion with forces of nature, and the like. Perhaps it's time to leave behind the [Root.Religion.GetName] faith and dedicate yourself to the study of magic?;;;;;;;;;;;;;x
 magic.1.A;I must become a greater mage.;;;;;;;;;;;;;x
 magic.1.B;I will not turn away from the wisdom of [Root.Religion.GetScriptureName].;;;;;;;;;;;;;x
@@ -16,3 +10,41 @@ magic.3.A;It seems a bit silly.;;;;;;;;;;;;;x
 magic.3.B;But it's so fascinating!;;;;;;;;;;;;;x
 magic.4.desc;You have made a breakthrough in your arcane studies! After many hours of practice, you have mastered long-range lightning magic. It will be helpful at breaking through fortifications from a safe distance.;;;;;;;;;;;;;x
 magic.4.A;Thunder, hear my cry!;;;;;;;;;;;;;x
+magic.7.desc;The world is full of mysteries. Solve one, and along comes another... nevertheless, you believe you are close to a breakthrough in your studies of [Root.Religion.GetName]. This would greatly increase your knowledge and power, but it could also fundamentally change how you relate to the world.;;;;;;;;;;;;;x
+magic.7.A;I must continue my work!;;;;;;;;;;;;;x
+magic.7.B;I am satisfied with my knowledge.;;;;;;;;;;;;;x
+magic.8.title;The Price of Power;;;;;;;;;;;;;x
+magic.8.desc;While poring over some scrolls late one night, you came across an interesting treatise by an old scholar of Elder Magic. [Root.GetSheHeCap] contends that true mastery of the art requires inviting "dark power" within one's self. With the magic received and internalized, amazing things become possible. \n\nHowever, it seems the tempation to submit to this power is great. Without a strong disposition, darkness will overwhelm the mage, erasing their mind and perhaps their soul. Even success can warp one's personality. It's possible that claiming this power would make you lose yourself to such a degree that you forget why you sought it in the first place.\n\nThe few who succeed are the ones determined to obtain power at any price, and those willing to part with their very identity for knowledge.;;;;;;;;;;;;;x
+magic.8.A;I must have it, at any cost.;;;;;;;;;;;;;x
+magic.8.B;To win such a prize, one's self is a small and insignificant sacrifice.;;;;;;;;;;;;;x
+magic.8.C;Why would anyone want power at the cost of [Root.GetHerHis] own identity?;;;;;;;;;;;;;x
+magic.9.title;;;;;;;;;;;;;;x
+magic.9.desc;The time is right. You may begin the ritual to increase your powers as a dark mage, if you are prepared...;;;;;;;;;;;;;x
+magic.9.A;Yes;;;;;;;;;;;;;x
+magic.9.B;No;;;;;;;;;;;;;x
+magic.10.desc;The power you have taken in is overwhelming. You struggle to maintain your identity, but the darkness is too strong. All thought, all emotion, all memory - it's dissolved in a river of darkness.;;;;;;;;;;;;;x
+magic.10.A;Ah...;;;;;;;;;;;;;x
+magic.11.desc;The ritual has succeeded. I feel more alive now than I ever have before. The power is marvelous!;;;;;;;;;;;;;x
+magic.11.A;And I know I will grow even stronger.;;;;;;;;;;;;;x
+magic.12.desc;The ritual was a success. You have gained tremendous power, and yet you feel oddly serene - like you're rising above all the trivial matters that used to bother you.;;;;;;;;;;;;;x
+magic.12.A;I thought I would be more excited. Oh well.;;;;;;;;;;;;;x
+magic.14.desc;You've been having trouble remembering things lately. Nothing of great importance, just trivial details like your favorite color or what your mother looked like when you were a child. Your emotions also seem to be slipping away - it;;;;;;;;;;;;;x
+magic.14.desc.1;It feels as though your new magical powers are dissolving your personality somehow. You don't really feel much of anything when you're alone, but when you're around others, your emotions and opinions shift to match theirs. You know this should bother you, but it takes most of your effort to run your realm and remember why you sought this power in the first place.;;;;;;;;;;;;;x
+magic.14.desc.2;I have grown strong, but this power is not enough. There are higher levels, I am sure of it. I will become stronger and move ever closer to perfection.;;;;;;;;;;;;;x
+magic.14.A.1;[Root.GetFirstName]? Yes, I... suppose that is me.;;;;;;;;;;;;;x
+magic.14.A.2;I must be stronger. Nothing else matters.;;;;;;;;;;;;;x
+magic.15.tooltip;[Root.GetTitledFirstName] loses all personality traits.;;;;;;;;;;;;;x
+magic.16.desc;I have been acting more like the people around me recently. Almost human.;;;;;;;;;;;;;x
+magic.16.A;That's not who I am anymore.;;;;;;;;;;;;;x
+magic.18.tooltip;Become a legendary mage.;;;;;;;;;;;;;x
+magic.18.desc;The long hours of study have certainly paid off! Your knowledge of magic is legendary, and you've recently found that you've surpassed many of the needs of the flesh. Food, sleep... even the passing of time does not have the importance it once did. There are many who now call you "Archsage.";;;;;;;;;;;;;x
+magic.18.A;And yet, there is always more to learn.;;;;;;;;;;;;;x
+magic.19.desc;You have obtained an interesting tome. It's ancient, crumbled, and nearly illegible, but you have been able to decipher a passage that speaks of a primal force behind all livings things. The tome suggests that it is possible to harness this power for many different purposes. Perhaps this bears further study?;;;;;;;;;;;;;x
+magic.19.A;This is quite fascinating.;;;;;;;;;;;;;x
+magic.19.B;I should focus on something else.;;;;;;;;;;;;;x
+magic..title;;;;;;;;;;;;;;x
+magic..desc;;;;;;;;;;;;;;x
+magic..A;;;;;;;;;;;;;;x
+magic..B;;;;;;;;;;;;;;x
+magic..C;;;;;;;;;;;;;;x
+magic..D;;;;;;;;;;;;;;x

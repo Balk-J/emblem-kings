@@ -44,6 +44,176 @@ decisions = {
 			}
 		}
 	}	
+	quintessence_heal = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence 
+			NOT = { trait = incapable }
+		}
+		allow = {
+			piety = 100
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence 
+			NOT = { has_character_flag = quintessence_heal }
+			OR = {
+				trait=wounded
+				#trait=maimed
+				#trait=severely_injured
+				trait=depressed
+				trait=stressed
+				trait=lovers_pox
+				trait=ill
+				trait=pneumonic
+				trait=leper
+				trait=has_typhoid_fever
+				trait=has_bubonic_plague
+				trait=has_measles
+				trait=has_small_pox
+				trait=has_aztec_disease
+				trait=syphilitic
+				trait=sickly
+				trait=abdominal_pain
+				trait=cough
+				trait=fever
+				trait=malaise
+				trait=fatigue
+				trait=chest_pain
+				trait=vomiting
+				trait=diarrhea
+				trait=headache
+				trait=cramps
+				trait=rash
+				trait=infection
+				trait=cancer  
+				trait=flu
+				trait=dysentery  
+				trait=gout
+				trait=food_poisoning  
+				trait=rabies
+				trait=scurvy
+			}
+		}
+		effect = {
+			piety = -100
+			custom_tooltip = {
+				text = quintessence_heal_tooltip
+				hidden_tooltip = {
+					character_event = { id = quintessence.10 days = 20 random = 10 }
+					set_character_flag = quintessence_heal
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 0
+				NOR = {
+					trait = ill
+					trait = pneumonic
+					trait = syphilitic
+					trait = leper
+					trait = wounded
+					trait = has_tuberculosis
+					trait = has_typhoid_fever
+					trait = has_typhus
+					trait = has_bubonic_plague
+					trait = has_measles
+					trait = has_small_pox
+					trait = has_aztec_disease
+					trait = infection
+					trait = dysentery
+					trait = food_poisoning
+					trait = rabies
+					trait = cancer
+				}
+			}
+		}
+	}	
+	
+	quintessence_mend = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence 
+			NOT = { trait = incapable }
+		}
+		allow = {
+			piety = 200
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence 
+			NOT = { has_character_flag = quintessence_mend }
+			OR = {
+				trait = infirm
+				trait = maimed
+				trait = disfigured
+				trait = mangled
+				trait = severely_injured
+			}
+		}
+		effect = {
+			piety = -200
+			custom_tooltip = {
+				text = quintessence_mend_tooltip
+				hidden_tooltip = {
+					character_event = { id = quintessence.11 days = 30 random = 10 }
+					set_character_flag = quintessence_mend
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 0
+				NOR = {
+					trait = infirm
+					trait = maimed
+					trait = disfigured
+					trait = mangled
+					trait = severely_injured
+				}
+			}
+		}
+	}	
+	
+	quintessence_immortality = {
+		only_playable = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence 
+			NOT = { trait = incapable }
+		}
+		allow = {
+			piety = 100
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence 
+			NOT = { has_character_modifier = immortal_from_quintessence }
+		}
+		effect = {
+			piety = -100
+			add_character_modifier = { name = immortal_from_quintessence duration = 3650 } 
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = depressed
+			}
+		}
+	}	
 	
 	open_the_dragons_gate = {
 		only_playable = yes
@@ -66,14 +236,24 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			OR = {
-				OR = {
-					trait = dragon
-					trait = dragon_blood
+				custom_tooltip = {
+					text = is_dragon_tooltip
+					hidden_tooltip = {
+						OR = {
+							trait = dragon
+							trait = dragon_blood
+						}
+					}
 				}
 				any_courtier = {
-					OR = {
-						trait = dragon
-						trait = dragon_blood
+					custom_tooltip = {
+						text = is_dragon_tooltip
+						hidden_tooltip = {
+							OR = {
+								trait = dragon
+								trait = dragon_blood
+							}
+						}
 					}
 					is_adult = yes
 					NOT = { trait = incapable }
@@ -83,10 +263,86 @@ decisions = {
 		}
 		effect = {
 			piety = -10000
-			#character_event = { id = quintessence.3 }
+			character_event = { id = quintessence.3 }
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}	
+}
+
+targetted_decisions = {
+	drain_quintessence_from_prisoner = {
+		only_playable = yes
+		filter = court
+		ai_target_filter = court
+
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+		}
+
+		potential = {
+			host = { character = FROM }
+			prisoner = yes
+			age = 6
+		}
+
+		allow = {
+			prisoner = yes
+			NOR = {
+				trait = morph
+				trait = war_dragon
+			}
+		}
+
+		effect = {
+			custom_tooltip = {
+				text = drain_quintessence_from_prisoner_tooltip
+				#hidden_tooltip = {
+					FROM = { character_event = { id = quintessence.2 } }
+				#}
+			}
+			death = {
+				death_reason = death_execution
+				killer = FROM
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0.001
+			
+			modifier = {
+				factor = 0
+				reverse_opinion = { who = FROM value = 40 }
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					trait = dragon
+					trait = dragon_blood
+				}
+			}
+			modifier = {
+				factor = 5
+				FROM = {
+					has_ambition = obj_gather_quintessence
+				}
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					NOT = { piety = 100 }
+				}
+			}
+		}
+	}
 }

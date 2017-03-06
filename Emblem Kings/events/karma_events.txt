@@ -50,12 +50,12 @@ character_event = {
 				trait = peasant_leader
 				trait = tough_soldier
 				trait = class_soldier
+				trait = base_class_soldier
 			}
 			
 			new_character = {
 				set_variable = { which = "level" value = 1 }
 				set_character_flag="class_selected"
-				set_character_flag="class_soldier"
 				
 				create_title = {
 					tier = DUKE

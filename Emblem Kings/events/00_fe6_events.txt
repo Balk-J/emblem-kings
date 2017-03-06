@@ -565,6 +565,7 @@ character_event = {
 			culture = ROOT #divine_dragon_culture
 			female = yes
 			age = 2000
+			immortal_age = 20
 			attributes = {
 				martial = 0
 				diplomacy = 0
@@ -774,6 +775,7 @@ narrative_event = {
 				learning = 10
 			}
 			health = 6
+			immortal_age = 20
 			trait="tough_soldier"	
 			trait="dragon"		
 			trait="class_manakete"

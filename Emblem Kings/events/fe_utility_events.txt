@@ -1,0 +1,30 @@
+namespace = util
+
+# Create a dead, fake parent for a character to prevent them from being culled
+character_event = {
+	id = util.1
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	immediate = {
+		liege = {
+			create_character = {
+				random_traits = yes
+				dynasty = NONE
+				female = no
+				age = 80
+				culture = ROOT
+				religion = ROOT
+			}
+			new_character = {
+				ROOT = { set_father = PREV }
+				death = yes
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}	

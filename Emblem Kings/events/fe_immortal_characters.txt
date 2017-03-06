@@ -1,0 +1,363 @@
+namespace = fe_immortal
+######################################
+# Immortal Character Creation Events #
+######################################
+
+# Create Athos and Bramimond
+character_event = {
+	id = fe_immortal.1
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_character_flag = is_fe7_athos
+					}
+				}
+			}
+			b_archsages_refuge = {
+				create_character = {
+					random_traits = no
+					name = "Athos"
+					dynasty = 601
+					religion = anima
+					culture = etrurian
+					female = no
+					age = 1039
+					immortal_age = 60
+					trait=class_archsage
+					trait=base_class_mage
+					trait=genius
+					trait=mastermind_theologian
+					trait=mystic
+					trait=scholar
+					trait=diligent
+					trait=kind
+					trait=patient
+					trait=temperate
+					trait=just
+					trait=honest
+					trait=celibate
+					trait=eight_legends
+				}
+				
+				new_character = {
+					culture=nabatan
+					give_nickname=nick_the_archsage
+					set_variable = { which = level value = 20 }
+					set_character_flag = class_selected
+					set_character_flag = is_fe7_athos
+					set_character_flag=regalia_forblaze_failure
+					
+					if = {
+						limit = {
+							year = 660
+							NOT = { year = 800 }
+						}
+						add_friend = 308 # Nergal
+					}
+					if = {
+						limit = {
+							year = 800
+						}
+						add_rival= 308 # Nergal
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_character_flag = is_fe7_bramimond
+					}
+				}
+			}
+			b_temple_of_seals = {
+				create_character = {
+					random_traits = no
+					name = "Bramimond"
+					dynasty = 602
+					religion = dark
+					culture = bernese
+					female = no
+					age = 1036
+					immortal_age = 30
+					trait=class_archdruid
+					trait=base_class_dark_mage
+					trait=genius
+					trait=mastermind_theologian
+					trait=mystic
+					trait=scholar
+					trait=celibate
+					trait=dark_selfless
+					trait=eight_legends
+				}
+				
+				new_character = {
+					culture=nabatan
+					give_nickname=nick_the_enigma
+					set_variable = { which = level value = 20 }
+					set_character_flag = class_selected
+					set_character_flag = regalia_apocalypse_failure
+					
+					random_character = {
+						limit = {
+							has_character_flag = is_fe7_athos
+						}
+						add_friend = PREV
+					}
+				}
+			}
+		}
+	}
+}		
+
+# Create Ninian and Nils
+character_event = {
+	id = fe_immortal.2
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_character_flag = is_fe7_ninian
+					}
+				}
+			}
+			c_khathelet = {
+				create_character = {
+					random_traits = no
+					name = "Ninian"
+					dynasty = 304
+					religion = elimine_church
+					culture = ilian
+					female = yes
+					age = 989
+					immortal_age = 16
+					trait=dragon_blood
+					trait=class_dancer
+					trait=base_class_dancer
+					trait=scholarly_theologian
+					trait=kind
+					trait=shy
+					trait=chaste
+				}
+				
+				new_character = {
+					set_variable = { which = level value = 1 }
+					set_character_flag = class_selected
+					set_character_flag = is_fe7_ninian
+					#set_real_father = {character=308} # Nergal
+					#set_mother = {character=904}
+					if = {
+						limit = {
+							year = 1160
+							NOT = { year = 1161 }
+						}
+						e_nergal = {
+							holder_scope = {
+								reverse_banish = PREVPREV
+								reverse_imprison = PREVPREV	
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_character_flag = is_fe7_nils
+					}
+				}
+			}
+			c_khathelet = {				
+				create_character = {
+					random_traits = no
+					name = "Nils"
+					dynasty = 304
+					religion = elimine_church
+					culture = ilian
+					female = no
+					age = 984
+					immortal_age = 11
+					mother = 924 # Aenir
+					trait=dragon_blood
+					trait=class_bard
+					trait=base_class_bard
+					trait=martial_cleric
+					trait=brave
+					trait=just
+					trait=cynical
+				}
+				
+				new_character = {
+					set_variable = { which = level value = 1 }
+					set_character_flag = class_selected
+					set_character_flag = is_fe7_nils
+					if = {
+						limit = {
+							year = 1160
+							NOT = { year = 1161 }
+						}
+						
+						c_iustitia = {
+							holder_scope = {
+								reverse_banish = PREVPREV
+							}
+						}
+					}
+				}				
+			}
+		}
+		e_nergal = {
+			holder_scope = {
+				random_spouse_even_if_dead = {
+					character_event = { id = fe_immortal.5 }
+				}	
+			}
+		}
+	}
+}	
+
+# Create Fae
+character_event = {
+	id = fe_immortal.3
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_character_flag = is_fe6_fae
+					}
+				}
+			}
+			c_arcadia = {
+				create_character = {
+					random_traits = no
+					name = "Fae"
+					dynasty = none
+					religion = elibe_spirits_pagan
+					culture = divine_dragon_culture
+					female = yes
+					age = 314
+					immortal_age = 12
+					trait=dragon
+					trait=class_manakete_female
+					trait=base_class_manakete
+					trait=amateurish_plotter
+					trait=kind
+					trait=deceitful
+					trait=trusting
+					trait=gregarious
+				}
+				
+				new_character = {
+					set_variable = { which = level value = 1 }
+					set_character_flag = class_selected
+					set_character_flag = is_fe6_fae
+					culture=nabatan
+				}
+			}
+		}
+	}
+}	
+
+# Create Sophia... ... ...
+character_event = {
+	id = fe_immortal.4
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_character_flag = is_fe6_sophia
+					}
+				}
+			}
+			c_arcadia = {
+				create_character = {
+					random_traits = no
+					name = "Sophia"
+					dynasty = none
+					religion = dark
+					culture = divine_dragon_culture
+					female = yes
+					age = 254
+					immortal_age = 16
+					trait=dragon_blood
+					trait=class_dark_mage_female
+					trait=base_class_dark_mage
+					trait=detached_priest
+					trait=kind
+					trait=shy
+					trait=humble
+				}
+				
+				new_character = {
+					set_variable = { which = level value = 1 }
+					set_character_flag = class_selected
+					set_character_flag = is_fe6_sophia
+					culture=nabatan
+					
+					random_character = {
+						limit = {
+							has_character_flag = is_fe6_fae
+						}
+						add_friend = PREV
+					}
+				}
+			}
+		}
+	}
+}	
+
+# Set Ninian and Nils' parents
+character_event = {
+	id = fe_immortal.5
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		e_nergal = {
+			holder_scope = {
+				random_character = {
+					limit = {
+						has_character_flag = is_fe7_ninian
+					}
+					set_mother = ROOT
+					set_real_father = PREV
+				}
+				random_character = {
+					limit = {
+						has_character_flag = is_fe7_nils
+					}
+					set_mother = ROOT
+					set_real_father = PREV
+				}
+			}
+		}
+	}
+}	

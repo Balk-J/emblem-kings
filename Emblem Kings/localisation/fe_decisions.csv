@@ -1,6 +1,11 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+is_dragon_tooltip;Is a Dragon\n;;;;;;;;;;;;;x
 promote;Promote;;;;;;;;;;;;;x
 promote_desc;Promote to an advanced class.;;;;;;;;;;;;;x
+promote_sorceror;Promote;;;;;;;;;;;;;x
+promote_sorceror_desc;There is an ancient ritual that allows a mage to draw in a large amount of magic power. This would increase my power and lifespan dramatically, but may lead to some personality changes. There is also the risk that the power will overwhelm my mind and leave me comatose.;;;;;;;;;;;;;x
+promote_sage;Promote;;;;;;;;;;;;;x
+promote_sage_desc;There is an avenue of research that seems especially promising. Persuing it would lead to mastery of all forms of magic and a greatly increased lifespan.;;;;;;;;;;;;;x
 decide_what_to_do_with_regalia;Decide on regalia inheritance;;;;;;;;;;;;;x
 decide_what_to_do_with_regalia_desc;Decide what to do with your regalia after your death.;;;;;;;;;;;;;x
 decide_what_to_do_with_regalia_tooltip;You have a decision to make.;;;;;;;;;;;;;x
@@ -8,12 +13,16 @@ create_golden_church;Create the Golden See;;;;;;;;;;;;;x
 create_golden_church_desc;If I am "pious" enough and control Aquleia, I can create a Golden Bishop to serve as the head of the faith in opposition to the foolish High Bishop of the Elimine Church.;;;;;;;;;;;;;x
 form_kingdom_of_lycia;Form the Kingdom of Lycia;;;;;;;;;;;;;x
 form_kingdom_of_lycia_desc;With enough prestige and the approval of your peers, the Lycian League can be reformed into a true kingdom.;;;;;;;;;;;;;x
+form_kingdom_of_lycia.tooltip.allow;All marches of §YLycia§! have no holder or the current holder's opinion of §Y[Root.GetTitledFirstName]§! is at least §Y50§!.\n;;;;;;;;;;;;;x
 create_war_dragons;Create War Dragons;;;;;;;;;;;;;x
 create_war_dragons_desc;Your Demon Dragon can be called upon to create War Dragons for your army.;;;;;;;;;;;;;x
+create_war_dragons.tooltip.allow;The Demon Dragon has not reached the limit on the number of War Dragons it can control §Y(9)§!.;;;;;;;;;;;;;x
+create_war_dragons.tooltip;Three new War Dragons will be created.;;;;;;;;;;;;;x
 create_morph;Create Morph;;;;;;;;;;;;;x
 create_morph_desc;Use your arcane knowledge to create an artificial human.;;;;;;;;;;;;;x
 return_elibe_to_dragons;Return Elibe to the Dragons;;;;;;;;;;;;;x
 return_elibe_to_dragons_desc;With control over enough of the continent and the support of a true dragon, I can give this land a ruler who will free us from misery and suffering.;;;;;;;;;;;;;x
+return_elibe_to_dragons.tooltip.allow;§Y[Root.GetTitledFirstName]§! completely controls at least §Y50§! regions of old Elibe - §YBern§!, §YLycia§!, §YEtruria§!, §YIlia§!, §YNabata§!, and §YSacae§!.\n;;;;;;;;;;;;;x
 return_elibe_to_dragons_TOOLTIP;Any empire-level titles you hold are forfeit.\nThe Hierophant will become your new liege, and the liege of any king-level vassals you have.;;;;;;;;;;;;;x
 hire_black_fang;Hire a Black Fang assassin;;;;;;;;;;;;;x
 hire_black_fang_desc;The Black Fang are a notorious guild of assassins. They would be able to dispose of [Root.PlotTarget.GetTitledFirstName] quickly and quietly...;;;;;;;;;;;;;x
@@ -33,6 +42,15 @@ convert_to_dark;Embrace Elder Magic;;;;;;;;;;;;;x
 convert_to_dark_desc;I could abandon the [Root.Religion.GetName] faith and focus my studies on elder magic.;;;;;;;;;;;;;x
 open_the_dragons_gate;Open the Dragon's Gate;;;;;;;;;;;;;x
 open_the_dragons_gate_desc;With enough quintessence and the collaboration - willing or not - of a dragon, I can open the gate to the realm of dragons.;;;;;;;;;;;;;x
-drain_soldiers;Drain Soldiers;;;;;;;;;;;;;x
-drain_soldiers_desc;Monitor the soldiers of [Root.GetTitledFirstName]'s realm and look for chances to drain the strong ones of quintessence.;;;;;;;;;;;;;x
-drain_soldiers.tooltip;[Root.GetTitledFirstName] will need to be involved in a war to create opportunities for your agents.;;;;;;;;;;;;;x
+quintessence_heal;Quintessence Heal;;;;;;;;;;;;;x
+quintessence_heal_desc;Quintessence can be used on one's self to recover quickly from all manner of illnesses and grievous wounds.;;;;;;;;;;;;;x
+quintessence_heal_tooltip;You will recover from your ailments after a few days.;;;;;;;;;;;;;x
+quintessence_mend;Quintessence Mend;;;;;;;;;;;;;x
+quintessence_mend_desc;Quintessence can be used on one's self to recover from even the most serious of injuries.;;;;;;;;;;;;;x
+quintessence_mend_tooltip;You will recover from your wounds after several days.;;;;;;;;;;;;;x
+quintessence_immortality;Stop Aging;;;;;;;;;;;;;x
+quintessence_immortality_desc;A simple ritual using quintessence repeated every few years will halt the aging process entirely.;;;;;;;;;;;;;x
+drain_quintessence_from_prisoner;Drain Quintessence;;;;;;;;;;;;;x
+drain_quintessence_from_prisoner_desc;Drain [Root.GetTitledFirstName] of quintessence. Unfortunately, the process will be fatal for [Root.GetHerHim].;;;;;;;;;;;;;x
+drain_quintessence_from_prisoner_tooltip;[From.GetTitledFirstName] gains [From.Religion.GetPietyName].\n;;;;;;;;;;;;;x
+drain_quintessence_from_prisoner.tooltip;The more advanced in a class a character is, the more quintessence can be had by draining them.;;;;;;;;;;;;;x

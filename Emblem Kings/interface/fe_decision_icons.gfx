@@ -52,4 +52,24 @@ spriteTypes = {
 		name = "GFX_open_the_dragons_gate"
 		texturefile = "gfx\\interface\\decision_icon_pick_main_deity.dds"
 	}
+	spriteType = {
+		name = "GFX_promote_sorceror"
+		texturefile = "gfx\\interface\\decision_icon_dark.dds"
+	}
+	spriteType = {
+		name = "GFX_promote_sage"
+		texturefile = "gfx\\interface\\decision_icon_anima.dds"
+	}
+	spriteType = {
+		name = "GFX_quintessence_immortality"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_local_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_quintessence_heal"
+		texturefile = "gfx\\interface\\decision_icon_seek_treatment.dds"
+	}
+	spriteType = {
+		name = "GFX_quintessence_mend"
+		texturefile = "gfx\\interface\\decision_icon_seek_treatment.dds"
+	}
 }

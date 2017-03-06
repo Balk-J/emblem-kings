@@ -171,6 +171,15 @@ nick_the_silver_wolf = {
 			religion = divine_sky_pagan
 			culture = sacaean
 		}
+		OR = {
+			trait=class_bow_knight
+			trait=class_bow_knight_female
+			trait=class_swordmaster
+			trait=class_swordmaster_female			
+			trait=class_sniper
+			trait=class_sniper_female
+		}
+		prestige = 1000
 	}
 	chance = {
 		factor = 1
@@ -180,7 +189,7 @@ nick_the_silver_wolf = {
 		}
 		modifier = {
 			factor = 2.0
-			prestige = 1000
+			prestige = 2000
 		}
 	}
 }
@@ -190,7 +199,8 @@ nick_the_princess_of_swords = {
 		age = 16
 		trait = duelist
 		prestige = 1000
-		trait = class_swordmaster_female		
+		trait = class_swordmaster_female
+		female = yes
 	}
 	
 	chance = {

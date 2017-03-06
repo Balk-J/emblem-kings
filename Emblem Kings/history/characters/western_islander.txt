@@ -44,10 +44,10 @@
 	}
 	1167.01.01={
 		add_trait="class_mercenary_female"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1170.01.01={
@@ -88,10 +88,10 @@
 	}
 	1151.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1154.01.01={
@@ -166,10 +166,10 @@
 	}	
 	1166.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1169.01.01={
@@ -235,10 +235,10 @@
 	}
 	1168.01.01={
 		add_trait="class_fighter"
+			add_trait="base_class_fighter"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_fighter"
 		}
 	} 
 	1171.01.01={
@@ -287,10 +287,10 @@
 	}
 	1160.01.01={
 		add_trait="class_mercenary"
+			add_trait="base_class_mercenary"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_mercenary"
 		}
 	} 
 	1160.01.01={
@@ -350,10 +350,10 @@
 	}
 	1171.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1174.01.01={
@@ -391,10 +391,10 @@
 	}
 	1162.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1165.01.01={
@@ -436,10 +436,10 @@
 	}
 	1160.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1163.01.01={
@@ -476,10 +476,10 @@
 	}
 	1164.01.01={
 		add_trait="class_brigand"
+			add_trait="base_class_brigand"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_brigand"
 		}
 	} 
 	1167.01.01={
@@ -516,11 +516,23 @@
 	1130.1.1={
 		birth=yes
 	}
+	
+	1142.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	}
 		
 	1150.1.1 = {
 		add_trait="wroth"
 		give_nickname="nick_the_stone_giant"
-	}
+		
+		remove_trait="class_brigand"
+		add_trait="class_berserker"
+	}	
 	
 	1159.01.01 = { 
 		death = {
@@ -544,10 +556,10 @@
 	}
 	1172.01.01={
 		add_trait="class_myrmidon"
+			add_trait="base_class_myrmidon"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-			set_character_flag="class_myrmidon"
 		}
 	} 
 	1175.01.01={
@@ -1283,10 +1295,10 @@
 #		culture=western_islander
 #		employer=702 #Ekhidna
 #		add_trait="class_bard"
+#		add_trait="base_class_bard"
 #		effect = {
 #			set_variable = { which = "level" value = 1 }
 #			set_character_flag="class_selected"
-#			set_character_flag="class_dancer"
 #		}
 #	}
 #	1227.01.01 = { 

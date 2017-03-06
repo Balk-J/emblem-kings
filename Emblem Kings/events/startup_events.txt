@@ -38,6 +38,45 @@ character_event = {
 			}
 		}
 		
+		# Create immortal characters via event, so they look the appropriate age
+		if = { # Athos and Bramimond
+			limit = { 
+				year = 120
+				NOT = { year = 1161 }
+			}
+			character_event = {
+				id = fe_immortal.1
+			}
+		}
+		if = { # Ninian and Nils
+			limit = { 
+				year = 1159
+				NOT = { year = 1161 }
+			}
+			character_event = {
+				id = fe_immortal.2
+			}
+		}
+		if = { # Fae
+			limit = { 
+				year = 845
+				NOT = { year = 4204 }
+			}
+			character_event = {
+				id = fe_immortal.3
+			}
+		}
+		if = { # Sophia
+			limit = { 
+				year = 905
+				NOT = { year = 1400 }
+			}
+			character_event = {
+				id = fe_immortal.4
+			}
+		}
+		
+		# Startup events for scenarios
 		if = { # Lyn's Story
 			limit = { 
 				year = 1159
@@ -165,11 +204,41 @@ character_event = {
 						value = on
 					}
 				}
+				k_lycia = {
+					set_title_flag = quintessence_conspiracy_zone 
+				}
+				d_ostia = {									
+					set_title_flag = quintessence_conspiracy_target 
+				}
 				e_nergal = {
 					holder_scope = {
-						character_event = { id = fe7_eliwood.1 days = 1 }
+						set_character_flag = quintessence_conspiracy_leader
+						character_event = { id = fe7_eliwood.13 days = 90 random = 10 }
 					}
 				}
+				d_pherae = {
+					holder_scope = {
+						set_character_flag = blazing_sword_startup
+						character_event = { id = fe7_eliwood.11 days = 1 }
+					}
+				}
+				d_laus = {
+					holder_scope = {
+						set_character_flag = quintessence_conspiracy_member
+					}
+				}
+				d_santaruz = {
+					holder_scope = {
+						set_character_flag = quintessence_conspiracy_member
+					}
+				}
+			}
+			# Need to get rid of Elbert even if story events are disabled
+			random_character = {
+				limit = {
+					has_character_flag = is_fe7_elbert
+				}
+				character_event = { id = fe7_eliwood.25 days = 1}
 			}
 		}
 	}

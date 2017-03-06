@@ -1,0 +1,67 @@
+decisions = {
+
+	promote_sorceror = {
+		only_playable = yes
+		is_high_prio = yes # Will show an alert once decision is enabled
+		potential = {
+			ai = no
+			is_playable = yes
+			religion = dark
+			is_adult = yes
+			prisoner = no
+			OR = {
+				#has_character_flag = lore_archdruid 
+				#has_character_flag = lore_dark_druid
+				had_character_flag = { flag = lore_archdruid days = 1500 }
+				had_character_flag = { flag = lore_dark_druid days = 1500 }
+			}
+			OR = {
+				trait = class_sorceror
+				trait = class_sorceror_female
+			}
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			check_variable = { which = "level" value = 20 }
+		}
+		effect = {
+			character_event = { id = magic.9 tooltip = magic.9.desc }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	promote_sage = {
+		only_playable = yes
+		is_high_prio = yes # Will show an alert once decision is enabled
+		potential = {
+			ai = no
+			is_playable = yes
+			religion = anima
+			is_adult = yes
+			prisoner = no
+			#has_character_flag = archmage
+			had_character_flag = { flag = archmage days = 1800 }
+			OR = {
+				trait = class_sage
+				trait = class_sage_female
+			}
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			check_variable = { which = "level" value = 20 }
+		}
+		effect = {
+			character_event = { id = magic.18 tooltip = magic.18.tooltip }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+}

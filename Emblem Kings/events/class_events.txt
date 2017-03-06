@@ -166,14 +166,13 @@ character_event = {
 		name = "OK"
 		set_character_flag = class_selected
 		event_target:class_selector = {
-			if = {
+			#if = {
 				character_event = {
 					id = class.2
 					tooltip = class.2.tooltip
 					days = 1
 				}
-			}	
-				
+			#}	
 		}
 		clear_event_target = class_selector
 	}
@@ -193,25 +192,26 @@ character_event = {
 			FROM = {
 				father_even_if_dead = {
 					OR = {
-						has_character_flag=class_knight
-						has_character_flag=class_cavalier
-						has_character_flag=class_archer
-						has_character_flag=class_horse_archer
-						has_character_flag=class_mercenary
-						has_character_flag=class_fighter
-						has_character_flag=class_myrmidon
-						has_character_flag=class_thief
-						has_character_flag=class_pirate
-						has_character_flag=class_brigand
-						has_character_flag=class_priest
-						has_character_flag=class_monk
-						has_character_flag=class_mage
-						has_character_flag=class_shaman
-						has_character_flag=class_wyvern_rider
-						has_character_flag=class_pegasus_knight
-						has_character_flag=class_manakete
-						has_character_flag=class_soldier
-						has_character_flag=class_dancer
+						trait=base_class_knight
+						trait=base_class_cavalier
+						trait=base_class_archer
+						trait=base_class_horse_archer
+						trait=base_class_mercenary
+						trait=base_class_fighter
+						trait=base_class_myrmidon
+						trait=base_class_thief
+						trait=base_class_pirate
+						trait=base_class_brigand
+						trait=base_class_priest
+						trait=base_class_monk
+						trait=base_class_mage
+						trait=base_class_dark_mage
+						trait=base_class_wyvern_rider
+						trait=base_class_pegasus_knight
+						trait=base_class_manakete
+						trait=base_class_soldier
+						trait=base_class_bard
+						trait=base_class_troubador
 					}
 				}
 			}
@@ -234,24 +234,30 @@ character_event = {
 	option = {
 		name = "class.2.B"
 		trigger = {
-			mother_even_if_dead = {
-				OR = {
-					has_character_flag=class_knight
-					has_character_flag=class_cavalier
-					has_character_flag=class_archer
-					has_character_flag=class_horse_archer
-					has_character_flag=class_mercenary
-					has_character_flag=class_myrmidon
-					has_character_flag=class_thief
-					has_character_flag=class_troubador
-					has_character_flag=class_cleric
-					has_character_flag=class_mage
-					has_character_flag=class_shaman
-					has_character_flag=class_wyvern_rider
-					has_character_flag=class_pegasus_knight
-					has_character_flag=class_manakete
-					has_character_flag=class_soldier
-					has_character_flag=class_dancer
+			FROM = {
+				mother_even_if_dead = {
+					OR = {
+						trait=base_class_knight
+						trait=base_class_cavalier
+						trait=base_class_archer
+						trait=base_class_horse_archer
+						trait=base_class_mercenary
+						trait=base_class_myrmidon
+						trait=base_class_thief
+						trait=base_class_troubador
+						trait=base_class_cleric
+						trait=base_class_mage
+						trait=base_class_dark_mage
+						trait=base_class_wyvern_rider
+						trait=base_class_pegasus_knight
+						trait=base_class_manakete
+						trait=base_class_soldier
+						trait=base_class_dancer
+						trait=base_class_pirate
+						trait=base_class_brigand
+						trait=base_class_fighter
+						trait=base_class_monk
+					}
 				}
 			}
 		}
@@ -315,25 +321,27 @@ character_event = {
 			FROMFROM = {
 				father_even_if_dead = {
 					OR = {
-						has_character_flag=class_knight
-						has_character_flag=class_cavalier
-						has_character_flag=class_archer
-						has_character_flag=class_horse_archer
-						has_character_flag=class_mercenary
-						has_character_flag=class_fighter
-						has_character_flag=class_myrmidon
-						has_character_flag=class_thief
-						has_character_flag=class_pirate
-						has_character_flag=class_brigand
-						has_character_flag=class_priest
-						has_character_flag=class_monk
-						has_character_flag=class_mage
-						has_character_flag=class_shaman
-						has_character_flag=class_wyvern_rider
-						has_character_flag=class_pegasus_knight
-						has_character_flag=class_manakete
-						has_character_flag=class_soldier
-						has_character_flag=class_dancer
+						trait=base_class_knight
+						trait=base_class_cavalier
+						trait=base_class_archer
+						trait=base_class_horse_archer
+						trait=base_class_mercenary
+						trait=base_class_fighter
+						trait=base_class_myrmidon
+						trait=base_class_thief
+						trait=base_class_pirate
+						trait=base_class_brigand
+						trait=base_class_priest
+						trait=base_class_monk
+						trait=base_class_mage
+						trait=base_class_dark_mage
+						trait=base_class_wyvern_rider
+						trait=base_class_pegasus_knight
+						trait=base_class_manakete
+						trait=base_class_soldier
+						trait=base_class_dancer
+						trait=base_class_bard
+						trait=base_class_troubador
 					}
 				}
 			}
@@ -343,13 +351,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_knight
+						trait=base_class_knight
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_knight
-				set_character_flag = class_knight
+				hidden_tooltip = { add_trait = base_class_knight }
 			}
 		}
 		# Cavalier
@@ -357,13 +365,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_cavalier
+						trait=base_class_cavalier
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_cavalier
-				set_character_flag = class_cavalier
+				hidden_tooltip = { add_trait = base_class_cavalier }
 			}
 		}
 		# Archer
@@ -371,7 +379,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_archer
+						trait=base_class_archer
 					}
 				}
 			}
@@ -388,15 +396,15 @@ character_event = {
 					}
 					add_trait = class_archer
 				}
-				set_character_flag = class_archer
+				hidden_tooltip = { add_trait = base_class_archer }
 			}
 		}
-		# Nomad / Bow Knight
+		# Nomad / Bow Knight?
 		if = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_horse_archer
+						trait=base_class_horse_archer
 					}
 				}
 			}
@@ -413,7 +421,7 @@ character_event = {
 					}
 					add_trait = class_horse_archer
 				}
-				set_character_flag = class_horse_archer
+				hidden_tooltip = { add_trait = base_class_horse_archer }
 			}
 		}
 		# Mercenary
@@ -421,7 +429,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_mercenary
+						trait=base_class_mercenary
 					}
 				}
 			}
@@ -438,7 +446,7 @@ character_event = {
 					}
 					add_trait = class_mercenary
 				}
-				set_character_flag = class_mercenary
+				hidden_tooltip = { add_trait = base_class_mercenary }
 			}
 		}
 		# Fighter
@@ -446,25 +454,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_fighter
+						trait=base_class_fighter
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_archer_female
-					set_character_flag = class_archer
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_fighter
-					set_character_flag = class_fighter
-				}
+					hidden_tooltip = { add_trait = base_class_fighter }
 			}
 		}
 		# Pirate
@@ -472,25 +468,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_pirate
+						trait=base_class_pirate
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_mercenary_female
-					set_character_flag = class_mercenary
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_pirate
-					set_character_flag = class_pirate
-				}
+					hidden_tooltip = { add_trait = base_class_pirate }
 			}
 		}
 		# Brigand
@@ -498,25 +482,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_brigand
+						trait=base_class_brigand
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_thief_female
-					set_character_flag = class_thief
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_brigand
-					set_character_flag = class_brigand
-				}
+					hidden_tooltip = { add_trait = base_class_brigand }
 			}
 		}
 		# Myrmidon
@@ -524,7 +496,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_myrmidon
+						trait=base_class_myrmidon
 					}
 				}
 			}
@@ -541,7 +513,7 @@ character_event = {
 					}
 					add_trait = class_myrmidon
 				}
-				set_character_flag = class_myrmidon
+				hidden_tooltip = { add_trait = base_class_myrmidon }
 			}
 		}
 		# Thief
@@ -549,7 +521,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_thief
+						trait=base_class_thief
 					}
 				}
 			}
@@ -566,7 +538,7 @@ character_event = {
 					}
 					add_trait = class_thief
 				}
-				set_character_flag = class_thief
+				hidden_tooltip = { add_trait = base_class_thief }
 			}
 		}
 		# Wyvern Rider
@@ -574,13 +546,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_wyvern_rider
+						trait=base_class_wyvern_rider
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_wyvern_rider
-				set_character_flag = class_wyvern_rider
+				hidden_tooltip = { add_trait = base_class_wyvern_rider }
 			}
 		}
 		# Pegasus Knight
@@ -588,7 +560,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_pegasus_knight
+						trait=base_class_pegasus_knight
 					}
 				}
 			}
@@ -608,14 +580,14 @@ character_event = {
 							culture = hoshidan
 						}
 						add_trait = class_pegasus_knight
-						set_character_flag = class_pegasus_knight
+						hidden_tooltip = { add_trait = base_class_pegasus_knight }
 					}
 					if = {
 						limit = {
 							NOT = {culture = hoshidan}
 						}
 						add_trait = class_cavalier
-						set_character_flag = class_cavalier
+						hidden_tooltip = { add_trait = base_class_cavalier }
 					}
 				} 
 			}
@@ -625,25 +597,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_monk
+						trait=base_class_monk
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_troubador
-					set_character_flag = class_troubador
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_monk
-					set_character_flag = class_monk
-				}
+					hidden_tooltip = { add_trait = base_class_monk }
 			}
 		}
 		# Priest
@@ -651,7 +611,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_priest
+						trait=base_class_priest
 					}
 				}
 			}
@@ -661,15 +621,29 @@ character_event = {
 						is_female = yes
 					}
 					add_trait = class_cleric
-					set_character_flag = class_cleric
+					hidden_tooltip = { add_trait = base_class_cleric }
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
 					add_trait = class_priest
-					set_character_flag = class_priest
+					hidden_tooltip = { add_trait = base_class_priest }
 				}
+			}
+		}
+		# Troubador
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						trait=base_class_troubador
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_troubador
+				hidden_tooltip = { add_trait = base_class_troubador }
 			}
 		}
 		# Mage
@@ -677,7 +651,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_mage
+						trait=base_class_mage
 					}
 				}
 			}
@@ -694,15 +668,15 @@ character_event = {
 					}
 					add_trait = class_mage
 				}
-				set_character_flag = class_mage
+				hidden_tooltip = { add_trait = base_class_mage }
 			}
 		}
-		# Shaman
+		# dark_mage
 		if = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_shaman
+						trait=base_class_dark_mage
 					}
 				}
 			}
@@ -711,15 +685,15 @@ character_event = {
 					limit = {
 						is_female = yes
 					}
-					add_trait = class_shaman_female
+					add_trait = class_dark_mage_female
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = class_shaman
+					add_trait = class_dark_mage
 				}
-				set_character_flag = class_shaman
+				hidden_tooltip = { add_trait = base_class_dark_mage }
 			}
 		}
 		# Solider
@@ -727,13 +701,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_soldier
+						trait=base_class_soldier
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_soldier
-				set_character_flag = class_soldier
+				hidden_tooltip = { add_trait = base_class_soldier }
 			}
 		}
 		# Bard
@@ -741,7 +715,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_dancer
+						trait=base_class_bard
 					}
 				}
 			}
@@ -751,14 +725,15 @@ character_event = {
 						is_female = yes
 					}
 					add_trait = class_dancer
+					hidden_tooltip = { add_trait = base_class_dancer }
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
 					add_trait = class_bard
+					hidden_tooltip = { add_trait = base_class_bard }
 				}
-				set_character_flag = class_dancer
 			}
 		}
 		# Manakete
@@ -766,7 +741,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_manakete
+						trait=base_class_manakete
 					}
 				}
 			}
@@ -790,7 +765,7 @@ character_event = {
 						}
 						add_trait = class_manakete
 					}
-					set_character_flag = class_manakete
+					hidden_tooltip = { add_trait = base_class_manakete }
 				}
 				if = {
 					limit = {
@@ -803,15 +778,15 @@ character_event = {
 						limit = {
 							is_female = yes
 						}
-						add_trait = class_shaman_female
+						add_trait = class_dark_mage_female
 					}
 					if = {
 						limit = {
 							is_female = no
 						}
-						add_trait = class_shaman
+						add_trait = class_dark_mage
 					}
-					set_character_flag = class_shaman
+					hidden_tooltip = { add_trait = base_class_dark_mage }
 				}
 			}
 		}
@@ -824,26 +799,27 @@ character_event = {
 			FROMFROM = {
 				father_even_if_dead = {
 					OR = {
-						has_character_flag=class_knight
-						has_character_flag=class_cavalier
-						has_character_flag=class_archer
-						has_character_flag=class_horse_archer
-						has_character_flag=class_mercenary
-						has_character_flag=class_fighter
-						has_character_flag=class_myrmidon
-						has_character_flag=class_thief
-						has_character_flag=class_pirate
-						has_character_flag=class_brigand
-						has_character_flag=class_priest
-						has_character_flag=class_monk
-						has_character_flag=class_mage
-						has_character_flag=class_shaman
-						has_character_flag=class_wyvern_rider
-						has_character_flag=class_pegasus_knight
-						has_character_flag=class_manakete
+						trait=base_class_knight
+						trait=base_class_cavalier
+						trait=base_class_archer
+						trait=base_class_horse_archer
+						trait=base_class_mercenary
+						trait=base_class_fighter
+						trait=base_class_myrmidon
+						trait=base_class_thief
+						trait=base_class_pirate
+						trait=base_class_brigand
+						trait=base_class_priest
+						trait=base_class_monk
+						trait=base_class_mage
+						trait=base_class_dark_mage
+						trait=base_class_wyvern_rider
+						trait=base_class_pegasus_knight
+						trait=base_class_manakete
+						trait=base_class_troubador
 						#These have only one option, sorry. They could be part of the same group, but they're kind of specialized.
-						#has_character_flag=class_soldier
-						#has_character_flag=class_dancer
+						#trait=base_class_soldier
+						#trait=base_class_dancer
 					}
 				}
 			}
@@ -853,13 +829,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_knight
+						trait=base_class_knight
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_cavalier
-				set_character_flag = class_cavalier
+				hidden_tooltip = { add_trait = base_class_cavalier }
 			}
 		}
 		# Cavalier
@@ -867,13 +843,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_cavalier
+						trait=base_class_cavalier
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_knight
-				set_character_flag = class_knight
+				hidden_tooltip = { add_trait = base_class_knight }
 			}
 		}
 		# Archer
@@ -881,7 +857,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_archer
+						trait=base_class_archer
 					}
 				}
 			}
@@ -898,7 +874,7 @@ character_event = {
 					}
 					add_trait = class_horse_archer
 				}
-				set_character_flag = class_horse_archer
+				hidden_tooltip = { add_trait = base_class_horse_archer }
 			}
 		}
 		# Nomad / Bow Knight
@@ -906,7 +882,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_horse_archer
+						trait=base_class_horse_archer
 					}
 				}
 			}
@@ -923,7 +899,7 @@ character_event = {
 					}
 					add_trait = class_archer
 				}
-				set_character_flag = class_archer
+				hidden_tooltip = { add_trait = base_class_archer }
 			}
 		}
 		# Mercenary
@@ -931,25 +907,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_mercenary
+						trait=base_class_mercenary
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_archer_female
-					set_character_flag = class_archer
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_fighter
-					set_character_flag = class_fighter
-				}
+					hidden_tooltip = { add_trait = base_class_fighter }
 			}
 		}
 		# Fighter
@@ -957,7 +921,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_fighter
+						trait=base_class_fighter
 					}
 				}
 			}
@@ -974,7 +938,7 @@ character_event = {
 					}
 					add_trait = class_mercenary
 				}
-				set_character_flag = class_mercenary
+				hidden_tooltip = { add_trait = base_class_mercenary }
 			}
 		}
 		# Pirate
@@ -982,25 +946,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_pirate
+						trait=base_class_pirate
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_thief_female
-					set_character_flag = class_thief
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_brigand
-					set_character_flag = class_brigand
-				}
+					hidden_tooltip = { add_trait = base_class_brigand }
 			}
 		}
 		# Brigand
@@ -1008,25 +960,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_brigand
+						trait=base_class_brigand
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_mercenary_female
-					set_character_flag = class_mercenary
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_pirate
-					set_character_flag = class_pirate
-				}
+					hidden_tooltip = { add_trait = base_class_pirate }
 			}
 		}
 		# Myrmidon
@@ -1034,7 +974,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_myrmidon
+						trait=base_class_myrmidon
 					}
 				}
 			}
@@ -1051,7 +991,7 @@ character_event = {
 					}
 					add_trait = class_thief
 				}
-				set_character_flag = class_thief
+				hidden_tooltip = { add_trait = base_class_thief }
 			}
 		}
 		# Thief
@@ -1059,7 +999,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_thief
+						trait=base_class_thief
 					}
 				}
 			}
@@ -1076,7 +1016,7 @@ character_event = {
 					}
 					add_trait = class_myrmidon
 				}
-				set_character_flag = class_myrmidon
+				hidden_tooltip = { add_trait = base_class_myrmidon }
 			}
 		}
 		# Wyvern Rider
@@ -1084,7 +1024,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_wyvern_rider
+						trait=base_class_wyvern_rider
 					}
 				}
 			}
@@ -1104,14 +1044,14 @@ character_event = {
 							culture = hoshidan
 						}
 						add_trait = class_pegasus_knight
-						set_character_flag = class_pegasus_knight
+						hidden_tooltip = { add_trait = base_class_pegasus_knight }
 					}
 					if = {
 						limit = {
 							NOT = {culture = hoshidan}
 						}
 						add_trait = class_cavalier
-						set_character_flag = class_cavalier
+						hidden_tooltip = { add_trait = base_class_cavalier }
 					}
 				} 
 			}
@@ -1121,13 +1061,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_pegasus_knight
+						trait=base_class_pegasus_knight
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_wyvern_rider
-				set_character_flag = class_wyvern_rider
+				hidden_tooltip = { add_trait = base_class_wyvern_rider }
 			}
 		}
 		# Monk
@@ -1135,25 +1075,27 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_monk
+						trait=base_class_monk
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
+				add_trait = class_troubador
+				hidden_tooltip = { add_trait = base_class_troubador }
+			}
+		}
+		# Troubador
+		if = {
+			limit = {
+				FROMFROM = {
+					father_even_if_dead = {
+						trait=base_class_troubador
 					}
-					add_trait = class_cleric
-					set_character_flag = class_cleric
 				}
-				if = {
-					limit = {
-						is_female = no
-					}
-					add_trait = class_priest
-					set_character_flag = class_priest
-				}
+			}
+			FROMFROM = {
+				add_trait = class_monk
+				hidden_tooltip = { add_trait = base_class_monk }
 			}
 		}
 		# Priest
@@ -1161,25 +1103,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_priest
+						trait=base_class_priest
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
 					add_trait = class_troubador
-					set_character_flag = class_troubador
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
-					add_trait = class_monk
-					set_character_flag = class_monk
-				}
+					hidden_tooltip = { add_trait = base_class_troubador }
 			}
 		}
 		# Mage
@@ -1187,7 +1117,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_mage
+						trait=base_class_mage
 					}
 				}
 			}
@@ -1196,23 +1126,23 @@ character_event = {
 					limit = {
 						is_female = yes
 					}
-					add_trait = class_shaman_female
+					add_trait = class_dark_mage_female
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = class_shaman
+					add_trait = class_dark_mage
 				}
-				set_character_flag = class_shaman
+				hidden_tooltip = { add_trait = base_class_dark_mage }
 			}
 		}
-		# Shaman
+		# dark_mage
 		if = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_shaman
+						trait=base_class_dark_mage
 					}
 				}
 			}
@@ -1229,7 +1159,7 @@ character_event = {
 					}
 					add_trait = class_mage
 				}
-				set_character_flag = class_mage
+				hidden_tooltip = { add_trait = base_class_mage }
 			}
 		}
 		# Manakete
@@ -1237,7 +1167,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					father_even_if_dead = {
-						has_character_flag=class_manakete
+						trait=base_class_manakete
 					}
 				}
 			}
@@ -1254,7 +1184,7 @@ character_event = {
 					}
 					add_trait = class_mage
 				}
-				set_character_flag = class_mage
+				hidden_tooltip = { add_trait = base_class_mage }
 			}
 		}
 	}
@@ -1280,22 +1210,27 @@ character_event = {
 			FROMFROM = {
 				mother_even_if_dead = {
 					OR = {
-						has_character_flag=class_knight
-						has_character_flag=class_cavalier
-						has_character_flag=class_archer
-						has_character_flag=class_horse_archer
-						has_character_flag=class_mercenary
-						has_character_flag=class_myrmidon
-						has_character_flag=class_thief
-						has_character_flag=class_cleric
-						has_character_flag=class_troubador
-						has_character_flag=class_mage
-						has_character_flag=class_shaman
-						has_character_flag=class_wyvern_rider
-						has_character_flag=class_pegasus_knight
-						has_character_flag=class_manakete
-						has_character_flag=class_soldier
-						has_character_flag=class_dancer
+						trait=base_class_knight
+						trait=base_class_cavalier
+						trait=base_class_archer
+						trait=base_class_horse_archer
+						trait=base_class_mercenary
+						trait=base_class_myrmidon
+						trait=base_class_thief
+						trait=base_class_cleric
+						trait=base_class_troubador
+						trait=base_class_mage
+						trait=base_class_dark_mage
+						trait=base_class_wyvern_rider
+						trait=base_class_pegasus_knight
+						trait=base_class_manakete
+						trait=base_class_soldier
+						trait=base_class_dancer
+						trait=base_class_bard
+						trait=base_class_fighter
+						trait=base_class_pirate
+						trait=base_class_brigand
+						trait=base_class_monk
 					}
 				}
 			}
@@ -1305,13 +1240,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_knight
+						trait=base_class_knight
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_knight
-				set_character_flag = class_knight
+				hidden_tooltip = { add_trait = base_class_knight }
 			}
 		}
 		# Cavalier
@@ -1319,13 +1254,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_cavalier
+						trait=base_class_cavalier
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_cavalier
-				set_character_flag = class_cavalier
+				hidden_tooltip = { add_trait = base_class_cavalier }
 			}
 		}
 		# Archer
@@ -1333,7 +1268,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_archer
+						trait=base_class_archer
 					}
 				}
 			}
@@ -1350,7 +1285,7 @@ character_event = {
 					}
 					add_trait = class_archer
 				}
-				set_character_flag = class_archer
+				hidden_tooltip = { add_trait = base_class_archer }
 			}
 		}
 		# Nomad / Bow Knight
@@ -1358,7 +1293,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_horse_archer
+						trait=base_class_horse_archer
 					}
 				}
 			}
@@ -1375,7 +1310,7 @@ character_event = {
 					}
 					add_trait = class_horse_archer
 				}
-				set_character_flag = class_horse_archer
+				hidden_tooltip = { add_trait = base_class_horse_archer }
 			}
 		}
 		# Mercenary
@@ -1383,7 +1318,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_mercenary
+						trait=base_class_mercenary
 					}
 				}
 			}
@@ -1400,7 +1335,7 @@ character_event = {
 					}
 					add_trait = class_mercenary
 				}
-				set_character_flag = class_mercenary
+				hidden_tooltip = { add_trait = base_class_mercenary }
 			}
 		}
 		# Myrmidon
@@ -1408,7 +1343,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_myrmidon
+						trait=base_class_myrmidon
 					}
 				}
 			}
@@ -1425,7 +1360,7 @@ character_event = {
 					}
 					add_trait = class_myrmidon
 				}
-				set_character_flag = class_myrmidon
+				hidden_tooltip = { add_trait = base_class_myrmidon }
 			}
 		}
 		# Thief
@@ -1433,7 +1368,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_thief
+						trait=base_class_thief
 					}
 				}
 			}
@@ -1450,7 +1385,7 @@ character_event = {
 					}
 					add_trait = class_thief
 				}
-				set_character_flag = class_thief
+				hidden_tooltip = { add_trait = base_class_thief }
 			}
 		}
 		# Wyvern Rider
@@ -1458,13 +1393,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_wyvern_rider
+						trait=base_class_wyvern_rider
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_wyvern_rider
-				set_character_flag = class_wyvern_rider
+				hidden_tooltip = { add_trait = base_class_wyvern_rider }
 			}
 		}
 		# Pegasus Knight
@@ -1472,7 +1407,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_pegasus_knight
+						trait=base_class_pegasus_knight
 					}
 				}
 			}
@@ -1492,14 +1427,14 @@ character_event = {
 							culture = hoshidan
 						}
 						add_trait = class_pegasus_knight
-						set_character_flag = class_pegasus_knight
+						hidden_tooltip = { add_trait = base_class_pegasus_knight }
 					}
 					if = {
 						limit = {
 							NOT = {culture = hoshidan}
 						}
 						add_trait = class_cavalier
-						set_character_flag = class_cavalier
+						hidden_tooltip = { add_trait = base_class_cavalier }
 					}
 				} 
 			}
@@ -1509,25 +1444,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_troubador
+						trait=base_class_troubador
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
 					add_trait = class_troubador
-					set_character_flag = class_troubador
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
-					add_trait = class_monk
-					set_character_flag = class_monk
-				}
+					hidden_tooltip = { add_trait = base_class_troubador }
 			}
 		}
 		# Cleric
@@ -1535,7 +1458,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_cleric
+						trait=base_class_cleric
 					}
 				}
 			}
@@ -1545,14 +1468,14 @@ character_event = {
 						is_female = yes
 					}
 					add_trait = class_cleric
-					set_character_flag = class_cleric
+					hidden_tooltip = { add_trait = base_class_cleric }
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
 					add_trait = class_priest
-					set_character_flag = class_priest
+					hidden_tooltip = { add_trait = base_class_priest }
 				}
 			}
 		}
@@ -1561,7 +1484,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_mage
+						trait=base_class_mage
 					}
 				}
 			}
@@ -1578,15 +1501,15 @@ character_event = {
 					}
 					add_trait = class_mage
 				}
-				set_character_flag = class_mage
+				hidden_tooltip = { add_trait = base_class_mage }
 			}
 		}
-		# Shaman
+		# dark_mage
 		if = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_shaman
+						trait=base_class_dark_mage
 					}
 				}
 			}
@@ -1595,15 +1518,15 @@ character_event = {
 					limit = {
 						is_female = yes
 					}
-					add_trait = class_shaman_female
+					add_trait = class_dark_mage_female
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = class_shaman
+					add_trait = class_dark_mage
 				}
-				set_character_flag = class_shaman
+				hidden_tooltip = { add_trait = base_class_dark_mage }
 			}
 		}
 		# Solider
@@ -1611,13 +1534,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_soldier
+						trait=base_class_soldier
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_soldier
-				set_character_flag = class_soldier
+				hidden_tooltip = { add_trait = base_class_soldier }
 			}
 		}
 		# Dancer
@@ -1625,7 +1548,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_dancer
+						trait=base_class_dancer
 					}
 				}
 			}
@@ -1635,14 +1558,15 @@ character_event = {
 						is_female = yes
 					}
 					add_trait = class_dancer
+					hidden_tooltip = { add_trait = base_class_dancer }
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
 					add_trait = class_bard
+					hidden_tooltip = { add_trait = base_class_bard }
 				}
-				set_character_flag = class_dancer
 			}
 		}
 		# Manakete
@@ -1650,7 +1574,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_manakete
+						trait=base_class_manakete
 					}
 				}
 			}
@@ -1674,7 +1598,7 @@ character_event = {
 						}
 						add_trait = class_manakete
 					}
-					set_character_flag = class_manakete
+					hidden_tooltip = { add_trait = base_class_manakete }
 				}
 				if = {
 					limit = {
@@ -1687,18 +1611,76 @@ character_event = {
 						limit = {
 							is_female = yes
 						}
-						add_trait = class_shaman_female
+						add_trait = class_dark_mage_female
 					}
 					if = {
 						limit = {
 							is_female = no
 						}
-						add_trait = class_shaman
+						add_trait = class_dark_mage
 					}
-					set_character_flag = class_shaman
+					hidden_tooltip = { add_trait = base_class_dark_mage }
 				}
 			}
 		}
+		# remove gender lock
+		# Fighter
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_fighter
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_fighter
+				hidden_tooltip = { add_trait = base_class_fighter }
+			}
+		}
+		# Pirate
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_pirate
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_pirate
+				hidden_tooltip = { add_trait = base_class_pirate }
+			}
+		}
+		# Brigand
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_brigand
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_brigand
+				hidden_tooltip = { add_trait = base_class_brigand }
+			}
+		}
+		# Monk
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_monk
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_monk
+				hidden_tooltip = { add_trait = base_class_monk }
+			}
+		}
+		#
 	}
 	
 	# Mother's class 2
@@ -1708,23 +1690,27 @@ character_event = {
 			FROMFROM = {
 				mother_even_if_dead = {
 					OR = {
-						has_character_flag=class_knight
-						has_character_flag=class_cavalier
-						has_character_flag=class_archer
-						has_character_flag=class_horse_archer
-						has_character_flag=class_mercenary
-						has_character_flag=class_myrmidon
-						has_character_flag=class_thief
-						has_character_flag=class_cleric
-						has_character_flag=class_troubador
-						has_character_flag=class_mage
-						has_character_flag=class_shaman
-						has_character_flag=class_wyvern_rider
-						has_character_flag=class_pegasus_knight
-						has_character_flag=class_manakete
+						trait=base_class_knight
+						trait=base_class_cavalier
+						trait=base_class_archer
+						trait=base_class_horse_archer
+						trait=base_class_mercenary
+						trait=base_class_myrmidon
+						trait=base_class_thief
+						trait=base_class_cleric
+						trait=base_class_troubador
+						trait=base_class_mage
+						trait=base_class_dark_mage
+						trait=base_class_wyvern_rider
+						trait=base_class_pegasus_knight
+						trait=base_class_manakete
+						trait=base_class_fighter
+						trait=base_class_pirate
+						trait=base_class_brigand
+						trait=base_class_monk
 						#These have only one option, sorry. They could be part of the same group, but they're kind of specialized.
-						#has_character_flag=class_soldier
-						#has_character_flag=class_dancer
+						#trait=base_class_soldier
+						#trait=base_class_dancer
 					}
 				}
 			}
@@ -1734,13 +1720,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_knight
+						trait=base_class_knight
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_cavalier
-				set_character_flag = class_cavalier
+				hidden_tooltip = { add_trait = base_class_cavalier }
 			}
 		}
 		# Cavalier
@@ -1748,13 +1734,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_cavalier
+						trait=base_class_cavalier
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_knight
-				set_character_flag = class_knight
+				hidden_tooltip = { add_trait = base_class_knight }
 			}
 		}
 		# Archer
@@ -1762,7 +1748,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_archer
+						trait=base_class_archer
 					}
 				}
 			}
@@ -1779,7 +1765,7 @@ character_event = {
 					}
 					add_trait = class_horse_archer
 				}
-				set_character_flag = class_horse_archer
+				hidden_tooltip = { add_trait = base_class_horse_archer }
 			}
 		}
 		# Nomad / Bow Knight
@@ -1787,7 +1773,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_horse_archer
+						trait=base_class_horse_archer
 					}
 				}
 			}
@@ -1804,7 +1790,7 @@ character_event = {
 					}
 					add_trait = class_archer
 				}
-				set_character_flag = class_archer
+				hidden_tooltip = { add_trait = base_class_archer }
 			}
 		}
 		# Mercenary
@@ -1812,25 +1798,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_mercenary
+						trait=base_class_mercenary
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_archer_female
-					set_character_flag = class_archer
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
 					add_trait = class_fighter
-					set_character_flag = class_fighter
-				}
+					hidden_tooltip = { add_trait = base_class_fighter }
 			}
 		}
 		# Myrmidon
@@ -1838,7 +1812,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_myrmidon
+						trait=base_class_myrmidon
 					}
 				}
 			}
@@ -1855,7 +1829,7 @@ character_event = {
 					}
 					add_trait = class_thief
 				}
-				set_character_flag = class_thief
+				hidden_tooltip = { add_trait = base_class_thief }
 			}
 		}
 		# Thief
@@ -1863,7 +1837,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_thief
+						trait=base_class_thief
 					}
 				}
 			}
@@ -1880,7 +1854,7 @@ character_event = {
 					}
 					add_trait = class_myrmidon
 				}
-				set_character_flag = class_myrmidon
+				hidden_tooltip = { add_trait = base_class_myrmidon }
 			}
 		}
 		# Wyvern Rider
@@ -1888,7 +1862,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_wyvern_rider
+						trait=base_class_wyvern_rider
 					}
 				}
 			}
@@ -1908,14 +1882,14 @@ character_event = {
 							culture = hoshidan
 						}
 						add_trait = class_pegasus_knight
-						set_character_flag = class_pegasus_knight
+						hidden_tooltip = { add_trait = base_class_pegasus_knight }
 					}
 					if = {
 						limit = {
 							NOT = {culture = hoshidan}
 						}
 						add_trait = class_cavalier
-						set_character_flag = class_cavalier
+						hidden_tooltip = { add_trait = base_class_cavalier }
 					}
 				} 
 			}
@@ -1925,13 +1899,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_pegasus_knight
+						trait=base_class_pegasus_knight
 					}
 				}
 			}
 			FROMFROM = {
 				add_trait = class_wyvern_rider
-				set_character_flag = class_wyvern_rider
+				hidden_tooltip = { add_trait = base_class_wyvern_rider }
 			}
 		}
 		# Troubador
@@ -1939,25 +1913,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_troubador
+						trait=base_class_troubador
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
-					add_trait = class_cleric
-					set_character_flag = class_cleric
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
-					add_trait = class_priest
-					set_character_flag = class_priest
-				}
+				add_trait = class_monk
+				hidden_tooltip = { add_trait = base_class_monk }
 			}
 		}
 		# Cleric
@@ -1965,25 +1927,13 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_cleric
+						trait=base_class_cleric
 					}
 				}
 			}
 			FROMFROM = {
-				if = {
-					limit = {
-						is_female = yes
-					}
 					add_trait = class_troubador
-					set_character_flag = class_troubador
-				}
-				if = {
-					limit = {
-						is_female = no
-					}
-					add_trait = class_monk
-					set_character_flag = class_monk
-				}
+					hidden_tooltip = { add_trait = base_class_troubador }
 			}
 		}
 		# Mage
@@ -1991,7 +1941,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_shaman
+						trait=base_class_mage
 					}
 				}
 			}
@@ -2000,23 +1950,23 @@ character_event = {
 					limit = {
 						is_female = yes
 					}
-					add_trait = class_shaman_female
+					add_trait = class_dark_mage_female
 				}
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = class_shaman
+					add_trait = class_dark_mage
 				}
-				set_character_flag = class_shaman
+				hidden_tooltip = { add_trait = base_class_dark_mage }
 			}
 		}
-		# Shaman
+		# dark_mage
 		if = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_shaman
+						trait=base_class_dark_mage
 					}
 				}
 			}
@@ -2033,7 +1983,7 @@ character_event = {
 					}
 					add_trait = class_mage
 				}
-				set_character_flag = class_mage
+				hidden_tooltip = { add_trait = base_class_mage }
 			}
 		}
 		# Manakete
@@ -2041,7 +1991,7 @@ character_event = {
 			limit = {
 				FROMFROM = {
 					mother_even_if_dead = {
-						has_character_flag=class_manakete
+						trait=base_class_manakete
 					}
 				}
 			}
@@ -2058,9 +2008,78 @@ character_event = {
 					}
 					add_trait = class_mage
 				}
-				set_character_flag = class_mage
+				hidden_tooltip = { add_trait = base_class_mage }
 			}
 		}
+		# remove gender lock
+		# Fighter
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_fighter
+					}
+				}
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = class_mercenary_female
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait = class_mercenary
+				}
+				hidden_tooltip = { add_trait = base_class_mercenary }
+			}
+		}
+		# Pirate
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_pirate
+					}
+				}
+			}
+			FROMFROM = {
+					add_trait = class_brigand
+					hidden_tooltip = { add_trait = base_class_brigand }
+			}
+		}
+		# Brigand
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_brigand
+					}
+				}
+			}
+			FROMFROM = {
+					add_trait = class_pirate
+					hidden_tooltip = { add_trait = base_class_pirate }
+			}
+		}
+		# Monk
+		if = {
+			limit = {
+				FROMFROM = {
+					mother_even_if_dead = {
+						trait=base_class_monk
+					}
+				}
+			}
+			FROMFROM = {
+				add_trait = class_troubador
+				hidden_tooltip = { add_trait = base_class_troubador }
+			}
+		}		
+		#
 	}
 }
 
@@ -2073,6 +2092,12 @@ character_event = {
 	is_triggered_only = yes
 		
 	immediate = {
+		if = {
+			limit = {
+				check_variable = { which = "level" value = 20 }
+			}
+			set_character_flag = max_level_promotion
+		}
 		# Reset level to 1
 		set_variable = { which = "level" value = 1 }
 	}
@@ -2100,8 +2125,8 @@ character_event = {
 				trait=class_pegasus_knight
 				trait=class_pirate
 				trait=class_priest
-				trait=class_shaman
-				trait=class_shaman_female
+				trait=class_dark_mage
+				trait=class_dark_mage_female
 				trait=class_thief
 				trait=class_thief_female
 				trait=class_troubador
@@ -2188,21 +2213,32 @@ character_event = {
 			}
 		}
 
+#		name = {
+#			text = class.5.A.class_valkyrie
+#			trigger = {
+#				OR = {
+#					trait=class_troubador
+#					trait=class_cleric
+#				}
+#			}
+#		}
+
 		name = {
-			text = class.5.A.class_valkyrie
+			text = class.5.A.class_war_priest
 			trigger = {
 				OR = {
-					trait=class_troubador
+					trait=class_priest
 					trait=class_cleric
+					trait=class_troubador
 				}
 			}
 		}
-
+		
 		name = {
 			text = class.5.A.class_sage
 			trigger = {
 				OR = {
-					trait=class_priest
+#					trait=class_priest
 					trait=class_monk
 					trait=class_mage
 					trait=class_mage_female
@@ -2211,10 +2247,10 @@ character_event = {
 		}
 
 		name = {
-			text = class.5.A.class_druid
+			text = class.5.A.class_sorceror
 			trigger = {
-				trait=class_shaman
-				trait=class_shaman_female
+				trait=class_dark_mage
+				trait=class_dark_mage_female
 			}
 		}
 		
@@ -2359,7 +2395,19 @@ character_event = {
 				trait=class_troubador
 			}
 			remove_trait=class_troubador
-			add_trait=class_valkyrie
+#			add_trait=class_valkyrie
+			if = {
+				limit = {
+					is_female = yes
+				}				
+				add_trait=class_war_cleric
+			}
+			if = {
+				limit = {
+					is_female = no
+				}				
+				add_trait=class_war_priest
+			}
 		}
 		
 		if = {
@@ -2367,7 +2415,8 @@ character_event = {
 				trait=class_cleric
 			}
 			remove_trait=class_cleric
-			add_trait=class_valkyrie
+#			add_trait=class_valkyrie
+			add_trait=class_war_cleric
 		}
 		
 		if = {
@@ -2375,7 +2424,8 @@ character_event = {
 				trait=class_priest
 			}
 			remove_trait=class_priest
-			add_trait=class_sage
+#			add_trait=class_sage
+			add_trait=class_war_priest
 		}
 		
 		if = {
@@ -2383,7 +2433,19 @@ character_event = {
 					trait=class_monk
 			}
 			remove_trait=class_monk
-			add_trait=class_sage
+#			add_trait=class_sage
+			if = {
+				limit = {
+					is_female = yes
+				}				
+				add_trait=class_sage_female
+			}
+			if = {
+				limit = {
+					is_female = no
+				}				
+				add_trait=class_sage
+			}
 		}
 		
 		if = {
@@ -2404,18 +2466,18 @@ character_event = {
 		
 		if = {
 			limit = {
-				trait=class_shaman
+				trait=class_dark_mage
 			}
-			remove_trait=class_shaman
-			add_trait=class_druid
+			remove_trait=class_dark_mage
+			add_trait=class_sorceror
 		}
 		
 		if = {
 			limit = {
-				trait=class_shaman_female
+				trait=class_dark_mage_female
 			}
-			remove_trait=class_shaman_female
-			add_trait=class_druid_female
+			remove_trait=class_dark_mage_female
+			add_trait=class_sorceror_female
 		}
 	}
 	
@@ -2443,8 +2505,8 @@ character_event = {
 				trait=class_pegasus_knight
 				trait=class_pirate
 				trait=class_priest
-				trait=class_shaman
-				trait=class_shaman_female
+				trait=class_dark_mage
+				trait=class_dark_mage_female
 				trait=class_thief
 				trait=class_thief_female
 				trait=class_troubador
@@ -2465,7 +2527,7 @@ character_event = {
 		}
 
 		name = {
-			text = class.5.B.class_ranger
+			text = class.5.B.class_bow_knight
 			trigger = {
 				OR = {
 					trait=class_archer
@@ -2537,8 +2599,8 @@ character_event = {
 			#text = class.5.B.class_summoner
 			text = class.5.B.class_mage_knight
 			trigger = {
-				trait=class_shaman
-				trait=class_shaman_female
+				trait=class_dark_mage
+				trait=class_dark_mage_female
 			}
 		}
 		
@@ -2563,7 +2625,7 @@ character_event = {
 					trait=class_archer
 			}
 			remove_trait=class_archer
-			add_trait=class_ranger
+			add_trait=class_bow_knight
 		}
 		
 		if = {
@@ -2571,7 +2633,7 @@ character_event = {
 					trait=class_horse_archer
 			}
 			remove_trait=class_horse_archer
-			add_trait=class_ranger
+			add_trait=class_bow_knight
 		}
 		
 		if = {
@@ -2579,7 +2641,7 @@ character_event = {
 					trait=class_mercenary
 			}
 			remove_trait=class_mercenary
-			add_trait=class_ranger
+			add_trait=class_bow_knight
 		}
 		
 		if = {
@@ -2587,7 +2649,7 @@ character_event = {
 					trait=class_archer_female
 			}
 			remove_trait=class_archer_female
-			add_trait=class_ranger_female
+			add_trait=class_bow_knight_female
 		}
 		
 		if = {
@@ -2595,7 +2657,7 @@ character_event = {
 					trait=class_horse_archer_female
 			}
 			remove_trait=class_horse_archer_female
-			add_trait=class_ranger_female
+			add_trait=class_bow_knight_female
 		}
 		
 		if = {
@@ -2603,7 +2665,7 @@ character_event = {
 					trait=class_mercenary_female
 			}
 			remove_trait=class_mercenary_female
-			add_trait=class_ranger_female
+			add_trait=class_bow_knight_female
 		}
 		
 		if = {
@@ -2699,7 +2761,18 @@ character_event = {
 					trait=class_troubador
 			}
 			remove_trait=class_troubador
-			add_trait=class_mage_knight_female
+			if = {
+				limit = {
+					is_female = yes
+				}				
+				add_trait=class_mage_knight_female
+			}
+			if = {
+				limit = {
+					is_female = no
+				}				
+				add_trait=class_mage_knight
+			}
 		}
 		
 		if = {
@@ -2728,17 +2801,17 @@ character_event = {
 		
 		if = {
 			limit = {
-					trait=class_shaman
+					trait=class_dark_mage
 			}
-			remove_trait=class_shaman
+			remove_trait=class_dark_mage
 			add_trait=class_mage_knight
 		}
 		
 		if = {
 			limit = {
-					trait=class_shaman_female
+					trait=class_dark_mage_female
 			}
-			remove_trait=class_shaman_female
+			remove_trait=class_dark_mage_female
 			add_trait=class_mage_knight_female
 		}
 	}
@@ -2767,8 +2840,8 @@ character_event = {
 				trait=class_pegasus_knight
 				trait=class_pirate
 				trait=class_priest
-				trait=class_shaman
-				trait=class_shaman_female
+				trait=class_dark_mage
+				trait=class_dark_mage_female
 				trait=class_thief
 				trait=class_thief_female
 				trait=class_troubador
@@ -2799,23 +2872,24 @@ character_event = {
 	trigger = {
 		is_playable = no
 		OR = {
-			has_character_flag=class_knight
-			has_character_flag=class_cavalier
-			has_character_flag=class_archer
-			has_character_flag=class_horse_archer
-			has_character_flag=class_mercenary
-			has_character_flag=class_fighter
-			has_character_flag=class_myrmidon
-			has_character_flag=class_thief
-			has_character_flag=class_pirate
-			has_character_flag=class_brigand
-			has_character_flag=class_priest
-			has_character_flag=class_monk
-			has_character_flag=class_mage
-			has_character_flag=class_shaman
-			has_character_flag=class_wyvern_rider
-			has_character_flag=class_pegasus_knight
+			trait=base_class_knight
+			trait=base_class_cavalier
+			trait=base_class_archer
+			trait=base_class_horse_archer
+			trait=base_class_mercenary
+			trait=base_class_fighter
+			trait=base_class_myrmidon
+			trait=base_class_thief
+			trait=base_class_pirate
+			trait=base_class_brigand
+			trait=base_class_priest
+			trait=base_class_monk
+			trait=base_class_mage
+			trait=base_class_dark_mage
+			trait=base_class_wyvern_rider
+			trait=base_class_pegasus_knight
 		}
+		#check_variable = { which = "level" value = 10 }
 		check_variable = { which = "level" value = 20 }
 	}
 	
@@ -2992,7 +3066,7 @@ character_event = {
 		add_trait = "class_soldier"
 		set_variable = { which = "level" value = 1 }
 		set_character_flag="class_selected"
-		set_character_flag="class_soldier"
+		hidden_tooltip = { add_trait = base_class_soldier }
 	}
 }
 
@@ -3197,184 +3271,183 @@ character_event = {
 		set_character_flag = class_training
 		set_character_flag = class_training_taught_by_friend
 		
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_knight
-				}
-			}
-			set_character_flag=class_knight
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_cavalier
-				}
-			}
-			set_character_flag=class_cavalier
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_archer
-				}
-			}
-			set_character_flag=class_archer
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_horse_archer
-				}
-			}
-			set_character_flag=class_horse_archer
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_mercenary
-				}
-			}
-			set_character_flag=class_mercenary
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_fighter
-				}
-			}
-			set_character_flag=class_fighter
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_myrmidon
-				}
-			}
-			set_character_flag=class_myrmidon
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_thief
-				}
-			}
-			set_character_flag=class_thief
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_pirate
-				}
-			}
-			set_character_flag=class_pirate
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_brigand
-				}
-			}
-			set_character_flag=class_brigand
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_priest
-				}
-			}
-			set_character_flag=class_priest
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_cleric
-				}
-			}
-			set_character_flag=class_cleric
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_monk
-				}
-			}
-			set_character_flag=class_monk
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_troubador
-				}
-			}
-			set_character_flag=class_troubador
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_mage
-				}
-			}
-			set_character_flag=class_mage
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_shaman
-				}
-			}
-			set_character_flag=class_shaman
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_wyvern_rider
-				}
-			}
-			set_character_flag=class_wyvern_rider
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_pegasus_knight
-				}
-			}
-			set_character_flag=class_pegasus_knight
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_soldier
-				}
-			}
-			set_character_flag=class_soldier
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_dancer
-				}
-			}
-			set_character_flag=class_dancer
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_bard
-				}
-			}
-			set_character_flag=class_bard
-		}
-		if={
-			limit={
-				FROM={
-					has_character_flag=class_manakete
-				}
-			}
-			set_character_flag=class_manakete
-		}
-		
 		hidden_tooltip = {
+			if={
+				limit={
+					FROM={
+						trait=base_class_knight
+					}
+				}
+				add_trait=base_class_knight
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_cavalier
+					}
+				}
+				add_trait=base_class_cavalier
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_archer
+					}
+				}
+				add_trait=base_class_archer
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_horse_archer
+					}
+				}
+				add_trait=base_class_horse_archer
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_mercenary
+					}
+				}
+				add_trait=base_class_mercenary
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_fighter
+					}
+				}
+				add_trait=base_class_fighter
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_myrmidon
+					}
+				}
+				add_trait=base_class_myrmidon
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_thief
+					}
+				}
+				add_trait=base_class_thief
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_pirate
+					}
+				}
+				add_trait=base_class_pirate
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_brigand
+					}
+				}
+				add_trait=base_class_brigand
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_priest
+					}
+				}
+				add_trait=base_class_priest
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_cleric
+					}
+				}
+				add_trait=base_class_cleric
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_monk
+					}
+				}
+				add_trait=base_class_monk
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_troubador
+					}
+				}
+				add_trait=base_class_troubador
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_mage
+					}
+				}
+				add_trait=base_class_mage
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_dark_mage
+					}
+				}
+				add_trait=base_class_dark_mage
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_wyvern_rider
+					}
+				}
+				add_trait=base_class_wyvern_rider
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_pegasus_knight
+					}
+				}
+				add_trait=base_class_pegasus_knight
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_soldier
+					}
+				}
+				add_trait=base_class_soldier
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_dancer
+					}
+				}
+				add_trait=base_class_dancer
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_bard
+					}
+				}
+				add_trait=base_class_bard
+			}
+			if={
+				limit={
+					FROM={
+						trait=base_class_manakete
+					}
+				}
+				add_trait=base_class_manakete
+			}
 			character_event = {
 				id = class.20
 				days = 360
@@ -3515,133 +3588,140 @@ character_event = {
 			has_character_flag = paid_training
 		}
 		clr_character_flag = paid_training
-		if={
-			limit={
-				has_character_flag=class_knight
+		hidden_tooltip = {
+			if={
+				limit={
+					trait=base_class_knight
+				}
+				FROM={add_trait=base_class_knight}
 			}
-			FROM={set_character_flag=class_knight}
-		}
-		if={
-			limit={
-				has_character_flag=class_archer
+			if={
+				limit={
+					trait=base_class_archer
+				}
+				FROM={add_trait=base_class_archer}
 			}
-			FROM={set_character_flag=class_archer}
-		}
-		if={
-			limit={
-				has_character_flag=class_horse_archer
+			if={
+				limit={
+					trait=base_class_horse_archer
+				}
+				FROM={add_trait=base_class_horse_archer}
 			}
-			FROM={set_character_flag=class_horse_archer}
-		}
-		if={
-			limit={
-				has_character_flag=class_mercenary
+			if={
+				limit={
+					trait=base_class_mercenary
+				}
+				FROM={add_trait=base_class_mercenary}
 			}
-			FROM={set_character_flag=class_mercenary}
-		}
-		if={
-			limit={
-				has_character_flag=class_fighter
+			if={
+				limit={
+					trait=base_class_fighter
+				}
+				FROM={add_trait=base_class_fighter}
 			}
-			FROM={set_character_flag=class_fighter}
-		}
-		if={
-			limit={
-				has_character_flag=class_myrmidon
+			if={
+				limit={
+					trait=base_class_myrmidon
+				}
+				FROM={add_trait=base_class_myrmidon}
 			}
-			FROM={set_character_flag=class_myrmidon}
-		}
-		if={
-			limit={
-				has_character_flag=class_thief
+			if={
+				limit={
+					trait=base_class_thief
+				}
+				FROM={add_trait=base_class_thief}
 			}
-			FROM={set_character_flag=class_thief}
-		}
-		if={
-			limit={
-				has_character_flag=class_pirate
+			if={
+				limit={
+					trait=base_class_pirate
+				}
+				FROM={add_trait=base_class_pirate}
 			}
-			FROM={set_character_flag=class_pirate}
-		}
-		if={
-			limit={
-				has_character_flag=class_brigand
+			if={
+				limit={
+					trait=base_class_brigand
+				}
+				FROM={add_trait=base_class_brigand}
 			}
-			FROM={set_character_flag=class_brigand}
-		}
-		if={
-			limit={
-				has_character_flag=class_priest
+			if={
+				limit={
+					trait=base_class_priest
+				}
+				FROM={add_trait=base_class_priest}
 			}
-			FROM={set_character_flag=class_priest}
-		}
-		if={
-			limit={
-				has_character_flag=class_cleric
+			if={
+				limit={
+					trait=base_class_cleric
+				}
+				FROM={add_trait=base_class_cleric}
 			}
-			FROM={set_character_flag=class_cleric}
-		}
-		if={
-			limit={
-				has_character_flag=class_monk
+			if={
+				limit={
+					trait=base_class_monk
+				}
+				FROM={add_trait=base_class_monk}
 			}
-			FROM={set_character_flag=class_monk}
-		}
-		if={
-			limit={
-				has_character_flag=class_troubador
+			if={
+				limit={
+					trait=base_class_troubador
+				}
+				FROM={add_trait=base_class_troubador}
 			}
-			FROM={set_character_flag=class_troubador}
-		}
-		if={
-			limit={
-				has_character_flag=class_mage
+			if={
+				limit={
+					trait=base_class_mage
+				}
+				FROM={add_trait=base_class_mage}
 			}
-			FROM={set_character_flag=class_mage}
-		}
-		if={
-			limit={
-				has_character_flag=class_shaman
+			if={
+				limit={
+					trait=base_class_dark_mage
+				}
+				FROM={add_trait=base_class_dark_mage}
 			}
-			FROM={set_character_flag=class_shaman}
-		}
-		if={
-			limit={
-				has_character_flag=class_wyvern_rider
+			if={
+				limit={
+					trait=base_class_wyvern_rider
+				}
+				FROM={add_trait=base_class_wyvern_rider}
 			}
-			FROM={set_character_flag=class_wyvern_rider}
-		}
-		if={
-			limit={
-				has_character_flag=class_pegasus_knight
+			if={
+				limit={
+					trait=base_class_pegasus_knight
+				}
+				FROM={add_trait=base_class_pegasus_knight}
 			}
-			FROM={set_character_flag=class_pegasus_knight}
-		}
-		if={
-			limit={
-				has_character_flag=class_soldier
+			if={
+				limit={
+					trait=base_class_soldier
+				}
+				FROM={add_trait=base_class_soldier}
 			}
-			FROM={set_character_flag=class_soldier}
-		}
-		if={
-			limit={
-				has_character_flag=class_dancer
+			if={
+				limit={
+					trait=base_class_dancer
+				}
+				FROM={add_trait=base_class_dancer}
 			}
-			FROM={set_character_flag=class_dancer}
-		}
-		if={
-			limit={
-				has_character_flag=class_bard
+			if={
+				limit={
+					trait=base_class_bard
+				}
+				FROM={add_trait=base_class_bard}
 			}
-			FROM={set_character_flag=class_bard}
-		}
-		if={
-			limit={
-				has_character_flag=class_manakete
+			if={
+				limit={
+					trait=base_class_manakete
+				}
+				FROM={add_trait=base_class_manakete}
 			}
-			FROM={set_character_flag=class_manakete}
+			if={
+				limit={
+					trait=base_class_tactician
+				}
+				FROM={add_trait=base_class_tactician}
+			}
 		}
-		
 		FROM = {
 			transfer_scaled_wealth = {
 				to = ROOT
@@ -3683,45 +3763,45 @@ character_event = {
 				modifier = {
 					factor = 0
 						NOR = { 
-							has_character_flag=class_knight
-							has_character_flag=class_cavalier
+							trait=base_class_knight
+							trait=base_class_cavalier
 						} 
 				}
-				set_character_flag=class_knight
+				hidden_tooltip = { add_trait = base_class_knight }
 				add_trait=class_knight
 			}
 			1 = {
 				modifier = {
 					factor = 0
 					NOR = { 
-						has_character_flag=class_knight
-						has_character_flag=class_cavalier
+						trait=base_class_knight
+						trait=base_class_cavalier
 						AND = {
-							has_character_flag=class_pegasus_knight
+							trait=base_class_pegasus_knight
 							is_female=no
 							NOT={culture=hoshidan}
 						}
 					} 
 				}
-				set_character_flag=class_cavalier
+				hidden_tooltip = { add_trait = base_class_cavalier }
 				add_trait=class_cavalier
 			}
 			1 = {
 				modifier = {
 					factor = 0
 					NOR={
-						has_character_flag=class_archer
-						has_character_flag=class_horse_archer
+						trait=base_class_archer
+						trait=base_class_horse_archer
 						AND = {
 							is_female=yes
 							OR={
-								has_character_flag=class_fighter
-								has_character_flag=class_mercenary
+								trait=base_class_fighter
+								trait=base_class_mercenary
 							}
 						}
 					}
 				}
-				set_character_flag=class_archer
+				hidden_tooltip = { add_trait = base_class_archer }
 				
 				if={
 					limit={
@@ -3740,11 +3820,11 @@ character_event = {
 				modifier = {
 					factor = 0
 						NOR = { 
-							has_character_flag=class_archer
-							has_character_flag=class_horse_archer
+							trait=base_class_archer
+							trait=base_class_horse_archer
 						} 
 				}
-				set_character_flag=class_horse_archer
+				hidden_tooltip = { add_trait = base_class_horse_archer }
 				
 				if={
 					limit={
@@ -3763,11 +3843,11 @@ character_event = {
 				modifier = {
 					factor = 0
 						NOR = { 
-							has_character_flag=class_mercenary
-							has_character_flag=class_fighter
+							trait=base_class_mercenary
+							trait=base_class_fighter
 						} 
 				}
-				set_character_flag=class_mercenary
+				hidden_tooltip = { add_trait = base_class_mercenary }
 				
 				if={
 					limit={
@@ -3787,12 +3867,12 @@ character_event = {
 					factor = 0
 					OR = {
 						NOT = { 
-							has_character_flag=class_fighter
+							trait=base_class_fighter
 						} 
 						is_female=yes
 					}
 				}
-				set_character_flag=class_fighter
+				hidden_tooltip = { add_trait = base_class_fighter }
 				add_trait=class_fighter
 			}
 			1 = {
@@ -3800,13 +3880,13 @@ character_event = {
 					factor = 0
 					OR = {
 						NOR = { 
-							has_character_flag=class_brigand
-							has_character_flag=class_pirate
+							trait=base_class_brigand
+							trait=base_class_pirate
 						} 
 						is_female=yes
 					}
 				}
-				set_character_flag=class_brigand
+				hidden_tooltip = { add_trait = base_class_brigand }
 				add_trait=class_brigand
 			}
 			1 = {
@@ -3814,28 +3894,28 @@ character_event = {
 					factor = 0
 					OR = {
 						NOR = { 
-							has_character_flag=class_pirate
-							has_character_flag=class_brigand
+							trait=base_class_pirate
+							trait=base_class_brigand
 						} 
 						is_female=yes
 					}
 				}
-				set_character_flag=class_pirate
+				hidden_tooltip = { add_trait = base_class_pirate }
 				add_trait=class_pirate
 			}
 			1 = {
 				modifier = {
 					factor = 0
 					NOR={
-						has_character_flag=class_myrmidon
-						has_character_flag=class_thief
+						trait=base_class_myrmidon
+						trait=base_class_thief
 						AND = {
 							is_female=yes
-							has_character_flag=class_pirate
+							trait=base_class_pirate
 						}
 					}
 				}
-				set_character_flag=class_myrmidon
+				hidden_tooltip = { add_trait = base_class_myrmidon }
 				
 				if={
 					limit={
@@ -3854,15 +3934,15 @@ character_event = {
 				modifier = {
 					factor = 0
 						NOR = { 
-							has_character_flag=class_myrmidon
-							has_character_flag=class_thief
+							trait=base_class_myrmidon
+							trait=base_class_thief
 							AND = {
 								is_female=yes
-								has_character_flag=class_brigand
+								trait=base_class_brigand
 							}
 						} 
 				}
-				set_character_flag=class_thief
+				hidden_tooltip = { add_trait = base_class_thief }
 				
 				if={
 					limit={
@@ -3882,7 +3962,7 @@ character_event = {
 					factor = 0
 					OR = {
 							NOT = { 
-								has_character_flag=class_pegasus_knight
+								trait=base_class_pegasus_knight
 							} 
 						AND = {
 							is_female=no
@@ -3890,18 +3970,18 @@ character_event = {
 						}
 					}
 				}
-				set_character_flag=class_pegasus_knight
+				hidden_tooltip = { add_trait = base_class_pegasus_knight }
 				add_trait=class_pegasus_knight
 			}
 			1 = {
 				modifier = {
 					factor = 0
 						NOR = { 
-							has_character_flag=class_pegasus_knight
-							has_character_flag=class_wyvern_rider
+							trait=base_class_pegasus_knight
+							trait=base_class_wyvern_rider
 						} 
 				}
-				set_character_flag=class_wyvern_rider
+				hidden_tooltip = { add_trait = base_class_wyvern_rider }
 				add_trait=class_wyvern_rider
 			}
 			1 = {
@@ -3909,13 +3989,13 @@ character_event = {
 					factor = 0
 					OR = {
 						NOR = { 
-							has_character_flag=class_monk
-							has_character_flag=class_troubador
+							trait=base_class_monk
+							trait=base_class_troubador
 						} 
 						is_female=no
 					}
 				}
-				set_character_flag=class_troubador
+				hidden_tooltip = { add_trait = base_class_troubador }
 				add_trait=class_troubador
 			}
 			1 = {
@@ -3923,13 +4003,13 @@ character_event = {
 					factor = 0
 					OR = {
 						NOR = { 
-							has_character_flag=class_priest
-							has_character_flag=class_cleric
+							trait=base_class_priest
+							trait=base_class_cleric
 						} 
 						is_female=no
 					}
 				}
-				set_character_flag=class_cleric
+				hidden_tooltip = { add_trait = base_class_cleric }
 				add_trait=class_cleric
 			}
 			1 = {
@@ -3937,31 +4017,45 @@ character_event = {
 					factor = 0
 					OR = {
 						NOR = { 
-							has_character_flag=class_monk
-							has_character_flag=class_troubador
+							trait=base_class_priest
+							trait=base_class_cleric
 						} 
 						is_female=yes
 					}
 				}
-				set_character_flag=class_monk
+				hidden_tooltip = { add_trait = base_class_priest }
+				add_trait=class_priest
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOR = { 
+							trait=base_class_monk
+							trait=base_class_troubador
+						} 
+						is_female=yes
+					}
+				}
+				hidden_tooltip = { add_trait = base_class_monk }
 				add_trait=class_monk
 			}
 			1 = {
 				modifier = {
 					factor = 0
 					NOR={ 
-							has_character_flag=class_mage
-							has_character_flag=class_shaman
+							trait=base_class_mage
+							trait=base_class_dark_mage
 						AND = {
 							NOR = {
 								trait=dragon
 								trait=dragon_blood
 							}
-								has_character_flag=class_manakete
+								trait=base_class_manakete
 						}
 					}
 				}
-				set_character_flag=class_mage
+				hidden_tooltip = { add_trait = base_class_mage }
 				
 				if={
 					limit={
@@ -3980,56 +4074,57 @@ character_event = {
 				modifier = {
 					factor = 0
 						NOR = { 
-							has_character_flag=class_mage
-							has_character_flag=class_shaman
+							trait=base_class_mage
+							trait=base_class_dark_mage
 						} 
 				}
-				set_character_flag=class_shaman
+				hidden_tooltip = { add_trait = base_class_dark_mage }
 				
 				if={
 					limit={
 						is_female=no
 					}
-					add_trait=class_shaman
+					add_trait=class_dark_mage
 				}
 				if={
 					limit={
 						is_female=yes
 					}
-					add_trait=class_shaman_female
+					add_trait=class_dark_mage_female
 				}
 			}
 			1 = {
 				modifier = {
 					factor = 0
 						NOT = { 
-							has_character_flag=class_soldier
+							trait=base_class_soldier
 						} 
 				}
-				set_character_flag=class_soldier
+				hidden_tooltip = { add_trait = base_class_soldier }
 				add_trait=class_soldier
 			}
 			1 = {
 				modifier = {
 					factor = 0
 					NOR = { 
-						has_character_flag=class_dancer
-						has_character_flag=class_bard
+						trait=base_class_dancer
+						trait=base_class_bard
 					} 
 				}
-				set_character_flag=class_dancer
 				
 				if={
 					limit={
 						is_female=no
 					}
 					add_trait=class_bard
+					hidden_tooltip = { add_trait = base_class_bard }
 				}
 				if={
 					limit={
 						is_female=yes
 					}
 					add_trait=class_dancer
+					hidden_tooltip = { add_trait = base_class_dancer }
 				}
 			}
 			1 = {
@@ -4037,7 +4132,7 @@ character_event = {
 					factor = 0
 					OR = {
 							NOT = { 
-								has_character_flag=class_manakete
+								trait=base_class_manakete
 							} 
 						NOR = {
 							trait=dragon
@@ -4045,7 +4140,7 @@ character_event = {
 						}
 					}
 				}
-				set_character_flag=class_manakete
+				hidden_tooltip = { add_trait = base_class_manakete }
 				
 				if={
 					limit={
@@ -4130,13 +4225,16 @@ character_event = {
 	#Knight/Cav
 	option = {
 		name = class.22.A
+		ai_chance = {
+			factor = 8
+		}
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_knight
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_knight
 				character_event = {
 					id = class.20
 					days = 360
@@ -4148,13 +4246,16 @@ character_event = {
 	#Fighter/Merc
 	option = {
 		name = class.22.B	
+		ai_chance = {
+			factor = 8
+		}		
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_mercenary
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_mercenary
 				character_event = {
 					id = class.20
 					days = 360
@@ -4166,13 +4267,16 @@ character_event = {
 	#Myrmidon/Thief
 	option = {
 		name = class.22.C	
+		ai_chance = {
+			factor = 8
+		}		
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_myrmidon
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_myrmidon
 				character_event = {
 					id = class.20
 					days = 360
@@ -4184,6 +4288,9 @@ character_event = {
 	#Next
 	option = {
 		name = MORE_OPTIONS
+		ai_chance = {
+			factor = 72
+		}		
 		character_event = {id = class.23}		
 	}
 }
@@ -4198,13 +4305,16 @@ character_event = {
 	#Monk/Troubador
 	option = {
 		name = class.23.A
+		ai_chance = {
+			factor = 8
+		}		
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_monk
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_monk
 				character_event = {
 					id = class.20
 					days = 360
@@ -4216,13 +4326,27 @@ character_event = {
 	#Cleric/Priest
 	option = {
 		name = class.23.B		
+		ai_chance = {
+			factor = 8
+		}		
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_priest
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait=base_class_cleric
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait=base_class_priest
+				}
 				character_event = {
 					id = class.20
 					days = 360
@@ -4233,14 +4357,28 @@ character_event = {
 	}
 	#Dancer/Bard
 	option = {
-		name = class.23.C	
+		name = class.23.C		
+		ai_chance = {
+			factor = 8
+		}	
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_dancer
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait=base_class_dancer
+				}
+				if = {
+					limit = {
+						is_female = no
+					}
+					add_trait=base_class_bard
+				}
 				character_event = {
 					id = class.20
 					days = 360
@@ -4251,7 +4389,10 @@ character_event = {
 	}
 	#Next
 	option = {
-		name = MORE_OPTIONS
+		name = MORE_OPTIONS	
+		ai_chance = {
+			factor = 48
+		}	
 		character_event = {id = class.24}		
 	}
 }
@@ -4265,14 +4406,17 @@ character_event = {
 		
 	#Archer/Nomad
 	option = {
-		name = class.24.A
+		name = class.24.A	
+		ai_chance = {
+			factor = 8
+		}	
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_archer
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_archer
 				character_event = {
 					id = class.20
 					days = 360
@@ -4283,17 +4427,17 @@ character_event = {
 	}
 	#Bandit/Pirate
 	option = {
-		name = class.24.B	
-		trigger = {
-			is_female=no
-		}
+		name = class.24.B		
+		ai_chance = {
+			factor = 8
+		}	
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_bandit
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_bandit
 				character_event = {
 					id = class.20
 					days = 360
@@ -4304,14 +4448,17 @@ character_event = {
 	}
 	#Pegasus/Wyvern
 	option = {
-		name = class.24.C	
+		name = class.24.C		
+		ai_chance = {
+			factor = 8
+		}	
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_wyvern_rider
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_wyvern_rider
 				character_event = {
 					id = class.20
 					days = 360
@@ -4322,7 +4469,10 @@ character_event = {
 	}
 	#Next
 	option = {
-		name = MORE_OPTIONS
+		name = MORE_OPTIONS	
+		ai_chance = {
+			factor = 24
+		}	
 		character_event = {id = class.25}		
 	}
 }
@@ -4334,16 +4484,19 @@ character_event = {
 	
 	is_triggered_only=yes
 		
-	#Mage/Shaman
+	#Mage/dark_mage
 	option = {
-		name = class.25.A
+		name = class.25.A	
+		ai_chance = {
+			factor = 8
+		}	
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_mage
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_mage
 				character_event = {
 					id = class.20
 					days = 360
@@ -4354,14 +4507,17 @@ character_event = {
 	}
 	#Soldier
 	option = {
-		name = class.25.B		
+		name = class.25.B	
+		ai_chance = {
+			factor = 8
+		}	
 		scaled_wealth = -0.5
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_soldier
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_soldier
 				character_event = {
 					id = class.20
 					days = 360
@@ -4373,6 +4529,9 @@ character_event = {
 	#Dragon
 	option = {
 		name = class.25.C	
+		ai_chance = {
+			factor = 8
+		}
 		trigger={
 			trait=dragon
 			always=no
@@ -4381,9 +4540,9 @@ character_event = {
 		custom_tooltip = {
 			text=class.22.A.tooltip
 			hidden_tooltip = {
-				set_character_flag=class_training
-				set_character_flag=class_training_taught_by_school
-				set_character_flag=class_manakete
+				set_character_flag = class_training
+				set_character_flag = class_training_taught_by_school
+				add_trait=base_class_manakete
 				character_event = {
 					id = class.20
 					days = 360
@@ -4395,6 +4554,9 @@ character_event = {
 	#Next
 	option = {
 		name = MORE_OPTIONS
+		ai_chance = {
+			factor = 0
+		}
 		character_event = {id = class.26}		
 	}
 }
@@ -4468,7 +4630,7 @@ character_event = {
 			text=class.27.A.tooltip
 			hidden_tooltip = {
 				set_character_flag = change_soldier
-				clr_character_flag=class_soldier
+				remove_trait=base_class_soldier
 				remove_trait=class_soldier
 				
 				character_event = {
@@ -4492,6 +4654,7 @@ character_event = {
 	hide_window = yes
 	immediate = {
 		set_variable = { which = "level" value = 1 }
+		set_character_flag = class_selected
 		random_list = {
 			10 = { #90?
 				modifier = {
@@ -4499,7 +4662,7 @@ character_event = {
 					has_character_flag = change_soldier
 				}
 				add_trait = "class_soldier"
-				set_character_flag = "class_soldier"
+				hidden_tooltip = { add_trait = base_class_soldier }
 			}
 			10 = {			
 				modifier = {
@@ -4511,7 +4674,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_knight"
-				set_character_flag = "class_knight"
+				hidden_tooltip = { add_trait = base_class_knight }
 			}
 			10 = {			
 				modifier = {
@@ -4524,7 +4687,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_cavalier"
-				set_character_flag = "class_cavalier"
+				hidden_tooltip = { add_trait = base_class_cavalier }
 			}
 			10 = {			
 				modifier = {
@@ -4535,7 +4698,7 @@ character_event = {
 						culture = nabatan 				
 					}
 				}
-				set_character_flag = "class_archer"
+				hidden_tooltip = { add_trait = base_class_archer }
 				if = {
 					limit = {
 						is_female = no
@@ -4554,7 +4717,7 @@ character_event = {
 					factor = 0
 					NOT = { culture = sacaean }
 				}
-				set_character_flag = "class_horse_archer"
+				hidden_tooltip = { add_trait = base_class_horse_archer }
 				if = {
 					limit = {
 						is_female = no
@@ -4582,7 +4745,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_fighter"
-				set_character_flag = "class_fighter"
+				hidden_tooltip = { add_trait = base_class_fighter }
 			}
 			10 = {			
 				modifier = {
@@ -4599,7 +4762,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_brigand"
-				set_character_flag = "class_brigand"
+				hidden_tooltip = { add_trait = base_class_brigand }
 			}
 			10 = {			
 				modifier = {
@@ -4613,7 +4776,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_pirate"
-				set_character_flag = "class_pirate"
+				hidden_tooltip = { add_trait = base_class_pirate }
 			}
 			10 = {			
 				modifier = {
@@ -4625,7 +4788,7 @@ character_event = {
 						culture = sacaean
 					}
 				}
-				set_character_flag = "class_myrmidon"
+				hidden_tooltip = { add_trait = base_class_myrmidon }
 				if = {
 					limit = {
 						is_female = no
@@ -4649,7 +4812,7 @@ character_event = {
 						culture = nabatan
 					}
 				}
-				set_character_flag = "class_thief"
+				hidden_tooltip = { add_trait = base_class_thief }
 				if = {
 					limit = {
 						is_female = no
@@ -4672,7 +4835,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_pegasus_knight"
-				set_character_flag = "class_pegasus_knight"
+				hidden_tooltip = { add_trait = base_class_pegasus_knight }
 			}
 			10 = {			
 				modifier = {
@@ -4680,7 +4843,7 @@ character_event = {
 					NOT = { culture = bernese }
 				}
 				add_trait = "class_wyvern_rider"
-				set_character_flag = "class_wyvern_rider"
+				hidden_tooltip = { add_trait = base_class_wyvern_rider }
 			}
 			10 = {			
 				modifier = {
@@ -4691,7 +4854,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_troubador"
-				set_character_flag = "class_troubador"
+				hidden_tooltip = { add_trait = base_class_troubador }
 			}
 			10 = {			
 				modifier = {
@@ -4706,14 +4869,14 @@ character_event = {
 					limit = {
 						is_female = no
 					}
-					set_character_flag = "class_priest"
+					hidden_tooltip = { add_trait = base_class_priest }
 					add_trait = "class_priest"
 				}
 				if = {
 					limit = {
 						is_female = yes
 					}
-					set_character_flag = "class_cleric"
+					hidden_tooltip = { add_trait = base_class_cleric }
 					add_trait = "class_cleric"
 				}
 			}
@@ -4726,7 +4889,7 @@ character_event = {
 					}
 				}
 				add_trait = "class_monk"
-				set_character_flag = "class_monk"
+				hidden_tooltip = { add_trait = base_class_monk }
 			}
 			10 = {			
 				modifier = {
@@ -4740,7 +4903,7 @@ character_event = {
 						culture = nabatan
 					}
 				}
-				set_character_flag = "class_mage"
+				hidden_tooltip = { add_trait = base_class_mage }
 				if = {
 					limit = {
 						is_female = no
@@ -4766,18 +4929,18 @@ character_event = {
 						culture = nabatan
 					}
 				}
-				set_character_flag = "class_shaman"
+				hidden_tooltip = { add_trait = base_class_dark_mage }
 				if = {
 					limit = {
 						is_female = no
 					}
-					add_trait = "class_shaman"
+					add_trait = "class_dark_mage"
 				}
 				if = {
 					limit = {
 						is_female = yes
 					}
-					add_trait = "class_shaman_female"
+					add_trait = "class_dark_mage_female"
 				}
 			}
 		}
@@ -4807,7 +4970,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 20
+		months = 24
 	}
 		
 	option = {
