@@ -3,7 +3,7 @@ elibian = {
 	
 	lycian = {
 		graphical_cultures = { frankishgfx}
-		graphical_unit_culture = western
+		#graphical_unit_culture = western
 		
 		#color = { 0.1 0.3 0.6 }
 		color = { 0 0.5 0 }

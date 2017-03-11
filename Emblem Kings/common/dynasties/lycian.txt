@@ -1,6 +1,7 @@
 # Canon
 101={
 	can_appear=no
+	used_for_random=no
 	name="Ostia"
 	culture="lycian"
     coat_of_arms = {
@@ -17,6 +18,7 @@
 }
 102={
 	can_appear=no
+	used_for_random=no
 	name="Pherae"
 	culture="lycian"
     coat_of_arms = {
@@ -33,6 +35,7 @@
 }
 103={
 	can_appear=no
+	used_for_random=no
 	name="Caelin"
 	culture="lycian"
     coat_of_arms = {
@@ -49,6 +52,7 @@
 }
 104={
 	can_appear=no
+	used_for_random=no
 	name="Laus"
 	culture="lycian"
     coat_of_arms = {
@@ -65,6 +69,7 @@
 }
 105={
 	can_appear=no
+	used_for_random=no
 	name="Badon"
 	culture="lycian"
     coat_of_arms = {
@@ -81,6 +86,7 @@
 }
 106={
 	can_appear=no
+	used_for_random=no
 	name="Thria"
 	culture="lycian"
     coat_of_arms = {
@@ -97,6 +103,7 @@
 }
 107={
 	can_appear=no
+	used_for_random=no
 	name="Santaruz"
 	culture="lycian"
     coat_of_arms = {
@@ -113,6 +120,7 @@
 }
 109={
 	can_appear=no
+	used_for_random=no
 	name="Khathelet"
 	culture="lycian"
     coat_of_arms = {
@@ -129,6 +137,7 @@
 }
 110={
 	can_appear=no
+	used_for_random=no
 	name="Araphen"
 	culture="lycian"
     coat_of_arms = {
@@ -145,6 +154,7 @@
 }
 111={
 	can_appear=no
+	used_for_random=no
 	name="Tuscana"
 	culture="lycian"
     coat_of_arms = {
@@ -161,6 +171,7 @@
 }
 112={
 	can_appear=no
+	used_for_random=no
 	name="Tania"
 	culture="lycian"
     coat_of_arms = {
@@ -177,6 +188,7 @@
 }
 113={
 	can_appear=no
+	used_for_random=no
 	name="Cornwell"
 	culture="lycian"
     coat_of_arms = {
@@ -193,6 +205,7 @@
 }
 116={
 	can_appear=no
+	used_for_random=no
 	name="Worde"
 	culture="lycian"
     coat_of_arms = {
@@ -210,6 +223,7 @@
 
 129={
 	can_appear=no
+	used_for_random=no
 	name="Ryerde" #
 	culture="lycian"
     coat_of_arms = {
@@ -227,7 +241,6 @@
 
 # Non-canon
 114={
-	can_appear=no
 	name="of Alta"  # for Eagler
 	culture="lycian"
     coat_of_arms = {
@@ -245,6 +258,7 @@
 
 115={
 	can_appear=no
+	used_for_random=no
 	name="Phestos" #for Isadora, since she's a minor noble from Pherae
 	culture="lycian"
     coat_of_arms = {
@@ -262,6 +276,7 @@
 
 117={
 	can_appear=no
+	used_for_random=no
 	name="Ragna" #for Celdia's family
 	culture="lycian"
     coat_of_arms = {
@@ -295,6 +310,7 @@
 
 119={
 	can_appear=no
+	used_for_random=no
 	name="Zem" #
 	culture="lycian"
     coat_of_arms = {
@@ -312,6 +328,7 @@
 
 120={
 	can_appear=no
+	used_for_random=no
 	name="Aperlae" #for Legance
 	culture="lycian"
     coat_of_arms = {
@@ -329,6 +346,7 @@
 
 121={
 	can_appear=no
+	used_for_random=no
 	name="Arycanda" #for Debias
 	culture="lycian"
     coat_of_arms = {
@@ -345,7 +363,6 @@
 }
 
 122={
-	#can_appear=no
 	name="of Myra" # for Nino's family
 	culture="lycian"
     coat_of_arms = {
@@ -362,6 +379,7 @@
 }    
 123={
 	can_appear=no
+	used_for_random=no
 	name="Myra" # for Wagner
 	culture="lycian"
     coat_of_arms = {
@@ -378,6 +396,7 @@
 }   
 124={
 	can_appear=no
+	used_for_random=no
 	name="Olst" # for Youzen
 	culture="lycian"
     coat_of_arms = {

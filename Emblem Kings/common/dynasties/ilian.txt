@@ -33,6 +33,7 @@
 }
 303={
 	can_appear=no
+	used_for_random=no
 	name="Edessa" #Zealot
 	culture="ilian"    
 	coat_of_arms = {
@@ -49,6 +50,7 @@
 }
 304={
 	can_appear=no
+	used_for_random=no
 	name="Aenir" #Ninian/Nils 
 	culture="ilian"
     coat_of_arms = {
@@ -65,6 +67,7 @@
 }
 305={
 	can_appear=no
+	used_for_random=no
 	name="Nergal" # Nergal
 	culture="ilian"
     coat_of_arms = {
@@ -81,6 +84,7 @@
 }
 306={
 	can_appear=no
+	used_for_random=no
 	name="Remy" # 
 	culture="ilian"
     coat_of_arms = {

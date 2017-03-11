@@ -31,6 +31,7 @@
 
 2={
 	name="Mark"
+	dynasty=random
 	culture=etrurian
 	religion=elimine_church
 	disallow_random_traits="yes" 

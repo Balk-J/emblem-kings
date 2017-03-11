@@ -16,6 +16,7 @@
 }
 602={
 	can_appear=no
+	used_for_random=no
 	name="of Valor"
 	culture="nabatan"
     coat_of_arms = {
@@ -32,6 +33,7 @@
 }    
 603={
 	can_appear=no
+	used_for_random=no
 	name="Hawkeye"
 	culture="nabatan"
     coat_of_arms = {

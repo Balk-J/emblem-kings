@@ -741,4 +741,81 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_secretly_elimine_church"
+		texturefile = "gfx/traits/secret_religion_elimine_church.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_autotheist"
+		texturefile = "gfx/traits/secret_religion_elimine_church.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_golden_church"
+		texturefile = "gfx/traits/secret_religion_elimine_church.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_dragon_liberation"
+		texturefile = "gfx/traits/secret_religion_elimine_church.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_elibe_spirits_pagan"
+		texturefile = "gfx/traits/secret_religion_elibe_spirits.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_raider_pagan"
+		texturefile = "gfx/traits/secret_religion_raider.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_divine_sky_pagan_reformed"
+		texturefile = "gfx/traits/secret_religion_divine_sky.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_divine_sky_pagan"
+		texturefile = "gfx/traits/secret_religion_divine_sky.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_anima"
+		texturefile = "gfx/traits/secret_religion_anima.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_dark"
+		texturefile = "gfx/traits/secret_religion_dark.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_secretly_divine_dragon_naga"
+		texturefile = "gfx/traits/secret_religion_divine_dragon_naga.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 }

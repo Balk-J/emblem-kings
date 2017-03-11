@@ -249,6 +249,7 @@ decisions = {
 						#add_character_modifier = { name = created_war_dragons duration = 3650 } 
 					}
 					character_event = { id = fe6.3 }
+				}
 			}
 		}
 		ai_will_do = {

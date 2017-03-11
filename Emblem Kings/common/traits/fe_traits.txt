@@ -2,21 +2,6 @@
 # WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
 ########################################################################################################
 
-#immortal = {
-	#immortal = yes
-	#fertility = -0.5
-
-	#customizer = no
-	#random = no
-#}
-
-#disappeared = {
-	#customizer = no
-	#random = no
-	
-	#health = -1
-	#is_health = yes 
-#}
 went_missing = {
 	customizer = no
 	random = no
@@ -38,11 +23,6 @@ retired = {
 	cannot_marry = yes
 	hidden = yes 
 }
-sleeping = {
-	customizer = no
-	random = no
-	is_health = yes 
-}
 eight_legends = {
 	monthly_character_prestige = 0.5
 	customizer = no
@@ -50,14 +30,6 @@ eight_legends = {
 	can_hold_titles = no 
 	cannot_inherit = yes 
 	cannot_marry = yes
-}
-teacher = {
-	cannot_marry = yes 
-	cannot_inherit = yes 
-	can_hold_titles = no
-	is_hidden = yes 
-	customizer = no
-	random = no
 }
 
 dragon_blood = {
@@ -99,102 +71,6 @@ demon_dragon = {
 	random = no
 }
 
-bad_priest_light = {
-
-	religious = yes
-
-	potential = {
-		OR = {
-			is_theocracy = yes
-			is_ruler = no
-		}
-	}
-
-	church_opinion = -20
-	same_opinion_if_same_religion = 50
-
-	monthly_character_piety = -1
-
-	customizer = no
-	random = no
-}
-
-bad_priest_divine_sky = {
-
-	religious = yes
-
-	potential = {
-		OR = {
-			is_theocracy = yes
-			is_ruler = no
-		}
-	}
-
-	church_opinion = -20
-	same_opinion_if_same_religion = 50
-
-	monthly_character_piety = -1
-
-	customizer = no
-	random = no
-}
-
-sympathy_light = {
-	opposites =  {
-		zealous
-	}
-	
-	potential = {
-		NOT = { religion_group = light_group }
-	}
-
-	tolerates_light_group = yes		# Tolerates and is tolerated by 
-	
-	same_opinion_if_same_religion = 10
-
-	customizer = no
-	random = no
-}
-
-sympathy_magic = {
-	opposites =  {
-		zealous
-	}
-	
-	potential = {
-		NOT = { trait = "class_archdruid" }
-		NOT = { trait = "class_archsage" }
-		NOT = { trait = "class_bishop" }
-		NOT = { trait = "class_bishop_female" }
-		NOT = { trait = "class_cleric" }
-		NOT = { trait = "class_dark_druid" }
-		NOT = { trait = "class_druid" }
-		NOT = { trait = "class_druid_female" }
-		NOT = { trait = "class_mage" }
-		NOT = { trait = "class_mage_female" }
-		NOT = { trait = "class_mage_knight" }
-		NOT = { trait = "class_mage_knight_female" }
-		NOT = { trait = "class_magic_seal" }
-		NOT = { trait = "class_monk" }
-		NOT = { trait = "class_priest" }
-		NOT = { trait = "class_sage" }
-		NOT = { trait = "class_sage_female" }
-		NOT = { trait = "class_shaman" }
-		NOT = { trait = "class_shaman_female" }
-		NOT = { trait = "class_summoner" }
-		NOT = { trait = "class_troubador" }
-		NOT = { trait = "class_valkyrie" }
-		NOT = { religion_group = magic }
-	}
-
-	tolerates_magic_group=yes		# Tolerates and is tolerated by 
-	
-	same_opinion_if_same_religion = 10
-
-	customizer = no
-	random = no
-}
-
 morph = {
 	customizer = no
 	random = no
@@ -227,58 +103,6 @@ phantom = {
 	male_insult_adj = INSULT_FOUL
 	female_insult_adj = INSULT_FOUL
 }
-	
-dark_incapable = {
-	customizer = no
-	random = no
-	
-	incapacitating = yes 
-	health = -1
-	is_health = yes 
-	
-	#ai_rationality = -10
-
-	male_insult = INSULT_VEGETABLE
-	female_insult = INSULT_VEGETABLE
-}
-
-dark_selfless = {
-
-	customizer = no
-	random = no
-	
-	monthly_character_piety = 1
-	
-	ai_rationality = 100
-	ai_honor = 100
-	ai_ambition = -100
-	ai_greed = -100
-	ai_zeal = -100
-}
-
-dark_power_hungry = {
-
-	customizer = no
-	random = no
-	
-	monthly_character_prestige = 0.25
-	general_opinion = -30
-
-	ai_ambition = 80
-	#ai_greed = 30
-	ai_honor = -20
-	ai_rationality = -20
-	
-	male_insult = INSULT_FIEND
-	female_insult = INSULT_FIEND
-	male_insult_adj = INSULT_CRAZED
-	female_insult_adj = INSULT_CRAZED
-	
-	female_compliment = COMPL_LADY
-	female_compliment_adj = COMPL_GREAT
-	male_compliment = COMPL_LORD
-	male_compliment_adj = COMPL_GREAT
-}
 
 disinherited = {
 	customizer = no
@@ -304,7 +128,7 @@ supreme_essence = {
 		morale_offence = 1.0
 		morale_defence = 1.0
 		damage = 1.0
-		defense = 1.0
+		defence = 1.0
 		siege = 1.0
 		speed = 0.5
 	}

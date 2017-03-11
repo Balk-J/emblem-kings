@@ -18,6 +18,7 @@
 
 202={
 	can_appear=no
+	used_for_random=no
 	name="Aquleia"
 	culture="etrurian"
     coat_of_arms = {
@@ -35,6 +36,7 @@
 
 203={
 	can_appear=no
+	used_for_random=no
 	name="Reglay"
 	culture="etrurian"
     coat_of_arms = {
@@ -52,6 +54,7 @@
 
 204={
 	can_appear=no
+	used_for_random=no
 	name="Caerleon" #
 	culture="etrurian"
     coat_of_arms = {
@@ -69,6 +72,7 @@
 
 205={
 	can_appear=no
+	used_for_random=no
 	name="Ceri" #For Louise - barony
 	culture="etrurian"
     coat_of_arms = {
@@ -86,6 +90,7 @@
 
 206={
 	can_appear=no
+	used_for_random=no
 	name="Siene" #For Roartz 
 	culture="etrurian"
     coat_of_arms = {
@@ -103,6 +108,7 @@
 
 207={
 	can_appear=no
+	used_for_random=no
 	name="Felathri" #For Cecilia
 	culture="etrurian"
     coat_of_arms = {
@@ -120,6 +126,7 @@
 
 208={
 	can_appear=no
+	used_for_random=no
 	name="Arritim" #For Douglas
 	culture="etrurian"
     coat_of_arms = {
@@ -137,6 +144,7 @@
 
 209={
 	can_appear=no
+	used_for_random=no
 	name="Clevsin" #For Percival
 	culture="etrurian"
     coat_of_arms = {
@@ -154,6 +162,7 @@
 
 210={
 	can_appear=no
+	used_for_random=no
 	name="Tarchna" #For Arcard
 	culture="etrurian"
     coat_of_arms = {
@@ -171,6 +180,7 @@
 
 211={
 	can_appear=no
+	used_for_random=no
 	name="Alesia" #For a random duke... Roberts?
 	culture="etrurian"
     coat_of_arms = {
@@ -188,6 +198,7 @@
 
 212={
 	can_appear=no
+	used_for_random=no
 	name="Bolsena" #For Morgan
 	culture="etrurian"
     coat_of_arms = {
@@ -205,6 +216,7 @@
 
 213={
 	can_appear=no
+	used_for_random=no
 	name="Satria" #For Orlo
 	culture="etrurian"
     coat_of_arms = {
@@ -222,6 +234,7 @@
 
 214={
 	can_appear=no
+	used_for_random=no
 	name="Muralto" #For Nord
 	culture="etrurian"
     coat_of_arms = {
@@ -239,6 +252,7 @@
 
 215={
 	can_appear=no
+	used_for_random=no
 	name="Tarkina" #For Galdes
 	culture="etrurian"
     coat_of_arms = {
@@ -256,6 +270,7 @@
 
 216={
 	can_appear=no
+	used_for_random=no
 	name="Velkha" #For Carls
 	culture="etrurian"
     coat_of_arms = {
@@ -290,6 +305,7 @@
 
 218={
 	can_appear=no
+	used_for_random=no
 	name="Caisra" 
 	culture="etrurian"
 	    coat_of_arms = {
@@ -307,6 +323,7 @@
 
 219={
 	can_appear=no
+	used_for_random=no
 	name="Berua" # for Serra 
 	culture="etrurian"
     coat_of_arms = {
@@ -352,6 +369,7 @@
 
 223={
 	can_appear=no
+	used_for_random=no
 	name="Tenque" # for Zinque
 	culture="etrurian"
 	coat_of_arms = {

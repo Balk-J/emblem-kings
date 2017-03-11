@@ -784,12 +784,12 @@ character_event = {
 			text = fe7_eliwood.14.A.tooltip
 			#set_character_flag = quintessence_conspiracy_exposed
 			random_playable_ruler = {
-				war = yes
+				#war = yes
 				any_war = { using_cb = conspiracy_cb }
 				is_primary_war_attacker = yes
 			}
 			random_playable_ruler = {
-				war = yes
+				#war = yes
 				any_war = { using_cb = conspiracy_cb }
 				is_primary_war_defender = yes
 			}

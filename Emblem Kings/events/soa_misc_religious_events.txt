@@ -1,5 +1,6 @@
 # FE changes:
 # Replaced the bad_priest_christian with bad_priest_light, bad_priest_tengri with bad_priest_divine_sky
+
 ###########################################
 #                                         #
 # SoA minor religious events              #             
@@ -30,7 +31,7 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	only_playable = yes
-	religion_group = christian
+	religion_group = light_group
 	war = yes
 	has_dlc = "Sons of Abraham"
 	
@@ -38,7 +39,7 @@ character_event = {
 		in_command = yes
 		is_landed = yes
 		NOT = {
-			has_character_modifier = owns_relic
+			has_artifact = finger_of_st_john
 		}
 	}
 	
@@ -48,10 +49,9 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_SoA_5200
-		add_character_modifier = {
-			name = owns_relic
-			duration = -1
-			inherit = yes
+		add_artifact = finger_of_st_john
+		new_artifact = {
+			set_creation_date = -1.-1.-1
 		}
 		piety = 10
 	}
@@ -73,13 +73,13 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	only_playable = yes
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		wealth = 20
 		NOT = {
-			has_character_modifier = owns_relic
+			has_artifact = finger_of_st_john
 		}
 	}
 	
@@ -90,10 +90,9 @@ character_event = {
 	option = {
 		name = EVTOPTA_SoA_5201
 		wealth = -10
-		add_character_modifier = {
-			name = owns_relic
-			duration = -1
-			inherit = yes
+		add_artifact = finger_of_st_john
+		new_artifact = {
+			set_creation_date = -1.-1.-1
 		}
 		piety = 10
 	}
@@ -126,12 +125,12 @@ character_event = {
 	prisoner = no
 	only_playable = yes
 	
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		NOT = {
-			has_character_modifier = owns_relic
+			has_artifact = finger_of_st_john
 		}
 	}
 	
@@ -141,10 +140,9 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5202
-		add_character_modifier = {
-			name = owns_relic
-			duration = -1
-			inherit = yes
+		add_artifact = finger_of_st_john
+		new_artifact = {
+			set_creation_date = -1.-1.-1
 		}
 		piety = 10
 	}
@@ -161,7 +159,7 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	only_playable = yes
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		OR = {
@@ -169,7 +167,7 @@ character_event = {
 			trait = slothful
 		}
 		has_dlc = "Sons of Abraham"
-		has_character_modifier = owns_relic
+		has_artifact = finger_of_st_john
 	}
 	
 	mean_time_to_happen = {
@@ -178,7 +176,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5203
-		remove_character_modifier = owns_relic
+		destroy_artifact = finger_of_st_john
 	}
 }
 
@@ -192,7 +190,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		is_landed = yes
@@ -202,7 +200,7 @@ character_event = {
 				controlled_by = ROOT
 			}
 		}
-		has_character_modifier = owns_relic
+		has_artifact = finger_of_st_john
 	}
 	
 	mean_time_to_happen = {
@@ -211,7 +209,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5204
-		remove_character_modifier = owns_relic
+		destroy_artifact = finger_of_st_john
 	}
 }
 
@@ -226,11 +224,11 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		has_character_modifier = owns_relic
+		has_artifact = finger_of_st_john
 	}
 	
 	mean_time_to_happen = {
@@ -239,7 +237,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5205
-		remove_character_modifier = owns_relic
+		destroy_artifact = finger_of_st_john
 	}
 	option = {
 		name = EVTOPTB_SoA_5205
@@ -277,7 +275,7 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	is_sick = yes
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		trait = ill
@@ -285,7 +283,7 @@ character_event = {
 		NOT = {
 			has_dlc = "Reapers"
 		}
-		has_character_modifier = owns_relic
+		has_artifact = finger_of_st_john
 	}
 	
 	mean_time_to_happen = {
@@ -351,13 +349,13 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		month = 4
 		NOT = { month = 7 }
-		has_character_modifier = owns_relic
+		has_artifact = finger_of_st_john
 	}
 	
 	mean_time_to_happen = {
@@ -470,11 +468,11 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		has_character_modifier = owns_relic
+		has_artifact = finger_of_st_john
 	}
 	
 	mean_time_to_happen = {
@@ -483,7 +481,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5209
-		remove_character_modifier = owns_relic
+		destroy_artifact = finger_of_st_john
 		piety = 30
 			if = {
 				limit = { NOT = { trait = humble } }
@@ -492,7 +490,7 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_SoA_5209
-		remove_character_modifier = owns_relic
+		destroy_artifact = finger_of_st_john
 		piety = 30
 		prestige = 30
 		add_character_modifier = {
@@ -521,8 +519,9 @@ character_event = {
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		has_character_modifier = owns_relic
-		NOT = { religion_group = christian }
+		has_artifact = finger_of_st_john
+		NOT = { religion_group = light_group }
+		NOT = { has_character_flag = kept_finger_as_trinket }
 	}
 
 	mean_time_to_happen = {
@@ -531,20 +530,20 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_SoA_5229
-		remove_character_modifier = owns_relic
 		prestige = 30
+		set_character_flag = kept_finger_as_trinket
 	}
 	option = {
 		name = EVTOPTB_SoA_5229
-		remove_character_modifier = owns_relic
+		destroy_artifact = finger_of_st_john
 		wealth = 30
 	}
 	option = {
 		name = EVTOPTC_SoA_5229
-		remove_character_modifier = owns_relic
+		destroy_artifact = finger_of_st_john
 		hidden_tooltip = {
 		any_realm_character = {
-				limit = { religion_group = christian }
+				limit = { religion_group = light_group }
 				opinion = {
 					modifier = insulted
 					who = ROOT
@@ -574,7 +573,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -640,7 +639,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -703,7 +702,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 	is_sick = yes
 
 	trigger = {
@@ -744,7 +743,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -777,7 +776,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -815,7 +814,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -853,7 +852,7 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	ai = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -863,8 +862,7 @@ character_event = {
 			age = 13
 			NOT = { age = 16 }
 			NOT = { trait = cynical }
-			NOT = { trait = monk }
-			NOT = { trait = nun }
+			NOT = { is_ascetic_trigger = yes }
 		}
 	}
 
@@ -879,8 +877,7 @@ character_event = {
 				age = 13
 				NOT = { age = 16 }
 				NOT = { trait = cynical }
-				NOT = { trait = monk }
-				NOT = { trait = nun }
+				NOT = { is_ascetic_trigger = yes }
 			}
 			character_event = { id = SoA.5217 }
 		}
@@ -967,7 +964,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -1125,7 +1122,7 @@ character_event = {
 	prisoner = no
 	min_age = 17
 	max_age = 45
-	religion_group = christian
+	religion_group = light_group
 	is_married = yes
 	has_dlc = "Sons of Abraham"
 
@@ -1232,7 +1229,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		trait = possessed
@@ -1323,8 +1320,6 @@ character_event = {
 ###########################################
 
 # Christian becoming a wicked priest
-# FE MODIFIED:
-# Holy Light priest becoming a wicked priest
 character_event = {
 
 	id = SoA.5300
@@ -1544,8 +1539,6 @@ character_event = {
 }
 
 # Tengri becoming an unworthy priest
-# FE MODIFIED:
-# Sacaean priest becoming wicked priest
 character_event = {
 	id = SoA.5303
 
@@ -1565,12 +1558,12 @@ character_event = {
 			trait = bad_priest_divine_sky
 		}
 		OR = {
-			religion = divine_sky_pagan
-			religion = divine_sky_pagan_reformed
+			religion = tengri_pagan
+			religion = tengri_pagan_reformed
 		}
 		OR = {
 			is_priest = yes
-			has_landed_title = d_divine_sky
+			has_landed_title = d_tengri_pagan_reformed
 		}
 		OR = {
 			trait = cynical
@@ -1777,7 +1770,7 @@ character_event = {
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		has_landed_title = k_papal_state
-		trait = bad_priest_christian
+		trait = bad_priest_light
 		NOT = { year = 1049 }
 	}
 
@@ -1818,12 +1811,12 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		controls_religion = yes
 		has_dlc = "Sons of Abraham"
-		trait = bad_priest_christian
+		trait = bad_priest_light
 		NOT = { has_character_modifier = bad_rel_head }
 	}
 
@@ -1987,7 +1980,7 @@ character_event = {
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		has_landed_title = d_tengri_pagan_reformed
-		trait = bad_priest_tengri
+		trait = bad_priest_divine_sky
 		NOT = { has_character_modifier = bad_rel_head }
 	}
 
@@ -2156,7 +2149,7 @@ character_event = {
 	ai = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		is_priest = yes
@@ -2195,7 +2188,7 @@ narrative_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		wealth = 200
@@ -2274,7 +2267,7 @@ narrative_event = {
 	prisoner = no
 	only_capable = yes
 	min_age = 16
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -2404,7 +2397,7 @@ character_event = {
 	ai = yes
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -2442,7 +2435,7 @@ narrative_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	religion_group = christian
+	religion_group = light_group
 
 	trigger = {
 		wealth = 200
@@ -2512,7 +2505,7 @@ narrative_event = {
 	only_capable = yes
 	only_men = yes
 	min_age = 16
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
@@ -2625,7 +2618,7 @@ character_event = {
 	only_independent = yes
 	prisoner = no
 	min_age = 16
-	religion_group = christian
+	religion_group = light_group
 	has_dlc = "Sons of Abraham"
 	war = yes
 	
@@ -3356,7 +3349,7 @@ character_event = {
 	hide_window = yes
 
 	ai = no
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_global_flag = jeanne_darc_spawned
@@ -3422,7 +3415,7 @@ character_event = {
 	hide_window = yes
 
 	ai = no
-	religion_group = christian
+	religion_group = light_group
 	
 	trigger = {
 		has_global_flag = jeanne_darc_spawned
@@ -3777,7 +3770,7 @@ narrative_event = {
 	border = GFX_event_narrative_frame_war
 	
 	only_playable = yes
-	religion_group = christian
+	religion_group = light_group
 	war = yes
 	has_dlc = "Sons of Abraham"
 	
@@ -4023,7 +4016,7 @@ character_event = {
 		trait = sympathy_christendom
 		has_dlc = "Sons of Abraham"
 		any_courtier = {
-			religion_group = christian
+			religion_group = light_group
 			prisoner = no
 			is_adult = yes
 			NOT = { trait = incapable }
@@ -4039,7 +4032,7 @@ character_event = {
 		name = EVTOPTA_SoA_5410
 		any_courtier = {
 			limit = {
-				religion_group = christian
+				religion_group = light_group
 				prisoner = no
 				is_adult = yes
 				NOT = { trait = incapable }

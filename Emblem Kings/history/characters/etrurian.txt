@@ -989,7 +989,7 @@
 		add_trait="arbitrary"
 		add_trait="deceitful"
 	}
-	1159.1.1 = {
+	1169.1.1 = {
 		remove_trait="class_priest"
 		add_trait="class_bishop"
 	}		

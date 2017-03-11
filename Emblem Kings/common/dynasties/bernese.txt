@@ -1,6 +1,7 @@
 # Canon
 401={
 	can_appear=no
+	used_for_random=no
 	name="of Bern"
 	culture="bernese"
 	coat_of_arms = {
@@ -18,6 +19,7 @@
 
 415={
 	can_appear=no
+	used_for_random=no
 	name="Grentzer" #Pascal
 	culture="bernese"
     coat_of_arms = {
@@ -299,6 +301,7 @@
 
 498={
 	can_appear=no
+	used_for_random=no
 	name="Blackbone" #Audamorze
 	culture="bernese"    
 	coat_of_arms = {

@@ -34,7 +34,8 @@
 
 402={
 	name="Desmond"
-    dna="alfkhxmcgan" 
+    #dna="alfkhxmcgan" 
+    dna="dfhfdoaciaf" 
     properties="aj0bbc00000000"
 	dynasty=401
 	culture=bernese
@@ -88,7 +89,8 @@
 	dynasty=401
 	culture=bernese
 	religion=elimine_church
-    dna="bhfgcubfgab" 
+    #dna="bhfgcubfgab" 
+    dna="difgicedifd" 
     properties="ah00d00000000"
 	father=402 #Desmond
 	mother=230 #Hellene

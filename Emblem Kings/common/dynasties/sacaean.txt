@@ -18,6 +18,7 @@
 }
 502={
 	can_appear=no
+	used_for_random=no
 	name="Kutolah"
 	culture="sacaean"
 	coat_of_arms = {
@@ -35,6 +36,7 @@
 }
 503={
 	can_appear=no
+	used_for_random=no
 	name="Djute"
 	culture="sacaean"
 	coat_of_arms = {
@@ -52,6 +54,7 @@
 }
 504={
 	can_appear=no
+	used_for_random=no
 	name="Bulgar" #mentioned in the Sin/Fir B support, but no confirmed appearance.
 	culture="sacaean"
 	coat_of_arms = {
@@ -69,6 +72,7 @@
 }
 505={
 	can_appear=no
+	used_for_random=no
 	name="Lorca"
 	culture="sacaean"
 	coat_of_arms = {
@@ -87,6 +91,7 @@
 # Non-canon
 506={
 	can_appear=no
+	used_for_random=no
 	name="Uhaid"
 	culture="sacaean"
 	coat_of_arms = {
@@ -105,6 +110,7 @@
 
 507={
 	can_appear=no
+	used_for_random=no
 	name="Wodao"
 	culture="sacaean"
 	coat_of_arms = {
@@ -123,6 +129,7 @@
 
 508={
 	can_appear=no
+	used_for_random=no
 	name="Glass"
 	culture="sacaean"
 	coat_of_arms = {
@@ -141,6 +148,7 @@
 
 509={
 	can_appear=no
+	used_for_random=no
 	name="Guy"
 	culture="sacaean"
 	coat_of_arms = {
@@ -159,6 +167,7 @@
 
 510={
 	can_appear=no
+	used_for_random=no
 	name="Sin" #Sindi?
 	culture="sacaean"
 	coat_of_arms = {
@@ -177,6 +186,7 @@
 
 511={
 	can_appear=no
+	used_for_random=no
 	name="Rath" 
 	culture="sacaean"
 	coat_of_arms = {
@@ -614,6 +624,7 @@
 }
 583={
 	can_appear=no
+	used_for_random=no
 	name="Battid"
 	culture="sacaean"
 	coat_of_arms = {
@@ -631,6 +642,7 @@
 }
 584={
 	can_appear=no
+	used_for_random=no
 	name="Gossler"
 	culture="sacaean"
 	coat_of_arms = {
@@ -648,6 +660,7 @@
 }
 585={
 	can_appear=no
+	used_for_random=no
 	name="Ganelon"
 	culture="sacaean"
 	coat_of_arms = {
@@ -665,6 +678,7 @@
 }
 586={
 	can_appear=no
+	used_for_random=no
 	name="Kel"
 	culture="sacaean"
 	coat_of_arms = {
@@ -682,6 +696,7 @@
 }
 587={
 	can_appear=no
+	used_for_random=no
 	name="Taliver"
 	culture="sacaean"
 	coat_of_arms = {
@@ -700,6 +715,7 @@
 
 588={
 	can_appear=no
+	used_for_random=no
 	name="Kubernis"
 	culture="sacaean"
 	coat_of_arms = {
@@ -718,6 +734,7 @@
 
 589= {
 	can_appear=no
+	used_for_random=no
 	name="Tarquinius"
 	culture="sacaean"
 	coat_of_arms = {
@@ -735,6 +752,7 @@
 }
 590={
 	can_appear=no
+	used_for_random=no
 	name="Caecina"
 	culture="sacaean"
 	coat_of_arms = {
@@ -752,6 +770,7 @@
 }
 591={
 	can_appear=no
+	used_for_random=no
 	name="Commius"
 	culture="sacaean"
 	coat_of_arms = {
@@ -769,6 +788,7 @@
 }
 592={
 	can_appear=no
+	used_for_random=no
 	name="Ortogh"
 	culture="sacaean"
 	coat_of_arms = {

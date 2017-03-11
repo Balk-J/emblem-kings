@@ -1,6 +1,9 @@
 180.1.1={
 	active = yes
-	law = enatic_succession
+	law = enatic_succession # This doesn't work for mercs! So we'll handle it with an event that checks the title below.
+	effect = { 
+		set_title_flag = pegasus_knight_mercenary_company
+	}
 }
 1159.1.1={
 	holder=345 # generic

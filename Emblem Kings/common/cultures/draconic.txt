@@ -128,7 +128,7 @@ draconic = {
 	
 	ice_dragon_culture = {
 		graphical_cultures = { easternslavicgfx}
-		graphical_unit_culture = western
+		#graphical_unit_culture = western
 		
 		color = { 0 0 0 }
 		

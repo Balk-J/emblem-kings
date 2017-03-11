@@ -2324,7 +2324,7 @@
 	name="Sealen" 
 	dynasty=555
 	
-	culture=seafarer
+	culture=sacaean
 	religion=elimine_church
 		
 	1139.1.1={

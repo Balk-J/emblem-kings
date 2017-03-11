@@ -1,0 +1,59 @@
+namespace = fe_titles
+
+# If a pegasus knight company is inherited by a male non-peg knight, create an appropriate commander and hand it off to them.
+character_event = {
+	id = fe_titles.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		ai = yes
+		FROM = {
+			has_title_flag = pegasus_knight_mercenary_company
+		}
+		is_female = no
+		NOR = {
+			trait = class_pegasus_knight
+			trait = class_falcon_knight
+		}
+	}
+	
+	option = {
+		name = OK	
+		
+		create_character = {
+			random_traits = yes
+			dynasty = none
+			religion = ROOT
+			culture = ROOT
+			female = yes
+			age = 16
+			trait="base_class_pegasus_knight"
+			trait="class_pegasus_knight"
+		}
+		new_character = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			character_event = { id = fe_titles.2 days = 1 }
+		}
+		
+	}
+}
+
+character_event = {
+	id = fe_titles.2
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK	
+		
+		FROM = {
+			abdicate_to = ROOT
+			
+			death = {
+				death_reason=death_missing
+			}
+		}
+	}
+}

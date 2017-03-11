@@ -2745,8 +2745,8 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	 
 	only_rulers = yes
-	is_inaccessible_trigger = yes
 	trigger = {
+		is_inaccessible_trigger = yes
 		trait = in_hiding
 		has_character_flag = warned_by_black_fang
 	}
@@ -2817,50 +2817,3 @@ character_event = {
 		}		
 	}
 }	
-
-# Create Ninian and Nils
-character_event = {
-	id = fe7.34
-	
-	is_triggered_only = yes
-	hide_window = yes
-	
-	option = {
-		if = {
-			limit = {
-				NOT = {
-					any_character = {
-						has_character_flag = is_fe7_ninian
-					}
-				}
-			}
-			c_kathelet = {
-				create_character = {
-					random_traits = no
-					name = "Ninian"
-					dynasty = 304
-					religion = elimine_church
-					culture = ilian
-					female = yes
-					age = 989
-					immortal_age = 16
-					mother = 924 # Aenir
-					trait="tough_soldier"	
-					trait="dragon_blood"		
-					trait="class_dancer"
-					trait="base_class_dancer"
-					trait="scholarly_theologian"
-					trait="kind"
-					trait="shy"
-					trait="chaste"
-				}
-				
-				new_character = {
-					
-				}
-			}
-		}
-	}
-}		
-
-
