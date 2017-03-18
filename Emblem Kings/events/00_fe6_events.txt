@@ -305,7 +305,6 @@ character_event  = {
 			trait = dragon
 			trait = war_dragon
 			trait = class_manakete
-			employer = FROM
 		}
 				
 		create_character = {
@@ -326,7 +325,6 @@ character_event  = {
 			trait = dragon
 			trait = war_dragon
 			trait = class_manakete
-			employer = FROM
 		}
 		
 		create_character = {
@@ -347,7 +345,6 @@ character_event  = {
 			trait = dragon
 			trait = war_dragon
 			trait = class_manakete
-			employer = FROM
 		}
 	}
 }

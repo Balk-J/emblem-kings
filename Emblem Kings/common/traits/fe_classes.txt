@@ -438,7 +438,7 @@ class_bow_knight= {
 	horse_archers_offensive = 0.05
 	light_infantry_offensive = 0.05
 }
-class_ranger_female= {
+class_bow_knight_female= {
 	customizer = no
 	random = no
 	combat_rating = 2

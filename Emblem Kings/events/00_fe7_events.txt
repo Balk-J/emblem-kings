@@ -182,7 +182,6 @@ character_event = {
 					}
 					trait = morph
 					trait = fair
-					employer = FROM
 				}
 				
 				new_character = {
@@ -201,8 +200,8 @@ character_event = {
 							add_trait = base_class_priest
 						}
 						6 = {
-							add_trait=class_druid
-							add_trait = base_class_shaman
+							add_trait=class_sorceror
+							add_trait = base_class_dark_mage
 						}
 						6 = {
 							add_trait=class_general
@@ -225,7 +224,7 @@ character_event = {
 							add_trait = base_class_cavalier
 						}
 						5 = {
-							add_trait=class_ranger
+							add_trait=class_bow_knight
 							add_trait = base_class_horse_archer
 						}
 						5 = {
@@ -276,7 +275,6 @@ character_event = {
 					}
 					trait = morph
 					trait = fair
-					employer = FROM
 				}
 				new_character = {
 					# Assign a class
@@ -290,8 +288,8 @@ character_event = {
 							add_trait = base_class_cleric
 						}
 						5 = {
-							add_trait=class_druid_female		
-							add_trait = base_class_shaman
+							add_trait=class_sorceror_female		
+							add_trait = base_class_dark_mage
 						}
 						5 = {
 							add_trait=class_falcon_knight		
@@ -318,7 +316,7 @@ character_event = {
 							add_trait = base_class_cavalier
 						}
 						5 = {
-							add_trait=class_ranger_female	
+							add_trait=class_bow_knight_female	
 							add_trait = base_class_horse_archer
 						}
 						5 = {
@@ -392,7 +390,6 @@ character_event = {
 					}
 					trait = morph
 					trait = fair
-					employer = FROM
 				}
 				
 				new_character = {
@@ -407,8 +404,8 @@ character_event = {
 							add_trait = base_class_priest
 						}
 						10 = {
-							add_trait=class_druid
-							add_trait = base_class_shaman
+							add_trait=class_sorceror
+							add_trait = base_class_dark_mage
 						}
 						10 = {
 							add_trait=class_hero
@@ -454,7 +451,6 @@ character_event = {
 					}
 					trait = morph
 					trait = fair
-					employer = FROM
 				}
 				new_character = {
 					# Assign a class
@@ -468,8 +464,8 @@ character_event = {
 							add_trait = base_class_cleric
 						}
 						9 = {
-							add_trait=class_druid_female	
-							add_trait = base_class_shaman
+							add_trait=class_sorceror_female	
+							add_trait = base_class_dark_mage
 						}
 						9 = {
 							add_trait=class_hero_female		
@@ -1443,7 +1439,6 @@ narrative_event = {
 						trait="fair"
 						trait="cruel"
 						trait="proud"
-						employer = PREV
 					}
 					new_character = {
 						set_variable = { which = "level" value = 1 }
@@ -1495,7 +1490,6 @@ narrative_event = {
 						trait="class_assassin"
 						trait="base_class_thief"
 						trait="elusive_shadow"
-						employer = PREV
 					}
 					new_character = {
 						set_variable = { which = "level" value = 1 }

@@ -42,13 +42,13 @@ character_event = {
 			has_character_modifier = relic_rumor_medium
 			has_character_modifier = relic_rumor_minor
 		}
-		NOR = {
+		NOT = { religion = pagan }
+#		NOR = {
 #			religion = zun_pagan
 #			religion = zun_pagan_reformed
-			religion = pagan
+#			religion = pagan
 #			religion = hellenic_pagan
-			religion = elibe_spirits_pagan
-		}
+#		}
 	}
 
 	immediate = {
@@ -71,7 +71,10 @@ character_event = {
 				}
 				modifier = {
 					factor = 0
-					always = yes #FE temp
+					AND = {
+						NOT = { available_regalia_trigger = yes }
+						NOT = { has_all_major_items_trigger = yes }
+					}
 				}
 #				modifier = {
 #					factor = 0
@@ -183,7 +186,7 @@ character_event = {
 			90 = { #Good rumor
 				modifier = {
 					factor = 0
-					always = yes #FE temp
+					NOT = { has_all_medium_items_trigger = yes }
 				}
 #				modifier = { 
 #					factor = 0 
@@ -366,7 +369,18 @@ character_event = {
 						has_artifact = famous_arm
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
-						has_artifact = weeping_statue
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = magic_group
+						has_artifact = famous_head
+						has_artifact = famous_tongue
+						has_artifact = famous_hand
+						has_artifact = famous_arm
+						has_artifact = famous_foot
+						has_artifact = famous_ancient_weapon
 					}
 				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9003 } }
@@ -890,6 +904,28 @@ character_event = {
 					character_event = { id = MNM.9841 }
 				}
 
+				# FE artifacts
+				# Regalia - S Rank weapons
+				10 = {
+					modifier = { factor = 0 NOT = { available_regalia_trigger = yes } }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					set_random_regalia_flag_effect = yes
+					character_event = { id = regalia.59 } 
+				}
+				# Major items - blessed rings
+				10 = {
+					modifier = { factor = 0 has_all_major_items_trigger = yes }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					set_random_major_item_flag_effect = yes
+					character_event = { id = item.1 } 
+				}
+				# Medium items - stat boosters, promotion items, cards
+				20 = {
+					modifier = { factor = 0 has_all_medium_items_trigger = yes }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
+					set_random_medium_item_flag_effect = yes
+					character_event = { id = item.1 } 
+				}
 #				#Christian artifacts
 #				10 = {
 #					modifier = { factor = 0 NOT = { religion_group = christian } }
@@ -1583,7 +1619,22 @@ character_event = {
 #					#Insert artifact event here
 #					narrative_event = { id = MNM.9607 } #Yada Tashy/Rain Stone
 #				}
-
+				# FE 
+				20 = {
+					modifier = { 
+						factor = 0 
+						NOT = { 
+							religion_group = light_group
+						} 
+					}
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
+					modifier = {
+						factor = 0
+						has_artifact = fingerbone_of_saint
+					}
+					#Insert artifact event here
+					character_event = { id = MNM.9809 } #Fingerbone of Saint
+				}
 			}
 		}
 	}
@@ -8449,26 +8500,26 @@ character_event = {
 
     #Sword
     option = { 
-        trigger = { NOT = { religion_group = muslim } }
+#        trigger = { NOT = { religion_group = muslim } }
         name = EVTOPTA_MNM_9118
-        custom_tooltip = { text = EVTOPTA_MNM_9118_TT }
+#        custom_tooltip = { text = EVTOPTA_MNM_9118_TT }
         hidden_tooltip = { FROM = { set_character_flag = weapon_sword } }
         ai_chance = { factor = 2 }
     }
 
     #Scimitar
-    option = {
-        trigger = { religion_group = muslim }
-        name = EVTOPTB_MNM_9118
-        custom_tooltip = { text = EVTOPTB_MNM_9118_TT }
-        hidden_tooltip = { FROM = { set_character_flag = weapon_scimitar } }
-        ai_chance = { factor = 2 }
-    }
+#    option = {
+#        trigger = { religion_group = muslim }
+#        name = EVTOPTB_MNM_9118
+#        custom_tooltip = { text = EVTOPTB_MNM_9118_TT }
+#        hidden_tooltip = { FROM = { set_character_flag = weapon_scimitar } }
+#        ai_chance = { factor = 2 }
+#    }
     
     #Lance
     option = {
         name = EVTOPTC_MNM_9118
-        custom_tooltip = { text = EVTOPTC_MNM_9118_TT }
+#        custom_tooltip = { text = EVTOPTC_MNM_9118_TT }
         hidden_tooltip = { FROM = { set_character_flag = weapon_lance } }
         ai_chance = { 
         	factor = 1 
@@ -8479,7 +8530,7 @@ character_event = {
     #Axe
     option = {
         name = EVTOPTD_MNM_9118
-        custom_tooltip = { text = EVTOPTD_MNM_9118_TT }
+#        custom_tooltip = { text = EVTOPTD_MNM_9118_TT }
         hidden_tooltip = { FROM = { set_character_flag = weapon_axe } }
         ai_chance = { 
         	factor = 1
@@ -8488,21 +8539,21 @@ character_event = {
     }
 
     #Mace
-    option = {
-        trigger = { is_nomadic = no }
-        name = EVTOPTE_MNM_9118
-        custom_tooltip = { text = EVTOPTE_MNM_9118_TT }
-        hidden_tooltip = { FROM = { set_character_flag = weapon_mace } }
-        ai_chance = { 
-        	factor = 1
-        	modifier = { religion = norse_pagan factor = 5 }
-        	modifier = { religion = norse_pagan_reformed factor = 5 }
-        }
-    }
+#    option = {
+#        trigger = { is_nomadic = no }
+#        name = EVTOPTE_MNM_9118
+#        custom_tooltip = { text = EVTOPTE_MNM_9118_TT }
+#        hidden_tooltip = { FROM = { set_character_flag = weapon_mace } }
+#        ai_chance = { 
+#        	factor = 1
+#        	modifier = { religion = norse_pagan factor = 5 }
+#        	modifier = { religion = norse_pagan_reformed factor = 5 }
+#        }
+#    }
 
     #Bow
     option = {
-        trigger = { is_nomadic = yes }
+#        trigger = { is_nomadic = yes }
         name = EVTOPTF_MNM_9118
         custom_tooltip = { text = EVTOPTF_MNM_9118_TT }
         hidden_tooltip = { FROM = { set_character_flag = weapon_bow } }
@@ -8541,31 +8592,32 @@ character_event = {
     option = { 
         name = EVTOPTA_MNM_9120
 
-       	if = {
-            limit = { FROM = { has_character_flag = weapon_sword } }
-            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_SWORDSCIMITAR }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_scimitar } }
-            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_SWORDSCIMITAR }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_lance } }
-           	custom_tooltip = { text = EVTOPTA_MNM_9120_TT_LANCE }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_axe } }
-            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_AXE }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_mace } }
-            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_MACE }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_bow } }
-            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_BOW }
-        }
+#       	if = {
+#            limit = { FROM = { has_character_flag = weapon_sword } }
+#            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_SWORDSCIMITAR }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_scimitar } }
+#            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_SWORDSCIMITAR }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_lance } }
+#           	custom_tooltip = { text = EVTOPTA_MNM_9120_TT_LANCE }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_axe } }
+#            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_AXE }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_mace } }
+#            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_MACE }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_bow } }
+#            custom_tooltip = { text = EVTOPTA_MNM_9120_TT_BOW }
+#        }
 
+		custom_tooltip = { text = regalia.tooltip.brave }
         scaled_wealth = { value = -6 min = -400 }
 
         hidden_effect = {
@@ -8601,31 +8653,32 @@ character_event = {
     #Something nice
     option = {
         name = EVTOPTB_MNM_9120
-        if = {
-            limit = { FROM = { has_character_flag = weapon_sword } }
-            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_SWORDSCIMITAR }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_scimitar } }
-            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_SWORDSCIMITAR }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_lance } }
-           	custom_tooltip = { text = EVTOPTB_MNM_9120_TT_LANCE }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_axe } }
-            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_AXE }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_mace } }
-            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_MACE }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_bow } }
-            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_BOW }
-        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_sword } }
+#            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_SWORDSCIMITAR }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_scimitar } }
+#            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_SWORDSCIMITAR }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_lance } }
+#           	custom_tooltip = { text = EVTOPTB_MNM_9120_TT_LANCE }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_axe } }
+#            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_AXE }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_mace } }
+#            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_MACE }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_bow } }
+#            custom_tooltip = { text = EVTOPTB_MNM_9120_TT_BOW }
+#        }
 
+		custom_tooltip = { text = regalia.tooltip.killer }
         scaled_wealth = { value = -3 min = -180 }
 
         hidden_effect = {
@@ -8665,15 +8718,16 @@ character_event = {
    	#I can't afford that much 
     option = {
         name = EVTOPTC_MNM_9120
-        if = {
-            limit = { FROM = { NOT = { has_character_flag = weapon_bow } } }
-            custom_tooltip = { text = EVTOPTC_MNM_9120_TT_SWORDSCIMITAR }
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_bow } }
-            custom_tooltip = { text = EVTOPTC_MNM_9120_TT_BOW }
-        }
+#        if = {
+#            limit = { FROM = { NOT = { has_character_flag = weapon_bow } } }
+#            custom_tooltip = { text = EVTOPTC_MNM_9120_TT_SWORDSCIMITAR }
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_bow } }
+#            custom_tooltip = { text = EVTOPTC_MNM_9120_TT_BOW }
+#        }
 
+		custom_tooltip = { text = regalia.tooltip.glass }
         scaled_wealth = { value = -1.5 min = -75 }
 
         hidden_effect = {
@@ -8757,169 +8811,189 @@ character_event = {
 #Expensive weapon done
 character_event = {
     id = MNM.9122
-    desc = EVTDESC_MNM_9122
+#    desc = EVTDESC_MNM_9122
+    desc = EVTDESC_MNM_9122.fe
     picture = GFX_evt_weaponsmith
     border = GFX_event_normal_frame_economy
 
     is_triggered_only = yes
 
     has_dlc = "Mystics"
-
     option = { 
-        name = {
-            text = EVTOPTA_MNM_9122_SWORD
-            trigger = { FROM = { has_character_flag = weapon_sword } }
-        } 
-        name = {
-            text = EVTOPTA_MNM_9122_SCIMITAR
-            trigger = { FROM = { has_character_flag = weapon_scimitar } }
-        } 
-        name = {
-            text = EVTOPTA_MNM_9122_LANCE
-            trigger = { FROM = { has_character_flag = weapon_lance } }
-        } 
-        name = {
-            text = EVTOPTA_MNM_9122_AXE
-            trigger = { FROM = { has_character_flag = weapon_axe } }
-        } 
-        name = {
-            text = EVTOPTA_MNM_9122_MACE
-            trigger = { FROM = { has_character_flag = weapon_mace } }
-        } 
-        name = {
-            text = EVTOPTA_MNM_9122_BOW
-            trigger = { FROM = { has_character_flag = weapon_bow } }
-        } 
+        name = EXCELLENT
 
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
-            add_artifact = sword_tier_3_heartseeker
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_scimitar } }
-            add_artifact = scimitar_tier_3_golden
+            add_artifact = brave_sword
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_lance } }
-            add_artifact = lance_tier_3_impaler
+			add_artifact = brave_lance
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_axe } }
-            add_artifact = axe_tier_3_cleaver
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_mace } }
-            add_artifact = mace_tier_3_foe_hammer
+			add_artifact = brave_axe
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_bow } }
-            add_artifact = bow_tier_3_silent_wind
+			add_artifact = brave_bow
         }
     }
+#    option = { 
+#        name = {
+#            text = EVTOPTA_MNM_9122_SWORD
+#            trigger = { FROM = { has_character_flag = weapon_sword } }
+#        } 
+#        name = {
+#            text = EVTOPTA_MNM_9122_SCIMITAR
+#            trigger = { FROM = { has_character_flag = weapon_scimitar } }
+#        } 
+#        name = {
+#            text = EVTOPTA_MNM_9122_LANCE
+#            trigger = { FROM = { has_character_flag = weapon_lance } }
+#        } 
+#        name = {
+#            text = EVTOPTA_MNM_9122_AXE
+#            trigger = { FROM = { has_character_flag = weapon_axe } }
+#        } 
+#        name = {
+#            text = EVTOPTA_MNM_9122_MACE
+#            trigger = { FROM = { has_character_flag = weapon_mace } }
+#        } 
+#        name = {
+#            text = EVTOPTA_MNM_9122_BOW
+#            trigger = { FROM = { has_character_flag = weapon_bow } }
+#        } 
 
-    option = {
-        name = {
-            text = EVTOPTB_MNM_9122_SWORD
-            trigger = { FROM = { has_character_flag = weapon_sword } }
-        } 
-        name = {
-            text = EVTOPTB_MNM_9122_SCIMITAR
-            trigger = { FROM = { has_character_flag = weapon_scimitar } }
-        } 
-        name = {
-            text = EVTOPTB_MNM_9122_LANCE
-            trigger = { FROM = { has_character_flag = weapon_lance } }
-        } 
-        name = {
-            text = EVTOPTB_MNM_9122_AXE
-            trigger = { FROM = { has_character_flag = weapon_axe } }
-        } 
-        name = {
-            text = EVTOPTB_MNM_9122_MACE
-            trigger = { FROM = { has_character_flag = weapon_mace } }
-        } 
-        name = {
-            text = EVTOPTB_MNM_9122_BOW
-            trigger = { FROM = { has_character_flag = weapon_bow } }
-        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_sword } }
+#            add_artifact = sword_tier_3_heartseeker
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_scimitar } }
+#            add_artifact = scimitar_tier_3_golden
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_lance } }
+#            add_artifact = lance_tier_3_impaler
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_axe } }
+#            add_artifact = axe_tier_3_cleaver
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_mace } }
+#            add_artifact = mace_tier_3_foe_hammer
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_bow } }
+#            add_artifact = bow_tier_3_silent_wind
+#        }
+#    }
 
-        if = {
-            limit = { FROM = { has_character_flag = weapon_sword } }
-            add_artifact = sword_tier_3_vengeance
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_scimitar } }
-            add_artifact = scimitar_tier_3_fortune
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_lance } }
-            add_artifact = lance_tier_3_trident
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_axe } }
-            add_artifact = axe_tier_3_ravager
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_mace } }
-            add_artifact = mace_tier_3_bone_breaker
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_bow } }
-            add_artifact = bow_tier_3_lightning
-        }
-    }
-    
-    option = {
-        name = {
-            text = EVTOPTC_MNM_9122_SWORD
-            trigger = { FROM = { has_character_flag = weapon_sword } }
-        } 
-        name = {
-            text = EVTOPTC_MNM_9122_SCIMITAR
-            trigger = { FROM = { has_character_flag = weapon_scimitar } }
-        } 
-        name = {
-            text = EVTOPTC_MNM_9122_LANCE
-            trigger = { FROM = { has_character_flag = weapon_lance } }
-        } 
-        name = {
-            text = EVTOPTC_MNM_9122_AXE
-            trigger = { FROM = { has_character_flag = weapon_axe } }
-        } 
-        name = {
-            text = EVTOPTC_MNM_9122_MACE
-            trigger = { FROM = { has_character_flag = weapon_mace } }
-        } 
-        name = {
-            text = EVTOPTC_MNM_9122_BOW
-            trigger = { FROM = { has_character_flag = weapon_bow } }
-        }
-
-        if = {
-            limit = { FROM = { has_character_flag = weapon_sword } }
-            add_artifact = sword_tier_3_fury
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_scimitar } }
-            add_artifact = scimitar_tier_3_conquest
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_lance } }
-            add_artifact = lance_tier_3_piercer
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_axe } }
-            add_artifact = axe_tier_3_marauder
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_mace } }
-            add_artifact = mace_tier_3_shatterer
-        }
-        if = {
-            limit = { FROM = { has_character_flag = weapon_bow } }
-            add_artifact = bow_tier_3_eagle
-        }
-    }
+#    option = {
+#        name = {
+#            text = EVTOPTB_MNM_9122_SWORD
+#            trigger = { FROM = { has_character_flag = weapon_sword } }
+#        } 
+#        name = {
+#            text = EVTOPTB_MNM_9122_SCIMITAR
+#            trigger = { FROM = { has_character_flag = weapon_scimitar } }
+#        } 
+#        name = {
+#            text = EVTOPTB_MNM_9122_LANCE
+#            trigger = { FROM = { has_character_flag = weapon_lance } }
+#        } 
+#        name = {
+#            text = EVTOPTB_MNM_9122_AXE
+#            trigger = { FROM = { has_character_flag = weapon_axe } }
+#        } 
+#        name = {
+#            text = EVTOPTB_MNM_9122_MACE
+#            trigger = { FROM = { has_character_flag = weapon_mace } }
+#        } 
+#        name = {
+#            text = EVTOPTB_MNM_9122_BOW
+#            trigger = { FROM = { has_character_flag = weapon_bow } }
+#        }
+#
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_sword } }
+#            add_artifact = sword_tier_3_vengeance
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_scimitar } }
+#            add_artifact = scimitar_tier_3_fortune
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_lance } }
+#            add_artifact = lance_tier_3_trident
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_axe } }
+#            add_artifact = axe_tier_3_ravager
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_mace } }
+#            add_artifact = mace_tier_3_bone_breaker
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_bow } }
+#            add_artifact = bow_tier_3_lightning
+#        }
+#    }
+#    
+#    option = {
+#        name = {
+#            text = EVTOPTC_MNM_9122_SWORD
+#            trigger = { FROM = { has_character_flag = weapon_sword } }
+#        } 
+#        name = {
+#            text = EVTOPTC_MNM_9122_SCIMITAR
+#            trigger = { FROM = { has_character_flag = weapon_scimitar } }
+#        } 
+#        name = {
+#            text = EVTOPTC_MNM_9122_LANCE
+#            trigger = { FROM = { has_character_flag = weapon_lance } }
+#        } 
+#        name = {
+#            text = EVTOPTC_MNM_9122_AXE
+#            trigger = { FROM = { has_character_flag = weapon_axe } }
+#        } 
+#        name = {
+#            text = EVTOPTC_MNM_9122_MACE
+#            trigger = { FROM = { has_character_flag = weapon_mace } }
+#        } 
+#        name = {
+#            text = EVTOPTC_MNM_9122_BOW
+#            trigger = { FROM = { has_character_flag = weapon_bow } }
+#        }
+#
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_sword } }
+#            add_artifact = sword_tier_3_fury
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_scimitar } }
+#            add_artifact = scimitar_tier_3_conquest
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_lance } }
+#            add_artifact = lance_tier_3_piercer
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_axe } }
+#            add_artifact = axe_tier_3_marauder
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_mace } }
+#            add_artifact = mace_tier_3_shatterer
+#        }
+#        if = {
+#            limit = { FROM = { has_character_flag = weapon_bow } }
+#            add_artifact = bow_tier_3_eagle
+#        }
+#    }
     after = {
     	hidden_effect = { FROM = { character_event = { id = MNM.9127 days = 30 } } }
     	clear_delayed_event = { id = MNM.9125 }
@@ -8945,27 +9019,33 @@ character_event = {
 
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
-            add_artifact = sword_tier_2
+            add_artifact = killing_edge
+			#add_artifact = sword_tier_2
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_scimitar } }
-            add_artifact = scimitar_tier_2
+            add_artifact = killing_edge
+			#add_artifact = scimitar_tier_2
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_lance } }
-            add_artifact = lance_tier_2
+            add_artifact = killer_lance
+			#add_artifact = lance_tier_2
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_axe } }
-            add_artifact = axe_tier_2
+            add_artifact = killer_axe
+			#add_artifact = axe_tier_2
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_mace } }
-            add_artifact = mace_tier_2
+            add_artifact = killer_axe
+			#add_artifact = mace_tier_2
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_bow } }
-            add_artifact = bow_tier_2
+            add_artifact = killer_bow
+			#add_artifact = bow_tier_2
         }
     }
     after = {
@@ -8994,27 +9074,33 @@ character_event = {
 
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
-            add_artifact = sword_tier_1
+            add_artifact = glass_sword
+            #add_artifact = sword_tier_1
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_scimitar } }
-            add_artifact = scimitar_tier_1
+            add_artifact = glass_sword
+            #add_artifact = scimitar_tier_1
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_lance } }
-            add_artifact = lance_tier_1
+            add_artifact = glass_lance
+            #add_artifact = lance_tier_1
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_axe } }
-            add_artifact = axe_tier_1
+            add_artifact = glass_axe
+            #add_artifact = axe_tier_1
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_mace } }
-            add_artifact = mace_tier_1
+            add_artifact = glass_axe
+            #add_artifact = mace_tier_1
         }
         if = {
             limit = { FROM = { has_character_flag = weapon_bow } }
-            add_artifact = bow_tier_1
+            add_artifact = glass_bow
+            #add_artifact = bow_tier_1
         }
     }
     after = {

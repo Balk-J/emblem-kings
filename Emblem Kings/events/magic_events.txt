@@ -896,7 +896,7 @@ character_event = {
 			}
 			
 			custom_tooltip = {
-				name = magic.15.tooltip
+				text = magic.15.tooltip
 				hidden_tooltip = {
 					character_event = { id = magic.15 }
 				}
@@ -997,7 +997,7 @@ character_event = {
 		name = "magic.16.A"
 		
 		custom_tooltip = {
-			name = magic.15.tooltip
+			text = magic.15.tooltip
 			hidden_tooltip = {
 				#character_event = { id = magic.15 }
 				remove_personality_effect = yes

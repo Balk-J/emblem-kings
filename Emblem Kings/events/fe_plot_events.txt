@@ -871,7 +871,6 @@ character_event = {
 					trait = intricate_webweaver
 					trait = class_rogue
 					trait = base_class_thief
-					employer = THIS
 				}
 				
 				new_character = {
@@ -989,7 +988,6 @@ character_event = {
 					trait = intricate_webweaver
 					trait = class_rogue
 					trait = base_class_thief
-					employer = THIS
 				}
 				
 				new_character = {

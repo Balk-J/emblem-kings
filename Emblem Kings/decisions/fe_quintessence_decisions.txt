@@ -184,6 +184,52 @@ decisions = {
 		}
 	}	
 	
+	quintessence_create_tome = {
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			has_character_flag = lore_quintessence 
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			NOT = { 
+				any_artifact = {					
+					has_artifact_flag = quintessence
+				}
+			}
+		}
+		allow = {
+			piety = 1000
+			is_adult = yes
+			prisoner = no
+			religion_group = magic_group
+		}
+		effect = {
+			piety = -1000
+			if = {
+				limit = {
+					religion = anima
+				}
+				add_artifact = regalia_irkalla
+			}
+			if = {
+				limit = {
+					religion = dark
+				}
+				add_artifact = regalia_ereshkigal
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = craven
+			}
+		}
+	}	
+	
 	quintessence_immortality = {
 		only_playable = yes
 		is_high_prio = yes

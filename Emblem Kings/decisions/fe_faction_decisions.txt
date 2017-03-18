@@ -5,6 +5,7 @@ plot_decisions = {
 		is_high_prio = yes
 		
 		potential = {
+			always = no
 			is_playable = yes
 			leads_faction = faction_etruria_coup
 			OR = {

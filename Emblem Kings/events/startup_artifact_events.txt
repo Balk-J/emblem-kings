@@ -1,0 +1,45 @@
+namespace = startup_artifacts
+
+# For handing out personal weapons to their proper owners on game start, if they're not rulers.
+character_event = {
+	id = startup_artifacts.1
+	
+	is_triggered_only = yes 
+	only_rulers = yes
+	
+	option = {
+		
+		# Artifacts
+		if = {
+			limit = {
+				year = 1165
+				NOT = { year = 1181 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe6_guinevere
+				}
+				add_artifact = fire_emblem_elibe
+				new_artifact = {
+					set_creation_date = -1.1.1
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				year = 1160
+				NOT = { year = 1186 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe7_lyn
+				}
+				add_artifact = regalia_mani_katti
+				new_artifact = {
+					set_creation_date = -1.1.1
+				}
+			}
+		}
+	}
+}

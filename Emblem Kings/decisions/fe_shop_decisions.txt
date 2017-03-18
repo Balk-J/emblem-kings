@@ -1,0 +1,95 @@
+decisions = {
+	visit_weapon_shop_1 = {
+		only_playable = yes
+	
+		potential = {
+			is_playable = yes
+			has_dlc = "Mystics"
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			location = { 
+				has_building = ct_weapon_shop_1 
+				NOT = { has_building = ct_weapon_shop_2 }
+				NOT = { has_building = ct_weapon_shop_3 }
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			character_event = { id = weapon_shop.1 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	visit_weapon_shop_2 = {
+		only_playable = yes
+	
+		potential = {
+			is_playable = yes
+			has_dlc = "Mystics"
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			location = { 
+				has_building = ct_weapon_shop_2 
+				NOT = { has_building = ct_weapon_shop_3 }
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			character_event = { id = weapon_shop.1 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	visit_weapon_shop_3 = {
+		only_playable = yes
+	
+		potential = {
+			is_playable = yes
+			has_dlc = "Mystics"
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			location = { 
+				has_building = ct_weapon_shop_3 
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			character_event = { id = weapon_shop.1 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

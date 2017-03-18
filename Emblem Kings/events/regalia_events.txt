@@ -16,6 +16,7 @@ character_event = {
 	desc = "regalia.7.desc"
 	picture = "GFX_evt_armory" 
 	
+    #has_dlc = "Mystics"
 	prisoner = no
 	only_playable = yes
 	capable_only = yes
@@ -159,7 +160,7 @@ narrative_event = {
 						name="Georg"
 						random_traits = no
 						dynasty = none
-						religion = guardian
+						religion = elibe_spirits_pagan
 						culture = lycian
 						female = no
 						age = 30
@@ -170,13 +171,15 @@ narrative_event = {
 						trait = strong
 						trait = heavy_infantry_leader
 						trait = unyielding_leader
+						trait = base_class_mercenary
 						trait = class_berserker
 						trait = phantom
 					}
 					
 					new_character = {
 						set_character_flag = regalia_guardian
-						
+						set_character_flag = class_selected
+						set_variable = { which = "level" value = 15 }
 						create_title = {
 							tier = COUNT
 							landless = yes
@@ -335,8 +338,12 @@ narrative_event = {
 		
 	option = {
 		name = "regalia.6.A"
-		add_character_modifier = { name = owns_regalia duration = -1 } 
-		add_trait = regalia_durandal
+		add_artifact = regalia_durandal
+		new_artifact = {
+			set_creation_date = -1.1.1
+		}
+		#add_character_modifier = { name = owns_regalia duration = -1 } 
+		#add_trait = regalia_durandal
 		set_global_flag = regalia_durandal_held 
 	}		
 }
@@ -556,6 +563,7 @@ character_event = {
 }
 
 # Decide on regalia inheritance
+# DEPRECATED
 character_event = {
 	id = regalia.18
 	title = "regalia.18.title"
@@ -580,6 +588,7 @@ character_event = {
 }
 
 # Death of a regalia holder
+# DEPRECATED
 character_event = {
 	id = regalia.19
 	hide_window = yes
@@ -588,7 +597,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {		
-		has_character_modifier = owns_regalia 
+		any_artifact = { has_artifact_flag = regalia } 
 	}
 	
 	immediate = {
@@ -604,7 +613,7 @@ character_event = {
 					current_heir = { 
 						dynasty = ROOT 
 						is_alive = yes  
-						NOT = { has_character_modifier = owns_regalia } 
+						NOT = { any_artifact = { has_artifact_flag = regalia } } 
 					}
 				}
 				current_heir = {
@@ -618,7 +627,7 @@ character_event = {
 				family_palace = {
 					current_heir = { 
 						if = {
-							limit = { NOT = { has_character_modifier = owns_regalia  } }
+							limit = { NOT = { any_artifact = { has_artifact_flag = regalia }  } }
 							#
 							character_event = { id = regalia.52 }
 							ROOT = { set_character_flag = regalia_heir_found }
@@ -629,7 +638,7 @@ character_event = {
 			if = { 
 				limit = { NOT = { has_character_flag = regalia_heir_found } }
 				random_child = {
-					limit = { dynasty = ROOT is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					limit = { dynasty = ROOT is_alive = yes NOT = { any_artifact = { has_artifact_flag = regalia } } }
 					character_event = { id = regalia.52 }
 					ROOT = { set_character_flag = regalia_heir_found }
 				}	
@@ -637,7 +646,7 @@ character_event = {
 			if = {
 				limit = { NOT = { has_character_flag = regalia_heir_found } }
 				random_sibling = {
-					limit = { dynasty = ROOT is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					limit = { dynasty = ROOT is_alive = yes NOT = { any_artifact = { has_artifact_flag = regalia } } }
 					character_event = { id = regalia.52 }
 					ROOT = { set_character_flag = regalia_heir_found }
 				}	
@@ -645,7 +654,7 @@ character_event = {
 			if = {
 				limit = { NOT = { has_character_flag = regalia_heir_found } }
 				random_dynasty_member = {
-					limit = { is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					limit = { is_alive = yes NOT = { any_artifact = { has_artifact_flag = regalia } } }
 					character_event = { id = regalia.52 }
 					ROOT = { set_character_flag = regalia_heir_found }
 				}
@@ -653,7 +662,7 @@ character_event = {
 			if = {
 				limit = { NOT = { has_character_flag = regalia_heir_found } }
 				random_child = {
-					limit = { is_primary_heir = yes is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					limit = { is_primary_heir = yes is_alive = yes NOT = { any_artifact = { has_artifact_flag = regalia } } }
 					character_event = { id = regalia.52 }
 					ROOT = { set_character_flag = regalia_heir_found }
 				}
@@ -661,7 +670,7 @@ character_event = {
 			if = {
 				limit = { NOT = { has_character_flag = regalia_heir_found } }
 				random_child = {
-					limit = { is_alive = yes NOT = { has_character_modifier = owns_regalia } }
+					limit = { is_alive = yes NOT = { any_artifact = { has_artifact_flag = regalia } } }
 					character_event = { id = regalia.52 }
 					ROOT = { set_character_flag = regalia_heir_found }
 				}
@@ -669,7 +678,7 @@ character_event = {
 			if = {
 				limit = { 
 					NOT = { has_character_flag = regalia_heir_found }
-					spouse = { is_alive = yes NOT = { has_character_modifier = owns_regalia } }		
+					spouse = { is_alive = yes NOT = { any_artifact = { has_artifact_flag = regalia } } }		
 				}
 				spouse = { character_event = { id = regalia.52 } }
 				set_character_flag = regalia_heir_found
@@ -677,7 +686,7 @@ character_event = {
 			if = {
 				limit = { 
 					NOT = { has_character_flag = regalia_heir_found }	
-					liege = { NOT = { character = ROOT } NOT = { has_character_modifier = owns_regalia } }
+					liege = { NOT = { character = ROOT } NOT = { any_artifact = { has_artifact_flag = regalia } } }
 				}
 				liege = { character_event = { id = regalia.52 } }
 				set_character_flag = regalia_heir_found
@@ -685,7 +694,7 @@ character_event = {
 			if = {
 				limit = { 
 					NOT = { has_character_flag = regalia_heir_found }	
-					current_heir = { NOT = { character = ROOT } NOT = { has_character_modifier = owns_regalia } }
+					current_heir = { NOT = { character = ROOT } NOT = { any_artifact = { has_artifact_flag = regalia } } }
 				}
 				current_heir = { 
 					#
@@ -698,7 +707,7 @@ character_event = {
 					NOT = { has_character_flag = regalia_heir_found }	
 				}
 				random_vassal = { 
-					limit = { NOT = { has_character_modifier = owns_regalia } }
+					limit = { NOT = { any_artifact = { has_artifact_flag = regalia } } }
 					#
 					character_event = { id = regalia.52 }
 				}
@@ -712,115 +721,115 @@ character_event = {
 			}
 			if = {
 				limit = {
-					trait = regalia_durandal
+					has_artifact = regalia_durandal
 				}
 				clr_global_flag = regalia_durandal_held 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_binding_blade"
+					has_artifact = "regalia_binding_blade"
 				}
 				clr_global_flag = "regalia_binding_blade_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_armads"
+					has_artifact = "regalia_armads"
 				}
 				clr_global_flag = "regalia_armads_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_forblaze"
+					has_artifact = "regalia_forblaze"
 				}
 				clr_global_flag = "regalia_forblaze_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_aureola"
+					has_artifact = "regalia_aureola"
 				}
 				clr_global_flag = "regalia_aureola_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_murgleis"
+					has_artifact = "regalia_murgleis"
 				}
 				clr_global_flag = "regalia_murgleis_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_maltet"
+					has_artifact = "regalia_maltet"
 				}
 				clr_global_flag = "regalia_maltet_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_apocalypse"
+					has_artifact = "regalia_apocalypse"
 				}
 				clr_global_flag = "regalia_apocalypse_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_eckesachs"
+					has_artifact = "regalia_eckesachs"
 				}
 				clr_global_flag = "regalia_eckesachs_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_saints_staff"
+					has_artifact = "regalia_saints_staff"
 				}
 				clr_global_flag = "regalia_saints_staff_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_mani_katti"
+					has_artifact = "regalia_mani_katti"
 				}
 				clr_global_flag = "regalia_mani_katti_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_sol_katti"
+					has_artifact = "regalia_sol_katti"
 				}
 				clr_global_flag = "regalia_sol_katti_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_ereshkigal"
+					has_artifact = "regalia_ereshkigal"
 				}
 				clr_global_flag = "regalia_ereshkigal_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_gespenst"
+					has_artifact = "regalia_gespenst"
 				}
 				clr_global_flag = "regalia_gespenst_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_luce"
+					has_artifact = "regalia_luce"
 				}
 				clr_global_flag = "regalia_luce_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_excalibur_fe7"
+					has_artifact = "regalia_excalibur_fe7"
 				}
 				clr_global_flag = "regalia_excalibur_fe7_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_rienfleche"
+					has_artifact = "regalia_rienfleche"
 				}
 				clr_global_flag = "regalia_rienfleche_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_rex_hasta"
+					has_artifact = "regalia_rex_hasta"
 				}
 				clr_global_flag = "regalia_rex_hasta_held" 
 			}		
 			if = {
 				limit = {
-					trait = "regalia_regal_blade"
+					has_artifact = "regalia_regal_blade"
 				}
 				clr_global_flag = "regalia_regal_blade_held" 
 			}			
@@ -835,6 +844,7 @@ character_event = {
 	desc = "regalia.20.desc"
 	picture = "GFX_evt_desert" 
 	
+    #has_dlc = "Mystics"
 	prisoner = no
 	only_playable = yes
 	capable_only = yes
@@ -845,21 +855,7 @@ character_event = {
 		location = {
 			terrain = desert
 			NOT = { has_province_flag = regalia_found }
-			OR = {
-				AND = {
-					region = world_elibe
-					OR = {
-						NOT = { has_global_flag="regalia_gespenst_held" }
-						NOT = { has_global_flag="regalia_luce_held" }
-						NOT = { has_global_flag="regalia_excalibur_fe7_held" }
-						NOT = { has_global_flag="regalia_rienfleche_held" }
-						NOT = { has_global_flag="regalia_basilikos_held" }
-						NOT = { has_global_flag="regalia_rex_hasta_held" }
-						NOT = { has_global_flag="regalia_regal_blade_held" }
-					}
-				}
-				# Add more region-specific regalia here...				
-			}
+			available_regalia_trigger = yes
 		}
 
 	}
@@ -892,66 +888,7 @@ character_event = {
 		}
 		
 		hidden_tooltip = {  
-			location = {
-				set_province_flag = regalia_found
-			}
-			#TODO: handle other continents
-			
-			# Randomly pick a non-claimed regalia to hand out
-			random_list = {
-				15 = {
-					modifier = {
-						factor = 0
-						has_global_flag="regalia_gespenst_held"
-					}
-					set_character_flag="regalia_gespenst"
-				}
-				15 = {
-					modifier = {
-						factor = 0
-						has_global_flag="regalia_luce_held"
-					}
-					set_character_flag="regalia_luce"
-				}
-				14 = {
-					modifier = {
-						factor = 0
-						has_global_flag="regalia_excalibur_fe7_held"
-					}
-					set_character_flag="regalia_excalibur_fe7"
-				}
-				14 = {
-					modifier = {
-						factor = 0
-						has_global_flag="regalia_rienfleche_held"
-					}
-					set_character_flag="regalia_rienfleche"
-				}
-				14 = {
-					modifier = {
-						factor = 0
-						has_global_flag="regalia_basilikos_held"
-					}
-					set_character_flag="regalia_basilikos"
-				}
-				14 = {
-					modifier = {
-						factor = 0
-						has_global_flag="regalia_rex_hasta_held"
-					}
-					set_character_flag="regalia_rex_hasta"
-				}
-				14 = {
-					modifier = {
-						factor = 0
-						has_global_flag="regalia_regal_blade_held"
-					}
-					set_character_flag="regalia_regal_blade"
-				}
-			}
-			
-			# Inform them of their prize
-			character_event = { id = regalia.21 }
+			add_random_regalia_from_location_effect = yes
 		}
 	}	
 	
@@ -991,64 +928,7 @@ character_event = {
 	# open it
 	option = {
 		name = "regalia.21.A"
-		if = {
-			limit = {
-				has_character_flag="regalia_gespenst"
-			}
-			clr_character_flag="regalia_gespenst"
-			add_trait="regalia_gespenst"		
-			set_global_flag="regalia_gespenst_held"		
-		}
-		if = {
-			limit = {
-				has_character_flag="regalia_luce"
-			}
-			clr_character_flag="regalia_luce"
-			add_trait="regalia_luce"		
-			set_global_flag="regalia_luce_held"		
-		}
-		if = {
-			limit = {
-				has_character_flag="regalia_excalibur_fe7"
-			}
-			clr_character_flag="regalia_excalibur_fe7"
-			add_trait="regalia_excalibur_fe7"
-			set_global_flag="regalia_excalibur_held"				
-		}
-		if = {
-			limit = {
-				has_character_flag="regalia_rienfleche"
-			}
-			clr_character_flag="regalia_rienfleche"
-			add_trait="regalia_rienfleche"
-			set_global_flag="regalia_rienfleche_held"				
-		}
-		if = {
-			limit = {
-				has_character_flag="regalia_basilikos"
-			}
-			clr_character_flag="regalia_basilikos"
-			add_trait="regalia_basilikos"	
-			set_global_flag="regalia_basilikos_held"			
-		}
-		if = {
-			limit = {
-				has_character_flag="regalia_rex_hasta"
-			}
-			clr_character_flag="regalia_rex_hasta"
-			add_trait="regalia_rex_hasta"
-			set_global_flag="regalia_rex_hasta_held"	
-		}
-		if = {
-			limit = {
-				has_character_flag="regalia_regal_blade"
-			}
-			clr_character_flag="regalia_regal_blade"
-			add_trait="regalia_regal_blade"		
-			set_global_flag="regalia_regal_blade_held"	
-		}
-		
-		add_character_modifier = { name = owns_regalia duration = -1 } 
+		add_regalia_effect = yes
 	}	
 }
 
@@ -1065,7 +945,7 @@ province_event = {
 		has_province_modifier = ancient_ruins
 		owner = { 
 			has_ambition = obj_acquire_regalia
-			#NOT = { has_character_modifier = owns_regalia } 
+			#NOT = { any_artifact = { has_artifact_flag = regalia } } 
 			NOT = { trait = incapable }
 				
 			job_spiritual = {
@@ -1077,23 +957,7 @@ province_event = {
 				opinion = { who = PREV value = 25 }
 			}			
 		}
-		#NOT = { has_province_flag = ruin_regalia_search }
-			
-		OR = {
-			AND = {
-				region = world_elibe
-				OR = {
-					NOT = { has_global_flag="regalia_gespenst_held" }
-					NOT = { has_global_flag="regalia_luce_held" }
-					NOT = { has_global_flag="regalia_excalibur_fe7_held" }
-					NOT = { has_global_flag="regalia_rienfleche_held" }
-					NOT = { has_global_flag="regalia_basilikos_held" }
-					NOT = { has_global_flag="regalia_rex_hasta_held" }
-					NOT = { has_global_flag="regalia_regal_blade_held" }
-				}
-			}
-			# Add more region-specific regalia here...				
-		}
+		available_regalia_trigger = yes
 	}
 	
 	mean_time_to_happen = {
@@ -1101,7 +965,6 @@ province_event = {
 	}
 	
 	immediate = { 
-		#set_province_flag = ruin_regalia_search
 		owner = { character_event = { id = regalia.23} } 
 	}
 
@@ -1117,8 +980,6 @@ character_event = {
 	picture = "GFX_evt_pagan" 
 	
 	is_triggered_only = yes
-		#
-		#scaled_wealth = -0.25
 		
 	option = {
 		name = "regalia.23.A"
@@ -1222,75 +1083,7 @@ character_event = {
 		
 	option = {
 		name = "regalia.24.A"
-		# Randomly pick a non-claimed regalia to hand out
-		random_list = {
-			100 = {
-				modifier = {
-					factor = 0
-					NOT = {
-						any_demesne_province = {
-							has_province_modifier = ancient_ruins
-							region = world_elibe
-						}
-					}
-				}
-				random_list = {
-					15 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_gespenst_held"
-						}
-						set_character_flag="regalia_gespenst"
-					}
-					15 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_luce_held"
-						}
-						set_character_flag="regalia_luce"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_excalibur_fe7_held"
-						}
-						set_character_flag="regalia_excalibur_fe7"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_rienfleche_held"
-						}
-						set_character_flag="regalia_rienfleche"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_basilikos_held"
-						}
-						set_character_flag="regalia_basilikos"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_rex_hasta_held"
-						}
-						set_character_flag="regalia_rex_hasta"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_regal_blade_held"
-						}
-						set_character_flag="regalia_regal_blade"
-					}
-				}
-			}
-			# Add regalia from other continents here
-		}
-		
-		# Inform them of their prize
-		character_event = { id = regalia.21 }
+		add_random_regalia_from_owned_ruins_effect = yes
 	}	
 }
 
@@ -1340,75 +1133,6 @@ character_event = {
 	picture = "GFX_evt_pagan" 
 	
 	is_triggered_only = yes
-	
-	immediate = {
-		# Randomly pick a non-claimed regalia to hand out
-		random_list = {
-			100 = {
-				modifier = {
-					factor = 0
-					NOT = {
-						any_demesne_province = {
-							has_province_modifier = ancient_ruins
-							region = world_elibe
-						}
-					}
-				}
-				random_list = {
-					15 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_gespenst_held"
-						}
-						set_character_flag="regalia_gespenst"
-					}
-					15 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_luce_held"
-						}
-						set_character_flag="regalia_luce"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_excalibur_fe7_held"
-						}
-						set_character_flag="regalia_excalibur_fe7"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_rienfleche_held"
-						}
-						set_character_flag="regalia_rienfleche"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_basilikos_held"
-						}
-						set_character_flag="regalia_basilikos"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_rex_hasta_held"
-						}
-						set_character_flag="regalia_rex_hasta"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_regal_blade_held"
-						}
-						set_character_flag="regalia_regal_blade"
-					}
-				}
-			}
-			# Add regalia from other continents here
-		}
-	}
 		
 	option = {
 		name = "regalia.27.A"
@@ -1417,9 +1141,7 @@ character_event = {
 			wealth = 100
 			prestige = 100
 		}		
-		
-		# Inform them of their prize
-		character_event = { id = regalia.21 }
+		add_random_regalia_from_owned_ruins_effect = yes
 	}	
 	option = {
 		name = "regalia.27.B"
@@ -1433,9 +1155,7 @@ character_event = {
 			wealth = 200
 			prestige = 100
 		}		
-		
-		# Inform them of their prize
-		character_event = { id = regalia.21 }
+		add_random_regalia_from_owned_ruins_effect = yes
 	}	
 	option = {
 		name = "regalia.27.C"
@@ -1448,10 +1168,7 @@ character_event = {
 			}		
 			prestige = 100
 		}		
-		
-		
-		# Inform them of their prize
-		character_event = { id = regalia.21 }
+		add_random_regalia_from_owned_ruins_effect = yes
 	}	
 }
 
@@ -1502,25 +1219,8 @@ character_event = {
 	trigger = {
 		age = 14
 		has_ambition = obj_acquire_regalia
-		NOT = { has_character_modifier = owns_regalia }
-					
-		OR = {
-			AND = {
-				capital_scope = {
-					region = world_elibe
-				}
-				OR = {
-					NOT = { has_global_flag="regalia_gespenst_held" }
-					NOT = { has_global_flag="regalia_luce_held" }
-					NOT = { has_global_flag="regalia_excalibur_fe7_held" }
-					NOT = { has_global_flag="regalia_rienfleche_held" }
-					NOT = { has_global_flag="regalia_basilikos_held" }
-					NOT = { has_global_flag="regalia_rex_hasta_held" }
-					NOT = { has_global_flag="regalia_regal_blade_held" }
-				}
-			}
-			# Add more region-specific regalia here...				
-		}
+		NOT = { any_artifact = { has_artifact_flag = regalia } }
+		available_regalia_trigger = yes
 	}
 
 	mean_time_to_happen = {
@@ -1565,73 +1265,6 @@ character_event = {
 				set_character_flag=true_regalia_peddler
 			}
 		}
-		
-		# Randomly pick a non-claimed regalia to hand out
-		random_list = {
-			100 = {
-				modifier = {
-					factor = 0
-					NOT = {
-						capital_scope = {
-							region = world_elibe
-						}
-					}
-				}
-				random_list = {
-					15 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_gespenst_held"
-						}
-						set_character_flag="regalia_gespenst"
-					}
-					15 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_luce_held"
-						}
-						set_character_flag="regalia_luce"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_excalibur_fe7_held"
-						}
-						set_character_flag="regalia_excalibur_fe7"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_rienfleche_held"
-						}
-						set_character_flag="regalia_rienfleche"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_basilikos_held"
-						}
-						set_character_flag="regalia_basilikos"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_rex_hasta_held"
-						}
-						set_character_flag="regalia_rex_hasta"
-					}
-					14 = {
-						modifier = {
-							factor = 0
-							has_global_flag="regalia_regal_blade_held"
-						}
-						set_character_flag="regalia_regal_blade"
-					}
-				}
-			}
-			# Add regalia from other continents here
-		}
-		
 	}
 	
 	# It could be fake. If so, a character with good intrigue or learning can spot it.
@@ -1642,14 +1275,6 @@ character_event = {
 			has_character_flag=fake_regalia_peddler
 			intrigue = 15
 		}
-		clr_character_flag=fake_regalia_peddler
-		clr_character_flag="regalia_gespenst"
-		clr_character_flag="regalia_luce"
-		clr_character_flag="regalia_excalibur_fe7"
-		clr_character_flag="regalia_rienfleche"
-		clr_character_flag="regalia_basilikos"
-		clr_character_flag="regalia_rex_hasta"
-		clr_character_flag="regalia_regal_blade"
 		ROOT = { character_event = { id = regalia.31 } }
 	}
 	option = {
@@ -1659,14 +1284,6 @@ character_event = {
 			has_character_flag=fake_regalia_peddler
 			learning = 12
 		}
-		clr_character_flag=fake_regalia_peddler
-		clr_character_flag="regalia_gespenst"
-		clr_character_flag="regalia_luce"
-		clr_character_flag="regalia_excalibur_fe7"
-		clr_character_flag="regalia_rienfleche"
-		clr_character_flag="regalia_basilikos"
-		clr_character_flag="regalia_rex_hasta"
-		clr_character_flag="regalia_regal_blade"
 		ROOT = { character_event = { id = regalia.31 } }
 	}
 
@@ -1686,140 +1303,25 @@ character_event = {
 		}
 		wealth = -1000
 		
-		if = {
-			limit = {
-				has_character_flag=fake_regalia_peddler
-			}
-			# Pretend we're handing it out...
-			if = {
-				limit = {
-					has_character_flag="regalia_gespenst"
+		custom_tooltip = {
+			name = regalia.30.C.tooltip
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_character_flag=fake_regalia_peddler
+					}
+					set_character_flag = "bought_fake_regalia"		
+					character_event = { id = regalia.31 } 
 				}
-				clr_character_flag="regalia_gespenst"
-				add_trait="regalia_gespenst"		
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_luce"
+				
+				if = {
+					limit = {
+						has_character_flag=true_regalia_peddler
+					}
+					add_random_regalia_from_capital_effect = yes
 				}
-				clr_character_flag="regalia_luce"
-				add_trait="regalia_luce"		
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_excalibur_fe7"
-				}
-				clr_character_flag="regalia_excalibur_fe7"
-				add_trait="regalia_excalibur_fe7"				
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_rienfleche"
-				}
-				clr_character_flag="regalia_rienfleche"
-				add_trait="regalia_rienfleche"				
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_basilikos"
-				}
-				clr_character_flag="regalia_basilikos"
-				add_trait="regalia_basilikos"			
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_rex_hasta"
-				}
-				clr_character_flag="regalia_rex_hasta"
-				add_trait="regalia_rex_hasta"
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_regal_blade"
-				}
-				clr_character_flag="regalia_regal_blade"
-				add_trait="regalia_regal_blade"			
-			}
 			
-			add_character_modifier = { name = owns_regalia duration = -1 } 
-			hidden_tooltip = { 
-				set_character_flag = "bought_fake_regalia"
-				remove_character_modifier = owns_regalia 
-				remove_trait="regalia_gespenst"		
-				remove_trait="regalia_luce"		
-				remove_trait="regalia_excalibur_fe7"				
-				remove_trait="regalia_rienfleche"			
-				remove_trait="regalia_basilikos"			
-				remove_trait="regalia_rex_hasta"
-				remove_trait="regalia_regal_blade"			
-				character_event = { id = regalia.31 } 
 			}
-		}
-		
-		if = {
-			limit = {
-				has_character_flag=true_regalia_peddler
-			}
-			
-			#Hand it out
-			if = {
-				limit = {
-					has_character_flag="regalia_gespenst"
-				}
-				clr_character_flag="regalia_gespenst"
-				add_trait="regalia_gespenst"		
-				set_global_flag="regalia_gespenst_held"		
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_luce"
-				}
-				clr_character_flag="regalia_luce"
-				add_trait="regalia_luce"		
-				set_global_flag="regalia_luce_held"		
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_excalibur_fe7"
-				}
-				clr_character_flag="regalia_excalibur_fe7"
-				add_trait="regalia_excalibur_fe7"
-				set_global_flag="regalia_excalibur_held"				
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_rienfleche"
-				}
-				clr_character_flag="regalia_rienfleche"
-				add_trait="regalia_rienfleche"
-				set_global_flag="regalia_rienfleche_held"				
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_basilikos"
-				}
-				clr_character_flag="regalia_basilikos"
-				add_trait="regalia_basilikos"	
-				set_global_flag="regalia_basilikos_held"			
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_rex_hasta"
-				}
-				clr_character_flag="regalia_rex_hasta"
-				add_trait="regalia_rex_hasta"
-				set_global_flag="regalia_rex_hasta_held"	
-			}
-			if = {
-				limit = {
-					has_character_flag="regalia_regal_blade"
-				}
-				clr_character_flag="regalia_regal_blade"
-				add_trait="regalia_regal_blade"		
-				set_global_flag="regalia_regal_blade_held"	
-			}
-			
-			add_character_modifier = { name = owns_regalia duration = -1 } 
 		}
 	}
 
@@ -1827,14 +1329,6 @@ character_event = {
 	option = {
 		name = "regalia.30.D"
 		ai_chance = { factor = 100 }
-		
-		clr_character_flag="regalia_gespenst"
-		clr_character_flag="regalia_luce"
-		clr_character_flag="regalia_excalibur_fe7"
-		clr_character_flag="regalia_rienfleche"
-		clr_character_flag="regalia_basilikos"
-		clr_character_flag="regalia_rex_hasta"
-		clr_character_flag="regalia_regal_blade"
 		
 		clr_character_flag=true_regalia_peddler
 		clr_character_flag=fake_regalia_peddler
@@ -1986,6 +1480,7 @@ character_event = {
 	desc = "regalia.33.desc"
 	picture = "GFX_evt_armory" 
 	
+    #has_dlc = "Mystics"
 	prisoner = no
 	only_playable = yes
 	capable_only = yes
@@ -2130,7 +1625,7 @@ narrative_event = {
 						name="Kaim"
 						random_traits = no
 						dynasty = none
-						religion = guardian
+						religion = elibe_spirits_pagan
 						culture = western_islander
 						female = no
 						age = 30
@@ -2141,12 +1636,15 @@ narrative_event = {
 						trait = strong
 						trait = heavy_infantry_leader
 						trait = unyielding_leader
+						trait = base_class_mercenary
 						trait = class_hero
 						trait = phantom
 					}
 					
 					new_character = {
 						set_character_flag = regalia_guardian
+						set_character_flag = class_selected
+						set_variable = { which = "level" value = 16 }
 						
 						create_title = {
 							tier = COUNT
@@ -2306,9 +1804,14 @@ narrative_event = {
 		
 	option = {
 		name = "regalia.39.A"
-		add_character_modifier = { name = owns_regalia duration = -1 } 
-		add_trait = regalia_armads
+		#add_character_modifier = { name = owns_regalia duration = -1 } 
+		#add_trait = regalia_armads
+		add_artifact = regalia_armads
+		new_artifact = {
+			set_creation_date = -1.1.1
+		}
 		set_global_flag = regalia_armads_held 
+		
 		# Durban gets the best lines:
 		# "I am power. Power without peer. I am the dragonhunter. I am the fleshbiter, the bonecrusher, the skullbreaker, the doombringer."
 		# "I require no seals. I have no need of this idleness called peace. Power unused is power wasted. Better to lie spent in the grave than to sit in wait. I care not who... I would fight someone..."
@@ -2733,167 +2236,165 @@ character_event = {
 	
 	immediate = {
 			
-		add_character_modifier = { name = owns_regalia duration = -1 } 
-				
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = regalia_durandal
+					has_artifact = regalia_durandal
 				}
 			}
-			add_trait = regalia_durandal
+			add_artifact = regalia_durandal
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_binding_blade"
+					has_artifact = "regalia_binding_blade"
 				}
 			}
-			add_trait = "regalia_binding_blade"
+			add_artifact = "regalia_binding_blade"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_armads"
+					has_artifact = "regalia_armads"
 				}
 			}
-			add_trait = "regalia_armads"
+			add_artifact = "regalia_armads"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_forblaze"
+					has_artifact = "regalia_forblaze"
 				}
 			}
-			add_trait = "regalia_forblaze"
+			add_artifact = "regalia_forblaze"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_aureola"
+					has_artifact = "regalia_aureola"
 				}
 			}
-			add_trait = "regalia_aureola"
+			add_artifact = "regalia_aureola"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_murgleis"
+					has_artifact = "regalia_murgleis"
 				}
 			}
-			add_trait = "regalia_murgleis"
+			add_artifact = "regalia_murgleis"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_maltet"
+					has_artifact = "regalia_maltet"
 				}
 			}
-			add_trait = "regalia_maltet"
+			add_artifact = "regalia_maltet"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_apocalypse"
+					has_artifact = "regalia_apocalypse"
 				}
 			}
-			add_trait = "regalia_apocalypse"
+			add_artifact = "regalia_apocalypse"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_eckesachs"
+					has_artifact = "regalia_eckesachs"
 				}
 			}
-			add_trait = "regalia_eckesachs"
+			add_artifact = "regalia_eckesachs"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_saints_staff"
+					has_artifact = "regalia_saints_staff"
 				}
 			}
-			add_trait = "regalia_saints_staff"
+			add_artifact = "regalia_saints_staff"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_mani_katti"
+					has_artifact = "regalia_mani_katti"
 				}
 			}
-			add_trait = "regalia_mani_katti"
+			add_artifact = "regalia_mani_katti"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_sol_katti"
+					has_artifact = "regalia_sol_katti"
 				}
 			}
-			add_trait = "regalia_sol_katti"
+			add_artifact = "regalia_sol_katti"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_ereshkigal"
+					has_artifact = "regalia_ereshkigal"
 				}
 			}
-			add_trait = "regalia_ereshkigal"
+			add_artifact = "regalia_ereshkigal"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_gespenst"
+					has_artifact = "regalia_gespenst"
 				}
 			}
-			add_trait = "regalia_gespenst"
+			add_artifact = "regalia_gespenst"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_luce"
+					has_artifact = "regalia_luce"
 				}
 			}
-			add_trait = "regalia_luce"
+			add_artifact = "regalia_luce"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_excalibur_fe7"
+					has_artifact = "regalia_excalibur_fe7"
 				}
 			}
-			add_trait = "regalia_excalibur_fe7"
+			add_artifact = "regalia_excalibur_fe7"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_rienfleche"
+					has_artifact = "regalia_rienfleche"
 				}
 			}
-			add_trait = "regalia_rienfleche"
+			add_artifact = "regalia_rienfleche"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_basilikos"
+					has_artifact = "regalia_basilikos"
 				}
 			}
-			add_trait = "regalia_basilikos"
+			add_artifact = "regalia_basilikos"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_rex_hasta"
+					has_artifact = "regalia_rex_hasta"
 				}
 			}
-			add_trait = "regalia_rex_hasta"
+			add_artifact = "regalia_rex_hasta"
 		}	
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					trait = "regalia_regal_blade"
+					has_artifact = "regalia_regal_blade"
 				}
 			}
-			add_trait = "regalia_regal_blade"
+			add_artifact = "regalia_regal_blade"
 		}		
 			
 	}		
@@ -2907,6 +2408,7 @@ character_event = {
 	desc = "regalia.53.desc"
 	picture = "GFX_evt_armory" 
 	
+    #has_dlc = "Mystics"
 	prisoner = no
 	only_playable = yes
 	capable_only = yes
@@ -3073,8 +2575,12 @@ narrative_event = {
 		
 	option = {
 		name = "regalia.56.A"
-		add_character_modifier = { name = owns_regalia duration = -1 } 
-		add_trait = regalia_eckesachs
+		#add_character_modifier = { name = owns_regalia duration = -1 } 
+		#add_trait = regalia_eckesachs
+		add_artifact = regalia_eckesachs
+		new_artifact = {
+			set_creation_date = -1.1.1
+		}
 		set_global_flag = regalia_eckesachs_held 
 	}		
 }
@@ -3096,100 +2602,39 @@ character_event = {
 		prestige = -500
 	}		
 }
+
 character_event = {
-    id = regalia.58
-    desc = EVTDESC_MNM_9838
+    id = regalia.59
+    desc = regalia.hunted
     picture = GFX_evt_regalia
-    border = GFX_event_normal_frame_religion
 
     is_triggered_only = yes
 
-    has_dlc = "Mystics"
-
     option = { #it's their duty
-        name = EVTOPT_MINOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-		modifier = opinion_disappointed
-			years = 10
-		}
-        add_artifact = famous_hand
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
+        name = item.1.A
+		add_regalia_effect = yes
+        artifact_duty_effect = yes
     }
 
     option = { #monetary reward
-        name = EVTOPT_MINOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 5
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_minor_artifact
-			years = 5
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 0.25
-			min = 20
-		}
-
-        add_artifact = famous_hand
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
+        name = item.1.B
+		add_regalia_effect = yes
+        artifact_money_effect = yes
     }
     
     option = { #reward them with a favor
-        name = EVTOPT_MINOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 5
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_minor_artifact
-			years = 5
-		}
-        reverse_add_favor = FROM
-        add_artifact = famous_hand
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
+        name = item.1.C
+		add_regalia_effect = yes
+        artifact_favor_effect = yes
     }
 
     option = { #praise them (prestige reward)
     	trigger = {
 			diplomacy = 15
 		}
-        name = EVTOPT_MINOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 5
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_minor_artifact
-			years = 5
-		}
-		FROM = { prestige = 25 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = famous_hand
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
+        name = item.1.D
+		add_regalia_effect = yes
+        artifact_prestige_effect = yes
     }
     after = { clr_artifact_flagsmodifiers_effect = yes }
 }

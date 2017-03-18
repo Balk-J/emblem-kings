@@ -1,0 +1,1050 @@
+slots = {
+	weapon = 1
+	ceremonial_weapon = 1
+	staff = 1
+	scepter = 1
+	crown = 1
+	wrist = 1
+	neck = 1
+	torso = 1
+}
+
+### Fire Emblems ###
+
+fire_emblem_elibe = {
+	short_reign_length = -5
+	monthly_character_prestige = 1
+	vassal_opinion = 10
+	diplomacy = 1
+	active = { culture_group = elibian }
+	quality = 5
+	indestructible = yes
+	flags = { fire_emblem jewelry unique  }
+	stacking = no
+	picture = "GFX_fire_emblem_elibe"
+}
+
+### Regalia ###
+
+## Elibe ##
+
+# Legendary Weapons # 
+
+regalia_apocalypse = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_dark_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique tome dark }
+	stacking = no
+	picture = "GFX_regalia_apocalypse"
+	slot = weapon
+}
+regalia_armads = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique axe }
+	stacking = no
+	picture = "GFX_regalia_armads"
+	slot = weapon
+}
+regalia_aureola = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_light_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique tome light }
+	stacking = no
+	picture = "GFX_regalia_aureola"
+	slot = weapon
+}
+
+regalia_binding_blade = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique sword }
+	stacking = no
+	picture = "GFX_regalia_binding_blade"
+	slot = weapon
+}
+
+regalia_durandal = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique sword }
+	stacking = no
+	picture = "GFX_regalia_durandal"
+	slot = weapon
+}
+
+regalia_eckesachs = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		OR = {
+			can_equip_swords_trigger = yes
+			dynasty = 401 # Hartmut's descendants get a pass
+		}
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique sword }
+	stacking = no
+	picture = "GFX_regalia_eckesachs"
+	slot = weapon
+}
+regalia_forblaze = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique tome anima }
+	stacking = no
+	picture = "GFX_regalia_forblaze"
+	slot = weapon
+}
+regalia_maltet = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique lance }
+	stacking = no
+	picture = "GFX_regalia_maltet"
+	slot = weapon
+}
+regalia_murgleis = {
+	combat_rating = 3
+	monthly_character_prestige = 1
+	martial = 3
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique bow }
+	stacking = no
+	picture = "GFX_regalia_murgleis"
+	slot = weapon
+}
+
+# Other #
+regalia_basilikos = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 4
+	indestructible = yes
+	flags = { regalia combat_weapon unique axe }
+	stacking = no
+	picture = "GFX_regalia_basilikos"
+	slot = weapon
+}
+
+regalia_ereshkigal = {
+	combat_rating = 2
+	martial = 2
+	active = { 
+		can_equip_dark_trigger = yes
+	}
+	quality = 4
+	indestructible = yes
+	flags = { regalia combat_weapon tome dark quintessence }
+	stacking = no
+	picture = "GFX_regalia_ereshkigal"
+	slot = weapon
+}
+
+regalia_excalibur_fe7 = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 4
+	indestructible = yes
+	flags = { regalia combat_weapon unique tome anima }
+	stacking = no
+	picture = "GFX_regalia_excalibur_fe7"
+	slot = weapon
+}
+
+regalia_gespenst = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_dark_trigger = yes
+	}
+	quality = 4
+	indestructible = yes
+	flags = { regalia combat_weapon unique tome dark }
+	stacking = no
+	picture = "GFX_regalia_gespenst"
+	slot = weapon
+}
+
+regalia_irkalla = {
+	combat_rating = 2
+	martial = 2
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 4
+	indestructible = yes
+	flags = { regalia combat_weapon tome anima quintessence }
+	stacking = no
+	picture = "GFX_regalia_irkalla"
+	slot = weapon
+}
+
+regalia_luce = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_light_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique tome light }
+	stacking = no
+	picture = "GFX_regalia_luce"
+	slot = weapon
+}
+
+regalia_mani_katti = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique sword }
+	stacking = no
+	picture = "GFX_regalia_mani_katti"
+	slot = weapon
+}
+
+regalia_regal_blade = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique sword }
+	stacking = no
+	picture = "GFX_regalia_regal_blade"
+	slot = weapon
+}
+
+regalia_rex_hasta = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique lance }
+	stacking = no
+	picture = "GFX_regalia_rex_hasta"
+	slot = weapon
+}
+
+regalia_rienfleche = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique bow }
+	stacking = no
+	picture = "GFX_regalia_rienfleche"
+	slot = weapon
+}
+
+regalia_saints_staff = {
+	monthly_character_prestige = 1
+	monthly_character_piety = 1
+	diplomacy = 2
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 4
+	indestructible = yes
+	flags = { regalia staff unique }
+	stacking = no
+	picture = "GFX_regalia_saints_staff"
+	slot = staff
+}
+
+regalia_sol_katti = {
+	combat_rating = 2
+	monthly_character_prestige = 1
+	martial = 2
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 5
+	indestructible = yes
+	flags = { regalia combat_weapon unique sword }
+	stacking = no
+	picture = "GFX_regalia_sol_katti"
+	slot = weapon
+}
+
+## Weapons ##
+
+iron_sword = {
+	combat_rating = 1
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon sword }
+	stacking = yes
+	picture = "GFX_iron_sword"
+	slot = weapon
+}
+
+steel_sword = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon sword }
+	stacking = yes
+	picture = "GFX_steel_sword"
+	slot = weapon
+}
+
+silver_sword = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon sword }
+	stacking = yes
+	picture = "GFX_silver_sword"
+	slot = weapon
+}
+
+iron_lance = {
+	combat_rating = 1
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon lance }
+	stacking = yes
+	picture = "GFX_iron_lance"
+	slot = weapon
+}
+
+steel_lance = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon lance }
+	stacking = yes
+	picture = "GFX_steel_lance"
+	slot = weapon
+}
+
+silver_lance = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon lance }
+	stacking = yes
+	picture = "GFX_silver_lance"
+	slot = weapon
+}
+
+iron_axe = {
+	combat_rating = 1
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon axe }
+	stacking = yes
+	picture = "GFX_iron_axe"
+	slot = weapon
+}
+
+steel_axe = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon axe }
+	stacking = yes
+	picture = "GFX_steel_axe"
+	slot = weapon
+}
+
+silver_axe = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon axe }
+	stacking = yes
+	picture = "GFX_silver_axe"
+	slot = weapon
+}
+
+iron_bow = {
+	combat_rating = 1
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon bow }
+	stacking = yes
+	picture = "GFX_iron_bow"
+	slot = weapon
+}
+
+steel_bow = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon bow }
+	stacking = yes
+	picture = "GFX_steel_bow"
+	slot = weapon
+}
+
+silver_bow = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon bow }
+	stacking = yes
+	picture = "GFX_silver_bow"
+	slot = weapon
+}
+
+fire = {
+	combat_rating = 1
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_fire"
+	slot = weapon
+}
+
+elfire = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_elfire"
+	slot = weapon
+}
+
+bolganone = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_bolganone"
+	slot = weapon
+}
+
+thunder = {
+	combat_rating = 1
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_thunder"
+	slot = weapon
+}
+
+elthunder = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_elthunder"
+	slot = weapon
+}
+
+thoron = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_thoron"
+	slot = weapon
+}
+
+wind = {
+	combat_rating = 1
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_wind"
+	slot = weapon
+}
+
+elwind = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_elwind"
+	slot = weapon
+}
+
+tornado = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_anima_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon tome anima }
+	stacking = yes
+	picture = "GFX_tornado"
+	slot = weapon
+}
+
+lightning = {
+	combat_rating = 1
+	active = { 
+		can_equip_light_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon tome light }
+	stacking = yes
+	picture = "GFX_lightning"
+	slot = weapon
+}
+
+shine = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_light_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon tome light }
+	stacking = yes
+	picture = "GFX_shine"
+	slot = weapon
+}
+
+aura = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_light_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon tome light }
+	stacking = yes
+	picture = "GFX_aura"
+	slot = weapon
+}
+
+flux = {
+	combat_rating = 1
+	active = { 
+		can_equip_dark_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon tome dark }
+	stacking = yes
+	picture = "GFX_flux"
+	slot = weapon
+}
+
+worm = {
+	combat_rating = 1
+	martial = 1
+	active = { 
+		can_equip_dark_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon tome dark }
+	stacking = yes
+	picture = "GFX_worm"
+	slot = weapon
+}
+
+fenrir = {
+	combat_rating = 1
+	martial = 1
+	monthly_character_prestige = 0.25
+	active = { 
+		can_equip_dark_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon tome dark }
+	stacking = yes
+	picture = "GFX_fenrir"
+	slot = weapon
+}
+
+# Non-buyable stuff
+glass_sword = {
+	combat_rating = 1
+	command_modifier = {
+		damage = 0.1
+		defence = -0.1
+	}
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon sword }
+	stacking = yes
+	picture = "GFX_glass_sword"
+	slot = weapon
+}
+
+killing_edge = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		morale_offence = 0.1
+	}
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon sword }
+	stacking = yes
+	picture = "GFX_killing_edge"
+	slot = weapon
+}
+
+brave_sword = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		speed = 0.05
+	}
+	active = { 
+		can_equip_swords_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon sword }
+	stacking = yes
+	picture = "GFX_brave_sword"
+	slot = weapon
+}
+
+glass_lance = {
+	combat_rating = 1
+	command_modifier = {
+		damage = 0.1
+		defence = -0.1
+	}
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon lance }
+	stacking = yes
+	picture = "GFX_glass_lance"
+	slot = weapon
+}
+
+killer_lance = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		morale_offence = 0.1
+	}
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon lance }
+	stacking = yes
+	picture = "GFX_killer_lance"
+	slot = weapon
+}
+
+brave_lance = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		speed = 0.05
+	}
+	active = { 
+		can_equip_lances_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon lance }
+	stacking = yes
+	picture = "GFX_brave_lance"
+	slot = weapon
+}
+
+glass_axe = {
+	combat_rating = 1
+	command_modifier = {
+		damage = 0.1
+		defence = -0.1
+	}
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon axe }
+	stacking = yes
+	picture = "GFX_glass_axe"
+	slot = weapon
+}
+
+killer_axe = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		morale_offence = 0.1
+	}
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon axe }
+	stacking = yes
+	picture = "GFX_killer_axe"
+	slot = weapon
+}
+
+brave_axe = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		speed = 0.05
+	}
+	active = { 
+		can_equip_axes_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon axe }
+	stacking = yes
+	picture = "GFX_brave_axe"
+	slot = weapon
+}
+
+glass_bow = {
+	combat_rating = 1
+	command_modifier = {
+		damage = 0.1
+		defence = -0.1
+	}
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 1
+	flags = { combat_weapon bow }
+	stacking = yes
+	picture = "GFX_glass_bow"
+	slot = weapon
+}
+
+killer_bow = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		morale_offence = 0.1
+	}
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 2
+	flags = { combat_weapon bow }
+	stacking = yes
+	picture = "GFX_killer_bow"
+	slot = weapon
+}
+
+brave_bow = {
+	combat_rating = 1
+	martial = 1
+	command_modifier = {
+		speed = 0.05
+	}
+	active = { 
+		can_equip_bows_trigger = yes
+	}
+	quality = 3
+	flags = { combat_weapon bow }
+	stacking = yes
+	picture = "GFX_brave_bow"
+	slot = weapon
+}
+
+# Items
+
+ninis_grace = {
+	command_modifier = {
+		defence = 0.1
+		morale_defence = 0.1
+	}
+	quality = 5
+	indestructible = yes
+	flags = { jewelry unique  }
+	stacking = no
+	picture = "GFX_ninis_grace"
+}
+
+fillas_might = {
+	command_modifier = {
+		damage = 0.1
+	}
+	quality = 5
+	indestructible = yes
+	flags = { jewelry unique  }
+	stacking = no
+	picture = "GFX_fillas_might"
+}
+
+thors_ire = {
+	command_modifier = {
+		morale_offence = 0.1
+	}
+	quality = 5
+	indestructible = yes
+	flags = { jewelry unique  }
+	stacking = no
+	picture = "GFX_thors_ire"
+}
+
+sets_litany = {
+	command_modifier = {
+		siege = 0.1
+	}
+	quality = 5
+	indestructible = yes
+	flags = { jewelry unique  }
+	stacking = no
+	picture = "GFX_sets_litany"
+}
+
+delphi_shield = {
+	monthly_character_piety = 0.5
+	martial = 2
+	quality = 4
+	flags = { very_rare }
+	stacking = no
+	picture = "GFX_delphi_shield"
+}
+
+iron_rune = {
+	command_modifier = {
+		morale_defence = 0.1
+	}
+	martial = 1
+	quality = 4
+	flags = { very_rare }
+	stacking = no
+	picture = "GFX_iron_rune"
+}
+
+boots = {
+	command_modifier = {
+		speed = 0.1
+	}
+	quality = 4
+	flags = { very_rare stat_booster  }
+	picture = "GFX_boots"
+}
+
+arms_scroll = {
+	martial = 2
+	quality = 3
+	flags = { rare stat_booster  }
+	picture = "GFX_arms_scroll"
+}
+
+dracoshield = {
+	martial = 2
+	quality = 3
+	flags = { rare stat_booster  }
+	picture = "GFX_dracoshield"
+}
+
+goddess_icon = {
+	monthly_character_piety = 0.5
+	quality = 3
+	flags = { rare stat_booster  }
+	picture = "GFX_goddess_icon"
+}
+
+secret_book = {
+	intrigue = 1
+	diplomacy = 1
+	quality = 3
+	flags = { rare stat_booster  }
+	picture = "GFX_secret_book"
+}
+
+talisman = {
+	monthly_character_piety = 0.5
+	quality = 3
+	flags = { rare stat_booster  }
+	picture = "GFX_talisman"
+}
+
+elysian_whip = {
+	monthly_character_prestige = 0.1
+	quality = 2
+	flags = { promotion }
+	picture = "GFX_elysian_whip"
+}
+
+guiding_ring = {
+	monthly_character_prestige = 0.1
+	quality = 2
+	flags = { promotion }
+	picture = "GFX_guiding_ring"
+}
+
+hero_crest = {
+	monthly_character_prestige = 0.1
+	quality = 2
+	flags = { promotion }
+	picture = "GFX_hero_crest"
+}
+
+knight_crest = {
+	monthly_character_prestige = 0.1
+	quality = 2
+	flags = { promotion }
+	picture = "GFX_knight_crest"
+}
+
+orions_bolt = {
+	monthly_character_prestige = 0.1
+	quality = 2
+	flags = { promotion }
+	picture = "GFX_orions_bolt"
+}
+
+silver_card = {
+	global_tax_modifier = 0.05
+	quality = 2
+	flags = { card }
+	picture = "GFX_silver_card"
+}
+
+member_card = {
+	global_tax_modifier = 0.05
+	quality = 2
+	flags = { card }
+	picture = "GFX_member_card"
+}

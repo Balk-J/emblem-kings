@@ -8,6 +8,15 @@ EVTDESCfe6.2;Since the time of Roland, the Lycian League has been a federation o
 EVTOPTAfe6.2;We shall see.;;;;;;;;;;;;;x
 EVTDESCfe6.3;At your command, the Demon Dragon has created several new war dragons. They will surely prove to be capable commanders - and fearsome warriors - for your army.;;;;;;;;;;;;;x
 EVTOPTAfe6.3;My enemies shall burn.;;;;;;;;;;;;;x
+
+
+
+regalia.hunted;[relic_hunter.GetJobTitle] [relic_hunter.GetFirstName] has finally returned from [relic_hunter.GetHerHis] travels. [relic_hunter.GetSheHeCap] has brought back a exquisite weapon!;;;;;;;;;;;;;x
+regalia.tooltip.glass;Order a §YGlass§! weapon. It will give you §G+0.1§! §YOffense§!, §G-0.1§! §YDefence§! and §G+1§! §YPersonal Combat Skill§!.\n;;;;;;;;;;;;;x
+regalia.tooltip.killer;Order a §YKiller§! weapon. It will give you §G+0.1§! §YMorale Damage§!, §G+1§! §YMartial§! and §G+1§! §YPersonal Combat Skill§!.\n;;;;;;;;;;;;;x
+regalia.tooltip.brave;Order a §YBrave§! weapon. It will give you §G+0.1§! §YOffense§!, §G+1§! §YMartial§! and §G+1§! §YPersonal Combat Skill§!.\n;;;;;;;;;;;;;x
+EVTDESC_MNM_9122.fe;I was struck with nervous excitement when [From.GetMasterMistressCap] [From.GetFirstName] announced that the [From.GetWeaponsmithWeapon] was nearing its completion. Today I have received the [From.GetMasterMistressCap] in my throne room. A sturdy box is in [From.GetHerHis] arms, and as [From.GetSheHe] opens the lid, I find it almost impossible to breathe. 'Your [From.GetWeaponsmithWeapon], my [Root.GetTitle].';;;;;;;;;;;;;x
+
 regalia.1.title;The Mountains of Lycia;;;;;;;;;;;;;x
 regalia.1.desc;One of the scouts you dispatched to look into rumors of legendary weapons has returned with an interesting story. Long ago, an altar was built in the depths of a nearby mountain cave. In the altar, a weapon of great strength was hidden to keep it from evil hands.\nMost locals fear what might be lurking in the cave and refuse to approach. However, a village elder may be able to tell you more about the place.;;;;;;;;;;;;;x
 regalia.1.A;We will proceed directly to this cave.;;;;;;;;;;;;;x
@@ -113,6 +122,7 @@ regalia.30.desc;A suspicious peddler has come to the market of [Root.Capital.Get
 regalia.30.A;I know a con artist when I see one.;;;;;;;;;;;;;x
 regalia.30.B;That doesn't look like any "ancient weapon" I've ever heard of...;;;;;;;;;;;;;x
 regalia.30.C;I will buy it!;;;;;;;;;;;;;x
+regalia.30.C.tooltip;Adds a new regalia to the treasury of §Y[Root.GetTitledName]§!.;;;;;;;;;;;;;x
 regalia.30.D;Your price is far too high.;;;;;;;;;;;;;x
 regalia.31.title;It's a Fake;;;;;;;;;;;;;x
 regalia.31.desc;After careful examination of the weapon, it becomes clear that it is actually a common piece you could purchase anywhere, painted and decorated to look valuable. The peddler has tried to sell you a fake!;;;;;;;;;;;;;x
@@ -146,7 +156,7 @@ regalia.37.title;The Guardians Stand Fast;;;;;;;;;;;;;x
 regalia.37.desc;The ghostly warriors' rage seems to have cooled. As one, they turn and head back into the cave. You get the sense that you've failed a test - even if you return with more soldiers and defeat the phantoms, the weapon they protect will never acknowledge you as its rightful wielder.;;;;;;;;;;;;;x
 regalia.37.A;Maybe it's better to leave it there.;;;;;;;;;;;;;x
 regalia.38.title;The Guardians Fall;;;;;;;;;;;;;x
-regalia.38.desc;The last guardian spirit looks you in the eyes and nods before it stiffens, falls over, and crumbles to dust.\n\nNow that they are out of the way - and more importantly, that they seem to have recognized you - you can resume your search for the weapon.;;;;;;;;;;;;;x
+regalia.38.desc;The last guardian spirit looks you in the eyes and nods before it stiffens, falls over, and crumbles to dust.\n\nNow that they are out of the way - and more importantly, that they seem to have acknowledged you - you can resume your search for the weapon.;;;;;;;;;;;;;x
 regalia.38.A;At last..;;;;;;;;;;;;;x
 regalia.39.title;The Thunder Axe;;;;;;;;;;;;;x
 regalia.39.desc;You can hear a breeze coming from behind the throne at the back of the cave. You reach behind it and feel a niche between the floor and wall, with a hidden switch. Pressing it opens an alcove in the wall. Inside it is the largest axe you've ever seen. As you approach, you can feel the weapon's raw desire to be used. It needs no seal. It cares not for peace. It only wants to return to the battlefield, to dance in the savage garden of war's bloody delights.\n\nArmads, the Thunder Axe, has chosen you to receive its power.;;;;;;;;;;;;;x

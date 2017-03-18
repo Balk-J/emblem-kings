@@ -1,5 +1,4 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-is_dragon_tooltip;Is a Dragon\n;;;;;;;;;;;;;x
 promote;Promote;;;;;;;;;;;;;x
 promote_desc;Promote to an advanced class.;;;;;;;;;;;;;x
 promote_sorceror;Promote;;;;;;;;;;;;;x
@@ -54,3 +53,11 @@ drain_quintessence_from_prisoner;Drain Quintessence;;;;;;;;;;;;;x
 drain_quintessence_from_prisoner_desc;Drain [Root.GetTitledFirstName] of quintessence. Unfortunately, the process will be fatal for [Root.GetHerHim].;;;;;;;;;;;;;x
 drain_quintessence_from_prisoner_tooltip;[From.GetTitledFirstName] gains [From.Religion.GetPietyName].\n;;;;;;;;;;;;;x
 drain_quintessence_from_prisoner.tooltip;The more advanced in a class a character is, the more quintessence can be had by draining them.;;;;;;;;;;;;;x
+quintessence_create_tome;Create Regalia Tome;;;;;;;;;;;;;x
+quintessence_create_tome_desc;Quintessence can be imbued into a tome to create a personal weapon of great power.;;;;;;;;;;;;;x
+visit_weapon_shop_1;Vist Armory;;;;;;;;;;;;;x
+visit_weapon_shop_1_desc;A variety of weapons can be purchased at the armory in [Root.Location.GetName].;;;;;;;;;;;;;x
+visit_weapon_shop_2;Vist Armory;;;;;;;;;;;;;x
+visit_weapon_shop_2_desc;A variety of weapons can be purchased at the armory in [Root.Location.GetName].;;;;;;;;;;;;;x
+visit_weapon_shop_3;Vist Armory;;;;;;;;;;;;;x
+visit_weapon_shop_3_desc;A variety of weapons can be purchased at the armory in [Root.Location.GetName].;;;;;;;;;;;;;x

@@ -72,4 +72,32 @@ spriteTypes = {
 		name = "GFX_quintessence_mend"
 		texturefile = "gfx\\interface\\decision_icon_seek_treatment.dds"
 	}
+	spriteType = {
+		name = "GFX_quintessence_create_tome"
+		texturefile = "gfx\\interface\\decision_icon_ereshkigal.dds"
+	}
+	spriteType = {
+		name = "GFX_visit_weapon_shop_1"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_visit_weapon_shop_2"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_visit_weapon_shop_3"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_visit_item_shop_1"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_visit_item_shop_2"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_visit_item_shop_3"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
 }

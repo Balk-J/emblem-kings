@@ -53,14 +53,14 @@
 	1122.1.1={
 		birth=yes
 		#add_trait="regalia_eckesachs"
-		add_trait="fire_emblem_elibe"
-		effect = {
+#		add_trait="fire_emblem_elibe"
+#		effect = {
 			#add_character_modifier = { name = "owns_regalia" duration = -1 }  
 			#set_character_flag="regalia_inherit"
 			
-			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+#			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
 			#set_character_flag = fire_emblem_elibe	
-		}
+#		}
 	}
 	1134.01.01={
 		add_trait="class_knight"
@@ -90,8 +90,8 @@
 	culture=bernese
 	religion=elimine_church
     #dna="bhfgcubfgab" 
-    dna="difgicedifd" 
-    properties="ah00d00000000"
+    dna="acjadzebicy" 
+    properties="ah0aeb0000000"
 	father=402 #Desmond
 	mother=230 #Hellene
 	disallow_random_traits="yes" 
@@ -168,24 +168,27 @@
 		add_trait="wroth"
 		add_trait="ambitious"
 		religion=dragon_liberation
-		add_trait="regalia_eckesachs"
-		add_trait="fire_emblem_elibe"
-		effect = {
-			ROOT = {
-				add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-				add_character_modifier = { name = "owns_regalia" duration = -1 } 
-				set_character_flag="regalia_hide"
-			}
-		}
+#		add_trait="regalia_eckesachs"
+#		add_trait="fire_emblem_elibe"
+#		effect = {
+#			ROOT = {
+#				add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+#				add_character_modifier = { name = "owns_regalia" duration = -1 } 
+#				set_character_flag="regalia_hide"
+#			}
+#		}
 		remove_trait=class_knight
 		add_trait=class_general
+		effect = {
+			set_global_flag="regalia_eckesachs_held"
+		}
 	}
 	1180.1.1= {
 		piety = 3000
-		effect = {
-			remove_trait="fire_emblem_elibe"
-			remove_character_modifier = holds_fire_emblem
-		}
+#		effect = {
+#			remove_trait="fire_emblem_elibe"
+#			remove_character_modifier = holds_fire_emblem
+#		}
 	}
 	1181.1.1= {
 		death = {
@@ -211,6 +214,9 @@
 	trait="legit_bastard"
 	1154.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe6_guinevere		
+		}
 	}
 	1166.01.01={
 		add_trait="class_mage_female"
@@ -230,12 +236,12 @@
 		remove_trait="class_mage_female"
 		add_trait="class_sage_female"
 	}	
-	1180.1.1= {
-		effect = {
-			add_trait="fire_emblem_elibe"
-			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-		}
-	}
+#	1180.1.1= {
+#		effect = {
+#			add_trait="fire_emblem_elibe"
+#			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
+#		}
+#	}
 	1244.1.1={
 		death=yes
 	}

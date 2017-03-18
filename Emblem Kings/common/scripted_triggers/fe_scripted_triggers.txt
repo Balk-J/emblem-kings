@@ -1,0 +1,308 @@
+available_regalia_trigger = {
+	OR = {
+		AND = {
+			capital_scope = {
+				region = world_elibe
+			}
+			OR = {
+				NOT = { has_global_flag="regalia_gespenst_held" }
+				NOT = { has_global_flag="regalia_luce_held" }
+				NOT = { has_global_flag="regalia_excalibur_fe7_held" }
+				NOT = { has_global_flag="regalia_rienfleche_held" }
+				NOT = { has_global_flag="regalia_basilikos_held" }
+				NOT = { has_global_flag="regalia_rex_hasta_held" }
+				NOT = { has_global_flag="regalia_regal_blade_held" }
+			}
+		}
+		# Add more region-specific regalia here...				
+	}
+}
+
+has_all_major_items_trigger = {
+	AND = {
+		has_artifact = ninis_grace
+		has_artifact = fillas_might
+		has_artifact = thors_ire
+		has_artifact = sets_litany				
+	}
+}
+
+has_all_medium_items_trigger = {
+	AND = {
+		has_artifact = delphi_shield
+		has_artifact = iron_rune
+		has_artifact = boots
+		has_artifact = arms_scroll
+		has_artifact = dracoshield
+		has_artifact = goddess_icon
+		has_artifact = secret_book
+		has_artifact = talisman
+		has_artifact = elysian_whip
+		has_artifact = guiding_ring
+		has_artifact = hero_crest
+		has_artifact = knight_crest
+		has_artifact = orions_bolt
+		has_artifact = silver_card
+		has_artifact = member_card
+	}
+}
+
+can_equip_swords_trigger = {
+	OR = {
+		custom_tooltip = {
+			text = is_assassin_tooltip
+			hidden_tooltip = {					
+				trait = class_
+				trait = class__female
+			}
+		}
+		trait = class_cavalier
+		trait = class_falcon_knight
+		custom_tooltip = {
+			text = is_hero_tooltip
+			hidden_tooltip = {					
+				trait = class_hero
+				trait = class_hero_female
+			}
+		}
+		custom_tooltip = {
+			text = is_mercenary_tooltip
+			hidden_tooltip = {					
+				trait = class_mercenary
+				trait = class_mercenary_female
+			}
+		}
+		custom_tooltip = {
+			text = is_myrmidon_tooltip
+			hidden_tooltip = {					
+				trait = class_myrmidon
+				trait = class_myrmidon_female
+			}
+		}
+		trait = class_paladin
+		custom_tooltip = {
+			text = is_bow_knight_tooltip
+			hidden_tooltip = {					
+				trait = class_bow_knight
+				trait = class_bow_knight_female
+			}
+		}
+		trait = class_rogue
+		custom_tooltip = {
+			text = is_swordmaster_tooltip
+			hidden_tooltip = {					
+				trait = class_swordmaster
+				trait = class_swordmaster_female
+			}
+		}
+		custom_tooltip = {
+			text = is_thief_tooltip
+			hidden_tooltip = {					
+				trait = class_thief
+				trait = class_thief_female
+			}
+		}
+		trait = class_wyvern_lord
+		custom_tooltip = {
+			text = is_mage_knight_tooltip
+			hidden_tooltip = {					
+				trait = class_mage_knight
+				trait = class_mage_knight_female
+			}
+		}
+	}
+}
+
+can_equip_lances_trigger = {
+	OR = {
+		trait = class_cavalier
+		trait = class_falcon_knight
+		trait = class_general
+		trait = class_knight
+		trait = class_paladin
+		trait = class_pegasus_knight
+		trait = class_soldier
+		trait = class_wyvern_rider
+		trait = class_wyvern_knight
+		trait = class_wyvern_lord	
+	}
+}
+
+can_equip_axes_trigger = {
+	OR = {
+		trait = class_berserker
+		trait = class_brigand
+		trait = class_fighter
+		trait = class_general
+		custom_tooltip = {
+			text = is_hero_tooltip
+			hidden_tooltip = {					
+				trait = class_hero
+				trait = class_hero_female
+			}
+		}
+		trait = class_paladin
+		trait = class_pirate
+		trait = class_warrior
+#		AND = {
+#			NOT = { culture = hoshidan }
+#			OR = {
+				trait = class_war_cleric
+				trait = class_war_priest
+#			}
+#		}
+	}
+}
+
+can_equip_bows_trigger = {
+	OR = {
+		custom_tooltip = {
+			text = is_archer_tooltip
+			hidden_tooltip = {					
+				trait = class_archer
+				trait = class_archer_female
+			}
+		}
+		custom_tooltip = {
+			text = is_sniper_tooltip
+			hidden_tooltip = {					
+				trait = class_sniper
+				trait = class_sniper_female
+			}
+		}
+		custom_tooltip = {
+			text = is_horse_archer_tooltip
+			hidden_tooltip = {					
+				trait = class_archer
+				trait = class_archer_female
+			}
+		}
+		custom_tooltip = {
+			text = is_bow_knight_tooltip
+			hidden_tooltip = {					
+				trait = class_bow_knight
+				trait = class_bow_knight_female
+			}
+		}
+		trait = class_warrior
+#		AND = {
+#			culture = hoshidan
+#			OR = {
+#				trait = class_war_cleric
+#				trait = class_war_priest
+#			}
+#		}
+	}
+}
+
+can_equip_anima_trigger = {
+	OR = {
+		trait = class_archdruid
+		trait = class_archsage
+		trait = class_dark_druid
+		custom_tooltip = {
+			text = is_mage_tooltip
+			hidden_tooltip = {					
+				trait = class_mage
+				trait = class_mage_female
+			}
+		}
+		custom_tooltip = {
+			text = is_mage_knight_tooltip
+			hidden_tooltip = {					
+				trait = class_mage_knight
+				trait = class_mage_knight_female
+			}
+		}
+		custom_tooltip = {
+			text = is_sage_tooltip
+			hidden_tooltip = {					
+				trait = class_sage
+				trait = class_sage_female
+			}
+		}
+	}
+}
+
+can_equip_dark_trigger = {
+	OR = {
+		trait = class_archdruid
+		trait = class_archsage
+		trait = class_dark_druid
+		custom_tooltip = {
+			text = is_dark_mage_tooltip
+			hidden_tooltip = {					
+				trait = class_dark_mage
+				trait = class_dark_mage_female
+			}
+		}
+		custom_tooltip = {
+			text = is_sorceror_tooltip
+			hidden_tooltip = {					
+				trait = class_sorceror
+				trait = class_sorceror_female
+			}
+		}
+	}
+}
+
+can_equip_light_trigger = {
+	OR = {
+		trait = class_archsage
+		custom_tooltip = {
+			text = is_bishop_tooltip
+			hidden_tooltip = {					
+				trait = class_bishop
+				trait = class_bishop_female
+			}
+		}
+		trait = class_monk
+	}
+}
+
+can_equip_dragonstone_trigger = {
+	OR = {
+		custom_tooltip = {
+			text = is_manakete_tooltip
+			hidden_tooltip = {					
+				trait = class_manakete
+				trait = class_manakete_female
+			}
+		}
+	}
+}
+
+
+can_equip_staff_trigger = {
+	OR = {
+		trait = class_archdruid
+		trait = class_archsage
+		trait = class_dark_druid
+		custom_tooltip = {
+			text = is_bishop_tooltip
+			hidden_tooltip = {					
+				trait = class_bishop
+				trait = class_bishop_female
+			}
+		}
+		trait = class_cleric
+		custom_tooltip = {
+			text = is_sorceror_tooltip
+			hidden_tooltip = {					
+				trait = class_sorceror
+				trait = class_sorceror_female
+			}
+		}
+		trait = class_priest
+		custom_tooltip = {
+			text = is_sage_tooltip
+			hidden_tooltip = {					
+				trait = class_sage
+				trait = class_sage_female
+			}
+		}
+		trait = class_troubador
+		trait = class_war_cleric
+		trait = class_war_priest
+	}
+}

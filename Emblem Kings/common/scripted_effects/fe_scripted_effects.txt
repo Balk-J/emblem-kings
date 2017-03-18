@@ -1,3 +1,564 @@
+add_regalia_effect = {
+	if = {
+		limit = {
+			has_character_flag="regalia_gespenst"
+		}
+		clr_character_flag="regalia_gespenst"
+		add_artifact = regalia_gespenst
+		set_global_flag="regalia_gespenst_held"		
+	}
+	if = {
+		limit = {
+			has_character_flag="regalia_luce"
+		}
+		clr_character_flag="regalia_luce"
+		add_artifact = regalia_luce
+		set_global_flag="regalia_luce_held"		
+	}
+	if = {
+		limit = {
+			has_character_flag="regalia_excalibur_fe7"
+		}
+		clr_character_flag="regalia_excalibur_fe7"
+		add_artifact = regalia_excalibur_fe7
+		set_global_flag="regalia_excalibur_held"				
+	}
+	if = {
+		limit = {
+			has_character_flag="regalia_rienfleche"
+		}
+		clr_character_flag="regalia_rienfleche"
+		add_artifact = regalia_rienfleche
+		set_global_flag="regalia_rienfleche_held"				
+	}
+	if = {
+		limit = {
+			has_character_flag="regalia_basilikos"
+		}
+		clr_character_flag="regalia_basilikos"
+		add_artifact = regalia_basilikos
+		set_global_flag="regalia_basilikos_held"			
+	}
+	if = {
+		limit = {
+			has_character_flag="regalia_rex_hasta"
+		}
+		clr_character_flag="regalia_rex_hasta"
+		add_artifact = regalia_rex_hasta
+		set_global_flag="regalia_rex_hasta_held"	
+	}
+	if = {
+		limit = {
+			has_character_flag="regalia_regal_blade"
+		}
+		clr_character_flag="regalia_regal_blade"
+		add_artifact = regalia_regal_blade	
+		set_global_flag="regalia_regal_blade_held"	
+	}
+	
+	new_artifact = {
+		set_creation_date = -1.1.1
+	}		
+}
+
+add_item_effect = {
+	if = {
+		limit = { has_character_flag=ninis_grace }
+		clr_character_flag=ninis_grace
+		add_artifact=ninis_grace
+	}
+	if = {
+		limit = { has_character_flag=fillas_might }
+		clr_character_flag=fillas_might
+		add_artifact=fillas_might
+	}
+	if = {
+		limit = { has_character_flag=thors_ire }
+		clr_character_flag=thors_ire
+		add_artifact=thors_ire
+	}
+	if = {
+		limit = { has_character_flag=sets_litany }
+		clr_character_flag=sets_litany
+		add_artifact=sets_litany
+	}
+	if = {
+		limit = { has_character_flag=delphi_shield }
+		clr_character_flag=delphi_shield
+		add_artifact=delphi_shield
+	}
+	if = {
+		limit = { has_character_flag=iron_rune }
+		clr_character_flag=iron_rune
+		add_artifact=iron_rune
+	}
+	if = {
+		limit = { has_character_flag=boots }
+		clr_character_flag=boots
+		add_artifact=boots
+	}
+	if = {
+		limit = { has_character_flag=arms_scroll }
+		clr_character_flag=arms_scroll
+		add_artifact=arms_scroll
+	}
+	if = {
+		limit = { has_character_flag=dracoshield }
+		clr_character_flag=dracoshield
+		add_artifact=dracoshield
+	}
+	if = {
+		limit = { has_character_flag=goddess_icon }
+		clr_character_flag=goddess_icon
+		add_artifact=goddess_icon
+	}
+	if = {
+		limit = { has_character_flag=secret_book }
+		clr_character_flag=secret_book
+		add_artifact=secret_book
+	}
+	if = {
+		limit = { has_character_flag=talisman }
+		clr_character_flag=talisman
+		add_artifact=talisman
+	}
+	if = {
+		limit = { has_character_flag=elysian_whip }
+		clr_character_flag=elysian_whip
+		add_artifact=elysian_whip
+	}
+	if = {
+		limit = { has_character_flag=guiding_ring }
+		clr_character_flag=guiding_ring
+		add_artifact=guiding_ring
+	}
+	if = {
+		limit = { has_character_flag=hero_crest }
+		clr_character_flag=hero_crest
+		add_artifact=hero_crest
+	}
+	if = {
+		limit = { has_character_flag=knight_crest }
+		clr_character_flag=knight_crest
+		add_artifact=knight_crest
+	}
+	if = {
+		limit = { has_character_flag=orions_bolt }
+		clr_character_flag=orions_bolt
+		add_artifact=orions_bolt
+	}
+	if = {
+		limit = { has_character_flag=silver_card }
+		clr_character_flag=silver_card
+		add_artifact=silver_card
+	}
+	if = {
+		limit = { has_character_flag=member_card }
+		clr_character_flag=member_card
+		add_artifact=member_card
+	}
+	
+	new_artifact = {
+		set_creation_date = -1.1.1
+	}		
+}
+set_random_major_item_flag_effect = {
+	random_list = {
+		1 = {
+			modifier = { factor = 0 has_artifact=ninis_grace }
+			set_character_flag=ninis_grace
+		}
+		1 = {
+			modifier = { factor = 0 has_artifact=fillas_might }
+			set_character_flag=fillas_might
+		}
+		1 = {
+			modifier = { factor = 0 has_artifact=thors_ire }
+			set_character_flag=thors_ire
+		}
+		1 = {
+			modifier = { factor = 0 has_artifact=sets_litany }
+			set_character_flag=sets_litany
+		}
+	}
+}
+set_random_medium_item_flag_effect = {
+	random_list = {
+		1 = {
+			modifier={factor=0 has_artifact=delphi_shield}
+			set_character_flag=delphi_shield
+		}
+		1 = {
+			modifier={factor=0 has_artifact=iron_rune}
+			set_character_flag=iron_rune
+		}
+		1 = {
+			modifier={factor=0 has_artifact=boots}
+			set_character_flag=boots
+		}
+		1 = {
+			modifier={factor=0 has_artifact=arms_scroll}
+			set_character_flag=arms_scroll
+		}
+		1 = {
+			modifier={factor=0 has_artifact=dracoshield}
+			set_character_flag=dracoshield
+		}
+		1 = {
+			modifier={factor=0 has_artifact=goddess_icon}
+			set_character_flag=goddess_icon
+		}
+		1 = {
+			modifier={factor=0 has_artifact=secret_book}
+			set_character_flag=secret_book
+		}
+		1 = {
+			modifier={factor=0 has_artifact=talisman}
+			set_character_flag=talisman
+		}
+		1 = {
+			modifier={factor=0 has_artifact=elysian_whip}
+			set_character_flag=elysian_whip
+		}
+		1 = {
+			modifier={factor=0 has_artifact=guiding_ring}
+			set_character_flag=guiding_ring
+		}
+		1 = {
+			modifier={factor=0 has_artifact=hero_crest}
+			set_character_flag=hero_crest
+		}
+		1 = {
+			modifier={factor=0 has_artifact=knight_crest}
+			set_character_flag=knight_crest
+		}
+		1 = {
+			modifier={factor=0 has_artifact=orions_bolt}
+			set_character_flag=orions_bolt
+		}
+		1 = {
+			modifier={factor=0 has_artifact=silver_card}
+			set_character_flag=silver_card
+		}
+		1 = {
+			modifier={factor=0 has_artifact=member_card}
+			set_character_flag=member_card
+		}
+	}
+}
+
+artifact_duty_effect = {
+	if = {
+		limit = { has_character_modifier = relic_rumor_minor }
+		prestige = 10
+        reverse_opinion = {
+			who = FROM
+			modifier = opinion_extremely_disappointed
+			years = 20
+		}
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_medium }
+		prestige = 10
+        reverse_opinion = {
+			who = FROM
+			modifier = opinion_very_disappointed
+			years = 15
+		}
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_major }
+		prestige = 10
+        reverse_opinion = {
+			who = FROM
+		modifier = opinion_disappointed
+			years = 10
+		}
+	}	
+}
+
+artifact_money_effect = {
+	if = {
+		limit = { has_character_modifier = relic_rumor_minor }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 5
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_minor_artifact
+			years = 5
+		}
+		transfer_scaled_wealth = {
+			to = FROM
+			value = 0.25
+			min = 20
+		}
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_medium }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 10
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_medium_artifact
+			years = 5
+		}
+		transfer_scaled_wealth = {
+			to = FROM
+			value = 0.5
+			min = 35
+		}
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_major }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 15
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_major_artifact
+			years = 5
+		}
+		transfer_scaled_wealth = {
+			to = FROM
+			value = 1
+			min = 50
+		}
+	}	
+}
+
+artifact_favor_effect = {
+	if = {
+		limit = { has_character_modifier = relic_rumor_minor }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 5
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_minor_artifact
+			years = 5
+		}
+        reverse_add_favor = FROM
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_medium }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 10
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_medium_artifact
+			years = 5
+		}
+        reverse_add_favor = FROM
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_major }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 15
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_major_artifact
+			years = 5
+		}
+        reverse_add_favor = FROM
+	}	
+}
+
+artifact_prestige_effect = {
+	if = {
+		limit = { has_character_modifier = relic_rumor_minor }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_praised
+			years = 5
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_minor_artifact
+			years = 5
+		}
+		FROM = { prestige = 25 }
+		random = {
+			chance = 20
+			add_friend = FROM
+		}
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_medium }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_praised
+			years = 10
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_medium_artifact
+			years = 5
+		}
+		FROM = { prestige = 50 }
+		random = {
+			chance = 20
+			add_friend = FROM
+		}
+	}
+	if = {
+		limit = { has_character_modifier = relic_rumor_major }
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_praised
+			years = 15
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_major_artifact
+			years = 5
+		}
+		FROM = { prestige = 100 }
+		random = {
+			chance = 20
+			add_friend = FROM
+		}		
+	}	
+}
+add_random_regalia_from_owned_ruins_effect = {
+	# Randomly pick a non-claimed regalia to hand out
+	random_list = {
+		100 = {
+			modifier = {
+				factor = 0
+				NOT = {
+					any_demesne_province = {
+						has_province_modifier = ancient_ruins
+						region = world_elibe
+					}
+				}
+			}
+			set_random_regalia_flag_elibe = yes
+		}
+		# Add regalia from other continents here
+	}
+		
+	# Inform them of their prize
+	character_event = { id = regalia.21 }
+}
+
+add_random_regalia_from_location_effect = {
+	# Randomly pick a non-claimed regalia to hand out
+	random_list = {
+		100 = {
+			modifier = {
+				factor = 0
+				NOT = {
+					location = {
+						region = world_elibe
+					}
+				}
+			}
+			set_random_regalia_flag_elibe = yes
+		}
+		# Add regalia from other continents here
+	}
+	
+	location = {
+		set_province_flag = regalia_found
+	}
+		
+	# Inform them of their prize
+	character_event = { id = regalia.21 }
+}
+
+add_random_regalia_from_capital_effect = {
+	set_random_regalia_flag_effect = yes
+	# This one does not have a notify event...
+	add_regalia_effect = yes
+}
+
+set_random_regalia_flag_effect = {
+	random_list = {
+		100 = {
+			modifier = {
+				factor = 0
+				NOT = {
+					capital_scope = {
+						region = world_elibe
+					}
+				}
+			}
+			set_random_regalia_flag_elibe = yes
+		}
+		# Add regalia from other continents here
+	}
+}
+
+set_random_regalia_flag_elibe = {
+	random_list = {
+		15 = {
+			modifier = {
+				factor = 0
+				has_global_flag="regalia_gespenst_held"
+			}
+			set_character_flag="regalia_gespenst"
+		}
+		15 = {
+			modifier = {
+				factor = 0
+				has_global_flag="regalia_luce_held"
+			}
+			set_character_flag="regalia_luce"
+		}
+		14 = {
+			modifier = {
+				factor = 0
+				has_global_flag="regalia_excalibur_fe7_held"
+			}
+			set_character_flag="regalia_excalibur_fe7"
+		}
+		14 = {
+			modifier = {
+				factor = 0
+				has_global_flag="regalia_rienfleche_held"
+			}
+			set_character_flag="regalia_rienfleche"
+		}
+		14 = {
+			modifier = {
+				factor = 0
+				has_global_flag="regalia_basilikos_held"
+			}
+			set_character_flag="regalia_basilikos"
+		}
+		14 = {
+			modifier = {
+				factor = 0
+				has_global_flag="regalia_rex_hasta_held"
+			}
+			set_character_flag="regalia_rex_hasta"
+		}
+		14 = {
+			modifier = {
+				factor = 0
+				has_global_flag="regalia_regal_blade_held"
+			}
+			set_character_flag="regalia_regal_blade"
+		}
+	}
+}
+
 heal_effect = {
 	if = {
 		limit = { 
@@ -372,4 +933,14 @@ remove_personality_effect = {
 		limit = { trait = zealous }
 		remove_trait = zealous
 	}
+}
+
+buy_tier_1_weapon_effect = {
+	wealth = -50
+}
+buy_tier_2_weapon_effect = {
+	wealth = -100
+}
+buy_tier_3_weapon_effect = {
+	wealth = -200
 }

@@ -1,4 +1,5 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+staff;Staff;;;;;;;;;x
 String_famous_mage;famous mage;;;;;;;;;x
 String_Famous_Mage_cap;Famous Mage;;;;;;;;;x
 String_famous_sage;famous sage;;;;;;;;;x
@@ -9,3 +10,168 @@ String_divine_dragon;divine dragon;;;;;;;;;x
 String_Divine_Dragon_cap;Divine Dragon;;;;;;;;;x
 String_first_dragon;first dragon;;;;;;;;;x
 String_First_Dragon_cap;First Dragon;;;;;;;;;x
+fire_emblem_elibe;Fire Emblem;;;;;;;;;;;;;x
+fire_emblem_elibe_desc;The Fire Emblem of Elibe. No gem in existence is its equal.;;;;;;;;;;;;;x
+regalia_binding_blade;Binding Blade;;;;;;;;;;;;;x
+regalia_binding_blade_desc;A legendary sword whose power surpasses that of Elibe's eight Divine Weapons.;;;;;;;;;;;;;x
+regalia_durandal;Durandal;;;;;;;;;;;;;x
+regalia_durandal_desc;Roland's Blazing Sword.;;;;;;;;;;;;;x
+regalia_armads;Armads;;;;;;;;;;;;;x
+regalia_armads_desc;Durban's Thunder Axe.;;;;;;;;;;;;;x
+regalia_forblaze;Forblaze;;;;;;;;;;;;;x
+regalia_forblaze_desc;Athos' Infernal Truth.;;;;;;;;;;;;;x
+regalia_aureola;Aureola;;;;;;;;;;;;;x
+regalia_aureola_desc;Elimine's Glorious Ascension.;;;;;;;;;;;;;x
+regalia_murgleis;Murgleis;;;;;;;;;;;;;x
+regalia_murgleis_desc;Hanon's Tempest Bow.;;;;;;;;;;;;;x
+regalia_maltet;Maltet;;;;;;;;;;;;;x
+regalia_maltet_desc;Barigan's Blizzard Spear.;;;;;;;;;;;;;x
+regalia_apocalypse;Apocalypse;;;;;;;;;;;;;x
+regalia_apocalypse_desc;Bramimond's Elder Revelation.;;;;;;;;;;;;;x
+regalia_saints_staff;Saint's Staff;;;;;;;;;;;;;x
+regalia_saints_staff_desc;A healing staff carried by St. Elimine alongside the light tome Aureola.;;;;;;;;;;;;;x
+regalia_eckesachs;Eckesachs;;;;;;;;;;;;;x
+regalia_eckesachs_desc;Hartmut's Royal Sword.;;;;;;;;;;;;;x
+regalia_mani_katti;Mani Katti;;;;;;;;;;;;;x
+regalia_mani_katti_desc;A spirit-infused sword, sacred to the people of Sacae.;;;;;;;;;;;;;x
+regalia_sol_katti;Sol Katti;;;;;;;;;;;;;x
+regalia_sol_katti_desc;A spirit-infused sword with ties to the mythology of the Sacaen tribes, forged for fighting dragons.;;;;;;;;;;;;;x
+regalia_ereshkigal;Ereshkigal;;;;;;;;;;;;;x
+regalia_ereshkigal_desc;A regalia tome created by a master of elder magic.;;;;;;;;;;;;;x
+regalia_irkalla;Irkalla;;;;;;;;;;;;;x
+regalia_irkalla_desc;A regalia tome created by a master of anima magic.;;;;;;;;;;;;;x
+regalia_gespenst;Gespenst;;;;;;;;;;;;;x
+regalia_gespenst_desc;A regalia dark tome.;;;;;;;;;;;;;x
+regalia_luce;Luce;;;;;;;;;;;;;x
+regalia_luce_desc;A regalia light tome.;;;;;;;;;;;;;x
+regalia_excalibur_fe7;Excalibur;;;;;;;;;;;;;x
+regalia_excalibur_fe7_desc;A regalia wind tome.;;;;;;;;;;;;;x
+regalia_rienfleche;Rienfleche;;;;;;;;;;;;;x
+regalia_rienfleche_desc;A regalia bow.;;;;;;;;;;;;;x
+regalia_basilikos;Basilikos;;;;;;;;;;;;;x
+regalia_basilikos_desc;A regalia axe.;;;;;;;;;;;;;x
+regalia_rex_hasta;Rex Hasta;;;;;;;;;;;;;x
+regalia_rex_hasta_desc;A regalia lance.;;;;;;;;;;;;;x
+regalia_regal_blade;Regal Blade;;;;;;;;;;;;;x
+regalia_regal_blade_desc;A regalia sword.;;;;;;;;;;;;;x
+
+
+iron_sword;Iron Sword;;;;;;;;;;;;;x
+iron_sword_desc;A common sword of a common material.;;;;;;;;;;;;;x
+steel_sword;Steel Sword;;;;;;;;;;;;;x
+steel_sword_desc;A weighty but more powerful sword.;;;;;;;;;;;;;x
+silver_sword;Silver Sword;;;;;;;;;;;;;x
+silver_sword_desc;A sword whose mighty blows offset its steep price.;;;;;;;;;;;;;x
+iron_lance;Iron Lance;;;;;;;;;;;;;x
+iron_lance_desc;An affordable lance that is easy to wield.;;;;;;;;;;;;;x
+steel_lance;Steel Lance;;;;;;;;;;;;;x
+steel_lance_desc;A weighty but more powerful lance.;;;;;;;;;;;;;x
+silver_lance;Silver Lance;;;;;;;;;;;;;x
+silver_lance_desc;Expensive, but extremely powerful.;;;;;;;;;;;;;x
+iron_axe;Iron Axe;;;;;;;;;;;;;x
+iron_axe_desc;An affordable axe that is easy to wield.;;;;;;;;;;;;;x
+steel_axe;Steel Axe;;;;;;;;;;;;;x
+steel_axe_desc;A weighty but more powerful axe.;;;;;;;;;;;;;x
+silver_axe;Silver Axe;;;;;;;;;;;;;x
+silver_axe_desc;An axe whose mighty blows offset its steep price.;;;;;;;;;;;;;x
+iron_bow;Iron Bow;;;;;;;;;;;;;x
+iron_bow_desc;Affordable and easy to wield.;;;;;;;;;;;;;x
+steel_bow;Steel Bow;;;;;;;;;;;;;x
+steel_bow_desc;A weighty but more powerful bow.;;;;;;;;;;;;;x
+silver_bow;Silver Bow;;;;;;;;;;;;;x
+silver_bow_desc;A bow whose might offsets its steep price.;;;;;;;;;;;;;x
+
+glass_sword;Glass Sword;;;;;;;;;;;;;x
+glass_sword_desc;A sword forged of an uncommon material. It is fragile, but very deadly.;;;;;;;;;;;;;x
+killing_edge;Killing Edge;;;;;;;;;;;;;x
+killing_edge_desc;A sword made for skilled warriors. It is designed to make powerful blows against an enemy's most vulnerable points.;;;;;;;;;;;;;x
+brave_sword;Brave Sword;;;;;;;;;;;;;x
+brave_sword_desc;A sword designed for making multiple consecutive strikes.;;;;;;;;;;;;;x
+glass_lance;Glass Lance;;;;;;;;;;;;;x
+glass_lance_desc;A lance forged of an uncommon material. It is fragile, but very deadly.;;;;;;;;;;;;;x
+killer_lance;Killer Lance;;;;;;;;;;;;;x
+killer_lance_desc;A lance made for skilled warriors. It is designed to make powerful blows against an enemy's most vulnerable points.;;;;;;;;;;;;;x
+brave_lance;Brave Lance;;;;;;;;;;;;;x
+brave_lance_desc;A lance designed for making multiple consecutive strikes.;;;;;;;;;;;;;x
+glass_axe;Glass Axe;;;;;;;;;;;;;x
+glass_axe_desc;An axe forged of an uncommon material. It is fragile, but very deadly.;;;;;;;;;;;;;x
+killer_axe;Killer Axe;;;;;;;;;;;;;x
+killer_axe_desc;An axe made for skilled warriors. It is designed to make powerful blows against an enemy's most vulnerable points.;;;;;;;;;;;;;x
+brave_axe;Brave Axe;;;;;;;;;;;;;x
+brave_axe_desc;An axe designed for making multiple consecutive strikes.;;;;;;;;;;;;;x
+glass_bow;Glass Bow;;;;;;;;;;;;;x
+glass_bow_desc;A bow forged of an uncommon material. It is fragile, but very deadly.;;;;;;;;;;;;;x
+killer_bow;Killer Bow;;;;;;;;;;;;;x
+killer_bow_desc;A bow made for skilled warriors. It is designed to make powerful blows against an enemy's most vulnerable points.;;;;;;;;;;;;;x
+brave_bow;Brave Bow;;;;;;;;;;;;;x
+brave_bow_desc;A bow designed for making multiple consecutive strikes.;;;;;;;;;;;;;x
+
+fire;Fire;;;;;;;;;;;;;x
+fire_desc;Standard fire magic.;;;;;;;;;;;;;x
+elfire;Elfire;;;;;;;;;;;;;x
+elfire_desc;Powerful fire magic.;;;;;;;;;;;;;x
+bolganone;Bolganone;;;;;;;;;;;;;x
+bolganone_desc;Devastating fire magic.;;;;;;;;;;;;;x
+thunder;Thunder;;;;;;;;;;;;;x
+thunder_desc;A common combat spell.;;;;;;;;;;;;;x
+elthunder;Elthunder;;;;;;;;;;;;;x
+elthunder_desc;Powerful lightning magic.;;;;;;;;;;;;;x
+thoron;Thoron;;;;;;;;;;;;;x
+thoron_desc;A mighty tome named for a legendary thunder spirit.;;;;;;;;;;;;;x
+wind;Wind;;;;;;;;;;;;;x
+wind_desc;Standard wind magic.;;;;;;;;;;;;;x
+elwind;Elwind;;;;;;;;;;;;;x
+elwind_desc;Powerful wind magic.;;;;;;;;;;;;;x
+tornado;Tornado;;;;;;;;;;;;;x
+tornado_desc;Extremely powerful wind magic.;;;;;;;;;;;;;x
+lightning;Lightning;;;;;;;;;;;;;x
+lightning_desc;Standard light magic.;;;;;;;;;;;;;x
+shine;Shine;;;;;;;;;;;;;x
+shine_desc;Powerful light magic.;;;;;;;;;;;;;x
+aura;Aura;;;;;;;;;;;;;x
+aura_desc;Blinding light magic.;;;;;;;;;;;;;x
+flux;Flux;;;;;;;;;;;;;x
+flux_desc;Basic dark magic.;;;;;;;;;;;;;x
+worm;Worm;;;;;;;;;;;;;x
+worm_desc;Mid-level dark magic.;;;;;;;;;;;;;x
+fenrir;Fenrir;;;;;;;;;;;;;x
+fenrir_desc;High-ranking dark magic.;;;;;;;;;;;;;x
+
+ninis_grace;Ninis's Grace;;;;;;;;;;;;;x
+ninis_grace_desc;A ring once blessed by Ninis, a spirit of ice.;;;;;;;;;;;;;x
+fillas_might;Filla's Might;;;;;;;;;;;;;x
+fillas_might_desc;A ring once blessed by Filla, a spirit of fire.;;;;;;;;;;;;;x
+thors_ire;Thor's Ire;;;;;;;;;;;;;x
+thors_ire_desc;A ring once blessed by Thor, a spirit of lightning.;;;;;;;;;;;;;x
+sets_litany;Set's Litany;;;;;;;;;;;;;x
+sets_litany_desc;A ring once blessed by Set, a spirit of wind.;;;;;;;;;;;;;x
+delphi_shield;Delphi Shield;;;;;;;;;;;;;x
+delphi_shield_desc;An amulet of the god Delphi. Protects fliers from arrows.;;;;;;;;;;;;;x
+iron_rune;Iron Rune;;;;;;;;;;;;;x
+iron_rune_desc;A device that negates enemy critical attacks.;;;;;;;;;;;;;x
+boots;Boots;;;;;;;;;;;;;x
+boots_desc;Swiftsole boots that increase movement speed.;;;;;;;;;;;;;x
+arms_scroll;Arms Scroll;;;;;;;;;;;;;x
+arms_scroll_desc;A scroll with techniques on becoming more proficient with many different weapons.;;;;;;;;;;;;;x
+dracoshield;Dracoshield;;;;;;;;;;;;;x
+dracoshield_desc;A treasure said to improve defense.;;;;;;;;;;;;;x
+goddess_icon;Goddess Icon;;;;;;;;;;;;;x
+goddess_icon_desc;A treasure said to improve luck.;;;;;;;;;;;;;x
+secret_book;Secret Book;;;;;;;;;;;;;x
+secret_book_desc;A treasure said to improve skill.;;;;;;;;;;;;;x
+talisman;Talisman;;;;;;;;;;;;;x
+talisman_desc;A treasure said to improve resistance.;;;;;;;;;;;;;x
+elysian_whip;Elysian Whip;;;;;;;;;;;;;x
+elysian_whip_desc;For seasoned fliers.;;;;;;;;;;;;;x
+guiding_ring;Guiding Ring;;;;;;;;;;;;;x
+guiding_ring_desc;For seasoned magic users.;;;;;;;;;;;;;x
+hero_crest;Hero Crest;;;;;;;;;;;;;x
+hero_crest_desc;For seasoned infantry.;;;;;;;;;;;;;x
+knight_crest;Knight Crest;;;;;;;;;;;;;x
+knight_crest_desc;For seasoned knights.;;;;;;;;;;;;;x
+orions_bolt;Orion's Bolt;;;;;;;;;;;;;x
+orions_bolt_desc;For seasoned archers.;;;;;;;;;;;;;x
+silver_card;Silver Card;;;;;;;;;;;;;x
+silver_card_desc;A card that provides discounts at many shops.;;;;;;;;;;;;;x
+member_card;Member Card;;;;;;;;;;;;;x
+member_card_desc;A card that grants the bearer purchasing privileges at special shops.;;;;;;;;;;;;;x

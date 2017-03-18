@@ -100,8 +100,10 @@ class_mage_desc;Mages schooled in anima magic. They can bypass most defenses but
 class_mage_female;Mage;;;;;;;;;;;;;x
 class_mage_female_desc;Mages schooled in anima magic. They can bypass most defenses but are weak against conventional weapons.;;;;;;;;;;;;;x
 class_mage_knight;Mage Knight;;;;;;;;;;;;;x
+#class_mage_knight_desc;Mounted mage-knights who wield anima magic. Can also use swords.;;;;;;;;;;;;;x
 class_mage_knight_desc;Mounted mage-knights who wield anima magic. Can also use sacred staves.;;;;;;;;;;;;;x
 class_mage_knight_female;Mage Knight;;;;;;;;;;;;;x
+#class_mage_knight_female_desc;Mounted mage-knights who wield anima magic. Can also use sacred staves.;;;;;;;;;;;;;x
 class_mage_knight_female_desc;Mounted mage-knights who wield anima magic. Can also use sacred staves.;;;;;;;;;;;;;x
 class_magic_seal;Magic Seal;;;;;;;;;;;;;x
 class_magic_seal_desc;A foul creature born of heresy who negates the effects of magic.;;;;;;;;;;;;;x
@@ -192,49 +194,7 @@ class_wyvern_lord_desc;A title earned by only truly skilled wyvern riders. They 
 #class_wyvern_lord_desc;Knights united with their wyvern mounts. They have better movement and combat skill.;;;;;;;;;;;;;x
 class_wyvern_rider;Wyvern Rider;;;;;;;;;;;;;x
 class_wyvern_rider_desc;Knights who rule the skies from wyvern-back. They are vulnerable to only bows and magic.;;;;;;;;;;;;;x
-regalia_binding_blade;Binding Blade;;;;;;;;;;;;;x
-regalia_binding_blade_desc;A legendary sword whose power surpasses that of Elibe's eight Divine Weapons.;;;;;;;;;;;;;x
-regalia_durandal;Durandal;;;;;;;;;;;;;x
-regalia_durandal_desc;Roland's Blazing Sword.;;;;;;;;;;;;;x
-regalia_armads;Armads;;;;;;;;;;;;;x
-regalia_armads_desc;Durban's Thunder Axe.;;;;;;;;;;;;;x
-regalia_forblaze;Forblaze;;;;;;;;;;;;;x
-regalia_forblaze_desc;Athos' Infernal Truth.;;;;;;;;;;;;;x
-regalia_aureola;Aureola;;;;;;;;;;;;;x
-regalia_aureola_desc;Elimine's Glorious Ascension.;;;;;;;;;;;;;x
-regalia_murgleis;Murgleis;;;;;;;;;;;;;x
-regalia_murgleis_desc;Hanon's Tempest Bow.;;;;;;;;;;;;;x
-regalia_maltet;Maltet;;;;;;;;;;;;;x
-regalia_maltet_desc;Barigan's Blizzard Spear.;;;;;;;;;;;;;x
-regalia_apocalypse;Apocalypse;;;;;;;;;;;;;x
-regalia_apocalypse_desc;Bramimond's Elder Revelation.;;;;;;;;;;;;;x
-regalia_saints_staff;Saint's Staff;;;;;;;;;;;;;x
-regalia_saints_staff_desc;A healing staff carried by St. Elimine alongside the light tome Aureola.;;;;;;;;;;;;;x
-regalia_eckesachs;Eckesachs;;;;;;;;;;;;;x
-regalia_eckesachs_desc;Hartmut's Royal Sword.;;;;;;;;;;;;;x
-regalia_mani_katti;Mani Katti;;;;;;;;;;;;;x
-regalia_mani_katti_desc;A spirit-infused sword, sacred to the people of Sacae.;;;;;;;;;;;;;x
-regalia_sol_katti;Sol Katti;;;;;;;;;;;;;x
-regalia_sol_katti_desc;A spirit-infused sword with ties to the mythology of the Sacaen tribes, forged for fighting dragons.;;;;;;;;;;;;;x
-regalia_ereshkigal;Ereshkigal;;;;;;;;;;;;;x
-regalia_ereshkigal_desc;Nergal's dark magic.;;;;;;;;;;;;;x
-regalia_gespenst;Gespenst;;;;;;;;;;;;;x
-regalia_gespenst_desc;A regalia dark tome.;;;;;;;;;;;;;x
-regalia_luce;Luce;;;;;;;;;;;;;x
-regalia_luce_desc;A regalia light tome.;;;;;;;;;;;;;x
-regalia_excalibur_fe7;Excalibur;;;;;;;;;;;;;x
-regalia_excalibur_fe7_desc;A regalia wind tome.;;;;;;;;;;;;;x
-regalia_rienfleche;Rienfleche;;;;;;;;;;;;;x
-regalia_rienfleche_desc;A regalia bow.;;;;;;;;;;;;;x
-regalia_basilikos;Basilikos;;;;;;;;;;;;;x
-regalia_basilikos_desc;A regalia axe.;;;;;;;;;;;;;x
-regalia_rex_hasta;Rex Hasta;;;;;;;;;;;;;x
-regalia_rex_hasta_desc;A regalia lance.;;;;;;;;;;;;;x
-regalia_regal_blade;Regal Blade;;;;;;;;;;;;;x
-regalia_regal_blade_desc;A regalia sword.;;;;;;;;;;;;;x
 disinherited;Disinherited;;;;;;;;;;;;;x
 disinherited_desc;This character has been removed from the line of succession.;;;;;;;;;;;;;x
-fire_emblem_elibe;Fire Emblem;;;;;;;;;;;;;x
-fire_emblem_elibe_desc;The Fire Emblem of Elibe. No gem in existence is its equal.;;;;;;;;;;;;;x
 supreme_essence;Supreme Essence;;;;;;;;;;;;;x
 supreme_essence_desc;This character has absorbed a great deal of powerful quintessence.;;;;;;;;;;;;;x

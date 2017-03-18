@@ -1,0 +1,44 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ninis_grace;Ninis's Grace;;;;;;;;;;;;;x
+ninis_grace_desc;A ring once blessed by Ninis, a spirit of ice.;;;;;;;;;;;;;x
+fillas_might;Filla's Might;;;;;;;;;;;;;x
+fillas_might_desc;A ring once blessed by Filla, a spirit of fire.;;;;;;;;;;;;;x
+thors_ire;Thor's Ire;;;;;;;;;;;;;x
+thors_ire_desc;A ring once blessed by Thor, a spirit of lightning.;;;;;;;;;;;;;x
+sets_litany;Set's Litany;;;;;;;;;;;;;x
+sets_litany_desc;A ring once blessed by Set, a spirit of wind.;;;;;;;;;;;;;x
+delphi_shield;Delphi Shield;;;;;;;;;;;;;x
+delphi_shield_desc;An amulet of the god Delphi. Protects fliers from arrows.;;;;;;;;;;;;;x
+iron_rune;Iron Rune;;;;;;;;;;;;;x
+iron_rune_desc;A device that negates enemy critical attacks.;;;;;;;;;;;;;x
+boots;Boots;;;;;;;;;;;;;x
+boots_desc;Swiftsole boots that increase movement speed.;;;;;;;;;;;;;x
+arms_scroll;Arms Scroll;;;;;;;;;;;;;x
+arms_scroll_desc;A scroll with techniques on becoming more proficient with many different weapons.;;;;;;;;;;;;;x
+dracoshield;Dracoshield;;;;;;;;;;;;;x
+dracoshield_desc;A treasure said to improve defense.;;;;;;;;;;;;;x
+goddess_icon;Goddess Icon;;;;;;;;;;;;;x
+goddess_icon_desc;A treasure said to improve luck.;;;;;;;;;;;;;x
+secret_book;Secret Book;;;;;;;;;;;;;x
+secret_book_desc;A treasure said to improve skill.;;;;;;;;;;;;;x
+talisman;Talisman;;;;;;;;;;;;;x
+talisman_desc;A treasure said to improve resistance.;;;;;;;;;;;;;x
+elysian_whip;Elysian Whip;;;;;;;;;;;;;x
+elysian_whip_desc;For seasoned fliers.;;;;;;;;;;;;;x
+guiding_ring;Guiding Ring;;;;;;;;;;;;;x
+guiding_ring_desc;For seasoned magic users.;;;;;;;;;;;;;x
+hero_crest;Hero Crest;;;;;;;;;;;;;x
+hero_crest_desc;For seasoned infantry.;;;;;;;;;;;;;x
+knight_crest;Knight Crest;;;;;;;;;;;;;x
+knight_crest_desc;For seasoned knights.;;;;;;;;;;;;;x
+orions_bolt;Orion's Bolt;;;;;;;;;;;;;x
+orions_bolt_desc;For seasoned archers.;;;;;;;;;;;;;x
+silver_card;Silver Card;;;;;;;;;;;;;x
+silver_card_desc;A card that provides discounts at many shops.;;;;;;;;;;;;;x
+member_card;Member Card;;;;;;;;;;;;;x
+member_card_desc;A card that grants the bearer purchasing privileges at special shops.;;;;;;;;;;;;;x
+item.hunted;[relic_hunter.GetJobTitle] [relic_hunter.GetFirstName] has finally returned from [relic_hunter.GetHerHis] search. [relic_hunter.GetSheHeCap] has brought back a fine item!;;;;;;;;;;;;;x
+item.1.A;Finding artifacts is what I pay [relic_hunter.GetHerHim] for.;;;;;;;;;;;;;x
+item.1.B;I will pay [relic_hunter.GetHerHim] fairly for [relic_hunter.GetHerHis] effort.;;;;;;;;;;;;;x
+item.1.C;[relic_hunter.GetSheHeCap] has earned my favor.;;;;;;;;;;;;;x
+item.1.D;I shall praise [relic_hunter.GetHerHis] achievements!;;;;;;;;;;;;;x

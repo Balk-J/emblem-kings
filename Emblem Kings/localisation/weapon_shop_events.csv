@@ -1,0 +1,31 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+weapon_shop.welcome;What would you like to buy?;;;;;;;;;;;;;x
+weapon_shop.more;More...;;;;;;;;;;;;;x
+weapon_shop.exit;Exit;;;;;;;;;;;;;x
+weapon_shop.1.A;Iron Sword;;;;;;;;;;;;;x
+weapon_shop.1.B;Iron Lance;;;;;;;;;;;;;x
+weapon_shop.1.C;Iron Axe;;;;;;;;;;;;;x
+weapon_shop.2.A;Iron Bow;;;;;;;;;;;;;x
+weapon_shop.2.B;Tomes;;;;;;;;;;;;;x
+weapon_shop.3.A;Fire;;;;;;;;;;;;;x
+weapon_shop.3.B;Thunder;;;;;;;;;;;;;x
+weapon_shop.3.C;Wind;;;;;;;;;;;;;x
+weapon_shop.4.A;Lightning;;;;;;;;;;;;;x
+weapon_shop.4.B;Flux;;;;;;;;;;;;;x
+weapon_shop.swords;Swords;;;;;;;;;;;;;x
+weapon_shop.lances;Lances;;;;;;;;;;;;;x
+weapon_shop.axes;Axes;;;;;;;;;;;;;x
+weapon_shop.bows;Bows;;;;;;;;;;;;;x
+weapon_shop.tomes;Tomes;;;;;;;;;;;;;x
+weapon_shop.anima;Anima;;;;;;;;;;;;;x
+weapon_shop.light;Light;;;;;;;;;;;;;x
+weapon_shop.dark;Dark;;;;;;;;;;;;;x
+weapon_shop.fire;Fire Tomes;;;;;;;;;;;;;x
+weapon_shop.thunder;Thunder Tomes;;;;;;;;;;;;;x
+weapon_shop.wind;Wind Tomes;;;;;;;;;;;;;x
+weapon_shop..title;;;;;;;;;;;;;;x
+weapon_shop..desc;;;;;;;;;;;;;;x
+weapon_shop..A;;;;;;;;;;;;;;x
+weapon_shop..B;;;;;;;;;;;;;;x
+weapon_shop..C;;;;;;;;;;;;;;x
+weapon_shop..D;;;;;;;;;;;;;;x

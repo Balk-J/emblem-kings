@@ -1,0 +1,705 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_fire_emblem_elibe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\fire_emblem_elibe.dds"
+	}
+	spriteType = {
+		name = "GFX_fire_emblem_elibe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\fire_emblem_elibe_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_apocalypse"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_apocalypse.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_apocalypse_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_apocalypse_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_armads"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_armads.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_armads_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_armads_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_aureola"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_aureola.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_aureola_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_aureola_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_basilikos"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_basilikos.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_basilikos_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_basilikos_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_binding_blade"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_binding_blade.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_binding_blade_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_binding_blade_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_durandal"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_durandal.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_durandal_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_durandal_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_eckesachs"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_eckesachs.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_eckesachs_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_eckesachs_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_ereshkigal"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_ereshkigal.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_ereshkigal_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_ereshkigal_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_excalibur_fe7"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_excalibur_fe7.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_excalibur_fe7_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_excalibur_fe7_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_forblaze"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_forblaze.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_forblaze_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_forblaze_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_gespenst"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_gespenst.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_gespenst_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_gespenst_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_luce"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_luce.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_luce_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_luce_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_maltet"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_maltet.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_maltet_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_maltet_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_mani_katti"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mani_katti.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_mani_katti_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mani_katti_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_murgleis"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_murgleis.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_murgleis_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_murgleis_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_regal_blade"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_regal_blade.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_regal_blade_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_regal_blade_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_rex_hasta"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_rex_hasta.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_rex_hasta_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_rex_hasta_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_rienfleche"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_rienfleche.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_rienfleche_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_rienfleche_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_saints_staff"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_saints_staff.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_saints_staff_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_saints_staff_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_sol_katti"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_sol_katti.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_sol_katti_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_sol_katti_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_irkalla"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_irkalla.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_irkalla_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_irkalla_small.dds"
+	}
+	
+	# Weapons #
+	
+	#Swords
+	
+	
+	spriteType = {
+		name = "GFX_iron_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_iron_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_sword_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_steel_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_steel_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_sword_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_silver_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_silver_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_sword_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_iron_lance"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_iron_lance_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_lance_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_steel_lance"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_steel_lance_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_lance_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_silver_lance"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_silver_lance_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_lance_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_iron_axe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_axe.dds"
+	}
+	spriteType = {
+		name = "GFX_iron_axe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_axe_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_steel_axe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_axe.dds"
+	}
+	spriteType = {
+		name = "GFX_steel_axe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_axe_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_silver_axe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_axe.dds"
+	}
+	spriteType = {
+		name = "GFX_silver_axe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_axe_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_iron_bow"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_iron_bow_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\iron_bow_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_steel_bow"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_steel_bow_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\steel_bow_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_silver_bow"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_silver_bow_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\silver_bow_small.dds"
+	}
+	
+	# Tomes #
+	
+	spriteType = {
+		name = "GFX_fire"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\fire.dds"
+	}
+	spriteType = {
+		name = "GFX_fire_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\fire_small.dds"
+	}
+	spriteType = {
+		name = "GFX_elfire"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\elfire.dds"
+	}
+	spriteType = {
+		name = "GFX_elfire_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\elfire_small.dds"
+	}
+	spriteType = {
+		name = "GFX_bolganone"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\bolganone.dds"
+	}
+	spriteType = {
+		name = "GFX_bolganone_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\bolganone_small.dds"
+	}
+	spriteType = {
+		name = "GFX_thunder"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\thunder.dds"
+	}
+	spriteType = {
+		name = "GFX_thunder_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\thunder_small.dds"
+	}
+	spriteType = {
+		name = "GFX_elthunder"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\elthunder.dds"
+	}
+	spriteType = {
+		name = "GFX_elthunder_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\elthunder_small.dds"
+	}
+	spriteType = {
+		name = "GFX_thoron"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\thoron.dds"
+	}
+	spriteType = {
+		name = "GFX_thoron_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\thoron_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wind"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\wind.dds"
+	}
+	spriteType = {
+		name = "GFX_wind_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\wind_small.dds"
+	}
+	spriteType = {
+		name = "GFX_elwind"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\elwind.dds"
+	}
+	spriteType = {
+		name = "GFX_elwind_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\elwind_small.dds"
+	}
+	spriteType = {
+		name = "GFX_tornado"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\tornado.dds"
+	}
+	spriteType = {
+		name = "GFX_tornado_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\tornado_small.dds"
+	}
+	spriteType = {
+		name = "GFX_lightning"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\lightning.dds"
+	}
+	spriteType = {
+		name = "GFX_lightning_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\lightning_small.dds"
+	}
+	spriteType = {
+		name = "GFX_shine"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\shine.dds"
+	}
+	spriteType = {
+		name = "GFX_shine_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\shine_small.dds"
+	}
+	spriteType = {
+		name = "GFX_aura"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\aura.dds"
+	}
+	spriteType = {
+		name = "GFX_aura_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\aura_small.dds"
+	}
+	spriteType = {
+		name = "GFX_flux"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\flux.dds"
+	}
+	spriteType = {
+		name = "GFX_flux_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\flux_small.dds"
+	}
+	spriteType = {
+		name = "GFX_worm"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\worm.dds"
+	}
+	spriteType = {
+		name = "GFX_worm_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\worm_small.dds"
+	}
+	spriteType = {
+		name = "GFX_fenrir"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\fenrir.dds"
+	}
+	spriteType = {
+		name = "GFX_fenrir_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\fenrir_small.dds"
+	}
+	
+	# Kind of special stuff
+	
+	spriteType = {
+		name = "GFX_brave_axe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_axe.dds"
+	}
+	spriteType = {
+		name = "GFX_brave_axe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_axe_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_brave_bow"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_brave_bow_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_bow_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_brave_lance"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_brave_lance_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_lance_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_brave_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_brave_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\brave_sword_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\.dds"
+	}
+	spriteType = {
+		name = "GFX__small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\.dds"
+	}
+	spriteType = {
+		name = "GFX__small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_killer_axe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killer_axe.dds"
+	}
+	spriteType = {
+		name = "GFX_killer_axe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killer_axe_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_killer_bow"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killer_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_killer_bow_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killer_bow_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_killer_lance"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killer_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_killer_lance_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killer_lance_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_killing_edge"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killing_edge.dds"
+	}
+	spriteType = {
+		name = "GFX_killing_edge_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killing_edge_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_glass_axe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_axe.dds"
+	}
+	spriteType = {
+		name = "GFX_glass_axe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_axe_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_glass_bow"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_glass_bow_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_bow_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_glass_lance"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_glass_lance_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_lance_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_glass_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_glass_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\glass_sword_small.dds"
+	}
+	
+	# Items
+	
+	spriteType = {
+		name = "GFX_ninis_grace"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\ninis_grace.dds"
+	}
+	spriteType = {
+		name = "GFX_ninis_grace_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\ninis_grace_small.dds"
+	}
+	spriteType = {
+		name = "GFX_fillas_might"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\fillas_might.dds"
+	}
+	spriteType = {
+		name = "GFX_fillas_might_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\fillas_might_small.dds"
+	}
+	spriteType = {
+		name = "GFX_thors_ire"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\thors_ire.dds"
+	}
+	spriteType = {
+		name = "GFX_thors_ire_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\thors_ire_small.dds"
+	}
+	spriteType = {
+		name = "GFX_sets_litany"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\sets_litany.dds"
+	}
+	spriteType = {
+		name = "GFX_sets_litany_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\sets_litany_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_delphi_shield"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\delphi_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_delphi_shield_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\delphi_shield_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_iron_rune"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\iron_rune.dds"
+	}
+	spriteType = {
+		name = "GFX_iron_rune_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\iron_rune_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_boots"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\boots.dds"
+	}
+	spriteType = {
+		name = "GFX_boots_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\boots_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_arms_scroll"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\arms_scroll.dds"
+	}
+	spriteType = {
+		name = "GFX_arms_scroll_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\arms_scroll_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dracoshield"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\dracoshield.dds"
+	}
+	spriteType = {
+		name = "GFX_dracoshield_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\dracoshield_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goddess_icon"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\goddess_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_goddess_icon_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\goddess_icon_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_secret_book"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\secret_book.dds"
+	}
+	spriteType = {
+		name = "GFX_secret_book_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\secret_book_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_talisman"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\talisman.dds"
+	}
+	spriteType = {
+		name = "GFX_talisman_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\talisman_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_elysian_whip"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\elysian_whip.dds"
+	}
+	spriteType = {
+		name = "GFX_elysian_whip_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\elysian_whip_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_guiding_ring"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\guiding_ring.dds"
+	}
+	spriteType = {
+		name = "GFX_guiding_ring_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\guiding_ring_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hero_crest"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\hero_crest.dds"
+	}
+	spriteType = {
+		name = "GFX_hero_crest_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\hero_crest_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_knight_crest"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\knight_crest.dds"
+	}
+	spriteType = {
+		name = "GFX_knight_crest_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\knight_crest_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_orions_bolt"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\orions_bolt.dds"
+	}
+	spriteType = {
+		name = "GFX_orions_bolt_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\orions_bolt_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_silver_card"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\silver_card.dds"
+	}
+	spriteType = {
+		name = "GFX_silver_card_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\silver_card_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_member_card"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\member_card.dds"
+	}
+	spriteType = {
+		name = "GFX_member_card_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\member_card_small.dds"
+	}
+	
+}

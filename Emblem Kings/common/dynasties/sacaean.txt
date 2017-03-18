@@ -111,7 +111,7 @@
 507={
 	can_appear=no
 	used_for_random=no
-	name="Wodao"
+	name="Wato"
 	culture="sacaean"
 	coat_of_arms = {
 		religion="divine_sky_pagan"

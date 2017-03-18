@@ -3,9 +3,10 @@ obj_acquire_regalia = {
 	type = character
 	
 	potential = {
+		#has_dlc = "Mystics"
 		is_adult = yes
 		is_playable = yes
-		NOT = { has_character_modifier = owns_regalia }
+		NOT = { any_artifact = { has_artifact_flag = regalia } }
 		OR = {
 			ai = no
 			AND = {
@@ -29,6 +30,7 @@ obj_acquire_regalia = {
 		is_adult = yes
 		prisoner = no		
 		OR = {
+			ai = no
 			trait = ambitious	
 			trait = envious
 			trait = greedy
@@ -105,7 +107,10 @@ obj_acquire_regalia = {
 	success = {
 		custom_tooltip = {
 			text = obj_acquire_regalia_success
-			hidden_tooltip = { has_character_modifier = owns_regalia }
+			#hidden_tooltip = { has_character_modifier = owns_regalia }
+			any_artifact = {
+				has_artifact_flag = regalia
+			}
 		}	
 	}
 	abort = {

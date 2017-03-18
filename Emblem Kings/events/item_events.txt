@@ -1,0 +1,38 @@
+namespace = item
+
+# Add item!
+character_event = {
+    id = item.1
+    desc = item.hunted
+    picture = GFX_evt_relic_box
+
+    is_triggered_only = yes
+
+    option = { #it's their duty
+        name = item.1.A
+		add_item_effect = yes
+        artifact_duty_effect = yes
+    }
+
+    option = { #monetary reward
+        name = item.1.B
+		add_item_effect = yes
+        artifact_money_effect = yes
+    }
+    
+    option = { #reward them with a favor
+        name = item.1.C
+		add_item_effect = yes
+        artifact_favor_effect = yes
+    }
+
+    option = { #praise them (prestige reward)
+    	trigger = {
+			diplomacy = 15
+		}
+        name = item.1.D
+		add_item_effect = yes
+        artifact_prestige_effect = yes
+    }
+    after = { clr_artifact_flagsmodifiers_effect = yes }
+}

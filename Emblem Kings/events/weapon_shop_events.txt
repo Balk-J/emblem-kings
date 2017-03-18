@@ -1,0 +1,729 @@
+namespace = weapon_shop
+
+# Level 1
+character_event = {
+	id = weapon_shop.1
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.1.A	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_sword
+	}
+	option = {
+		name = weapon_shop.1.B	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_lance
+	}
+	option = {
+		name = weapon_shop.1.C	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_axe
+	}
+	option = {
+		name = weapon_shop.more
+		hidden_tooltip = { character_event = { id = weapon_shop.2 } }
+	}
+}
+
+character_event = {
+	id = weapon_shop.2
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.2.A	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_bow
+	}
+	option = {
+		name = weapon_shop.2.B	
+		hidden_tooltip = { character_event = { id = weapon_shop.3 } }
+	}
+	option = {
+		name = weapon_shop.exit	
+	}
+}
+
+character_event = {
+	id = weapon_shop.3
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.3.A	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = fire
+	}
+	option = {
+		name = weapon_shop.3.B	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = thunder
+	}
+	option = {
+		name = weapon_shop.3.C	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = wind
+	}
+	option = {
+		name = weapon_shop.more
+		hidden_tooltip = { character_event = { id = weapon_shop.4 } }
+	}
+}
+
+character_event = {
+	id = weapon_shop.4
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.4.A	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = lightning
+	}
+	option = {
+		name = weapon_shop.4.B	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = flux
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+# Level 2
+character_event = {
+	id = weapon_shop.5
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.swords	
+		hidden_tooltip = { character_event = { id = weapon_shop.6 } }
+	}
+	option = {
+		name = weapon_shop.lances	
+		hidden_tooltip = { character_event = { id = weapon_shop.7 } }
+	}
+	option = {
+		name = weapon_shop.axes
+		hidden_tooltip = { character_event = { id = weapon_shop.8 } }
+	}
+	option = {
+		name = weapon_shop.more	
+		hidden_tooltip = { character_event = { id = weapon_shop.9 } }
+	}
+}
+
+character_event = {
+	id = weapon_shop.6
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_sword
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_sword
+	}
+	option = {
+		name = steel_sword	
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_sword
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.7
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_lance	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_lance
+	}
+	option = {
+		name = steel_lance
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_lance
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.8
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_axe	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_axe
+	}
+	option = {
+		name = steel_axe
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_axe
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.9
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.bows
+		hidden_tooltip = { character_event = { id = weapon_shop.10 } }
+	}
+	option = {
+		name = weapon_shop.tomes	
+		hidden_tooltip = { character_event = { id = weapon_shop.11 } }
+	}
+	option = {
+		name = weapon_shop.exit	
+	}
+}
+
+character_event = {
+	id = weapon_shop.10
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_bow
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_bow
+	}
+	option = {
+		name = steel_bow
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_bow
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.11
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.anima
+		hidden_tooltip = { character_event = { id = weapon_shop.12 } }
+	}
+	option = {
+		name = weapon_shop.light
+		hidden_tooltip = { character_event = { id = weapon_shop.16 } }
+	}
+	option = {
+		name = weapon_shop.dark
+		hidden_tooltip = { character_event = { id = weapon_shop.17 } }
+	}
+	option = {
+		name = weapon_shop.exit	
+	}
+}
+
+character_event = {
+	id = weapon_shop.12
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.fire
+		hidden_tooltip = { character_event = { id = weapon_shop.13 } }
+	}
+	option = {
+		name = weapon_shop.thunder
+		hidden_tooltip = { character_event = { id = weapon_shop.14 } }
+	}
+	option = {
+		name = weapon_shop.wind
+		hidden_tooltip = { character_event = { id = weapon_shop.15 } }
+	}
+	option = {
+		name = weapon_shop.exit	
+	}
+}
+
+character_event = {
+	id = weapon_shop.13
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fire
+		buy_tier_1_weapon_effect = yes
+		add_artifact = fire
+	}
+	option = {
+		name = elfire
+		buy_tier_2_weapon_effect = yes
+		add_artifact = elfire
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.14
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = thunder
+		buy_tier_1_weapon_effect = yes
+		add_artifact = thunder
+	}
+	option = {
+		name = elthunder
+		buy_tier_2_weapon_effect = yes
+		add_artifact = elthunder
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.15
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wind
+		buy_tier_1_weapon_effect = yes
+		add_artifact = wind
+	}
+	option = {
+		name = elwind
+		buy_tier_2_weapon_effect = yes
+		add_artifact = elwind
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.16
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lightning
+		buy_tier_1_weapon_effect = yes
+		add_artifact = lightning
+	}
+	option = {
+		name = shine
+		buy_tier_2_weapon_effect = yes
+		add_artifact = shine
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.17
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flux
+		buy_tier_1_weapon_effect = yes
+		add_artifact = flux
+	}
+	option = {
+		name = worm
+		buy_tier_2_weapon_effect = yes
+		add_artifact = worm
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+# Level 3
+character_event = {
+	id = weapon_shop.18
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.swords	
+		hidden_tooltip = { character_event = { id = weapon_shop.19 } }
+	}
+	option = {
+		name = weapon_shop.lances	
+		hidden_tooltip = { character_event = { id = weapon_shop.20 } }
+	}
+	option = {
+		name = weapon_shop.axes
+		hidden_tooltip = { character_event = { id = weapon_shop.21 } }
+	}
+	option = {
+		name = weapon_shop.more	
+		hidden_tooltip = { character_event = { id = weapon_shop.22 } }
+	}
+}
+
+character_event = {
+	id = weapon_shop.19
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_sword
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_sword
+	}
+	option = {
+		name = steel_sword	
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_sword
+	}
+	option = {
+		name = silver_sword
+		buy_tier_3_weapon_effect = yes
+		add_artifact = silver_sword
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.20
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_lance	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_lance
+	}
+	option = {
+		name = steel_lance
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_lance
+	}
+	option = {
+		name = silver_lance
+		buy_tier_3_weapon_effect = yes
+		add_artifact = silver_lance
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.21
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_axe	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_axe
+	}
+	option = {
+		name = steel_axe
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_axe
+	}
+	option = {
+		name = silver_axe
+		buy_tier_3_weapon_effect = yes
+		add_artifact = silver_axe 
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.22
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.bows
+		hidden_tooltip = { character_event = { id = weapon_shop.23 } }
+	}
+	option = {
+		name = weapon_shop.tomes	
+		hidden_tooltip = { character_event = { id = weapon_shop.24 } }
+	}
+	option = {
+		name = weapon_shop.exit	
+	}
+}
+
+character_event = {
+	id = weapon_shop.23
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iron_bow	
+		buy_tier_1_weapon_effect = yes
+		add_artifact = iron_bow
+	}
+	option = {
+		name = steel_bow
+		buy_tier_2_weapon_effect = yes
+		add_artifact = steel_bow
+	}
+	option = {
+		name = silver_bow
+		buy_tier_3_weapon_effect = yes
+		add_artifact = silver_bow 
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+character_event = {
+	id = weapon_shop.24
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.anima
+		hidden_tooltip = { character_event = { id = weapon_shop.25 } }
+	}
+	option = {
+		name = weapon_shop.light
+		hidden_tooltip = { character_event = { id = weapon_shop.29 } }
+	}
+	option = {
+		name = weapon_shop.dark
+		hidden_tooltip = { character_event = { id = weapon_shop.30 } }
+	}
+	option = {
+		name = weapon_shop.exit	
+	}
+}
+
+character_event = {
+	id = weapon_shop.25
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = weapon_shop.fire
+		hidden_tooltip = { character_event = { id = weapon_shop.26 } }
+	}
+	option = {
+		name = weapon_shop.thunder
+		hidden_tooltip = { character_event = { id = weapon_shop.27 } }
+	}
+	option = {
+		name = weapon_shop.wind
+		hidden_tooltip = { character_event = { id = weapon_shop.28 } }
+	}
+	option = {
+		name = weapon_shop.exit	
+	}
+}
+
+character_event = {
+	id = weapon_shop.26
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fire
+		buy_tier_1_weapon_effect = yes
+		add_artifact = fire
+	}
+	option = {
+		name = elfire
+		buy_tier_2_weapon_effect = yes
+		add_artifact = elfire
+	}
+	option = {
+		name = bolganone
+		buy_tier_3_weapon_effect = yes
+		add_artifact = bolganone
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.27
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = thunder
+		buy_tier_1_weapon_effect = yes
+		add_artifact = thunder
+	}
+	option = {
+		name = elthunder
+		buy_tier_2_weapon_effect = yes
+		add_artifact = elthunder
+	}
+	option = {
+		name = thoron
+		buy_tier_3_weapon_effect = yes
+		add_artifact = thoron
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.28
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wind
+		buy_tier_1_weapon_effect = yes
+		add_artifact = wind
+	}
+	option = {
+		name = elwind
+		buy_tier_2_weapon_effect = yes
+		add_artifact = elwind
+	}
+	option = {
+		name = tornado
+		buy_tier_3_weapon_effect = yes
+		add_artifact = tornado
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.29
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lightning
+		buy_tier_1_weapon_effect = yes
+		add_artifact = lightning
+	}
+	option = {
+		name = shine
+		buy_tier_2_weapon_effect = yes
+		add_artifact = shine
+	}
+	option = {
+		name = aura
+		buy_tier_3_weapon_effect = yes
+		add_artifact = aura
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}
+
+character_event = {
+	id = weapon_shop.30
+	desc = weapon_shop.welcome
+	picture = GFX_evt_weapon_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flux
+		buy_tier_1_weapon_effect = yes
+		add_artifact = flux
+	}
+	option = {
+		name = worm
+		buy_tier_2_weapon_effect = yes
+		add_artifact = worm
+	}
+	option = {
+		name = fenrir
+		buy_tier_3_weapon_effect = yes
+		add_artifact = fenrir
+	}
+	option = {
+		name = weapon_shop.exit
+	}
+}

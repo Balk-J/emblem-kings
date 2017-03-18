@@ -240,12 +240,12 @@ on_yearly_pulse = {
 		100 = RoI.158
 		100 = RoI.163
 		100 = RoI.180
-		100 = RoI.190
+#		100 = RoI.190 # Indus U-boat CTD
 		50 = RoI.401
-		100 = RoI.403
+#		100 = RoI.403 # Visit the Ganges event, also checks for a nonexistant province
 		100 = RoI.410
 		100 = RoI.411
-		200 = RoI.412
+#		200 = RoI.412 # Can fire when Indian religions are removed, and we don't want it to.
 		500 = RoI.500
 		
 		# Indian low religious authority events
@@ -1525,8 +1525,9 @@ on_death = {
 		# FE #
 		fe7.1 # Death of Nergal
 		#fe7.4 # Death of Lundgren
-		regalia.19 # Death of a regalia holder
-		fire_emblem.1 # Death of the Fire Emblem holder
+		
+		#regalia.19 # Death of a regalia holder - DEPRECATED; replaced by artifact inheritance
+		#fire_emblem.1 # Death of the Fire Emblem holder - DEPRECATED; replaced by artifact inheritance
 	}
 	random_events = {
 		1 = RIP.29800 #reincarnation investigation

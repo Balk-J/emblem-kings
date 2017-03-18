@@ -38,6 +38,9 @@ character_event = {
 			}
 		}
 		
+		# Artifacts
+		character_event = { id = startup_artifacts.1 }
+		
 		# Create immortal characters via event, so they look the appropriate age
 		if = { # Athos and Bramimond
 			limit = { 

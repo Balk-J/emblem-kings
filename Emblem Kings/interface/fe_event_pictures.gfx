@@ -7,6 +7,26 @@ spriteTypes = {
 	# Conclave
 	
 	spriteType = {
+		name = "GFX_evt_weapon_shop"
+		texturefile = "gfx\\event_pictures\weapon_shop.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_item_shop"
+		texturefile = "gfx\\event_pictures\item_shop.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_weapon_shop_anna"
+		texturefile = "gfx\\event_pictures\weapon_shop_anna.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_item_shop_anna"
+		texturefile = "gfx\\event_pictures\item_shop_anna.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_armory"
 		texturefile = "gfx\\event_pictures\armory.tga"
 		allwaystransparent = yes

@@ -346,7 +346,6 @@
 	800.01.01 = {  
 		effect={
 			set_character_flag=lore_quintessence
-			set_character_flag=lore_morphs
 		}
 		add_trait="cruel"
 		add_trait="wroth"
@@ -359,6 +358,9 @@
 	#You fools will become corpses here, because I wish it to be.
 	
 	820.01.01 = {  
+		effect={
+			set_character_flag=lore_morphs
+		}
 		add_trait="scarred"
 		remove_trait="maimed"
 	}
