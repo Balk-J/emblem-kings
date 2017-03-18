@@ -306,3 +306,22 @@ can_equip_staff_trigger = {
 		trait = class_war_priest
 	}
 }
+
+# Fire Emblem related conditions
+
+fire_emblem_in_realm_trigger = {
+	# should be called for the liege whose primary title has fire emblem succession
+	#OR = {
+		AND = {
+			primary_title = { region = world_elibe }	
+			OR = {
+				has_artifact = fire_emblem_elibe
+				any_realm_character = {
+					has_artifact = fire_emblem_elibe
+					prisoner = no
+				}
+			}
+		}
+		# Add more region-specific emblems here			
+	#}
+}

@@ -1,7 +1,7 @@
 targetted_decisions = {
 	demand_fire_emblem = {
 		only_playable = yes
-		filter = sub_realm
+		filter = all
 		ai_target_filter = sub_realm
 		
 		from_potential = {
@@ -12,41 +12,26 @@ targetted_decisions = {
 			primary_title = {
 				has_title_flag = fire_emblem_succession	
 			}	
-			NOT={#NOR = {
-				has_character_modifier = holds_fire_emblem
-				#any_realm_character  = {
-				#	has_character_modifier = holds_fire_emblem
+			NOT = { 
+				#OR = {
+					AND = {
+						primary_title = { region = world_elibe }	
+						has_artifact = fire_emblem_elibe
+					}
+					# Add more region-specific emblems here			
 				#}
-			}
-			NOR = {
-				AND = {
-					primary_title = {
-						region = world_elibe
-					}	
-					#OR = {
-						trait = fire_emblem_elibe
-					#	any_realm_character = {
-					#		trait = fire_emblem_elibe
-					#		prisoner = no
-					#	}
-					#}
-					
-				}
 			}
 		}
 		
 		potential = {	
-			has_character_modifier = holds_fire_emblem
-			OR = {
-				AND = {
+#			OR = {
+#				AND = {
 					FROM = {
-						primary_title = {
-							region = world_elibe
-						}	
+						primary_title = { region = world_elibe }
 					}
-					trait = fire_emblem_elibe					
-				}
-			}
+					has_artifact = fire_emblem_elibe					
+#				}
+#			}
 		}
 		
 		allow = {
@@ -97,20 +82,7 @@ targetted_decisions = {
 			modifier = {
 				factor = 0.01
 				FROM = {
-					any_realm_character  = {
-						has_character_modifier = holds_fire_emblem
-						OR = {
-							AND = {
-								primary_title = {
-									region = world_elibe
-								}	
-								any_realm_character = {
-									trait = fire_emblem_elibe
-									prisoner = no
-								}					
-							}
-						}
-					}
+					fire_emblem_in_realm_trigger = yes
 				}
 			}
 			# Important to me
@@ -136,6 +108,7 @@ targetted_decisions = {
 		}
 	}
 	
+	# Add another one of these for each different emblem, so the player can take the right one if they have multiple?
 	take_fire_emblem_from_prisoner = {
 		only_playable = yes
 		filter = court
@@ -156,18 +129,18 @@ targetted_decisions = {
 
 		allow = {
 			prisoner = yes
-			has_character_modifier = holds_fire_emblem
+			has_artifact = fire_emblem_elibe
 		}
 
 		effect = {
-			FROM = { add_character_modifier = { name = holds_fire_emblem duration = -1 } }
-			if = {
+			random_artifact = {
 				limit = {
-					trait = fire_emblem_elibe
+					artifact_type = fire_emblem_elibe
 				}
-				remove_trait = fire_emblem_elibe
-				remove_character_modifier = holds_fire_emblem
-				FROM = { add_trait = fire_emblem_elibe }
+				transfer_artifact = {
+					from = PREV
+					to = FROM
+				}
 			}
 
 			prisoner = no

@@ -1,128 +1,8 @@
 namespace = fire_emblem
 
 # Death of the Fire Emblem holder
-character_event = {
-	id = fire_emblem.1
-	
-	hide_window = yes 
-	
-	is_triggered_only = yes
-	
-	trigger = {		
-		has_character_modifier = holds_fire_emblem 
-	}
-	
-	immediate = {
-		ROOT = { save_event_target_as = last_fire_emblem_owner }
-		if = { 
-			limit = { 
-				is_ruler = yes
-				current_heir = { 
-					dynasty = ROOT 
-					is_alive = yes  
-					NOT = { has_character_modifier = holds_fire_emblem } 
-				}
-			}
-			current_heir = {
-				#
-				character_event = { id = fire_emblem.5 }
-			}
-			set_character_flag = fire_emblem_heir_found
-		}
-		if = { 
-			limit = { NOT = { has_character_flag = fire_emblem_heir_found } is_patrician = yes }
-			family_palace = {
-				current_heir = { 
-					if = {
-						limit = { NOT = { has_character_modifier = holds_fire_emblem  } }
-						#
-						character_event = { id = fire_emblem.5 }
-						ROOT = { set_character_flag = fire_emblem_heir_found }
-					}	
-				}					
-			}				
-		}
-		if = { 
-			limit = { NOT = { has_character_flag = fire_emblem_heir_found } }
-			random_child = {
-				limit = { dynasty = ROOT is_alive = yes NOT = { has_character_modifier = holds_fire_emblem } }
-				character_event = { id = fire_emblem.5 }
-				ROOT = { set_character_flag = fire_emblem_heir_found }
-			}	
-		}	
-		if = {
-			limit = { NOT = { has_character_flag = fire_emblem_heir_found } }
-			random_sibling = {
-				limit = { dynasty = ROOT is_alive = yes NOT = { has_character_modifier = holds_fire_emblem } }
-				character_event = { id = fire_emblem.5 }
-				ROOT = { set_character_flag = fire_emblem_heir_found }
-			}	
-		}	
-		if = {
-			limit = { NOT = { has_character_flag = fire_emblem_heir_found } }
-			random_dynasty_member = {
-				limit = { is_alive = yes NOT = { has_character_modifier = holds_fire_emblem } }
-				character_event = { id = fire_emblem.5 }
-				ROOT = { set_character_flag = fire_emblem_heir_found }
-			}
-		}
-		if = {
-			limit = { NOT = { has_character_flag = fire_emblem_heir_found } }
-			random_child = {
-				limit = { is_primary_heir = yes is_alive = yes NOT = { has_character_modifier = holds_fire_emblem } }
-				character_event = { id = fire_emblem.5 }
-				ROOT = { set_character_flag = fire_emblem_heir_found }
-			}
-		}
-		if = {
-			limit = { NOT = { has_character_flag = fire_emblem_heir_found } }
-			random_child = {
-				limit = { is_alive = yes NOT = { has_character_modifier = holds_fire_emblem } }
-				character_event = { id = fire_emblem.5 }
-				ROOT = { set_character_flag = fire_emblem_heir_found }
-			}
-		}
-		if = {
-			limit = { 
-				NOT = { has_character_flag = fire_emblem_heir_found }
-				spouse = { is_alive = yes NOT = { has_character_modifier = holds_fire_emblem } }		
-			}
-			spouse = { character_event = { id = fire_emblem.5 } }
-			set_character_flag = fire_emblem_heir_found
-		}
-		if = {
-			limit = { 
-				NOT = { has_character_flag = fire_emblem_heir_found }	
-				liege = { NOT = { character = ROOT } NOT = { has_character_modifier = holds_fire_emblem } }
-			}
-			liege = { character_event = { id = fire_emblem.5 } }
-			set_character_flag = fire_emblem_heir_found
-		}
-		if = {
-			limit = { 
-				NOT = { has_character_flag = fire_emblem_heir_found }	
-				current_heir = { NOT = { character = ROOT } NOT = { has_character_modifier = holds_fire_emblem } }
-			}
-			current_heir = { 
-				#
-				character_event = { id = fire_emblem.5 }
-			}
-			set_character_flag = fire_emblem_heir_found
-		}
-		if = {
-			limit = { 
-				NOT = { has_character_flag = fire_emblem_heir_found }	
-			}
-			random_vassal = { 
-				limit = { NOT = { has_character_modifier = holds_fire_emblem } }
-				#
-				character_event = { id = fire_emblem.5 }
-			}
-		}
-		clr_character_flag = fire_emblem_heir_found
-			
-	}		
-}
+#id = fire_emblem.1
+
 
 character_event = {
 	id = fire_emblem.2
@@ -146,31 +26,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					OR = {
-						has_character_modifier = holds_fire_emblem
-						any_realm_character = {
-							has_character_modifier = holds_fire_emblem
-							prisoner = no
-						}
-					}	
-					
-					# Make sure it's the right Fire Emblem...
-					OR = {
-						AND = {
-							primary_title = {
-								region = world_elibe
-							}	
-							OR = {
-								trait = fire_emblem_elibe
-								any_realm_character = {
-									trait = fire_emblem_elibe
-									prisoner = no
-								}
-							}
-							
-						}
-					}
-					#
+					fire_emblem_in_realm_trigger = yes
 				}
 			}
 			liege = {
@@ -181,30 +37,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					NOR = {
-						has_character_modifier = holds_fire_emblem
-						any_realm_character = {
-							has_character_modifier = holds_fire_emblem
-							prisoner = no
-						}
-					}	
-					# Make sure it's the right Fire Emblem...
-					NOR = {
-						AND = {
-							primary_title = {
-								region = world_elibe
-							}	
-							OR = {
-								trait = fire_emblem_elibe
-								any_realm_character = {
-									trait = fire_emblem_elibe
-									prisoner = no
-								}
-							}
-							
-						}
-					}
-					#			
+					NOT = { fire_emblem_in_realm_trigger = yes }			
 				}
 			}
 			liege = {
@@ -269,27 +102,8 @@ character_event = {
 	}
 }
 
-character_event = {
-	id = fire_emblem.5
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-		
-		if = {
-			limit = {
-				event_target:last_fire_emblem_owner = {
-					trait = fire_emblem_elibe
-					#has_character_flag = fire_emblem_elibe
-				}
-			}
-			#set_character_flag = fire_emblem_elibe	
-			add_trait = fire_emblem_elibe	
-		}
-	}
-}
+# Hand out the FE to its new owner. 
+# id = fire_emblem.5
 
 # Holder of the Fire Emblem is asked for its return by its rightful owner
 character_event = {
@@ -390,15 +204,22 @@ character_event = {
 	option = {
 		name = "EXCELLENT"
 		#hidden_tooltip = {
-			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
 			FROM = {
 				if = {
 					limit = {
-						trait = fire_emblem_elibe
+						has_artifact = fire_emblem_elibe
+						ROOT = { primary_title = { region = world_elibe } }
 					}
-					remove_trait = fire_emblem_elibe
-					remove_character_modifier = holds_fire_emblem
-					ROOT = { add_trait = fire_emblem_elibe }
+					
+					random_artifact = {
+						limit = {
+							artifact_type = fire_emblem_elibe
+						}
+						transfer_artifact = {
+							from = PREV
+							to = ROOT
+						}
+					}
 				}
 				
 				if = {

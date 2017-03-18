@@ -22,13 +22,7 @@ character_event = {
 			at_location = ROOT # The Plot Head needs to be at the target's location to get a chance
 			
 			liege = {
-				OR = {
-					has_character_modifier = holds_fire_emblem
-					any_realm_character = {
-						has_character_modifier = holds_fire_emblem
-						prisoner = no
-					}
-				}
+				fire_emblem_in_realm_trigger = yes
 			}
 		}
 		NOT = { has_character_flag = disinherit_in_motion }
@@ -248,13 +242,7 @@ character_event = {
 				NOT = { trait = incapable }
 				NOT = { is_inaccessible_trigger = yes }
 				liege = {
-					OR = {
-						has_character_modifier = holds_fire_emblem
-						any_realm_character = {
-							has_character_modifier = holds_fire_emblem
-							prisoner = no
-						}
-					}
+					fire_emblem_in_realm_trigger = yes
 				}
 			}
 			NOT = { has_character_flag = disinherit_in_motion }
@@ -876,7 +864,6 @@ character_event = {
 				new_character = {
 					set_variable = { which = "level" value = 1 }
 					set_character_flag = fire_emblem_thief
-					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
 					
 					opinion = {
 						modifier = opinion_employer
@@ -894,49 +881,29 @@ character_event = {
 								}
 							}
 						}
-						add_trait = fire_emblem_elibe
 						
-						FROM = {
-							liege = {
-								if = {
-									limit = {
-										NOT = {trait = fire_emblem_elibe}
-									}
-									random_realm_character = {
-										limit = {
-											trait = fire_emblem_elibe
-										}
-										remove_trait = fire_emblem_elibe
-										remove_character_modifier = holds_fire_emblem
-										opinion = {
-											modifier = opinion_dirty_thief
-											who = PREVPREVPREV
-											years = 10
-										} 
-										reverse_opinion = {
-											modifier = opinion_job_target
-											who = PREVPREVPREV
-											years = 10
-										}
-									}
+						random_character = {
+							limit = {
+								has_artifact = fire_emblem_elibe
+							}
+							random_artifact = {
+								limit = {
+									artifact_type = fire_emblem_elibe
 								}
-								if = {
-									limit = {
-										trait = fire_emblem_elibe
-									}
-									remove_trait = fire_emblem_elibe
-									remove_character_modifier = holds_fire_emblem
-									opinion = {
-										modifier = opinion_dirty_thief
-										who = PREVPREV
-										years = 10
-									} 
-									reverse_opinion = {
-										modifier = opinion_job_target
-										who = PREVPREV
-										years = 10
-									}
+								transfer_artifact = {
+									from = PREV
+									to = PREVPREV
 								}
+							}
+							opinion = {
+								modifier = opinion_dirty_thief
+								who = PREV
+								years = 10
+							} 
+							reverse_opinion = {
+								modifier = opinion_job_target
+								who = PREV
+								years = 10
 							}
 						}
 					}	
@@ -993,7 +960,6 @@ character_event = {
 				new_character = {
 					set_variable = { which = "level" value = 1 }
 					set_character_flag = fire_emblem_thief
-					add_character_modifier = { name = holds_fire_emblem duration = -1 } 
 					
 					opinion = {
 						modifier = opinion_employer
@@ -1011,49 +977,28 @@ character_event = {
 								}
 							}
 						}
-						add_trait = fire_emblem_elibe
-						
-						FROM = {
-							liege = {
-								if = {
-									limit = {
-										NOT = {trait = fire_emblem_elibe}
-									}
-									random_realm_character = {
-										limit = {
-											trait = fire_emblem_elibe
-										}
-										remove_trait = fire_emblem_elibe
-										remove_character_modifier = holds_fire_emblem
-										opinion = {
-											modifier = opinion_dirty_thief
-											who = PREVPREVPREV
-											years = 10
-										} 
-										reverse_opinion = {
-											modifier = opinion_job_target
-											who = PREVPREVPREV
-											years = 10
-										}
-									}
+						random_character = {
+							limit = {
+								has_artifact = fire_emblem_elibe
+							}
+							random_artifact = {
+								limit = {
+									artifact_type = fire_emblem_elibe
 								}
-								if = {
-									limit = {
-										trait = fire_emblem_elibe
-									}
-									remove_trait = fire_emblem_elibe
-									remove_character_modifier = holds_fire_emblem
-									opinion = {
-										modifier = opinion_dirty_thief
-										who = PREVPREV
-										years = 10
-									} 
-									reverse_opinion = {
-										modifier = opinion_job_target
-										who = PREVPREV
-										years = 10
-									}
+								transfer_artifact = {
+									from = PREV
+									to = PREVPREV
 								}
+							}
+							opinion = {
+								modifier = opinion_dirty_thief
+								who = PREV
+								years = 10
+							} 
+							reverse_opinion = {
+								modifier = opinion_job_target
+								who = PREV
+								years = 10
 							}
 						}
 					}	

@@ -49,18 +49,9 @@
 	trait="cruel"
 	trait="deceitful"
 	trait="paranoid"
-	#intrigue = 90
+	intrigue = 70
 	1122.1.1={
 		birth=yes
-		#add_trait="regalia_eckesachs"
-#		add_trait="fire_emblem_elibe"
-#		effect = {
-			#add_character_modifier = { name = "owns_regalia" duration = -1 }  
-			#set_character_flag="regalia_inherit"
-			
-#			add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-			#set_character_flag = fire_emblem_elibe	
-#		}
 	}
 	1134.01.01={
 		add_trait="class_knight"

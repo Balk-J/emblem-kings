@@ -105,27 +105,7 @@ plot_disinherit_character = {
 			current_heir = {
 				character = ROOT
 			}		
-			OR = {
-				has_character_modifier = holds_fire_emblem
-				any_realm_character  = {
-					has_character_modifier = holds_fire_emblem
-				}
-			}
-			OR = {
-				AND = {
-					primary_title = {
-						region = world_elibe
-					}	
-					OR = {
-						trait = fire_emblem_elibe
-						any_realm_character = {
-							trait = fire_emblem_elibe
-							prisoner = no
-						}
-					}
-					
-				}
-			}
+			fire_emblem_in_realm_trigger = yes
 		}
 		is_adult = no
 	}
