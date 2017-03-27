@@ -361,7 +361,6 @@ character_event = {
 					factor = 0
 					AND = {
 						religion_group = light_group
-						has_artifact = fingerbone_of_saint
 						has_artifact = famous_head
 						has_artifact = famous_tongue
 						has_artifact = infamous_tongue
@@ -1619,22 +1618,6 @@ character_event = {
 #					#Insert artifact event here
 #					narrative_event = { id = MNM.9607 } #Yada Tashy/Rain Stone
 #				}
-				# FE 
-				20 = {
-					modifier = { 
-						factor = 0 
-						NOT = { 
-							religion_group = light_group
-						} 
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
-					modifier = {
-						factor = 0
-						has_artifact = fingerbone_of_saint
-					}
-					#Insert artifact event here
-					character_event = { id = MNM.9809 } #Fingerbone of Saint
-				}
 			}
 		}
 	}

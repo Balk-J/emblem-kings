@@ -1,36 +1,4 @@
 decisions = {
-	decide_what_to_do_with_regalia = {
-		only_playable = yes
-	
-		potential = {
-			is_playable = yes
-			has_character_modifier = owns_regalia 
-			OR = {
-				ai = no
-				AND = {
-					NOT = { has_character_flag = regalia_inherit }
-					NOT = { has_character_flag = regalia_hide }				
-				}
-			}
-		}
-		
-		allow = {
-			always = yes
-		}
-		
-		effect = {
-			character_event = { id = regalia.18 tooltip = decide_what_to_do_with_regalia_tooltip }
-		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
 	form_kingdom_of_lycia = {
 		only_playable = yes
 		only_independent = yes
@@ -334,7 +302,7 @@ decisions = {
 				text = return_elibe_to_dragons.tooltip.allow
 				hidden_tooltip = {
 					calc_true_if = {
-						amount = 4
+						amount = 5
 						completely_controls_region = world_elibe_bern
 						completely_controls_region = world_elibe_lycia
 						completely_controls_region = world_elibe_etruria
@@ -521,4 +489,34 @@ decisions = {
 			}
 		}
 	}	
+	
+	declare_dragon_liberation_war = {
+		only_playable = yes
+		
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			religion = dragon_liberation
+			has_character_modifier = planning_invasion
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = fe6.12 }
+			}
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

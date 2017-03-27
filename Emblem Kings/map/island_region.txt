@@ -14,7 +14,7 @@
 	#provinces = { 1 2 }
 #}
 
-#region_valor = {
-	#regions = { world_elibe_valor }
-#}
+region_valor = {
+	regions = { world_elibe_valor }
+}
 

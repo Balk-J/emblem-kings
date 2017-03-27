@@ -21,7 +21,8 @@
 }
 
 1180.1.1={
-	liege=d_media # Djute
+	#liege=d_media # Djute
+	liege=d_gelonus # Kutolah
 }
 
 1181.1.1={

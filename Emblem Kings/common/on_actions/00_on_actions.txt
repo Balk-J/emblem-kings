@@ -1523,6 +1523,7 @@ on_death = {
 		ZP.5
 		
 		# FE #
+		fe6.15 # Death of a Liberationist invasion participant
 		fe7.1 # Death of Nergal
 		#fe7.4 # Death of Lundgren
 		

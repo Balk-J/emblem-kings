@@ -12,21 +12,10 @@
 	180.01.01 = {
 		give_nickname=nick_the_holy_knight
 		add_trait="eight_legends"
-		add_trait="regalia_maltet"
 		add_trait="class_paladin"
-		effect = {
-			ROOT = {
-		add_character_modifier = { name = "owns_regalia" duration = -1 }  
-		set_character_flag="regalia_hide"
-		set_global_flag="regalia_maltet_held"
-			}
-		}
 	}
 	210.01.01 = { 
 		death=yes 
-		effect = {
-		clr_global_flag="regalia_maltet_held"
-		}
 	}
 }
 
@@ -915,6 +904,9 @@
 	
 	1155.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag = is_fe6_sigune
+		}
 	}
 	1167.01.01={
 		add_trait="class_pegasus_knight"

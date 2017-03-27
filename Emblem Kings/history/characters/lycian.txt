@@ -4,8 +4,8 @@
 	
 	religion=elimine_church
 	culture=lycian
-	
-	#trait="regalia_durandal"
+	disallow_random_traits="yes" 
+
 	
 	159.01.01={
 		birth=yes
@@ -14,23 +14,11 @@
 		give_nickname="nick_the_little_knight"
 		add_trait="eight_legends"
 		add_trait="class_hero"
-		add_trait="regalia_durandal"
-		effect = {
-			ROOT = {
 		add_trait="base_class_mercenary"
-		add_character_modifier = { name = "owns_regalia" duration = -1 } 
-		set_character_flag="regalia_hide"
-		set_global_flag="regalia_durandal_held"
-			}
-		}
 	}
 	210.01.01={
 		death=yes
-		effect = {
-		clr_global_flag="regalia_durandal_held"
-		}
 	} 	
-	disallow_random_traits="yes" 
 }
 
 102 = {

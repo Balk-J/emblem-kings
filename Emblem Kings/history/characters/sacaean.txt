@@ -21,21 +21,10 @@
 	180.01.01 = {
 		give_nickname="nick_the_divine_trooper"
 		add_trait="eight_legends"
-		add_trait="regalia_murgleis"
-		effect = {
-			ROOT = {
-		add_character_modifier = { name = "owns_regalia" duration = -1 } 
-		set_character_flag="regalia_hide"
-		set_global_flag="regalia_murgleis_held"
-			}
-		}
 	}
 	
 	207.01.01 = { 
 		death=yes 
-		effect = {
-		clr_global_flag="regalia_murgleis_held"
-		}
 	}
 }
 
@@ -886,6 +875,9 @@
 	father=524
 	1159.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag = is_fe6_monke		
+		}
 	}
 	1171.01.01={
 		add_trait="class_horse_archer"

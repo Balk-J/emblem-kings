@@ -14,18 +14,9 @@
 		add_trait="class_berserker"
 		give_nickname=nick_the_berserker
 		add_trait="eight_legends"
-		add_trait="regalia_armads"
-		effect = {
-		add_character_modifier = { name = "owns_regalia" duration = -1 } 
-		set_character_flag="regalia_hide"
-		set_global_flag="regalia_armads_held"
-		}
 	}
 	230.1.1={
 		death=yes
-		effect = {
-		clr_global_flag="regalia_armads_held"
-		}
 	}
 }
 

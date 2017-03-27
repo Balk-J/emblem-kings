@@ -316,6 +316,12 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\main_back_button.tga"
 		clicksound = click_03
 	}
+	
+	spriteType = {
+		name = "GFX_back_button_rep_nomad"
+		texturefile = "gfx\\interface\\back_button_rep_nomad.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_maximize_button"
 		texturefile = "gfx\\interface\\maximize_button.tga"
@@ -847,7 +853,6 @@ spriteTypes = {
 	}
 	
 	### icons
-	## religion icons modded
 	spriteType = {
 		name = "GFX_icon_topbar_observe"
 		texturefile = "gfx\\interface\\icon_topbar_observe.tga"
@@ -855,17 +860,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_religion_icon_strip"
 		texturefile = "gfx\\interface\\religion_icon_strip.tga"
-		noOfFrames = 11
+		#noOfFrames = 52
+		noOfFrames = 11 # FE
 	}
 	spriteType = {
 		name = "GFX_religion_icon_strip_small"
 		texturefile = "gfx\\interface\\religion_icon_strip_small.tga"
-		noOfFrames = 11
+		#noOfFrames = 52
+		noOfFrames = 11 # FE
 	}
 	spriteType = {
 		name = "GFX_religion_icon_strip_big"
 		texturefile = "gfx\\interface\\religion_icon_strip_big.tga"
-		noOfFrames = 11
+		#noOfFrames = 52
+		noOfFrames = 11 # FE
 	}
 	spriteType = {
 		name = "GFX_commandmodifier_icon"

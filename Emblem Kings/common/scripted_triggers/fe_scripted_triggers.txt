@@ -52,62 +52,78 @@ can_equip_swords_trigger = {
 		custom_tooltip = {
 			text = is_assassin_tooltip
 			hidden_tooltip = {					
-				trait = class_
-				trait = class__female
+				OR = {
+				trait = class_assassin
+				trait = class_assassin_female
+				}
 			}
 		}
 		trait = class_cavalier
 		trait = class_falcon_knight
 		custom_tooltip = {
 			text = is_hero_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_hero
 				trait = class_hero_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_mercenary_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_mercenary
 				trait = class_mercenary_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_myrmidon_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_myrmidon
 				trait = class_myrmidon_female
+				}
 			}
 		}
 		trait = class_paladin
 		custom_tooltip = {
 			text = is_bow_knight_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_bow_knight
 				trait = class_bow_knight_female
+				}
 			}
 		}
 		trait = class_rogue
 		custom_tooltip = {
 			text = is_swordmaster_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_swordmaster
 				trait = class_swordmaster_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_thief_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_thief
 				trait = class_thief_female
+				}
 			}
 		}
 		trait = class_wyvern_lord
 		custom_tooltip = {
 			text = is_mage_knight_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_mage_knight
 				trait = class_mage_knight_female
+				}
 			}
 		}
 	}
@@ -136,9 +152,11 @@ can_equip_axes_trigger = {
 		trait = class_general
 		custom_tooltip = {
 			text = is_hero_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_hero
 				trait = class_hero_female
+				}
 			}
 		}
 		trait = class_paladin
@@ -158,30 +176,38 @@ can_equip_bows_trigger = {
 	OR = {
 		custom_tooltip = {
 			text = is_archer_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_archer
 				trait = class_archer_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_sniper_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_sniper
 				trait = class_sniper_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_horse_archer_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_archer
 				trait = class_archer_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_bow_knight_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_bow_knight
 				trait = class_bow_knight_female
+				}
 			}
 		}
 		trait = class_warrior
@@ -202,23 +228,29 @@ can_equip_anima_trigger = {
 		trait = class_dark_druid
 		custom_tooltip = {
 			text = is_mage_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_mage
 				trait = class_mage_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_mage_knight_tooltip
 			hidden_tooltip = {					
+				OR = {				
 				trait = class_mage_knight
 				trait = class_mage_knight_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_sage_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_sage
 				trait = class_sage_female
+				}
 			}
 		}
 	}
@@ -231,16 +263,20 @@ can_equip_dark_trigger = {
 		trait = class_dark_druid
 		custom_tooltip = {
 			text = is_dark_mage_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_dark_mage
 				trait = class_dark_mage_female
+				}
 			}
 		}
 		custom_tooltip = {
 			text = is_sorceror_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_sorceror
 				trait = class_sorceror_female
+				}
 			}
 		}
 	}
@@ -251,9 +287,11 @@ can_equip_light_trigger = {
 		trait = class_archsage
 		custom_tooltip = {
 			text = is_bishop_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_bishop
 				trait = class_bishop_female
+				}
 			}
 		}
 		trait = class_monk
@@ -264,9 +302,11 @@ can_equip_dragonstone_trigger = {
 	OR = {
 		custom_tooltip = {
 			text = is_manakete_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_manakete
 				trait = class_manakete_female
+				}
 			}
 		}
 	}
@@ -280,25 +320,31 @@ can_equip_staff_trigger = {
 		trait = class_dark_druid
 		custom_tooltip = {
 			text = is_bishop_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {							
+				OR = {		
 				trait = class_bishop
 				trait = class_bishop_female
+				}
 			}
 		}
 		trait = class_cleric
 		custom_tooltip = {
 			text = is_sorceror_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_sorceror
 				trait = class_sorceror_female
+				}
 			}
 		}
 		trait = class_priest
 		custom_tooltip = {
 			text = is_sage_tooltip
-			hidden_tooltip = {					
+			hidden_tooltip = {						
+				OR = {			
 				trait = class_sage
 				trait = class_sage_female
+				}
 			}
 		}
 		trait = class_troubador
@@ -306,6 +352,52 @@ can_equip_staff_trigger = {
 		trait = class_war_priest
 	}
 }
+
+dragon_liberation_invasion_target_trigger = {
+# Call from the ruler scope, where PREV is the targeted title
+	independent = yes
+	#mercenary = no
+	NOT = { 
+		any_realm_province = {
+			kingdom = { 
+				capital_scope = {
+					province = PREVPREV
+				} 
+			}
+		} 
+	}
+	OR = {
+		AND = {
+			is_nomadic = no
+			primary_title = { 
+				OR = {
+					de_jure_liege_or_above = PREVPREV 
+					title = PREVPREV
+				}
+			}
+		}
+		AND = {
+			is_nomadic = yes
+			capital_scope = { 
+				de_jure_liege_or_above = PREVPREV
+			}
+		}
+		AND = {
+			any_mercenary_band = {
+				holder_scope = {
+					character = PREVPREV
+				}
+			}
+			capital_scope = { 
+				de_jure_liege_or_above = PREVPREV
+			}
+			any_realm_province = {
+				de_jure_liege_or_above = PREVPREV
+			} 
+		}
+	}
+}
+
 
 # Fire Emblem related conditions
 

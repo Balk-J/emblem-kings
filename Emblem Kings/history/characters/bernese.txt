@@ -12,23 +12,9 @@
 		give_nickname=nick_the_hero
 		add_trait="eight_legends"
 		add_trait="class_hero"
-		add_trait="regalia_binding_blade"
-		add_trait="regalia_eckesachs"
-		effect = {
-			ROOT = {
-				add_character_modifier = { name = owns_regalia duration = -1 } 
-				set_character_flag="regalia_hide"
-				set_global_flag="regalia_binding_blade_held"
-				set_global_flag="regalia_eckesachs_held"
-			}
-		}
 	}
 	230.1.1={
 		death=yes
-		effect = {
-			clr_global_flag="regalia_binding_blade_held"
-			clr_global_flag="regalia_eckesachs_held"
-		}
 	}
 }
 
@@ -49,7 +35,6 @@
 	trait="cruel"
 	trait="deceitful"
 	trait="paranoid"
-	intrigue = 70
 	1122.1.1={
 		birth=yes
 	}
@@ -69,9 +54,6 @@
 			death_reason=death_murder_unknown
 			killer=403 #Zephiel
 		}
-		#effect = {
-		#	clr_global_flag="regalia_eckesachs_held"
-		#}
 	}
 }
 
@@ -159,28 +141,13 @@
 		add_trait="wroth"
 		add_trait="ambitious"
 		religion=dragon_liberation
-#		add_trait="regalia_eckesachs"
-#		add_trait="fire_emblem_elibe"
-#		effect = {
-#			ROOT = {
-#				add_character_modifier = { name = holds_fire_emblem duration = -1 } 
-#				add_character_modifier = { name = "owns_regalia" duration = -1 } 
-#				set_character_flag="regalia_hide"
-#			}
-#		}
 		remove_trait=class_knight
 		add_trait=class_general
 		effect = {
 			set_global_flag="regalia_eckesachs_held"
 		}
 	}
-	1180.1.1= {
-		piety = 3000
-#		effect = {
-#			remove_trait="fire_emblem_elibe"
-#			remove_character_modifier = holds_fire_emblem
-#		}
-	}
+	
 	1181.1.1= {
 		death = {
 			death_reason=death_battle

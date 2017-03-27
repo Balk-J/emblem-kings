@@ -100,4 +100,8 @@ spriteTypes = {
 		name = "GFX_visit_item_shop_3"
 		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
 	}
+	spriteType = {
+		name = "GFX_declare_dragon_liberation_war"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
 }

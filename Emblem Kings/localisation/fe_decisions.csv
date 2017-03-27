@@ -21,7 +21,7 @@ create_morph;Create Morph;;;;;;;;;;;;;x
 create_morph_desc;Use your arcane knowledge to create an artificial human.;;;;;;;;;;;;;x
 return_elibe_to_dragons;Return Elibe to the Dragons;;;;;;;;;;;;;x
 return_elibe_to_dragons_desc;With control over enough of the continent and the support of a true dragon, I can give this land a ruler who will free us from misery and suffering.;;;;;;;;;;;;;x
-return_elibe_to_dragons.tooltip.allow;§Y[Root.GetTitledFirstName]§! completely controls at least §Y50§! regions of old Elibe - §YBern§!, §YLycia§!, §YEtruria§!, §YIlia§!, §YNabata§!, and §YSacae§!.\n;;;;;;;;;;;;;x
+return_elibe_to_dragons.tooltip.allow;§Y[Root.GetTitledFirstName]§! completely controls at least §Y5§! regions of old Elibe - §YBern§!, §YLycia§!, §YEtruria§!, §YIlia§!, §YNabata§!, §YSacae§!, and §Ythe Western Isles§!.\n;;;;;;;;;;;;;x
 return_elibe_to_dragons_TOOLTIP;Any empire-level titles you hold are forfeit.\nThe Hierophant will become your new liege, and the liege of any king-level vassals you have.;;;;;;;;;;;;;x
 hire_black_fang;Hire a Black Fang assassin;;;;;;;;;;;;;x
 hire_black_fang_desc;The Black Fang are a notorious guild of assassins. They would be able to dispose of [Root.PlotTarget.GetTitledFirstName] quickly and quietly...;;;;;;;;;;;;;x
@@ -61,3 +61,5 @@ visit_weapon_shop_2;Vist Armory;;;;;;;;;;;;;x
 visit_weapon_shop_2_desc;A variety of weapons can be purchased at the armory in [Root.Location.GetName].;;;;;;;;;;;;;x
 visit_weapon_shop_3;Vist Armory;;;;;;;;;;;;;x
 visit_weapon_shop_3_desc;A variety of weapons can be purchased at the armory in [Root.Location.GetName].;;;;;;;;;;;;;x
+declare_dragon_liberation_war;Declare Liberation War;;;;;;;;;;;;;x
+declare_dragon_liberation_war_desc;We can resume preparation for the war as soon as we are ready.;;;;;;;;;;;;;x

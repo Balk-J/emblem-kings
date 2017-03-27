@@ -139,6 +139,10 @@ character_event = {
 					id =  fe6.6
 					days = 1
 				}
+				character_event = {
+					id =  fe6.11
+					days = 40
+				}
 			}
 		}
 	}

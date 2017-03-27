@@ -149,3 +149,6 @@ dragons_gate_elibe_harvest = {
 immortal_from_quintessence = {
 	icon = 41
 }
+planning_invasion = {
+	icon = 13
+}

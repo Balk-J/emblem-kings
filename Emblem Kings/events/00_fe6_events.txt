@@ -557,6 +557,8 @@ character_event = {
 		create_character = {
 			random_traits = no
 			name = "Idenn"
+			dna = acbiiiebafr
+			properties=ol0i0i00000000
 			dynasty = NONE
 			religion = ROOT
 			culture = ROOT #divine_dragon_culture
@@ -825,5 +827,752 @@ character_event = {
 	
 	option = {
 		name = fe6.10.A
+	}
+}
+
+# Xephiel Invasion tombola
+character_event = {
+	id = fe6.11
+	hide_window = yes
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = OK
+		
+		# What's the next target?
+		random_landed_title = {
+			limit = {
+				has_title_flag = dragon_liberation_invasion_target
+			}
+			clr_title_flag = dragon_liberation_invasion_target
+			
+			# Next stop depends on what the last target was.
+			# If we just rolled over k_sacae, hit k_ilia next, and so on.
+			trigger_switch = {
+				on_trigger = title
+				k_sacae = { 
+					k_ilia = {
+						set_title_flag = dragon_liberation_invasion_target
+					}
+				}
+				k_ilia = { 
+					k_lycia = {
+						set_title_flag = dragon_liberation_invasion_target
+					}
+					set_global_flag = dragon_liberation_invasion_intervention_allowed
+				}
+				k_lycia = { 
+					k_etruria = {
+						set_title_flag = dragon_liberation_invasion_target
+					}
+				}
+				k_etruria = { 
+					k_the_western_isles = {
+						set_title_flag = dragon_liberation_invasion_target
+					}
+				}
+				k_the_western_isles = { 
+					k_nabata = {
+						set_title_flag = dragon_liberation_invasion_target
+					}
+				}
+				k_nabata = { 
+					clr_global_flag = dragon_liberation_invasion_intervention_allowed
+					break = yes
+				}
+			}
+			ROOT = { character_event = { id = fe6.12 } }
+			break = yes
+		}
+		
+		# If we haven't hit anywhere yet, start with Sacae
+		if = {
+			limit = {
+				NOT = {
+					any_landed_title = {
+						has_title_flag = dragon_liberation_invasion_target
+					}
+				}
+			}
+			k_sacae = {
+				set_title_flag = dragon_liberation_invasion_target
+			}
+			character_event = { id = fe6.12 }
+		}
+	}
+}
+
+# Starting invasion
+narrative_event = {
+	id = fe6.12
+	title = fe6.12.title	
+	desc = fe6.12.desc	
+	picture = GFX_evt_religious_exultation
+	hide_from = yes
+	is_triggered_only = yes	
+	
+	immediate = {
+		random_landed_title = {
+			limit = {
+				has_title_flag = dragon_liberation_invasion_target
+			}
+			save_event_target_as = target_dragon_liberation_invasion_title
+		}
+	}
+	
+	# Invade 
+	option = {
+		name = fe6.12.A
+		if = {
+			limit = {
+				has_character_modifier = planning_invasion 
+			}
+			remove_character_modifier = planning_invasion
+		}
+		custom_tooltip = {
+			text = fe6.12.A.tooltip
+			hidden_tooltip = { 			
+				event_target:target_dragon_liberation_invasion_title = {
+					# See if anyone wants to ally
+#					any_playable_ruler = {
+					any_independent_ruler = {
+						limit = {
+							# Whoever holds the de jure capital of the kingdom is not allowed to join. 
+							# The war needs a primary target...
+							dragon_liberation_invasion_target_trigger = yes
+						}
+						character_event = { id = fe6.13 } 
+					}
+					
+					# Inform target
+					capital_scope = {
+						holder_scope = {
+							top_liege = {
+								set_character_flag = dragon_liberation_invasion_target
+								character_event = { id = fe6.13 } 
+							}
+						}
+					}
+				}
+				character_event = { id = fe6.14 days = 5 random = 2 } 
+			}
+		}
+		
+		clear_global_event_target = target_dragon_liberation_invasion_title
+	}
+	
+	# Don't
+	option = {
+		name = fe6.12.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_character_modifier = planning_invasion }
+			}
+			add_character_modifier = {
+				name = planning_invasion
+				years = 5
+			}
+		}
+	}
+}
+
+# Inform people in target kingdom they are targeted and let them pick a side
+narrative_event = {
+	id = fe6.13
+	title = fe6.13.title	
+	desc = fe6.13.desc	
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.13.A
+		trigger = {
+			NOT = { has_character_flag = dragon_liberation_invasion_target }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = {
+					has_character_flag = is_fe6_monke 
+					has_character_flag = is_fe6_sigune 
+				}
+			}
+		}
+		custom_tooltip = {
+			text = fe6.13.A.tooltip
+		}
+	}
+	option = {
+		name = fe6.13.B
+		trigger = {
+			NOT = { has_character_flag = dragon_liberation_invasion_target }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = off
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				NOR = {
+					has_character_flag = is_fe6_monke 
+					has_character_flag = is_fe6_sigune 
+				}
+			}
+		}
+		custom_tooltip = {
+			text = fe6.13.B.tooltip
+			hidden_tooltip = { 	
+				set_character_flag = invasion_collaborator
+			}
+		}
+	}
+	option = {
+		name = fe6.13.C
+		trigger = {
+			has_character_flag = dragon_liberation_invasion_target
+		}
+		clr_character_flag = dragon_liberation_invasion_target
+	}
+}
+
+character_event = {
+	id = fe6.14
+	desc = {
+		trigger = {
+			NOT = { any_playable_ruler = { has_character_flag = invasion_collaborator } }
+		}
+		text = fe6.14.desc
+	}
+	desc = {
+		trigger = {
+			any_playable_ruler = { has_character_flag = invasion_collaborator } 
+		}
+		text = fe6.14.desc.collaborators
+	}
+	picture = GFX_evt_war_planning
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = {
+			text = fe6.14.A
+			trigger = {
+				NOT = { any_playable_ruler = { has_character_flag = invasion_collaborator } }
+			}
+		}
+		name = {
+			text = fe6.14.A.collaborators
+			trigger = {
+				any_playable_ruler = { has_character_flag = invasion_collaborator } 
+			}
+		}
+		
+		set_character_flag = dragon_liberation_invasion_invader
+		event_target:target_dragon_liberation_invasion_title = {
+			capital_scope = {
+				holder_scope = {
+					top_liege = { 
+						hidden_tooltip = {
+							if = {
+								limit = {
+									mercenary = yes
+								}
+								remove_elibe_mercenary_effect = yes
+							}
+						}
+						reverse_war = {
+							target = ROOT
+							casus_belli = dragon_liberation_invasion
+							thirdparty_title = PREVPREVPREV
+						}
+						set_character_flag = dragon_liberation_invasion_defender
+						hidden_tooltip = {
+							event_target:target_dragon_liberation_invasion_title = {
+								any_independent_ruler = {
+									limit = {
+										dragon_liberation_invasion_target_trigger = yes
+										NOT = { has_character_flag = invasion_collaborator }
+									}
+									if = {
+										limit = {
+											NOT = { any_war = { using_cb = dragon_liberation_invasion } }
+										}
+										remove_elibe_mercenary_effect = yes
+										join_defender_wars = PREVPREV
+										add_elibe_mercenary_effect = yes
+									}
+									set_character_flag = dragon_liberation_invasion_defender
+								}
+#								any_mercenary_band = {
+#									holder_scope = {
+#										limit = {
+#											dragon_liberation_invasion_mercenary_target_trigger = yes
+#											NOT = { has_character_flag = invasion_collaborator }
+#										}
+#										if = {
+#											limit = {
+#												NOT = { any_war = { using_cb = dragon_liberation_invasion } }
+#											}
+#											remove_elibe_mercenary_effect = yes
+#											join_defender_wars = PREVPREVPREV
+#											add_elibe_mercenary_effect = yes
+#										}
+#										set_character_flag = dragon_liberation_invasion_defender
+#									}
+#								}
+							}
+							add_elibe_mercenary_effect = yes
+						}
+					}
+				}
+			}
+			any_independent_ruler = {
+				limit = {
+					dragon_liberation_invasion_target_trigger = yes
+					has_character_flag = invasion_collaborator 
+					#NOT = { any_war = { using_cb = dragon_liberation_invasion } }
+				}
+				hidden_tooltip = { remove_elibe_mercenary_effect = yes }
+				join_attacker_wars = ROOT
+				hidden_tooltip = { 
+					add_elibe_mercenary_effect = yes
+					set_character_flag = dragon_liberation_invasion_attacker
+				}
+			}			
+		}
+		custom_tooltip = {
+			text = fe6.14.A.tooltip
+			hidden_tooltip = {
+				any_playable_ruler = {
+					limit = {
+						capital_scope = { region = world_elibe }
+						NOT = { any_war = { using_cb = dragon_liberation_invasion } }
+					}
+					character_event = { id = fe6.17 }	
+				}
+			}
+		}
+	}
+}
+
+# Death of an invasion participant
+character_event = {
+	id = fe6.15
+	hide_window = yes
+	
+	only_rulers = yes
+	is_triggered_only = yes	
+
+	trigger = {
+		any_war = {
+			using_cb = dragon_liberation_invasion
+		} 
+		#is_primary_war_attacker = no
+		#is_primary_war_defender = no
+		OR = {
+			has_character_flag = invasion_collaborator
+			has_character_flag = dragon_liberation_invasion_attacker
+			has_character_flag = dragon_liberation_invasion_defender
+		}
+	}
+	
+	option = {
+		name = OK
+		
+		current_heir = {
+			if = {
+				limit = {
+					ROOT = { has_character_flag = invasion_collaborator }
+				}
+				set_character_flag = invasion_collaborator
+			}
+			if = {
+				limit = {
+					ROOT = { has_character_flag = dragon_liberation_invasion_attacker }
+				}
+				set_character_flag = dragon_liberation_invasion_attacker
+			}
+			if = {
+				limit = {
+					ROOT = { has_character_flag = dragon_liberation_invasion_defender }
+				}
+				set_character_flag = dragon_liberation_invasion_defender
+			}
+			character_event = { id = fe6.16 days = 1 }
+		}
+	}
+}
+
+character_event = {
+	id = fe6.16
+	desc = fe6.16.desc
+	
+	picture = GFX_evt_melee
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.16.A
+		
+		if = {
+			limit = {
+				has_character_flag = invasion_collaborator
+			}
+			random_independent_ruler = {
+				limit = {
+					war = yes
+					any_war = { using_cb = dragon_liberation_invasion }
+					is_primary_war_attacker = yes
+					has_character_flag = dragon_liberation_invasion_invader
+				}
+				ROOT = {
+					if = {
+						limit = {
+							mercenary = yes
+						}
+						remove_elibe_mercenary_effect = yes
+					}
+					join_attacker_wars = PREV	
+					add_elibe_mercenary_effect = yes
+				}
+			}
+			break = yes
+		}
+		random_independent_ruler = {
+			limit = {
+				war = yes
+				any_war = { 
+					using_cb = dragon_liberation_invasion 
+					is_primary_war_defender = yes
+				}
+				has_character_flag = dragon_liberation_invasion_defender
+			}
+			ROOT = {
+				if = {
+					limit = {
+						mercenary = yes
+					}
+					remove_elibe_mercenary_effect = yes
+				}
+				join_defender_wars = PREV	
+				add_elibe_mercenary_effect = yes
+			}
+		}
+	}
+}
+
+# Inform the rest of Elibe about the war
+narrative_event = {
+	id = fe6.17
+	title = fe6.17.title	
+	desc = fe6.17.desc	
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.17.A
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					has_global_flag = dragon_liberation_invasion_intervention_allowed
+					capital_scope = { region = world_elibe }
+#					any_independent_ruler = {
+#						war = yes
+#						any_war = { 
+#							using_cb = dragon_liberation_invasion 
+#							is_primary_war_attacker = yes
+#						}
+						ROOT = { relative_power = { who = FROM power = 0.5 } }
+#					}
+				}
+				character_event = { id = fe6.18 days = 3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = fe6.18
+	
+	hide_window = yes	
+	is_triggered_only = yes	
+	
+	option = {
+		name = OK
+		
+		if = {
+			limit = {
+				any_independent_ruler = {
+					war = yes
+					any_war = { using_cb = dragon_liberation_invasion }
+				}
+			}
+			character_event = { id = fe6.19 }
+		}
+	}
+}
+
+# Offer this ruler the chance to intervene
+character_event = {
+	id = fe6.19
+	desc = fe6.19.desc	
+	picture = GFX_evt_council
+	hide_from = yes
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.19.A
+		custom_tooltip = {
+			text = fe6.19.A.tooltip
+			hidden_tooltip = {
+#				random_independent_ruler = {
+#					limit = {
+#						war = yes
+#						any_war = { 
+#							using_cb = dragon_liberation_invasion 
+#							is_primary_war_attacker = yes
+#						}
+#					}
+				FROMFROMFROM = {
+					character_event = { id = fe6.20 }
+				}
+			}
+		}
+		
+		prestige = 100
+	}
+	option = {
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				has_landed_title = k_etruria
+			}
+		}
+		name = fe6.19.B
+	}
+}
+
+# Zephiel gets the option to back down
+letter_event = {
+	id = fe6.20
+	desc = fe6.20.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.20.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				has_character_flag = is_fe6_zephiel # AI Zephiel will fold
+			}
+			# Don't reject the demand if I already surrendered
+			modifier = {
+				factor = 0
+				NOT = {
+					any_independent_ruler = {
+						war = yes
+						any_war = { using_cb = dragon_liberation_invasion }
+					}
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_independent_ruler = {
+						war = yes
+						any_war = { using_cb = dragon_liberation_invasion }
+					}
+				}
+				FROM = { character_event = { id = fe6.21 } }
+			}
+		}
+		
+		#prestige = 100
+	}
+	option = {
+		name = fe6.20.B
+		ai_chance = {
+			factor = 50
+		}
+		opinion = {
+			modifier = opinion_evil_tyrant
+			who = FROM
+			years = 10
+		}
+		prestige = -500
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_independent_ruler = {
+						war = yes
+						any_war = { using_cb = dragon_liberation_invasion }
+					}
+				}
+				FROM = { character_event = { id = fe6.22 } }
+				any_war = { 
+					using_cb = dragon_liberation_invasion
+					any_defender = {
+						limit = {
+							is_primary_war_defender = yes
+							has_character_flag = dragon_liberation_invasion_defender
+						}
+						character_event = { id = fe6.23 }
+					}
+				}
+			}
+		}
+		
+		any_war = { 
+			limit = {
+				using_cb = dragon_liberation_invasion 
+			}
+			end_war = invalid#whitepeace
+		}
+	}
+}
+
+# Zephiel rejects the ultimatum
+letter_event = {
+	id = fe6.21
+	desc = fe6.21.desc	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.19.A
+		trigger = {
+			any_independent_ruler = {
+				war = yes
+				any_war = { using_cb = dragon_liberation_invasion }
+			}
+		}
+		
+		prestige = 400
+		any_war = { 
+			using_cb = dragon_liberation_invasion
+			defender = {
+				ROOT = { join_defender_wars = PREV }
+			}
+		}
+	}
+	option = {
+		name = fe6.19.B
+		trigger = {
+			any_independent_ruler = {
+				war = yes
+				any_war = { using_cb = dragon_liberation_invasion }
+			}
+		}
+		prestige = -400
+		any_vassal = {
+			opinion = {
+				modifier = opinion_coward
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+	option = {
+		name = fe6.19.C
+		trigger = {
+			NOT = {
+				any_independent_ruler = {
+					war = yes
+					any_war = { using_cb = dragon_liberation_invasion }
+				}
+			}
+		}
+	}
+}
+
+# Zephiel folds
+letter_event = {
+	id = fe6.22
+	desc = fe6.22.desc
+	is_triggered_only = yes		
+	
+	option = {
+		name = fe6.22.A
+		prestige = 900
+		any_vassal = {
+			opinion = {
+				modifier = opinion_impressed
+				who = ROOT
+				years = 10
+			}
+		}
+	}
+}
+
+# Inform target the war is over.
+character_event = {
+	id = fe6.23
+	desc = fe6.23.desc	
+	picture = GFX_evt_powerful_ruler
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6.23.A
+		
+		FROMFROM = {
+			reverse_opinion = {
+				modifier = opinion_my_saviour
+				who = ROOT
+				years = 10
+			}
+			add_favor = ROOT
+		}
+		piety = 300
+	}
+	option = {
+		name = fe6.23.B
+		FROMFROM = {
+			opinion = {
+				modifier = opinion_ungrateful
+				who = ROOT
+				years = 10
+			}
+		}
+		prestige = 100
 	}
 }

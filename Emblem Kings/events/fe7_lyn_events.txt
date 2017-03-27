@@ -94,6 +94,45 @@ character_event = {
 			}
 			character_event = { id = fe7_lyn.2 days = 10 random = 4 }
 		}
+		
+		if = {
+			limit = {
+				any_character = {
+					has_artifact = regalia_mani_katti
+				}
+			}
+			
+			random_character = {
+				limit = {
+					has_artifact = regalia_mani_katti
+				}
+				
+				random_artifact = {
+					limit = {
+						artifact_type = regalia_mani_katti
+					}
+					transfer_artifact = {
+						from = PREV
+						to = ROOT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						has_artifact = regalia_mani_katti
+					}
+				}
+			}
+			
+			add_artifact = regalia_mani_katti
+			new_artifact = {
+				set_creation_date = -1.1.1
+			}
+			#set_global_flag = regalia_mani_katti_held 
+	}
 	}
 	
 	option = {

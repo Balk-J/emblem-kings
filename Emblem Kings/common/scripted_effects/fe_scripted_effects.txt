@@ -935,6 +935,529 @@ remove_personality_effect = {
 	}
 }
 
+# Horrible hack to get around the rule that nobody can join merc's wars
+remove_elibe_mercenary_effect = {
+	if = {
+		limit = {
+			mercenary = yes
+		}
+		# Give them a temporary duchy so they don't lose any vassals
+		if = {
+			limit = {
+				d_temp = {
+					has_holder = yes
+				}
+			}
+			set_character_flag = temp_mercenary_2
+			d_temp_2 = {
+				grant_title = PREV
+			}
+		}
+		if = {
+			limit = {
+				d_temp = {
+					has_holder = no
+				}
+			}
+			set_character_flag = temp_mercenary
+			d_temp = {
+				grant_title = PREV
+			}
+		}
+		
+		# For each Elibian merc title I have, flag it so it can be recovered later. Then destroy it.
+		if = {
+			limit = {
+				d_black_fang = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_black_fang = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_talon_company = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_talon_company = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_tiger_company = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_tiger_company = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_davros = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_davros = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_ilia_pegasus_knights_1 = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_ilia_pegasus_knights_1 = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_ilia_pegasus_knights_2 = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_ilia_pegasus_knights_2 = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_ilia_pegasus_knights_3 = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_ilia_pegasus_knights_3 = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_ilia_pegasus_knights_4 = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_ilia_pegasus_knights_4 = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_ilia_pegasus_knights_5 = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_ilia_pegasus_knights_5 = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_ilia_mercenary_knights = {
+					holder_scope = { character = PREVPREV }
+				}
+			}			
+			d_ilia_mercenary_knights = {
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary } }
+					set_title_flag = temp_mercenary
+				}
+				if = {
+					limit = { PREV = { has_character_flag = temp_mercenary_2 } }
+					set_title_flag = temp_mercenary_2
+				}
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+	}
+}
+
+# Part two of the horrible hack to get around the mercenary war issue.
+add_elibe_mercenary_effect = {	
+	# For each Elibian merc title I used to have, give it back to me. Then clear the temporary flag.
+	if = {
+		limit = {
+			d_black_fang = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_black_fang = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_talon_company = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_talon_company = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_tiger_company = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_tiger_company = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_davros = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_davros = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_ilia_pegasus_knights_1 = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_ilia_pegasus_knights_1 = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_ilia_pegasus_knights_2 = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_ilia_pegasus_knights_2 = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_ilia_pegasus_knights_3 = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_ilia_pegasus_knights_3 = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_ilia_pegasus_knights_4 = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_ilia_pegasus_knights_4 = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_ilia_pegasus_knights_5 = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_ilia_pegasus_knights_5 = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	if = {
+		limit = {
+			d_ilia_mercenary_knights = {
+				OR = {
+					AND = {
+						has_title_flag = temp_mercenary
+						PREV = { has_character_flag = temp_mercenary }
+					}
+					AND = {
+						has_title_flag = temp_mercenary_2
+						PREV = { has_character_flag = temp_mercenary_2 }
+					}
+				}
+			}
+		}			
+		d_ilia_mercenary_knights = {
+			clr_title_flag = temp_mercenary
+			clr_title_flag = temp_mercenary_2
+			grant_title = PREV
+		}
+	}
+	
+	if = {
+		limit = {
+			d_temp = {
+				holder_scope = { character = PREVPREV }
+			}
+		}
+		d_temp = {
+			unsafe_destroy_landed_title = THIS
+		}
+	}
+	if = {
+		limit = {
+			d_temp_2 = {
+				holder_scope = { character = PREVPREV }
+			}
+		}
+		d_temp_2 = {
+			unsafe_destroy_landed_title = THIS
+		}
+	}
+	clr_character_flag = temp_mercenary
+	clr_character_flag = temp_mercenary_2
+}
+
+# For mercs who lose to Zephiel's invasion.
+# They can't be vassalized by the governor with the merc title, and giving the county titles new holders doesn't wwork. So we need to make a new merc leader.
+release_elibe_mercenary_titles_effect = {
+	if = {
+		limit = {
+			OR = {
+				d_black_fang = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_talon_company = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_tiger_company = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_davros = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_ilia_pegasus_knights_1 = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_ilia_pegasus_knights_2 = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_ilia_pegasus_knights_3 = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_ilia_pegasus_knights_4 = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_ilia_pegasus_knights_5 = {
+					holder_scope = { character = PREVPREV}
+				}
+				d_ilia_mercenary_knights = {
+					holder_scope = { character = PREVPREV}
+				}
+			
+			}
+		}
+		any_demesne_title = {
+			limit = {
+				OR = {
+					title=d_black_fang
+					title=d_talon_company
+					title=d_tiger_company
+					title=d_davros
+					title=d_ilia_pegasus_knights_1
+					title=d_ilia_pegasus_knights_2
+					title=d_ilia_pegasus_knights_3
+					title=d_ilia_pegasus_knights_4
+					title=d_ilia_pegasus_knights_5
+					title=d_ilia_mercenary_knights
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = PREV
+				culture = PREV
+				female = no
+				age = 20			
+			}
+			new_character = {
+				#grant_title = PREV
+				usurp_title = { target = PREV }
+				set_defacto_liege = THIS
+			}
+		}
+	}
+}
+
 buy_tier_1_weapon_effect = {
 	wealth = -50
 }

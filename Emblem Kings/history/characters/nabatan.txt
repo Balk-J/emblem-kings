@@ -27,13 +27,9 @@
 #	180.01.01 = {
 #		give_nickname=nick_the_archsage
 #		add_trait="eight_legends"
-#		#add_trait="regalia_forblaze"
 #		effect = {
 #			ROOT = {
-#		#		add_character_modifier = { name = "owns_regalia" duration = -1 } 
-#				set_character_flag="regalia_hide"	
 #				set_character_flag="regalia_forblaze_failure"
-#		#		set_global_flag="regalia_forblaze_held"	
 #			}
 #			set_variable = { which = "level" value = 20 }
 #		}
@@ -59,9 +55,6 @@
 #	}
 #	1161.01.01 = { 
 #		death=yes 
-#		#effect = {
-#		#	clr_global_flag="regalia_forblaze_held"
-#		#}
 #	}
 #}
 #
@@ -94,11 +87,9 @@
 #		add_trait="eight_legends"
 #		effect={
 #			add_friend=601 # Athos
-#			ROOT = {
-#				#add_character_modifier = { name = "owns_regalia" duration = -1 }  
+#			ROOT = { 
 #				set_character_flag="regalia_hide"	 
 #				set_character_flag="regalia_apocalypse_failure"	
-#				#set_global_flag="regalia_apocalypse_held"	
 #			}
 #		}
 #	}
@@ -108,9 +99,6 @@
 #	
 #	1162.01.01 = { 
 #		death=yes 
-#		#effect = {
-#		#	clr_global_flag="regalia_apocalypse_held"
-#		#}
 #	}
 #}
 

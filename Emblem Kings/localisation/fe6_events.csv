@@ -1,10 +1,4 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-fe6..title;;;;;;;;;;;;;;x
-fe6..desc;;;;;;;;;;;;;;x
-fe6..A;;;;;;;;;;;;;;x
-fe6..B;;;;;;;;;;;;;;x
-fe6..C;;;;;;;;;;;;;;x
-fe6..D;;;;;;;;;;;;;;x
 fe6.4.title;The Shrine of Seals;;;;;;;;;;;;;x
 fe6.4.desc;The Shrine of Seals was built by Hartmut after the Scouring. Its existence is not widely known, and its exact location is one of the realm's most closely guarded secrets. \n\nThe full details of what is sealed within its depths are long lost to time. Whatever is in there must be important, or valuable... or dangerous. \n\nYou could take a small group of trusted retainers and investigate the shrine, if you want to know for sure...;;;;;;;;;;;;;x
 fe6.4.A;Yes, I have to know!;;;;;;;;;;;;;x
@@ -37,3 +31,46 @@ fe6.9.A;I look forward to working with you.;;;;;;;;;;;;;x
 fe6.9.B;If you don't trust me, I don't want your help.;;;;;;;;;;;;;x
 fe6.10.desc;The man lowers his head, then disappears before your eyes. Your guards search the area, but report no sightings of the man or signs of a break-in. Was he ever really there?;;;;;;;;;;;;;x
 fe6.10.A;Disturbing.;;;;;;;;;;;;;x
+fe6.12.title;Liberation of [target_dragon_liberation_invasion_title.GetName];;;;;;;;;;;;;x
+fe6.12.desc;Humanity has turned [target_dragon_liberation_invasion_title.GetName] into a cesspool of madness and evil. It is long past time to free that land from the wicked grasp of man and place it in the hands of a [Root.GetTitle] who can change it for the better!\n\nTo liberate it quickly, I could direct my commanders to plan an attack against all the rulers in the region at once.;;;;;;;;;;;;;x
+fe6.12.A;We will strike as soon as possible.;;;;;;;;;;;;;x
+fe6.12.A.tooltip;[Root.GetTitledFirstName] begins preparing an invasion of §Y[target_dragon_liberation_invasion_title.GetName]§!. Rulers in the region may seek to join your cause...;;;;;;;;;;;;;x
+fe6.12.B;We are not ready for this yet.;;;;;;;;;;;;;x
+fe6.13.title;The Disturbance of [From.PrimaryTitle.GetName];;;;;;;;;;;;;x
+fe6.13.desc;Our scouts have reported that [From.PrimaryTitle.GetName] is preparing for war!\n\n[From.GetTitledFirstName] is marshaling [From.GetHerHis] forces for an attack on all who call [target_dragon_liberation_invasion_title.GetName] home. [From.GetSheHeCap] will likely begin [From.GetHerHis] assault within days...;;;;;;;;;;;;;x
+fe6.13.A;This is our realm. I won't let you just do as you please with it!;;;;;;;;;;;;;x
+fe6.13.A.tooltip;[Root.GetTitledFirstName] will defend §Y[target_dragon_liberation_invasion_title.GetName]§! against [From.GetTitledName].;;;;;;;;;;;;;x
+fe6.13.B;If a force cannot be beaten, one must join that force.;;;;;;;;;;;;;x
+fe6.13.B.tooltip;[Root.GetTitledFirstName] will join [From.GetTitledFirstName] in [From.GetHerHis] invasion of §Y[target_dragon_liberation_invasion_title.GetName]§!. After the war, [Root.GetFirstName] may be asked to rule §Y[target_dragon_liberation_invasion_title.GetName]§! as a vassal of [From.GetTitledFirstName].;;;;;;;;;;;;;x
+fe6.13.C;That [GetRootFromInsult]!;;;;;;;;;;;;;x
+fe6.14.desc;My commanders report that we are ready to begin our liberation of [target_dragon_liberation_invasion_title.GetName].;;;;;;;;;;;;;x
+fe6.14.desc.collaborators;My commanders report that we are ready to begin our liberation of [target_dragon_liberation_invasion_title.GetName]. We have also been approached by messengers from some of the rulers there. They are willing to fight on our side, if we allow them to govern the region after the war.;;;;;;;;;;;;;x
+fe6.14.A;History will be rewritten.;;;;;;;;;;;;;x
+fe6.14.A.collaborators;At least their greed will make my task simpler.;;;;;;;;;;;;;x
+fe6.14.A.tooltip;\nAll other rulers within [target_dragon_liberation_invasion_title.GetName] join the war opposing [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+fe6.16.desc;The invasion continues, and [Root.PrimaryTitle.GetName] must keep fighting.;;;;;;;;;;;;;x
+fe6.16.A;To victory!;;;;;;;;;;;;;x
+fe6.17.title;Invasion of [target_dragon_liberation_invasion_title.GetName];;;;;;;;;;;;;x
+fe6.17.desc;[From.GetTitledName] has started an invasion of [target_dragon_liberation_invasion_title.GetName]! [From.GetFirstName] appears to be focused on seizing the capital, but [From.GetHerHis] forces are attacking anyone who holds land within the region. [From.GetHerHisCap] reason for the attack remains unclear...;;;;;;;;;;;;;x
+fe6.17.A;Madness!;;;;;;;;;;;;;x
+fe6.19.desc;The invasion of [target_dragon_liberation_invasion_title.GetName] has sparked heated debate in your court. Some of your courtiers have expressed the opinion that it is time for us to take a stand against [FromFromFrom.GetTitledName]. We could demand that [FromFromFrom.GetSheHe] cease this mad aggression, or face the full might of [Root.PrimaryTitle.GetName]!;;;;;;;;;;;;;x
+fe6.19.A;We must protect [target_dragon_liberation_invasion_title.GetName] from [FromFromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
+fe6.19.A.tooltip;[FromFromFrom.GetTitledFirstName] will be issued a ultimatum to stop [FromFromFrom.GetHerHis] invasion of [target_dragon_liberation_invasion_title.GetName]. If [FromFromFrom.GetSheHe] declines, [Root.GetTitledFirstName] will join the war opposing [FromFromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
+fe6.19.B;[Root.PrimaryTitle.GetName] shall remain neutral.;;;;;;;;;;;;;x
+fe6.20.desc;[Root.GetTitledFirstName],\nYour senseless aggression has gone too far! I am placing the people of [target_dragon_liberation_invasion_title.GetName] under my protection. I urge you to stand down immediately and withdraw your forces. If you do not, you will face the full might of [From.PrimaryTitle.GetName]. \n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe6.20.A;Let that [GetRootFromInsult] come!;;;;;;;;;;;;;x
+fe6.20.B;We cannot risk a confrontation with [From.PrimaryTitle.GetName].;;;;;;;;;;;;;x
+fe6.21.desc;[Root.GetTitledFirstName],\nYou have no right to issue such a demand. [target_dragon_liberation_invasion_title.GetName] must liberated from the pointless things that men fight over. Stand in my way and you will be swept aside with the rest of this world's evil. \n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe6.21.A;;Then war it is!;La guerre est déclarée !;Das bedeutet Krieg!;;¡Entonces es la guerra!;;;;;;;;;x
+fe6.21.B;Actually, going to war was not my plan...;Je n'avais pas envisagé de devoir faire la guerre...;Einen wirklichen Krieg hatte ich eigentlich nicht gewollt ...;;En realidad ir a la guerra no era mi plan...;;;;;;;;;x
+fe6.22.desc;[Root.GetTitledFirstName],\nI find I must acquiesce to your shortsighted and wicked demand. The armies of [From.PrimaryTitle.GetName] will withdraw from [target_dragon_liberation_invasion_title.GetName]. Know that my dream will never die, however! I will free the world from the evil grasp of [Root.GetTitle]s like you. \n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe6.22.A;[Root.PrimaryTitle.GetName] will never fall to a [From.GetManWoman] like you.;;;;;;;;;;;;;x
+fe6.23.desc;The war is over! When faced with an ultimatum from [FromFrom.GetTitledName], [From.GetTitledName] agreed to withdraw [From.GetHerHis] soldiers and cease hostilities!;;;;;;;;;;;;;x
+fe6.23.A;[FromFrom.GetTitledFirstName] has saved us!;;;;;;;;;;;;;;x
+fe6.23.B;We would have been fine without [FromFrom.GetHerHis] help.;;;;;;;;;;;;;x
+fe6..title;;;;;;;;;;;;;;x
+fe6..desc;;;;;;;;;;;;;;x
+fe6..A;;;;;;;;;;;;;;x
+fe6..B;;;;;;;;;;;;;;x
+fe6..C;;;;;;;;;;;;;;x
+fe6..D;;;;;;;;;;;;;;x

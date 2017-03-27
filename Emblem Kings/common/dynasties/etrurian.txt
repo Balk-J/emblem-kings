@@ -425,7 +425,7 @@
 	culture="etrurian"
 }
 234={
-	name="of Éolienne"
+	name="of Eolienne"
 	culture="etrurian"
 }
 235={
