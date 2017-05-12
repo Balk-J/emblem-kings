@@ -198,11 +198,11 @@
 		birth=yes 
 	}
 	
-	1176.09.01 = { 
-		effect={
-			add_friend=922 # Fae
-		}
-	}
+#	1176.09.01 = { # moved to dynamic immortal chars
+#		effect={
+#			add_friend=922 # Fae
+#		}
+#	}
 	
 	1177.01.01 = { 
 		death = {

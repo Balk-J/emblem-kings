@@ -97,3 +97,8 @@ STAT_PIETY_MENU_QUINTESSENCE;§YQuintessence§!;§YQuintessence§!;§YQuintessence§!;
 STAT_PIETY_QUINTESSENCE;Quintessence;Quintessence;Quintessence;;Quintessence;;;;;;;;;x
 STAT_PIETY_DESC_QUINTESSENCE;Quintessence is respected by your fellow mages. Like Prestige, it is added to your score on the death of a ruler.;;;;;;;;;;;;;x
 MONTHLY_PIETY_QUINTESSENCE;Monthly Quintessence Increase;;;;;;;;;;;;;x
+dummy_1;Fire;;;;;;;;;;;;;x
+dummy_2;Thunder;;;;;;;;;;;;;x
+dummy_3;Wind;;;;;;;;;;;;;x
+dummy_4;Water;;;;;;;;;;;;;x
+dummy_5;Earth;;;;;;;;;;;;;x

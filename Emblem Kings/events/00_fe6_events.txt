@@ -428,7 +428,6 @@ narrative_event = {
 	picture = GFX_evt_spymaster
 	
 	is_triggered_only = yes
-
 	
 	# Zephiel option
 	option = {
@@ -1129,23 +1128,6 @@ character_event = {
 									}
 									set_character_flag = dragon_liberation_invasion_defender
 								}
-#								any_mercenary_band = {
-#									holder_scope = {
-#										limit = {
-#											dragon_liberation_invasion_mercenary_target_trigger = yes
-#											NOT = { has_character_flag = invasion_collaborator }
-#										}
-#										if = {
-#											limit = {
-#												NOT = { any_war = { using_cb = dragon_liberation_invasion } }
-#											}
-#											remove_elibe_mercenary_effect = yes
-#											join_defender_wars = PREVPREVPREV
-#											add_elibe_mercenary_effect = yes
-#										}
-#										set_character_flag = dragon_liberation_invasion_defender
-#									}
-#								}
 							}
 							add_elibe_mercenary_effect = yes
 						}
@@ -1173,6 +1155,7 @@ character_event = {
 					limit = {
 						capital_scope = { region = world_elibe }
 						NOT = { any_war = { using_cb = dragon_liberation_invasion } }
+						NOT = { any_liege = ROOT }
 					}
 					character_event = { id = fe6.17 }	
 				}
@@ -1202,9 +1185,7 @@ character_event = {
 		}
 	}
 	
-	option = {
-		name = OK
-		
+	option = {		
 		current_heir = {
 			if = {
 				limit = {
@@ -1304,14 +1285,7 @@ narrative_event = {
 				limit = {
 					has_global_flag = dragon_liberation_invasion_intervention_allowed
 					capital_scope = { region = world_elibe }
-#					any_independent_ruler = {
-#						war = yes
-#						any_war = { 
-#							using_cb = dragon_liberation_invasion 
-#							is_primary_war_attacker = yes
-#						}
 						ROOT = { relative_power = { who = FROM power = 0.5 } }
-#					}
 				}
 				character_event = { id = fe6.18 days = 3 }
 			}
@@ -1325,9 +1299,7 @@ character_event = {
 	hide_window = yes	
 	is_triggered_only = yes	
 	
-	option = {
-		name = OK
-		
+	option = {		
 		if = {
 			limit = {
 				any_independent_ruler = {
@@ -1353,16 +1325,8 @@ character_event = {
 		custom_tooltip = {
 			text = fe6.19.A.tooltip
 			hidden_tooltip = {
-#				random_independent_ruler = {
-#					limit = {
-#						war = yes
-#						any_war = { 
-#							using_cb = dragon_liberation_invasion 
-#							is_primary_war_attacker = yes
-#						}
-#					}
 				FROMFROMFROM = {
-					character_event = { id = fe6.20 }
+					letter_event = { id = fe6.20 }
 				}
 			}
 		}

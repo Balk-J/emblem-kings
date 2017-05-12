@@ -667,7 +667,7 @@
 			set_character_flag="class_selected"
 		}
 	} 
-	1135.01.01={
+	1125.01.01={
 	add_trait="grey_eminence"
 	} 
 	
@@ -1398,7 +1398,7 @@
 	}
 	
 	1161.01.01 = { 
-		employer = 801 #Fargus
+		employer = 764 #Fargus
 	}
 	
 	1189.01.01 = { 

@@ -251,6 +251,7 @@
 	religion=elimine_church
 	culture=lycian
 	trait="fair"	
+	disallow_random_traits="yes" 
 	
 	1127.01.01={
 		birth=yes
@@ -276,7 +277,6 @@
 	1180.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 107 = {
@@ -289,6 +289,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 		
 	1143.01.01={
 		birth=yes
@@ -326,7 +327,6 @@
 			death_reason=death_trait
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 108 = {
@@ -374,6 +374,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	father=198
 	1098.01.01={
@@ -405,7 +406,6 @@
 	1163.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 110 = {
@@ -597,6 +597,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	father=198
 	1109.01.01={
@@ -635,7 +636,6 @@
 			killer=111 #Lyn 
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 113 = {
@@ -758,6 +758,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1126.01.01={
 		birth=yes
@@ -795,7 +796,6 @@
 			killer=107 #Eliwood
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 119 = {
@@ -804,6 +804,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	father=118
 	1143.01.01={
@@ -832,7 +833,6 @@
 			killer=108 #Roy
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 120 = {
@@ -868,6 +868,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1111.01.01={
 		birth=yes
@@ -885,7 +886,6 @@
 			death_reason = death_suicide 
 		}
 	}
-	disallow_random_traits="yes" 
 }
 
 122 = {
@@ -949,6 +949,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	father=121
 	trait="fair"
@@ -997,7 +998,6 @@
 	1205.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 192 = {
@@ -1005,6 +1005,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	disallow_random_traits="yes" 
 	
 	1120.01.01={
 		birth=yes
@@ -1036,7 +1037,6 @@
 	1190.01.01={
 		death=yes
 	} 	
-	disallow_random_traits="yes" 
 }
 
 124 = {
@@ -1795,7 +1795,7 @@
 		}
 		#culture=seafarer
 		add_trait="adventurer"
-		employer = 801 #Fargus
+		employer = 764 #Fargus
 	}	
 	1157.1.1 = {
 		add_trait="tough_soldier"
@@ -1834,7 +1834,7 @@
 	1121.01.01={
 		birth=yes
 	} 		
-	1130.01.01={
+	1130.01.02={
 		employer=164
 	}
 	1133.01.01={
@@ -1866,7 +1866,7 @@
 	1120.01.01={
 		birth=yes
 	} 		
-	1130.01.01={
+	1130.01.02={
 		employer=164
 	}	
 	1132.01.01={
@@ -2290,7 +2290,7 @@
 	trait="strong"
 	1105.01.01={
 		birth=yes
-		set_character_flag="is_fe7_renault"
+		effect = {set_character_flag="is_fe7_renault"}
 	} 		
 	1117.01.01={
 		add_trait="class_mercenary"
@@ -2341,25 +2341,25 @@
 		religion=dark
 		add_trait="mystic"
 		#add_trait="immortal"
-		health = 10
-		set_character_flag="morph_experiment_subject"
+		effect={
+			set_character_flag="morph_experiment_subject"
+			health = 10
+		}
 	}	
 	
 	# Arbitrary date when the "empty vessel" morph of his friend is created. 
 	# He leaves Nergal in disgust. We'll assume he went to the church.
 	1140.01.01= {
 		religion=elimine_church
-		effect={
-			add_rival=308 #Nergal
-		}
 		remove_trait="class_hero"
 		add_trait="class_bishop"
-		effect = {
+		effect={
 			remove_trait="base_class_mercenary"
 			add_trait="base_class_monk"
+			add_rival=308 #Nergal
 		}
 		remove_trait="lunatic"
-		employer=262; #filler character, head of the Elimine Church
+		employer=262 #filler character, head of the Elimine Church
 	}
 	
 	#1160.01.01 = {
@@ -2434,8 +2434,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
-		}
-		effect = {
+			
 			random_character = {
 				limit = { character = 156 } 
 				reverse_opinion = {
@@ -2489,7 +2488,7 @@
 		#employer=0
 	}
 	
-	1115.01.01 = {
+	1155.01.01 = {
 		employer=112 #Lundgren
 	}		
 	
@@ -3013,7 +3012,7 @@
 	}
 	
 	# Loyal to Legance
-	1151.01.01 = {
+	1153.01.01 = {
 		effect = {
 			c_aperlae = {
 				holder_scope = { 
@@ -3288,7 +3287,7 @@
 	
 	#father=181 #Magough
 	real_father=401 #Hartmut
-	mother=921 #Melitha
+	#mother=921 #Melitha
 	trait="slow" 
 	trait="dragon_blood" 
 	trait="bastard"

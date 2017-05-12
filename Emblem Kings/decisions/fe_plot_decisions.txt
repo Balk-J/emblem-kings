@@ -119,5 +119,136 @@ decisions = {
 			}
 		}
 	}	
+	
+	plot_coup_decision_100 = {
+		only_playable = yes
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_coup
+			NOT = { has_character_flag = plot_coup_decision_taken }
+		}
+		allow = {
+			plot_power = 1
+			num_of_plot_backers = 5
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+
+			liege = {
+				OR = {
+					independent = yes
+					AND = {
+						will_liege_enforce_peace = no
+						has_liege_enforced_peace = no
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				any_plot_backer = {
+					set_character_flag = coup
+				}	
+				random_list = {
+					90 = { 
+						character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					}
+					10 = {
+						character_event = { id = 7601 tooltip = "EVTTOOLTIP7601" }
+					}
+				}
+				hidden_tooltip = {
+					set_character_flag = plot_coup_decision_taken
+					activate_plot = yes
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+	plot_coup_decision_75 = {
+		only_playable = yes
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_coup
+			NOT = { has_character_flag = plot_coup_decision_taken }
+		}
+		allow = {
+			plot_power = 0.75
+			num_of_plot_backers = 3
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+
+			liege = {
+				OR = {
+					independent = yes
+					AND = {
+						will_liege_enforce_peace = no
+						has_liege_enforced_peace = no
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				any_plot_backer = {
+					#set_character_flag = coup
+					opinion = {
+						modifier = opinion_supported_coup
+						who = ROOT
+						years = 10
+					}
+				}	
+				character_event = { id = fe_plot.62 }
+				random_list = {
+					60 = { 
+						#character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					}
+					40 = {
+						#character_event = { id = 7601 tooltip = "EVTTOOLTIP7601" }
+					}
+				}
+				hidden_tooltip = {
+					set_character_flag = plot_coup_decision_taken
+					activate_plot = yes
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { plot_power = 0.9 }
+			}
+		}
+	}
 }
 

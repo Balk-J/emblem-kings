@@ -1,3 +1,7 @@
+secret_religion_visibility_trigger = {
+	secret_religion = FROM
+}
+
 light_group = {
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
@@ -534,5 +538,61 @@ draconic_group = {
 			
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+	}
+}
+
+christian = {
+	graphical_culture = westerngfx
+	playable = no
+	color = { 0.1 0.1 0.1 }
+	
+	dummy_1 = {
+		icon = 1
+		heresy_icon = 2
+		color = { 0.1 0.1 0.1 }		
+	}
+}
+muslim = {
+	graphical_culture = westerngfx
+	playable = no
+	color = { 0.1 0.1 0.1 }
+	
+	dummy_2 = {
+		icon = 1
+		heresy_icon = 2
+		color = { 0.1 0.1 0.1 }		
+	}
+}
+zoroastrian_group = {
+	graphical_culture = westerngfx
+	playable = no
+	color = { 0.1 0.1 0.1 }
+	
+	dummy_3 = {
+		icon = 1
+		heresy_icon = 2
+		color = { 0.1 0.1 0.1 }		
+	}
+}
+jewish_group = {
+	graphical_culture = westerngfx
+	playable = no
+	color = { 0.1 0.1 0.1 }
+	
+	dummy_4 = {
+		icon = 1
+		heresy_icon = 2
+		color = { 0.1 0.1 0.1 }		
+	}
+}
+indian_group = {
+	graphical_culture = westerngfx
+	playable = no
+	color = { 0.1 0.1 0.1 }
+	
+	dummy_5 = {
+		icon = 1
+		heresy_icon = 2
+		color = { 0.1 0.1 0.1 }		
 	}
 }

@@ -737,6 +737,12 @@ plot_kill_character = {
 		OR = {
 			NOT = { is_child_of = FROM } # Not my own children
 			AND = {
+				NOT = { # If they're playing with diplo_assassination on, this isn't really special and we're not going to bother.
+					has_game_rule = {
+						name = diplo_assassination
+						value = on
+					}
+				}
 				is_child_of = FROM
 				age = 6
 				NOT = { trait = incapable }
@@ -1082,15 +1088,35 @@ plot_kill_character = {
 		is_alive = no
 	}
 	abort_effect = {
-		FROM = { clr_character_flag = murder_in_motion }
+		FROM = { 
+			clr_character_flag = murder_in_motion 
+			clr_character_flag = plot_murder_child 
+		}
 	}
+	creation_effect = {
+		# ROOT = target, FROM = plotter
+		if = {
+			limit = {
+				is_child_of = FROM					
+				NOT = { # If they're playing with diplo_assassination on, this isn't really special and we're not going to bother.
+					has_game_rule = {
+						name = diplo_assassination
+						value = on
+					}
+				}
+			}
+			FROM = {
+				set_character_flag = plot_murder_child
+			}
+		}
+}
 	effect = {
 		FROM = {
 			# Clear flags
 			hidden_tooltip = {
 				if = {
 					limit = {
-						has_character_flag = plot_murder_child 
+						has_character_flag = plot_murder_child 	
 					}
 					character_event = { id = karma.19 days = 10 random = 5 }
 					clr_character_flag = plot_murder_child

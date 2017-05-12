@@ -77,3 +77,8 @@ opinion_betrayed = {
 	opinion = -50
 	months = 120
 }
+
+opinion_supported_coup = {
+	opinion = 25
+	months = 240
+}

@@ -104,4 +104,12 @@ spriteTypes = {
 		name = "GFX_declare_dragon_liberation_war"
 		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
 	}
+	spriteType = {
+		name = "GFX_plot_coup_decision_100"
+		texturefile = "gfx\\interface\\decision_icon_faction_claimant_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_plot_coup_decision_75"
+		texturefile = "gfx\\interface\\decision_icon_faction_claimant_ultimatum.dds"
+	}
 }

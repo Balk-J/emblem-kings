@@ -197,6 +197,11 @@
 	name="Yasavid"
 	culture="nabatan"
 }
+633=
+{
+	name="Razinid"
+	culture="nabatan"
+}
 634=
 {
 	name="Rasiqid"
@@ -480,10 +485,5 @@
 690=
 {
 	name="Matiyid"
-	culture="nabatan"
-}
-691=
-{
-	name="Razinid"
 	culture="nabatan"
 }

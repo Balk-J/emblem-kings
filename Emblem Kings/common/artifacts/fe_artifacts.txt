@@ -1,12 +1,5 @@
 slots = {
-	weapon = 1
-	ceremonial_weapon = 1
 	staff = 1
-	scepter = 1
-	crown = 1
-	wrist = 1
-	neck = 1
-	torso = 1
 }
 
 ### Fire Emblems ###

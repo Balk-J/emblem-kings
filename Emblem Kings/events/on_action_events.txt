@@ -291,6 +291,12 @@ character_event = {
 							character = ROOT 
 						}
 					}
+					NOT = { # If they're playing with diplo_assassination on, this isn't really special and we're not going to bother.
+						has_game_rule = {
+							name = diplo_assassination
+							value = on
+						}
+					}
 				}
 				character_event = { id = karma.20 days = 7 random = 3 }
 			}

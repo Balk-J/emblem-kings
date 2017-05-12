@@ -123,3 +123,18 @@ d_temp_2 = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+
+# This should not have to be here. It may prevent a bug with SoA, but testing was inconclusive.
+k_papal_state = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 1 
+	allow = {
+		always = no
+	}
+	
+	title = "NO_TITLE"
+	title_female = "NO_TITLE"
+	title_prefix = "NO_PREFIX"
+}

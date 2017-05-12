@@ -1,0 +1,27 @@
+namespace = fe_test
+
+character_event = {
+	id = fe_test.1
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+			religion_group = xxx
+			}
+			add_trait = depressed
+		}
+		if = {
+			limit = { NOT = {
+			religion_group = xxx
+			} }
+			add_trait = drunkard
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}	

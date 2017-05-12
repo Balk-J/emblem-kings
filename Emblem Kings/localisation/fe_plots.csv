@@ -4,3 +4,6 @@ plot_disinherit_character_desc;§Y[From.GetTitledFirstName]§! wants to disinherit
 plot_disinherit_character_short;Disinherit;;;;;;;;;;;;;x
 plot_kill_child_title;Kill [This.GetBestName];Tuer [This.GetBestName];[This.GetBestName] töten;;Matar a [This.GetBestName];;;;;;;;;x
 plot_kill_child_desc;§Y[From.GetTitledFirstName]§! has decided that bringing [From.GetPossPronoun] child §Y[This.GetFirstName]§! into this world was a mistake.;;;;;;;;;;;;;x
+plot_coup_title;Plan a coup in the [This.GetFullBaseName];;;;;;;;;;;;;x
+plot_coup_desc;Rally support amongst the other vassals of [This.Holder.GetTitledName] in an attempt to stage a coup and seize control of the [This.GetFullBaseName].;;;;;;;;;;;;;x
+plot_coup_short;Plot a Coup;;;;;;;;;;;;;x

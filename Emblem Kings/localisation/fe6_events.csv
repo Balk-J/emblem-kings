@@ -29,7 +29,7 @@ fe6.9.title;The Last Dragon;;;;;;;;;;;;;x
 fe6.9.desc;"I don't trust you," the man says. "And I am not convinced that you can deliver on that promise. Although if you remain the master of that 'object,' there is a possibility."\n\nThe man lowers his hood and looks you in the eyes. "[Root.GetTitledFirstName], my name is Jahn. I am the last true dragon in these lands. If your goal is to return them to my kind, you have my cooperation.";;;;;;;;;;;;;x
 fe6.9.A;I look forward to working with you.;;;;;;;;;;;;;x
 fe6.9.B;If you don't trust me, I don't want your help.;;;;;;;;;;;;;x
-fe6.10.desc;The man lowers his head, then disappears before your eyes. Your guards search the area, but report no sightings of the man or signs of a break-in. Was he ever really there?;;;;;;;;;;;;;x
+fe6.10.desc;The man lowers his head, then disappears before your very eyes. Your guards search the area, but report no sightings of the man or signs of a break-in. Was he ever really there?;;;;;;;;;;;;;x
 fe6.10.A;Disturbing.;;;;;;;;;;;;;x
 fe6.12.title;Liberation of [target_dragon_liberation_invasion_title.GetName];;;;;;;;;;;;;x
 fe6.12.desc;Humanity has turned [target_dragon_liberation_invasion_title.GetName] into a cesspool of madness and evil. It is long past time to free that land from the wicked grasp of man and place it in the hands of a [Root.GetTitle] who can change it for the better!\n\nTo liberate it quickly, I could direct my commanders to plan an attack against all the rulers in the region at once.;;;;;;;;;;;;;x

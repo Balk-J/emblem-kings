@@ -443,24 +443,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\.dds"
-	}
-	spriteType = {
-		name = "GFX__small"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\_small.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\.dds"
-	}
-	spriteType = {
-		name = "GFX__small"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\_small.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_killer_axe"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\weapons\\killer_axe.dds"
 	}

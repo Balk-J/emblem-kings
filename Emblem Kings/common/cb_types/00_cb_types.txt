@@ -5096,6 +5096,15 @@ religious = {
 			OR = {
 				NOT = { religion = elimine_church }
 				is_heresy_of = FROM
+				AND = {
+					religion_group = FROM
+					FROM = {
+						has_character_modifier = known_satanist
+					}
+					NOT = {
+						has_character_modifier = known_satanist
+					}
+				}
 			}
 			NOT = { religion_group = magic_group } 
 			NOT = { same_realm = FROM }
@@ -5116,10 +5125,35 @@ religious = {
 						}
 					}
 				}
+				AND = {
+					religion_group = FROM
+					FROM = {
+						has_character_modifier = known_satanist
+					}
+					NOT = {
+						has_character_modifier = known_satanist
+					}
+				}
 			}
 			top_liege = {
 				religion_group = ROOT
-				NOT = { religion = FROM }
+				OR = {
+					NOT = { religion = FROM }
+					AND = {
+						religion = FROM
+						FROM = {
+							has_character_modifier = known_satanist
+						}
+						NOT = {
+							has_character_modifier = known_satanist
+						}
+						ROOT = {
+							NOT = {
+								has_character_modifier = known_satanist
+							}
+						}
+					}
+				}
 				OR = {
 					religion = ROOT
 					AND = {
@@ -8940,21 +8974,19 @@ pagan_subjugation = {
 						modifier = opinion_subjugated 
 						who = ROOT
 					}
-				}
-				set_defacto_liege = ROOT
-				
+				}				
 				any_demesne_title = {
 					limit = {
 						higher_tier_than = ROOT
 					}
-					ROOT = { grant_title_no_opinion = { target = PREV type = invasion } }
+					ROOT = { usurp_title = { target = PREV type = invasion } }
 					add_pressed_claim = PREV
 				}
 				any_demesne_title = {
 					limit = {
 						tier = ROOT
 					}
-					ROOT = { grant_title_no_opinion = { target = PREV type = invasion } }
+					ROOT = { usurp_title = { target = PREV type = invasion } }
 					add_pressed_claim = PREV
 				}
 				set_defacto_liege = ROOT
@@ -9020,7 +9052,7 @@ pagan_subjugation = {
 	}
 
 	attacker_ai_victory_worth = {
-		factor = 200
+		factor = -1 # always accept
 	}
 	
 	attacker_ai_defeat_worth = {
@@ -10563,6 +10595,51 @@ pagan_county_conquest = {
 	defender_ai_defeat_worth = {
 		factor = 100
 	}
+	
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 4.0
+			ROOT = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+			OR = {
+				empire = { title = e_scandinavia }
+				kingdom = { title = k_rus }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			ROOT = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+			has_global_flag = viking_age_started
+			OR = {
+				empire = { title = e_britannia }
+				kingdom = { title = k_brittany }
+				kingdom = { title = k_france }
+				kingdom = { title = k_frisia }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			ROOT = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+			has_global_flag = viking_age_started
+			location = { port = yes }
+		}
+	}
 }
 
 # 43
@@ -12069,10 +12146,37 @@ buddhist_holy_war = {
 		ROOT = {
 			religion = buddhist
 			NOT = { same_realm = FROM }
-			NOT = { religion_group = FROM }
+			OR = {
+				NOT = { religion_group = FROM }
+				AND = {
+					religion_group = FROM
+					FROM = {
+						has_character_modifier = known_satanist
+					}
+					NOT = {
+						has_character_modifier = known_satanist
+					}
+				}
+			}
 			top_liege = {
 				religion_group = ROOT
-				NOT = { religion = FROM }
+				OR = {
+					NOT = { religion = FROM }
+					AND = {
+						religion_group = FROM
+						FROM = {
+							has_character_modifier = known_satanist
+						}
+						NOT = {
+							has_character_modifier = known_satanist
+						}
+						ROOT = {
+							NOT = {
+								has_character_modifier = known_satanist
+							}
+						}
+					}
+				}
 			}
 			mercenary = no
 			is_nomadic = no
@@ -12131,9 +12235,36 @@ buddhist_holy_war = {
 		ROOT = {
 			religion = buddhist
 			NOT = { same_realm = FROM }
-			NOT = { religion_group = FROM }
+			OR = {
+				NOT = { religion_group = FROM }
+				AND = {
+					religion_group = FROM
+					FROM = {
+						has_character_modifier = known_satanist
+					}
+					NOT = {
+						has_character_modifier = known_satanist
+					}
+				}
+			}
 			top_liege = {
-				NOT = { religion = FROM }
+				OR = {
+					NOT = { religion = FROM }
+					AND = {
+						religion_group = FROM
+						FROM = {
+							has_character_modifier = known_satanist
+						}
+						NOT = {
+							has_character_modifier = known_satanist
+						}
+						ROOT = {
+							NOT = {
+								has_character_modifier = known_satanist
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -12449,7 +12580,7 @@ indian_subjugation = {
 	}
 
 	attacker_ai_victory_worth = {
-		factor = 200
+		factor = -1 # always accept
 	}
 	
 	attacker_ai_defeat_worth = {
@@ -14512,7 +14643,7 @@ nomad_subjugation = {
 	}
 
 	attacker_ai_victory_worth = {
-		factor = 200
+		factor = -1 # always accept
 	}
 	
 	attacker_ai_defeat_worth = {
@@ -15214,41 +15345,8 @@ increase_council_power_war = { # Started from faction
 	}
 
 	on_success_title = {
-		if = {
-			limit = { has_law = law_voting_power_0 }
-			add_law_w_cooldown = law_voting_power_1
-			break = yes
-		}
-		if = {
-			limit = { has_law = war_voting_power_0 }
-			add_law_w_cooldown = war_voting_power_1
-			break = yes
-		}
-		if = {
-			limit = { has_law = revoke_title_voting_power_0 }
-			add_law_w_cooldown = revoke_title_voting_power_1
-			break = yes
-		}
-		if = {
-			limit = { has_law = imprison_voting_power_0 }
-			add_law_w_cooldown = imprison_voting_power_1
-			break = yes
-		}
-		if = {
-			limit = { has_law = grant_title_voting_power_0 }
-			add_law_w_cooldown = grant_title_voting_power_1
-			break = yes
-		}
-		if = {
-			limit = { has_law = banish_voting_power_0 }
-			add_law_w_cooldown = banish_voting_power_1
-			break = yes
-		}
-		if = {
-			limit = { has_law = execution_voting_power_0 }
-			add_law_w_cooldown = execution_voting_power_1
-			break = yes
-		}
+		increase_council_power_effect = yes
+		increase_vassal_freedom_effect = yes
 	}
 
 	on_fail = {
@@ -15667,21 +15765,47 @@ powerful_vassal_takeover_war = { # Started from faction
 	}
 
 	on_success_title = { #This is the target title of the faction
-		if = {
-			limit = { has_law = law_voting_power_0 }
-			add_law_w_cooldown = law_voting_power_1 
-		}
-		if = {
-			limit = { has_law = war_voting_power_0 }
-			add_law_w_cooldown = war_voting_power_1
-		}
+		increase_council_power_effect = yes
+		increase_vassal_freedom_effect = yes
+		increase_vassal_freedom_effect = yes
 		if = {
 			limit = { has_law = succession_voting_power_0 }
 			add_law_w_cooldown = succession_voting_power_1
 		}
-		if = {
-			limit = { NOT =  { has_law = succ_feudal_elective } }
-			add_law_w_cooldown = succ_feudal_elective
+		custom_tooltip = {
+			text = overthrow_text
+			hidden_tooltip = {
+				if = {
+					limit = { 
+						NOT = { has_law = succ_feudal_elective }
+						has_law = law_voting_power_1
+						has_law = banish_voting_power_1
+						has_law = execution_voting_power_1
+						has_law = revoke_title_voting_power_1
+						has_law = grant_title_voting_power_1
+						has_law = imprison_voting_power_1
+						has_law = war_voting_power_1						
+					}
+					add_law_w_cooldown = succ_feudal_elective
+				}
+				if = {
+					limit = {
+						NOT = { has_law = succ_gavelkind }
+						NOT = { has_law = succ_feudal_elective }
+						NAND = {
+							has_law = succ_feudal_elective
+							has_law = law_voting_power_1
+							has_law = banish_voting_power_1
+							has_law = execution_voting_power_1
+							has_law = revoke_title_voting_power_1
+							has_law = grant_title_voting_power_1
+							has_law = imprison_voting_power_1
+							has_law = war_voting_power_1						
+						}
+					}
+					add_law_w_cooldown = succ_gavelkind
+				}
+			}
 		}
 		holder_scope = {
 			clr_character_flag = powerful_vassal_takeover_target

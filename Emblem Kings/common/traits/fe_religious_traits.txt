@@ -154,6 +154,11 @@ dark_power_hungry = {
 }
 
 secretly_elimine_church = {
+	potential = {
+		NOT = {
+			religion = elimine_church
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		#secretly_elimine_church
@@ -188,6 +193,11 @@ secretly_elimine_church = {
 }
 
 secretly_autotheist = {
+	potential = {
+		NOT = {
+			religion = autotheist
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -222,6 +232,11 @@ secretly_autotheist = {
 }
 
 secretly_golden_church = {
+	potential = {
+		NOT = {
+			religion = golden_church
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -256,6 +271,11 @@ secretly_golden_church = {
 }
 
 secretly_dragon_liberation = {
+	potential = {
+		NOT = {
+			religion = dragon_liberation
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -290,6 +310,16 @@ secretly_dragon_liberation = {
 }
 
 secretly_elibe_spirits_pagan = {
+	potential = {
+		NOT = {
+			religion = elibe_spirits_pagan
+		}
+		OR = {
+			ai = yes
+			has_dlc = "The Old Gods"
+			is_nomadic = yes
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -324,6 +354,16 @@ secretly_elibe_spirits_pagan = {
 }
 
 secretly_raider_pagan = {
+	potential = {
+		NOT = {
+			religion = raider_pagan
+		}
+		OR = {
+			ai = yes
+			has_dlc = "The Old Gods"
+			is_nomadic = yes
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -358,6 +398,16 @@ secretly_raider_pagan = {
 }
 
 secretly_divine_sky_pagan_reformed = {
+	potential = {
+		NOT = {
+			religion = divine_sky_pagan_reformed
+		}
+		OR = {
+			ai = yes
+			has_dlc = "The Old Gods"
+			is_nomadic = yes
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -392,6 +442,16 @@ secretly_divine_sky_pagan_reformed = {
 }
 
 secretly_divine_sky_pagan = {
+	potential = {
+		NOT = {
+			religion = divine_sky_pagan
+		}
+		OR = {
+			ai = yes
+			has_dlc = "The Old Gods"
+			is_nomadic = yes
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -426,6 +486,11 @@ secretly_divine_sky_pagan = {
 }
 
 secretly_anima = {
+	potential = {
+		NOT = {
+			religion = anima
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -460,6 +525,11 @@ secretly_anima = {
 }
 
 secretly_dark = {
+	potential = {
+		NOT = {
+			religion = dark
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church
@@ -494,6 +564,11 @@ secretly_dark = {
 }
 
 secretly_divine_dragon_naga = {
+	potential = {
+		NOT = {
+			religion = divine_dragon_naga
+		}
+	}
 	opposites = {
 		#Secretly other religions
 		secretly_elimine_church

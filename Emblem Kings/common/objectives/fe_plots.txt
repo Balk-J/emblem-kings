@@ -7,7 +7,6 @@
 # PLOTS
 ###############
 
-
 # Get a character disinherited
 plot_disinherit_character = {
 	#type = realm_characters_plus # All characters in the same realm, plus rivals and relatives of self, parents, children and spouse
@@ -410,6 +409,247 @@ plot_disinherit_character = {
 			# Clear flags
 			hidden_tooltip = {
 				clr_character_flag = disinherit_in_motion
+			}
+		}
+	}
+}
+
+
+# Vassal ruler plots to gain claim on liege's title
+#plot_gain_liege_title = {
+plot_coup = {
+	type = liege_titles
+	vassal_intrigue_plot = yes
+	
+	# Plotter scope
+	potential = {
+		always = no # not done yet
+		is_playable = yes
+		prisoner = no
+		age = 16
+		OR = {
+			is_feudal = yes
+			is_tribal = yes
+		}
+		is_landed = yes
+		independent = no
+		mercenary = no
+		NOT = { trait = incapable }
+		NOT = { trait = dark_incapable }
+		NOT = { trait = imbecile }
+		liege = {
+			NOT = { is_father = ROOT }
+			NOT = { is_mother = ROOT }
+		}
+		OR = {
+			is_councillor = yes
+			has_minor_title = title_regent
+			has_minor_title = title_appointed_regent
+			has_minor_title = title_commander
+			has_minor_title = title_seneschal
+			has_minor_title = title_state_inquisitor
+			has_minor_title = title_high_admiral
+			has_minor_title = title_high_judge
+			has_minor_title = title_champion
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_councilmember_king
+			has_minor_title = title_councilmember_emperor
+			has_minor_title = title_wyvern_general
+			has_minor_title = title_mage_general
+			has_minor_title = title_knight_general
+			has_minor_title = title_great_general
+		}
+		is_councillor = yes
+	}
+	
+	target_potential = {
+		FROM = {
+			OR = {
+				dejure_liege_title = {
+					title = ROOT
+				}
+				primary_title = {
+					de_jure_vassal_or_below = ROOT
+				}
+			}
+		}
+	}
+	
+	# Target scope
+	allow = {
+		is_vice_royalty = no
+		NOT = { claimed_by = FROM }
+		current_heir = {
+			NOT = { character = FROM }
+		}
+	}
+	
+	chance = {
+		factor = 1 # Must always be an integer
+		
+		modifier = {
+			factor = 0.0
+			FROM = {
+				ai = yes
+				war = yes
+			}
+		}
+		modifier = {
+			factor = 0.01
+			FROM = { trait = content }
+		}
+		modifier = {
+			factor = 0.2
+			FROM = {
+				OR = {
+					trait = dull
+					trait = slow
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			FROM = { trait = kind }
+		}
+		modifier = {
+			factor = 0
+			holder_scope = {
+				reverse_opinion = { who = FROM value = 25 }
+			}
+			NOT = {
+				OR = {
+					FROM = { trait = envious }
+					FROM = { trait = deceitful }
+					FROM = { trait = ambitious }
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			holder_scope ={
+				reverse_opinion = { who = FROM value = 50 }
+			}
+			OR = {
+				FROM = { trait = envious }
+				FROM = { trait = deceitful }
+				FROM = { trait = ambitious }
+			}
+		}
+		modifier = {
+			factor = 0.2
+			holder_scope = {
+				reverse_opinion = { who = FROM value = 0 }
+			}
+			NOT = {
+				OR = {
+					FROM = { trait = envious }
+					FROM = { trait = deceitful }
+					FROM = { trait = ambitious }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			holder_scope ={
+				reverse_opinion = { who = FROM value = 25 }
+			}
+			OR = {
+				FROM = { trait = envious }
+				FROM = { trait = deceitful }
+				FROM = { trait = ambitious }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				holder_scope = {
+					reverse_opinion = { who = FROM value = -50 }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { 
+				holder_scope = {
+					reverse_opinion = { who = FROM value = -75 }
+				}
+			}
+		}
+		modifier = {
+			# Subtle balance against nepotism
+			factor = 2.0
+			holder_scope = {
+				NOT = { dynasty = FROM }
+				top_liege = {
+					higher_tier_than = COUNT
+					dynasty = PREV
+					dynasty_realm_power = 0.25
+				}
+			}
+		}
+		modifier = {
+			# Subtle balance against nepotism
+			factor = 2.0
+			holder_scope = {
+				NOT = { dynasty = FROM }
+				top_liege = {
+					higher_tier_than = COUNT
+					dynasty = PREV
+					dynasty_realm_power = 0.4
+				}
+			}
+		}
+	
+		modifier = {
+			factor = 1.5
+			FROM = { is_smart_trigger = yes }
+		}
+		modifier = {
+			factor = 2.0
+			FROM = { trait = envious }
+		}
+		modifier = {
+			factor = 2.0
+			FROM = { trait = deceitful }
+		}
+		modifier = {
+			factor = 4.0
+			FROM = { trait = ambitious }
+		}
+	}
+	
+	success = {
+		claimed_by = FROM
+	}
+	abort = {
+		OR = {
+			holder_scope = {
+				character = FROM
+			}
+			has_holder = no
+		}
+		is_playable = no
+	}
+	abort_effect = {
+		FROM = {
+			# Clear flags
+			hidden_tooltip = {
+				clr_character_flag = plot_gain_liege_title_decision_taken
+			}
+		}
+	}
+	effect = {
+		FROM = {
+			any_plot_backer = {
+				reverse_opinion = {
+					modifier = opinion_grateful
+					who = FROM
+					years = 5
+				}
+			}
+			# Clear flags
+			hidden_tooltip = {
+				clr_character_flag = plot_gain_liege_title_decision_taken
 			}
 		}
 	}

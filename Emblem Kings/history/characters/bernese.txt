@@ -715,7 +715,7 @@
 	}
 	1162.01.01={
 		add_trait="class_cavalier"
-			add_trait="base_class_class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -816,7 +816,7 @@
 	}
 	1133.01.01={
 		add_trait="class_cavalier"
-			add_trait="base_class_class_cavalier"
+			add_trait="base_class_cavalier"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"

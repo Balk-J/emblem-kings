@@ -14,7 +14,7 @@
 	trait="shy"
 	1140.6.24={
 		birth=yes
-		employer=601
+		employer=644
 	}
 	1152.06.24={
 		add_trait="class_dark_mage"
@@ -45,6 +45,7 @@
 	trait="diligent"
 	1140.01.01 = { 
 		birth=yes 
+		effect={ dynasty = none }
 	}
 #	1152.01.01={
 #		add_trait="class_tactician"
