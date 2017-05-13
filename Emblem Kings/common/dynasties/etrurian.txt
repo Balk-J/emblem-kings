@@ -4,6 +4,7 @@
 	name="of Etruria"
 	culture="etrurian"
 	coat_of_arms = {
+		religion=elimine_church
 		template = 0
 		layer = {
 			texture = 0
@@ -22,6 +23,7 @@
 	name="Aquleia"
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -40,6 +42,7 @@
 	name="Reglay"
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -58,6 +61,7 @@
 	name="Caerleon" #
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -94,6 +98,7 @@
 	name="Siene" #For Roartz 
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -112,6 +117,7 @@
 	name="Felathri" #For Cecilia
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -130,6 +136,7 @@
 	name="Arritim" #For Douglas
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -148,6 +155,7 @@
 	name="Clevsin" #For Percival
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -166,6 +174,7 @@
 	name="Tarchna" #For Arcard
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -184,6 +193,7 @@
 	name="Alesia" #For a random duke... Roberts?
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -202,6 +212,7 @@
 	name="Bolsena" #For Morgan
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -220,6 +231,7 @@
 	name="Satria" #For Orlo
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -238,6 +250,7 @@
 	name="Muralto" #For Nord
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -256,6 +269,7 @@
 	name="Tarkina" #For Galdes
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -274,6 +288,7 @@
 	name="Velkha" #For Carls
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -291,6 +306,7 @@
 	name="Tarracina" #For Gol
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -308,7 +324,8 @@
 	used_for_random=no
 	name="Caisra" 
 	culture="etrurian"
-	    coat_of_arms = {
+	coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -327,6 +344,7 @@
 	name="Berua" # for Serra 
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -344,6 +362,7 @@
 	name="of Aquleia"
 	culture="etrurian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -373,6 +392,7 @@
 	name="Tenque" # for Zinque
 	culture="etrurian"
 	coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0

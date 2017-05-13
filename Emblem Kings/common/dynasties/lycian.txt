@@ -5,6 +5,7 @@
 	name="Ostia"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -22,6 +23,7 @@
 	name="Pherae"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -39,6 +41,7 @@
 	name="Caelin"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -56,6 +59,7 @@
 	name="Laus"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -73,6 +77,7 @@
 	name="Badon"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -90,6 +95,7 @@
 	name="Thria"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -107,6 +113,7 @@
 	name="Santaruz"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -124,6 +131,7 @@
 	name="Khathelet"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -141,6 +149,7 @@
 	name="Araphen"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -158,6 +167,7 @@
 	name="Tuscana"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -175,6 +185,7 @@
 	name="Tania"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -192,6 +203,7 @@
 	name="Cornwell"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -209,6 +221,7 @@
 	name="Worde"
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -227,6 +240,7 @@
 	name="Ryerde" #
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -244,6 +258,7 @@
 	name="of Alta"  # for Eagler
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -262,6 +277,7 @@
 	name="Phestos" #for Isadora, since she's a minor noble from Pherae
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -280,6 +296,7 @@
 	name="Ragna" #for Celdia's family
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -296,6 +313,7 @@
 	name="Eldreed" #for Al
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
@@ -314,6 +332,7 @@
 	name="Zem" #
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -332,6 +351,7 @@
 	name="Aperlae" #for Legance
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -350,6 +370,7 @@
 	name="Arycanda" #for Debias
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -366,6 +387,7 @@
 	name="of Myra" # for Nino's family
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -383,6 +405,7 @@
 	name="Myra" # for Wagner
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -400,6 +423,7 @@
 	name="Olst" # for Youzen
 	culture="lycian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0

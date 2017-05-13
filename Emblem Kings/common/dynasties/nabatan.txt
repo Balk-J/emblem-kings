@@ -3,6 +3,7 @@
 	name="of Nabata"
 	culture="nabatan"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -20,6 +21,7 @@
 	name="of Valor"
 	culture="nabatan"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0

@@ -4,6 +4,7 @@
 	name="of Ilia" #Barigan
 	culture="ilian"
 	coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -20,6 +21,7 @@
 	name="of Spina" #Niime
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -37,6 +39,7 @@
 	name="Edessa" #Zealot
 	culture="ilian"    
 	coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -54,6 +57,7 @@
 	name="Aenir" #Ninian/Nils 
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -71,6 +75,7 @@
 	name="Nergal" # Nergal
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -88,6 +93,7 @@
 	name="Remy" # 
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -104,6 +110,7 @@
 	name="of Pyrene" # for the FE7 sisters. Named after Florina's birthplace.
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -120,6 +127,7 @@
 	name="of Adma" # for the FE6 sisters. Named after a randomly selected county in the duchy of Edessa.
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -135,6 +143,7 @@
 	name="of Carrhae" # for Sigune
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -150,6 +159,7 @@
 	name="of Neandreia" # for the ice mage Karel whacks
 	culture="ilian"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -527,6 +537,7 @@
 	name="Blackwell"
 	culture="ilian"
 	coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0

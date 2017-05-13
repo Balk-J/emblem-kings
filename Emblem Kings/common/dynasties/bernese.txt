@@ -5,6 +5,7 @@
 	name="of Bern"
 	culture="bernese"
 	coat_of_arms = {
+		religion="elimine_church"
 		template = 0
 		layer = {
 			texture = 0
@@ -40,6 +41,7 @@
 	name="Reed"
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -58,6 +60,7 @@
 	name="of Appenzell" # Brunnya
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -74,6 +77,7 @@
 	name="of Glarus" # Narcian
 	culture="bernese"    
 	coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 2
@@ -90,6 +94,7 @@
 	name="of Unterwalden" # Vaida
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -106,6 +111,7 @@
 	name="of Obwalden" # Heath
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -122,6 +128,7 @@
 	name="of Basel" # Milady, Zeiss
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -138,6 +145,7 @@
 	name="of Jura" # Ruud
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -154,6 +162,7 @@
 	name="of Bettingen" # Elen (actually supposed to be from the same town as Zeiss, but same duchy is close enough here)
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -170,6 +179,7 @@
 	name="of Ennenda" #Flaer
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -186,6 +196,7 @@
 	name="of Netstal" #Slater
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -202,6 +213,7 @@
 	name="of Isenthal" #Oates
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -219,6 +231,7 @@
 	name="of Solothurn" #Raith
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -236,6 +249,7 @@
 	name="of Zug" #Tick
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -253,6 +267,7 @@
 	name="of Fribourg" #Peres
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 1
@@ -270,6 +285,7 @@
 	name="of Bauen" #Martel
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -287,6 +303,7 @@
 	name="of Nidwalden" #Richten
 	culture="bernese"
     coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 0
@@ -305,6 +322,7 @@
 	name="Blackbone" #Audamorze
 	culture="bernese"    
 	coat_of_arms = {
+		religion=elimine_church
         template = 0
         layer = {
             texture = 3
