@@ -415,8 +415,7 @@ plot_disinherit_character = {
 }
 
 
-# Vassal ruler plots to gain claim on liege's title
-#plot_gain_liege_title = {
+# Vassal ruler plots to take over liege's realm
 plot_coup = {
 	type = liege_titles
 	vassal_intrigue_plot = yes
@@ -446,13 +445,13 @@ plot_coup = {
 			is_councillor = yes
 			has_minor_title = title_regent
 			has_minor_title = title_appointed_regent
-			has_minor_title = title_commander
-			has_minor_title = title_seneschal
-			has_minor_title = title_state_inquisitor
-			has_minor_title = title_high_admiral
-			has_minor_title = title_high_judge
-			has_minor_title = title_champion
-			has_minor_title = title_venerable_elder
+#			has_minor_title = title_commander
+#			has_minor_title = title_seneschal
+#			has_minor_title = title_state_inquisitor
+#			has_minor_title = title_high_admiral
+#			has_minor_title = title_high_judge
+#			has_minor_title = title_champion
+#			has_minor_title = title_venerable_elder
 			has_minor_title = title_councilmember_king
 			has_minor_title = title_councilmember_emperor
 			has_minor_title = title_wyvern_general
