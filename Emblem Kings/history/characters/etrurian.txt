@@ -34,6 +34,9 @@
 	father=237
 	1120.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag="is_fe6_mordred"
+		}
 	}
 	1205.01.01 = { 
 		death=yes 
@@ -41,20 +44,51 @@
 }
 
 203 = {
-	name="Mildain" #AKA Elphin
+	name="Mildain" #AKA Elffin  
+	dna="cdiah0f0fc0"
+	properties="cd0h0k00000000"
 	dynasty=202
 	
 	religion=elimine_church
 	culture=etrurian
 	
+	trait=fair
+	disallow_random_traits="yes" 
+	
 	father=202
-	1161.01.01 = { 
+	1160.01.01 = { 
 		birth=yes 
-	}
-	1179.06.01 = {
-		death = {
-			death_reason=death_accident #fell off a horse?
+		effect = {
+			set_character_flag="is_fe6_mildain"
 		}
+	}
+	1167.01.01 = {
+		effect={
+			add_friend=213 # Klein
+		}
+	}	
+	1172.01.01={
+		add_trait="class_bard"
+		add_trait="base_class_bard"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	1175.01.01={
+		add_trait="poet"
+		add_trait="just"
+		add_trait="kind"
+		add_trait="grey_eminence"
+	} 
+	#1179.06.01 = {
+#	1180.01.01 = {
+#		death = {
+#			death_reason=death_accident #fell off a horse?
+#		}
+#	}
+	1230.01.01 = { 
+		death=yes 
 	}
 }
 
@@ -160,7 +194,7 @@
 }
 
 207 = {
-	name="Orlo" #non-canon, father of Bishop Jodel
+	name="Oro" #non-canon, father of Bishop Yoder
 	
 	religion=elimine_church
 	culture=etrurian
@@ -174,7 +208,7 @@
 }
 
 208 = {
-	name="Jodel"
+	name="Yoder"
 	
 	religion=elimine_church
 	culture=etrurian
@@ -214,7 +248,7 @@
 }
 
 209 = {
-	name="Dorothy" #Jodel's murdered sister, not the archer who hangs around Saul
+	name="Dorothy" #Yoder's murdered sister, not the archer who hangs around Saul
 	female=yes
 	
 	religion=elimine_church
@@ -453,7 +487,12 @@
 	culture=etrurian
 	disallow_random_traits="yes" 
 	
-	1149.01.01 = { birth=yes }	
+	1149.01.01 = { 
+		birth=yes 
+		effect = {
+			set_character_flag="is_fe6_arcard"
+		}	
+	}	
 	
 	1161.01.01={
 		add_trait="class_cavalier"
@@ -507,6 +546,9 @@
 	
 	1120.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag="is_fe6_roartz"
+		}
 	}	
 	1132.01.01={
 		add_trait="class_knight"
@@ -551,6 +593,7 @@
 		birth=yes 
 		effect = {
 			set_character_flag = magic_or_faith_question
+			set_character_flag = is_fe6_cecilia
 		}
 	}	
 	1165.01.01={
@@ -571,6 +614,15 @@
 	1180.01.01= {
 		effect = {
 			give_minor_title = title_mage_general
+			k_etruria = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 100
+					} 
+				}
+			}	
 		}
 	}	
 	1230.01.01 = { 
@@ -589,6 +641,9 @@
 	
 	1132.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag = is_fe6_douglas
+		}
 	}	
 	1144.01.01={
 		add_trait="class_knight"
@@ -615,6 +670,15 @@
 		add_trait="class_general"
 		effect = {
 			give_minor_title = title_great_general
+			k_etruria = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 100
+					} 
+				}
+			}	
 		}
 	}
 	1181.1.1 = {
@@ -628,7 +692,7 @@
 }
 
 219 = {
-	name="Perceval" #Paladin. Knight General of Etruria.
+	name="Percival" #Paladin. Knight General of Etruria.
 	dynasty=209
 	
 	religion=elimine_church
@@ -637,6 +701,9 @@
 	
 	1140.01.01 = { 
 		birth=yes 
+		effect = {
+			set_character_flag = is_fe6_percival
+		}
 	}	
 	
 	1152.01.01={
@@ -664,6 +731,15 @@
 		add_trait="class_paladin"
 		effect = {
 			give_minor_title = title_knight_general
+			k_etruria = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 100
+					} 
+				}
+			}	
 		}
 	}
 	1181.1.1 = {
@@ -678,7 +754,7 @@
 }
 
 220 = {
-	name="Roberts" #Paladin. General of Etruria. Hard mode only palette swap of Erik who appears in the Western Isles.
+	name="Robarts" #Paladin. General of Etruria. Hard mode only palette swap of Erik who appears in the Western Isles.
 	dynasty=211 # probably shouldn't be nobility, but I'm out of high-profile Etrurians who aren't in the church
 	
 	religion=elimine_church
@@ -851,7 +927,7 @@
 }
 
 224 = {
-	name="Orlo" #Bishop. Lord of Eburacum in the Western Isles under Arcard.
+	name="Oro" #Bishop. Lord of Eburacum in the Western Isles under Arcard.
 	dynasty=213
 	religion=elimine_church
 	culture=etrurian
@@ -936,7 +1012,7 @@
 }
 
 226 = {
-	name="Windham" #Bishop. Part of the Etrurian coup; takes over the Tower of the Saint.
+	name="Windam" #Bishop. Part of the Etrurian coup; takes over the Tower of the Saint.
 	religion=elimine_church
 	culture=etrurian
 	disallow_random_traits="yes" 
@@ -1008,7 +1084,7 @@
 	}	
 	
 	1180.01.01 = { 
-		employer=208 #Jodel
+		employer=208 #Yoder
 	}	
 	
 	1201.1.1= {
@@ -1044,7 +1120,7 @@
 	} 
 	
 	1180.01.01 = { 
-		employer=208 #Jodel
+		employer=208 #Yoder
 	}	
 	
 	1224.1.1= {
@@ -1053,7 +1129,7 @@
 }
 
 229 = {
-	name="Lalum"
+	name="Larum"
 	female=yes	
 	religion=elimine_church
 	culture=etrurian
@@ -1354,7 +1430,7 @@
 }
 
 237 = {
-	name="Perceval" #Mordred's father
+	name="Percival" #Mordred's father
 	dynasty=202
 	
 	religion=elimine_church
@@ -1426,7 +1502,7 @@
 }
 
 241 = {
-	name="Lalum" # Louise's mother
+	name="Larum" # Louise's mother
 	dynasty=218
 	female=yes
 	
@@ -1463,7 +1539,7 @@
 }
 
 243 = {
-	name="Windham" # Count Caisra
+	name="Windam" # Count Caisra
 	dynasty=218
 	
 	religion=elimine_church
@@ -1606,7 +1682,7 @@
 }
 
 251 = {
-	name="Jodel" # Count Caisra
+	name="Yoder" # Count Caisra
 	dynasty=218
 	
 	religion=elimine_church

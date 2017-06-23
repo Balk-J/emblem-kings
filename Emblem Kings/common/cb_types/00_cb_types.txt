@@ -1659,7 +1659,7 @@ claim_all_lyn = {
 	}
 }
 
-# The CB used by "Religious revolter" characters
+# 
 regalia_guardian = {
 	name = CB_NAME_REGALIA_GUARDIAN
 	war_name = WAR_NAME_REGALIA_GUARDIAN
@@ -1728,6 +1728,112 @@ regalia_guardian = {
 	
 	defender_ai_defeat_worth = {
 		factor = 150
+	}
+}
+western_isles_liberation = {
+	name = CB_NAME_LIBERATION
+	war_name = WAR_NAME_LIBERATION
+	sprite = 16
+	truce_days = 3650
+	is_permanent = yes
+	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
+
+	allowed_to_target_tributaries = no
+	allowed_to_target_suzerains = no
+
+	can_use = {
+		ROOT = {
+			has_landed_title = d_western_isles_rebellion			
+		}
+		
+		FROM = {
+			western_isles_rebel_target_trigger = yes
+		}
+	}
+	
+	can_use_title = {
+		region = world_elibe_western_isles
+	}
+
+	is_valid = {
+		ROOT = {
+			has_landed_title = d_western_isles_rebellion			
+		}
+		
+		FROM = {
+			western_isles_rebel_target_trigger = yes
+		}
+	}
+	
+	on_success = {
+		any_attacker = {
+			limit = { character = ROOT }
+			participation_scaled_prestige = 50
+		}
+		any_attacker = {
+			limit = { NOT = { character = ROOT } }
+			hidden_tooltip = { 
+				participation_scaled_prestige = 50
+			}
+		}
+		
+		FROM = { prestige = -50 }
+	}
+
+	on_success_title = {
+		ROOT = {
+			vassalize_or_take_under_title_destroy_duchies = {
+				title = PREV
+				enemy = FROM
+				type = invasion
+			}
+		}
+	}
+
+	on_fail = {
+		ROOT = { 
+			prestige = -100
+		}
+	}
+
+	on_reverse_demand = {
+		ROOT = {
+			imprison = FROM
+			prestige = -150
+		}
+#		d_western_isles_rebellion = {
+#			destroy_landed_title = THIS
+#		}
+		any_defender = {
+			limit = { character = FROM }
+			participation_scaled_prestige = 100
+		}
+		any_defender = {
+			limit = { NOT = { character = FROM } }
+			hidden_tooltip = { 
+				participation_scaled_prestige = 100
+			}
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+	
+	ai_will_do = { 
+		factor = 1
 	}
 }
 

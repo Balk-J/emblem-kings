@@ -1,0 +1,25 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe6_etruria.4.desc;Word has reached you that the conspirators who forced you to stage your death and flee Etruria are no longer in power. It should be safe to reveal your true identity as Prince Mildain, rightful heir to the kingdom.;;;;;;;;;;;;;x
+fe6_etruria.4.A;Yes, the time is right.;;;;;;;;;;;;;x
+fe6_etruria.4.A.tooltip;[Root.GetFirstName] is revealed as Prince Mildain of Etruria.;;;;;;;;;;;;;x
+fe6_etruria.4.B;No, I have come to enjoy my new life as [Root.GetFirstName].;;;;;;;;;;;;;x
+fe6_etruria.5.desc;Wonderful news! Your son Mildain did not die in an accident as you had believed. He staged his death to deceive the people plotting to kill him, and has been travelling the land disguised as a bard. With the members of this conspiracy out of power, it is now safe for him to reveal his identity and reclaim his birthright.;;;;;;;;;;;;;x
+fe6_etruria.5.A;It does me good to hear this!;;;;;;;;;;;;;x
+fe6_etruria.6.desc;My father no longer rules in Etruria. Perhaps it is time to reveal my true identity and take my rightful place as King...;;;;;;;;;;;;;x
+fe6_etruria.6.A;Yes, the time is right.;;;;;;;;;;;;;x
+fe6_etruria.6.A.tooltip;[Root.GetFirstName] is revealed as Prince Mildain of Etruria and begins planning to retake the kingdom.;;;;;;;;;;;;;x
+fe6_etruria.6.B;No, I have come to enjoy my new life as [Root.GetFirstName].;;;;;;;;;;;;;x
+fe6_etruria.7.desc;A message has reached you from a [From.GetManWoman] styling [From.GetHerselfHimself] [From.GetFirstName], rightful [From.GetKingQueen] of Etruria. [From.GetFirstName] was thought dead, but this [From.GetManWoman] claims to have staged [From.GetHerHis] death to deceive [From.GetHerHis] would-be killers. Now [From.GetSheHe] is demanding that you relinquish the throne of Etruria to [From.GetHerHim]...;;;;;;;;;;;;;x
+fe6_etruria.7.A;It is [From.GetHersHis] by right.;;;;;;;;;;;;;x
+fe6_etruria.7.B;Even if [From.GetSheHe] is [From.GetFirstName], this throne is mine!;;;;;;;;;;;;;x
+fe6_etruria.8.desc;After you revealed your identity to [From.GetTitledFirstName], [From.GetSheHe] agreed to give the throne of Etruria to you.;;;;;;;;;;;;;x
+fe6_etruria.8.A;It was the only honorable choice.;;;;;;;;;;;;;x
+fe6_etruria.9.desc;You sent a messenger to [From.GetFullName] requesting that [From.GetSheHe] relinquish the throne of Etruria peacefully. [From.GetSheHeCap] refused your polite request and had the gall to argue that you have no right to the title!;;;;;;;;;;;;;x
+fe6_etruria.9.A;I will take the crown by force if I must.;;;;;;;;;;;;;x
+fe6_etruria.9.B;I am not ready to invade my homeland.;;;;;;;;;;;;;x
+fe6_etruria..title;;;;;;;;;;;;;;x
+fe6_etruria..desc;;;;;;;;;;;;;;x
+fe6_etruria..A;;;;;;;;;;;;;;x
+fe6_etruria..B;;;;;;;;;;;;;;x
+fe6_etruria..C;;;;;;;;;;;;;;x
+fe6_etruria..D;;;;;;;;;;;;;;x

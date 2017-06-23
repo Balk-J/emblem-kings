@@ -13,7 +13,7 @@ draconic = {
 		}
 		female_names = {
 			Fae
-			Idenn
+			Idunn
 			Melitha
 			Naga Nagi
 			Tiki			
@@ -40,7 +40,7 @@ draconic = {
 		color = { 0.5 0 0.1 }
 		
 		male_names = {
-			Ein
+			Ain
 			Zwei
 			Drei
 			Vier
@@ -62,7 +62,7 @@ draconic = {
 			Zwanzig
 		}
 		female_names = {
-			Ein
+			Ain
 			Zwei
 			Drei
 			Vier

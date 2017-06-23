@@ -1,0 +1,583 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+ 
+ #<tag> = {
+ #	desc = description used in the tooltip of the building
+ #	trigger = used for tech requirement of the building, set to 0 if no requirement so it can be build automatically on new games
+ #	gold_cost = cost to build the building
+ #	build_time = time to build, in days
+ #	
+ #	ai_creation_factor = weight that the AI uses to determine what building to build
+ #	extra_tech_building_start = when starting a new game this building will be pre-built if the province has higher tech than the requirement + this + random 0-1
+ #}
+ 
+ # Castle
+castle = {
+	# All cultural buildings follow the same pattern:
+	# tech required is 0, 1, 2, 4 for the levels of the buildings
+	# cost is 200 + 100 per level
+	# 60 maintenance of troops + 20 per level
+	# + 0.15 bonus in either offensive, defensive or morale sometimes split over different units or stats same on all levels
+	
+	# Culture building names MUST start with ca_culture
+	ca_culture_group_draconic_1 = {
+		desc = ca_culture_group_draconic_1_desc
+		potential = {
+			FROM = {
+				culture_group = draconic
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		magic_user = 30
+		magic_user_offensive = 0.15
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_draconic_2 = {
+		desc = ca_culture_group_draconic_1_desc
+		potential = {
+			FROM = {
+				culture_group = draconic
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_group_draconic_1
+		gold_cost = 300
+		build_time = 1095
+		magic_user = 40
+		magic_user_offensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_draconic_3 = {
+		desc = ca_culture_group_draconic_1_desc
+		potential = {
+			FROM = {
+				culture_group = draconic
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_group_draconic_2
+		gold_cost = 400
+		build_time = 2190
+		magic_user = 50
+		magic_user_offensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_draconic_4 = {
+		desc = ca_culture_group_draconic_1_desc
+		potential = {
+			FROM = {
+				culture_group = draconic
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_group_draconic_3
+		gold_cost = 500
+		build_time = 2190
+		magic_user = 60
+		magic_user_offensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_etrurian_1 = {
+		desc = ca_culture_etrurian_1_desc
+		potential = {
+			FROM = { culture = etrurian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		knights = 10
+		magic_user = 10
+		knights_morale = 0.075
+		magic_user_morale = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_etrurian_2 = {
+		desc = ca_culture_etrurian_1_desc
+		potential = {
+			FROM = { culture = etrurian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_etrurian_1
+		gold_cost = 300
+		build_time = 1095
+		knights = 15
+		magic_user = 10
+		knights_morale = 0.075
+		magic_user_morale = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_etrurian_3 = {
+		desc = ca_culture_etrurian_1_desc
+		potential = {
+			FROM = { culture = etrurian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_etrurian_2
+		gold_cost = 400
+		build_time = 2190
+		knights = 15
+		magic_user = 20
+		knights_morale = 0.075
+		magic_user_morale = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_etrurian_4 = {
+		desc = ca_culture_etrurian_1_desc
+		potential = {
+			FROM = { culture = etrurian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_etrurian_3
+		gold_cost = 500
+		build_time = 2190
+		knights = 20
+		magic_user = 20
+		knights_morale = 0.075
+		magic_user_morale = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_bernese_1 = {
+		desc = ca_culture_bernese_1_desc
+		potential = {
+			FROM = {
+				culture = bernese
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		wyvern_riders = 15
+		wyvern_riders_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_bernese_2 = {
+		desc = ca_culture_bernese_1_desc
+		potential = {
+			FROM = {
+				culture = bernese
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_bernese_1
+		gold_cost = 300
+		build_time = 1095
+		wyvern_riders = 20
+		wyvern_riders_defensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_bernese_3 = {
+		desc = ca_culture_bernese_1_desc
+		potential = {
+			FROM = {
+				culture = bernese
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_bernese_2
+		gold_cost = 400
+		build_time = 2190
+		wyvern_riders = 25
+		wyvern_riders_defensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_bernese_4 = {
+		desc = ca_culture_bernese_1_desc
+		potential = {
+			FROM = {
+				culture = bernese
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_bernese_3
+		gold_cost = 500
+		build_time = 2190
+		wyvern_riders = 30
+		wyvern_riders_defensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_lycian_1 = {
+		desc = ca_culture_lycian_1_desc
+		potential = {
+			FROM = { culture = lycian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 15
+		heavy_infantry = 15
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_lycian_2 = {
+		desc = ca_culture_lycian_1_desc
+		potential = {
+			FROM = { culture = lycian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_lycian_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 20
+		heavy_infantry = 20
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_lycian_3 = {
+		desc = ca_culture_lycian_1_desc
+		potential = {
+			FROM = { culture = lycian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_lycian_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 25
+		heavy_infantry = 25
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_lycian_4 = {
+		desc = ca_culture_lycian_1_desc
+		potential = {
+			FROM = { culture = lycian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_lycian_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 30
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_nabatan_1 = {
+		desc = ca_culture_nabatan_1_desc
+		potential = {
+			FROM = { culture = nabatan }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_infantry = 30
+		heavy_infantry = 15
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_nabatan_2 = {
+		desc = ca_culture_nabatan_1_desc
+		potential = {
+			FROM = { culture = nabatan }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_nabatan_1
+		gold_cost = 300
+		build_time = 1095
+		light_infantry = 40
+		heavy_infantry = 20
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_nabatan_3 = {
+		desc = ca_culture_nabatan_1_desc
+		potential = {
+			FROM = { culture = nabatan }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_nabatan_2
+		gold_cost = 400
+		build_time = 2190
+		light_infantry = 50
+		heavy_infantry = 25
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_nabatan_4 = {
+		desc = ca_culture_nabatan_1_desc
+		potential = {
+			FROM = { culture = nabatan }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_nabatan_3
+		gold_cost = 500
+		build_time = 2190
+		light_infantry = 60
+		heavy_infantry = 30
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_western_islander_1 = {
+		desc = ca_culture_western_islander_1_desc
+		potential = {
+			FROM = {
+				culture = western_islander
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_western_islander_2 = {
+		desc = ca_culture_western_islander_1_desc
+		potential = {
+			FROM = {
+				culture = western_islander
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_western_islander_1
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_western_islander_3 = {
+		desc = ca_culture_western_islander_1_desc
+		potential = {
+			FROM = {
+				culture = western_islander
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_western_islander_2
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_western_islander_4 = {
+		desc = ca_culture_western_islander_1_desc
+		potential = {
+			FROM = {
+				culture = western_islander
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_western_islander_3
+		gold_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_sacaean_1 = {
+		desc = ca_culture_sacaean_1_desc
+		potential = {
+			FROM = { 
+				culture = sacaean
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 15
+		horse_archers = 15
+		horse_archers_offensive = 0.1
+		horse_archers_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sacaean_2 = {
+		desc = ca_culture_sacaean_1_desc
+		potential = {
+			FROM = { 
+				culture = sacaean
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_sacaean_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 20
+		horse_archers = 20
+		horse_archers_offensive = 0.1
+		horse_archers_morale = 0.05
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sacaean_3 = {
+		desc = ca_culture_sacaean_1_desc
+		potential = {
+			FROM = { 
+				culture = sacaean
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_sacaean_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 25
+		horse_archers = 25
+		horse_archers_offensive = 0.1
+		horse_archers_morale = 0.05
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sacaean_4 = {
+		desc = ca_culture_sacaean_1_desc
+		potential = {
+			FROM = { 
+				culture = sacaean
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_sacaean_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 30
+		horse_archers = 30
+		horse_archers_offensive = 0.1
+		horse_archers_morale = 0.05
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_ilian_1 = {
+		desc = ca_culture_ilian_1_desc
+		potential = {
+			FROM = { 
+				culture = ilian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 15
+		pegasus_knights = 15
+		pegasus_knights_defensive = 0.1
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_ilian_2 = {
+		desc = ca_culture_ilian_1_desc
+		potential = {
+			FROM = { 
+				culture = ilian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_ilian_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 20
+		pegasus_knights = 20
+		pegasus_knights_defensive = 0.1
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_ilian_3 = {
+		desc = ca_culture_ilian_1_desc
+		potential = {
+			FROM = { 
+				culture = ilian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_ilian_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 25
+		pegasus_knights = 25
+		pegasus_knights_defensive = 0.1
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_ilian_4 = {
+		desc = ca_culture_ilian_1_desc
+		potential = {
+			FROM = { 
+				culture = ilian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_ilian_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 30
+		pegasus_knights = 30
+		pegasus_knights_defensive = 0.1
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+}
+

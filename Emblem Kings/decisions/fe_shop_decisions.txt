@@ -8,10 +8,21 @@ decisions = {
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { trait = dark_incapable }
+			NOT = {	is_inaccessible_trigger = yes }
 			location = { 
-				has_building = ct_weapon_shop_1 
-				NOT = { has_building = ct_weapon_shop_2 }
-				NOT = { has_building = ct_weapon_shop_3 }
+				any_province_holding = {
+					has_building = ct_weapon_shop_1 
+				}
+				NOT = {
+					any_province_holding = {
+						has_building = ct_weapon_shop_2 
+					}
+				}
+				NOT = {
+					any_province_holding = {
+						has_building = ct_weapon_shop_3 
+					}
+				}
 			}
 		}
 		
@@ -40,9 +51,16 @@ decisions = {
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { trait = dark_incapable }
+			NOT = {	is_inaccessible_trigger = yes }
 			location = { 
-				has_building = ct_weapon_shop_2 
-				NOT = { has_building = ct_weapon_shop_3 }
+				any_province_holding = {
+					has_building = ct_weapon_shop_2 
+				}
+				NOT = {
+					any_province_holding = {
+						has_building = ct_weapon_shop_3 
+					}
+				}
 			}
 		}
 		
@@ -51,7 +69,7 @@ decisions = {
 		}
 		
 		effect = {
-			character_event = { id = weapon_shop.1 }
+			character_event = { id = weapon_shop.5 }
 		}
 		
 		revoke_allowed = {
@@ -71,8 +89,11 @@ decisions = {
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { trait = dark_incapable }
+			NOT = {	is_inaccessible_trigger = yes }
 			location = { 
-				has_building = ct_weapon_shop_3 
+				any_province_holding = {
+					has_building = ct_weapon_shop_3 
+				}
 			}
 		}
 		
@@ -81,7 +102,122 @@ decisions = {
 		}
 		
 		effect = {
-			character_event = { id = weapon_shop.1 }
+			character_event = { id = weapon_shop.18 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	visit_item_shop_1 = {
+		only_playable = yes
+	
+		potential = {
+			is_playable = yes
+			has_dlc = "Mystics"
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			NOT = {	is_inaccessible_trigger = yes }
+			location = { 
+				any_province_holding = {
+					has_building = ct_item_shop_1 
+				}
+				NOT = {
+					any_province_holding = {
+						has_building = ct_item_shop_2 
+					}
+				}
+				NOT = {
+					any_province_holding = {
+						has_building = ct_item_shop_3 
+					}
+				}
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			character_event = { id = item_shop.1 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	visit_item_shop_2 = {
+		only_playable = yes
+	
+		potential = {
+			is_playable = yes
+			has_dlc = "Mystics"
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			NOT = {	is_inaccessible_trigger = yes }
+			location = { 
+				any_province_holding = {
+					has_building = ct_item_shop_2 
+				}
+				NOT = {
+					any_province_holding = {
+						has_building = ct_item_shop_3 
+					}
+				}
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			character_event = { id = item_shop.5 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	visit_item_shop_3 = {
+		only_playable = yes
+	
+		potential = {
+			is_playable = yes
+			has_dlc = "Mystics"
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			NOT = {	is_inaccessible_trigger = yes }
+			location = { 
+				any_province_holding = {
+					has_building = ct_item_shop_3 
+				}
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			character_event = { id = item_shop.18 }
 		}
 		
 		revoke_allowed = {

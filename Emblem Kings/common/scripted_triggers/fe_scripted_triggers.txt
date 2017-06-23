@@ -417,3 +417,30 @@ fire_emblem_in_realm_trigger = {
 		# Add more region-specific emblems here			
 	#}
 }
+
+# Diplomatic conditions
+
+western_isles_rebel_target_trigger = {
+	any_realm_title = {
+#		de_jure_liege = k_the_western_isles
+		region = world_elibe_western_isles
+	}
+	OR = {
+		AND = {
+			higher_tier_than = COUNT
+			independent = yes
+			NOR = {
+				has_landed_title = k_the_western_isles
+				has_landed_title = e_elibe
+				primary_title = {
+#					de_jure_liege = k_the_western_isles
+					region = world_elibe_western_isles
+				}
+			}
+		}
+		AND = {
+			religion = raider_pagan
+			independent = yes
+		}
+	}
+}

@@ -173,7 +173,8 @@
 	1154.1.1={
 		birth=yes
 		effect = {
-			set_character_flag = is_fe6_guinevere		
+			set_character_flag = is_fe6_guinevere
+			set_character_flag = magic_or_faith_question
 		}
 	}
 	1166.01.01={
@@ -283,6 +284,7 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
 		}
 	} 	
 	1159.01.01={
@@ -484,7 +486,7 @@
 }
 
 410={
-	name="Miledy"
+	name="Melady"
 	female="yes"
 	dynasty=406
 	culture=bernese
@@ -573,7 +575,7 @@
 }
 
 413={
-	name="Ruud" #knight
+	name="Rude" #knight
 	dynasty=407
 	culture=bernese
 	religion=elimine_church
@@ -672,7 +674,7 @@
 }
 
 416={
-	name="Oates" #sage
+	name="Ohtz" #sage
 	dynasty=411
 	culture=bernese
 	religion=elimine_church
@@ -706,7 +708,7 @@
 }
 
 417={
-	name="Raith" #paladin
+	name="Raeth" #paladin
 	dynasty=412
 	culture=bernese
 	religion=elimine_church

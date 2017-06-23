@@ -122,6 +122,12 @@ character_event = {
 		set_global_flag = scenario_fe6_binding_blade	
 	}
 	option = {
+		random_character = {
+			limit = {
+				has_character_flag = is_fe6_mildain
+			}
+			character_event = { id = fe6_etruria.1 }
+		}
 		
 		if = {
 			limit = {
@@ -129,6 +135,12 @@ character_event = {
 					name = fe_story
 					value = on
 				}
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe6_echidna
+				}
+				character_event = { id = fe6_west.1 days = 1 }
 			}
 			random_character = {
 				limit = {
@@ -143,6 +155,128 @@ character_event = {
 					id =  fe6.11
 					days = 40
 				}
+			}
+			any_playable_ruler = {
+				limit = {
+					OR = {
+						has_landed_title = d_siene
+						has_landed_title = d_tarchna
+						has_landed_title = d_alesia
+						has_landed_title = c_berua
+						has_landed_title = c_cura
+						has_landed_title = c_vetluna
+						has_landed_title = c_capeva
+						has_landed_title = c_orcla
+					}
+				}
+				
+				k_etruria = {
+					holder_scope = {					
+						reverse_opinion = {
+							modifier = opinion_incompetent_fool
+							who = PREVPREV
+							years = 5
+						}
+					}
+				}
+				
+				if = {
+					limit = { NOT = { has_landed_title = d_siene } }
+					d_siene = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_landed_title = d_tarchna } }
+					d_tarchna = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_landed_title = d_alesia } }
+					d_alesia = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_landed_title = c_berua } }
+					c_berua = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_landed_title = c_cura } }
+					c_cura = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_landed_title = c_vetluna } }
+					c_vetluna = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_landed_title = c_capeva } }
+					c_capeva = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_landed_title = c_orcla } }
+					c_orcla = {
+						holder_scope = {					
+							reverse_opinion = {
+								modifier = opinion_political_ally
+								who = PREVPREV
+								years = 5
+							}
+						}
+					}
+				}
+				
 			}
 		}
 	}

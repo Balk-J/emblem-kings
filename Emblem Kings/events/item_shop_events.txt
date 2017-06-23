@@ -1,0 +1,348 @@
+namespace = item_shop
+
+# Level 1
+character_event = {
+	id = item_shop.1
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = heal	
+		buy_tier_1_staff_effect = yes
+		add_artifact = heal
+	}
+	option = {
+		name = sleep
+		buy_tier_1_staff_effect = yes
+		add_artifact = sleep
+	}
+	option = {
+		name = restore	
+		buy_tier_1_staff_effect = yes
+		add_artifact = restore
+	}
+	option = {
+		name = item_shop.more
+		hidden_tooltip = { character_event = { id = item_shop.2 } }
+	}
+}
+
+character_event = {
+	id = item_shop.2
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = vulenary
+		buy_tier_1_item_effect = yes
+		add_artifact = vulenary
+	}
+	option = {
+		name = item_shop.exit	
+	}
+}
+
+# Level 2
+character_event = {
+	id = item_shop.5
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = item_shop.healing_staves	
+		hidden_tooltip = { character_event = { id = item_shop.6 } }
+	}
+	option = {
+		name = item_shop.status_staves	
+		hidden_tooltip = { character_event = { id = item_shop.7 } }
+	}
+	option = {
+		name = item_shop.special_staves
+		hidden_tooltip = { character_event = { id = item_shop.8 } }
+	}
+	option = {
+		name = item_shop.more	
+		hidden_tooltip = { character_event = { id = item_shop.9 } }
+	}
+}
+
+character_event = {
+	id = item_shop.6
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = heal
+		buy_tier_1_staff_effect = yes
+		add_artifact = heal
+	}
+	option = {
+		name = mend	
+		buy_tier_2_staff_effect = yes
+		add_artifact = mend
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+character_event = {
+	id = item_shop.7
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = sleep	
+		buy_tier_1_staff_effect = yes
+		add_artifact = sleep
+	}
+	option = {
+		name = silence
+		buy_tier_2_staff_effect = yes
+		add_artifact = silence
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+character_event = {
+	id = item_shop.8
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = restore	
+		buy_tier_1_staff_effect = yes
+		add_artifact = restore
+	}
+	option = {
+		name = rescue
+		buy_tier_2_staff_effect = yes
+		add_artifact = rescue
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+character_event = {
+	id = item_shop.9
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = item_shop.healing_items
+		hidden_tooltip = { character_event = { id = item_shop.10 } }
+	}
+	option = {
+		name = item_shop.exit	
+	}
+}
+
+character_event = {
+	id = item_shop.10
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = vulenary
+		buy_tier_1_item_effect = yes
+		add_artifact = vulenary
+	}
+	option = {
+		name = concoction
+		buy_tier_2_item_effect = yes
+		add_artifact = concoction
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+# Level 3
+character_event = {
+	id = item_shop.18
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = item_shop.healing_staves	
+		hidden_tooltip = { character_event = { id = item_shop.19 } }
+	}
+	option = {
+		name = item_shop.status_staves	
+		hidden_tooltip = { character_event = { id = item_shop.20 } }
+	}
+	option = {
+		name = item_shop.special_staves
+		hidden_tooltip = { character_event = { id = item_shop.21 } }
+	}
+	option = {
+		name = item_shop.more	
+		hidden_tooltip = { character_event = { id = item_shop.22 } }
+	}
+}
+
+character_event = {
+	id = item_shop.19
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = heal
+		buy_tier_1_staff_effect = yes
+		add_artifact = heal
+	}
+	option = {
+		name = mend	
+		buy_tier_2_staff_effect = yes
+		add_artifact = mend
+	}
+	option = {
+		name = recover
+		buy_tier_3_staff_effect = yes
+		add_artifact = recover
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+character_event = {
+	id = item_shop.20
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = sleep	
+		buy_tier_1_staff_effect = yes
+		add_artifact = sleep
+	}
+	option = {
+		name = silence
+		buy_tier_2_staff_effect = yes
+		add_artifact = silence
+	}
+	option = {
+		name = berserk
+		buy_tier_3_staff_effect = yes
+		add_artifact = berserk
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+character_event = {
+	id = item_shop.21
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = restore	
+		buy_tier_1_staff_effect = yes
+		add_artifact = restore
+	}
+	option = {
+		name = rescue
+		buy_tier_2_staff_effect = yes
+		add_artifact = rescue
+	}
+	option = {
+		name = physic
+		buy_tier_3_staff_effect = yes
+		add_artifact = physic 
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+character_event = {
+	id = item_shop.22
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = item_shop.healing_items
+		hidden_tooltip = { character_event = { id = item_shop.23 } }
+	}
+	option = {
+		name = item_shop.other_items	
+		hidden_tooltip = { character_event = { id = item_shop.26 } }
+	}
+	option = {
+		name = item_shop.exit	
+	}
+}
+
+character_event = {
+	id = item_shop.23
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = vulenary	
+		buy_tier_1_item_effect = yes
+		add_artifact = vulenary
+	}
+	option = {
+		name = concoction
+		buy_tier_2_item_effect = yes
+		add_artifact = concoction
+	}
+	option = {
+		name = elixir
+		buy_tier_3_item_effect = yes
+		add_artifact = elixir 
+	}
+	option = {
+		name = item_shop.exit
+	}
+}
+
+character_event = {
+	id = item_shop.26
+	desc = item_shop.welcome
+	picture = GFX_evt_item_shop
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pure_water
+		buy_tier_3_item_effect = yes
+		add_artifact = pure_water
+	}
+	option = {
+		name = item_shop.exit
+	}
+}

@@ -46,6 +46,7 @@ character_event = {
 				}
 				
 				new_character = {
+					dynasty = 601 # why do I need to do this here?
 					culture=nabatan
 					give_nickname=nick_the_archsage
 					set_variable = { which = level value = 20 }
@@ -100,6 +101,7 @@ character_event = {
 				}
 				
 				new_character = {
+					dynasty = 602
 					culture=nabatan
 					give_nickname=nick_the_enigma
 					set_variable = { which = level value = 20 }
@@ -154,6 +156,7 @@ character_event = {
 				}
 				
 				new_character = {
+					dynasty = 304
 					set_variable = { which = level value = 1 }
 					set_character_flag = class_selected
 					set_character_flag = is_fe7_ninian
@@ -205,6 +208,7 @@ character_event = {
 				}
 				
 				new_character = {
+					dynasty = 304
 					set_variable = { which = level value = 1 }
 					set_character_flag = class_selected
 					set_character_flag = is_fe7_nils

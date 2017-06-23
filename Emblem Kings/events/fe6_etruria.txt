@@ -1,0 +1,876 @@
+namespace = fe6_etruria
+###################################
+# FE6 / The Sword of Seals Events #
+###################################
+
+# Prince Mildain "dies" in an accident
+character_event = {
+	id = fe6_etruria.1
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		# Only create the hidden character for Prince Mildain. I don't think there's a way to create a dynamic clone-a-character event we'd need to make this work for a random ruler.
+		if = {
+			limit = {
+				has_character_flag = is_fe6_mildain
+			}
+			add_trait = went_missing
+			c_salinae = {
+				create_character = { #Create hidden character
+					name = "Elffin"
+					dna="cdiah0f0fc0"
+					culture = ROOT
+					religion = ROOT
+					female = no
+					dynasty = none
+					age = 20
+				}
+				new_character = { 
+					set_character_flag = is_fe6_elffin
+					set_character_flag = is_fe6_mildain  
+					
+					set_variable = { which = "level" value = 1 }
+					set_character_flag=class_selected
+						
+					add_trait=base_class_bard
+					add_trait=class_bard
+					add_trait=grey_eminence
+					add_trait=fair
+					add_trait=poet
+			
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					
+					character_event = { id = util.1 } 		
+				}
+			}
+		}
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+
+
+# Return of Mildain
+character_event = {
+	id = fe6_etruria.2
+
+	hide_window = yes 
+	is_triggered_only = yes
+	
+	only_men = yes
+	has_character_flag = is_fe6_elffin
+	
+	trigger = {		
+		has_game_rule = {
+			name = fe_story
+			value = on
+		}
+		year = 1180
+		NOT = { year = 1230 }
+	}
+	
+	option = {
+		name =  OK
+		if = {
+			limit = {
+				OR = {
+					# The main conspirators are dead or deposed
+					NOT = {
+						any_playable_ruler = {
+							OR = {
+								has_character_flag = is_fe6_arcard
+								has_character_flag = is_fe6_roartz
+							}
+							prisoner = no
+						}
+					}
+					
+					# Mordred is dead or landless
+					NOT = {
+						any_playable_ruler = {
+							has_character_flag = is_fe6_mordred
+						}
+					}
+					
+					# Mordred has been deposed as King of Etruria
+					NOT = {
+						k_etruria = {
+							holder_scope = {
+								has_character_flag = is_fe6_mordred 
+							}
+						}
+					}
+					k_etruria = {
+						holder_scope = {
+							independent = no
+							NOT = { top_liege = { has_character_flag = is_fe6_mordred } }
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						any_playable_ruler = {
+							OR = {
+								has_character_flag = is_fe6_arcard
+								has_character_flag = is_fe6_roartz
+							}
+							prisoner = no
+						}
+					}
+				}
+				character_event = { id = fe6_etruria.4 } 
+			}
+			if = {
+				limit = {
+					OR = {
+						NOT = {
+							k_etruria = {
+								holder_scope = {
+									has_character_flag = is_fe6_mordred 
+								}
+							}
+						}
+						k_etruria = {
+							holder_scope = {
+								independent = no
+								NOT = { top_liege = { has_character_flag = is_fe6_mordred } }
+							}
+						}
+					}
+				}
+				character_event = { id = fe6_etruria.6 } 	
+			}
+		}
+	}	
+}
+
+# Elffin to Mildain switch
+character_event = {
+	id = fe6_etruria.3
+
+	is_triggered_only = yes
+	hide_window = yes 
+	
+	trigger = {
+		has_character_flag = is_fe6_elffin
+	}
+	
+	immediate = {
+		clr_character_flag = is_fe6_elffin
+		went_missing = {
+			limit = {
+				character = 203 # Elffin
+			}
+			spouse_even_if_dead = {
+				if = {
+					limit = {
+						is_alive = yes
+						is_married = no
+					}
+					add_spouse = ROOT
+				}
+			}
+			
+			remove_spouse = yes
+			
+			any_child_even_if_dead  = {
+				set_father = ROOT
+			}
+			
+			father_even_if_dead = {
+				ROOT = {
+					set_father = PREV
+				}
+			}
+			
+			ROOT = {
+				dynasty = PREV
+				set_name = "Mildain"
+			}
+			
+			remove_trait = went_missing 
+			set_father = 0
+		}
+	}
+	
+	option = {
+		name =  OK
+	}
+	
+}
+
+# Conspirators out of power; Mildain gets chance to return
+character_event = {
+	id = fe6_etruria.4
+	desc = fe6_etruria.4.desc
+	picture = "GFX_evt_eavesdropping" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fe6_etruria.4.A
+		ai_chance = {
+			factor = 99
+		}
+		
+		custom_tooltip = {
+			text = fe6_etruria.4.A.tooltip
+			hidden_tooltip = {
+				character_event = {	id = fe6_etruria.3	}
+				if = {
+					limit = {
+						is_landed = no
+					}
+										
+					k_etruria = {
+						holder_scope = {
+							ROOT = {
+								move_character = PREV					
+							}
+							character_event = { id = fe6_etruria.5 }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = fe6_etruria.4.B
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0			
+				always = yes
+			}
+		}
+	}
+	
+}
+
+# Notify Mordred of Mildain's return
+character_event = {
+	id = fe6_etruria.5
+	desc = fe6_etruria.5.desc
+	picture = "GFX_evt_emissary" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fe6_etruria.5.A
+		
+		if = {
+			limit = {
+				NOR = {
+					trait = depressed
+					trait = stressed
+					trait = infirm
+				}
+			}
+			health = 1
+		}
+		
+		if = {
+			limit = { trait = depressed }
+			remove_trait = depressed
+		}
+		if = {
+			limit = { trait = stressed }
+			remove_trait = stressed
+		}
+		if = {
+			limit = { trait = infirm }
+			remove_trait = infirm
+		}
+	}	
+}
+
+# Mordred dead or deposed; Mildain gets chance to reveal himself
+character_event = {
+	id = fe6_etruria.6
+	desc = fe6_etruria.6.desc
+	picture = "GFX_evt_knight_kneeling" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fe6_etruria.6.A
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 2			
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.2			
+				trait = just
+			}
+			modifier = {
+				factor = 1.1			
+				trait = brave
+			}
+		}
+		
+		custom_tooltip = {
+			text = fe6_etruria.6.A.tooltip
+			hidden_tooltip = {
+				character_event = {	id = fe6_etruria.3	}	
+				add_pressed_claim="k_etruria"		
+				k_etruria = {
+					holder_scope = {
+						character_event = { id = fe6_etruria.7 }
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = fe6_etruria.6.B
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2			
+				trait = craven
+			}
+		}
+	}
+	
+}
+
+# New king of Etruria gets choice to abdicate to Mildain
+character_event = {
+	id = fe6_etruria.7
+	desc = fe6_etruria.7.desc
+	picture = "GFX_evt_emissary" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fe6_etruria.7.A
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2			
+				trait = just
+			}
+			modifier = {
+				factor = 2			
+				is_close_relative = FROM
+			}
+			modifier = {
+				factor = 1.1			
+				trait = kind
+			}
+			modifier = {
+				factor = 1.1			
+				trait = charitable
+			}
+		} 
+		k_etruria = { usurp_title = FROM }
+		hidden_tooltip = {			
+			FROM = {
+				character_event = { id = fe6_etruria.8 }
+			}
+		}
+		piety = 500
+		reverse_opinion = {
+			modifier = opinion_grateful
+			who = FROM
+			years = 10
+		}
+		if = {
+			limit = {
+				trait = arbitrary 
+			}
+			remove_trait = arbitrary
+			break = yes
+		}
+		if = {
+			limit = {
+				NOT = { trait = just }
+			}
+			add_trait = just
+		}
+	}
+	
+	option = {
+		name = fe6_etruria.7.B
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0			
+				OR = {
+					has_character_flag = is_fe6_cecilia
+					has_character_flag = is_fe6_douglas
+					has_character_flag = is_fe6_percival
+				}
+			}
+			modifier = {
+				factor = 2			
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 5			
+				trait = ambitious
+			}
+			modifier = {
+				factor = 10			
+				trait = greedy
+			}
+			modifier = {
+				factor = 2			
+				trait = proud
+			}
+		}
+		hidden_tooltip = {			
+			FROM = {
+				character_event = { id = fe6_etruria.9 days = 14 random = 7}
+			}
+		}
+	}
+	
+}
+
+# Notify Mildain of new title
+character_event = {
+	id = fe6_etruria.8
+	desc = fe6_etruria.8.desc
+	picture = "GFX_evt_coronation" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fe6_etruria.8.A
+		prestige = 500
+	}	
+}
+
+# Mildain reacts to refusal to abdicate
+character_event = {
+	id = fe6_etruria.9
+	desc = fe6_etruria.9.desc
+	picture = "GFX_evt_war_planning" 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = fe6_etruria.9.A		
+		trigger = {
+			is_landed = yes
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 1.1			
+				trait = envious
+			}
+			modifier = {
+				factor = 1.2			
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.2			
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.1			
+				trait = proud
+			}
+		}
+		hidden_tooltip = {			
+			FROM = {
+				#character_event = { id = fe6_etruria.9 }
+				prestige = 10000
+			}
+		}
+	}
+	option = {
+		name = fe6_etruria.9.A
+		trigger = {
+			is_landed = no
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 1.1			
+				trait = envious
+			}
+			modifier = {
+				factor = 1.2			
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.2			
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.1			
+				trait = proud
+			}
+		}
+		hidden_tooltip = {			
+			k_etruria = {
+				holder_scope = {
+					if = {
+						limit = {
+							independent = yes
+						}
+						character_event = { id = fe6_etruria.10 }
+					}
+					if = {
+						limit = {
+							independent = no
+						}
+						top_liege = {
+							character_event = { id = fe6_etruria.10 }
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = fe6_etruria.9.B
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2			
+				trait = craven
+			}
+			modifier = {
+				factor = 2			
+				trait = content
+			}
+			modifier = {
+				factor = 2			
+				is_close_relative = FROM
+			}
+			modifier = {
+				factor = 2			
+				has_character_flag = is_fe6_douglas
+			}
+		}
+		
+		prestige = -300		
+	}
+}
+
+# Mildain claimant adventure for Etruria
+character_event = {
+	id = fe6_etruria.10
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		FROM = {
+			character_event = { id = fe6_etruria.11 }
+		}
+	}
+}
+character_event = {
+	id = fe6_etruria.11
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		liege = {
+			capital_scope = {
+				ROOT = {
+					set_character_flag = claimant_adventurer
+					set_defacto_liege = ROOT
+					create_title = {
+						tier = DUKE
+						landless = yes
+						temporary = yes
+						adventurer = yes
+						culture = ROOT
+						name = "CLAIMANT_ADVENTURE"
+						holder = ROOT
+					}
+					
+					random_list = {
+						34 = {
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.125
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.125
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.125
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.125
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.125
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.125
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+						}
+						33 = {
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.1
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.1
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.1
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.1
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.1
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.1
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+						}
+						33 = {
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.075
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.075
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.075
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.075
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.075
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								match_character = FROM
+								match_mult = 0.075
+								match_min = 300
+								match_max = 5000
+								attrition = 0.25
+								earmark = claimant_adventure
+							}
+						}
+					}
+					
+					# Create some decent commander characters
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = none
+						religion = ROOT
+						culture = ROOT
+						female = no
+						age = 30
+					}
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = none
+						religion = ROOT
+						culture = ROOT
+						female = no
+						age = 25
+					}
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = none
+						religion = ROOT
+						culture = ROOT
+						female = no
+						age = 33
+					}
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = none
+						religion = ROOT
+						culture = ROOT
+						female = no
+						age = 29
+					}
+					
+					# Create a fleet, just to be sure
+					spawn_fleet = {
+						province = closest # closest sea zone
+						owner = ROOT
+						disband_on_peace = yes
+						troops = {
+							galleys = { 150 150 }
+						}
+						earmark = claimant_adventure
+					}
+					
+					k_etruria = {
+						holder_scope = {
+							reverse_war = {
+								target = ROOT
+								casus_belli = claim
+								thirdparty_title = PREV
+								infamy = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

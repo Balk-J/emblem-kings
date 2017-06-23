@@ -15,6 +15,24 @@ death_lava = {
 	}
 }
 
+death_burned_manakete = {
+	long_desc = "DEATH_BURNED_MANAKETE"
+	violent = yes
+	sound_list = {
+		female = {
+			"burning_female_01"
+			"burning_female_02"
+			"burning_female_03"
+		}
+		male = {
+			"burning_male_01"
+			"burning_male_02"
+			"burning_male_03"
+			"burning_male_04"
+		}
+	}
+}
+
 death_black_fang = {
 	long_desc = "DEATH_MURDER_BLACK_FANG"
 	violent = yes

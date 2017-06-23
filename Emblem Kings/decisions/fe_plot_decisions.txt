@@ -158,11 +158,23 @@ decisions = {
 					set_character_flag = coup
 				}	
 				random_list = {
-					90 = { 
-						character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					50 = { 
+						character_event = {
+							id = fe_plot.58
+							tooltip = fe_plot.58.tooltip
+						}
 					}
-					10 = {
-						character_event = { id = 7601 tooltip = "EVTTOOLTIP7601" }
+					30 = { 
+						character_event = {
+							id = fe_plot.60
+							tooltip = fe_plot.60.tooltip
+						}
+					}
+					20 = { 
+						character_event = {
+							id = fe_plot.62
+							tooltip = fe_plot.62.tooltip
+						}
 					}
 				}
 				hidden_tooltip = {
@@ -217,20 +229,26 @@ decisions = {
 		effect = {
 			ROOT = {
 				any_plot_backer = {
-					#set_character_flag = coup
-					opinion = {
-						modifier = opinion_supported_coup
-						who = ROOT
-						years = 10
-					}
+					set_character_flag = coup
 				}	
-				character_event = { id = fe_plot.62 }
 				random_list = {
-					60 = { 
-						#character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					20 = { 
+						character_event = {
+							id = fe_plot.58
+							tooltip = fe_plot.58.tooltip
+						}
 					}
-					40 = {
-						#character_event = { id = 7601 tooltip = "EVTTOOLTIP7601" }
+					40 = { 
+						character_event = {
+							id = fe_plot.60
+							tooltip = fe_plot.60.tooltip
+						}
+					}
+					40 = { 
+						character_event = {
+							id = fe_plot.62
+							tooltip = fe_plot.62.tooltip
+						}
 					}
 				}
 				hidden_tooltip = {

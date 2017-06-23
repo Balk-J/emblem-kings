@@ -61,11 +61,15 @@ visit_weapon_shop_2;Vist Armory;;;;;;;;;;;;;x
 visit_weapon_shop_2_desc;A variety of weapons can be purchased at the armory in [Root.Location.GetName].;;;;;;;;;;;;;x
 visit_weapon_shop_3;Vist Armory;;;;;;;;;;;;;x
 visit_weapon_shop_3_desc;A variety of weapons can be purchased at the armory in [Root.Location.GetName].;;;;;;;;;;;;;x
+visit_item_shop_1;Vist Shop;;;;;;;;;;;;;x
+visit_item_shop_1_desc;A variety of items and staves can be purchased at the shop in [Root.Location.GetName].;;;;;;;;;;;;;x
+visit_item_shop_2;Vist Shop;;;;;;;;;;;;;x
+visit_item_shop_2_desc;A variety of items and staves can be purchased at the shop in [Root.Location.GetName].;;;;;;;;;;;;;x
+visit_item_shop_3;Vist Shop;;;;;;;;;;;;;x
+visit_item_shop_3_desc;A variety of items and staves can be purchased at the shop in [Root.Location.GetName].;;;;;;;;;;;;;x
 declare_dragon_liberation_war;Declare Liberation War;;;;;;;;;;;;;x
 declare_dragon_liberation_war_desc;We can resume preparation for the war as soon as we are ready.;;;;;;;;;;;;;x
 plot_coup_decision_100;[Root.GetPlot];[Root.GetPlot];[Root.GetPlot];;[Root.GetPlot];;;;;;;;;x
 plot_coup_decision_100_desc;Put the plot into motion by launching a coup in the [Root.PlotTargetTitle.GetFullBaseName].;;;;;;;;;;;;;x
 plot_coup_decision_75;[Root.GetPlot];[Root.GetPlot];[Root.GetPlot];;[Root.GetPlot];;;;;;;;;x
 plot_coup_decision_75_desc;Put the plot into motion by launching a coup in the [Root.PlotTargetTitle.GetFullBaseName].;;;;;;;;;;;;;x
-EVTTOOLTIP7600;successfully fabricating a claim.;a réussi à élaborer une revendication.;erfolgreich einen Anspruch vorgetäuscht.;;La reclamación se ha elaborado correctamente.;;;;;;;;;x
-EVTTOOLTIP7601;failing to fabricate a claim.;a échoué à la mise en place d'une revendication.;fehlgeschlagen, einen Anspruch vorzutäuschen.;;La reclamación no se ha podido elaborar.;;;;;;;;;x

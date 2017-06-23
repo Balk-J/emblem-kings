@@ -8,14 +8,14 @@ namespace = fe7_eliwood
 # Ping all the Marquesses except Ostia.
 # Give them the chance to jump in the conspiracy. Yes / No / Double Agent
 # Laus and Santaruz pick A, Elbert picks C, everyone else picks B.
-# Conspirators get some event troops and cash. Maybe? Ganging up in a war may be enough...
+# Conspirators get to ally up in a war against the target. Maybe add event troops and/or cash?
 # Double agents get an event chain to investigate. AI will flub this and get captured. Humans could expose the conspiracy? CB on Nergal and/or the conspirators?
 # Failed double agent is imprisoned and abdicates to heir, who gets an event to investigate.
 # ^ kick off Blazing Sword here.
 # CB on lead conspirator. Win war = CB on Nergal.
-# Win war = Nergal explodes? Or set up Act 2?
-# Rest, grow in power - need to have character with regalia win war against him.
-# If ignored long enough, conspirators get a claim on the target and the option to launch a war (backed by Nergal or vassals?)
+# Win war = Nergal explodes.
+# If he doesn't die, have him grow in power - need to have character with regalia win war against him .
+# Conspirators get the option to launch a war (backed by Nergal or his vassals?)
 # If Nergal is ignored long enough and has the kids, he can open the Gate and chow down on dragons. From there, Bad Things happen. Mega-army of morphs? 
 character_event = {
 	id = fe7_eliwood.1

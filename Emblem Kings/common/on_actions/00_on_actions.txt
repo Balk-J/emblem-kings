@@ -10,9 +10,9 @@ on_startup = {
 #character
 on_yearly_pulse = {
 	events = {
-		CM.5000 # Ragnar Lodbrok
+		#CM.5000 # Ragnar Lodbrok
 		CM.503 # Start of Viking Age
-		CM.1011 # Lombard Queen
+		#CM.1011 # Lombard Queen
 		HL.1030 # Wolf Child growing older, rumors of real mother being a wolf
 		63106 # (Safety flag clearance check event)
 		ZE.1100 # Disobedient daughter is unhappy
@@ -34,6 +34,8 @@ on_yearly_pulse = {
 		magic.13 # Promoted Druids are slipping... 
 		magic.16 # Archdruid grows a personality
 		magic.17 # Sage Promotion for AI
+		fe6_etruria.2 # Return of Prince Mildain
+		fe6_west.2 # End the Western Isles rebellion
 	}
 
 	

@@ -50,7 +50,7 @@
 }
 
 #919={
-#	name="Idenn"
+#	name="Idunn"
 #	female="yes"
 #	culture=divine_dragon_culture
 #	religion=dragon_gods
@@ -144,7 +144,7 @@
 }
 
 #922={
-#	name="Ein" # War dragon
+#	name="Ain" # War dragon
 #	culture=war_dragon_culture
 #	religion=dragon_liberation
 #	

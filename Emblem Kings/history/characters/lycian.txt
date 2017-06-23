@@ -639,7 +639,7 @@
 }
 
 113 = {
-	name="Astore" #non-canon; Marquess Ostia and father of Uther/Hector
+	name="Astolfo" #non-canon; Marquess Ostia and father of Uther/Hector
 	dynasty=101
 	
 	religion=elimine_church
@@ -670,7 +670,7 @@
 }
 
 114 = {
-	name="Wendy"
+	name="Gwendolyn"
 	female=yes
 	
 	religion=elimine_church
@@ -1242,7 +1242,7 @@
 }
 
 129 = {
-	name="Astore"
+	name="Astolfo"
 	
 	religion=elimine_church
 	culture=lycian
@@ -1290,7 +1290,7 @@
 		# fights off bandits, fakes death
 		remove_spouse=604 # Igrene
 		effect = {
-			set_name="Astore"
+			set_name="Astolfo"
 		}
 		employer=103 #back to Ostia
 		add_trait="drunkard"	
@@ -1622,7 +1622,7 @@
 }
 
 139 = {
-	name="Wendy"
+	name="Gwendolyn"
 	female=yes
 	
 	religion=elimine_church
@@ -1657,7 +1657,7 @@
 }
 
 140 = {
-	name="Bool" #Non-canon, father of Bors/Wendy
+	name="Bool" #Non-canon, father of Bors/Gwendolyn
 	
 	religion=elimine_church
 	culture=lycian
@@ -1809,7 +1809,7 @@
 }
 
 144 = {
-	name="Debias" #village chief in Pherae, Rebecca's father
+	name="Devias" #village chief in Pherae, Rebecca's father
 	
 	religion=elimine_church
 	culture=lycian
@@ -2939,7 +2939,7 @@
 }
 
 170 = {
-	name="Legance" #general. Leader of the Ostian Revolt in FE6
+	name="Leygance" #general. Leader of the Ostian Revolt in FE6
 	dynasty=120
 	religion=elimine_church
 	culture=lycian
@@ -2983,7 +2983,7 @@
 }
 
 171 = {
-	name="Debias" #knight. Legance's lieutenant.
+	name="Devias" #knight. Leygance's lieutenant.
 	dynasty=121
 	religion=elimine_church
 	culture=lycian
@@ -3011,7 +3011,7 @@
 		add_trait="craven"
 	}
 	
-	# Loyal to Legance
+	# Loyal to Leygance
 	1153.01.01 = {
 		effect = {
 			c_aperlae = {
@@ -3541,7 +3541,7 @@
 }
 
 188 = {
-	name="Kruzard" #Mercenary. Merc for some anti-Lycia faction (Legance?). 
+	name="Kruzard" #Mercenary. Merc for some anti-Lycia faction (Leygance?). 
 	#Trying to get all the rebels in one army so the league proper can crush them and unify.
 	
 	religion=elimine_church
@@ -3650,7 +3650,7 @@
 }
 
 191 = {
-	name="Astore" #non-canon, father for Isadora.
+	name="Astolfo" #non-canon, father for Isadora.
 	dynasty=115
 	
 	religion=elimine_church

@@ -1,0 +1,16 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe6_west.1.desc;The Western Isles are plagued by foreign lords and pillaging bandits who seek only to exploit the land and its people for wealth. The time has come to organize a resistance against these thieves and win freedom for the Isles!;;;;;;;;;;;;;x
+fe6_west.1.A;I will avenge these wrongs and set our country free.;;;;;;;;;;;;;x
+fe6_west.1.B;That's too much for me to handle.;;;;;;;;;;;;;x
+fe6_west.5.desc.1;Now that the Western Isles have a true [From.GetKingQueen] in [From.GetFullName], your resistance movement has been losing support. Some of your aides have suggested that you join forces with [From.GetFirstName] to address the Isles' problems.;;;;;;;;;;;;;x
+fe6_west.5.desc.2;Now that you hold the crown of the Western Isles, your resistance movement seems unnecessary. As [Root.GetKingQueen], you have the authority to act as you see fit.;;;;;;;;;;;;;x
+fe6_west.5.A;Either way, the rebellion is over.;;;;;;;;;;;;;x
+fe6_west.5.B;It's good to be the [Root.GetTitle].;;;;;;;;;;;;;x
+fe6_west.6.desc;The goals of your resistance movement have been accomplished now that the Western Isles are free of imperialists and brigands. Although the rebellion is over, the work continues. Your supporters have asked you to lead the new nation that the resistance has grown into.;;;;;;;;;;;;;x
+fe6_west.6.A;For freedom!;;;;;;;;;;;;;x
+fe6_west..title;;;;;;;;;;;;;;x
+fe6_west..desc;;;;;;;;;;;;;;x
+fe6_west..A;;;;;;;;;;;;;;x
+fe6_west..B;;;;;;;;;;;;;;x
+fe6_west..C;;;;;;;;;;;;;;x
+fe6_west..D;;;;;;;;;;;;;;x

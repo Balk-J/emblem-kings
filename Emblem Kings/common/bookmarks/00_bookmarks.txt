@@ -298,9 +298,9 @@ bm_fe6_binding_blade =
 		}
 	}
 	selectable_character = {
-		id = 326 # Zelots
+		id = 326 # Zelot
 		age=33
-		name = ERA_CHAR_NAME_ZELOTS
+		name = ERA_CHAR_NAME_ZELOT
 		title = d_ilia_mercenary_knights
 		title_name = d_ilia_mercenary_knights
 		
@@ -314,9 +314,9 @@ bm_fe6_binding_blade =
 		}
 	}
 	selectable_character = {
-		id = 702 # Ekhidna
+		id = 702 # Echidna
 		age=25
-		name = ERA_CHAR_NAME_EKHIDNA
+		name = ERA_CHAR_NAME_ECHIDNA
 		title = c_salinae
 		title_name = c_salinae
 		

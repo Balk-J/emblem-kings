@@ -12,3 +12,43 @@ ct_item_shop_2_desc;A dealer of special items and sacred staves.;;;;;;;;;;;;;x
 ct_item_shop_3;Item Shop;;;;;;;;;;;;;x
 ct_item_shop_3_desc;A dealer of special items and sacred staves.;;;;;;;;;;;;;x
 ct_university_1_desc;A place of higher learning for those with influence enough to gain admission.;;;;;;;;;;;;;x
+ca_culture_group_draconic_1;Magic School;;;;;;;;;;;;;x
+ca_culture_group_draconic_2;Magic School;;;;;;;;;;;;;x
+ca_culture_group_draconic_3;Magic School;;;;;;;;;;;;;x
+ca_culture_group_draconic_4;Magic School;;;;;;;;;;;;;x
+ca_culture_group_draconic_1_desc;Mages are trained here in the ways of anima magic, using the power of the elements to destroy their enemies.;;;;;;;;;;;;;x
+ca_culture_lycian_1;Knight Barracks;;;;;;;;;;;;;x
+ca_culture_lycian_2;Knight Barracks;;;;;;;;;;;;;x
+ca_culture_lycian_3;Knight Barracks;;;;;;;;;;;;;x
+ca_culture_lycian_4;Knight Barracks;;;;;;;;;;;;;x
+ca_culture_lycian_1_desc;The knights of Lycia are a core of heavily armored infantry supported by swift cavaliers.;;;;;;;;;;;;;x
+ca_culture_bernese_1;Wyvern Eyrie;;;;;;;;;;;;;x
+ca_culture_bernese_2;Wyvern Eyrie;;;;;;;;;;;;;x
+ca_culture_bernese_3;Wyvern Eyrie;;;;;;;;;;;;;x
+ca_culture_bernese_4;Wyvern Eyrie;;;;;;;;;;;;;x
+ca_culture_bernese_1_desc;The Wyvern Knights of Bern are heavily armored soldiers who fly into battle on the winged reptiles native to the mountains of Elibe.;;;;;;;;;;;;;x
+ca_culture_etrurian_1;Knight Academy;;;;;;;;;;;;;x
+ca_culture_etrurian_2;Knight Academy;;;;;;;;;;;;;x
+ca_culture_etrurian_3;Knight Academy;;;;;;;;;;;;;x
+ca_culture_etrurian_4;Knight Academy;;;;;;;;;;;;;x
+ca_culture_etrurian_1_desc;Soldiers are trained in both lances and magic at this highly regarded institution.;;;;;;;;;;;;;x
+ca_culture_nabatan_1;Warrior Barracks;;;;;;;;;;;;;x
+ca_culture_nabatan_2;Warrior Barracks;;;;;;;;;;;;;x
+ca_culture_nabatan_3;Warrior Barracks;;;;;;;;;;;;;x
+ca_culture_nabatan_4;Warrior Barracks;;;;;;;;;;;;;x
+ca_culture_nabatan_1_desc;The warriors of Nabata are known for their tenacity and mobility over all types of terrain.;;;;;;;;;;;;;x
+ca_culture_sacaean_1;Riding Grounds;Manège;Reitplatz;;Campos de Equitación;;;;;;;;;x
+ca_culture_sacaean_2;Riding Grounds;Manège;Reitplatz;;Campos de Equitación;;;;;;;;;x
+ca_culture_sacaean_3;Riding Grounds;Manège;Reitplatz;;Campos de Equitación;;;;;;;;;x
+ca_culture_sacaean_4;Riding Grounds;Manège;Reitplatz;;Campos de Equitación;;;;;;;;;x
+ca_culture_sacaean_1_desc;The feared horse archers of the Sacaean plains are trained here. These highly mobile archers snipe their enemies from horseback.;;;;;;;;;;;;;x
+ca_culture_ilian_1;Pegasus Stables;;;;;;;;;;;;;x
+ca_culture_ilian_2;Pegasus Stables;;;;;;;;;;;;;x
+ca_culture_ilian_3;Pegasus Stables;;;;;;;;;;;;;x
+ca_culture_ilian_4;Pegasus Stables;;;;;;;;;;;;;x
+ca_culture_ilian_1_desc;The Pegasus Knights of Ilia are lance-wielding maidens who ride into battle on nimble winged horses.;;;;;;;;;;;;;x
+ca_culture_western_islander_1;Warrior Training Ground;;;;;;;;;;;;;x
+ca_culture_western_islander_2;Warrior Training Ground;;;;;;;;;;;;;x
+ca_culture_western_islander_3;Warrior Training Ground;;;;;;;;;;;;;x
+ca_culture_western_islander_4;Warrior Training Ground;;;;;;;;;;;;;x
+ca_culture_western_islander_1_desc;Warriors are trained in the traditions of the Western Isles here, providing excellent if somewhat ill-tempered heavy infantry, usually equipped with powerful battle axes.;;;;;;;;;;;;;x

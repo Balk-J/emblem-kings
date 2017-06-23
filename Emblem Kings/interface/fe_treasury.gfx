@@ -684,4 +684,121 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\member_card_small.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_heal"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\heal.dds"
+	}
+	spriteType = {
+		name = "GFX_heal_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\heal_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mend"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\mend.dds"
+	}
+	spriteType = {
+		name = "GFX_mend_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\mend_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_recover"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\recover.dds"
+	}
+	spriteType = {
+		name = "GFX_recover_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\recover_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_restore"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\restore.dds"
+	}
+	spriteType = {
+		name = "GFX_restore_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\restore_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rescue"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\rescue.dds"
+	}
+	spriteType = {
+		name = "GFX_rescue_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\rescue_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_physic"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\physic.dds"
+	}
+	spriteType = {
+		name = "GFX_physic_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\physic_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sleep"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\sleep.dds"
+	}
+	spriteType = {
+		name = "GFX_sleep_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\sleep_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_silence"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\silence.dds"
+	}
+	spriteType = {
+		name = "GFX_silence_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\silence_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_berserk"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\berserk.dds"
+	}
+	spriteType = {
+		name = "GFX_berserk_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\berserk_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pure_water"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\pure_water.dds"
+	}
+	spriteType = {
+		name = "GFX_pure_water_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\pure_water_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_vulenary"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\vulenary.dds"
+	}
+	spriteType = {
+		name = "GFX_vulenary_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\vulenary_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_concoction"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\concoction.dds"
+	}
+	spriteType = {
+		name = "GFX_concoction_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\concoction_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_elixir"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\elixir.dds"
+	}
+	spriteType = {
+		name = "GFX_elixir_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\items\\elixir_small.dds"
+	}
+	
 }

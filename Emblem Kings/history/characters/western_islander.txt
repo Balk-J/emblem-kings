@@ -21,7 +21,7 @@
 }
 
 702={
-	name="Ekhidna"
+	name="Echidna"
 	dna="dmjfikjbbby"
 	properties="cc0cgk000000"
 	female=yes
@@ -32,6 +32,9 @@
 	
 	1155.1.1={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe6_echidna"
+		}
 	}
 	1167.01.01={
 		add_trait="class_mercenary_female"
@@ -56,6 +59,9 @@
 		remove_trait="class_mercenary_female"
 		add_trait="class_hero_female"
 	}
+#	1180.1.1 = {
+#		prestige = 1500
+#	}
 	
 	1200.1.1={
 		death=yes
@@ -369,7 +375,7 @@
 }
 
 712={
-	name="Guerrero" # Berserker, tried to steal Armads
+	name="Gelero" #Guerrero? Berserker, tried to steal Armads
 	culture=western_islander
 	religion=raider_pagan
 	
@@ -911,7 +917,7 @@
 	name="Achiuir" 
 	dynasty=746
 	
-	religion=elimine_church
+	religion=raider_pagan
 	culture=western_islander
 	
 	1142.01.01 = { 
@@ -927,7 +933,7 @@
 	name="Canu" 
 	dynasty=747
 	
-	religion=elimine_church
+	religion=raider_pagan
 	culture=western_islander
 	
 	1143.01.01 = { 
@@ -1056,7 +1062,7 @@
 	name="Deoord" 
 	dynasty=755
 	
-	religion=elimine_church
+	religion=raider_pagan
 	culture=western_islander
 	
 	1130.01.01 = { 
@@ -1154,7 +1160,7 @@
 	name="Bran" 
 	dynasty=761
 	
-	religion=elimine_church
+	religion=raider_pagan
 	culture=western_islander
 	
 	1133.01.01 = { 
@@ -1170,7 +1176,7 @@
 	name="Telurg" 
 	dynasty=762
 	
-	religion=elimine_church
+	religion=raider_pagan
 	culture=western_islander
 	
 	1131.01.01 = { 
@@ -1202,7 +1208,7 @@
 	name="Ganant" 
 	dynasty=764
 	
-	religion=elimine_church
+	religion=raider_pagan
 	culture=western_islander
 	
 	1123.01.01 = { 

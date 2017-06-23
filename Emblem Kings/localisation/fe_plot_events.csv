@@ -70,18 +70,21 @@ fe_plot.57.desc;Failure! [From.GetTitledFirstName] proved to be a formidable fig
 fe_plot.57.A;Can it get any worse?;;;;;;;;;;;;;x;
 fe_plot.58.desc;With the aid of your fellow conspirators, you have managed to seize control of the [Root.PlotTargetTitle.GetFullBaseName] and install yourself as ruler. There ae loyalists and holdouts who are upset at your heavy-handed methods, but the plan went as well as could be expected.;;;;;;;;;;;;;x;
 fe_plot.58.A;Excellent.;Fantastique !;Ausgezeichnet.;;Excelente;;;;;;;;;x
+fe_plot.58.tooltip;the coup succeeding and installing [Root.GetTitledFirstName] as the new ruler of [Root.PlotTargetTitle.GetName].;;;;;;;;;;;;;x;
 fe_plot.59.desc;A coup led by [From.GetFullName] has ousted you from power in the [From.PlotTargetTitle.GetFullBaseName]!;;;;;;;;;;;;;x;
 fe_plot.59.A;That [GetRootFromInsult]!;;;;;;;;;;;;;x;
 fe_plot.60.desc;Your cabal has failed to seize power in the [Root.PlotTargetTitle.GetFullBaseName], and it is only a matter of time before [Root.PlotTarget.GetTitledFirstName] obtains proof of your role as the mastermind. You could throw yourself on the mercy of the [Root.PlotTarget.GetTitle], or raise arms in open revolt.;;;;;;;;;;;;;x;
 fe_plot.60.A;I cannot afford to back down here!;;;;;;;;;;;;;x;
 fe_plot.60.A.tooltip;[Root.GetTitledFirstName] and [Root.GetHerHis] fellow plotters start a revolt to seize power in the [Root.PlotTargetTitle.GetFullBaseName].;;;;;;;;;;;;;x;
 fe_plot.60.B;What was I thinking? My liege, please forgive me...;;;;;;;;;;;;;x;
+fe_plot.60.tooltip;the coup failing, but [Root.GetTitledFirstName] and [Root.GetHerHis] fellow plotters evading capture and having the chance to start a war for control of [Root.PlotTargetTitle.GetName].;;;;;;;;;;;;;x;
 #fe_plot.60.desc;Your cabal has managed to seize power in the [Root.PlotTargetTitle.GetFullBaseName], but not without some unfortunate difficulties. Although [Root.PlotTarget.GetTitledFirstName] is securely in your custody, a loyalist faction has risen in revolt, demanding that [Root.PlotTarget.GetSheHe] be restored to [Root.PlotTarget.GetHerHis] throne!;;;;;;;;;;;;;x;
 #fe_plot.60.A;They will be dealt with.;;;;;;;;;;;;;x;
 fe_plot.61.desc;A band of your vassals, led by [From.GetFullName], have hatched a plot to seize power in the [From.PlotTargetTitle.GetFullBaseName]! They attempted to capture you and take over quickly and quietly, but your alert retainers foiled this plan. Now they have raised their banners in open revolt!;;;;;;;;;;;;;x;
 fe_plot.61.A;To arms!;;;;;;;;;;;;;x;
 fe_plot.62.desc;Your attempt to take over the [Root.PlotTargetTitle.GetFullBaseName] has failed! Even worse, guards loyal to [Root.PlotTarget.GetTitledFirstName] captured you during the attempted coup. The [Root.PlotTarget.GetTitle] is unlikely to be amused by this escapade...;;;;;;;;;;;;;x;
 fe_plot.62.A;This will take some explaining...;Des explications semblent inévitables...;Das wird schwer zu erklären sein...;;Hará falta una explicación convincente...;;;;;;;;;x
+fe_plot.62.tooltip;the coup failing and [Root.GetTitledFirstName] being imprisoned by [Root.PlotTarget.GetTitledFirstName].;;;;;;;;;;;;;x;
 fe_plot.63.desc;Last night, there was a rather clumsy attempt to kidnap you. The would-be kidnappers confessed they were sent by [From.GetTitledName], as part of a plot to seize power in the [From.PlotTargetTitle.GetFullBaseName]. [From.GetFirstName] has confessed [From.GetHerHis] involvement and begs for your mercy...;;;;;;;;;;;;;x;
 fe_plot.63.A;The nerve!;;;;;;;;;;;;;x;
 fe_plot.5.desc;;;;;;;;;;;;;;x;

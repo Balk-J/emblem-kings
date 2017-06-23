@@ -2639,11 +2639,673 @@ character_event = {
     after = { clr_artifact_flagsmodifiers_effect = yes }
 }
 
+# Apocalypse
+# Starting point - do you want to search?
+character_event = {
+	id = regalia.60
+	title = "regalia.60.title"
+	desc = {
+		trigger = {
+			any_realm_title = {
+				title = b_temple_of_seals
+			}
+		}
+		text = regalia.60.desc.1
+	}	
+	desc = {
+		trigger = {
+			NOT = { 
+				any_realm_title = {
+					title = b_temple_of_seals
+				}
+			}
+		}
+		text = regalia.60.desc.2
+	}
+	picture = "GFX_evt_pagan" 
+	
+    #has_dlc = "Mystics"
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	min_age = 14
+	
+	trigger = {
+		has_ambition = obj_acquire_regalia
+		NOT = { has_global_flag = regalia_apocalypse_held }
+		NOT = { has_character_flag = regalia_apocalypse_trial }
+		NOT = { has_character_flag = regalia_apocalypse_failure }
+		NOT = { has_character_modifier = declined_regalia_search }
+		
+		location = {
+			county = {
+				title = c_uri # Shrine of Seals
+			}
+		}
+
+	}
+	mean_time_to_happen = {
+		days = 5	
+	}
+	
+	# Yes, let's look
+	option = {
+		name = "regalia.60.A"
+		trigger = {
+			NOT = { has_character_flag = regalia_apocalypse_info }
+		}
+		hidden_tooltip = { 
+			set_character_flag = regalia_apocalypse_trial
+			if = {
+				limit = {
+					any_realm_title = {
+						title = b_temple_of_seals
+					}
+				}
+				character_event = { id = regalia.62 days=5} 
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_realm_title = {
+							title = b_temple_of_seals
+						}
+					}
+				}
+				
+		
+				random_list = {
+					50 = {
+						character_event = { id = regalia.61 days=5} 
+					}
+					50 = {
+						modifier = {
+							factor = 1.25
+							intrigue = 5
+							NOT = { intrigue = 10 }
+						}
+						modifier = {
+							factor = 1.5
+							intrigue = 10
+							NOT = { intrigue = 15 }
+						}
+						modifier = {
+							factor = 2
+							intrigue = 15
+							NOT = { intrigue = 20 }
+						}
+						modifier = {
+							factor = 3
+							intrigue = 20
+							NOT = { intrigue = 25 }
+						}
+						modifier = {
+							factor = 4
+							intrigue = 25
+							NOT = { intrigue = 30 }
+						}
+						modifier = {
+							factor = 5
+							intrigue = 30
+						} 
+						character_event = { id = regalia.62 days=5} 
+					}
+				}
+			}
+		}
+	}	
+	# I already found it, skip to the trial
+	option = {
+		name = "regalia.60.B"
+		trigger = {
+			has_character_flag = regalia_apocalypse_info 
+		}
+		set_character_flag = regalia_apocalypse_trial
+		hidden_tooltip = { character_event = { id = regalia.65 } }
+	}		
+	# No
+	option = {
+		name = "regalia.60.C"
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+	}		
+}
+
+# Search failure
+character_event = {
+	id = regalia.61
+	desc = regalia.61.desc
+	picture = "GFX_evt_bad_news" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.61.A"
+		clr_character_flag = regalia_apocalypse_trial
+		add_character_modifier = { name = declined_regalia_search duration = 365 } 
+	}	
+}
+
+# Looking for Apocalypse
+narrative_event = {
+	id = regalia.62
+	title = regalia.62.title
+	#desc = regalia.62.desc
+	desc = {
+		trigger = {
+			any_realm_title = {
+				title = b_temple_of_seals
+			}
+		}
+		text = regalia.62.desc.1
+	}	
+	desc = {
+		trigger = {
+			NOT = { 
+				any_realm_title = {
+					title = b_temple_of_seals
+				}
+			}
+		}
+		text = regalia.62.desc.2
+	}
+	picture = "GFX_evt_pagan" 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "regalia.62.A"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				any_realm_title = {
+					title = b_temple_of_seals
+				}
+			}
+		}
+		prestige = 10
+		hidden_tooltip = { 
+			
+			if = {
+				limit = {
+					any_realm_title = {
+						title = b_temple_of_seals
+					}
+				}
+				character_event = { id = regalia.65 } 
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_realm_title = {
+							title = b_temple_of_seals
+						}
+					}
+				}
+				character_event = { id = regalia.63 } 
+			}
+		}
+	}	
+	
+	option = {
+		name = "regalia.62.B"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = {
+					any_realm_title = {
+						title = b_temple_of_seals
+					}
+				}
+			}
+		}
+		clr_character_flag = regalia_apocalypse_trial
+		add_character_modifier = { name = declined_regalia_search duration = 30 } 
+	}
+}
+
+# Search 
+character_event = {
+	id = regalia.63
+	hide_window = yes	
+	is_triggered_only = yes
+		
+	option = {
+		name = OK
+		random_list = {
+			50 = { # Failure
+				modifier = {
+					factor = 0
+					OR = {
+						diplomacy = 8
+						intrigue = 8
+						martial = 8
+					}
+				}
+				character_event = { id = regalia.64 } 
+			}
+			50 = { # Random success
+				character_event = { id = regalia.65 } 
+			}
+			50 = {
+				modifier = {
+					factor = 0
+					NOT = { diplomacy = 8 }
+				}
+				character_event = { id = regalia.65 } 
+			}
+			50 = {
+				modifier = {
+					factor = 0
+					NOT = { intrigue = 8 }
+				}
+				character_event = { id = regalia.65 } 
+			}
+			50 = {
+				modifier = {
+					factor = 0
+					NOT = { martial = 8 }
+				}
+				character_event = { id = regalia.65 } 
+			}
+		}
+	}	
+}
+
+
+# Caught trying to sneak in
+character_event = {
+	id = regalia.64
+	desc = regalia.64.desc
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.64.A"
+		clr_character_flag = regalia_apocalypse_trial
+		set_character_flag = regalia_apocalypse_failure
+	}	
+}
+
+# Temple
+narrative_event = {
+	id = regalia.65
+	desc = regalia.65.desc
+	title = regalia.65.title
+	picture = "GFX_evt_jailbreak" 
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = { which = apocalypse_trap value = 0 }
+		set_variable = { which = apocalypse_chest value = 0 }
+		set_character_flag = regalia_apocalypse_info
+	}
+		
+	option = {
+		name = "regalia.65.A"
+		ai_chance = {
+			factor = 50
+		}
+		character_event = { id = regalia.66 } 
+	}	
+	option = {
+		name = "regalia.65.B"
+		ai_chance = {
+			factor = 50
+		}
+		character_event = { id = regalia.66 } 
+	}	
+	option = {
+		name = "regalia.65.C"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { is_dumb_trigger = yes }
+			}
+		}
+		character_event = { id = regalia.72 } 
+	}	
+	option = {
+		name = "regalia.65.D"
+		ai_chance = {
+			factor = 0
+		}
+		clr_character_flag = regalia_apocalypse_trial
+		set_character_flag = regalia_apocalypse_failure
+	}	
+}
+
+# Drowned
+character_event = {
+	id = regalia.72
+	desc = regalia.72.desc
+	picture = "GFX_evt_kraken" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.72.A"		
+		death = { death_reason = death_accident_drowning }
+	}	
+}
+
+# Hidden spear trap event.
+character_event = {
+	id = regalia.66
+	hide_window = yes
+	is_triggered_only = yes
+		
+	immediate = {
+		change_variable = { which = apocalypse_trap value = 1 }
+	}	
+		
+	option = {
+		name = OK
+		random_list = {		
+			50 = {
+				modifier = {
+					factor = 2
+					intrigue = 5
+				}
+				modifier = {
+					factor = 2
+					intrigue = 10
+				}
+				modifier = {
+					factor = 2
+					intrigue = 15
+				}
+				modifier = {
+					factor = 2
+					intrigue = 20
+				}
+				modifier = {
+					factor = 2
+					intrigue = 25
+				}
+				modifier = {
+					factor = 2
+					intrigue = 30
+				}
+				modifier = {
+					factor = 2
+					trait = paranoid
+				}
+				modifier = {
+					factor = 2
+					is_smart_trigger = yes
+				}
+				character_event = { id = regalia.68 } 
+			}
+			50 = {
+				modifier = {
+					factor = 0
+					trait=base_class_thief
+				}
+				
+				character_event = { id = regalia.67 } 
+			}
+		}	
+	}	
+}
+
+# Hit by trap!
+character_event = {
+	id = regalia.67
+	#desc = regalia.67.desc
+	desc = {
+		trigger = {
+			check_variable = { which = apocalypse_trap value = 1 }
+			NOT = { check_variable = { which = apocalypse_trap value = 2 } }
+		}
+		text = regalia.67.desc.1
+	}	
+	desc = {
+		trigger = {
+			check_variable = { which = apocalypse_trap value = 2 }
+			NOT = { check_variable = { which = apocalypse_trap value = 3 } }
+		}
+		text = regalia.67.desc.2
+	}	
+	desc = {
+		trigger = {
+			check_variable = { which = apocalypse_trap value = 3 }
+		}
+		text = regalia.67.desc.3
+	}	
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.67.A"
+		random_list = {		
+			70 = {
+				modifier = {
+					factor = 0
+					OR = {
+						trait = wounded 
+						trait = maimed 
+						trait = mangled 
+					}
+				}
+				add_trait = wounded
+			}
+			20 = {
+				modifier = {
+					factor = 0
+					OR = {
+						trait = maimed 
+						trait = mangled 
+					}
+				}
+				if = {
+					limit = { trait = wounded }
+					remove_trait = wounded
+				}
+				add_trait = maimed
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					trait = mangled 
+				}				
+				if = {
+					limit = { trait = wounded }
+					remove_trait = wounded
+				}
+				if = {
+					limit = { trait = maimed }
+					remove_trait = maimed
+				}
+				add_trait = mangled
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = { trait = wounded }
+					NOT = { trait = maimed }
+					NOT = { trait = mangled }
+				}
+				death = { death_reason = death_accident }
+			}
+		}	
+		# Chest
+		if = {
+			limit = { check_variable = { which = apocalypse_trap value = 2 } } 			
+			character_event = { id = regalia.69 } 
+		}
+		# Trap
+		if = {
+			limit = { NOT = { check_variable = { which = apocalypse_trap value = 2 } } }			
+			character_event = { id = regalia.66 } 
+		}
+	}	
+}
+# Dodge trap
+character_event = {
+	id = regalia.68
+	#desc = regalia.68.desc
+	desc = {
+		trigger = {
+			check_variable = { which = apocalypse_trap value = 1 }
+			NOT = { check_variable = { which = apocalypse_trap value = 2 } }
+		}
+		text = regalia.68.desc.1
+	}	
+	desc = {
+		trigger = {
+			check_variable = { which = apocalypse_trap value = 2 }
+			NOT = { check_variable = { which = apocalypse_trap value = 3 } }
+		}
+		text = regalia.68.desc.2
+	}	
+	desc = {
+		trigger = {
+			check_variable = { which = apocalypse_trap value = 3 }
+		}
+		text = regalia.68.desc.3
+	}	
+	picture = "GFX_evt_into_the_dungeon" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.68.A"
+		# Chest
+		if = {
+			limit = { check_variable = { which = apocalypse_trap value = 2 } } 			
+			character_event = { id = regalia.69 } 
+		}
+		# Trap
+		if = {
+			limit = { NOT = { check_variable = { which = apocalypse_trap value = 2 } } }			
+			character_event = { id = regalia.66 } 
+		}
+	}	
+}
+# Trapped chest
+narrative_event = {
+	id = regalia.69
+	desc = regalia.69.desc
+	title = regalia.69.title
+	picture = "GFX_evt_relic_box" 
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		change_variable = { which = apocalypse_chest value = 1 }
+	}	
+		
+	option = {
+		name = "regalia.69.A"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_smart_trigger = yes 
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 1.5
+				intrigue = 10
+			}
+			modifier = {
+				factor = 2
+				intrigue = 15
+			}
+			modifier = {
+				factor = 1.5
+				learning = 10
+			}
+			modifier = {
+				factor = 2
+				learning = 15
+			}
+		}
+		hidden_tooltip = { character_event = { id = regalia.70 } }
+	}	
+	option = {
+		name = "regalia.69.B"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_dumb_trigger = yes 
+			}
+			modifier = {
+				factor = 50
+				trait = greedy 
+			}
+		}
+		hidden_tooltip = {
+			# Chest
+			if = {
+				limit = { check_variable = { which = apocalypse_chest value = 2 } } 			
+				character_event = { id = regalia.71 } 
+			}
+			# Trap
+			if = {
+				limit = { NOT = { check_variable = { which = apocalypse_chest value = 2 } } }			
+				character_event = { id = regalia.66 } 
+			}
+		}
+	}	
+}
+
+# Manakete-trapped chest.
+character_event = {
+	id = regalia.70
+	desc = regalia.70.desc
+	picture = "GFX_evt_fire_dragons_gate" 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.70.A"		
+		death = { death_reason = death_burned_manakete }
+	}	
+}
+
+#Claim the tome
+narrative_event = {
+	id = regalia.71
+	title = regalia.71.title
+	desc = regalia.71.desc
+	picture = "GFX_evt_regalia"
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "regalia.71.A"
+		add_artifact = regalia_apocalypse
+		new_artifact = {
+			set_creation_date = -1.1.1
+		}
+		set_global_flag = regalia_apocalypse_held 
+		clr_character_flag = regalia_apocalypse_trial
+	}		
+}
 # Just... find it, randomly?
 
 # Found it going raiding
 
 # Dig up treasure in remote location
 
-
 # Sacaen ones. Mani and Saka
+

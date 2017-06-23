@@ -881,7 +881,159 @@ brave_bow = {
 	slot = weapon
 }
 
+# Staves
+
+heal = {
+	health = 0.1
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 1
+	flags = { staff }
+	stacking = no
+	picture = "GFX_heal"
+	slot = staff
+}
+
+mend = {
+	health = 0.15
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 2
+	flags = { staff }
+	stacking = no
+	picture = "GFX_mend"
+	slot = staff
+}
+
+recover = {
+	health = 0.25
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 3
+	flags = { staff }
+	stacking = no
+	picture = "GFX_recover"
+	slot = staff
+}
+
+restore = {
+	disease_defence = 0.05
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 1
+	flags = { staff }
+	stacking = no
+	picture = "GFX_restore"
+	slot = staff
+}
+
+rescue = {
+	command_modifier = {
+		retreat = 0.2
+	}
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 2
+	flags = { staff }
+	stacking = no
+	picture = "GFX_rescue"
+	slot = staff
+}
+
+physic = {
+	health = 0.1
+	command_modifier = {
+		defence = 0.05
+	}
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 3
+	flags = { staff }
+	stacking = no
+	picture = "GFX_physic"
+	slot = staff
+}
+
+sleep = {
+	command_modifier = {
+		morale_offence = 0.05
+	}
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 1
+	flags = { staff }
+	stacking = no
+	picture = "GFX_sleep"
+	slot = staff
+}
+
+silence = {
+	command_modifier = {
+		magic_user_morale = 0.1
+	}
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 2
+	flags = { staff }
+	stacking = no
+	picture = "GFX_silence"
+	slot = staff
+}
+
+berserk = {
+	command_modifier = {
+		pursue = 0.1
+		damage = 0.1
+		defence = -0.1
+	}
+	active = { 
+		can_equip_staff_trigger = yes
+	}
+	quality = 3
+	flags = { staff }
+	stacking = no
+	picture = "GFX_berserk"
+	slot = staff
+}
+
 # Items
+
+vulenary = {
+	disease_defence = 0.025
+	quality = 1
+	flags = { consumable health  }
+	stacking = no
+	picture = "GFX_vulenary"
+}
+concoction = {
+	disease_defence = 0.05
+	quality = 2
+	flags = { consumable health  }
+	stacking = no
+	picture = "GFX_concoction"
+}
+elixir = {
+	disease_defence = 0.075
+	quality = 3
+	flags = { consumable health  }
+	stacking = no
+	picture = "GFX_elixir"
+}
+pure_water = {
+	monthly_character_piety = 0.1
+	quality = 3
+	flags = { consumable magic }
+	stacking = no
+	picture = "GFX_pure_water"
+}
 
 ninis_grace = {
 	command_modifier = {

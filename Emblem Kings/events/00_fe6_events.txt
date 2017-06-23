@@ -363,7 +363,10 @@ narrative_event = {
 	#religion = dragon_liberation
 	
 	trigger = {
-		has_landed_title = c_uri
+		#has_landed_title = c_uri
+		any_realm_title = {
+			title = b_temple_of_seals
+		}
 		b_temple_of_seals = {
 			holder_scope = {
 				NOT = { has_character_flag = is_fe7_brammimond }
@@ -419,7 +422,7 @@ narrative_event = {
 	}
 }
 
-# Find Idenn
+# Find Idunn
 narrative_event = {
 	id = fe6.5
 	title = fe6.5.title
@@ -540,7 +543,7 @@ narrative_event = {
 	}
 }
 
-# Create Idenn
+# Create Idunn
 character_event = {
 	id = fe6.6
 	#title = fe6.6.title
@@ -555,7 +558,7 @@ character_event = {
 		set_character_flag = demon_dragon_master
 		create_character = {
 			random_traits = no
-			name = "Idenn"
+			name = "Idunn"
 			dna = acbiiiebafr
 			properties=ol0i0i00000000
 			dynasty = NONE
@@ -582,7 +585,7 @@ character_event = {
 			set_variable = { which = "level" value = 20 }
 			set_character_flag="class_selected"
 			set_character_flag="class_manakete"
-			set_character_flag="is_fe6_idenn"
+			set_character_flag="is_fe6_Idunn"
 			move_character = ROOT		
 		}
 	}
@@ -829,7 +832,7 @@ character_event = {
 	}
 }
 
-# Xephiel Invasion tombola
+# Zephiel Invasion tombola
 character_event = {
 	id = fe6.11
 	hide_window = yes
@@ -839,6 +842,16 @@ character_event = {
 	option = {
 		name = OK
 		
+		# If I'm at war, come back later
+		if = {
+			limit = {
+				any_war = {
+					defender = { character = ROOT }
+				}
+			}
+			character_event = { id = fe6.11 days = 365 random = 30 }
+			break = yes
+		}
 		# What's the next target?
 		random_landed_title = {
 			limit = {
@@ -923,6 +936,9 @@ narrative_event = {
 	# Invade 
 	option = {
 		name = fe6.12.A
+		ai_chance = {
+			factor = 50
+		}
 		if = {
 			limit = {
 				has_character_modifier = planning_invasion 
@@ -967,7 +983,7 @@ narrative_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 0
+				factor = 0.1
 				has_game_rule = {
 					name = fe_story
 					value = on
@@ -1361,7 +1377,7 @@ letter_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 0
+				factor = 0.1
 				has_game_rule = {
 					name = fe_story
 					value = on

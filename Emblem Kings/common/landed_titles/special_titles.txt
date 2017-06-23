@@ -78,9 +78,33 @@ d_blackbone_clan = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
+d_western_isles_rebellion = {
+	color={ 177 185 204 }
+	color2={ 255 255 255 }
+	
+	capital = 170 #	Salinae
+	
+	title = "LEADER"
+	title_female = "LEADER"
+	
+	short_name = yes
+	
+	#landless = yes
+	
+	#primary = yes
+	
+	allow = {
+		always = no 
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
 # The new nation formed by Ekhidna after kicking Etruria out of the Western Isles
 k_western_union = {
-	color={ 72 160 144 }
+	color={ 150 167 133 }
+	short_name = yes
+	capital = 170 #	Salinae
 	allow = {
 		FROM = {
 			any_previous_holder = {

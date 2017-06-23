@@ -423,7 +423,8 @@ plot_coup = {
 	
 	# Plotter scope
 	potential = {
-		always = no # not done yet
+		#always = no # not done yet
+		NOT = { has_character_flag = failed_coup_attempt }
 		is_playable = yes
 		prisoner = no
 		age = 16
@@ -459,17 +460,17 @@ plot_coup = {
 			has_minor_title = title_knight_general
 			has_minor_title = title_great_general
 		}
-		is_councillor = yes
 	}
 	
 	target_potential = {
 		FROM = {
-			OR = {
-				dejure_liege_title = {
-					title = ROOT
-				}
+			liege = {
+				independent = yes
 				primary_title = {
-					de_jure_vassal_or_below = ROOT
+					title = ROOT
+					FROM = {
+						de_jure_liege_or_above = PREV
+					}
 				}
 			}
 		}
@@ -497,6 +498,16 @@ plot_coup = {
 		modifier = {
 			factor = 0.01
 			FROM = { trait = content }
+		}
+		modifier = {
+			factor = 0.0001
+			FROM = { 
+				OR = {
+					has_pleasant_personality_trigger = yes
+					is_pious_trigger = yes
+					is_benevolent_trigger = yes 
+				}
+			}
 		}
 		modifier = {
 			factor = 0.2
@@ -619,22 +630,63 @@ plot_coup = {
 	}
 	
 	success = {
-		claimed_by = FROM
+		# When they have the title
+		holder_scope = {
+			character = FROM
+		}
 	}
 	abort = {
 		OR = {
-			holder_scope = {
-				character = FROM
+			# If they're not a direct vassal, and didn't get it themselves
+			AND = {
+				NOT = { 
+					holder_scope = {
+						is_liege_of = FROM
+					}
+				}
+				NOT = { 
+					holder_scope = {
+						character = FROM
+					}
+				}
 			}
+			# If the title is gone
 			has_holder = no
+			# If not in a position of power
+			FROM = {
+				NOR = {
+					is_councillor = yes
+					has_minor_title = title_regent
+					has_minor_title = title_appointed_regent
+					has_minor_title = title_commander
+					has_minor_title = title_seneschal
+					has_minor_title = title_state_inquisitor
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_judge
+					has_minor_title = title_champion
+					has_minor_title = title_venerable_elder
+					has_minor_title = title_councilmember_king
+					has_minor_title = title_councilmember_emperor
+					has_minor_title = title_wyvern_general
+					has_minor_title = title_mage_general
+					has_minor_title = title_knight_general
+					has_minor_title = title_great_general
+				}
+			}
+			# Not a ruler
+			FROM = {
+				is_playable = no
+			}
+			FROM = {
+				prisoner = yes
+			}
 		}
-		is_playable = no
 	}
 	abort_effect = {
 		FROM = {
 			# Clear flags
 			hidden_tooltip = {
-				clr_character_flag = plot_gain_liege_title_decision_taken
+				clr_character_flag = plot_coup_decision_taken
 			}
 		}
 	}
@@ -649,7 +701,7 @@ plot_coup = {
 			}
 			# Clear flags
 			hidden_tooltip = {
-				clr_character_flag = plot_gain_liege_title_decision_taken
+				clr_character_flag = plot_coup_decision_taken
 			}
 		}
 	}

@@ -15,7 +15,7 @@
 city = {	
 	ct_weapon_shop_1 = {
 		desc = ct_weapon_shop_1_desc
-		trigger = { TECH_TRADE_PRACTICES = 2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
 		gold_cost = 100
 		build_time = 365
 		
@@ -28,7 +28,7 @@ city = {
 	}
 	ct_weapon_shop_2 = {
 		desc = ct_weapon_shop_1_desc
-		trigger = { TECH_TRADE_PRACTICES = 4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
 		upgrades_from = ct_weapon_shop_1
 		gold_cost = 200
 		build_time = 730
@@ -42,7 +42,7 @@ city = {
 	}
 	ct_weapon_shop_3 = {
 		desc = ct_weapon_shop_1_desc
-		trigger = { TECH_TRADE_PRACTICES = 8 }
+		trigger = { TECH_CITY_CONSTRUCTION = 8 }
 		upgrades_from = ct_weapon_shop_2
 		gold_cost = 300
 		build_time = 1095
@@ -57,7 +57,7 @@ city = {
 	
 	ct_item_shop_1 = {
 		desc = ct_item_shop_1_desc
-		trigger = { TECH_TRADE_PRACTICES = 2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
 		gold_cost = 100
 		build_time = 365
 		
@@ -70,7 +70,7 @@ city = {
 	}
 	ct_item_shop_2 = {
 		desc = ct_item_shop_1_desc
-		trigger = { TECH_TRADE_PRACTICES = 4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
 		upgrades_from = ct_item_shop_1
 		gold_cost = 200
 		build_time = 730
@@ -84,7 +84,7 @@ city = {
 	}
 	ct_item_shop_3 = {
 		desc = ct_item_shop_1_desc
-		trigger = { TECH_TRADE_PRACTICES = 8 }
+		trigger = { TECH_CITY_CONSTRUCTION = 8 }
 		upgrades_from = ct_item_shop_2
 		gold_cost = 300
 		build_time = 1095

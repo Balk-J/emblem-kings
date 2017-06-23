@@ -144,7 +144,7 @@
 }
 
 305 = {
-	name="Jodel"
+	name="Yoder"
 	dynasty=302
 	
 	religion=dark
@@ -811,7 +811,7 @@
 }
 
 323 = {
-	name="Thite" #flightleader of a group of pegasus knights. Hired by Klein.
+	name="Thea" #Thite/Tate. flightleader of a group of pegasus knights. Hired by Klein.
 	female=yes
 	dynasty=308
 	
@@ -951,7 +951,7 @@
 }
 
 326 = {
-	name="Zelots"
+	name="Zelot"
 	dynasty=303
 	dna="calkamajaas"
 	properties="ce0dhd000000"
@@ -1265,7 +1265,7 @@
 }
 
 337 = {
-	name="Siekes" # yet another knight in Zelots' company. 
+	name="Siekes" # yet another knight in Zelot's company. 
 	
 	religion=elimine_church
 	culture=ilian
@@ -1296,7 +1296,7 @@
 }
 
 338 = {
-	name="Casis" # Still another knight in Zelots' company. 
+	name="Casis" # Still another knight in Zelot's company. 
 	# "He's the guy who forgot to bring his weapons to our first mission. He even forgot to bring his horse."
 	# Later gets hired by Bern and killed at some point in FE6.
 	
@@ -1539,7 +1539,7 @@
 }
 
 346 = {
-	name="Helenos" #non-canon; father for Zelots and leader of the merc knights
+	name="Helenos" #non-canon; father for Zelot and leader of the merc knights
 	dynasty=303
 	
 	religion=elimine_church

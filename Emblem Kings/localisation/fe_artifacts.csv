@@ -55,7 +55,6 @@ regalia_rex_hasta_desc;A regalia lance.;;;;;;;;;;;;;x
 regalia_regal_blade;Regal Blade;;;;;;;;;;;;;x
 regalia_regal_blade_desc;A regalia sword.;;;;;;;;;;;;;x
 
-
 iron_sword;Iron Sword;;;;;;;;;;;;;x
 iron_sword_desc;A common sword of a common material.;;;;;;;;;;;;;x
 steel_sword;Steel Sword;;;;;;;;;;;;;x
@@ -175,3 +174,30 @@ silver_card;Silver Card;;;;;;;;;;;;;x
 silver_card_desc;A card that provides discounts at many shops.;;;;;;;;;;;;;x
 member_card;Member Card;;;;;;;;;;;;;x
 member_card_desc;A card that grants the bearer purchasing privileges at special shops.;;;;;;;;;;;;;x
+
+heal;Heal;;;;;;;;;;;;;x
+heal_desc;A staff used to restore health to a nearby ally.;;;;;;;;;;;;;x
+mend;Mend;;;;;;;;;;;;;x
+mend_desc;Greatly restores health to a nearby ally.;;;;;;;;;;;;;x
+recover;Recover;;;;;;;;;;;;;x
+recover_desc;Fully restores health to a nearby ally.;;;;;;;;;;;;;x
+restore;Restore;;;;;;;;;;;;;x
+restore_desc;A staff that cures ailments and restores targets to normal condition.;;;;;;;;;;;;;x
+rescue;Rescue;;;;;;;;;;;;;x
+rescue_desc;Warps a distant ally to the vicinity of the caster.;;;;;;;;;;;;;x
+physic;Physic;;;;;;;;;;;;;x
+physic_desc;Restores health to a distant ally.;;;;;;;;;;;;;x
+sleep;Sleep;;;;;;;;;;;;;x
+sleep_desc;A staff that puts targets to sleep. Carrying it also protects the wielder from magic-induced slumber.;;;;;;;;;;;;;x
+silence;Silence;;;;;;;;;;;;;x
+silence_desc;A staff that prevents targets from using magic for a short time.;;;;;;;;;;;;;x
+berserk;Berserk;;;;;;;;;;;;;x
+berserk_desc;A staff that drives targets into a berserk rage.;;;;;;;;;;;;;x
+pure_water;Pure Water;;;;;;;;;;;;;x
+pure_water_desc;A draught that boosts magical resistance. The effects grow weaker with time.;;;;;;;;;;;;;x
+vulenary;Vulenary;;;;;;;;;;;;;x
+vulenary_desc;A common healing item that restores a small amount of health.;;;;;;;;;;;;;x
+concoction;Concoction;;;;;;;;;;;;;x
+concoction_desc;A potent vulenary capable of treating more serious wounds.;;;;;;;;;;;;;x
+elixir;Elixir;;;;;;;;;;;;;x
+elixir_desc;A magical draught that can fully restore the drinker's strength.;;;;;;;;;;;;;x

@@ -1879,6 +1879,8 @@ character_event = {
 	}
 }
 
+# Coup events
+
 # Coup succeeds 
 character_event = {
 	id = fe_plot.58
@@ -1950,7 +1952,7 @@ character_event = {
 	picture = GFX_evt_council
 	
 	is_triggered_only = yes
-	
+	# War
 	option = {
 		name = fe_plot.60.A
 		
@@ -1963,6 +1965,7 @@ character_event = {
 			}
 		}		
 	}
+	# Back down
 	option = {
 		name = fe_plot.60.B
 		
@@ -2012,13 +2015,13 @@ character_event = {
 	
 	option = {
 		name = fe_plot.62.A
-		
-		cancel_plot = plot_coup
+		set_character_flag = failed_coup_attempt
+		#cancel_plot = plot_coup
 		plot_target_char = {
 			opinion = {
-				modifier = scheming_bastard
+				modifier = opinion_traitor
 				who = ROOT
-				years = 6
+				years = 10
 			}
 			
 			reverse_imprison = ROOT

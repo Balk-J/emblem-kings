@@ -1,0 +1,177 @@
+namespace = fe6_west
+###################################
+# FE6 / The Sword of Seals Events #
+###################################
+
+# Start the rebellion
+character_event = {
+	id = fe6_west.1
+	desc = fe6_west.1.desc	
+	picture = GFX_evt_peasants
+	is_triggered_only = yes	
+	hide_from = yes	
+	
+	option = {
+		name = fe6_west.1.A
+		
+		d_western_isles_rebellion = {
+			grant_title = ROOT
+		}
+		
+		prestige = 1500
+		
+		hidden_tooltip = {
+			set_global_flag = fe6_western_isles_rebellion
+		}
+	}
+	option = {
+		name = fe6_west.1.B
+		random_list = {
+			70 = {}
+			10 = {
+				add_trait = craven
+			}
+			10 = {
+				remove_trait = ambitious
+			}
+			10 = {
+				add_trait = slothful
+			}
+		}
+	}
+}
+
+# Is the rebellion over?
+character_event = {
+	id = fe6_west.2
+	
+	hide_window = yes
+	is_triggered_only = yes
+	only_playable = yes
+	has_global_flag = fe6_western_isles_rebellion
+	
+	trigger = {
+		has_landed_title = d_western_isles_rebellion
+	}
+	
+	option = {
+		name = OK
+		
+		# If there are no more bandits and colonial powers holding land
+		if = {
+			limit = {
+				NOT = {
+					any_independent_ruler = { western_isles_rebel_target_trigger = yes }
+				}
+			}
+			character_event = { id = fe6_west.6 }
+			break = yes
+		}
+		
+		# If the Kingdom exists
+		if = {
+			limit = {
+				k_the_western_isles = {
+#					any_previous_holder = {
+#						always = yes
+#					}
+					has_holder = yes
+				}
+			}
+			k_the_western_isles = {
+				holder_scope = {
+					character_event = { id = fe6_west.3 }
+				}
+			}
+#			break = yes
+		}
+	}
+}
+
+# Ping event to get the King of the Western Isles in scope for the event to dissolve the rebellion.
+character_event = {
+	id = fe6_west.4
+	
+	hide_window = yes
+	is_triggered_only = yes
+	option = {
+		name = OK
+		FROM = {
+			character_event = { id = fe6_west.5 }
+		}		
+	}
+}
+
+# Kingdom exists; rebellion is no longer legitimate
+character_event = {
+	id = fe6_west.5
+	# is king
+	desc = {
+		trigger = {
+			has_landed_title = k_the_western_isles
+		}
+		text = fe6_west.5.desc.1
+	}	
+	# Someone else is king
+	desc = {
+		trigger = {
+			NOT = { has_landed_title = k_the_western_isles }
+		}
+		text = fe6_west.5.desc.2
+	}
+	picture = GFX_evt_coronation
+	is_triggered_only = yes	
+	
+	option = {
+		name = {
+			text = fe6_west.5.A
+			trigger = {
+				NOT = { has_landed_title = k_the_western_isles }
+			}
+		}
+
+		name = {
+			text = fe6_west.5.B
+			trigger = {
+				has_landed_title = k_the_western_isles 
+			}
+		}
+		
+		d_western_isles_rebellion = {
+			destroy_landed_title = THIS
+		}
+		hidden_tooltip = {
+			clr_global_flag = fe6_western_isles_rebellion
+		}
+	}
+}
+
+# Isles free; form the Union
+character_event = {
+	id = fe6_west.6
+	desc = fe6_west.6.desc	
+	picture = GFX_evt_market
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe6_west.6.A
+		
+		hidden_tooltip = {
+			k_the_western_isles = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = k_western_union
+				}
+			}
+		}
+		k_western_union = {
+			grant_title = ROOT
+		}
+		d_western_isles_rebellion = {
+			destroy_landed_title = THIS
+		}
+		
+		hidden_tooltip = {
+			clr_global_flag = fe6_western_isles_rebellion
+		}
+	}
+}

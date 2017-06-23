@@ -9,17 +9,17 @@ elibian = {
 		color = { 0 0.5 0 }
 		# Raven Dart
 		male_names = {
-			Astore Alen Al
+			Astolfo Alen Al
 			Bath Bors Bool Bauker Bernard
 			Chad
-			Darin Dan Danan Debias Damas Dory Dovanon
+			Darin Dan Danan Devias Damas Dory Dovanon
 			Eliwood Elbert Erik Eagler Eubans
 			#Fargus
 			Golrois Gant Georg Groznyi Goldor
 			Hector Hausen Helman Harken Henning
 			Juge
 			Kent Kai Kruzard
-			Lundgren Lowen Lance Lugh Legance
+			Lundgren Lowen Lance Lugh Leygance
 			Marcus Matthew Merlinus Magough
 			Orun Oswin
 			Puzon
@@ -51,6 +51,7 @@ elibian = {
 		female_names = {
 			Cath
 			Eleanora
+			Gwendolyn
 			Isadora Iris
 			Lilina Lyndis Leila
 			Madelyn
@@ -58,7 +59,6 @@ elibian = {
 			Priscilla
 			Rebecca
 			Tiena
-			Wendy
 			#Frankish names from vanilla.
 			Adalgardis Adallinda Adaltrude Adaluildis Adelaidis Airsenda Albofleda Albrada Alda Aldegonde Aliberta Alitrudis Ansegudis Ansegundis
 			Anstrude Arsindis Audofleda Audovera Austreberta Austrechild Balthild Begga Beretrude Bernegildis Bertenildis Berthefled Berthefried
@@ -96,7 +96,8 @@ elibian = {
 			Cameron
 			Dorcas Desmond Damian
 			Flaer
-			Galle Geitz Geese
+			#Galle 
+			Geitz Geese
 			Hartmut Heath Heintz
 			Igor Isaac
 			Jan Jerme
@@ -104,11 +105,11 @@ elibian = {
 			Lachius Legault Lloyd Linus
 			Murdock Maxime Martel
 			Narcian
-			Oates Oleg
+			Ohtz Oleg
 			Peres Pascal
-			Ruud Raith Randy Richten Rutger
+			Rude Raeth Randy Richten Rutger
 			Slater
-			Tick
+			Teck
 			Teodor
 			Wire
 			Zeed Zephiel Zeiss Zoldam
@@ -134,7 +135,7 @@ elibian = {
 			Elen
 			Guinivere
 			Jemmie
-			Miledy
+			Melady
 			Natalie
 			Ursula
 			Vaida
@@ -177,16 +178,16 @@ elibian = {
 			Douglas
 			Erk
 			Galdes Garret Gol
-			Jodel
 			Klein
 			Lucius
 			Mordred Mildain Morgan
 			Nord
-			Orlo
-			Pent Perceval
-			Roberts Roartz
+			Oro
+			Pent Percival
+			Robarts Roartz
 			Saul
-			Windham
+			Windam
+			Yoder
 			Zinque
 			# French names from the Song of Roland:
 			Anseis
@@ -217,7 +218,7 @@ elibian = {
 			Clarine Cecilia
 			Dorothy
 			Hellene
-			Lalum Louise
+			Larum Louise
 			Serra
 			# French names from the Song of Roland:
 			Alde
@@ -381,7 +382,7 @@ elibian = {
 			Ogier
 			Sieks
 			Trec
-			Zelots
+			Zelot
 			# Trojan names from the Iliad
 			Aeneas Antenor Astyanax
 			Glaucus
@@ -408,7 +409,7 @@ elibian = {
 			Juno
 			Ninian Niime
 			Shanna Sigune
-			Thite
+			Thea
 			# Trojan names from the Iliad
 			Andromache
 			Cassandra Chryseis 
@@ -444,8 +445,8 @@ elibian = {
 		male_names = {
 			Bartre Barnz Bruno Bogan
 			Durban Deke
-			Elphin
-			Gonzalez Guerrero
+			Elffin
+			Gonzalez Gelero
 			Kaim Kilmar Kelles
 			Lot
 			Mancel
@@ -462,194 +463,13 @@ elibian = {
 		}
 		female_names = {
 			Aileen Alexis
-			Ekhidna
+			Echidna
 			Mary Myu
 			Nadine
 			#Pictish
 			Addiena_Addiena Abrella_Abrelda Allust_Alice Arnemetia Brethoc_Beatrice Bride_Brigit Bronuen_Bronwen Caitrion_Catherine Cristin_Christina Durilia_Derilla Elaine_Elaine
 			Elen_Helen Eua_Eva Madru_Matrona Maelmurie_Malmure Mairi_Mary Margrud_Margaret Maud_Matilda Mor_Mor Morag_Mor Morien_Murron Muriel_Muriel Neulina_Neulenna Sara_Sarah
 			Siunod_Joan Uen_Gwen Uluen_Olwen Uuena_Eugenia Uunis_Agnes Uusbail_Elizabeth
-		}
-		
-		from_dynasty_prefix = "of "
-		
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 25
-		father_name_chance = 10
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 25
-		mat_grm_name_chance = 50
-		mother_name_chance = 10
-		
-		modifier = default_culture_modifier
-	}
-}
-
-#Badly needs work. The idea was to lump all the pirate types in one culture... may be better to put them in local cultures.
-seafarer = {
-	graphical_cultures = { norsegfx }# buildings, portraits, units
-		
-	seafarer = {
-		graphical_cultures = { norsegfx}
-		
-		color = { 1 0.5 0.4 }
-		
-		male_names = {
-			Mark
-			Darros Dart
-			Fargus
-			Han #legendary Pirate King Han Gak
-			Havetti
-			Nedata
-			Zanth
-			#And let's throw in all the other canon names too
-			Astore Alen Al
-			Bath Bors Bool Bauker Bernard
-			Darin Dan Danan Debias Damas Dory Dovanon
-			Eliwood Elbert Erik Eagler Eubans
-			#Fargus
-			Golrois Gant Georg Groznyi Goldor
-			Hector Hausen Helman Harken Henning
-			Juge
-			Kent Kai Kruzard
-			Lundgren Lowen Lance Lugh Legance
-			Marcus Matthew Merlinus Magough
-			Orun Oswin
-			Puzon
-			Ranward Roland Roy Raymond Raigh Renault Reissmann
-			Sain 
-			Uther
-			Warren Wolt Wil Wallace Wagner Wilson
-			Yogi Youzen
-			Aion
-			Brendan Beyard Boies Belminade
-			Cameron
-			Dorcas Desmond Damian
-			Flaer
-			Galle Geitz Geese
-			Hartmut Heath Heintz
-			Igor Isaac
-			Jan Jerme
-			Kenneth
-			Lachius Legault Lloyd Linus
-			Murdock Maxime Martel
-			Narcian
-			Oates Oleg
-			Peres Pascal
-			Ruud Raith Randy Richten Rutger
-			Slater
-			Tick
-			Teodor
-			Wire
-			Zeed Zephiel Zeiss Zoldam
-			Arcard
-			Carls
-			Douglas
-			Erk
-			Galdes Garret Gol
-			Jodel
-			Klein
-			Lucius
-			Mordred Mildain Morgan
-			Nord
-			Orlo
-			Pent Perceval
-			Roberts Roartz
-			Saul
-			Windham
-			Zinque
-			Athos
-			Denning
-			Ephidel
-			Gehato
-			Hawkeye
-			Jaffar
-			Kishuna
-			Paul
-			Batta Brakul Bug
-			Chad Chan Carjiga
-			Dayan
-			Glass Guy 
-			Hanon Hassar
-			Kabul Kudoka Karel Kel
-			Monke Marral Migal
-			Rath
-			Sealen Sin
-			Thoril
-			Uhai
-			Zugu		
-			Barigan Baudouin
-			Casis 
-			Canas
-			Grant
-			Hugh Huey
-			Murphy
-			#Nergal
-			Nils Noah
-			Ogier
-			Sieks
-			Trec
-			Zelots
-			Bartre Barnz Bruno Bogan
-			Durban Deke
-			Elphin
-			Gonzalez Guerrero
-			Kaim Kilmar Kelles
-			Lot
-			Mancel
-			Scott Scollan
-			Wade
-		}
-		female_names = {
-			#Canon names from other cultures
-			Cath
-			Eleanora
-			Isadora Iris
-			Lilina Lyndis Leila
-			Madelyn
-			Nino
-			Priscilla
-			Rebecca
-			Tiena
-			Wendy
-			Aesha
-			Brunnya
-			Elen
-			Guinivere
-			Jemmie
-			Miledy
-			Natalie
-			Ursula
-			Vaida
-			Clarine Cecilia
-			Dorothy
-			Hellene
-			Lalum Louise
-			Serra
-			Bramimond
-			Efta
-			Igrene
-			Jasmine
-			Limstella
-			Maggie
-			Rose
-			Sonia Sophia
-			Fir
-			Karla
-			Sue
-			Aenir
-			Celdia
-			Fiora Florina Farina
-			Juno
-			Ninian Niime
-			Shanna Sigune
-			Thite
-			Aileen Alexis
-			Ekhidna
-			Mary Myu
-			Nadine
 		}
 		
 		from_dynasty_prefix = "of "
