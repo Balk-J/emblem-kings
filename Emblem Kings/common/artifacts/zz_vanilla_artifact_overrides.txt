@@ -1,0 +1,15 @@
+# For overriding vanilla artifacts that are handed out in event chains we do not want to include in the mod's files.
+# It's easier to just change the activation requirements and localization of the artifact than to keep updating the event file for each new version of CK2. 
+finger_of_st_john = { #separate event chain
+	monthly_character_prestige = 0.1
+	monthly_character_piety = 0.5
+	learning = 1
+	active = { religion_group = light_group }
+	allowed_gift = {
+		religion_group = light_group
+	}
+	quality = 2
+	flags = { religious light_group SoA bodypart }
+	stacking = no
+	picture = "GFX_saints_bone_finger"
+}

@@ -716,6 +716,14 @@ heal_effect = {
 	 	limit = { trait = scurvy }
 	 	remove_trait = scurvy
 	}
+	if = {
+	 	limit = { trait = has_tuberculosis }
+	 	remove_trait = has_tuberculosis
+	}
+	if = {
+	 	limit = { trait = has_typhus }
+	 	remove_trait = has_typhus
+	}
 	hidden_tooltip = {
 		remove_character_modifier = symptom_treatment_1
 		remove_character_modifier = symptom_treatment_2

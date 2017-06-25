@@ -29,11 +29,11 @@ character_event = {
 				add_province_modifier = { name = ancient_ruins duration = -1 }
 			}
 			# The area in Ilia where Bern found that weather magic tome
-			265 = { #Neandreia
+			261 = { #Neandreia
 				add_province_modifier = { name = ancient_ruins duration = -1 }
 			}
 			# Arcadia
-			120 = { 
+			116 = { 
 				add_province_modifier = { name = ancient_ruins duration = -1 }
 			}
 		}

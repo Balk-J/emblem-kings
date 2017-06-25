@@ -2285,6 +2285,8 @@ on_county_religion_change = {
 	events = {
 		SoA.4121
 		MNM.6206 #Convert province assassin quest
+		#FE
+		magic.5
 	}
 }
 
@@ -2375,6 +2377,10 @@ on_new_holder = {
 
 		# Clean up zoroastrian pets on province modifiers in case capital lost
 		ZP.6 
+		
+		#FE
+		fe7.4 # Hausen inherits from Lundgren
+		fe_titles.1 # Pegasus Knight company succession
 	}
 }
 
@@ -2391,6 +2397,10 @@ on_new_holder_inheritance = {
 		738 # Black Pope achievement
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
+		
+		#FE
+		fe7.4 # Hausen inherits from Lundgren
+		fe_titles.1 # Pegasus Knight company succession
 	}
 }
 
@@ -2411,6 +2421,10 @@ on_new_holder_usurpation = {
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 #		MNM.6230 # Clearing covert province quest if new owner
+		
+		#FE
+		fe7.4 # Hausen inherits from Lundgren
+		fe_titles.1 # Pegasus Knight company succession
 
 	}
 }

@@ -325,7 +325,8 @@
 		religion=elimine_church
         template = 0
         layer = {
-            texture = 3
+#            texture = 3
+            texture = 4
             texture_internal = 41
             emblem = 0
             color = 5

@@ -5,7 +5,7 @@ d_ganelon_bandits = {
 	color={ 217 159 255 }
 	color2={ 255 255 255 }
 	
-	capital = 189 # Ganelon
+	capital = 185 # Ganelon
 	#tribe = yes
 	culture=sacaean
 	title = "count_sacaean"
@@ -28,7 +28,7 @@ d_taliver_bandits = {
 	color={ 250 120 90 }
 	color2={ 255 255 255 }
 	
-	capital = 185 # Taliver
+	capital = 181 # Taliver
 	#tribe = yes
 	culture=sacaean
 	title = "count_sacaean"

@@ -1,8 +1,8 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 regalia.hunted;[relic_hunter.GetJobTitle] [relic_hunter.GetFirstName] has finally returned from [relic_hunter.GetHerHis] travels. [relic_hunter.GetSheHeCap] has brought back a exquisite weapon!;;;;;;;;;;;;;x
-regalia.tooltip.glass;Order a Â§YGlassÂ§! weapon. It will give you Â§G+0.1Â§! Â§YOffenseÂ§!, Â§G-0.1Â§! Â§YDefenceÂ§! and Â§G+1Â§! Â§YPersonal Combat SkillÂ§!.\n;;;;;;;;;;;;;x
-regalia.tooltip.killer;Order a Â§YKillerÂ§! weapon. It will give you Â§G+0.1Â§! Â§YMorale DamageÂ§!, Â§G+1Â§! Â§YMartialÂ§! and Â§G+1Â§! Â§YPersonal Combat SkillÂ§!.\n;;;;;;;;;;;;;x
-regalia.tooltip.brave;Order a Â§YBraveÂ§! weapon. It will give you Â§G+0.1Â§! Â§YOffenseÂ§!, Â§G+1Â§! Â§YMartialÂ§! and Â§G+1Â§! Â§YPersonal Combat SkillÂ§!.\n;;;;;;;;;;;;;x
+regalia.tooltip.glass;Order a §YGlass§! weapon. It will give you §G+0.1§! §YOffense§!, §G-0.1§! §YDefence§! and §G+1§! §YPersonal Combat Skill§!.\n;;;;;;;;;;;;;x
+regalia.tooltip.killer;Order a §YKiller§! weapon. It will give you §G+0.1§! §YMorale Damage§!, §G+1§! §YMartial§! and §G+1§! §YPersonal Combat Skill§!.\n;;;;;;;;;;;;;x
+regalia.tooltip.brave;Order a §YBrave§! weapon. It will give you §G+0.1§! §YOffense§!, §G+1§! §YMartial§! and §G+1§! §YPersonal Combat Skill§!.\n;;;;;;;;;;;;;x
 EVTDESC_MNM_9122.fe;I was struck with nervous excitement when [From.GetMasterMistressCap] [From.GetFirstName] announced that the [From.GetWeaponsmithWeapon] was nearing its completion. Today I have received the [From.GetMasterMistressCap] in my throne room. A sturdy box is in [From.GetHerHis] arms, and as [From.GetSheHe] opens the lid, I find it almost impossible to breathe. 'Your [From.GetWeaponsmithWeapon], my [Root.GetTitle].';;;;;;;;;;;;;x
 
 regalia.1.title;The Mountains of Lycia;;;;;;;;;;;;;x
@@ -233,8 +233,8 @@ regalia.62.desc.1;One of your guards has returned with news of a rumor widely kn
 regalia.62.desc.2;One of your agents heard a rumor circulating among the soldiers who guard the Shrine of Seals. They claim that a spell book has been placed in a cave beneath the shrine to guard the place from intruders. This tome could be the weapon you seek. However, other rumors hold that this cavern is covered in all sorts of traps. Without the knowledge to find these devices or the cunning to evade them, venturing into the shrine is a risky proposition. Even approaching it is dangerous, given its status as a top secret fortress.;;;;;;;;;;;;;x
 regalia.62.A;I will find a way in and claim the treasure!;;;;;;;;;;;;;x
 regalia.62.B;It's not worth the trouble.;;;;;;;;;;;;;x
-regalia.64.desc;Cuaght snkeaing in;;;;;;;;;;;;;x
-regalia.64.A;oops;;;;;;;;;;;;;x
+regalia.64.desc;You were apprehended by local authorities when you tried to find a way into the temple beneath the Shrine of Seals.;;;;;;;;;;;;;x
+regalia.64.A;Oops...;;;;;;;;;;;;;x
 regalia.65.title;The Silencing Darkness;;;;;;;;;;;;;x
 regalia.65.desc;You are in an undergound temple beneath the Shrine of Seals. The darkness is almost complete - the gloom seems to drink up your torchlight much more than it should. There's no sign of life in these depths. The only sound you can hear is the flowing of a swift stream, running through a moat or channel carved into the stone floor.\n\nTrying to cross the water in this darkness would be foolhardy, but you can see paths to your left and right that lead deeper into the temple.;;;;;;;;;;;;;x
 regalia.65.A;Take the right path.;;;;;;;;;;;;;x

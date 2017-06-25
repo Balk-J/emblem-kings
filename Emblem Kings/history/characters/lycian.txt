@@ -518,7 +518,7 @@
 			set_character_flag = lyn_story
 			spawn_unit = {
 				owner = ROOT
-				province = 209 # Kashgar, Batta's county
+				province = 205 # Kashgar, Batta's county
 				troops = {
 					archers = { 100 100 }
 					light_infantry = { 300 300 }
@@ -530,7 +530,7 @@
 			}
 			spawn_unit = {
 				owner = ROOT
-				province = 209 # Kashgar, Batta's county
+				province = 205 # Kashgar, Batta's county
 				troops = {
 					archers = { 100 100 }
 					light_infantry = { 300 300 }
@@ -542,7 +542,7 @@
 			}
 			spawn_unit = {
 				owner = ROOT
-				province = 209 # Kashgar, Batta's county
+				province = 205 # Kashgar, Batta's county
 				troops = {
 					archers = { 100 100 }
 					light_infantry = { 200 200 }

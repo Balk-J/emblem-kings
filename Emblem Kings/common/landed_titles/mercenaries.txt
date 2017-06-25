@@ -5,7 +5,7 @@ d_talon_company = {
 	color={ 235 235 235 }
 	color2={ 255 255 255 }
 
-	capital = 95 # Laus
+	capital = 91 # Laus
 	
 	# Hire Trigger
 	allow = {
@@ -40,7 +40,7 @@ d_tiger_company = {
 	color={ 235 235 0 }
 	color2={ 255 255 255 }
 
-	capital = 163 # Eburacum
+	capital = 159 # Eburacum
 	
 	# Hire Trigger
 	allow = {
@@ -75,7 +75,7 @@ d_davros = {
 	color={ 104 48 152 }
 	color2={ 255 255 255 }
 
-	capital = 98 # Badon
+	capital = 94 # Badon
 	
 	# Hire Trigger
 	allow = {
@@ -115,7 +115,7 @@ d_ilia_pegasus_knights_1 = {
 	color={ 72 128 160 }
 	color2={ 255 255 255 }
 
-	capital = 259 # Carrhae
+	capital = 255 # Carrhae
 	
 	# Hire Trigger
 	allow = {
@@ -152,7 +152,7 @@ d_ilia_pegasus_knights_2 = {
 	color={ 192 80 248 }
 	color2={ 255 255 255 }
 
-	capital = 253 # Troas
+	capital = 249 # Troas
 	
 	# Hire Trigger
 	allow = {
@@ -189,7 +189,7 @@ d_ilia_pegasus_knights_3 = {
 	color={ 88 88 248 }
 	color2={ 255 255 255 }
 
-	capital = 260 # Cebrene
+	capital = 256 # Cebrene
 	
 	# Hire Trigger
 	allow = {
@@ -226,7 +226,7 @@ d_ilia_pegasus_knights_4 = {
 	color={ 77 203 220 }
 	color2={ 255 255 255 }
 
-	capital = 273 # Sigeion
+	capital = 269 # Sigeion
 	
 	# Hire Trigger
 	allow = {
@@ -263,7 +263,7 @@ d_ilia_pegasus_knights_5 = {
 	color={ 64 208 208 }
 	color2={ 255 255 255 }
 
-	capital = 270 # Sestos
+	capital = 266 # Sestos
 	
 	# Hire Trigger
 	allow = {
@@ -300,7 +300,7 @@ d_ilia_mercenary_knights = {
 	color={ 208 240 248 }
 	color2={ 255 255 255 }
 
-	capital = 248 # Edessa
+	capital = 244 # Edessa
 	
 	# Hire Trigger
 	allow = {
@@ -337,7 +337,7 @@ d_black_fang = {
 	color={ 25 25 25 }
 	color2={ 255 255 255 }
 	
-	capital = 57 #	Vaud
+	capital = 55 #	Vaud
 	
 	title = "tribal_count"
 	foa = "chief_foa"

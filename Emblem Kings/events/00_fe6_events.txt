@@ -786,6 +786,7 @@ narrative_event = {
 		}
 		
 		new_character = {
+			dynasty = 920
 			set_variable = { which = "level" value = 20 }
 			set_character_flag="class_selected"
 			set_character_flag="class_manakete"
@@ -1121,11 +1122,36 @@ character_event = {
 								remove_elibe_mercenary_effect = yes
 							}
 						}
-						reverse_war = {
-							target = ROOT
-							casus_belli = dragon_liberation_invasion
-							thirdparty_title = PREVPREVPREV
+						
+						# Infamy and coalitions won't kick in until after Sacae and Ilia are beaten
+						if = {
+							limit = {
+								k_sacae = {
+									has_title_flag = dragon_liberation_invasion_target
+								}
+							}				
+							reverse_war = {
+								target = ROOT
+								casus_belli = dragon_liberation_invasion
+								thirdparty_title = PREVPREVPREV
+								infamy = 0
+							}
 						}
+						if = {
+							limit = {
+								NOT = {
+									k_sacae = {
+										has_title_flag = dragon_liberation_invasion_target
+									}
+								}
+							}						
+							reverse_war = {
+								target = ROOT
+								casus_belli = dragon_liberation_invasion
+								thirdparty_title = PREVPREVPREV
+							}
+						}
+						#
 						set_character_flag = dragon_liberation_invasion_defender
 						hidden_tooltip = {
 							event_target:target_dragon_liberation_invasion_title = {

@@ -4,10 +4,12 @@
 title = c_lucerne
 
 # Settlements
-max_settlements = 2
+max_settlements = 4
 
 b_lucerne = tribal
 #b_lucerne_2 = temple
+#b_lugano = tribal
+#b_vaulion = tribal
 
 # Misc
 culture = bernese

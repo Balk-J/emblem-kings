@@ -98,7 +98,8 @@
 		religion=elimine_church
         template = 0
         layer = {
-            texture = 3
+#            texture = 3
+            texture = 4
             texture_internal = 15
             emblem = 0
             color = 6
@@ -134,7 +135,8 @@
 		religion=elimine_church
         template = 0
         layer = {
-            texture = 3
+#            texture = 3
+            texture = 4
             texture_internal = 32
             emblem = 0
             color = 2
@@ -152,7 +154,8 @@
 		religion=elimine_church
         template = 0
         layer = {
-            texture = 3
+#            texture = 3
+            texture = 4
             texture_internal = 4
             emblem = 0
             color = 14
@@ -316,7 +319,8 @@
 		religion=elimine_church
         template = 0
         layer = {
-            texture = 3
+#            texture = 3
+            texture = 4
             texture_internal = 29
             emblem = 0
             color = 9

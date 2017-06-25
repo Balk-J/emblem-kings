@@ -741,7 +741,7 @@
 }
 
 418={
-	name="Tick" #general
+	name="Teck" #general
 	dynasty=413
 	culture=bernese
 	religion=elimine_church
@@ -2134,7 +2134,7 @@
 		effect = {
 			spawn_unit = {
 				owner = ROOT
-				province = 42 # Sion
+				province = 40 # Sion
 				troops = {
 					archers = { 100 100 }
 					pikemen = { 100 100 }
@@ -2253,7 +2253,6 @@
 	}
 }
 
-#Emmen
 #Remigen
 464={
 	name="Emund" 
@@ -2272,21 +2271,21 @@
 }
 
 #Nebikon
-465={
-	name="Nikolaus" 
-	dynasty=428
-	
-	culture=bernese
-	religion=elimine_church
-		
-	1134.1.1={
-		birth=yes
-	}
-	
-	1204.1.1= {
-		death = yes
-	}
-}
+#465={
+#	name="Nikolaus" 
+#	dynasty=428
+#	
+#	culture=bernese
+#	religion=elimine_church
+#		
+#	1134.1.1={
+#		birth=yes
+#	}
+#	
+#	1204.1.1= {
+#		death = yes
+#	}
+#}
 #Sion
 466={
 	name="Siegfried" 
@@ -2537,8 +2536,6 @@
 }
 
 #Lucerne
-#Lugano
-#Vaulion
 480={
 	name="Lothar" 
 	dynasty=443

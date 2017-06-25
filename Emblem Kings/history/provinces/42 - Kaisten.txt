@@ -4,10 +4,11 @@
 title = c_kaisten
 
 # Settlements
-max_settlements = 2
+max_settlements = 3
 
 b_kaisten = tribal
 #b_kaisten_2 = temple
+#b_nebikon = tribal
 
 # Misc
 culture = bernese

@@ -34,7 +34,7 @@ d_lyn = {
 	color={ 68 156 163 }
 	color2={ 255 255 255 }
 	
-	capital = 103 #	Caelin
+	capital = 99 #	Caelin
 	
 	title = "LORD"
 	title_female = "LORD_female"
@@ -59,7 +59,7 @@ d_blackbone_clan = {
 	color={ 90 50 50 }
 	color2={ 255 255 255 }
 	
-	capital = 42 #	Sion
+	capital = 40 #	Sion
 	
 	title = "GRANDMASTER"
 	title_female = "GRANDMASTER"
@@ -82,7 +82,7 @@ d_western_isles_rebellion = {
 	color={ 177 185 204 }
 	color2={ 255 255 255 }
 	
-	capital = 170 #	Salinae
+	capital = 166 #	Salinae
 	
 	title = "LEADER"
 	title_female = "LEADER"
@@ -104,7 +104,7 @@ d_western_isles_rebellion = {
 k_western_union = {
 	color={ 150 167 133 }
 	short_name = yes
-	capital = 170 #	Salinae
+	capital = 166 #	Salinae
 	allow = {
 		FROM = {
 			any_previous_holder = {

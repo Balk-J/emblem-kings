@@ -3767,7 +3767,10 @@ character_event = {
 							trait=base_class_cavalier
 						} 
 				}
-				hidden_tooltip = { add_trait = base_class_knight }
+				hidden_tooltip = { 
+					add_trait = base_class_knight
+					remove_trait = base_class_cavalier					
+				}
 				add_trait=class_knight
 			}
 			1 = {
@@ -3783,7 +3786,10 @@ character_event = {
 						}
 					} 
 				}
-				hidden_tooltip = { add_trait = base_class_cavalier }
+				hidden_tooltip = { 
+					add_trait = base_class_cavalier
+					remove_trait = base_class_knight					
+				}
 				add_trait=class_cavalier
 			}
 			1 = {
@@ -3792,16 +3798,12 @@ character_event = {
 					NOR={
 						trait=base_class_archer
 						trait=base_class_horse_archer
-						AND = {
-							is_female=yes
-							OR={
-								trait=base_class_fighter
-								trait=base_class_mercenary
-							}
-						}
 					}
 				}
-				hidden_tooltip = { add_trait = base_class_archer }
+				hidden_tooltip = { 
+					add_trait = base_class_archer
+					remove_trait = base_class_horse_archer					
+				}
 				
 				if={
 					limit={
@@ -3824,7 +3826,10 @@ character_event = {
 							trait=base_class_horse_archer
 						} 
 				}
-				hidden_tooltip = { add_trait = base_class_horse_archer }
+				hidden_tooltip = { 
+					add_trait = base_class_horse_archer
+					remove_trait = base_class_archer					
+				}
 				
 				if={
 					limit={
@@ -3847,7 +3852,10 @@ character_event = {
 							trait=base_class_fighter
 						} 
 				}
-				hidden_tooltip = { add_trait = base_class_mercenary }
+				hidden_tooltip = { 
+					add_trait = base_class_mercenary
+					remove_trait = base_class_fighter		
+				}
 				
 				if={
 					limit={
@@ -3865,42 +3873,43 @@ character_event = {
 			1 = {
 				modifier = {
 					factor = 0
-					OR = {
-						NOT = { 
-							trait=base_class_fighter
-						} 
-						is_female=yes
-					}
+					NOR = { 
+						trait=base_class_mercenary
+						trait=base_class_fighter
+					} 
 				}
-				hidden_tooltip = { add_trait = base_class_fighter }
+				hidden_tooltip = { 
+					add_trait = base_class_fighter
+					remove_trait = base_class_mercenary					
+				}
 				add_trait=class_fighter
 			}
 			1 = {
 				modifier = {
 					factor = 0
-					OR = {
-						NOR = { 
-							trait=base_class_brigand
-							trait=base_class_pirate
-						} 
-						is_female=yes
-					}
+					NOR = { 
+						trait=base_class_brigand
+						trait=base_class_pirate
+					} 
 				}
-				hidden_tooltip = { add_trait = base_class_brigand }
+				hidden_tooltip = { 
+					add_trait = base_class_brigand
+					remove_trait = base_class_pirate					
+				}
 				add_trait=class_brigand
 			}
 			1 = {
 				modifier = {
 					factor = 0
-					OR = {
-						NOR = { 
-							trait=base_class_pirate
-							trait=base_class_brigand
-						} 
-						is_female=yes
-					}
+					NOR = { 
+						trait=base_class_pirate
+						trait=base_class_brigand
+					} 
 				}
-				hidden_tooltip = { add_trait = base_class_pirate }
+				hidden_tooltip = { 
+					add_trait = base_class_pirate
+					remove_trait = base_class_brigand					
+				}
 				add_trait=class_pirate
 			}
 			1 = {
@@ -3909,13 +3918,12 @@ character_event = {
 					NOR={
 						trait=base_class_myrmidon
 						trait=base_class_thief
-						AND = {
-							is_female=yes
-							trait=base_class_pirate
-						}
 					}
 				}
-				hidden_tooltip = { add_trait = base_class_myrmidon }
+				hidden_tooltip = { 
+					add_trait = base_class_myrmidon
+					remove_trait = base_class_thief					
+				}
 				
 				if={
 					limit={
@@ -3936,13 +3944,12 @@ character_event = {
 						NOR = { 
 							trait=base_class_myrmidon
 							trait=base_class_thief
-							AND = {
-								is_female=yes
-								trait=base_class_brigand
-							}
 						} 
 				}
-				hidden_tooltip = { add_trait = base_class_thief }
+				hidden_tooltip = { 
+					add_trait = base_class_thief
+					remove_trait = base_class_myrmidon
+				}
 				
 				if={
 					limit={
@@ -3981,21 +3988,24 @@ character_event = {
 							trait=base_class_wyvern_rider
 						} 
 				}
-				hidden_tooltip = { add_trait = base_class_wyvern_rider }
+				hidden_tooltip = { 
+					add_trait = base_class_wyvern_rider
+					remove_trait = base_class_pegasus_knight
+				}
 				add_trait=class_wyvern_rider
 			}
 			1 = {
 				modifier = {
 					factor = 0
-					OR = {
-						NOR = { 
-							trait=base_class_monk
-							trait=base_class_troubador
-						} 
-						is_female=no
-					}
+					NOR = { 
+						trait=base_class_monk
+						trait=base_class_troubador
+					} 
 				}
-				hidden_tooltip = { add_trait = base_class_troubador }
+				hidden_tooltip = { 
+					add_trait = base_class_troubador
+					remove_trait = base_class_monk
+				}
 				add_trait=class_troubador
 			}
 			1 = {
@@ -4009,7 +4019,10 @@ character_event = {
 						is_female=no
 					}
 				}
-				hidden_tooltip = { add_trait = base_class_cleric }
+				hidden_tooltip = { 
+					add_trait = base_class_cleric
+					remove_trait = base_class_priest
+				}
 				add_trait=class_cleric
 			}
 			1 = {
@@ -4023,21 +4036,24 @@ character_event = {
 						is_female=yes
 					}
 				}
-				hidden_tooltip = { add_trait = base_class_priest }
+				hidden_tooltip = { 
+					add_trait = base_class_priest
+					remove_trait = base_class_cleric
+				}
 				add_trait=class_priest
 			}
 			1 = {
 				modifier = {
 					factor = 0
-					OR = {
-						NOR = { 
-							trait=base_class_monk
-							trait=base_class_troubador
-						} 
-						is_female=yes
-					}
+					NOR = { 
+						trait=base_class_monk
+						trait=base_class_troubador
+					} 
 				}
-				hidden_tooltip = { add_trait = base_class_monk }
+				hidden_tooltip = { 
+					add_trait = base_class_monk
+					remove_trait = base_class_troubador
+				}
 				add_trait=class_monk
 			}
 			1 = {
@@ -4055,7 +4071,11 @@ character_event = {
 						}
 					}
 				}
-				hidden_tooltip = { add_trait = base_class_mage }
+				hidden_tooltip = { 
+					add_trait = base_class_mage
+					remove_trait = base_class_dark_mage
+					remove_trait = base_class_manakete
+				}
 				
 				if={
 					limit={
@@ -4078,7 +4098,10 @@ character_event = {
 							trait=base_class_dark_mage
 						} 
 				}
-				hidden_tooltip = { add_trait = base_class_dark_mage }
+				hidden_tooltip = { 
+					add_trait = base_class_dark_mage
+					remove_trait = base_class_mage
+				}
 				
 				if={
 					limit={
@@ -4100,7 +4123,7 @@ character_event = {
 							trait=base_class_soldier
 						} 
 				}
-				hidden_tooltip = { add_trait = base_class_soldier }
+				#hidden_tooltip = { add_trait = base_class_soldier }
 				add_trait=class_soldier
 			}
 			1 = {
@@ -4117,14 +4140,20 @@ character_event = {
 						is_female=no
 					}
 					add_trait=class_bard
-					hidden_tooltip = { add_trait = base_class_bard }
+					hidden_tooltip = { 
+						add_trait = base_class_bard
+						remove_trait = base_class_dancer					
+					}
 				}
 				if={
 					limit={
 						is_female=yes
 					}
 					add_trait=class_dancer
-					hidden_tooltip = { add_trait = base_class_dancer }
+					hidden_tooltip = { 
+						add_trait = base_class_dancer
+						remove_trait = base_class_bard				
+					}
 				}
 			}
 			1 = {

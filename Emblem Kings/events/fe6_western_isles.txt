@@ -12,8 +12,10 @@ character_event = {
 	hide_from = yes	
 	
 	option = {
-		name = fe6_west.1.A
-		
+		name = fe6_west.1.A		
+		ai_chance = {
+			factor = 90
+		}
 		d_western_isles_rebellion = {
 			grant_title = ROOT
 		}
@@ -26,6 +28,9 @@ character_event = {
 	}
 	option = {
 		name = fe6_west.1.B
+		ai_chance = {
+			factor = 10
+		}
 		random_list = {
 			70 = {}
 			10 = {

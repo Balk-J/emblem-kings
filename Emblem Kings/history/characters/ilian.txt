@@ -1583,7 +1583,7 @@
 #		effect = {
 #			spawn_unit = {
 #				owner = ROOT
-#				province = 281
+#				province = 277
 #				troops = {
 #					pegasus_knights = { 500 500 }
 #				}
@@ -1592,7 +1592,7 @@
 #			}
 #			spawn_unit = {
 #				owner = ROOT
-#				province = 281
+#				province = 277
 #				troops = {
 #					pegasus_knights = { 500 500 }
 #				}
@@ -1601,7 +1601,7 @@
 #			}
 #			spawn_unit = {
 #				owner = ROOT
-#				province = 281
+#				province = 277
 #				troops = {
 #					pegasus_knights = { 500 500 }
 #				}

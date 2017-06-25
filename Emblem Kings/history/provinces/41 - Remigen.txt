@@ -4,11 +4,12 @@
 title = c_remigen
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 
 b_remigen = tribal
 b_remigen_2 = temple
 #b_remigen_3 = city
+#b_emmen = tribal
 
 # Misc
 culture = bernese

@@ -35,7 +35,7 @@ k_elimine = {
 	color={ 198 249 255 }
 	color2={ 220 220 0 }
 	
-	capital = 210 # Aquleia
+	capital = 206 # Aquleia
 	
 	#title = "ARCHBISHOP_ELIMINE"
 	#title_female = "ARCHBISHOP_ELIMINE"
@@ -74,7 +74,7 @@ k_golden_church = {
 	color={ 183 60 155 }
 	color2={ 220 220 0 }
 	
-	capital = 210 # Aquelia
+	capital = 206 # Aquelia
 	
 	title = "ARCHBISHOP_GOLDEN_CHURCH"
 	#foa = "temple_king_foa"
@@ -134,7 +134,7 @@ d_divine_sky = {
 	color={ 100 80 100 }
 	color2={ 220 220 0 }
 	
-	capital = 192 #	Bulgar
+	capital = 188 #	Bulgar
 	
 	title = "DIVINE_SKY_PRIEST"
 	title_female = "DIVINE_SKY_PRIESTESS"

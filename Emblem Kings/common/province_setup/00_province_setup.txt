@@ -189,1255 +189,1251 @@
    terrain=plains
 }
 39 = {
-   title=c_emmen
-   max_settlements=1
-   terrain=plains
-}
-40 = {
-   title=c_nebikon
-   max_settlements=1
-   terrain=plains
-}
-41 = {
    title=c_regia
    max_settlements=1
    terrain=plains
 }
-42 = {
+40 = {
    title=c_sion
    max_settlements=3
    terrain=plains
 }
-43 = {
+41 = {
    title=c_remigen
+   max_settlements=4
+   terrain=plains
+}
+42 = {
+   title=c_kaisten
    max_settlements=3
    terrain=plains
 }
-44 = {
-   title=c_kaisten
-   max_settlements=2
-   terrain=plains
-}
-45 = {
+43 = {
    title=c_muhen
    max_settlements=2
    terrain=plains
 }
-46 = {
+44 = {
    title=c_gallen
    max_settlements=4
    terrain=plains
 }
-47 = {
+45 = {
    title=c_balgach
    max_settlements=3
    terrain=plains
 }
-48 = {
+46 = {
    title=c_amden
    max_settlements=3
    terrain=plains
 }
-49 = {
+47 = {
    title=c_jura
    max_settlements=2
    terrain=plains
 }
-50 = {
+48 = {
    title=c_cornol
    max_settlements=2
    terrain=plains
 }
-51 = {
+49 = {
    title=c_bonfol
    max_settlements=2
    terrain=plains
 }
-52 = {
+50 = {
    title=c_yens
    max_settlements=2
    terrain=plains
 }
-53 = {
+51 = {
    title=c_sarnen
    max_settlements=3
    terrain=plains
 }
-54 = {
+52 = {
    title=c_hori
    max_settlements=3
    terrain=plains
 }
-55 = {
+53 = {
    title=c_meilen
    max_settlements=3
    terrain=plains
 }
-56 = {
+54 = {
    title=c_rorbas
    max_settlements=3
    terrain=plains
 }
-57 = {
+55 = {
    title=c_vaud
    max_settlements=3
    terrain=plains
 }
-58 = {
+56 = {
    title=c_morges
    max_settlements=4
    terrain=plains
 }
-59 = {
+57 = {
    title=c_aigle
    max_settlements=2
    terrain=plains
 }
-60 = {
+58 = {
    title=c_nyon
    max_settlements=2
    terrain=plains
 }
-61 = {
-   title=c_vaulion
-   max_settlements=1
-   terrain=plains
-}
-62 = {
+59 = {
    title=c_arles
    max_settlements=2
    terrain=plains
 }
-63 = {
+60 = {
    title=c_itingen
    max_settlements=1
    terrain=plains
 }
-64 = {
+61 = {
    title=c_birseck
    max_settlements=1
    terrain=plains
 }
-65 = {
+62 = {
    title=c_lucerne
-   max_settlements=2
+   max_settlements=4
    terrain=plains
 }
-66 = {
+63 = {
    title=c_ascona
    max_settlements=2
    terrain=plains
 }
-67 = {
-   title=c_lugano
-   max_settlements=1
-   terrain=plains
-}
-68 = {
+64 = {
    title=c_cevio
    max_settlements=1
    terrain=plains
 }
-69 = {
+65 = {
    title=c_xanthus
    max_settlements=4
    terrain=plains
 }
-70 = {
+66 = {
    title=c_cibyra
    max_settlements=3
    terrain=plains
 }
-71 = {
+67 = {
    title=c_acaliss
    max_settlements=2
    terrain=plains
 }
-72 = {
+68 = {
    title=c_calynda
    max_settlements=1
    terrain=plains
 }
-73 = {
+69 = {
    title=c_araxa
    max_settlements=3
    terrain=plains
 }
-74 = {
+70 = {
    title=c_lebessus
    max_settlements=3
    terrain=plains
 }
-75 = {
+71 = {
    title=c_caunus
    max_settlements=3
    terrain=plains
 }
-76 = {
+72 = {
    title=c_oren
    max_settlements=2
    terrain=plains
 }
-77 = {
+73 = {
    title=c_nisa
    max_settlements=4
    terrain=plains
 }
-78 = {
+74 = {
    title=c_marciana
    max_settlements=2
    terrain=plains
 }
-79 = {
+75 = {
    title=c_choma
    max_settlements=3
    terrain=plains
 }
-80 = {
+76 = {
    title=c_mugla
    max_settlements=2
    terrain=plains
 }
-81 = {
+77 = {
    title=c_comba
    max_settlements=3
    terrain=plains
 }
-82 = {
+78 = {
    title=c_ostia
    max_settlements=6
    terrain=plains
 }
-83 = {
+79 = {
    title=c_durandal
    max_settlements=3
    terrain=plains
 }
-84 = {
+80 = {
    title=c_ragna
    max_settlements=4
    terrain=plains
 }
-85 = {
+81 = {
    title=c_arycanda
    max_settlements=3
    terrain=plains
 }
-86 = {
+82 = {
    title=c_zem
    max_settlements=4
    terrain=plains
 }
-87 = {
+83 = {
    title=c_aperlae
    max_settlements=3
    terrain=plains
 }
-88 = {
+84 = {
    title=c_patara
    max_settlements=3
    terrain=plains
 }
-89 = {
+85 = {
    title=c_thria
    max_settlements=3
    terrain=plains
 }
-90 = {
+86 = {
    title=c_myra
    max_settlements=3
    terrain=plains
 }
-91 = {
+87 = {
    title=c_worde
    max_settlements=3
    terrain=plains
 }
-92 = {
+88 = {
    title=c_olst
    max_settlements=3
    terrain=plains
 }
-93 = {
+89 = {
    title=c_ryerde
    max_settlements=3
    terrain=plains
 }
-94 = {
+90 = {
    title=c_sidyma
    max_settlements=3
    terrain=plains
 }
-95 = {
+91 = {
    title=c_laus
    max_settlements=4
    terrain=plains
 }
-96 = {
+92 = {
    title=c_idebessus
    max_settlements=4
    terrain=plains
 }
-97 = {
+93 = {
    title=c_tios
    max_settlements=3
    terrain=plains
 }
-98 = {
+94 = {
    title=c_badon
    max_settlements=5
    terrain=plains
 }
-99 = {
+95 = {
    title=c_bubon
    max_settlements=3
    terrain=plains
 }
-100 = {
+96 = {
    title=c_balbura
    max_settlements=3
    terrain=plains
 }
-101 = {
+97 = {
    title=c_santaruz
    max_settlements=4
    terrain=plains
 }
-102 = {
+98 = {
    title=c_cyaneae
    max_settlements=3
    terrain=plains
 }
-103 = {
+99 = {
    title=c_caelin
    max_settlements=5
    terrain=plains
 }
-104 = {
+100 = {
    title=c_alta
    max_settlements=4
    terrain=plains
 }
-105 = {
+101 = {
    title=c_khathelet
    max_settlements=4
    terrain=plains
 }
-106 = {
+102 = {
    title=c_antiphellos
    max_settlements=3
    terrain=plains
 }
-107 = {
+103 = {
    title=c_araphen
    max_settlements=4
    terrain=plains
 }
-108 = {
+104 = {
    title=c_limyra
    max_settlements=2
    terrain=plains
 }
-109 = {
+105 = {
    title=c_tuscana
    max_settlements=3
    terrain=plains
 }
-110 = {
+106 = {
    title=c_rhodia
    max_settlements=2
    terrain=plains
 }
-111 = {
+107 = {
    title=c_tania
    max_settlements=3
    terrain=plains
 }
-112 = {
+108 = {
    title=c_amelas
    max_settlements=2
    terrain=plains
 }
-113 = {
+109 = {
    title=c_pherae
    max_settlements=5
    terrain=plains
 }
-114 = {
+110 = {
    title=c_phellus
    max_settlements=3
    terrain=plains
 }
-115 = {
+111 = {
    title=c_phestos
    max_settlements=3
    terrain=plains
 }
-116 = {
+112 = {
    title=c_cornwell
    max_settlements=4
    terrain=plains
 }
-117 = {
+113 = {
    title=c_dias
    max_settlements=4
    terrain=plains
 }
-118 = {
+114 = {
    title=c_telmessus
    max_settlements=4
    terrain=plains
 }
-119 = {
+115 = {
    title=c_trebenna
    max_settlements=3
    terrain=plains
 }
-120 = {
+116 = {
    title=c_arcadia
    max_settlements=5
    terrain=plains
 }
-121 = {
+117 = {
    title=c_gortynia
    max_settlements=3
    terrain=plains
 }
-122 = {
+118 = {
    title=c_kynouria
    max_settlements=4
    terrain=plains
 }
-123 = {
+119 = {
    title=c_levidi
    max_settlements=3
    terrain=plains
 }
-124 = {
+120 = {
    title=c_mantineia
    max_settlements=5
    terrain=plains
 }
-125 = {
+121 = {
    title=c_nestani
    max_settlements=4
    terrain=plains
 }
-126 = {
+122 = {
    title=c_pikernis
    max_settlements=3
    terrain=plains
 }
-127 = {
+123 = {
    title=c_kapsas
    max_settlements=3
    terrain=plains
 }
-128 = {
+124 = {
    title=c_tegea
    max_settlements=4
    terrain=plains
 }
-129 = {
+125 = {
    title=c_sagkas
    max_settlements=3
    terrain=plains
 }
-130 = {
+126 = {
    title=c_loukas
    max_settlements=2
    terrain=plains
 }
-131 = {
+127 = {
    title=c_tyros
    max_settlements=5
    terrain=plains
 }
-132 = {
+128 = {
    title=c_akovos
    max_settlements=4
    terrain=plains
 }
-133 = {
+129 = {
    title=c_rizes
    max_settlements=3
    terrain=plains
 }
-134 = {
+130 = {
    title=c_vytina
    max_settlements=4
    terrain=plains
 }
-135 = {
+131 = {
    title=c_elati
    max_settlements=4
    terrain=plains
 }
-136 = {
+132 = {
    title=c_lasta
    max_settlements=3
    terrain=plains
 }
-137 = {
+133 = {
    title=c_mallota
    max_settlements=4
    terrain=plains
 }
-138 = {
+134 = {
    title=c_soulos
    max_settlements=3
    terrain=plains
 }
-139 = {
+135 = {
    title=c_plaka
    max_settlements=3
    terrain=plains
 }
-140 = {
+136 = {
    title=c_vangos
    max_settlements=3
    terrain=plains
 }
-141 = {
+137 = {
    title=c_isaris
    max_settlements=3
    terrain=plains
 }
-142 = {
+138 = {
    title=c_vastas
    max_settlements=3
    terrain=plains
 }
-143 = {
+139 = {
    title=c_chirades
    max_settlements=3
    terrain=plains
 }
-144 = {
+140 = {
    title=c_thoknia
    max_settlements=3
    terrain=plains
 }
-145 = {
+141 = {
    title=c_gefyra
    max_settlements=4
    terrain=plains
 }
-146 = {
+142 = {
    title=c_tripotamo
    max_settlements=3
    terrain=plains
 }
-147 = {
+143 = {
    title=c_souli
    max_settlements=4
    terrain=plains
 }
-148 = {
+144 = {
    title=c_karyon
    max_settlements=3
    terrain=plains
 }
-149 = {
+145 = {
    title=c_kafti
    max_settlements=6
    terrain=plains
 }
-150 = {
+146 = {
    title=c_makri
    max_settlements=4
    terrain=plains
 }
-151 = {
+147 = {
    title=c_perthori
    max_settlements=5
    terrain=plains
 }
-152 = {
+148 = {
    title=c_skopi
    max_settlements=3
    terrain=plains
 }
-153 = {
+149 = {
    title=c_jutes
    max_settlements=6
    terrain=plains
 }
-154 = {
+150 = {
    title=c_condate
    max_settlements=5
    terrain=plains
 }
-155 = {
+151 = {
    title=c_moridin
    max_settlements=3
    terrain=plains
 }
-156 = {
+152 = {
    title=c_segontium
    max_settlements=4
    terrain=plains
 }
-157 = {
+153 = {
    title=c_dubris
    max_settlements=3
    terrain=plains
 }
-158 = {
+154 = {
    title=c_vectis
    max_settlements=4
    terrain=plains
 }
-159 = {
+155 = {
    title=c_lindinis
    max_settlements=3
    terrain=plains
 }
-160 = {
+156 = {
    title=c_mamucium
    max_settlements=3
    terrain=plains
 }
-161 = {
+157 = {
    title=c_pontes
    max_settlements=3
    terrain=plains
 }
-162 = {
+158 = {
    title=c_calcaria
    max_settlements=4
    terrain=plains
 }
-163 = {
+159 = {
    title=c_eburacum
    max_settlements=6
    terrain=plains
 }
-164 = {
+160 = {
    title=c_armagh
    max_settlements=4
    terrain=plains
 }
-165 = {
+161 = {
    title=c_lindum
    max_settlements=3
    terrain=plains
 }
-166 = {
+162 = {
    title=c_vinovia
    max_settlements=3
    terrain=plains
 }
-167 = {
+163 = {
    title=c_coria
    max_settlements=6
    terrain=plains
 }
-168 = {
+164 = {
    title=c_mediolanum
    max_settlements=3
    terrain=plains
 }
-169 = {
+165 = {
    title=c_silurum
    max_settlements=3
    terrain=plains
 }
-170 = {
+166 = {
    title=c_salinae
    max_settlements=5
    terrain=plains
 }
-171 = {
+167 = {
    title=c_edina
    max_settlements=5
    terrain=plains
 }
-172 = {
+168 = {
    title=c_belgarum
    max_settlements=3
    terrain=plains
 }
-173 = {
+169 = {
    title=c_caromago
    max_settlements=3
    terrain=plains
 }
-174 = {
+170 = {
    title=c_alauna
    max_settlements=4
    terrain=plains
 }
-175 = {
+171 = {
    title=c_devana
    max_settlements=3
    terrain=plains
 }
-176 = {
+172 = {
    title=c_graupius
    max_settlements=3
    terrain=plains
 }
-177 = {
+173 = {
    title=c_evidensca
    max_settlements=5
    terrain=plains
 }
-178 = {
+174 = {
    title=c_trimontium
    max_settlements=3
    terrain=plains
 }
-179 = {
+175 = {
    title=c_dia
    max_settlements=4
    terrain=plains
 }
-180 = {
+176 = {
    title=c_corinium
    max_settlements=4
    terrain=plains
 }
-181 = {
+177 = {
    title=c_danum
    max_settlements=3
    terrain=plains
 }
-182 = {
+178 = {
    title=c_navio
    max_settlements=2
    terrain=plains
 }
-183 = {
+179 = {
    title=c_olicana
    max_settlements=1
    terrain=plains
 }
-184 = {
+180 = {
    title=c_isca
    max_settlements=2
    terrain=plains
 }
-185 = {
+181 = {
    title=c_taliver
    max_settlements=1
    terrain=plains
 }
-186 = {
+182 = {
    title=c_hardres
    max_settlements=2
    terrain=plains
 }
-187 = {
+183 = {
    title=c_berenger
    max_settlements=1
    terrain=plains
 }
-188 = {
+184 = {
    title=c_pinabel
    max_settlements=2
    terrain=plains
 }
-189 = {
+185 = {
    title=c_ganelon
    max_settlements=2
    terrain=plains
 }
-190 = {
+186 = {
    title=c_foulkes
    max_settlements=2
    terrain=plains
 }
-191 = {
+187 = {
    title=c_murgleis
    max_settlements=3
    terrain=plains
 }
-192 = {
+188 = {
    title=c_bulgar
    max_settlements=6
    terrain=plains
 }
-193 = {
+189 = {
    title=c_mani
    max_settlements=3
    terrain=plains
 }
-194 = {
+190 = {
    title=c_balkh
    max_settlements=3
    terrain=plains
 }
-195 = {
+191 = {
    title=c_volga
    max_settlements=3
    terrain=plains
 }
-196 = {
+192 = {
    title=c_gelonus
    max_settlements=3
    terrain=plains
 }
-197 = {
+193 = {
    title=c_sistan
    max_settlements=2
    terrain=plains
 }
-198 = {
+194 = {
    title=c_saka
    max_settlements=3
    terrain=plains
 }
-199 = {
+195 = {
    title=c_pamir
    max_settlements=2
    terrain=plains
 }
-200 = {
+196 = {
    title=c_shan
    max_settlements=1
    terrain=plains
 }
-201 = {
+197 = {
    title=c_media
    max_settlements=3
    terrain=plains
 }
-202 = {
+198 = {
    title=c_ecbatana
    max_settlements=2
    terrain=plains
 }
-203 = {
+199 = {
    title=c_atropatene
    max_settlements=3
    terrain=plains
 }
-204 = {
+200 = {
    title=c_talas
    max_settlements=4
    terrain=plains
 }
-205 = {
+201 = {
    title=c_naryn
    max_settlements=3
    terrain=plains
 }
-206 = {
+202 = {
    title=c_batken
    max_settlements=2
    terrain=plains
 }
-207 = {
+203 = {
    title=c_tarim
    max_settlements=2
    terrain=plains
 }
-208 = {
+204 = {
    title=c_kunlun
    max_settlements=2
    terrain=plains
 }
-209 = {
+205 = {
    title=c_kashgar
    max_settlements=2
    terrain=plains
 }
-210 = {
+206 = {
    title=c_aquleia
    max_settlements=7
    terrain=plains
 }
-211 = {
+207 = {
    title=c_berua
    max_settlements=4
    terrain=plains
 }
-212 = {
+208 = {
    title=c_cura
    max_settlements=4
    terrain=plains
 }
-213 = {
+209 = {
    title=c_vetluna
    max_settlements=5
    terrain=plains
 }
-214 = {
+210 = {
    title=c_capeva
    max_settlements=3
    terrain=plains
 }
-215 = {
+211 = {
    title=c_orcla
    max_settlements=2
    terrain=plains
 }
-216 = {
+212 = {
    title=c_alesia
    max_settlements=5
    terrain=plains
 }
-217 = {
+213 = {
    title=c_fulginia
    max_settlements=3
    terrain=plains
 }
-218 = {
+214 = {
    title=c_perusia
    max_settlements=4
    terrain=plains
 }
-219 = {
+215 = {
    title=c_reglay
    max_settlements=5
    terrain=plains
 }
-220 = {
+216 = {
    title=c_rasela
    max_settlements=4
    terrain=plains
 }
-221 = {
+217 = {
    title=c_russellae
    max_settlements=3
    terrain=plains
 }
-222 = {
+218 = {
    title=c_colonnata
    max_settlements=3
    terrain=plains
 }
-223 = {
+219 = {
    title=c_caerleon
    max_settlements=5
    terrain=plains
 }
-224 = {
+220 = {
    title=c_caisra
    max_settlements=5
    terrain=plains
 }
-225 = {
+221 = {
    title=c_agylla
    max_settlements=4
    terrain=plains
 }
-226 = {
+222 = {
    title=c_tarchna
    max_settlements=6
    terrain=plains
 }
-227 = {
+223 = {
    title=c_bolsena
    max_settlements=4
    terrain=plains
 }
-228 = {
+224 = {
    title=c_satria
    max_settlements=5
    terrain=plains
 }
-229 = {
+225 = {
    title=c_amina
    max_settlements=2
    terrain=plains
 }
-230 = {
+226 = {
    title=c_siene
    max_settlements=5
    terrain=plains
 }
-231 = {
+227 = {
    title=c_blera
    max_settlements=4
    terrain=plains
 }
-232 = {
+228 = {
    title=c_marturi
    max_settlements=3
    terrain=plains
 }
-233 = {
+229 = {
    title=c_catuna
    max_settlements=5
    terrain=plains
 }
-234 = {
+230 = {
    title=c_felathri
    max_settlements=5
    terrain=plains
 }
-235 = {
+231 = {
    title=c_nucra
    max_settlements=3
    terrain=plains
 }
-236 = {
+232 = {
    title=c_velkha
    max_settlements=5
    terrain=plains
 }
-237 = {
+233 = {
    title=c_capna
    max_settlements=4
    terrain=plains
 }
-238 = {
+234 = {
    title=c_liburna
    max_settlements=3
    terrain=plains
 }
-239 = {
+235 = {
    title=c_clevsin
    max_settlements=4
    terrain=plains
 }
-240 = {
+236 = {
    title=c_manthra
    max_settlements=4
    terrain=plains
 }
-241 = {
+237 = {
    title=c_irna
    max_settlements=4
    terrain=plains
 }
-242 = {
+238 = {
    title=c_cassina
    max_settlements=3
    terrain=plains
 }
-243 = {
+239 = {
    title=c_arritim
    max_settlements=3
    terrain=plains
 }
-244 = {
+240 = {
    title=c_halethi
    max_settlements=3
    terrain=plains
 }
-245 = {
+241 = {
    title=c_herclena
    max_settlements=2
    terrain=plains
 }
-246 = {
+242 = {
    title=c_bellona
    max_settlements=3
    terrain=plains
 }
-247 = {
+243 = {
    title=c_velzna
    max_settlements=3
    terrain=plains
 }
-248 = {
+244 = {
    title=c_edessa
    max_settlements=6
    terrain=plains
 }
-249 = {
+245 = {
    title=c_adma
    max_settlements=3
    terrain=plains
 }
-250 = {
+246 = {
    title=c_pyrene
    max_settlements=3
    terrain=plains
 }
-251 = {
+247 = {
    title=c_orhay
    max_settlements=3
    terrain=plains
 }
-252 = {
+248 = {
    title=c_riha
    max_settlements=2
    terrain=plains
 }
-253 = {
+249 = {
    title=c_troas
    max_settlements=4
    terrain=plains
 }
-254 = {
+250 = {
    title=c_sigeia
    max_settlements=2
    terrain=plains
 }
-255 = {
+251 = {
    title=c_antigonia
    max_settlements=2
    terrain=plains
 }
-256 = {
+252 = {
    title=c_carrhae
    max_settlements=3
    terrain=plains
 }
-257 = {
+253 = {
    title=c_melas
    max_settlements=3
    terrain=plains
 }
-258 = {
+254 = {
    title=c_ida
    max_settlements=3
    terrain=plains
 }
-259 = {
+255 = {
    title=c_aisarna
    max_settlements=1
    terrain=plains
 }
-260 = {
+256 = {
    title=c_cebrene
    max_settlements=3
    terrain=plains
 }
-261 = {
+257 = {
    title=c_hortia
    max_settlements=1
    terrain=plains
 }
-262 = {
+258 = {
    title=c_sabatia
    max_settlements=1
    terrain=plains
 }
-263 = {
+259 = {
    title=c_vipena
    max_settlements=3
    terrain=plains
 }
-264 = {
+260 = {
    title=c_spina
    max_settlements=3
    terrain=plains
 }
-265 = {
+261 = {
    title=c_neandreia
    max_settlements=4
    terrain=plains
 }
-266 = {
+262 = {
    title=c_kavi
    max_settlements=2
    terrain=plains
 }
-267 = {
+263 = {
    title=c_mutina
    max_settlements=2
    terrain=plains
 }
-268 = {
+264 = {
    title=c_anth
    max_settlements=3
    terrain=plains
 }
-269 = {
+265 = {
    title=c_clavna
    max_settlements=1
    terrain=plains
 }
-270 = {
+266 = {
    title=c_sestos
    max_settlements=3
    terrain=plains
 }
-271 = {
+267 = {
    title=c_arciun
    max_settlements=2
    terrain=plains
 }
-272 = {
+268 = {
    title=c_carmna
    max_settlements=2
    terrain=plains
 }
-273 = {
+269 = {
    title=c_sigeion
    max_settlements=3
    terrain=plains
 }
-274 = {
+270 = {
    title=c_atria
    max_settlements=2
    terrain=plains
 }
-275 = {
+271 = {
    title=c_felsina
    max_settlements=2
    terrain=plains
 }
-276 = {
+272 = {
    title=c_cardia
    max_settlements=4
    terrain=plains
 }
-277 = {
+273 = {
    title=c_cainua
    max_settlements=2
    terrain=plains
 }
-278 = {
+274 = {
    title=c_aisinia
    max_settlements=3
    terrain=plains
 }
-279 = {
+275 = {
    title=c_phlera
    max_settlements=1
    terrain=plains
 }
-280 = {
+276 = {
    title=c_sabate
    max_settlements=2
    terrain=plains
 }
-281 = {
+277 = {
    title=c_remy
    max_settlements=5
    terrain=plains
 }
-282 = {
+278 = {
    title=c_arimna
    max_settlements=1
    terrain=plains
 }
-283 = {
+279 = {
    title=c_velera
    max_settlements=3
    terrain=plains
 }
-284 = {
+280 = {
    title=c_pathva
    max_settlements=2
    terrain=plains
 }
-285 = {
+281 = {
    title=c_remnun
    max_settlements=2
    terrain=plains
 }
-286 = {
+282 = {
    max_settlements=7
    terrain=mountain
+}
+283 = {
+   max_settlements=7
+   terrain=mountain
+}
+284 = {
+   max_settlements=7
+   terrain=mountain
+}
+285 = {
+   max_settlements=7
+   terrain=mountain
+}
+286 = {
+   max_settlements=7
+   terrain=coastal_desert
 }
 287 = {
    max_settlements=7
-   terrain=mountain
+   terrain=coastal_desert
 }
 288 = {
    max_settlements=7
-   terrain=mountain
+   terrain=coastal_desert
 }
 289 = {
    max_settlements=7
-   terrain=mountain
+   terrain=coastal_desert
 }
 290 = {
    max_settlements=7
@@ -1461,7 +1457,7 @@
 }
 295 = {
    max_settlements=7
-   terrain=coastal_desert
+   terrain=desert
 }
 296 = {
    max_settlements=7
@@ -1477,7 +1473,7 @@
 }
 299 = {
    max_settlements=7
-   terrain=desert
+   terrain=coastal_desert
 }
 300 = {
    max_settlements=7
@@ -1608,22 +1604,6 @@
    terrain=coastal_desert
 }
 332 = {
-   max_settlements=7
-   terrain=coastal_desert
-}
-333 = {
-   max_settlements=7
-   terrain=coastal_desert
-}
-334 = {
-   max_settlements=7
-   terrain=coastal_desert
-}
-335 = {
-   max_settlements=7
-   terrain=coastal_desert
-}
-336 = {
    max_settlements=7
    terrain=coastal_desert
 }
