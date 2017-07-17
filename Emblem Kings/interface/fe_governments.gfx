@@ -1,0 +1,41 @@
+spriteTypes = {
+	
+	### character stuff
+	spriteType = {
+		name = "GFX_charframe_150_tyrant"
+		texturefile = "gfx\\interface\\charframe_150_tyrant.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_tyrant"
+		texturefile = "gfx\\interface\\charframe_100_tyrant.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_tyrant"
+		texturefile = "gfx\\interface\\charframe_75_tyrant.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_tyrant"
+		texturefile = "gfx\\interface\\charframe_50_tyrant.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_tyrant"
+		texturefile = "gfx\\interface\\charframe_34_tyrant.tga"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	### government icons
+	spriteType = {
+		name = "GFX_icon_tyrant_government"
+		texturefile = "gfx\\interface\\government_icon_tyrant.dds"
+	}
+
+}

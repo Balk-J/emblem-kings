@@ -1,3 +1,11 @@
+
+action_allowed_trigger = {
+	prisoner = no
+	NOT = { trait = incapable }
+	NOT = { trait = dark_incapable }
+	NOT = { is_inaccessible_trigger = yes }
+}
+
 available_regalia_trigger = {
 	OR = {
 		AND = {

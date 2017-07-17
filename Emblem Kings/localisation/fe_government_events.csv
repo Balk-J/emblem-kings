@@ -1,0 +1,15 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe_government.2.title;Death of [From.GetTitledFirstName];;;;;;;;;;;;;x
+fe_government.2.desc;The death of [From.GetTitledFirstName] has caused [From.GetHerHis] realm to collapse into chaos and confusion. Without their seemingly invincible leader to keep them united, [From.GetFirstName]'s former vassals have declared independence. And since [From.GetFirstName] did not have a worthy successor, these rulers can all assert claims on each other's titles and attempt to rebuild the realm with themselves in charge...;;;;;;;;;;;;;x
+fe_government.2.A;There is opportunity here.;;;;;;;;;;;;;x
+fe_government.2.B;It should have all been mine!;;;;;;;;;;;;;x
+fe_government.5.title;The Mighty Have Fallen;;;;;;;;;;;;;x
+fe_government.5.desc;When you took control of the [FromFromFrom.GetFullName], you shattered the illusion of [From.GetFirstName]'s invincibility. There will be changes in the realm and the people may no longer be willing to accept a [Root.GetTitle] with absolute power...;;;;;;;;;;;;;x
+fe_government.5.A;It's probably for the best.;;;;;;;;;;;;;x
+fe_government.5.B;No, my own legend will begin here!;;;;;;;;;;;;;x
+fe_government..title;;;;;;;;;;;;;;x
+fe_government..desc;;;;;;;;;;;;;;x
+fe_government..A;;;;;;;;;;;;;;x
+fe_government..B;;;;;;;;;;;;;;x
+fe_government..C;;;;;;;;;;;;;;x
+fe_government..D;;;;;;;;;;;;;;x

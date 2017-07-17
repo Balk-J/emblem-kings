@@ -5,6 +5,7 @@ owns_regalia;Owns a Regalia;;;;;;;;;;;;;x
 holds_fire_emblem;Holds Fire Emblem;;;;;;;;;;;;;x
 holds_fire_emblem_desc;This character is the current holder of the national treasure known as the Fire Emblem.;;;;;;;;;;;;;x
 declined_regalia_search;Declined regalia search;;;;;;;;;;;;;x
+searching_for_regalia;Searching for Regalia;;;;;;;;;;;;;x
 ancient_ruins;Ancient Ruins;;;;;;;;;;;;;x
 desc_ancient_ruins;The ruined buildings of a long-forgotten kingdom can be found in this province.;;;;;;;;;;;;;x
 training_with_soldiers;Training with Soliders;;;;;;;;;;;;;x

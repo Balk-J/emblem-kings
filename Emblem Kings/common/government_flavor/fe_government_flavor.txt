@@ -1,0 +1,18 @@
+government_flavor = {
+	name = gov_dark_cult
+	graphics = GFX_evt_nergal_power
+	priority = 4
+	trigger = {
+		government = tyrant_government
+		trait = class_dark_druid
+	}
+}
+
+government_flavor = {
+	name = gov_divine_autocracy
+	graphics = GFX_evt_powerful_ruler
+	priority = 3
+	trigger = {
+		government = tyrant_government
+	}
+}

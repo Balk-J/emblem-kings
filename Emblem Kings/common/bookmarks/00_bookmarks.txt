@@ -205,8 +205,8 @@ bm_fe7_blazing_sword =
 			dna="blafkzhjabf" 
 			properties="ag00d000000000"
 			religion="dark"
-			culture="nabatan"
-			government = feudal_government
+			culture="ilian"
+			government = tyrant_government
 			dynasty=305
 		}
 	}

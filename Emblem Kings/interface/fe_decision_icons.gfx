@@ -112,4 +112,44 @@ spriteTypes = {
 		name = "GFX_plot_coup_decision_75"
 		texturefile = "gfx\\interface\\decision_icon_faction_claimant_ultimatum.dds"
 	}
+	spriteType = {
+		name = "GFX_regalia_claim_binding_blade"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_durandal"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_armads"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_eckesachs"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_apocalypse"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_maltet"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_murgleis"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_aureola"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_search_for_forblaze"
+		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_reform_tyrant_government_ultimatum"
+		texturefile = "gfx\\interface\\decision_icon_faction_reform_tyrant_government_ultimatum.dds"
+	}
 }

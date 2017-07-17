@@ -152,3 +152,6 @@ immortal_from_quintessence = {
 planning_invasion = {
 	icon = 13
 }
+searching_for_regalia = {
+	icon = 1
+}

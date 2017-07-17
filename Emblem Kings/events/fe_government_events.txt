@@ -1,0 +1,286 @@
+namespace = fe_government
+##################################
+# FE Governemnt Events #
+##################################
+
+
+# A Tyrant dies and his realm does not outlive him.
+character_event = {
+	id = fe_government.1
+	hide_window = yes
+	is_triggered_only = yes
+	only_rulers = yes
+
+	trigger = {
+		government = tyrant_government
+		NOT = {
+			current_heir = {
+				tyrant_government_allowed_trigger = yes
+				NOT = {	controls_religion = yes	}
+				is_patrician = no
+				OR = {
+					is_ruler = no
+					independent = yes
+					liege = {
+						character = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		# All vassals get claims on each other's lands
+		any_vassal = {
+			limit = { 
+				higher_tier_than = BARON 
+			} 
+			ROOT = {
+				any_vassal = {
+					limit = { 
+						higher_tier_than = BARON 
+						mercenary = no
+						NOT = { character = PREVPREV }
+					} 
+					primary_title = {
+						add_claim = PREVPREVPREV
+					}
+				}
+			}
+		}
+
+		# If the heir is going to stick around, give him claims on the soon-to-be former vassals
+		if = {
+			limit = {
+				OR = {
+					ai = no
+					current_heir = {
+						OR = {
+							is_ruler = yes
+							dynasty = ROOT 
+						}
+					}
+				}
+			}
+			current_heir = {
+				ROOT = {
+					any_vassal = {
+						limit = { 
+							higher_tier_than = BARON 
+							mercenary = no
+							NOT = { character = PREVPREV }
+						} 
+						primary_title = {
+							add_pressed_claim = PREVPREVPREV
+						}
+					}
+				}
+				set_character_flag = tyrant_heir
+				character_event = { id = fe_government.2 }
+			}
+		}
+
+		# All vassals become independent
+		any_vassal = {
+			limit = { 
+				higher_tier_than = BARON 
+			} 
+			set_defacto_liege = THIS
+			character_event = { id = fe_government.2 }
+		}
+
+		# Destroy the primary title	if it's titular
+		if = {
+			limit = {
+				primary_title = {
+					higher_tier_than = COUNT
+					is_titular = yes
+				}
+			}
+			primary_title = {
+				destroy_landed_title = ROOT
+			}
+		}	
+
+		# If AI, hand out the remaining holdings to random new people
+		if = {
+			limit = {
+				ai = yes
+				OR = {
+					current_heir = {
+						is_ruler = no
+						NOT = { dynasty = ROOT }
+					}
+					NOT = {
+						any_character = {
+							is_primary_heir = ROOT
+						}
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					lower_tier_than = DUKE
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = NONE
+					female = no
+					age = 20
+					religion = THIS
+					culture = THIS
+				}
+				new_character = {
+					usurp_title = { target = PREV } 
+				}
+			}
+		}
+	}
+
+	option = {
+		name = OK	
+	}
+}
+
+narrative_event = {
+	id = fe_government.2
+	title = fe_government.2.title
+	desc = fe_government.2.desc
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe_government.2.A"
+		trigger = {
+			NOT = { has_character_flag = tyrant_heir }
+		}
+	}	
+	
+	option = {
+		name = "fe_government.2.B"
+		trigger = {
+			has_character_flag = tyrant_heir
+		}
+		clr_character_flag = tyrant_heir
+	}		
+}
+
+# If a Tyrant loses a title without dying
+character_event = {
+	id = fe_government.3
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		FROMFROM = { 
+			is_alive = yes
+			government = tyrant_government
+		}
+		NOT = { ROOT = { government = tyrant_government } }
+	}
+	
+	immediate = {
+		# This isn't ideal, but the game doesn't realize it right away if FROMFROM became a vassal or unlanded here.
+		FROMFROM = { character_event = { id = fe_government.4 days = 1 } }
+	}
+	
+	option = {
+		name = OK	
+	}
+}
+
+# Hidden event that checks if our god-king is no longer an independent ruler.
+character_event = {
+	id = fe_government.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		if = {
+			limit = {
+				independent = no # Are they unlanded or a vassal?
+			}
+			FROM = {
+				character_event = { id = fe_government.5 }
+			}
+		}
+	}
+}
+
+
+character_event = {
+	id = fe_government.5
+	desc = fe_government.5.desc
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { government = tyrant_government }
+			set_government_type = feudal_government
+		}
+	}
+
+	option = {
+		name = fe_government.5.A	
+		ai_chance = {
+			factor = 50
+		}
+		set_government_type = feudal_government
+		if = {
+			limit = {
+				FROMFROMFROM = {
+					OR = { 
+						is_titular = yes
+						has_title_flag = personal_title
+					}
+				}
+			}
+			FROMFROMFROM = {
+				destroy_landed_title = THIS
+			}
+		}
+	}
+	option = {
+		name = fe_government.5.B
+		trigger = {
+			tyrant_government_allowed_trigger = yes
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2		
+				OR = {	
+					trait = ambitious	
+					trait = proud	
+				}
+			}
+			modifier = {
+				factor = 0		
+				OR = {	
+					trait = content	
+					trait = humble	
+					trait = craven
+					trait = eight_legends
+					is_pious_trigger = yes
+				}
+			}
+		}
+		set_government_type = tyrant_government
+		if = {
+			limit = {
+				FROMFROMFROM = {
+					OR = { 
+						is_titular = yes
+						has_title_flag = personal_title
+					}
+				}
+			}
+			FROMFROMFROM = {
+				destroy_landed_title = THIS
+			}
+		}
+	}
+}

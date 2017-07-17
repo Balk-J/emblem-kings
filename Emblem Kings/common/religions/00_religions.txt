@@ -367,7 +367,8 @@ pagan_group = {
 magic_group = {
 	#color = { 0 0 0 }
 	has_coa_on_barony_only = yes
-	graphical_culture = westerngfx
+	#graphical_culture = westerngfx
+	graphical_culture = muslimgfx
 	playable = yes
 	
 	ai_convert_same_group = 0 # always try to convert
@@ -378,7 +379,8 @@ magic_group = {
 	}
 	piety_name = QUINTESSENCE
 	anima = {
-		graphical_culture = westerngfx
+		#graphical_culture = westerngfx
+		graphical_culture = muslimgfx
 		#c_aquelia, c_arcadia, c_virtus, c_temperantia, c_uri
 		
 		icon = 6
@@ -413,7 +415,8 @@ magic_group = {
 	}
 
 	dark = {
-		graphical_culture = westerngfx
+		#graphical_culture = westerngfx
+		graphical_culture = muslimgfx
 		#c_spina, c_arcadia, c_virtus, c_temperantia, c_uri
 		
 		icon = 5

@@ -12,6 +12,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			muslim_government
+			tyrant_government
 		}
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
@@ -89,6 +90,59 @@ feudal_governments = {
 			tribal_government
 		}
 		capital_move_delay = 600
+	}
+
+	tyrant_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+#		accepts_liege_governments = { # Gets the wrong religion modifier instead
+#			muslim_government
+#			feudal_government
+#		}
+#		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+#			tribal_government
+#		}
+		frame_suffix = "_tyrant"
+		potential = {
+			independent = yes
+			tyrant_government_allowed_trigger = yes
+			NOT = {	controls_religion = yes	}
+			is_patrician = no
+		}
+		
+		#color = { 80 0 130 } # Purple
+		color = { 20 20 20 }
+		
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 600
+		
+		# New
+		free_levies_in_offensive_war = yes
+		free_retract_vassalage = yes
+		ignores_de_jure_laws = yes
+		
+		free_revoke_on_governments = { 
+			feudal_government
+			merchant_republic_government
+			republic_government
+			theocracy_government			
+			tribal_government
+			nomadic_government
+		}
 	}
 	
 }

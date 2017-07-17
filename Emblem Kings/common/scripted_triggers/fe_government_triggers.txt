@@ -1,0 +1,8 @@
+tyrant_government_allowed_trigger = {
+	OR = {
+		trait = class_dark_druid
+		trait = class_archdruid
+		trait = class_archsage
+		trait = dragon
+	}
+}

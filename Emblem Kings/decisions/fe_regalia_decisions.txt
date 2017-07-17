@@ -1,0 +1,392 @@
+decisions = {
+	regalia_claim_binding_blade = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			
+			location = {
+				county = {
+					title = c_uri
+				}
+			}
+			b_shrine_of_seals = {
+				has_holder = yes
+			}
+			
+			NOT = { has_artifact = regalia_binding_blade }
+			NOT = { has_global_flag = regalia_binding_blade_held }
+		}
+		
+		allow = {
+			has_artifact = fire_emblem_elibe
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = regalia_claim_binding_blade.tooltip
+				hidden_tooltip = {
+					set_global_flag = regalia_binding_blade_held
+					character_event = { id = regalia.124 }
+				}
+			}			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_ambition = obj_acquire_regalia }
+			}
+		}
+	}
+	regalia_search_for_durandal = {
+		only_playable = yes		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_durandal }
+			NOT = { has_global_flag = regalia_durandal_held }
+			NOT = { has_character_flag = regalia_durandal_trial }
+			NOT = { has_character_flag = regalia_durandal_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_durandal
+				}
+			}
+			b_durandal_shrine = {
+				has_holder = yes
+			}
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.7 }
+				}
+			}			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regalia_search_for_armads = {
+		only_playable = yes		
+		is_high_prio = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_armads }
+			NOT = { has_global_flag = regalia_armads_held }
+			NOT = { has_character_flag = regalia_armads_trial }
+			NOT = { has_character_flag = regalia_armads_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_jutes
+				}
+			}
+			b_armads_shrine = {
+				has_holder = yes
+			}
+		}		
+		allow = {
+			always = yes
+		}		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.33 }
+				}
+			}			
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regalia_search_for_eckesachs = {
+		only_playable = yes		
+		is_high_prio = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_eckesachs }
+			NOT = { has_global_flag = regalia_eckesachs_held }
+			NOT = { has_character_flag = regalia_eckesachs_trial }
+			NOT = { has_character_flag = regalia_eckesachs_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_bern
+				}
+			}
+			b_ecksachs = {
+				has_holder = yes
+			}
+		}		
+		allow = {
+			always = yes
+		}		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.53 }
+				}
+			}			
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regalia_search_for_apocalypse = {
+		only_playable = yes		
+		is_high_prio = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_apocalypse }
+			NOT = { has_global_flag = regalia_apocalypse_held }
+			NOT = { has_character_flag = regalia_apocalypse_trial }
+			NOT = { has_character_flag = regalia_apocalypse_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_uri
+				}
+			}
+			b_temple_of_seals = {
+				has_holder = yes
+			}
+		}		
+		allow = {
+			always = yes
+		}		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.60 }
+				}
+			}			
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regalia_search_for_murgleis = {
+		only_playable = yes		
+		is_high_prio = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_murgleis }
+			NOT = { has_global_flag = regalia_murgleis_held }
+			NOT = { has_character_flag = regalia_murgleis_trial }
+			NOT = { has_character_flag = regalia_murgleis_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_murgleis
+				}
+			}
+			#b_murgleis_shrine = {# Nah, they're nomads
+			#	has_holder = yes
+			#}
+		}		
+		allow = {
+			always = yes
+		}		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.72 }
+				}
+			}			
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regalia_search_for_maltet = {
+		only_playable = yes		
+		is_high_prio = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_maltet }
+			NOT = { has_global_flag = regalia_maltet_held }
+			NOT = { has_character_flag = regalia_maltet_trial }
+			NOT = { has_character_flag = regalia_maltet_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_edessa
+				}
+			}
+			b_maltet = {
+				has_holder = yes
+			}
+		}		
+		allow = {
+			always = yes
+		}		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.85 }
+				}
+			}			
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regalia_search_for_aureola = {
+		only_playable = yes		
+		is_high_prio = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_aureola }
+			NOT = { has_global_flag = regalia_aureola_held }
+			NOT = { has_character_flag = regalia_aureola_trial }
+			NOT = { has_character_flag = regalia_aureola_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_aquleia
+				}
+			}
+			b_tower_of_the_saint = {
+				has_holder = yes
+			}
+		}		
+		allow = {
+			always = yes
+		}		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.91 }
+				}
+			}			
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regalia_search_for_forblaze = {
+		only_playable = yes		
+		is_high_prio = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			has_ambition = obj_acquire_regalia
+			NOT = { has_artifact = regalia_forblaze }
+			NOT = { has_global_flag = regalia_forblaze_held }
+			NOT = { has_character_flag = regalia_forblaze_trial }
+			NOT = { has_character_flag = regalia_forblaze_failure }
+			NOT = { has_character_modifier = declined_regalia_search }
+			NOT = { has_character_modifier = searching_for_regalia }
+			
+			location = {
+				county = {
+					title = c_arcadia
+				}
+			}
+			b_water_temple = {
+				has_holder = yes
+			}
+		}		
+		allow = {
+			always = yes
+		}		
+		effect = {
+			custom_tooltip = {
+				text = regalia_search.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = searching_for_regalia duration = 30 } 
+					character_event = { id = regalia.114 }
+				}
+			}			
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

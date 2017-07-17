@@ -2,6 +2,12 @@
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_open_elective
+	law = crown_authority_1
+	law = revoke_title_law_1
+	effect={
+		holder_scope = { set_government_type=tyrant_government }
+		set_title_flag = personal_title
+	}
 }
 800.1.1={
 	holder=308 #take a wild guess

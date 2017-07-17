@@ -402,6 +402,7 @@ plot_gain_vassal_title = {
 			NOT = { has_non_aggression_pact_with = FROM }
 			NOT = { reverse_has_truce = FROM }
 		}
+		FROM = { in_revolt = no }
 	}
 	
 	chance = {
@@ -597,6 +598,7 @@ plot_gain_vassal_title = {
 				OR = {
 					is_playable = no
 					trait = incapable
+					in_revolt = yes
 				}
 			}
 			holder_scope = {
@@ -647,7 +649,7 @@ plot_kill_character = {
 			FROM = { 
 				NOR = {
 					religion = shiite
-					trait = secretly_shiite
+					has_secret_religion = shiite
 				}
 			}
 			ROOT = {
@@ -1867,8 +1869,8 @@ plot_gain_liege_title = {
 				character = FROM
 			}
 			has_holder = no
+			holder_scope = { is_playable = no }
 		}
-		is_playable = no
 	}
 	abort_effect = {
 		FROM = {

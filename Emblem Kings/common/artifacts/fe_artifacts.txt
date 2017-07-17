@@ -70,6 +70,7 @@ regalia_binding_blade = {
 	combat_rating = 3
 	monthly_character_prestige = 1
 	martial = 3
+	health = 0.5
 	active = { 
 		can_equip_swords_trigger = yes
 	}

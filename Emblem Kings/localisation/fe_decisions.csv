@@ -73,3 +73,23 @@ plot_coup_decision_100;[Root.GetPlot];[Root.GetPlot];[Root.GetPlot];;[Root.GetPl
 plot_coup_decision_100_desc;Put the plot into motion by launching a coup in the [Root.PlotTargetTitle.GetFullBaseName].;;;;;;;;;;;;;x
 plot_coup_decision_75;[Root.GetPlot];[Root.GetPlot];[Root.GetPlot];;[Root.GetPlot];;;;;;;;;x
 plot_coup_decision_75_desc;Put the plot into motion by launching a coup in the [Root.PlotTargetTitle.GetFullBaseName].;;;;;;;;;;;;;x
+regalia_claim_binding_blade;Claim the Binding Blade;;;;;;;;;;;;;x
+regalia_claim_binding_blade_desc;The Binding Blade is locked away in the Shrine of Seals. With the Fire Emblem, I can undo the lock and claim the sword for myself.;;;;;;;;;;;;;x
+regalia_claim_binding_blade.tooltip;§Y[Root.GetTitledFirstName]§! will obtain the §YBinding Blade§! artifact.;;;;;;;;;;;;;x
+regalia_search.tooltip;§Y[Root.GetTitledFirstName]§! begins searching for a legendary weapon in §Y[Root.Location.GetName]§!.;;;;;;;;;;;;;x
+regalia_search_for_durandal;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_durandal_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+regalia_search_for_armads;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_armads_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+regalia_search_for_eckesachs;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_eckesachs_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+regalia_search_for_apocalypse;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_apocalypse_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+regalia_search_for_maltet;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_maltet_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+regalia_search_for_murgleis;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_murgleis_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+regalia_search_for_aureola;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_aureola_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+regalia_search_for_forblaze;Search for Regalia;;;;;;;;;;;;;x
+regalia_search_for_forblaze_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x

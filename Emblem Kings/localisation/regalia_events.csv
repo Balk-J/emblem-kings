@@ -258,7 +258,174 @@ regalia.70.A;But how did he get in that box?;;;;;;;;;;;;;x
 regalia.71.title;Elder Revelation;;;;;;;;;;;;;x
 regalia.71.desc;You've come to the deepest part of the temple. The path ends at a plinth, topped with an unremarkable black and purple tome. The book isn't much to look at, but any doubts you had about its provenance are removed when you pick it up. It's far heavier than it should be, and you can't shake the feeling that it's watching you somehow.\n\nApocalypse, the Elder Revelation, will show you its power.;;;;;;;;;;;;;x
 regalia.71.A;Darkness from an age long forgotten...;;;;;;;;;;;;;x
-regalia.72.desc;You decide to cross the moat as a shortcut to the path you can barely make out on the other side. Unfortunately, the slippery stones and the darkness make this a task that would daunt the greatest acrobats in the realm. You slip on a patch of slime and plunge into the water. It's much deeper and faster than you thought, and you're carried away into the depths of the cave...;;;;;;;;;;;;;x
-regalia.72.A;Oops.;;;;;;;;;;;;;x
+regalia.72.desc;Hanon the Divine Trooper was a proud warrior of Sacae. If her weapon is hidden anywhere, it's probably around here - near the earliest permanent settlements of the plains.;;;;;;;;;;;;;x
+regalia;;;;;;;;;;;;;x
+regalia.72.A;Scour the countryside!;;;;;;;;;;;;;x
+regalia.72.B;I know where to find it.;;;;;;;;;;;;;x
+regalia.72.C;I don't have time for this right now.;;;;;;;;;;;;;x
+regalia.73.title;Legacy of the Wind;;;;;;;;;;;;;x
+regalia.73.desc;A merchant from Bulgar has come with an interesting story. He tells of ruins in the foothills of the Taliver Mountains, shrines to the old gods of Sacae that were abandoned when Bulgar starting growing as a city. A band of tribesmen have settled in the area. They're a zealous and independent lot, it seems - little is known about them besides their claims that they are protecting Hanon's legacy from outsiders.\n\nThis could very well be her legendary bow.\n\nThe merchant offers to tell you more about the ruins, for a small fee...;;;;;;;;;;;;;x
+regalia.73.A;I have no need of your advice.;;;;;;;;;;;;;x
+regalia.73.B;Fine, take your coin.;;;;;;;;;;;;;x
+regalia.73.C;I have decided against this expedition.;;;;;;;;;;;;;x
+regalia.74.title;Ruins;;;;;;;;;;;;;x
+regalia.74.desc;This area of the Taliver Mountains is home to six groups of ruined buildings. One of them should hold what you seek. Where will you investigate?;;;;;;;;;;;;;x
+regalia.74.A;The northern ruins.;;;;;;;;;;;;;x
+regalia.74.B;The eastern ruins.;;;;;;;;;;;;;x
+regalia.74.C;The southern ruins.;;;;;;;;;;;;;x
+regalia.74.D;Somewhere else.;;;;;;;;;;;;;x
+regalia.75.title;Wolves of the Plains;;;;;;;;;;;;;x
+regalia.75.desc;The merchant accepts your gold, and informs you that the ruins are six groups of buildings positioned around the intersection of several rivers. The tribesmen are well-armed and wary - there's no way to tell which of the possible locations is actually hiding the weapon. Furthermore, they've made several large weapons purchases lately. Five of the buildings are almost certainly the barracks for their warriors.\n\nWander into one of those by mistake and you'll have a horde of angry nomads to contend with...;;;;;;;;;;;;;x
+regalia.75.A;Interesting. Let us be off.;;;;;;;;;;;;;x
+regalia.75.B;I will come back another day.;;;;;;;;;;;;;x
+regalia.76.desc;The ruins you chose to investigate were hiding a band of warriors! As soon as their sentries spot you, they start rousing their comrades to repel you and your men!;;;;;;;;;;;;;x
+regalia.76.A;To arms!;;;;;;;;;;;;;x
+regalia.79.desc;The ruins are completely deserted aside from a few token sentries who your guards subdue before they can raise an alert. This place has been treated with reverence and care. Hanon's bow must be inside!;;;;;;;;;;;;;x
+regalia.79.A;It's in the first place I search? This must be fate.;;;;;;;;;;;;;x
+regalia.79.B;Now to deal with the rest of the tribe...;;;;;;;;;;;;;x
+regalia.80.desc;The tribal warriors finish cutting down your soldiers and ride off into the distance. You doubt they will let anyone associated with you near those ruins again. They're determined enough to take the prize and run if they spot you coming.;;;;;;;;;;;;;x
+regalia.80.A;I know when I am beaten.;;;;;;;;;;;;;x
+regalia.81.desc;Now that the last tribesmen have been defeated, you are free to claim your prize from the ruins.;;;;;;;;;;;;;x
+regalia.81.A;Excellent!;;;;;;;;;;;;;x
+regalia.82.title;The Tempest Bow;;;;;;;;;;;;;x
+regalia.82.desc;One room in the ruins has been converted into a makeshift shrine. The focal point is a simple wooden box. Inside is a slim bow adorned with gold.\n\nWhen you pick it up, a strong gust of wind blows through the old building. It's as though the spirits of the plains are showing you a sample of the weapon's might.\n\nMurgleis, the Tempest Bow, is yours.;;;;;;;;;;;;;x
+regalia.82.A;It must have incredible power.;;;;;;;;;;;;;x
+regalia.83.title;Ruins;;;;;;;;;;;;;x
+regalia.83.desc;This area of the Taliver Mountains is home to six ruined buildings. One of them should hold what you seek. Where will you investigate?;;;;;;;;;;;;;x
+regalia.83.A;The northwestern ruins.;;;;;;;;;;;;;x
+regalia.83.B;The western ruins.;;;;;;;;;;;;;x
+regalia.83.C;The southwestern ruins.;;;;;;;;;;;;;x
+regalia.83.D;Let me think about this again.;;;;;;;;;;;;;x
+regalia.85.desc;Barigan the Faithful founded both the nation of Ilia and its first mercenary company. His legendary spear may be hidden nearby.;;;;;;;;;;;;;x
+regalia.85.A;Ask around and see what you can find.;;;;;;;;;;;;;x
+regalia.85.B;I know where it is.;;;;;;;;;;;;;x
+regalia.85.C;I don't have time for this right now.;;;;;;;;;;;;;x
+regalia.86.title;Frozen Ruins;;;;;;;;;;;;;x
+regalia.86.desc;Your guards bring a local priestess before you. She's supposedly an expert in Ilian folklore. When you tell her that you're interested in any stories about Barigan, she informs you of some ruins near Castle Edessa. Barigan often went there to pray and seek guidance.;;;;;;;;;;;;;x
+regalia.86.A;As good a lead as any. Let us be off.;;;;;;;;;;;;;x
+regalia.86.B;I should press her for more information.;;;;;;;;;;;;;x
+regalia.86.C;I'm too busy to scour some frozen old ruins.;;;;;;;;;;;;;x
+regalia.87.title;Frozen Ruins;;;;;;;;;;;;;x
+regalia.87.desc;When you ask for more information about the ruins, the priestess becomes suspiciously evasive. She has plenty of stories about Barigan and his connection to the ruins, but says little about the place itself. She will only tell you that you should visit it yourself if you want to know more.\n\nPerhaps there's a secret about it that she doesn't want to share?;;;;;;;;;;;;;x
+regalia.87.A;I'll just find out for myself.;;;;;;;;;;;;;x
+regalia.87.B;This could be a trap. I won't go just yet.;;;;;;;;;;;;;x
+regalia.88.title;Snowbound Shrine;;;;;;;;;;;;;x
+regalia.88.desc;The ruins turn out to be an old church or shrine built into the side of a mountain. Although it dates back to the Scouring, it has been well cared for throughout the years. Beautiful stone carvings depicting the Eight Legends and their war against the dragons adorn the walls. The place fills you with a sense of peace despite the bitter chill in the air.\n\nAnd it's completely empty of anything resembling weaponry. There are no armories, vaults, or treasure chests to be seen. It's just a primitive place of worship with nice stonework.;;;;;;;;;;;;;x
+regalia.88.A;Hold on, sections of that wall seem off...;;;;;;;;;;;;;x
+regalia.88.B;Nothing?! Damn it, I'll tear this place apart if I have to!;;;;;;;;;;;;;x
+regalia.88.C;;;;;;;;;;;;;;x
+regalia.88.D;There's nothing here. This trip was a waste of time.;;;;;;;;;;;;;x
+regalia.89.title;Walls Everywhere;;;;;;;;;;;;;x
+regalia.89.desc.1;Upon further examination, the suspicious section of wall you noticed is much newer than the rest of the shrine. You spot the weakest point and direct your guards to tear it down.\n\nWhen their work is over, the mystery is revealed. Someone has bricked over all the doorways in the shrine to prevent people from proceeding past the outermost chamber. Their goal was probably to keep anyone from ever learning that there were more rooms in the shrine.\n\nBut now that you know what to look for, finding the new construction and tearing through it is trivial. It's not long before you reach the deepest part of the shrine, where your prize must be hidden.;;;;;;;;;;;;;x
+regalia.89.desc.2;You strike the nearest wall in a fit of anger, and are surprised to find that you've gouged a large hole in it. Much larger than should be possible in an a shrine as solidly built as this. After some impromptu demolition work, the mystery is solved.\n\nSomeone has bricked over all the doorways in the shrine to prevent people from proceeding past the outermost chamber. Their goal was probably to keep anyone from ever learning that there were more rooms in the shrine.\n\nBut now that you know what to look for, finding the new construction and tearing through it is trivial. It's not long before you reach the deepest part of the shrine, where your prize must be hidden.;;;;;;;;;;;;;x
+regalia.89.A;A clever trick, but not clever enough!;;;;;;;;;;;;;x
+regalia.90.title;The Blizzard Spear;;;;;;;;;;;;;x
+regalia.90.desc;The shrine ends in a chamber adorned with skillfully carved columns and the debris of an ice-blue carpet. An alcove at the back of the chamber holds a gorgeous spear.\n\nYou nearly mistake it for decoration at first. It looks to be made of crystal and ice, as wondrous and deadly as a mountain snowstorm. Maltet, the Blizzard Spear, is yours to wield.;;;;;;;;;;;;;x
+regalia.90.A;It's beautiful.;;;;;;;;;;;;;x
+regalia.91.desc;The name of Saint Elimine has flourished among the people of Etruria for generations. If her spellbook still exist, it might be here in Aquleia, home to her church's holiest places.;;;;;;;;;;;;;x
+regalia.91.A;I will make some inquiries.;;;;;;;;;;;;;x
+regalia.91.B;I know where it is.;;;;;;;;;;;;;x
+regalia.91.C;I don't have time for this right now.;;;;;;;;;;;;;x
+regalia.92.title;Tower of the Saint;;;;;;;;;;;;;x
+regalia.92.desc;Rumors of Elimine's tome proved surprisingly easy to find. According to your sources, it is in the Tower of the Saint - a golden tower built to mark the location where Elimine ascended to heaven, and the place where her mortal remains are entombed.\n\nSome of the church's faithful have hidden the book within the tower.;;;;;;;;;;;;;x
+regalia.92.A;I will start searching the place at once.;;;;;;;;;;;;;x
+regalia.92.B;I should collect more information first...;;;;;;;;;;;;;x
+regalia.92.C;Another time, perhaps.;;;;;;;;;;;;;x
+regalia.93.title;Tower of the Saint;;;;;;;;;;;;;x
+regalia.93.desc;Your investigation leads you to an old artisan who claims to know someone who helped hide the Aureola tome. He tells you that the room where the tome is hidden is protected by a magical barrier. Only a pious member of the Elimine Church will be able to pass through it and reach the book.;;;;;;;;;;;;;x
+regalia.93.A;Time to find out for myself.;;;;;;;;;;;;;x
+regalia.93.B;I don't want to deal with this just yet.;;;;;;;;;;;;;x
+regalia.94.D;Search the place from top to bottom!;;;;;;;;;;;;;x
+regalia.95.title;Glorious Ascension;;;;;;;;;;;;;x
+regalia.95.desc;Your search uncovers the door to a secret chamber within the tower. When you place your hand upon it you feel the stones become warm for a moment, and then the door swings open. There are plenty of items that could be relics, but the prize is clearly the ornate chest at the back of the room. \n\nInside the chest is an old tome. Holding it reminds you of the sun - it can provide gentle warmth and give life, or burn and blind. Aureola, Elimine's Glorious Ascension, is now yours.;;;;;;;;;;;;;x
+regalia.95.A;It is Elimine's sacred gift.;;;;;;;;;;;;;x
+regalia.96.desc;Since the Tower of the Saint is a part of your personal demesne, finding out where Elimine's tome is hidden is only a matter of time.;;;;;;;;;;;;;x
+regalia.96.A;Search the place from top to bottom!;;;;;;;;;;;;;x
+regalia.98.desc;Your search uncovers the door to a secret chamber within the tower. Inscriptions carved into the stone indicate that the Aureola tome lies within. However, you cannot find any way to open the door, short of bringing the tower down around you. This particular treasure is beyond your reach.;;;;;;;;;;;;;x
+regalia.98.A;Elimine, do you find me unworthy?;;;;;;;;;;;;;x
+regalia.100.title;Tower of the Saint;;;;;;;;;;;;;x
+regalia.100.desc;The Tower of the Saint is currently held by [From.GetTitledFirstName]. Obtaining [From.GetHerHis] blessing to search the tower for Aureola would make the task simple. Of course, there are less honorable ways to search for the tome...;;;;;;;;;;;;;x
+regalia.100.A;I will ask for [From.GetTitledFirstName]'s approval.;;;;;;;;;;;;;x
+regalia.100.B;I will sneak into the tower.;;;;;;;;;;;;;x
+regalia.100.C;We are enemies. My soldiers and I will storm the gates!;;;;;;;;;;;;;x
+regalia.100.D;I no longer wish to search for this book.;;;;;;;;;;;;;x
+regalia.101.desc;[From.GetTitledName] has come to the Tower of the Saint with an unusual request. [From.GetSheHeCap] believes that Saint Elimine's weapon, the light tome Aureola, is hidden within the tower. [From.GetTitledFirstName] asks for your blessing to search it for the tome.;;;;;;;;;;;;;x
+regalia.101.A;[From.GetTitledFirstName] may search as [From.GetSheHe] pleases.;;;;;;;;;;;;;x
+regalia.101.A.tooltip;[From.GetTitledFirstName] is permitted to search the tower and take Aureola if [From.GetSheHe] finds it.;;;;;;;;;;;;;x
+regalia.101.B;I must insist on fair compensation before I allow this.;;;;;;;;;;;;;x
+regalia.101.B.tooltip;You ask [From.GetTitledFirstName] for gold in exchange for your permission.;;;;;;;;;;;;;x
+regalia.101.C;[From.GetTitledFirstName] may search, but I will expect a favor in turn.;;;;;;;;;;;;;x
+regalia.101.C.tooltip;You ask [From.GetTitledFirstName] for a favor in exchange for your permission.;;;;;;;;;;;;;x
+regalia.101.D;Absolutely not. This is a holy place and Aureola is a holy relic!;;;;;;;;;;;;;x
+regalia.101.D.tooltip;[From.GetTitledFirstName] will not be permitted to search for Aureola.;;;;;;;;;;;;;x
+regalia.102.desc;[From.GetTitledFirstName] has given you [From.GetHerHis] blessing to search the tower and claim Aureola if you can find it.;;;;;;;;;;;;;x
+regalia.103.desc;[From.GetTitledFirstName] will allow you to search the tower, on one condition. [From.GetSheHeCap] insists that you make a small... donation... first, to cover the cost of any relics that could be damaged during the course of your investigation.;;;;;;;;;;;;;x
+regalia.103.A;Very well.;;;;;;;;;;;;;x
+regalia.103.B;An absurd request!;;;;;;;;;;;;;x
+regalia.103.B.tooltip;[Root.GetTitledFirstName] can decide on another way to search the tower.;;;;;;;;;;;;;x
+regalia.104.desc;[From.GetTitledName] agreed to pay you in exchange for your permission to search the tower.;;;;;;;;;;;;;x
+regalia.104.A;Very good.;;;;;;;;;;;;;x
+regalia.105.A;[From.GetTitledFirstName] refused to give you anything and stormed away from the tower in a huff.;;;;;;;;;;;;;x
+regalia.105.A;I don't think we've seen the last of [From.GetHerHim]...;;;;;;;;;;;;;x
+regalia.106.desc;Sneaking into the Tower of the Saint is equal parts exhilirating and frightening. You are about to rob the house of God, after all. You will have to find where the Aureola tome is hidden while slipping past any priests or guards that could get in your way.;;;;;;;;;;;;;x
+regalia.106.A;They will never know I was here.;;;;;;;;;;;;;x
+regalia.106.B;What's that bright light up there?;;;;;;;;;;;;;x
+regalia.107.desc;One of the priests from the Tower of the Saint has come to report a break-in. Nothing is missing as far as the priests can tell, but there are signs that the intruder was searching the tower for something. There are no clues about who the intruder was or whether they were successful in their search.;;;;;;;;;;;;;x
+regalia.107.A;Can't you even stop common thieves?!;;;;;;;;;;;;;x
+regalia.108.desc;As you climb a staircase you notice a bright glow from above. A streak of light surges down the stairs, crashing into you and knocking you backwards. When you come to, you're on the bottom floor of the tower and more than a little singed. Someone must have fired the tower's magical defenses at you.;;;;;;;;;;;;;x
+regalia.108.A;I should give up before I'm struck by anything worse.;;;;;;;;;;;;;x
+regalia.109.desc;One of the priests from the Tower of the Saint has come to report a break-in. Fortunately, one of the guards noticed them before anything was stolen and activated the Heavenly Arrows, the tower's magical defense system. The thief fled after being wounded by the holy magic.;;;;;;;;;;;;;x
+regalia.109.A;Fitting punishment for wickedness.;;;;;;;;;;;;;x
+regalia.110.desc;[From.GetTitledFirstName] will allow you to search the tower, if you agree to do [From.GetHerHim] a favor in turn.;;;;;;;;;;;;;x
+regalia.110.A;I suppose that's fair.;;;;;;;;;;;;;x
+regalia.110.B;I cannot agree to that.;;;;;;;;;;;;;x
+regalia.111.desc;From.GetTitledName] agreed to do you a favor in exchange for your permission to search the tower.;;;;;;;;;;;;;x
+regalia.111.A;Very good.;;;;;;;;;;;;;x
+regalia.112.desc;While your soldiers clash with the tower's defenders, you take your time searching every corner for signs of Aureola's hiding place.;;;;;;;;;;;;;x
+regalia.112.A;Sometimes the direct approach is best.;;;;;;;;;;;;;x
+regalia.113.desc;[From.GetTitledFirstName] refused to allow you access to the tower, claiming that priceless holy relics could be damaged in a careless hunt for treasure. The tower guards have been told to keep you and your retainers away if you try to approach.;;;;;;;;;;;;;x
+regalia.113.A;That [GetRootFromInsult]!;;;;;;;;;;;;;x
+regalia.114.desc;The Archsage Athos secluded himself in the deserts of Nabata after the Scouring. His Forblaze tome might be hidden in the shifting sands...;;;;;;;;;;;;;x
+regalia.114.A;No way to know unless we look.;;;;;;;;;;;;;x
+regalia.114.B;I know where it is.;;;;;;;;;;;;;x
+regalia.114.C;I don't have time for this right now.;;;;;;;;;;;;;x
+regalia.115.title;Arcadia;;;;;;;;;;;;;x
+regalia.115.desc;It seems that Athos had a place of refuge in a temple on the outskirts of Arcadia. This temple is ancient and abandoned, but it could hold a clue about the location of Forblaze... or possibly the tome itself.;;;;;;;;;;;;;x
+regalia.115.A;Find a way inside at once!;;;;;;;;;;;;;x
+regalia.115.B;I should learn more about the place first.;;;;;;;;;;;;;x
+regalia.115.C;I don't have time to crawl through musty ruins.;;;;;;;;;;;;;x
+regalia.116.title;Water Temple;;;;;;;;;;;;;x
+regalia.116.desc;A few discreet inquiries result in a meeting with a foreign treasure hunter who claims to have been inside the temple. He says the depths of the temple are filled with water, of all things. He also describes a large altar at the center of the temple's main chamber. His "finely honed instincts" assured him that a great treasure was inside, but he could not find a way to open it. \n\nYou're disappointed at how easily he gave up. There must be a trick - something known only to a local or the right priest? Brute force might work if all other options fail...;;;;;;;;;;;;;x
+regalia.116.A;I won't be so easily defeated.;;;;;;;;;;;;;x
+regalia.116.B;I'm not ready for this yet.;;;;;;;;;;;;;x
+regalia.117.title;Groundwater;;;;;;;;;;;;;x
+regalia.117.desc;The depths of the temple turn out to be filled with water. Some of the passages have an annoying habit of rising and sinking at seemingly random intervals. After spending a while waiting for the right path to reveal itself - and getting soaked more often than is good for your dignity - you arrive at large altar covered in arcane symbols.;;;;;;;;;;;;;x
+regalia.117.A;Finally!;;;;;;;;;;;;;x
+regalia.118.title;Secrets of the Archsage;;;;;;;;;;;;;x
+regalia.118.desc;The altar is large and sturdy. It shows signs of wear - that and some discarded tools suggest that more than one erstwhile burglar has tried to crack it open over the years. They all failed to do more than scratch it, however. It will take great strength to force it open. \n\nOr maybe there's another way?;;;;;;;;;;;;;x
+regalia.118.A;I think it will open for me.;;;;;;;;;;;;;x
+regalia.118.B;Step aside. I'll break it open.;;;;;;;;;;;;;x
+regalia.118.C;I know just the person to handle this...;;;;;;;;;;;;;x
+regalia.118.D;I can't open this.;;;;;;;;;;;;;x
+regalia.119.desc;The altar glows as you approach. It's as though it senses the presence of one of its own and is extending a welcome. A panel on the side slides open...;;;;;;;;;;;;;x
+regalia.119.A;Fantastic!;;;;;;;;;;;;;x
+regalia.120.desc;The altar is durable. It's made of ancient stone and seems to be reinforced with magic. It's no match for the brute force that you and your party can bring to bear, however. After spending a while bashing at it, a section crumbles to reveal a secret compartment...;;;;;;;;;;;;;x
+regalia.120.A;What's inside?;;;;;;;;;;;;;x
+regalia.121.title;Infernal Truth;;;;;;;;;;;;;x
+regalia.121.desc;The altar contains a simple wooden chest. Inside it you find a book bound in red leather. It's warm to the touch. Although you're surrounded by water, it feels like you're in the middle of a dry forest on a hot day. The sort where one spark could set off a massive conflagration. \n\nEventually the feeling fades - it seems the tome has acknowledged you. Forblaze, the Infernal Truth, is yours.;;;;;;;;;;;;;x
+regalia.121.A;My enemies will perish in flames.;;;;;;;;;;;;;x
+regalia.122.desc;You can't find any way to open the altar. Your attempts to force it open are as ineffectual as those of the temple-robbers who came before you. Your search for Forblaze will have to end here.;;;;;;;;;;;;;x
+regalia.122.A;How disappointing.;;;;;;;;;;;;;x
+regalia.123.desc.1;Your [Root.GetMyLordSpiritualName] [Root.job_spiritual.GetTitledName], reports that a mysterious sword was found at a shrine in [Root.Location.GetName] today. There is no sign of who left it, but it appears to be for you - it was wrapped in a cloth with your name written on it.;;;;;;;;;;;;;x
+regalia.123.desc.2;One of your priests reports that a mysterious sword was found at a shrine in [Root.Location.GetName] today. There is no sign of who left it, but it appears to be for you - it was wrapped in a cloth with your name written on it.;;;;;;;;;;;;;x
+regalia.123.A;This must be a gift from [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
+regalia.123.B;I want nothing to do with this cursed blade.;;;;;;;;;;;;;x
+regalia.124.title;The Binding Blade;;;;;;;;;;;;;x
+regalia.124.desc;The Shrine of Seals contains a stone altar with a sword stuck in the middle, point down. This must be the Binding Blade - one of Hartmut's swords forged to battle dragons. If the stories are true it surpasses the other legendary weapons in power.\n\nThe sword is set firmly in the altar. No amount of tugging will make it budge. You notice a socket on the hilt. It's exactly the size and shape of the Fire Emblem. When you insert the gem into the socket, the blade begins to glow. This time, the sword slides smoothly out of the altar when you pull it...;;;;;;;;;;;;;x
+regalia.124.A;The sword is in my hands. I was chosen by it!;;;;;;;;;;;;;x
+regalia..title;;;;;;;;;;;;;;x
 regalia..desc;;;;;;;;;;;;;;x
 regalia..A;;;;;;;;;;;;;;x
+regalia..B;;;;;;;;;;;;;;x
+regalia..C;;;;;;;;;;;;;;x
+regalia..D;;;;;;;;;;;;;;x
