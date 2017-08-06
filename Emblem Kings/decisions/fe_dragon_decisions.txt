@@ -1,0 +1,60 @@
+decisions = {
+	create_war_dragons = {
+		only_playable = yes
+		
+		potential = {
+			any_courtier = {
+				trait = demon_dragon
+				is_adult = yes
+				prisoner = no
+				NOT = { trait = incapable }
+			}
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			any_courtier  = {
+				trait = demon_dragon
+				is_adult = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { has_character_modifier = created_war_dragons }
+			}
+			custom_tooltip = {
+				text = create_war_dragons.tooltip.allow
+				hidden_tooltip = {
+					NOT = {
+						any_courtier = {
+							trait = war_dragon
+							count = 9 
+						}
+					}
+				}
+			}
+		}
+		effect = {		
+			custom_tooltip = {
+				text = create_war_dragons.tooltip
+				hidden_tooltip = {
+					
+					random_courtier  = {
+						limit = {
+							trait = demon_dragon
+							is_adult = yes
+							prisoner = no
+							NOT = { trait = incapable }
+							NOT = { has_character_modifier = created_war_dragons }
+						}
+						add_character_modifier = { name = created_war_dragons duration = 1825 } 
+						#add_character_modifier = { name = created_war_dragons duration = 3650 } 
+					}
+					character_event = { id = fe6.3 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

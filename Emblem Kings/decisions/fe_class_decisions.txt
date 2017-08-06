@@ -1,0 +1,87 @@
+decisions = {
+	promote = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			OR = {
+				trait = base_class_knight
+				trait = base_class_cavalier
+				trait = base_class_archer
+				trait = base_class_horse_archer
+				trait = base_class_mercenary
+				trait = base_class_fighter
+				trait = base_class_myrmidon
+				trait = base_class_thief
+				trait = base_class_pirate
+				trait = base_class_brigand
+				trait = base_class_priest
+				trait = base_class_cleric
+				trait = base_class_monk
+				trait = base_class_mage
+				trait = base_class_dark_mage
+				trait = base_class_wyvern_rider
+				trait = base_class_pegasus_knight
+			}
+			NOR = {
+				trait=class_assassin
+				trait=class_assassin_female
+				trait=class_berserker
+				trait=class_bishop
+				trait=class_bishop_female
+				trait=class_sorceror
+				trait=class_sorceror_female
+				trait=class_falcon_knight
+				trait=class_general
+				trait=class_great_knight
+				trait=class_hero
+				trait=class_hero_female
+				trait=class_mage_knight
+				trait=class_mage_knight_female
+				trait=class_paladin
+				trait=class_bow_knight
+				trait=class_bow_knight_female
+				trait=class_rogue
+				trait=class_sage
+				trait=class_sage_female
+				trait=class_sniper
+				trait=class_sniper_female
+				trait=class_summoner
+				trait=class_swordmaster
+				trait=class_swordmaster_female
+				trait=class_valkyrie
+				trait=class_war_cleric
+				trait=class_war_priest
+				trait=class_warrior
+				trait=class_wyvern_knight
+				trait=class_wyvern_lord	
+				trait=class_archsage
+				trait=class_archdruid
+				trait=class_dark_druid
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			wealth = 50
+			check_variable = { which = "level" value = 10 }
+		}
+		effect = {
+			wealth = -50
+			#hidden_tooltip = {
+				character_event = { id = class.5 }
+			#}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { wealth = 50 }
+			}
+		}
+	}	
+}

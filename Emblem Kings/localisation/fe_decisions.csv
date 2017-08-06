@@ -93,3 +93,5 @@ regalia_search_for_aureola;Search for Regalia;;;;;;;;;;;;;x
 regalia_search_for_aureola_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
 regalia_search_for_forblaze;Search for Regalia;;;;;;;;;;;;;x
 regalia_search_for_forblaze_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
+restore_bishop_in_aquleia;Restore the Bishop to Aquleia;;;;;;;;;;;;;x
+restore_bishop_in_aquleia_desc;The leader of the church has lost control of their secular domain, but it is within my power to restore the Tower to them!;;;;;;;;;;;;;x

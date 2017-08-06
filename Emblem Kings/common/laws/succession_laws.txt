@@ -637,7 +637,11 @@ succession_laws = {
 	}
 	succ_papal_succession = {
 		potential = {
-			title = k_papal_state
+#			title = k_papal_state
+			OR = {
+				title = k_elimine
+				title = k_golden_church
+			}
 		}
 		
 		effect = {

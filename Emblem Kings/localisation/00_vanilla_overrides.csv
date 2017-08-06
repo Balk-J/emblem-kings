@@ -42,6 +42,10 @@ expected_next_title_cardinal;Expected Next Elector;;;;;;;;;;;;;x
 expected_next_title_cardinal_tooltip;This character is probably next in line to join the council of electors when a vacancy becomes available.;;;;;;;;;;;;;x
 best_candidate_title_cardinal;My Best Council Candidate;;;;;;;;;;;;;x
 best_candidate_title_cardinal_tooltip;Of all the priests in my realm, this one is the likeliest to get appointed to the Council of Electors.;;;;;;;;;;;;;x
+expected_next_title_golden_church_cardinal;Expected Next Elector;;;;;;;;;;;;;x
+expected_next_title_golden_church_cardinal_tooltip;This character is probably next in line to join the council of electors when a vacancy becomes available.;;;;;;;;;;;;;x
+best_candidate_title_golden_church_cardinal;My Best Council Candidate;;;;;;;;;;;;;x
+best_candidate_title_golden_church_cardinal_tooltip;Of all the priests in my realm, this one is the likeliest to get appointed to the Council of Electors.;;;;;;;;;;;;;x
 TITLE_GAINED_RELIGIOUS_SETUP;New Elector appointed.;;;;;;;;;;;;;x
 TITLE_GAINED_RELIGIOUS_LETTER;$NEWHOLDER$ was given a seat on the Council of Electors.;;;;;;;;;;;;;x
 TITLE_GAINED_RELIGIOUS_LOG;$NEWHOLDER$ was given a seat on the Council of Electors.;;;;;;;;;;;;;x
@@ -52,3 +56,4 @@ CURRENT_CHOICE_DESC;This is the council's current choice for the next religious 
 TITLE_GAINED_RELIGIOUS_PLAYER_SETUP;Your vassal was appointed to the Council of Electors;;;;;;;;;;;;;x
 TITLE_GAINED_RELIGIOUS_PLAYER_LETTER;Your vassal $NEWHOLDER$ was given a seat on the Council of Electors;;;;;;;;;;;;;x
 TITLE_GAINED_RELIGIOUS_PLAYER_LOG;Your vassal $NEWHOLDER$ was given a seat on the Council of Electors.;;;;;;;;;;;;;x
+opinion_restored_to_rome;Restored to Aquleia;Restauré à Aquleia;In Aquleia wiedergestellt;;Restorado en Aquleia;;;;;;;;;x

@@ -1,0 +1,374 @@
+decisions = {	
+	create_golden_church = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			religion = golden_church
+			NOT = { is_title_active = k_golden_church }
+		}
+		
+		allow = {
+			wealth = 1000
+			#piety = 1000
+			OR = {
+				owns = 210 # Aquleia
+				any_realm_lord = {
+					owns = 210
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -1000
+			activate_title = { title = k_golden_church status = yes }
+			hidden_tooltip = {
+				create_random_priest = {
+					dynasty = none
+					random_traits = yes
+				}
+				new_character = {
+					k_golden_church = {
+						grant_title = PREV
+					}
+					wealth = 1000
+					opinion = {
+						who = ROOT
+						modifier = opinion_creator_of_rel_heal
+					}
+				}
+				
+				religion_authority = {
+					modifier = papacy_instituted
+					years = 20
+				}
+			}
+			hidden_effect = {
+				character_event = { id = fe_religion.1 }
+			}
+			piety = 1000
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	return_elibe_to_dragons = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			religion = dragon_liberation
+			NOT = { is_title_active = e_dragon_liberation }
+			capital_scope = {
+				region = world_elibe
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = return_elibe_to_dragons.tooltip.allow
+				hidden_tooltip = {
+					calc_true_if = {
+						amount = 5
+						completely_controls_region = world_elibe_bern
+						completely_controls_region = world_elibe_lycia
+						completely_controls_region = world_elibe_etruria
+						completely_controls_region = world_elibe_ilia
+						completely_controls_region = world_elibe_nabata
+						completely_controls_region = world_elibe_sacae
+					}	
+				}
+			}		
+			any_realm_character  = {
+				trait = dragon
+				#culture_group = draconic
+				religion = dragon_liberation
+				NOT = { trait = demon_dragon }
+				NOT = { trait = war_dragon }
+				opinion = { who = ROOT value = 80 }
+				#is_adult = yes
+				prisoner = no
+			}
+			#num_of_realm_counties = { value = 157 title = e_elibe } 
+		}
+		
+		effect = {
+			activate_title = { title = e_dragon_liberation status = yes }
+			piety = 2000
+			custom_tooltip = {
+				text = return_elibe_to_dragons_TOOLTIP
+				hidden_tooltip = {
+					random_realm_character  = {
+						limit={
+							trait = dragon
+							religion = dragon_liberation
+							#culture_group = draconic
+							NOT = { trait = demon_dragon }
+							NOT = { trait = war_dragon }
+							opinion = { who = ROOT value = 80 }
+							#is_adult = yes
+							prisoner = no
+						}
+						c_calach = {
+							grant_title = PREV
+						}
+						e_dragon_liberation = {
+							grant_title = PREV
+						}
+						wealth = 500
+						opinion = {
+							who = ROOT
+							modifier = opinion_creator_of_rel_heal
+						}
+					}
+					
+					ROOT = {					
+						any_vassal = {
+							limit = { 
+								higher_tier_than = DUKE 
+							} 
+							set_defacto_liege = e_dragon_liberation
+						}	
+						any_demesne_title = {
+							limit = {
+								#is_landless_type_title = no
+								higher_tier_than = KING
+							}
+							destroy_landed_title = THIS
+						}		
+						set_defacto_liege = e_dragon_liberation				
+					}
+					
+					religion_authority = {
+						modifier = papacy_instituted
+						years = 20
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+				trait = greedy
+			}
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			
+			modifier = {
+				factor = 10
+				trait = zealous
+			}
+		}
+	}
+	
+	declare_dragon_liberation_war = {
+		only_playable = yes
+		
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = dark_incapable }
+			religion = dragon_liberation
+			has_character_modifier = planning_invasion
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = fe6.12 }
+			}
+		}		
+		revoke_allowed = {
+			always = no
+		}		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	restore_bishop_in_aquleia = {
+		only_independent = yes
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			independent = yes
+			has_dlc = "Sons of Abraham"
+			
+			OR = {
+				religion = elimine_church
+				AND = {
+					religion = golden_church
+					is_title_active = k_golden_church
+				}
+			}
+			
+			controls_religion = no
+			
+			b_tower_of_the_saint = {
+			#c_aquleia = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						is_liege_or_above = ROOT
+					}
+					OR = {
+						AND = {
+							ROOT = { religion = elimine_church }
+							k_elimine = {
+								holder_scope = {
+									NOT = { character = PREVPREV }
+									NOT = { is_vassal_or_below = PREVPREV }
+								}
+							}
+						}
+						AND = {
+							ROOT = { religion = golden_church }
+							k_golden_church = {
+								holder_scope = {
+									NOT = { character = PREVPREV }
+									NOT = { is_vassal_or_below = PREVPREV }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {		
+			if = {
+				limit = {
+					religion = elimine_church
+				}
+				k_elimine = {
+					holder_scope = {
+						b_tower_of_the_saint = {
+						#c_aquleia = {
+							grant_title = PREV
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = { 
+										OR = {
+											character = ROOT
+											is_liege_or_above = ROOT
+										}
+									}
+								}
+								grant_title = PREVPREV
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					religion = elimine_church
+					NOT = { has_character_flag = restored_high_bishop_in_aquleia }
+				}
+				k_elimine = {
+					holder_scope = {
+						opinion = {
+							who = ROOT
+							modifier = opinion_restored_to_rome
+						}
+					}
+				}
+				piety = 1000
+				set_character_flag = restored_high_bishop_in_aquleia
+			}
+			
+			if = {
+				limit = {
+					religion = golden_church
+				}
+				k_golden_church = {
+					holder_scope = {
+						b_tower_of_the_saint = {
+						#c_aquleia = {
+							grant_title = PREV
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = { 
+										OR = {
+											character = ROOT
+											is_liege_or_above = ROOT
+										}
+									}
+								}
+								grant_title = PREVPREV
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					religion = golden_church
+					 NOT = { has_character_flag = restored_golden_bishop_in_aquleia }
+				}
+				piety = 1000
+				set_character_flag = restored_golden_bishop_in_aquleia
+			}
+			hidden_effect = {
+				character_event = { id = fe_religion.2 }
+				set_character_flag = testflagrome
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+#					any_demesne_province = {
+#						NOT = { province_id = 206 } # Aquleia
+					any_demesne_title = {
+						NOT = { title = b_tower_of_the_saint } 
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				b_tower_of_the_saint = {
+				#c_aquleia = {
+					holder_scope = {
+						OR = {
+							ai = no
+							any_liege = { ai = no }  # AI will never take Aquleia province away from a player
+						}
+					}
+				}
+			}
+		}
+	}
+}

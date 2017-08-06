@@ -152,4 +152,8 @@ spriteTypes = {
 		name = "GFX_faction_reform_tyrant_government_ultimatum"
 		texturefile = "gfx\\interface\\decision_icon_faction_reform_tyrant_government_ultimatum.dds"
 	}
+	spriteType = {
+		name = "GFX_restore_bishop_in_aquleia"
+		texturefile = "gfx\\interface\\decision_icon_light.dds"
+	}
 }
