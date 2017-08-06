@@ -1,0 +1,50 @@
+namespace = fe_religion
+
+character_event = {
+	id = fe_religion.1
+	desc = {
+		text = fe_religion.1.desc.1
+		trigger = {
+			character = FROM
+		}
+	}
+	desc = {
+		text = fe_religion.1.desc.2
+		trigger = {
+			NOT = { character = FROM }
+		}
+	}
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	major = yes
+
+	is_triggered_only = yes
+	major_trigger = {
+		religion_group = light_group
+	}
+	
+	only_playable = yes
+	
+	option = {
+		name = fe_religion.1.A
+		trigger = {
+			religion = golden_church
+		}
+	}
+	option = {
+		name = fe_religion.1.B
+		trigger = {
+			religion = elimine_church
+		}
+	}
+	option = {
+		name = fe_religion.1.C
+		trigger = {
+			NOR = {
+				religion = golden_church
+				religion = elimine_church
+			}
+		}
+	}
+}

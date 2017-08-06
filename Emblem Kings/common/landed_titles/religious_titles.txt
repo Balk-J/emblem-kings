@@ -86,7 +86,7 @@ k_golden_church = {
 	}
 	
 	# Always exists
-	#landless = yes
+	landless = yes
 	
 	# Controls a religion
 	controls_religion = golden_church
@@ -143,7 +143,7 @@ d_divine_sky = {
 	short_name = yes
 	
 	# Always exists
-	#landless = yes	
+	landless = yes	
 	
 	# Controls a religion
 	controls_religion = divine_sky_pagan_reformed

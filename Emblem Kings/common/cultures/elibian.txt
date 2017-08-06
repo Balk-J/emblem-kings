@@ -1,8 +1,8 @@
 elibian = {
-	graphical_cultures = { westerngfx} # buildings, portraits, units
+	graphical_cultures = { westerngfx } # buildings, portraits, units
 	
 	lycian = {
-		graphical_cultures = { frankishgfx}
+		graphical_cultures = { frankishgfx }
 		#graphical_unit_culture = western
 		
 		#color = { 0.1 0.3 0.6 }
@@ -86,7 +86,7 @@ elibian = {
 	}
 	
 	bernese = {
-		graphical_cultures = { germangfx} # units
+		graphical_cultures = { germangfx } 
 		
 		color = { 0.5 0 0.1 }
 		
@@ -168,7 +168,7 @@ elibian = {
 	}
 	
 	etrurian = {
-		graphical_cultures = { englishgfx} # units
+		graphical_cultures = { englishgfx } 
 		
 		color = { 0.5 0.3 0.7 }
 		
@@ -249,8 +249,7 @@ elibian = {
 	}
 	
 	nabatan = {
-		#graphical_cultures = { andalusiangfx }# units
-		graphical_cultures = {muslimgfx arabicgfx andalusiangfx}
+		graphical_cultures = { andalusiangfx arabicgfx muslimgfx }
 		
 		#color = { 0 1 0.3 }#Egypt
 		#color = { 0.7 0.6 0.3 }#Sicily
@@ -312,9 +311,9 @@ elibian = {
 	}
 	
 	sacaean = {
-		graphical_cultures = { mongolgfx muslimgfx}
-		#second_graphical_culture = muslimgfx # Fallback type
-		#secondary_event_pictures = bedouin_arabic
+		graphical_cultures = { persiangfx mongolgfx muslimgfx }
+		#graphical_cultures = { mongolgfx muslimgfx}
+		secondary_event_pictures = bedouin_arabic
 		
 		horde = yes
 		
@@ -366,7 +365,7 @@ elibian = {
 	}
 	
 	ilian = {
-		graphical_cultures = { saxongfx }
+		graphical_cultures = { normangfx }
 		
 		color = { 0.4 0.4 0.6 }
 		
@@ -438,7 +437,7 @@ elibian = {
 	}
 	
 	western_islander = {
-		graphical_cultures = {celticgfx} # units
+		graphical_cultures = { celticgfx } 
 		
 		color = { 0.9 0.6 0.2 }
 		

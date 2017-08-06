@@ -1,0 +1,6 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe_religion.1.desc.1;Aquleia, for centuries the center of the Elimine Church, now belongs to Golden Church faithful. This has given me an opportunity to establish the Golden See, which shall affirm the rights of those closest to God.;;;;;;;;;;;;;x
+fe_religion.1.desc.2;Aquleia, for centuries the center of the Elimine Church, now belongs to Golden Church faithful. [From.GetTitledFirstName] has therefore seen fit to establish the Golden See, claiming it shall affirm the rights of those closest to God.;;;;;;;;;;;;;x
+fe_religion.1.A;[From.Religion.GetRandomGodNameCap] is good!;[From.Religion.GetRandomGodNameCap] leur a montré la voie !;[From.Religion.GetRandomGodNameCap] ist gut!;;¡[From.Religion.GetRandomGodNameCap] es bueno!;;;;;;;;;x
+fe_religion.1.B;[FromFrom.Religion.GetRandomGodNameCap] save us!;Que [FromFrom.Religion.GetRandomGodName] nous garde !;[FromFrom.Religion.GetRandomGodNameCap] rette uns!;;[FromFrom.Religion.GetRandomGodNameCap], ¡sálvanos!;;;;;;;;;x
+fe_religion.1.C;The bickering of fools does not concern me;Ces querelles imbéciles ne me concernent pas;Dieses Narrengezänk geht mich nichts an;;La disputa de los necios no me concierne;;;;;;;;;x

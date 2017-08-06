@@ -1,31 +1,27 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-k_bern;Bern;Bern;Bern;;Bern;;;;;;;;;x
-k_bern_adj;Bernese;;berner;;;;;;;;;;;x
-k_etruria;Etruria;Etruria;Etruria;;Etruria;;;;;;;;;x
-k_etruria_adj;Etrurian;;etrurer;;;;;;;;;;;x
-k_ilia;Ilia;Ilia;Ilia;;Ilia;;;;;;;;;x
-k_ilia_adj;Ilian;;iler;;;;;;;;;;;x
-k_kafti;Kafti;Kafti;Kafti;;Kafti;;;;;;;;;x
-k_kafti_adj;Kaftian;;kafter;;;;;;;;;;;x
-k_calach;Calach;Calach;Calach;;Calach;;;;;;;;;x
-k_calach_adj;Calachian;;Calachian;;;;;;;;;;;x
-k_lycia;Lycia;Lycia;Lycia;;Lycia;;;;;;;;;x
-k_lycia_adj;Lycian;;lycer;;;;;;;;;;;x
-k_lycian_league;Lycian League;Lycian League;Lycian League;;Lycian League;;;;;;;;;x
-k_lycian_league_adj;Lycian;;lycer;;;;;;;;;;;x
-k_missur;Missur;Missur;Missur;;Missur;;;;;;;;;x
-k_missur_adj;Missuri;;missurer;;;;;;;;;;;x
-k_nabata;Nabata;Nabata;Nabata;;Nabata;;;;;;;;;x
-k_nabata_adj;Nabatan;;nabater;;;;;;;;;;;x
-k_terina;Terina;Terina;Terina;;Terina;;;;;;;;;x
-k_terina_adj;Terinan;;Terinan;;;;;;;;;;;x
-k_sacae;Sacae;Sacae;Sacae;;Sacae;;;;;;;;;x
-k_sacae_adj;Sacaean;;sacer;;;;;;;;;;;x
-k_the_taliver_mountains;The Taliver Mountains;The Taliver Mountains;The Taliver Mountains;;The Taliver Mountains;;;;;;;;;x
-k_the_taliver_mountains_adj;Taliver Mountains;;The Taliver Mountainser;;;;;;;;;;;x
-k_the_western_isles;The Western Isles;The Western Isles;The Western Isles;;The Western Isles;;;;;;;;;x
-k_the_western_isles_adj;Western Islander;;The Western Isleser;;;;;;;;;;;x
-k_western_union;Western Union;Western Union;Western Union;;Western Union;;;;;;;;;x
-k_western_union_adj;Western Union;;Western Union;;;;;;;;;;;x
 k_valor;Valor;Valor;Valor;;Valor;;;;;;;;;x
-k_valor_adj;Valorian;;valorer;;;;;;;;;;;x
+k_valor_adj;Valorian;Valorian;Valorian;;Valorian;;;;;;;;;x
+k_bern;Bern;Bern;Bern;;Bern;;;;;;;;;x
+k_bern_adj;Bernese;Bernese;Bernese;;Bernese;;;;;;;;;x
+k_calach;Calach;Calach;Calach;;Calach;;;;;;;;;x
+k_calach_adj;Calachian;Calachian;Calachian;;Calachian;;;;;;;;;x
+k_terina;Terina;Terina;Terina;;Terina;;;;;;;;;x
+k_terina_adj;Terinan;Terinan;Terinan;;Terinan;;;;;;;;;x
+k_lycia;Lycia;Lycia;Lycia;;Lycia;;;;;;;;;x
+k_lycia_adj;Lycian;Lycian;Lycian;;Lycian;;;;;;;;;x
+k_nabata;Nabata;Nabata;Nabata;;Nabata;;;;;;;;;x
+k_nabata_adj;Nabatan;Nabatan;Nabatan;;Nabatan;;;;;;;;;x
+k_missur;Missur;Missur;Missur;;Missur;;;;;;;;;x
+k_missur_adj;Missuri;Missuri;Missuri;;Missuri;;;;;;;;;x
+k_kafti;Kafti;Kafti;Kafti;;Kafti;;;;;;;;;x
+k_kafti_adj;Kaftian;Kaftian;Kaftian;;Kaftian;;;;;;;;;x
+k_the_western_isles;The Western Isles;The Western Isles;The Western Isles;;The Western Isles;;;;;;;;;x
+k_the_western_isles_adj;Western Islander;Western Islander;Western Islander;;Western Islander;;;;;;;;;x
+k_the_taliver_mountains;The Taliver Mountains;The Taliver Mountains;The Taliver Mountains;;The Taliver Mountains;;;;;;;;;x
+k_the_taliver_mountains_adj;Taliver Mountains;Taliver Mountains;Taliver Mountains;;Taliver Mountains;;;;;;;;;x
+k_sacae;Sacae;Sacae;Sacae;;Sacae;;;;;;;;;x
+k_sacae_adj;Sacaean;Sacaean;Sacaean;;Sacaean;;;;;;;;;x
+k_etruria;Etruria;Etruria;Etruria;;Etruria;;;;;;;;;x
+k_etruria_adj;Etrurian;Etrurian;Etrurian;;Etrurian;;;;;;;;;x
+k_ilia;Ilia;Ilia;Ilia;;Ilia;;;;;;;;;x
+k_ilia_adj;Ilian;Ilian;Ilian;;Ilian;;;;;;;;;x

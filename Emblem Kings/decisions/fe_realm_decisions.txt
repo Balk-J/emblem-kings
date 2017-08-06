@@ -271,6 +271,9 @@ decisions = {
 					years = 20
 				}
 			}
+			hidden_effect = {
+				character_event = { id = fe_religion.1 }
+			}
 			piety = 1000
 		}
 		

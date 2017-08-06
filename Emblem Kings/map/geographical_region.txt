@@ -165,13 +165,3 @@ world_elibe = {
 		world_elibe_greater_missur		
 	}
 }
-
-###########################################################################
-# Custom Regions
-###########################################################################
-
-#custom_eastern_baltic = {
-	#duchies = {
-		#Finland d_karelia d_finland d_kola d_esthonia
-	#}
-#}

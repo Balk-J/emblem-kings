@@ -1,34 +1,28 @@
-
 e_elibe = {
 	color={ 100 30 150 }
 	color2={ 255 255 20 }
-	
-	capital = 5 # c_bern
+
+	capital = 5
 	culture = bernese
-	
+
 	k_bern = {
-		color={ 134 0 37 }	
+		color={ 134 0 37 }
 		color2={ 255 255 255 }
-		
-		capital = 5 # c_bern
+
+		capital = 5
 		culture = bernese
-		
+
 		d_bern = {
-			color={ 140 0 30 }	
+			color={ 63 0 18 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 5 province_id = 6 province_id = 7 province_id = 8 province_id = 9 } }
-		#		}
-		#	}
-			capital = 5 # c_bern
-			
-			c_bern = { # 5
+
+			capital=5
+
+			c_bern = {
 				color={ 63 0 18 }
 				color2={ 255 255 255 }
-				
+
+
 				b_bern_keep = {
 				}
 				b_bern = {
@@ -44,10 +38,11 @@ e_elibe = {
 				b_wangen = {
 				}
 			}
-			c_aarberg = { # 6
+			c_aarberg = {
 				color={ 122 0 33 }
 				color2={ 255 255 255 }
-				
+
+
 				b_bern_manse = {
 				}
 				b_aarberg = {
@@ -57,38 +52,11 @@ e_elibe = {
 				b_aarwangen = {
 				}
 			}
-			c_boltigen = { # 8
-				color={ 206 65 103 }
-				color2={ 255 255 255 }
-				
-				b_boltigen = {
-				}
-				b_boltigen_2 = {
-				}
-				b_boltigen_3 = {
-				}
-				b_augst = {
-				}
-			}
-			c_erlenbach = { # 9
-				color={ 64 9 24 }
-				color2={ 255 255 255 }
-				
-				b_erlenbach = {
-				}
-				b_erlenbach_2 = {
-				}
-				b_erlenbach_3 = {
-				}
-				b_seftigen = {
-				}
-				b_belp = {
-				}
-			}
-			c_landskron = { # 7
+			c_landskron = {
 				color={ 224 30 82 }
 				color2={ 255 255 255 }
-				
+
+
 				b_landskron = {
 				}
 				b_landskron_2 = {
@@ -100,86 +68,48 @@ e_elibe = {
 				b_grentzer = {
 				}
 			}
-		}
-		d_appenzell = {
-			color={ 151 62 94 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 26 province_id = 27 province_id = 28 province_id = 29 } }
-		#		}
-		#	}
-			capital = 26 # c_appenzell
-			
-			c_appenzell = { # 26
-				color={ 141 72 89 }
+			c_boltigen = {
+				color={ 206 65 103 }
 				color2={ 255 255 255 }
-				
-				b_appenzell = {
+
+
+				b_boltigen = {
 				}
-				b_appenzell_2 = {
+				b_boltigen_2 = {
 				}
-				b_appenzell_3 = {
+				b_boltigen_3 = {
 				}
-				b_riehen = {
-				}
-				b_saugern = {
+				b_augst = {
 				}
 			}
-			c_gonten = { # 27
-				color={ 86 50 59 }
+			c_erlenbach = {
+				color={ 64 9 24 }
 				color2={ 255 255 255 }
-				
-				b_gonten = {
+
+
+				b_erlenbach = {
 				}
-				b_gonten_2 = {
+				b_erlenbach_2 = {
 				}
-				b_gonten_3 = {
+				b_erlenbach_3 = {
 				}
-				b_liestal = {
+				b_seftigen = {
 				}
-			}
-			c_haslen = { # 29
-				color={ 230 128 156 }
-				color2={ 255 255 255 }
-				
-				b_haslen = {
-				}
-				b_haslen_2 = {
-				}
-				b_haslen_3 = {
-				}
-			}
-			c_rute = { # 28
-				color={ 126 66 82 }
-				color2={ 255 255 255 }
-				
-				b_rute = {
-				}
-				b_rute_2 = {
-				}
-				b_rute_3 = {
+				b_belp = {
 				}
 			}
 		}
 		d_basel = {
-			color={ 174 49 93 }
+			color={ 164 59 88 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 10 province_id = 11 province_id = 12 } }
-		#		}
-		#	}
-			capital = 10 # c_basel
-			
-			c_basel = { # 10
+
+			capital=10
+
+			c_basel = {
 				color={ 164 59 88 }
 				color2={ 255 255 255 }
-				
+
+
 				b_basel = {
 				}
 				b_basel_2 = {
@@ -189,10 +119,11 @@ e_elibe = {
 				b_nidau = {
 				}
 			}
-			c_bettingen = { # 11
+			c_bettingen = {
 				color={ 188 67 101 }
 				color2={ 255 255 255 }
-				
+
+
 				b_bettingen = {
 				}
 				b_bettingen_2 = {
@@ -202,84 +133,28 @@ e_elibe = {
 				b_thun = {
 				}
 			}
-			c_orvin = { # 12
+			c_orvin = {
 				color={ 179 2 51 }
 				color2={ 255 255 255 }
-				
+
+
 				b_orvin = {
 				}
 				b_orvin_2 = {
 				}
 			}
 		}
-		d_fribourg = {
-			color={ 139 52 86 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 20 province_id = 21 province_id = 22 } }
-		#		}
-		#	}
-			capital = 20 # c_fribourg
-			
-			c_fribourg = { # 20
-				color={ 129 62 81 }
-				color2={ 255 255 255 }
-				
-				b_fribourg = {
-				}
-				b_fribourg_2 = {
-				}
-				b_fribourg_3 = {
-				}
-				b_blankenburg = {
-				}
-				b_schwarzenburg = {
-				}
-			}
-			c_galmiz = { # 21
-				color={ 93 36 52 }
-				color2={ 255 255 255 }
-				
-				b_galmiz = {
-				}
-				b_galmiz_2 = {
-				}
-				b_galmiz_3 = {
-				}
-				b_saanen = {
-				}
-			}
-			c_murist = { # 22
-				color={ 100 67 76 }
-				color2={ 255 255 255 }
-				
-				b_murist = {
-				}
-				b_murist_2 = {
-				}
-				b_murist_3 = {
-				}
-			}
-		}
 		d_glarus = {
-			color={ 140 4 51 }
+			color={ 130 14 46 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 13 province_id = 14 province_id = 15 province_id = 16 } }
-		#		}
-		#	}
-			capital = 13 # c_glarus
-			
-			c_glarus = { # 13
+
+			capital=13
+
+			c_glarus = {
 				color={ 130 14 46 }
 				color2={ 255 255 255 }
-				
+
+
 				b_glarus = {
 				}
 				b_glarus_2 = {
@@ -291,10 +166,11 @@ e_elibe = {
 				b_signau = {
 				}
 			}
-			c_ennenda = { # 14
+			c_ennenda = {
 				color={ 184 58 93 }
 				color2={ 255 255 255 }
-				
+
+
 				b_ennenda = {
 				}
 				b_ennenda_2 = {
@@ -304,19 +180,11 @@ e_elibe = {
 				b_oberhasli = {
 				}
 			}
-			c_netstal = { # 16
-				color={ 189 30 75 }
-				color2={ 255 255 255 }
-				
-				b_netstal = {
-				}
-				b_netstal_2 = {
-				}
-			}
-			c_riedern = { # 15
+			c_riedern = {
 				color={ 147 14 51 }
 				color2={ 255 255 255 }
-				
+
+
 				b_riedern = {
 				}
 				b_riedern_2 = {
@@ -326,122 +194,31 @@ e_elibe = {
 				b_konolfingen = {
 				}
 			}
-		}
-		d_solothurn = {
-			color={ 156 78 109 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 33 province_id = 34 province_id = 35 } }
-		#		}
-		#	}
-			capital = 33 # c_solothurn
-			
-			c_solothurn = { # 33
-				color={ 146 88 104 }
+			c_netstal = {
+				color={ 189 30 75 }
 				color2={ 255 255 255 }
-				
-				b_solothurn = {
+
+
+				b_netstal = {
 				}
-				b_solothurn_2 = {
-				}
-				b_solothurn_3 = {
-				}
-			}
-			c_dorneck = { # 34
-				color={ 189 96 122 }
-				color2={ 255 255 255 }
-				
-				b_dorneck = {
-				}
-				b_dorneck_2 = {
-				}
-				b_dorneck_3 = {
-				}
-			}
-			c_olten = { # 35
-				color={ 144 53 78 }
-				color2={ 255 255 255 }
-				
-				b_olten = {
-				}
-				b_olten_2 = {
-				}
-				b_olten_3 = {
-				}
-			}
-		}
-		d_unterwalden = {
-			color={ 163 81 114 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 23 province_id = 24 province_id = 25 } }
-		#		}
-		#	}
-			capital = 23 # c_unterwalden
-			
-			c_unterwalden = { # 23
-				color={ 153 91 109 }
-				color2={ 255 255 255 }
-				
-				b_unterwalden = {
-				}
-				b_unterwalden_2 = {
-				}
-				b_unterwalden_3 = {
-				}
-				b_ursanne = {
-				}
-			}
-			c_nidwalden = { # 25
-				color={ 106 49 65 }
-				color2={ 255 255 255 }
-				
-				b_nidwalden = {
-				}
-				b_nidwalden_2 = {
-				}
-				b_nidwalden_3 = {
-				}
-			}
-			c_obwalden = { # 24
-				color={ 101 68 77 }
-				color2={ 255 255 255 }
-				
-				b_obwalden = {
-				}
-				b_obwalden_2 = {
-				}
-				b_obwalden_3 = {
-				}
-				b_bellelay = {
+				b_netstal_2 = {
 				}
 			}
 		}
 		d_uri = {
-			color={ 141 32 72 }
+			color={ 131 42 67 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 17 province_id = 18 province_id = 19 } }
-		#		}
-		#	}
-			capital = 17 # c_uri
-			
-			c_uri = { # 17
+
+			capital=17
+
+			c_uri = {
 				color={ 131 42 67 }
-				color2={ 255 255 255 }	
+				color2={ 255 255 255 }
+
 				holy_site = elibe_spirits_pagan
 				holy_site = anima
 				holy_site = dark
-				
+
 				b_shrine_of_seals = {
 				}
 				b_temple_of_seals = {
@@ -453,10 +230,11 @@ e_elibe = {
 				b_buren = {
 				}
 			}
-			c_bauen = { # 18
+			c_bauen = {
 				color={ 163 112 126 }
 				color2={ 255 255 255 }
-				
+
+
 				b_bauen = {
 				}
 				b_bauen_2 = {
@@ -464,10 +242,11 @@ e_elibe = {
 				b_bauen_3 = {
 				}
 			}
-			c_isenthal = { # 19
+			c_isenthal = {
 				color={ 119 58 75 }
 				color2={ 255 255 255 }
-				
+
+
 				b_isenthal = {
 				}
 				b_isenthal_2 = {
@@ -478,22 +257,174 @@ e_elibe = {
 				}
 			}
 		}
-		d_zug = {
-			color={ 191 132 137 }
+		d_fribourg = {
+			color={ 129 62 81 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 30 province_id = 31 province_id = 32 } }
-		#		}
-		#	}
-			capital = 30 # c_zug
-			
-			c_zug = { # 30
+
+			capital=20
+
+			c_fribourg = {
+				color={ 129 62 81 }
+				color2={ 255 255 255 }
+
+
+				b_fribourg = {
+				}
+				b_fribourg_2 = {
+				}
+				b_fribourg_3 = {
+				}
+				b_blankenburg = {
+				}
+				b_schwarzenburg = {
+				}
+			}
+			c_galmiz = {
+				color={ 93 36 52 }
+				color2={ 255 255 255 }
+
+
+				b_galmiz = {
+				}
+				b_galmiz_2 = {
+				}
+				b_galmiz_3 = {
+				}
+				b_saanen = {
+				}
+			}
+			c_murist = {
+				color={ 100 67 76 }
+				color2={ 255 255 255 }
+
+
+				b_murist = {
+				}
+				b_murist_2 = {
+				}
+				b_murist_3 = {
+				}
+			}
+		}
+		d_unterwalden = {
+			color={ 153 91 109 }
+			color2={ 255 255 255 }
+
+			capital=23
+
+			c_unterwalden = {
+				color={ 153 91 109 }
+				color2={ 255 255 255 }
+
+
+				b_unterwalden = {
+				}
+				b_unterwalden_2 = {
+				}
+				b_unterwalden_3 = {
+				}
+				b_ursanne = {
+				}
+			}
+			c_obwalden = {
+				color={ 101 68 77 }
+				color2={ 255 255 255 }
+
+
+				b_obwalden = {
+				}
+				b_obwalden_2 = {
+				}
+				b_obwalden_3 = {
+				}
+				b_bellelay = {
+				}
+			}
+			c_nidwalden = {
+				color={ 106 49 65 }
+				color2={ 255 255 255 }
+
+
+				b_nidwalden = {
+				}
+				b_nidwalden_2 = {
+				}
+				b_nidwalden_3 = {
+				}
+			}
+		}
+		d_appenzell = {
+			color={ 141 72 89 }
+			color2={ 255 255 255 }
+
+			capital=26
+
+			c_appenzell = {
+				color={ 141 72 89 }
+				color2={ 255 255 255 }
+
+
+				b_appenzell = {
+				}
+				b_appenzell_2 = {
+				}
+				b_appenzell_3 = {
+				}
+				b_riehen = {
+				}
+				b_saugern = {
+				}
+			}
+			c_gonten = {
+				color={ 86 50 59 }
+				color2={ 255 255 255 }
+
+
+				b_gonten = {
+				}
+				b_gonten_2 = {
+				}
+				b_gonten_3 = {
+				}
+				b_liestal = {
+				}
+			}
+			c_rute = {
+				color={ 126 66 82 }
+				color2={ 255 255 255 }
+
+
+				b_rute = {
+				}
+				b_rute_2 = {
+				}
+				b_rute_3 = {
+				}
+			}
+			c_haslen = {
+				color={ 230 128 156 }
+				color2={ 255 255 255 }
+
+
+				b_haslen = {
+				}
+				b_haslen_2 = {
+				}
+				b_haslen_3 = {
+				}
+			}
+		}
+		d_zug = {
+			color={ 201 122 142 }
+			color2={ 255 255 255 }
+
+			capital=30
+
+			c_zug = {
 				color={ 201 122 142 }
 				color2={ 255 255 255 }
-				
+
+
 				b_zug = {
 				}
 				b_zug_2 = {
@@ -505,10 +436,11 @@ e_elibe = {
 				b_wald = {
 				}
 			}
-			c_risch = { # 31
+			c_risch = {
 				color={ 107 72 81 }
 				color2={ 255 255 255 }
-				
+
+
 				b_risch = {
 				}
 				b_risch_2 = {
@@ -516,10 +448,11 @@ e_elibe = {
 				b_risch_3 = {
 				}
 			}
-			c_walchwil = { # 32
+			c_walchwil = {
 				color={ 167 105 122 }
 				color2={ 255 255 255 }
-				
+
+
 				b_walchwil = {
 				}
 				b_walchwil_2 = {
@@ -528,33 +461,1696 @@ e_elibe = {
 				}
 			}
 		}
+		d_solothurn = {
+			color={ 146 88 104 }
+			color2={ 255 255 255 }
+
+			capital=33
+
+			c_solothurn = {
+				color={ 146 88 104 }
+				color2={ 255 255 255 }
+
+
+				b_solothurn = {
+				}
+				b_solothurn_2 = {
+				}
+				b_solothurn_3 = {
+				}
+			}
+			c_dorneck = {
+				color={ 189 96 122 }
+				color2={ 255 255 255 }
+
+
+				b_dorneck = {
+				}
+				b_dorneck_2 = {
+				}
+				b_dorneck_3 = {
+				}
+			}
+			c_olten = {
+				color={ 144 53 78 }
+				color2={ 255 255 255 }
+
+
+				b_olten = {
+				}
+				b_olten_2 = {
+				}
+				b_olten_3 = {
+				}
+			}
+		}
+	}
+	k_lycia = {
+		color={ 6 127 2 }
+		color2={ 255 255 255 }
+
+		capital = 78
+		culture = lycian
+
+		d_ostia = {
+			color={ 7 80 5 }
+			color2={ 255 255 255 }
+
+			capital=78
+
+			c_ostia = {
+				color={ 7 80 5 }
+				color2={ 255 255 255 }
+
+
+				b_castle_ostia = {
+				}
+				b_fort_kinship = {
+				}
+				b_ostia = {
+				}
+				b_ostia_2 = {
+				}
+				b_lysinia = {
+				}
+				b_attalea = {
+				}
+			}
+			c_durandal = {
+				color={ 4 62 2 }
+				color2={ 255 255 255 }
+
+				holy_site = elimine_church
+				holy_site = elibe_spirits_pagan
+
+				b_fort_roland = {
+				}
+				b_durandal_shrine = {
+				}
+				b_cremna = {
+				}
+			}
+			c_ragna = {
+				color={ 11 117 7 }
+				color2={ 255 255 255 }
+
+
+				b_ragna_castle = {
+				}
+				b_ragna = {
+				}
+				b_ragna_2 = {
+				}
+				b_andeda = {
+				}
+			}
+			c_arycanda = {
+				color={ 111 223 107 }
+				color2={ 255 255 255 }
+
+
+				b_arycanda = {
+				}
+				b_arycanda_2 = {
+				}
+				b_arycanda_3 = {
+				}
+			}
+			c_zem = {
+				color={ 149 214 147 }
+				color2={ 255 255 255 }
+
+
+				b_zem_castle = {
+				}
+				b_zem = {
+				}
+				b_zem_2 = {
+				}
+				b_lagina = {
+				}
+			}
+			c_aperlae = {
+				color={ 61 136 58 }
+				color2={ 255 255 255 }
+
+
+				b_aperlae = {
+				}
+				b_aperlae_2 = {
+				}
+				b_aperlae_3 = {
+				}
+			}
+			c_patara = {
+				color={ 107 188 104 }
+				color2={ 255 255 255 }
+
+
+				b_patara = {
+				}
+				b_patara_2 = {
+				}
+				b_patara_3 = {
+				}
+			}
+		}
+		d_thria = {
+			color={ 158 210 156 }
+			color2={ 255 255 255 }
+
+			capital=85
+
+			c_thria = {
+				color={ 158 210 156 }
+				color2={ 255 255 255 }
+
+
+				b_castle_thria = {
+				}
+				b_thria = {
+				}
+				b_thria_2 = {
+				}
+			}
+			c_myra = {
+				color={ 137 238 133 }
+				color2={ 255 255 255 }
+
+
+				b_myra = {
+				}
+				b_myra_2 = {
+				}
+				b_myra_3 = {
+				}
+			}
+		}
+		d_worde = {
+			color={ 23 216 16 }
+			color2={ 255 255 255 }
+
+			capital=87
+
+			c_worde = {
+				color={ 23 216 16 }
+				color2={ 255 255 255 }
+
+
+				b_castle_worde = {
+				}
+				b_worde = {
+				}
+				b_worde_2 = {
+				}
+			}
+			c_olst = {
+				color={ 138 176 137 }
+				color2={ 255 255 255 }
+
+
+				b_olst_castle = {
+				}
+				b_olst = {
+				}
+				b_olst_2 = {
+				}
+			}
+		}
+		d_ryerde = {
+			color={ 98 143 96 }
+			color2={ 255 255 255 }
+
+			capital=89
+
+			c_ryerde = {
+				color={ 98 143 96 }
+				color2={ 255 255 255 }
+
+
+				b_ryerde = {
+				}
+				b_ryerde_2 = {
+				}
+				b_ryerde_3 = {
+				}
+			}
+			c_sidyma = {
+				color={ 70 137 67 }
+				color2={ 255 255 255 }
+
+
+				b_sidyma = {
+				}
+				b_sidyma_2 = {
+				}
+				b_sidyma_3 = {
+				}
+			}
+		}
+		d_laus = {
+			color={ 112 216 35 }
+			color2={ 255 255 255 }
+
+			capital=91
+
+			c_laus = {
+				color={ 112 216 35 }
+				color2={ 255 255 255 }
+
+
+				b_castle_laus = {
+				}
+				b_laus = {
+				}
+				b_colbasa = {
+				}
+				b_perge = {
+				}
+			}
+			c_idebessus = {
+				color={ 120 176 78 }
+				color2={ 255 255 255 }
+
+
+				b_idebessus = {
+				}
+				b_idebessus_2 = {
+				}
+				b_idebessus_3 = {
+				}
+				b_sinda = {
+				}
+			}
+			c_tios = {
+				color={ 67 142 12 }
+				color2={ 255 255 255 }
+
+
+				b_tios = {
+				}
+				b_tios_2 = {
+				}
+				b_tios_3 = {
+				}
+			}
+		}
+		d_badon = {
+			color={ 13 129 84 }
+			color2={ 255 255 255 }
+
+			capital=94
+
+			c_badon = {
+				color={ 13 129 84 }
+				color2={ 255 255 255 }
+
+				holy_site = raider_pagan
+
+				b_badon_keep = {
+				}
+				b_port_badon = {
+				}
+				b_syedra = {
+				}
+				b_carallia = {
+				}
+				b_orymna = {
+				}
+			}
+			c_bubon = {
+				color={ 18 186 121 }
+				color2={ 255 255 255 }
+
+
+				b_bubon = {
+				}
+				b_bubon_2 = {
+				}
+				b_bubon_3 = {
+				}
+			}
+			c_balbura = {
+				color={ 47 169 122 }
+				color2={ 255 255 255 }
+
+
+				b_balbura = {
+				}
+				b_balbura_2 = {
+				}
+				b_balbura_3 = {
+				}
+			}
+		}
+		d_santaruz = {
+			color={ 154 241 151 }
+			color2={ 255 255 255 }
+
+			capital=97
+
+			c_santaruz = {
+				color={ 154 241 151 }
+				color2={ 255 255 255 }
+
+
+				b_santaruz_castle = {
+				}
+				b_santaruz = {
+				}
+				b_isinda = {
+				}
+				b_selge = {
+				}
+			}
+			c_cyaneae = {
+				color={ 113 195 110 }
+				color2={ 255 255 255 }
+
+
+				b_fort_cyaneae = {
+				}
+				b_cyaneae = {
+				}
+				b_semnea = {
+				}
+			}
+		}
+		d_caelin = {
+			color={ 20 98 17 }
+			color2={ 255 255 255 }
+
+			capital=99
+
+			c_caelin = {
+				color={ 20 98 17 }
+				color2={ 255 255 255 }
+
+
+				b_caelin_castle = {
+				}
+				b_caelin = {
+				}
+				b_cotenna = {
+				}
+				b_etenna = {
+				}
+				b_casae = {
+				}
+			}
+			c_alta = {
+				color={ 32 123 28 }
+				color2={ 255 255 255 }
+
+
+				b_castle_alta = {
+				}
+				b_alta_village = {
+				}
+				b_ariassus = {
+				}
+				b_eudocias = {
+				}
+			}
+		}
+		d_khathelet = {
+			color={ 109 179 62 }
+			color2={ 255 255 255 }
+
+			capital=101
+
+			c_khathelet = {
+				color={ 109 179 62 }
+				color2={ 255 255 255 }
+
+
+				b_khathelet_castle = {
+				}
+				b_khathelet = {
+				}
+				b_dalisan = {
+				}
+				b_lyrbe = {
+				}
+			}
+			c_antiphellos = {
+				color={ 177 209 156 }
+				color2={ 255 255 255 }
+
+
+				b_antiphellos = {
+				}
+				b_antiphellos_2 = {
+				}
+				b_pednelissus = {
+				}
+			}
+		}
+		d_araphen = {
+			color={ 164 197 163 }
+			color2={ 255 255 255 }
+
+			capital=103
+
+			c_araphen = {
+				color={ 164 197 163 }
+				color2={ 255 255 255 }
+
+
+				b_castle_araphen = {
+				}
+				b_araphen = {
+				}
+				b_graizel = {
+				}
+				b_hadriane = {
+				}
+			}
+			c_limyra = {
+				color={ 112 142 111 }
+				color2={ 255 255 255 }
+
+
+				b_limyra = {
+				}
+				b_limyra_2 = {
+				}
+			}
+		}
+		d_tuscana = {
+			color={ 103 190 101 }
+			color2={ 255 255 255 }
+
+			capital=105
+
+			c_tuscana = {
+				color={ 103 190 101 }
+				color2={ 255 255 255 }
+
+
+				b_tuscana = {
+				}
+				b_tuscana_2 = {
+				}
+				b_tuscana_3 = {
+				}
+			}
+			c_rhodia = {
+				color={ 23 244 18 }
+				color2={ 255 255 255 }
+
+
+				b_rhodia = {
+				}
+				b_rhodia_2 = {
+				}
+			}
+		}
+		d_tania = {
+			color={ 4 86 1 }
+			color2={ 255 255 255 }
+
+			capital=107
+
+			c_tania = {
+				color={ 4 86 1 }
+				color2={ 255 255 255 }
+
+
+				b_castle_tania = {
+				}
+				b_tania = {
+				}
+				b_tania_2 = {
+				}
+			}
+			c_amelas = {
+				color={ 57 94 56 }
+				color2={ 255 255 255 }
+
+
+				b_amelas = {
+				}
+				b_amelas_2 = {
+				}
+			}
+		}
+		d_pherae = {
+			color={ 32 159 98 }
+			color2={ 255 255 255 }
+
+			capital=109
+
+			c_pherae = {
+				color={ 32 159 98 }
+				color2={ 255 255 255 }
+
+
+				b_castle_pherae = {
+				}
+				b_demre = {
+				}
+				b_kaya = {
+				}
+				b_isba = {
+				}
+				b_aspendus = {
+				}
+			}
+			c_phellus = {
+				color={ 34 175 107 }
+				color2={ 255 255 255 }
+
+
+				b_phellus = {
+				}
+				b_phellus_2 = {
+				}
+				b_phaselis = {
+				}
+			}
+			c_phestos = {
+				color={ 41 194 120 }
+				color2={ 255 255 255 }
+
+
+				b_phestos = {
+				}
+				b_phestos_2 = {
+				}
+				b_sedra = {
+				}
+			}
+		}
+		d_cornwell = {
+			color={ 139 197 38 }
+			color2={ 255 255 255 }
+
+			capital=112
+
+			c_cornwell = {
+				color={ 139 197 38 }
+				color2={ 255 255 255 }
+
+
+				b_cornwell = {
+				}
+				b_cornwell_2 = {
+				}
+				b_cornwell_3 = {
+				}
+				b_magydus = {
+				}
+			}
+			c_dias = {
+				color={ 183 226 109 }
+				color2={ 255 255 255 }
+
+
+				b_dias = {
+				}
+				b_dias_2 = {
+				}
+				b_dias_3 = {
+				}
+				b_pogla = {
+				}
+			}
+			c_telmessus = {
+				color={ 38 167 34 }
+				color2={ 255 255 255 }
+
+
+				b_telmessus = {
+				}
+				b_telmessus_2 = {
+				}
+				b_telmessus_3 = {
+				}
+				b_termessus = {
+				}
+			}
+			c_trebenna = {
+				color={ 6 112 3 }
+				color2={ 255 255 255 }
+
+
+				b_trebenna = {
+				}
+				b_trebenna_2 = {
+				}
+				b_trebenna_3 = {
+				}
+			}
+		}
+	}
+	k_nabata = {
+		color={ 10 255 80 }
+		color2={ 255 255 255 }
+
+		capital = 116
+		culture = nabatan
+
+		d_arcadia = {
+			color={ 78 233 191 }
+			color2={ 255 255 255 }
+
+			capital=116
+
+			c_arcadia = {
+				color={ 78 233 191 }
+				color2={ 255 255 255 }
+
+				holy_site = elibe_spirits_pagan
+				holy_site = anima
+				holy_site = dark
+
+				b_arcadia = {
+				}
+				b_arcadia_2 = {
+				}
+				b_archsages_refuge = {
+				}
+				b_water_temple = {
+				}
+				b_agriakona = {
+				}
+			}
+			c_gortynia = {
+				color={ 22 85 68 }
+				color2={ 255 255 255 }
+
+
+				b_gortynia = {
+				}
+				b_gortynia_2 = {
+				}
+				b_gortynia_3 = {
+				}
+			}
+			c_kynouria = {
+				color={ 140 211 192 }
+				color2={ 255 255 255 }
+
+
+				b_kynouria = {
+				}
+				b_kynouria_2 = {
+				}
+				b_kynouria_3 = {
+				}
+				b_ano_karyes = {
+				}
+			}
+			c_levidi = {
+				color={ 35 150 119 }
+				color2={ 255 255 255 }
+
+
+				b_levidi = {
+				}
+				b_levidi_2 = {
+				}
+				b_levidi_3 = {
+				}
+			}
+		}
+		d_mantineia = {
+			color={ 193 239 148 }
+			color2={ 255 255 255 }
+
+			capital=120
+
+			c_mantineia = {
+				color={ 193 239 148 }
+				color2={ 255 255 255 }
+
+
+				b_mantineia = {
+				}
+				b_mantineia_2 = {
+				}
+				b_dimitsana = {
+				}
+				b_elliniko = {
+				}
+				b_kaltezes = {
+				}
+			}
+			c_nestani = {
+				color={ 89 112 66 }
+				color2={ 255 255 255 }
+
+
+				b_nestani = {
+				}
+				b_nestani_2 = {
+				}
+				b_nestani_3 = {
+				}
+				b_mavriki = {
+				}
+			}
+			c_pikernis = {
+				color={ 161 194 129 }
+				color2={ 255 255 255 }
+
+
+				b_pikernis = {
+				}
+				b_pikernis_2 = {
+				}
+				b_pikernis_3 = {
+				}
+			}
+			c_kapsas = {
+				color={ 146 234 62 }
+				color2={ 255 255 255 }
+
+
+				b_kapsas = {
+				}
+				b_kapsas_2 = {
+				}
+				b_kapsas_3 = {
+				}
+			}
+		}
+		d_tegea = {
+			color={ 154 225 85 }
+			color2={ 255 255 255 }
+
+			capital=124
+
+			c_tegea = {
+				color={ 154 225 85 }
+				color2={ 255 255 255 }
+
+
+				b_tegea = {
+				}
+				b_tegea_2 = {
+				}
+				b_tegea_3 = {
+				}
+				b_chotoussa = {
+				}
+			}
+			c_sagkas = {
+				color={ 181 255 109 }
+				color2={ 255 255 255 }
+
+
+				b_sagkas = {
+				}
+				b_sagkas_2 = {
+				}
+				b_sagkas_3 = {
+				}
+			}
+			c_loukas = {
+				color={ 88 106 71 }
+				color2={ 255 255 255 }
+
+
+				b_loukas = {
+				}
+				b_loukas_2 = {
+				}
+			}
+		}
+		d_tyros = {
+			color={ 181 207 156 }
+			color2={ 255 255 255 }
+
+			capital=127
+
+			c_tyros = {
+				color={ 181 207 156 }
+				color2={ 255 255 255 }
+
+
+				b_tyros = {
+				}
+				b_tyros_2 = {
+				}
+				b_tyros_3 = {
+				}
+				b_falaisia = {
+				}
+				b_kokkoras = {
+				}
+			}
+			c_akovos = {
+				color={ 116 216 19 }
+				color2={ 255 255 255 }
+
+
+				b_akovos = {
+				}
+				b_akovos_2 = {
+				}
+				b_akovos_3 = {
+				}
+				b_evandro = {
+				}
+			}
+			c_rizes = {
+				color={ 115 135 95 }
+				color2={ 255 255 255 }
+
+
+				b_rizes = {
+				}
+				b_rizes_2 = {
+				}
+				b_rizes_3 = {
+				}
+			}
+		}
+		d_vytina = {
+			color={ 120 167 72 }
+			color2={ 255 255 255 }
+
+			capital=130
+
+			c_vytina = {
+				color={ 120 167 72 }
+				color2={ 255 255 255 }
+
+
+				b_vytina = {
+				}
+				b_vytina_2 = {
+				}
+				b_vytina_3 = {
+				}
+				b_tzivas = {
+				}
+			}
+			c_elati = {
+				color={ 76 117 34 }
+				color2={ 255 255 255 }
+
+
+				b_elati = {
+				}
+				b_elati_2 = {
+				}
+				b_elati_3 = {
+				}
+				b_palamari = {
+				}
+			}
+			c_lasta = {
+				color={ 175 239 112 }
+				color2={ 255 255 255 }
+
+
+				b_lasta = {
+				}
+				b_lasta_2 = {
+				}
+				b_lasta_3 = {
+				}
+			}
+		}
+	}
+	k_the_western_isles = {
+		color={ 233 158 51 }
+		color2={ 255 255 255 }
+
+		capital = 149
+		culture = western_islander
+
+		d_jutes = {
+			color={ 167 119 51 }
+			color2={ 255 255 255 }
+
+			capital=149
+
+			c_jutes = {
+				color={ 167 119 51 }
+				color2={ 255 255 255 }
+
+				holy_site = elimine_church
+				holy_site = elibe_spirits_pagan
+
+				b_castle_jutes = {
+				}
+				b_armads_shrine = {
+				}
+				b_jutes = {
+				}
+				b_leodis = {
+				}
+				b_durolitum = {
+				}
+				b_londinium = {
+				}
+			}
+			c_condate = {
+				color={ 214 141 38 }
+				color2={ 255 255 255 }
+
+
+				b_condate = {
+				}
+				b_condate_2 = {
+				}
+				b_condate_3 = {
+				}
+				b_curia = {
+				}
+				b_durocornovium = {
+				}
+			}
+			c_moridin = {
+				color={ 205 146 63 }
+				color2={ 255 255 255 }
+
+
+				b_moridin = {
+				}
+				b_moridin_2 = {
+				}
+				b_moridin_3 = {
+				}
+			}
+			c_segontium = {
+				color={ 219 173 106 }
+				color2={ 255 255 255 }
+
+
+				b_segontium = {
+				}
+				b_segontium_2 = {
+				}
+				b_segontium_3 = {
+				}
+				b_lagentium = {
+				}
+			}
+			c_dubris = {
+				color={ 106 70 18 }
+				color2={ 255 255 255 }
+
+
+				b_dubris = {
+				}
+				b_dubris_2 = {
+				}
+				b_dubris_3 = {
+				}
+			}
+		}
+		d_vectis = {
+			color={ 194 144 72 }
+			color2={ 255 255 255 }
+
+			capital=154
+
+			c_vectis = {
+				color={ 194 144 72 }
+				color2={ 255 255 255 }
+
+
+				b_vectis = {
+				}
+				b_vectis_2 = {
+				}
+				b_vectis_3 = {
+				}
+				b_durnovaria = {
+				}
+			}
+			c_lindinis = {
+				color={ 249 183 89 }
+				color2={ 255 255 255 }
+
+
+				b_lindinis = {
+				}
+				b_lindinis_2 = {
+				}
+				b_lindinis_3 = {
+				}
+			}
+			c_mamucium = {
+				color={ 235 187 118 }
+				color2={ 255 255 255 }
+
+
+				b_mamucium = {
+				}
+				b_mamucium_2 = {
+				}
+				b_mamucium_3 = {
+				}
+			}
+			c_pontes = {
+				color={ 236 159 50 }
+				color2={ 255 255 255 }
+
+
+				b_pontes = {
+				}
+				b_pontes_2 = {
+				}
+				b_pontes_3 = {
+				}
+			}
+			c_calcaria = {
+				color={ 183 127 48 }
+				color2={ 255 255 255 }
+
+
+				b_calcaria = {
+				}
+				b_calcaria_2 = {
+				}
+				b_calcaria_3 = {
+				}
+				b_lutonium = {
+				}
+			}
+		}
+		d_eburacum = {
+			color={ 185 114 13 }
+			color2={ 255 255 255 }
+
+			capital=159
+
+			c_eburacum = {
+				color={ 185 114 13 }
+				color2={ 255 255 255 }
+
+
+				b_eburacum = {
+				}
+				b_eburacum_2 = {
+				}
+				b_eburacum_3 = {
+				}
+				b_hortonium = {
+				}
+				b_ardotalia = {
+				}
+				b_concangis = {
+				}
+			}
+			c_armagh = {
+				color={ 175 113 25 }
+				color2={ 255 255 255 }
+
+
+				b_castle_armagh = {
+				}
+				b_armagh = {
+				}
+				b_letocetum = {
+				}
+				b_praetorium = {
+				}
+			}
+			c_lindum = {
+				color={ 209 162 94 }
+				color2={ 255 255 255 }
+
+
+				b_lindum = {
+				}
+				b_lindum_2 = {
+				}
+				b_lindum_3 = {
+				}
+			}
+			c_vinovia = {
+				color={ 198 123 16 }
+				color2={ 255 255 255 }
+
+
+				b_vinovia = {
+				}
+				b_vinovia_2 = {
+				}
+				b_vinovia_3 = {
+				}
+			}
+		}
+		d_coria = {
+			color={ 158 98 12 }
+			color2={ 255 255 255 }
+
+			capital=163
+
+			c_coria = {
+				color={ 158 98 12 }
+				color2={ 255 255 255 }
+
+
+				b_coria = {
+				}
+				b_coria_2 = {
+				}
+				b_lemanis = {
+				}
+				b_viroconium = {
+				}
+				b_vindolanda = {
+				}
+				b_anavio = {
+				}
+			}
+			c_mediolanum = {
+				color={ 216 171 107 }
+				color2={ 255 255 255 }
+
+
+				b_mediolanum = {
+				}
+				b_mediolanum_2 = {
+				}
+				b_mediolanum_3 = {
+				}
+			}
+			c_silurum = {
+				color={ 194 126 29 }
+				color2={ 255 255 255 }
+
+
+				b_silurum = {
+				}
+				b_silurum_2 = {
+				}
+				b_silurum_3 = {
+				}
+			}
+			c_salinae = {
+				color={ 165 120 56 }
+				color2={ 255 255 255 }
+
+
+				b_salinae = {
+				}
+				b_salinae_2 = {
+				}
+				b_salinae_3 = {
+				}
+				b_regulbium = {
+				}
+				b_vagniacae = {
+				}
+			}
+		}
+		d_caledonia = {
+			color={ 90 63 25 }
+			color2={ 255 255 255 }
+
+			capital=167
+
+			c_edina = {
+				color={ 90 63 25 }
+				color2={ 255 255 255 }
+
+
+				b_castle_edina = {
+				}
+				b_edina = {
+				}
+				b_luentinum = {
+				}
+				b_verulamium = {
+				}
+				b_sulloniacae = {
+				}
+			}
+			c_belgarum = {
+				color={ 237 187 116 }
+				color2={ 255 255 255 }
+
+
+				b_belgarum = {
+				}
+				b_belgarum_2 = {
+				}
+				b_belgarum_3 = {
+				}
+			}
+			c_caromago = {
+				color={ 90 57 11 }
+				color2={ 255 255 255 }
+
+
+				b_caromago = {
+				}
+				b_caromago_2 = {
+				}
+				b_caromago_3 = {
+				}
+			}
+			c_alauna = {
+				color={ 153 141 126 }
+				color2={ 255 255 255 }
+
+
+				b_alauna = {
+				}
+				b_alauna_2 = {
+				}
+				b_alauna_3 = {
+				}
+				b_clausentum = {
+				}
+			}
+		}
+		d_scotia = {
+			color={ 223 186 134 }
+			color2={ 255 255 255 }
+
+			capital=171
+
+			c_devana = {
+				color={ 223 186 134 }
+				color2={ 255 255 255 }
+
+
+				b_devana = {
+				}
+				b_devana_2 = {
+				}
+				b_devana_3 = {
+				}
+			}
+			c_graupius = {
+				color={ 201 146 73 }
+				color2={ 255 255 255 }
+
+
+				b_graupius = {
+				}
+				b_graupius_2 = {
+				}
+				b_graupius_3 = {
+				}
+			}
+			c_evidensca = {
+				color={ 108 93 73 }
+				color2={ 255 255 255 }
+
+
+				b_evidensca = {
+				}
+				b_evidensca_2 = {
+				}
+				b_evidensca_3 = {
+				}
+				b_cantiacorum = {
+				}
+				b_durovernum = {
+				}
+			}
+			c_trimontium = {
+				color={ 216 196 168 }
+				color2={ 255 255 255 }
+
+
+				b_trimontium = {
+				}
+				b_trimontium_2 = {
+				}
+				b_trimontium_3 = {
+				}
+			}
+		}
+		d_dia = {
+			color={ 216 138 28 }
+			color2={ 255 255 255 }
+
+			capital=175
+
+			c_dia = {
+				color={ 216 138 28 }
+				color2={ 255 255 255 }
+
+
+				b_dia = {
+				}
+				b_dia_2 = {
+				}
+				b_dia_3 = {
+				}
+				b_aquae_sulis = {
+				}
+			}
+			c_corinium = {
+				color={ 195 125 27 }
+				color2={ 255 255 255 }
+
+
+				b_corinium = {
+				}
+				b_corinium_2 = {
+				}
+				b_corinium_3 = {
+				}
+				b_garrianonum = {
+				}
+			}
+			c_danum = {
+				color={ 164 101 12 }
+				color2={ 255 255 255 }
+
+
+				b_danum = {
+				}
+				b_danum_2 = {
+				}
+				b_danum_3 = {
+				}
+			}
+		}
+		d_hibernia = {
+			color={ 237 178 94 }
+			color2={ 255 255 255 }
+
+			capital=178
+
+			c_navio = {
+				color={ 237 178 94 }
+				color2={ 255 255 255 }
+
+
+				b_navio = {
+				}
+				b_navio_2 = {
+				}
+			}
+			c_olicana = {
+				color={ 111 69 10 }
+				color2={ 255 255 255 }
+
+
+				b_olicana = {
+				}
+			}
+			c_isca = {
+				color={ 241 145 9 }
+				color2={ 255 255 255 }
+
+
+				b_isca = {
+				}
+				b_isca_2 = {
+				}
+			}
+		}
+	}
+	k_sacae = {
+		color={ 243 180 17 }
+		color2={ 255 255 255 }
+
+		capital = 188
+		culture = sacaean
+
+		d_bulgar = {
+			color={ 179 130 3 }
+			color2={ 255 255 255 }
+
+			capital=188
+
+			c_bulgar = {
+				color={ 179 130 3 }
+				color2={ 255 255 255 }
+
+				holy_site = divine_sky_pagan
+				holy_site = divine_sky_pagan_reformed
+
+				b_bulgar = {
+				}
+				b_bulgar_2 = {
+				}
+				b_bulgar_3 = {
+				}
+				b_hanons_arrow = {
+				}
+				b_plainsedge = {
+				}
+				b_hawkshall = {
+				}
+			}
+			c_mani = {
+				color={ 222 177 63 }
+				color2={ 255 255 255 }
+
+				holy_site = divine_sky_pagan
+				holy_site = divine_sky_pagan_reformed
+
+				b_mani = {
+				}
+				b_mani_katti_shrine = {
+				}
+				b_swiftarrow = {
+				}
+			}
+			c_balkh = {
+				color={ 236 192 80 }
+				color2={ 255 255 255 }
+
+
+				b_balkh = {
+				}
+				b_balkh_2 = {
+				}
+				b_balkh_3 = {
+				}
+			}
+			c_volga = {
+				color={ 177 135 28 }
+				color2={ 255 255 255 }
+
+
+				b_volga = {
+				}
+				b_volga_2 = {
+				}
+				b_volga_3 = {
+				}
+			}
+		}
+		d_gelonus = {
+			color={ 185 138 16 }
+			color2={ 255 255 255 }
+
+			capital=192
+
+			c_gelonus = {
+				color={ 185 138 16 }
+				color2={ 255 255 255 }
+
+
+				b_gelonus = {
+				}
+				b_gelonus_2 = {
+				}
+				b_gelonus_3 = {
+				}
+			}
+			c_sistan = {
+				color={ 187 159 87 }
+				color2={ 255 255 255 }
+
+
+				b_sistan = {
+				}
+				b_sistan_2 = {
+				}
+			}
+			c_saka = {
+				color={ 137 99 1 }
+				color2={ 255 255 255 }
+
+				holy_site = divine_sky_pagan
+				holy_site = divine_sky_pagan_reformed
+
+				b_saka = {
+				}
+				b_sol_katti_shrine = {
+				}
+				b_silverwolf = {
+				}
+			}
+		}
+		d_pamir = {
+			color={ 218 179 79 }
+			color2={ 255 255 255 }
+
+			capital=195
+
+			c_pamir = {
+				color={ 218 179 79 }
+				color2={ 255 255 255 }
+
+
+				b_pamir = {
+				}
+				b_pamir_2 = {
+				}
+			}
+			c_shan = {
+				color={ 159 126 39 }
+				color2={ 255 255 255 }
+
+
+				b_shan = {
+				}
+			}
+		}
+		d_media = {
+			color={ 141 111 31 }
+			color2={ 255 255 255 }
+
+			capital=197
+
+			c_media = {
+				color={ 141 111 31 }
+				color2={ 255 255 255 }
+
+
+				b_media = {
+				}
+				b_media_2 = {
+				}
+				b_media_3 = {
+				}
+			}
+			c_ecbatana = {
+				color={ 214 198 155 }
+				color2={ 255 255 255 }
+
+
+				b_ecbatana = {
+				}
+				b_ecbatana_2 = {
+				}
+			}
+			c_atropatene = {
+				color={ 164 138 69 }
+				color2={ 255 255 255 }
+
+
+				b_atropatene = {
+				}
+				b_atropatene_2 = {
+				}
+				b_atropatene_3 = {
+				}
+			}
+		}
+		d_talas = {
+			color={ 248 187 28 }
+			color2={ 255 255 255 }
+
+			capital=200
+
+			c_talas = {
+				color={ 248 187 28 }
+				color2={ 255 255 255 }
+
+				holy_site = divine_sky_pagan
+				holy_site = divine_sky_pagan_reformed
+
+				b_castle_talas = {
+				}
+				b_talas = {
+				}
+				b_taraz = {
+				}
+				b_zhizhi = {
+				}
+			}
+			c_naryn = {
+				color={ 243 206 108 }
+				color2={ 255 255 255 }
+
+
+				b_naryn = {
+				}
+				b_naryn_2 = {
+				}
+				b_naryn_3 = {
+				}
+			}
+			c_batken = {
+				color={ 201 169 85 }
+				color2={ 255 255 255 }
+
+
+				b_batken = {
+				}
+				b_batken_2 = {
+				}
+			}
+		}
+		d_tarim = {
+			color={ 183 157 88 }
+			color2={ 255 255 255 }
+
+			capital=203
+
+			c_tarim = {
+				color={ 183 157 88 }
+				color2={ 255 255 255 }
+
+
+				b_tarim = {
+				}
+				b_tarim_2 = {
+				}
+			}
+			c_kunlun = {
+				color={ 214 185 108 }
+				color2={ 255 255 255 }
+
+
+				b_kunlun = {
+				}
+				b_kunlun_2 = {
+				}
+			}
+			c_kashgar = {
+				color={ 210 167 54 }
+				color2={ 255 255 255 }
+
+
+				b_kashgar = {
+				}
+				b_kashgar_2 = {
+				}
+			}
+		}
 	}
 	k_etruria = {
 		color={ 150 80 170 }
 		color2={ 255 255 255 }
-		
-		capital = 206 # c_aquleia
+
+		capital = 206
 		culture = etrurian
-		
+
 		d_aquleia = {
-			color={ 96 21 70 }
+			color={ 86 31 65 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 210 province_id = 211 province_id = 212 province_id = 213 province_id = 214 province_id = 215 } }
-		#		}
-		#	}
-			capital = 206 # c_aquleia
-			
-			c_aquleia = { # 210
+
+			capital=206
+
+			c_aquleia = {
 				color={ 86 31 65 }
-				color2={ 255 255 255 }	
+				color2={ 255 255 255 }
+
 				holy_site = elimine_church
 				holy_site = elibe_spirits_pagan
 				holy_site = anima
-				
+
 				b_aquleia_palace = {
 				}
 				b_tower_of_the_saint = {
@@ -570,10 +2166,11 @@ e_elibe = {
 				b_aquelia_keep = {
 				}
 			}
-			c_berua = { # 211
+			c_berua = {
 				color={ 118 56 94 }
 				color2={ 255 255 255 }
-				
+
+
 				b_berua = {
 				}
 				b_berua_2 = {
@@ -582,24 +2179,12 @@ e_elibe = {
 				}
 				b_vicentia = {
 				}
-				b_vicenza = {
-				}
 			}
-			c_capeva = { # 214
-				color={ 166 81 133 }
-				color2={ 255 255 255 }
-				
-				b_capeva = {
-				}
-				b_capeva_2 = {
-				}
-				b_capeva_3 = {
-				}
-			}
-			c_cura = { # 212
+			c_cura = {
 				color={ 165 43 119 }
 				color2={ 255 255 255 }
-				
+
+
 				b_cura = {
 				}
 				b_cura_2 = {
@@ -609,19 +2194,11 @@ e_elibe = {
 				b_cora = {
 				}
 			}
-			c_orcla = { # 215
-				color={ 236 178 213 }
-				color2={ 255 255 255 }
-				
-				b_orcla = {
-				}
-				b_orcla_2 = {
-				}
-			}
-			c_vetluna = { # 213
+			c_vetluna = {
 				color={ 211 146 186 }
 				color2={ 255 255 255 }
-				
+
+
 				b_vetluna = {
 				}
 				b_vetluna_2 = {
@@ -633,23 +2210,40 @@ e_elibe = {
 				b_piana = {
 				}
 			}
+			c_capeva = {
+				color={ 166 81 133 }
+				color2={ 255 255 255 }
+
+
+				b_capeva = {
+				}
+				b_capeva_2 = {
+				}
+				b_capeva_3 = {
+				}
+			}
+			c_orcla = {
+				color={ 236 178 213 }
+				color2={ 255 255 255 }
+
+
+				b_orcla = {
+				}
+				b_orcla_2 = {
+				}
+			}
 		}
 		d_alesia = {
-			color={ 32 15 78 }
+			color={ 22 25 73 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 216 province_id = 217 province_id = 218 } }
-		#		}
-		#	}
-			capital = 212 # c_alesia
-			
-			c_alesia = { # 216
+
+			capital=212
+
+			c_alesia = {
 				color={ 22 25 73 }
 				color2={ 255 255 255 }
-				
+
+
 				b_castle_alesia = {
 				}
 				b_alesia = {
@@ -661,10 +2255,11 @@ e_elibe = {
 				b_nymfasia = {
 				}
 			}
-			c_fulginia = { # 217
+			c_fulginia = {
 				color={ 60 62 91 }
 				color2={ 255 255 255 }
-				
+
+
 				b_fulginia = {
 				}
 				b_fulginia_2 = {
@@ -672,10 +2267,11 @@ e_elibe = {
 				b_fulginia_3 = {
 				}
 			}
-			c_perusia = { # 218
+			c_perusia = {
 				color={ 107 115 225 }
 				color2={ 255 255 255 }
-				
+
+
 				b_perusia = {
 				}
 				b_perusia_2 = {
@@ -686,285 +2282,17 @@ e_elibe = {
 				}
 			}
 		}
-		d_arritim = {
-			color={ 177 201 237 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 243 province_id = 244 province_id = 245 province_id = 246 province_id = 247 } }
-		#		}
-		#	}
-			capital = 239 # c_arritim
-			
-			c_arritim = { # 243
-				color={ 187 191 242 }
-				color2={ 255 255 255 }
-				
-				b_arritim = {
-				}
-				b_arritim_2 = {
-				}
-				b_arritim_3 = {
-				}
-			}
-			c_bellona = { # 246
-				color={ 112 118 196 }
-				color2={ 255 255 255 }
-				
-				b_bellona = {
-				}
-				b_bellona_2 = {
-				}
-				b_bellona_3 = {
-				}
-			}
-			c_halethi = { # 244
-				color={ 16 29 198 }
-				color2={ 255 255 255 }
-				
-				b_halethi = {
-				}
-				b_halethi_2 = {
-				}
-				b_halethi_3 = {
-				}
-			}
-			c_herclena = { # 245
-				color={ 83 88 155 }
-				color2={ 255 255 255 }
-				
-				b_herclena = {
-				}
-				b_herclena_2 = {
-				}
-			}
-			c_velzna = { # 247
-				color={ 69 75 144 }
-				color2={ 255 255 255 }
-				
-				b_velzna = {
-				}
-				b_velzna_2 = {
-				}
-				b_velzna_3 = {
-				}
-			}
-		}
-		d_caerleon = {
-			color={ 16 6 149 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 223 province_id = 224 province_id = 225 } }
-		#		}
-		#	}
-			capital = 219 # c_caerleon
-			
-			c_caerleon = { # 223
-				color={ 6 16 144 }
-				color2={ 255 255 255 }
-				
-				b_caerleon = {
-				}
-				b_caerleon_2 = {
-				}
-				b_caerleon_3 = {
-				}
-				b_cerveteri = {
-				}
-				b_caere = {
-				}
-			}
-			c_agylla = { # 225
-				color={ 105 111 192 }
-				color2={ 255 255 255 }
-				
-				b_agylla = {
-				}
-				b_agylla_2 = {
-				}
-				b_agylla_3 = {
-				}
-				b_kisra = {
-				}
-			}
-			c_caisra = { # 224
-				color={ 9 21 188 }
-				color2={ 255 255 255 }
-				
-				b_caisra = {
-				}
-				b_caisra_2 = {
-				}
-				b_caisra_3 = {
-				}
-				b_atrebatum = {
-				}
-				b_ceri = {
-				}
-			}
-		}
-		d_clevsin = {
-			color={ 73 103 216 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 239 province_id = 240 province_id = 241 province_id = 242 } }
-		#		}
-		#	}
-			capital = 235 # c_clevsin
-			
-			c_clevsin = { # 239
-				color={ 83 93 221 }
-				color2={ 255 255 255 }
-				
-				b_clevsin = {
-				}
-				b_clevsin_2 = {
-				}
-				b_clevsin_3 = {
-				}
-				b_cleusina = {
-				}
-			}
-			c_cassina = { # 242
-				color={ 38 44 121 }
-				color2={ 255 255 255 }
-				
-				b_cassina = {
-				}
-				b_cassina_2 = {
-				}
-				b_cassina_3 = {
-				}
-			}
-			c_irna = { # 241
-				color={ 22 32 163 }
-				color2={ 255 255 255 }
-				
-				b_irna = {
-				}
-				b_irna_2 = {
-				}
-				b_irna_3 = {
-				}
-				b_salernum = {
-				}
-			}
-			c_manthra = { # 240
-				color={ 57 71 247 }
-				color2={ 255 255 255 }
-				
-				b_manthra = {
-				}
-				b_manthra_2 = {
-				}
-				b_manthra_3 = {
-				}
-				b_clevsi = {
-				}
-			}
-		}
-		d_felathri = {
-			color={ 106 132 214 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 234 province_id = 235 province_id = 236 province_id = 237 province_id = 238 } }
-		#		}
-		#	}
-			capital = 230 # c_felathri
-			
-			c_felathri = { # 234
-				color={ 116 122 219 }
-				color2={ 255 255 255 }
-				
-				b_felathri = {
-				}
-				b_felathri_2 = {
-				}
-				b_felathri_3 = {
-				}
-				b_harimne = {
-				}
-				b_perusna = {
-				}
-			}
-			c_capna = { # 237
-				color={ 99 107 231 }
-				color2={ 255 255 255 }
-				
-				b_capna = {
-				}
-				b_capna_2 = {
-				}
-				b_capna_3 = {
-				}
-				b_capena = {
-				}
-			}
-			c_liburna = { # 238
-				color={ 53 64 217 }
-				color2={ 255 255 255 }
-				
-				b_liburna = {
-				}
-				b_liburna_2 = {
-				}
-				b_liburna_3 = {
-				}
-			}
-			c_nucra = { # 235
-				color={ 7 12 93 }
-				color2={ 255 255 255 }
-				
-				b_nucra = {
-				}
-				b_nucra_2 = {
-				}
-				b_nucra_3 = {
-				}
-			}
-			c_velkha = { # 236
-				color={ 60 65 144 }
-				color2={ 255 255 255 }
-				
-				b_velkha = {
-				}
-				b_velkha_2 = {
-				}
-				b_velkha_3 = {
-				}
-				b_volcei = {
-				}
-				b_buccino = {
-				}
-			}
-		}
 		d_reglay = {
-			color={ 103 130 208 }
+			color={ 113 120 213 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 219 province_id = 220 province_id = 221 province_id = 222 } }
-		#		}
-		#	}
-			capital = 215 # c_reglay
-			
-			c_reglay = { # 219
+
+			capital=215
+
+			c_reglay = {
 				color={ 113 120 213 }
 				color2={ 255 255 255 }
-				
+
+
 				b_reglay = {
 				}
 				b_reglay_2 = {
@@ -976,21 +2304,11 @@ e_elibe = {
 				b_vatalu = {
 				}
 			}
-			c_colonnata = { # 222
-				color={ 129 137 240 }
-				color2={ 255 255 255 }
-				
-				b_colonnata = {
-				}
-				b_colonnata_2 = {
-				}
-				b_colonnata_3 = {
-				}
-			}
-			c_rasela = { # 220
+			c_rasela = {
 				color={ 55 64 190 }
 				color2={ 255 255 255 }
-				
+
+
 				b_rasela = {
 				}
 				b_rasela_2 = {
@@ -1000,10 +2318,11 @@ e_elibe = {
 				b_grosseto = {
 				}
 			}
-			c_russellae = { # 221
+			c_russellae = {
 				color={ 18 24 109 }
 				color2={ 255 255 255 }
-				
+
+
 				b_russellae = {
 				}
 				b_russellae_2 = {
@@ -1011,90 +2330,83 @@ e_elibe = {
 				b_russellae_3 = {
 				}
 			}
+			c_colonnata = {
+				color={ 129 137 240 }
+				color2={ 255 255 255 }
+
+
+				b_colonnata = {
+				}
+				b_colonnata_2 = {
+				}
+				b_colonnata_3 = {
+				}
+			}
 		}
-		d_siene = {
-			color={ 23 11 132 }
+		d_caerleon = {
+			color={ 6 16 144 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 230 province_id = 231 province_id = 232 province_id = 233 } }
-		#		}
-		#	}
-			capital = 226 # c_siene
-			
-			c_siene = { # 230
-				color={ 13 21 127 }
+
+			capital=219
+
+			c_caerleon = {
+				color={ 6 16 144 }
 				color2={ 255 255 255 }
-				
-				b_siene = {
+
+
+				b_caerleon = {
 				}
-				b_siene_2 = {
+				b_caerleon_2 = {
 				}
-				b_siene_3 = {
+				b_caerleon_3 = {
 				}
-				b_arreti = {
+				b_cerveteri = {
 				}
-				b_areuthes = {
+				b_caere = {
 				}
 			}
-			c_blera = { # 231
-				color={ 89 94 157 }
+			c_caisra = {
+				color={ 9 21 188 }
 				color2={ 255 255 255 }
-				
-				b_blera = {
+
+
+				b_caisra = {
 				}
-				b_blera_2 = {
+				b_caisra_2 = {
 				}
-				b_blera_3 = {
+				b_caisra_3 = {
 				}
-				b_flera = {
+				b_atrebatum = {
+				}
+				b_ceri = {
 				}
 			}
-			c_catuna = { # 233
-				color={ 84 91 187 }
+			c_agylla = {
+				color={ 105 111 192 }
 				color2={ 255 255 255 }
-				
-				b_catuna = {
+
+
+				b_agylla = {
 				}
-				b_catuna_2 = {
+				b_agylla_2 = {
 				}
-				b_catuna_3 = {
+				b_agylla_3 = {
 				}
-				b_scitonia = {
-				}
-				b_cetona = {
-				}
-			}
-			c_marturi = { # 232
-				color={ 165 170 238 }
-				color2={ 255 255 255 }
-				
-				b_marturi = {
-				}
-				b_marturi_2 = {
-				}
-				b_marturi_3 = {
+				b_kisra = {
 				}
 			}
 		}
 		d_tarchna = {
-			color={ 75 59 133 }
+			color={ 65 69 128 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 226 province_id = 227 province_id = 228 province_id = 229 } }
-		#		}
-		#	}
-			capital = 222 # c_tarchna
-			
-			c_tarchna = { # 226
+
+			capital=222
+
+			c_tarchna = {
 				color={ 65 69 128 }
 				color2={ 255 255 255 }
-				
+
+
 				b_tarchna = {
 				}
 				b_tarchna_2 = {
@@ -1108,19 +2420,11 @@ e_elibe = {
 				b_muralto = {
 				}
 			}
-			c_amina = { # 229
-				color={ 155 161 242 }
-				color2={ 255 255 255 }
-				
-				b_amina = {
-				}
-				b_amina_2 = {
-				}
-			}
-			c_bolsena = { # 227
+			c_bolsena = {
 				color={ 35 40 115 }
 				color2={ 255 255 255 }
-				
+
+
 				b_bolsena = {
 				}
 				b_bolsena_2 = {
@@ -1130,10 +2434,11 @@ e_elibe = {
 				b_chaire = {
 				}
 			}
-			c_satria = { # 228
+			c_satria = {
 				color={ 99 109 237 }
 				color2={ 255 255 255 }
-				
+
+
 				b_satria = {
 				}
 				b_satria_2 = {
@@ -1145,32 +2450,305 @@ e_elibe = {
 				b_calleva = {
 				}
 			}
+			c_amina = {
+				color={ 155 161 242 }
+				color2={ 255 255 255 }
+
+
+				b_amina = {
+				}
+				b_amina_2 = {
+				}
+			}
+		}
+		d_siene = {
+			color={ 13 21 127 }
+			color2={ 255 255 255 }
+
+			capital=226
+
+			c_siene = {
+				color={ 13 21 127 }
+				color2={ 255 255 255 }
+
+
+				b_siene = {
+				}
+				b_siene_2 = {
+				}
+				b_siene_3 = {
+				}
+				b_arreti = {
+				}
+				b_areuthes = {
+				}
+			}
+			c_blera = {
+				color={ 89 94 157 }
+				color2={ 255 255 255 }
+
+
+				b_blera = {
+				}
+				b_blera_2 = {
+				}
+				b_blera_3 = {
+				}
+				b_flera = {
+				}
+			}
+			c_marturi = {
+				color={ 165 170 238 }
+				color2={ 255 255 255 }
+
+
+				b_marturi = {
+				}
+				b_marturi_2 = {
+				}
+				b_marturi_3 = {
+				}
+			}
+			c_catuna = {
+				color={ 84 91 187 }
+				color2={ 255 255 255 }
+
+
+				b_catuna = {
+				}
+				b_catuna_2 = {
+				}
+				b_catuna_3 = {
+				}
+				b_scitonia = {
+				}
+				b_cetona = {
+				}
+			}
+		}
+		d_felathri = {
+			color={ 116 122 219 }
+			color2={ 255 255 255 }
+
+			capital=230
+
+			c_felathri = {
+				color={ 116 122 219 }
+				color2={ 255 255 255 }
+
+
+				b_felathri = {
+				}
+				b_felathri_2 = {
+				}
+				b_felathri_3 = {
+				}
+				b_harimne = {
+				}
+				b_perusna = {
+				}
+			}
+			c_nucra = {
+				color={ 7 12 93 }
+				color2={ 255 255 255 }
+
+
+				b_nucra = {
+				}
+				b_nucra_2 = {
+				}
+				b_nucra_3 = {
+				}
+			}
+			c_velkha = {
+				color={ 60 65 144 }
+				color2={ 255 255 255 }
+
+
+				b_velkha = {
+				}
+				b_velkha_2 = {
+				}
+				b_velkha_3 = {
+				}
+				b_volcei = {
+				}
+				b_buccino = {
+				}
+			}
+			c_capna = {
+				color={ 99 107 231 }
+				color2={ 255 255 255 }
+
+
+				b_capna = {
+				}
+				b_capna_2 = {
+				}
+				b_capna_3 = {
+				}
+				b_capena = {
+				}
+			}
+			c_liburna = {
+				color={ 53 64 217 }
+				color2={ 255 255 255 }
+
+
+				b_liburna = {
+				}
+				b_liburna_2 = {
+				}
+				b_liburna_3 = {
+				}
+			}
+		}
+		d_clevsin = {
+			color={ 83 93 221 }
+			color2={ 255 255 255 }
+
+			capital=235
+
+			c_clevsin = {
+				color={ 83 93 221 }
+				color2={ 255 255 255 }
+
+
+				b_clevsin = {
+				}
+				b_clevsin_2 = {
+				}
+				b_clevsin_3 = {
+				}
+				b_cleusina = {
+				}
+			}
+			c_manthra = {
+				color={ 57 71 247 }
+				color2={ 255 255 255 }
+
+
+				b_manthra = {
+				}
+				b_manthra_2 = {
+				}
+				b_manthra_3 = {
+				}
+				b_clevsi = {
+				}
+			}
+			c_irna = {
+				color={ 22 32 163 }
+				color2={ 255 255 255 }
+
+
+				b_irna = {
+				}
+				b_irna_2 = {
+				}
+				b_irna_3 = {
+				}
+				b_salernum = {
+				}
+			}
+			c_cassina = {
+				color={ 38 44 121 }
+				color2={ 255 255 255 }
+
+
+				b_cassina = {
+				}
+				b_cassina_2 = {
+				}
+				b_cassina_3 = {
+				}
+			}
+		}
+		d_arritim = {
+			color={ 187 191 242 }
+			color2={ 255 255 255 }
+
+			capital=239
+
+			c_arritim = {
+				color={ 187 191 242 }
+				color2={ 255 255 255 }
+
+
+				b_arritim = {
+				}
+				b_arritim_2 = {
+				}
+				b_arritim_3 = {
+				}
+			}
+			c_halethi = {
+				color={ 16 29 198 }
+				color2={ 255 255 255 }
+
+
+				b_halethi = {
+				}
+				b_halethi_2 = {
+				}
+				b_halethi_3 = {
+				}
+			}
+			c_herclena = {
+				color={ 83 88 155 }
+				color2={ 255 255 255 }
+
+
+				b_herclena = {
+				}
+				b_herclena_2 = {
+				}
+			}
+			c_bellona = {
+				color={ 112 118 196 }
+				color2={ 255 255 255 }
+
+
+				b_bellona = {
+				}
+				b_bellona_2 = {
+				}
+				b_bellona_3 = {
+				}
+			}
+			c_velzna = {
+				color={ 69 75 144 }
+				color2={ 255 255 255 }
+
+
+				b_velzna = {
+				}
+				b_velzna_2 = {
+				}
+				b_velzna_3 = {
+				}
+			}
 		}
 	}
 	k_ilia = {
-		color={ 110 110 160 }	
+		color={ 110 110 160 }
 		color2={ 255 255 255 }
-		
-		capital = 244 # c_edessa
+
+		capital = 244
 		culture = ilian
-		
+
 		d_edessa = {
-			color={ 217 237 237 }
+			color={ 227 227 242 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 248 province_id = 249 province_id = 250 province_id = 251 province_id = 252 } }
-		#		}
-		#	}
-			capital = 244 # c_edessa
-			
-			c_edessa = { # 248
+
+			capital=244
+
+			c_edessa = {
 				color={ 227 227 242 }
 				color2={ 255 255 255 }
-				holy_site = elimine_church		
-				
+
+				holy_site = elimine_church
+
 				b_castle_edessa = {
 				}
 				b_edessa = {
@@ -1184,10 +2762,11 @@ e_elibe = {
 				b_ilium = {
 				}
 			}
-			c_adma = { # 249
+			c_adma = {
 				color={ 161 161 168 }
 				color2={ 255 255 255 }
-				
+
+
 				b_adma = {
 				}
 				b_adma_2 = {
@@ -1195,21 +2774,11 @@ e_elibe = {
 				b_adma_3 = {
 				}
 			}
-			c_orhay = { # 251
-				color={ 87 87 117 }
-				color2={ 255 255 255 }
-				
-				b_orhay = {
-				}
-				b_orhay_2 = {
-				}
-				b_orhay_3 = {
-				}
-			}
-			c_pyrene = { # 250
+			c_pyrene = {
 				color={ 102 102 122 }
 				color2={ 255 255 255 }
-				
+
+
 				b_pyrene = {
 				}
 				b_pyrene_2 = {
@@ -1217,94 +2786,81 @@ e_elibe = {
 				b_pyrene_3 = {
 				}
 			}
-			c_riha = { # 252
+			c_orhay = {
+				color={ 87 87 117 }
+				color2={ 255 255 255 }
+
+
+				b_orhay = {
+				}
+				b_orhay_2 = {
+				}
+				b_orhay_3 = {
+				}
+			}
+			c_riha = {
 				color={ 137 137 155 }
 				color2={ 255 255 255 }
-				
+
+
 				b_riha = {
 				}
 				b_riha_2 = {
 				}
 			}
 		}
-		d_cardia = {
-			color={ 105 125 246 }
+		d_troas = {
+			color={ 110 110 133 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 276 province_id = 277 province_id = 278 province_id = 279 province_id = 280 } }
-		#		}
-		#	}
-			capital = 272 # c_cardia
-			
-			c_cardia = { # 276
-				color={ 115 115 251 }
+
+			capital=249
+
+			c_troas = {
+				color={ 110 110 133 }
 				color2={ 255 255 255 }
-				
-				b_cardia = {
+
+
+				b_troas = {
 				}
-				b_cardia_2 = {
+				b_troas_2 = {
 				}
-				b_cardia_3 = {
+				b_troas_3 = {
 				}
-				b_bilitio = {
+				b_taruisa = {
 				}
 			}
-			c_aisinia = { # 278
-				color={ 92 92 156 }
+			c_sigeia = {
+				color={ 109 109 219 }
 				color2={ 255 255 255 }
-				
-				b_aisinia = {
+
+
+				b_sigeia = {
 				}
-				b_aisinia_2 = {
-				}
-				b_aisinia_3 = {
+				b_sigeia_2 = {
 				}
 			}
-			c_cainua = { # 277
-				color={ 83 83 124 }
+			c_antigonia = {
+				color={ 73 73 123 }
 				color2={ 255 255 255 }
-				
-				b_cainua = {
+
+
+				b_antigonia = {
 				}
-				b_cainua_2 = {
-				}
-			}
-			c_phlera = { # 279
-				color={ 85 85 98 }
-				color2={ 255 255 255 }
-				
-				b_phlera = {
-				}
-			}
-			c_sabate = { # 280
-				color={ 66 66 84 }
-				color2={ 255 255 255 }
-				
-				b_sabate = {
-				}
-				b_sabate_2 = {
+				b_antigonia_2 = {
 				}
 			}
 		}
 		d_carrhae = {
-			color={ 110 130 180 }
+			color={ 120 120 185 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 255 province_id = 256 province_id = 258 province_id = 259 } }
-		#		}
-		#	}
-			capital = 252 # c_carrhae
-			
-			c_carrhae = { # 256
+
+			capital=252
+
+			c_carrhae = {
 				color={ 120 120 185 }
 				color2={ 255 255 255 }
-				
+
+
 				b_carrhae = {
 				}
 				b_carrhae_2 = {
@@ -1312,10 +2868,11 @@ e_elibe = {
 				b_carrhae_3 = {
 				}
 			}
-			c_melas = { # 257
+			c_melas = {
 				color={ 178 178 232 }
 				color2={ 255 255 255 }
-				
+
+
 				b_melas = {
 				}
 				b_melas_2 = {
@@ -1323,10 +2880,11 @@ e_elibe = {
 				b_melas_3 = {
 				}
 			}
-			c_ida = { # 258
+			c_ida = {
 				color={ 87 87 122 }
 				color2={ 255 255 255 }
-				
+
+
 				b_ida = {
 				}
 				b_ida_2 = {
@@ -1334,30 +2892,26 @@ e_elibe = {
 				b_ida_3 = {
 				}
 			}
-			c_aisarna = { # 259
+			c_aisarna = {
 				color={ 115 115 165 }
 				color2={ 255 255 255 }
-				
+
+
 				b_aisarna = {
 				}
 			}
 		}
 		d_cebrene = {
-			color={ 101 121 217 }
+			color={ 111 111 222 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 260 province_id = 261 province_id = 262 province_id = 263 province_id = 264 } }
-		#		}
-		#	}
-			capital = 256 # c_cebrene
-			
-			c_cebrene = { # 260
+
+			capital=256
+
+			c_cebrene = {
 				color={ 111 111 222 }
 				color2={ 255 255 255 }
-				
+
+
 				b_cebrene = {
 				}
 				b_cebrene_2 = {
@@ -1365,36 +2919,27 @@ e_elibe = {
 				b_cebrene_3 = {
 				}
 			}
-			c_hortia = { # 261
+			c_hortia = {
 				color={ 135 135 163 }
 				color2={ 255 255 255 }
-				
+
+
 				b_hortia = {
 				}
 			}
-			c_sabatia = { # 262
+			c_sabatia = {
 				color={ 52 52 82 }
 				color2={ 255 255 255 }
-				
+
+
 				b_sabatia = {
 				}
 			}
-			c_spina = { # 264
-				color={ 113 113 183 }
-				color2={ 255 255 255 }	
-				holy_site = dark	
-				
-				b_spina = {
-				}
-				b_spina_2 = {
-				}
-				b_spina_3 = {
-				}
-			}
-			c_vipena = { # 263
+			c_vipena = {
 				color={ 107 107 135 }
 				color2={ 255 255 255 }
-				
+
+
 				b_vipena = {
 				}
 				b_vipena_2 = {
@@ -1402,23 +2947,31 @@ e_elibe = {
 				b_vipena_3 = {
 				}
 			}
+			c_spina = {
+				color={ 113 113 183 }
+				color2={ 255 255 255 }
+
+				holy_site = dark
+
+				b_spina = {
+				}
+				b_spina_2 = {
+				}
+				b_spina_3 = {
+				}
+			}
 		}
 		d_neandreia = {
-			color={ 56 36 81 }
+			color={ 46 46 76 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 265 province_id = 266 province_id = 267 province_id = 268 province_id = 269 } }
-		#		}
-		#	}
-			capital = 261 # c_neandreia
-			
-			c_neandreia = { # 265
+
+			capital=261
+
+			c_neandreia = {
 				color={ 46 46 76 }
 				color2={ 255 255 255 }
-				
+
+
 				b_neandreia = {
 				}
 				b_neandreia_2 = {
@@ -1428,10 +2981,31 @@ e_elibe = {
 				b_samonion = {
 				}
 			}
-			c_anth = { # 268
+			c_kavi = {
+				color={ 92 92 139 }
+				color2={ 255 255 255 }
+
+
+				b_kavi = {
+				}
+				b_kavi_2 = {
+				}
+			}
+			c_mutina = {
+				color={ 138 138 150 }
+				color2={ 255 255 255 }
+
+
+				b_mutina = {
+				}
+				b_mutina_2 = {
+				}
+			}
+			c_anth = {
 				color={ 89 89 145 }
 				color2={ 255 255 255 }
-				
+
+
 				b_anth = {
 				}
 				b_anth_2 = {
@@ -1439,48 +3013,165 @@ e_elibe = {
 				b_anth_3 = {
 				}
 			}
-			c_clavna = { # 269
+			c_clavna = {
 				color={ 96 96 126 }
 				color2={ 255 255 255 }
-				
+
+
 				b_clavna = {
 				}
 			}
-			c_kavi = { # 266
-				color={ 92 92 139 }
+		}
+		d_sestos = {
+			color={ 110 110 159 }
+			color2={ 255 255 255 }
+
+			capital=266
+
+			c_sestos = {
+				color={ 110 110 159 }
 				color2={ 255 255 255 }
-				
-				b_kavi = {
+
+
+				b_sestos = {
 				}
-				b_kavi_2 = {
+				b_sestos_2 = {
+				}
+				b_sestos_3 = {
 				}
 			}
-			c_mutina = { # 267
-				color={ 138 138 150 }
+			c_arciun = {
+				color={ 79 79 110 }
 				color2={ 255 255 255 }
-				
-				b_mutina = {
+
+
+				b_arciun = {
 				}
-				b_mutina_2 = {
+				b_arciun_2 = {
+				}
+			}
+			c_carmna = {
+				color={ 54 54 89 }
+				color2={ 255 255 255 }
+
+
+				b_carmna = {
+				}
+				b_carmna_2 = {
+				}
+			}
+		}
+		d_sigeion = {
+			color={ 62 62 104 }
+			color2={ 255 255 255 }
+
+			capital=269
+
+			c_sigeion = {
+				color={ 62 62 104 }
+				color2={ 255 255 255 }
+
+
+				b_sigeion = {
+				}
+				b_sigeion_2 = {
+				}
+				b_sigeion_3 = {
+				}
+			}
+			c_atria = {
+				color={ 99 99 212 }
+				color2={ 255 255 255 }
+
+
+				b_atria = {
+				}
+				b_atria_2 = {
+				}
+			}
+			c_felsina = {
+				color={ 123 123 245 }
+				color2={ 255 255 255 }
+
+
+				b_felsina = {
+				}
+				b_felsina_2 = {
+				}
+			}
+		}
+		d_cardia = {
+			color={ 115 115 251 }
+			color2={ 255 255 255 }
+
+			capital=272
+
+			c_cardia = {
+				color={ 115 115 251 }
+				color2={ 255 255 255 }
+
+
+				b_cardia = {
+				}
+				b_cardia_2 = {
+				}
+				b_cardia_3 = {
+				}
+				b_bilitio = {
+				}
+			}
+			c_cainua = {
+				color={ 83 83 124 }
+				color2={ 255 255 255 }
+
+
+				b_cainua = {
+				}
+				b_cainua_2 = {
+				}
+			}
+			c_aisinia = {
+				color={ 92 92 156 }
+				color2={ 255 255 255 }
+
+
+				b_aisinia = {
+				}
+				b_aisinia_2 = {
+				}
+				b_aisinia_3 = {
+				}
+			}
+			c_phlera = {
+				color={ 85 85 98 }
+				color2={ 255 255 255 }
+
+
+				b_phlera = {
+				}
+			}
+			c_sabate = {
+				color={ 66 66 84 }
+				color2={ 255 255 255 }
+
+
+				b_sabate = {
+				}
+				b_sabate_2 = {
 				}
 			}
 		}
 		d_remy = {
-			color={ 145 165 245 }
+			color={ 155 155 250 }
 			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 281 province_id = 282 province_id = 283 province_id = 284 province_id = 285 } }
-		#		}
-		#	}
-			capital = 277 # c_remy
-			
-			c_remy = { # 281
+
+			capital=277
+
+			c_remy = {
 				color={ 155 155 250 }
 				color2={ 255 255 255 }
-				
+
+
 				b_castle_remy = {
 				}
 				b_remy = {
@@ -1492,35 +3183,19 @@ e_elibe = {
 				b_ratumna = {
 				}
 			}
-			c_arimna = { # 282
+			c_arimna = {
 				color={ 93 93 114 }
 				color2={ 255 255 255 }
-				
+
+
 				b_arimna = {
 				}
 			}
-			c_pathva = { # 284
-				color={ 170 170 207 }
-				color2={ 255 255 255 }
-				
-				b_pathva = {
-				}
-				b_pathva_2 = {
-				}
-			}
-			c_remnun = { # 285
-				color={ 137 137 219 }
-				color2={ 255 255 255 }
-				
-				b_remnun = {
-				}
-				b_remnun_2 = {
-				}
-			}
-			c_velera = { # 283
+			c_velera = {
 				color={ 109 109 185 }
 				color2={ 255 255 255 }
-				
+
+
 				b_velera = {
 				}
 				b_velera_2 = {
@@ -1528,2903 +3203,1017 @@ e_elibe = {
 				b_velera_3 = {
 				}
 			}
-		}
-		d_sestos = {
-			color={ 120 100 164 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 270 province_id = 271 province_id = 272 } }
-		#		}
-		#	}
-			capital = 266 # c_sestos
-			
-			c_sestos = { # 270
-				color={ 110 110 159 }
+			c_pathva = {
+				color={ 170 170 207 }
 				color2={ 255 255 255 }
-				
-				b_sestos = {
+
+
+				b_pathva = {
 				}
-				b_sestos_2 = {
-				}
-				b_sestos_3 = {
+				b_pathva_2 = {
 				}
 			}
-			c_arciun = { # 271
-				color={ 79 79 110 }
+			c_remnun = {
+				color={ 137 137 219 }
 				color2={ 255 255 255 }
-				
-				b_arciun = {
+
+
+				b_remnun = {
 				}
-				b_arciun_2 = {
-				}
-			}
-			c_carmna = { # 272
-				color={ 54 54 89 }
-				color2={ 255 255 255 }
-				
-				b_carmna = {
-				}
-				b_carmna_2 = {
-				}
-			}
-		}
-		d_sigeion = {
-			color={ 72 52 109 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 273 province_id = 274 province_id = 275 } }
-		#		}
-		#	}
-			capital = 269 # c_sigeion
-			
-			c_sigeion = { # 273
-				color={ 62 62 104 }
-				color2={ 255 255 255 }
-				
-				b_sigeion = {
-				}
-				b_sigeion_2 = {
-				}
-				b_sigeion_3 = {
-				}
-			}
-			c_atria = { # 274
-				color={ 99 99 212 }
-				color2={ 255 255 255 }
-				
-				b_atria = {
-				}
-				b_atria_2 = {
-				}
-			}
-			c_felsina = { # 275
-				color={ 123 123 245 }
-				color2={ 255 255 255 }
-				
-				b_felsina = {
-				}
-				b_felsina_2 = {
-				}
-			}
-		}
-		d_troas = {
-			color={ 120 100 138 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 253 province_id = 254 province_id = 257 } }
-		#		}
-		#	}
-			capital = 249 # c_troas
-			
-			c_troas = { # 253
-				color={ 110 110 133 }
-				color2={ 255 255 255 }
-				
-				b_troas = {
-				}
-				b_troas_2 = {
-				}
-				b_troas_3 = {
-				}
-				b_taruisa = {
-				}
-			}
-			c_sigeia = { # 254
-				color={ 109 109 219 }
-				color2={ 255 255 255 }
-				
-				b_sigeia = {
-				}
-				b_sigeia_2 = {
-				}
-			}
-			c_antigonia = { # 255
-				color={ 73 73 123 }
-				color2={ 255 255 255 }
-				
-				b_antigonia = {
-				}
-				b_antigonia_2 = {
+				b_remnun_2 = {
 				}
 			}
 		}
 	}
-	k_lycia = {
-		color={ 6 127 2 }
+}
+	k_valor = {
+		color={ 91 100 100 }
 		color2={ 255 255 255 }
-		
-		#short_name = yes
-		#name_tier = duke
-		capital = 78 # c_ostia
-		culture = lycian
-		
-		d_ostia = {
-			color={ 17 70 10 }
+
+		capital = 1
+		culture = bernese
+
+		d_valor = {
+			color={ 86 71 86 }
 			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 82 province_id = 83 province_id = 84 province_id = 85 province_id = 86 province_id = 87 province_id = 88 } }
-		#		}
-		#	}
-			capital = 78 # c_ostia
-			
-			c_ostia = { # 82
-				color={ 7 80 5 }
+
+			capital=1
+
+			c_virtus = {
+				color={ 76 81 81 }
 				color2={ 255 255 255 }
-				
-				b_castle_ostia = {
-				}
-				b_fort_kinship = {
-				}
-				b_ostia = {
-				}
-				b_ostia_2 = {
-				}
-				b_lysinia = {
-				}
-				b_attalea = {
-				}
-			}
-			c_aperlae = { # 87
-				color={ 61 136 58 }
-				color2={ 255 255 255 }
-				
-				b_aperlae = {
-				}
-				b_aperlae_2 = {
-				}
-				b_aperlae_3 = {
-				}
-			}
-			c_arycanda = { # 85
-				color={ 111 223 107 }
-				color2={ 255 255 255 }
-				
-				b_arycanda = {
-				}
-				b_arycanda_2 = {
-				}
-				b_arycanda_3 = {
-				}
-			}
-			c_durandal = { # 83
-				color={ 4 62 2 }
-				color2={ 255 255 255 }
-				holy_site = elimine_church
-				holy_site = elibe_spirits_pagan
-				
-				b_fort_roland = {
-				}
-				b_durandal_shrine = {
-				}
-				b_cremna = {
-				}
-			}
-			c_patara = { # 88
-				color={ 107 188 104 }
-				color2={ 255 255 255 }
-				
-				b_patara = {
-				}
-				b_patara_2 = {
-				}
-				b_patara_3 = {
-				}
-			}
-			c_ragna = { # 84
-				color={ 11 117 7 }
-				color2={ 255 255 255 }
-				
-				b_ragna_castle = {
-				}
-				b_ragna = {
-				}
-				b_ragna_2 = {
-				}
-				b_andeda = {
-				}
-			}
-			c_zem = { # 86
-				color={ 149 214 147 }
-				color2={ 255 255 255 }
-				
-				b_zem_castle = {
-				}
-				b_zem = {
-				}
-				b_zem_2 = {
-				}
-				b_lagina = {
-				}
-			}
-		}
-		d_araphen = {
-			color={ 154 207 158 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 107 province_id = 108 } }
-		#		}
-		#	}
-			capital = 103 # c_araphen
-			
-			c_araphen = { # 107
-				color={ 164 197 163 }
-				color2={ 255 255 255 }
-				
-				b_castle_araphen = {
-				}
-				b_araphen = {
-				}
-				b_graizel = {
-				}
-				b_hadriane = {
-				}
-			}
-			c_limyra = { # 108
-				color={ 112 142 111 }
-				color2={ 255 255 255 }
-				
-				b_limyra = {
-				}
-				b_limyra_2 = {
-				}
-			}
-		}
-		d_badon = {
-			color={ 23 119 89 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 98 province_id = 99 province_id = 100 } }
-		#		}
-		#	}
-			capital = 94 # c_badon
-			
-			c_badon = { # 98
-				color={ 13 129 84 }
-				color2={ 255 255 255 }
-				holy_site = raider_pagan	
-				
-				b_badon_keep = {
-				}
-				b_port_badon = {
-				}
-				b_syedra = {
-				}
-				b_carallia = {
-				}
-				b_orymna = {
-				}
-			}
-			c_balbura = { # 100
-				color={ 47 169 122 }
-				color2={ 255 255 255 }
-				
-				b_balbura = {
-				}
-				b_balbura_2 = {
-				}
-				b_balbura_3 = {
-				}
-			}
-			c_bubon = { # 99
-				color={ 18 186 121 }
-				color2={ 255 255 255 }
-				
-				b_bubon = {
-				}
-				b_bubon_2 = {
-				}
-				b_bubon_3 = {
-				}
-			}
-		}
-		d_caelin = {
-			color={ 30 88 22 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 103 province_id = 104 } }
-		#		}
-		#	}
-			capital = 99 # c_caelin
-			
-			c_caelin = { # 103
-				color={ 20 98 17 }
-				color2={ 255 255 255 }
-				
-				b_caelin_castle = {
-				}
-				b_caelin = {
-				}
-				b_cotenna = {
-				}
-				b_etenna = {
-				}
-				b_casae = {
-				}
-			}
-			c_alta = { # 104
-				color={ 32 123 28 }
-				color2={ 255 255 255 }
-				
-				b_castle_alta = {
-				}
-				b_alta_village = {
-				}
-				b_ariassus = {
-				}
-				b_eudocias = {
-				}
-			}
-		}
-		d_cornwell = {
-			color={ 149 187 43 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 116 province_id = 117 province_id = 118 province_id = 119 } }
-		#		}
-		#	}
-			capital = 112 # c_cornwell
-			
-			c_cornwell = { # 116
-				color={ 139 197 38 }
-				color2={ 255 255 255 }
-				
-				b_cornwell = {
-				}
-				b_cornwell_2 = {
-				}
-				b_cornwell_3 = {
-				}
-				b_magydus = {
-				}
-			}
-			c_dias = { # 117
-				color={ 183 226 109 }
-				color2={ 255 255 255 }
-				
-				b_dias = {
-				}
-				b_dias_2 = {
-				}
-				b_dias_3 = {
-				}
-				b_pogla = {
-				}
-			}
-			c_telmessus = { # 118
-				color={ 38 167 34 }
-				color2={ 255 255 255 }
-				
-				b_telmessus = {
-				}
-				b_telmessus_2 = {
-				}
-				b_telmessus_3 = {
-				}
-				b_termessus = {
-				}
-			}
-			c_trebenna = { # 119
-				color={ 6 112 3 }
-				color2={ 255 255 255 }
-				
-				b_trebenna = {
-				}
-				b_trebenna_2 = {
-				}
-				b_trebenna_3 = {
-				}
-			}
-		}
-		d_khathelet = {
-			color={ 119 169 67 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 105 province_id = 106 } }
-		#		}
-		#	}
-			capital = 101 # c_khathelet
-			
-			c_khathelet = { # 105
-				color={ 109 179 62 }
-				color2={ 255 255 255 }
-				
-				b_khathelet_castle = {
-				}
-				b_khathelet = {
-				}
-				b_dalisan = {
-				}
-				b_lyrbe = {
-				}
-			}
-			c_antiphellos = { # 106
-				color={ 177 209 156 }
-				color2={ 255 255 255 }
-				
-				b_antiphellos = {
-				}
-				b_antiphellos_2 = {
-				}
-				b_pednelissus = {
-				}
-			}
-		}
-		d_laus = {
-			color={ 122 206 40 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 95 province_id = 96 province_id = 97 } }
-		#		}
-		#	}
-			capital = 91 # c_laus
-			
-			c_laus = { # 95
-				color={ 112 216 35 }
-				color2={ 255 255 255 }
-				
-				b_castle_laus = {
-				}
-				b_laus = {
-				}
-				b_colbasa = {
-				}
-				b_perge = {
-				}
-			}
-			c_idebessus = { # 96
-				color={ 120 176 78 }
-				color2={ 255 255 255 }
-				
-				b_idebessus = {
-				}
-				b_idebessus_2 = {
-				}
-				b_idebessus_3 = {
-				}
-				b_sinda = {
-				}
-			}
-			c_tios = { # 97
-				color={ 67 142 12 }
-				color2={ 255 255 255 }
-				
-				b_tios = {
-				}
-				b_tios_2 = {
-				}
-				b_tios_3 = {
-				}
-			}
-		}
-		d_pherae = {
-			color={ 42 149 103 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 113 province_id = 114 province_id = 115 } }
-		#		}
-		#	}
-			capital = 109 # c_pherae
-			
-			c_pherae = { # 113
-				color={ 32 159 98 }
-				color2={ 255 255 255 }
-				
-				b_castle_pherae = {
-				}
-				b_demre = {
-				}
-				b_kaya = {
-				}
-				b_isba = {
-				}
-				b_aspendus = {
-				}
-			}
-			c_phellus = { # 114
-				color={ 34 175 107 }
-				color2={ 255 255 255 }
-				
-				b_phellus = {
-				}
-				b_phellus_2 = {
-				}
-				b_phaselis = {
-				}
-			}
-			c_phestos = { # 115
-				color={ 41 194 120 }
-				color2={ 255 255 255 }
-				
-				b_phestos = {
-				}
-				b_phestos_2 = {
-				}
-				b_sedra = {
-				}
-			}
-		}
-		d_ryerde = {
-			color={ 108 133 101 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 93 province_id = 94 } }
-		#		}
-		#	}
-			capital = 89 # c_ryerde
-			
-			c_ryerde = { # 93
-				color={ 98 143 96 }
-				color2={ 255 255 255 }
-				
-				b_ryerde = {
-				}
-				b_ryerde_2 = {
-				}
-				b_ryerde_3 = {
-				}
-			}
-			c_sidyma = { # 94
-				color={ 70 137 67 }
-				color2={ 255 255 255 }
-				
-				b_sidyma = {
-				}
-				b_sidyma_2 = {
-				}
-				b_sidyma_3 = {
-				}
-			}
-		}
-		d_santaruz = {
-			color={ 144 251 146 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 101 province_id = 102 } }
-		#		}
-		#	}
-			capital = 97 # c_santaruz
-			
-			c_santaruz = { # 101
-				color={ 154 241 151 }
-				color2={ 255 255 255 }
-				
-				b_santaruz_castle = {
-				}
-				b_santaruz = {
-				}
-				b_isinda = {
-				}
-				b_selge = {
-				}
-			}
-			c_cyaneae = { # 102
-				color={ 113 195 110 }
-				color2={ 255 255 255 }
-				
-				b_fort_cyaneae = {
-				}
-				b_cyaneae = {
-				}
-				b_semnea = {
-				}
-			}
-		}
-		d_tania = {
-			color={ 14 76 6 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 111 province_id = 112 } }
-		#		}
-		#	}
-			capital = 107 # c_tania
-			
-			c_tania = { # 111
-				color={ 4 86 1 }
-				color2={ 255 255 255 }
-				
-				b_castle_tania = {
-				}
-				b_tania = {
-				}
-				b_tania_2 = {
-				}
-			}
-			c_amelas = { # 112
-				color={ 57 94 56 }
-				color2={ 255 255 255 }
-				
-				b_amelas = {
-				}
-				b_amelas_2 = {
-				}
-			}
-		}
-		d_thria = {
-			color={ 148 220 151 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 89 province_id = 90 } }
-		#		}
-		#	}
-			capital = 85 # c_thria
-			
-			c_thria = { # 89
-				color={ 158 210 156 }
-				color2={ 255 255 255 }
-				
-				b_castle_thria = {
-				}
-				b_thria = {
-				}
-				b_thria_2 = {
-				}
-			}
-			c_myra = { # 90
-				color={ 137 238 133 }
-				color2={ 255 255 255 }
-				
-				b_myra = {
-				}
-				b_myra_2 = {
-				}
-				b_myra_3 = {
-				}
-			}
-		}
-		d_tuscana = {
-			color={ 93 200 96 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 109 province_id = 110 } }
-		#		}
-		#	}
-			capital = 105 # c_tuscana
-			
-			c_tuscana = { # 109
-				color={ 103 190 101 }
-				color2={ 255 255 255 }
-				
-				b_tuscana = {
-				}
-				b_tuscana_2 = {
-				}
-				b_tuscana_3 = {
-				}
-			}
-			c_rhodia = { # 110
-				color={ 23 244 18 }
-				color2={ 255 255 255 }
-				
-				b_rhodia = {
-				}
-				b_rhodia_2 = {
-				}
-			}
-		}
-		d_worde = {
-			color={ 33 206 21 }
-			color2={ 255 255 255 }
-			dynasty_title_names = no 
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 91 province_id = 92 } }
-		#		}
-		#	}
-			capital = 87 # c_worde
-			
-			c_worde = { # 91
-				color={ 23 216 16 }
-				color2={ 255 255 255 }
-				
-				b_castle_worde = {
-				}
-				b_worde = {
-				}
-				b_worde_2 = {
-				}
-			}
-			c_olst = { # 92
-				color={ 138 176 137 }
-				color2={ 255 255 255 }
-				
-				b_olst_castle = {
-				}
-				b_olst = {
-				}
-				b_olst_2 = {
-				}
-			}
-		}
-	}
-	k_nabata = {
-		#color={ 10 255 80 }
-		color = { 180 160 80 }
-		color2={ 255 255 255 }
-		
-		capital = 116 # c_arcadia
-		culture = nabatan
-		
-		d_arcadia = {
-			color={ 68 243 186 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 120 province_id = 121 province_id = 122 province_id = 123 } }
-		#		}
-		#	}
-			capital = 116 # c_arcadia
-			
-			c_arcadia = { # 120
-				color={ 78 233 191 }
-				color2={ 255 255 255 }		
-				holy_site = elibe_spirits_pagan
+
 				holy_site = anima
 				holy_site = dark
-				
-				b_arcadia = {
+
+				b_the_dragons_gate = {
 				}
-				b_arcadia_2 = {
+				b_virtus = {
 				}
-				b_archsages_refuge = {
+				b_pietas = {
 				}
-				b_water_temple = {
+				b_gravitas = {
 				}
-				b_agriakona = {
+				b_potestas = {
 				}
-			}
-			c_gortynia = { # 121
-				color={ 22 85 68 }
-				color2={ 255 255 255 }
-				
-				b_gortynia = {
-				}
-				b_gortynia_2 = {
-				}
-				b_gortynia_3 = {
+				b_auctoritas = {
 				}
 			}
-			c_kynouria = { # 122
-				color={ 140 211 192 }
+			c_temperantia = {
+				color={ 159 167 167 }
 				color2={ 255 255 255 }
-				
-				b_kynouria = {
+
+				holy_site = anima
+				holy_site = dark
+
+				b_temperantia = {
 				}
-				b_kynouria_2 = {
+				b_rottentree = {
 				}
-				b_kynouria_3 = {
+				b_prudentia = {
 				}
-				b_ano_karyes = {
+				b_clementia = {
 				}
 			}
-			c_levidi = { # 123
-				color={ 35 150 119 }
+			c_fortitudo = {
+				color={ 62 79 79 }
 				color2={ 255 255 255 }
-				
-				b_levidi = {
+
+
+				b_fortitudo = {
 				}
-				b_levidi_2 = {
+				b_fortitudo_2 = {
 				}
-				b_levidi_3 = {
+				b_fortitudo_3 = {
 				}
 			}
-		}
-		d_mantineia = {
-			color={ 183 249 143 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 124 province_id = 125 province_id = 126 province_id = 127 } }
-		#		}
-		#	}
-			capital = 120 # c_mantineia
-			
-			c_mantineia = { # 124
-				color={ 193 239 148 }
+			c_iustitia = {
+				color={ 90 103 103 }
 				color2={ 255 255 255 }
-				
-				b_mantineia = {
+
+
+				b_iustitia = {
 				}
-				b_mantineia_2 = {
+				b_iustitia_2 = {
 				}
-				b_dimitsana = {
+				b_iustitia_3 = {
 				}
-				b_elliniko = {
-				}
-				b_kaltezes = {
-				}
-			}
-			c_kapsas = { # 127
-				color={ 146 234 62 }
-				color2={ 255 255 255 }
-				
-				b_kapsas = {
-				}
-				b_kapsas_2 = {
-				}
-				b_kapsas_3 = {
-				}
-			}
-			c_nestani = { # 125
-				color={ 89 112 66 }
-				color2={ 255 255 255 }
-				
-				b_nestani = {
-				}
-				b_nestani_2 = {
-				}
-				b_nestani_3 = {
-				}
-				b_mavriki = {
-				}
-			}
-			c_pikernis = { # 126
-				color={ 161 194 129 }
-				color2={ 255 255 255 }
-				
-				b_pikernis = {
-				}
-				b_pikernis_2 = {
-				}
-				b_pikernis_3 = {
-				}
-			}
-		}
-		d_tegea = {
-			color={ 144 235 80 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 128 province_id = 129 province_id = 130 } }
-		#		}
-		#	}
-			capital = 124 # c_tegea
-			
-			c_tegea = { # 128
-				color={ 154 225 85 }
-				color2={ 255 255 255 }
-				
-				b_tegea = {
-				}
-				b_tegea_2 = {
-				}
-				b_tegea_3 = {
-				}
-				b_chotoussa = {
-				}
-			}
-			c_loukas = { # 130
-				color={ 88 106 71 }
-				color2={ 255 255 255 }
-				
-				b_loukas = {
-				}
-				b_loukas_2 = {
-				}
-			}
-			c_sagkas = { # 129
-				color={ 181 255 109 }
-				color2={ 255 255 255 }
-				
-				b_sagkas = {
-				}
-				b_sagkas_2 = {
-				}
-				b_sagkas_3 = {
-				}
-			}
-		}
-		d_tyros = {
-			color={ 171 217 151 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 131 province_id = 132 province_id = 133 } }
-		#		}
-		#	}
-			capital = 127 # c_tyros
-			
-			c_tyros = { # 131
-				color={ 181 207 156 }
-				color2={ 255 255 255 }
-				
-				b_tyros = {
-				}
-				b_tyros_2 = {
-				}
-				b_tyros_3 = {
-				}
-				b_falaisia = {
-				}
-				b_kokkoras = {
-				}
-			}
-			c_akovos = { # 132
-				color={ 116 216 19 }
-				color2={ 255 255 255 }
-				
-				b_akovos = {
-				}
-				b_akovos_2 = {
-				}
-				b_akovos_3 = {
-				}
-				b_evandro = {
-				}
-			}
-			c_rizes = { # 133
-				color={ 115 135 95 }
-				color2={ 255 255 255 }
-				
-				b_rizes = {
-				}
-				b_rizes_2 = {
-				}
-				b_rizes_3 = {
-				}
-			}
-		}
-		d_vytina = {
-			color={ 130 157 77 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 134 province_id = 135 province_id = 136 } }
-		#		}
-		#	}
-			capital = 130 # c_vytina
-			
-			c_vytina = { # 134
-				color={ 120 167 72 }
-				color2={ 255 255 255 }
-				
-				b_vytina = {
-				}
-				b_vytina_2 = {
-				}
-				b_vytina_3 = {
-				}
-				b_tzivas = {
-				}
-			}
-			c_elati = { # 135
-				color={ 76 117 34 }
-				color2={ 255 255 255 }
-				
-				b_elati = {
-				}
-				b_elati_2 = {
-				}
-				b_elati_3 = {
-				}
-				b_palamari = {
-				}
-			}
-			c_lasta = { # 136
-				color={ 175 239 112 }
-				color2={ 255 255 255 }
-				
-				b_lasta = {
-				}
-				b_lasta_2 = {
-				}
-				b_lasta_3 = {
+				b_dignitas = {
 				}
 			}
 		}
 	}
-	k_sacae = {
-		color={ 243 180 17 }
+	k_calach = {
+		color={ 165 255 250 }
 		color2={ 255 255 255 }
-		
-		capital = 188 # c_bulgar
-		culture = sacaean
-		
-		d_bulgar = {
-			color={ 189 120 8 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 192 province_id = 193 province_id = 194 province_id = 195 } }
-		#		}
-		#	}
-			capital = 188 # c_bulgar
-			
-			c_bulgar = { # 192
-				color={ 179 130 3 }
-				color2={ 255 255 255 }
-				holy_site = divine_sky_pagan
-				holy_site = divine_sky_pagan_reformed
-				
-				b_bulgar = {
-				}
-				b_bulgar_2 = {
-				}
-				b_bulgar_3 = {
-				}
-				b_hanons_arrow = {
-				}
-				b_plainsedge = {
-				}
-				b_hawkshall = {
-				}
-			}
-			c_balkh = { # 194
-				color={ 236 192 80 }
-				color2={ 255 255 255 }
-				
-				b_balkh = {
-				}
-				b_balkh_2 = {
-				}
-				b_balkh_3 = {
-				}
-			}
-			c_mani = { # 193
-				color={ 222 177 63 }
-				color2={ 255 255 255 }
-				holy_site = divine_sky_pagan
-				holy_site = divine_sky_pagan_reformed
-				
-				b_mani = {
-				}
-				b_mani_katti_shrine = {
-				}
-				b_swiftarrow = {
-				}
-			}
-			c_volga = { # 195
-				color={ 177 135 28 }
-				color2={ 255 255 255 }
-				
-				b_volga = {
-				}
-				b_volga_2 = {
-				}
-				b_volga_3 = {
-				}
-			}
-		}
-		d_gelonus = {
-			color={ 195 128 21 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 196 province_id = 197 province_id = 198 } }
-		#		}
-		#	}
-			capital = 192 # c_gelonus
-			
-			c_gelonus = { # 196
-				color={ 185 138 16 }
-				color2={ 255 255 255 }
-				
-				b_gelonus = {
-				}
-				b_gelonus_2 = {
-				}
-				b_gelonus_3 = {
-				}
-			}
-			c_saka = { # 198
-				color={ 137 99 1 }
-				color2={ 255 255 255 }
-				holy_site = divine_sky_pagan
-				holy_site = divine_sky_pagan_reformed
-				
-				b_saka = {
-				}
-				b_sol_katti_shrine = {
-				}
-				b_silverwolf = {
-				}
-			}
-			c_sistan = { # 197
-				color={ 187 159 87 }
-				color2={ 255 255 255 }
-				
-				b_sistan = {
-				}
-				b_sistan_2 = {
-				}
-			}
-		}
-		d_media = {
-			color={ 151 101 36 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 201 province_id = 202 province_id = 203 } }
-		#		}
-		#	}
-			capital = 197 # c_media
-			
-			c_media = { # 201
-				color={ 141 111 31 }
-				color2={ 255 255 255 }
-				
-				b_media = {
-				}
-				b_media_2 = {
-				}
-				b_media_3 = {
-				}
-			}
-			c_atropatene = { # 203
-				color={ 164 138 69 }
-				color2={ 255 255 255 }
-				
-				b_atropatene = {
-				}
-				b_atropatene_2 = {
-				}
-				b_atropatene_3 = {
-				}
-			}
-			c_ecbatana = { # 202
-				color={ 214 198 155 }
-				color2={ 255 255 255 }
-				
-				b_ecbatana = {
-				}
-				b_ecbatana_2 = {
-				}
-				b_ecbatana_3 = {
-				}
-			}
-		}
-		d_pamir = {
-			color={ 208 189 74 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 199 province_id = 200 } }
-		#		}
-		#	}
-			capital = 195 # c_pamir
-			
-			c_pamir = { # 199
-				color={ 218 179 79 }
-				color2={ 255 255 255 }
-				
-				b_pamir = {
-				}
-				b_pamir_2 = {
-				}
-				b_pamir_3 = {
-				}
-			}
-			c_shan = { # 200
-				color={ 159 126 39 }
-				color2={ 255 255 255 }
-				
-				b_shan = {
-				}
-			}
-		}
-		d_talas = {
-			color={ 238 197 23 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 204 province_id = 205 province_id = 206 } }
-		#		}
-		#	}
-			capital = 200 # c_talas
-			
-			c_talas = { # 204
-				color={ 248 187 28 }
-				color2={ 255 255 255 }
-				holy_site = divine_sky_pagan
-				holy_site = divine_sky_pagan_reformed
-				
-				b_castle_talas = {
-				}
-				b_talas = {
-				}
-				b_taraz = {
-				}
-				b_zhizhi = {
-				}
-			}
-			c_batken = { # 206
-				color={ 201 169 85 }
-				color2={ 255 255 255 }
-				
-				b_batken = {
-				}
-				b_batken_2 = {
-				}
-			}
-			c_naryn = { # 205
-				color={ 243 206 108 }
-				color2={ 255 255 255 }
-				
-				b_naryn = {
-				}
-				b_naryn_2 = {
-				}
-				b_naryn_3 = {
-				}
-			}
-		}
-		d_tarim = {
-			color={ 173 167 83 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 207 province_id = 208 province_id = 209 } }
-		#		}
-		#	}
-			capital = 203 # c_tarim
-			
-			c_tarim = { # 207
-				color={ 183 157 88 }
-				color2={ 255 255 255 }
-				
-				b_tarim = {
-				}
-				b_tarim_2 = {
-				}
-			}
-			c_kashgar = { # 209
-				color={ 210 167 54 }
-				color2={ 255 255 255 }
-				
-				b_kashgar = {
-				}
-				b_kashgar_2 = {
-				}
-			}
-			c_kunlun = { # 208
-				color={ 214 185 108 }
-				color2={ 255 255 255 }
-				
-				b_kunlun = {
-				}
-				b_kunlun_2 = {
-				}
-			}
-		}
-	}
-	k_the_western_isles = {
-		color={ 233 158 51 }	
-		color2={ 255 255 255 }
-		
-		capital = 149 # c_jutes
-		culture = western_islander
-		
-		d_jutes = {
-			color={ 177 109 56 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 153 province_id = 154 province_id = 155 province_id = 156 province_id = 157 } }
-		#		}
-		#	}
-			capital = 149 # c_jutes
-			
-			c_jutes = { # 153
-				color={ 167 119 51 }
-				color2={ 255 255 255 }
-				holy_site = elimine_church
-				holy_site = elibe_spirits_pagan	
-				
-				b_castle_jutes = {
-				}
-				b_armads_shrine = {
-				}
-				b_jutes = {
-				}
-				b_leodis = {
-				}
-				b_durolitum = {
-				}
-				b_londinium = {
-				}
-			}
-			c_condate = { # 154
-				color={ 214 141 38 }
-				color2={ 255 255 255 }
-				
-				b_condate = {
-				}
-				b_condate_2 = {
-				}
-				b_condate_3 = {
-				}
-				b_curia = {
-				}
-				b_durocornovium = {
-				}
-			}
-			c_dubris = { # 157
-				color={ 106 70 18 }
-				color2={ 255 255 255 }
-				
-				b_dubris = {
-				}
-				b_dubris_2 = {
-				}
-				b_dubris_3 = {
-				}
-			}
-			c_moridin = { # 155
-				color={ 205 146 63 }
-				color2={ 255 255 255 }
-				
-				b_moridin = {
-				}
-				b_moridin_2 = {
-				}
-				b_moridin_3 = {
-				}
-			}
-			c_segontium = { # 156
-				color={ 219 173 106 }
-				color2={ 255 255 255 }
-				
-				b_segontium = {
-				}
-				b_segontium_2 = {
-				}
-				b_segontium_3 = {
-				}
-				b_lagentium = {
-				}
-			}
-		}
-		d_caledonia = {
-			color={ 100 53 30 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 171 province_id = 172 province_id = 173 province_id = 174 } }
-		#		}
-		#	}
-			capital = 167 # c_edina
-			
-			c_edina = { # 171
-				color={ 90 63 25 }
-				color2={ 255 255 255 }
-				
-				b_castle_edina = {
-				}
-				b_edina = {
-				}
-				b_luentinum = {
-				}
-				b_verulamium = {
-				}
-				b_sulloniacae = {
-				}
-			}
-			c_alauna = { # 174
-				color={ 153 141 126 }
-				color2={ 255 255 255 }
-				
-				b_alauna = {
-				}
-				b_alauna_2 = {
-				}
-				b_alauna_3 = {
-				}
-				b_clausentum = {
-				}
-			}
-			c_belgarum = { # 172
-				color={ 237 187 116 }
-				color2={ 255 255 255 }
-				
-				b_belgarum = {
-				}
-				b_belgarum_2 = {
-				}
-				b_belgarum_3 = {
-				}
-			}
-			c_caromago = { # 173
-				color={ 90 57 11 }
-				color2={ 255 255 255 }
-				
-				b_caromago = {
-				}
-				b_caromago_2 = {
-				}
-				b_caromago_3 = {
-				}
-			}
-		}
-		d_coria = {
-			color={ 168 88 17 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 167 province_id = 168 province_id = 169 province_id = 170 } }
-		#		}
-		#	}
-			capital = 163 # c_coria
-			
-			c_coria = { # 167
-				color={ 158 98 12 }
-				color2={ 255 255 255 }
-				
-				b_coria = {
-				}
-				b_coria_2 = {
-				}
-				b_lemanis = {
-				}
-				b_viroconium = {
-				}
-				b_vindolanda = {
-				}
-				b_anavio = {
-				}
-			}
-			c_mediolanum = { # 168
-				color={ 216 171 107 }
-				color2={ 255 255 255 }
-				
-				b_mediolanum = {
-				}
-				b_mediolanum_2 = {
-				}
-				b_mediolanum_3 = {
-				}
-			}
-			c_salinae = { # 170
-				color={ 165 120 56 }
-				color2={ 255 255 255 }
-				
-				b_salinae = {
-				}
-				b_salinae_2 = {
-				}
-				b_salinae_3 = {
-				}
-				b_regulbium = {
-				}
-				b_vagniacae = {
-				}
-			}
-			c_silurum = { # 169
-				color={ 194 126 29 }
-				color2={ 255 255 255 }
-				
-				b_silurum = {
-				}
-				b_silurum_2 = {
-				}
-				b_silurum_3 = {
-				}
-			}
-		}
-		d_dia = {
-			color={ 226 128 33 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 179 province_id = 180 province_id = 181 } }
-		#		}
-		#	}
-			capital = 175 # c_dia
-			
-			c_dia = { # 179
-				color={ 216 138 28 }
-				color2={ 255 255 255 }
-				
-				b_dia = {
-				}
-				b_dia_2 = {
-				}
-				b_dia_3 = {
-				}
-				b_aquae_sulis = {
-				}
-			}
-			c_corinium = { # 180
-				color={ 195 125 27 }
-				color2={ 255 255 255 }
-				
-				b_corinium = {
-				}
-				b_corinium_2 = {
-				}
-				b_corinium_3 = {
-				}
-				b_garrianonum = {
-				}
-			}
-			c_danum = { # 181
-				color={ 164 101 12 }
-				color2={ 255 255 255 }
-				
-				b_danum = {
-				}
-				b_danum_2 = {
-				}
-				b_danum_3 = {
-				}
-			}
-		}
-		d_eburacum = {
-			color={ 195 104 18 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 163 province_id = 164 province_id = 165 province_id = 166 } }
-		#		}
-		#	}
-			capital = 159 # c_eburacum
-			
-			c_eburacum = { # 163
-				color={ 185 114 13 }
-				color2={ 255 255 255 }
-				
-				b_eburacum = {
-				}
-				b_eburacum_2 = {
-				}
-				b_eburacum_3 = {
-				}
-				b_hortonium = {
-				}
-				b_ardotalia = {
-				}
-				b_concangis = {
-				}
-			}
-			c_armagh = { # 164
-				color={ 175 113 25 }
-				color2={ 255 255 255 }
-				
-				b_castle_armagh = {
-				}
-				b_armagh = {
-				}
-				b_letocetum = {
-				}
-				b_praetorium = {
-				}
-			}
-			c_lindum = { # 165
-				color={ 209 162 94 }
-				color2={ 255 255 255 }
-				
-				b_lindum = {
-				}
-				b_lindum_2 = {
-				}
-				b_lindum_3 = {
-				}
-			}
-			c_vinovia = { # 166
-				color={ 198 123 16 }
-				color2={ 255 255 255 }
-				
-				b_vinovia = {
-				}
-				b_vinovia_2 = {
-				}
-				b_vinovia_3 = {
-				}
-			}
-		}
-		d_hibernia = {
-			color={ 227 188 89 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 182 province_id = 183 province_id = 184 } }
-		#		}
-		#	}
-			capital = 178 # c_navio
-			
-			c_navio = { # 182
-				color={ 237 178 94 }
-				color2={ 255 255 255 }
-				
-				b_navio = {
-				}
-				b_navio_2 = {
-				}
-			}
-			c_isca = { # 184
-				color={ 241 145 9 }
-				color2={ 255 255 255 }
-				
-				b_isca = {
-				}
-				b_isca_2 = {
-				}
-			}
-			c_olicana = { # 183
-				color={ 111 69 10 }
-				color2={ 255 255 255 }
-				
-				b_olicana = {
-				}
-			}
-		}
-		d_scotia = {
-			color={ 213 196 129 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 175 province_id = 176 province_id = 177 province_id = 178 } }
-		#		}
-		#	}
-			capital = 171 # c_devana
-			
-			c_devana = { # 175
-				color={ 223 186 134 }
-				color2={ 255 255 255 }
-				
-				b_devana = {
-				}
-				b_devana_2 = {
-				}
-				b_devana_3 = {
-				}
-			}
-			c_evidensca = { # 177
-				color={ 108 93 73 }
-				color2={ 255 255 255 }
-				
-				b_evidensca = {
-				}
-				b_evidensca_2 = {
-				}
-				b_evidensca_3 = {
-				}
-				b_cantiacorum = {
-				}
-				b_durovernum = {
-				}
-			}
-			c_graupius = { # 176
-				color={ 201 146 73 }
-				color2={ 255 255 255 }
-				
-				b_graupius = {
-				}
-				b_graupius_2 = {
-				}
-				b_graupius_3 = {
-				}
-			}
-			c_trimontium = { # 178
-				color={ 216 196 168 }
-				color2={ 255 255 255 }
-				
-				b_trimontium = {
-				}
-				b_trimontium_2 = {
-				}
-				b_trimontium_3 = {
-				}
-			}
-		}
-		d_vectis = {
-			color={ 184 154 67 }
-			color2={ 255 255 255 }
-			
-		#	allow = {
-		#		OR = {
-		#			lower_tier_than = KING
-		#			any_demesne_province = { OR = { province_id = 158 province_id = 159 province_id = 160 province_id = 161 province_id = 162 } }
-		#		}
-		#	}
-			capital = 154 # c_vectis
-			
-			c_vectis = { # 158
-				color={ 194 144 72 }
-				color2={ 255 255 255 }
-				
-				b_vectis = {
-				}
-				b_vectis_2 = {
-				}
-				b_vectis_3 = {
-				}
-				b_durnovaria = {
-				}
-			}
-			c_calcaria = { # 162
-				color={ 183 127 48 }
-				color2={ 255 255 255 }
-				
-				b_calcaria = {
-				}
-				b_calcaria_2 = {
-				}
-				b_calcaria_3 = {
-				}
-				b_lutonium = {
-				}
-			}
-			c_lindinis = { # 159
-				color={ 249 183 89 }
-				color2={ 255 255 255 }
-				
-				b_lindinis = {
-				}
-				b_lindinis_2 = {
-				}
-				b_lindinis_3 = {
-				}
-			}
-			c_mamucium = { # 160
-				color={ 235 187 118 }
-				color2={ 255 255 255 }
-				
-				b_mamucium = {
-				}
-				b_mamucium_2 = {
-				}
-				b_mamucium_3 = {
-				}
-			}
-			c_pontes = { # 161
-				color={ 236 159 50 }
-				color2={ 255 255 255 }
-				
-				b_pontes = {
-				}
-				b_pontes_2 = {
-				}
-				b_pontes_3 = {
-				}
-			}
-		}
-	}
-}
-k_calach = {
-	color={ 165 255 250 }
-	color2={ 255 255 255 }
-	
-	capital = 36 # c_calach
-	culture = bernese
-	
-	d_calach = {
-		color={ 116 86 113 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 36 province_id = 37 province_id = 38 province_id = 39 province_id = 40 province_id = 41 } }
-	#		}
-	#	}
-		capital = 36 # c_calach
-		
-		c_calach = { # 36
+
+		capital = 36
+		culture = bernese
+
+		d_calach = {
 			color={ 106 96 108 }
 			color2={ 255 255 255 }
-			
-			b_calach = {
+
+			capital=36
+
+			c_calach = {
+				color={ 106 96 108 }
+				color2={ 255 255 255 }
+
+
+				b_calach = {
+				}
+				b_dragon_sanctuary = {
+				}
+				b_ticino = {
+				}
+				b_wohlen = {
+				}
 			}
-			b_dragon_sanctuary = {
+			c_marbach = {
+				color={ 119 139 139 }
+				color2={ 255 255 255 }
+
+
+				b_marbach = {
+				}
+				b_saints_refuge = {
+				}
+				b_marbach_2 = {
+				}
 			}
-			b_ticino = {
+			c_buron = {
+				color={ 84 89 89 }
+				color2={ 255 255 255 }
+
+
+				b_buron = {
+				}
+				b_buron_2 = {
+				}
 			}
-			b_wohlen = {
-			}
-		}
-		c_buron = { # 38
-			color={ 84 89 89 }
-			color2={ 255 255 255 }
-			
-			b_buron = {
-			}
-			b_buron_2 = {
-			}
-		}
-		c_marbach = { # 37
-			color={ 119 139 139 }
-			color2={ 255 255 255 }
-			
-			b_marbach = {
-			}
-			b_saints_refuge = {
-			}
-			b_marbach_2 = {
-			}
-		}
-		c_regia = { # 41
-			color={ 130 120 132 }
-			color2={ 255 255 255 }
-			
-			b_regia = {
-			}
-		}
-	}
-	d_arles = {
-		color={ 131 144 129 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 62 province_id = 63 province_id = 64 } }
-	#		}
-	#	}
-		capital = 59 # c_arles
-		
-		c_arles = { # 62
-			color={ 141 134 134 }
-			color2={ 255 255 255 }
-			
-			b_arles = {
-			}
-			b_arles_2 = {
+			c_regia = {
+				color={ 130 120 132 }
+				color2={ 255 255 255 }
+
+
+				b_regia = {
+				}
 			}
 		}
-		c_birseck = { # 64
-			color={ 183 174 174 }
-			color2={ 255 255 255 }
-			
-			b_birseck = {
-			}
-		}
-		c_itingen = { # 63
-			color={ 88 83 83 }
-			color2={ 255 255 255 }
-			
-			b_itingen = {
-			}
-		}
-	}
-	d_gallen = {
-		color={ 113 157 142 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 46 province_id = 47 province_id = 48 } }
-	#		}
-	#	}
-		capital = 44 # c_gallen
-		
-		c_gallen = { # 46
-			color={ 123 147 147 }
-			color2={ 255 255 255 }
-			
-			b_gallen = {
-			}
-			b_gallen_2 = {
-			}
-			b_gallen_3 = {
-			}
-			b_geltwil = {
-			}
-		}
-		c_amden = { # 48
-			color={ 128 144 144 }
-			color2={ 255 255 255 }
-			
-			b_amden = {
-			}
-			b_amden_2 = {
-			}
-			b_amden_3 = {
-			}
-		}
-		c_balgach = { # 47
-			color={ 93 108 108 }
-			color2={ 255 255 255 }
-			
-			b_balgach = {
-			}
-			b_balgach_2 = {
-			}
-			b_balgach_3 = {
-			}
-		}
-	}
-	d_jura = {
-		color={ 197 226 211 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 49 province_id = 50 province_id = 51 province_id = 52 } }
-	#		}
-	#	}
-		capital = 47 # c_jura
-		
-		c_jura = { # 49
-			color={ 207 216 216 }
-			color2={ 255 255 255 }
-			
-			b_jura = {
-			}
-			b_jura_2 = {
-			}
-		}
-		c_bonfol = { # 51
-			color={ 168 178 178 }
-			color2={ 255 255 255 }
-			
-			b_bonfol = {
-			}
-			b_bonfol_2 = {
-			}
-		}
-		c_cornol = { # 50
-			color={ 144 152 152 }
-			color2={ 255 255 255 }
-			
-			b_cornol = {
-			}
-			b_cornol_2 = {
-			}
-		}
-		c_yens = { # 52
-			color={ 159 168 168 }
-			color2={ 255 255 255 }
-			
-			b_yens = {
-			}
-			b_yens_2 = {
-			}
-		}
-	}
-	d_lucerne = {
-		color={ 138 156 141 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 65 province_id = 66 province_id = 67 province_id = 68 } }
-	#		}
-	#	}
-		capital = 62 # c_lucerne
-		
-		c_lucerne = { # 65
-			color={ 148 146 146 }
-			color2={ 255 255 255 }
-			
-			b_lucerne = {
-			}
-			b_lucerne_2 = {
-			}
-			b_vaulion = {
-			}
-			b_lugano = {
-			}
-		}
-		c_ascona = { # 66
-			color={ 169 169 169 }
-			color2={ 255 255 255 }
-			
-			b_ascona = {
-			}
-			b_ascona_2 = {
-			}
-		}
-		c_cevio = { # 68
-			color={ 115 111 111 }
-			color2={ 255 255 255 }
-			
-			b_cevio = {
-			}
-		}
-	}
-	d_sarnen = {
-		color={ 119 115 130 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 53 province_id = 54 province_id = 55 province_id = 56 } }
-	#		}
-	#	}
-		capital = 51 # c_sarnen
-		
-		c_sarnen = { # 53
-			color={ 109 125 125 }
-			color2={ 255 255 255 }
-			
-			b_sarnen = {
-			}
-			b_sarnen_2 = {
-			}
-			b_sarnen_3 = {
-			}
-		}
-		c_hori = { # 54
-			color={ 150 165 165 }
-			color2={ 255 255 255 }
-			
-			b_hori = {
-			}
-			b_hori_2 = {
-			}
-			b_hori_3 = {
-			}
-		}
-		c_meilen = { # 55
-			color={ 112 115 115 }
-			color2={ 255 255 255 }
-			
-			b_meilen = {
-			}
-			b_meilen_2 = {
-			}
-			b_meilen_3 = {
-			}
-		}
-		c_rorbas = { # 56
-			color={ 68 72 72 }
-			color2={ 255 255 255 }
-			
-			b_rorbas = {
-			}
-			b_rorbas_2 = {
-			}
-			b_rorbas_3 = {
-			}
-		}
-	}
-	d_sion = {
-		color={ 153 187 172 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 42 province_id = 43 province_id = 44 province_id = 45 } }
-	#		}
-	#	}
-		capital = 40 # c_sion
-		
-		c_sion = { # 42
+		d_sion = {
 			color={ 163 177 177 }
 			color2={ 255 255 255 }
-			
-			b_sion = {
+
+			capital=40
+
+			c_sion = {
+				color={ 163 177 177 }
+				color2={ 255 255 255 }
+
+
+				b_sion = {
+				}
+				b_sion_2 = {
+				}
+				b_sion_3 = {
+				}
 			}
-			b_sion_2 = {
+			c_remigen = {
+				color={ 112 122 122 }
+				color2={ 255 255 255 }
+
+
+				b_remigen = {
+				}
+				b_remigen_2 = {
+				}
+				b_remigen_3 = {
+				}
+				b_emmen = {
+				}
 			}
-			b_sion_3 = {
+			c_kaisten = {
+				color={ 56 64 64 }
+				color2={ 255 255 255 }
+
+
+				b_kaisten = {
+				}
+				b_kaisten_2 = {
+				}
+				b_nebikon = {
+				}
+			}
+			c_muhen = {
+				color={ 50 78 78 }
+				color2={ 255 255 255 }
+
+
+				b_muhen = {
+				}
+				b_muhen_2 = {
+				}
 			}
 		}
-		c_kaisten = { # 44
-			color={ 56 64 64 }
+		d_gallen = {
+			color={ 123 147 147 }
 			color2={ 255 255 255 }
-			
-			b_kaisten = {
+
+			capital=44
+
+			c_gallen = {
+				color={ 123 147 147 }
+				color2={ 255 255 255 }
+
+
+				b_gallen = {
+				}
+				b_gallen_2 = {
+				}
+				b_gallen_3 = {
+				}
+				b_geltwil = {
+				}
 			}
-			b_kaisten_2 = {
+			c_balgach = {
+				color={ 93 108 108 }
+				color2={ 255 255 255 }
+
+
+				b_balgach = {
+				}
+				b_balgach_2 = {
+				}
+				b_balgach_3 = {
+				}
 			}
-			b_nebikon = {
+			c_amden = {
+				color={ 128 144 144 }
+				color2={ 255 255 255 }
+
+
+				b_amden = {
+				}
+				b_amden_2 = {
+				}
+				b_amden_3 = {
+				}
 			}
 		}
-		c_muhen = { # 45
-			color={ 50 78 78 }
+		d_jura = {
+			color={ 207 216 216 }
 			color2={ 255 255 255 }
-			
-			b_muhen = {
+
+			capital=47
+
+			c_jura = {
+				color={ 207 216 216 }
+				color2={ 255 255 255 }
+
+
+				b_jura = {
+				}
+				b_jura_2 = {
+				}
 			}
-			b_muhen_2 = {
+			c_cornol = {
+				color={ 144 152 152 }
+				color2={ 255 255 255 }
+
+
+				b_cornol = {
+				}
+				b_cornol_2 = {
+				}
+			}
+			c_bonfol = {
+				color={ 168 178 178 }
+				color2={ 255 255 255 }
+
+
+				b_bonfol = {
+				}
+				b_bonfol_2 = {
+				}
+			}
+			c_yens = {
+				color={ 159 168 168 }
+				color2={ 255 255 255 }
+
+
+				b_yens = {
+				}
+				b_yens_2 = {
+				}
 			}
 		}
-		c_remigen = { # 43
-			color={ 112 122 122 }
+		d_sarnen = {
+			color={ 109 125 125 }
 			color2={ 255 255 255 }
-			
-			b_remigen = {
+
+			capital=51
+
+			c_sarnen = {
+				color={ 109 125 125 }
+				color2={ 255 255 255 }
+
+
+				b_sarnen = {
+				}
+				b_sarnen_2 = {
+				}
+				b_sarnen_3 = {
+				}
 			}
-			b_remigen_2 = {
+			c_hori = {
+				color={ 150 165 165 }
+				color2={ 255 255 255 }
+
+
+				b_hori = {
+				}
+				b_hori_2 = {
+				}
+				b_hori_3 = {
+				}
 			}
-			b_remigen_3 = {
+			c_meilen = {
+				color={ 112 115 115 }
+				color2={ 255 255 255 }
+
+
+				b_meilen = {
+				}
+				b_meilen_2 = {
+				}
+				b_meilen_3 = {
+				}
 			}
-			b_emmen = {
+			c_rorbas = {
+				color={ 68 72 72 }
+				color2={ 255 255 255 }
+
+
+				b_rorbas = {
+				}
+				b_rorbas_2 = {
+				}
+				b_rorbas_3 = {
+				}
 			}
 		}
-	}
-	d_vaud = {
-		color={ 90 80 95 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 57 province_id = 58 province_id = 59 province_id = 60 province_id = 61 } }
-	#		}
-	#	}
-		capital = 55 # c_vaud
-		
-		c_vaud = { # 57
+		d_vaud = {
 			color={ 80 90 90 }
 			color2={ 255 255 255 }
-			
-			b_vaud = {
+
+			capital=55
+
+			c_vaud = {
+				color={ 80 90 90 }
+				color2={ 255 255 255 }
+
+
+				b_vaud = {
+				}
+				b_fort_kite = {
+				}
+				b_fort_shrike = {
+				}
+				b_fang_tower = {
+				}
 			}
-			b_fort_kite = {
+			c_morges = {
+				color={ 144 184 184 }
+				color2={ 255 255 255 }
+
+
+				b_morges = {
+				}
+				b_violetwater_temple = {
+				}
+				b_rietheim = {
+				}
 			}
-			b_fort_shrike = {
+			c_aigle = {
+				color={ 125 132 132 }
+				color2={ 255 255 255 }
+
+
+				b_aigle = {
+				}
+				b_aigle_2 = {
+				}
 			}
-			b_fang_tower = {
+			c_nyon = {
+				color={ 96 106 106 }
+				color2={ 255 255 255 }
+
+
+				b_nyon = {
+				}
+				b_nyon_2 = {
+				}
 			}
 		}
-		c_aigle = { # 59
-			color={ 125 132 132 }
+		d_arles = {
+			color={ 141 134 134 }
 			color2={ 255 255 255 }
-			
-			b_aigle = {
+
+			capital=59
+
+			c_arles = {
+				color={ 141 134 134 }
+				color2={ 255 255 255 }
+
+
+				b_arles = {
+				}
+				b_arles_2 = {
+				}
 			}
-			b_aigle_2 = {
+			c_itingen = {
+				color={ 88 83 83 }
+				color2={ 255 255 255 }
+
+
+				b_itingen = {
+				}
+			}
+			c_birseck = {
+				color={ 183 174 174 }
+				color2={ 255 255 255 }
+
+
+				b_birseck = {
+				}
 			}
 		}
-		c_morges = { # 58
-			color={ 144 184 184 }
+		d_lucerne = {
+			color={ 148 146 146 }
 			color2={ 255 255 255 }
-			
-			b_morges = {
+
+			capital=62
+
+			c_lucerne = {
+				color={ 148 146 146 }
+				color2={ 255 255 255 }
+
+
+				b_lucerne = {
+				}
+				b_lucerne_2 = {
+				}
+				b_vaulion = {
+				}
+				b_lugano = {
+				}
 			}
-			b_violetwater_temple = {
+			c_ascona = {
+				color={ 169 169 169 }
+				color2={ 255 255 255 }
+
+
+				b_ascona = {
+				}
+				b_ascona_2 = {
+				}
 			}
-			b_rietheim = {
-			}
-		}
-		c_nyon = { # 60
-			color={ 96 106 106 }
-			color2={ 255 255 255 }
-			
-			b_nyon = {
-			}
-			b_nyon_2 = {
+			c_cevio = {
+				color={ 115 111 111 }
+				color2={ 255 255 255 }
+
+
+				b_cevio = {
+				}
 			}
 		}
 	}
-}
-k_kafti = {
-	color={ 188 91 154 }	
-	color2={ 255 255 255 }
-	
-	capital = 145 # c_kafti
-	culture = western_islander
-	
-	d_kafti = {
-		color={ 224 153 197 }
+	k_terina = {
+		color={ 205 145 145 }
 		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 149 province_id = 150 province_id = 151 province_id = 152 } }
-	#		}
-	#	}
-		capital = 145 # c_kafti
-		
-		c_kafti = { # 149
-			color={ 234 143 202 }
-			color2={ 255 255 255 }
-			
-			b_kafti = {
-			}
-			b_kafti_2 = {
-			}
-			b_kafti_3 = {
-			}
-			b_kastri = {
-			}
-			b_limni = {
-			}
-			b_psari = {
-			}
-		}
-		c_makri = { # 150
-			color={ 175 69 138 }
-			color2={ 255 255 255 }
-			
-			b_makri = {
-			}
-			b_makri_2 = {
-			}
-			b_makri_3 = {
-			}
-			b_kato_karyes = {
-			}
-		}
-		c_perthori = { # 151
-			color={ 190 40 138 }
-			color2={ 255 255 255 }
-			
-			b_perthori = {
-			}
-			b_perthori_2 = {
-			}
-			b_perthori_3 = {
-			}
-			b_kastraki = {
-			}
-			b_dafni = {
-			}
-		}
-		c_skopi = { # 152
-			color={ 131 47 102 }
-			color2={ 255 255 255 }
-			
-			b_skopi = {
-			}
-			b_skopi_2 = {
-			}
-			b_skopi_3 = {
-			}
-		}
-	}
-}
-k_missur = {
-	color={ 120 62 20 }	
-	color2={ 255 255 255 }
-	
-	capital = 133 # c_mallota
-	culture = nabatan
-	
-	d_mallota = {
-		color={ 255 99 17 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 137 province_id = 138 province_id = 139 province_id = 140 } }
-	#		}
-	#	}
-		capital = 133 # c_mallota
-		
-		c_mallota = { # 137
-			color={ 245 109 12 }
-			color2={ 255 255 255 }
-			
-			b_mallota = {
-			}
-			b_mallota_2 = {
-			}
-			b_mallota_3 = {
-			}
-			b_meligou = {
-			}
-		}
-		c_plaka = { # 139
-			color={ 177 115 71 }
-			color2={ 255 255 255 }
-			
-			b_plaka = {
-			}
-			b_plaka_2 = {
-			}
-			b_plaka_3 = {
-			}
-		}
-		c_soulos = { # 138
-			color={ 235 169 121 }
-			color2={ 255 255 255 }
-			
-			b_soulos = {
-			}
-			b_soulos_2 = {
-			}
-			b_soulos_3 = {
-			}
-		}
-		c_vangos = { # 140
-			color={ 183 100 40 }
-			color2={ 255 255 255 }
-			
-			b_vangos = {
-			}
-			b_vangos_2 = {
-			}
-			b_vangos_3 = {
-			}
-		}
-	}
-	d_gefyra = {
-		color={ 204 146 75 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 145 province_id = 146 province_id = 147 province_id = 148 } }
-	#		}
-	#	}
-		capital = 141 # c_gefyra
-		
-		c_gefyra = { # 145
-			color={ 214 136 80 }
-			color2={ 255 255 255 }
-			
-			b_gefyra = {
-			}
-			b_gefyra_2 = {
-			}
-			b_gefyra_3 = {
-			}
-			b_pyrris = {
-			}
-		}
-		c_karyon = { # 148
-			color={ 136 87 52 }
-			color2={ 255 255 255 }
-			
-			b_karyon = {
-			}
-			b_karyon_2 = {
-			}
-			b_karyon_3 = {
-			}
-		}
-		c_souli = { # 147
-			color={ 185 97 33 }
-			color2={ 255 255 255 }
-			
-			b_souli = {
-			}
-			b_souli_2 = {
-			}
-			b_souli_3 = {
-			}
-			b_soulari = {
-			}
-		}
-		c_tripotamo = { # 146
-			color={ 182 106 52 }
-			color2={ 255 255 255 }
-			
-			b_tripotamo = {
-			}
-			b_tripotamo_2 = {
-			}
-			b_tripotamo_3 = {
-			}
-		}
-	}
-	d_isaris = {
-		color={ 205 175 125 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 141 province_id = 142 province_id = 143 province_id = 144 } }
-	#		}
-	#	}
-		capital = 137 # c_isaris
-		
-		c_isaris = { # 141
-			color={ 215 165 130 }
-			color2={ 255 255 255 }
-			
-			b_isaris = {
-			}
-			b_isaris_2 = {
-			}
-			b_isaris_3 = {
-			}
-		}
-		c_chirades = { # 143
-			color={ 204 164 135 }
-			color2={ 255 255 255 }
-			
-			b_chirades = {
-			}
-			b_chirades_2 = {
-			}
-			b_chirades_3 = {
-			}
-		}
-		c_thoknia = { # 144
-			color={ 182 149 126 }
-			color2={ 255 255 255 }
-			
-			b_thoknia = {
-			}
-			b_thoknia_2 = {
-			}
-			b_thoknia_3 = {
-			}
-		}
-		c_vastas = { # 142
-			color={ 198 91 16 }
-			color2={ 255 255 255 }
-			
-			b_vastas = {
-			}
-			b_vastas_2 = {
-			}
-			b_vastas_3 = {
-			}
-		}
-	}
-}
-k_terina = {
-	color={ 205 145 145 }
-	color2={ 255 255 255 }
-	
-	capital = 65 # c_xanthus
-	culture = bernese
-	
-	d_xanthus = {
-		color={ 167 77 92 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 69 province_id = 70 province_id = 71 province_id = 72 } }
-	#		}
-	#	}
-		capital = 65 # c_xanthus
-		
-		c_xanthus = { # 69
+
+		capital = 65
+		culture = bernese
+
+		d_xanthus = {
 			color={ 157 87 87 }
 			color2={ 255 255 255 }
-			
-			b_xanthus = {
+
+			capital=65
+
+			c_xanthus = {
+				color={ 157 87 87 }
+				color2={ 255 255 255 }
+
+
+				b_xanthus = {
+				}
+				b_xanthus_2 = {
+				}
+				b_xanthus_3 = {
+				}
+				b_arinna = {
+				}
 			}
-			b_xanthus_2 = {
+			c_cibyra = {
+				color={ 160 127 127 }
+				color2={ 255 255 255 }
+
+
+				b_cibyra = {
+				}
+				b_cibyra_2 = {
+				}
+				b_cibyra_3 = {
+				}
 			}
-			b_xanthus_3 = {
+			c_acaliss = {
+				color={ 137 120 120 }
+				color2={ 255 255 255 }
+
+
+				b_acaliss = {
+				}
+				b_acaliss_2 = {
+				}
 			}
-			b_arinna = {
+			c_calynda = {
+				color={ 206 99 99 }
+				color2={ 255 255 255 }
+
+				holy_site = raider_pagan
+
+				b_calynda = {
+				}
 			}
 		}
-		c_acaliss = { # 71
-			color={ 137 120 120 }
-			color2={ 255 255 255 }
-			
-			b_acaliss = {
-			}
-			b_acaliss_2 = {
-			}
-		}
-		c_calynda = { # 72
-			color={ 206 99 99 }
-			color2={ 255 255 255 }
-			holy_site = raider_pagan	
-			
-			b_calynda = {
-			}
-		}
-		c_cibyra = { # 70
-			color={ 160 127 127 }
-			color2={ 255 255 255 }
-			
-			b_cibyra = {
-			}
-			b_cibyra_2 = {
-			}
-			b_cibyra_3 = {
-			}
-		}
-	}
-	d_araxa = {
-		color={ 155 92 107 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 73 province_id = 74 province_id = 75 province_id = 76 } }
-	#		}
-	#	}
-		capital = 69 # c_araxa
-		
-		c_araxa = { # 73
+		d_araxa = {
 			color={ 145 102 102 }
 			color2={ 255 255 255 }
-			
-			b_araxa = {
+
+			capital=69
+
+			c_araxa = {
+				color={ 145 102 102 }
+				color2={ 255 255 255 }
+
+
+				b_araxa = {
+				}
+				b_araxa_2 = {
+				}
+				b_araxa_3 = {
+				}
 			}
-			b_araxa_2 = {
+			c_lebessus = {
+				color={ 218 143 143 }
+				color2={ 255 255 255 }
+
+
+				b_lebessus = {
+				}
+				b_lebessus_2 = {
+				}
+				b_lebessus_3 = {
+				}
 			}
-			b_araxa_3 = {
+			c_caunus = {
+				color={ 134 85 85 }
+				color2={ 255 255 255 }
+
+
+				b_caunus = {
+				}
+				b_caunus_2 = {
+				}
+				b_caunus_3 = {
+				}
+			}
+			c_oren = {
+				color={ 182 145 145 }
+				color2={ 255 255 255 }
+
+
+				b_oren = {
+				}
+				b_oren_2 = {
+				}
 			}
 		}
-		c_caunus = { # 75
-			color={ 134 85 85 }
-			color2={ 255 255 255 }
-			
-			b_caunus = {
-			}
-			b_caunus_2 = {
-			}
-			b_caunus_3 = {
-			}
-		}
-		c_lebessus = { # 74
-			color={ 218 143 143 }
-			color2={ 255 255 255 }
-			
-			b_lebessus = {
-			}
-			b_lebessus_2 = {
-			}
-			b_lebessus_3 = {
-			}
-		}
-		c_oren = { # 76
-			color={ 182 145 145 }
-			color2={ 255 255 255 }
-			
-			b_oren = {
-			}
-			b_oren_2 = {
-			}
-		}
-	}
-	d_nisa = {
-		color={ 164 153 138 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 77 province_id = 78 province_id = 79 province_id = 80 province_id = 81 } }
-	#		}
-	#	}
-		capital = 73 # c_nisa
-		
-		c_nisa = { # 77
+		d_nisa = {
 			color={ 174 143 143 }
 			color2={ 255 255 255 }
-			
-			b_nisa = {
+
+			capital=73
+
+			c_nisa = {
+				color={ 174 143 143 }
+				color2={ 255 255 255 }
+
+
+				b_nisa = {
+				}
+				b_nisa_2 = {
+				}
+				b_nisa_3 = {
+				}
+				b_misae = {
+				}
 			}
-			b_nisa_2 = {
+			c_marciana = {
+				color={ 226 175 175 }
+				color2={ 255 255 255 }
+
+				holy_site = raider_pagan
+
+				b_marciana = {
+				}
+				b_marciana_2 = {
+				}
 			}
-			b_nisa_3 = {
+			c_choma = {
+				color={ 202 177 177 }
+				color2={ 255 255 255 }
+
+
+				b_choma = {
+				}
+				b_choma_2 = {
+				}
+				b_choma_3 = {
+				}
 			}
-			b_misae = {
+			c_mugla = {
+				color={ 129 96 96 }
+				color2={ 255 255 255 }
+
+
+				b_mugla = {
+				}
+				b_mugla_2 = {
+				}
 			}
-		}
-		c_choma = { # 79
-			color={ 202 177 177 }
-			color2={ 255 255 255 }
-			
-			b_choma = {
-			}
-			b_choma_2 = {
-			}
-			b_choma_3 = {
-			}
-		}
-		c_comba = { # 81
-			color={ 176 148 148 }
-			color2={ 255 255 255 }
-			
-			b_comba = {
-			}
-			b_comba_2 = {
-			}
-			b_comba_3 = {
-			}
-		}
-		c_marciana = { # 78
-			color={ 226 175 175 }
-			color2={ 255 255 255 }
-			holy_site = raider_pagan
-			
-			b_marciana = {
-			}
-			b_marciana_2 = {
-			}
-		}
-		c_mugla = { # 80
-			color={ 129 96 96 }
-			color2={ 255 255 255 }
-			
-			b_mugla = {
-			}
-			b_mugla_2 = {
+			c_comba = {
+				color={ 176 148 148 }
+				color2={ 255 255 255 }
+
+
+				b_comba = {
+				}
+				b_comba_2 = {
+				}
+				b_comba_3 = {
+				}
 			}
 		}
 	}
-}
-k_the_taliver_mountains = {
-	color={ 250 120 90 }
-	color2={ 255 255 255 }
-	
-	capital = 181 # c_taliver
-	culture = sacaean
-	
-	d_taliver = {
-		color={ 238 114 66 }
+	k_missur = {
+		color={ 120 62 20 }
 		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 185 province_id = 186 province_id = 187 province_id = 188 } }
-	#		}
-	#	}
-		capital = 181 # c_taliver
-		
-		c_taliver = { # 185
+
+		capital = 133
+		culture = nabatan
+
+		d_mallota = {
+			color={ 245 109 12 }
+			color2={ 255 255 255 }
+
+			capital=133
+
+			c_mallota = {
+				color={ 245 109 12 }
+				color2={ 255 255 255 }
+
+
+				b_mallota = {
+				}
+				b_mallota_2 = {
+				}
+				b_mallota_3 = {
+				}
+				b_meligou = {
+				}
+			}
+			c_soulos = {
+				color={ 235 169 121 }
+				color2={ 255 255 255 }
+
+
+				b_soulos = {
+				}
+				b_soulos_2 = {
+				}
+				b_soulos_3 = {
+				}
+			}
+			c_plaka = {
+				color={ 177 115 71 }
+				color2={ 255 255 255 }
+
+
+				b_plaka = {
+				}
+				b_plaka_2 = {
+				}
+				b_plaka_3 = {
+				}
+			}
+			c_vangos = {
+				color={ 183 100 40 }
+				color2={ 255 255 255 }
+
+
+				b_vangos = {
+				}
+				b_vangos_2 = {
+				}
+				b_vangos_3 = {
+				}
+			}
+		}
+		d_isaris = {
+			color={ 215 165 130 }
+			color2={ 255 255 255 }
+
+			capital=137
+
+			c_isaris = {
+				color={ 215 165 130 }
+				color2={ 255 255 255 }
+
+
+				b_isaris = {
+				}
+				b_isaris_2 = {
+				}
+				b_isaris_3 = {
+				}
+			}
+			c_vastas = {
+				color={ 198 91 16 }
+				color2={ 255 255 255 }
+
+
+				b_vastas = {
+				}
+				b_vastas_2 = {
+				}
+				b_vastas_3 = {
+				}
+			}
+			c_chirades = {
+				color={ 204 164 135 }
+				color2={ 255 255 255 }
+
+
+				b_chirades = {
+				}
+				b_chirades_2 = {
+				}
+				b_chirades_3 = {
+				}
+			}
+			c_thoknia = {
+				color={ 182 149 126 }
+				color2={ 255 255 255 }
+
+
+				b_thoknia = {
+				}
+				b_thoknia_2 = {
+				}
+				b_thoknia_3 = {
+				}
+			}
+		}
+		d_gefyra = {
+			color={ 214 136 80 }
+			color2={ 255 255 255 }
+
+			capital=141
+
+			c_gefyra = {
+				color={ 214 136 80 }
+				color2={ 255 255 255 }
+
+
+				b_gefyra = {
+				}
+				b_gefyra_2 = {
+				}
+				b_gefyra_3 = {
+				}
+				b_pyrris = {
+				}
+			}
+			c_tripotamo = {
+				color={ 182 106 52 }
+				color2={ 255 255 255 }
+
+
+				b_tripotamo = {
+				}
+				b_tripotamo_2 = {
+				}
+				b_tripotamo_3 = {
+				}
+			}
+			c_souli = {
+				color={ 185 97 33 }
+				color2={ 255 255 255 }
+
+
+				b_souli = {
+				}
+				b_souli_2 = {
+				}
+				b_souli_3 = {
+				}
+				b_soulari = {
+				}
+			}
+			c_karyon = {
+				color={ 136 87 52 }
+				color2={ 255 255 255 }
+
+
+				b_karyon = {
+				}
+				b_karyon_2 = {
+				}
+				b_karyon_3 = {
+				}
+			}
+		}
+	}
+	k_kafti = {
+		color={ 188 91 154 }
+		color2={ 255 255 255 }
+
+		capital = 145
+		culture = nabatan
+
+		d_kafti = {
+			color={ 234 143 202 }
+			color2={ 255 255 255 }
+
+			capital=145
+
+			c_kafti = {
+				color={ 234 143 202 }
+				color2={ 255 255 255 }
+
+
+				b_kafti = {
+				}
+				b_kafti_2 = {
+				}
+				b_kafti_3 = {
+				}
+				b_kastri = {
+				}
+				b_limni = {
+				}
+				b_psari = {
+				}
+			}
+			c_makri = {
+				color={ 175 69 138 }
+				color2={ 255 255 255 }
+
+
+				b_makri = {
+				}
+				b_makri_2 = {
+				}
+				b_makri_3 = {
+				}
+				b_kato_karyes = {
+				}
+			}
+			c_perthori = {
+				color={ 190 40 138 }
+				color2={ 255 255 255 }
+
+
+				b_perthori = {
+				}
+				b_perthori_2 = {
+				}
+				b_perthori_3 = {
+				}
+				b_kastraki = {
+				}
+				b_dafni = {
+				}
+			}
+			c_skopi = {
+				color={ 131 47 102 }
+				color2={ 255 255 255 }
+
+
+				b_skopi = {
+				}
+				b_skopi_2 = {
+				}
+				b_skopi_3 = {
+				}
+			}
+		}
+	}
+	k_the_taliver_mountains = {
+		color={ 250 120 90 }
+		color2={ 255 255 255 }
+
+		capital = 181
+		culture = sacaean
+
+		d_taliver = {
 			color={ 248 104 71 }
 			color2={ 255 255 255 }
-			holy_site = raider_pagan
-			
-			b_taliver = {
+
+			capital=181
+
+			c_taliver = {
+				color={ 248 104 71 }
+				color2={ 255 255 255 }
+
+				holy_site = raider_pagan
+
+				b_taliver = {
+				}
+			}
+			c_hardres = {
+				color={ 223 154 138 }
+				color2={ 255 255 255 }
+
+
+				b_hardres = {
+				}
+				b_hardres_2 = {
+				}
+			}
+			c_berenger = {
+				color={ 240 82 46 }
+				color2={ 255 255 255 }
+
+
+				b_berenger = {
+				}
+			}
+			c_pinabel = {
+				color={ 240 144 121 }
+				color2={ 255 255 255 }
+
+
+				b_pinabel = {
+				}
+				b_pinabel_2 = {
+				}
 			}
 		}
-		c_berenger = { # 187
-			color={ 240 82 46 }
-			color2={ 255 255 255 }
-			
-			b_berenger = {
-			}
-		}
-		c_hardres = { # 186
-			color={ 223 154 138 }
-			color2={ 255 255 255 }
-			
-			b_hardres = {
-			}
-			b_hardres_2 = {
-			}
-		}
-		c_pinabel = { # 188
-			color={ 240 144 121 }
-			color2={ 255 255 255 }
-			
-			b_pinabel = {
-			}
-			b_pinabel_2 = {
-			}
-		}
-	}
-	d_ganelon = {
-		color={ 147 145 125 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 189 province_id = 190 province_id = 191 } }
-	#		}
-	#	}
-		capital = 185 # c_ganelon
-		
-		c_ganelon = { # 189
+		d_ganelon = {
 			color={ 157 135 130 }
 			color2={ 255 255 255 }
-			holy_site = raider_pagan
-			
-			b_ganelon = {
+
+			capital=185
+
+			c_ganelon = {
+				color={ 157 135 130 }
+				color2={ 255 255 255 }
+
+				holy_site = raider_pagan
+
+				b_ganelon = {
+				}
+				b_ganelon_2 = {
+				}
 			}
-			b_ganelon_2 = {
+			c_foulkes = {
+				color={ 116 91 86 }
+				color2={ 255 255 255 }
+
+
+				b_foulkes = {
+				}
+				b_foulkes_2 = {
+				}
 			}
-		}
-		c_foulkes = { # 190
-			color={ 116 91 86 }
-			color2={ 255 255 255 }
-			
-			b_foulkes = {
-			}
-			b_foulkes_2 = {
-			}
-		}
-		c_murgleis = { # 191
-			color={ 143 117 112 }
-			color2={ 255 255 255 }
-			holy_site = divine_sky_pagan
-			holy_site = divine_sky_pagan_reformed
-			holy_site = elimine_church
-			
-			b_murgleis = {
-			}
-			b_murgleis_shrine = {
-			}
-			b_murgleis_2 = {
-			}
-		}
-	}
-}
-k_valor = {
-	color={ 91 100 100 }
-	color2={ 255 255 255 }
-	
-	capital = 1 # c_virtus
-	culture = bernese
-	
-	d_valor = {
-		color={ 86 71 86 }
-		color2={ 255 255 255 }
-		
-	#	allow = {
-	#		OR = {
-	#			lower_tier_than = KING
-	#			any_demesne_province = { OR = { province_id = 1 province_id = 2 province_id = 3 province_id = 4 } }
-	#		}
-	#	}
-		capital = 1 # c_valor
-		
-		c_virtus = { # 1
-			color={ 76 81 81 }
-			color2={ 255 255 255 }
-			holy_site = anima
-			holy_site = dark
-			
-			b_the_dragons_gate = {
-			}
-			b_virtus = {
-			}
-			b_pietas = {
-			}
-			b_gravitas = {
-			}
-			b_potestas = {
-			}
-			b_auctoritas = {
-			}
-		}
-		c_iustitia = { # 4
-			color={ 90 103 103 }
-			color2={ 255 255 255 }
-			
-			b_iustitia = {
-			}
-			b_iustitia_2 = {
-			}
-			b_iustitia_3 = {
-			}
-			b_dignitas = {
-			}
-		}
-		c_fortitudo = { # 3
-			color={ 62 79 79 }
-			color2={ 255 255 255 }
-			
-			b_fortitudo = {
-			}
-			b_fortitudo_2 = {
-			}
-			b_fortitudo_3 = {
-			}
-		}
-		c_temperantia = { # 2
-			color={ 159 167 167 }
-			color2={ 255 255 255 }
-			holy_site = anima
-			holy_site = dark
-			
-			b_temperantia = {
-			}
-			b_rottentree = {
-			}
-			b_prudentia = {
-			}
-			b_clementia = {
+			c_murgleis = {
+				color={ 143 117 112 }
+				color2={ 255 255 255 }
+
+				holy_site = elimine_church
+				holy_site = divine_sky_pagan
+				holy_site = divine_sky_pagan_reformed
+
+				b_murgleis = {
+				}
+				b_murgleis_shrine = {
+				}
+				b_murgleis_2 = {
+				}
 			}
 		}
 	}
-}

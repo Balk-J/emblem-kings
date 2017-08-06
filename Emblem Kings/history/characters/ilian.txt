@@ -35,13 +35,14 @@
 	}
 	1118.01.01={
 		add_trait="class_dark_mage_female"
-			add_trait="base_class_dark_mage"
+		add_trait="base_class_dark_mage"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
 	} 
 	1121.01.01={
+		add_trait="mastermind_theologian"
 		add_trait="wroth"
 		add_trait="proud"
 		add_trait="lustful"
@@ -265,8 +266,10 @@
 308 = { 
 	name="Nergal"
 	dynasty=305
-	dna="blafkzhjabf" 
-	properties="ag00d000000000"
+	#dna="blafkzhjabf" 
+	#properties="ag00d000000000"
+	dna="cfjddlgbabj" 
+	properties="ai0ba000000000"
 	
 	religion=dark
 	culture=ilian
