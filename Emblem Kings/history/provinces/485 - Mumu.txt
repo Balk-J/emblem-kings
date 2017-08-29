@@ -1,0 +1,18 @@
+# 485 - Mumu
+
+# County Title
+title = c_mumu
+
+# Settlements
+max_settlements = 4
+
+b_mumu = tribal
+#b_mumu_2 = temple
+#b_mumu_3 = city
+#b_ard_fhearta = castle
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

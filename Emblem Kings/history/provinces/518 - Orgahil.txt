@@ -1,0 +1,17 @@
+# 518 - Orgahil
+
+# County Title
+title = c_orgahil
+
+# Settlements
+max_settlements = 3
+
+b_orgahil = castle
+#b_orgahil_2 = temple
+#b_orgahil_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

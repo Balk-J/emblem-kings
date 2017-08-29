@@ -1,0 +1,17 @@
+# 509 - Chronos
+
+# County Title
+title = c_chronos
+
+# Settlements
+max_settlements = 3
+
+b_chronos_castle = castle
+b_chronos = temple
+b_chronos_2 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

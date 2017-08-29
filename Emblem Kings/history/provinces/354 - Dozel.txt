@@ -1,0 +1,19 @@
+# 354 - Dozel
+
+# County Title
+title = c_dozel
+
+# Settlements
+max_settlements = 5
+
+b_dozel_castle = castle
+b_dozel = temple
+b_dozel_2 = city
+#b_lodi = castle
+#b_vigevano = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

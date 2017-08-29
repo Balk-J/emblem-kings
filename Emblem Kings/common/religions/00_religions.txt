@@ -223,6 +223,7 @@ pagan_group = {
 	raider_pagan = {
 		#c_badon, c_ganelon, c_taliver, c_marciana, c_calynda
 		graphical_culture = norsegfx
+		pre_reformed = yes
 
 		icon = 11
 		
@@ -255,7 +256,7 @@ pagan_group = {
 		allow_in_ruler_designer = yes
 		
 		dislike_tribal_organization = yes
-		
+		pre_reformed = yes 
 		allow_looting = yes
 		allow_rivermovement = yes
 		peace_prestige_loss = yes # Lose Prestige while at peace
@@ -362,6 +363,79 @@ pagan_group = {
 		
 		dislike_tribal_organization = yes
 	}
+	
+	
+	earthen_pagan_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 17
+		heresy_icon = 16
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.4 0.1 0.1 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_THE_EARTH
+		
+		god_names = {
+			GOD_THE_GODS 
+		}
+		evil_god_names = {
+			GOD_THE_DARK_GOD
+		}
+		
+		allow_looting = yes
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		can_call_crusade = yes
+		intermarry = church_of_edda
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+	}		
+	
+	earthen_pagan = {
+		graphical_culture = norsegfx
+
+		icon = 15
+		heresy_icon = 16
+		
+		color = { 0.6 0.1 0.1 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_GRANN
+		
+		god_names = {
+			GOD_YUDU GOD_THE_GODS 
+		}
+		evil_god_names = {
+			GOD_THE_DARK_GOD
+		}
+		
+		allow_looting = yes		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+		max_consorts = 3
+		reformed = earthen_pagan_reformed
+		intermarry = church_of_edda
+		
+		short_reign_opinion_year_mult = 2
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+	}	
 }
 
 magic_group = {
@@ -471,8 +545,7 @@ draconic_group = {
 	divine_dragon_naga = {
 		graphical_culture = westerngfx
 		
-		icon = 1
-		heresy_icon = 2
+		icon = 18
 		allow_in_ruler_designer = no #not yet!
 		
 		color = { 0.8 0.8 0.6 }
@@ -481,14 +554,14 @@ draconic_group = {
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
 		
-		high_god_name = NAGA
+		high_god_name = GOD_NAGA
 		
 		god_names = {
-			NAGA THE_VOICE
+			GOD_NAGA GOD_THE_VOICE
 		}
 		
 		evil_god_names = {
-			GRIMA FELL_DRAGON
+			GOD_GRIMA GOD_THE_FELL_DRAGON
 		}
 		
 		investiture = no
@@ -513,7 +586,8 @@ draconic_group = {
 		
 		icon = 1
 		heresy_icon = 2
-		allow_in_ruler_designer = no #not yet!
+		allow_in_ruler_designer = no # Never
+		color = { 0.1 0.1 0.1 }
 		
 		high_god_name = GOD_THE_CREATOR
 		
@@ -542,6 +616,120 @@ draconic_group = {
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 	}
+	
+	church_of_edda = {
+		graphical_culture = westerngfx
+		
+		icon = 12
+		color = { 0.7 0.7 0.1 }
+		
+		high_god_name = GOD_NAGA
+		
+		god_names = {
+			GOD_NAGA GOD_SALAMANDER GOD_FORSETI GOD_GRANN GOD_YUDU 
+#			GOD_HEIM GOD_BALDUR GOD_NEIR GOD_ULIR GOD_BLAGI GOD_FALA GOD_TORDO GOD_CED GOD_ODO GOD_HEZUL GOD_DAIN GOD_NOBA
+		}
+		evil_god_names = {
+			GOD_LOPTYR GOD_THE_DARK_GOD
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_SCRIPTURE
+		priest_title = PRIEST
+		
+		investiture = no
+		can_excommunicate = no
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_retire_to_monastery = yes
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_have_antipopes = no
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		intermarry = earthen_pagan_reformed
+		intermarry = earthen_pagan
+			
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	loptyrian = {
+		graphical_culture = westerngfx
+		
+		icon = 13
+		heresy_icon = 14
+		color = { 0.4 0.4 0.4 }
+		
+		high_god_name = GOD_LOPTYR
+		
+		god_names = {
+			GOD_LOPTYR GOD_THE_DARK_GOD
+		}
+		evil_god_names = {
+			GOD_NAGA 
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_SCRIPTURE
+		priest_title = PRIEST
+		
+		investiture = no
+		can_excommunicate = no
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_retire_to_monastery = yes
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_have_antipopes = no
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		uses_jizya_tax = yes
+			
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	mairist = {
+		graphical_culture = westerngfx
+		parent = loptyrian
+		
+		icon = 1
+		heresy_icon = 2
+		color = { 0.6 0.6 0.6 }
+		
+		#high_god_name = GOD_LOPTYR # GOD_LOPTYR is a high ranking god, but only one of many.
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_LOPTYR 
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS NAGA
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_SCRIPTURE
+		priest_title = PRIEST
+		
+		investiture = no
+		can_excommunicate = no
+		can_grant_divorce = yes
+		can_retire_to_monastery = yes
+		can_grant_claim = no
+		can_call_crusade = no
+		can_have_antipopes = no
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		attacking_same_religion_piety_loss = yes 
+		pacifist = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
 }
 
 christian = {
@@ -552,6 +740,7 @@ christian = {
 	dummy_1 = {
 		icon = 1
 		heresy_icon = 2
+		pre_reformed = yes
 		color = { 0.1 0.1 0.1 }		
 	}
 }
@@ -563,6 +752,7 @@ muslim = {
 	dummy_2 = {
 		icon = 1
 		heresy_icon = 2
+		pre_reformed = yes
 		color = { 0.1 0.1 0.1 }		
 	}
 }
@@ -574,6 +764,7 @@ zoroastrian_group = {
 	dummy_3 = {
 		icon = 1
 		heresy_icon = 2
+		pre_reformed = yes
 		color = { 0.1 0.1 0.1 }		
 	}
 }
@@ -585,6 +776,7 @@ jewish_group = {
 	dummy_4 = {
 		icon = 1
 		heresy_icon = 2
+		pre_reformed = yes
 		color = { 0.1 0.1 0.1 }		
 	}
 }
@@ -596,6 +788,7 @@ indian_group = {
 	dummy_5 = {
 		icon = 1
 		heresy_icon = 2
+		pre_reformed = yes
 		color = { 0.1 0.1 0.1 }		
 	}
 }

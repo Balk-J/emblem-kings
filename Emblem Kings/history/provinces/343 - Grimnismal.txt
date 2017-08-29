@@ -1,0 +1,19 @@
+# 343 - Grimnismal
+
+# County Title
+title = c_grimnismal
+
+# Settlements
+max_settlements = 5
+
+b_grimnismal = castle
+b_grimnismal_2 = temple
+b_grimnismal_3 = city
+#b_voluspa = temple
+#b_hymiskvida = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

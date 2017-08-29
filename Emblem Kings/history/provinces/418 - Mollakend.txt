@@ -1,0 +1,17 @@
+# 418 - Mollakend
+
+# County Title
+title = c_mollakend
+
+# Settlements
+max_settlements = 3
+
+b_mollakend = castle
+b_mollakend_2 = temple
+b_mollakend_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

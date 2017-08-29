@@ -861,19 +861,19 @@ spriteTypes = {
 		name = "GFX_religion_icon_strip"
 		texturefile = "gfx\\interface\\religion_icon_strip.tga"
 		#noOfFrames = 52
-		noOfFrames = 11 # FE
+		noOfFrames = 19 # FE
 	}
 	spriteType = {
 		name = "GFX_religion_icon_strip_small"
 		texturefile = "gfx\\interface\\religion_icon_strip_small.tga"
 		#noOfFrames = 52
-		noOfFrames = 11 # FE
+		noOfFrames = 19 # FE
 	}
 	spriteType = {
 		name = "GFX_religion_icon_strip_big"
 		texturefile = "gfx\\interface\\religion_icon_strip_big.tga"
 		#noOfFrames = 52
-		noOfFrames = 11 # FE
+		noOfFrames = 19 # FE
 	}
 	spriteType = {
 		name = "GFX_commandmodifier_icon"

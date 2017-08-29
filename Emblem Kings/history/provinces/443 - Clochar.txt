@@ -1,0 +1,17 @@
+# 443 - Clochar
+
+# County Title
+title = c_clochar
+
+# Settlements
+max_settlements = 3
+
+b_clochar = castle
+b_clochar_2 = temple
+b_clochar_3 = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

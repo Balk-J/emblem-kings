@@ -1,0 +1,18 @@
+# 417 - Siyabli
+
+# County Title
+title = c_siyabli
+
+# Settlements
+max_settlements = 4
+
+b_siyabli = castle
+b_siyabli_2 = temple
+b_siyabli_3 = city
+#b_hirkan = castle
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

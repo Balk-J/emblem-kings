@@ -1,0 +1,17 @@
+# 504 - Nogna
+
+# County Title
+title = c_nogna
+
+# Settlements
+max_settlements = 3
+
+b_nogna = tribal
+#b_nogna_2 = temple
+#b_nogna_3 = city
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

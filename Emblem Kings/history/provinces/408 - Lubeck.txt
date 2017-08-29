@@ -1,0 +1,20 @@
+# 408 - Lubeck
+
+# County Title
+title = c_lubeck
+
+# Settlements
+max_settlements = 6
+
+b_lubeck_castle = castle
+b_lubeck = temple
+b_lubeck_2 = city
+b_holstentor = city
+b_burgtor = city
+#b_aldstat = castle
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

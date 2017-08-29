@@ -1,0 +1,18 @@
+# 495 - Kagbeni
+
+# County Title
+title = c_kagbeni
+
+# Settlements
+max_settlements = 4
+
+b_kagbeni = tribal
+#b_kagbeni_2 = temple
+#b_kagbeni_3 = city
+#b_kunjo = temple
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

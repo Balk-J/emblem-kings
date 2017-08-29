@@ -1,0 +1,17 @@
+# 472 - Daru
+
+# County Title
+title = c_daru
+
+# Settlements
+max_settlements = 3
+
+b_daru = castle
+b_daru_2 = city
+b_daru_3 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

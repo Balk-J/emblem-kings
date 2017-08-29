@@ -1,0 +1,17 @@
+# 425 - Mansaba
+
+# County Title
+title = c_mansaba
+
+# Settlements
+max_settlements = 3
+
+b_mansaba = castle
+b_mansaba_2 = temple
+b_mansaba_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

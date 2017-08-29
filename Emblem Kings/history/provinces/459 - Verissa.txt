@@ -1,0 +1,18 @@
+# 459 - Verissa
+
+# County Title
+title = c_verissa
+
+# Settlements
+max_settlements = 4
+
+b_verissa = castle
+b_verissa_2 = city
+b_verissa_3 = temple
+#b_sestus = castle
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

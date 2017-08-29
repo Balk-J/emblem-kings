@@ -1,0 +1,18 @@
+# 440 - Alster
+
+# County Title
+title = c_alster
+
+# Settlements
+max_settlements = 4
+
+b_alster_castle = castle
+b_alster = temple
+b_alster_2 = city
+#b_dun_sobhairce = castle
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

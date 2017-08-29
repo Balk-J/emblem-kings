@@ -1,0 +1,16 @@
+# 389 - Truro
+
+# County Title
+title = c_truro
+
+# Settlements
+max_settlements = 2
+
+b_truro = castle
+#b_truro_2 = temple
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

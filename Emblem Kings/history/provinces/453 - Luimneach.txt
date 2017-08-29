@@ -1,0 +1,17 @@
+# 453 - Luimneach
+
+# County Title
+title = c_luimneach
+
+# Settlements
+max_settlements = 3
+
+b_luimneach = castle
+b_luimneach_2 = temple
+b_luimneach_3 = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,19 @@
+# 334 - Glasir
+
+# County Title
+title = c_glasir
+
+# Settlements
+max_settlements = 5
+
+b_glasir = castle
+b_glasir_2 = temple
+b_glasir_3 = city
+b_glasislundr = castle
+#b_goldentree = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

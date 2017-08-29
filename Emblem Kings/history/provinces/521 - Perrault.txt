@@ -1,0 +1,16 @@
+# 521 - Perrault
+
+# County Title
+title = c_perrault
+
+# Settlements
+max_settlements = 2
+
+b_perrault = tribal
+#b_perrault_2 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

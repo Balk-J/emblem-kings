@@ -43,6 +43,26 @@ bad_priest_divine_sky = {
 	random = no
 }
 
+bad_priest_draconic = {
+
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+}
+
 sympathy_light = {
 	opposites =  {
 		zealous
@@ -94,6 +114,23 @@ sympathy_magic = {
 	}
 
 	tolerates_magic_group=yes		# Tolerates and is tolerated by 
+	
+	same_opinion_if_same_religion = 10
+
+	customizer = no
+	random = no
+}
+
+sympathy_draconic = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = draconic_group }
+	}
+
+	tolerates_draconic_group = yes		# Tolerates and is tolerated by 
 	
 	same_opinion_if_same_religion = 10
 

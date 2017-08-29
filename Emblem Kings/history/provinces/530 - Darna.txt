@@ -1,0 +1,19 @@
+# 530 - Darna
+
+# County Title
+title = c_darna
+
+# Settlements
+max_settlements = 5
+
+b_darna_fortress = castle
+b_darna = temple
+b_darna_2 = city
+#b_danann = castle
+#b_aes_dana = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

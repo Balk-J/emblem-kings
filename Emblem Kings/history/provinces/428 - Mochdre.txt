@@ -1,0 +1,17 @@
+# 428 - Mochdre
+
+# County Title
+title = c_mochdre
+
+# Settlements
+max_settlements = 3
+
+b_mochdre = castle
+b_mochdre_2 = temple
+b_mochdre_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

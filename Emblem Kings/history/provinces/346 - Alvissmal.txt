@@ -1,0 +1,17 @@
+# 346 - Alvissmal
+
+# County Title
+title = c_alvissmal
+
+# Settlements
+max_settlements = 3
+
+b_alvissmal = castle
+b_alvissmal_2 = temple
+b_alvissmal_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

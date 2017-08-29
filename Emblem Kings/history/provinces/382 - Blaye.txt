@@ -1,0 +1,18 @@
+# 382 - Blaye
+
+# County Title
+title = c_blaye
+
+# Settlements
+max_settlements = 4
+
+b_blaye = castle
+b_blaye_2 = temple
+b_blaye_3 = city
+#b_bourg = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

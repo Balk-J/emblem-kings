@@ -1,0 +1,18 @@
+# 406 - Gora
+
+# County Title
+title = c_gora
+
+# Settlements
+max_settlements = 4
+
+b_gora = tribal
+b_gora_2 = temple
+#b_gora_3 = city
+#b_wolow = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

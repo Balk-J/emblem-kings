@@ -1,0 +1,18 @@
+# 348 - Thjalfi
+
+# County Title
+title = c_thjalfi
+
+# Settlements
+max_settlements = 4
+
+b_thjalfi = castle
+b_thjalfi_2 = temple
+b_thjalfi_3 = city
+#b_tanngrisnir = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

@@ -1,0 +1,21 @@
+# 502 - Evans
+
+# County Title
+title = c_evans
+
+# Settlements
+max_settlements = 7
+
+b_evans_castle = castle
+b_evans = temple
+b_evans_2 = city
+#b_grann = castle
+#b_yudu = castle
+#b_jun = castle
+#b_rom = castle
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,19 @@
+# 352 - Donar
+
+# County Title
+title = c_donar
+
+# Settlements
+max_settlements = 5
+
+b_donar = castle
+b_donar_2 = temple
+b_donar_3 = city
+#b_veod = castle
+#b_veur = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 424 - Kankelena
+
+# County Title
+title = c_kankelena
+
+# Settlements
+max_settlements = 3
+
+b_kankelena = castle
+b_kankelena_2 = temple
+b_kankelena_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

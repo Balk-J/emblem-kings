@@ -1,0 +1,18 @@
+# 448 - Liatroim
+
+# County Title
+title = c_liatroim
+
+# Settlements
+max_settlements = 4
+
+b_liatroim = castle
+b_liatroim_2 = temple
+b_liatroim_3 = city
+#b_cill_mhor = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

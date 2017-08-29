@@ -1,0 +1,17 @@
+# 385 - Urd
+
+# County Title
+title = c_urd
+
+# Settlements
+max_settlements = 3
+
+b_urd = castle
+b_urd_2 = temple
+b_urd_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

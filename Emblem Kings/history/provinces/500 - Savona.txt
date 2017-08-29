@@ -1,0 +1,18 @@
+# 500 - Savona
+
+# County Title
+title = c_savona
+
+# Settlements
+max_settlements = 4
+
+b_savona = tribal
+#b_savona_2 = temple
+#b_savona_3 = city
+#b_ventimiglia = castle
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

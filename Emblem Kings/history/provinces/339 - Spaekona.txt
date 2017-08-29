@@ -1,0 +1,18 @@
+# 339 - Spaekona
+
+# County Title
+title = c_spaekona
+
+# Settlements
+max_settlements = 4
+
+b_spaekona = castle
+b_spaekona_2 = temple
+b_spaekona_3 = city
+#b_volvur = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

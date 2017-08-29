@@ -1,0 +1,17 @@
+# 438 - Solwood
+
+# County Title
+title = c_solwood
+
+# Settlements
+max_settlements = 3
+
+b_solwood = temple
+b_solwood_2 = castle
+b_solwood_3 = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

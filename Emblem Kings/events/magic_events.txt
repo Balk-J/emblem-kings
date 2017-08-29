@@ -33,13 +33,19 @@ character_event = {
 	option = {
 		name = "magic.1.A"
 		ai_chance = {
-			factor = 60
+			factor = 30
 		}
 		if = {
 			limit = {
 				religion_group = light_group
 			}
 			add_trait = sympathy_light
+		}
+		if = {
+			limit = {
+				religion_group = draconic_group
+			}
+			add_trait = sympathy_draconic
 		}
 		if = {
 			limit = {
@@ -56,7 +62,7 @@ character_event = {
 	option = {
 		name = "magic.1.B"	
 		ai_chance = {
-			factor = 40
+			factor = 70
 		}	
 		
 		random = {
@@ -108,7 +114,7 @@ character_event = {
 	option = {
 		name = "magic.2.A"
 		ai_chance = {
-			factor = 60
+			factor = 30
 		}
 		
 		if = {
@@ -116,6 +122,12 @@ character_event = {
 				religion_group = light_group
 			}
 			add_trait = sympathy_light
+		}
+		if = {
+			limit = {
+				religion_group = draconic_group
+			}
+			add_trait = sympathy_draconic
 		}
 		if = {
 			limit = {
@@ -132,7 +144,7 @@ character_event = {
 	option = {
 		name = "magic.2.B"	
 		ai_chance = {
-			factor = 40
+			factor = 70
 		}	
 		
 		random = {

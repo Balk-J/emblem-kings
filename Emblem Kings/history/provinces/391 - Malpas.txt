@@ -1,0 +1,17 @@
+# 391 - Malpas
+
+# County Title
+title = c_malpas
+
+# Settlements
+max_settlements = 3
+
+b_malpas = castle
+b_malpas_2 = temple
+b_malpas_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

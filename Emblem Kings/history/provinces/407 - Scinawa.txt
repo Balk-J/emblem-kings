@@ -1,0 +1,18 @@
+# 407 - Scinawa
+
+# County Title
+title = c_scinawa
+
+# Settlements
+max_settlements = 4
+
+b_scinawa = tribal
+b_scinawa_2 = temple
+#b_scinawa_3 = city
+#b_nowa_ruda = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

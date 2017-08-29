@@ -1,0 +1,18 @@
+# 374 - Anphony
+
+# County Title
+title = c_anphony
+
+# Settlements
+max_settlements = 4
+
+b_anphony_castle = castle
+b_anphony = temple
+b_anphony_2 = city
+#b_angus = castle
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

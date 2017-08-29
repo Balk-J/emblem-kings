@@ -1,0 +1,20 @@
+# 347 - Chalphy
+
+# County Title
+title = c_chalphy
+
+# Settlements
+max_settlements = 6
+
+b_chalphy_castle = castle
+b_chalphy = temple
+b_chalphy_2 = city
+b_hervararkvida = temple
+#b_gridarvolr = castle
+#b_megingjord = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

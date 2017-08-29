@@ -1,0 +1,18 @@
+# 454 - Melgln
+
+# County Title
+title = c_melgln
+
+# Settlements
+max_settlements = 4
+
+b_melgln_castle = castle
+b_melgln = temple
+#b_melgln_2 = city
+#b_salcraig = castle
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

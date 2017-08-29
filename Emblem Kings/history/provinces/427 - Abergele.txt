@@ -1,0 +1,18 @@
+# 427 - Abergele
+
+# County Title
+title = c_abergele
+
+# Settlements
+max_settlements = 4
+
+b_abergele = castle
+b_abergele_2 = temple
+b_abergele_3 = city
+b_llanrwst = temple
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

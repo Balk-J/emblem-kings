@@ -1,0 +1,18 @@
+# 511 - Aevum
+
+# County Title
+title = c_aevum
+
+# Settlements
+max_settlements = 4
+
+b_aevum = castle
+b_aevum_2 = temple
+b_aevum_3 = city
+#b_aion = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

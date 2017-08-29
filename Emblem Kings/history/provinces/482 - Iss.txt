@@ -1,0 +1,18 @@
+# 482 - Iss
+
+# County Title
+title = c_iss
+
+# Settlements
+max_settlements = 3
+
+b_iss = castle
+b_iss_2 = city
+b_iss_3 = temple
+b_inis = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

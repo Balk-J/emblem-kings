@@ -1,0 +1,17 @@
+# 461 - Galata
+
+# County Title
+title = c_galata
+
+# Settlements
+max_settlements = 3
+
+b_galata = tribal
+#b_galata_2 = temple
+#b_galata_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

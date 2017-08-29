@@ -1,0 +1,18 @@
+# 413 - Easaw
+
+# County Title
+title = c_easaw
+
+# Settlements
+max_settlements = 4
+
+b_easaw = castle
+b_easaw_2 = temple
+b_easaw_3 = city
+#b_judithe = temple
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

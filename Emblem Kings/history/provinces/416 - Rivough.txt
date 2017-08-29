@@ -1,0 +1,19 @@
+# 416 - Rivough
+
+# County Title
+title = c_rivough
+
+# Settlements
+max_settlements = 5
+
+b_rivough_castle = castle
+b_rivough = temple
+b_rivough_2 = city
+#b_vilvan = castle
+#b_diryan = castle
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

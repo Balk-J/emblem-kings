@@ -1,0 +1,17 @@
+# 460 - Deleus
+
+# County Title
+title = c_deleus
+
+# Settlements
+max_settlements = 3
+
+b_deleus = tribal
+#b_deleus_2 = temple
+#b_deleus_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

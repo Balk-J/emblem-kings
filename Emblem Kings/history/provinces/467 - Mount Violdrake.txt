@@ -1,0 +1,17 @@
+# 467 - Mount Violdrake
+
+# County Title
+title = c_mount_violdrake
+
+# Settlements
+max_settlements = 3
+
+b_fort_violdrake = castle
+b_barca = city
+#b_violdrake = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

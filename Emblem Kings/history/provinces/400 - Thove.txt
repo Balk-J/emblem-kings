@@ -1,0 +1,18 @@
+# 400 - Thove
+
+# County Title
+title = c_thove
+
+# Settlements
+max_settlements = 4
+
+b_thove_castle = castle
+b_thove = temple
+b_thove_2 = city
+#b_rybnik = temple
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 353 - Tor
+
+# County Title
+title = c_tor
+
+# Settlements
+max_settlements = 3
+
+b_tor = castle
+b_tor_2 = temple
+#b_tor_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

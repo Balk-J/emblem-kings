@@ -1,0 +1,18 @@
+# 512 - Rada
+
+# County Title
+title = c_rada
+
+# Settlements
+max_settlements = 4
+
+b_rada_castle = castle
+b_rada = temple
+b_rada_2 = city
+#b_bergsang = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

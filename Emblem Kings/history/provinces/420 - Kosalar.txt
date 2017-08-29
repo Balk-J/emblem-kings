@@ -1,0 +1,17 @@
+# 420 - Kosalar
+
+# County Title
+title = c_kosalar
+
+# Settlements
+max_settlements = 3
+
+b_kosalar = castle
+b_kosalar_2 = temple
+b_kosalar_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 535 - Falias
+
+# County Title
+title = c_falias
+
+# Settlements
+max_settlements = 3
+
+b_falias = tribal
+#b_falias_2 = temple
+#b_falias_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

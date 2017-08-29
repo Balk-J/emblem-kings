@@ -1,0 +1,17 @@
+# 405 - Sailane
+
+# County Title
+title = c_sailane
+
+# Settlements
+max_settlements = 3
+
+b_sailane_castle = castle
+b_sailane = temple
+b_sailane_2 = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

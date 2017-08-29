@@ -1,0 +1,18 @@
+# 361 - Ingwine
+
+# County Title
+title = c_ingwine
+
+# Settlements
+max_settlements = 4
+
+b_ingwine = castle
+b_ingwine_2 = temple
+b_ingwine_3 = city
+#b_ingunar = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

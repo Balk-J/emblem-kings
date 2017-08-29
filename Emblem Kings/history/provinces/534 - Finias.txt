@@ -1,0 +1,18 @@
+# 534 - Finias
+
+# County Title
+title = c_finias
+
+# Settlements
+max_settlements = 4
+
+b_finias = tribal
+#b_finias_2 = temple
+#b_finias_3 = city
+#b_nimeth = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

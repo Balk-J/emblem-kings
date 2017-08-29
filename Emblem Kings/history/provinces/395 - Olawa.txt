@@ -1,0 +1,18 @@
+# 395 - Olawa
+
+# County Title
+title = c_olawa
+
+# Settlements
+max_settlements = 4
+
+b_olawa = tribal
+b_olawa_2 = temple
+#b_olawa_3 = city
+#b_olesnica = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

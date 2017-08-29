@@ -1,0 +1,17 @@
+# 372 - Targioni
+
+# County Title
+title = c_targioni
+
+# Settlements
+max_settlements = 3
+
+b_targioni = castle
+b_targioni_2 = temple
+b_targioni_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

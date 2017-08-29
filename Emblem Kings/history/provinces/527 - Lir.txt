@@ -1,0 +1,17 @@
+# 527 - Lir
+
+# County Title
+title = c_lir
+
+# Settlements
+max_settlements = 3
+
+b_lir = tribal
+#b_lir_2 = temple
+#b_lir_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

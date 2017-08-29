@@ -1,0 +1,18 @@
+# 375 - Dunsinane
+
+# County Title
+title = c_dunsinane
+
+# Settlements
+max_settlements = 4
+
+b_dunsinane = castle
+b_dunsinane_2 = temple
+b_dunsinane_3 = city
+#b_collace = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

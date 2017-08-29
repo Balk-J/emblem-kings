@@ -327,7 +327,287 @@ province;red;green;blue;x;x
 326;232;0;0;Aareshore;x
 327;0;150;228;Lake Calach;x
 328;232;0;213;River Aare;x
-329;234;237;0;River Aare #2;x
-330;0;215;30;River Aare #3;x
-331;228;134;0;River Aare #4;x
+329;234;237;0;River Aare;x
+330;0;215;30;River Aare;x
+331;228;134;0;River Aare;x
 332;243;0;137;River Scamander;x
+333;224;203;106;Belhalla;x
+334;213;189;76;Glasir;x
+335;214;197;121;Laeradr;x
+336;213;182;37;Valholl;x
+337;201;85;57;Velthomer;x
+338;165;63;39;Spakona;x
+339;234;100;68;Spaekona;x
+340;135;42;20;Walwon;x
+341;223;130;108;Volva;x
+342;213;195;67;Edda;x
+343;239;227;141;Grimnismal;x
+344;167;154;58;Havamal;x
+345;233;217;102;Lokasenna;x
+346;218;210;150;Alvissmal;x
+347;185;53;41;Chalphy;x
+348;170;25;11;Thjalfi;x
+349;216;103;93;Roskva;x
+350;143;41;31;Harbardsljod;x
+351;24;39;92;Friege;x
+352;50;82;194;Donar;x
+353;55;81;170;Tor;x
+354;29;92;78;Dozel;x
+355;23;71;60;Monza;x
+356;38;121;103;Lombardy;x
+357;35;103;103;Jungby;x
+358;54;146;146;Inguin;x
+359;22;112;112;Yngvi;x
+360;23;64;64;Ingwaz;x
+361;64;174;174;Ingwine;x
+362;37;117;88;Agusty;x
+363;22;74;55;Hotherus;x
+364;45;145;109;Hodur;x
+365;68;227;169;Griplur;x
+366;44;163;120;Hromundar;x
+367;179;118;64;Madino;x
+368;236;157;88;Santala;x
+369;210;137;73;Lorantha;x
+370;176;32;0;Silvail;x
+371;127;25;2;Mascagni;x
+372;200;75;48;Targioni;x
+373;227;129;108;Tozzetti;x
+374;64;24;24;Anphony;x
+375;237;91;91;Dunsinane;x
+376;147;67;67;Birnam;x
+377;129;50;50;Glamis;x
+378;58;22;22;Cawdor;x
+379;0;104;48;Heirhein;x
+380;3;166;78;Stemilion;x
+381;1;70;33;Castillon;x
+382;2;96;46;Blaye;x
+383;81;136;81;Nordion;x
+384;102;174;102;Norn;x
+385;134;227;134;Urd;x
+386;55;93;55;Verdandi;x
+387;34;56;34;Skuld;x
+388;0;56;16;Mackily;x
+389;4;226;67;Truro;x
+390;5;153;48;Moresk;x
+391;3;244;72;Malpas;x
+392;43;57;84;Silesse;x
+393;66;77;98;Ziebice;x
+394;76;82;94;Swidnica;x
+395;79;104;151;Olawa;x
+396;40;0;80;Zaxon;x
+397;67;3;131;Legnica;x
+398;81;22;141;Jawor;x
+399;116;0;232;Glogow;x
+400;48;0;104;Thove;x
+401;88;8;180;Nysa;x
+402;59;1;126;Prudnik;x
+403;99;20;192;Kozle;x
+404;76;52;104;Bytom;x
+405;177;168;171;Sailane;x
+406;118;112;114;Gora;x
+407;169;163;165;Scinawa;x
+408;172;76;89;Lubeck;x
+409;114;52;61;Luban;x
+410;223;102;119;Grodkow;x
+411;24;108;69;Isaach;x
+412;42;151;100;Jacobe;x
+413;49;175;117;Easaw;x
+414;19;84;54;Rebehkah;x
+415;18;116;71;Basematt;x
+416;156;90;42;Rivough;x
+417;142;75;26;Siyabli;x
+418;112;64;29;Mollakend;x
+419;218;138;80;Tatoba;x
+420;244;159;97;Kosalar;x
+421;224;227;199;Sophara;x
+422;164;166;145;Degou;x
+423;242;245;215;Baratou;x
+424;193;202;120;Kankelena;x
+425;191;197;144;Mansaba;x
+426;115;79;32;Ganeishire;x
+427;166;113;45;Abergele;x
+428;83;57;24;Mochdre;x
+429;121;88;45;Llangollen;x
+430;179;144;98;Ruthin;x
+431;127;106;63;Tirnanog;x
+432;88;74;44;Tirtairngire;x
+433;178;149;90;Magmell;x
+434;234;197;121;Tirfothuinn;x
+435;57;66;105;Leonster;x
+436;103;123;206;Norden;x
+437;40;46;74;Melfiye;x
+438;60;70;114;Solwood;x
+439;123;145;239;Osraige;x
+440;16;104;32;Alster;x
+441;8;54;17;Dakia;x
+442;18;110;35;Gartan;x
+443;11;70;22;Clochar;x
+444;20;161;46;Latharna;x
+445;31;205;62;Airgialla;x
+446;72;40;104;Conote;x
+447;114;67;161;Breifne;x
+448;50;28;71;Liatroim;x
+449;248;168;0;Manster;x
+450;187;127;0;Danzich;x
+451;211;143;1;Kelves;x
+452;255;175;6;Adare;x
+453;163;111;2;Luimneach;x
+454;120;120;144;Melgln;x
+455;76;76;95;Dungot;x
+456;96;96;115;Tahra;x
+457;151;151;191;Cealsaidh;x
+458;178;61;49;Thracia;x
+459;211;78;65;Verissa;x
+460;150;51;41;Deleus;x
+461;206;70;57;Galata;x
+462;136;47;38;Madyta;x
+463;104;24;40;Kapathogia;x
+464;113;26;44;Heraclea;x
+465;82;14;28;Panidos;x
+466;152;86;1;Dandrum;x
+467;80;88;128;Mount Violdrake;x
+468;244;170;43;Noel;x
+469;144;32;40;Meace;x
+470;131;30;37;Fionnghlas;x
+471;178;39;49;Ailinne;x
+472;127;8;17;Daru;x
+473;56;64;0;Luthecia;x
+474;110;126;0;Lysimachia;x
+475;90;103;2;Selymbria;x
+476;49;56;1;Blachernae;x
+477;34;37;11;Grutia;x
+478;71;77;24;Syrallum;x
+479;44;48;12;Aulaeitichus;x
+480;109;119;30;Gallipoli;x
+481;159;171;63;Chariopolis;x
+482;240;112;8;Iss;x
+483;93;30;24;Fiana;x
+484;170;78;3;Eochaill;x
+485;255;119;8;Mumu;x
+486;203;95;6;Deasmhumhain;x
+487;206;108;29;Caiseal;x
+488;150;80;23;Urmhumhain;x
+489;228;157;57;Verdane;x
+490;223;141;24;Stenay;x
+491;207;140;46;Etain;x
+492;232;181;108;Longuyon;x
+493;48;91;81;Marpha;x
+494;67;170;146;Spirit Forest;x
+495;4;66;51;Kagbeni;x
+496;54;210;174;Dhami;x
+497;9;123;96;Lete;x
+498;178;146;85;Genoa;x
+499;233;169;47;Rapallo;x
+500;198;164;100;Savona;x
+501;99;72;20;Albenga;x
+502;152;136;56;Evans;x
+503;229;211;124;Augea;x
+504;162;138;18;Nogna;x
+505;182;164;76;Gizia;x
+506;57;0;57;Miletos;x
+507;85;2;85;Magnesia;x
+508;148;6;148;Palation;x
+509;87;65;122;Chronos;x
+510;134;100;188;Saeculum;x
+511;128;104;166;Aevum;x
+512;99;99;16;Rada;x
+513;153;153;20;Hagfors;x
+514;60;60;9;Sunnemo;x
+515;147;132;192;Peruluke;x
+516;105;93;141;Tralles;x
+517;160;140;221;Iassos;x
+518;106;224;223;Orgahil;x
+519;127;237;236;Detroyes;x
+520;80;168;167;Pulci;x
+521;40;93;93;Perrault;x
+522;89;184;183;Daulnoy;x
+523;183;126;177;Basile;x
+524;214;147;207;Uberti;x
+525;79;65;62;Yied;x
+526;215;175;166;Aed;x
+527;96;84;81;Lir;x
+528;61;49;46;Aodh;x
+529;79;58;53;Aoibh;x
+530;82;0;41;Darna;x
+531;107;1;54;Murias;x
+532;212;49;131;Gorias;x
+533;80;21;51;Anu;x
+534;157;44;100;Finias;x
+535;217;2;109;Falias;x
+536;174;175;177;Phinora;x
+537;48;48;48;Kharga;x
+538;95;95;96;Siwa;x
+539;213;214;215;Dahkla;x
+540;106;106;107;Farafra;x
+541;57;58;59;Bahariya;x
+542;216;178;2;Grann's Hall;x
+543;3;31;84;Sudeten Mountains;x
+544;3;35;20;Moriah Mountains;x
+545;218;0;0;Cobaldrake Mountains;x
+546;55;0;0;Scarldrake Mountains;x
+547;156;32;146;Great River of Thracia;x
+548;32;156;59;Great River of Thracia;x
+549;32;149;156;Great River of Thracia;x
+550;9;65;158;Lake Verdane;x
+551;9;158;156;Strait of Iss;x
+552;9;158;111;Verissa Coast;x
+553;9;158;69;Thracia Coast;x
+554;125;158;9;Horn of Thracia;x
+555;158;153;9;Grutia Coast;x
+556;158;107;9;Chronos Coast;x
+557;158;83;9;Luthecia Bay;x
+558;158;65;9;Rada Coast;x
+559;158;44;9;Miletos Sea;x
+560;158;9;90;Peruluke Sea;x
+561;158;9;135;Lete Coast;x
+562;111;9;158;Dhami Coast;x
+563;34;9;158;Verdane Coast;x
+564;11;121;158;Heirhein's Watch;x
+565;9;149;158;Nordion Bay;x
+566;9;158;135;Anphony Coast;x
+567;9;158;62;Anphony Bay;x
+568;9;158;41;Tozzetti Coast;x
+569;100;158;9;Silvail Strait;x
+570;158;111;9;Ogre's Cauldron;x
+571;158;62;9;Yedu Sea;x
+572;158;9;93;Yedu Sea;x
+573;107;9;158;Yedu Sea;x
+574;128;158;9;Western Sea of Orgahil;x
+575;158;146;9;Northern Sea of Orgahil;x
+576;158;9;55;Silessea;x
+577;158;9;142;Sea of Thove;x
+578;128;9;158;Immram Bay;x
+579;23;9;158;Tirnanog Coast;x
+580;9;121;158;Ganeisea;x
+581;9;158;125;Isaach Coast;x
+582;9;93;158;Outer Thracia Bay;x
+583;69;0;245;Thracia Bay;x
+584;100;9;158;Thracian Sea;x
+585;158;9;100;Thracian Sea;x
+586;158;9;30;Thracian Sea;x
+587;13;121;158;Luimneach Coast;x
+588;142;42;227;Drake Sea;x
+589;227;42;194;Drake Sea;x
+590;242;245;25;Magsea;x
+591;25;245;46;Magsea;x
+592;245;25;165;Magsea;x
+593;245;196;25;Magsea;x
+594;56;25;245;Magsea;x
+595;25;245;165;Magsea;x
+596;149;25;245;Magsea;x
+597;245;25;237;Magsea;x
+598;245;25;129;Magsea;x
+599;227;42;142;Elibian Sea;x
+600;164;42;227;Elibian Sea;x
+601;227;59;42;Elibian Sea;x
+602;107;42;227;Elibian Sea;x
+603;227;125;42;Elibian Sea;x
+604;227;190;42;Elibian Sea;x
+605;46;42;227;Elibian Sea;x
+606;42;142;227;Elibian Sea;x
+607;52;201;182;Elibian Sea;x
+608;90;227;42;Elibian Sea;x
+609;190;227;42;Elibian Sea;x
+610;42;112;227;Elibian Sea;x
+611;42;227;142;Elibian Sea;x
+612;42;227;203;Elibian Sea;x

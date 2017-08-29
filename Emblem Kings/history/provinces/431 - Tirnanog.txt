@@ -1,0 +1,19 @@
+# 431 - Tirnanog
+
+# County Title
+title = c_tirnanog
+
+# Settlements
+max_settlements = 5
+
+b_tirnanog_castle = castle
+b_tirnanog = temple
+b_tirnanog_2 = city
+#b_ildathach = castle
+#b_emainablach = castle
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

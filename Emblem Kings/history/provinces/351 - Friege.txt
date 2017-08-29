@@ -1,0 +1,19 @@
+# 351 - Friege
+
+# County Title
+title = c_friege
+
+# Settlements
+max_settlements = 5
+
+b_friege_castle = castle
+b_friege = temple
+b_friege_2 = city
+b_frigg = castle
+#b_vethorm = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

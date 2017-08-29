@@ -1,0 +1,17 @@
+# 381 - Castillon
+
+# County Title
+title = c_castillon
+
+# Settlements
+max_settlements = 3
+
+b_castillon = castle
+b_castillon_2 = temple
+b_castillon_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

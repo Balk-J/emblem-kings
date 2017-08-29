@@ -1,0 +1,19 @@
+# 499 - Rapallo
+
+# County Title
+title = c_rapallo
+
+# Settlements
+max_settlements = 5
+
+b_rapallo = tribal
+#b_rapallo_2 = temple
+#b_rapallo_3 = city
+#b_mirandola = castle
+#b_sabbioneta = city
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

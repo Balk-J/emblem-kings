@@ -1,0 +1,18 @@
+# 376 - Birnam
+
+# County Title
+title = c_birnam
+
+# Settlements
+max_settlements = 4
+
+b_birnam = castle
+b_birnam_2 = temple
+b_birnam_3 = city
+#b_craigvinean = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

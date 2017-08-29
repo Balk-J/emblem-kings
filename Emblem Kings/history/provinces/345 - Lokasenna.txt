@@ -1,0 +1,19 @@
+# 345 - Lokasenna
+
+# County Title
+title = c_lokasenna
+
+# Settlements
+max_settlements = 5
+
+b_lokasenna = castle
+b_lokasenna_2 = temple
+b_lokasenna_3 = city
+#b_rigsthula = city
+#b_volundarkvida = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

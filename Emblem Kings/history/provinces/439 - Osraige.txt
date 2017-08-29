@@ -1,0 +1,19 @@
+# 439 - Osraige
+
+# County Title
+title = c_osraige
+
+# Settlements
+max_settlements = 5
+
+b_osraige = castle
+b_osraige_2 = temple
+b_osraige_3 = city
+#b_gabhran = city
+#b_callainn = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,19 @@
+# 357 - Jungby
+
+# County Title
+title = c_jungby
+
+# Settlements
+max_settlements = 5
+
+b_jungby_castle = castle
+b_jungby = temple
+b_jungby_2 = city
+b_fraujaz = city
+b_frawjon = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

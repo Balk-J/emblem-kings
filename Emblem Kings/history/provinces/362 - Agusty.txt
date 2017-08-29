@@ -1,0 +1,20 @@
+# 362 - Agusty
+
+# County Title
+title = c_agusty
+
+# Settlements
+max_settlements = 6
+
+b_agusty_castle = castle
+b_agusty = temple
+b_agusty_2 = city
+b_thrainn = castle
+b_hrongvid = castle
+#b_haldingr = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

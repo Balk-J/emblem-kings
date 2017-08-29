@@ -1,0 +1,18 @@
+# 447 - Breifne
+
+# County Title
+title = c_breifne
+
+# Settlements
+max_settlements = 4
+
+b_breifne = castle
+b_breifne_2 = temple
+b_breifne_3 = city
+#b_ardachadh = castle
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

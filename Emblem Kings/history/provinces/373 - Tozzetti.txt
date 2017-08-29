@@ -1,0 +1,17 @@
+# 373 - Tozzetti
+
+# County Title
+title = c_tozzetti
+
+# Settlements
+max_settlements = 3
+
+b_tozzetti = castle
+b_tozzetti_2 = temple
+b_tozzetti_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

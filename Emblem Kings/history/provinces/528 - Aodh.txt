@@ -1,0 +1,17 @@
+# 528 - Aodh
+
+# County Title
+title = c_aodh
+
+# Settlements
+max_settlements = 3
+
+b_aodh = tribal
+#b_aodh_2 = temple
+#b_aodh_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

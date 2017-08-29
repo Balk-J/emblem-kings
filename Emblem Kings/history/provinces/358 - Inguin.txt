@@ -1,0 +1,17 @@
+# 358 - Inguin
+
+# County Title
+title = c_inguin
+
+# Settlements
+max_settlements = 3
+
+b_inguin = castle
+b_inguin_2 = temple
+b_inguin_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

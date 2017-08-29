@@ -1,0 +1,17 @@
+# 464 - Heraclea
+
+# County Title
+title = c_heraclea
+
+# Settlements
+max_settlements = 3
+
+b_heraclea = castle
+b_heraclea_2 = city
+b_heraclea_3 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

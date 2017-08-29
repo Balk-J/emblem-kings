@@ -1,0 +1,17 @@
+# 371 - Mascagni
+
+# County Title
+title = c_mascagni
+
+# Settlements
+max_settlements = 3
+
+b_mascagni = castle
+b_mascagni_2 = temple
+b_mascagni_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

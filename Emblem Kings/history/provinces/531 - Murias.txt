@@ -1,0 +1,17 @@
+# 531 - Murias
+
+# County Title
+title = c_murias
+
+# Settlements
+max_settlements = 3
+
+b_murias = tribal
+#b_murias_2 = temple
+#b_murias_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

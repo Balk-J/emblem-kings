@@ -1,0 +1,17 @@
+# 475 - Selymbria
+
+# County Title
+title = c_selymbria
+
+# Settlements
+max_settlements = 3
+
+b_selymbria = tribal
+#b_selymbria_2 = temple
+#b_selymbria_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

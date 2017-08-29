@@ -1,0 +1,16 @@
+# 470 - Fionnghlas
+
+# County Title
+title = c_fionnghlas
+
+# Settlements
+max_settlements = 2
+
+b_fionnghlas = tribal
+#b_fionnghlas_2 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

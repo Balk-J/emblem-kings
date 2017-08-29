@@ -1,0 +1,17 @@
+# 479 - Aulaeitichus
+
+# County Title
+title = c_aulaeitichus
+
+# Settlements
+max_settlements = 3
+
+b_aulaeitichus = castle
+b_aulaeitichus_2 = city
+b_aulaeitichus_3 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

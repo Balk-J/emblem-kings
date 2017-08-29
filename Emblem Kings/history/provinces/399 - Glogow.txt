@@ -1,0 +1,18 @@
+# 399 - Glogow
+
+# County Title
+title = c_glogow
+
+# Settlements
+max_settlements = 4
+
+b_glogow = tribal
+#b_glogow_2 = temple
+#b_glogow_3 = city
+#b_lubin = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

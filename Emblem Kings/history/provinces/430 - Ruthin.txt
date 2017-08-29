@@ -1,0 +1,16 @@
+# 430 - Ruthin
+
+# County Title
+title = c_ruthin
+
+# Settlements
+max_settlements = 2
+
+b_ruthin = castle
+#b_ruthin_2 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

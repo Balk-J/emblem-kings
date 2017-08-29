@@ -2,11 +2,7 @@
 HIGH_BISHOP;High Bishop;;;;;;;;;;;;;x
 k_naga;Divine Dragon Grounds;;;;;;;;;;;;;x
 k_naga_adj;Divine Dragon;;;;;;;;;;;;;x
-NAGA;Naga;;;;;;;;;;;;;x
-THE_VOICE;The Voice;;;;;;;;;;;;;x
 VOICE_OF_NAGA;Voice;;;;;;;;;;;;;x
-FELL_DRAGON;The Fell Dragon;;;;;;;;;;;;;x
-GRIMA;Grima;;;;;;;;;;;;;x
 MAGE;Mage;;;;;;;;;;;;;x
 SAGE;Sage;;;;;;;;;;;;;x
 ARCHSAGE;Archsage;;;;;;;;;;;;;x
@@ -19,6 +15,12 @@ DARK_PONTIFEX;Dark Pontifex;;;;;;;;;;;;;x
 THE_DARK_FORCES;Dark Forces;;;;;;;;;;;;;x
 THE_SPELLBOOKS;The Spellbooks;;;;;;;;;;;;;x
 THE_TOMES;The Tomes;;;;;;;;;;;;;x
+THE_SCRIPTURE;The Scripture;;;;;;;;;;;;;x
+GOD_LOPTYR;Loptyr;;;;;;;;;;;;;x
+GOD_NAGA;Naga;;;;;;;;;;;;;x
+GOD_THE_VOICE;The Voice;;;;;;;;;;;;;x
+GOD_THE_FELL_DRAGON;The Fell Dragon;;;;;;;;;;;;;x
+GOD_GRIMA;Grima;;;;;;;;;;;;;x
 GOD_FATHER_SKY;Father Sky;;;;;;;;;;;;;x
 GOD_MOTHER_EARTH;Mother Earth;;;;;;;;;;;;;x
 GOD_DELPHI;Delphi;;;;;;;;;;;;;x
@@ -27,6 +29,23 @@ GOD_SET;Set;;;;;;;;;;;;;x
 GOD_THOR;Thor;;;;;;;;;;;;;x
 GOD_FILLA;Filla;;;;;;;;;;;;;x
 GOD_THE_GODS;the Gods;;;;;;;;;;;;;x
+GOD_THE_DARK_GOD;the Dark God;;;;;;;;;;;;;x
+GOD_SALAMANDER;Salamander;;;;;;;;;;;;;x
+GOD_FORSETI;Forseti;;;;;;;;;;;;;x
+GOD_HEIM;Heim;;;;;;;;;;;;;x
+GOD_BALDUR;Baldur;;;;;;;;;;;;;x
+GOD_NEIR;Neir;;;;;;;;;;;;;x
+GOD_ULIR;Ulir;;;;;;;;;;;;;x
+GOD_BLAGI;Blagi;;;;;;;;;;;;;x
+GOD_FALA;Fala;;;;;;;;;;;;;x
+GOD_TORDO;Tordo;;;;;;;;;;;;;x
+GOD_CED;Ced;;;;;;;;;;;;;x
+GOD_ODO;Odo;;;;;;;;;;;;;x
+GOD_HEZUL;Hezul;;;;;;;;;;;;;x
+GOD_DAIN;Dain;;;;;;;;;;;;;x
+GOD_NOBA;Noba;;;;;;;;;;;;;x
+GOD_GRANN;Grann;;;;;;;;;;;;;x
+GOD_YUDU;Yudu;;;;;;;;;;;;;x
 ARCHBISHOP;Archbishop;;;;;;;;;;;;;x
 ARCHBISHOP_GOLDEN_CHURCH;Golden Bishop;;;;;;;;;;;;;x
 ARCHBISHOPRIC_OF;Archbishopric of;;;;;;;;;;;;;x
@@ -102,3 +121,21 @@ dummy_2;Thunder;;;;;;;;;;;;;x
 dummy_3;Wind;;;;;;;;;;;;;x
 dummy_4;Water;;;;;;;;;;;;;x
 dummy_5;Earth;;;;;;;;;;;;;x
+loptyrian;Loptyrian;;;;;;;;;;;;;x
+loptyrian_DESC;The Loptyrians began as a religious order founded by Bishop Galle after his blood bond with the Earth Dragon Loptyr. It is based around worship of Loptyr as the supreme deity. Members gain access to spellbooks and magic staves made using dragon knowledge. However, Loptyr's hatred and resentment of humanity have resulted in truly horrific church rituals...;;;;;;;;;;;;;x
+mairist;Mairist;;;;;;;;;;;;;x
+mairist_DESC;Mairism is a Loptyrian heresy named its founder Maira, a descendant of the original Bishop Galle. It attempts to harmonize the Loptyrian faith with the old pagan religions of Jugdral. Maira placed Loptyr as only one of many high-ranking gods and emphasized his benevolent qualities. He also encouraged tolerance of other faiths and worked to end discrimination against their believers.;;;;;;;;;;;;;x
+church_of_edda;Church of Edda;;;;;;;;;;;;;x
+church_of_edda_DESC;The Church of Edda is based on the original pagan religions of Judgral. It was founded by Saint Blagi of the Twelve Crusaders to restore the old faiths and heal the damage caused by Loptyrian persecution. The twelve dragons who came to the Crusaders' aid in their war with Loptyr are revered as its highest gods.;;;;;;;;;;;;;x
+earthen_pagan;Earthen;;;;;;;;;;;;;x
+earthen_pagan_DESC;The Earthen religion is polytheistic, with many different gods and spirits of varied abilities and power. It originated in Jugdral alongside humanity's early civilizations and its first holy men were notable for their literacy, knowledge of herbs, and skill in medicine.;;;;;;;;;;;;;x
+earthen_pagan_reformed;Earthen;;;;;;;;;;;;;x
+earthen_pagan_reformed_DESC;The reformed Earthen faith has a Holy Book with a creation myth, chapters on the gods, an account of the battle against the dark god Loptyr, and a book of prophesies. The church also has a standardized liturgy and a formal church hierarchy led by the High Priest of Grann, who can be vassalized by secular rulers.;;;;;;;;;;;;;x
+d_earthen;The Earthen Church;;;;;;;;;;;;;x
+d_earthen_adj;Earthen Church;;;;;;;;;;;;;x
+DIVINE_SKY_PRIEST;Divine Priest;;;;;;;;;;;;;x
+DIVINE_SKY_PRIESTESS;Divine Priestess;;;;;;;;;;;;;x
+temple_baron_earthen_pagan_reformed;Priest;;;;;;;;;;;;;x
+temple_baron_female_earthen_pagan_reformed;Priestess;;;;;;;;;;;;;x
+temple_baron_earthen_pagan;Priest;;;;;;;;;;;;;x
+temple_baron_female_earthen_pagan;Priestess;;;;;;;;;;;;;x

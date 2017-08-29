@@ -1,0 +1,16 @@
+# 403 - Kozle
+
+# County Title
+title = c_kozle
+
+# Settlements
+max_settlements = 2
+
+b_kozle = tribal
+b_lubliniec = temple
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

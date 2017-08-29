@@ -1,0 +1,20 @@
+# 333 - Belhalla
+
+# County Title
+title = c_belhalla
+
+# Settlements
+max_settlements = 6
+
+b_belhalla = castle
+b_belhalla_2 = temple
+b_belhalla_3 = city
+b_heorot = castle
+#b_fagrskinna = temple
+#b_heimskringla = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

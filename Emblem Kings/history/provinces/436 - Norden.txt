@@ -1,0 +1,18 @@
+# 436 - Norden
+
+# County Title
+title = c_norden
+
+# Settlements
+max_settlements = 4
+
+b_fort_norden = castle
+b_norden = temple
+b_norden_2 = city
+#b_laigin = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

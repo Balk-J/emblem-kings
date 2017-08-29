@@ -1,0 +1,17 @@
+# 529 - Aoibh
+
+# County Title
+title = c_aoibh
+
+# Settlements
+max_settlements = 3
+
+b_aoibh = tribal
+#b_aoibh_2 = temple
+#b_aoibh_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

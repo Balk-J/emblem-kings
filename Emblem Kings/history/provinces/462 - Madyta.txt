@@ -1,0 +1,17 @@
+# 462 - Madyta
+
+# County Title
+title = c_madyta
+
+# Settlements
+max_settlements = 3
+
+b_madyta = tribal
+#b_madyta_2 = temple
+#b_madyta_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

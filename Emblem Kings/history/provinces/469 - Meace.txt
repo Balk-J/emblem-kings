@@ -1,0 +1,18 @@
+# 469 - Meace
+
+# County Title
+title = c_meace
+
+# Settlements
+max_settlements = 4
+
+b_meace_castle = castle
+b_meace = city
+b_meace_2 = temple
+#b_dubhlinn = castle
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

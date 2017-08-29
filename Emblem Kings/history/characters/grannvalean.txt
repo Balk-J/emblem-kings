@@ -1,0 +1,33 @@
+801={
+	name="Heim"
+	dynasty=801
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	616.1.1={
+		birth=yes
+	}
+	628.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	626.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_saint
+		add_trait="eight_legends"
+		add_trait="class_bishop"
+	}
+	676.1.1={
+		death=yes
+	}
+}

@@ -1,0 +1,17 @@
+# 491 - Etain
+
+# County Title
+title = c_etain
+
+# Settlements
+max_settlements = 3
+
+b_etain = tribal
+#b_etain_2 = temple
+#b_etain_3 = city
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

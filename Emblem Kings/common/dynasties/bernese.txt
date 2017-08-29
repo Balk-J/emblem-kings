@@ -8,14 +8,26 @@
 		religion="elimine_church"
 		template = 0
 		layer = {
-			texture = 0
-			texture_internal = 46
+			texture = 9
+			texture_internal = 0
 			emblem = 0
-			color = 7
-			color = 6
-			color = 2
+			color = 0
+			color = 0
+			color = 0
 		}
 	}
+#	coat_of_arms = {
+#		religion="elimine_church"
+#		template = 0
+#		layer = {
+#			texture = 0
+#			texture_internal = 46
+#			emblem = 0
+#			color = 7
+#			color = 6
+#			color = 2
+#		}
+#	}
 }
 
 415={

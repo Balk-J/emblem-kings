@@ -1,0 +1,17 @@
+# 516 - Tralles
+
+# County Title
+title = c_tralles
+
+# Settlements
+max_settlements = 3
+
+b_tralles = tribal
+#b_tralles_2 = temple
+#b_tralles_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

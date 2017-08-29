@@ -1,0 +1,17 @@
+# 513 - Hagfors
+
+# County Title
+title = c_hagfors
+
+# Settlements
+max_settlements = 3
+
+b_hagfors = castle
+b_hagfors_2 = temple
+b_hagfors_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 524 - Uberti
+
+# County Title
+title = c_uberti
+
+# Settlements
+max_settlements = 3
+
+b_uberti = tribal
+b_uberti_2 = city
+#b_uberti_3 = temple
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

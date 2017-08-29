@@ -1,0 +1,17 @@
+# 519 - Detroyes
+
+# County Title
+title = c_detroyes
+
+# Settlements
+max_settlements = 3
+
+b_detroyes = tribal
+#b_detroyes_2 = temple
+#b_detroyes_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

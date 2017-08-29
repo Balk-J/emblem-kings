@@ -1,0 +1,18 @@
+# 525 - Yied
+
+# County Title
+title = c_yied
+
+# Settlements
+max_settlements = 4
+
+b_yied_shrine = castle
+b_yied = temple
+#b_yied_2 = city
+#b_conn_cetchathach = temple
+
+# Misc
+culture = grannvalean
+religion = loptyrian
+
+# History

@@ -1,0 +1,18 @@
+# 539 - Dahkla
+
+# County Title
+title = c_dahkla
+
+# Settlements
+max_settlements = 4
+
+b_dahkla = tribal
+#b_dahkla_2 = temple
+#b_dahkla_3 = city
+#b_fayyum = castle
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

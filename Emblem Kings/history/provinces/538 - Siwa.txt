@@ -1,0 +1,17 @@
+# 538 - Siwa
+
+# County Title
+title = c_siwa
+
+# Settlements
+max_settlements = 3
+
+b_siwa = tribal
+#b_siwa_2 = temple
+#b_siwa_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

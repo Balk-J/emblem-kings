@@ -1,0 +1,18 @@
+# 397 - Legnica
+
+# County Title
+title = c_legnica
+
+# Settlements
+max_settlements = 4
+
+b_legnica = tribal
+b_legnica_2 = temple
+#b_legnica_3 = city
+#b_bolkow = temple
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

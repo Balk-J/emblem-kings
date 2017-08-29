@@ -1,0 +1,18 @@
+# 396 - Zaxon
+
+# County Title
+title = c_zaxon
+
+# Settlements
+max_settlements = 4
+
+b_zaxon_castle = castle
+b_zaxon = temple
+b_zaxon_2 = city
+b_zagan = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

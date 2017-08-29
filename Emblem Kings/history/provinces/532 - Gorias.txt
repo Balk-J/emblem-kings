@@ -1,0 +1,17 @@
+# 532 - Gorias
+
+# County Title
+title = c_gorias
+
+# Settlements
+max_settlements = 3
+
+b_gorias = tribal
+#b_gorias_2 = temple
+#b_gorias_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

@@ -1,0 +1,19 @@
+# 337 - Velthomer
+
+# County Title
+title = c_velthomer
+
+# Settlements
+max_settlements = 5
+
+b_velthomer_castle = castle
+b_velthomer = temple
+b_velthomer_2 = city
+#b_fala = temple
+#b_valflame = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

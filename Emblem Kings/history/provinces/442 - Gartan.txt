@@ -1,0 +1,16 @@
+# 442 - Gartan
+
+# County Title
+title = c_gartan
+
+# Settlements
+max_settlements = 2
+
+b_gartan = castle
+#b_dun_libhse = temple
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 514 - Sunnemo
+
+# County Title
+title = c_sunnemo
+
+# Settlements
+max_settlements = 3
+
+b_sunnemo = castle
+b_sunnemo_2 = temple
+b_sunnemo_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

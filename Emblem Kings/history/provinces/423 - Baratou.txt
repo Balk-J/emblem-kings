@@ -1,0 +1,17 @@
+# 423 - Baratou
+
+# County Title
+title = c_baratou
+
+# Settlements
+max_settlements = 3
+
+b_baratou = castle
+b_baratou_2 = temple
+b_baratou_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

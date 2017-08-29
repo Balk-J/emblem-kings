@@ -1,0 +1,18 @@
+# 463 - Kapathogia
+
+# County Title
+title = c_kapathogia
+
+# Settlements
+max_settlements = 4
+
+b_kapathogia = castle
+b_kapathogia_2 = city
+b_kapathogia_3 = temple
+#b_rhaidestos = castle
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

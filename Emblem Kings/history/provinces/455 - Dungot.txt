@@ -1,0 +1,17 @@
+# 455 - Dungot
+
+# County Title
+title = c_dungot
+
+# Settlements
+max_settlements = 3
+
+b_dungot = tribal
+#b_dungot_2 = temple
+#b_dungot_3 = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

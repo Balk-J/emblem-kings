@@ -1,0 +1,18 @@
+# 426 - Ganeishire
+
+# County Title
+title = c_ganeishire
+
+# Settlements
+max_settlements = 4
+
+b_ganeishire_castle = castle
+b_ganeishire = temple
+b_ganeishire_2 = city
+b_denbigh = castle
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

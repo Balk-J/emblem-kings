@@ -1,0 +1,20 @@
+# 411 - Isaach
+
+# County Title
+title = c_isaach
+
+# Settlements
+max_settlements = 6
+
+b_isaach_castle = castle
+b_isaach = temple
+b_isaach_2 = city
+b_avrame = city
+#b_saraigh = castle
+#b_eliezere = temple
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

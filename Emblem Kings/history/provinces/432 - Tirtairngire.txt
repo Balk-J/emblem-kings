@@ -1,0 +1,17 @@
+# 432 - Tirtairngire
+
+# County Title
+title = c_tirtairngire
+
+# Settlements
+max_settlements = 3
+
+b_tirtairngire = tribal
+#b_tirtairngire_2 = temple
+#b_tirtairngire_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

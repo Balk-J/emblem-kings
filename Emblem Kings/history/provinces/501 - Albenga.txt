@@ -1,0 +1,17 @@
+# 501 - Albenga
+
+# County Title
+title = c_albenga
+
+# Settlements
+max_settlements = 3
+
+b_albenga = tribal
+#b_albenga_2 = city
+#b_albenga_3 = temple
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

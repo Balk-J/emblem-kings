@@ -1,0 +1,18 @@
+# 336 - Valholl
+
+# County Title
+title = c_valholl
+
+# Settlements
+max_settlements = 4
+
+b_valholl = castle
+b_valholl_2 = temple
+b_valholl_3 = city
+#b_walhalla = temple
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

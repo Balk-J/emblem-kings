@@ -1,0 +1,18 @@
+# 496 - Dhami
+
+# County Title
+title = c_dhami
+
+# Settlements
+max_settlements = 4
+
+b_dhami = tribal
+b_dhami_2 = city
+#b_dhami_3 = temple
+#b_tukuche = city
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

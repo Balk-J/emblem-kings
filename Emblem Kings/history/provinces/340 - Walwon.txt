@@ -1,0 +1,18 @@
+# 340 - Walwon
+
+# County Title
+title = c_walwon
+
+# Settlements
+max_settlements = 4
+
+b_walwon = castle
+b_walwon_2 = temple
+b_walwon_3 = city
+#b_volr = temple
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

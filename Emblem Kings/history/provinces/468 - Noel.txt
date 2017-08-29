@@ -1,0 +1,16 @@
+# 468 - Noel
+
+# County Title
+title = c_noel
+
+# Settlements
+max_settlements = 2
+
+b_noel = tribal
+#b_noel_2 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

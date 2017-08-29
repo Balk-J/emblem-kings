@@ -1,0 +1,17 @@
+# 401 - Nysa
+
+# County Title
+title = c_nysa
+
+# Settlements
+max_settlements = 3
+
+b_nysa = tribal
+b_nysa_2 = temple
+#b_nysa_3 = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

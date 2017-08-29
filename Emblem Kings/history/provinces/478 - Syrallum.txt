@@ -1,0 +1,17 @@
+# 478 - Syrallum
+
+# County Title
+title = c_syrallum
+
+# Settlements
+max_settlements = 3
+
+b_syrallum = castle
+b_syrallum_2 = city
+b_syrallum_3 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

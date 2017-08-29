@@ -1,0 +1,17 @@
+# 508 - Palation
+
+# County Title
+title = c_palation
+
+# Settlements
+max_settlements = 4
+
+b_palation = castle
+b_palation_2 = temple
+b_palation_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

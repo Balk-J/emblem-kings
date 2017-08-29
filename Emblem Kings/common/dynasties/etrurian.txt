@@ -22,18 +22,30 @@
 	used_for_random=no
 	name="Aquleia"
 	culture="etrurian"
-    coat_of_arms = {
-		religion=elimine_church
-        template = 0
-        layer = {
-            texture = 1
-            texture_internal = 11
-            emblem = 0
-            color = 3
-            color = 0
-            color = 6
-        }
-    }
+	coat_of_arms = {
+		religion="elimine_church"
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+#    coat_of_arms = {
+#		religion=elimine_church
+#        template = 0
+#        layer = {
+#            texture = 1
+#            texture_internal = 11
+#            emblem = 0
+#            color = 3
+#            color = 0
+#            color = 6
+#        }
+#    }
 }
 
 203={

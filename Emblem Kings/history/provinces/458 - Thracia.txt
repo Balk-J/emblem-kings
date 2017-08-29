@@ -1,0 +1,19 @@
+# 458 - Thracia
+
+# County Title
+title = c_thracia
+
+# Settlements
+max_settlements = 5
+
+b_thracia_castle = castle
+b_thracia = city
+b_thracia_2 = temple
+b_deuteron = castle
+b_heieron = castle
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 487 - Caiseal
+
+# County Title
+title = c_caiseal
+
+# Settlements
+max_settlements = 3
+
+b_caiseal = tribal
+#b_caiseal_2 = temple
+#b_caiseal_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

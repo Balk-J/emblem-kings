@@ -1,0 +1,17 @@
+# 488 - Urmhumhain
+
+# County Title
+title = c_urmhumhain
+
+# Settlements
+max_settlements = 3
+
+b_urmhumhain = tribal
+#b_urmhumhain_2 = temple
+#b_urmhumhain_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

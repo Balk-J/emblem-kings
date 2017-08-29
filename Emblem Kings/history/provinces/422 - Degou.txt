@@ -1,0 +1,16 @@
+# 422 - Degou
+
+# County Title
+title = c_degou
+
+# Settlements
+max_settlements = 2
+
+b_degou = castle
+b_degou_2 = temple
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

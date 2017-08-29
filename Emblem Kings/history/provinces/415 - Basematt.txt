@@ -1,0 +1,17 @@
+# 415 - Basematt
+
+# County Title
+title = c_basematt
+
+# Settlements
+max_settlements = 3
+
+b_basematt = castle
+b_basematt_2 = temple
+b_basematt_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

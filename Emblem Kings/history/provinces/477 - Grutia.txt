@@ -1,0 +1,17 @@
+# 477 - Grutia
+
+# County Title
+title = c_grutia
+
+# Settlements
+max_settlements = 3
+
+b_grutia_castle = castle
+b_grutia = city
+b_grutia_2 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

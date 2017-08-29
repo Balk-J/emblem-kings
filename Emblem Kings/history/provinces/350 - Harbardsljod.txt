@@ -1,0 +1,19 @@
+# 350 - Harbardsljod
+
+# County Title
+title = c_harbardsljod
+
+# Settlements
+max_settlements = 5
+
+b_harbardsljod = castle
+b_harbardsljod_2 = temple
+b_harbardsljod_3 = city
+#b_harbarthsljoth = castle
+#b_jarngreipr = temple
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

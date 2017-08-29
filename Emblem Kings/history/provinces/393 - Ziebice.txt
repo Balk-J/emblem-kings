@@ -1,0 +1,17 @@
+# 393 - Ziebice
+
+# County Title
+title = c_ziebice
+
+# Settlements
+max_settlements = 3
+
+b_ziebice = tribal
+#b_ziebice_2 = temple
+#b_ziebice_3 = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

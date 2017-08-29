@@ -1,0 +1,18 @@
+# 409 - Luban
+
+# County Title
+title = c_luban
+
+# Settlements
+max_settlements = 4
+
+b_luban = tribal
+#b_luban_2 = temple
+#b_luban_3 = city
+#b_zielona_gora = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

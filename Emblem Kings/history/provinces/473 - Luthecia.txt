@@ -1,0 +1,18 @@
+# 473 - Luthecia
+
+# County Title
+title = c_luthecia
+
+# Settlements
+max_settlements = 4
+
+b_luthecia_castle = castle
+b_luthecia = city
+b_luthecia_2 = temple
+b_vlanga = castle
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

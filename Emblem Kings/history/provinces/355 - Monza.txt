@@ -1,0 +1,18 @@
+# 355 - Monza
+
+# County Title
+title = c_monza
+
+# Settlements
+max_settlements = 4
+
+b_monza = castle
+b_monza_2 = temple
+b_monza_3 = city
+#b_maggiore = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

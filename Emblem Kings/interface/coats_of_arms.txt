@@ -120,6 +120,20 @@ culture =
 			color = 0
 			random = no # Do not use for random CoAs
 		}
+		texture = { # Index 9
+			file = "gfx\\coats_of_arms\\dynasties_elibe.tga"
+			size = { x = 10 y = 7 }
+			noOfFrames = 70
+			color = 0
+			random = no # Do not use for random CoAs
+		}
+		texture = { # Index 10
+			file = "gfx\\coats_of_arms\\dynasties_jugdral.tga"
+			size = { x = 10 y = 7 }
+			noOfFrames = 70
+			color = 0
+			random = no # Do not use for random CoAs
+		}
 		
 		# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	}

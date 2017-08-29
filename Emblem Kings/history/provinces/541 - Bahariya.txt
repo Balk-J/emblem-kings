@@ -1,0 +1,17 @@
+# 541 - Bahariya
+
+# County Title
+title = c_bahariya
+
+# Settlements
+max_settlements = 3
+
+b_bahariya = tribal
+#b_bahariya_2 = temple
+#b_bahariya_3 = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,18 @@
+# 446 - Conote
+
+# County Title
+title = c_conote
+
+# Settlements
+max_settlements = 4
+
+b_conote_castle = castle
+b_conote = temple
+b_conote_2 = city
+b_ail_finn = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

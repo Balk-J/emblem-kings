@@ -1,0 +1,20 @@
+# 498 - Genoa
+
+# County Title
+title = c_genoa
+
+# Settlements
+max_settlements = 6
+
+b_genoa_castle = castle
+b_genoa = temple
+b_genoa_2 = city
+#b_chiavari = castle
+#b_fosdinovo = city
+#b_novellara = temple
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

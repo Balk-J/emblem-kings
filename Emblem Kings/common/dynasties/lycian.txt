@@ -314,6 +314,8 @@
 
 118={
 	name="Eldreed" #for Al
+	can_appear=no
+	used_for_random=no
 	culture="lycian"
     coat_of_arms = {
 		religion=elimine_church

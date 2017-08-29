@@ -1,0 +1,17 @@
+# 441 - Dakia
+
+# County Title
+title = c_dakia
+
+# Settlements
+max_settlements = 3
+
+b_dakia = castle
+b_dandelion = city
+#b_druim_mor = temple
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 384 - Norn
+
+# County Title
+title = c_norn
+
+# Settlements
+max_settlements = 3
+
+b_norn = castle
+b_norn_2 = temple
+b_norn_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

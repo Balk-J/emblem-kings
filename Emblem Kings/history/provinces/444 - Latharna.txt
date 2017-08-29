@@ -1,0 +1,19 @@
+# 444 - Latharna
+
+# County Title
+title = c_latharna
+
+# Settlements
+max_settlements = 5
+
+b_latharna = castle
+b_latharna_2 = temple
+b_latharna_3 = city
+#b_inbhear_beg = temple
+#b_con_doire = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

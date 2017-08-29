@@ -1,0 +1,18 @@
+# 434 - Tirfothuinn
+
+# County Title
+title = c_tirfothuinn
+
+# Settlements
+max_settlements = 4
+
+b_tirfothuinn = tribal
+#b_tirfothuinn_2 = temple
+#b_tirfothuinn_3 = city
+#b_emne = temple
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

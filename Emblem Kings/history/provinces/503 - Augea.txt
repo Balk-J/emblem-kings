@@ -1,0 +1,18 @@
+# 503 - Augea
+
+# County Title
+title = c_augea
+
+# Settlements
+max_settlements = 4
+
+b_augea = tribal
+#b_augea_2 = temple
+#b_augea_3 = city
+#b_chamole = castle
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

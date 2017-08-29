@@ -1,0 +1,18 @@
+# 370 - Silvail
+
+# County Title
+title = c_silvail
+
+# Settlements
+max_settlements = 4
+
+b_silvail_castle = castle
+b_silvail = temple
+b_silvail_2 = city
+b_silvano = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 445 - Airgialla
+
+# County Title
+title = c_airgialla
+
+# Settlements
+max_settlements = 3
+
+b_airgialla = castle
+b_airgialla_2 = temple
+b_airgialla_3 = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,19 @@
+# 356 - Lombardy
+
+# County Title
+title = c_lombardy
+
+# Settlements
+max_settlements = 5
+
+b_lombardy = castle
+b_lombardy_2 = temple
+b_lombardy_3 = city
+#b_milano = castle
+#b_como = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

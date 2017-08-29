@@ -1,0 +1,17 @@
+# 366 - Hromundar
+
+# County Title
+title = c_hromundar
+
+# Settlements
+max_settlements = 3
+
+b_hromundar = castle
+b_hromundar_2 = temple
+b_hromundar_3 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

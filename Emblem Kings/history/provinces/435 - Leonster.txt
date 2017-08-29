@@ -1,0 +1,20 @@
+# 435 - Leonster
+
+# County Title
+title = c_leonster
+
+# Settlements
+max_settlements = 6
+
+b_leonster_castle = castle
+b_leonster = temple
+b_leonster_2 = city
+b_ceatharlach = city
+b_leithghlinn = city
+#b_mide = castle
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

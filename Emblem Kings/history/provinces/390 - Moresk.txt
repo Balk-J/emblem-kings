@@ -1,0 +1,17 @@
+# 390 - Moresk
+
+# County Title
+title = c_moresk
+
+# Settlements
+max_settlements = 3
+
+b_moresk = castle
+b_moresk_2 = city
+#b_moresk_3 = temple
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

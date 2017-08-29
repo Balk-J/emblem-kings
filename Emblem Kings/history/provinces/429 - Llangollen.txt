@@ -1,0 +1,17 @@
+# 429 - Llangollen
+
+# County Title
+title = c_llangollen
+
+# Settlements
+max_settlements = 3
+
+b_llangollen = castle
+b_llangollen_2 = temple
+b_llangollen_3 = city
+
+# Misc
+culture = isaachian
+religion = church_of_edda
+
+# History

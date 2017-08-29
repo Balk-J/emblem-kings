@@ -1,0 +1,17 @@
+# 484 - Eochaill
+
+# County Title
+title = c_eochaill
+
+# Settlements
+max_settlements = 3
+
+b_eochaill = tribal
+#b_eochaill_2 = temple
+#b_eochaill_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

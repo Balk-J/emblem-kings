@@ -1,0 +1,8 @@
+# d_miletos > k_miletos
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_miletos
+	#holder = 0
+}

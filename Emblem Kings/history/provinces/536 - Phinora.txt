@@ -1,0 +1,18 @@
+# 536 - Phinora
+
+# County Title
+title = c_phinora
+
+# Settlements
+max_settlements = 4
+
+b_phinora = castle
+b_phinora_2 = city
+#b_phinora_3 = temple
+#b_phinopolis = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

@@ -1,0 +1,18 @@
+# 490 - Stenay
+
+# County Title
+title = c_stenay
+
+# Settlements
+max_settlements = 4
+
+b_stenay = tribal
+#b_stenay_2 = temple
+#b_stenay_3 = city
+#b_barlecomte = city
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

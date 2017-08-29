@@ -1,0 +1,18 @@
+# 456 - Tahra
+
+# County Title
+title = c_tahra
+
+# Settlements
+max_settlements = 4
+
+b_tahra = city
+b_tahra_castle = castle
+b_tahra_2 = temple
+#b_maol_ros = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

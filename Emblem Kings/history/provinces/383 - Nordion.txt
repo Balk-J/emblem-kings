@@ -1,0 +1,18 @@
+# 383 - Nordion
+
+# County Title
+title = c_nordion
+
+# Settlements
+max_settlements = 4
+
+b_nordion_castle = castle
+b_nordion = temple
+b_nordion_2 = city
+#b_moira = temple
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

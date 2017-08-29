@@ -1,0 +1,18 @@
+# 451 - Kelves
+
+# County Title
+title = c_kelves
+
+# Settlements
+max_settlements = 4
+
+b_fort_kelves = castle
+b_kelves = temple
+b_kelves_2 = city
+#b_bun_na_raite = castle
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

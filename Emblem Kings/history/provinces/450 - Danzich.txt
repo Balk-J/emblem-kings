@@ -1,0 +1,17 @@
+# 450 - Danzich
+
+# County Title
+title = c_danzich
+
+# Settlements
+max_settlements = 3
+
+b_fort_danzich = castle
+b_danzich = temple
+b_danzich_2 = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

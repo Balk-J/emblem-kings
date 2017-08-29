@@ -1,0 +1,19 @@
+# 489 - Verdane
+
+# County Title
+title = c_verdane
+
+# Settlements
+max_settlements = 5
+
+b_verdane_castle = castle
+b_verdane = city
+b_verdane_2 = temple
+#b_wirten = castle
+#b_grandpre = castle
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

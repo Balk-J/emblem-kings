@@ -1,0 +1,19 @@
+# 335 - Laeradr
+
+# County Title
+title = c_laeradr
+
+# Settlements
+max_settlements = 5
+
+b_laeradr = castle
+b_laeradr_2 = temple
+b_laeradr_3 = city
+b_heidrun = castle
+b_eikthyrnir = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

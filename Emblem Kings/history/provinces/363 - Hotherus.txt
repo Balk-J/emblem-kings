@@ -1,0 +1,18 @@
+# 363 - Hotherus
+
+# County Title
+title = c_hotherus
+
+# Settlements
+max_settlements = 4
+
+b_hotherus = castle
+b_hotherus_2 = temple
+b_hotherus_3 = city
+#b_gylfaginning = temple
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

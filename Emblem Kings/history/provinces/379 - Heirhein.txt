@@ -1,0 +1,18 @@
+# 379 - Heirhein
+
+# County Title
+title = c_heirhein
+
+# Settlements
+max_settlements = 4
+
+b_heirhein_castle = castle
+b_heirhein = temple
+b_heirhein_2 = city
+b_libourne = castle
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

@@ -1,0 +1,17 @@
+# 497 - Lete
+
+# County Title
+title = c_lete
+
+# Settlements
+max_settlements = 3
+
+b_lete = tribal
+#b_lete_2 = city
+#b_lete_3 = temple
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

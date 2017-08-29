@@ -1,0 +1,18 @@
+# 506 - Miletos
+
+# County Title
+title = c_miletos
+
+# Settlements
+max_settlements = 4
+
+b_miletos_castle = castle
+b_miletos = temple
+b_miletos_2 = city
+#b_miletus = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

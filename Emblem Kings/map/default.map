@@ -1,6 +1,5 @@
-max_provinces = 333
-# stats:  332 provinces
-# unused:
+max_provinces = 613
+# stats: 612 provinces
 definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
@@ -18,10 +17,14 @@ geographical_region = "geographical_region.txt"
 static = "statics"
 seasons = "seasons.txt"
 
-sea_zones = { 286 332 }
+sea_zones = { 286 326 } # Elibian Sea
+sea_zones = { 551 587 } # Jugdral Sea
+sea_zones = { 590 598 } # Magsea
+sea_zones = { 599 612 } # Outer Elibian Sea
+sea_zones = { 588 589 } # Drake Sea
 
-ocean_region = {	# Great Ocean
-	sea_zones = { 1 }
+ocean_region = {	# Global Ocean
+	sea_zones = { 1 2 3 4 5 }
 }
 
 # Define which indices in trees.bmp palette which should count as trees for automatic terrain assignment
@@ -29,6 +32,7 @@ tree = { 3 4 7 10 }
 
 major_rivers = 
 {
-	328 329 330 331 332  #Aare
-
+	328 329 330 331 # River Aare
+	332 # River Scamander
+	547 548 549 # Great River of Thracia
 }

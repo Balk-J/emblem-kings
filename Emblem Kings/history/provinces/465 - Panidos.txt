@@ -1,0 +1,17 @@
+# 465 - Panidos
+
+# County Title
+title = c_panidos
+
+# Settlements
+max_settlements = 3
+
+b_panidos = castle
+b_panidos_2 = city
+b_panidos_3 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

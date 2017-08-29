@@ -1,0 +1,17 @@
+# 537 - Kharga
+
+# County Title
+title = c_kharga
+
+# Settlements
+max_settlements = 3
+
+b_kharga = tribal
+#b_kharga_2 = temple
+#b_kharga_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

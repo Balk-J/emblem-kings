@@ -1,0 +1,17 @@
+# 452 - Adare
+
+# County Title
+title = c_adare
+
+# Settlements
+max_settlements = 3
+
+b_adare = castle
+b_adare_2 = temple
+b_adare_3 = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

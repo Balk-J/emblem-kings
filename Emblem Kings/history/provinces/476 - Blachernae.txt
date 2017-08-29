@@ -1,0 +1,17 @@
+# 476 - Blachernae
+
+# County Title
+title = c_blachernae
+
+# Settlements
+max_settlements = 3
+
+b_blachernae = tribal
+#b_blachernae_2 = temple
+#b_blachernae_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

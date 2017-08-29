@@ -1,0 +1,17 @@
+# 510 - Saeculum
+
+# County Title
+title = c_saeculum
+
+# Settlements
+max_settlements = 3
+
+b_saeculum = castle
+b_saeculum_2 = temple
+b_saeculum_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

@@ -1,0 +1,18 @@
+# 338 - Spakona
+
+# County Title
+title = c_spakona
+
+# Settlements
+max_settlements = 4
+
+b_spakona = castle
+b_spakona_2 = temple
+b_spakona_3 = city
+#b_volur = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

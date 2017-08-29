@@ -56,4 +56,9 @@ CURRENT_CHOICE_DESC;This is the council's current choice for the next religious 
 TITLE_GAINED_RELIGIOUS_PLAYER_SETUP;Your vassal was appointed to the Council of Electors;;;;;;;;;;;;;x
 TITLE_GAINED_RELIGIOUS_PLAYER_LETTER;Your vassal $NEWHOLDER$ was given a seat on the Council of Electors;;;;;;;;;;;;;x
 TITLE_GAINED_RELIGIOUS_PLAYER_LOG;Your vassal $NEWHOLDER$ was given a seat on the Council of Electors.;;;;;;;;;;;;;x
-opinion_restored_to_rome;Restored to Aquleia;Restauré à Aquleia;In Aquleia wiedergestellt;;Restorado en Aquleia;;;;;;;;;x
+opinion_restored_to_rome;Restored to power;;;;;;;;;;;;;x
+MUSLIM_TAX_PENALTY;Lack of Jizya Tax Penalty: ;Pénalité d'imposition par absence de djizîa;Mangel an Dschizya-Steuer:;;Penalización de impuestos por falta de Jizya: ;;;;;;;;;x
+JIZYA_BONUS;Jizya Tax Bonus: ;Bonus de la djizîa : ;Dschizya-Steuer Bonus:;;Bonificación de impuestos de Jizya: ;;;;;;;;;x
+jizya_tax;Jizya Tax;Djizîa (impôt);Dschizya Besteuerung;;El impuesto Yizia;;;;;;;;;x
+desc_jizya_tax;A Tax on the non-Muslim population, this tax is larger than the Zakat tax paid by Muslims and therefore increases the total tax income;Impôt spécifique pour les non musulmans. Cet impôt est plus conséquent que le Zakât (aumône) payé par les musulmans et augmente par conséquent les revenus provenant des impôts;Eine Besteuerung der nicht-muslimischen Bevölkerung. Diese Steuer ist höher als der Zakat, den Muslime zahlen und erhöht deshalb das Steueraufkommen.;;La Yizia es un impuesto dirigido a la población no-Musulmana. Este impuesto es mayor que el Azaque pagado por los Musulmanes y por consiguiente aumenta los ingresos provinciales por impuestos.;;;;;;;;;x
+POLL_TAX_DESC;Population of other religion groups pay the Jizya tax;La population d'autres groupes religieux paie la djizîa;Angehörige fremder Religionsgruppen zahlen eine Dschizya-Steuer.;;La población de otros grupos de religión paga el impuesto jizya;;;;;;;;;x

@@ -1,0 +1,16 @@
+# 522 - Daulnoy
+
+# County Title
+title = c_daulnoy
+
+# Settlements
+max_settlements = 2
+
+b_daulnoy = tribal
+#b_daulnoy_2 = city
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

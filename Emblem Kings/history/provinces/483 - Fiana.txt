@@ -1,0 +1,18 @@
+# 483 - Fiana
+
+# County Title
+title = c_fiana
+
+# Settlements
+max_settlements = 4
+
+b_fiana = castle
+b_fiana_2 = city
+b_fiana_3 = temple
+#b_pempton = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

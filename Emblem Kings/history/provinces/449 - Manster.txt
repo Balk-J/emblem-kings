@@ -1,0 +1,18 @@
+# 449 - Manster
+
+# County Title
+title = c_manster
+
+# Settlements
+max_settlements = 4
+
+b_manster_castle = castle
+b_manster = temple
+b_manster_2 = city
+#b_tuadhmhumhain = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

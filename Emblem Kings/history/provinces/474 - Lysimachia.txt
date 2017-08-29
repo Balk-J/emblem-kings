@@ -1,0 +1,17 @@
+# 474 - Lysimachia
+
+# County Title
+title = c_lysimachia
+
+# Settlements
+max_settlements = 3
+
+b_lysimachia = castle
+b_lysimachia_2 = city
+b_lysimachia_3 = temple
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History

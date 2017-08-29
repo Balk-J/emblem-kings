@@ -8,7 +8,8 @@ draconic = {
 		male_names = {
 			Forseti
 			Gotoh
-			Salamand
+			Loptyr
+			Salamander
 			Xane
 		}
 		female_names = {

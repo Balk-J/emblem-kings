@@ -1,0 +1,17 @@
+# 360 - Ingwaz
+
+# County Title
+title = c_ingwaz
+
+# Settlements
+max_settlements = 3
+
+b_ingwaz = castle
+b_ingwaz_2 = temple
+b_ingwaz_3 = city
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

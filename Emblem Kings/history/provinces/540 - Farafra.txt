@@ -1,0 +1,17 @@
+# 540 - Farafra
+
+# County Title
+title = c_farafra
+
+# Settlements
+max_settlements = 3
+
+b_farafra = tribal
+#b_farafra_2 = temple
+#b_farafra_3 = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History

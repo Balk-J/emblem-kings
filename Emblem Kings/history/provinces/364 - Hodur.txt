@@ -1,0 +1,19 @@
+# 364 - Hodur
+
+# County Title
+title = c_hodur
+
+# Settlements
+max_settlements = 5
+
+b_hodur = castle
+b_hodur_2 = temple
+b_hodur_3 = city
+b_hod = city
+#b_hoder = temple
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History

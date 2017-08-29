@@ -1,0 +1,18 @@
+# 341 - Volva
+
+# County Title
+title = c_volva
+
+# Settlements
+max_settlements = 4
+
+b_volva = castle
+b_volva_2 = temple
+b_volva_3 = city
+#b_fjolkunnig = castle
+
+# Misc
+culture = grannvalean
+religion = church_of_edda
+
+# History

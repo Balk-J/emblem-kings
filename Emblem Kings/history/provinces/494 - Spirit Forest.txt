@@ -1,0 +1,18 @@
+# 494 - Spirit Forest
+
+# County Title
+title = c_spirit_forest
+
+# Settlements
+max_settlements = 4
+
+b_nyingma = tribal
+b_muktinath = city
+b_surkhang = temple
+#b_charang = temple
+
+# Misc
+culture = verdanian
+religion = church_of_edda
+
+# History

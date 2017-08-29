@@ -1,0 +1,18 @@
+# 437 - Melfiye
+
+# County Title
+title = c_melfiye
+
+# Settlements
+max_settlements = 4
+
+b_melfiye = castle
+b_melfiye_2 = temple
+b_melfiye_3 = city
+#b_gleann_da_loch = city
+
+# Misc
+culture = mansterian
+religion = church_of_edda
+
+# History

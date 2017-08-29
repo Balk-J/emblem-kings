@@ -1,0 +1,19 @@
+# 380 - Stemilion
+
+# County Title
+title = c_stemilion
+
+# Settlements
+max_settlements = 5
+
+b_stemilion = castle
+b_stemilion_2 = temple
+b_stemilion_3 = city
+#b_lasauve = castle
+#b_lareole = temple
+
+# Misc
+culture = agustrian
+religion = church_of_edda
+
+# History
