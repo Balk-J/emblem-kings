@@ -4,14 +4,29 @@
 title = c_tor
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 
 b_tor = castle
 b_tor_2 = temple
 #b_tor_3 = city
+#b_hloridi = temple
 
 # Misc
 culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_tor = tribal
+	capital = b_tor_2 
+}
+500.1.1 = { 
+	b_tor = castle
+}
+649.1.1 = { 
+	capital = b_tor
+	religion = church_of_edda
+	culture = grannvalean
+}

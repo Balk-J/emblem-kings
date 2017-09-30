@@ -6,3 +6,59 @@
 	liege = k_verdane
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_grann
+}
+440.1.1={
+	liege = k_grann
+	holder=825 # 
+}
+448.1.1={
+	#holder=0 # Grann destroyed
+	de_jure_liege = k_verdane
+	liege = e_loptyr
+}
+449.1.1={
+	holder=801 # Galle I, following the Great Purge
+}
+466.1.1={
+	holder=1172 # 
+}
+509.1.1={
+	holder=1173 # 
+}
+536.1.1={
+	holder=1174 # 
+}
+580.1.1={
+	holder=1175 # 
+}
+608.1.1={
+	holder=1176 # 
+}
+634.1.1={
+	holder=1177 # 
+}
+655.1.1={
+	liege = k_verdane
+}
+680.1.1={
+	holder=1178 # 
+}
+701.1.1={
+	holder=1179 # 
+}
+715.1.1={
+	holder=1180 # Batou
+}
+743.1.1={
+	holder=1182 # Cimbaeth 
+}
+758.1.1={
+	liege = k_grannvale
+	holder=1242 # Barbarian
+}
+779.1.1={
+	liege = k_verdane
+	holder=1038 # Should be Jamke's son, but since we can't assume...
+}

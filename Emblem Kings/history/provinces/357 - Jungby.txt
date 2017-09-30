@@ -17,3 +17,15 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+449.1.1 = { 
+	religion = loptyrian # Following the Great Purge
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

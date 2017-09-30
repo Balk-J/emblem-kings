@@ -8,9 +8,9 @@ max_settlements = 6
 
 b_agusty_castle = castle
 b_agusty = temple
-b_agusty_2 = city
-b_thrainn = castle
-b_hrongvid = castle
+#b_agusty_2 = city
+#b_thrainn = castle
+#b_hrongvid = castle
 #b_haldingr = city
 
 # Misc
@@ -18,3 +18,18 @@ culture = agustrian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_agusty_castle = tribal
+}
+500.1.1 = { 
+	b_agusty_castle = castle
+	b_agusty_2 = city
+	b_thrainn = castle
+	b_hrongvid = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = agustrian
+}

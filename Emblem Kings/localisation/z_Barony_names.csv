@@ -1851,6 +1851,8 @@ b_fagrskinna;Fagrskinna;Fagrskinna;Fagrskinna;;Fagrskinna;;;;;;;;;x
 b_fagrskinna_adj;Fagrskinnan;Fagrskinnan;Fagrskinnan;;Fagrskinnan;;;;;;;;;x
 b_heimskringla;Heimskringla;Heimskringla;Heimskringla;;Heimskringla;;;;;;;;;x
 b_heimskringla_adj;Heimskringlan;Heimskringlan;Heimskringlan;;Heimskringlan;;;;;;;;;x
+b_walaz;Walaz;Walaz;Walaz;;Walaz;;;;;;;;;x
+b_walaz_adj;Walazite;Walazite;Walazite;;Walazite;;;;;;;;;x
 b_glasir;Glasir;Glasir;Glasir;;Glasir;;;;;;;;;x
 b_glasir_adj;Glasirite;Glasirite;Glasirite;;Glasirite;;;;;;;;;x
 b_glasir_2;Glasir;Glasir;Glasir;;Glasir;;;;;;;;;x
@@ -1885,10 +1887,12 @@ b_velthomer;Velthomer;Velthomer;Velthomer;;Velthomer;;;;;;;;;x
 b_velthomer_adj;Velthomerite;Velthomerite;Velthomerite;;Velthomerite;;;;;;;;;x
 b_velthomer_2;Velthomer;Velthomer;Velthomer;;Velthomer;;;;;;;;;x
 b_velthomer_2_adj;Velthomerite;Velthomerite;Velthomerite;;Velthomerite;;;;;;;;;x
+b_velera_4;Velera;Velera;Velera;;Velera;;;;;;;;;x
+b_velera_4_adj;Veleran;Veleran;Veleran;;Veleran;;;;;;;;;x
+b_val;Val;Val;Val;;Val;;;;;;;;;x
+b_val_adj;Valite;Valite;Valite;;Valite;;;;;;;;;x
 b_fala;Fala;Fala;Fala;;Fala;;;;;;;;;x
 b_fala_adj;Falan;Falan;Falan;;Falan;;;;;;;;;x
-b_valflame;Valflame;Valflame;Valflame;;Valflame;;;;;;;;;x
-b_valflame_adj;Valflamer;Valflamer;Valflamer;;Valflamer;;;;;;;;;x
 b_spakona;Spakona;Spakona;Spakona;;Spakona;;;;;;;;;x
 b_spakona_adj;Spakonan;Spakonan;Spakonan;;Spakonan;;;;;;;;;x
 b_spakona_2;Spakona;Spakona;Spakona;;Spakona;;;;;;;;;x
@@ -1897,6 +1901,8 @@ b_spakona_3;Spakona;Spakona;Spakona;;Spakona;;;;;;;;;x
 b_spakona_3_adj;Spakonan;Spakonan;Spakonan;;Spakonan;;;;;;;;;x
 b_volur;Volur;Volur;Volur;;Volur;;;;;;;;;x
 b_volur_adj;Volurite;Volurite;Volurite;;Volurite;;;;;;;;;x
+b_spae;Spae;Spae;Spae;;Spae;;;;;;;;;x
+b_spae_adj;Spaer;Spaer;Spaer;;Spaer;;;;;;;;;x
 b_spaekona;Spaekona;Spaekona;Spaekona;;Spaekona;;;;;;;;;x
 b_spaekona_adj;Spaekonan;Spaekonan;Spaekonan;;Spaekonan;;;;;;;;;x
 b_spaekona_2;Spaekona;Spaekona;Spaekona;;Spaekona;;;;;;;;;x
@@ -2011,6 +2017,8 @@ b_frigg;Frigg;Frigg;Frigg;;Frigg;;;;;;;;;x
 b_frigg_adj;Friggite;Friggite;Friggite;;Friggite;;;;;;;;;x
 b_vethorm;Vethorm;Vethorm;Vethorm;;Vethorm;;;;;;;;;x
 b_vethorm_adj;Vethormite;Vethormite;Vethormite;;Vethormite;;;;;;;;;x
+b_sonnung;Sonnung;Sonnung;Sonnung;;Sonnung;;;;;;;;;x
+b_sonnung_adj;Sonnungite;Sonnungite;Sonnungite;;Sonnungite;;;;;;;;;x
 b_donar;Donar;Donar;Donar;;Donar;;;;;;;;;x
 b_donar_adj;Donarite;Donarite;Donarite;;Donarite;;;;;;;;;x
 b_donar_2;Donar;Donar;Donar;;Donar;;;;;;;;;x
@@ -2027,6 +2035,8 @@ b_tor_2;Tor;Tor;Tor;;Tor;;;;;;;;;x
 b_tor_2_adj;Torite;Torite;Torite;;Torite;;;;;;;;;x
 b_tor_3;Tor;Tor;Tor;;Tor;;;;;;;;;x
 b_tor_3_adj;Torite;Torite;Torite;;Torite;;;;;;;;;x
+b_hloridi;Hloridi;Hloridi;Hloridi;;Hloridi;;;;;;;;;x
+b_hloridi_adj;Hloridian;Hloridian;Hloridian;;Hloridian;;;;;;;;;x
 b_dozel_castle;Dozel Castle;Dozel Castle;Dozel Castle;;Dozel Castle;;;;;;;;;x
 b_dozel_castle_adj;Dozel Castler;Dozel Castler;Dozel Castler;;Dozel Castler;;;;;;;;;x
 b_dozel;Dozel;Dozel;Dozel;;Dozel;;;;;;;;;x
@@ -2037,6 +2047,8 @@ b_lodi;Lodi;Lodi;Lodi;;Lodi;;;;;;;;;x
 b_lodi_adj;Lodian;Lodian;Lodian;;Lodian;;;;;;;;;x
 b_vigevano;Vigevano;Vigevano;Vigevano;;Vigevano;;;;;;;;;x
 b_vigevano_adj;Vigevanoan;Vigevanoan;Vigevanoan;;Vigevanoan;;;;;;;;;x
+b_chiavenna;Chiavenna;Chiavenna;Chiavenna;;Chiavenna;;;;;;;;;x
+b_chiavenna_adj;Chiavennan;Chiavennan;Chiavennan;;Chiavennan;;;;;;;;;x
 b_monza;Monza;Monza;Monza;;Monza;;;;;;;;;x
 b_monza_adj;Monzan;Monzan;Monzan;;Monzan;;;;;;;;;x
 b_monza_2;Monza;Monza;Monza;;Monza;;;;;;;;;x
@@ -2327,6 +2339,8 @@ b_silesse_2;Silesse;Silesse;Silesse;;Silesse;;;;;;;;;x
 b_silesse_2_adj;Silesser;Silesser;Silesser;;Silesser;;;;;;;;;x
 b_wroclaw;Wroclaw;Wroclaw;Wroclaw;;Wroclaw;;;;;;;;;x
 b_wroclaw_adj;Wroclawer;Wroclawer;Wroclawer;;Wroclawer;;;;;;;;;x
+b_sycow;Sycow;Sycow;Sycow;;Sycow;;;;;;;;;x
+b_sycow_adj;Sycower;Sycower;Sycower;;Sycower;;;;;;;;;x
 b_ziebice;Ziebice;Ziebice;Ziebice;;Ziebice;;;;;;;;;x
 b_ziebice_adj;Ziebicer;Ziebicer;Ziebicer;;Ziebicer;;;;;;;;;x
 b_ziebice_2;Ziebice;Ziebice;Ziebice;;Ziebice;;;;;;;;;x
@@ -2781,20 +2795,20 @@ b_dungot_2;Dungot;Dungot;Dungot;;Dungot;;;;;;;;;x
 b_dungot_2_adj;Dungotite;Dungotite;Dungotite;;Dungotite;;;;;;;;;x
 b_dungot_3;Dungot;Dungot;Dungot;;Dungot;;;;;;;;;x
 b_dungot_3_adj;Dungotite;Dungotite;Dungotite;;Dungotite;;;;;;;;;x
-b_tahra;Tahra;Tahra;Tahra;;Tahra;;;;;;;;;x
-b_tahra_adj;Tahran;Tahran;Tahran;;Tahran;;;;;;;;;x
 b_tahra_castle;Tahra Castle;Tahra Castle;Tahra Castle;;Tahra Castle;;;;;;;;;x
 b_tahra_castle_adj;Tahra Castler;Tahra Castler;Tahra Castler;;Tahra Castler;;;;;;;;;x
+b_tahra;Tahra;Tahra;Tahra;;Tahra;;;;;;;;;x
+b_tahra_adj;Tahran;Tahran;Tahran;;Tahran;;;;;;;;;x
 b_tahra_2;Tahra;Tahra;Tahra;;Tahra;;;;;;;;;x
 b_tahra_2_adj;Tahran;Tahran;Tahran;;Tahran;;;;;;;;;x
 b_maol_ros;Maol Ros;Maol Ros;Maol Ros;;Maol Ros;;;;;;;;;x
 b_maol_ros_adj;Maol Rosite;Maol Rosite;Maol Rosite;;Maol Rosite;;;;;;;;;x
-b_cealsaidh;Cealsaidh;Cealsaidh;Cealsaidh;;Cealsaidh;;;;;;;;;x
-b_cealsaidh_adj;Cealsaidhite;Cealsaidhite;Cealsaidhite;;Cealsaidhite;;;;;;;;;x
-b_cealsaidh_2;Cealsaidh;Cealsaidh;Cealsaidh;;Cealsaidh;;;;;;;;;x
-b_cealsaidh_2_adj;Cealsaidhite;Cealsaidhite;Cealsaidhite;;Cealsaidhite;;;;;;;;;x
-b_cealsaidh_3;Cealsaidh;Cealsaidh;Cealsaidh;;Cealsaidh;;;;;;;;;x
-b_cealsaidh_3_adj;Cealsaidhite;Cealsaidhite;Cealsaidhite;;Cealsaidhite;;;;;;;;;x
+b_frest;Frest;Frest;Frest;;Frest;;;;;;;;;x
+b_frest_adj;Frestite;Frestite;Frestite;;Frestite;;;;;;;;;x
+b_frest_2;Frest;Frest;Frest;;Frest;;;;;;;;;x
+b_frest_2_adj;Frestite;Frestite;Frestite;;Frestite;;;;;;;;;x
+b_frest_3;Frest;Frest;Frest;;Frest;;;;;;;;;x
+b_frest_3_adj;Frestite;Frestite;Frestite;;Frestite;;;;;;;;;x
 b_thracia_castle;Thracia Castle;Thracia Castle;Thracia Castle;;Thracia Castle;;;;;;;;;x
 b_thracia_castle_adj;Thracia Castler;Thracia Castler;Thracia Castler;;Thracia Castler;;;;;;;;;x
 b_thracia;Thracia;Thracia;Thracia;;Thracia;;;;;;;;;x
@@ -2805,6 +2819,8 @@ b_deuteron;Deuteron;Deuteron;Deuteron;;Deuteron;;;;;;;;;x
 b_deuteron_adj;Deuteronian;Deuteronian;Deuteronian;;Deuteronian;;;;;;;;;x
 b_heieron;Heieron;Heieron;Heieron;;Heieron;;;;;;;;;x
 b_heieron_adj;Heieronian;Heieronian;Heieronian;;Heieronian;;;;;;;;;x
+b_thrake;Thrake;Thrake;Thrake;;Thrake;;;;;;;;;x
+b_thrake_adj;Thraker;Thraker;Thraker;;Thraker;;;;;;;;;x
 b_verissa;Verissa;Verissa;Verissa;;Verissa;;;;;;;;;x
 b_verissa_adj;Verissan;Verissan;Verissan;;Verissan;;;;;;;;;x
 b_verissa_2;Verissa;Verissa;Verissa;;Verissa;;;;;;;;;x
@@ -2967,32 +2983,32 @@ b_eochaill_2;Eochaill;Eochaill;Eochaill;;Eochaill;;;;;;;;;x
 b_eochaill_2_adj;Eochaillite;Eochaillite;Eochaillite;;Eochaillite;;;;;;;;;x
 b_eochaill_3;Eochaill;Eochaill;Eochaill;;Eochaill;;;;;;;;;x
 b_eochaill_3_adj;Eochaillite;Eochaillite;Eochaillite;;Eochaillite;;;;;;;;;x
-b_mumu;Mumu;Mumu;Mumu;;Mumu;;;;;;;;;x
-b_mumu_adj;Mumuite;Mumuite;Mumuite;;Mumuite;;;;;;;;;x
-b_mumu_2;Mumu;Mumu;Mumu;;Mumu;;;;;;;;;x
-b_mumu_2_adj;Mumuite;Mumuite;Mumuite;;Mumuite;;;;;;;;;x
-b_mumu_3;Mumu;Mumu;Mumu;;Mumu;;;;;;;;;x
-b_mumu_3_adj;Mumuite;Mumuite;Mumuite;;Mumuite;;;;;;;;;x
-b_ard_fhearta;Ard Fhearta;Ard Fhearta;Ard Fhearta;;Ard Fhearta;;;;;;;;;x
-b_ard_fhearta_adj;Ard Fheartan;Ard Fheartan;Ard Fheartan;;Ard Fheartan;;;;;;;;;x
+b_savan;Savan;Savan;Savan;;Savan;;;;;;;;;x
+b_savan_adj;Savanite;Savanite;Savanite;;Savanite;;;;;;;;;x
+b_savan_2;Savan;Savan;Savan;;Savan;;;;;;;;;x
+b_savan_2_adj;Savanite;Savanite;Savanite;;Savanite;;;;;;;;;x
+b_savan_3;Savan;Savan;Savan;;Savan;;;;;;;;;x
+b_savan_3_adj;Savanite;Savanite;Savanite;;Savanite;;;;;;;;;x
+b_imleach;Imleach;Imleach;Imleach;;Imleach;;;;;;;;;x
+b_imleach_adj;Imleachite;Imleachite;Imleachite;;Imleachite;;;;;;;;;x
+b_aonach;Aonach;Aonach;Aonach;;Aonach;;;;;;;;;x
+b_aonach_adj;Aonachite;Aonachite;Aonachite;;Aonachite;;;;;;;;;x
+b_aonach_2;Aonach;Aonach;Aonach;;Aonach;;;;;;;;;x
+b_aonach_2_adj;Aonachite;Aonachite;Aonachite;;Aonachite;;;;;;;;;x
+b_aonach_3;Aonach;Aonach;Aonach;;Aonach;;;;;;;;;x
+b_aonach_3_adj;Aonachite;Aonachite;Aonachite;;Aonachite;;;;;;;;;x
 b_caiseal;Caiseal;Caiseal;Caiseal;;Caiseal;;;;;;;;;x
 b_caiseal_adj;Caisealite;Caisealite;Caisealite;;Caisealite;;;;;;;;;x
 b_caiseal_2;Caiseal;Caiseal;Caiseal;;Caiseal;;;;;;;;;x
 b_caiseal_2_adj;Caisealite;Caisealite;Caisealite;;Caisealite;;;;;;;;;x
 b_caiseal_3;Caiseal;Caiseal;Caiseal;;Caiseal;;;;;;;;;x
 b_caiseal_3_adj;Caisealite;Caisealite;Caisealite;;Caisealite;;;;;;;;;x
-b_urmhumhain;Urmhumhain;Urmhumhain;Urmhumhain;;Urmhumhain;;;;;;;;;x
-b_urmhumhain_adj;Urmhumhainite;Urmhumhainite;Urmhumhainite;;Urmhumhainite;;;;;;;;;x
-b_urmhumhain_2;Urmhumhain;Urmhumhain;Urmhumhain;;Urmhumhain;;;;;;;;;x
-b_urmhumhain_2_adj;Urmhumhainite;Urmhumhainite;Urmhumhainite;;Urmhumhainite;;;;;;;;;x
-b_urmhumhain_3;Urmhumhain;Urmhumhain;Urmhumhain;;Urmhumhain;;;;;;;;;x
-b_urmhumhain_3_adj;Urmhumhainite;Urmhumhainite;Urmhumhainite;;Urmhumhainite;;;;;;;;;x
-b_deasmhumhain;Deasmhumhain;Deasmhumhain;Deasmhumhain;;Deasmhumhain;;;;;;;;;x
-b_deasmhumhain_adj;Deasmhumhainite;Deasmhumhainite;Deasmhumhainite;;Deasmhumhainite;;;;;;;;;x
-b_deasmhumhain_2;Deasmhumhain;Deasmhumhain;Deasmhumhain;;Deasmhumhain;;;;;;;;;x
-b_deasmhumhain_2_adj;Deasmhumhainite;Deasmhumhainite;Deasmhumhainite;;Deasmhumhainite;;;;;;;;;x
-b_deasmhumhain_3;Deasmhumhain;Deasmhumhain;Deasmhumhain;;Deasmhumhain;;;;;;;;;x
-b_deasmhumhain_3_adj;Deasmhumhainite;Deasmhumhainite;Deasmhumhainite;;Deasmhumhainite;;;;;;;;;x
+b_iubhair;Iubhair;Iubhair;Iubhair;;Iubhair;;;;;;;;;x
+b_iubhair_adj;Iubhairite;Iubhairite;Iubhairite;;Iubhairite;;;;;;;;;x
+b_iubhair_2;Iubhair;Iubhair;Iubhair;;Iubhair;;;;;;;;;x
+b_iubhair_2_adj;Iubhairite;Iubhairite;Iubhairite;;Iubhairite;;;;;;;;;x
+b_iubhair_3;Iubhair;Iubhair;Iubhair;;Iubhair;;;;;;;;;x
+b_iubhair_3_adj;Iubhairite;Iubhairite;Iubhairite;;Iubhairite;;;;;;;;;x
 b_verdane_castle;Verdane Castle;Verdane Castle;Verdane Castle;;Verdane Castle;;;;;;;;;x
 b_verdane_castle_adj;Verdane Castler;Verdane Castler;Verdane Castler;;Verdane Castler;;;;;;;;;x
 b_verdane;Verdane;Verdane;Verdane;;Verdane;;;;;;;;;x
@@ -3029,12 +3045,12 @@ b_marpha;Marpha;Marpha;Marpha;;Marpha;;;;;;;;;x
 b_marpha_adj;Marphan;Marphan;Marphan;;Marphan;;;;;;;;;x
 b_marpha_2;Marpha;Marpha;Marpha;;Marpha;;;;;;;;;x
 b_marpha_2_adj;Marphan;Marphan;Marphan;;Marphan;;;;;;;;;x
-b_nyingma;Nyingma;Nyingma;Nyingma;;Nyingma;;;;;;;;;x
-b_nyingma_adj;Nyingman;Nyingman;Nyingman;;Nyingman;;;;;;;;;x
 b_muktinath;Muktinath;Muktinath;Muktinath;;Muktinath;;;;;;;;;x
 b_muktinath_adj;Muktinathite;Muktinathite;Muktinathite;;Muktinathite;;;;;;;;;x
 b_surkhang;Surkhang;Surkhang;Surkhang;;Surkhang;;;;;;;;;x
 b_surkhang_adj;Surkhangite;Surkhangite;Surkhangite;;Surkhangite;;;;;;;;;x
+b_spirit_forest;Spirit Forest;Spirit Forest;Spirit Forest;;Spirit Forest;;;;;;;;;x
+b_spirit_forest_adj;Spirit Forestite;Spirit Forestite;Spirit Forestite;;Spirit Forestite;;;;;;;;;x
 b_charang;Charang;Charang;Charang;;Charang;;;;;;;;;x
 b_charang_adj;Charangite;Charangite;Charangite;;Charangite;;;;;;;;;x
 b_kagbeni;Kagbeni;Kagbeni;Kagbeni;;Kagbeni;;;;;;;;;x
@@ -3051,8 +3067,8 @@ b_dhami_2;Dhami;Dhami;Dhami;;Dhami;;;;;;;;;x
 b_dhami_2_adj;Dhamian;Dhamian;Dhamian;;Dhamian;;;;;;;;;x
 b_dhami_3;Dhami;Dhami;Dhami;;Dhami;;;;;;;;;x
 b_dhami_3_adj;Dhamian;Dhamian;Dhamian;;Dhamian;;;;;;;;;x
-b_tukuche;Tukuche;Tukuche;Tukuche;;Tukuche;;;;;;;;;x
-b_tukuche_adj;Tukucher;Tukucher;Tukucher;;Tukucher;;;;;;;;;x
+b_surkhang_2;Surkhang;Surkhang;Surkhang;;Surkhang;;;;;;;;;x
+b_surkhang_2_adj;Surkhangite;Surkhangite;Surkhangite;;Surkhangite;;;;;;;;;x
 b_lete;Lete;Lete;Lete;;Lete;;;;;;;;;x
 b_lete_adj;Leter;Leter;Leter;;Leter;;;;;;;;;x
 b_lete_2;Lete;Lete;Lete;;Lete;;;;;;;;;x
@@ -3153,6 +3169,8 @@ b_palation_2;Palation;Palation;Palation;;Palation;;;;;;;;;x
 b_palation_2_adj;Palationian;Palationian;Palationian;;Palationian;;;;;;;;;x
 b_palation_3;Palation;Palation;Palation;;Palation;;;;;;;;;x
 b_palation_3_adj;Palationian;Palationian;Palationian;;Palationian;;;;;;;;;x
+b_palat;Palat;Palat;Palat;;Palat;;;;;;;;;x
+b_palat_adj;Palatite;Palatite;Palatite;;Palatite;;;;;;;;;x
 b_chronos_castle;Chronos Castle;Chronos Castle;Chronos Castle;;Chronos Castle;;;;;;;;;x
 b_chronos_castle_adj;Chronos Castler;Chronos Castler;Chronos Castler;;Chronos Castler;;;;;;;;;x
 b_chronos;Chronos;Chronos;Chronos;;Chronos;;;;;;;;;x

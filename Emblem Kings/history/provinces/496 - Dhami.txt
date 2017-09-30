@@ -7,12 +7,26 @@ title = c_dhami
 max_settlements = 4
 
 b_dhami = tribal
-b_dhami_2 = city
+#b_dhami_2 = city
 #b_dhami_3 = temple
-#b_tukuche = city
+#b_surkhang_2 = city
 
 # Misc
 culture = verdanian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+448.1.1 = { 
+	culture = verdanian
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = verdanian
+	b_dhami_2 = city
+}

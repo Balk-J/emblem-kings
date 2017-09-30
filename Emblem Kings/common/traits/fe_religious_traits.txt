@@ -2,6 +2,65 @@
 # WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
 ########################################################################################################
 
+crusader_draconic = {
+	opposites = {
+		crusader
+		mujahid
+		valhalla_bound
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		tengri_warrior
+		shaddai
+		gondi_shahansha
+		crusader_light
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	
+	male_compliment = COMPL_CRUSADER
+	female_compliment = COMPL_CRUSADER
+}
+
+crusader_light = {
+	opposites = {
+		crusader
+		mujahid
+		valhalla_bound
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		tengri_warrior
+		shaddai
+		gondi_shahansha
+		crusader_draconic
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	
+	male_compliment = COMPL_CRUSADER
+	female_compliment = COMPL_CRUSADER
+}
 
 bad_priest_light = {
 
@@ -209,6 +268,11 @@ secretly_elimine_church = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -248,6 +312,11 @@ secretly_autotheist = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -287,6 +356,11 @@ secretly_golden_church = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -326,6 +400,11 @@ secretly_dragon_liberation = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -370,6 +449,11 @@ secretly_elibe_spirits_pagan = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -414,6 +498,11 @@ secretly_raider_pagan = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -458,6 +547,11 @@ secretly_divine_sky_pagan_reformed = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -502,6 +596,11 @@ secretly_divine_sky_pagan = {
 		secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -541,6 +640,11 @@ secretly_anima = {
 		#secretly_anima
 		secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -580,6 +684,11 @@ secretly_dark = {
 		secretly_anima
 		#secretly_dark
 		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -619,6 +728,11 @@ secretly_divine_dragon_naga = {
 		secretly_anima
 		secretly_dark
 		#secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
 	}
 
 	is_visible = {
@@ -628,6 +742,226 @@ secretly_divine_dragon_naga = {
 			AND = {
 				is_close_relative = FROM
 				trait = secretly_divine_dragon_naga
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_earthen_pagan = {
+	potential = {
+		NOT = {
+			religion = earthen_pagan
+		}
+	}
+	opposites = {
+		#Secretly other religions
+		secretly_elimine_church
+		secretly_autotheist
+		secretly_golden_church
+		secretly_dragon_liberation
+		secretly_elibe_spirits_pagan
+		secretly_raider_pagan
+		secretly_divine_sky_pagan_reformed
+		secretly_divine_sky_pagan
+		secretly_anima
+		secretly_dark
+		secretly_divine_dragon_naga
+		#secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_earthen_pagan
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_earthen_pagan
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_earthen_pagan_reformed = {
+	potential = {
+		NOT = {
+			religion = earthen_pagan_reformed
+		}
+	}
+	opposites = {
+		#Secretly other religions
+		secretly_elimine_church
+		secretly_autotheist
+		secretly_golden_church
+		secretly_dragon_liberation
+		secretly_elibe_spirits_pagan
+		secretly_raider_pagan
+		secretly_divine_sky_pagan_reformed
+		secretly_divine_sky_pagan
+		secretly_anima
+		secretly_dark
+		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		#secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_earthen_pagan_reformed
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_earthen_pagan_reformed
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_church_of_edda = {
+	potential = {
+		NOT = {
+			religion = church_of_edda
+		}
+	}
+	opposites = {
+		#Secretly other religions
+		secretly_elimine_church
+		secretly_autotheist
+		secretly_golden_church
+		secretly_dragon_liberation
+		secretly_elibe_spirits_pagan
+		secretly_raider_pagan
+		secretly_divine_sky_pagan_reformed
+		secretly_divine_sky_pagan
+		secretly_anima
+		secretly_dark
+		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		#secretly_church_of_edda
+		secretly_loptyrian
+		secretly_mairist
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_church_of_edda
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_church_of_edda
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_loptyrian = {
+	potential = {
+		NOT = {
+			religion = loptyrian
+		}
+	}
+	opposites = {
+		#Secretly other religions
+		secretly_elimine_church
+		secretly_autotheist
+		secretly_golden_church
+		secretly_dragon_liberation
+		secretly_elibe_spirits_pagan
+		secretly_raider_pagan
+		secretly_divine_sky_pagan_reformed
+		secretly_divine_sky_pagan
+		secretly_anima
+		secretly_dark
+		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		#secretly_loptyrian
+		secretly_mairist
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_loptyrian
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_loptyrian
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_mairist = {
+	potential = {
+		NOT = {
+			religion = mairist
+		}
+	}
+	opposites = {
+		#Secretly other religions
+		secretly_elimine_church
+		secretly_autotheist
+		secretly_golden_church
+		secretly_dragon_liberation
+		secretly_elibe_spirits_pagan
+		secretly_raider_pagan
+		secretly_divine_sky_pagan_reformed
+		secretly_divine_sky_pagan
+		secretly_anima
+		secretly_dark
+		secretly_divine_dragon_naga
+		secretly_earthen_pagan
+		secretly_earthen_pagan_reformed
+		secretly_church_of_edda
+		secretly_loptyrian
+		#secretly_mairist
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_mairist
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_mairist
 			}
 		}
 	}

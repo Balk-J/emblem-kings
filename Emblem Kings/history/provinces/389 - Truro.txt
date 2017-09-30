@@ -14,3 +14,15 @@ culture = agustrian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_truro = tribal
+}
+500.1.1 = { 
+	b_truro = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = agustrian
+}

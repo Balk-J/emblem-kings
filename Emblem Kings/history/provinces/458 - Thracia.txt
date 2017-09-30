@@ -4,16 +4,32 @@
 title = c_thracia
 
 # Settlements
-max_settlements = 5
+max_settlements = 6
 
 b_thracia_castle = castle
-b_thracia = city
+#b_thracia = city
 b_thracia_2 = temple
-b_deuteron = castle
-b_heieron = castle
+#b_deuteron = castle
+#b_heieron = castle
+#b_thrake = castle
 
 # Misc
 culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_thracia_castle = tribal
+}
+500.1.1 = { 
+	b_thracia_castle = castle
+b_thracia = city
+b_deuteron = castle
+b_heieron = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

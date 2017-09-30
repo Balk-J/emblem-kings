@@ -1,0 +1,138 @@
+namespace = fe4_dynasty
+
+# For creating dummy characters to replace originals when they vanish and pop up as someone else's kid.
+
+# 
+character_event = {
+	id = fe4_dynasty.1
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		if = {
+			limit = {
+				has_character_flag = is_fe7_elbert
+			}
+			add_trait = went_missing
+			d_black_fang = {
+				create_character = { #Create hidden character
+					name = "Elbert"
+					dna="bmlmkchfegc"
+					culture = ROOT
+					religion = ROOT
+					female = no
+					dynasty = none
+					age = 35
+				}
+				new_character = { 
+					set_character_flag = is_fe7_elbert
+					set_character_flag = is_fe7_elbert_missing  
+					
+					set_variable = { which = "level" value = 1 }
+					set_character_flag="class_selected"
+						
+					add_trait="base_class_cavalier"
+					add_trait="class_paladin"
+					add_trait="charismatic_negotiator"
+					#add_trait="kind"
+					#add_trait="brave"
+					#add_trait="just"
+			
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					copy_random_personality_trait = ROOT
+					
+					character_event = { id = util.1 } 	
+					e_nergal = {
+						holder_scope = {
+							#reverse_banish = PREVPREV
+							reverse_imprison = PREVPREV	
+							
+							opinion = {
+								modifier = opinion_betrayed
+								who = PREVPREV
+								years = 100
+							}
+							reverse_opinion = {
+								modifier = opinion_evil_tyrant
+								who = PREVPREV
+								years = 10
+							}
+							character_event = { id = fe7_eliwood.26 }
+						}
+					}		
+				}
+			}
+		}
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+
+
+# Elbert leaves
+character_event = {
+	id = fe4_dynasty.27
+
+	is_triggered_only = yes
+	hide_window = yes 
+	
+	trigger = {
+		has_character_flag = is_fe7_elbert_missing
+	}
+	
+	immediate = {
+		prisoner = no
+		clr_character_flag = is_fe7_elbert_missing
+		went_missing = {
+			limit = {
+				character = 105 # Elbert
+			}
+			#father_even_if_dead = { ROOT = { set_father = PREV } }
+			#mother_even_if_dead = { ROOT = { set_mother = PREV } }
+			spouse_even_if_dead = {
+				if = {
+					limit = {
+						is_alive = yes
+						is_married = no
+					}
+					add_spouse = ROOT
+				}
+			}
+			
+			remove_spouse = yes
+			
+			any_child_even_if_dead  = {
+				set_father = ROOT
+			}
+			
+			ROOT = {
+				dynasty = PREV
+				set_father = 0 # TODO: remove this if we ever get a character history built out
+			}
+			
+			dynasty_head = {
+				ROOT = {
+					move_character = PREV					
+				}
+				character_event = { id = fe7_eliwood.28 }
+			}
+			
+			remove_trait = went_missing
+			#remove_trait = dead_event_target 
+		}
+	}
+	
+	option = {
+		name =  OK
+	}
+	
+}

@@ -6,3 +6,30 @@
 	liege = d_sophara
 	#holder = 0
 }
+
+440.1.1 = { 
+	holder=871 # 
+	liege = 0
+}
+649.1.1={
+	holder=0 # 
+	liege = d_sophara
+}
+665.1.1={
+	holder = 1147 #  
+}
+700.1.1={
+	holder = 1148 #  
+}
+719.1.1={
+	holder = 1149 # Chulainn's father
+}
+762.1.1={
+	holder = 1073 # Danann 
+}
+773.1.1={
+	holder=1077 # Iucharba
+}
+778.1.1={
+	holder=1136 # Shannan
+}

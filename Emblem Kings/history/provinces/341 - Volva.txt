@@ -7,8 +7,8 @@ title = c_volva
 max_settlements = 4
 
 b_volva = castle
-b_volva_2 = temple
-b_volva_3 = city
+#b_volva_2 = temple
+#b_volva_3 = city
 #b_fjolkunnig = castle
 
 # Misc
@@ -16,3 +16,17 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_volva = tribal
+}
+500.1.1 = { 
+	b_volva = castle
+	b_volva_2 = temple
+	b_volva_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

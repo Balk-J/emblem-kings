@@ -5,3 +5,33 @@
 	law = succ_primogeniture
 	#holder = 0
 }
+440.1.1={
+	holder=0 # 
+	de_jure_liege = e_grann
+}
+448.1.1={
+	holder=0 # 
+	de_jure_liege = 0
+}
+655.1.1={
+	holder=1177 # 
+}
+680.1.1={
+	holder=1178 # 
+}
+701.1.1={
+	holder=1179 # 
+}
+715.1.1={
+	holder=1180 # Batou
+}
+758.1.1={
+	holder=0 # Destroyed; region administered by Grannvale
+}
+761.1.1={
+	liege=e_grannvale 
+}
+779.1.1={
+	holder=1038 # Should be Jamke's son, but since we can't assume...
+	de_jure_liege = e_grannvale # People want to be a part of Seliph's kingdom
+}

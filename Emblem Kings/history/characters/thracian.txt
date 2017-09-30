@@ -1,0 +1,542 @@
+1011={
+	name="Dain"
+	dynasty=1011
+	father=1022
+	mother=1021
+	culture=thracian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	615.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	627.01.01={
+		add_trait="class_wyvern_rider"
+		add_trait="base_class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_dragon_knight
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_dain"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=thracian
+	}
+	660.1.1={
+		death = {
+			death_reason=death_murder_unknown # Dies "shortly after" the Tragedy of the Gáe Bolg
+			killer=1024 # His son? No evidence for this, but it could be in character.
+		}
+	}
+}
+1012={
+	name="Noba"
+	female=yes
+	father=1022
+	mother=1021
+	dynasty=1012
+	culture=thracian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	616.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	628.01.01={
+		add_trait="class_pegasus_knight"
+		add_trait="base_class_pegasus_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_pegasus_knight"
+		add_trait="class_falcon_knight"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_lance_knight
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_noba"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=thracian
+	}
+	659.1.1={
+		death = {
+			death_reason=death_suicide
+		}
+	}
+}
+# non-canon; mother for Dain and Noba
+1021={
+	name="Clemenza"
+	female=yes
+	culture=thracian
+	religion=church_of_edda
+	599.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	616.1.1={
+		death = {
+			death_reason=death_murder
+		}
+	}
+}
+# non-canon; father for Dain and Noba
+1022={
+	name="Abelard"
+	culture=thracian
+	religion=church_of_edda
+	598.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	614.1.1 = {
+		add_spouse=1021 # 
+	}
+	616.1.1={
+		death = {
+			death_reason=death_murder
+		}
+	}
+}
+# Husband for Noba. Dain's best friend.
+1023={
+	name="Serlo"
+	culture=thracian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	615.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	627.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			add_friend=1011 # Dain
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=thracian
+		add_matrilineal_spouse=1012 # Noba
+	}
+	659.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1012 # Noba; Tragedy of the Gáe Bolg
+		}
+	}
+}
+# Noba's son
+1024={
+	name="Osian"
+	father=1023
+	mother=1012
+	dynasty=1012
+	culture=thracian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_noba
+	650.1.1={
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		add_trait="holy_blood_major_noba"
+		remove_trait="holy_blood_latent_noba"
+		add_trait="grey_eminence"
+		add_trait="brave"
+		add_trait="just"
+		add_trait="honest"
+	} 
+	 
+	665.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	666.1.1 = {
+		culture=mansterian
+	}	
+	
+	701.1.1={
+		death = yes
+	}
+}
+# Dain's son. A cruel and ill-tempered man who terrorized and suppressed the nation's people.
+1025={
+	name="Alexander"
+	dynasty=1011
+	father=1011
+	culture=thracian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_dain
+	642.1.1={
+		birth=yes
+	}
+	654.01.01={
+		add_trait="class_wyvern_rider"
+		add_trait="base_class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_dain"
+		add_trait="holy_blood_major_dain"
+		add_trait="tough_soldier"
+		add_trait="aggressive_leader"
+		add_trait="mountain_terrain_leader"
+		add_trait="cruel"
+		add_trait="wroth"
+		add_trait="arbitrary"
+		add_trait="greedy"
+		add_trait="proud"
+		add_trait="deceitful"
+	} 
+	 
+	660.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	
+	692.1.1={
+		death = yes
+	}
+}
+# Non-canon, ancestor for Travant
+1151={
+	name="Radolf"
+	dynasty=1011
+	father=1025
+	culture=thracian
+	religion=church_of_edda
+	trait=holy_blood_latent_dain
+	660.1.1={
+		birth=yes
+	}
+	672.01.01={
+		add_trait="class_wyvern_rider"
+		add_trait="base_class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_dain"
+		add_trait="holy_blood_major_dain"
+	} 
+	 
+	680.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_knight"
+	}	
+	
+	719.1.1={
+		death = yes
+	}
+}
+# Non-canon, ancestor for Travant
+1152={
+	name="Aline"
+	female=yes
+	dynasty=1011
+	father=1151
+	culture=thracian
+	religion=church_of_edda
+	trait=holy_blood_latent_dain
+	680.1.1={
+		birth=yes
+	}
+	692.01.01={
+		add_trait="class_wyvern_rider"
+		add_trait="base_class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_dain"
+		add_trait="holy_blood_major_dain"
+	} 
+	 
+	700.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	
+	729.1.1={
+		death = yes
+	}
+}
+# Non-canon, ancestor for Travant
+1153={
+	name="Armand"
+	dynasty=1011
+	mother=1152
+	culture=thracian
+	religion=church_of_edda
+	trait=holy_blood_latent_dain
+	700.1.1={
+		birth=yes
+	}
+	712.01.01={
+		add_trait="class_wyvern_rider"
+		add_trait="base_class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_dain"
+		add_trait="holy_blood_major_dain"
+	} 
+	 
+	720.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	
+	# Travant: "Well, when I was [Arion's] age, I was already taking charge as king."
+	# This guy has to die when Travant is in his 20s or late teens.
+	749.1.1={
+		death = yes
+	}
+}
+# King of Thracia, 757
+1154={
+	name="Travant"
+	father=1153
+	dynasty=1011
+	culture=thracian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_dain
+	trait=strong
+	730.1.1={ 
+		birth=yes
+	}
+	742.01.01={
+		add_trait="class_wyvern_rider"
+		add_trait="base_class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_dain"
+		add_trait="holy_blood_major_dain"
+	} 
+	745.1.1 = {
+		add_trait="brilliant_strategist"
+		add_trait="organizer"
+		add_trait="flanker"
+		add_trait="mountain_terrain_leader"
+		add_trait="ambitious"
+		#add_trait="robust"
+		add_trait="envious"
+		add_trait="diligent"
+		add_trait="deceitful"
+		add_trait="brave"
+	}	
+	749.1.1 = {
+		add_spouse=1155
+	}	
+	750.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	778.1.1={ # Thracia... My beautiful kingdom...
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Non-canon, spouse for Travant
+1155={
+	name="Alienora"
+	female=yes
+	culture=thracian
+	religion=church_of_edda
+	731.1.1={
+		birth=yes
+	}
+	756.12.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Travant's son.
+1156={
+	name="Arion"
+	father=1154
+	mother=1155
+	dynasty=1011
+	culture=thracian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_dain
+	756.1.1={ 
+		birth=yes
+	}
+	768.01.01={
+		add_trait="class_wyvern_rider"
+		add_trait="base_class_wyvern_rider"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"			
+			c_1155 = { # Travant
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}	
+			c_1160 = { # Altena
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+		remove_trait="holy_blood_latent_dain"
+		add_trait="holy_blood_major_dain"
+	} 
+	771.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="experimenter"
+		add_trait="mountain_terrain_leader"
+		add_trait="trusting"
+		add_trait="just"
+		add_trait="diligent"
+		add_trait="brave"
+	}	
+	775.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	808.1.1={ 
+		death = yes
+	}
+}
+# The Shield of Thracia
+1245={
+	name="Hannibal"
+	dynasty=1040
+	culture=thracian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=strong
+	729.1.1={ 
+		birth=yes
+	}
+	741.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"		
+			# Maybe not. He does turn his coat.
+#			c_1155 = { # Travant
+#				reverse_opinion = {
+#					modifier = opinion_loyal_servant
+#					who = ROOT
+#					years = 100
+#				}
+#			}	
+		}
+	} 
+	744.1.1 = {
+		add_trait="brilliant_strategist"
+		add_trait="siege_leader"
+		add_trait="defensive_leader"
+		add_trait="mountain_terrain_leader"
+		add_trait="rough_terrain_leader"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+		add_trait="content"
+		add_trait="diligent"
+		add_trait="celibate"
+	}	
+	745.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	747.1.1 = {
+		give_nickname=nick_the_shield_of_thracia
+	}	
+	798.1.1={ 
+		death = yes
+	}
+}

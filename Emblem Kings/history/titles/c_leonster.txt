@@ -6,3 +6,27 @@
 	liege = d_leonster
 	#holder = 0
 }
+440.1.1={
+	holder=897 # 
+}
+649.1.1={
+	holder=1012 # Noba 
+}
+659.1.1={
+	holder=1024 # Noba's son
+}
+701.1.1={
+	holder = 1157 # 
+}
+723.1.1={
+	holder = 1158 # 
+}
+736.1.1={
+	holder = 1159 # Calf
+}
+763.1.1={
+	holder = 1058 # Raydrik? TODO: fix ID
+}
+778.1.1={
+	holder = 1162 # Leif 
+}

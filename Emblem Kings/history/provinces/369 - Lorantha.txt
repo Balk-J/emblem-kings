@@ -8,10 +8,23 @@ max_settlements = 3
 
 b_lorantha = castle
 b_lorantha_2 = temple
-b_lorantha_3 = city
+#b_lorantha_3 = city
 
 # Misc
 culture = agustrian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_lorantha = tribal
+}
+500.1.1 = { 
+	b_lorantha = castle
+	#b_lorantha_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = agustrian
+}

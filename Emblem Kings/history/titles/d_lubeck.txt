@@ -6,3 +6,42 @@
 	liege = k_silesse
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_lubeck
+}
+440.1.1={
+	holder=861 # 
+}
+649.1.1={
+	de_jure_liege = k_silesse
+	holder = 1009 # Ced TODO: add a filler character
+}
+669.1.1={
+	holder = 1104 # filler 
+}
+690.1.1={
+	holder = 1105 # filler 
+}
+695.1.1={
+	holder = 1119 # Duke Lubeck the non-canon 
+}
+727.1.1={
+	holder = 1120 # 
+}
+745.1.1={
+	holder = 1122 # 
+}
+760.3.1={
+	holder = 1110 # Rahna 
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+776.1.1={
+	#holder = 0 # Destroyed?
+	#holder =  # generic Loptyrian Dark Bishop?
+	holder=1051 # Julius?
+}
+779.1.1={
+	holder = 1112 # Ced the Hero
+}

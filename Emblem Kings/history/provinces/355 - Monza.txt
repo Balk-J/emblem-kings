@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_monza = castle
 b_monza_2 = temple
-b_monza_3 = city
+#b_monza_3 = city
 #b_maggiore = castle
 
 # Misc
@@ -16,3 +16,16 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_monza = tribal
+}
+500.1.1 = { 
+	b_monza = castle
+	b_monza_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

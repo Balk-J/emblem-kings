@@ -7,12 +7,26 @@ title = c_luthecia
 max_settlements = 4
 
 b_luthecia_castle = castle
-b_luthecia = city
+#b_luthecia = city
 b_luthecia_2 = temple
-b_vlanga = castle
+#b_vlanga = castle
 
 # Misc
 culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_luthecia_castle = tribal
+}
+500.1.1 = { 
+	b_luthecia_castle = castle
+b_luthecia = city
+b_vlanga = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

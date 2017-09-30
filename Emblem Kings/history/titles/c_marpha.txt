@@ -6,3 +6,27 @@
 	liege = d_marpha
 	#holder = 0
 }
+440.1.1={
+	holder=839 # 
+}
+655.1.1={
+	holder=1177 # 
+}
+680.1.1={
+	holder=1178 # 
+}
+701.1.1={
+	holder=1179 # 
+}
+715.1.1={
+	holder=1180 # Batou
+}
+744.1.1={
+	holder=1183 # Munnir
+}
+758.1.1={
+	holder=1243 # Barbarian
+}
+779.1.1={
+	holder=0 # Should be Jamke's son, but since we can't assume...
+}

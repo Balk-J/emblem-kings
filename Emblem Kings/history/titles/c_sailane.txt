@@ -6,3 +6,29 @@
 	liege = d_sailane
 	#holder = 0
 }
+440.1.1={
+	holder=862 # 
+}
+737.1.1={
+	holder = 1110 # Rahna 
+}
+760.1.1={
+	holder=1032 # Sigurd
+}
+760.3.1={
+	holder=1032 # Still Sigurd
+}
+761.1.1={
+	holder=1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+776.1.1={
+	#holder = 0 # Destroyed?
+	#holder =  # generic Loptyrian Dark Bishop?
+	holder=1051 # Julius?
+}
+779.1.1={
+	holder = 1112 # Ced the Hero
+}

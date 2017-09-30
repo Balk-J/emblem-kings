@@ -7,7 +7,7 @@ title = c_dandrum
 max_settlements = 3
 
 b_dandrum_fortress = castle
-b_dandrum = city
+#b_dandrum = city
 b_dandrum_2 = temple
 
 # Misc
@@ -15,3 +15,16 @@ culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_dandrum_fortress = tribal
+}
+500.1.1 = { 
+	b_dandrum_fortress = castle
+b_dandrum = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

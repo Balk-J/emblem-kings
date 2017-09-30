@@ -1,0 +1,47 @@
+# Canon
+
+# for Linoan
+1032={
+	can_appear=no
+	used_for_random=no
+	name="Tahra"
+	culture="mansterian"
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 4
+            emblem = 0
+            color = 13
+            color = 0
+            color = 1
+        }
+    }
+}
+# for the cruel guy who runs Tahra for two years
+1033={
+	name="of Tahra"
+	culture="mansterian"
+	religion="church_of_edda"    
+}
+# for Grahyne's family
+1038={
+	can_appear=no
+	used_for_random=no
+	name="Osraige"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 31
+            emblem = 0
+            color = 1
+            color = 3
+            color = 7
+        }
+    }  
+}

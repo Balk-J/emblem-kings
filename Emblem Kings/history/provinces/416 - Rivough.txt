@@ -8,7 +8,7 @@ max_settlements = 5
 
 b_rivough_castle = castle
 b_rivough = temple
-b_rivough_2 = city
+#b_rivough_2 = city
 #b_vilvan = castle
 #b_diryan = castle
 
@@ -17,3 +17,16 @@ culture = isaachian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_rivough_castle = tribal
+}
+500.1.1 = { 
+	b_rivough_castle = castle
+	b_rivough_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = isaachian
+}

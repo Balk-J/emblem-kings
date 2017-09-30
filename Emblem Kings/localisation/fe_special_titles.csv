@@ -2,9 +2,9 @@
 e_nergal;Nergal;;;;;;;;;;;;;x
 e_nergal_adj;Nergal;;;;;;;;;;;;;x
 d_taliver_bandits;Taliver Bandits;;;;;;;;;;;;;x
-d_taliver_bandits_adj;Taliver Bandit;;;;;;;;;;;;;x
+d_taliver_bandits_adj;Taliver Bandits;;;;;;;;;;;;;x
 d_ganelon_bandits;Ganelon Bandits;;;;;;;;;;;;;x
-d_ganelon_bandits_adj;Ganelon Bandit;;;;;;;;;;;;;x
+d_ganelon_bandits_adj;Ganelon Bandits;;;;;;;;;;;;;x
 d_lyn;Lyndis' Legion;;;;;;;;;;;;;x
 d_lyn_adj;Lyndis' Legion;;;;;;;;;;;;;x
 d_black_fang;Black Fang;;;;;;;;;;;;;x
@@ -19,3 +19,43 @@ d_western_isles_rebellion;Free Western Isles;;;;;;;;;;;;;x
 d_western_isles_rebellion_front_adj;Western Islander;;;;;;;;;;;;;x
 k_western_union;Western Union;;;;;;;;;;;;;x
 k_western_union_adj;Western Union;;;;;;;;;;;;;x
+d_loptyr;Loptyrian Host;;;;;;;;;;;;;x
+d_loptyr_adj;Loptyrian;;;;;;;;;;;;;x
+k_grann;Grann;;;;;;;;;;;;;x
+k_grann_adj;Grann;;;;;;;;;;;;;x
+e_loptyr;Loptyr Empire;;;;;;;;;;;;;x
+e_loptyr_adj;Loptyrian;;;;;;;;;;;;;x
+e_grann;Grann;;;;;;;;;;;;;x
+e_grann_adj;Grann;;;;;;;;;;;;;x
+k_valhalla;Valhalla;;;;;;;;;;;;;x
+k_valhalla_adj;Valhallan;;;;;;;;;;;;;x
+k_madino;Madino;;;;;;;;;;;;;x
+k_madino_adj;Madinoan;;;;;;;;;;;;;x
+k_tor;Tor;;;;;;;;;;;;;x
+k_tor_adj;Torian;;;;;;;;;;;;;x
+k_heirhein;Heirhein;;;;;;;;;;;;;x
+k_heirhein_adj;Heirheiner;;;;;;;;;;;;;x
+k_ollerus;Ollerus;;;;;;;;;;;;;x
+k_ollerus_adj;Ollerian;;;;;;;;;;;;;x
+k_melgln;Melgln;;;;;;;;;;;;;x
+k_melgln_adj;Melglnian;;;;;;;;;;;;;x
+k_lubeck;Lubeck;;;;;;;;;;;;;x
+k_lubeck_adj;Lubecker;;;;;;;;;;;;;x
+k_rivough;Rivough;;;;;;;;;;;;;x
+k_rivough_adj;Rivough;;;;;;;;;;;;;x
+k_tirnanog;Tirnanog;;;;;;;;;;;;;x
+k_tirnanog_adj;Tir;;;;;;;;;;;;;x
+k_sailane;Sailane;;;;;;;;;;;;;x
+k_sailane_adj;Sailanean;;;;;;;;;;;;;x
+k_conote;Conote;;;;;;;;;;;;;x
+k_conote_adj;Conotean;;;;;;;;;;;;;x
+k_luthecia;Luthecia;;;;;;;;;;;;;x
+k_luthecia_adj;Luthecian;;;;;;;;;;;;;x
+k_savan;Savan;;;;;;;;;;;;;x
+k_savan_adj;Savanian;;;;;;;;;;;;;x
+k_grutia;Grutia;;;;;;;;;;;;;x
+k_grutia_adj;Grutian;;;;;;;;;;;;;x
+k_kapathogia;Kapathogia;;;;;;;;;;;;;x
+k_kapathogia_adj;Kapathogian;;;;;;;;;;;;;x
+d_orgahil_pirates;Orgahil Pirates;;;;;;;;;;;;;x
+d_orgahil_pirates_adj;Orgahil Pirates;;;;;;;;;;;;;x

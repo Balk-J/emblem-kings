@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_alster_castle = castle
 b_alster = temple
-b_alster_2 = city
+#b_alster_2 = city
 #b_dun_sobhairce = castle
 
 # Misc
@@ -16,3 +16,19 @@ culture = mansterian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_alster_castle = tribal
+}
+500.1.1 = { 
+	b_alster_castle = castle
+b_alster_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}
+666.1.1 = { 
+	culture = mansterian
+}

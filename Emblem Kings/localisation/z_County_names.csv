@@ -8,7 +8,7 @@ c_fortitudo_adj;Fortitudoan;Fortitudoan;Fortitudoan;;Fortitudoan;;;;;;;;;x
 c_iustitia;Iustitia;Iustitia;Iustitia;;Iustitia;;;;;;;;;x
 c_iustitia_adj;Iustitian;Iustitian;Iustitian;;Iustitian;;;;;;;;;x
 c_bern;Bern;Bern;Bern;;Bern;;;;;;;;;x
-c_bern_adj;Bernese;Bernese;Bernese;;Bernese;;;;;;;;;x
+c_bern_adj;Bernite;Bernite;Bernite;;Bernite;;;;;;;;;x
 c_aarberg;Aarberg;Aarberg;Aarberg;;Aarberg;;;;;;;;;x
 c_aarberg_adj;Aarbergite;Aarbergite;Aarbergite;;Aarbergite;;;;;;;;;x
 c_landskron;Landskron;Landskron;Landskron;;Landskron;;;;;;;;;x
@@ -18,13 +18,13 @@ c_boltigen_adj;Boltigenite;Boltigenite;Boltigenite;;Boltigenite;;;;;;;;;x
 c_erlenbach;Erlenbach;Erlenbach;Erlenbach;;Erlenbach;;;;;;;;;x
 c_erlenbach_adj;Erlenbachite;Erlenbachite;Erlenbachite;;Erlenbachite;;;;;;;;;x
 c_basel;Basel;Basel;Basel;;Basel;;;;;;;;;x
-c_basel_adj;Baselian;Baselian;Baselian;;Baselian;;;;;;;;;x
+c_basel_adj;Baselite;Baselite;Baselite;;Baselite;;;;;;;;;x
 c_bettingen;Bettingen;Bettingen;Bettingen;;Bettingen;;;;;;;;;x
 c_bettingen_adj;Bettingenite;Bettingenite;Bettingenite;;Bettingenite;;;;;;;;;x
 c_orvin;Orvin;Orvin;Orvin;;Orvin;;;;;;;;;x
 c_orvin_adj;Orvinite;Orvinite;Orvinite;;Orvinite;;;;;;;;;x
 c_glarus;Glarus;Glarus;Glarus;;Glarus;;;;;;;;;x
-c_glarus_adj;Glarussian;Glarussian;Glarussian;;Glarussian;;;;;;;;;x
+c_glarus_adj;Glarusite;Glarusite;Glarusite;;Glarusite;;;;;;;;;x
 c_ennenda;Ennenda;Ennenda;Ennenda;;Ennenda;;;;;;;;;x
 c_ennenda_adj;Ennendan;Ennendan;Ennendan;;Ennendan;;;;;;;;;x
 c_riedern;Riedern;Riedern;Riedern;;Riedern;;;;;;;;;x
@@ -38,19 +38,19 @@ c_bauen_adj;Bauenite;Bauenite;Bauenite;;Bauenite;;;;;;;;;x
 c_isenthal;Isenthal;Isenthal;Isenthal;;Isenthal;;;;;;;;;x
 c_isenthal_adj;Isenthalite;Isenthalite;Isenthalite;;Isenthalite;;;;;;;;;x
 c_fribourg;Fribourg;Fribourg;Fribourg;;Fribourg;;;;;;;;;x
-c_fribourg_adj;Fribourger;Fribourger;Fribourger;;Fribourger;;;;;;;;;x
+c_fribourg_adj;Fribourgite;Fribourgite;Fribourgite;;Fribourgite;;;;;;;;;x
 c_galmiz;Galmiz;Galmiz;Galmiz;;Galmiz;;;;;;;;;x
 c_galmiz_adj;Galmizite;Galmizite;Galmizite;;Galmizite;;;;;;;;;x
 c_murist;Murist;Murist;Murist;;Murist;;;;;;;;;x
 c_murist_adj;Muristite;Muristite;Muristite;;Muristite;;;;;;;;;x
 c_unterwalden;Unterwalden;Unterwalden;Unterwalden;;Unterwalden;;;;;;;;;x
-c_unterwalden_adj;Unterwaldenian;Unterwaldenian;Unterwaldenian;;Unterwaldenian;;;;;;;;;x
+c_unterwalden_adj;Unterwaldenite;Unterwaldenite;Unterwaldenite;;Unterwaldenite;;;;;;;;;x
 c_obwalden;Obwalden;Obwalden;Obwalden;;Obwalden;;;;;;;;;x
 c_obwalden_adj;Obwaldenite;Obwaldenite;Obwaldenite;;Obwaldenite;;;;;;;;;x
 c_nidwalden;Nidwalden;Nidwalden;Nidwalden;;Nidwalden;;;;;;;;;x
 c_nidwalden_adj;Nidwaldenite;Nidwaldenite;Nidwaldenite;;Nidwaldenite;;;;;;;;;x
 c_appenzell;Appenzell;Appenzell;Appenzell;;Appenzell;;;;;;;;;x
-c_appenzell_adj;Appenzellian;Appenzellian;Appenzellian;;Appenzellian;;;;;;;;;x
+c_appenzell_adj;Appenzellite;Appenzellite;Appenzellite;;Appenzellite;;;;;;;;;x
 c_gonten;Gonten;Gonten;Gonten;;Gonten;;;;;;;;;x
 c_gonten_adj;Gontenite;Gontenite;Gontenite;;Gontenite;;;;;;;;;x
 c_rute;Rute;Rute;Rute;;Rute;;;;;;;;;x
@@ -64,13 +64,13 @@ c_risch_adj;Rischite;Rischite;Rischite;;Rischite;;;;;;;;;x
 c_walchwil;Walchwil;Walchwil;Walchwil;;Walchwil;;;;;;;;;x
 c_walchwil_adj;Walchwilite;Walchwilite;Walchwilite;;Walchwilite;;;;;;;;;x
 c_solothurn;Solothurn;Solothurn;Solothurn;;Solothurn;;;;;;;;;x
-c_solothurn_adj;Solothurnian;Solothurnian;Solothurnian;;Solothurnian;;;;;;;;;x
+c_solothurn_adj;Solothurnite;Solothurnite;Solothurnite;;Solothurnite;;;;;;;;;x
 c_dorneck;Dorneck;Dorneck;Dorneck;;Dorneck;;;;;;;;;x
 c_dorneck_adj;Dorneckite;Dorneckite;Dorneckite;;Dorneckite;;;;;;;;;x
 c_olten;Olten;Olten;Olten;;Olten;;;;;;;;;x
 c_olten_adj;Oltenite;Oltenite;Oltenite;;Oltenite;;;;;;;;;x
 c_calach;Calach;Calach;Calach;;Calach;;;;;;;;;x
-c_calach_adj;Calachian;Calachian;Calachian;;Calachian;;;;;;;;;x
+c_calach_adj;Calachite;Calachite;Calachite;;Calachite;;;;;;;;;x
 c_marbach;Marbach;Marbach;Marbach;;Marbach;;;;;;;;;x
 c_marbach_adj;Marbachite;Marbachite;Marbachite;;Marbachite;;;;;;;;;x
 c_buron;Buron;Buron;Buron;;Buron;;;;;;;;;x
@@ -100,7 +100,7 @@ c_bonfol_adj;Bonfolite;Bonfolite;Bonfolite;;Bonfolite;;;;;;;;;x
 c_yens;Yens;Yens;Yens;;Yens;;;;;;;;;x
 c_yens_adj;Yensite;Yensite;Yensite;;Yensite;;;;;;;;;x
 c_sarnen;Sarnen;Sarnen;Sarnen;;Sarnen;;;;;;;;;x
-c_sarnen_adj;Sarneni;Sarneni;Sarneni;;Sarneni;;;;;;;;;x
+c_sarnen_adj;Sarnenite;Sarnenite;Sarnenite;;Sarnenite;;;;;;;;;x
 c_hori;Hori;Hori;Hori;;Hori;;;;;;;;;x
 c_hori_adj;Horian;Horian;Horian;;Horian;;;;;;;;;x
 c_meilen;Meilen;Meilen;Meilen;;Meilen;;;;;;;;;x
@@ -116,7 +116,7 @@ c_aigle_adj;Aigler;Aigler;Aigler;;Aigler;;;;;;;;;x
 c_nyon;Nyon;Nyon;Nyon;;Nyon;;;;;;;;;x
 c_nyon_adj;Nyonian;Nyonian;Nyonian;;Nyonian;;;;;;;;;x
 c_arles;Arles;Arles;Arles;;Arles;;;;;;;;;x
-c_arles_adj;Arlesian;Arlesian;Arlesian;;Arlesian;;;;;;;;;x
+c_arles_adj;Arlesite;Arlesite;Arlesite;;Arlesite;;;;;;;;;x
 c_itingen;Itingen;Itingen;Itingen;;Itingen;;;;;;;;;x
 c_itingen_adj;Itingenite;Itingenite;Itingenite;;Itingenite;;;;;;;;;x
 c_birseck;Birseck;Birseck;Birseck;;Birseck;;;;;;;;;x
@@ -180,7 +180,7 @@ c_ryerde_adj;Ryerder;Ryerder;Ryerder;;Ryerder;;;;;;;;;x
 c_sidyma;Sidyma;Sidyma;Sidyma;;Sidyma;;;;;;;;;x
 c_sidyma_adj;Sidyman;Sidyman;Sidyman;;Sidyman;;;;;;;;;x
 c_laus;Laus;Laus;Laus;;Laus;;;;;;;;;x
-c_laus_adj;Lausian;Lausian;Lausian;;Lausian;;;;;;;;;x
+c_laus_adj;Lausite;Lausite;Lausite;;Lausite;;;;;;;;;x
 c_idebessus;Idebessus;Idebessus;Idebessus;;Idebessus;;;;;;;;;x
 c_idebessus_adj;Idebessusite;Idebessusite;Idebessusite;;Idebessusite;;;;;;;;;x
 c_tios;Tios;Tios;Tios;;Tios;;;;;;;;;x
@@ -192,7 +192,7 @@ c_bubon_adj;Bubonian;Bubonian;Bubonian;;Bubonian;;;;;;;;;x
 c_balbura;Balbura;Balbura;Balbura;;Balbura;;;;;;;;;x
 c_balbura_adj;Balburan;Balburan;Balburan;;Balburan;;;;;;;;;x
 c_santaruz;Santaruz;Santaruz;Santaruz;;Santaruz;;;;;;;;;x
-c_santaruz_adj;Santaruzian;Santaruzian;Santaruzian;;Santaruzian;;;;;;;;;x
+c_santaruz_adj;Santaruzite;Santaruzite;Santaruzite;;Santaruzite;;;;;;;;;x
 c_cyaneae;Cyaneae;Cyaneae;Cyaneae;;Cyaneae;;;;;;;;;x
 c_cyaneae_adj;Cyaneaer;Cyaneaer;Cyaneaer;;Cyaneaer;;;;;;;;;x
 c_caelin;Caelin;Caelin;Caelin;;Caelin;;;;;;;;;x
@@ -216,13 +216,13 @@ c_tania_adj;Tanian;Tanian;Tanian;;Tanian;;;;;;;;;x
 c_amelas;Amelas;Amelas;Amelas;;Amelas;;;;;;;;;x
 c_amelas_adj;Amelasite;Amelasite;Amelasite;;Amelasite;;;;;;;;;x
 c_pherae;Pherae;Pherae;Pherae;;Pherae;;;;;;;;;x
-c_pherae_adj;Pheraean;Pheraean;Pheraean;;Pheraean;;;;;;;;;x
+c_pherae_adj;Pheraer;Pheraer;Pheraer;;Pheraer;;;;;;;;;x
 c_phellus;Phellus;Phellus;Phellus;;Phellus;;;;;;;;;x
 c_phellus_adj;Phellusite;Phellusite;Phellusite;;Phellusite;;;;;;;;;x
 c_phestos;Phestos;Phestos;Phestos;;Phestos;;;;;;;;;x
 c_phestos_adj;Phestosite;Phestosite;Phestosite;;Phestosite;;;;;;;;;x
 c_cornwell;Cornwell;Cornwell;Cornwell;;Cornwell;;;;;;;;;x
-c_cornwell_adj;Cornwellian;Cornwellian;Cornwellian;;Cornwellian;;;;;;;;;x
+c_cornwell_adj;Cornwellite;Cornwellite;Cornwellite;;Cornwellite;;;;;;;;;x
 c_dias;Dias;Dias;Dias;;Dias;;;;;;;;;x
 c_dias_adj;Diasite;Diasite;Diasite;;Diasite;;;;;;;;;x
 c_telmessus;Telmessus;Telmessus;Telmessus;;Telmessus;;;;;;;;;x
@@ -296,7 +296,7 @@ c_perthori_adj;Perthorian;Perthorian;Perthorian;;Perthorian;;;;;;;;;x
 c_skopi;Skopi;Skopi;Skopi;;Skopi;;;;;;;;;x
 c_skopi_adj;Skopian;Skopian;Skopian;;Skopian;;;;;;;;;x
 c_jutes;Jutes;Jutes;Jutes;;Jutes;;;;;;;;;x
-c_jutes_adj;Juteser;Juteser;Juteser;;Juteser;;;;;;;;;x
+c_jutes_adj;Jutesite;Jutesite;Jutesite;;Jutesite;;;;;;;;;x
 c_condate;Condate;Condate;Condate;;Condate;;;;;;;;;x
 c_condate_adj;Condater;Condater;Condater;;Condater;;;;;;;;;x
 c_moridin;Moridin;Moridin;Moridin;;Moridin;;;;;;;;;x
@@ -306,7 +306,7 @@ c_segontium_adj;Segontiumite;Segontiumite;Segontiumite;;Segontiumite;;;;;;;;;x
 c_dubris;Dubris;Dubris;Dubris;;Dubris;;;;;;;;;x
 c_dubris_adj;Dubrisite;Dubrisite;Dubrisite;;Dubrisite;;;;;;;;;x
 c_vectis;Vectis;Vectis;Vectis;;Vectis;;;;;;;;;x
-c_vectis_adj;Vectisian;Vectisian;Vectisian;;Vectisian;;;;;;;;;x
+c_vectis_adj;Vectisite;Vectisite;Vectisite;;Vectisite;;;;;;;;;x
 c_lindinis;Lindinis;Lindinis;Lindinis;;Lindinis;;;;;;;;;x
 c_lindinis_adj;Lindinisite;Lindinisite;Lindinisite;;Lindinisite;;;;;;;;;x
 c_mamucium;Mamucium;Mamucium;Mamucium;;Mamucium;;;;;;;;;x
@@ -316,7 +316,7 @@ c_pontes_adj;Pontesite;Pontesite;Pontesite;;Pontesite;;;;;;;;;x
 c_calcaria;Calcaria;Calcaria;Calcaria;;Calcaria;;;;;;;;;x
 c_calcaria_adj;Calcarian;Calcarian;Calcarian;;Calcarian;;;;;;;;;x
 c_eburacum;Eburacum;Eburacum;Eburacum;;Eburacum;;;;;;;;;x
-c_eburacum_adj;Eburacum;Eburacum;Eburacum;;Eburacum;;;;;;;;;x
+c_eburacum_adj;Eburacumite;Eburacumite;Eburacumite;;Eburacumite;;;;;;;;;x
 c_armagh;Armagh;Armagh;Armagh;;Armagh;;;;;;;;;x
 c_armagh_adj;Armaghite;Armaghite;Armaghite;;Armaghite;;;;;;;;;x
 c_lindum;Lindum;Lindum;Lindum;;Lindum;;;;;;;;;x
@@ -360,7 +360,7 @@ c_olicana_adj;Olicanan;Olicanan;Olicanan;;Olicanan;;;;;;;;;x
 c_isca;Isca;Isca;Isca;;Isca;;;;;;;;;x
 c_isca_adj;Iscan;Iscan;Iscan;;Iscan;;;;;;;;;x
 c_taliver;Taliver;Taliver;Taliver;;Taliver;;;;;;;;;x
-c_taliver_adj;Taliverian;Taliverian;Taliverian;;Taliverian;;;;;;;;;x
+c_taliver_adj;Taliverite;Taliverite;Taliverite;;Taliverite;;;;;;;;;x
 c_hardres;Hardres;Hardres;Hardres;;Hardres;;;;;;;;;x
 c_hardres_adj;Hardresite;Hardresite;Hardresite;;Hardresite;;;;;;;;;x
 c_berenger;Berenger;Berenger;Berenger;;Berenger;;;;;;;;;x
@@ -374,7 +374,7 @@ c_foulkes_adj;Foulkesite;Foulkesite;Foulkesite;;Foulkesite;;;;;;;;;x
 c_murgleis;Murgleis;Murgleis;Murgleis;;Murgleis;;;;;;;;;x
 c_murgleis_adj;Murgleisite;Murgleisite;Murgleisite;;Murgleisite;;;;;;;;;x
 c_bulgar;Bulgar;Bulgar;Bulgar;;Bulgar;;;;;;;;;x
-c_bulgar_adj;Bulgarian;Bulgarian;Bulgarian;;Bulgarian;;;;;;;;;x
+c_bulgar_adj;Bulgarite;Bulgarite;Bulgarite;;Bulgarite;;;;;;;;;x
 c_mani;Mani;Mani;Mani;;Mani;;;;;;;;;x
 c_mani_adj;Manian;Manian;Manian;;Manian;;;;;;;;;x
 c_balkh;Balkh;Balkh;Balkh;;Balkh;;;;;;;;;x
@@ -382,13 +382,13 @@ c_balkh_adj;Balkhite;Balkhite;Balkhite;;Balkhite;;;;;;;;;x
 c_volga;Volga;Volga;Volga;;Volga;;;;;;;;;x
 c_volga_adj;Volgan;Volgan;Volgan;;Volgan;;;;;;;;;x
 c_gelonus;Gelonus;Gelonus;Gelonus;;Gelonus;;;;;;;;;x
-c_gelonus_adj;Gelonus;Gelonus;Gelonus;;Gelonus;;;;;;;;;x
+c_gelonus_adj;Gelonusite;Gelonusite;Gelonusite;;Gelonusite;;;;;;;;;x
 c_sistan;Sistan;Sistan;Sistan;;Sistan;;;;;;;;;x
 c_sistan_adj;Sistanite;Sistanite;Sistanite;;Sistanite;;;;;;;;;x
 c_saka;Saka;Saka;Saka;;Saka;;;;;;;;;x
 c_saka_adj;Sakan;Sakan;Sakan;;Sakan;;;;;;;;;x
 c_pamir;Pamir;Pamir;Pamir;;Pamir;;;;;;;;;x
-c_pamir_adj;Pamirian;Pamirian;Pamirian;;Pamirian;;;;;;;;;x
+c_pamir_adj;Pamirite;Pamirite;Pamirite;;Pamirite;;;;;;;;;x
 c_shan;Shan;Shan;Shan;;Shan;;;;;;;;;x
 c_shan_adj;Shanite;Shanite;Shanite;;Shanite;;;;;;;;;x
 c_media;Media;Media;Media;;Media;;;;;;;;;x
@@ -428,7 +428,7 @@ c_fulginia_adj;Fulginian;Fulginian;Fulginian;;Fulginian;;;;;;;;;x
 c_perusia;Perusia;Perusia;Perusia;;Perusia;;;;;;;;;x
 c_perusia_adj;Perusian;Perusian;Perusian;;Perusian;;;;;;;;;x
 c_reglay;Reglay;Reglay;Reglay;;Reglay;;;;;;;;;x
-c_reglay_adj;Reglay;Reglay;Reglay;;Reglay;;;;;;;;;x
+c_reglay_adj;Reglayian;Reglayian;Reglayian;;Reglayian;;;;;;;;;x
 c_rasela;Rasela;Rasela;Rasela;;Rasela;;;;;;;;;x
 c_rasela_adj;Raselan;Raselan;Raselan;;Raselan;;;;;;;;;x
 c_russellae;Russellae;Russellae;Russellae;;Russellae;;;;;;;;;x
@@ -496,13 +496,13 @@ c_orhay_adj;Orhayian;Orhayian;Orhayian;;Orhayian;;;;;;;;;x
 c_riha;Riha;Riha;Riha;;Riha;;;;;;;;;x
 c_riha_adj;Rihan;Rihan;Rihan;;Rihan;;;;;;;;;x
 c_troas;Troas;Troas;Troas;;Troas;;;;;;;;;x
-c_troas_adj;Troan;Troan;Troan;;Troan;;;;;;;;;x
+c_troas_adj;Troasite;Troasite;Troasite;;Troasite;;;;;;;;;x
 c_sigeia;Sigeia;Sigeia;Sigeia;;Sigeia;;;;;;;;;x
 c_sigeia_adj;Sigeian;Sigeian;Sigeian;;Sigeian;;;;;;;;;x
 c_antigonia;Antigonia;Antigonia;Antigonia;;Antigonia;;;;;;;;;x
 c_antigonia_adj;Antigonian;Antigonian;Antigonian;;Antigonian;;;;;;;;;x
 c_carrhae;Carrhae;Carrhae;Carrhae;;Carrhae;;;;;;;;;x
-c_carrhae_adj;Carrhaen;Carrhaen;Carrhaen;;Carrhaen;;;;;;;;;x
+c_carrhae_adj;Carrhaer;Carrhaer;Carrhaer;;Carrhaer;;;;;;;;;x
 c_melas;Melas;Melas;Melas;;Melas;;;;;;;;;x
 c_melas_adj;Melasite;Melasite;Melasite;;Melasite;;;;;;;;;x
 c_ida;Ida;Ida;Ida;;Ida;;;;;;;;;x
@@ -530,7 +530,7 @@ c_anth_adj;Anthite;Anthite;Anthite;;Anthite;;;;;;;;;x
 c_clavna;Clavna;Clavna;Clavna;;Clavna;;;;;;;;;x
 c_clavna_adj;Clavnan;Clavnan;Clavnan;;Clavnan;;;;;;;;;x
 c_sestos;Sestos;Sestos;Sestos;;Sestos;;;;;;;;;x
-c_sestos_adj;Sestosian;Sestosian;Sestosian;;Sestosian;;;;;;;;;x
+c_sestos_adj;Sestosite;Sestosite;Sestosite;;Sestosite;;;;;;;;;x
 c_arciun;Arciun;Arciun;Arciun;;Arciun;;;;;;;;;x
 c_arciun_adj;Arciunite;Arciunite;Arciunite;;Arciunite;;;;;;;;;x
 c_carmna;Carmna;Carmna;Carmna;;Carmna;;;;;;;;;x
@@ -561,108 +561,6 @@ c_pathva;Pathva;Pathva;Pathva;;Pathva;;;;;;;;;x
 c_pathva_adj;Pathvan;Pathvan;Pathvan;;Pathvan;;;;;;;;;x
 c_remnun;Remnun;Remnun;Remnun;;Remnun;;;;;;;;;x
 c_remnun_adj;Remnunite;Remnunite;Remnunite;;Remnunite;;;;;;;;;x
-c_ice_dragon_mountains;Ice Dragon Mountains;Ice Dragon Mountains;Ice Dragon Mountains;;Ice Dragon Mountains;;;;;;;;;x
-c_ice_dragon_mountains_adj;Ice Dragon Mountainsite;Ice Dragon Mountainsite;Ice Dragon Mountainsite;;Ice Dragon Mountainsite;;;;;;;;;x
-c_maltet_mountains;Maltet Mountains;Maltet Mountains;Maltet Mountains;;Maltet Mountains;;;;;;;;;x
-c_maltet_mountains_adj;Maltet Mountainsite;Maltet Mountainsite;Maltet Mountainsite;;Maltet Mountainsite;;;;;;;;;x
-c_the_seasonless_peaks;The Seasonless Peaks;The Seasonless Peaks;The Seasonless Peaks;;The Seasonless Peaks;;;;;;;;;x
-c_the_seasonless_peaks_adj;The Seasonless Peaksite;The Seasonless Peaksite;The Seasonless Peaksite;;The Seasonless Peaksite;;;;;;;;;x
-c_wyvern_mountains;Wyvern Mountains;Wyvern Mountains;Wyvern Mountains;;Wyvern Mountains;;;;;;;;;x
-c_wyvern_mountains_adj;Wyvern Mountainsite;Wyvern Mountainsite;Wyvern Mountainsite;;Wyvern Mountainsite;;;;;;;;;x
-c_eastern_coast_of_edessa;Eastern Coast of Edessa;Eastern Coast of Edessa;Eastern Coast of Edessa;;Eastern Coast of Edessa;;;;;;;;;x
-c_eastern_coast_of_edessa_adj;Eastern Coast of Edessan;Eastern Coast of Edessan;Eastern Coast of Edessan;;Eastern Coast of Edessan;;;;;;;;;x
-c_northern_coast_of_edessa;Northern Coast of Edessa;Northern Coast of Edessa;Northern Coast of Edessa;;Northern Coast of Edessa;;;;;;;;;x
-c_northern_coast_of_edessa_adj;Northern Coast of Edessan;Northern Coast of Edessan;Northern Coast of Edessan;;Northern Coast of Edessan;;;;;;;;;x
-c_barigan_bay;Barigan Bay;Barigan Bay;Barigan Bay;;Barigan Bay;;;;;;;;;x
-c_barigan_bay_adj;Barigan Bayian;Barigan Bayian;Barigan Bayian;;Barigan Bayian;;;;;;;;;x
-c_bay_of_scamander;Bay of Scamander;Bay of Scamander;Bay of Scamander;;Bay of Scamander;;;;;;;;;x
-c_bay_of_scamander_adj;Bay of Scamanderite;Bay of Scamanderite;Bay of Scamanderite;;Bay of Scamanderite;;;;;;;;;x
-c_central_sea_of_ilia;Central Sea of Ilia;Central Sea of Ilia;Central Sea of Ilia;;Central Sea of Ilia;;;;;;;;;x
-c_central_sea_of_ilia_adj;Central Sea of Ilian;Central Sea of Ilian;Central Sea of Ilian;;Central Sea of Ilian;;;;;;;;;x
-c_western_sea_of_ilia;Western Sea of Ilia;Western Sea of Ilia;Western Sea of Ilia;;Western Sea of Ilia;;;;;;;;;x
-c_western_sea_of_ilia_adj;Western Sea of Ilian;Western Sea of Ilian;Western Sea of Ilian;;Western Sea of Ilian;;;;;;;;;x
-c_sea_of_etruria;Sea of Etruria;Sea of Etruria;Sea of Etruria;;Sea of Etruria;;;;;;;;;x
-c_sea_of_etruria_adj;Sea of Etrurian;Sea of Etrurian;Sea of Etrurian;;Sea of Etrurian;;;;;;;;;x
-c_bay_of_remy;Bay of Remy;Bay of Remy;Bay of Remy;;Bay of Remy;;;;;;;;;x
-c_bay_of_remy_adj;Bay of Remyian;Bay of Remyian;Bay of Remyian;;Bay of Remyian;;;;;;;;;x
-c_coast_of_dia;Coast of Dia;Coast of Dia;Coast of Dia;;Coast of Dia;;;;;;;;;x
-c_coast_of_dia_adj;Coast of Dian;Coast of Dian;Coast of Dian;;Coast of Dian;;;;;;;;;x
-c_strait_of_dia;Strait of Dia;Strait of Dia;Strait of Dia;;Strait of Dia;;;;;;;;;x
-c_strait_of_dia_adj;Strait of Dian;Strait of Dian;Strait of Dian;;Strait of Dian;;;;;;;;;x
-c_strait_of_armads;Strait of Armads;Strait of Armads;Strait of Armads;;Strait of Armads;;;;;;;;;x
-c_strait_of_armads_adj;Strait of Armadsite;Strait of Armadsite;Strait of Armadsite;;Strait of Armadsite;;;;;;;;;x
-c_durbans_strait;Durban's Strait;Durban's Strait;Durban's Strait;;Durban's Strait;;;;;;;;;x
-c_durbans_strait_adj;Durban's Straitite;Durban's Straitite;Durban's Straitite;;Durban's Straitite;;;;;;;;;x
-c_coast_of_jutes;Coast of Jutes;Coast of Jutes;Coast of Jutes;;Coast of Jutes;;;;;;;;;x
-c_coast_of_jutes_adj;Coast of Juteser;Coast of Juteser;Coast of Juteser;;Coast of Juteser;;;;;;;;;x
-c_coast_of_dubris;Coast of Dubris;Coast of Dubris;Coast of Dubris;;Coast of Dubris;;;;;;;;;x
-c_coast_of_dubris_adj;Coast of Dubrisite;Coast of Dubrisite;Coast of Dubrisite;;Coast of Dubrisite;;;;;;;;;x
-c_bay_of_fibernia;Bay of Fibernia;Bay of Fibernia;Bay of Fibernia;;Bay of Fibernia;;;;;;;;;x
-c_bay_of_fibernia_adj;Bay of Fibernian;Bay of Fibernian;Bay of Fibernian;;Bay of Fibernian;;;;;;;;;x
-c_strait_of_edina;Strait of Edina;Strait of Edina;Strait of Edina;;Strait of Edina;;;;;;;;;x
-c_strait_of_edina_adj;Strait of Edinan;Strait of Edinan;Strait of Edinan;;Strait of Edinan;;;;;;;;;x
-c_western_coast_of_scotia;Western Coast of Scotia;Western Coast of Scotia;Western Coast of Scotia;;Western Coast of Scotia;;;;;;;;;x
-c_western_coast_of_scotia_adj;Western Coast of Scotian;Western Coast of Scotian;Western Coast of Scotian;;Western Coast of Scotian;;;;;;;;;x
-c_coast_of_caledonia;Coast of Caledonia;Coast of Caledonia;Coast of Caledonia;;Coast of Caledonia;;;;;;;;;x
-c_coast_of_caledonia_adj;Coast of Caledonian;Coast of Caledonian;Coast of Caledonian;;Coast of Caledonian;;;;;;;;;x
-c_southern_coast_of_fibernia;Southern Coast of Fibernia;Southern Coast of Fibernia;Southern Coast of Fibernia;;Southern Coast of Fibernia;;;;;;;;;x
-c_southern_coast_of_fibernia_adj;Southern Coast of Fibernian;Southern Coast of Fibernian;Southern Coast of Fibernian;;Southern Coast of Fibernian;;;;;;;;;x
-c_outer_bay_of_aquelia;Outer Bay of Aquelia;Outer Bay of Aquelia;Outer Bay of Aquelia;;Outer Bay of Aquelia;;;;;;;;;x
-c_outer_bay_of_aquelia_adj;Outer Bay of Aquelian;Outer Bay of Aquelian;Outer Bay of Aquelian;;Outer Bay of Aquelian;;;;;;;;;x
-c_bay_of_aquelia;Bay of Aquelia;Bay of Aquelia;Bay of Aquelia;;Bay of Aquelia;;;;;;;;;x
-c_bay_of_aquelia_adj;Bay of Aquelian;Bay of Aquelian;Bay of Aquelian;;Bay of Aquelian;;;;;;;;;x
-c_nabatan_coast;Nabatan Coast;Nabatan Coast;Nabatan Coast;;Nabatan Coast;;;;;;;;;x
-c_nabatan_coast_adj;Nabatan Coastite;Nabatan Coastite;Nabatan Coastite;;Nabatan Coastite;;;;;;;;;x
-c_southern_coast_of_scotia;Southern Coast of Scotia;Southern Coast of Scotia;Southern Coast of Scotia;;Southern Coast of Scotia;;;;;;;;;x
-c_southern_coast_of_scotia_adj;Southern Coast of Scotian;Southern Coast of Scotian;Southern Coast of Scotian;;Southern Coast of Scotian;;;;;;;;;x
-c_northern_sea_of_kafti;Northern Sea of Kafti;Northern Sea of Kafti;Northern Sea of Kafti;;Northern Sea of Kafti;;;;;;;;;x
-c_northern_sea_of_kafti_adj;Northern Sea of Kaftian;Northern Sea of Kaftian;Northern Sea of Kaftian;;Northern Sea of Kaftian;;;;;;;;;x
-c_elibian_ocean;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_coast_of_kafti;Coast of Kafti;Coast of Kafti;Coast of Kafti;;Coast of Kafti;;;;;;;;;x
-c_coast_of_kafti_adj;Coast of Kaftian;Coast of Kaftian;Coast of Kaftian;;Coast of Kaftian;;;;;;;;;x
-c_central_sea_of_kafti;Central Sea of Kafti;Central Sea of Kafti;Central Sea of Kafti;;Central Sea of Kafti;;;;;;;;;x
-c_central_sea_of_kafti_adj;Central Sea of Kaftian;Central Sea of Kaftian;Central Sea of Kaftian;;Central Sea of Kaftian;;;;;;;;;x
-c_southern_sea_of_kafti;Southern Sea of Kafti;Southern Sea of Kafti;Southern Sea of Kafti;;Southern Sea of Kafti;;;;;;;;;x
-c_southern_sea_of_kafti_adj;Southern Sea of Kaftian;Southern Sea of Kaftian;Southern Sea of Kaftian;;Southern Sea of Kaftian;;;;;;;;;x
-c_western_missur_coast;Western Missur Coast;Western Missur Coast;Western Missur Coast;;Western Missur Coast;;;;;;;;;x
-c_western_missur_coast_adj;Western Missur Coastite;Western Missur Coastite;Western Missur Coastite;;Western Missur Coastite;;;;;;;;;x
-c_central_missur_coast;Central Missur Coast;Central Missur Coast;Central Missur Coast;;Central Missur Coast;;;;;;;;;x
-c_central_missur_coast_adj;Central Missur Coastite;Central Missur Coastite;Central Missur Coastite;;Central Missur Coastite;;;;;;;;;x
-c_outer_sea_of_lycia;Outer Sea of Lycia;Outer Sea of Lycia;Outer Sea of Lycia;;Outer Sea of Lycia;;;;;;;;;x
-c_outer_sea_of_lycia_adj;Outer Sea of Lycian;Outer Sea of Lycian;Outer Sea of Lycian;;Outer Sea of Lycian;;;;;;;;;x
-c_inner_sea_of_lycia;Inner Sea of Lycia;Inner Sea of Lycia;Inner Sea of Lycia;;Inner Sea of Lycia;;;;;;;;;x
-c_inner_sea_of_lycia_adj;Inner Sea of Lycian;Inner Sea of Lycian;Inner Sea of Lycian;;Inner Sea of Lycian;;;;;;;;;x
-c_bay_of_lycia;Bay of Lycia;Bay of Lycia;Bay of Lycia;;Bay of Lycia;;;;;;;;;x
-c_bay_of_lycia_adj;Bay of Lycian;Bay of Lycian;Bay of Lycian;;Bay of Lycian;;;;;;;;;x
-c_sea_of_pherae;Sea of Pherae;Sea of Pherae;Sea of Pherae;;Sea of Pherae;;;;;;;;;x
-c_sea_of_pherae_adj;Sea of Pheraean;Sea of Pheraean;Sea of Pheraean;;Sea of Pheraean;;;;;;;;;x
-c_valor_coast;Valor Coast;Valor Coast;Valor Coast;;Valor Coast;;;;;;;;;x
-c_valor_coast_adj;Valor Coastite;Valor Coastite;Valor Coastite;;Valor Coastite;;;;;;;;;x
-c_cornwell_coast;Cornwell Coast;Cornwell Coast;Cornwell Coast;;Cornwell Coast;;;;;;;;;x
-c_cornwell_coast_adj;Cornwell Coastite;Cornwell Coastite;Cornwell Coastite;;Cornwell Coastite;;;;;;;;;x
-c_sea_of_marciana;Sea of Marciana;Sea of Marciana;Sea of Marciana;;Sea of Marciana;;;;;;;;;x
-c_sea_of_marciana_adj;Sea of Marcianan;Sea of Marcianan;Sea of Marcianan;;Sea of Marcianan;;;;;;;;;x
-c_terina_coast;Terina Coast;Terina Coast;Terina Coast;;Terina Coast;;;;;;;;;x
-c_terina_coast_adj;Terina Coastite;Terina Coastite;Terina Coastite;;Terina Coastite;;;;;;;;;x
-c_sea_of_calynda;Sea of Calynda;Sea of Calynda;Sea of Calynda;;Sea of Calynda;;;;;;;;;x
-c_sea_of_calynda_adj;Sea of Calyndan;Sea of Calyndan;Sea of Calyndan;;Sea of Calyndan;;;;;;;;;x
-c_terina_cliffs;Terina Cliffs;Terina Cliffs;Terina Cliffs;;Terina Cliffs;;;;;;;;;x
-c_terina_cliffs_adj;Terina Cliffsite;Terina Cliffsite;Terina Cliffsite;;Terina Cliffsite;;;;;;;;;x
-c_aareshore;Aareshore;Aareshore;Aareshore;;Aareshore;;;;;;;;;x
-c_aareshore_adj;Aareshorer;Aareshorer;Aareshorer;;Aareshorer;;;;;;;;;x
-c_lake_calach;Lake Calach;Lake Calach;Lake Calach;;Lake Calach;;;;;;;;;x
-c_lake_calach_adj;Lake Calachian;Lake Calachian;Lake Calachian;;Lake Calachian;;;;;;;;;x
-c_river_aare;River Aare;River Aare;River Aare;;River Aare;;;;;;;;;x
-c_river_aare_adj;River Aarer;River Aarer;River Aarer;;River Aarer;;;;;;;;;x
-c_river_aare_2;River Aare;River Aare;River Aare;;River Aare;;;;;;;;;x
-c_river_aare_2_adj;River Aarer;River Aarer;River Aarer;;River Aarer;;;;;;;;;x
-c_river_aare_3;River Aare;River Aare;River Aare;;River Aare;;;;;;;;;x
-c_river_aare_3_adj;River Aarer;River Aarer;River Aarer;;River Aarer;;;;;;;;;x
-c_river_aare_4;River Aare;River Aare;River Aare;;River Aare;;;;;;;;;x
-c_river_aare_4_adj;River Aarer;River Aarer;River Aarer;;River Aarer;;;;;;;;;x
-c_river_scamander;River Scamander;River Scamander;River Scamander;;River Scamander;;;;;;;;;x
-c_river_scamander_adj;River Scamanderite;River Scamanderite;River Scamanderite;;River Scamanderite;;;;;;;;;x
 c_belhalla;Belhalla;Belhalla;Belhalla;;Belhalla;;;;;;;;;x
 c_belhalla_adj;Belhallan;Belhallan;Belhallan;;Belhallan;;;;;;;;;x
 c_glasir;Glasir;Glasir;Glasir;;Glasir;;;;;;;;;x
@@ -911,8 +809,8 @@ c_dungot;Dungot;Dungot;Dungot;;Dungot;;;;;;;;;x
 c_dungot_adj;Dungotite;Dungotite;Dungotite;;Dungotite;;;;;;;;;x
 c_tahra;Tahra;Tahra;Tahra;;Tahra;;;;;;;;;x
 c_tahra_adj;Tahran;Tahran;Tahran;;Tahran;;;;;;;;;x
-c_cealsaidh;Cealsaidh;Cealsaidh;Cealsaidh;;Cealsaidh;;;;;;;;;x
-c_cealsaidh_adj;Cealsaidhite;Cealsaidhite;Cealsaidhite;;Cealsaidhite;;;;;;;;;x
+c_frest;Frest;Frest;Frest;;Frest;;;;;;;;;x
+c_frest_adj;Frestite;Frestite;Frestite;;Frestite;;;;;;;;;x
 c_thracia;Thracia;Thracia;Thracia;;Thracia;;;;;;;;;x
 c_thracia_adj;Thracian;Thracian;Thracian;;Thracian;;;;;;;;;x
 c_verissa;Verissa;Verissa;Verissa;;Verissa;;;;;;;;;x
@@ -967,14 +865,14 @@ c_fiana;Fiana;Fiana;Fiana;;Fiana;;;;;;;;;x
 c_fiana_adj;Fianan;Fianan;Fianan;;Fianan;;;;;;;;;x
 c_eochaill;Eochaill;Eochaill;Eochaill;;Eochaill;;;;;;;;;x
 c_eochaill_adj;Eochaillite;Eochaillite;Eochaillite;;Eochaillite;;;;;;;;;x
-c_mumu;Mumu;Mumu;Mumu;;Mumu;;;;;;;;;x
-c_mumu_adj;Mumuite;Mumuite;Mumuite;;Mumuite;;;;;;;;;x
-c_deasmhumhain;Deasmhumhain;Deasmhumhain;Deasmhumhain;;Deasmhumhain;;;;;;;;;x
-c_deasmhumhain_adj;Deasmhumhainite;Deasmhumhainite;Deasmhumhainite;;Deasmhumhainite;;;;;;;;;x
+c_savan;Savan;Savan;Savan;;Savan;;;;;;;;;x
+c_savan_adj;Savanite;Savanite;Savanite;;Savanite;;;;;;;;;x
+c_aonach;Aonach;Aonach;Aonach;;Aonach;;;;;;;;;x
+c_aonach_adj;Aonachite;Aonachite;Aonachite;;Aonachite;;;;;;;;;x
 c_caiseal;Caiseal;Caiseal;Caiseal;;Caiseal;;;;;;;;;x
 c_caiseal_adj;Caisealite;Caisealite;Caisealite;;Caisealite;;;;;;;;;x
-c_urmhumhain;Urmhumhain;Urmhumhain;Urmhumhain;;Urmhumhain;;;;;;;;;x
-c_urmhumhain_adj;Urmhumhainite;Urmhumhainite;Urmhumhainite;;Urmhumhainite;;;;;;;;;x
+c_iubhair;Iubhair;Iubhair;Iubhair;;Iubhair;;;;;;;;;x
+c_iubhair_adj;Iubhairite;Iubhairite;Iubhairite;;Iubhairite;;;;;;;;;x
 c_verdane;Verdane;Verdane;Verdane;;Verdane;;;;;;;;;x
 c_verdane_adj;Verdaner;Verdaner;Verdaner;;Verdaner;;;;;;;;;x
 c_stenay;Stenay;Stenay;Stenay;;Stenay;;;;;;;;;x
@@ -1081,145 +979,3 @@ c_farafra;Farafra;Farafra;Farafra;;Farafra;;;;;;;;;x
 c_farafra_adj;Farafran;Farafran;Farafran;;Farafran;;;;;;;;;x
 c_bahariya;Bahariya;Bahariya;Bahariya;;Bahariya;;;;;;;;;x
 c_bahariya_adj;Bahariyan;Bahariyan;Bahariyan;;Bahariyan;;;;;;;;;x
-c_granns_hall;Grann's Hall;Grann's Hall;Grann's Hall;;Grann's Hall;;;;;;;;;x
-c_granns_hall_adj;Grann's Hallite;Grann's Hallite;Grann's Hallite;;Grann's Hallite;;;;;;;;;x
-c_sudeten_mountains;Sudeten Mountains;Sudeten Mountains;Sudeten Mountains;;Sudeten Mountains;;;;;;;;;x
-c_sudeten_mountains_adj;Sudeten Mountainsite;Sudeten Mountainsite;Sudeten Mountainsite;;Sudeten Mountainsite;;;;;;;;;x
-c_moriah_mountains;Moriah Mountains;Moriah Mountains;Moriah Mountains;;Moriah Mountains;;;;;;;;;x
-c_moriah_mountains_adj;Moriah Mountainsite;Moriah Mountainsite;Moriah Mountainsite;;Moriah Mountainsite;;;;;;;;;x
-c_cobaldrake_mountains;Cobaldrake Mountains;Cobaldrake Mountains;Cobaldrake Mountains;;Cobaldrake Mountains;;;;;;;;;x
-c_cobaldrake_mountains_adj;Cobaldrake Mountainsite;Cobaldrake Mountainsite;Cobaldrake Mountainsite;;Cobaldrake Mountainsite;;;;;;;;;x
-c_scarldrake_mountains;Scarldrake Mountains;Scarldrake Mountains;Scarldrake Mountains;;Scarldrake Mountains;;;;;;;;;x
-c_scarldrake_mountains_adj;Scarldrake Mountainsite;Scarldrake Mountainsite;Scarldrake Mountainsite;;Scarldrake Mountainsite;;;;;;;;;x
-c_great_river_of_thracia;Great River of Thracia;Great River of Thracia;Great River of Thracia;;Great River of Thracia;;;;;;;;;x
-c_great_river_of_thracia_adj;Great River of Thracian;Great River of Thracian;Great River of Thracian;;Great River of Thracian;;;;;;;;;x
-c_great_river_of_thracia_2;Great River of Thracia;Great River of Thracia;Great River of Thracia;;Great River of Thracia;;;;;;;;;x
-c_great_river_of_thracia_2_adj;Great River of Thracian;Great River of Thracian;Great River of Thracian;;Great River of Thracian;;;;;;;;;x
-c_great_river_of_thracia_3;Great River of Thracia;Great River of Thracia;Great River of Thracia;;Great River of Thracia;;;;;;;;;x
-c_great_river_of_thracia_3_adj;Great River of Thracian;Great River of Thracian;Great River of Thracian;;Great River of Thracian;;;;;;;;;x
-c_lake_verdane;Lake Verdane;Lake Verdane;Lake Verdane;;Lake Verdane;;;;;;;;;x
-c_lake_verdane_adj;Lake Verdaner;Lake Verdaner;Lake Verdaner;;Lake Verdaner;;;;;;;;;x
-c_strait_of_iss;Strait of Iss;Strait of Iss;Strait of Iss;;Strait of Iss;;;;;;;;;x
-c_strait_of_iss_adj;Strait of Issite;Strait of Issite;Strait of Issite;;Strait of Issite;;;;;;;;;x
-c_verissa_coast;Verissa Coast;Verissa Coast;Verissa Coast;;Verissa Coast;;;;;;;;;x
-c_verissa_coast_adj;Verissa Coastite;Verissa Coastite;Verissa Coastite;;Verissa Coastite;;;;;;;;;x
-c_thracia_coast;Thracia Coast;Thracia Coast;Thracia Coast;;Thracia Coast;;;;;;;;;x
-c_thracia_coast_adj;Thracia Coastite;Thracia Coastite;Thracia Coastite;;Thracia Coastite;;;;;;;;;x
-c_horn_of_thracia;Horn of Thracia;Horn of Thracia;Horn of Thracia;;Horn of Thracia;;;;;;;;;x
-c_horn_of_thracia_adj;Horn of Thracian;Horn of Thracian;Horn of Thracian;;Horn of Thracian;;;;;;;;;x
-c_grutia_coast;Grutia Coast;Grutia Coast;Grutia Coast;;Grutia Coast;;;;;;;;;x
-c_grutia_coast_adj;Grutia Coastite;Grutia Coastite;Grutia Coastite;;Grutia Coastite;;;;;;;;;x
-c_chronos_coast;Chronos Coast;Chronos Coast;Chronos Coast;;Chronos Coast;;;;;;;;;x
-c_chronos_coast_adj;Chronos Coastite;Chronos Coastite;Chronos Coastite;;Chronos Coastite;;;;;;;;;x
-c_luthecia_bay;Luthecia Bay;Luthecia Bay;Luthecia Bay;;Luthecia Bay;;;;;;;;;x
-c_luthecia_bay_adj;Luthecia Bayian;Luthecia Bayian;Luthecia Bayian;;Luthecia Bayian;;;;;;;;;x
-c_rada_coast;Rada Coast;Rada Coast;Rada Coast;;Rada Coast;;;;;;;;;x
-c_rada_coast_adj;Rada Coastite;Rada Coastite;Rada Coastite;;Rada Coastite;;;;;;;;;x
-c_miletos_sea;Miletos Sea;Miletos Sea;Miletos Sea;;Miletos Sea;;;;;;;;;x
-c_miletos_sea_adj;Miletos Sean;Miletos Sean;Miletos Sean;;Miletos Sean;;;;;;;;;x
-c_peruluke_sea;Peruluke Sea;Peruluke Sea;Peruluke Sea;;Peruluke Sea;;;;;;;;;x
-c_peruluke_sea_adj;Peruluke Sean;Peruluke Sean;Peruluke Sean;;Peruluke Sean;;;;;;;;;x
-c_lete_coast;Lete Coast;Lete Coast;Lete Coast;;Lete Coast;;;;;;;;;x
-c_lete_coast_adj;Lete Coastite;Lete Coastite;Lete Coastite;;Lete Coastite;;;;;;;;;x
-c_dhami_coast;Dhami Coast;Dhami Coast;Dhami Coast;;Dhami Coast;;;;;;;;;x
-c_dhami_coast_adj;Dhami Coastite;Dhami Coastite;Dhami Coastite;;Dhami Coastite;;;;;;;;;x
-c_verdane_coast;Verdane Coast;Verdane Coast;Verdane Coast;;Verdane Coast;;;;;;;;;x
-c_verdane_coast_adj;Verdane Coastite;Verdane Coastite;Verdane Coastite;;Verdane Coastite;;;;;;;;;x
-c_heirheins_watch;Heirhein's Watch;Heirhein's Watch;Heirhein's Watch;;Heirhein's Watch;;;;;;;;;x
-c_heirheins_watch_adj;Heirhein's Watchite;Heirhein's Watchite;Heirhein's Watchite;;Heirhein's Watchite;;;;;;;;;x
-c_nordion_bay;Nordion Bay;Nordion Bay;Nordion Bay;;Nordion Bay;;;;;;;;;x
-c_nordion_bay_adj;Nordion Bayian;Nordion Bayian;Nordion Bayian;;Nordion Bayian;;;;;;;;;x
-c_anphony_coast;Anphony Coast;Anphony Coast;Anphony Coast;;Anphony Coast;;;;;;;;;x
-c_anphony_coast_adj;Anphony Coastite;Anphony Coastite;Anphony Coastite;;Anphony Coastite;;;;;;;;;x
-c_anphony_bay;Anphony Bay;Anphony Bay;Anphony Bay;;Anphony Bay;;;;;;;;;x
-c_anphony_bay_adj;Anphony Bayian;Anphony Bayian;Anphony Bayian;;Anphony Bayian;;;;;;;;;x
-c_tozzetti_coast;Tozzetti Coast;Tozzetti Coast;Tozzetti Coast;;Tozzetti Coast;;;;;;;;;x
-c_tozzetti_coast_adj;Tozzetti Coastite;Tozzetti Coastite;Tozzetti Coastite;;Tozzetti Coastite;;;;;;;;;x
-c_silvail_strait;Silvail Strait;Silvail Strait;Silvail Strait;;Silvail Strait;;;;;;;;;x
-c_silvail_strait_adj;Silvail Straitite;Silvail Straitite;Silvail Straitite;;Silvail Straitite;;;;;;;;;x
-c_ogres_cauldron;Ogre's Cauldron;Ogre's Cauldron;Ogre's Cauldron;;Ogre's Cauldron;;;;;;;;;x
-c_ogres_cauldron_adj;Ogre's Cauldronian;Ogre's Cauldronian;Ogre's Cauldronian;;Ogre's Cauldronian;;;;;;;;;x
-c_yedu_sea;Yedu Sea;Yedu Sea;Yedu Sea;;Yedu Sea;;;;;;;;;x
-c_yedu_sea_adj;Yedu Sean;Yedu Sean;Yedu Sean;;Yedu Sean;;;;;;;;;x
-c_yedu_sea_2;Yedu Sea;Yedu Sea;Yedu Sea;;Yedu Sea;;;;;;;;;x
-c_yedu_sea_2_adj;Yedu Sean;Yedu Sean;Yedu Sean;;Yedu Sean;;;;;;;;;x
-c_yedu_sea_3;Yedu Sea;Yedu Sea;Yedu Sea;;Yedu Sea;;;;;;;;;x
-c_yedu_sea_3_adj;Yedu Sean;Yedu Sean;Yedu Sean;;Yedu Sean;;;;;;;;;x
-c_western_sea_of_orgahil;Western Sea of Orgahil;Western Sea of Orgahil;Western Sea of Orgahil;;Western Sea of Orgahil;;;;;;;;;x
-c_western_sea_of_orgahil_adj;Western Sea of Orgahilite;Western Sea of Orgahilite;Western Sea of Orgahilite;;Western Sea of Orgahilite;;;;;;;;;x
-c_northern_sea_of_orgahil;Northern Sea of Orgahil;Northern Sea of Orgahil;Northern Sea of Orgahil;;Northern Sea of Orgahil;;;;;;;;;x
-c_northern_sea_of_orgahil_adj;Northern Sea of Orgahilite;Northern Sea of Orgahilite;Northern Sea of Orgahilite;;Northern Sea of Orgahilite;;;;;;;;;x
-c_silessea;Silessea;Silessea;Silessea;;Silessea;;;;;;;;;x
-c_silessea_adj;Silessean;Silessean;Silessean;;Silessean;;;;;;;;;x
-c_sea_of_thove;Sea of Thove;Sea of Thove;Sea of Thove;;Sea of Thove;;;;;;;;;x
-c_sea_of_thove_adj;Sea of Thover;Sea of Thover;Sea of Thover;;Sea of Thover;;;;;;;;;x
-c_immram_bay;Immram Bay;Immram Bay;Immram Bay;;Immram Bay;;;;;;;;;x
-c_immram_bay_adj;Immram Bayian;Immram Bayian;Immram Bayian;;Immram Bayian;;;;;;;;;x
-c_tirnanog_coast;Tirnanog Coast;Tirnanog Coast;Tirnanog Coast;;Tirnanog Coast;;;;;;;;;x
-c_tirnanog_coast_adj;Tirnanog Coastite;Tirnanog Coastite;Tirnanog Coastite;;Tirnanog Coastite;;;;;;;;;x
-c_ganeisea;Ganeisea;Ganeisea;Ganeisea;;Ganeisea;;;;;;;;;x
-c_ganeisea_adj;Ganeisean;Ganeisean;Ganeisean;;Ganeisean;;;;;;;;;x
-c_isaach_coast;Isaach Coast;Isaach Coast;Isaach Coast;;Isaach Coast;;;;;;;;;x
-c_isaach_coast_adj;Isaach Coastite;Isaach Coastite;Isaach Coastite;;Isaach Coastite;;;;;;;;;x
-c_outer_thracia_bay;Outer Thracia Bay;Outer Thracia Bay;Outer Thracia Bay;;Outer Thracia Bay;;;;;;;;;x
-c_outer_thracia_bay_adj;Outer Thracia Bayian;Outer Thracia Bayian;Outer Thracia Bayian;;Outer Thracia Bayian;;;;;;;;;x
-c_thracia_bay;Thracia Bay;Thracia Bay;Thracia Bay;;Thracia Bay;;;;;;;;;x
-c_thracia_bay_adj;Thracia Bayian;Thracia Bayian;Thracia Bayian;;Thracia Bayian;;;;;;;;;x
-c_thracian_sea;Thracian Sea;Thracian Sea;Thracian Sea;;Thracian Sea;;;;;;;;;x
-c_thracian_sea_adj;Thracian Sean;Thracian Sean;Thracian Sean;;Thracian Sean;;;;;;;;;x
-c_thracian_sea_2;Thracian Sea;Thracian Sea;Thracian Sea;;Thracian Sea;;;;;;;;;x
-c_thracian_sea_2_adj;Thracian Sean;Thracian Sean;Thracian Sean;;Thracian Sean;;;;;;;;;x
-c_thracian_sea_3;Thracian Sea;Thracian Sea;Thracian Sea;;Thracian Sea;;;;;;;;;x
-c_thracian_sea_3_adj;Thracian Sean;Thracian Sean;Thracian Sean;;Thracian Sean;;;;;;;;;x
-c_luimneach_coast;Luimneach Coast;Luimneach Coast;Luimneach Coast;;Luimneach Coast;;;;;;;;;x
-c_luimneach_coast_adj;Luimneach Coastite;Luimneach Coastite;Luimneach Coastite;;Luimneach Coastite;;;;;;;;;x
-c_drake_sea;Drake Sea;Drake Sea;Drake Sea;;Drake Sea;;;;;;;;;x
-c_drake_sea_adj;Drake Sean;Drake Sean;Drake Sean;;Drake Sean;;;;;;;;;x
-c_drake_sea_2;Drake Sea;Drake Sea;Drake Sea;;Drake Sea;;;;;;;;;x
-c_drake_sea_2_adj;Drake Sean;Drake Sean;Drake Sean;;Drake Sean;;;;;;;;;x
-c_elibian_ocean_2;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_2_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_magsea;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_2;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_2_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_3;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_3_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_4;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_4_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_5;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_5_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_6;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_6_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_7;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_7_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_8;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_8_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_magsea_9;Magsea;Magsea;Magsea;;Magsea;;;;;;;;;x
-c_magsea_9_adj;Magsean;Magsean;Magsean;;Magsean;;;;;;;;;x
-c_elibian_ocean_3;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_3_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_4;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_4_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_5;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_5_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_6;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_6_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_7;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_7_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_8;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_8_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_9;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_9_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_10;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_10_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_11;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_11_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_12;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_12_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_13;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_13_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_14;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_14_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x
-c_elibian_ocean_15;Elibian Ocean;Elibian Ocean;Elibian Ocean;;Elibian Ocean;;;;;;;;;x
-c_elibian_ocean_15_adj;Elibian Oceanite;Elibian Oceanite;Elibian Oceanite;;Elibian Oceanite;;;;;;;;;x

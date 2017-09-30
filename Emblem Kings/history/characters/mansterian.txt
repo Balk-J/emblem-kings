@@ -1,0 +1,518 @@
+# Non-canon; Noba's granddaughter
+1157={
+	name="Catríona"
+	female=yes
+	father=1024
+	dynasty=1012
+	culture=mansterian
+	religion=church_of_edda
+	trait=holy_blood_latent_noba
+	670.1.1={
+		birth=yes
+	}
+	682.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		add_trait="holy_blood_major_noba"
+		remove_trait="holy_blood_latent_noba"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	690.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	723.1.1={
+		death = yes
+	}
+}
+# Non-canon; Calf's mother
+1158={
+	name="Cathán"
+	female=yes
+	mother=1157
+	dynasty=1012
+	culture=mansterian
+	religion=church_of_edda
+	trait=holy_blood_latent_noba
+	690.1.1={
+		birth=yes
+	}
+	702.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		add_trait="holy_blood_major_noba"
+		remove_trait="holy_blood_latent_noba"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	710.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}
+	736.1.1={
+		death = yes
+	}
+}
+# Quan's father
+1159={
+	name="Calf"
+	mother=1158
+	dynasty=1012
+	culture=mansterian
+	religion=church_of_edda
+	trait=holy_blood_latent_noba
+	716.1.1={
+		birth=yes
+	}
+	728.01.01={
+		add_trait="class_cavalier" # He's a mounted lance-user of some type!
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		add_trait="holy_blood_major_noba"
+		remove_trait="holy_blood_latent_noba"
+	} 
+	
+	735.1.1 = {
+		add_spouse=1237 # Alfiona
+	}	 
+	736.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	
+	763.1.1={
+		# Attacked from behind at the Battle of River Thracia by Conote forces under a traitor
+		death = {
+			death_reason=death_battle
+			killer=1154 # Raydrik
+		}
+	}
+}
+# Prince of Leonster, 757
+1160={
+	name="Quan"
+	father=1159 # Calf
+	mother=1237 # Alfiona
+	dynasty=1012
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_noba
+	736.1.1={
+		birth=yes
+	}
+	747.01.01={
+		effect = {
+			add_friend=1032 # Sigurd
+			add_friend=1094 # Eldigan
+		}
+	} 
+	748.01.01={
+		add_trait="class_cavalier" 
+		add_trait="base_class_cavalier"
+		add_trait="holy_blood_major_noba"
+		remove_trait="holy_blood_latent_noba"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	751.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+	}	
+	
+	756.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+		add_spouse=1033 # Ethlin
+	}	
+	
+	761.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1154 # Travant, Yied Massacre
+		}
+	}
+}
+# Princess of Leonster. Abducted and raised by Travant following the Yied Massacre.
+1161={
+	name="Altena"
+	female=yes
+	father=1160 # Quan
+	mother=1033 # Ethlin
+	dynasty=1012
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_noba
+	trait=holy_blood_latent_baldur
+	757.1.1={
+		birth=yes
+	}
+	761.1.1={
+		culture=thracian
+		employer=1154 # Travant
+		dynasty=1011
+		father=1154
+		mother=1155
+		effect = { 
+			c_1160 = {
+				ROOT = { set_real_father = PREV }
+			}		
+			c_1154 = { # Travant
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}
+	769.01.01={
+		add_trait="class_wyvern_rider" 
+		add_trait="base_class_wyvern_rider"
+		add_trait="holy_blood_major_noba"
+		remove_trait="holy_blood_latent_noba"
+		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldur"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	772.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="mountain_terrain_leader"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+		add_trait="honest"
+	}	
+	 
+	776.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	
+	778.1.1={
+		culture=thracian
+		employer=1161 # Leif
+		dynasty=1012
+		father=1160
+		mother=1033
+	}
+	810.1.1={
+		death = yes
+	}
+}
+# Prince of Leonster. 
+1162={
+	name="Leif"
+	father=1160 # Quan
+	mother=1033 # Ethlin
+	dynasty=1012
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_noba
+	trait=holy_blood_latent_baldur
+	# Born in 760, and 15 in FE5
+	760.12.1={
+		birth=yes
+	}
+	772.12.1={
+		add_trait="class_thief" # Well, he's a Trickster in Awakening...
+		add_trait="base_class_thief"
+		add_trait="holy_blood_minor_noba"
+		remove_trait="holy_blood_latent_noba"
+		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldur"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	775.12.1 = {
+		add_trait="skilled_tactician"
+		add_trait="organizer"
+		add_trait="mountain_terrain_leader"
+		add_trait="rough_terrain_leader"
+		add_trait="humble"
+		add_trait="wroth"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+	}	
+	 
+	777.1.1 = {
+		remove_trait="class_thief"
+		add_trait="class_rogue"
+	}	
+	
+	824.1.1={
+		death = yes
+	}
+}
+
+# Non-canon; Duke of Tahra
+1166={
+	name="Tuireann"
+	dynasty=1032
+	culture=mansterian
+	religion=church_of_edda
+	667.1.1={
+		birth=yes
+	}	 	
+	687.1.1 = {
+		add_spouse=1165
+	} 
+	719.1.1={
+		death=yes
+	}
+}
+# Non-canon; Duchess of Tahra
+1167={
+	name="Affraic"
+	female=yes
+	father=1166
+	mother=1165
+	dynasty=1032
+	culture=mansterian
+	religion=church_of_edda
+	690.1.1={
+		birth=yes
+	}	
+	702.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_minor_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	
+	745.1.1={
+		death=yes
+	}
+}
+# Duke of Tahra. Linoan's father.
+1168={
+	name="Liam"
+	mother=1167
+	dynasty=1032
+	culture=mansterian
+	religion=church_of_edda
+	729.1.1={
+		birth=yes
+	}	
+	741.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_minor_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	
+	# Executed by imperial troops looking for Leif
+	771.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1058 # Bloom?
+		}
+	}
+}
+# Duchess (Mayor?) of Tahra in FE5. Arion's fiance.
+1169={
+	name="Linoan"
+	female=yes
+	father=1168
+	dynasty=1032
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	761.1.1={ # "about 15" in 776
+		birth=yes
+	}	
+	773.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_minor_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	 
+	776.1.1 = {
+		add_trait="fortune_builder"
+		add_trait="kind"
+		add_trait="charitable"
+		add_trait="just"
+		add_trait="chaste"
+		add_trait="humble"
+	}	
+	778.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}		
+	827.1.1={
+		death=yes
+	}
+}
+# A random jerk who runs Tahra right after Linoan's father was killed.
+1170={
+	name="Fursu"
+	dynasty=1033
+	culture=mansterian
+	religion=church_of_edda
+	713.1.1={
+		birth=yes
+		employer=1166
+	}	
+	728.1.1={
+		add_trait=amateurish_plotter
+		add_trait=cruel
+		add_trait=wroth
+	} 	
+	763.1.1={
+		religion=loptyrian
+	} 	
+	771.1.1={
+		add_trait=impaler
+	} 	
+	773.1.1={
+		death = yes
+	}
+}
+# Non-canon; Grahnye's father and Eldigan's father-in-law.
+1234={
+	name="Pátraic"
+	dynasty=1038
+	culture=mansterian
+	religion=church_of_edda
+	715.1.1={
+		birth=yes
+	}
+	733.1.1 = {
+		add_spouse=1235
+	} 
+	763.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1058 # Bloom?
+		}
+	}
+}
+# Spouse for above
+1235={
+	name="Áine"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	717.1.1={
+		birth=yes
+	}
+	763.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1058 # Bloom?
+		}
+	}
+}
+# Eldigan's wife and Ares' mother.
+1236={
+	name="Grahnye"
+	father=1234
+	mother=1235
+	female=yes
+	dynasty=1038
+	culture=mansterian
+	religion=church_of_edda
+	736.1.1={
+		birth=yes
+	}
+	# Take Ares and go visit the in-laws
+	758.1.1={
+		employer=1234
+	}
+	763.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1058 # Bloom?
+		}
+	}
+}
+
+# Quan's mother. Wife of King Calf of Leonster.
+1237={
+	name="Alfiona"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	718.1.1={
+		birth=yes
+	}
+	763.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1058 # Bloom?
+		}
+	}
+}
+# Non-canon; older brothers for Grahnye to make nonsense like Ares inheriting land in Manster less likely
+1238={
+	name="Abbán"
+	father=1234
+	mother=1235
+	dynasty=1038
+	culture=mansterian
+	religion=church_of_edda
+	734.1.1={
+		birth=yes
+	}
+	763.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1058 # Bloom?
+		}
+	}
+}
+1239={
+	name="Diarmait"
+	father=1234
+	mother=1235
+	dynasty=1038
+	culture=mansterian
+	religion=church_of_edda
+	735.1.1={
+		birth=yes
+	}
+	763.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1058 # Bloom?
+		}
+	}
+}

@@ -1,0 +1,796 @@
+1010={
+	name="Odo"
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	615.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	627.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_sword_saint
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_odo"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=isaachian
+	}
+	665.1.1={
+		death=yes
+	}
+}
+# King of Isaach. Shannan's grandfather.
+1130={
+	name="Mananan"
+	father=1145
+	mother=1144
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	699.1.1={ 
+		birth=yes
+	}
+	711.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	714.1.1 = {
+		add_trait="grey_eminence"
+		add_trait="just"
+		add_trait="honest"
+		add_trait="trusting"
+		add_trait="kind"
+	}
+	716.1.1 = {
+		add_spouse=1131 # 
+	}		
+	719.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}	
+	731.1.1 = {
+		add_spouse=1132 # 
+	}		
+	# Executed by Reptor when he tried to broker peace by handing over Rivough.
+	# Timeline for this is a bit unclear. Some sources say he was killed at the same time as Kurth. However, Ayra describes his death in chapter 1 (757-8, before Kurth dies and the Chalphys get blames) so he must be dead before then.
+	757.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1056 # Reptor
+		}
+	}
+}
+# Non-canon, spouse for above. Mariccle's mother. (And probably that of his eldest child who gets married to Duke Rivough?)
+1131={
+	name="Marchell"
+	female=yes
+	culture=isaachian
+	religion=church_of_edda
+	700.1.1={
+		birth=yes
+	}		
+	730.1.1={
+		#add_trait=ill
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# Non-canon, spouse for above. Ayra's mother.
+1132={
+	name="Aeronwen"
+	female=yes
+	culture=isaachian
+	religion=church_of_edda
+	720.1.1={
+		birth=yes
+	}	
+	755.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# King Mananan's oldest child. Galzus' mother.
+1133={
+	name="Sannant" # Not named 
+	female=yes
+	father=1130
+	mother=1131
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	725.1.1={ 
+		birth=yes
+	}
+	737.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 		 
+	744.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+# Crown Prince of Isaach. Shannan's father. Ayra's older brother. 12 years older than her?
+1134={
+	name="Mariccle"
+	dna="0ca0h0dcaa0"
+	properties="ag0a0c00000000"
+	father=1130
+	mother=1131
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	728.1.1={ 
+		birth=yes
+	}
+	744.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	747.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="shrewd"
+		add_trait="just"
+		add_trait="brave"
+	}	
+	748.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}		
+	# Dies during the war with Grannvale.
+	760.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1056 # Reptor
+		}
+	}
+}
+# Princess of Isaach
+1135={
+	name="Ayra"  
+	female=yes
+	father=1130
+	mother=1132
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	740.1.1={ 
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_minor_odo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	745.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="aggressive_leader"
+		add_trait="experimenter"
+		add_trait="honest"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="diligent"
+	}	
+	760.1.1 = {
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+	}	
+	# Maybe? She never shows up in Tirnanog, so we'll assume she died at the Battle of Belhalla.
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis
+		}
+	}
+}
+# Prince of Isaach. Mariccle's son.
+1136={
+	name="Shannan"
+	dna="0ca0h0dcaa0"
+	father=1134
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	749.1.1={ # Assume Shannan is not ready to fight in 760 - 11?
+		birth=yes
+	}
+	761.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	764.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="organizer"
+		add_trait="light_foot_leader"
+		add_trait="humble"
+		add_trait="patient"
+		add_trait="diligent"
+		add_trait="just"
+		add_trait="brave"
+	}	
+	765.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}		
+	806.1.1={
+		death = yes
+	}
+}
+# Ayra's daughter
+1137={
+	name="Larcei"  
+	female=yes
+	mother=1135
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	trait=twin
+	758.1.1={ 
+		birth=yes
+	}
+	770.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_minor_odo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			c_1035 = { # Oifey
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 30
+				}
+			}
+			c_1076 = { # Iuchar
+				reverse_opinion = {
+					modifier = opinion_seduced_repelled
+					who = ROOT
+					years = 1
+				}
+			}
+			c_1077 = { # Iucharba
+				reverse_opinion = {
+					modifier = opinion_seduced_repelled
+					who = ROOT
+					years = 1
+				}
+			}
+		}
+	} 	 
+	773.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="aggressive_leader"
+		add_trait="experimenter"
+		add_trait="chaste" # I've heard enough sweet nothings to last a lifetime, sir.
+		add_trait="diligent"
+		add_trait="brave"
+		add_trait="wroth"
+	}	
+	778.1.1 = {
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+	}	
+	810.1.1={
+		death = yes
+	}
+}
+# Ayra's son
+1138={
+	name="Ulster"  
+	mother=1135
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	trait=twin
+	758.1.1={ 
+		birth=yes
+	}
+	770.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			c_1035 = { # Oifey
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 30
+				}
+			}
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_minor_odo"
+	} 	 
+	773.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="defensive_leader"
+		add_trait="flanker" # he's a scout
+		add_trait="just" 
+		add_trait="brave"
+		add_trait="wroth"
+		add_trait="kind"
+	}	
+	778.1.1 = {
+		remove_trait="class_myrmidon"
+		#add_trait="class_hero" # if we really want to match his canon class and break our system...
+		add_trait="class_swordmaster"
+	}	
+	808.1.1={
+		death = yes
+	}
+}
+# Chief of Rivough. Another of Manfroy's pawns. Attacks Darna to start this whole mess.
+1139={
+	name="Gamon" 
+	dynasty=1030
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	726.1.1={ 
+		birth=yes
+	}
+	738.01.01={
+		add_trait="class_mercenary"
+		add_trait="base_class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	741.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="greedy"
+		add_trait="ambitious"
+		add_trait="arbitrary"
+		add_trait="cruel"
+		add_trait="cynical"
+		add_trait="desert_terrain_leader"
+	}	
+	742.1.1 = {
+		add_spouse=1133 # Mananan's oldest daughter
+	}	
+	746.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_warrior"
+	}	
+	# Executed by Mananan
+	756.12.1={
+		death = {
+			death_reason=death_execution
+			killer=1130 # Mananan
+		}
+	}
+}
+# Lost Prince of Rivough. Mareeta's real father.
+1140={
+	name="Galzus"
+	father=1139
+	mother=1133
+	dynasty=1030
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	trait=strong
+	743.1.1={ # Not sure? Mareeta was born in 761, so he's born in 745 at the latest
+		birth=yes
+	}
+	755.01.01={
+		add_trait="class_mercenary"
+		add_trait="base_class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+	} 	 
+	758.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="aggressive_leader"
+		add_trait="organizer"
+		add_trait="humble"
+		#add_trait="kind"
+		add_trait="shy" # stoic?
+		add_trait="cynical"
+		add_trait="depressed"
+	}	
+	760.1.1 = {
+		add_spouse=1141
+	}	
+	761.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
+	}	
+	777.1.1 = {
+		#employer= # Raydrik
+	}		
+	778.1.1={
+		death = {
+			death_reason=death_missing # After liberating Manster, Galzus disappeared. There are no records, legends, or even rumors about his life thereafter.
+		} 
+	}
+}
+# Galzus' wife. Dies shortly after Mareeta's birth
+1141={
+	name="Mabyn"
+	female=yes
+	culture=isaachian
+	religion=church_of_edda
+	744.1.1={ 
+		birth=yes
+		employer=1139
+	}
+	762.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		} 
+	}
+}
+# Galzus' daughter. "Eyvel"'s adopted daughter.
+1142={
+	name="Mareeta"  
+	female=yes
+	father=1140
+	mother=1141
+	dynasty=1030
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	761.1.1={ 
+		birth=yes
+	}
+	767.1.1={
+		employer=1081 # Eyvel
+		effect = { 
+			c_1140 = {
+				ROOT = { set_real_father = PREV }
+			}
+			set_father = none
+			set_mother=1081
+			dynasty=1019
+		}
+	}
+	773.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+	} 	 
+	775.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="aggressive_leader"
+		add_trait="brave"
+		add_trait="humble" # "My mother was much more skilled than I'll ever be."
+	}	
+	778.1.1 = {
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+		effect = { 
+			c_1140 = {
+				ROOT = { set_father = PREV }
+			}
+			c_1081 = {
+				opinion = {
+					modifier = opinion_mother_of_child
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_mother_child
+					who = ROOT
+					years = 100
+				}
+			}
+			set_mother=1141
+			dynasty=1030
+		}
+	}	
+	820.1.1={
+		death = yes
+	}
+}
+# Non-canon; grandfather for Mananan. Here so we have an explanation for Chulainn's holy blood.
+1143={
+	name="Sulien"
+	father=1010
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	650.1.1={ 
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+	} 		
+	670.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}		
+	691.1.1={
+		death = yes
+	}
+}
+# Non-canon; mother for Mananan. Here so we have an explanation for Chulainn's holy blood.
+1144={
+	name="Morien"
+	female=yes
+	father=1143
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	667.1.1={ 
+		birth=yes
+	}
+	679.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_major_odo"
+	} 	 
+	683.1.1 = {
+		add_matrilineal_spouse=1145 # 
+	}		
+	687.1.1 = {
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+	}		
+	714.1.1={
+		death = yes
+	}
+}
+# Non-canon, spouse for above. 
+1145={
+	name="Edern"
+	culture=isaachian
+	religion=church_of_edda
+	668.1.1={
+		birth=yes
+	}	
+	719.1.1={
+		death = yes
+	}
+}
+# Non-canon; great-aunt for Mananan. Here so we have an explanation for Chulainn's holy blood.
+1146={
+	name="Marwenna"
+	female=yes
+	father=1010
+	dynasty=1010
+	culture=isaachian
+	religion=church_of_edda
+	trait=holy_blood_latent_odo
+	651.1.1={ 
+		birth=yes
+	}
+	663.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_minor_odo"
+	} 	
+	701.1.1={
+		death = yes
+	}
+}
+# Non-canon; Duke of Sophara.
+1147={
+	name="Fyrsil"  
+	dynasty=1031
+	culture=isaachian
+	religion=church_of_edda
+	650.1.1={ 
+		birth=yes
+	}
+	667.1.1 = {
+		add_spouse=1146
+	}	
+	700.1.1={
+		death = yes
+	}
+}
+# Non-canon; Duke of Sophara.
+1148={
+	name="Eudaf"  
+	father=1147
+	mother=1146
+	dynasty=1031
+	culture=isaachian
+	religion=church_of_edda
+	trait=holy_blood_latent_odo
+	668.1.1={ 
+		birth=yes
+	}
+	680.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_minor_odo"
+	} 	
+	719.1.1={
+		death = yes
+	}
+}
+# Non-canon; Duke of Sophara.
+1149={
+	name="Siwauna"  
+	father=1148
+	dynasty=1031
+	culture=isaachian
+	religion=church_of_edda
+	trait=holy_blood_latent_odo
+	700.1.1={ 
+		birth=yes
+	}
+	712.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_minor_odo"
+	} 	
+	762.1.1={
+		death = yes
+	}
+}
+# Mercenary, fights at the arena. Son of the lord of Sophara.
+1150={
+	name="Chulainn"  
+	father=1149
+	dynasty=1031
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_odo
+	735.1.1={ # Had a crush on Ayra growing up. 5 years older? Or in 733? The two are exclusive unless we take liberties with Ayra's age.
+		birth=yes
+	}
+	747.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+			remove_trait="holy_blood_latent_odo"
+			add_trait="holy_blood_minor_odo"
+	} 	 
+	750.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="light_foot_leader"
+		add_trait="brave"
+		add_trait="duelist"
+		add_trait="greedy" # Cash has been my motivator all these years
+		add_trait="proud"
+		add_trait="cynical"
+	}	
+	752.1.1={
+		effect = {
+			c_1135 = { # Ayra
+				reverse_opinion = {
+					modifier = opinion_crush
+					who = ROOT
+					years = 8
+				}
+			}
+		}
+	}
+	759.1.1 = {
+		remove_trait="greedy" # But after seeing you it kinda loses its meaning. You mind if I tag along? It'd be nice to fight for something real for a change.
+		remove_trait="cynical"
+		employer=1032 # Sigurd
+	}	
+	760.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, Battle of Belhalla
+		}
+	}
+}
+
+# Wiki claims Mareeta was born before Rivough's fall, but that is impossible. If we assume Mananan dies at the same time as Kurth (sometime in 759 or 760), she'd be older than she's supposed to be in FE5.

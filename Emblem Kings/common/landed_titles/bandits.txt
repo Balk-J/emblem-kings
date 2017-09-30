@@ -46,3 +46,24 @@ d_taliver_bandits = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+
+d_orgahil_pirates = {
+	color={ 100 220 220 }
+	color2={ 255 255 255 }
+	
+	capital = 518 # Orgahil
+	culture=agustrian
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN"
+	short_name = yes
+	religion=raider_pagan
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

@@ -8,7 +8,7 @@ max_settlements = 5
 
 b_latharna = castle
 b_latharna_2 = temple
-b_latharna_3 = city
+#b_latharna_3 = city
 #b_inbhear_beg = temple
 #b_con_doire = city
 
@@ -17,3 +17,19 @@ culture = mansterian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_latharna = tribal
+}
+500.1.1 = { 
+	b_latharna = castle
+b_latharna_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}
+666.1.1 = { 
+	culture = mansterian
+}

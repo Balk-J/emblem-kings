@@ -1,0 +1,9 @@
+719.1.1={
+	holder=1103 # The old Captain who adopted Brigid
+}
+759.1.1={
+	holder=1081 # Brigid
+}
+760.1.1={
+	holder=0 # Destroyed by the Grannvale army under Sigurd
+}

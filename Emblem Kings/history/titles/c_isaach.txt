@@ -6,3 +6,33 @@
 	liege = d_isaach
 	#holder = 0
 }
+440.1.1 = { 
+	holder = 870
+}
+649.1.1={
+	holder = 1010 # Odo
+}
+665.1.1={
+	holder = 1143 #  
+}
+691.1.1={
+	holder = 1144 #  
+}
+714.1.1={
+	holder = 1130 # Mananan
+}
+757.1.1={
+	holder = 1134 # Mariccle
+}
+760.1.1={
+	holder = 1029 # Azmur 
+}
+761.1.1={
+	holder=1073 # Danann
+}
+772.1.1={
+	holder=1076 # Iuchar
+}
+778.1.1={
+	holder=1136 # Shannan
+}

@@ -1,0 +1,9 @@
+180.1.1={
+	liege=c_spakona
+}
+764.1.1={
+	holder=1053 # Saias, to keep him hidden from Manfroy
+}
+776.1.1={
+	holder=0 # Saias is promoted
+}

@@ -1,22 +1,25 @@
-801={
+1001={
 	name="Heim"
-	dynasty=801
+	dynasty=1001
 	culture=grannvalean
 	religion=church_of_edda
-	disallow_random_traits=yes
-	616.1.1={
+	#disallow_random_traits=yes
+	612.1.1={
 		birth=yes
+		culture=grann
+		religion=earthen_pagan
 	}
-	628.01.01={
+	624.01.01={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
 		}
 	} 
 	 
-	626.1.1 = {
+	628.1.1 = {
 		remove_trait="class_monk"
 		add_trait="class_bishop"
 	}	
@@ -24,10 +27,4253 @@
 	# Miracle of Darna
 	632.1.1 = {
 		give_nickname=nick_the_saint
-		add_trait="eight_legends"
-		add_trait="class_bishop"
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_naga"
 	}
-	676.1.1={
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	670.1.1={
 		death=yes
+	}
+}
+1002={
+	name="Baldur"
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	616.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	628.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_holy_knight
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_baldur"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	682.1.1={
+		death=yes
+	}
+}
+1003={
+	name="Blagi"
+	dynasty=1003
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	616.1.1={
+		birth=yes
+		culture=grann
+		religion=mairist
+	}
+	628.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_priest"
+		add_trait="class_bishop"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_saint
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_blagi"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	686.1.1={
+		death=yes
+	}
+}
+1004={
+	name="Fala"
+	female=yes
+	dynasty=1004
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	616.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	628.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+		#add_trait="class_mage_knight_female"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_mage_fighter
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_fala"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	688.1.1={
+		death=yes
+	}
+}
+1005={
+	name="Tordo"
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	615.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	627.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_mage_knight
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_tordo"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	679.1.1={
+		death=yes
+	}
+}
+1006={
+	name="Neir"
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	615.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	627.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_axe_knight
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_neir"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	682.1.1={
+		death=yes
+	}
+}
+1007={
+	name="Ulir"
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	616.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	628.01.01={
+		add_trait="class_archer"
+		add_trait="base_class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_archer"
+		add_trait="class_sniper"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_bow_user # Seriously? Come on, Crusaders...
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_ulir"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	679.1.1={
+		death=yes
+	}
+}
+# Non-canon; last man standing for the Church of Loptyr
+1027={
+	name="Vaha"
+	female=yes
+	culture=grannvalean
+	religion=loptyrian
+	629.1.1={
+		birth=yes
+		culture=grann
+		employer=817 # Galle XVII
+	}
+	641.01.01={
+		add_trait="class_dark_mage_female"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	# Founding of Jugdral
+	649.1.1 = {
+		remove_trait="class_dark_mage_female"
+		add_trait="class_sorceror_female"
+		culture=grannvalean
+#		effect = {
+#			join_society = secret_religious_society_loptyrian
+#		}
+	}
+	679.1.1={
+		death=yes
+	}
+}
+
+# Old king of Grannvale, 757.
+1029={
+	name="Azmur"
+	father=1171
+	dna="0bhc00bbc00"
+	properties="al0adc00000000"
+	dynasty=1001
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_naga
+	698.1.1={
+		birth=yes
+	}
+	710.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_major_naga"
+	} 
+	
+	713.1.1 = {
+		#add_trait="underhanded_rogue"
+		add_trait="martial_cleric"
+		add_trait="trusting"
+		add_trait="honest"
+		add_trait="chaste"
+		add_trait="zealous"
+		add_trait="proud"
+	}	
+	 
+	728.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}	
+	
+	760.1.1={
+		add_trait=infirm
+	}
+	761.1.1={
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# No, not THAT one. Prince of Grannvale, 757. Deirdre's father.
+1030={
+	name="Kurth"
+	dna="0gbfc0cbg00"
+	properties="cc0a0d00000000"
+	dynasty=1001
+	father=1029 # Azmur
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_naga
+	# Old enough to have Deirdre with Cigyun in 738ish. Older than Arvis, who was born about 732
+	714.1.1={
+		birth=yes
+	}
+	726.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_major_naga"
+	} 
+	729.1.1 = {
+		add_trait="grey_eminence"
+		add_trait="gregarious"
+		add_trait="kind"
+		add_trait="brave"
+		add_trait="just"
+		add_trait="diligent"
+		add_trait="inspiring_leader"
+	}
+	 
+	730.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}	
+	 
+	738.6.1 = {
+		add_lover=1202 # Cigyun
+	}	
+	# Cigyun runs off, and Kurth doesn't really get over her.
+	739.1.1 = {
+		effect = {
+			remove_lover=yes 
+		}
+		#add_trait=chaste
+		add_trait=celibate
+	}	
+	
+	750.1.1 = {
+		add_trait="administrator" # Azmur's getting old, take over running the kingdom...
+		effect={
+			add_friend=1031 # Byron 
+			add_friend=1078 # Ring 
+		}
+	}		
+	
+	760.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			killer=1070 # Duke Lombard of Dozel
+		}
+	}
+}
+# Duke of Chalphy, 757. Sigurd's father
+1031={
+	name="Byron"
+	father=1207
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_baldur
+	700.1.1={
+		birth=yes
+	}
+	712.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_major_baldur"
+	} 
+	715.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="unyielding_leader"
+		add_trait="organizer"
+		add_trait="cavalry_leader"
+		add_trait="just"
+		add_trait="shrewd"
+		add_trait="brave"
+		#add_trait="diligent"
+		add_trait="gregarious"
+		add_trait="slothful" # he doesn't clean up after himself
+	}
+	 
+	720.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	732.1.1 = {
+		add_spouse=1034 # 
+	}
+	750.1.1 = {
+		give_job_title = job_marshal # Kurth's right-hand man in the war with Isaach
+	}	
+	
+	760.3.1 = {
+		add_trait="wounded"
+	}
+	760.4.1={
+		death = {
+			death_reason=death_battle
+			killer=1070 # Duke Lombard of Dozel - well, from wounds taken while fighting his men
+		}
+	}
+}
+# Our hero
+1032={
+	name="Sigurd"
+#	dna="dehaczgbaak"
+#	properties="fd0e0d00000000"  
+	dna="cf0ge0gb0f0"
+	properties="fd0e0d00000000"
+	dynasty=1002
+	father=1031 # Byron
+	mother=1034 
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_baldur
+	# 22 in 9/757. Born in 734?
+	#735.1.1={
+	734.9.1={
+		birth=yes
+	}
+	#747.01.01={
+	746.09.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_major_baldur"
+	} 
+	#728.1.1 = {
+	749.9.1 = {
+		add_trait="brilliant_strategist"
+		add_trait="inspiring_leader"
+		add_trait="cavalry_leader"
+		add_trait="aggressive_leader"
+		add_trait="siege_leader"
+		add_trait="just"
+		add_trait="slothful" # Sigurd! If I'm a nag, it's because of you and dad! If both of you weren't such slobs!
+		add_trait="brave"
+		add_trait="trusting"
+		add_trait="honest"
+		add_trait="kind"
+	}
+	 
+	755.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	758.1.1 = {
+		add_spouse=1203 # Deirdre
+	}
+	760.1.1 = {
+		remove_spouse=1203 # Deirdre
+	}
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, you dastard
+		}
+	}
+}
+# Sigurd's younger sister. Quan's wife.
+1033={
+	name="Ethlyn"
+	female=yes
+	dynasty=1002
+	father=1031 # Byron
+	mother=1034 
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_baldur
+	# Serenes says she's 16 in 9/757. Wikia says born in 739. These are not compatible.
+	# Altena was born in 757 (3 at the time of Yied Massacre), so at Ethlin's youngest she was born in 741 (assume she marries at 15 and has Altena by age 16). This puts her at 16 for the 757 bookmark. Going with that to remain consistent with the other Serenes ages.
+	#739.12.1={
+	741.1.1={
+		birth=yes
+	}
+	#747.12.01={
+	753.01.01={
+		add_trait="class_troubador"
+		add_trait="base_class_troubador"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldur"
+	} 
+	#728.12.1 = {
+	756.1.1 = {
+		add_trait="fortune_builder"
+		add_trait="patient"
+		add_trait="diligent"
+		add_trait="kind"
+		add_trait="brave"
+		add_trait="stubborn"
+	}
+	 
+	
+	761.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1154 # Travant, Yied Massacre
+		}
+	}
+}
+#Non-canon, mother for Sigurd and Ethlyn.
+1034={
+	name="Brigid"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	716.1.1={
+		birth=yes
+	}
+	728.01.01={
+		add_trait="class_troubador"
+		add_trait="base_class_troubador"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	
+	747.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Sigurd's tactician. He's a Chalphy too... cousin of Sigurd's? Distant cousin? TODO: figure that part out
+1035={
+	name="Oifey"
+	dynasty=1002
+	father=1037 
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_baldur
+	trait=genius
+	# 14 in 9/757
+	743.1.1={
+		birth=yes
+	}
+	755.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldur"
+	} 
+	758.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="organizer"
+		add_trait="narrow_flank_leader"
+		add_trait="siege_leader"
+		add_trait="diligent"
+		add_trait="brave"
+		add_trait="patient"
+	}
+	
+	761.1.1={
+		add_trait="depressed"
+	}
+	 
+	762.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	777.1.1 = {
+		remove_trait="depressed"
+	}
+	800.1.1={
+		death = yes
+	}
+}
+
+# A famous Chalphy tactician. Oifey's grandfather
+1036={
+	name="Sesar"
+	father=1208
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_baldur
+	trait=genius
+	711.1.1={ # we can mess with this, but his birth date can't be any later.
+		birth=yes
+	}
+	723.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldur"
+	} 
+	726.1.1 = {
+		add_trait="brilliant_strategist"
+		add_trait="strategist"
+		add_trait="organizer"
+		add_trait="siege_leader"
+		add_trait="narrow_flank_leader"
+		add_trait="trickster"
+	}
+	 
+	727.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+	741.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Non-canon, father for Oifey. Dies when Oifey was young.
+1037={
+	name="Musar"
+	dynasty=1002
+	father=1036 # Sesar
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_baldur
+	trait=quick
+	727.1.1={
+		birth=yes
+	}
+	739.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldur"
+	} 
+	 
+	747.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+# Our other hero
+1038={
+	name="Seliph"  
+	dna="00bfc0ib0f0"
+	properties="fg0e0k00000000"
+	dynasty=1002
+	father=1032 # Sigurd
+	mother=1203 # Deirdre
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_naga
+	759.1.1={
+		birth=yes
+	}
+	771.1.1={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_major_baldur"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_minor_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	774.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="inspiring_leader"
+		add_trait="holy_warrior"
+		add_trait="experimenter" # direct_leader
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+	}
+	777.1.1 = {
+		give_nickname=nick_the_scion_of_light
+#		add_trait="crusader_draconic"
+	}
+	 
+	778.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}	
+	
+	819.1.1={
+		death = yes
+	}
+}
+# Lord of Edda
+# Probably Silvia's older brother. Or cousin. 
+1039={
+	name="Claud"
+	dynasty=1003
+	father=1041
+	mother=1044
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=fair
+	trait=holy_blood_latent_blagi
+	# 27 in 9/757
+	730.1.1={
+		birth=yes
+	}
+	742.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+			remove_trait="holy_blood_latent_blagi"
+			add_trait="holy_blood_major_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	745.1.1 = {
+		add_trait="mastermind_theologian"
+		add_trait="holy_warrior"
+		add_trait="kind"
+		add_trait="shrewd"
+		add_trait="erudite"
+		add_trait="shy"
+		add_trait="charitable"
+		add_trait="humble"
+		add_trait="chaste"
+		add_trait="zealous"
+	}
+	 
+	750.1.1 = {
+		remove_trait="class_priest"
+		add_trait="class_bishop"
+	}	
+	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis
+		}
+	}
+}
+# Non-canon, Claud's grandfather
+1040={
+	name="Codda"
+	mother=1210
+	dynasty=1003
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_blagi
+	690.1.1={
+		birth=yes
+	}
+	702.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+			remove_trait="holy_blood_latent_blagi"
+			add_trait="holy_blood_major_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	741.1.1={
+		death = yes
+	}
+}
+# Non-canon, Claud's father
+1041={
+	name="Charlot"
+	father=1040
+	dynasty=1003
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_blagi
+	710.1.1={
+		birth=yes
+	}
+	722.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+			remove_trait="holy_blood_latent_blagi"
+			add_trait="holy_blood_major_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	727.1.1 = {
+		add_spouse=1044 # 
+	}
+	 
+	747.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+# Non-canon, Claud's uncle
+1042={
+	name="Coirpre"
+	father=1040
+	dynasty=1003
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_blagi
+	711.1.1={
+		birth=yes
+	}
+	723.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+			remove_trait="holy_blood_latent_blagi"
+			add_trait="holy_blood_minor_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	746.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Claud's little sister
+1043={
+	name="Julia"
+	female=yes
+	dynasty=1003
+	father=1041
+	mother=1044
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_blagi
+	741.1.1={
+		birth=yes
+	}
+#	753.01.01={
+#		add_trait="class_dancer"
+#		add_trait="base_class_dancer"
+#			remove_trait="holy_blood_latent_blagi"
+#			add_trait="holy_blood_minor_blagi"
+#		effect = {
+#			set_variable = { which = "level" value = 1 }
+#			set_character_flag="class_selected"
+#			set_character_flag = magic_or_faith_question
+#		}
+#	} 
+	
+	747.1.1={
+		death = {
+			death_reason=death_missing # actually Silvia? I hope not.
+		}
+	}
+}
+# Non-canon, mother for Claud
+1044={
+	name="Silvia"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	711.1.1={
+		birth=yes
+	}
+	723.01.01={
+		add_trait="class_dancer"
+		add_trait="base_class_dancer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	
+	747.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+# Generation 1's dancer
+1045={
+	name="Silvia"
+	female=yes
+	dynasty=1003
+	father=1042
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_blagi
+	741.1.1={
+		birth=yes
+		effect={
+			set_character_flag=is_fe4_sylvia
+		}
+	}
+	746.01.01 = {
+		# Goes missing and ends up adopted by a jerk. Her heritage is never revealed for sure.
+		employer=1244
+		dynasty=1039
+		culture=silessian
+		effect={
+			set_father=0
+			c_1042 = {				
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}	
+	753.01.01={
+		add_trait="class_dancer"
+		add_trait="base_class_dancer"
+			remove_trait="holy_blood_latent_blagi"
+			add_trait="holy_blood_minor_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	756.1.1 = {
+		add_trait="indulgent_wastrel"
+		add_trait="gregarious"
+		add_trait="kind"
+		add_trait="lustful"
+	}
+	
+	765.1.1={
+		death = {
+			death_reason=death_missing 
+		}
+	}
+}
+# Silvia's daughter
+1046={
+	name="Lene"
+	female=yes
+	#dynasty=1003
+	dynasty=1039
+	mother=1045
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_blagi
+	760.1.1={ # 17?
+		birth=yes 
+	}
+	765.1.1={ 
+		#employer= # Bramsel of Darna
+		dynasty=1039
+	}
+	772.01.01={
+		add_trait="class_dancer"
+		add_trait="base_class_dancer"
+			remove_trait="holy_blood_latent_blagi"
+			add_trait="holy_blood_minor_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	775.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="gregarious"
+		add_trait="chaste"
+		add_trait="kind"
+		add_trait="brave"
+		add_trait="cynical"
+		add_trait="depressed"
+	}
+	 
+	779.1.1 = {
+		remove_trait="depressed"
+		employer=1047 # Coirpre. Why not?
+	}	
+	
+	812.1.1={
+		death = yes
+	}
+}
+# Silvia's son
+1047={
+	name="Coirpre"
+	#dynasty=1003
+	dynasty=1039
+	#mother=1045 # Doesn't know who she was! Or even that Lene is his sister?
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_blagi
+	765.1.1={ # Just a guess. Has to be younger than Leen. He's 10 in the Kaga scenario, but that has Silvia two years too young... let's say he's 12.
+		birth=yes
+	}
+	765.1.1={ 
+		#employer= # Bramsel of Darna
+		dynasty=1039
+	}
+	777.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+			remove_trait="holy_blood_latent_blagi"
+			add_trait="holy_blood_minor_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	# Adopted by Hannibal
+	777.1.1={ 
+		employer=1245 
+		dynasty=1040
+		effect={
+			#set_mother = 0
+			c_1245 = {
+				ROOT = { set_father = PREV }
+			}
+			add_friend=1245 #Hannibal
+		}
+	}
+	779.1.1={ 
+		dynasty=1013
+		effect={
+			set_father = 0
+		}
+	}	
+	780.1.1 = {
+		add_trait="martial_cleric"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="charitable"
+		add_trait="brave"
+	} 
+	
+	825.1.1={
+		death = yes
+	}
+}
+# Arvis's father. Duke of Velthomer
+1048={
+	name="Victor"
+	mother=1214 
+	dynasty=1004
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_fala
+	710.1.1={
+		birth=yes
+	}
+	722.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_fala"
+			add_trait="holy_blood_major_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	725.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="lustful"
+		add_trait="cruel"
+		add_trait="wroth"
+		add_trait="arbitrary"
+		add_trait="proud"
+		add_trait="deceitful"
+		add_trait="seducer"
+	}
+	 
+	730.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+	}	
+		
+	731.1.1 = {
+		add_spouse=1202 # Cigyun
+	}
+	738.12.1={
+		effect = {
+			c_1202 = { # Cigyun
+				# You slept with the prince!
+				reverse_opinion = {
+					modifier = opinion_unfaithful_wife
+					who = ROOT
+					years = 10
+				}
+			}
+			c_1030 = { # Kurth
+				# You slept with my wife!
+				reverse_opinion = {
+					modifier = opinion_cuckolded
+					who = ROOT
+					years = 10
+				}
+			}
+		}
+	}
+	739.1.1={
+		death = {
+			death_reason=death_suicide
+		}
+	}
+}
+# Duke of Velthomer, then Emperor of Grannvale. World-class cat's paw.
+1049={
+	name="Arvis"
+	dna="0ficb0ebj00"
+	properties="cj0d0d00000000"
+	dynasty=1004
+	father=1048 # Victor
+	mother=1202 # Cigyun
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_loptyr
+	trait=quick # "Gift of Kings"?
+	732.1.1={
+		birth=yes
+	}
+	744.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_fala"
+			add_trait="holy_blood_major_fala"
+			remove_trait="holy_blood_latent_loptyr"
+			add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	747.1.1 = {
+		add_trait="elusive_shadow"
+		add_trait="chaste" # uncomfortable around women
+		add_trait="ambitious"
+		add_trait="deceitful"
+		add_trait="charitable"
+		add_trait="cynical"
+		add_trait="diligent"
+	} 
+	748.1.1 = {
+		effect={
+		add_lover=1055 # Aida
+		}
+	}
+	 
+	752.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}	
+		
+	757.1.1 = {
+		add_trait="schemer"
+	}
+	760.1.1 = {
+		effect = {
+			remove_lover=yes 
+		}
+		add_spouse=1203 # Deirdre
+	}
+	770.1.1 = {
+		add_trait="depressed"
+		add_trait="kind" 
+		religion=loptyrian
+	}
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Arvis's half-brother.
+# close friends with Lex of Dozel and Tailto of Friege 
+1050={
+	name="Azelle"
+	dna="cgbfh0cbj00"
+	properties="hd0a0k00000000"
+	dynasty=1004
+	father=1048 # Victor
+	#mother= # Cigyun's maid
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_fala
+	739.1.1={
+		birth=yes
+		effect = {
+			c_1049 = { # Arvis
+				# Scared of Arvis, but Arvis loves him as a brother.
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_afraid
+					who = ROOT
+					years = 30
+				}
+				reverse_opinion = {
+					modifier = opinion_afraid
+					who = ROOT
+					years = 30
+				}
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 30
+				}
+			}
+		}
+	}
+	745.01.01={
+		effect={
+			add_friend=1060 #Tailtiu
+			add_friend=1074 #Lex
+		}
+	} 
+	751.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_fala"
+			add_trait="holy_blood_minor_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	754.1.1 = {
+		add_trait="underhanded_rogue"
+		add_trait="shy"
+		add_trait="erudite"
+		add_trait="humble"
+		add_trait="just"
+		add_trait="kind"
+		add_trait="brave"
+	}
+	
+	755.1.1={
+		effect = {
+			c_1082 = { # Edain
+				reverse_opinion = {
+					modifier = opinion_crush
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+	}
+	761.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# The Scion of Darkness
+1051={
+	name="Julius"  
+	dna="0gice0a0j00"
+	properties="hn0a0000000000"
+	dynasty=1004
+	father=1049 # Arvis
+	mother=1203 # Deirdre
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_naga
+	trait=holy_blood_latent_fala
+	trait=twin
+	# Arvis & Deirdre start their relationship while Sigurd was in Silesse, and marry shortly before the Battle of Belhalla. Let's say the twins were born a little after?
+	761.1.1={
+		birth=yes
+	}
+	
+	769.1.1={
+		remove_trait="holy_blood_latent_naga"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_minor_fala"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+	} 
+	# The night Manfloy came with that eerie black tome...
+	# 7 years before Generation 2.
+	770.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+		}
+	}	
+	773.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	776.1.1 = {
+		add_trait="elusive_shadow"
+		add_trait="holy_warrior"
+		add_trait="inspiring_leader"
+		give_nickname=nick_the_scion_of_darkness
+	}
+	777.1.1={
+		effect={
+			add_lover = 1067 # Ishtar
+			add_betrothal = 1067 # Ishtar
+		}
+	}
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Julius' younger twin sister
+1052={
+	name="Julia"
+	female=yes
+	dynasty=1004
+	father=1049 # Arvis
+	mother=1203 # Deirdre
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_naga
+	trait=holy_blood_latent_fala
+	trait=twin
+	# Arvis & Deirdre start their relationship while Sigurd was in Silesse, and marry shortly before the Battle of Belhalla. Let's say the twins were born a little after?
+	761.1.1={
+		birth=yes
+	}
+	
+	769.1.1={
+		remove_trait="holy_blood_latent_loptyr"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_minor_fala"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_major_naga"
+	} 
+	# Possessed Julius attempts to kill her. Deirdre warps her... somewhere near Belhalla. 
+	770.1.1 = {
+		#employer=0 # 
+	}	
+	# Lewyn finds her and takes her to a hideaway in Silesse.
+	771.1.1 = {
+		#employer=0 # Lewyn 
+	}
+	773.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	776.1.1 = {
+		add_trait="grey_eminence"
+		add_trait="shy"
+		add_trait="chaste"
+		add_trait="kind"
+		add_trait="humble"
+	}
+	826.1.1={
+		death = yes
+	}
+}
+# the illegitimate son of Arvis and his lieutenant Aida
+1053={
+	name="Saias"
+	dynasty=1015
+	#father=1049 # Arvis
+	mother=1055 # General Aida of Velthomer
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_loptyr
+	trait=bastard
+	trait=quick
+	# Wiki says he's 27 in 776
+	749.1.1={
+		birth=yes
+		employer=1049 # Arvis
+		effect = { 
+			c_1049 = {
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}
+	
+	761.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_fala"
+			add_trait="holy_blood_major_fala"
+			remove_trait="holy_blood_latent_loptyr"
+			#add_trait="holy_blood_minor_loptyr" # As fun as it would be, there's no sign of it.
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	764.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="holy_warrior"
+		add_trait="inspiring_leader"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="gregarious"
+		add_trait="diligent"
+		add_trait="erudite"
+	}
+	 
+	765.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+		add_trait="strategist"
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	776.1.1 = {
+		give_job_title = job_spiritual # appointed Velthomer's court archbishop
+	}	
+	779.1.1 = {
+		religion=church_of_edda
+	}
+	808.1.1={
+		death = yes
+	}
+}
+# A Velthomer noble. Aida's father and Saias' grandfather.
+1054={
+	name="Cowen"
+	dynasty=1016
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	716.1.1={
+		birth=yes
+	}
+	
+	728.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		#add_trait="class_mage"
+		#add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	731.1.1 = {
+		add_trait="scholarly_theologian"
+		add_trait="just"
+		add_trait="patient"
+		add_trait="kind"
+		add_trait="zealous"
+	}
+	 
+	736.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+		#remove_trait="class_mage"
+		#add_trait="class_sage"
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			#killer= # Leif
+		}
+	}
+}
+# General of Velthomer, leader of the Rot Ritter, lover of Duke Arvis, and Saias' mother.
+1055={
+	name="Aida"
+	female=yes
+	father=1054 # Cowen
+	dynasty=1016
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	732.1.1={
+		birth=yes
+	}
+	
+	744.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	747.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="flanker"
+		add_trait="narrow_flank_leader"
+		add_trait="deceitful"
+		add_trait="patient"
+	}
+	 
+	752.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+		employer=1049 # Arvis
+		give_job_title=job_marshal
+	}	
+	764.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			#killer= # Manfroy
+		}
+	}
+}
+# Duke of Friege in 757
+# 4 children: Blume, <deceased>, Tailtiu, Ethnia
+# Ishtar = 761?, Blume = 739?, T=741, E=742?
+# Tine=764, Linda=same?, Arthur=761, Amid=same?
+1056={
+	name="Reptor"
+	father=1220
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	699.1.1={
+		birth=yes
+	}
+	721.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_major_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	724.1.1 = {
+		add_trait="intricate_webweaver"
+		add_trait="deceitful"
+		add_trait="ambitious"
+		add_trait="arbitrary"
+		add_trait="envious"
+		add_trait="greedy"
+		add_trait="paranoid"
+		add_trait="cynical"
+		add_trait="shrewd"
+	}	 
+	729.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}	
+	738.1.1 = {
+		add_spouse=1057
+	}		
+	# Is Arvis going to back me up and not send me out to die?
+	761.1.1={ 
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Non-canon, wife for Reptor
+1057={
+	name="Birgitta"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	722.1.1={
+		birth=yes
+	}	
+	742.1.1={
+		#add_trait=ill
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# Reptor's son. Duke of Friege and King of Manster in generation 2.
+# A tyrant, but a nice guy compared to Hilda.
+1058={
+	name="Bloom"
+	father=1056 # Reptor
+	mother=1057 # filler
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	739.1.1={
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_major_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	754.1.1 = {
+		add_trait="underhanded_rogue"
+		add_trait="wroth"
+		add_trait="ambitious"
+		add_trait="cynical"
+	}	 
+	757.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+		add_spouse=1069 # Hilda
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Reptor's second child according to Fire Emblem: Treasure. Nothing known for sure except they were born between Bloom and Tailtiu and did not live to 757.
+1059={
+	name="Veld"
+	father=1056 # Reptor
+	mother=1057 # filler
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_tordo
+	740.1.1={
+		birth=yes
+	}
+	742.1.1={
+		add_trait="sickly"
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Reptor's older daughter.
+1060={
+	name="Tailtiu"
+	female=yes
+	father=1056 # Reptor
+	mother=1057 # filler
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	741.1.1={ # 16 in 757
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_minor_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	756.1.1 = {
+		add_trait="charismatic_negotiator"
+		add_trait="wroth"
+		add_trait="gregarious"
+		add_trait="honest"
+	}	 
+	761.1.1 = {
+		employer=1110 # Rahna? Somewhere in Silesse, anyway...
+	}	 
+	769.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}	 
+	770.01.01 = { 		
+		effect = {
+			c_spaekona = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		} 
+	}
+	773.1.1={
+		death = {
+			death_reason=death_dungeon
+			killer=1069 # Hilda
+		}
+	}
+}
+# Reptor's younger daughter.
+1061={
+	name="Ethnia"
+	female=yes
+	father=1056 # Reptor
+	mother=1057 # filler
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	742.1.1={ 
+		birth=yes
+	}
+	754.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_minor_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	757.1.1 = {
+		add_trait="shy"
+		effect={
+			add_friend=1060 #Tailtiu
+		}
+	}	 
+	770.01.01 = { 		
+		effect = {
+			c_spaekona = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		} 
+		add_trait="depressed"
+	}
+	773.1.1={
+		death = {
+			death_reason=death_dungeon
+			killer=1069 # Hilda
+		}
+	}
+}
+# Tailtiu's son. Left in Silesse when Tailtiu was caught and brought back to Friege.
+1062={
+	name="Arthur"
+	mother=1060 # Tailtiu
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	761.1.1={
+		birth=yes
+	}
+	773.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_minor_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+		culture=silessian
+	} 
+	776.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="shrewd"
+		add_trait="patient"
+		add_trait="just"
+		
+		effect = {			
+			# Hilda tortured my mother to death and kidnapped my sister!
+			c_spaekona = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+				}
+			}	
+			# And her husband's not much better
+			d_friege = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+				}
+			}	
+		}
+	}	 
+	786.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}		
+	815.1.1={
+		death = yes
+	}
+}
+# Tailtiu's daughter. Left in Silesse when Tailtiu was caught and brought back to Friege.
+1063={
+	name="Tine"
+	female=yes
+	mother=1060 # Tailtiu
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	764.1.1={ # Kaga scenario has her as 13...
+		birth=yes
+	}
+	776.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_minor_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	779.1.1 = {
+		add_trait="depressed"
+		add_trait="martial_cleric"
+		add_trait="shy"
+		add_trait="humble"
+		add_trait="just"
+		add_trait="kind"
+		add_trait="chaste"
+		
+		effect = {			
+			# Hilda tortured my mother to death
+			c_spaekona = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+				}
+			}	
+			# And her husband's not much better
+			d_friege = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+				}
+			}	
+			# But the kids are okay!
+			random_character = {
+				limit = { character = 1066 } # Ishtore
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}
+			random_character = {
+				limit = { character = 1067 } # Ishtar
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}	 
+	789.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}		
+	816.1.1={
+		death = yes
+	}
+}
+# Ethnia's son. Replacement for Arthur
+1064={
+	name="Amid"
+	mother=1061 # Ethnia
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	761.1.1={
+		birth=yes
+	}
+	773.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_minor_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+		culture=silessian
+	} 
+	776.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="kind"
+		add_trait="charitable"
+		add_trait="cynical" # More like sarcastic?
+		
+		effect = {			
+			# Hilda tortured my mother to death and kidnapped my sister!
+			c_spaekona = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+				}
+			}	
+			# And her husband's not much better
+			d_friege = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+				}
+			}	
+		}
+	}	 
+	786.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}		
+	816.1.1={
+		death = yes
+	}
+}
+# Ethnia's daughter. Replacement for Tine
+1065={
+	name="Linda"
+	female=yes
+	mother=1061 # Ethnia
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	764.1.1={ 
+		birth=yes
+	}
+	776.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_minor_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	779.1.1 = {
+		add_trait="depressed"
+		add_trait="martial_cleric"
+		add_trait="shy"
+		add_trait="humble"
+		add_trait="just"
+		add_trait="kind"
+		add_trait="chaste"
+		
+		effect = {			
+			# Hilda tortured my mother to death
+			c_spaekona = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					}  
+				}
+			}	
+			# And her husband's not much better
+			d_friege = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_hate
+						who = ROOT
+						years = 20
+					} 
+				}
+			}	
+			# But the kids are okay!
+			random_character = {
+				limit = { character = 1066 } # Ishtore
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}
+			random_character = {
+				limit = { character = 1067 } # Ishtar
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}	 
+	789.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}		
+	817.1.1={
+		death = yes
+	}
+}
+# Bloom's son. In charge of Melgln Castle.
+1066={
+	name="Ishtore"
+	father=1058 # Bloom
+	mother=1069 # Hilda
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	759.1.1={
+		birth=yes
+	}
+	770.1.1 = {
+		religion=loptyrian
+	}
+	771.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_minor_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	774.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="defensive_leader"
+		add_trait="rough_terrain_leader"
+		add_trait="kind"
+		add_trait="just"
+	}	 
+	777.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+		add_lover=1068 # Liza
+	}		
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Bloom's daughter. Betrothed to Julius.
+1067={
+	name="Ishtar"
+	female=yes
+	father=1058 # Bloom
+	mother=1069 # Hilda
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_fala
+	761.1.1={
+		birth=yes
+	}
+	770.1.1 = {
+		religion=loptyrian
+	}
+	773.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_tordo"
+			add_trait="holy_blood_major_tordo"
+			remove_trait="holy_blood_latent_fala"
+#			add_trait="holy_blood_minor_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	774.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="inspiring_leader"
+		add_trait="unyielding_leader"
+		add_trait="flanker"
+		add_trait="trusting"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="proud"
+		add_trait="brave"
+	}	 
+	776.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	} 	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Ishtore's tactician and lover
+1068={
+	name="Liza"
+	female=yes
+	dynasty=1018
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	760.1.1={
+		birth=yes
+	}
+	770.1.1 = {
+		religion=loptyrian
+	}
+	772.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	775.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="rough_terrain_leader"
+		add_trait="experimenter"
+		add_trait="aggressive_leader"
+		add_trait="strategist"
+		add_trait="proud"
+		add_trait="brave"
+	}	 
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Bloom's wife. Velthomer nobility.
+1069={
+	name="Hilda"
+	female=yes
+	father=1217
+	dynasty=1017
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_fala
+	740.1.1={
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+			remove_trait="holy_blood_latent_fala"
+			add_trait="holy_blood_minor_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	753.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="impaler"
+		add_trait="cruel"
+		add_trait="arbitrary"
+		add_trait="ambitious"
+		add_trait="deceitful"
+		add_trait="envious"
+		add_trait="wroth"
+		add_trait="aggressive_leader"
+	}	
+	757.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	} 	 
+	770.1.1 = {
+		religion=loptyrian
+	}
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Duke of Dozel, 757
+1070={
+	name="Lombard"
+	father=1223
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_neir
+	trait=strong
+	706.1.1={
+		birth=yes
+	}
+	718.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+			remove_trait="holy_blood_latent_neir"
+			add_trait="holy_blood_major_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			
+			add_rival=1031 # Byron of Chalphy
+			
+			d_jungby = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_gained_respect
+						who = ROOT
+						years = 80
+					} 
+					reverse_opinion = {
+						modifier = opinion_gained_respect
+						who = ROOT
+						years = 80
+					}  
+					reverse_opinion = {
+						modifier = opinion_gained_respect
+						who = ROOT
+						years = 80
+					}  
+					reverse_opinion = {
+						modifier = opinion_gained_respect
+						who = ROOT
+						years = 80
+					} 
+				}
+			}	
+		}
+	} 
+	721.1.1 = {
+		add_trait="intricate_webweaver"
+		add_trait="wroth"
+		add_trait="deceitful"
+		#add_trait="arbitrary" # Nope. Not exactly honorable, but he has standards. Patricide is over the line.
+		add_trait="proud"
+		add_trait="ambitious"
+		add_trait="aggressive_leader"
+	}	 
+	723.1.1 = {
+		add_spouse=1071 # First wife
+	}	 
+	726.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	738.2.1 = {
+		add_spouse=1072 # Second wife
+	}
+	# Both my sons, Danan and Lex, are absolutely worthless.
+	757.1.1={
+		effect = {
+			random_character = {
+				limit = { character = 1073 } # Danan
+				opinion = {
+					modifier = opinion_extremely_disappointed
+					who = ROOT
+					years = 30
+				}
+			}
+			random_character = {
+				limit = { character = 1074 } # Lex
+				opinion = {
+					modifier = opinion_extremely_disappointed
+					who = ROOT
+					years = 30
+				}
+			}
+		}
+	}
+	760.4.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Non-canon, first wife for Lombard
+1071={
+	name="Edain"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	707.1.1={
+		birth=yes
+	}
+	
+	738.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# Non-canon, second wife for Lombard
+1072={
+	name="Laylea"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	708.1.1={
+		birth=yes
+	}
+	
+	757.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Lombard's eldest son. King of Isaach in 777.
+1073={
+	name="Danann"
+	father=1070 # Lombard
+	mother=1071 # filler
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_neir
+	trait=strong
+	738.1.1={
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+			remove_trait="holy_blood_latent_neir"
+			add_trait="holy_blood_major_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	753.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="wroth"
+		add_trait="arbitrary" 
+		add_trait="proud"
+		add_trait="ambitious"
+		add_trait="craven"
+	}	
+	758.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	 
+	761.1.1 = {
+		add_trait="hedonist"
+	}	 
+	 
+	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Lombard's youngest son. 
+1074={
+	name="Lex"
+	father=1070 # Lombard
+	mother=1072 # filler
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_neir
+	# 18 in 757
+	739.1.1={
+		birth=yes
+	}
+	741.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+			remove_trait="holy_blood_latent_neir"
+			add_trait="holy_blood_minor_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			
+			random_character = {
+				limit = { character = 1032 } # Sigurd
+				opinion = {
+					modifier = opinion_dislike
+					who = ROOT
+					years = 20
+				}
+			}
+		}
+	} 
+	744.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="wroth"
+		add_trait="honest"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="aggressive_leader"
+		add_trait="experimenter"
+	}	 
+	 
+	760.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, Battle of Belhalla
+		}
+	}
+}
+
+# Danann's eldest son. The only one to stay in Dozel instead of going to occupy Isaach.
+# Not that bad of a person, just very loyal to his house.
+1075={
+	name="Brian"
+	father=1073 # Danann
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_neir
+	756.1.1={ # Uncertain. He's the oldest of three, and let's say the other two are at least Larcei's age (19).
+		birth=yes
+	}
+	768.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+			remove_trait="holy_blood_latent_neir"
+			add_trait="holy_blood_major_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	770.1.1 = {
+		religion=loptyrian
+	}
+	771.1.1 = {
+		add_trait="thrifty_clerk"
+		add_trait="trusting"
+		add_trait="just"
+		add_trait="robust"
+		add_trait="brave"
+		add_trait="experimenter"
+		add_trait="aggressive_leader"
+	}	 
+	 
+	777.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_great_knight"
+	}	
+	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Danann's middle son. Rules Isaach Castle.
+1076={
+	name="Iuchar"
+	father=1073 # Danann
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_neir
+	757.1.1={ 
+		birth=yes
+	}
+	769.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_knight"
+			remove_trait="holy_blood_latent_neir"
+			add_trait="holy_blood_minor_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	770.1.1 = {
+		religion=loptyrian
+	}	
+	772.1.1 = {
+		add_trait="charismatic_negotiator"
+		add_trait="poet"
+		add_trait="just"
+		add_trait="gregarious"
+		add_trait="erudite"
+		add_trait="defensive_leader"
+	}	 
+	
+	777.1.1={
+		effect = {
+			c_1137 = { # Larcei
+				reverse_opinion = {
+					modifier = opinion_crush
+					who = ROOT
+					years = 5
+				}
+			}
+			c_1077 = { # Iucharba
+				reverse_opinion = {
+					modifier = opinion_love_rival
+					who = ROOT
+					years = 5
+				}
+			}
+			#add_rival = 1077 # Iucharba. Love triangle!
+		}
+	}
+	 
+#	782.1.1 = {
+#		remove_trait="class_cavalier"
+#		add_trait="class_great_knight"
+#	}	
+	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Danann's youngest son. Rules Sophara Castle.
+1077={
+	name="Iucharba"
+	father=1073 # Danann
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_neir
+	758.1.1={ 
+		birth=yes
+	}
+	770.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_knight"
+			remove_trait="holy_blood_latent_neir"
+			add_trait="holy_blood_minor_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	770.1.1 = {
+		religion=loptyrian
+	}
+	773.1.1 = {
+		add_trait="charismatic_negotiator"
+		add_trait="wroth"
+		add_trait="just"
+		add_trait="honest"
+		add_trait="robust"
+		add_trait="defensive_leader"
+	}	 
+	
+	777.1.1={
+		effect = {
+			c_1137 = { # Larcei
+				reverse_opinion = {
+					modifier = opinion_crush
+					who = ROOT
+					years = 5
+				}
+			}
+			c_1076 = { # Iuchar
+				reverse_opinion = {
+					modifier = opinion_love_rival
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+	}
+	 
+#	783.1.1 = {
+#		remove_trait="class_cavalier"
+#		add_trait="class_great_knight"
+#	}	
+	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Duke of Jungby, 757
+1078={
+	name="Ring"
+	mother=1226 # 
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_ulir
+	702.1.1={
+		birth=yes
+	}
+	714.01.01={
+		add_trait="class_archer"
+		add_trait="base_class_archer"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_major_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	717.1.1 = {
+		add_trait="midas_touched"
+		add_trait="zealous"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="erudite"
+		add_trait="holy_warrior"
+	}	 
+	 
+	722.1.1 = {
+		remove_trait="class_archer"
+		add_trait="class_sniper"
+	}	
+	723.1.1 = {
+		add_spouse=1079
+	}	
+	739.1.1 = {
+		add_spouse=1080
+	}	
+	743.1.1 = { # When Brigid was 5. 19 in 757 = born in 738 = 743
+		add_trait="pilgrim"
+	}	 
+	
+	760.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			killer=1083 # Andrey
+		}
+	}
+}
+# Non-canon, Ring's first wife
+1079={
+	name="Fetra"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	703.1.1={
+		birth=yes
+	}
+	715.01.01={
+		add_trait="class_cleric" # Edain had to get it from somewhere!
+		add_trait="base_class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	738.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# Non-canon, Ring's second wife
+1080={
+	name="Tine"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	719.1.1={
+		birth=yes
+	}
+	731.01.01={
+		add_trait="class_horse_archer_female" # Andrey had to get it from somewhere!
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	742.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Ring's oldest (twin) daughter. AKA Eyvel.
+1081={
+	name="Brigid"
+	father=1078 # Ring
+	mother=1079 # filler
+	female=yes
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=twin
+	trait=holy_blood_latent_ulir
+	738.1.1={
+		birth=yes
+	}
+	743.1.1={
+		employer=1103 # Orgahil Pirates
+		effect = { 
+			c_1078 = {
+				ROOT = { set_real_father = PREV }
+			}
+			c_1103 = {
+				ROOT = { set_father = PREV }
+			}
+			set_mother=none
+			dynasty=1024
+		}
+	}
+	750.01.01={
+		add_trait="class_archer_female"
+		add_trait="base_class_archer"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_major_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	753.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="wroth"
+		add_trait="honest"
+		add_trait="charitable"
+		add_trait="aggressive_leader"
+		add_trait="rough_terrain_leader"
+	}	
+	760.1.1={
+		employer=1032 # Sigurd
+		effect = { 
+			c_1078 = {
+				ROOT = { set_father = PREV }
+			}
+			set_mother=1079
+			dynasty=1007
+		}
+	} 
+	760.3.1 = {
+		remove_trait="class_archer_female"
+		add_trait="class_sniper_female"
+	}	
+	# Survives the Battle of Belhalla, possibly due to divine (dragon) intervention.
+	# Washes up in Iss and becomes Eyvel.
+	761.1.1 = {
+		remove_trait="wroth"
+		remove_trait="aggressive_leader"
+		add_trait="defensive_leader"
+		remove_trait="base_class_archer"
+		remove_trait="class_sniper_female"
+		add_trait="class_swordmaster_female"
+		add_trait="base_class_myrmidon"
+		culture=thracian
+		effect = {
+			set_name = "Eyvel"
+			dynasty=1019
+			c_1078 = {
+				ROOT = { set_real_father = PREV }
+			}
+			set_father = none
+			set_mother = none
+		}
+	}	
+
+	# her memory recovered seven years after the Holy War
+	785.1.1 = {
+		remove_trait="base_class_myrmidon"
+		remove_trait="class_swordmaster_female"
+		add_trait="class_sniper_female"
+		add_trait="base_class_archer"
+		culture=grannvalean
+		effect = {
+			dynasty=1007
+			set_name = "Brigid"
+			set_father = 1078
+			set_mother = 1079
+		}
+	}	
+	
+	799.1.1={
+		death = yes
+	}
+}
+# Ring's younger (twin) daughter.
+1082={
+	name="Edain"
+	father=1078 # Ring
+	mother=1079 # filler
+	female=yes
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=twin
+	trait=holy_blood_latent_ulir
+	738.1.1={
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_minor_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	753.1.1 = {
+		add_trait="martial_cleric"
+		add_trait="kind"
+		add_trait="patient"
+		add_trait="diligent"
+		add_trait="charitable"
+		add_trait="brave"
+		add_trait="cavalry_leader" # She did train as a knight...
+		add_trait="heavy_infantry_leader"
+	}	 
+	 
+	760.3.1 = {
+		remove_trait="class_cleric"
+		#add_trait="class_war_cleric"
+		add_trait="class_bishop_female"
+	}	
+	# Survives the Battle of Belhalla. Runs a convent in Tirnanog.	
+	
+	800.1.1={
+		death = yes
+	}
+}
+# Ring's son.
+1083={
+	name="Andrey"
+	father=1078 # Ring
+	mother=1080 # filler
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_ulir
+	740.1.1={
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_horse_archer"
+		add_trait="base_class_horse_archer"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_minor_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	755.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="ambitious"
+		add_trait="proud"
+		add_trait="deceitful"
+		add_trait="arbitrary"
+		add_trait="cruel"
+		add_trait="envious"
+		add_trait="cavalry_leader" 
+		add_trait="flanker"
+	}	 
+	 
+	757.1.1 = {
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	
+	761.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Brigid's son.
+1084={
+	name="Febail"
+	mother=1081 # Brigid
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_ulir
+	759.6.1={ # Uncertain, but he's older than Patty and both had to be born before the Battle of Belhalla
+		birth=yes
+		effect = {
+			set_character_flag="is_fe4_febail"
+		}
+	}
+	761.1.1 = {
+		culture=thracian
+		# Startup event to create a fake character as the mom
+	}	
+	771.6.01={
+		add_trait="class_archer"
+		add_trait="base_class_archer"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_major_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	774.6.1 = {
+		add_trait="tough_soldier"
+		add_trait="kind"
+		add_trait="charitable"
+		add_trait="just"
+		add_trait="wroth"
+		add_trait="brave"
+		add_trait="trusting"
+		add_trait="light_foot_leader" 
+	}	 
+	 
+	779.1.1 = {
+		remove_trait="class_archer"
+		add_trait="class_sniper"
+	}	
+	
+	785.1.1 = {
+		dynasty=1007
+		culture=grannvalean
+	}	
+	
+	818.1.1={
+		death = yes
+	}
+}
+# Brigid's daughter.
+1085={
+	name="Patty"
+	female=yes
+	mother=1081 # Brigid
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_ulir
+	760.3.1={ # Uncertain, but she had to be born before the Battle of Belhalla
+		birth=yes
+		effect = {
+			set_character_flag="is_fe4_patty"
+		}
+	}
+	761.1.1 = {
+		culture=thracian
+		# Startup event to create a fake character as the mom
+	}	
+	772.3.01={
+		add_trait="class_thief_female"
+		add_trait="base_class_thief"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_major_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	774.3.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="kind"
+		add_trait="charitable"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="wroth"
+		add_trait="slothful"
+		add_trait="proud"
+	}	 
+	 
+	779.1.1 = {
+		remove_trait="class_thief_female"
+		add_trait="class_rogue"
+	}	
+	
+	785.1.1 = {
+		dynasty=1007
+		culture=grannvalean
+	}	
+	
+	818.1.1={
+		death = yes
+	}
+}
+
+# Andrey's son. Duke of Jungby in Generation 2
+1086={
+	name="Scipio"
+	father=1083 # Andrey
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_ulir
+	757.1.1={ # Just a guess
+		birth=yes
+	}
+	769.01.01={
+		add_trait="class_horse_archer"
+		add_trait="base_class_horse_archer"
+			remove_trait="holy_blood_latent_ulir"
+			#add_trait="holy_blood_minor_ulir" # No holy blood.
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	770.1.1 = {
+		religion=loptyrian
+	}
+	772.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="ambitious"
+		add_trait="proud"
+		add_trait="arbitrary"
+		add_trait="trusting"
+		add_trait="cruel"
+		add_trait="rough_terrain_leader" 
+		add_trait="flanker"
+	}	 
+	 
+	777.1.1 = {
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+
+# Edain's son.
+1087={
+	name="Lester"
+	mother=1082 # Edain
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_ulir
+	760.1.1={ # Uncertain, but he's older than Lana who is ~15 in the Kaga Scenario
+		birth=yes
+	}
+	772.01.01={
+		add_trait="class_archer"
+		add_trait="base_class_horse_archer"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_minor_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	775.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="patient"
+		add_trait="temperate"
+		add_trait="brave"
+		add_trait="light_foot_leader" 
+	}	 
+	 
+	778.1.1 = {
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	
+	819.1.1={
+		death = yes
+	}
+}
+# Edain's daughter.
+1088={
+	name="Lana"
+	female=yes
+	mother=1082 # Edain
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=holy_blood_latent_ulir
+	762.1.1={ # ~15 in the Kaga Scenario
+		birth=yes
+	}
+	774.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+			remove_trait="holy_blood_latent_ulir"
+			add_trait="holy_blood_minor_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	777.1.1 = {
+		add_trait="scholarly_theologian"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="shy"
+		add_trait="humble"
+		add_trait="brave" # nuns and warfare mix rather well, as it turns out
+		add_trait="holy_warrior" 
+	}	 
+	 
+	778.1.1 = {
+		remove_trait="class_cleric"
+		add_trait="class_bishop_female"
+	}	
+	
+	825.1.1={
+		death = yes
+	}
+}
+
+# Non-canon; King of Grannvale. Here so we can explain Linoan's Naga holy blood.
+1163={
+	name="Hans"
+	father=1001 # Heim
+	dynasty=1001
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_naga
+	650.1.1={
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_major_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	 
+	670.1.1 = {
+		remove_trait="class_priest"
+		add_trait="class_bishop"
+	}		
+	699.1.1={
+		death=yes
+	}
+}
+# Non-canon; Queen of Grannvale.
+1164={
+	name="Astrid"
+	female=yes
+	father=1163 
+	dynasty=1001
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_naga
+	666.1.1={
+		birth=yes
+	}
+	678.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_major_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	 
+	686.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop_female"
+	}		
+	707.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+# Non-canon; princess of Grannvale. Here so we can explain Linoan's Naga holy blood.
+1165={
+	name="Helena"
+	female=yes
+	father=1001 # Heim
+	dynasty=1001
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_naga
+	668.1.1={
+		birth=yes
+	}
+	680.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_minor_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	
+	690.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# Non-canon; King of Grannvale.
+1171={
+	name="Greger"
+	mother=1164
+	dynasty=1001
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_naga
+	682.1.1={
+		birth=yes
+	}
+	694.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_major_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	 
+	700.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}		
+	712.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+
+# Non-canon; descendants of Baldur
+1204={
+	name="Ulf"
+	father=1002 # Baldur
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_baldur
+	651.1.1={
+		birth=yes
+	}
+	663.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_major_baldur"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	671.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}		
+	683.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+1205={
+	name="Sigurd"
+	father=1002 # Baldur
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_baldur
+	652.1.1={
+		birth=yes
+	}
+	664.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldur"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	672.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}		
+	691.1.1={
+		death = yes
+	}
+}
+1206={
+	name="Gunhild"
+	female=yes
+	father=1204 
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_baldur
+	668.1.1={
+		birth=yes
+	}
+	680.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_major_baldur"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	685.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}		
+	703.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+1207={
+	name="Filip"
+	mother=1206 
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_baldur
+	684.1.1={
+		birth=yes
+	}
+	696.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_major_baldur"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	704.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}		
+	720.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+1208={
+	name="Östen"
+	father=1205
+	dynasty=1002
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_baldur
+	683.1.1={
+		birth=yes
+	}
+	695.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldur"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 			
+	736.1.1={
+		death = yes
+	}
+}
+
+# Non-canon; descendants of Blagi
+1209={
+	name="Iliana"
+	female=yes
+	father=1003 # Blagi
+	dynasty=1003
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_blagi
+	653.1.1={
+		birth=yes
+	}
+	665.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		remove_trait="holy_blood_latent_blagi"
+		add_trait="holy_blood_major_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	713.1.1={
+		death = yes
+	}
+}
+1210={
+	name="Karin"
+	female=yes
+	mother=1209
+	dynasty=1003
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_blagi
+	675.1.1={
+		birth=yes
+	}
+	677.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		remove_trait="holy_blood_latent_blagi"
+		add_trait="holy_blood_major_blagi"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	733.1.1={
+		death = yes
+	}
+}
+
+# Non-canon; descendants of Fala
+1211={
+	name="Freja"
+	female=yes
+	mother=1004 # Fala
+	dynasty=1004
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_fala
+	650.1.1={
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_major_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	670.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_mage_knight_female"
+	}
+	708.1.1={
+		death = yes
+	}
+}
+1212={
+	name="Sara"
+	female=yes
+	mother=1004 # Fala
+	dynasty=1004
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_fala
+	655.1.1={
+		birth=yes
+	}
+	667.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_minor_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	675.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+1213={
+	name="Ylva"
+	female=yes
+	mother=1211 # 
+	dynasty=1004
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_fala
+	668.1.1={
+		birth=yes
+	}
+	680.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_major_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	687.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}
+	722.1.1={
+		death = yes
+	}
+}
+1214={
+	name="Sigrid"
+	female=yes
+	mother=1213 # 
+	dynasty=1004
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_fala
+	686.1.1={
+		birth=yes
+	}
+	680.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_major_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	700.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_mage_knight_female"
+	}
+	710.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# Non-canon; ancestors for Hilda
+1215={
+	name="Håkan"
+	dynasty=1017
+	culture=grannvalean
+	religion=church_of_edda
+	655.1.1={
+		birth=yes
+	}	
+	672.1.1={
+		add_spouse=1212
+	}		
+	702.1.1={
+		death = yes
+	}
+}
+1216={
+	name="Ingvar"
+	father=1215
+	mother=1212 
+	dynasty=1017
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_fala
+	675.1.1={
+		birth=yes
+	}
+	687.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_minor_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	728.1.1={
+		death = yes
+	}
+}
+1217={
+	name="Helgi"
+	father=1216
+	dynasty=1017
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_fala
+	708.1.1={
+		birth=yes
+	}
+	720.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_fala"
+		add_trait="holy_blood_minor_fala"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	755.1.1={
+		death = yes
+	}
+}
+# Non-canon; descendants of Tordo
+1218={
+	name="Torbjörn"
+	father=1005 # Tordo
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_tordo
+	650.1.1={
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_tordo"
+		add_trait="holy_blood_major_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	670.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+	}
+	685.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+1219={
+	name="Thordis"
+	female=yes
+	father=1218
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_tordo
+	667.1.1={
+		birth=yes
+	}
+	679.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_tordo"
+		add_trait="holy_blood_major_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	687.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	}
+	708.1.1={
+		death = yes
+	}
+}
+1220={
+	name="Ragnar"
+	mother=1219
+	dynasty=1005
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_tordo
+	683.1.1={
+		birth=yes
+	}
+	695.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		remove_trait="holy_blood_latent_tordo"
+		add_trait="holy_blood_major_tordo"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	703.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}
+	719.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Non-canon; descendants of Neir
+1221={
+	name="Niklas"
+	father=1006 # Neir
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_neir
+	650.1.1={
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_neir"
+		add_trait="holy_blood_major_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	670.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}
+	701.1.1={
+		death = yes
+	}
+}
+1222={
+	name="Jedvard"
+	father=1221 # 
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_neir
+	668.1.1={
+		birth=yes
+	}
+	680.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		remove_trait="holy_blood_latent_neir"
+		add_trait="holy_blood_major_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	690.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	717.1.1={
+		death = yes
+	}
+}
+1223={
+	name="Lars"
+	father=1222 # 
+	dynasty=1006
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_neir
+	684.1.1={
+		birth=yes
+	}
+	696.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		remove_trait="holy_blood_latent_neir"
+		add_trait="holy_blood_major_neir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	700.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	726.1.1={
+		death = yes
+	}
+}
+
+# Non-canon; descendants of Ulir
+1224={
+	name="Tolir"
+	father=1007 # Ulir
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_ulir
+	651.1.1={
+		birth=yes
+	}
+	663.01.01={
+		add_trait="class_archer"
+		add_trait="base_class_archer"
+		remove_trait="holy_blood_latent_ulir"
+		add_trait="holy_blood_major_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	671.1.1 = {
+		remove_trait="class_archer"
+		add_trait="class_sniper"
+	}
+	702.1.1={
+		death = yes
+	}
+}
+1225={
+	name="Ingrid"
+	female=yes
+	father=1224 # 
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_ulir
+	667.1.1={
+		birth=yes
+	}
+	679.01.01={
+		add_trait="class_archer_female"
+		add_trait="base_class_archer"
+		remove_trait="holy_blood_latent_ulir"
+		add_trait="holy_blood_major_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	687.1.1 = {
+		remove_trait="class_archer_female"
+		add_trait="class_horse_archer_female"
+	}
+	718.1.1={
+		death = yes
+	}
+}
+1226={
+	name="Ragnfrid"
+	female=yes
+	mother=1225 # 
+	dynasty=1007
+	culture=grannvalean
+	religion=church_of_edda
+	trait=holy_blood_latent_ulir
+	685.1.1={
+		birth=yes
+	}
+	697.01.01={
+		add_trait="class_archer_female"
+		add_trait="base_class_archer"
+		remove_trait="holy_blood_latent_ulir"
+		add_trait="holy_blood_major_ulir"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	707.1.1 = {
+		remove_trait="class_archer_female"
+		add_trait="class_sniper_female"
+	}
+	722.1.1={
+		add_trait=wounded
+		death = {
+			death_reason=death_trait
+		} 
+	}
+}
+# Non-canon; mother for Laylea and Charlot
+1246={
+	name="Gytha"
+	female=yes
+	dynasty=1041
+	culture=grannvalean
+	religion=church_of_edda
+	741.1.1={
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_dancer"
+		add_trait="base_class_dancer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	765.1.1={
+		death = {
+			death_reason=death_missing 
+		}
+	}
+}
+# Lene's substitute
+1247={
+	name="Laylea"
+	female=yes
+	dynasty=1041
+	mother=1246
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	758.1.1={ # Older than Lene. 19?
+		birth=yes 
+	}
+	765.1.1={ 
+		#employer= # Bramsel of Darna
+	}
+	770.01.01={
+		add_trait="class_dancer"
+		add_trait="base_class_dancer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	773.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="gregarious"
+		add_trait="lustful"
+		add_trait="honest"
+		add_trait="kind"
+		add_trait="brave"
+		add_trait="cynical"
+	}
+	 
+	779.1.1 = {
+		employer=1245 # Hannibal? Why not?
+	}	
+	
+	806.1.1={
+		death = yes
+	}
+}
+# Silvia's son
+1248={
+	name="Charlot"
+	dynasty=1041
+	#mother=1246 # Doesn't know who she was! Or even that Laylea is his sister?
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	764.1.1={ # Let's make him a year older than Coirpre
+		birth=yes
+	}
+	765.1.1={ 
+		#employer= # Bramsel of Darna
+	}
+	776.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	# Adopted by Hannibal
+	777.1.1={ 
+		employer=1245 
+		dynasty=1040
+		effect={
+			#set_mother = 0
+			c_1245 = {
+				ROOT = { set_father = PREV }
+			}
+			add_friend=1245 #Hannibal
+		}
+	}
+	779.1.1 = {
+		add_trait="scholarly_theologian"
+		add_trait="aggressive_leader" # Berserk staff?
+		add_trait="kind"
+		add_trait="just"
+		add_trait="charitable"
+		add_trait="brave"
+	} 
+	
+	823.1.1={
+		death = yes
 	}
 }

@@ -7,7 +7,7 @@ title = c_verdane
 max_settlements = 5
 
 b_verdane_castle = castle
-b_verdane = city
+#b_verdane = city
 b_verdane_2 = temple
 #b_wirten = castle
 #b_grandpre = castle
@@ -17,3 +17,20 @@ culture = verdanian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_verdane_castle = tribal
+}
+
+448.1.1 = { 
+	culture = verdanian
+}
+500.1.1 = { 
+	b_verdane_castle = castle
+	b_verdane = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = verdanian
+}

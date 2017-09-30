@@ -6,8 +6,8 @@ title = c_tahra
 # Settlements
 max_settlements = 4
 
-b_tahra = city
 b_tahra_castle = castle
+#b_tahra = city
 b_tahra_2 = temple
 #b_maol_ros = city
 
@@ -16,3 +16,19 @@ culture = mansterian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_tahra_castle = tribal
+}
+500.1.1 = { 
+	b_tahra_castle = castle
+b_tahra = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}
+666.1.1 = { 
+	culture = mansterian
+}

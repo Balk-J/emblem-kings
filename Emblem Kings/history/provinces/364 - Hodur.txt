@@ -8,8 +8,8 @@ max_settlements = 5
 
 b_hodur = castle
 b_hodur_2 = temple
-b_hodur_3 = city
-b_hod = city
+#b_hodur_3 = city
+#b_hod = city
 #b_hoder = temple
 
 # Misc
@@ -17,3 +17,17 @@ culture = agustrian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_hodur = tribal
+}
+500.1.1 = { 
+	b_hodur = castle
+	b_hodur_3 = city
+	b_hod = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = agustrian
+}

@@ -301,14 +301,14 @@ class_magic_seal= {
 		class_mage class_mage_female
 		class_sage class_sage_female
 		class_mage_knight class_mage_knight_female
-		class_shaman class_shaman_female
-		class_druid class_druid_female
-		class_summoner
+		class_dark_mage class_dark_mage_female
+		class_sorceror class_sorceror_female
+		#class_summoner
 		class_monk
 		class_cleric class_priest
 		class_bishop class_bishop_female
 		class_troubador
-		class_valkyrie
+		#class_valkyrie
 		class_war_priest class_war_cleric
 		class_archsage class_archdruid class_dark_druid
 	}
@@ -528,22 +528,6 @@ class_soldier= {
 	
 	pikemen_offensive = 0.05
 }
-class_summoner= {
-	health = 2
-	customizer = no
-	random = no
-	combat_rating = 2
-	
-	opposites =  {
-		class_magic_seal
-	}
-	
-	command_modifier = {
-		morale_offence = 0.025
-		morale_defence = 0.025
-	}
-	magic_users_defensive = 0.05
-}
 class_swordmaster= {
 	customizer = no
 	random = no
@@ -563,10 +547,6 @@ class_swordmaster_female= {
 	command_modifier = {
 		morale_offence = 0.05
 	}
-}
-class_tactician= {
-	customizer = no
-	random = no
 }
 class_thief= {
 	customizer = no
@@ -596,20 +576,6 @@ class_troubador= {
 	
 	command_modifier = {
 		morale_defence = 0.05
-	}
-}
-class_valkyrie= {
-	health = 2
-	customizer = no
-	random = no
-	combat_rating = 2
-	
-	opposites =  {
-		class_magic_seal
-	}
-	
-	command_modifier = {
-		morale_defence = 0.1
 	}
 }
 class_war_cleric= {
@@ -762,11 +728,6 @@ base_class_dark_mage = {
 	random = no
 	hidden = yes 
 }
-base_class_shaman = {
-	customizer = no
-	random = no
-	hidden = yes 
-}
 base_class_soldier = {
 	customizer = no
 	random = no
@@ -783,11 +744,6 @@ base_class_bard = {
 	hidden = yes 
 }
 base_class_manakete = {
-	customizer = no
-	random = no
-	hidden = yes 
-}
-base_class_tactician = {
 	customizer = no
 	random = no
 	hidden = yes 

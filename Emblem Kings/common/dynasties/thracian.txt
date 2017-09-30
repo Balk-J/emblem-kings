@@ -1,0 +1,94 @@
+# Canon
+1011={
+	can_appear=no
+	used_for_random=no
+	name="Thracia"
+	culture="thracian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1012={
+	can_appear=no
+	used_for_random=no
+	name="Leonster"
+	culture="thracian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+# for "Eyvel"
+1019={
+	can_appear=no
+	used_for_random=no
+	name="of Iss"
+	culture="thracian"
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 11
+            emblem = 0
+            color = 1
+            color = 12
+            color = 0
+        }
+    }
+}
+# for Febail and Patty
+1020={
+	can_appear=no
+	used_for_random=no
+	name="of Iss"
+	culture="thracian"
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 0
+            emblem = 0
+            color = 2
+            color = 0
+            color = 5
+        }
+    }
+}
+# for Hannibal
+1040={
+	can_appear=no
+	used_for_random=no
+	name="Kapathogia"
+	culture="thracian"
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 16
+            emblem = 0
+            color = 7
+            color = 5
+            color = 0
+        }
+    }
+}

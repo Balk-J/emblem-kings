@@ -1,0 +1,10 @@
+440.1.1={
+	holding_dynasty = 806 # Makes this a FAMILY_PALACE type Holding
+	liege="d_evans"
+}
+440.1.1={
+	holder=822
+}
+448.1.1={
+	holder=0
+}

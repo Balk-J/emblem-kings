@@ -6,3 +6,24 @@
 	liege = d_rivough
 	#holder = 0
 }
+440.1.1 = { 
+	holder=869 # 
+}
+741.1.1={
+	holder = 1139 # Rivough
+}
+756.12.1={
+	holder = 1130 # Mananan
+}
+757.1.1={
+	holder = 1134 # Mariccle
+}
+760.1.1={
+	holder = 1029 # Azmur 
+}
+761.1.1={
+	holder = 1073 # Danann
+}
+778.1.1={
+	holder=1136 # Shannan
+}

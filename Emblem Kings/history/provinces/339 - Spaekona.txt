@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_spaekona = castle
 b_spaekona_2 = temple
-b_spaekona_3 = city
+#b_spaekona_3 = city
 #b_volvur = city
 
 # Misc
@@ -16,3 +16,16 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_spaekona = tribal
+}
+500.1.1 = { 
+	b_spaekona = castle
+	b_spaekona_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

@@ -7,7 +7,7 @@ title = c_lysimachia
 max_settlements = 3
 
 b_lysimachia = castle
-b_lysimachia_2 = city
+#b_lysimachia_2 = city
 b_lysimachia_3 = temple
 
 # Misc
@@ -15,3 +15,16 @@ culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_lysimachia = tribal
+}
+500.1.1 = { 
+	b_lysimachia = castle
+b_lysimachia_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

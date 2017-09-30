@@ -6,3 +6,14 @@
 	liege = d_tirnanog
 	#holder = 0
 }
+440.1.1={
+	holder=867 # 
+}
+777.1.1={
+	holder=1038 # Seliph
+	liege = 0
+}
+779.1.1={
+	holder=0 # Seliph's done here
+	liege = d_tirnanog
+}

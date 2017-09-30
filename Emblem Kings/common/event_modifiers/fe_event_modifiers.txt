@@ -155,3 +155,23 @@ planning_invasion = {
 searching_for_regalia = {
 	icon = 1
 }
+vulenary_consumed = {
+	icon = 50
+	health = 1
+}
+concoction_consumed = {
+	icon = 50
+	health = 2
+}
+elixir_consumed = {
+	icon = 50
+	health = 3
+}
+population_massacred = {
+	levy_size = -1.0
+	levy_reinforce_rate = -1.0
+	local_tax_modifier = -1.0
+	local_build_time_modifier = 0.75
+	local_build_cost_modifier = 0.5
+	icon = 24	
+}

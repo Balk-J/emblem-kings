@@ -1,0 +1,193 @@
+# Canon
+1001={
+	can_appear=no
+	used_for_random=no
+	name="Belhalla"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1002={
+	can_appear=no
+	used_for_random=no
+	name="Chalphy"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1003={
+	can_appear=no
+	used_for_random=no
+	name="Edda"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1004={
+	can_appear=no
+	used_for_random=no
+	name="Velthomer"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1005={
+	can_appear=no
+	used_for_random=no
+	name="Friege"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1006={
+	can_appear=no
+	used_for_random=no
+	name="Dozel"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1007={
+	can_appear=no
+	used_for_random=no
+	name="Jungby"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1015={ # for Saias
+	can_appear=no
+	used_for_random=no
+	name="of Velthomer"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1016={ # for Cowen and Aida
+	name="of Spakona"
+	culture="grannvalean"
+}
+1017={ # for Hilda
+	name="of Spaekona"
+	culture="grannvalean"
+}
+1018={ # for Liza
+	name="of Frigg"
+	culture="grannvalean"
+}
+1039={ # for Sylvia
+	can_appear=no
+	used_for_random=no
+	name="of Edda"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 29
+            emblem = 0
+            color = 3
+            color = 1
+            color = 13
+        }
+    }
+}
+1041={ # for Laylea
+	can_appear=no
+	used_for_random=no
+	name="of Havamal"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 14
+            emblem = 0
+            color = 1
+            color = 8
+            color = 11
+        }
+    }
+}

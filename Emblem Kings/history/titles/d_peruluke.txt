@@ -6,3 +6,12 @@
 	liege = k_miletos
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_melgln
+}
+649.1.1={
+	de_jure_liege = k_miletos
+}
+764.1.1={
+	holder=1069 # Hilda TODO: correct this
+}

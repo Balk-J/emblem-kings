@@ -4,16 +4,31 @@
 title = c_friege
 
 # Settlements
-max_settlements = 5
+max_settlements = 6
 
 b_friege_castle = castle
 b_friege = temple
-b_friege_2 = city
-b_frigg = castle
+#b_friege_2 = city
+#b_frigg = castle
 #b_vethorm = castle
+#b_sonnung = castle
 
 # Misc
 culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_friege_castle = tribal
+}
+500.1.1 = { 
+	b_friege_castle = castle
+	b_friege_2 = city
+	b_frigg = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

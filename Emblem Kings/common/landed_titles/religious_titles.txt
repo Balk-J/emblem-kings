@@ -181,3 +181,29 @@ d_earthen = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+
+d_loptyrian = {
+	color={ 76 56 80 }
+	color2={ 220 220 0 }
+	
+	capital = 525 # Yied
+	
+	#title = "HEAD_PRIEST"
+	#title_female = "HEAD_PRIESTESS"
+	#foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = loptyrian
+	
+	religion = loptyrian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

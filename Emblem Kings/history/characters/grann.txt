@@ -1,0 +1,2244 @@
+801={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+    #dna="aecbhgbiay" 
+    #dna="aaafgudafgs"   
+	dna="agfab0i00e0"
+    #properties="cd0cek00000000"
+	#properties="cd0eod00000000"
+	properties="0e0a0000000000"
+	religion=earthen_pagan
+	disallow_random_traits=yes
+	410.1.1={
+		birth=yes
+		culture=grann
+	}
+	422.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	425.01.01={
+		add_trait="mastermind_theologian"
+		add_trait="mystic"
+		add_trait="ambitious"
+		add_trait="diligent"
+		add_trait="arbitrary"
+		add_trait="cynical"
+	} 
+	 
+	430.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	435.1.1 = {
+		add_trait=on_pilgrimage
+	}	
+	
+	# Descent of Loptyr
+	440.1.1 = {
+		remove_trait=on_pilgrimage
+		religion=loptyrian
+		add_trait=holy_blood_major_loptyr
+		add_trait=possessed_loptyr
+		effect = {
+			loptyr_possession_effect = yes
+		}
+	}	
+	440.01.01={
+		effect = {
+			spawn_unit = {
+				owner = ROOT
+				province = 514 # Galle's Landing, Sunnemo
+				troops = {
+					magic_users = { 1000 1000 }
+					heavy_infantry = { 2000 2000 }
+				}
+				attrition = 0
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				owner = ROOT
+				province = 514 # Galle's Landing, Sunnemo
+				troops = {
+					magic_users = { 1000 1000 }
+					heavy_infantry = { 2000 2000 }
+				}
+				attrition = 0
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				owner = ROOT
+				province = 514 # Galle's Landing, Sunnemo
+				troops = {
+					magic_users = { 1000 1000 }
+					heavy_infantry = { 2000 2000 }
+				}
+				attrition = 0
+				maintenance_multiplier = 0
+			}
+		}
+	}
+	457.1.1={
+		death = yes
+	}
+}
+
+802={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=801 # Galle I
+	trait=holy_blood_latent_loptyr
+	441.1.1={
+		birth=yes
+		culture=grann
+	}
+	453.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	456.01.01={
+		add_trait="brilliant_strategist"
+	} 
+	456.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	457.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	460.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+803={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=801 # Galle I
+	trait=holy_blood_latent_loptyr
+	442.1.1={
+		birth=yes
+		culture=grann
+		effect = {
+			set_name = "Maira"
+		}
+	}
+	454.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	457.01.01={
+		add_trait="elusive_shadow"
+	} 
+	 
+	458.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	460.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	463.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+804={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=801 # Galle I
+	trait=holy_blood_latent_loptyr
+	443.1.1={
+		birth=yes
+		culture=grann
+		effect = {
+			set_name = "Egill"
+		}
+	}
+	455.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	458.01.01={
+		add_trait="scholarly_theologian"
+	} 
+	 
+	458.2.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	463.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	480.1.1={
+		death = {
+			death_reason=death_murder
+		}
+	}
+}
+805={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=804 # Galle IV
+	trait=holy_blood_latent_loptyr
+	459.1.1={
+		birth=yes
+		culture=grann
+	}
+	471.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	474.01.01={
+		add_trait="grey_eminence"
+	} 
+	 
+	475.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	480.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	481.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+806={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=804 # Galle IV
+	trait=holy_blood_latent_loptyr
+	460.1.1={
+		birth=yes
+		culture=grann
+		effect = {
+			set_name = "Tolir"
+		}
+	}
+	472.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	475.01.01={
+		add_trait="skilled_tactician"
+	} 
+	 
+	476.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	481.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	482.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+807={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=804 # Galle IV
+	trait=holy_blood_latent_loptyr
+	461.1.1={
+		birth=yes
+		culture=grann
+		effect = {
+			set_name = "Hakon"
+		}
+	}
+	473.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	476.01.01={
+		add_trait="intricate_webweaver"
+	} 
+	 
+	477.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	482.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	485.1.1={
+		death = {
+			death_reason=death_murder
+		}
+	}
+}
+808={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=804 # Galle IV
+	trait=holy_blood_latent_loptyr
+	462.1.1={
+		birth=yes
+		culture=grann
+		effect = {
+			set_name = "Magnus"
+		}
+	}
+	474.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	477.01.01={
+		add_trait="mastermind_theologian"
+	} 
+	 
+	478.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	485.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	500.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+809={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=808 # Galle VIII
+	trait=holy_blood_latent_loptyr
+	479.1.1={
+		birth=yes
+		culture=grann
+	}
+	493.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	494.01.01={
+		add_trait="fortune_builder"
+	} 
+	 
+	495.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	500.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	515.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+810={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=809 # Galle IX
+	trait=holy_blood_latent_loptyr
+	495.1.1={
+		birth=yes
+		culture=grann
+	}
+	507.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	510.01.01={
+		add_trait="scholarly_theologian"
+	} 
+	 
+	511.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	515.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	517.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+811={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=809 # Galle IX
+	trait=holy_blood_latent_loptyr
+	496.1.1={
+		birth=yes
+		culture=grann
+	}
+	508.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	511.01.01={
+		add_trait="mastermind_theologian"
+	} 
+	 
+	512.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	517.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	529.1.1={
+		death = {
+			death_reason=death_murder
+		}
+	}
+}
+812={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=811 # Galle XI
+	trait=holy_blood_latent_loptyr
+	512.1.1={
+		birth=yes
+		culture=grann
+	}
+	524.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	527.01.01={
+		add_trait="brilliant_strategist"
+	} 
+	 
+	528.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	529.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	545.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+813={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=812 # Galle XII
+	trait=holy_blood_latent_loptyr
+	528.1.1={
+		birth=yes
+		culture=grann
+	}
+	540.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	543.01.01={
+		add_trait="elusive_shadow"
+	} 
+	 
+	544.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	545.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	562.1.1={
+		death = {
+			death_reason=death_murder
+		}
+	}
+}
+814={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=813 # Galle XIII
+	trait=holy_blood_latent_loptyr
+	545.1.1={
+		birth=yes
+		culture=grann
+	}
+	557.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	560.01.01={
+		add_trait="skilled_tactician"
+	} 
+	 
+	561.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	562.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	578.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+815={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=814 # Galle XIV
+	trait=holy_blood_latent_loptyr
+	561.1.1={
+		birth=yes
+		culture=grann
+	}
+	573.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	576.01.01={
+		add_trait="scholarly_theologian"
+	} 
+	 
+	577.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	578.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	594.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+816={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=815 # Galle XV
+	trait=holy_blood_latent_loptyr
+	577.1.1={
+		birth=yes
+		culture=grann
+	}
+	589.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	592.01.01={
+		add_trait="brilliant_strategist"
+	} 
+	 
+	593.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	594.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	611.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+817={
+	name="Galle"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	#disallow_random_traits=yes
+	father=816 # Galle XVI
+	trait=holy_blood_latent_loptyr
+	593.1.1={
+		birth=yes
+		culture=grann
+	}
+	605.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_major_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	608.01.01={
+		add_trait="elusive_shadow"
+	} 
+	 
+	610.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
+	}	
+	
+	611.1.1 = {
+		effect = {
+			loptyr_possession_effect = yes
+			set_name = "Galle"
+		}
+	}	
+		
+	648.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1001 # Heim
+		}
+	}
+}
+818={
+	name="Maira"
+	dynasty=801
+	culture=grannvalean
+	religion=loptyrian
+	disallow_random_traits=yes
+	father=811 # Galle XI
+	trait=holy_blood_latent_loptyr
+	515.1.1={
+		birth=yes
+		culture=grann
+	}
+	527.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	530.1.1 = {
+		add_trait="theologian"
+		add_trait="mastermind_theologian"
+		add_trait="kind"
+		add_trait="charitable"
+		add_trait="brave"
+		add_trait="just"
+		add_trait="honest"
+	}	
+	 
+	531.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+		effect = {
+			set_variable = { which = "level" value = 10 }
+		}
+	}	
+	535.1.1={
+		religion=mairist
+	}
+	 
+	536.1.1 = {
+		add_trait="disinherited"
+		employer=1188 # Spirit Forest
+	}	
+		
+	595.1.1={
+		give_nickname=nick_the_saint
+		death=yes
+	}
+}
+
+# Non-canon characters
+# Grann republic patricians
+819={
+	name="Tolir"
+	dynasty=803
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	448.1.1={
+		death = {
+			death_reason=death_battle
+			killer=801 # Galle I
+		}
+	}
+}
+820={
+	name="Falki"
+	dynasty=804
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	448.1.1={
+		death = {
+			death_reason=death_battle
+			killer=801 # Galle I
+		}
+	}
+}
+821={
+	name="BjÃ¶rn"
+	dynasty=805
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	448.1.1={
+		death = {
+			death_reason=death_battle
+			killer=801 # Galle I
+		}
+	}
+}
+822={
+	name="Ulfr"
+	dynasty=806
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	448.1.1={
+		death = {
+			death_reason=death_battle
+			killer=801 # Galle I
+		}
+	}
+}
+823={
+	name="Dan"
+	dynasty=807
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	448.1.1={
+		death = {
+			death_reason=death_battle
+			killer=801 # Galle I
+		}
+	}
+}
+# Random vassals
+
+# Jungby
+824={
+	name="Olafr"
+	culture=grann
+	religion=earthen_pagan
+	420.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	449.1.1={
+		death = {
+			death_reason=death_execution
+			killer=801 # Galle I, in the "Great Purge" 
+		}
+	}
+}
+# Genoa
+825={
+	name="Gerðr"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	422.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	449.1.1={
+		death = {
+			death_reason=death_execution
+			killer=801 # Galle I, in the "Great Purge" 
+		}
+	}
+}
+# Nordion
+826={
+	name="Nils"
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	449.1.1={
+		death = {
+			death_reason=death_execution
+			killer=801 # Galle I, in the "Great Purge" 
+		}
+	}
+}
+# Hierhein
+827={
+	name="Helena"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	410.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	449.1.1={
+		death = {
+			death_reason=death_execution
+			killer=801 # Galle I, in the "Great Purge" 
+		}
+	}
+}
+# Anphony
+828={
+	name="Alfrið"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	424.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	449.1.1={
+		death = {
+			death_reason=death_execution
+			killer=801 # Galle I, in the "Great Purge" 
+		}
+	}
+}
+# Silvail
+829={
+	name="Sörkver"
+	culture=grann
+	religion=earthen_pagan
+	415.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	449.1.1={
+		death = {
+			death_reason=death_execution
+			killer=801 # Galle I, in the "Great Purge" 
+		}
+	}
+}
+# Friege
+830={
+	name="Þordr"
+	culture=grann
+	religion=earthen_pagan
+	401.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	492.1.1={
+		death = yes
+	}
+}
+# Malpas, Moresk
+831={
+	name="Rikissa"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	414.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	474.1.1={
+		death = yes
+	}
+}
+# Mackily, Truro
+832={
+	name="Toke"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	479.1.1={
+		death = yes
+	}
+}
+# Hromundar, Griplur
+833={
+	name="Hæsteinn"
+	culture=grann
+	religion=earthen_pagan
+	403.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	463.1.1={
+		death = yes
+	}
+}
+# Nerthus (agusty)
+834={
+	name="Niklas"
+	culture=grann
+	religion=earthen_pagan
+	420.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	469.1.1={
+		death = yes
+	}
+} 
+# Hoder, Hotherus
+835={
+	name="Hroðulfr"
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	480.1.1={
+		death = yes
+	}
+}
+# Madino
+836={
+	name="Fredrik"
+	culture=grann
+	religion=earthen_pagan
+	402.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	457.1.1={
+		death = yes
+	}
+}
+# Verdane
+837={
+	name="Vagn"
+	dynasty=1014
+	culture=grann
+	religion=earthen_pagan
+	411.1.1={
+		birth=yes
+		culture=grann
+	}
+	448.1.1 = { 
+		culture = verdanian
+	}	
+	466.1.1={
+		death = yes
+	}
+}
+# Western Marpha
+838={
+	name="Hrolfr"
+	culture=grann
+	religion=earthen_pagan
+	401.1.1={
+		birth=yes
+		culture=grann
+	}
+	448.1.1 = { 
+		culture = verdanian
+	}
+	
+	452.1.1={
+		death = yes
+	}
+}
+# Eastern Marpha
+839={
+	name="Mats"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	448.1.1 = { 
+		culture = verdanian
+	}
+	
+	469.1.1={
+		death = yes
+	}
+}
+# Stenay
+840={
+	name="Tjudmund"
+	culture=grann
+	religion=earthen_pagan
+	425.1.1={
+		birth=yes
+		culture=grann
+	}
+	448.1.1 = { 
+		culture = verdanian
+	}
+	
+	500.1.1={
+		death = yes
+	}
+}
+# Spirit Forest
+841={
+	name="Sumarliði"
+	culture=grann
+	religion=earthen_pagan
+	390.1.1={
+		birth=yes
+		culture=grann
+	}
+	448.1.1 = { 
+		culture = verdanian
+	}
+	
+	460.1.1={
+		death = yes
+	}
+}
+# Belhalla, Donar, Spakona, Glasir
+842={
+	name="Valdemar"
+	culture=grann
+	religion=earthen_pagan
+	410.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	471.1.1={
+		death = yes
+	}
+}
+# South Belhalla
+843={
+	name="Ylva"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	420.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	491.1.1={
+		death = yes
+	}
+}
+# Spaekona
+844={
+	name="Sigbjörn"
+	culture=grann
+	religion=earthen_pagan
+	405.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	465.1.1={
+		death = yes
+	}
+}
+# Velthomer
+845={
+	name="Vigdis"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	416.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	478.1.1={
+		death = yes
+	}
+}
+# d_edda, c_edda, c_lokasenna
+846={
+	name="Egill"
+	culture=grann
+	religion=earthen_pagan
+	420.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	477.1.1={
+		death = yes
+	}
+}
+# D_dozel, monza
+847={
+	name="Dag"
+	culture=grann
+	religion=earthen_pagan
+	419.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	479.1.1={
+		death = yes
+	}
+}
+# Lombardy
+848={
+	name="Birgitta"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	418.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	469.1.1={
+		death = yes
+	}
+}
+# chalphy, harbadslod,duchy
+849={
+	name="Þorsteinn"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	492.1.1={
+		death = yes
+	}
+}
+# Thjalfi
+850={
+	name="Þyra"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	423.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	501.1.1={
+		death = yes
+	}
+}
+# Roskva
+851={
+	name="Rögnhildr"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	422.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	500.1.1={
+		death = yes
+	}
+}
+# d_melgn, dungot, iassos, havamal
+852={
+	name="Greger"
+	culture=grann
+	religion=earthen_pagan
+	418.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	488.1.1={
+		death = yes
+	}
+}
+# Grimnismal
+853={
+	name="Gurli"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	416.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	459.1.1={
+		death = yes
+	}
+}
+# alvissmal
+854={
+	name="Asbjörn"
+	culture=grann
+	religion=earthen_pagan
+	425.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	510.1.1={
+		death = yes
+	}
+}
+# d_miletos
+855={
+	name="Snorri"
+	culture=grann
+	religion=earthen_pagan
+	400.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	468.1.1={
+		death = yes
+	}
+}
+# Miletos
+856={
+	name="Starkaðr"
+	culture=grann
+	religion=earthen_pagan
+	420.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	466.1.1={
+		death = yes
+	}
+}
+# Chronos
+857={
+	name="Klas"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	459.1.1={
+		death = yes
+	}
+}
+# Souhern Peruluke
+858={
+	name="Einarr"
+	culture=grann
+	religion=earthen_pagan
+	422.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	468.1.1={
+		death = yes
+	}
+}
+# Rada
+859={
+	name="Rikulfr"
+	culture=grann
+	religion=earthen_pagan
+	399.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	442.1.1={
+		death = yes
+	}
+}
+# Hagfors
+860={
+	name="Hrafn"
+	culture=grann
+	religion=earthen_pagan
+	386.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	441.1.1={
+		death = yes
+	}
+}
+# d_lubeck
+861={
+	name="Filip"
+	culture=grann
+	religion=earthen_pagan
+	401.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	488.1.1={
+		death = yes
+	}
+}
+# Sailane
+862={
+	name="Saga"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	419.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	480.1.1={
+		death = yes
+	}
+}
+# Kozle 
+863={
+	name="Kettil"
+	culture=grann
+	religion=earthen_pagan
+	398.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	453.1.1={
+		death = yes
+	}
+}
+# Glogow, Jawor
+864={
+	name="Guðröðr"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	492.1.1={
+		death = yes
+	}
+}
+# Thove, Bytow
+865={
+	name="Birgitta"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	418.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	470.1.1={
+		death = yes
+	}
+}
+# Silesse 
+866={
+	name="Steinn"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	501.1.1={
+		death = yes
+	}
+}
+# Tir
+867={
+	name="Þyra"
+	culture=grann
+	religion=earthen_pagan
+	414.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	489.1.1={
+		death = yes
+	}
+}
+# Ganeishire, Abergele, Easaw 
+868={
+	name="Gunnarr"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	503.1.1={
+		death = yes
+	}
+}
+# Rivough
+869={
+	name="Ragnarr"
+	culture=grann
+	religion=earthen_pagan
+	401.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	463.1.1={
+		death = yes
+	}
+}
+# Isaach
+870={
+	name="Arnfast"
+	culture=grann
+	religion=earthen_pagan
+	415.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	482.1.1={
+		death = yes
+	}
+}
+# Mohcdre, Ruthin, Aobh, Sophara
+871={
+	name="Sigrid"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	419.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	488.1.1={
+		death = yes
+	}
+}
+# Darna, Gorias, Yied
+872={
+	name="Dyre"
+	culture=grann
+	religion=earthen_pagan
+	411.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	493.1.1={
+		death = yes
+	}
+}
+# Murias
+873={
+	name="Magnus"
+	culture=grann
+	religion=earthen_pagan
+	424.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	486.1.1={
+		death = yes
+	}
+}
+# Anu, Falias
+874={
+	name="Anundr"
+	culture=grann
+	religion=earthen_pagan
+	415.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	475.1.1={
+		death = yes
+	}
+}
+# Aed 
+875={
+	name="Alvör"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	422.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	500.1.1={
+		death = yes
+	}
+}
+# Siwa
+876={
+	name="Suni"
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	501.1.1={
+		death = yes
+	}
+}
+# Phinora
+877={
+	name="Folki"
+	culture=grann
+	religion=earthen_pagan
+	409.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	489.1.1={
+		death = yes
+	}
+}
+# Kharga
+878={
+	name="Kristina"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	412.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	468.1.1={
+		death = yes
+	}
+}
+# Farafra
+879={
+	name="Freyja"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	425.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	499.1.1={
+		death = yes
+	}
+}
+# Bahariya
+880={
+	name="Borkvard"
+	culture=grann
+	religion=earthen_pagan
+	420.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	460.1.1={
+		death = yes
+	}
+}
+# Gallipoli, Chariopolis
+881={
+	name="Guðmundr"
+	culture=grann
+	religion=earthen_pagan
+	411.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	459.1.1={
+		death = yes
+	}
+}
+# d_grutia
+882={
+	name="Gyða"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	475.1.1={
+		death = yes
+	}
+}
+# d_thracia
+883={
+	name="Tryggve"
+	culture=grann
+	religion=earthen_pagan
+	414.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	499.1.1={
+		death = yes
+	}
+}
+# Madyta, Galata
+884={
+	name="Gloð"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	421.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	468.1.1={
+		death = yes
+	}
+}
+# Iss, Aonach, Cealsea
+885={
+	name="Ivar"
+	culture=grann
+	religion=earthen_pagan
+	413.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	468.1.1={
+		death = yes
+	}
+}
+# Savan, Iubhr, Eochail
+886={
+	name="Sæmundr"
+	culture=grann
+	religion=earthen_pagan
+	409.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	458.1.1={
+		death = yes
+	}
+}
+# c_selymbria, c_luthecia, c_frest
+887={
+	name="Bengt"
+	culture=grann
+	religion=earthen_pagan
+	401.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	472.1.1={
+		death = yes
+	}
+}
+# lysimachia
+888={
+	name="Malmfrið"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	418.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	466.1.1={
+		death = yes
+	}
+}
+# Blachernae
+889={
+	name="Bothildr"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	411.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	482.1.1={
+		death = yes
+	}
+}
+# Tahra
+890={
+	name="Tjudmund"
+	culture=grann
+	religion=earthen_pagan
+	402.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	471.1.1={
+		death = yes
+	}
+}
+# Meace, Fionnglas
+891={
+	name="Magnus"
+	culture=grann
+	religion=earthen_pagan
+	416.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	463.1.1={
+		death = yes
+	}
+}
+# Dandrum, Dakia
+892={
+	name="Dan"
+	culture=grann
+	religion=earthen_pagan
+	407.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	461.1.1={
+		death = yes
+	}
+}
+# Violdrake, Ailinne
+893={
+	name="Alfgeir"
+	culture=grann
+	religion=earthen_pagan
+	409.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	470.1.1={
+		death = yes
+	}
+}
+# Kapathogia (K, Noel, Daru)
+894={
+	name="Barca"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	419.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	471.1.1={
+		death = yes
+	}
+}
+# Heraclea, Panidos
+895={
+	name="Holmfrid"
+	culture=grann
+	religion=earthen_pagan
+	422.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	490.1.1={
+		death = yes
+	}
+}
+# Conote
+896={
+	name="Kjartan"
+	culture=grann
+	religion=earthen_pagan
+	404.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	458.1.1={
+		death = yes
+	}
+}
+# Leinster
+897={
+	name="Linda"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	409.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	473.1.1={
+		death = yes
+	}
+}
+# Kelves
+898={
+	name="Kol"
+	culture=grann
+	religion=earthen_pagan
+	418.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	468.1.1={
+		death = yes
+	}
+}
+# Manster
+899={
+	name="Markus"
+	culture=grann
+	religion=earthen_pagan
+	419.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	471.1.1={
+		death = yes
+	}
+}
+# Melfeye
+1014={
+	name="Maria"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	416.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	470.1.1={
+		death = yes
+	}
+}
+# Solwood
+1015={
+	name="Sölvi"
+	culture=grann
+	religion=earthen_pagan
+	406.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	459.1.1={
+		death = yes
+	}
+}
+# Gartan
+1016={
+	name="Grimr"
+	culture=grann
+	religion=earthen_pagan
+	423.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	488.1.1={
+		death = yes
+	}
+}
+# Alster, Airgialla, Clochar
+1017={
+	name="Aleta"
+	female = yes
+	culture=grann
+	religion=earthen_pagan
+	419.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	489.1.1={
+		death = yes
+	}
+}
+# Osraige, Latharna
+1018={
+	name="Ofeig"
+	culture=grann
+	religion=earthen_pagan
+	422.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	496.1.1={
+		death = yes
+	}
+}
+# Orgahil
+1019={
+	name="Örvar"
+	culture=grann
+	religion=earthen_pagan
+	416.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	485.1.1={
+		death = yes
+	}
+}
+# Blagi
+1020={
+	name="Edla"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	424.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	492.1.1={
+		death = yes
+	}
+}

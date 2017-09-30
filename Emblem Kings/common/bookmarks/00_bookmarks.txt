@@ -1,3 +1,186 @@
+
+bm_fe4_descent_of_loptyr =
+{
+	name = "bm_fe4_descent_of_loptyr"
+	desc = "bm_fe4_descent_of_loptyr_desc"
+	date = 440.1.1
+	
+	era = yes						## Will be shown on Era screen.
+	custom_start = yes				## Choosing "Custom Start" will open this bookmark
+	picture = GFX_pick_era_image_1
+	
+	selectable_character = {
+		id = 801 # Bishop Galle I
+		age = 17
+		name = ERA_CHAR_NAME_GALLE_I
+		title = d_loptyr 
+		title_name = d_loptyr 
+		character = {
+			religion="loptyrian"
+			dna="agfab0i00e0"
+			properties="0e0a0000000000"
+			culture="grannvalean"
+			government = feudal_government
+			dynasty=801			
+		}
+	}
+	# Grann Republic
+	# Verdane
+	# Miletos
+	# Rivough
+	# Conote
+}
+bm_fe4_founding_of_jugdral =
+{
+	name = "bm_fe4_founding_of_jugdral"
+	desc = "bm_fe4_founding_of_jugdral_desc"
+	date = 649.1.1
+	
+	selectable_character = {
+		id = 1001 # Heim
+		age = 33
+		name = ERA_CHAR_NAME_HEIM
+		title = k_grannvale 
+		title_name = k_grannvale 
+		character = {
+			#dna="bjafijifecn" 
+			#properties="ci0ehd00000000"
+			religion="church_of_edda"
+			culture="grannvalean"
+			government = feudal_government
+			dynasty=1001		
+		}
+	}
+	# Hezul
+	# Ced
+	# Odo
+	# Dain
+	# Loptyrians
+}
+
+bm_fe4_birth_of_the_holy_knight =
+{
+	name = "bm_fe4_birth_of_the_holy_knight"
+	desc = "bm_fe4_birth_of_the_holy_knight_desc"
+	date = 757.1.1
+	
+	era = yes						## Will be shown on Era screen.
+	picture = GFX_pick_era_image_2
+	
+	selectable_character = {
+		id = 1032 # Sigurd
+		age = 22
+		name = ERA_CHAR_NAME_SIGURD
+		title = d_chalphy 
+		title_name = d_chalphy 
+		character = {
+			dna="cf0ge0gb0f0"
+			properties="fd0e0d00000000"
+			religion="church_of_edda"
+			culture="grannvalean"
+			government = feudal_government
+			dynasty=1002		
+		}
+	}
+	# Batou
+	selectable_character = {
+		id = 1049 # Arvis
+		age = 25
+		name = ERA_CHAR_NAME_ARVIS
+		title = d_velthomer 
+		title_name = d_velthomer 
+		character = {
+			dna="0ficb0ebj00"
+			properties="cj0d0d00000000"
+			religion="church_of_edda"
+			culture="grannvalean"
+			government = feudal_government
+			dynasty=1004		
+		}
+	}
+	# Manfroy
+	selectable_character = {
+		id = 1134 # Mariccle
+		age = 29
+		name = ERA_CHAR_NAME_MARICCLE
+		title = k_isaach 
+		title_name = k_isaach 
+		character = {  
+			dna="0ca0h0dcaa0"
+			properties="ag0a0c00000000"
+			religion="church_of_edda"
+			culture="isaachian"
+			government = feudal_government
+			dynasty=1010		
+		}
+	}
+	selectable_character = {
+		id = 1029 # Azmur
+		age = 65
+		name = ERA_CHAR_NAME_AZMUR
+		title = k_grannvale 
+		title_name = k_grannvale 
+		character = {  
+			dna="0bhc00bbc00"
+			properties="al0adc00000000"
+			religion="church_of_edda"
+			culture="grannvalean"
+			government = feudal_government
+			dynasty=1001		
+		}
+	}
+}
+# Leif
+# Bloom
+# Raydrik
+# Travant
+# Veld?
+# Ced
+bm_fe4_the_last_holy_war =
+{
+	name = "bm_fe4_the_last_holy_war"
+	desc = "bm_fe4_the_last_holy_war_desc"
+	date = 777.1.1
+	
+	era = yes						## Will be shown on Era screen.
+	picture = GFX_pick_era_image_3
+	
+	selectable_character = {
+		id = 1038 # Seliph
+		age = 18
+		name = ERA_CHAR_NAME_SELIPH
+		title = c_tirnanog 
+		title_name = c_tirnanog 
+		character = {
+			dna="bjafijifecn" 
+			properties="ci0ehd00000000"
+			religion="church_of_edda"
+			culture="grannvalean"
+			government = feudal_government
+			dynasty=1002		
+		}
+	}
+	# Leif
+	selectable_character = {
+		id = 1051 # Julius
+		age = 16
+		name = ERA_CHAR_NAME_JULIUS
+		title = e_grannvale 
+		title_name = e_grannvale 
+		character = {
+			dna="0gice0a0j00"
+			properties="hn0a0000000000"
+			religion="loptyrian"
+			culture="grannvalean"
+			government = feudal_government
+			dynasty=1004		
+		}
+	}
+	# Bloom
+	# Danan
+	# Travant
+}
+
 bm_fe7_girl_from_the_plains =
 {
 	name = "bm_fe7_girl_from_the_plains"
@@ -6,7 +189,6 @@ bm_fe7_girl_from_the_plains =
 	
 #	era = yes						## Will be shown on Era screen.
 	picture = GFX_pick_era_image_1159
-	custom_start = yes				## Choosing "Custom Start" will open this bookmark
 	
 	selectable_character = {
 		id = 111 # Lyn

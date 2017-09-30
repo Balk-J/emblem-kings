@@ -4,16 +4,30 @@
 title = c_velthomer
 
 # Settlements
-max_settlements = 5
+max_settlements = 6
 
 b_velthomer_castle = castle
 b_velthomer = temple
-b_velthomer_2 = city
+#b_velthomer_2 = city
+#b_velera_4 = castle
+#b_val = castle
 #b_fala = temple
-#b_valflame = castle
 
 # Misc
 culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_velthomer_castle = tribal
+}
+500.1.1 = { 
+	b_velthomer_castle = castle
+	b_velthomer_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

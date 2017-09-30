@@ -38,7 +38,7 @@ technology = {
 		d_luthecia
 		d_grutia
 		d_iss
-		d_mumu
+		d_savan
 		d_verdane
 		d_marpha
 		d_genoa

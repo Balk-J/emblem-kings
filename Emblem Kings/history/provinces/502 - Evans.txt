@@ -19,3 +19,15 @@ culture = verdanian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_grann = city
+	capital = b_grann 
+}
+448.1.1 = { 
+	religion = loptyrian
+	culture = verdanian
+	capital = b_evans_castle 
+	remove_settlement = b_grann
+}

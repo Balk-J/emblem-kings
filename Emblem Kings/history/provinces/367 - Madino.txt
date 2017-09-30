@@ -8,12 +8,27 @@ max_settlements = 5
 
 b_madino_castle = castle
 b_madino = temple
-b_madino_2 = city
-b_misodendra = city
-b_visca = city
+#b_madino_2 = city
+#b_misodendra = city
+#b_visca = city
 
 # Misc
 culture = agustrian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_madino_castle = tribal
+}
+500.1.1 = { 
+	b_madino_castle = castle
+	b_madino_2 = city
+	b_misodendra = city
+	b_visca = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = agustrian
+}

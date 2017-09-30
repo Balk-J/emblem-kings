@@ -5,3 +5,11 @@
 	law = succ_primogeniture
 	#holder = 0
 }
+440.1.1={
+	holder=0 # 
+	de_jure_liege = e_grann
+}
+448.1.1={
+	holder=0 # 
+	de_jure_liege = 0
+}

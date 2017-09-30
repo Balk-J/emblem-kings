@@ -1,0 +1,211 @@
+
+k_grann = {
+	color={ 150 167 133 }
+	capital = 502 #	Evans
+	dignity = 100
+	allow = {
+		hidden_tooltip = {
+			OR = {
+				ai = no
+				AND = {
+					culture = grann
+					OR = {
+						religion = earthen_pagan
+						religion = earthen_pagan_reformed
+					}
+				}
+			}
+			NOT = { has_global_flag = grann_republic_destroyed }
+		}
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+
+e_grann = {
+	color={ 167 10 100 }
+	color2={ 255 255 20 }
+	
+	capital = 502 # Evans
+	
+	culture = grann
+	
+	allow = {
+		hidden_tooltip = {
+			OR = {
+				ai = no
+				AND = {
+					culture = grann
+					OR = {
+						religion = earthen_pagan
+						religion = earthen_pagan_reformed
+					}
+				}
+			}
+			NOT = { has_global_flag = grann_republic_destroyed }
+		}
+		any_demesne_title = {
+			tier = king
+			NOT = { title = k_grann }
+			NOT = { title = k_verdane }
+		}
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+
+k_valhalla = {
+	color = { 255 125 69 }
+	capital = 333 #	Belhalla
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_madino = {
+	color={ 250 120 90 }
+	capital = 367 # Madino	
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_tor = {
+	color = { 240 209 100 }
+	capital = 351 # Friege	
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_heirhein = {
+	color={ 135 30 125 }
+	capital = 379 # Heirhein	
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+
+k_ollerus = {
+	color={ 85 232 20 }
+	capital = 354 #	Dozel
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_melgln = {
+	color={ 191 158 158 }
+	capital = 454 #	Melgln
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_lubeck = {
+	color={ 142 142 142 }
+	capital = 408 #	Lubeck
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_rivough = {
+	color={ 160 232 20 }
+	capital = 416 #	Rivough
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_tirnanog = {
+	color={ 5 222 31 }
+	capital = 431 # Tirnanog	
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_sailane = {
+	color={ 150 150 195 }
+	capital = 405 #	Sailane
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_conote = {
+	color={ 73 229 56 }
+	capital = 446 #	Conote
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_luthecia = {
+	color={ 189 19 130 }
+	capital = 473 #	Luthecia
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_savan = {
+	color={ 125 190 75 }
+	capital = 485 #	Savan
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_grutia = {
+	color={ 172 76 139 }
+	capital = 477 #	Grutia
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}
+k_kapathogia = {
+	color={ 20 232 95 }
+	capital = 463 # Kapathogia	
+	allow = {
+		any_realm_title = {
+			tier = count
+			de_jure_liege = FROM
+		}
+	}
+}

@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_liatroim = castle
 b_liatroim_2 = temple
-b_liatroim_3 = city
+#b_liatroim_3 = city
 #b_cill_mhor = city
 
 # Misc
@@ -16,3 +16,19 @@ culture = mansterian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_liatroim = tribal
+}
+500.1.1 = { 
+	b_liatroim = castle
+b_liatroim_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}
+666.1.1 = { 
+	culture = mansterian
+}

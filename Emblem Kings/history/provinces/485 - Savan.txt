@@ -1,0 +1,27 @@
+# 485 - Savan
+
+# County Title
+title = c_savan
+
+# Settlements
+max_settlements = 4
+
+b_savan = tribal
+#b_savan_2 = temple
+#b_savan_3 = city
+#b_imleach = castle
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

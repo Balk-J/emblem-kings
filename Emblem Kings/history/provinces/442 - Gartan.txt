@@ -14,3 +14,18 @@ culture = mansterian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_gartan = tribal
+}
+500.1.1 = { 
+	b_gartan = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}
+666.1.1 = { 
+	culture = mansterian
+}

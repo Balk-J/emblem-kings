@@ -1,0 +1,301 @@
+########################################################################################################
+# WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
+########################################################################################################
+
+holy_blood_major_loptyr = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = -10
+	loptyrian_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_loptyr = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = -5
+	loptyrian_opinion = 5
+	health = 0.25
+}
+
+holy_blood_major_naga = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	loptyrian_opinion = -10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_naga = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	loptyrian_opinion = -5
+	health = 0.25
+}
+holy_blood_major_baldur = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_baldur = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_blagi = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_blagi = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_dain = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_dain = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_fala = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_fala = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_forseti = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_forseti = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_hezul = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_hezul = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_neir = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_neir = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_noba = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_noba = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_odo = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_odo = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_tordo = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_tordo = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+holy_blood_major_ulir = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.5
+	church_of_edda_opinion = 10
+	health = 0.5
+	combat_rating = 1
+}
+holy_blood_minor_ulir = {
+	customizer = no
+	random = no
+	monthly_character_prestige = 0.25
+	church_of_edda_opinion = 5
+	health = 0.25
+}
+
+# Hidden traits for latent holy blood
+
+holy_blood_latent_loptyr = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_naga = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_baldur = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_blagi = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_dain = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_fala = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_forseti = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_hezul = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_neir = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_noba = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_odo = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_tordo = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+holy_blood_latent_ulir = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+
+possessed_loptyr = {
+	#icon = 75
+	ai_ambition = 100
+	monthly_character_prestige = 0.5
+#	church_of_edda_opinion = -20
+#	loptyrian_opinion = 20
+	sex_appeal_opinion = 30
+	general_opinion = -10 # That Prince Julius just sends chills down my spine. That gaze of his draws you in, and you just totally lose yourself in it. I've had many friends leave for Belhalla to worship him, but now they're all missing...
+	health = 2
+	combat_rating = 3
+	diplomacy = 10
+	martial = 15
+	intrigue = 10
+	learning = 15
+	command_modifier = {
+		morale_offence = 1.0
+		morale_defence = 0.5
+		damage = 1.0
+		defence = 0.5
+	}
+}
+possessed_forseti = {
+	#icon = 52
+	martial = 5
+	stewardship = 10
+	learning = 15
+	health = 1
+}

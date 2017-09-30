@@ -1,0 +1,106 @@
+decisions = {
+	consume_vulenary = {
+		only_playable = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			
+			has_artifact = vulenary
+		}
+		
+		allow = {
+			has_artifact = vulenary
+			NOT = { has_character_modifier = vulenary_consumed }
+			NOT = { has_character_modifier = concoction_consumed }
+			NOT = { has_character_modifier = elixir_consumed }
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = consume_vulenary.tooltip
+				hidden_tooltip = {
+					remove_character_modifier = vulenary_consumed
+					add_character_modifier = { name = vulenary_consumed duration = 30 }
+					destroy_artifact = vulenary
+				}
+			}			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	consume_concoction = {
+		only_playable = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			
+			has_artifact = concoction 
+		}
+		
+		allow = {
+			has_artifact = concoction
+			NOT = { has_character_modifier = concoction_consumed }
+			NOT = { has_character_modifier = elixir_consumed }
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = consume_vulenary.tooltip
+				hidden_tooltip = {
+					remove_character_modifier = vulenary_consumed
+					add_character_modifier = { name = concoction_consumed duration = 60 }
+					destroy_artifact = concoction
+				}
+			}			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	consume_elixir = {
+		only_playable = yes	
+		potential = {
+			is_playable = yes
+			action_allowed_trigger = yes
+			
+			has_artifact = elixir 
+		}
+		
+		allow = {
+			has_artifact = elixir
+			NOT = { has_character_modifier = elixir_consumed }
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = consume_elixir.tooltip
+				hidden_tooltip = {
+					remove_character_modifier = vulenary_consumed
+					remove_character_modifier = concoction_consumed
+					remove_character_modifier = elixir_consumed
+					add_character_modifier = { name = elixir_consumed duration = 90 }
+					destroy_artifact = elixir
+				}
+			}			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

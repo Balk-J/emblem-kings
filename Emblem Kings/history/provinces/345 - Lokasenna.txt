@@ -8,7 +8,7 @@ max_settlements = 5
 
 b_lokasenna = castle
 b_lokasenna_2 = temple
-b_lokasenna_3 = city
+#b_lokasenna_3 = city
 #b_rigsthula = city
 #b_volundarkvida = city
 
@@ -17,3 +17,16 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_lokasenna = tribal
+}
+500.1.1 = { 
+	b_lokasenna = castle
+	b_lokasenna_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

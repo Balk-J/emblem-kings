@@ -9,9 +9,22 @@ max_settlements = 4
 b_palation = castle
 b_palation_2 = temple
 b_palation_3 = city
+#b_palat = castle
 
 # Misc
 culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+445.1.1 = { 
+	religion = loptyrian
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

@@ -6,3 +6,18 @@
 	liege = d_dozel
 	#holder = 0
 }
+440.1.1={
+	holder=847 # 
+}
+649.1.1={
+	holder=1006 # Neir
+}
+682.1.1={
+	holder=1221 # 
+}
+701.1.1={
+	holder=1222 # 
+}
+717.1.1={
+	holder=1223 # 
+}

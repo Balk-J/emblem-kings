@@ -1,0 +1,11 @@
+180.1.1={
+	liege=c_friege
+}
+760.1.1={
+	holder=1068 # Liza
+#	liege=d_melgln
+}
+778.1.1={
+	holder=0 # She's dead
+#	liege=c_friege
+}

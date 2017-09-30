@@ -1,0 +1,43 @@
+# Canon
+1014={
+	can_appear=no
+	used_for_random=no
+	name="Verdane"
+	culture="verdanian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+# for Sandima
+1034={
+	name="of Stenay"
+	culture="verdanian"
+	religion="church_of_edda"    
+}
+# for Dimaggio
+1035={
+	name="of Nogna"
+	culture="verdanian"
+	religion="church_of_edda"    
+}
+# for Gerrard
+1036={
+	name="of Augea"
+	culture="verdanian"
+	religion="church_of_edda"    
+}
+# for Maira's employer
+1037={
+	name="of Muktinath"
+	culture="verdanian"
+	religion="church_of_edda"    
+}

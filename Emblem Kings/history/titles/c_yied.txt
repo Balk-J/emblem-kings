@@ -6,3 +6,12 @@
 	liege = d_yied
 	#holder = 0
 }
+440.1.1={
+	holder=872 # 
+}
+649.1.1={
+	holder=1027 # Cult of Loptyr
+}
+700.1.1={ # fix date
+	holder=0 # Manfroy
+}

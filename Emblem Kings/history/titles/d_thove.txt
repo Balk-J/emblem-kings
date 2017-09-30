@@ -6,3 +6,44 @@
 	liege = k_silesse
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_sailane
+}
+649.1.1={
+	de_jure_liege = k_silesse
+	holder = 1009 # Ced TODO: add a filler character
+}
+669.1.1={
+	holder = 1104 # filler 
+}
+690.1.1={
+	holder = 1105 # filler 
+}
+728.1.1={
+	holder = 1107 # Lewyn's father 
+}
+#747.1.1={
+#	holder = 1107 # King of Silesse
+#}
+747.1.1={
+	holder = 1109 # Maios
+}
+760.3.1={
+	holder = 1032 # Sigurd
+}
+761.1.1={
+	#holder=1049 # Arvis
+	# Sigurd is dead; control reverts to Silesse
+	holder = 1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+776.1.1={
+	#holder = 0 # Destroyed?
+	#holder =  # generic Loptyrian Dark Bishop?
+	holder=1051 # Julius?
+}
+779.1.1={
+	holder = 1112 # Ced the Hero
+}

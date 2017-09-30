@@ -6,3 +6,6 @@
 	liege = d_mackily
 	#holder = 0
 }
+440.1.1={
+	holder=831 # 
+}

@@ -6,3 +6,9 @@
 	liege = d_yied
 	#holder = 0
 }
+440.1.1={
+	holder=875 # 
+}
+649.1.1={
+	holder=0 # 
+}

@@ -6,3 +6,6 @@
 	liege = d_madino
 	#holder = 0
 }
+440.1.1={
+	holder=836 # 
+}

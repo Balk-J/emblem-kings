@@ -8,7 +8,7 @@ max_settlements = 5
 
 b_grimnismal = castle
 b_grimnismal_2 = temple
-b_grimnismal_3 = city
+#b_grimnismal_3 = city
 #b_voluspa = temple
 #b_hymiskvida = castle
 
@@ -17,3 +17,16 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_grimnismal = tribal
+}
+500.1.1 = { 
+	b_grimnismal = castle
+	b_grimnismal_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

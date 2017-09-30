@@ -6,3 +6,11 @@
 	liege = d_chalphy
 	#holder = 0
 }
+440.1.1={
+	liege = 0
+	holder=851 # 
+}
+649.1.1={
+	liege = d_chalphy
+	holder=0 # Baldur
+}

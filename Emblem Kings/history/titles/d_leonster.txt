@@ -6,3 +6,36 @@
 	liege = k_manster
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_conote
+}
+440.1.1={
+	holder=897 # 
+}
+649.1.1={
+	holder=1012 # Noba 
+	de_jure_liege = k_thracia
+	liege = k_thracia
+}
+659.1.1={
+	holder=1024 # Noba's son
+}
+666.1.1={
+	de_jure_liege = k_manster
+	liege = k_manster
+}
+701.1.1={
+	holder = 1157 # 
+}
+723.1.1={
+	holder = 1158 # 
+}
+736.1.1={
+	holder = 1159 # Calf
+}
+763.1.1={
+	holder=1058 # Bloom?
+}
+778.1.1={
+	holder = 1162 # Leif 
+}

@@ -8,11 +8,25 @@ max_settlements = 5
 
 b_silesse_castle = castle
 b_silesse = temple
-b_silesse_2 = city
+#b_silesse_2 = city
 #b_wroclaw = castle
+#b_sycow = city
 
 # Misc
 culture = silessian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_silesse_castle = tribal
+}
+500.1.1 = { 
+	b_silesse_castle = castle
+	b_silesse_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_easaw = castle
 b_easaw_2 = temple
-b_easaw_3 = city
+#b_easaw_3 = city
 #b_judithe = temple
 
 # Misc
@@ -16,3 +16,16 @@ culture = isaachian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_easaw = tribal
+}
+500.1.1 = { 
+	b_easaw = castle
+	b_easaw_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = isaachian
+}

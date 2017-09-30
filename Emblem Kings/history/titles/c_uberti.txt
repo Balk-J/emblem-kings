@@ -6,3 +6,9 @@
 	liege = d_blagi
 	#holder = 0
 }
+440.1.1={
+	holder=1020 # 
+}
+649.1.1={
+	holder=0 
+}

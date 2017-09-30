@@ -6,3 +6,19 @@
 	liege = d_friege
 	#holder = 0
 }
+440.1.1={
+	liege = d_belhalla
+}
+649.1.1={
+	liege = d_friege
+}
+754.1.1={
+	holder=1058 # Bloom
+}
+778.1.1={
+	holder=1067 # Ishtar
+	#holder=1069 # Hilda
+}
+779.1.1={
+	holder=1062 # Arthur
+}

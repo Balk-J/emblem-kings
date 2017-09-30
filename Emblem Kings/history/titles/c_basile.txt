@@ -6,3 +6,6 @@
 	liege = d_blagi
 	#holder = 0
 }
+649.1.1={
+	liege = d_edda
+}

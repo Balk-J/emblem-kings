@@ -8,7 +8,7 @@ max_settlements = 5
 
 b_harbardsljod = castle
 b_harbardsljod_2 = temple
-b_harbardsljod_3 = city
+#b_harbardsljod_3 = city
 #b_harbarthsljoth = castle
 #b_jarngreipr = temple
 
@@ -17,3 +17,16 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_harbardsljod = tribal
+}
+500.1.1 = { 
+	b_harbardsljod = castle
+	b_harbardsljod_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

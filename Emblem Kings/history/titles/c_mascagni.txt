@@ -6,3 +6,9 @@
 	liege = d_silvail
 	#holder = 0
 }
+668.1.1={
+	liege=d_nordion
+}
+759.1.1={
+	liege = d_silvail
+}

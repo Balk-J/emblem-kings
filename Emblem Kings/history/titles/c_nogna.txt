@@ -6,3 +6,13 @@
 	liege = d_evans
 	#holder = 0
 }
+753.1.1={
+	holder=1186 # Dimaggio
+}
+756.1.1={
+	liege = d_marpha
+}
+758.1.1={
+	liege = d_evans
+	holder=0 # 
+}

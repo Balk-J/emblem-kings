@@ -1,0 +1,1016 @@
+1008={
+	name="Hezul"
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	615.1.1={
+		birth=yes
+		culture=grann
+		religion=earthen_pagan
+	}
+	627.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	630.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	
+	# Miracle of Darna
+	632.1.1 = {
+		give_nickname=nick_the_black_knight
+		add_trait="crusader_draconic"
+		add_trait="holy_blood_major_hezul"
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+		culture=agustrian
+	}
+	677.1.1={
+		death=yes
+	}
+}
+# Founder of House Nordion. Marries Hezul's youngest daughter and gets the major holy blood for his dynasty.
+1026={
+	name="Nodhoiarn"
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	634.1.1={
+		birth=yes
+	}
+	646.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	654.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	
+	668.01.01={
+		add_spouse=1229 # Hezul's youngest daughter
+	} 	 	
+	685.1.1={
+		death = yes
+	}
+}
+# King of Agustria, 757. Prized peace more than anything
+1089={
+	name="Imuka"
+	father=1231
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	704.1.1={
+		birth=yes
+	}
+	716.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	719.1.1 = {
+		add_trait="grey_eminence"
+		add_trait="kind"
+		add_trait="trusting"
+		add_trait="charitable"
+		add_trait="content"
+		add_trait="honest"
+	}	 
+	 
+	724.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_great_knight"
+	}	
+	
+	758.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			killer=1090 # Chagall
+		}
+	}
+}
+1090={
+	name="Chagall"
+	father=1089 # Imuka
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	727.1.1={
+		birth=yes
+	}
+	739.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	742.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="dull"
+		add_trait="proud"
+		add_trait="wroth"
+		add_trait="cruel"
+		add_trait="craven"
+		add_trait="arbitrary"
+		add_trait="deceitful"
+	}	 
+	747.1.1={
+		effect = {
+			random_character = {
+				limit = { character = 1094 } # Eldigan
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}
+	 
+	757.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	
+	760.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Non-canon, father for Eldigan
+1091={
+	name="Tristan"
+	father=1233
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	715.1.1={
+		birth=yes
+	}
+	727.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+			remove_trait="holy_blood_latent_hezul"
+			add_trait="holy_blood_major_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	732.1.1 = {
+		add_spouse=1092
+	}	 
+	735.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	
+	740.1.1 = {
+		add_spouse=1093
+	}	 
+	741.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+# Non-canon, mother for Eldigan
+1092={
+	name="Jeanne"
+	female=yes
+	culture=agustrian
+	religion=church_of_edda
+	716.1.1={
+		birth=yes
+	}
+	728.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	735.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# Non-canon, mother for Lachesis
+1093={
+	name="Nanna"
+	female=yes
+	culture=agustrian
+	religion=church_of_edda
+	721.1.1={
+		birth=yes
+	}
+	733.01.01={
+		add_trait="class_troubador"
+		add_trait="base_class_troubador"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	750.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Duke of Nordion, holder of the Mystletainn, and playing the role of Camus.
+1094={
+	name="Eldigan"
+	dna="cfamabibgcu"
+	properties="fe0ehd00000000"
+	father=1091
+	mother=1092
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	disallow_random_traits=yes
+	735.1.1={ # 22 in 757
+		birth=yes
+	}
+	747.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+			remove_trait="holy_blood_latent_hezul"
+			add_trait="holy_blood_major_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			add_friend=1032 # Sigurd
+			add_friend=1160 # Quan
+		}
+	} 
+	750.1.1 = {
+		add_trait="brilliant_strategist"
+		add_trait="inspiring_leader"
+		add_trait="cavalry_leader"
+		add_trait="organizer" # No real basis for these, but he should be a great commander!
+		add_trait="siege_leader"
+		add_trait="just"
+		add_trait="trusting"
+		add_trait="honest"
+		add_trait="brave"
+	}	
+	 
+	755.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	756.1.1 = {
+		add_spouse=1236
+	}	
+	757.1.1 = {
+		give_nickname=nick_the_lionheart
+	}	
+	760.1.1={
+		death = {
+			death_reason=death_execution
+			killer=1090 # Chagall!
+		}
+	}
+}
+# Eldigan's half-sister.
+1095={
+	name="Lachesis"
+	female=yes
+	father=1091
+	mother=1093
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	741.1.1={ # 16 in 757
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_troubador"
+		add_trait="base_class_troubador"
+			remove_trait="holy_blood_latent_hezul"
+			add_trait="holy_blood_minor_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			
+			random_character = {
+				limit = { character = 1094 } # Eldigan
+				# "Adores her older brother, Eldigan, to the point that other men pale in comparison."
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				# One more to counteract the pretender nonsense...
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}
+			random_character = {
+				limit = { character = 1100 } # Elliot 
+				# "God, I can't stand conceited men like him. I need a man the calibre of my dear brother. That's why I'll never marry."
+				opinion = {
+					modifier = opinion_seduced_attracted
+					who = ROOT
+					years = 5
+				}
+				reverse_opinion = {
+					modifier = opinion_seduced_repelled
+					who = ROOT
+					years = 2
+				}
+			}
+		}
+	} 
+	756.1.1 = {
+		add_trait="fortune_builder"
+		add_trait="proud"
+		add_trait="stubborn"
+		add_trait="honest"
+		add_trait="wroth"
+	}	
+	 
+	760.3.1 = {
+		remove_trait="class_troubador"
+		add_trait="class_mage_knight_female"
+	}	
+	# On the run from the empire...
+	761.1.1={
+		#employer= # Leonster
+	}
+	763.1.1={
+		#employer= # Alster
+	}
+	766.1.1={
+		#employer= # Frest
+	}
+	769.1.1={
+		#employer= # Tahra
+	}
+	# Leaves to find Diarmuid and is never seen again.
+	771.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+# Lachesis' son.
+1096={
+	name="Diarmuid"
+	#father= # Beowolf. Probably.
+	mother=1095 # Lachesis
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	760.1.1={ # 17 in 777. Or maybe 18? https://www.nintendo.co.jp/n02/shvc/bfej/data/chara/index.html
+		birth=yes
+	}
+	# separated from his mother and raised in the Isaachian village of Tirnanog in the aftermath of the Battle of Belhalla
+	761.01.01={
+		employer=1082 # Edain, b_tirnanog
+	}
+	772.01.01={
+		add_trait="class_mercenary"
+		add_trait="base_class_mercenary"
+			remove_trait="holy_blood_latent_hezul"
+			add_trait="holy_blood_minor_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	775.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="gregarious" # charming knight?
+		add_trait="organizer"
+		add_trait="light_foot_leader"
+	}	
+	 
+	778.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
+	}	
+	816.1.1={
+		death = yes
+	}
+}
+# Lachesis' daughter.
+1097={
+	name="Nanna"
+	female=yes
+	#father= # Beowolf. Possibly. She can't use his sword, so it *could* be Finn...
+	mother=1095 # Lachesis
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	762.1.1={ # 15 in 777. Or maybe 14? No, 15. "Born in Leonster in the year preceding its downfall, she lived most of her life on the run with her parents and Leonster's Prince Leif as they evaded capture by the Friege forces occupying the Manster District. Eventually, after Lachesis abandoned them to find her other child, Nanna, Leif and Finn settled in the village Fiana in Thracia."
+		birth=yes
+	}
+	# On the run from the empire...
+	#761.1.1=
+	762.1.1={
+		#employer= # Leonster
+	}
+	763.1.1={
+		#employer= # Alster
+	}
+	766.1.1={
+		#employer= # Frest
+	}
+	769.1.1={
+		#employer= # Tahra
+	}
+	774.01.01={
+		add_trait="class_troubador"
+		add_trait="base_class_troubador"
+			remove_trait="holy_blood_latent_hezul"
+			add_trait="holy_blood_minor_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	777.1.1 = {
+		add_trait="fortune_builder"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind" 
+		add_trait="charitable"
+	}	
+	 
+	778.1.1 = {
+		remove_trait="class_troubador"
+		add_trait="class_mage_knight_female"
+	}	
+	823.1.1={
+		death = yes
+	}
+}
+# Eldigan's son, "the Black Knight"
+1098={
+	name="Ares"
+	father=1094 # Eldigan
+	mother=1236 # Grahnye
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	757.1.1={ # 20 in 777
+		birth=yes
+	}
+	#  He and his mother Grahnye fled to Leonster in the wake of Agustrian civil war and the execution of his father.
+	# Or maybe they got out before Sigurd invaded?
+	758.1.1={
+		employer=1234
+	}
+	760.1.1={
+		#employer= # Leonster
+	}
+	# Orphaned following Leonster's fall and adopted by the mercenary Jabarro
+	763.1.1={
+		#employer= # Jabarro
+	}
+	769.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+			remove_trait="holy_blood_latent_hezul"
+			add_trait="holy_blood_major_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			
+			random_character = {
+				limit = { character = 1038 } # Seliph
+				# My father's sworn enemy!
+				reverse_opinion = {
+					modifier = opinion_killed_father
+					who = ROOT
+					years = 10
+				}
+			}
+		}
+	} 
+	772.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="aggressive_leader"
+		add_trait="cavalry_leader"
+		add_trait="proud" 
+		add_trait="wroth"
+		add_trait="just"
+		add_trait="trusting"
+		add_trait="honest"
+		add_trait="brave"
+	}	
+	773.1.1 = {
+		give_nickname=nick_the_black_knight
+	}
+	 
+	778.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+		employer = 1038 # Seliph
+		effect = {
+			random_character = {
+				limit = { character = 1038 } # Seliph
+				reverse_remove_opinion  = {
+					modifier = opinion_killed_father
+					who = ROOT
+				}
+			}
+		}
+	}		
+	779.1.1={
+		add_trait="diligent"
+	}	
+	813.1.1={
+		death = yes
+	}
+}
+# Duke of Heirhein, 757
+1099={
+	name="Boldor"
+	dna="clbivkbbak"
+	properties="cd0ehd00000000"
+	dynasty=1021
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=strong
+	716.1.1={
+		birth=yes
+	}
+	728.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	731.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="ambitious"
+		add_trait="proud"
+		add_trait="greedy"
+		add_trait="brave"
+	}	 
+	 
+	736.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Boldor's son. The idiot who starts the disturbance in Agustria.
+1100={
+	name="Elliot"
+	dynasty=1021
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	737.1.1={
+		birth=yes
+	}
+	749.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			add_rival=1094 # Eldigan
+		}
+	} 
+	752.1.1 = {
+		add_trait="robust"
+		add_trait="misguided_warrior"
+		add_trait="heavy_infantry_leader"
+		add_trait="ambitious"
+		add_trait="proud"
+		add_trait="lustful"
+	}	 
+	 
+	757.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_great_knight"
+	}	
+	
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Lord of Anphony, 757
+1101={
+	name="Macbeth"
+	dynasty=1022
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	702.1.1={
+		birth=yes
+	}
+	714.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	717.1.1 = {
+		add_trait="indulgent_wastrel"
+		add_trait="greedy"
+		add_trait="gluttonous"
+		add_trait="craven"
+		add_trait="arbitrary"
+	}	 
+	 
+	722.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Lord of Mackily, 757
+1102={
+	name="Clement"
+	dynasty=1023
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	722.1.1={
+		birth=yes
+	}
+	734.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	737.1.1 = {
+		# "Hmm... where do my loyalties lie... I'm not lifting a finger till the dust settles. Keep our soldiers put for the moment."
+		add_trait="thrifty_clerk"
+		add_trait="shrewd"
+		add_trait="slothful"
+		add_trait="content"
+		add_trait="arbitrary"
+	}	 
+	 
+	742.1.1 = {
+		remove_trait="class_priest"
+		add_trait="class_bishop"
+	}	
+	
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Non-canon, Captain of the Orgahil Pirates and Brigid's adoptive father.
+# There are a bunch of pirates around the Tower of Blagi, but his band is the nicest. They basically run a protection racket instead of resorting to outright piracy. Although they'll still attack you if you don't pay.
+1103={
+	name="Lugh"
+	dynasty=1024
+	culture=agustrian
+	religion=raider_pagan
+	disallow_random_traits=yes
+	703.1.1={
+		birth=yes
+	}
+	715.01.01={
+		add_trait="class_pirate"
+		add_trait="base_class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	718.1.1 = {
+		add_trait="fortune_builder"
+		add_trait="greedy"
+		add_trait="shrewd"
+		add_trait="just"
+		add_trait="kind"
+	}	 
+	 
+	723.1.1 = {
+		remove_trait="class_pirate"
+		add_trait="class_berserker"
+	}	
+	
+	759.1.1={
+		death = yes
+	}
+}
+# Semi-canon; descendants of Hezul. 
+# He managed to breed the ability to wield his sword out of his dynasty by marrying his youngest daughter (the only one with major Hezul blood) into House Nordion.
+# YoungEST implies more than two, daughter implies there was at least one son?
+# Three daughters and a son?
+1227={
+	name="Haeloc"
+	father=1008 # Hezul
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	650.1.1={
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_hezul"
+		#add_trait="holy_blood_minor_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	671.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	704.1.1={
+		death = yes
+	}
+}
+1228={
+	name="Cristen"
+	female=yes
+	father=1008 # Hezul
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	651.1.1={
+		birth=yes
+	}
+	663.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_hezul"
+		#add_trait="holy_blood_minor_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	723.1.1={
+		death = yes
+	}
+}
+1229={
+	name="Perenn"
+	female=yes
+	father=1008 # Hezul
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	652.1.1={
+		birth=yes
+	}
+	664.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_hezul"
+		#add_trait="holy_blood_minor_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	710.1.1={
+		death = yes
+	}
+}
+1229={
+	name="Hodierne"
+	female=yes
+	father=1008 # Hezul
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	653.1.1={
+		birth=yes
+	}
+	662.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	# Oops.
+	668.01.02={
+		remove_trait="holy_blood_latent_hezul"
+		add_trait="holy_blood_major_hezul"
+	} 	 	
+	669.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	670.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+1230={
+	name="Convelin"
+	father=1227 # 
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	670.1.1={
+		birth=yes
+	}
+	682.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	690.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_great_knight"
+	}
+	722.1.1={
+		death = yes
+	}
+}
+1231={
+	name="Iehan"
+	father=1230 # 
+	dynasty=1008
+	culture=agustrian
+	religion=church_of_edda
+	686.1.1={
+		birth=yes
+	}
+	698.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 	
+	710.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	724.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Non-canon; Eldigan's ancestors
+1232={
+	name="Guallon"
+	father=1026
+	mother=1229 # Hezul's daughter
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	670.1.1={
+		birth=yes
+	}
+	682.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_hezul"
+		add_trait="holy_blood_major_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	690.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+		 	
+	719.1.1={
+		death = yes
+	}
+}
+1233={
+	name="Edouart"
+	father=1232
+	dynasty=1013
+	culture=agustrian
+	religion=church_of_edda
+	trait=holy_blood_latent_hezul
+	691.1.1={
+		birth=yes
+	}
+	703.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		remove_trait="holy_blood_latent_hezul"
+		add_trait="holy_blood_major_hezul"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	 
+	711.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+		 	
+	732.1.1={
+		death = yes
+	}
+}

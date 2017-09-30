@@ -16,3 +16,15 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+444.1.1 = { 
+	religion = loptyrian
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

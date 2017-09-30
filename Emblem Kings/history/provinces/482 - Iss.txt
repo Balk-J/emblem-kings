@@ -7,12 +7,26 @@ title = c_iss
 max_settlements = 3
 
 b_iss = castle
-b_iss_2 = city
+#b_iss_2 = city
 b_iss_3 = temple
-b_inis = city
+#b_inis = city
 
 # Misc
 culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_iss = tribal
+}
+500.1.1 = { 
+	b_iss = castle
+b_iss_2 = city
+b_inis = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

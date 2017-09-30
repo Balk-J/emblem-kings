@@ -6,3 +6,35 @@
 	liege = k_grannvale
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_valhalla
+}
+440.1.1={
+	liege = 0
+	holder=845 # 
+}
+649.1.1={
+	liege = k_grannvale
+	de_jure_liege = k_grannvale
+}
+649.1.1={
+	holder=1004 # Fala
+}
+688.1.1={
+	holder=1211 # 
+}
+708.1.1={
+	holder=1213 # 
+}
+722.1.1={
+	holder=1048 # Victor
+}
+739.1.1={
+	holder=1049 # Arvis
+}
+777.1.1={
+	holder=1051 # Julius
+}
+779.1.1={
+	holder=1053 # Saias
+}

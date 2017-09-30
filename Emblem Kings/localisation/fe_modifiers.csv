@@ -33,3 +33,15 @@ immortal_from_quintessence;Quintessence Immortal;;;;;;;;;;;;;x
 desc_immortal_from_quintessence;This character uses quintessence on themselves regularly, preventing their body from succumbing to the ravages of age.;;;;;;;;;;;;;x
 planning_invasion;Planning Invasion;;;;;;;;;;;;;x
 desc_planning_invasion;This character is considering a large-scale invasion of a foreign kingdom.;;;;;;;;;;;;;x
+#possessed_loptyr;Cold Charisma;;;;;;;;;;;;;x
+#desc_possessed_loptyr;This character is charismatic, but profoundly unsettling. Their gaze draws you in, and you lose yourself in it...;;;;;;;;;;;;;x
+#possessed_forseti;Aloof;;;;;;;;;;;;;x
+#desc_possessed_forseti;This character is cold and distant. They show a wealth of knowledge of the world but are reluctant to become involved in political affairs.;;;;;;;;;;;;;x
+vulenary_consumed;Vulenary Consumed;;;;;;;;;;;;;x
+desc_vulenary_consumed;This character has recently consumed a vulenary.;;;;;;;;;;;;;x
+concoction_consumed;Concoction Consumed;;;;;;;;;;;;;x
+desc_concoction_consumed;This character has recently consumed a concoction.;;;;;;;;;;;;;x
+elixir_consumed;Vulenary Consumed;;;;;;;;;;;;;x
+desc_elixir_consumed;This character has recently consumed an elixir.;;;;;;;;;;;;;x
+population_massacred;Population Massacred;;;;;;;;;;;;;x
+desc_population_massacred;Most of the people in this province have been hunted down and killed.;;;;;;;;;;;;;x

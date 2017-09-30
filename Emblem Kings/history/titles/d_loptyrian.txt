@@ -1,0 +1,16 @@
+440.1.1={
+	active = no
+}
+448.1.1={
+	active = yes
+}
+648.1.1={
+	active = no
+}
+770.1.1={
+	active = yes
+	holder = 0 # Manfroy
+}
+778.1.1={
+	active = no
+}

@@ -1924,10 +1924,10 @@
 	culture=sacaean
 	
 	father=547
-	1115.01.01 = { 
+	1110.01.01 = { 
 		birth=yes 
 	}
-	1127.01.01={
+	1122.01.01={
 		add_trait="class_myrmidon"
 			add_trait="base_class_myrmidon"
 		effect = {
@@ -2023,10 +2023,10 @@
 	
 	father=548
 	mother=549
-	1138.01.01 = { 
+	1130.01.01 = { 
 		birth=yes 
 	}
-	1150.01.01={
+	1152.01.01={
 		add_trait="class_myrmidon_female"
 			add_trait="base_class_myrmidon"
 		effect = {

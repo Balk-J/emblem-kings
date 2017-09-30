@@ -6,3 +6,25 @@
 	liege = d_mackily
 	#holder = 0
 }
+440.1.1={
+	holder=832 # 
+}
+740.1.1={
+	holder=1102 # Clement
+}
+759.1.1={
+	holder=1032 # Sigurd
+}
+760.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+778.1.1={
+	holder=1051 # Julius?
+}
+779.1.1={
+	holder=1098 # Ares?
+}
+

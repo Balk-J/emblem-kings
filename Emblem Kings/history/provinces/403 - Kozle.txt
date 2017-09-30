@@ -14,3 +14,14 @@ culture = silessian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	capital = b_lubliniec
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+#	capital = b_kozle
+}

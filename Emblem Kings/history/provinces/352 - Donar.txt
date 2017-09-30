@@ -8,7 +8,7 @@ max_settlements = 5
 
 b_donar = castle
 b_donar_2 = temple
-b_donar_3 = city
+#b_donar_3 = city
 #b_veod = castle
 #b_veur = castle
 
@@ -17,3 +17,16 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_donar = tribal
+}
+500.1.1 = { 
+	b_donar = castle
+	b_donar_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

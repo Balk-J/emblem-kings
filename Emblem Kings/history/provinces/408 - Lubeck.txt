@@ -18,3 +18,17 @@ culture = silessian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	#b_lubeck_castle = tribal
+	capital = b_lubeck_2
+}
+#500.1.1 = { 
+#	b_lubeck_castle = castle
+#}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+	capital = b_lubeck_castle
+}

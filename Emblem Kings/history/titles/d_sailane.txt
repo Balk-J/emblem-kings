@@ -6,3 +6,36 @@
 	liege = k_silesse
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_sailane
+}
+440.1.1={
+	holder=862 # 
+}
+649.1.1={
+	de_jure_liege = k_silesse
+	holder = 1009 # Ced TODO: add a filler character
+}
+737.1.1={
+	holder = 1110 # Rahna 
+}
+760.1.1={
+	holder=1032 # Sigurd
+}
+760.3.1={
+	holder=1032 # Still Sigurd
+}
+761.1.1={
+	holder=1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+776.1.1={
+	#holder = 0 # Destroyed?
+	#holder =  # generic Loptyrian Dark Bishop?
+	holder=1051 # Julius?
+}
+779.1.1={
+	holder = 1112 # Ced the Hero
+}

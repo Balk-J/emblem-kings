@@ -1609,7 +1609,7 @@
 }
 333 = { 
 	title=c_belhalla
-	max_settlements=6
+	max_settlements=7
 	terrain=plains
 }
 334 = { 
@@ -1629,12 +1629,12 @@
 }
 337 = { 
 	title=c_velthomer
-	max_settlements=5
+	max_settlements=6
 	terrain=plains
 }
 338 = { 
 	title=c_spakona
-	max_settlements=4
+	max_settlements=5
 	terrain=plains
 }
 339 = { 
@@ -1699,7 +1699,7 @@
 }
 351 = { 
 	title=c_friege
-	max_settlements=5
+	max_settlements=6
 	terrain=plains
 }
 352 = { 
@@ -1714,7 +1714,7 @@
 }
 354 = { 
 	title=c_dozel
-	max_settlements=5
+	max_settlements=6
 	terrain=plains
 }
 355 = { 
@@ -2228,13 +2228,13 @@
 	terrain=plains
 }
 457 = { 
-	title=c_cealsaidh
+	title=c_frest
 	max_settlements=3
 	terrain=plains
 }
 458 = { 
 	title=c_thracia
-	max_settlements=5
+	max_settlements=6
 	terrain=plains
 }
 459 = { 
@@ -2368,12 +2368,12 @@
 	terrain=plains
 }
 485 = { 
-	title=c_mumu
+	title=c_savan
 	max_settlements=4
 	terrain=plains
 }
 486 = { 
-	title=c_deasmhumhain
+	title=c_aonach
 	max_settlements=3
 	terrain=plains
 }
@@ -2383,7 +2383,7 @@
 	terrain=plains
 }
 488 = { 
-	title=c_urmhumhain
+	title=c_iubhair
 	max_settlements=3
 	terrain=plains
 }

@@ -4,17 +4,33 @@
 title = c_belhalla
 
 # Settlements
-max_settlements = 6
+max_settlements = 7
 
 b_belhalla = castle
 b_belhalla_2 = temple
-b_belhalla_3 = city
-b_heorot = castle
-#b_fagrskinna = temple
+#b_belhalla_3 = city
+#b_heorot = castle
+#b_fagrskinna = castle
 #b_heimskringla = city
+#b_walaz = temple
 
 # Misc
 culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_belhalla = tribal
+}
+500.1.1 = { 
+	b_belhalla = castle
+	b_belhalla_3 = city
+	b_heorot = castle
+	b_fagrskinna = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

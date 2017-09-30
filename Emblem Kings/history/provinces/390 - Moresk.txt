@@ -7,7 +7,7 @@ title = c_moresk
 max_settlements = 3
 
 b_moresk = castle
-b_moresk_2 = city
+#b_moresk_2 = city
 #b_moresk_3 = temple
 
 # Misc
@@ -15,3 +15,16 @@ culture = agustrian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_moresk = tribal
+}
+500.1.1 = { 
+	b_moresk = castle
+	#b_moresk_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = agustrian
+}

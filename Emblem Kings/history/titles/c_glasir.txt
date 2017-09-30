@@ -6,3 +6,15 @@
 	liege = d_belhalla
 	#holder = 0
 }
+440.1.1={
+	holder=842 # 
+}
+649.1.1={
+	holder=1001 # Heim
+}
+712.1.1={
+	holder=1029 # Azmur
+}
+750.1.1 = {
+	holder=1030 # Kurth
+}

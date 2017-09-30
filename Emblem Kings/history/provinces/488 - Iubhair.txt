@@ -1,0 +1,26 @@
+# 488 - Iubhair
+
+# County Title
+title = c_iubhair
+
+# Settlements
+max_settlements = 3
+
+b_iubhair = tribal
+#b_iubhair_2 = temple
+#b_iubhair_3 = city
+
+# Misc
+culture = thracian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

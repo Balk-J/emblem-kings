@@ -7,7 +7,7 @@ title = c_meace
 max_settlements = 4
 
 b_meace_castle = castle
-b_meace = city
+#b_meace = city
 b_meace_2 = temple
 #b_dubhlinn = castle
 
@@ -16,3 +16,16 @@ culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_meace_castle = tribal
+}
+500.1.1 = { 
+	b_meace_castle = castle
+b_meace = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

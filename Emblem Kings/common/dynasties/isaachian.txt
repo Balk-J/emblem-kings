@@ -1,0 +1,58 @@
+# Canon
+1010={
+	can_appear=no
+	used_for_random=no
+	name="Isaach"
+	culture="isaachian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+# for Galzus' family
+1030={ 
+	can_appear=no
+	used_for_random=no
+	name="Rivough"
+	culture="isaachian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 36
+            emblem = 0
+            color = 7
+            color = 12
+            color = 3
+        }
+    }
+}
+# for Chulainn's family
+1031={ 
+	can_appear=no
+	used_for_random=no
+	name="Sophara"
+	culture="isaachian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 35
+            emblem = 0
+            color = 0
+            color = 2
+            color = 5
+        }
+    }
+}

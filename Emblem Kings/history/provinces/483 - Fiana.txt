@@ -7,7 +7,7 @@ title = c_fiana
 max_settlements = 4
 
 b_fiana = castle
-b_fiana_2 = city
+#b_fiana_2 = city
 b_fiana_3 = temple
 #b_pempton = city
 
@@ -16,3 +16,16 @@ culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_fiana = tribal
+}
+500.1.1 = { 
+	b_fiana = castle
+b_fiana_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

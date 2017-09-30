@@ -8,7 +8,7 @@ max_settlements = 5
 
 b_osraige = castle
 b_osraige_2 = temple
-b_osraige_3 = city
+#b_osraige_3 = city
 #b_gabhran = city
 #b_callainn = city
 
@@ -17,3 +17,19 @@ culture = mansterian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_osraige = tribal
+}
+500.1.1 = { 
+	b_osraige = castle
+b_osraige_3 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}
+666.1.1 = { 
+	culture = mansterian
+}

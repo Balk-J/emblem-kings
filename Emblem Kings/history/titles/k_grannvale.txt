@@ -1,8 +1,32 @@
-# k_grannvale > e_jugdral
+# k_grannvale > e_grannvale
 180.1.1={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
-	liege = e_jugdral
+	liege = e_grannvale
 	#holder = 0
+}
+649.1.1={
+	holder=1001 # Heim
+}
+670.1.1={
+	holder=1163 # 
+}
+699.1.1={
+	holder=1164 # 
+}
+707.1.1={
+	holder=1171 # 
+}
+712.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder = 1049 # Arvis. *Technically* Deirdre, but well...
+}
+777.1.1={
+	holder=1051 # Julius
+}
+779.1.1={
+	holder=1038 # Seliph
 }

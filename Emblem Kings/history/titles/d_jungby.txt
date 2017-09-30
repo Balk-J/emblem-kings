@@ -6,3 +6,44 @@
 	liege = k_grannvale
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_grann
+}
+440.1.1={
+	liege = k_grann
+	holder=824 # 
+}
+448.1.1={
+	#holder=0 # Grann destroyed
+	de_jure_liege = k_ollerus
+	liege = e_loptyr
+}
+449.1.1={
+	holder=801 # Galle I, following the Great Purge
+}
+649.1.1={
+	liege = k_grannvale
+	de_jure_liege = k_grannvale
+	holder=1007 # Ulir
+}
+679.1.1={
+	holder=1224 # 
+}
+702.1.1={
+	holder=1225 # 
+}
+718.1.1={
+	holder=1226 # 
+}
+722.1.1={
+	holder=1078 # Ring
+}
+760.1.1={
+	holder=1083 # Andrey
+}
+761.1.1={
+	holder=1086 # Scipio
+}
+779.1.1={
+	holder=1084 # Febail
+}

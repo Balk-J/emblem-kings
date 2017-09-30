@@ -18,6 +18,24 @@ nick_the_little_knight = {}
 nick_the_holy_knight = {}
 nick_the_berserker = {}
 nick_the_divine_trooper = {}
+# Twelve Crusaders
+#nick_the_saint = {}
+#nick_the_holy_knight = {}
+nick_the_black_knight = {}
+nick_the_mage_fighter = {}
+nick_the_mage_knight = {}
+nick_the_axe_knight = {}
+nick_the_bow_user = {}
+nick_the_wind_user = {}
+nick_the_sword_saint = {}
+nick_the_dragon_knight = {}
+nick_the_lance_knight = {}
+
+# Other Jugdral names
+nick_the_scion_of_light = {}
+nick_the_scion_of_darkness = {}
+nick_the_shield_of_thracia = {}
+
 #Black Fang
 nick_the_white_wolf = {}
 nick_the_mad_dog = {}

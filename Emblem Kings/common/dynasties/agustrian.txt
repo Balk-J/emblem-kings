@@ -1,0 +1,109 @@
+# Canon
+1008={
+	can_appear=no
+	used_for_random=no
+	name="Agusty"
+	culture="agustrian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1013={
+	can_appear=no
+	used_for_random=no
+	name="Nordion"
+	culture="agustrian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+1021={ # for Boldor and Eliott
+	can_appear=no
+	used_for_random=no
+	name="Heirhein"
+	culture="agustrian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+            texture = 1
+            texture_internal = 19
+            emblem = 0
+            color = 10
+            color = 11
+            color = 6
+        }
+    }
+}
+1022={ # for Macbeth
+	can_appear=no
+	used_for_random=no
+	name="Anphony"
+	culture="agustrian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+            texture = 0
+            texture_internal = 45
+            emblem = 0
+            color = 0
+            color = 7
+            color = 6
+        }
+    }
+}
+1023={ # for Clement
+	can_appear=no
+	used_for_random=no
+	name="Mackily"
+	culture="agustrian"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+		layer = {
+            texture = 0
+            texture_internal = 46
+            emblem = 0
+            color = 0
+            color = 11
+            color = 6
+        }
+    }
+}
+1024={ # for the Captain of the Orgahil Pirates
+	can_appear=no
+	used_for_random=no
+	name="of Orgahil"
+	culture="agustrian"
+	coat_of_arms = {
+		religion="raider_pagan"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 14
+            emblem = 0
+            color = 12
+            color = 11
+            color = 7
+        }
+    }
+}

@@ -46,6 +46,8 @@ GOD_DAIN;Dain;;;;;;;;;;;;;x
 GOD_NOBA;Noba;;;;;;;;;;;;;x
 GOD_GRANN;Grann;;;;;;;;;;;;;x
 GOD_YUDU;Yudu;;;;;;;;;;;;;x
+BISHOP;Bishop;;;;;;;;;;;;;x
+DARK_BISHOP;Dark Bishop;;;;;;;;;;;;;x
 ARCHBISHOP;Archbishop;;;;;;;;;;;;;x
 ARCHBISHOP_GOLDEN_CHURCH;Golden Bishop;;;;;;;;;;;;;x
 ARCHBISHOPRIC_OF;Archbishopric of;;;;;;;;;;;;;x
@@ -60,6 +62,17 @@ temple_king_light_group;King-Bishop;Roi très Catholique;König-Bischof;;Rey-obisp
 temple_king_female_light_group;Queen-Bishop;;;;;;;;;;;;;x
 emperor_king_light_group;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
 emperor_king_female_light_group;Empress-Bishop;;;;;;;;;;;;;x
+temple_duchy_of_draconic_group;Archbishopric of;;;;;;;;;;;;;x
+temple_county_of_draconic_group;Bishopric of;;;;;;;;;;;;;x
+temple_barony_of_draconic_group;Shrine of;;;;;;;;;;;;;x
+temple_baron_draconic_group;Priest;;;;;;;;;;;;;x
+temple_baron_female_draconic_group;Priestess;;;;;;;;;;;;;x
+temple_count_draconic_group;Bishop;;;;;;;;;;;;;x
+temple_duke_draconic_group;Archbishop;;;;;;;;;;;;;x
+temple_king_draconic_group;King-Bishop;Roi très Catholique;König-Bischof;;Rey-obispo;;;;;;;;;x
+temple_king_female_draconic_group;Queen-Bishop;;;;;;;;;;;;;x
+emperor_king_draconic_group;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
+emperor_king_female_draconic_group;Empress-Bishop;;;;;;;;;;;;;x
 temple_king_pagan_group;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
 pagan_DESC;Since the dawn of history, the world has been home to countless Pagan religions and cults.;;;;;;;;;;;;;x
 draconic_group;Draconic;;;;;;;;;;;;;x
@@ -88,6 +101,8 @@ k_dragon_liberation;The Last Dragons;;;;;;;;;;;;;x
 k_dragon_liberation_adj;Last Dragon;;;;;;;;;;;;;x
 e_dragon_liberation;The Last Dragons;;;;;;;;;;;;;x
 e_dragon_liberation_adj;Last Dragon;;;;;;;;;;;;;x
+d_loptyrian;Church of Loptyr;;;;;;;;;;;;;x
+d_loptyrian_adj;Loptyrian;;;;;;;;;;;;;x
 magic_group;Mage;;;;;;;;;;;;;x
 dark;Elder Magic;;;;;;;;;;;;;x
 dark_DESC;Elder or "dark" magic is an ancient magical discipline whose power stems from deep knowledge and understanding of the arcane. The common folk widely believe elder magic to be evil - perhaps due to the number of mages who have had their minds erased by the forces they sought to command, or been twisted into power-hungry maniacs.;;;;;;;;;;;;;x
@@ -139,3 +154,5 @@ temple_baron_earthen_pagan_reformed;Priest;;;;;;;;;;;;;x
 temple_baron_female_earthen_pagan_reformed;Priestess;;;;;;;;;;;;;x
 temple_baron_earthen_pagan;Priest;;;;;;;;;;;;;x
 temple_baron_female_earthen_pagan;Priestess;;;;;;;;;;;;;x
+loptyrian_opinion;Loptyrian Opinion;;;;;;;;;;;;;x
+church_of_edda_opinion;Church of Edda Opinion;;;;;;;;;;;;;x

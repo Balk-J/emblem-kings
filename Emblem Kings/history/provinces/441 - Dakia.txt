@@ -7,7 +7,7 @@ title = c_dakia
 max_settlements = 3
 
 b_dakia = castle
-b_dandelion = city
+#b_dandelion = city
 #b_druim_mor = temple
 
 # Misc
@@ -15,3 +15,19 @@ culture = mansterian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_dakia = tribal
+}
+500.1.1 = { 
+	b_dakia = castle
+b_dandelion = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}
+666.1.1 = { 
+	culture = mansterian
+}

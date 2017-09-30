@@ -18,3 +18,22 @@ culture = verdanian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_genoa_castle = tribal
+}
+
+448.1.1 = { 
+	culture = verdanian
+}
+449.1.1 = { 
+	religion = loptyrian # Following the Great Purge
+}
+500.1.1 = { 
+	b_genoa_castle = castle
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = verdanian
+}

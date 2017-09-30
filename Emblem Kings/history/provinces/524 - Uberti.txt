@@ -7,7 +7,7 @@ title = c_uberti
 max_settlements = 3
 
 b_uberti = tribal
-b_uberti_2 = city
+#b_uberti_2 = city
 #b_uberti_3 = temple
 
 # Misc
@@ -15,3 +15,13 @@ culture = agustrian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = agustrian
+b_uberti_2 = city
+}

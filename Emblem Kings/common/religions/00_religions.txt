@@ -223,7 +223,7 @@ pagan_group = {
 	raider_pagan = {
 		#c_badon, c_ganelon, c_taliver, c_marciana, c_calynda
 		graphical_culture = norsegfx
-		pre_reformed = yes
+		#pre_reformed = yes
 
 		icon = 11
 		
@@ -529,7 +529,7 @@ draconic_group = {
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
 	#crusade_cb = crusade
-	playable = no # not yet!
+	playable = yes 
 	hostile_within_group = yes
 	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
 	
@@ -582,6 +582,7 @@ draconic_group = {
 	}
 	
 	dragon_gods = {
+		pre_reformed = yes
 		graphical_culture = westerngfx
 		
 		icon = 1

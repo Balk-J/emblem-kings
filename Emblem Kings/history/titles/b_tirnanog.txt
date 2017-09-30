@@ -1,0 +1,9 @@
+180.1.1={
+	liege=c_tirnanog
+}
+761.1.1={
+	holder=1082 # Edain
+}
+779.1.1={
+	holder=0 # Gone home!
+}

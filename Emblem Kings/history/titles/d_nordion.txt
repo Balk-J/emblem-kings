@@ -6,3 +6,56 @@
 	liege = k_agustria
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_grann
+}
+440.1.1={
+	liege = k_grann
+	holder=826 # 
+}
+448.1.1={
+	#holder=0 # Grann destroyed
+	de_jure_liege = k_heirhein
+	liege = e_loptyr
+}
+449.1.1={
+	holder=801 # Galle I, following the Great Purge
+}
+649.1.1={
+	liege = k_agustria
+	de_jure_liege = k_agustria
+	holder=1026 # House Nordion
+}
+685.1.1={
+	holder=1232 # 
+}
+719.1.1={
+	holder=1233 # 
+}
+732.1.1={
+	holder=1091 # Eldigan's father
+}
+741.1.1={
+	holder=1094 # Eldigan
+}
+759.1.1={
+	liege = k_grannvale
+	holder=1032 # Sigurd
+}
+760.1.1={
+	liege = k_agustria
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+#761.1.1={
+#	holder=1058 # Bloom?
+#}
+#778.1.1={
+777.1.1={
+	holder=1051 # Julius?
+}
+779.1.1={
+	holder=1096 # Diarmuid
+}

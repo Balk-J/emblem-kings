@@ -6,3 +6,14 @@
 	liege = k_thracia
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_luthecia
+}
+440.1.1={
+	holder=887 # 
+}
+649.1.1={
+	holder = 1011 # Dain TODO: fix
+	liege = k_thracia
+	de_jure_liege = k_thracia
+}

@@ -97,3 +97,7 @@ opinion_rebel_scum = {
 	opinion = -100
 	months = 120
 }
+opinion_crush = {
+	opinion = 25
+	months = 60
+}

@@ -6,3 +6,9 @@
 	liege = d_marpha
 	#holder = 0
 }
+440.1.1={
+	holder=839 # 
+}
+469.1.1={
+	holder=0 # 
+}

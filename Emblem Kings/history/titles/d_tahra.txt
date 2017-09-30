@@ -6,3 +6,30 @@
 	liege = k_manster
 	#holder = 0
 }
+180.1.1={
+	de_jure_liege = k_luthecia
+}
+649.1.1={
+	holder=1012 # Noba TODO: add filler character
+	de_jure_liege = k_thracia
+	liege = k_thracia
+}
+666.1.1={
+	de_jure_liege = k_manster
+	liege = k_manster
+}
+673.1.1 = { 
+	holder = 1166
+}
+719.1.1 = { 
+	holder = 1167 #
+}
+745.1.1 = { 
+	holder = 1168 # Linoan's father
+}
+771.1.1 = { 
+	holder = 1170 # A "cruel surrogate"
+}
+773.1.1 = { 
+	holder = 1169 # Linoan
+}

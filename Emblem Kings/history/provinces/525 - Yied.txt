@@ -16,3 +16,15 @@ culture = grannvalean
 religion = loptyrian
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_yied_shrine = tribal
+}
+500.1.1 = { 
+	b_yied_shrine = castle
+}
+649.1.1 = { 
+	religion = loptyrian
+	culture = grannvalean
+}

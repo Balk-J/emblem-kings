@@ -79,12 +79,14 @@ class_dancer;Dancer;;;;;;;;;;;;;x
 class_dancer_desc;Dancers whose grace soothes allies. They do not fight in combat.;;;;;;;;;;;;;x
 class_dark_druid;Dark Druid;;;;;;;;;;;;;x
 class_dark_druid_desc;A druid whose soul has been sacrificed to darkness in an appeal for power.;;;;;;;;;;;;;x
-class_sorceror;Druid;;;;;;;;;;;;;x
-class_sorceror_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
+class_sorceror;Sorceror;;;;;;;;;;;;;x
+#class_sorceror_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
 #class_druid_desc;A title granted to powerful shamans. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
-class_sorceror_female;Druid;;;;;;;;;;;;;x
-class_sorceror_female_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
+class_sorceror_desc;A title granted to powerful dark mages. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
+class_sorceror_female;Sorceress;;;;;;;;;;;;;x
+#class_sorceror_female_desc;A title received by shamans who focus their powers toward mastering dark arts.;;;;;;;;;;;;;x
 #class_druid_female_desc;A title granted to powerful shamans. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
+class_sorceror_female_desc;A title granted to powerful dark mages. Those who battle them cower in fear of their might.;;;;;;;;;;;;;x
 class_falcon_knight;Falcon Knight;;;;;;;;;;;;;x
 class_falcon_knight_desc;A title bestowed upon skilled pegasus knights. They have superb speed and magic resistance.;;;;;;;;;;;;;x
 #class_falcon_knight_desc;Knights united with their pegasus mounts. They have superior skill and resistance.;;;;;;;;;;;;;x
@@ -127,11 +129,11 @@ class_myrmidon;Myrmidon;;;;;;;;;;;;;x
 class_myrmidon_desc;Swordsmen who possess superior speed and technique. They specialize in killing strokes.;;;;;;;;;;;;;x
 class_myrmidon_female;Myrmidon;;;;;;;;;;;;;x
 class_myrmidon_female_desc;Swordsmen who possess superior speed and technique. They specialize in killing strokes.;;;;;;;;;;;;;x
-class_horse_archer;Nomad;;;;;;;;;;;;;x
-#class_horse_archer;Horse Archer;;;;;;;;;;;;;x
+#class_horse_archer;Nomad;;;;;;;;;;;;;x
+class_horse_archer;Horse Archer;;;;;;;;;;;;;x
 class_horse_archer_desc;Riders skilled in horseback archery. Incredibly swift.;;;;;;;;;;;;;x
-class_horse_archer_female;Nomad;;;;;;;;;;;;;x
-#class_horse_archer_female;Horse Archer;;;;;;;;;;;;;x
+#class_horse_archer_female;Nomad;;;;;;;;;;;;;x
+class_horse_archer_female;Horse Archer;;;;;;;;;;;;;x
 class_horse_archer_female_desc;Riders skilled in horseback archery. Incredibly swift.;;;;;;;;;;;;;x
 class_paladin;Paladin;;;;;;;;;;;;;x
 class_paladin_desc;A title earned only by those cavaliers whose lives have been dedicated to justice.;;;;;;;;;;;;;x
@@ -141,12 +143,12 @@ class_pirate;Pirate;;;;;;;;;;;;;x
 class_pirate_desc;Axe-wielding privateers trained to fight on the high seas.;;;;;;;;;;;;;x
 class_priest;Priest;;;;;;;;;;;;;x
 class_priest_desc;Members of the clergy who wield sacred staves to aid allies. They carry no weapons.;;;;;;;;;;;;;x
-class_bow_knight;Nomad Trooper;;;;;;;;;;;;;x
-#class_ranger;Ranger;;;;;;;;;;;;;x
+#class_bow_knight;Nomad Trooper;;;;;;;;;;;;;x
+class_bow_knight;Ranger;;;;;;;;;;;;;x
 class_bow_knight_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
 #class_ranger_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
-class_bow_knight_female;Nomad Trooper;;;;;;;;;;;;;x
-#class_ranger_female;Ranger;;;;;;;;;;;;;x
+#class_bow_knight_female;Nomad Trooper;;;;;;;;;;;;;x
+class_bow_knight_female;Ranger;;;;;;;;;;;;;x
 class_bow_knight_female_desc;Mounted knights who charge into battle with sword and bow. They possess great mobility.;;;;;;;;;;;;;x
 #class_ranger_female_desc;A title earned by combat-hardened nomads. Sword-swinging, arrow-flinging warriors.;;;;;;;;;;;;;x
 class_rogue;Rogue;;;;;;;;;;;;;x
@@ -155,9 +157,9 @@ class_sage;Sage;;;;;;;;;;;;;x
 class_sage_desc;A title given to advanced mages. They wield magic and can carry staves.;;;;;;;;;;;;;x
 class_sage_female;Sage;;;;;;;;;;;;;x
 class_sage_female_desc;A title given to advanced mages. They wield magic and can carry staves.;;;;;;;;;;;;;x
-class_dark_mage;Shaman;;;;;;;;;;;;;x
+class_dark_mage;Dark Mage;;;;;;;;;;;;;x
 class_dark_mage_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
-class_dark_mage_female;Shaman;;;;;;;;;;;;;x
+class_dark_mage_female;Dark Mage;;;;;;;;;;;;;x
 class_dark_mage_female_desc;Masters of elder black magic. They are very powerful, but very slow as well.;;;;;;;;;;;;;x
 class_sniper;Sniper;;;;;;;;;;;;;x
 class_sniper_desc;Archers dedicated to mastering their art. None can match their skill with the bow.;;;;;;;;;;;;;x
@@ -204,3 +206,61 @@ disinherited;Disinherited;;;;;;;;;;;;;x
 disinherited_desc;This character has been removed from the line of succession.;;;;;;;;;;;;;x
 supreme_essence;Supreme Essence;;;;;;;;;;;;;x
 supreme_essence_desc;This character has absorbed a great deal of powerful quintessence.;;;;;;;;;;;;;x
+crusader_draconic;Crusader;Croisé;Kreuzritter;;Paladín;;;;;;;;;x
+crusader_draconic_desc;This character is a veteran Crusader.;Ce personnage est un vétéran des croisades;Dieser Charakter ist ein erfahrender Kreuzritter.;;Este personaje es un paladín veterano.;;;;;;;;;x
+holy_blood_major_loptyr;Major Loptyr Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_loptyr_desc;This character has major §YLoptyr§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_naga;Major Naga Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_naga_desc;This character has major §YNaga§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_baldur;Major Baldur Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_baldur_desc;This character has major §YBaldur§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_blagi;Major Blagi Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_blagi_desc;This character has major §YBlagi§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_dain;Major Dain Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_dain_desc;This character has major §YDain§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_fala;Major Fala Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_fala_desc;This character has major §YFala§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_forseti;Major Forseti Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_forseti_desc;This character has major §YForseti§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_hezul;Major Hezul Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_hezul_desc;This character has major §YHezul§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_neir;Major Neir Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_neir_desc;This character has major §YNeir§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_noba;Major Noba Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_noba_desc;This character has major §YNoba§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_odo;Major Odo Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_odo_desc;This character has major §YOdo§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_tordo;Major Tordo Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_tordo_desc;This character has major §YTordo§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_ulir;Major Ulir Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_ulir_desc;This character has major §YUlir§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_loptyr;Minor Loptyr Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_loptyr_desc;This character has minor §YLoptyr§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_naga;Minor Naga Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_naga_desc;This character has minor §YNaga§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_baldur;Minor Baldur Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_baldur_desc;This character has minor §YBaldur§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_blagi;Minor Blagi Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_blagi_desc;This character has minor §YBlagi§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_dain;Minor Dain Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_dain_desc;This character has minor §YDain§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_fala;Minor Fala Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_fala_desc;This character has minor §YFala§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_forseti;Minor Forseti Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_forseti_desc;This character has minor §YForseti§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_hezul;Minor Hezul Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_hezul_desc;This character has minor §YHezul§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_neir;Minor Neir Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_neir_desc;This character has minor §YNeir§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_noba;Minor Noba Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_noba_desc;This character has minor §YNoba§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_odo;Minor Odo Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_odo_desc;This character has minor §YOdo§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_tordo;Minor Tordo Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_tordo_desc;This character has minor §YTordo§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_ulir;Minor Ulir Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_ulir_desc;This character has minor §YUlir§! holy blood.;;;;;;;;;;;;;x
+possessed_loptyr;Possessed;;;;;;;;;;;;;x
+possessed_loptyr_desc;This character is charismatic, but profoundly unsettling. [GetHerHisCap] gaze draws you in, and you lose yourself in it...;;;;;;;;;;;;;x
+possessed_forseti;Possessed;;;;;;;;;;;;;x
+possessed_forseti_desc;This character is cold and distant. [GetSheHeCap] shows a wealth of knowledge of the world but is reluctant to become involve [GetHerselfHimself] in political affairs.;;;;;;;;;;;;;x

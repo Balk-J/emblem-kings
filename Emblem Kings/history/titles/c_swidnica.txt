@@ -6,3 +6,6 @@
 	liege = d_silesse
 	#holder = 0
 }
+742.1.1={
+	holder = 1244 # Sylvia's guardian
+}

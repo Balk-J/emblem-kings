@@ -6,3 +6,9 @@
 	liege = d_friege
 	#holder = 0
 }
+440.1.1={
+	holder=830 # 
+}
+649.1.1={
+	holder=0 # 
+}

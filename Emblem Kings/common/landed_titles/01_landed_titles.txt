@@ -3225,11 +3225,11 @@ e_elibe = {
 			}
 		}
 	}
-}e_jugdral = {
+}e_grannvale = {
 	color={ 195 66 16 }
 	color2={ 255 255 20 }
 
-	capital = 1
+	capital = 333
 	culture = grannvalean
 
 	k_grannvale = {
@@ -3238,17 +3238,21 @@ e_elibe = {
 
 		capital = 333
 		culture = grannvalean
+		dignity = 11
 
 		d_belhalla = {
 			color={ 224 203 106 }
 			color2={ 255 255 255 }
 
 			capital=333
+			dignity = 5
+			grann="Valhalla"
 
 			c_belhalla = {
 				color={ 224 203 106 }
 				color2={ 255 255 255 }
 
+				grann="Valhalla"
 
 				b_belhalla = {
 				}
@@ -3261,6 +3265,8 @@ e_elibe = {
 				b_fagrskinna = {
 				}
 				b_heimskringla = {
+				}
+				b_walaz = {
 				}
 			}
 			c_glasir = {
@@ -3315,11 +3321,14 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=337
+			dignity = 3
+			grann="Vali"
 
 			c_velthomer = {
 				color={ 201 85 57 }
 				color2={ 255 255 255 }
 
+				grann="Vali"
 
 				b_velthomer_castle = {
 				}
@@ -3327,9 +3336,11 @@ e_elibe = {
 				}
 				b_velthomer_2 = {
 				}
-				b_fala = {
+				b_velera_4 = {
 				}
-				b_valflame = {
+				b_val = {
+				}
+				b_fala = {
 				}
 			}
 			c_spakona = {
@@ -3344,6 +3355,8 @@ e_elibe = {
 				b_spakona_3 = {
 				}
 				b_volur = {
+				}
+				b_spae = {
 				}
 			}
 			c_spaekona = {
@@ -3394,12 +3407,14 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=342
+			grann="Hattatal"
 
 			c_edda = {
 				color={ 213 195 67 }
 				color2={ 255 255 255 }
 
 				holy_site = church_of_edda
+				grann="Hattatal"
 
 				b_edda_castle = {
 				}
@@ -3474,11 +3489,14 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=347
+			dignity = 2
+			grann="Breidablik"
 
 			c_chalphy = {
 				color={ 185 53 41 }
 				color2={ 255 255 255 }
 
+				grann="Breidablik"
 
 				b_chalphy_castle = {
 				}
@@ -3543,11 +3561,13 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=351
+			grann="Fensalir"
 
 			c_friege = {
 				color={ 24 39 92 }
 				color2={ 255 255 255 }
 
+				grann="Fensalir"
 
 				b_friege_castle = {
 				}
@@ -3558,6 +3578,8 @@ e_elibe = {
 				b_frigg = {
 				}
 				b_vethorm = {
+				}
+				b_sonnung = {
 				}
 			}
 			c_donar = {
@@ -3587,6 +3609,8 @@ e_elibe = {
 				}
 				b_tor_3 = {
 				}
+				b_hloridi = {
+				}
 			}
 		}
 		d_dozel = {
@@ -3594,11 +3618,13 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=354
+			grann="Delling"
 
 			c_dozel = {
 				color={ 29 92 78 }
 				color2={ 255 255 255 }
 
+				grann="Delling"
 
 				b_dozel_castle = {
 				}
@@ -3609,6 +3635,8 @@ e_elibe = {
 				b_lodi = {
 				}
 				b_vigevano = {
+				}
+				b_chiavenna = {
 				}
 			}
 			c_monza = {
@@ -3647,11 +3675,13 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=357
+			grann="Ollerus"
 
 			c_jungby = {
 				color={ 35 103 103 }
 				color2={ 255 255 255 }
 
+				grann="Ollerus"
 
 				b_jungby_castle = {
 				}
@@ -3730,11 +3760,13 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=362
+			grann="Nerthus"
 
 			c_agusty = {
 				color={ 37 117 88 }
 				color2={ 255 255 255 }
 
+				grann="Nerthus"
 
 				b_agusty_castle = {
 				}
@@ -4197,11 +4229,13 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=392
+			grann="Silesia"
 
 			c_silesse = {
 				color={ 43 57 84 }
 				color2={ 255 255 255 }
 
+				grann="Silesia"
 
 				b_silesse_castle = {
 				}
@@ -4210,6 +4244,8 @@ e_elibe = {
 				b_silesse_2 = {
 				}
 				b_wroclaw = {
+				}
+				b_sycow = {
 				}
 			}
 			c_ziebice = {
@@ -4488,11 +4524,13 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=411
+			grann="Avrame"
 
 			c_isaach = {
 				color={ 24 108 69 }
 				color2={ 255 255 255 }
 
+				grann="Avrame"
 
 				b_isaach_castle = {
 				}
@@ -4835,17 +4873,20 @@ e_elibe = {
 
 		capital = 435
 		culture = mansterian
+		dignity = 15
 
 		d_leonster = {
 			color={ 57 66 105 }
 			color2={ 255 255 255 }
 
 			capital=435
+			grann="Leinster"
 
 			c_leonster = {
 				color={ 57 66 105 }
 				color2={ 255 255 255 }
 
+				grann="Leinster"
 
 				b_leonster_castle = {
 				}
@@ -5154,7 +5195,7 @@ e_elibe = {
 			}
 		}
 		d_tahra = {
-			color={ 96 96 115 }
+			color={ 241 155 180 }
 			color2={ 255 255 255 }
 
 			capital=455
@@ -5164,25 +5205,25 @@ e_elibe = {
 				color2={ 255 255 255 }
 
 
-				b_tahra = {
-				}
 				b_tahra_castle = {
+				}
+				b_tahra = {
 				}
 				b_tahra_2 = {
 				}
 				b_maol_ros = {
 				}
 			}
-			c_cealsaidh = {
+			c_frest = {
 				color={ 151 151 191 }
 				color2={ 255 255 255 }
 
 
-				b_cealsaidh = {
+				b_frest = {
 				}
-				b_cealsaidh_2 = {
+				b_frest_2 = {
 				}
-				b_cealsaidh_3 = {
+				b_frest_3 = {
 				}
 			}
 		}
@@ -5193,17 +5234,20 @@ e_elibe = {
 
 		capital = 458
 		culture = thracian
+		dignity = 8
 
 		d_thracia = {
 			color={ 178 61 49 }
 			color2={ 255 255 255 }
 
 			capital=458
+			grann="Thrake"
 
 			c_thracia = {
 				color={ 178 61 49 }
 				color2={ 255 255 255 }
 
+				grann="Thrake"
 
 				b_thracia_castle = {
 				}
@@ -5214,6 +5258,8 @@ e_elibe = {
 				b_deuteron = {
 				}
 				b_heieron = {
+				}
+				b_thrake = {
 				}
 			}
 			c_verissa = {
@@ -5577,36 +5623,36 @@ e_elibe = {
 				}
 			}
 		}
-		d_mumu = {
-			color={ 255 119 8 }
+		d_savan = {
+			color={ 188 64 167 }
 			color2={ 255 255 255 }
 
 			capital=485
 
-			c_mumu = {
+			c_savan = {
 				color={ 255 119 8 }
 				color2={ 255 255 255 }
 
 
-				b_mumu = {
+				b_savan = {
 				}
-				b_mumu_2 = {
+				b_savan_2 = {
 				}
-				b_mumu_3 = {
+				b_savan_3 = {
 				}
-				b_ard_fhearta = {
+				b_imleach = {
 				}
 			}
-			c_deasmhumhain = {
+			c_aonach = {
 				color={ 203 95 6 }
 				color2={ 255 255 255 }
 
 
-				b_deasmhumhain = {
+				b_aonach = {
 				}
-				b_deasmhumhain_2 = {
+				b_aonach_2 = {
 				}
-				b_deasmhumhain_3 = {
+				b_aonach_3 = {
 				}
 			}
 			c_caiseal = {
@@ -5621,16 +5667,16 @@ e_elibe = {
 				b_caiseal_3 = {
 				}
 			}
-			c_urmhumhain = {
+			c_iubhair = {
 				color={ 150 80 23 }
 				color2={ 255 255 255 }
 
 
-				b_urmhumhain = {
+				b_iubhair = {
 				}
-				b_urmhumhain_2 = {
+				b_iubhair_2 = {
 				}
-				b_urmhumhain_3 = {
+				b_iubhair_3 = {
 				}
 			}
 		}
@@ -6720,11 +6766,11 @@ e_elibe = {
 				holy_site = loptyrian
 				holy_site = mairist
 
-				b_nyingma = {
-				}
 				b_muktinath = {
 				}
 				b_surkhang = {
+				}
+				b_spirit_forest = {
 				}
 				b_charang = {
 				}
@@ -6754,7 +6800,7 @@ e_elibe = {
 				}
 				b_dhami_3 = {
 				}
-				b_tukuche = {
+				b_surkhang_2 = {
 				}
 			}
 			c_lete = {
@@ -6842,6 +6888,7 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=502
+			grann="Grann's Vale"
 
 			c_evans = {
 				color={ 152 136 56 }
@@ -6852,6 +6899,7 @@ e_elibe = {
 				holy_site = earthen_pagan
 				holy_site = earthen_pagan_reformed
 				holy_site = church_of_edda
+				grann="Grann"
 
 				b_evans_castle = {
 				}
@@ -6964,6 +7012,8 @@ e_elibe = {
 				b_palation_2 = {
 				}
 				b_palation_3 = {
+				}
+				b_palat = {
 				}
 			}
 		}
@@ -7182,6 +7232,7 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=523
+			grann="Blainn"
 
 			c_basile = {
 				color={ 183 126 177 }

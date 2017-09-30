@@ -8,8 +8,8 @@ max_settlements = 6
 
 b_chalphy_castle = castle
 b_chalphy = temple
-b_chalphy_2 = city
-b_hervararkvida = temple
+#b_chalphy_2 = city
+#b_hervararkvida = temple
 #b_gridarvolr = castle
 #b_megingjord = city
 
@@ -18,3 +18,17 @@ culture = grannvalean
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_chalphy_castle = tribal
+}
+500.1.1 = { 
+	b_chalphy_castle = castle
+	b_chalphy_2 = city
+	b_hervararkvida = temple
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = grannvalean
+}

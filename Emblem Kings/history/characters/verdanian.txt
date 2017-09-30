@@ -1,0 +1,948 @@
+# Verdane royal line
+1172={
+	name="Eilif"
+	father=837
+	dynasty=1014
+	culture=verdanian
+	religion=earthen_pagan
+	451.1.1={
+		birth=yes
+	}
+	509.1.1={
+		death = yes
+	}
+}
+1173={
+	name="Sæmundr"
+	father=1172
+	dynasty=1014
+	culture=verdanian
+	religion=earthen_pagan
+	490.1.1={
+		birth=yes
+	}
+	536.1.1={
+		death = yes
+	}
+}
+1174={
+	name="Egill"
+	father=1173
+	dynasty=1014
+	culture=verdanian
+	religion=earthen_pagan
+	520.1.1={
+		birth=yes
+	}
+	580.1.1={
+		death = yes
+	}
+}
+1175={
+	name="Frirek"
+	father=1174
+	dynasty=1014
+	culture=verdanian
+	religion=earthen_pagan
+	556.1.1={
+		birth=yes
+	}
+	608.1.1={
+		death = yes
+	}
+}
+1176={
+	name="Tolir"
+	father=1175
+	dynasty=1014
+	culture=verdanian
+	religion=earthen_pagan
+	588.1.1={
+		birth=yes
+	}
+	634.1.1={
+		death = yes
+	}
+}
+1177={
+	name="Mats"
+	father=1176
+	dynasty=1014
+	culture=verdanian
+	religion=earthen_pagan
+	614.1.1={
+		birth=yes
+	}
+	# Founding of Jugdral
+	649.1.1 = {
+		religion=church_of_edda
+	}
+	680.1.1={
+		death = yes
+	}
+}
+1178={
+	name="Alfr"
+	father=1177
+	dynasty=1014
+	culture=verdanian
+	religion=church_of_edda
+	650.1.1={
+		birth=yes
+	}
+	701.1.1={
+		death = yes
+	}
+}
+1179={
+	name="Hæsteinn"
+	father=1178
+	dynasty=1014
+	culture=verdanian
+	religion=church_of_edda
+	670.1.1={
+		birth=yes
+	}
+	715.1.1={
+		death = yes
+	}
+}
+#1028
+# King of Verdane, 757. A pacifist who tried to stop his kingdom's historical belligerence.
+1180={
+	name="Batou"
+	father=1179
+	dynasty=1014
+	culture=verdanian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	694.1.1={
+		birth=yes
+	}	
+	706.01.01={
+		add_trait="class_fighter"
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	709.1.1 = {
+		add_trait="charismatic_negotiator"
+		add_trait="kind"
+		add_trait="patient"
+		add_trait="content"
+		add_trait="honest"
+		add_trait="just"
+		add_trait="trusting"
+	}	 
+#	714.01.01={
+#		remove_trait="class_fighter"
+#		add_trait="class_warrior"
+#	} 
+	716.1.1={
+		add_spouse=1181
+	}
+	758.1.1={
+		death = {
+			death_reason=death_murder
+			#killer= # Sandima
+		}
+	}
+}
+# Non-canon, spouse for Batou
+1181={
+	name="Þyra"
+	female=yes
+	culture=verdanian
+	religion=church_of_edda
+	700.1.1={
+		birth=yes
+	}	
+	712.01.01={
+		add_trait="class_archer_female"
+		add_trait="base_class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	755.1.1={
+		death = yes
+	}
+}
+# AKA Kinbois. Eldest prince of Verdane. Rules Genoa.
+1182={
+	name="Cimbaeth"
+	father=1180
+	mother=1181
+	dynasty=1014
+	culture=verdanian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	728.1.1={
+		birth=yes
+	}	
+	740.01.01={
+		add_trait="class_fighter"
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	743.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="heavy_infantry_leader"
+		add_trait="wroth"
+		add_trait="proud"
+		add_trait="deceitful"
+		add_trait="trusting" # that shady bishop definitely has our best interests in mind
+		add_trait="brawny"
+	}	 
+	748.01.01={
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	} 
+	758.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# AKA Gandolf. Middle prince of Verdane. Rules Marpha. Led the attack on Jungby in 757.
+1183={
+	name="Munnir" # 
+	father=1180
+	mother=1181
+	dynasty=1014
+	culture=verdanian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	729.1.1={
+		birth=yes
+	}	
+	741.01.01={
+		add_trait="class_fighter"
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	744.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="greedy"
+		add_trait="lustful"
+		add_trait="cruel"
+		add_trait="arbitrary"
+		add_trait="trusting" # that shady bishop definitely has our best interests in mind
+		add_trait="brawny"
+	}	 
+	749.01.01={
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	} 
+	758.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Youngest prince of Verdane. The only good one. Might actually be Batou's grandson through parents never mentioned in the game itself.
+1184={
+	name="Jamke"
+	father=1180
+	mother=1181
+	dynasty=1014
+	culture=verdanian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	736.1.1={
+		birth=yes
+	}	
+	748.01.01={
+		add_trait="class_archer"
+		add_trait="base_class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			
+			# He loves and respects his dad
+			c_1180 = { # Batou
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_family_love
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	} 
+	751.1.1 = {
+		add_trait="underhanded_rogue"
+		add_trait="light_foot_leader"
+		add_trait="rough_terrain_leader"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="brave"
+	}	 
+	758.1.1 = {
+		employer=1032 # Sigurd
+	}	 
+	760.01.01={
+		remove_trait="class_archer"
+		add_trait="class_sniper"
+	} 
+	# Died at the Battle of Belhalla?
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis
+		}
+	}
+}
+# Loptyrian Dark Priest. Manipulates Batou & family into attacking Grannvale.
+1185={
+	name="Sandima"
+	dynasty=1034
+	culture=verdanian
+	religion=loptyrian
+	disallow_random_traits=yes
+	727.1.1={
+		birth=yes
+	}	
+	739.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	742.1.1 = {
+		add_trait="intricate_webweaver"
+		add_trait="deceitful"
+		add_trait="gregarious"
+		add_trait="ambitious"
+		add_trait="zealous"
+	}	
+	752.1.1 = { 
+		give_job_title = job_spymaster # what a great advisor
+	}
+	758.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Munnir's flunky. Put him in Augea?
+1186={
+	name="Dimaggio"
+	dynasty=1035
+	culture=verdanian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=ugly
+	737.1.1={
+		birth=yes
+	}	
+	749.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	752.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="greedy"
+		add_trait="lustful"
+		add_trait="cruel"
+		add_trait="arbitrary"
+	}	
+	758.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Munnir's flunky. Guards Evans.
+1187={
+	name="Gerrard"
+	dynasty=1036
+	culture=verdanian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=ugly
+	737.1.1={
+		birth=yes
+	}	
+	749.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	752.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="greedy"
+		add_trait="lustful"
+		add_trait="cruel"
+		add_trait="arbitrary"
+	}	
+	758.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Non-canon; characters to hide Maira's descendants
+1188={
+	name="Markus"
+	dynasty=1037
+	culture=verdanian
+	religion=earthen_pagan
+	520.1.1={
+		birth=yes
+	}
+	571.1.1={
+		death = yes
+	}
+}
+1189={
+	name="Gunnarr"
+	father=1188
+	dynasty=1037
+	culture=verdanian
+	religion=earthen_pagan
+	552.1.1={
+		birth=yes
+	}
+	608.1.1={
+		death = yes
+	}
+}
+1190={
+	name="Guðröðr"
+	father=1189
+	dynasty=1037
+	culture=verdanian
+	religion=earthen_pagan
+	590.1.1={
+		birth=yes
+	}
+	645.1.1={
+		death = yes
+	}
+}
+1191={
+	name="Kettilmund"
+	father=1190
+	dynasty=1037
+	culture=verdanian
+	religion=earthen_pagan
+	620.1.1={
+		birth=yes
+	}
+	649.1.1={
+		religion=church_of_edda
+	}
+	667.1.1={
+		death = yes
+	}
+}
+1192={
+	name="Sigurðr"
+	father=1191
+	dynasty=1037
+	culture=verdanian
+	religion=church_of_edda
+	650.1.1={
+		birth=yes
+	}
+	699.1.1={
+		death = yes
+	}
+}
+1193={
+	name="Bragi"
+	father=1192
+	dynasty=1037
+	culture=verdanian
+	religion=church_of_edda
+	684.1.1={
+		birth=yes
+	}
+	748.1.1={
+		death = yes
+	}
+}
+1194={
+	name="Oddr"
+	father=1193
+	dynasty=1037
+	culture=verdanian
+	religion=church_of_edda
+	710.1.1={
+		birth=yes
+	}
+	781.1.1={
+		death = yes
+	}
+}
+1195={
+	name="Maer"
+	female=yes
+	father=818
+	dynasty=801
+	culture=verdanian
+	religion=mairist
+	trait=holy_blood_latent_loptyr
+	540.1.1={
+		birth=yes
+		employer=1188 # Spirit Forest
+	}
+	552.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	560.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+1196={
+	name="Baldr"
+	dynasty=802
+	culture=verdanian
+	religion=earthen_pagan
+	541.1.1={
+		birth=yes
+		employer=1188 # Spirit Forest
+	}
+	559.01.01={
+		add_spouse=1195
+	} 
+	 
+	596.1.1={
+		death=yes
+	}
+}
+1197={
+	name="Edla"
+	female=yes
+	father=1196
+	mother=1195
+	dynasty=802
+	culture=verdanian
+	religion=earthen_pagan
+	trait=holy_blood_latent_loptyr
+	560.1.1={
+		birth=yes
+		employer=1188 # Spirit Forest
+	}
+	572.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	590.1.1={
+		add_trait=celibate
+	}
+	612.1.1={
+		death=yes
+	}
+}
+1198={
+	name="Hemming"
+	mother=1197
+	dynasty=802
+	culture=verdanian
+	religion=earthen_pagan
+	trait=holy_blood_latent_loptyr
+	590.1.1={
+		birth=yes
+		employer=1189 # Spirit Forest
+	}
+	602.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	630.1.1={
+		add_trait=celibate
+	}
+	649.1.1={
+		death=yes
+	}
+}
+1199={
+	name="Örvar"
+	father=1198
+	dynasty=802
+	culture=verdanian
+	religion=earthen_pagan
+	trait=holy_blood_latent_loptyr
+	630.1.1={
+		birth=yes
+		employer=1190 # Spirit Forest
+	}
+	642.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	649.1.1 = {
+		religion=church_of_edda
+	}
+	670.1.1={
+		add_trait=celibate
+	}
+	686.1.1={
+		death=yes
+	}
+}
+1200={
+	name="Ivar"
+	father=1199
+	dynasty=802
+	culture=verdanian
+	religion=church_of_edda
+	trait=holy_blood_latent_loptyr
+	670.1.1={
+		birth=yes
+		employer=1192 # Spirit Forest
+	}
+	682.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	698.1.1={
+		add_trait=celibate
+	}
+	699.1.1={
+		death = {
+			death_reason=death_accident
+		}
+	}
+}
+1201={
+	name="Nils"
+	father=1200
+	dynasty=802
+	culture=verdanian
+	religion=church_of_edda
+	trait=holy_blood_latent_loptyr
+	698.1.1={
+		birth=yes
+		employer=1193 # Spirit Forest
+	}
+	710.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	714.1.1={
+		add_trait=celibate
+	}
+	715.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Mother of Arvis and Deirdre. Wife of Duke Victor of Velthomer, mistress of Kurth.
+1202={
+	name="Cigyun"
+	female=yes
+	father=1201
+	dynasty=802
+	culture=verdanian
+	religion=church_of_edda
+	trait=holy_blood_latent_loptyr
+	disallow_random_traits=yes
+	714.1.1={
+		birth=yes
+		employer=1193 # Spirit Forest
+	}
+	726.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	729.1.1 = {
+		add_trait="detached_priest"
+		add_trait="gregarious"
+		add_trait="kind"
+		add_trait="ambitious"
+		add_trait="brave"
+		add_trait="deceitful"
+	}	 
+	738.6.1={
+		effect={
+			c_1048 = { # Victor
+				# You slept with the maid!
+				opinion = {
+					modifier = opinion_angry
+					who = ROOT
+					years = 10
+				}
+				reverse_opinion = {
+					modifier = opinion_unfaithful_husband
+					who = ROOT
+					years = 10
+				}
+			}
+		}
+	}
+	739.1.1={
+		employer=1193 # Spirit Forest
+		add_trait="depressed"
+		remove_trait="wroth"
+		remove_trait="ambitious"
+	}
+	739.2.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+# The Girl of the Spirit Forest. Mother of Seliph and Julius/Julia.
+1203={
+	name="Deirdre"
+	female=yes
+	real_father=1030 # Prince Kurth of Grannvale
+	mother=1202 # Cigyun
+	dynasty=802
+	culture=verdanian
+	religion=church_of_edda
+	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_naga
+	#trait=bastard
+	disallow_random_traits=yes
+	739.2.1={
+		birth=yes
+		employer=1193 # Spirit Forest
+	}
+	751.2.1={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		remove_trait="holy_blood_latent_loptyr"
+		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_naga"
+		add_trait="holy_blood_major_naga"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	754.2.1 = {
+		add_trait="mastermind_theologian"
+		add_trait="trusting"
+		add_trait="humble"
+		add_trait="kind"
+		add_trait="shy"
+		add_trait="brave"
+		add_trait="chaste"
+	}	
+	758.1.1 = {
+		employer=1032 # Sigurd
+		effect={
+			add_lover=1032 # Sigurd
+		}
+	}	 
+	760.1.1 = {
+		employer=1049 # Arvis
+		effect={
+			remove_lover=1032 
+			add_lover=1049 # Arvis
+			
+			
+			c_1032 = { # Sigurd
+				reverse_opinion = {
+					modifier = opinion_marital_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_marital_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_marital_love
+					who = ROOT
+					years = 100
+				}
+				reverse_opinion = {
+					modifier = opinion_marital_love
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}	 
+	770.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			killer=1051 # Loptyr-possessed Julius
+		}
+	}
+}
+# Barbarians for the Verdane Thunderdome
+1240={
+	name="Georg"
+	culture=verdanian
+	religion=raider_pagan
+	740.1.1={
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1241={
+	name="Hrörekr"
+	culture=verdanian
+	religion=raider_pagan
+	741.1.1={
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1242={
+	name="Botulfr"
+	culture=verdanian
+	religion=raider_pagan
+	739.1.1={
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1243={
+	name="Toste"
+	culture=verdanian
+	religion=raider_pagan
+	738.1.1={
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}

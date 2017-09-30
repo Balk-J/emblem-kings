@@ -4,19 +4,11 @@
 	culture=ilian
 	religion=dark
 	trait="quick"
-	trait="scholarly_theologian"
-	trait="mystic"
-	trait="organizer"
-	trait="siege_leader"
-	trait="diligent"
-	trait="temperate"
-	trait="greedy"
-	trait="shy"
-	1140.6.24={
+	741.6.24={
 		birth=yes
-		employer=644
+		employer=1185
 	}
-	1152.06.24={
+	753.06.24={
 		add_trait="class_dark_mage"
 		add_trait="base_class_dark_mage"
 		effect = {
@@ -24,7 +16,17 @@
 			set_character_flag="class_selected"
 		}
 	} 
-	1240.6.24={
+	756.06.24={
+		add_trait="scholarly_theologian"
+		add_trait="mystic"
+		add_trait="organizer"
+		add_trait="siege_leader"
+		add_trait="diligent"
+		add_trait="temperate"
+		add_trait="greedy"
+		add_trait="shy"
+	} 
+	811.6.24={
 		death=yes
 	}
 }
@@ -34,15 +36,7 @@
 	culture=etrurian
 	religion=elimine_church
 	disallow_random_traits="yes" 
-	trait="brilliant_strategist"
-	trait="organizer"
-	trait="siege_leader"
-	trait="narrow_flank_leader"
-	trait="inspiring_leader"
 	trait="genius"
-	trait="gamer"
-	trait="strategist"
-	trait="diligent"
 	1140.01.01 = { 
 		birth=yes 
 		effect={ dynasty = none }
@@ -55,6 +49,16 @@
 #			set_character_flag="class_tactician"
 #		}
 #	} 
+	1155.01.01 = { 
+		add_trait="brilliant_strategist"
+		add_trait="organizer"
+		add_trait="siege_leader"
+		add_trait="narrow_flank_leader"
+		add_trait="inspiring_leader"
+		add_trait="gamer"
+		add_trait="strategist"
+		add_trait="diligent"
+	}
 	1159.01.01 = { 
 		employer=111 #Lyn
 	}

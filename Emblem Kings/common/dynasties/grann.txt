@@ -1,0 +1,647 @@
+# Canon
+801={
+	can_appear=no
+	used_for_random=no
+	name="Loptyr"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="loptyrian"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+802={
+	can_appear=no
+	used_for_random=no
+	name="of Spirit Forest"
+	culture="grann"
+	coat_of_arms = {
+		religion="earthen_pagan"
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 15
+            emblem = 0
+            color = 1
+            color = 10
+            color = 2
+        }
+	}
+}
+803={
+	name="Tor"
+	culture="grann"
+	coat_of_arms = {
+		religion="earthen_pagan"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 3
+            emblem = 0
+            color = 12
+            color = 7
+            color = 2
+        }
+	}
+}
+804={
+	name="Frigg"
+	culture="grann"
+	coat_of_arms = {
+		religion="earthen_pagan"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 26
+            emblem = 0
+            color = 7
+            color = 12
+            color = 2
+        }
+	}
+}
+805={
+	name="Baldur"
+	culture="grann"
+	coat_of_arms = {
+		religion="earthen_pagan"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 13
+            emblem = 0
+            color = 3
+            color = 11
+            color = 2
+        }
+	}
+}
+806={
+	name="Ullr"
+	culture="grann"
+	coat_of_arms = {
+		religion="earthen_pagan"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 24
+            emblem = 0
+            color = 11
+            color = 2
+            color = 2
+        }
+	}
+}
+807={
+	name="Dellingr"
+	culture="grann"
+	coat_of_arms = {
+		religion="earthen_pagan"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 29
+            emblem = 0
+            color = 1
+            color = 6
+            color = 2
+        }
+	}
+}809={
+	name="of Orkneyjar"
+	culture="grann"
+	religion="earthen_pagan"
+}
+809={
+	name="Knytling"
+	culture="grann"
+	religion="earthen_pagan"
+}
+810={
+	name="Ulfing"
+	culture="grann"
+	religion="earthen_pagan"
+}
+811={
+	name="Gautske"
+	culture="grann"
+	religion="earthen_pagan"
+}
+812={
+	name="Väse"
+	culture="grann"
+	religion="earthen_pagan"
+}
+813={
+	name="Njudunge"
+	culture="grann"
+	religion="earthen_pagan"
+}
+814={
+	name="Gute"
+	culture="grann"
+	religion="earthen_pagan"
+}
+815={
+	name="Stórr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+816={
+	name="Holming"
+	culture="grann"
+	religion="earthen_pagan"
+}
+817={
+	name="Borg"
+	culture="grann"
+	religion="earthen_pagan"
+}
+819={
+	name="Nerking"
+	culture="grann"
+	religion="earthen_pagan"
+}
+819={
+	name="Auster"
+	culture="grann"
+	religion="earthen_pagan"
+}
+820={
+	name="Hammer"
+	culture="grann"
+	religion="earthen_pagan"
+}
+821={
+	name="Bleik"
+	culture="grann"
+	religion="earthen_pagan"
+}
+822={
+	name="Falk"
+	culture="grann"
+	religion="earthen_pagan"
+}
+823={
+	name="Hede"
+	culture="grann"
+	religion="earthen_pagan"
+}
+824={
+	name="Kauping"
+	culture="grann"
+	religion="earthen_pagan"
+}
+825={
+	name="Styr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+826={
+	name="Kráka"
+	culture="grann"
+	religion="earthen_pagan"
+}
+827={
+	name="Mikli"
+	culture="grann"
+	religion="earthen_pagan"
+}
+829={
+	name="Smiðr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+829={
+	name="Möring"
+	culture="grann"
+	religion="earthen_pagan"
+}
+830={
+	name="Gárdske"
+	culture="grann"
+	religion="earthen_pagan"
+}
+831={
+	name="Trolli"
+	culture="grann"
+	religion="earthen_pagan"
+}
+832={
+	name="Kven"
+	culture="grann"
+	religion="earthen_pagan"
+}
+833={
+	name="Toki"
+	culture="grann"
+	religion="earthen_pagan"
+}
+834={
+	name="Hárde"
+	culture="grann"
+	religion="earthen_pagan"
+}
+835={
+	name="Eyjing"
+	culture="grann"
+	religion="earthen_pagan"
+}
+836={
+	name="Orming"
+	culture="grann"
+	religion="earthen_pagan"
+}
+837={
+	name="Hrafn"
+	culture="grann"
+	religion="earthen_pagan"
+}
+839={
+	name="Goði"
+	culture="grann"
+	religion="earthen_pagan"
+}
+839={
+	name="Austmaðr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+840={
+	name="Hávi"
+	culture="grann"
+	religion="earthen_pagan"
+}
+841={
+	name="Rakki"
+	culture="grann"
+	religion="earthen_pagan"
+}
+842={
+	name="Refr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+843={
+	name="Skrauti"
+	culture="grann"
+	religion="earthen_pagan"
+}
+844={
+	name="Snarfari"
+	culture="grann"
+	religion="earthen_pagan"
+}
+845={
+	name="Stafr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+856={
+	name="Strangi"
+	culture="grann"
+	religion="earthen_pagan"
+}
+847={
+	name="Snjalli"
+	culture="grann"
+	religion="earthen_pagan"
+}
+849={
+	name="Súrr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+849={
+	name="Skáld"
+	culture="grann"
+	religion="earthen_pagan"
+}
+850={
+	name="Viss"
+	culture="grann"
+	religion="earthen_pagan"
+}
+851={
+	name="Þrymr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+852={
+	name="Þvari"
+	culture="grann"
+	religion="earthen_pagan"
+}
+853={
+	name="Ölfúss"
+	culture="grann"
+	religion="earthen_pagan"
+}
+854={
+	name="Örn"
+	culture="grann"
+	religion="earthen_pagan"
+}
+855={
+	name="Hvíti"
+	culture="grann"
+	religion="earthen_pagan"
+}
+856={
+	name="Sterki"
+	culture="grann"
+	religion="earthen_pagan"
+}
+857={
+	name="Auðgi"
+	culture="grann"
+	religion="earthen_pagan"
+}
+859={
+	name="Rauði"
+	culture="grann"
+	religion="earthen_pagan"
+}
+859={
+	name="Spaki"
+	culture="grann"
+	religion="earthen_pagan"
+}
+860={
+	name="Svarti"
+	culture="grann"
+	religion="earthen_pagan"
+}
+861={
+	name="Rammi"
+	culture="grann"
+	religion="earthen_pagan"
+}
+862={
+	name="Mjóvi"
+	culture="grann"
+	religion="earthen_pagan"
+}
+863={
+	name="Ríki"
+	culture="grann"
+	religion="earthen_pagan"
+}
+864={
+	name="Lambi"
+	culture="grann"
+	religion="earthen_pagan"
+}
+865={
+	name="Skarfr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+866={
+	name="Skál"
+	culture="grann"
+	religion="earthen_pagan"
+}
+867={
+	name="Sleggja"
+	culture="grann"
+	religion="earthen_pagan"
+}
+869={
+	name="Smjör"
+	culture="grann"
+	religion="earthen_pagan"
+}
+869={
+	name="Stjarna"
+	culture="grann"
+	religion="earthen_pagan"
+}
+870={
+	name="Strúgr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+871={
+	name="Sælendingr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+872={
+	name="Súrr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+873={
+	name="Sælingr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+874={
+	name="Trausti"
+	culture="grann"
+	religion="earthen_pagan"
+}
+875={
+	name="Veðr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+876={
+	name="Vámúli"
+	culture="grann"
+	religion="earthen_pagan"
+}
+877={
+	name="Væni"
+	culture="grann"
+	religion="earthen_pagan"
+}
+879={
+	name="Þistill"
+	culture="grann"
+	religion="earthen_pagan"
+}
+879={
+	name="Þjófi"
+	culture="grann"
+	religion="earthen_pagan"
+}
+880={
+	name="Þynning"
+	culture="grann"
+	religion="earthen_pagan"
+}
+881={
+	name="of Hålogaland"
+	culture="grann"
+	religion="earthen_pagan"
+}
+882={
+	name="Lade"
+	culture="grann"
+	religion="earthen_pagan"
+}
+883={
+	name="Trönde"
+	culture="grann"
+	religion="earthen_pagan"
+}
+884={
+	name="of Agder"
+	culture="grann"
+	religion="earthen_pagan"
+}
+885={
+	name="of Hordaland"
+	culture="grann"
+	religion="earthen_pagan"
+}
+886={
+	name="of Rogaland"
+	culture="grann"
+	religion="earthen_pagan"
+}
+887={
+	name="of Telemark"
+	culture="grann"
+	religion="earthen_pagan"
+}
+889={
+	name="of Herjedalen"
+	culture="grann"
+	religion="earthen_pagan"
+}
+889={
+	name="of Jämtland"
+	culture="grann"
+	religion="earthen_pagan"
+}
+890={
+	name="Herse"
+	culture="grann"
+	religion="earthen_pagan"
+}
+891={
+	name="Fróni"
+	culture="grann"
+	religion="earthen_pagan"
+}
+892={
+	name="Þyli"
+	culture="grann"
+	religion="earthen_pagan"
+}
+893={
+	name="Naddoðr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+894={
+	name="Inger"
+	culture="grann"
+	religion="earthen_pagan"
+}
+895={
+	name="Svavarsson"
+	culture="grann"
+	religion="earthen_pagan"
+}
+896={
+	name="Flatnefr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+897={
+	name="Hjort"
+	culture="grann"
+	religion="earthen_pagan"
+}
+899={
+	name="Vidfamne"
+	culture="grann"
+	religion="earthen_pagan"
+	used_for_random=no
+}
+899={
+	name="Drake"
+	culture="grann"
+	religion="earthen_pagan"
+}
+900={
+	name="of Hafrsfjord"
+	culture="grann"
+	religion="earthen_pagan"
+}
+901={
+	name="Ytra"
+	culture="grann"
+	religion="earthen_pagan"
+}
+902={
+	name="of Askø"
+	culture="grann"
+	religion="earthen_pagan"
+}
+903={
+	name="Koss"
+	culture="grann"
+	religion="earthen_pagan"
+}
+904={
+	name="of Røra"
+	culture="grann"
+	religion="earthen_pagan"
+}
+905={
+	name="of Nordland"
+	culture="grann"
+	religion="earthen_pagan"
+}
+906={
+	name="Hylling"
+	culture="grann"
+	religion="earthen_pagan"
+}
+907={
+	name="Alfr"
+	culture="grann"
+	religion="earthen_pagan"
+}
+908={
+	name="Herja"
+	culture="grann"
+	religion="earthen_pagan"
+}
+909={
+	name="Vansö"
+	culture="grann"
+	religion="earthen_pagan"
+}
+910={
+	name="Flod"
+	culture="grann"
+	religion="earthen_pagan"
+}
+911={
+	name="of Vendel"
+	culture="grann"
+	religion="earthen_pagan"
+}
+912={
+	name="of Alfheim"
+	culture="grann"
+	religion="earthen_pagan"
+}
+913={
+	name="of Åland"
+	culture="grann"
+	religion="earthen_pagan"
+}

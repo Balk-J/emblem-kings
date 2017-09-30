@@ -977,7 +977,7 @@ sleep = {
 
 silence = {
 	command_modifier = {
-		magic_user_morale = 0.1
+		magic_users_morale = 0.1
 	}
 	active = { 
 		can_equip_staff_trigger = yes
@@ -1008,21 +1008,18 @@ berserk = {
 # Items
 
 vulenary = {
-	disease_defence = 0.025
 	quality = 1
 	flags = { consumable health  }
 	stacking = no
 	picture = "GFX_vulenary"
 }
 concoction = {
-	disease_defence = 0.05
 	quality = 2
 	flags = { consumable health  }
 	stacking = no
 	picture = "GFX_concoction"
 }
 elixir = {
-	disease_defence = 0.075
 	quality = 3
 	flags = { consumable health  }
 	stacking = no

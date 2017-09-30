@@ -24,6 +24,7 @@ character_event = {
 			trait = class_mage_knight_female
 			trait = class_archsage
 		}
+		NOT = {	trait = possessed_loptyr }
 	}
 	
 	immediate = {
@@ -63,6 +64,10 @@ character_event = {
 		name = "magic.1.B"	
 		ai_chance = {
 			factor = 70
+			modifier = {
+				factor = 5
+				religion = loptyrian
+			}
 		}	
 		
 		random = {
@@ -105,6 +110,7 @@ character_event = {
 			trait = class_archdruid
 			trait = class_dark_druid
 		}
+		NOT = {	trait = possessed_loptyr }
 	}
 	
 	immediate = {
@@ -145,6 +151,10 @@ character_event = {
 		name = "magic.2.B"	
 		ai_chance = {
 			factor = 70
+			modifier = {
+				factor = 5
+				religion = loptyrian
+			}
 		}	
 		
 		random = {

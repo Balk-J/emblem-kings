@@ -16,3 +16,16 @@ culture = verdanian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+448.1.1 = { 
+	culture = verdanian
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = verdanian
+}

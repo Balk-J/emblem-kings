@@ -7,7 +7,7 @@ title = c_aulaeitichus
 max_settlements = 3
 
 b_aulaeitichus = castle
-b_aulaeitichus_2 = city
+#b_aulaeitichus_2 = city
 b_aulaeitichus_3 = temple
 
 # Misc
@@ -15,3 +15,16 @@ culture = thracian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_aulaeitichus = tribal
+}
+500.1.1 = { 
+	b_aulaeitichus = castle
+b_aulaeitichus_2 = city
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = thracian
+}

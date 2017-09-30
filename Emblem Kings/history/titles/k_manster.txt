@@ -1,8 +1,26 @@
-# k_manster > e_jugdral
+# k_manster > e_grannvale
 180.1.1={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
-	liege = e_jugdral
+	liege = e_grannvale
 	#holder = 0
+}
+666.1.1={
+	holder=1024 # Noba's son
+}
+701.1.1={
+	holder = 1157 # 
+}
+723.1.1={
+	holder = 1158 # 
+}
+736.1.1={
+	holder = 1159 # Calf
+}
+763.1.1={
+	holder=1058 # Bloom
+}
+778.1.1={
+	holder = 1162 # Leif 
 }

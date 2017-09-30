@@ -8,11 +8,25 @@ max_settlements = 4
 
 b_abergele = castle
 b_abergele_2 = temple
-b_abergele_3 = city
-b_llanrwst = temple
+#b_abergele_3 = city
+#b_llanrwst = temple
 
 # Misc
 culture = isaachian
 religion = church_of_edda
 
 # History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+	b_abergele = tribal
+}
+500.1.1 = { 
+	b_abergele = castle
+	b_abergele_3 = city
+	b_llanrwst = temple
+}
+649.1.1 = { 
+	religion = church_of_edda
+	culture = isaachian
+}

@@ -95,3 +95,12 @@ regalia_search_for_forblaze;Search for Regalia;;;;;;;;;;;;;x
 regalia_search_for_forblaze_desc;There are rumors of a legendary weapon to be found in §Y[Root.Location.GetName]§!...;;;;;;;;;;;;;x
 restore_bishop_in_aquleia;Restore the Bishop to Aquleia;;;;;;;;;;;;;x
 restore_bishop_in_aquleia_desc;The leader of the church has lost control of their secular domain, but it is within my power to restore the Tower to them!;;;;;;;;;;;;;x
+consume_vulenary;Consume Vulenary;;;;;;;;;;;;;x
+consume_vulenary_desc;Consuming a vulenary will restore a small amount of health.;;;;;;;;;;;;;x
+consume_vulenary.tooltip;The vulenary is consumed and [From.GetTitledFirstName] gets a small boost to [From.GetHerHis] health temporarily.;;;;;;;;;;;;;x
+consume_concoction;Consume Concoction;;;;;;;;;;;;;x
+consume_concoction_desc;Consuming a concoction will restore a moderate amount of health.;;;;;;;;;;;;;x
+consume_concoction.tooltip;The concoction is consumed and [From.GetTitledFirstName] gets a moderate boost to [From.GetHerHis] health temporarily.;;;;;;;;;;;;;x
+consume_elixir;Consume Elixir;;;;;;;;;;;;;x
+consume_elixir_desc;Consuming an elixir will restore a large amount of health.;;;;;;;;;;;;;x
+consume_elixir.tooltip;The elixir is consumed and [From.GetTitledFirstName] gets a large boost to [From.GetHerHis] health temporarily.;;;;;;;;;;;;;x
