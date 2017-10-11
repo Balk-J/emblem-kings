@@ -1,0 +1,146 @@
+# Duplicate the logic from the "falsely confess faith" decision
+falsely_confess_faith_effect = {
+	character_event = { id = MNM.3951 days = 1 }
+	#piety = -100
+	religion_scope = { save_event_target_as = actual_religion }
+	set_secret_religion = event_target:actual_religion # This has to actually happen after the religion is set
+	
+	if = {
+		limit = {
+			liege = {
+				NOT = {
+					religion = ROOT
+				}
+			}
+		}
+		liege = {
+			ROOT = {
+				religion = PREV
+				set_secret_religion = event_target:actual_religion
+				break = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			top_liege = {
+				NOT = {
+					religion = ROOT
+				}
+			}
+		}
+		top_liege = {
+			ROOT = {
+				religion = PREV
+				set_secret_religion = event_target:actual_religion
+				break = yes
+			}
+		}
+	}
+	
+}
+
+openly_adopt_faith_effect = {
+	character_event = { id = MNM.3811 }
+	any_society_member = {
+		if = {
+			limit = {
+				NOT = {
+					character = ROOT
+				}
+				same_society_as = ROOT
+			}
+			character_event = { id = MNM.3800 } # Convert cultists
+		}
+	}
+	top_liege = {
+		any_realm_character = {
+			if = {
+				limit = {
+					NOT = {
+						same_society_as = ROOT
+					}
+					OR = {
+						has_prevs_secret_religion_truly_trigger = yes
+						has_sympathy_for_true_religion_of_prev_trigger = yes
+					}
+				}
+				character_event = { id = MNM.3810 } # Allow sympathisers the chance to flip
+			}
+			
+			if = {
+				limit = {
+					is_ruler = yes
+					any_demesne_province = {
+						OR = {
+							AND = {
+								has_province_modifier = secret_catholic_community
+								ROOT = {
+									society_member_of = secret_religious_society_catholic
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_character_flag = currently_part_of_secret_religion_uncovering } }
+					character_event = { id = MNM.3820 } # Flip provinces with local cult modifier
+				}
+				if = {
+					limit = { has_character_flag = currently_part_of_secret_religion_uncovering }
+					ROOT = {
+						trigger_switch = {
+							on_trigger = society_member_of
+							secret_religious_society_catholic = {
+								PREV = {
+									any_demesne_province = {
+										limit = {
+											has_province_modifier = secret_catholic_community
+										}
+										religion = catholic
+										remove_province_modifier = secret_catholic_community
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	flip_secret_religious_community_provinces = yes
+	flip_to_secret_religion_effect = yes
+	
+	top_liege = {
+		any_realm_lord = {
+			character_event = { id = MNM.3830 } # Inform lieges unless they're part of the cult flipping, save a flag on previous events.
+		}
+		
+		any_realm_character = {
+			limit = {
+				NOT = {
+					character = ROOT
+				}
+				same_society_as = ROOT
+			}
+			leave_society = yes
+		}
+		
+		any_realm_character = {
+			limit = {
+				has_character_flag = currently_part_of_secret_religion_uncovering
+			}
+			clr_character_flag = currently_part_of_secret_religion_uncovering
+		}
+	}
+	any_society_member = {
+		limit = {
+			NOT = {
+				character = ROOT
+			}
+			same_society_as = ROOT
+		}
+		leave_society = yes
+	}
+	leave_society = yes
+}

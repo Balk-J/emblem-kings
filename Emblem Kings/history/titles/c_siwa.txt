@@ -10,5 +10,16 @@
 	holder=876 # 
 }
 649.1.1={
-	holder=0 # 
+	liege = d_darna
+	holder=1027 # Cult of Loptyr
+}
+743.1.1={ 
+	holder=1254 # Manfroy
+}
+770.1.1={ 
+	liege = d_phinora
+	holder=1282 # Dark Bishop
+}
+779.1.1={ 
+	holder=0 
 }

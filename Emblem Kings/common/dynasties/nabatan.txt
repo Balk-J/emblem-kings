@@ -39,7 +39,7 @@
 	name="Hawkeye"
 	culture="nabatan"
     coat_of_arms = {
-		religion="raider_pagan"
+		religion="bandit"
         template = 0
         layer = {
             texture = 0
@@ -55,22 +55,22 @@
 604={
 	name="of Vytina" # for Paul
 	culture="nabatan"
-	religion="raider_pagan"
+	religion="bandit"
 }  
 605={
 	name="of Lasta" # for Jasmine
 	culture="nabatan"
-	religion="raider_pagan"
+	religion="bandit"
 }  
 606={
 	name="of Tegea" # for Maggie
 	culture="nabatan"
-	religion="raider_pagan"
+	religion="bandit"
 }  
 607={
 	name="of Sagkas" # for Rose
 	culture="nabatan"
-	religion="raider_pagan"
+	religion="bandit"
 }   
 #Patricians 
 608={

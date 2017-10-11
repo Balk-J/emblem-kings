@@ -28,3 +28,9 @@ religion = church_of_edda
 	religion = church_of_edda
 	culture = grannvalean
 }
+770.1.1 = { 
+	capital = b_rada
+}
+779.1.1 = { 
+	capital = b_rada_castle
+}

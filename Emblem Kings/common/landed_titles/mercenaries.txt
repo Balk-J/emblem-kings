@@ -84,7 +84,7 @@ d_davros = {
 	}
 	
 	# Parent Religion 
-	religion = raider_pagan
+	religion = pirate
 	
 	mercenary = yes
 
@@ -366,4 +366,39 @@ d_black_fang = {
 	}
 	mercenary = yes	
 	mercenary_type = black_fang_composition
+}
+
+# Eyvel's mercenaries
+d_fiana_freeblades = {
+	color={ 240 110 10 }
+	color2={ 255 255 255 }
+
+	capital = 483 # Fiana
+	
+	# Hire Trigger
+	allow = {
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = church_of_edda
+	
+	mercenary = yes
+
+	title = "LEADER"
+	title_female = "LEADER"
+	#foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Can be vassalized
+	independent = no
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = fiana_freeblades_composition
 }

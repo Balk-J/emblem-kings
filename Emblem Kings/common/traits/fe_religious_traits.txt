@@ -262,7 +262,7 @@ secretly_elimine_church = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -306,7 +306,7 @@ secretly_autotheist = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -350,7 +350,7 @@ secretly_golden_church = {
 		#secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -394,7 +394,7 @@ secretly_dragon_liberation = {
 		secretly_golden_church
 		#secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -443,7 +443,7 @@ secretly_elibe_spirits_pagan = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		#secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -474,55 +474,6 @@ secretly_elibe_spirits_pagan = {
 	ai_zeal = -50
 }
 
-secretly_raider_pagan = {
-	potential = {
-		NOT = {
-			religion = raider_pagan
-		}
-		OR = {
-			ai = yes
-			has_dlc = "The Old Gods"
-			is_nomadic = yes
-		}
-	}
-	opposites = {
-		#Secretly other religions
-		secretly_elimine_church
-		secretly_autotheist
-		secretly_golden_church
-		secretly_dragon_liberation
-		secretly_elibe_spirits_pagan
-		#secretly_raider_pagan
-		secretly_divine_sky_pagan_reformed
-		secretly_divine_sky_pagan
-		secretly_anima
-		secretly_dark
-		secretly_divine_dragon_naga
-		secretly_earthen_pagan
-		secretly_earthen_pagan_reformed
-		secretly_church_of_edda
-		secretly_loptyrian
-		secretly_mairist
-	}
-
-	is_visible = {
-		OR = {
-			character = FROM
-			society_member_of = secret_religious_society_raider_pagan
-			AND = {
-				is_close_relative = FROM
-				trait = secretly_raider_pagan
-			}
-		}
-	}
-
-	same_opinion = 15
-	
-	random = no
-	customizer = no
-	ai_zeal = -50
-}
-
 secretly_divine_sky_pagan_reformed = {
 	potential = {
 		NOT = {
@@ -541,7 +492,7 @@ secretly_divine_sky_pagan_reformed = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		#secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -590,7 +541,7 @@ secretly_divine_sky_pagan = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		#secretly_divine_sky_pagan
 		secretly_anima
@@ -634,7 +585,7 @@ secretly_anima = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		#secretly_anima
@@ -678,7 +629,7 @@ secretly_dark = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -722,7 +673,7 @@ secretly_divine_dragon_naga = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -766,7 +717,7 @@ secretly_earthen_pagan = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -810,7 +761,7 @@ secretly_earthen_pagan_reformed = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -854,7 +805,7 @@ secretly_church_of_edda = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -898,7 +849,7 @@ secretly_loptyrian = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima
@@ -942,7 +893,7 @@ secretly_mairist = {
 		secretly_golden_church
 		secretly_dragon_liberation
 		secretly_elibe_spirits_pagan
-		secretly_raider_pagan
+		secretly_raider
 		secretly_divine_sky_pagan_reformed
 		secretly_divine_sky_pagan
 		secretly_anima

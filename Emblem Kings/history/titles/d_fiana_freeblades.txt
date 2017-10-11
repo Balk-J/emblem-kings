@@ -1,0 +1,17 @@
+180.1.1={
+	active = no
+}
+761.1.1={
+	active = yes
+	holder=1081 # Eyvel
+}
+776.1.1={
+	liege=k_leif
+}
+777.1.1={
+	active = no
+	holder = 0
+}
+#785.1.1={
+#	holder=0 # Halvan?
+#}

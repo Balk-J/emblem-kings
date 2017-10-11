@@ -31,3 +31,6 @@ religion = church_of_edda
 	capital = b_evans_castle 
 	remove_settlement = b_grann
 }
+649.1.1 = { 
+	religion = church_of_edda
+}

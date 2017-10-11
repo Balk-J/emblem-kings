@@ -811,7 +811,7 @@
 	} 
 	
 	1170.01.01 = {
-		religion=raider_pagan
+		religion=bandit
 	}	
 	
 	1171.01.01 = {

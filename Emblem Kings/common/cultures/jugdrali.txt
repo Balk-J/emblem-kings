@@ -787,7 +787,6 @@ jugdrali = {
 		modifier = default_culture_modifier
 	}
 	
-	#miletosi? 
 	grann = {
 		graphical_cultures = { norsegfx westerngfx }
 		

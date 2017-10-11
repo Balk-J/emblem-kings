@@ -190,4 +190,66 @@ e_loptyr = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+# Magi Squad
+# Temporary title for Ced's rebel group in FE5
+d_magi_squad = {
+	color={ 136 176 208 }
+	color2={ 255 255 255 }
+	
+	capital = 449 # Manster
+	
+	title = "LEADER"
+	title_female = "LEADER"
+	
+	#short_name = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	allow = {
+		always = no 
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+k_leif = {
+	color={ 216 224 224 }
+	short_name = yes
+	capital = 435 #	Leonster
+	
+	title = "LORD"
+	title_female = "LORD_female"
+	foa = "LORD_foa"
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	allow = {
+		always = no
+	}
+}
+e_crusaders = {
+	color={ 40 80 140 }
+	short_name = yes
+	#capital = 431 #	Tirnanog
+	#capital = 333 #	Belhalla
+	capital = 530 #	Darna
+	
+	title = "LORD"
+	title_female = "LORD_female"
+	foa = "LORD_foa"
+		
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	allow = {
+		always = no
+	}
+}
 

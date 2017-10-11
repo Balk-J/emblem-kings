@@ -21,12 +21,9 @@
 722.1.1={
 	holder=1048 # Victor
 }
-739.1.1={
-	holder=1049 # Arvis
+738.1.1={
+	holder=1317 # Felipe
 }
-777.1.1={
-	holder=1051 # Julius
-}
-779.1.1={
+789.1.1={
 	holder=1053 # Saias
 }

@@ -1,0 +1,1234 @@
+# Mansterian
+1810={
+	name="Mac Carthaigh"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1811={
+	name="Ua Braenain"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1812={
+	name="Ua Murchada"
+	culture="new_thracian"
+}
+1813={
+	name="Ua Conchobair"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1814={
+	name="Sithrigi"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1815={
+	name="Mac Murchada"
+	culture="new_thracian"
+}
+1816={
+	name="Lorc"
+	culture="new_thracian"
+}
+1817={
+	name="Boru"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1818={
+	name="Crovan"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1819={
+	name="Ua Fáeláin"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1820={
+	name="Ua Néill Móir"
+	culture="new_thracian"
+}
+1821={
+	name="Mac Diarmaida"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1822={
+	name="Mac Máil na mBó"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1823={
+	name="Ua Tuathail"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1824={
+	name="Ua Briain"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1825={
+	name="Mac Carthaigh"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1826={
+	name="Ua Braenain"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1827={
+	name="Ua Murchada"
+	culture="new_thracian"
+}
+1828={
+	name="Ua Conchobair"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1829={
+	name="Dál Fiatach"
+	culture="new_thracian"
+	religion="pagan"
+}
+1830={
+	name="Shannon"
+	culture="new_thracian"
+}
+1831={
+	name="Ceiteach"
+	culture="new_thracian"
+}
+1832={
+	name="Ua Domnaill"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1833={
+	name="Ua Ruairc"
+	culture="new_thracian"
+}
+1834={
+	name="Ua Máil Eóin"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1835={
+	name="FitzPatrick"
+	culture="new_thracian"
+}
+1836={
+	name="Ua Cearbhaill"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1837={
+	name="Mac Mathgamna"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1838={
+	name="Ua Néill"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1839={
+	name="Ua hUalgairg"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1840={
+	name="Ua Flaithbertaig"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1841={
+	name="Ua Maíl Sechlainn"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1842={
+	name="Got"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1843={
+	name="Ua Maíl Ruanaid"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1844={
+	name="Ua Cheinnselaig"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1845={
+	name="Mac Murchada Cáemánach"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1846={
+	name="Mac Murchada Cennselach"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1847={
+	name="Ua Fáeláin"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1848={
+	name="Ua Cáellaíde"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1849={
+	name="Ua Rubann"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1850={
+	name="Cétchathach"
+	culture="new_thracian"
+	religion="pagan"
+}
+1851={
+	name="Ua Briúin Seóla"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1852={
+	name="Ua Conchobar Sligig"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1853={
+	name="Ua Conchobar Ruad"
+	culture="new_thracian"
+}
+1854={
+	name="Ua Conchobar Donn"
+	culture="new_thracian"
+}
+1855={
+	name="Eóganacht-Chaisil"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1856={
+	name="Eóganacht-Airthir Chliach"
+	culture="new_thracian"
+	religion="pagan"
+}
+1857={
+	name="Eóganacht-Glendamnach"
+	culture="new_thracian"
+	religion="pagan"
+}
+1858={
+	name="Eóganacht-Raithlind"
+	culture="new_thracian"
+	religion="pagan"
+}
+1859={
+	name="Eóganacht-Áine"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1860={
+	name="Eóganacht-Locha Léin"
+	culture="new_thracian"
+	religion="pagan"
+}
+1861={
+	name="Mac Finnachta"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1862={
+	name="Ua Báegill"
+	culture="new_thracian"
+}
+1863={
+	name="Ua Dúngaile"
+	culture="new_thracian"
+}
+1864={
+	name="Ua Dochartaigh"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1865={
+	name="Ua hEchtigirn"
+	culture="new_thracian"
+}
+1866={
+	name="Barry"
+	culture="new_thracian"
+}
+1867={
+	name="Ó Braonain"
+	culture="new_thracian"
+}
+1868={
+	name="Burke"
+	culture="new_thracian"
+}
+1869={
+	name="Ua Bráéin"
+	culture="new_thracian"
+}
+1870={
+	name="Ua Cathail"
+	culture="new_thracian"
+}
+1871={
+	name="Ua Canannáin"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1872={
+	name="Ua Cerbaill"
+	culture="new_thracian"
+}
+1873={
+	name="Ua Cathasaigh"
+	culture="new_thracian"
+}
+1874={
+	name="Ua Flannchaid"
+	culture="new_thracian"
+}
+1875={
+	name="Ua Cleirigh"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1876={
+	name="Ua Congalaigh"
+	culture="new_thracian"
+}
+1877={
+	name="Ua Cruadláich"
+	culture="new_thracian"
+}
+1878={
+	name="Ua Dimasaigh"
+	culture="new_thracian"
+}
+1879={
+	name="Ua Dubgaill"
+	culture="new_thracian"
+}
+1880={
+	name="Ua Áedacáin"
+	culture="new_thracian"
+}
+1881={
+	name="Ua Fergail"
+	culture="new_thracian"
+}
+1882={
+	name="Ua Flaithbertaigh"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1883={
+	name="Ua Floinn"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1884={
+	name="Ua Gallchobair"
+	culture="new_thracian"
+}
+1885={
+	name="Lowery"
+	culture="new_thracian"
+}
+1886={
+	name="Ua Dubagáin"
+	culture="new_thracian"
+}
+1887={
+	name="Eóganachta"
+	culture="new_thracian"
+	religion="pagan"
+}
+1888={
+	name="Connachta"
+	culture="new_thracian"
+}
+1889={
+	name="Uí Néill"
+	culture="new_thracian"
+}
+1890={
+	name="Uí Maine"
+	culture="new_thracian"
+}
+1891={
+	name="Laigin"
+	culture="new_thracian"
+}
+1892={
+	name="Dál gCais"
+	culture="new_thracian"
+	religion="pagan"
+}
+1893={
+	name="Ua Fidgeinte"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1894={
+	name="Oitir"
+	culture="new_thracian"
+}
+1895={
+	name="Uí Briain"
+	culture="new_thracian"
+}
+1896={
+	name="Cholmáin"
+	culture="new_thracian"
+}
+1897={
+	name="Ua Mael Sechlainn"
+	culture="new_thracian"
+}
+1898={
+	name="Uí Garrchon"
+	culture="new_thracian"
+}
+1899={
+	name="Laighin"
+	culture="new_thracian"
+}
+1900={
+	name="Crovan"
+	culture="new_thracian"
+}
+1901={
+	name="Craig"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1902={
+	name="Ua Mórdha"
+	culture="new_thracian"
+}
+1903={
+	name="Ua Ruairc"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1904={
+	name="Ua Faeláin"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1905={
+	name="Mac Gilla-Pátraic"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1906={
+	name="Ua Flaithri"
+	culture="new_thracian"
+}
+1907={
+	name="Ua hEochadha"
+	culture="new_thracian"
+}
+1908={
+	name="Mac Áéda"
+	culture="new_thracian"
+}
+1909={
+	name="an t-Saoir"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1910={
+	name="Ua Maíl Doraid"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1911={
+	name="Ua Caollaidhe"
+	culture="new_thracian"
+}
+1912={
+	name="Ua Maoileachlainn"
+	culture="new_thracian"
+}
+1913={
+	name="Ua Carthaigh"
+	culture="new_thracian"
+}
+1914={
+	name="Llyn"
+	culture="new_thracian"
+}
+1915={
+	name="Michael"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1916={
+	name="Corcu Loígde"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1917={
+	name="Dál Birn"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1918={
+	name="Ua Máele Ódrain"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1920={
+	name="Síol Muireadaigh"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1920={
+	name="Uí Áeda Odba"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1921={
+	name="Dal Fiachrach Suighe"
+	culture="new_thracian"
+	religion="pagan"
+}
+1922={
+	name="Mac Ruaidrí"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+#Thracian
+1923={
+	name="of Villeneuve"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1924={
+	name="Balliol"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1925={
+	name="of Chypre"
+	culture="new_thracian"
+}
+1926={
+	name="of Harenc"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1927={
+	name="of Tiberiade"
+	culture="new_thracian"
+}
+1928={
+	name="of Montjoy"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1929={
+	name="of Toron"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1930={
+	name="of Urgel"
+	culture="new_thracian"
+}
+1931={
+	name="of Guingamp"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1932={
+	name="of Brézé"
+	culture="new_thracian"
+}
+1933={
+	name="of Bigod"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1934={
+	name="of Warren"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1935={
+	name="of Newburgh"
+	culture="new_thracian"
+}
+1936={
+	name="Peveral"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1937={
+	name="of Braose"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1938={
+	name="of Toni"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1939={
+	name="of Ferrers"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1940={
+	name="of Blundeville"
+	culture="new_thracian"
+}
+1941={
+	name="of Gloucester"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1942={
+	name="of Grandmesnil"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1943={
+	name="of Gaunt"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1944={
+	name="of Clare"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1945={
+	name="of Morville"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1946={
+	name="Angevin"
+	culture="new_thracian"
+}
+1947={
+	name="FitzWalter"
+	culture="new_thracian"
+}
+1948={
+	name="of Tosny"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1949={
+	name="FitzOsbern"
+	culture="new_thracian"
+}
+1950={
+	name="of Ivry"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1951={
+	name="Voclain"
+	culture="new_thracian"
+}
+1952={
+	name="of Crepon"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1953={
+	name="of Châtillon"
+	culture="new_thracian"
+}
+1954={
+	name="Fredelon"
+	culture="new_thracian"
+}
+1955={
+	name="of Bougency"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1956={
+	name="Taillefer"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1957={
+	name="of Mowbray"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1958={
+	name="of Gael"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1959={
+	name="of Puiset"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1960={
+	name="of Escures"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1961={
+	name="of Jumièges"
+	culture="new_thracian"
+}
+1962={
+	name="of Maine"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1963={
+	name="of Dagsburg"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1964={
+	name="Drengot"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1965={
+	name="of Hauteville"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1966={
+	name="Roger"
+	culture="new_thracian"
+}
+1967={
+	name="of Belesme"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1968={
+	name="of Beaumont"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1969={
+	name="of Vielles"
+	culture="new_thracian"
+}
+1970={
+	name="of Anjou"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1971={
+	name="of Warenne"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1972={
+	name="of Brevere"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1973={
+	name="of Montgomery"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1974={
+	name="of thraciandie"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1975={
+	name="of Brus"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1976={
+	name="Mortimer"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1977={
+	name="Neville"
+	culture="new_thracian"
+}
+1978={
+	name="Scrope"
+	culture="new_thracian"
+}
+1979={
+	name="Giffard"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1980={
+	name="Crispin"
+	culture="new_thracian"
+}
+1981={
+	name="Bourchier"
+	culture="new_thracian"
+}
+1982={
+	name="Stanley"
+	culture="new_thracian"
+}
+1983={
+	name="Talbot"
+	culture="new_thracian"
+}
+1984={
+	name="of Audley"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1985={
+	name="of Fauconberg"
+	culture="new_thracian"
+}
+1986={
+	name="of Leyburne"
+	culture="new_thracian"
+}
+1987={
+	name="of Greystock"
+	culture="new_thracian"
+}
+1988={
+	name="of Lisle"
+	culture="new_thracian"
+}
+1989={
+	name="of Ufford"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1990={
+	name="of Lacy"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1991={
+	name="of Frenes"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1992={
+	name="FitzGerald"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1993={
+	name="of Cherleton"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1994={
+	name="of Avranches"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1995={
+	name="of Harcourt"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+1996={
+	name="of Prunelé"
+	culture="new_thracian"
+}
+1997={
+	name="of Beaufort"
+	culture="new_thracian"
+}
+1998={
+	name="of Cosnac"
+	culture="new_thracian"
+}
+1999={
+	name="of Matignon"
+	culture="new_thracian"
+}
+2000={
+	name="of Rohan"
+	culture="new_thracian"
+}
+2001={
+	name="of Forz"
+	culture="new_thracian"
+}
+2002={
+	name="of Montbray"
+	culture="new_thracian"
+}
+2003={
+	name="of Say"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2004={
+	name="of l'Isle"
+	culture="new_thracian"
+}
+2005={
+	name="of Beaumont"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2006={
+	name="of Senlis"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2007={
+	name="of Corbeil"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2008={
+	name="of Dreux"
+	culture="new_thracian"
+}
+2009={
+	name="Tyrel"
+	culture="new_thracian"
+}
+2010={
+	name="of Thury"
+	culture="new_thracian"
+}
+2011={
+	name="Ridel"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2012={
+	name="Mansel"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2013={
+	name="of Bassonville"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2014={
+	name="of Chocques"
+	culture="new_thracian"
+}
+2015={
+	name="of Alife"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2016={
+	name="of Afranji"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2017={
+	name="of Aubigny"
+	culture="new_thracian"
+}
+2018={
+	name="of Taillebois"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2019={
+	name="of Roumare"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2020={
+	name="of Briquessart"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2021={
+	name="of Bolingbroke"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2022={
+	name="of Vieuxpont"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2023={
+	name="Bordet"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2024={
+	name="FitzHamon"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2025={
+	name="of Bailleul"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2026={
+	name="Longchamp"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2027={
+	name="Penteur"
+	culture="new_thracian"
+}
+2028={
+	name="of Bourcq"
+	culture="new_thracian"
+}
+2029={
+	name="Longespée"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2030={
+	name="Rallis-Raoul"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2031={
+	name="of Vassy"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2032={
+	name="of Toni"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2033={
+	name="Grenier"
+	culture="new_thracian"
+}
+2034={
+	name="le Cheyne"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2035={
+	name="of Soules"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2036={
+	name="of Valognes"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2037={
+	name="Avenel"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2038={
+	name="of Mortain"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2039={
+	name="of Stafford"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2040={
+	name="of Durham"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2041={
+	name="of Amiens"
+	culture="new_thracian"
+}
+2042={
+	name="of Eu"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2043={
+	name="of Vexin"
+	culture="new_thracian"
+}
+2044={
+	name="of Léon"
+	culture="new_thracian"
+}
+2045={
+	name="of Cornouaille"
+	culture="new_thracian"
+}
+2046={
+	name="of Vannes"
+	culture="new_thracian"
+}
+2047={
+	name="of Nantes"
+	culture="new_thracian"
+}
+2048={
+	name="of Angers"
+	culture="new_thracian"
+}
+2049={
+	name="of Verdun"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2050={
+	name="Raoul"
+	culture="new_thracian"
+}
+2051={
+	name="Comyn"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2052={
+	name="of Quincy"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2053={
+	name="of Courcy"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2054={
+	name="of Conteville"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2055={
+	name="of Falaise"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2056={
+	name="of Courseulles"
+	culture="new_thracian"
+}
+2057={
+	name="of Redvers"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2058={
+	name="of Meschines"
+	culture="new_thracian"
+}
+2059={
+	name="of Breteuil"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2060={
+	name="of Waer"
+	culture="new_thracian"
+}
+2061={
+	name="of Cippico"
+	culture="new_thracian"
+}
+2062={
+	name="le Blount"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2063={
+	name="of Botreaux"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2064={
+	name="of Barry"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2065={
+	name="of Windsor"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2066={
+	name="FitzRichard"
+	culture="new_thracian"
+}
+2067={
+	name="of Buonalbergo"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2068={
+	name="Longespee"
+	culture="new_thracian"
+}
+2069={
+	name="of Bellême"
+	culture="new_thracian"
+}
+2070={
+	name="of Dunstanville"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2071={
+	name="Fitz-Count"
+	culture="new_thracian"
+}
+2072={
+	name="Gaveston"
+	culture="new_thracian"
+}
+2073={
+	name="of Winchester"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2074={
+	name="of Luci"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2075={
+	name="Jess"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2076={
+	name="of Theville"
+	culture="new_thracian"
+	religion="church_of_edda"
+}
+2077={
+	name="Letourneau"
+	culture="new_thracian"
+	religion="church_of_edda"
+}

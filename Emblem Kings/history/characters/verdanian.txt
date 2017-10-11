@@ -107,10 +107,11 @@
 		death = yes
 	}
 }
-#1028
 # King of Verdane, 757. A pacifist who tried to stop his kingdom's historical belligerence.
 1180={
 	name="Batou"
+	dna="agacabbaaay"
+	properties="ai00ia00000000"
 	father=1179
 	dynasty=1014
 	culture=verdanian
@@ -865,7 +866,7 @@
 1240={
 	name="Georg"
 	culture=verdanian
-	religion=raider_pagan
+	religion=bandit
 	740.1.1={
 		birth=yes
 	}
@@ -886,7 +887,7 @@
 1241={
 	name="Hrörekr"
 	culture=verdanian
-	religion=raider_pagan
+	religion=bandit
 	741.1.1={
 		birth=yes
 	}
@@ -907,7 +908,7 @@
 1242={
 	name="Botulfr"
 	culture=verdanian
-	religion=raider_pagan
+	religion=bandit
 	739.1.1={
 		birth=yes
 	}
@@ -928,7 +929,7 @@
 1243={
 	name="Toste"
 	culture=verdanian
-	religion=raider_pagan
+	religion=bandit
 	738.1.1={
 		birth=yes
 	}

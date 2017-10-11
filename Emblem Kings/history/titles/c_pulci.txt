@@ -6,3 +6,7 @@
 	liege = d_orgahil
 	#holder = 0
 }
+740.1.1={
+	liege = d_wavebeasts
+	holder=1251 # Pirate
+}

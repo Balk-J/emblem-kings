@@ -64,5 +64,8 @@
 }
 648.1.1={
 	liege = d_rada
-	holder=0 # Destroyed
+	holder=1298 # filler
+}
+755.1.1={
+	holder=1296 # filler
 }

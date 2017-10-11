@@ -1299,6 +1299,7 @@ on_birth = {
 		
 		# FE
 		bloodline.1 # Inherit bloodline traits
+		bloodline.2 # Inherit holy blood
 	}
 	random_events = {
 		200 = 0
@@ -1352,6 +1353,7 @@ on_adolescence = { # Checked on 12th birthday.
 		MNM.3429 # Educator/guardian/parent with secret religion get a chance to convince child to convert secretly
 		# FE
 		class.1
+		bloodline.3 # Schedule holy blood manifestation
 	}
 }
 

@@ -14,6 +14,6 @@
 	holder=1081 # Brigid
 }
 760.1.1={
-	holder=0 # 
-	liege=d_orgahil
+	holder=1251 # Filler
+	liege=d_wavebeasts
 }

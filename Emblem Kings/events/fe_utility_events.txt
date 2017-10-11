@@ -28,3 +28,19 @@ character_event = {
 		name = OK
 	}
 }	
+
+# Re-dynasty a character's descendants. Should be called after a parent event changes the dynasty of a character. Otherwise, it'll accomplish nothing.
+character_event = {
+	id = util.2
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = OK
+		any_child_even_if_dead = {
+			dynasty = ROOT
+			character_event = { id = util.2 }
+		}
+	}
+}	

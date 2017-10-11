@@ -1,8 +1,9 @@
 namespace = fe4_dynasty
 
 # For creating dummy characters to replace originals when they vanish and pop up as someone else's kid.
+# Clones need the same DNA and traits as the originals. They should be created at whatever age the original was when they vanished.
 
-# 
+# Brigid clone
 character_event = {
 	id = fe4_dynasty.1
 	
@@ -12,127 +13,335 @@ character_event = {
 	option = {
 		name = OK
 		
-		if = {
-			limit = {
-				has_character_flag = is_fe7_elbert
-			}
-			add_trait = went_missing
-			d_black_fang = {
-				create_character = { #Create hidden character
-					name = "Elbert"
-					dna="bmlmkchfegc"
-					culture = ROOT
-					religion = ROOT
-					female = no
-					dynasty = none
-					age = 35
+		d_jungby = {
+			holder_scope = {
+				create_character = { 
+					name = "Brigid"
+					dna="cdaijvdbhab"
+					properties="cf0hie00000000"
+					culture = PREV
+					religion = PREV
+					female = yes
+					#dynasty = 1007
+					age = 5
+					trait=twin
+					trait=went_missing
+					genetic_father = PREV
+					genetic_mother = 1079
 				}
-				new_character = { 
-					set_character_flag = is_fe7_elbert
-					set_character_flag = is_fe7_elbert_missing  
-					
-					set_variable = { which = "level" value = 1 }
-					set_character_flag="class_selected"
-						
-					add_trait="base_class_cavalier"
-					add_trait="class_paladin"
-					add_trait="charismatic_negotiator"
-					#add_trait="kind"
-					#add_trait="brave"
-					#add_trait="just"
-			
-					copy_random_personality_trait = ROOT
-					copy_random_personality_trait = ROOT
-					copy_random_personality_trait = ROOT
-					
-					copy_random_personality_trait = ROOT
-					copy_random_personality_trait = ROOT
-					copy_random_personality_trait = ROOT
-					
-					character_event = { id = util.1 } 	
-					e_nergal = {
-						holder_scope = {
-							#reverse_banish = PREVPREV
-							reverse_imprison = PREVPREV	
-							
-							opinion = {
-								modifier = opinion_betrayed
-								who = PREVPREV
-								years = 100
+				c_1082 = {
+					mother_even_if_dead = {
+						new_character = { 
+							set_father = PREVPREVPREV
+							set_mother = PREV
+							dynasty = PREVPREVPREV
+							death = {
+								death_reason=death_accident_drowning
 							}
-							reverse_opinion = {
-								modifier = opinion_evil_tyrant
-								who = PREVPREV
-								years = 10
-							}
-							character_event = { id = fe7_eliwood.26 }
 						}
-					}		
+					}
 				}
 			}
-		}
-		death = {
-			death_reason=death_missing
 		}
 	}
 }
 
-
-# Elbert leaves
+# Remove Brigid clone
+# Get the right character
 character_event = {
-	id = fe4_dynasty.27
-
+	id = fe4_dynasty.2
+	
+	hide_window = yes
 	is_triggered_only = yes
-	hide_window = yes 
 	
-	trigger = {
-		has_character_flag = is_fe7_elbert_missing
+	option = {
+		name = OK
+
+		random_character = {
+			limit = {
+				has_character_flag=is_fe4_brigid
+			}
+			character_event = { id = fe4_dynasty.3 }
+		}
 	}
+}
+
+# Remove clone and replace with original
+character_event = {
+	id = fe4_dynasty.3
 	
-	immediate = {
-		prisoner = no
-		clr_character_flag = is_fe7_elbert_missing
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+
 		went_missing = {
 			limit = {
-				character = 105 # Elbert
+				dynasty = 1007 # Jungby. Not ideal but probably the best we can do to get the clone. Will be an issue if we add an event later to disappear people dynamically.
 			}
-			#father_even_if_dead = { ROOT = { set_father = PREV } }
-			#mother_even_if_dead = { ROOT = { set_mother = PREV } }
-			spouse_even_if_dead = {
-				if = {
-					limit = {
-						is_alive = yes
-						is_married = no
-					}
-					add_spouse = ROOT
-				}
+			father_even_if_dead = { ROOT = { set_father = PREV } }
+			mother_even_if_dead = { ROOT = { set_mother = PREV } }
+			
+			ROOT = { 
+				dynasty = PREV 
+				character_event = { id = util.2 }
 			}
-			
-			remove_spouse = yes
-			
-			any_child_even_if_dead  = {
-				set_father = ROOT
-			}
-			
-			ROOT = {
-				dynasty = PREV
-				set_father = 0 # TODO: remove this if we ever get a character history built out
+			any_child_even_if_dead = {
+				set_mother = ROOT
 			}
 			
 			dynasty_head = {
 				ROOT = {
 					move_character = PREV					
 				}
-				character_event = { id = fe7_eliwood.28 }
+				#character_event = { id = fe4_family.1 }
 			}
 			
 			remove_trait = went_missing
-			#remove_trait = dead_event_target 
+			dynasty = 0
+			set_father = 0
+			set_mother = 0
 		}
 	}
+}
+
+# Brigid clone for post Battle of Belhalla
+character_event = {
+	id = fe4_dynasty.4
+	
+	hide_window = yes
+	is_triggered_only = yes
 	
 	option = {
-		name =  OK
+		name = OK
+		
+		c_1082 = {
+			father_even_if_dead = {
+				create_character = { 
+					name = "Brigid"
+					dna="cdaijvdbhab"
+					properties="cf0hie00000000"
+					culture = PREV
+					religion = PREV
+					female = yes
+					#dynasty = 1007
+					age = 22
+				}
+				c_1082 = {
+					mother_even_if_dead = {
+						new_character = { 
+							add_trait="tough_soldier"
+							add_trait="aggressive_leader"
+							add_trait="rough_terrain_leader"
+							add_trait="base_class_archer"
+							add_trait="class_sniper_female"
+							add_trait="holy_blood_major_ulir"
+							add_trait="twin"
+							add_trait="went_missing"
+
+							add_trait="kind"
+							add_trait="just"
+							add_trait="wroth"
+							add_trait="honest"
+							add_trait="charitable"
+
+							set_father = PREVPREVPREV
+							set_mother = PREV
+							dynasty = PREVPREVPREV
+							death = {
+								death_reason=death_missing
+							}
+							
+							c_1081 = {
+								any_child_even_if_dead = {
+									set_mother = PREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
+}
+
+# Silvia clone
+character_event = {
+	id = fe4_dynasty.5
 	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		c_1042 = {
+			create_character = { 
+				name = "Silvia"
+				dna="bjhjcofdjcb"
+				properties="ce0h0e00000000"
+				culture = grannvalean # Need to hardcode these since her father is probably dead when this runs
+				religion = church_of_edda
+				female = yes
+				age = 5
+				trait=went_missing
+			}
+			new_character = { 
+				set_father = PREV
+				dynasty = PREV
+				death = {
+					death_reason=death_missing
+				}
+			}
+		}
+	}
+}
+
+# Remove Silvia clone
+# Get the right character
+character_event = {
+	id = fe4_dynasty.6
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+
+		random_character = {
+			limit = {
+				has_character_flag=is_fe4_silvia
+			}
+			character_event = { id = fe4_dynasty.7 }
+		}
+	}
+}
+# Remove clone and replace with original
+character_event = {
+	id = fe4_dynasty.7
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+
+		went_missing = {
+			limit = {
+				dynasty = 1003 # Edda
+			}
+			father_even_if_dead = { ROOT = { set_father = PREV } }
+			
+			ROOT = { 
+				dynasty = PREV 
+				character_event = { id = util.2 }
+			}
+			
+			dynasty_head = {
+				ROOT = {
+					move_character = PREV					
+				}
+				#character_event = { id = fe4_family.1 }
+			}
+			
+			remove_trait = went_missing
+			dynasty = 0
+			set_father = 0
+		}
+	}
+}
+
+# Altena clone
+character_event = {
+	id = fe4_dynasty.8
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		c_1160 = {
+			create_character = { 
+				name = "Altena"
+				dna="bhahcvgadbx"
+				properties="cc0hak00000000"
+				culture = mansterian # Need to hardcode these since her father is probably dead when this runs
+				religion = church_of_edda
+				female = yes
+				age = 4
+				trait=went_missing
+			}
+			# Why doesn't any_spouse_even_if_dead work here?
+			c_1033 = {
+				new_character = { 
+					set_father = PREVPREV
+					set_mother = PREV
+					dynasty = PREVPREV
+					death = {
+						death_reason=death_execution
+						killer=1154 # Travant, Yied Massacre
+					}
+				}
+			}
+		}
+	}
+}
+
+# Remove Altena clone
+# Get the right character
+character_event = {
+	id = fe4_dynasty.9
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+
+		random_character = {
+			limit = {
+				has_character_flag=is_fe4_altena
+			}
+			character_event = { id = fe4_dynasty.10 }
+		}
+	}
+}
+
+# Remove clone and replace with original
+character_event = {
+	id = fe4_dynasty.10
+	
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+
+		went_missing = {
+			limit = {
+				dynasty = 1012 # Leonster
+			}
+			father_even_if_dead = { ROOT = { set_father = PREV } }
+			mother_even_if_dead = { ROOT = { set_mother = PREV } }
+			
+			ROOT = { 
+				dynasty = PREV 
+				character_event = { id = util.2 }
+			}
+			
+			dynasty_head = {
+				ROOT = {
+					move_character = PREV					
+				}
+				#character_event = { id = fe4_family.1 }
+			}
+			
+			remove_trait = went_missing
+			dynasty = 0
+			set_father = 0
+			set_mother = 0
+		}
+	}
 }

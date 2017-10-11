@@ -191,3 +191,746 @@
         }
     }
 }
+2078={ # for Bramsel
+	can_appear=no
+	used_for_random=no
+	name="of Darna"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 37
+            emblem = 0
+            color = 0
+            color = 10
+            color = 11
+        }
+    }
+}
+2079={ # for Manfroy
+	can_appear=no
+	used_for_random=no
+	name="of Yied"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="loptyrian"
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 14
+            emblem = 0
+            color = 6#10
+            color = 2
+            color = 0
+        }
+    }
+}
+2081={ # for Veld
+	can_appear=no
+	used_for_random=no
+	name="of Aed"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="loptyrian"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 1
+            emblem = 0
+            color = 4
+            color = 12
+            color = 7
+        }
+    }
+}
+2082={ # for Vaha
+	can_appear=no
+	used_for_random=no
+	name="of Phinora"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 36
+            emblem = 0
+            color = 3
+            color = 1
+            color = 7
+        }
+    }
+}
+2083={ # for Filat
+	can_appear=no
+	used_for_random=no
+	name="of Valholl"
+	culture="grannvalean"
+}
+2084={ # for Felipe
+	can_appear=no
+	used_for_random=no
+	name="of Walwon"
+	culture="grannvalean"
+}
+2085={ # for Palmark
+	can_appear=no
+	used_for_random=no
+	name="of Hervararkvida"
+	culture="grannvalean"
+}
+2086={ # for Arden
+	can_appear=no
+	used_for_random=no
+	name="of Harbardsljod"
+	culture="grannvalean"
+}
+2087={ # for Alec
+	can_appear=no
+	used_for_random=no
+	name="of Roskva"
+	culture="grannvalean"
+}
+2088={ # for Naoise
+	can_appear=no
+	used_for_random=no
+	name="of Thjalfi"
+	culture="grannvalean"
+}
+2089={ # for Midir
+	can_appear=no
+	used_for_random=no
+	name="of Inguin"
+	culture="grannvalean"
+}
+2090={ # for Slayder
+	can_appear=no
+	used_for_random=no
+	name="of Monza"
+	culture="grannvalean"
+}
+# Swedish from vanilla
+1025={
+	name="Gårdske"
+	culture="grannvalean"
+}
+1026={
+	name="Grip"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1027={
+	name="Svarte"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1028={
+	name="Skancke"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1029={
+	name="Thornberg"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1030={
+	name="Ribbing"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1031={
+	name="Bååt"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1032={
+	name="Ulv"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1033={
+	name="Sparre"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1034={
+	name="Färla"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1035={
+	name="Brahe"
+	culture="grannvalean"
+}
+1036={
+	name="of Rumby"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1037={
+	name="of Brunnsholm"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1038={
+	name="of Ulvåsa"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1039={
+	name="Sjöblad"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1040={
+	name="Skarsholm"
+	culture="grannvalean"
+}
+1041={
+	name="Blå"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1042={
+	name="Natt och Dag"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1043={
+	name="Griphuvud"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1044={
+	name="Lejon"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1045={
+	name="Bielke"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1046={
+	name="of Roden"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1047={
+	name="of Tofta"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1048={
+	name="of Hamra"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1049={
+	name="of Akebäck"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1050={
+	name="Stenkyrka"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1051={
+	name="Horn"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1052={
+	name="Stenkiling"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1053={
+	name="Bjering"
+	culture="grannvalean"
+}
+1054={
+	name="Rothén"
+	culture="grannvalean"
+}
+1055={
+	name="Läma"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1056={
+	name="Rumby"
+	culture="grannvalean"
+}
+1057={
+	name="Djäkn"
+	culture="grannvalean"
+}
+1058={
+	name="Svärd"
+	culture="grannvalean"
+}
+1059={
+	name="Bagge"
+	culture="grannvalean"
+}
+1060={
+	name="Värending"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1061={
+	name="Bese"
+	culture="grannvalean"
+}
+1062={
+	name="Boberg"
+	culture="grannvalean"
+}
+1063={
+	name="Bragde"
+	culture="grannvalean"
+}
+1064={
+	name="Bure"
+	culture="grannvalean"
+}
+1065={
+	name="Eka"
+	culture="grannvalean"
+}
+1066={
+	name="Fargalt"
+	culture="grannvalean"
+}
+1067={
+	name="of Fånö"
+	culture="grannvalean"
+}
+1068={
+	name="Forsa"
+	culture="grannvalean"
+}
+1069={
+	name="Get"
+	culture="grannvalean"
+}
+1070={
+	name="Gedda"
+	culture="grannvalean"
+}
+1071={
+	name="of Hafrid"
+	culture="grannvalean"
+}
+1072={
+	name="Hatt"
+	culture="grannvalean"
+}
+1073={
+	name="of Hålbonäs"
+	culture="grannvalean"
+}
+1074={
+	name="Hästhuvud"
+	culture="grannvalean"
+}
+1075={
+	name="Knoppe"
+	culture="grannvalean"
+}
+1076={
+	name="Kraam"
+	culture="grannvalean"
+}
+1077={
+	name="Lake"
+	culture="grannvalean"
+}
+1078={
+	name="Lejonansikte"
+	culture="grannvalean"
+}
+1079={
+	name="Lejonbalk"
+	culture="grannvalean"
+}
+1080={
+	name="Marsvin"
+	culture="grannvalean"
+}
+1081={
+	name="Oxhufvud"
+	culture="grannvalean"
+}
+1082={
+	name="Oxpanna"
+	culture="grannvalean"
+}
+1083={
+	name="Pik"
+	culture="grannvalean"
+}
+1084={
+	name="Skytte"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1085={
+	name="Stake"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1086={
+	name="Stenbock"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1087={
+	name="Sture"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1088={
+	name="Svan"
+	culture="grannvalean"
+}
+1089={
+	name="Svinhufvud"
+	culture="grannvalean"
+}
+1090={
+	name="Tott"
+	culture="grannvalean"
+}
+1091={
+	name="Tre Rosor"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1092={
+	name="Tre Rutor"
+	culture="grannvalean"
+}
+1093={
+	name="Trolle"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1094={
+	name="Vasa"
+	culture="grannvalean"
+}
+1095={
+	name="Vinstorpa"
+	culture="grannvalean"
+}
+1096={
+	name="Virske"
+	culture="grannvalean"
+}
+1097={
+	name="Vingad Pil"
+	culture="grannvalean"
+}
+1098={
+	name="Vingad Lilja"
+	culture="grannvalean"
+}
+1099={
+	name="Hästesko"
+	culture="grannvalean"
+}
+1100={
+	name="Örnsparre"
+	culture="grannvalean"
+}
+1101={
+	name="Snedbielke"
+	culture="grannvalean"
+}
+1102={
+	name="Läma"
+	culture="grannvalean"
+}
+1103={
+	name="Fluga"
+	culture="grannvalean"
+}
+1104={
+	name="Guldtupp"
+	culture="grannvalean"
+}
+1105={
+	name="Ulfsax"
+	culture="grannvalean"
+}
+1106={
+	name="Tre Sjöblad"
+	culture="grannvalean"
+}
+1107={
+	name="Stjerne"
+	culture="grannvalean"
+}
+1108={
+	name="Bratt"
+	culture="grannvalean"
+}
+1109={
+	name="Munk"
+	culture="grannvalean"
+}
+1110={
+	name="Bjelke"
+	culture="grannvalean"
+}
+1111={
+	name="Bonde"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1112={
+	name="Wester"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1113={
+	name="Pilhufvud"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1114={
+	name="Haraldsson"
+	culture="grannvalean"
+}
+1115={
+	name="Posse"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1116={
+	name="Frille"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1117={
+	name="Eketrä"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1118={
+	name="Ekeblad"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1119={
+	name="And"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1120={
+	name="Gera"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1121={
+	name="Soop"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1122={
+	name="Hiort"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1123={
+	name="Gylta"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1124={
+	name="Kärling"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1125={
+	name="of Finsta"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1126={
+	name="Gren"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1127={
+	name="Leijonhufvud"
+	culture="grannvalean"
+}
+1128={
+	name="of Aspenäs"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1129={
+	name="Rosenstråle"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1130={
+	name="Gälta"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1131={
+	name="of Hammersta"
+	culture="grannvalean"
+}
+1132={
+	name="Lilliehöök"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1133={
+	name="of Malsta"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1134={
+	name="Puke"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1135={
+	name="Slatte"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1136={
+	name="Ängel"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1137={
+	name="Danske"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1138={
+	name="Fleming"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1139={
+	name="Bidz"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1140={
+	name="Diekn"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1141={
+	name="Stiernkors"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1142={
+	name="Villnäs"
+	culture="grannvalean"
+}
+1143={
+	name="Fincke"
+	culture="grannvalean"
+}
+1144={
+	name="Dufva"
+	culture="grannvalean"
+}
+1145={
+	name="Jägerhorn of Spurila"
+	culture="grannvalean"
+}
+1146={
+	name="Gesterby"
+	culture="grannvalean"
+}
+1147={
+	name="Bååt"
+	culture="grannvalean"
+}
+1148={
+	name="Cronstedt"
+	culture="grannvalean"
+}
+1149={
+	name="Berglen"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1150={
+	name="Kiby"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1151={
+	name="Wendel"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1152={
+	name="Björk"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1153={
+	name="Eklund"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1154={
+	name="Lind"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1155={
+	name="Gunlycke"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1156={
+	name="Guldsmed"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1157={
+	name="Hejnum"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1158={
+	name="Gildehusen"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1159={
+	name="Stråben"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1160={
+	name="of Hälsingland"
+	culture="grannvalean"
+	religion="church_of_edda"
+}
+1161={
+	name="Norrevik"
+	culture="grannvalean"
+	religion="church_of_edda"
+}

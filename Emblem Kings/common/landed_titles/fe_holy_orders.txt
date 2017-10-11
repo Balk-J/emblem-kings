@@ -1,0 +1,30 @@
+d_schwarze_rosen = {
+	
+	color={ 50 50 50 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 525 # Yied
+
+	title = "BISHOP"
+	title_female = "BISHOP"
+	foa = "temple_duke_foa"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = schwarze_rosen_composition
+	
+	# Parent Religion 
+	religion = loptyrian
+	
+	culture = grannvalean
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	#monthly_income = 4 # (Must be an integer between 1 and 512)
+}

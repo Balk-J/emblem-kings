@@ -17,8 +17,14 @@
 448.1.1 = { 
 	liege = e_loptyr
 }
+645.1.1={
+	holder=1300 # filler
+}
 649.1.1={
 	liege = d_chronos
+}
+754.1.1={
+	holder=1294 # filler
 }
 764.1.1={
 	holder=1069 # Hilda

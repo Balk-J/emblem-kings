@@ -272,6 +272,8 @@
 # Prince of Silesse  
 1111={
 	name="Lewyn"
+	dna="baamcjedcbd"
+	properties="ci0ehk00000000"
 	father=1107
 	mother=1110 # Rahna
 	dynasty=1009
@@ -337,6 +339,8 @@
 # Lewyn's son. 
 1112={
 	name="Ced"
+	dna="amlfdtkdabx"
+	properties="ci0ehd00000000"
 	father=1111 # Lewyn
 	mother=1117 # Erinys
 	dynasty=1009
@@ -374,8 +378,49 @@
 		remove_trait="class_mage"
 		add_trait="class_sage"
 	}	
+	776.01.01={
+		effect = {
+			spawn_unit = {
+				owner = ROOT
+				province = 453 # Luimneach
+				troops = {
+					magic_users = { 100 100 }
+					light_infantry = { 100 100 }
+					heavy_infantry = { 50 50 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				owner = ROOT
+				province = 453 # Luimneach
+				troops = {
+					magic_users = { 100 100 }
+					light_infantry = { 100 100 }
+					heavy_infantry = { 50 50 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				owner = ROOT
+				province = 453 # Luimneach
+				troops = {
+					magic_users = { 100 100 }
+					light_infantry = { 100 100 }
+					heavy_infantry = { 50 50 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+		}
+	}
 	778.1.1 = {
 		give_nickname=nick_the_hero
+		employer=1162 # Leif
 	}	
 	779.1.1 = {
 		add_trait="diligent"
@@ -956,6 +1001,34 @@
 		add_trait="arbitrary"
 	} 
 	780.1.1={
+		death = yes
+	}
+}
+# Non-canon; filler character to hold lands
+1286={
+	name="Domawuj"
+	culture=silessian
+	religion=church_of_edda
+	735.1.1={
+		birth=yes
+	}
+	788.1.1={
+		death = yes
+	}
+}
+1313={
+	name="Inga"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	630.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=silessian
+	}
+	686.1.1={
 		death = yes
 	}
 }

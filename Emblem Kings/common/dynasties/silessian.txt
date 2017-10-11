@@ -111,3 +111,420 @@
         }
     }
 }
+# Polish from vanilla
+
+1305={
+	name="Swidnicki"
+	culture="silessian"
+}
+1306={
+	name="Branicki"
+	culture="silessian"
+}
+1307={
+	name="Borkowic"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1308={
+	name="Glogowski"
+	culture="silessian"
+}
+1309={
+	name="Bogorski"
+	culture="silessian"
+}
+1310={
+	name="Lisy"
+	culture="silessian"
+}
+1311={
+	name="Lewicki"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1312={
+	name="Wielkopolski"
+	culture="silessian"
+}
+1313={
+	name="Opolski"
+	culture="silessian"
+}
+1314={
+	name="Czartoryski"
+	culture="silessian"
+}
+1315={
+	name="Opawski"
+	culture="silessian"
+}
+1316={
+	name="Halicki"
+	culture="silessian"
+}
+1317={
+	name="Zahumski"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1318={
+	name="Kujawski"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1319={
+	name="Subislawowic"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1320={
+	name="Wolin"
+	culture="silessian"
+}
+1321={
+	name="Bodricz"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1322={
+	name="Powal"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1323={
+	name="Choscisko"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1324={
+	name="Sieradzki"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1325={
+	name="Kujawski"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1326={
+	name="Mazowiecki"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1327={
+	name="Lechowicz"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1328={
+	name="of the Slezanie"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1329={
+	name="Wratyslawicz"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1330={
+	name="of the Opolanie"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1331={
+	name="of the Golensizi"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1332={
+	name="Dunin"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1333={
+	name="Chodkiewicz"
+	culture="silessian"
+}
+1334={
+	name="Jablonowski"
+	culture="silessian"
+}
+1335={
+	name="Korecki"
+	culture="silessian"
+}
+1336={
+	name="Leszczynski"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1337={
+	name="Lubomirski"
+	culture="silessian"
+}
+1338={
+	name="Malachowski"
+	culture="silessian"
+}
+1339={
+	name="Olelkowicz"
+	culture="silessian"
+}
+1340={
+	name="Ostrogski"
+	culture="silessian"
+}
+1341={
+	name="Poniatowski"
+	culture="silessian"
+}
+1342={
+	name="Potocki"
+	culture="silessian"
+}
+1343={
+	name="Radziwill"
+	culture="silessian"
+}
+1344={
+	name="Rzewuski"
+	culture="silessian"
+}
+1345={
+	name="Sanguszko"
+	culture="silessian"
+}
+1346={
+	name="Sapieha"
+	culture="silessian"
+}
+1347={
+	name="Sobieski"
+	culture="silessian"
+}
+1348={
+	name="Wisniowecki"
+	culture="silessian"
+}
+1349={
+	name="Zamojski"
+	culture="silessian"
+}
+1350={
+	name="Zbaraski"
+	culture="silessian"
+}
+1351={
+	name="Awdaniec"
+	culture="silessian"
+}
+1352={
+	name="Czetwertynski"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1353={
+	name="Skarbek"
+	culture="silessian"
+}
+1354={
+	name="Brochwicz"
+	culture="silessian"
+}
+1355={
+	name="Ciolek"
+	culture="silessian"
+}
+1356={
+	name="Dabrowa"
+	culture="silessian"
+}
+1357={
+	name="Dolega"
+	culture="silessian"
+}
+1358={
+	name="Doliwa"
+	culture="silessian"
+}
+1359={
+	name="Godziemba"
+	culture="silessian"
+}
+1360={
+	name="Gozdawa"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1361={
+	name="of Czarnkowa"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1362={
+	name="Gryf"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1363={
+	name="Leliwa"
+	culture="silessian"
+}
+1364={
+	name="Lis"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1365={
+	name="Nowina"
+	culture="silessian"
+}
+1366={
+	name="Odrowaz"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1367={
+	name="Ogonczyk"
+	culture="silessian"
+}
+1368={
+	name="Polkozic"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1369={
+	name="Pomian"
+	culture="silessian"
+}
+1370={
+	name="Poraj"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1371={
+	name="Radwan"
+	culture="silessian"
+}
+1372={
+	name="Rawicz"
+	culture="silessian"
+}
+1373={
+	name="Rogala"
+	culture="silessian"
+}
+1374={
+	name="Bodzeta"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1375={
+	name="Sulima"
+	culture="silessian"
+}
+1376={
+	name="Szeliga"
+	culture="silessian"
+}
+1377={
+	name="Traba"
+	culture="silessian"
+}
+1378={
+	name="Wlostowic"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1379={
+	name="Dlugosz"
+	culture="silessian"
+}
+1380={
+	name="Kmita"
+	culture="silessian"
+}
+1381={
+	name="Swinka"
+	culture="silessian"
+}
+1382={
+	name="of Wislicy"
+	culture="silessian"
+}
+1383={
+	name="of Garbowa"
+	culture="silessian"
+}
+1384={
+	name="of Olesnicy"
+	culture="silessian"
+}
+1385={
+	name="of Melsztyna"
+	culture="silessian"
+}
+1386={
+	name="of Teczyna"
+	culture="silessian"
+}
+1387={
+	name="Sypniewski"
+	culture="silessian"
+}
+1388={
+	name="Odrowaz"
+	culture="silessian"
+}
+1389={
+	name="Lanckoronski"
+	culture="silessian"
+}
+1390={
+	name="Taczanowski"
+	culture="silessian"
+}
+1391={
+	name="Lubranski"
+	culture="silessian"
+}
+1392={
+	name="Tarnowski"
+	culture="silessian"
+}
+1393={
+	name="Giese"
+	culture="silessian"
+}
+1394={
+	name="Kolanka"
+	culture="silessian"
+}
+1395={
+	name="Gamrat"
+	culture="silessian"
+}
+1396={
+	name="Mielzynski"
+	culture="silessian"
+}
+1397={
+	name="Oginski"
+	culture="silessian"
+}
+1398={
+	name="Topor"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1399={
+	name="Dmowski"
+	culture="silessian"
+	religion="church_of_edda"
+}
+1400={
+	name="Kowalczyk"
+	culture="silessian"
+	religion="church_of_edda"
+}

@@ -107,7 +107,8 @@
 }
 # non-canon; father for Dain and Noba
 1022={
-	name="Abelard"
+	name="Claus"
+	dynasty=1012
 	culture=thracian
 	religion=church_of_edda
 	598.1.1={
@@ -343,6 +344,8 @@
 # King of Thracia, 757
 1154={
 	name="Travant"
+	dna="cdcgalgakfz"
+	properties="ad0a0a00000000"
 	father=1153
 	dynasty=1011
 	culture=thracian

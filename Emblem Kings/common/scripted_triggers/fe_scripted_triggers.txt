@@ -447,7 +447,7 @@ western_isles_rebel_target_trigger = {
 			}
 		}
 		AND = {
-			religion = raider_pagan
+			religion_group = raider_group
 			independent = yes
 		}
 	}

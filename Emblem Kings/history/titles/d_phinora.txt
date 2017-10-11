@@ -6,3 +6,17 @@
 	liege = k_yied
 	#holder = 0
 }
+770.1.1={
+	liege = e_grannvale
+	holder=1282 # Dark Bishop
+}
+647.1.1={
+	holder=1312 # filler
+}
+684.1.1={
+	holder=0 # filler
+}
+779.1.1={
+	liege = k_yied
+	holder = 0 # 
+}

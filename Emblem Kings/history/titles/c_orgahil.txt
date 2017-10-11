@@ -9,8 +9,8 @@
 440.1.1={
 	holder=1019 # 
 }
-649.1.1={
-	holder=0 
+629.1.1={
+	holder=1297 # Filler
 }
 719.1.1={
 	holder=1103 # The old Captain who adopted Brigid
@@ -20,6 +20,6 @@
 	holder=1081 # Brigid
 }
 760.1.1={
-	holder=0 # 
-	liege=d_orgahil
+	holder=1252 # Filler
+	liege=d_flying_ogres
 }

@@ -32,3 +32,9 @@ religion = church_of_edda
 	culture = silessian
 	capital = b_lubeck_castle
 }
+770.1.1 = { 
+	capital = b_lubeck
+}
+779.1.1 = { 
+	capital = b_lubeck_castle
+}

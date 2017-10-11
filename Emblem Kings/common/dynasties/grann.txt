@@ -114,7 +114,25 @@
             color = 2
         }
 	}
-}809={
+}
+2080={
+	name="Lubeck"
+	culture="grann"
+	coat_of_arms = {
+		religion="earthen_pagan"
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 2
+            emblem = 0
+            color = 5
+            color = 0
+            color = 7
+        }
+	}
+}
+1162={
 	name="of Orkneyjar"
 	culture="grann"
 	religion="earthen_pagan"

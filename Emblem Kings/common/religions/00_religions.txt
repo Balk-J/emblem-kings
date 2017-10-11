@@ -219,54 +219,7 @@ pagan_group = {
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 	}
-	
-	raider_pagan = {
-		#c_badon, c_ganelon, c_taliver, c_marciana, c_calynda
-		graphical_culture = norsegfx
-		#pre_reformed = yes
-
-		icon = 11
 		
-		color = { 0.4 0.4 0.4 }
-		
-		high_god_name = GOD_THE_CREATOR
-		
-		god_names = {
-			GOD_THE_SPIRITS GOD_THE_ANCESTORS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
-		priest_title = PRIEST
-		priests_can_marry = yes
-		female_temple_holders = yes
-		max_consorts = 3
-		
-		defensive_attrition = yes
-		
-		#camel_cavalry_DEFENSIVE = 0.8
-		#war_elephants_DEFENSIVE = 0.8
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-		
-		allow_in_ruler_designer = yes
-		
-		dislike_tribal_organization = yes
-		pre_reformed = yes 
-		allow_looting = yes
-		allow_rivermovement = yes
-		peace_prestige_loss = yes # Lose Prestige while at peace
-		allow_viking_invasion = yes
-		raised_vassal_opinion_loss = no
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-
-		aggression = 2.0 # AI aggression factor
-	}	
-	
 	divine_sky_pagan_reformed = { # Sacae
 		graphical_culture = mongolgfx
 		#c_bulgar, c_murgleis, c_saka, c_mani, c_talas
@@ -435,6 +388,114 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 		dislike_tribal_organization = yes
+	}	
+}
+
+raider_group = { 
+	has_coa_on_barony_only = yes
+	graphical_culture = norsegfx
+	
+	playable = yes
+	
+	ai_fabricate_claims = no
+	
+	color = { 0.5 0.5 0.5 } #grey
+	
+	bandit = {
+		#c_badon, c_ganelon, c_taliver, c_marciana, c_calynda
+		graphical_culture = norsegfx
+		#pre_reformed = yes
+
+		icon = 11
+		
+		color = { 0.4 0.4 0.4 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		defensive_attrition = yes
+		
+		#camel_cavalry_DEFENSIVE = 0.8
+		#war_elephants_DEFENSIVE = 0.8
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = yes
+		
+		dislike_tribal_organization = yes
+		allow_looting = yes
+		#allow_rivermovement = yes
+		#seafarer = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		allow_viking_invasion = yes
+		raised_vassal_opinion_loss = no
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+
+		aggression = 2.0 # AI aggression factor
+		dynamic_cult = no
+		secret_religion = no
+	}	
+	pirate = {
+		#c_badon, c_ganelon, c_taliver, c_marciana, c_calynda
+		graphical_culture = norsegfx
+		#pre_reformed = yes
+
+		icon = 11
+		
+		color = { 0.4 0.4 0.4 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		#defensive_attrition = yes
+		
+		#camel_cavalry_DEFENSIVE = 0.8
+		#war_elephants_DEFENSIVE = 0.8
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = yes
+		
+		dislike_tribal_organization = yes
+		allow_looting = yes
+		allow_rivermovement = yes
+		seafarer = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		allow_viking_invasion = yes
+		raised_vassal_opinion_loss = no
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+
+		aggression = 2.0 # AI aggression factor
+		dynamic_cult = no
+		secret_religion = no
 	}	
 }
 

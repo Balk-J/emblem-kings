@@ -28,3 +28,10 @@ religion = church_of_edda
 	religion = church_of_edda
 	culture = grannvalean
 }
+770.1.1 = { 
+	b_phinora_3 = temple
+	capital = b_phinora_3
+}
+779.1.1 = { 
+	capital = b_phinora
+}

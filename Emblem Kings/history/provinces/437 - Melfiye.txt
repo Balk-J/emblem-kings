@@ -32,3 +32,9 @@ b_melfiye_3 = city
 666.1.1 = { 
 	culture = mansterian
 }
+770.1.1 = { 
+	capital = b_melfiye_2
+}
+777.1.1 = { 
+	capital = b_melfiye
+}

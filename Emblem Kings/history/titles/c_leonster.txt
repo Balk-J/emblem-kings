@@ -27,6 +27,6 @@
 763.1.1={
 	holder = 1058 # Raydrik? TODO: fix ID
 }
-778.1.1={
+777.1.1={
 	holder = 1162 # Leif 
 }

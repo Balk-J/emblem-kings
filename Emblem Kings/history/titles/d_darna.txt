@@ -6,3 +6,22 @@
 	liege = k_yied
 	#holder = 0
 }
+649.1.1={
+	holder=1310 # filler
+}
+736.1.1={
+	holder=1028 # filler
+}
+#754.1.1={
+770.1.1={
+	holder=1253 # Bramsel
+}
+770.1.1={
+	liege = e_grannvale 
+}
+778.1.1={
+	holder=0 # 
+}
+779.1.1={
+	liege = k_yied 
+}

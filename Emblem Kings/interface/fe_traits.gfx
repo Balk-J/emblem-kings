@@ -791,7 +791,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_secretly_raider_pagan"
+		name = "GFX_trait_secretly_raider"
 		texturefile = "gfx/traits/secret_religion_raider.tga"
 		noOfFrames = 1
 		norefcount = yes

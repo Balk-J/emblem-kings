@@ -6,3 +6,6 @@
 	liege = k_yied
 	#holder = 0
 }
+180.1.1={
+	holder = 0
+}

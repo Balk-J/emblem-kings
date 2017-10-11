@@ -30,3 +30,9 @@ religion = church_of_edda
 	religion = church_of_edda
 	culture = silessian
 }
+776.1.1 = { 
+	capital = b_silesse
+}
+779.1.1 = { 
+	capital = b_silesse_castle
+}

@@ -38,14 +38,14 @@ title_prince_female_elibe_spirits_pagan;Lady;;;;;;;;;;;;;x
 duchy_of_elibe_spirits_pagan;Guardianship of;;;;;;;;;;;;;x
 kingdom_of_elibe_spirits_pagan;Protectorship of;;;;;;;;;;;;;x
 empire_of_elibe_spirits_pagan;High Guardianship of;;;;;;;;;;;;;x
-king_raider_pagan;Bandit King;;;;;;;;;;;;;x
-emperor_raider_pagan;Bandit Lord;;;;;;;;;;;;;x
-king_female_raider_pagan;Bandit Queen;;;;;;;;;;;;;x
-emperor_female_raider_pagan;Bandit Lady;;;;;;;;;;;;;x
-#king_seafarer;Pirate King;;;;;;;;;;;;;x
-#emperor_seafarer;Pirate Lord;;;;;;;;;;;;;x
-#king_female_seafarer;Pirate Queen;;;;;;;;;;;;;x
-#emperor_female_seafarer;Pirate Lady;;;;;;;;;;;;;x
+king_bandit;Bandit King;;;;;;;;;;;;;x
+emperor_bandit;Bandit Lord;;;;;;;;;;;;;x
+king_female_bandit;Bandit Queen;;;;;;;;;;;;;x
+emperor_female_bandit;Bandit Lady;;;;;;;;;;;;;x
+king_pirate;Pirate King;;;;;;;;;;;;;x
+emperor_pirate;Pirate Lord;;;;;;;;;;;;;x
+king_female_pirate;Pirate Queen;;;;;;;;;;;;;x
+emperor_female_pirate;Pirate Lady;;;;;;;;;;;;;x
 nomadic_king;Khan;Khan;Khan;;Kan;;;;;;;;;x;
 nomadic_emperor;Khagan;Khagan;Khagan;;Khagan;;;;;;;;;x;
 nomadic_empire;Khaganate;Khaganat;Khaganat;;Khaganato;;;;;;;;;x

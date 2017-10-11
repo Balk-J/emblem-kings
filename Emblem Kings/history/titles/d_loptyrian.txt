@@ -9,8 +9,10 @@
 }
 770.1.1={
 	active = yes
-	holder = 0 # Manfroy
+	liege=e_grannvale
+	holder = 1254 # Manfroy
 }
-778.1.1={
+779.1.1={
 	active = no
+	holder = 0 # gone
 }

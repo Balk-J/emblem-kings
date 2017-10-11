@@ -40,9 +40,12 @@
 #	holder=1058 # Bloom?
 #}
 #778.1.1={
-777.1.1={
-	holder=1051 # Julius?
+770.1.1={
+	holder=1275 # Dark Bishop
 }
+#777.1.1={
+#	holder=1051 # Julius?
+#}
 779.1.1={
 	holder=1096 # Diarmuid
 }

@@ -36,3 +36,27 @@ b_drest = {
 b_aretas = {
 	culture = nabatan
 }
+
+# Jugral
+
+b_f_baldur = {
+	culture = grann
+}
+b_f_dellingr = {
+	culture = grann
+}
+b_f_frigg = {
+	culture = grann
+}
+b_f_tor = {
+	culture = grann
+}
+b_f_ullr = {
+	culture = grann
+}
+b_f_lubeck = {
+	culture = grann
+}
+b_f_bramsel = {
+	culture = grannvalean
+}

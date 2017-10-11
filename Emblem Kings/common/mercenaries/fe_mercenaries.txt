@@ -53,6 +53,17 @@ blackbone_clan_composition = {
 	magic_users = 50
 }
 
+fiana_freeblades_composition = {
+	levy_size = 1
+	heavy_infantry = 300
+	light_infantry = 100
+	archers = 100
+}
+schwarze_rosen_composition = {
+	levy_size = 4
+	magic_users = 1000
+}
+
 #Vanilla stuff
 
 knights_templar_composition = {

@@ -498,7 +498,7 @@ succession_laws = {
 #						NOT = { religion = slavic_pagan }
 #						NOT = { religion = west_african_pagan }
 						NOT = { religion = divine_sky_pagan }
-						NOT = { religion = raider_pagan }
+						NOT = { religion_group = raider_group }
 					}
 				}
 				

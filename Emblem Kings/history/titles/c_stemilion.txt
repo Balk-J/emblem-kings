@@ -21,9 +21,12 @@
 761.1.1={
 	holder=1049 # Arvis
 }
-777.1.1={
-	holder=1051 # Julius?
+770.1.1={
+	holder=1272 # Dark Bishop, just so it doesn't stick with Arvis/Julius
 }
+#777.1.1={
+#	holder=1051 # Julius?
+#}
 779.1.1={
 	holder=1098 # Ares?
 }

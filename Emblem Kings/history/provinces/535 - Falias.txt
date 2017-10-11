@@ -24,3 +24,12 @@ religion = church_of_edda
 	religion = church_of_edda
 	culture = grannvalean
 }
+754.1.1 = { 
+	b_falias = castle
+	b_falias_2 = temple
+	b_falias_3 = city
+	capital = b_falias_3
+}
+778.1.1 = { 
+	capital = b_falias
+}

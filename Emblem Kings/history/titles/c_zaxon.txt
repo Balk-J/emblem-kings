@@ -38,10 +38,8 @@
 762.1.1={
 	holder = 1117 # Erinys 
 }
-776.1.1={
-	#holder = 0 # Destroyed?
-	#holder =  # generic Loptyrian Dark Bishop?
-	holder=1051 # Julius?
+770.1.1={
+	holder=1279 # Dark Bishop
 }
 779.1.1={
 	holder = 1112 # Ced the Hero

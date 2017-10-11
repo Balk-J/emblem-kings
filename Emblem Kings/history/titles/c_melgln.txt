@@ -10,7 +10,7 @@
 	holder=852 # 
 }
 649.1.1={
-	holder=0 
+	holder=1012 # Noba TODO: add filler character
 }
 763.1.1={
 	holder=1066 # Ishtore

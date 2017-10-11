@@ -15,7 +15,8 @@
 724.1.1={
 	holder=1089 # Imuka
 }
-758.1.1={
+#758.1.1={
+742.1.1={
 	holder=1090 # Chagall
 }
 760.1.1={
@@ -24,9 +25,12 @@
 761.1.1={
 	holder=1049 # Arvis
 }
-778.1.1={
-	holder=1051 # Julius?
+770.1.1={
+	holder=1274 # Dark Bishop
 }
+#777.1.1={
+#	holder=1051 # Julius?
+#}
 779.1.1={
 	holder=1098 # Ares
 }

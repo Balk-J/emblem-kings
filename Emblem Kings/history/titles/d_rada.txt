@@ -9,3 +9,6 @@
 764.1.1={
 	holder=1069 # Hilda TODO: correct this
 }
+770.1.1={
+	holder=1265 # Morigan
+}

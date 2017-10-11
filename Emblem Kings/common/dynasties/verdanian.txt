@@ -41,3 +41,535 @@
 	culture="verdanian"
 	religion="church_of_edda"    
 }
+# Norse from vanilla
+1163={
+	name="of Orkneyjar"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1164={
+	name="Knytling"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1165={
+	name="Ulfing"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1166={
+	name="Gautske"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1167={
+	name="Väse"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1168={
+	name="Njudunge"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1169={
+	name="Gute"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1170={
+	name="Stórr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1171={
+	name="Holming"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1172={
+	name="Borg"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1173={
+	name="Nerking"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1174={
+	name="Auster"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1175={
+	name="Hammer"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1176={
+	name="Bleik"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1177={
+	name="Falk"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1178={
+	name="Hede"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1179={
+	name="Kauping"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1180={
+	name="Styr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1181={
+	name="Kráka"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1182={
+	name="Mikli"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1183={
+	name="Smiðr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1184={
+	name="Möring"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1185={
+	name="Gárdske"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1186={
+	name="Trolli"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1187={
+	name="Kven"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1188={
+	name="Toki"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1189={
+	name="Hárde"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1190={
+	name="Eyjing"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1191={
+	name="Orming"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1192={
+	name="Hrafn"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1193={
+	name="Goði"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1194={
+	name="Austmaðr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1195={
+	name="Hávi"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1196={
+	name="Rakki"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1197={
+	name="Refr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1198={
+	name="Skrauti"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1199={
+	name="Snarfari"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1200={
+	name="Stafr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1201={
+	name="Strangi"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1202={
+	name="Snjalli"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1203={
+	name="Súrr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1204={
+	name="Skáld"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1205={
+	name="Viss"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1206={
+	name="Þrymr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1207={
+	name="Þvari"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1208={
+	name="Ölfúss"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1209={
+	name="Örn"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1210={
+	name="Hvíti"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1211={
+	name="Sterki"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1212={
+	name="Auðgi"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1213={
+	name="Rauði"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1214={
+	name="Spaki"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1215={
+	name="Svarti"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1216={
+	name="Rammi"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1217={
+	name="Mjóvi"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1218={
+	name="Ríki"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1219={
+	name="Lambi"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1220={
+	name="Skarfr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1221={
+	name="Skál"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1222={
+	name="Sleggja"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1223={
+	name="Smjör"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1224={
+	name="Stjarna"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1225={
+	name="Strúgr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1226={
+	name="Sælendingr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1227={
+	name="Súrr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1228={
+	name="Sælingr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1229={
+	name="Trausti"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1230={
+	name="Veðr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1231={
+	name="Vámúli"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1232={
+	name="Væni"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1233={
+	name="Þistill"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1234={
+	name="Þjófi"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1235={
+	name="Þynning"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1236={
+	name="of Hålogaland"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1237={
+	name="Lade"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1238={
+	name="Trönde"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1239={
+	name="of Agder"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1240={
+	name="of Hordaland"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1241={
+	name="of Rogaland"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1242={
+	name="of Telemark"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1243={
+	name="of Herjedalen"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1244={
+	name="of Jämtland"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1245={
+	name="Herse"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1246={
+	name="Fróni"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1247={
+	name="Þyli"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1248={
+	name="Naddoðr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1249={
+	name="Inger"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1250={
+	name="Svavarsson"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1251={
+	name="Flatnefr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1252={
+	name="Hjort"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1253={
+	name="Vidfamne"
+	culture="verdanian"
+	religion="church_of_edda"
+	used_for_random=no
+}
+1254={
+	name="Drake"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1255={
+	name="of Hafrsfjord"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1256={
+	name="Ytra"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1257={
+	name="of Askø"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1258={
+	name="Koss"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1259={
+	name="of Røra"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1260={
+	name="of Nordland"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1261={
+	name="Hylling"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1262={
+	name="Alfr"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1263={
+	name="Herja"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1264={
+	name="Vansö"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1265={
+	name="Flod"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1266={
+	name="of Vendel"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1267={
+	name="of Alfheim"
+	culture="verdanian"
+	religion="church_of_edda"
+}
+1268={
+	name="of Åland"
+	culture="verdanian"
+	religion="church_of_edda"
+}

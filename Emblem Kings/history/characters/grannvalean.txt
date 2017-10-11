@@ -287,6 +287,7 @@
 # Non-canon; last man standing for the Church of Loptyr
 1027={
 	name="Vaha"
+	dynasty=2079
 	female=yes
 	culture=grannvalean
 	religion=loptyrian
@@ -294,6 +295,9 @@
 		birth=yes
 		culture=grann
 		employer=817 # Galle XVII
+		effect = {
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
 	}
 	641.01.01={
 		add_trait="class_dark_mage_female"
@@ -996,8 +1000,10 @@
 }
 # Generation 1's dancer
 1045={
-	name="Silvia"
+	name="Silvia" 
 	female=yes
+	dna="bjhjcofdjcb"
+	properties="ce0h0e00000000"
 	dynasty=1003
 	father=1042
 	culture=grannvalean
@@ -1007,7 +1013,7 @@
 	741.1.1={
 		birth=yes
 		effect={
-			set_character_flag=is_fe4_sylvia
+			set_character_flag=is_fe4_silvia
 		}
 	}
 	746.01.01 = {
@@ -1060,7 +1066,7 @@
 		birth=yes 
 	}
 	765.1.1={ 
-		#employer= # Bramsel of Darna
+		employer=1253 # Bramsel of Darna
 		dynasty=1039
 	}
 	772.01.01={
@@ -1106,7 +1112,7 @@
 		birth=yes
 	}
 	765.1.1={ 
-		#employer= # Bramsel of Darna
+		employer=1253 # Bramsel of Darna
 		dynasty=1039
 	}
 	777.01.01={
@@ -1132,7 +1138,7 @@
 		}
 	}
 	779.1.1={ 
-		dynasty=1013
+		dynasty=1003
 		effect={
 			set_father = 0
 		}
@@ -1498,6 +1504,8 @@
 # the illegitimate son of Arvis and his lieutenant Aida
 1053={
 	name="Saias"
+	dna="aebhbtibjaz"
+	properties="ce0j0j00000000"
 	dynasty=1015
 	#father=1049 # Arvis
 	mother=1055 # General Aida of Velthomer
@@ -1532,7 +1540,7 @@
 		}
 	} 
 	764.1.1 = {
-		add_trait="skilled_tactician"
+		add_trait="brilliant_strategist"
 		add_trait="holy_warrior"
 		add_trait="inspiring_leader"
 		add_trait="kind"
@@ -1601,7 +1609,7 @@
 	777.1.1={
 		death = {
 			death_reason=death_battle
-			#killer= # Leif
+			killer=1162 # Leif
 		}
 	}
 }
@@ -1643,7 +1651,7 @@
 	764.1.1={
 		death = {
 			death_reason=death_murder_unknown
-			#killer= # Manfroy
+			killer=1254 # Manfroy
 		}
 	}
 }
@@ -1719,6 +1727,8 @@
 # A tyrant, but a nice guy compared to Hilda.
 1058={
 	name="Bloom"
+	dna="abfdvaaaah"
+	properties="am0bjb00000000"
 	father=1056 # Reptor
 	mother=1057 # filler
 	dynasty=1005
@@ -1763,18 +1773,18 @@
 }
 # Reptor's second child according to Fire Emblem: Treasure. Nothing known for sure except they were born between Bloom and Tailtiu and did not live to 757.
 1059={
-	name="Veld"
+	name="Tord"
 	father=1056 # Reptor
 	mother=1057 # filler
 	dynasty=1005
 	culture=grannvalean
 	religion=church_of_edda
 	trait=holy_blood_latent_tordo
+	trait=sickly
 	740.1.1={
 		birth=yes
 	}
 	742.1.1={
-		add_trait="sickly"
 		death = {
 			death_reason=death_trait
 		}
@@ -2570,6 +2580,8 @@
 # Lombard's eldest son. King of Isaach in 777.
 1073={
 	name="Danann"
+	dna="aihcjcgbbac"
+	properties="aa0bmb00000000"
 	father=1070 # Lombard
 	mother=1071 # filler
 	dynasty=1006
@@ -2864,6 +2876,9 @@
 	trait=holy_blood_latent_ulir
 	702.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_ring
+		}
 	}
 	714.01.01={
 		add_trait="class_archer"
@@ -2955,6 +2970,8 @@
 # Ring's oldest (twin) daughter. AKA Eyvel.
 1081={
 	name="Brigid"
+	dna="cdaijvdbhab"
+	properties="cf0hie00000000"
 	father=1078 # Ring
 	mother=1079 # filler
 	female=yes
@@ -2966,9 +2983,13 @@
 	trait=holy_blood_latent_ulir
 	738.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_brigid
+		}
 	}
 	743.1.1={
 		employer=1103 # Orgahil Pirates
+		dynasty=1024
 		effect = { 
 			c_1078 = {
 				ROOT = { set_real_father = PREV }
@@ -2977,7 +2998,6 @@
 				ROOT = { set_father = PREV }
 			}
 			set_mother=none
-			dynasty=1024
 		}
 	}
 	750.01.01={
@@ -3069,6 +3089,9 @@
 	trait=holy_blood_latent_ulir
 	738.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_edain
+		}
 	}
 	750.01.01={
 		add_trait="class_cleric"
@@ -4202,7 +4225,7 @@
 		birth=yes 
 	}
 	765.1.1={ 
-		#employer= # Bramsel of Darna
+		employer=1253 # Bramsel of Darna
 	}
 	770.01.01={
 		add_trait="class_dancer"
@@ -4230,7 +4253,7 @@
 		death = yes
 	}
 }
-# Silvia's son
+# Laylea's brother, Coirpre's substitute
 1248={
 	name="Charlot"
 	dynasty=1041
@@ -4242,7 +4265,7 @@
 		birth=yes
 	}
 	765.1.1={ 
-		#employer= # Bramsel of Darna
+		employer=1253 # Bramsel of Darna
 	}
 	776.01.01={
 		add_trait="class_priest"
@@ -4275,5 +4298,1828 @@
 	
 	823.1.1={
 		death = yes
+	}
+}
+# Ruler of Darna, 777. Former merchant
+1253={
+	name="Bramsel"
+	dynasty=2078
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	738.1.1={
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	753.1.1 = {
+		add_trait="fortune_builder"
+		add_trait="greedy"
+		add_trait="craven"
+		add_trait="lustful"
+	}	 
+	761.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			#killer=1038 # Seliph
+			killer=1098 # Ares
+		}
+	}
+}
+# Archbishop of the Loptyr Sect
+1254={
+	name="Manfroy"
+	dna="ajbjjpaabav"
+	properties="cl0eoi00000000"
+	dynasty=2079
+	culture=grannvalean
+	religion=loptyrian
+	disallow_random_traits=yes
+	trait=quick
+	martial=1
+	diplomacy=14
+	intrigue=4
+	stewardship=4
+	learning=1
+	727.1.1={
+		birth=yes
+		effect = {
+			set_character_flag="magic_or_faith_question"
+			set_character_flag = secret_loptyrian_dark_bishop
+		}
+	}
+	739.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	742.1.1 = {
+		add_trait="elusive_shadow"
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="ambitious"
+		add_trait="cruel"
+		add_trait="erudite"
+		add_trait="envious"
+		add_trait="diligent"
+		add_trait="patient"
+		add_trait="holy_warrior"
+	}	 
+	743.1.1 = {
+		add_trait="schemer"
+		add_trait="theologian"
+		# falsely confess faith!
+	}	 
+	744.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Manfroy's daughter. Name is not known for sure.
+1255={
+	name="Sofia"
+	female=yes
+	father=1254
+	dynasty=2079
+	culture=grannvalean
+	#religion=loptyrian
+	religion=church_of_edda
+	748.1.1={
+		birth=yes
+		effect = {
+			set_character_flag="magic_or_faith_question"
+		}
+	}
+	760.01.01={
+		add_trait="class_dark_mage_female"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	763.1.1 = {
+		add_matrilineal_spouse=1257 # 
+	}	
+	764.1.1={
+		death = {
+			death_reason=death_childbirth 
+		}
+	}
+}
+# Manfroy's granddaughter. Hates him for having her father killed.
+1256={
+	name="Sara"
+	female=yes
+	father=1257
+	mother=1255
+	dynasty=2079
+	culture=grannvalean
+	religion=loptyrian
+	disallow_random_traits=yes
+	# 12 in 776
+	764.1.1={
+		birth=yes
+		effect = {
+			set_character_flag="magic_or_faith_question"
+			c_1254 = { # Manfroy
+				reverse_opinion = {
+					modifier = opinion_killed_father
+					who = ROOT
+					years = 100
+				} 
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 100
+				} 
+			}	
+		}
+	}
+	770.1.1 = {
+		add_trait="willful"
+		add_trait="brooding"
+		add_trait="playful"
+	}
+	770.01.01={
+		employer=1267 # Rinecok
+	} 	
+	776.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	777.01.01={
+		religion=church_of_edda
+		employer = 1162 # Leif
+	} 
+	779.1.1 = {
+		add_trait="scholarly_theologian"
+		add_trait="depressed"
+		add_trait="content"
+		add_trait="shy"
+		add_trait="just"
+		add_trait="kind"
+		add_trait="cynical"
+	}	 	 
+	784.1.1 = {
+		remove_trait="class_cleric"
+		add_trait="class_bishop_female"
+	}	
+	834.1.1={
+		death = yes
+	}
+}
+# Semi-canon; father for Sara
+1257={
+	name="Azur"
+	culture=grannvalean
+	religion=church_of_edda
+	747.1.1={
+		birth=yes
+	}	
+	763.12.1={
+		death = {
+			death_reason=death_murder
+			killer=1524 # Manfroy
+		}
+	}
+}
+# Loptyrian bishop. Final boss of FE5
+1258={
+	name="Veld"
+	dna="diaailicibu"
+	properties="cl0doi00000000"
+	dynasty=2081
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	739.1.1={
+		birth=yes
+		effect = {
+			set_character_flag="magic_or_faith_question"
+			set_character_flag = secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+		effect = {
+			add_friend=1254 # Manfroy
+		}
+	}	 
+	751.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	754.1.1 = {
+		add_trait="intricate_webweaver"
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="proud"
+		add_trait="patient"
+		add_trait="holy_warrior"
+	}	 
+	755.1.1 = {
+		add_trait="schemer"
+		# falsely confess faith!
+	}	 
+	757.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+
+# The generic dark bishops! Let's say they're in their 40s in the endgame 776-8. Puts them in their 20s for generation 1.
+# Birth dates 728-738
+1259={
+	name="Alfan"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	733.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	745.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	748.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+1260={
+	name="Baran"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	737.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	749.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	752.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Seliph
+		}
+	}
+}
+1261={
+	name="Codda"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	734.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	746.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	749.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+1262={
+	name="Daggon"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	729.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	741.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	744.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Seliph
+		}
+	}
+}
+1263={
+	name="Judah"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	732.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	744.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	747.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Seliph
+		}
+	}
+}
+1264={
+	name="Kutuzov"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	738.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	750.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	753.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Seliph
+		}
+	}
+}
+1265={
+	name="Morigan"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	735.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	747.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	750.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Seliph
+		}
+	}
+}
+1266={
+	name="Mua"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	733.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	745.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	748.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+1267={
+	name="Rinecok"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	730.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	} 
+	742.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	
+	745.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+1268={
+	name="Yupheel"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	731.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	743.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	746.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Seliph
+		}
+	}
+}
+1269={
+	name="Zagam"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	736.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	748.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	751.1.1 = {
+		add_trait="zealous"
+		add_trait="deceitful"
+		add_trait="cruel"
+		add_trait="holy_warrior"
+	}	 
+	770.1.1 = {
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Seliph
+		}
+	}
+}
+
+# Non-canon dark bishops to rule the imperial lands where we don't know for sure who's in charge (Agustria and Silesse)
+
+# Agusty
+1270={
+	name="Dyre"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	735.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	747.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Anphony
+1271={
+	name="Hjalmar"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	739.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	751.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Heirhein
+1272={
+	name="Tyke"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	740.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	752.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Mackily
+1273={
+	name="Nils"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	741.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	753.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Madino
+1274={
+	name="Gurli"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	743.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	755.01.01={
+		add_trait="class_dark_mage_female"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Nordion
+1275={
+	name="Thordis"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	751.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}
+	763.01.01={
+		add_trait="class_dark_mage_female"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Silvail
+1276={
+	name="Sverker"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	742.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	754.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Silesse
+# Silesse (duchy)
+1277={
+	name="Erik"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	750.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}
+	762.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Sailane
+1278={
+	name="Valdemar"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	751.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+		religion=loptyrian
+		employer=1254 # Manfroy
+	} 
+	763.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Zaxon
+1279={
+	name="Saga"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	738.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+	}
+	743.1.1 = {
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}	 
+	750.01.01={
+		add_trait="class_dark_mage_female"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Thove
+1280={
+	name="Gunhild"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	745.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}
+	757.01.01={
+		add_trait="class_dark_mage_female"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Lubeck
+1281={
+	name="Markus"
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	744.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}
+	756.01.01={
+		add_trait="class_dark_mage"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# Phinora
+1282={
+	name="Ylva"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	753.1.1={
+		birth=yes
+		effect = {
+			set_character_flag=magic_or_faith_question
+			set_character_flag=secret_loptyrian_dark_bishop
+		}
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}
+	765.01.01={
+		add_trait="class_dark_mage_female"
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+# The Mage Fighter who guards Phinora
+1283={
+	name="Vaha"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	736.1.1={
+		birth=yes
+		employer=1048 # Victor of Velthomer
+	}
+	748.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	 
+	751.1.1 = {
+		add_trait=tough_soldier
+		add_trait=desert_terrain_leader 
+		#add_trait=zealous
+		add_trait=proud # "I summon thee, wrath of the heavens! Meteor!"
+	}	
+	756.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+		#add_trait="class_mage_knight_female"
+	}	
+	761.1.1={ 
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+
+# Non-canon; filler characters to hold lands
+# Darna
+1028={
+	name="Niklas"
+	culture=grannvalean
+	religion=church_of_edda
+	720.1.1={
+		birth=yes
+	}
+	770.1.1={
+		death = yes
+	}
+}
+# Anu/Finias
+1284={
+	name="Algot"
+	culture=grannvalean
+	religion=church_of_edda
+	740.1.1={
+		birth=yes
+	}
+	791.1.1={
+		death = yes
+	}
+}
+# Farafra/Bahariya
+1285={
+	name="Bothild"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	739.1.1={
+		birth=yes
+	}
+	799.1.1={
+		death = yes
+	}
+}
+# Miletos
+# Miletos/Magnesia
+1289={
+	name="Balder"
+	culture=grannvalean
+	religion=church_of_edda
+	732.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death = yes
+	}
+}
+# Rada/Saeculum
+1290={
+	name="Sara"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	741.1.1={
+		birth=yes
+	}
+	792.1.1={
+		death = yes
+	}
+}
+
+# Aevum/Palation
+1291={
+	name="Jedvard"
+	culture=grannvalean
+	religion=church_of_edda
+	740.1.1={
+		birth=yes
+	}
+	796.1.1={
+		death = yes
+	}
+}
+
+# Tralles/Iassos
+1292={
+	name="Torbjörn"
+	culture=grannvalean
+	religion=church_of_edda
+	726.1.1={
+		birth=yes
+	}
+	780.1.1={
+		death = yes
+	}
+}
+
+# Peruluke
+1293={
+	name="Rikissa"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	735.1.1={
+		birth=yes
+	}
+	789.1.1={
+		death = yes
+	}
+}
+
+# Chronos
+1294={
+	name="Bengt"
+	culture=grannvalean
+	religion=church_of_edda
+	738.1.1={
+		birth=yes
+	}
+	790.1.1={
+		death = yes
+	}
+}
+
+# Hagfors
+1295={
+	name="Gustav"
+	culture=grannvalean
+	religion=church_of_edda
+	739.1.1={
+		birth=yes
+	}
+	786.1.1={
+		death = yes
+	}
+}
+
+# Sunnemo
+1296={
+	name="Kristina"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	739.1.1={
+		birth=yes
+	}
+	799.1.1={
+		death = yes
+	}
+}
+
+# Crusader Era
+
+1298={
+	name="Elisabet"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	634.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	705.1.1={
+		death = yes
+	}
+}
+1299={
+	name="Ivar"
+	culture=grann
+	religion=earthen_pagan
+	630.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	680.1.1={
+		death = yes
+	}
+}
+1300={
+	name=""
+	culture=grann
+	religion=earthen_pagan
+	629.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	680.1.1={
+		death = yes
+	}
+}
+1301={
+	name="Kettilmund"
+	culture=grann
+	religion=earthen_pagan
+	626.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	681.1.1={
+		death = yes
+	}
+}
+1302={
+	name="Nils"
+	culture=grann
+	religion=earthen_pagan
+	628.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	679.1.1={
+		death = yes
+	}
+}
+1303={
+	name="Malmfrið"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	632.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	701.1.1={
+		death = yes
+	}
+}
+1304={
+	name="Gyrið"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	630.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	683.1.1={
+		death = yes
+	}
+}
+1305={
+	name="Hæsteinn"
+	culture=grann
+	religion=earthen_pagan
+	619.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	670.1.1={
+		death = yes
+	}
+}
+1306={
+	name="Hysing"
+	culture=grann
+	religion=earthen_pagan
+	624.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	670.1.1={
+		death = yes
+	}
+}
+1307={
+	name="Sörkver"
+	culture=grann
+	religion=earthen_pagan
+	629.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	697.1.1={
+		death = yes
+	}
+}
+1308={
+	name="Iliana"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	631.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	680.1.1={
+		death = yes
+	}
+}
+1309={
+	name="Ale"
+	culture=grann
+	religion=earthen_pagan
+	630.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	688.1.1={
+		death = yes
+	}
+}
+# Darna
+1310={
+	name="Anders"
+	culture=grann
+	religion=earthen_pagan
+	633.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	701.1.1={
+		death = yes
+	}
+}
+# Anu
+1311={
+	name="Dag"
+	culture=grann
+	religion=earthen_pagan
+	629.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	672.1.1={
+		death = yes
+	}
+}
+# Phinora
+1312={
+	name="Iliana"
+	female=yes
+	culture=grann
+	religion=earthen_pagan
+	631.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=grannvalean
+	}
+	684.1.1={
+		death = yes
+	}
+}
+
+# Canon characters left out of the first pass
+
+# Azmur's messenger. Ordains Sigurd as a Holy Knight.
+1316={
+	name="Filat"
+	dynasty=2083
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	706.1.1={
+		birth=yes
+	}	
+	721.1.1 = {
+		add_trait="underhanded_rogue"
+		add_trait="gregarious"
+		add_trait="just"
+		add_trait="zealous"
+	}		 
+	770.1.1={
+		death = yes
+	}
+}
+# Arvis' attendant. Hides kids from child hunts under Arvis' orders.
+1317={
+	name="Felipe"
+	dynasty=2084
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	722.1.1={
+		birth=yes
+	}	
+	737.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="deceitful"
+	}		 
+	789.1.1={
+		death = yes
+	}
+}
+# Bishop who formerly served under Sigurd of Chalphy. Arvis has him escape with kids.
+1318={
+	name="Palmark"
+	dynasty=2085
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	726.1.1={
+		birth=yes
+		employer=1031 # Byron
+	}	
+	738.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	741.1.1 = {
+		add_trait="martial_cleric"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="brave"
+	}	
+	750.1.1 = {
+		remove_trait="class_priest"
+		add_trait="class_bishop"
+	}		 
+	787.1.1={
+		death = yes
+	}
+}
+# Knights of Chalphy! 
+
+# Armor knight of Chalphy
+1319={
+	name="Arden"
+	dynasty=2086
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=slow
+	trait=strong
+	739.1.1={
+		birth=yes
+	}	
+	751.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	754.1.1 = {
+		add_trait=tough_soldier
+		add_trait=unyielding_leader
+		add_trait=heavy_infantry_leader
+		add_trait=humble
+		add_trait=shy
+		add_trait=just
+		add_trait=kind
+	}	
+	760.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, Battle of Belhalla
+		}
+	}
+}
+# Green cavalier of Chalphy
+1320={
+	name="Alec"
+	dynasty=2087
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	739.1.1={
+		birth=yes
+	}	
+	751.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	754.1.1 = {
+		add_trait=tough_soldier
+		add_trait=aggressive_leader
+		add_trait=cavalry_leader
+		add_trait=brave
+		add_trait=wroth
+		add_trait=lustful
+		add_trait=gregarious
+		add_trait=kind
+	}	
+	760.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, Battle of Belhalla
+		}
+	}
+}
+# Red cavalier of Chalphy
+1321={
+	name="Naoise"
+	dynasty=2088
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	739.1.1={
+		birth=yes
+	}	
+	751.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	754.1.1 = {
+		add_trait=tough_soldier
+		add_trait=defensive_leader
+		add_trait=cavalry_leader
+		add_trait=patient
+		add_trait=diligent
+		add_trait=just
+		add_trait=kind
+	}	
+	760.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, Battle of Belhalla
+		}
+	}
+}
+# Bow knight of Jungby
+1322={
+	name="Midir"
+	dynasty=2089
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	736.1.1={
+		birth=yes
+	}	
+	748.01.01={
+		add_trait="class_horse_archer"
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	751.1.1 = {
+		add_trait=tough_soldier
+		add_trait=cavalry_leader
+		add_trait=just
+		add_trait=brave
+		add_trait=kind
+	}	
+	753.1.1={
+		effect = {
+			c_1082 = { # Edain
+				reverse_opinion = {
+					modifier = opinion_crush
+					who = ROOT
+					years = 8
+				}
+			}
+		}
+	}
+	757.1.1 = {
+		add_trait=wounded
+	}	
+	758.1.1 = {
+		remove_trait=wounded
+	}	
+	760.1.1 = {
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, Battle of Belhalla
+		}
+	}
+}
+# General of Dozel under Duke Lombard
+1323={
+	name="Slayder"
+	dynasty=2090
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	740.1.1={
+		birth=yes
+	}	
+	752.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	755.1.1 = {
+		add_trait=misguided_warrior
+		add_trait=cavalry_leader
+		add_trait=aggressive_leader
+	}	
+	757.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+	760.4.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
 	}
 }

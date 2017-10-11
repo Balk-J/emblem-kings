@@ -1,0 +1,19 @@
+180.1.1={
+	active = no
+}
+448.1.1={
+	active = yes
+	#holder=0 # 
+}
+648.1.1={
+	active = no
+	holder=0 # Destroyed
+}
+770.1.1={
+	active = yes
+	holder=1258 # Veld
+}
+779.1.1={
+	active = no
+	holder=0 # Destroyed
+}

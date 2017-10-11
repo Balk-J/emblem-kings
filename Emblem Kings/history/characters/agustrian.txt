@@ -138,8 +138,7 @@
 	}	 
 	747.1.1={
 		effect = {
-			random_character = {
-				limit = { character = 1094 } # Eldigan
+			c_1094 = { # Eldigan
 				reverse_opinion = {
 					modifier = opinion_hate
 					who = ROOT
@@ -753,7 +752,7 @@
 	name="Lugh"
 	dynasty=1024
 	culture=agustrian
-	religion=raider_pagan
+	religion=pirate
 	disallow_random_traits=yes
 	703.1.1={
 		birth=yes
@@ -840,7 +839,7 @@
 		death = yes
 	}
 }
-1229={
+1249={
 	name="Perenn"
 	female=yes
 	father=1008 # Hezul
@@ -1011,6 +1010,83 @@
 	}	
 		 	
 	732.1.1={
+		death = yes
+	}
+}
+# Non-canon, captains for the bad pirate gangs around Orgahil.
+1250={
+	name="Steren"
+	female=yes
+	culture=agustrian
+	religion=pirate
+	741.1.1={
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_pirate"
+		add_trait="base_class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	791.1.1={
+		death = yes
+	}
+}
+1251={
+	name="Oswallt"
+	culture=agustrian
+	religion=pirate
+	727.1.1={
+		birth=yes
+	}
+	739.01.01={
+		add_trait="class_pirate"
+		add_trait="base_class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	780.1.1={
+		death = yes
+	}
+}
+1252={
+	name="Breselgar"
+	culture=agustrian
+	religion=pirate
+	739.1.1={
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_pirate"
+		add_trait="base_class_pirate"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	794.1.1={
+		death = yes
+	}
+}
+
+# Filler landholders
+# Orgahil
+1297={
+	name="Froði"
+	culture=grann
+	religion=pirate
+	614.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=pirate
+		culture=agustrian
+	}
+	668.1.1={
 		death = yes
 	}
 }

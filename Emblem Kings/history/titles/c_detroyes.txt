@@ -6,3 +6,7 @@
 	liege = d_orgahil
 	#holder = 0
 }
+753.1.1={
+	liege = d_flying_ogres
+	holder=1252 # Pirate
+}

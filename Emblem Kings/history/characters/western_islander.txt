@@ -333,7 +333,7 @@
 711={
 	name="Gonzalez"
 	culture=western_islander
-	religion=raider_pagan
+	religion=bandit
 	
 	disallow_random_traits="yes" 
 	trait="strong"
@@ -377,7 +377,7 @@
 712={
 	name="Gelero" #Guerrero? Berserker, tried to steal Armads
 	culture=western_islander
-	religion=raider_pagan
+	religion=bandit
 	
 	disallow_random_traits="yes" 
 	trait="stutter"
@@ -423,7 +423,7 @@
 713={
 	name="Scott" # Berserker and pirate. Fir/Sin's boss.
 	culture=western_islander
-	religion=raider_pagan
+	religion=pirate
 	
 	disallow_random_traits="yes" 
 	trait="strong"
@@ -464,7 +464,7 @@
 715={
 	name="Scollan" # Bandit. Works for Zinque. Gonzalez may or may not be part of his band.
 	culture=western_islander
-	religion=raider_pagan
+	religion=bandit
 	
 	disallow_random_traits="yes" 
 	
@@ -505,7 +505,7 @@
 714={
 	name="Kelles" #the "stone giant" killed by Karel in a duel
 	culture=western_islander
-	religion=raider_pagan
+	religion=bandit
 	
 	trait="strong"
 	trait="slow"
@@ -869,7 +869,7 @@
 	name="Naiton" 
 	dynasty=743
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1139.01.01 = { 
@@ -885,7 +885,7 @@
 	name="Usuullt" 
 	dynasty=744
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1120.01.01 = { 
@@ -901,7 +901,7 @@
 	name="Iduallon" 
 	dynasty=745
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander	
 	
 	1133.01.01 = { 
@@ -917,7 +917,7 @@
 	name="Achiuir" 
 	dynasty=746
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1142.01.01 = { 
@@ -933,7 +933,7 @@
 	name="Canu" 
 	dynasty=747
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1143.01.01 = { 
@@ -1062,7 +1062,7 @@
 	name="Deoord" 
 	dynasty=755
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1130.01.01 = { 
@@ -1160,7 +1160,7 @@
 	name="Bran" 
 	dynasty=761
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1133.01.01 = { 
@@ -1176,7 +1176,7 @@
 	name="Telurg" 
 	dynasty=762
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1131.01.01 = { 
@@ -1208,7 +1208,7 @@
 	name="Ganant" 
 	dynasty=764
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1123.01.01 = { 
@@ -1260,7 +1260,7 @@
 	name="Kelles"
 	dynasty=767
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1139.01.01 = { birth=yes }
@@ -1273,7 +1273,7 @@
 	name="Morleo"
 	dynasty=768
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=western_islander
 	
 	1138.01.01 = { birth=yes }

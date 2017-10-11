@@ -10,5 +10,22 @@
 	holder=875 # 
 }
 649.1.1={
-	holder=0 # 
+	liege = d_darna
+	holder=1027 # Cult of Loptyr
+}
+743.1.1={ 
+	holder=1254 # Manfroy
+}
+757.1.1={ 
+	holder=1258 # Veld
+}
+770.1.1={ 
+	holder=1264 # Kutuzov
+	liege = e_grannvale
+	#holder=0 # 
+	#holder=1254 # Manfroy
+}
+779.1.1={ 
+	liege = d_yied
+	holder=0 
 }

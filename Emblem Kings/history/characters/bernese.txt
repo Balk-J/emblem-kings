@@ -2594,7 +2594,7 @@
 	dynasty=446
 	
 	culture=bernese
-	religion=raider_pagan
+	religion=bandit
 		
 	1140.1.1={
 		birth=yes
@@ -2610,7 +2610,7 @@
 	dynasty=447
 	
 	culture=bernese
-	religion=raider_pagan
+	religion=bandit
 		
 	1138.1.1={
 		birth=yes
@@ -2644,7 +2644,7 @@
 	name="Mainard" 
 	dynasty=175
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=lycian
 	1140.01.01={
 		birth=yes
@@ -2661,7 +2661,7 @@
 	name="Adalgrim" 
 	dynasty=176
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=lycian
 	1143.01.01={
 		birth=yes
@@ -2678,7 +2678,7 @@
 	name="Creat" 
 	dynasty=179
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=lycian
 	1142.01.01={
 		birth=yes

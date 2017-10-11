@@ -37,6 +37,9 @@
 761.1.1={
 	holder=1049 # Arvis
 }
+770.1.1={
+	holder=1268 # Yupheel
+}
 779.1.1={
 	holder=1047 # Coirpre
 }

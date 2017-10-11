@@ -56,3 +56,597 @@
         }
     }
 }
+# Welsh names from vanilla
+1401={
+	name="Caradoc"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1402={
+	name="Morgannwg"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1403={
+	name="Mathrafal"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1404={
+	name="Cynfyn"
+	culture="isaachian"
+}
+1405={
+	name="Alt Clut"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1406={
+	name="Ceredigion"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1407={
+	name="Caereinion"
+	culture="isaachian"
+}
+1408={
+	name="Glastenning"
+	culture="isaachian"
+}
+1409={
+	name="Lleyn"
+	culture="isaachian"
+}
+1410={
+	name="Mostyn"
+	culture="isaachian"
+}
+1411={
+	name="Seisyllwg"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1412={
+	name="Rhufoniog"
+	culture="isaachian"
+}
+1413={
+	name="Maelor"
+	culture="isaachian"
+}
+1415={
+	name="Penllyn"
+	culture="isaachian"
+}
+1415={
+	name="Tewdwr"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1416={
+	name="Meilyr"
+	culture="isaachian"
+}
+1417={
+	name="Mochnant"
+	culture="isaachian"
+}
+1418={
+	name="Buellt"
+	culture="isaachian"
+}
+1419={
+	name="Llewellyn"
+	culture="isaachian"
+}
+1420={
+	name="Mechain"
+	culture="isaachian"
+}
+1421={
+	name="Cedewain"
+	culture="isaachian"
+}
+1422={
+	name="Penweddig"
+	culture="isaachian"
+}
+1423={
+	name="Iâl"
+	culture="isaachian"
+}
+1424={
+	name="Amwythig"
+	culture="isaachian"
+}
+1425={
+	name="Caerloyw"
+	culture="isaachian"
+}
+1426={
+	name="Emlyn"
+	culture="isaachian"
+}
+1427={
+	name="Ystrad Tywi"
+	culture="isaachian"
+}
+1428={
+	name="Rhuddlan"
+	culture="isaachian"
+}
+1429={
+	name="Llwydiarth"
+	culture="isaachian"
+}
+1430={
+	name="Aberavon"
+	culture="isaachian"
+}
+1431={
+	name="Dunoding"
+	culture="isaachian"
+}
+1432={
+	name="Pebidiog"
+	culture="isaachian"
+}
+1433={
+	name="Deugleddyf"
+	culture="isaachian"
+}
+1434={
+	name="Seisyll"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1435={
+	name="Deheuwynt"
+	culture="isaachian"
+}
+1436={
+	name="Eginog"
+	culture="isaachian"
+}
+1437={
+	name="Gorfynydd"
+	culture="isaachian"
+}
+1438={
+	name="Gwyr"
+	culture="isaachian"
+}
+1439={
+	name="Senghenydd"
+	culture="isaachian"
+}
+1440={
+	name="Rhos"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1441={
+	name="Crwthor"
+	culture="isaachian"
+}
+1442={
+	name="Arfon"
+	culture="isaachian"
+}
+1443={
+	name="Gwynn"
+	culture="isaachian"
+}
+1444={
+	name="Cadfeal"
+	culture="isaachian"
+}
+1445={
+	name="Cannevet"
+	culture="isaachian"
+}
+1446={
+	name="Llyn"
+	culture="isaachian"
+}
+1447={
+	name="Ergyng"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1448={
+	name="Gwarthaf"
+	culture="isaachian"
+}
+1449={
+	name="Aeron"
+	culture="isaachian"
+}
+1450={
+	name="Emlyn"
+	culture="isaachian"
+}
+1451={
+	name="Cedweli"
+	culture="isaachian"
+}
+1452={
+	name="Gwrinydd"
+	culture="isaachian"
+}
+1453={
+	name="Talgarth"
+	culture="isaachian"
+}
+1454={
+	name="Pengwern"
+	culture="isaachian"
+}
+1455={
+	name="Penrhys"
+	culture="isaachian"
+}
+1456={
+	name="Nwrcelyn"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1457={
+	name="Llifon"
+	culture="isaachian"
+}
+1458={
+	name="Abermenai"
+	culture="isaachian"
+}
+1459={
+	name="Penfro"
+	culture="isaachian"
+}
+1460={
+	name="Gilmyn"
+	culture="isaachian"
+}
+1461={
+	name="Efionydd"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1462={
+	name="Conwy"
+	culture="isaachian"
+}
+1463={
+	name="Aberteifi"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1464={
+	name="Clwyd"
+	culture="isaachian"
+}
+1465={
+	name="Tal-y-bont"
+	culture="isaachian"
+}
+1466={
+	name="Isaled"
+	culture="isaachian"
+}
+1467={
+	name="Ynys Môn"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1468={
+	name="Talhaiarn"
+	culture="isaachian"
+}
+1469={
+	name="Brynffenigl"
+	culture="isaachian"
+}
+1470={
+	name="Llechwedd"
+	culture="isaachian"
+}
+1471={
+	name="Arwystli"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1472={
+	name="Cefeliog"
+	culture="isaachian"
+}
+1473={
+	name="Carmarthen"
+	culture="isaachian"
+}
+1474={
+	name="Caenogion"
+	culture="isaachian"
+}
+1475={
+	name="Maelienydd"
+	culture="isaachian"
+}
+1476={
+	name="Elfael"
+	culture="isaachian"
+}
+1477={
+	name="Mynydd"
+	culture="isaachian"
+}
+1478={
+	name="Bangor"
+	culture="isaachian"
+}
+1479={
+	name="Mynyw"
+	culture="isaachian"
+}
+1480={
+	name="Tyddewi"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1481={
+	name="Llandaff"
+	culture="isaachian"
+}
+1482={
+	name="Arllechwedd"
+	culture="isaachian"
+}
+1483={
+	name="Llanbadarn"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1484={
+	name="Llancarfan"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1485={
+	name="Tegaingl"
+	culture="isaachian"
+}
+1486={
+	name="Anwyl"
+	culture="isaachian"
+}
+1487={
+	name="Cyfeiliog"
+	culture="isaachian"
+}
+1488={
+	name="Fane"
+	culture="isaachian"
+}
+1489={
+	name="of Cornwall"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1490={
+	name="of Bristol"
+	culture="isaachian"
+}
+1491={
+	name="Ynys Cybi"
+	culture="isaachian"
+}
+1492={
+	name="Gwynedd"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1493={
+	name="Gruffydd"
+	culture="isaachian"
+}
+1494={
+	name="Tegaingl"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1495={
+	name="Coel"
+	culture="isaachian"
+}
+1496={
+	name="Edern"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1497={
+	name="Dinefwr"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1498={
+	name="Aberffraw"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1499={
+	name="Glywysing"
+	culture="isaachian"
+}
+1500={
+	name="Manaw"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1501={
+	name="Llywelin"
+	culture="isaachian"
+}
+1502={
+	name="Cynllibiwg"
+	culture="isaachian"
+}
+1503={
+	name="Evans"
+	culture="isaachian"
+}
+1504={
+	name="Maelienydd"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1505={
+	name="Brycheiniog"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1506={
+	name="de la Pole"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1507={
+	name="Rhosyr"
+	culture="isaachian"
+}
+1508={
+	name="Cemais"
+	culture="isaachian"
+}
+1509={
+	name="Meirionydd"
+	culture="isaachian"
+}
+1510={
+	name="Ynys Enlli"
+	culture="isaachian"
+}
+1511={
+	name="Aberdaron"
+	culture="isaachian"
+}
+1512={
+	name="Penmôn"
+	culture="isaachian"
+}
+1513={
+	name="Ystrad Clud"
+	culture="isaachian"
+}
+1514={
+	name="Rheged"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1515={
+	name="Prydain"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1516={
+	name="Ebrauc"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1517={
+	name="Gwerthrynion"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1518={
+	name="Gwynllwg"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1519={
+	name="Dyfed"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1520={
+	name="Brycheiniog"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1521={
+	name="Buellt"
+	culture="isaachian"
+}
+1522={
+	name="Llwydiarth"
+	culture="isaachian"
+}
+1523={
+	name="Llywel"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1524={
+	name="Manaw Goddoddin"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1525={
+	name="Dyfnaint"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1526={
+	name="Gwent"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1527={
+	name="Cernyw"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1528={
+	name="Manaw"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1529={
+	name="Caerloyw"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1530={
+	name="Powys"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1531={
+	name="Dyfed"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1532={
+	name="Brycheiniog"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1533={
+	name="Brogyntyn"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1534={
+	name="Ternyllwg"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1535={
+	name="Arllechwydd"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+1536={
+	name="Manceinion"
+	culture="isaachian"
+	religion="church_of_edda"
+}

@@ -28,3 +28,9 @@ religion = loptyrian
 	religion = loptyrian
 	culture = grannvalean
 }
+770.1.1 = { 
+	capital = b_yied
+}
+779.1.1 = { 
+	capital = b_yied_shrine
+}

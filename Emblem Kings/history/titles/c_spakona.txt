@@ -25,6 +25,9 @@
 732.1.1={
 	holder=1054 # Cowen
 }
+777.1.1={ 
+	holder=1254 # Manfroy
+}
 778.1.1={
 	holder=1053 # Saias
 }

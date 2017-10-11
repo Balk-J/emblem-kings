@@ -34,7 +34,7 @@ character_event = {
 	option = {
 		name = "magic.1.A"
 		ai_chance = {
-			factor = 30
+			factor = 10
 		}
 		if = {
 			limit = {
@@ -63,9 +63,9 @@ character_event = {
 	option = {
 		name = "magic.1.B"	
 		ai_chance = {
-			factor = 70
+			factor = 90
 			modifier = {
-				factor = 5
+				factor = 10
 				religion = loptyrian
 			}
 		}	
@@ -120,7 +120,7 @@ character_event = {
 	option = {
 		name = "magic.2.A"
 		ai_chance = {
-			factor = 30
+			factor = 10
 		}
 		
 		if = {
@@ -150,9 +150,9 @@ character_event = {
 	option = {
 		name = "magic.2.B"	
 		ai_chance = {
-			factor = 70
+			factor = 90
 			modifier = {
-				factor = 5
+				factor = 10
 				religion = loptyrian
 			}
 		}	
@@ -211,7 +211,7 @@ character_event = {
 	option = {
 		name = "magic.3.A"
 		ai_chance = {
-			factor = 0
+			factor = 100
 		}
 		
 		# Switch to liege's religion, if vassal and liege is not a mage

@@ -28,3 +28,9 @@ b_grutia = city
 	religion = church_of_edda
 	culture = thracian
 }
+776.1.1 = { 
+	capital = b_grutia_2
+}
+778.1.1 = { 
+	capital = b_grutia_castle
+}

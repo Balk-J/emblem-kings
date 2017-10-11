@@ -2363,7 +2363,7 @@
 	}
 	
 	#1160.01.01 = {
-	#Steals a castle on the Dread Isle?
+	#Steals a castle on the Dread Isle? 
 	
 	
 	1161.01.01 = {
@@ -2806,7 +2806,7 @@
 166 = {
 	name="Groznyi" #Brigand. Chapter 11E boss.
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=lycian
 	
 	1125.01.01={
@@ -2839,7 +2839,7 @@
 167 = {
 	name="Damas" #Fighter, leader of Bolm Mountain Bandits. Chapter 1 boss of FE6.
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=lycian
 	
 	1155.01.01={
@@ -2905,7 +2905,7 @@
 169 = {
 	name="Dory" #Brigand. Chapter 5 boss.
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=lycian
 	
 	trait="strong"	#or is it just the Killer Axe?
@@ -3037,7 +3037,7 @@
 173 = {
 	name="Zagan" #A Caelin bandit. Fights for pleasure more than money.
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=lycian
 	
 	1130.01.01={
@@ -3874,7 +3874,7 @@
 764 = {
 	name="Fargus"
 	
-	religion=raider_pagan
+	religion=pirate
 	culture=lycian
 	
 	trait="strong"

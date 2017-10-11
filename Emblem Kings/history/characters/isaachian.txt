@@ -792,5 +792,59 @@
 		}
 	}
 }
-
 # Wiki claims Mareeta was born before Rivough's fall, but that is impossible. If we assume Mananan dies at the same time as Kurth (sometime in 759 or 760), she'd be older than she's supposed to be in FE5.
+
+# Non-canon; filler characters to hold lands
+1287={
+	name="Llywarch"
+	culture=isaachian
+	religion=church_of_edda
+	740.1.1={
+		birth=yes
+	}
+	798.1.1={
+		death = yes
+	}
+}
+1288={
+	name="Aeronwy"
+	female=yes
+	culture=isaachian
+	religion=church_of_edda
+	741.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death = yes
+	}
+}
+1314={
+	name="Rikulfr"
+	culture=grann
+	religion=earthen_pagan
+	629.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=isaachian
+	}
+	681.1.1={
+		death = yes
+	}
+}
+1315={
+	name="Hemming"
+	culture=grann
+	religion=earthen_pagan
+	620.1.1={
+		birth=yes
+	}
+	649.1.1 = { # Founding of Jugdral
+		religion=church_of_edda
+		culture=isaachian
+	}
+	676.1.1={
+		death = yes
+	}
+}

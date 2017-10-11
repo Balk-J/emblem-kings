@@ -1,0 +1,56 @@
+namespace = fe4_family
+
+# For notifying rulers about dummy characters
+
+# 
+character_event = {
+	id = fe4_family.1
+	desc = fe4_family.1.desc
+	picture = "GFX_evt_child_play" 
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_family.1.A
+		ai_chance = {
+			factor = 99
+		}
+		piety = 50
+		FROM = {
+			set_father = ROOT
+		}
+		
+	}
+	option = {
+		name = fe4_family.1.B
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0			
+				always = yes
+			}
+		}
+	}
+	option = {
+		name = fe4_family.1.C
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0			
+				always = yes
+			}
+		}
+		
+		FROM = {
+			death = { 
+				death_reason = death_murder_drowning 
+				killer = ROOT
+			} 
+		}
+		if = {
+			limit = { NOT = { trait = cruel } }
+			add_trait = cruel
+		}
+		piety = -100
+	}
+}
+

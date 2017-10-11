@@ -33,3 +33,9 @@ religion = church_of_edda
 	religion = church_of_edda
 	culture = agustrian
 }
+770.1.1 = { 
+	capital = b_agusty
+}
+779.1.1 = { 
+	capital = b_agusty_castle
+}

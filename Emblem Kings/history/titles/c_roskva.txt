@@ -14,3 +14,7 @@
 	liege = d_chalphy
 	holder=0 # Baldur
 }
+755.1.1={
+	holder=1320 # Alec 
+}
+

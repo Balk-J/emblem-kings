@@ -9,6 +9,12 @@
 180.1.1={
 	de_jure_liege = k_rivough
 }
+647.1.1={
+	holder=1311 # filler
+}
+672.1.1={
+	holder=0 # filler
+}
 649.1.1={
 	de_jure_liege = k_yied
 }

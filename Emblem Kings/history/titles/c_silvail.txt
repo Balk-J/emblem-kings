@@ -33,6 +33,9 @@
 741.1.1={
 	holder=1094 # Eldigan
 }
+759.1.1={
+	liege=d_silvail
+}
 760.1.1={
 	holder=1029 # Azmur
 }
@@ -43,9 +46,12 @@
 #	holder=1058 # Bloom?
 #}
 #778.1.1={
-777.1.1={
-	holder=1051 # Julius?
+770.1.1={
+	holder=1276 # Dark Bishop
 }
+#777.1.1={
+#	holder=1051 # Julius?
+#}
 779.1.1={
 	liege = d_silvail
 }

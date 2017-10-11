@@ -95,7 +95,7 @@
 	name="of Orgahil"
 	culture="agustrian"
 	coat_of_arms = {
-		religion="raider_pagan"
+		religion="pirate"
 		template = 0
         layer = {
             texture = 0
@@ -106,4 +106,167 @@
             color = 7
         }
     }
+}
+# Breton from vanilla
+1269={
+	name="of Dinan"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1270={
+	name="of Vitré"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1271={
+	name="of Cornouaille"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1272={
+	name="of Rohan"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1273={
+	name="of Porhoët"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1274={
+	name="of Brittany"
+	culture="agustrian"
+}
+1275={
+	name="of Châteaubriant"
+	culture="agustrian"
+}
+1276={
+	name="of Nantes"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1277={
+	name="Leon"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1278={
+	name="Guennec"
+	culture="agustrian"
+}
+1279={
+	name="Pensec"
+	culture="agustrian"
+}
+1280={
+	name="Scoarnec"
+	culture="agustrian"
+}
+1281={
+	name="Riowall"
+	culture="agustrian"
+}
+1282={
+	name="of Vannes"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1283={
+	name="Breizh"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1284={
+	name="of Bretagne"
+	culture="agustrian"
+}
+1285={
+	name="Kerouac"
+	culture="agustrian"
+}
+1286={
+	name="Paignon"
+	culture="agustrian"
+}
+1287={
+	name="Sant Nazar"
+	culture="agustrian"
+}
+1288={
+	name="Tanguy"
+	culture="agustrian"
+}
+1289={
+	name="Parisy"
+	culture="agustrian"
+}
+1290={
+	name="Henbont"
+	culture="agustrian"
+}
+1291={
+	name="of Herve"
+	culture="agustrian"
+}
+1292={
+	name="Sant Brieuc"
+	culture="agustrian"
+}
+1293={
+	name="Sant Mikael"
+	culture="agustrian"
+}
+1294={
+	name="Leon"
+	culture="agustrian"
+}
+1295={
+	name="of Leon"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1296={
+	name="Gwened"
+	culture="agustrian"
+}
+1297={
+	name="Naoned"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1298={
+	name="of Rennes"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1299={
+	name="Domnonea"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1300={
+	name="of Poher"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1301={
+	name="of Rieux"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1302={
+	name="Devnent"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1303={
+	name="Cerneu"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+1304={
+	name="Leon"
+	culture="agustrian"
+	religion="church_of_edda"
 }

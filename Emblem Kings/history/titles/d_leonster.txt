@@ -36,6 +36,10 @@
 763.1.1={
 	holder=1058 # Bloom?
 }
-778.1.1={
+777.1.1={
 	holder = 1162 # Leif 
+	liege = 0
+}
+778.1.1={
+	liege = k_manster
 }

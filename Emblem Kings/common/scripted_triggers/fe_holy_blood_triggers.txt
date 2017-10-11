@@ -1,0 +1,1255 @@
+has_latent_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_latent_loptyr
+		trait=holy_blood_latent_naga
+		trait=holy_blood_latent_baldur
+		trait=holy_blood_latent_blagi
+		trait=holy_blood_latent_dain
+		trait=holy_blood_latent_fala
+		trait=holy_blood_latent_forseti
+		trait=holy_blood_latent_hezul
+		trait=holy_blood_latent_neir
+		trait=holy_blood_latent_noba
+		trait=holy_blood_latent_odo
+		trait=holy_blood_latent_tordo
+		trait=holy_blood_latent_ulir
+	}
+}
+has_major_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_loptyr
+		trait=holy_blood_major_naga
+		trait=holy_blood_major_baldur
+		trait=holy_blood_major_blagi
+		trait=holy_blood_major_dain
+		trait=holy_blood_major_fala
+		trait=holy_blood_major_forseti
+		trait=holy_blood_major_hezul
+		trait=holy_blood_major_neir
+		trait=holy_blood_major_noba
+		trait=holy_blood_major_odo
+		trait=holy_blood_major_tordo
+		trait=holy_blood_major_ulir
+	}
+}
+has_minor_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_minor_loptyr
+		trait=holy_blood_minor_naga
+		trait=holy_blood_minor_baldur
+		trait=holy_blood_minor_blagi
+		trait=holy_blood_minor_dain
+		trait=holy_blood_minor_fala
+		trait=holy_blood_minor_forseti
+		trait=holy_blood_minor_hezul
+		trait=holy_blood_minor_neir
+		trait=holy_blood_minor_noba
+		trait=holy_blood_minor_odo
+		trait=holy_blood_minor_tordo
+		trait=holy_blood_minor_ulir
+	}
+}
+has_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_minor_holy_blood_trigger = yes
+	}
+}
+
+has_loptyr_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_loptyr
+		trait=holy_blood_minor_loptyr
+	}
+}
+has_naga_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_naga
+		trait=holy_blood_minor_naga
+	}
+}
+has_baldur_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_baldur
+		trait=holy_blood_minor_baldur
+	}
+}
+has_blagi_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_blagi
+		trait=holy_blood_minor_blagi
+	}
+}
+has_dain_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_dain
+		trait=holy_blood_minor_dain
+	}
+}
+has_fala_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_fala
+		trait=holy_blood_minor_fala
+	}
+}
+has_forseti_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_forseti
+		trait=holy_blood_minor_forseti
+	}
+}
+has_hezul_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_hezul
+		trait=holy_blood_minor_hezul
+	}
+}
+has_neir_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_neir
+		trait=holy_blood_minor_neir
+	}
+}
+has_noba_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_noba
+		trait=holy_blood_minor_noba
+	}
+}
+has_odo_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_odo
+		trait=holy_blood_minor_odo
+	}
+}
+has_tordo_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_tordo
+		trait=holy_blood_minor_tordo
+	}
+}
+has_ulir_holy_blood_trigger = {
+	OR = {
+		trait=holy_blood_major_ulir
+		trait=holy_blood_minor_ulir
+	}
+}
+
+can_inherit_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_major_loptyr_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_loptyr
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_loptyr
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_loptyr
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_loptyr
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_loptyr
+			}
+		}
+	}
+}
+can_inherit_minor_loptyr_holy_blood_trigger = {
+	#NOT = { can_inherit_major_loptyr_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_loptyr_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_loptyr_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_loptyr_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_loptyr_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_loptyr_holy_blood_trigger = yes
+		can_inherit_minor_loptyr_holy_blood_trigger = yes
+	}
+}
+
+can_inherit_major_naga_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_naga
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_naga
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_naga
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_naga
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_naga
+			}
+		}
+	}
+}
+can_inherit_minor_naga_holy_blood_trigger = {
+	#NOT = { can_inherit_major_naga_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_naga_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_naga_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_naga_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_naga_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_naga_holy_blood_trigger = yes
+		can_inherit_minor_naga_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_baldur_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_baldur
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_baldur
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_baldur
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_baldur
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_baldur
+			}
+		}
+	}
+}
+can_inherit_minor_baldur_holy_blood_trigger = {
+	#NOT = { can_inherit_major_baldur_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_baldur_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_baldur_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_baldur_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_baldur_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_baldur_holy_blood_trigger = yes
+		can_inherit_minor_baldur_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_blagi_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_blagi
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_blagi
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_blagi
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_blagi
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_blagi
+			}
+		}
+	}
+}
+can_inherit_minor_blagi_holy_blood_trigger = {
+	#NOT = { can_inherit_major_blagi_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_blagi_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_blagi_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_blagi_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_blagi_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_blagi_holy_blood_trigger = yes
+		can_inherit_minor_blagi_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_dain_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_dain
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_dain
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_dain
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_dain
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_dain
+			}
+		}
+	}
+}
+can_inherit_minor_dain_holy_blood_trigger = {
+	#NOT = { can_inherit_major_dain_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_dain_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_dain_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_dain_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_dain_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_dain_holy_blood_trigger = yes
+		can_inherit_minor_dain_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_fala_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_fala
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_fala
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_fala
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_fala
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_fala
+			}
+		}
+	}
+}
+can_inherit_minor_fala_holy_blood_trigger = {
+	#NOT = { can_inherit_major_fala_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_fala_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_fala_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_fala_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_fala_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_fala_holy_blood_trigger = yes
+		can_inherit_minor_fala_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_forseti_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_forseti
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_forseti
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_forseti
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_forseti
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_forseti
+			}
+		}
+	}
+}
+can_inherit_minor_forseti_holy_blood_trigger = {
+	#NOT = { can_inherit_major_forseti_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_forseti_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_forseti_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_forseti_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_forseti_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_forseti_holy_blood_trigger = yes
+		can_inherit_minor_forseti_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_hezul_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_hezul
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_hezul
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_hezul
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_hezul
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_hezul
+			}
+		}
+	}
+}
+can_inherit_minor_hezul_holy_blood_trigger = {
+	#NOT = { can_inherit_major_hezul_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_hezul_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_hezul_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_hezul_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_hezul_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_hezul_holy_blood_trigger = yes
+		can_inherit_minor_hezul_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_neir_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_neir
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_neir
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_neir
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_neir
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_neir
+			}
+		}
+	}
+}
+can_inherit_minor_neir_holy_blood_trigger = {
+	#NOT = { can_inherit_major_neir_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_neir_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_neir_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_neir_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_neir_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_neir_holy_blood_trigger = yes
+		can_inherit_minor_neir_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_noba_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_noba
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_noba
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_noba
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_noba
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_noba
+			}
+		}
+	}
+}
+can_inherit_minor_noba_holy_blood_trigger = {
+	#NOT = { can_inherit_major_noba_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_noba_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_noba_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_noba_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_noba_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_noba_holy_blood_trigger = yes
+		can_inherit_minor_noba_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_odo_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_odo
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_odo
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_odo
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_odo
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_odo
+			}
+		}
+	}
+}
+can_inherit_minor_odo_holy_blood_trigger = {
+	#NOT = { can_inherit_major_odo_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_odo_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_odo_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_odo_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_odo_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_odo_holy_blood_trigger = yes
+		can_inherit_minor_odo_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_tordo_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_tordo
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_tordo
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_tordo
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_tordo
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_tordo
+			}
+		}
+	}
+}
+can_inherit_minor_tordo_holy_blood_trigger = {
+	#NOT = { can_inherit_major_tordo_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_tordo_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_tordo_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_tordo_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_tordo_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_tordo_holy_blood_trigger = yes
+		can_inherit_minor_tordo_holy_blood_trigger = yes
+	}
+}
+can_inherit_major_ulir_holy_blood_trigger = {
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=holy_blood_major_ulir
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=holy_blood_major_ulir
+			}
+		}
+		AND = {
+			AND = {
+				is_father_real_father = yes
+				father_even_if_dead = {
+					trait=holy_blood_minor_ulir
+				}
+			}
+			AND = {
+				is_father_real_father = no
+				real_father_even_if_dead = {
+					trait=holy_blood_minor_ulir
+				}
+			}
+			mother_even_if_dead = {
+				trait=holy_blood_minor_ulir
+			}
+		}
+	}
+}
+can_inherit_minor_ulir_holy_blood_trigger = {
+	#NOT = { can_inherit_major_ulir_holy_blood_trigger = yes }
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				has_ulir_holy_blood_trigger = yes
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				has_ulir_holy_blood_trigger = yes
+			}
+		}
+		mother_even_if_dead = {
+			has_ulir_holy_blood_trigger = yes
+		}
+	}
+}
+can_inherit_ulir_holy_blood_trigger = {
+	OR = {
+		can_inherit_major_ulir_holy_blood_trigger = yes
+		can_inherit_minor_ulir_holy_blood_trigger = yes
+	}
+}
+#
+has_two_minor_holy_blood_trigger = {
+	OR = {
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_naga
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_baldur
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_blagi
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_dain
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_fala
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_forseti
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_hezul
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_baldur
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_blagi
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_dain
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_fala
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_forseti
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_hezul
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_blagi
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_dain
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_fala
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_forseti
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_hezul
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_dain
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_fala
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_forseti
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_hezul
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_blagi
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_fala
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_forseti
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_hezul
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_dain
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_forseti
+		}
+		AND = {
+			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_hezul
+		}
+		AND = {
+			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_forseti
+			trait = holy_blood_minor_hezul
+		}
+		AND = {
+			trait = holy_blood_minor_forseti
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_forseti
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_forseti
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_forseti
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_forseti
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_hezul
+			trait = holy_blood_minor_neir
+		}
+		AND = {
+			trait = holy_blood_minor_hezul
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_hezul
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_hezul
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_hezul
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_neir
+			trait = holy_blood_minor_noba
+		}
+		AND = {
+			trait = holy_blood_minor_neir
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_neir
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_neir
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_noba
+			trait = holy_blood_minor_odo
+		}
+		AND = {
+			trait = holy_blood_minor_noba
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_noba
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_tordo
+		}
+		AND = {
+			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_ulir
+		}
+		AND = {
+			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_ulir
+		}
+	}
+}
+can_add_major_holy_blood_trigger = {
+	# If they don't already have major blood or two minors
+	NOT = { has_major_holy_blood_trigger = yes }
+	NOT = { has_two_minor_holy_blood_trigger = yes }
+}
+can_add_minor_holy_blood_trigger = {
+	# If they don't already have two minors, or a major and a minor
+	NOT = { has_two_minor_holy_blood_trigger = yes }
+	NAND = {
+		has_major_holy_blood_trigger = yes
+		has_minor_holy_blood_trigger = yes
+	}
+	
+}

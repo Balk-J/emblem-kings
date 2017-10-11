@@ -10,5 +10,14 @@
 	holder=872 # 
 }
 649.1.1={
+	holder=1310 # filler
+}
+736.1.1={
+	holder=1028 # filler
+}
+#754.1.1={
+#	holder=1253 # Bramsel # can't do this or it de-republics him
+#}
+778.1.1={
 	holder=0 # 
 }

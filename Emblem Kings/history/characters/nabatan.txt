@@ -554,7 +554,7 @@
 	name="Paul" # Wacky Berserker Twin #1
 	dynasty=604
 	culture=nabatan
-	religion=raider_pagan
+	religion=bandit
 	
 	trait="strong"
 	
@@ -600,7 +600,7 @@
 	name="Jasmine" # Wacky Berserker Twin #2
 	dynasty=605
 	culture=nabatan
-	religion=raider_pagan
+	religion=bandit
 	
 	trait="strong"
 	
@@ -642,7 +642,7 @@
 	name="Maggie" # Wacky Berserker Twin #3
 	dynasty=606
 	culture=nabatan
-	religion=raider_pagan
+	religion=bandit
 	
 	trait="strong"
 	
@@ -688,7 +688,7 @@
 	name="Rose" # Wacky Berserker Twin #4
 	dynasty=607
 	culture=nabatan
-	religion=raider_pagan
+	religion=bandit
 	
 	trait="strong"
 	
@@ -729,7 +729,7 @@
 617={
 	name="Gehato" # random bandit, beaten by Lance in vol 3. Rose/Maggie lookalike. Works for Kruzard?
 	culture=nabatan
-	religion=raider_pagan
+	religion=bandit
 	
 	trait="strong"
 	
@@ -822,7 +822,7 @@
 	name="Mundir" 
 	dynasty=611
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1130.01.01 = { 
@@ -838,7 +838,7 @@
 	name="Garsiya" 
 	dynasty=612
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1132.01.01 = { 
@@ -854,7 +854,7 @@
 	name="Abbad" 
 	dynasty=623
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1135.01.01 = { 
@@ -871,7 +871,7 @@
 	female=yes
 	dynasty=624
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1128.01.01 = { 
@@ -903,7 +903,7 @@
 	name="Lubb" 
 	dynasty=626
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1132.01.01 = { 
@@ -919,7 +919,7 @@
 	name="Hakam" 
 	dynasty=627
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1124.01.01 = { 
@@ -935,7 +935,7 @@
 	name="Bilal" 
 	dynasty=628
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1119.01.01 = { 
@@ -951,7 +951,7 @@
 	name="Siddray" 
 	dynasty=629
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1128.01.01 = { 
@@ -967,7 +967,7 @@
 	name="Rasiq" 
 	dynasty=630
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1130.01.01 = { 
@@ -983,7 +983,7 @@
 	name="Utman" 
 	dynasty=631
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1122.01.01 = { 
@@ -999,7 +999,7 @@
 	name="Balashk" 
 	dynasty=632
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1115.01.01 = { 
@@ -1015,7 +1015,7 @@
 	name="Tariq" 
 	dynasty=633
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1131.01.01 = { 
@@ -1031,7 +1031,7 @@
 	name="Ibrahim" 
 	dynasty=634
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1126.01.01 = { 
@@ -1047,7 +1047,7 @@
 	name="Jyad" 
 	dynasty=635
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1124.01.01 = { 
@@ -1063,7 +1063,7 @@
 	name="Sanyo" 
 	dynasty=636
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1119.01.01 = { 
@@ -1079,7 +1079,7 @@
 	name="Umar" 
 	dynasty=637
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1130.01.01 = { 
@@ -1095,7 +1095,7 @@
 	name="Fadl" 
 	dynasty=638
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1122.01.01 = { 
@@ -1144,7 +1144,7 @@
 	name="Galind" 
 	dynasty=641
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1131.01.01 = { 
@@ -1160,7 +1160,7 @@
 	name="Yahya" 
 	dynasty=642
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1130.01.01 = { 
@@ -1176,7 +1176,7 @@
 	name="Siddray" 
 	dynasty=643
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=nabatan
 	
 	1132.01.01 = { 

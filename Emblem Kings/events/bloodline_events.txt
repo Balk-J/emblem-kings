@@ -79,3 +79,768 @@ character_event = {
 		}
 	}
 }
+# Inheriting holy blood
+# This event adds hidden "latent holy blood" traits that other events can turn into actual holy blood traits.
+character_event = {
+	id = bloodline.2
+	
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		can_inherit_holy_blood_trigger = yes
+	}
+	
+	option = {
+		name = OK	
+		if = {
+			limit = {
+				can_inherit_loptyr_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_loptyr
+		}
+		if = {
+			limit = {
+				can_inherit_naga_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_naga
+		}
+		if = {
+			limit = {
+				can_inherit_baldur_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_baldur
+		}
+		if = {
+			limit = {
+				can_inherit_blagi_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_blagi
+		}
+		if = {
+			limit = {
+				can_inherit_dain_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_dain
+		}
+		if = {
+			limit = {
+				can_inherit_fala_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_fala
+		}
+		if = {
+			limit = {
+				can_inherit_forseti_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_forseti
+		}
+		if = {
+			limit = {
+				can_inherit_hezul_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_hezul
+		}
+		if = {
+			limit = {
+				can_inherit_neir_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_neir
+		}
+		if = {
+			limit = {
+				can_inherit_noba_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_noba
+		}
+		if = {
+			limit = {
+				can_inherit_odo_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_odo
+		}
+		if = {
+			limit = {
+				can_inherit_tordo_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_tordo
+		}
+		if = {
+			limit = {
+				can_inherit_ulir_holy_blood_trigger = yes
+			}
+			add_trait = holy_blood_latent_ulir
+		}
+	}
+}
+
+# Schedule manifestation of holy blood. Better to do it once here than to have an annual event.
+character_event = {
+	id = bloodline.3
+	
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_latent_holy_blood_trigger = yes
+	}
+	
+	option = {
+		name = OK
+		
+		# When can the holy blood manifest?
+		random_list = {	
+			# Right away - pre-teen
+			30 = { 
+				character_event = { id=bloodline.4 days=1 random=364 }
+				set_character_flag=holy_blood_manifest_soon
+			}
+			# Early teens (13-16)
+			30 = { 
+				character_event = { id=bloodline.4 days=365 random=1095 }
+				set_character_flag=holy_blood_manifest_early_teens
+			}
+			# Late teens (16-19)
+			15 = { 
+				character_event = { id=bloodline.4 days=1460 random=1095 }
+				set_character_flag=holy_blood_manifest_late_teens
+			}
+			# Young adult (20-30)
+			10 = { 
+				character_event = { id=bloodline.4 days=2920 random=3650 }
+				set_character_flag=holy_blood_manifest_young_adult
+			}
+			# Middle age (30-40)
+			10 = { 
+				character_event = { id=bloodline.4 days=6570 random=3650 }
+				set_character_flag=holy_blood_manifest_middle_age
+			}
+			# Old age (up to 60)
+			5 = { 
+				character_event = { id=bloodline.4 days=10220 random=7300 }
+				set_character_flag=holy_blood_manifest_old
+			}
+			#character_event = { id=bloodline.4 days=1 random=17520 }# Blood can manifest immediately or as late as age 60
+		}	
+	}		
+}
+
+# This event turns hidden "latent holy blood" traits that other events can turn into actual holy blood traits.
+character_event = {
+	id = bloodline.4
+	
+	hide_window = yes
+	is_triggered_only = yes
+#	trigger = {
+#		has_latent_holy_blood_trigger = yes
+#	}
+	
+	option = {
+		name = OK	
+		clr_character_flag=holy_blood_manifest_old
+		clr_character_flag=holy_blood_manifest_middle_age
+		clr_character_flag=holy_blood_manifest_young_adult
+		clr_character_flag=holy_blood_manifest_late_teens
+		clr_character_flag=holy_blood_manifest_early_teens
+		clr_character_flag=holy_blood_manifest_soon
+		if = {
+			limit = {
+				trait = holy_blood_latent_loptyr
+			}
+			set_character_flag=test
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_loptyr_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_loptyr
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_loptyr
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_loptyr
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_loptyr					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_loptyr			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_naga
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_naga_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_naga
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_naga
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_naga
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_naga					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_naga			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_baldur
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_baldur_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_baldur
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_baldur
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_baldur
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_baldur					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_baldur			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_blagi
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_blagi_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_blagi
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_blagi
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_blagi
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_blagi					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_blagi			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_dain
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_dain_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_dain
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_dain
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_dain
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_dain					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_dain			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_fala
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_fala_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_fala
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_fala
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_fala
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_fala					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_fala			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_forseti
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_forseti_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_forseti
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_forseti
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_forseti
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_forseti					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_forseti			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_hezul
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_hezul_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_hezul
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_hezul
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_hezul
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_hezul					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_hezul			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_neir
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_neir_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_neir
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_neir
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_neir
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_neir					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_neir			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_noba
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_noba_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_noba
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_noba
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_noba
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_noba					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_noba			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_odo
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_odo_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_odo
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_odo
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_odo
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_odo					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_odo			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_tordo
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_tordo_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_tordo
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_tordo
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_tordo
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_tordo					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_tordo			
+		}
+		if = {
+			limit = {
+				trait = holy_blood_latent_ulir
+			}
+			# What can they get?
+			random_list = {	
+				20 = { # Major
+					modifier = {
+						factor = 0
+						OR = {
+							has_major_holy_blood_trigger = yes
+							has_two_minor_holy_blood_trigger = yes
+							NOT = { can_inherit_major_ulir_holy_blood_trigger = yes }
+						}						
+					}
+					modifier = {
+						factor = 0.05
+						any_sibling = {
+							trait=holy_blood_major_ulir
+						}						
+					}
+					modifier = {
+						factor = 2
+						NOT = {
+							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_ulir
+							}	
+						}						
+					}
+					add_trait=holy_blood_major_ulir
+				}
+				50 = { # Minor
+					modifier = {
+						factor = 0
+						can_add_minor_holy_blood_trigger = no
+					}
+					add_trait=holy_blood_minor_ulir					
+				}		
+				30 = {} # Nothing!
+			}	
+			remove_trait = holy_blood_latent_ulir			
+		}
+		
+		# Notify character
+		if = {
+			limit = {
+				has_holy_blood_trigger = yes
+			}
+			character_event = { id=bloodline.5 }			
+		}
+		if = {
+			limit = {
+				has_holy_blood_trigger = no
+			}
+			set_character_flag = did_not_inherit_holy_blood		
+		}
+	}
+}
+# Notify character of holy blood manifestation
+character_event = {
+	id = bloodline.5
+	desc = {
+		trigger = { is_adult = yes }
+		text = bloodline.5.desc
+		picture = GFX_evt_recovery
+	}
+	desc = {
+		trigger = { is_adult = no }
+		text = bloodline.5.desc
+		picture = GFX_evt_child_play
+	}
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = bloodline.5.A	
+		# Notify parents/guardian
+		if = {
+			limit = { is_adult = no }
+			educator = {
+				character_event = { id=bloodline.6 }
+			}
+		}
+	}
+}
+# Notify guardian of holy blood manifestation
+character_event = {
+	id = bloodline.6
+	desc = bloodline.6.desc
+	picture = GFX_evt_child_play
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bloodline.6.A	
+	}
+}

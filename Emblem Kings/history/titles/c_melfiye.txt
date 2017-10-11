@@ -14,3 +14,12 @@
 	holder=0 
 	liege = d_leonster
 }
+770.1.1={
+	holder=1267 # Rinecok
+	liege = d_loptyrian
+}
+777.1.1={
+	holder=0
+	#holder=1156 # Sara?  
+	liege = d_leonster
+}

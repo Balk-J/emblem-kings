@@ -765,7 +765,7 @@ e_elibe = {
 				color={ 13 129 84 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				#holy_site = bandit
 
 				b_badon_keep = {
 				}
@@ -4876,6 +4876,7 @@ e_elibe = {
 		dignity = 15
 
 		d_leonster = {
+			dignity = 2
 			color={ 57 66 105 }
 			color2={ 255 255 255 }
 
@@ -6198,7 +6199,7 @@ e_elibe = {
 				color={ 206 99 99 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				#holy_site = bandit
 
 				b_calynda = {
 				}
@@ -6281,7 +6282,7 @@ e_elibe = {
 				color={ 226 175 175 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				#holy_site = bandit
 
 				b_marciana = {
 				}
@@ -6595,7 +6596,7 @@ e_elibe = {
 				color={ 248 104 71 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				#holy_site = bandit
 
 				b_taliver = {
 				}
@@ -6639,7 +6640,7 @@ e_elibe = {
 				color={ 157 135 130 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				#holy_site = bandit
 
 				b_ganelon = {
 				}
@@ -6681,6 +6682,7 @@ e_elibe = {
 		culture = verdanian
 
 		d_verdane = {
+			dignity = 2
 			color={ 228 157 57 }
 			color2={ 255 255 255 }
 

@@ -16,6 +16,15 @@
 448.1.1 = { 
 	liege = e_loptyr
 }
+647.1.1={
+	holder=1308 # filler
+}
 649.1.1={
 	liege = d_rada
+}
+756.1.1={
+	holder=1290 # filler
+}
+770.1.1={
+	holder=1265 # Morigan
 }

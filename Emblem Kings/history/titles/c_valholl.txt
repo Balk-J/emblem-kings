@@ -17,6 +17,12 @@
 712.1.1={
 	holder=1029 # Azmur
 }
-750.1.1 = {
-	holder=1030 # Kurth
-}		
+722.1.1={
+	holder=1316 # Filat
+}	
+770.1.1={ 
+	holder=1254 # Manfroy
+}
+777.1.1={ 
+	holder=1051 # Julius
+}

@@ -11,4 +11,9 @@
 }
 649.1.1={
 	holder=0 
+	liege = d_orgahil
+}
+757.1.1={
+	liege=d_silvail_corsairs
+	holder=1250 # Pirate
 }

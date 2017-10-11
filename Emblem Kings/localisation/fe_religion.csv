@@ -60,19 +60,21 @@ temple_count_light_group;Bishop;;;;;;;;;;;;;x
 temple_duke_light_group;Archbishop;;;;;;;;;;;;;x
 temple_king_light_group;King-Bishop;Roi très Catholique;König-Bischof;;Rey-obispo;;;;;;;;;x
 temple_king_female_light_group;Queen-Bishop;;;;;;;;;;;;;x
-emperor_king_light_group;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
-emperor_king_female_light_group;Empress-Bishop;;;;;;;;;;;;;x
+temple_emperor_light_group;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
+temple_emperor_female_light_group;Empress-Bishop;;;;;;;;;;;;;x
 temple_duchy_of_draconic_group;Archbishopric of;;;;;;;;;;;;;x
 temple_county_of_draconic_group;Bishopric of;;;;;;;;;;;;;x
 temple_barony_of_draconic_group;Shrine of;;;;;;;;;;;;;x
 temple_baron_draconic_group;Priest;;;;;;;;;;;;;x
 temple_baron_female_draconic_group;Priestess;;;;;;;;;;;;;x
 temple_count_draconic_group;Bishop;;;;;;;;;;;;;x
+temple_count_female_draconic_group;Bishop;;;;;;;;;;;;;x
 temple_duke_draconic_group;Archbishop;;;;;;;;;;;;;x
+temple_duke_female_draconic_group;Archbishop;;;;;;;;;;;;;x
 temple_king_draconic_group;King-Bishop;Roi très Catholique;König-Bischof;;Rey-obispo;;;;;;;;;x
 temple_king_female_draconic_group;Queen-Bishop;;;;;;;;;;;;;x
-emperor_king_draconic_group;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
-emperor_king_female_draconic_group;Empress-Bishop;;;;;;;;;;;;;x
+temple_emperor_draconic_group;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
+temple_emperor_female_draconic_group;Empress-Bishop;;;;;;;;;;;;;x
 temple_king_pagan_group;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
 pagan_DESC;Since the dawn of history, the world has been home to countless Pagan religions and cults.;;;;;;;;;;;;;x
 draconic_group;Draconic;;;;;;;;;;;;;x
@@ -120,8 +122,17 @@ temple_baron_divine_sky_pagan_reformed;Priest;;;;;;;;;;;;;x
 temple_baron_female_divine_sky_pagan_reformed;Priestess;;;;;;;;;;;;;x
 temple_baron_divine_sky_pagan;Priest;;;;;;;;;;;;;x
 temple_baron_female_divine_sky_pagan;Priestess;;;;;;;;;;;;;x
-raider_pagan;Raider;;;;;;;;;;;;;x
-raider_pagan_DESC;The brigands and pirates of the world have only one god - plunder.;;;;;;;;;;;;;x
+raider_group;Raider;;;;;;;;;;;;;x
+bandit;Bandit;;;;;;;;;;;;;x
+bandit_DESC;The brigands and pirates of the world have only one god - plunder.;;;;;;;;;;;;;x
+pirate;Pirate;;;;;;;;;;;;;x
+pirate_DESC;The brigands and pirates of the world have only one god - plunder.;;;;;;;;;;;;;x
+temple_baron_raider_group;Priest;;;;;;;;;;;;;x
+temple_baron_female_raider_group;Priestess;;;;;;;;;;;;;x
+temple_count_raider_group;Bishop;;;;;;;;;;;;;x
+temple_duke_raider_group;Archbishop;;;;;;;;;;;;;x
+temple_king_raider_group;King-Bishop;Roi très Catholique;König-Bischof;;Rey-obispo;;;;;;;;;x
+temple_king_female_raider_group;Queen-Bishop;;;;;;;;;;;;;x
 guardian_group;Guardians;;;;;;;;;;;;;x
 guardian;Guardian;;;;;;;;;;;;;x
 guardian_DESC;Guardians are men and women dedicated to protecting a particular region or people. Generally peaceful until provoked, Guardians struggle with offensive wars but have an easier time than most keeping order in the lands they protect.;;;;;;;;;;;;;x
@@ -139,7 +150,25 @@ dummy_5;Earth;;;;;;;;;;;;;x
 loptyrian;Loptyrian;;;;;;;;;;;;;x
 loptyrian_DESC;The Loptyrians began as a religious order founded by Bishop Galle after his blood bond with the Earth Dragon Loptyr. It is based around worship of Loptyr as the supreme deity. Members gain access to spellbooks and magic staves made using dragon knowledge. However, Loptyr's hatred and resentment of humanity have resulted in truly horrific church rituals...;;;;;;;;;;;;;x
 mairist;Mairist;;;;;;;;;;;;;x
-mairist_DESC;Mairism is a Loptyrian heresy named its founder Maira, a descendant of the original Bishop Galle. It attempts to harmonize the Loptyrian faith with the old pagan religions of Jugdral. Maira placed Loptyr as only one of many high-ranking gods and emphasized his benevolent qualities. He also encouraged tolerance of other faiths and worked to end discrimination against their believers.;;;;;;;;;;;;;x
+mairist_DESC;Mairism is a Loptyrian heresy named for its founder Maira, a descendant of the original Bishop Galle. It attempts to harmonize the Loptyrian faith with the old pagan religions of Jugdral. Maira placed Loptyr as only one of many high-ranking gods and emphasized his benevolent qualities. He also encouraged tolerance of other faiths and worked to end discrimination against their believers.;;;;;;;;;;;;;x
+temple_baron_loptyrian;Sectarian;;;;;;;;;;;;;x
+temple_baron_female_loptyrian;Sectarian;;;;;;;;;;;;;x
+temple_count_loptyrian;Lord Sectarian;;;;;;;;;;;;;x
+temple_count_female_loptyrian;Lady Sectarian;;;;;;;;;;;;;x
+temple_duke_loptyrian;Bishop;;;;;;;;;;;;;x
+temple_duke_female_loptyrian;Bishop;;;;;;;;;;;;;x
+temple_king_loptyrian;Archbishop;;;;;;;;;;;;;x
+temple_king_female_loptyrian;Archbishop;;;;;;;;;;;;;x
+temple_baron_mairist;Sectarian;;;;;;;;;;;;;x
+temple_baron_female_mairist;Sectarian;;;;;;;;;;;;;x
+temple_count_mairist;Lord Sectarian;;;;;;;;;;;;;x
+temple_count_female_mairist;Lady Sectarian;;;;;;;;;;;;;x
+temple_duke_mairist;Bishop;;;;;;;;;;;;;x
+temple_duke_female_mairist;Bishop;;;;;;;;;;;;;x
+temple_king_mairist;Archbishop;;;;;;;;;;;;;x
+temple_king_female_mairist;Archbishop;;;;;;;;;;;;;x
+temple_emperor_mairist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
+temple_emperor_female_mairist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
 church_of_edda;Church of Edda;;;;;;;;;;;;;x
 church_of_edda_DESC;The Church of Edda is based on the original pagan religions of Judgral. It was founded by Saint Blagi of the Twelve Crusaders to restore the old faiths and heal the damage caused by Loptyrian persecution. The twelve dragons who came to the Crusaders' aid in their war with Loptyr are revered as its highest gods.;;;;;;;;;;;;;x
 earthen_pagan;Earthen;;;;;;;;;;;;;x

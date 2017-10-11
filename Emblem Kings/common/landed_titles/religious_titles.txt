@@ -188,8 +188,8 @@ d_loptyrian = {
 	
 	capital = 525 # Yied
 	
-	#title = "HEAD_PRIEST"
-	#title_female = "HEAD_PRIESTESS"
+	title = "ARCHBISHOP"
+	title_female = "ARCHBISHOP"
 	#foa = "HEAD_PRIEST_FOA"
 	
 	short_name = yes

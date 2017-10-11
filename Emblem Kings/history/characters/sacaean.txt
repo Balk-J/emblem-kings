@@ -1228,7 +1228,7 @@
 	dna="baijgrbagbo" 
 	properties="ch0chk00000000"
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=etrurian
 	
 	disallow_random_traits="yes" 
@@ -1319,7 +1319,7 @@
 	dna="allmhacbbat" 
 	properties="gh0cdk00000000"
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=etrurian
 	
 	disallow_random_traits="yes" 
@@ -1437,7 +1437,7 @@
 	} 
 	
 	1180.01.01 = { 
-		religion=raider_pagan
+		religion=bandit
 		culture=western_islander
 	}
 	1181.01.01 = { 
@@ -1532,7 +1532,7 @@
 	dna="bfabeyefaaq" 
 	properties="cl0cgk00000000"
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
@@ -1570,7 +1570,7 @@
 534 = {
 	name="Carjiga" #member of the Ganelon Bandits
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
@@ -1611,7 +1611,7 @@
 535 = {
 	name="Migal" #member of the Ganelon Bandits. The one Florina landed on.
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=sacaean
 	
 	disallow_random_traits="yes" 
@@ -1651,7 +1651,7 @@
 536 = {
 	name="Zugu" #random bandit. Chapter 1 boss for Lyn
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=sacaean
 	
 	disallow_random_traits="yes"
@@ -1687,7 +1687,7 @@
 537 = {
 	name="Khubilai" #Non-canon. Boss of the Taliver Bandits
 	dynasty=587
-	religion=raider_pagan
+	religion=bandit
 	culture=sacaean
 	
 	trait="strong"
@@ -2233,7 +2233,7 @@
 	name="Yeke" # non-canon; Post-Lyn boss of the Ganelon Bandits
 	dynasty=585
 	
-	religion=raider_pagan
+	religion=bandit
 	culture=sacaean
 	
 	1143.01.01 = { 

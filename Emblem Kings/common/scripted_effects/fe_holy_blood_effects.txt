@@ -583,19 +583,3 @@ loptyr_possession_effect = {
 		set_variable = { which = "level" value = 20 }		
 	#}
 }
-
-manifest_major_holy_blood_effect = {
-	if = {
-		limit = { trait = holy_blood_latent_loptyr }
-		remove_trait = holy_blood_latent_loptyr
-		add_trait = holy_blood_major_loptyr
-	}
-}
-
-manifest_minor_holy_blood_effect = {
-	if = {
-		limit = { trait = holy_blood_latent_loptyr }
-		remove_trait = holy_blood_latent_loptyr
-		add_trait = holy_blood_minor_loptyr
-	}
-}

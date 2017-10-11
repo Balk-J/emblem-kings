@@ -5,7 +5,7 @@
 	name="of the Western Isles"
 	culture="western_islander"
     coat_of_arms = {
-		religion="raider_pagan"
+		religion="pirate"
         template = 0
         layer = {
             texture = 0
@@ -23,7 +23,7 @@
 	name="Echidna"
 	culture="western_islander"
 	coat_of_arms = {
-		religion="raider_pagan"
+		religion="pirate"
         template = 0
         layer = {
             texture = 0
@@ -40,523 +40,523 @@
 703= {
 	name="Uerturio"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 704= {
 	name="Cait"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 705= {
 	name="Uedola"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 706= {
 	name="Uuidoch"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 707= {
 	name="Ce"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 708= {
 	name="Orc"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 709= {
 	name="Caliu"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 710= {
 	name="Uib"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 711= {
 	name="Circinn"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 712= {
 	name="Todd"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 #Names of Pictish kings, since we're short on dynasty names from vanilla
 713= {
 	name="Vipoig"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 714= {
 	name="Aed"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 715= {
 	name="Alpin"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 716= {
 	name="Bridei"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 717= {
 	name="Cailtram"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 718= {
 	name="Causantín"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 719= {
 	name="Cinaed"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 720= {
 	name="Cinioch"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 721= {
 	name="Ciniod"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 722= {
 	name="Conall"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 723= {
 	name="Domnall"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 724= {
 	name="Drest"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 725= {
 	name="Eogan"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 726= {
 	name="Galam"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 727= {
 	name="Galan"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 728= {
 	name="Gartnait"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 729= {
 	name="Giric"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 730= {
 	name="Nechtan"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 731= {
 	name="Oengus"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 732= {
 	name="Onuist"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 733= {
 	name="Talorc"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 734= {
 	name="Talorcan"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 735= {
 	name="Talorg"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 736= {
 	name="Talorgan"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 737= {
 	name="Taran"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 738= {
 	name="Uurad"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 739= {
 	name="Vuradech"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 
 # Scottish
 740={
 	name="Menteith"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 741={
 	name="Caimbeul"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 742={
 	name="Neacail"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 743={
 	name="Friseal"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 744={
 	name="Grannd"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 745={
 	name="Sdibard"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 746={
 	name="Lachlainn"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 747={
 	name="Craigies"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 748={
 	name="Camshron"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 749={
 	name="Sgain"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 750={
 	name="Grant"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 751={
 	name="Wallace"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 752={
 	name="Bairead"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 753={
 	name="Bradnigh"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 754={
 	name="Branain"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 755={
 	name="Angusa"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 756={
 	name="Arbuthnot"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 757={
 	name="Cormaig"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 758={
 	name="Kennoway"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 759={
 	name="Lochore"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 760={
 	name="Abernethy"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 761={
 	name="Ceitein"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 762={
 	name="Carrun"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 763={
 	name="Madethyn"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 764={
 	name="Dorsair"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 765={
 	name="Archil"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 766={
 	name="Rannaire"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 767={
 	name="Herinn"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 768={
 	name="Gabrain"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 769={
 	name="Lemnain"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 770={
 	name="Scoine"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 771={
 	name="Siorrachd"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 772={
 	name="Glenklochar"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 773={
 	name="Fothriff"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 774={
 	name="Borthwick"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 775={
 	name="Gillespie"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 776={
 	name="Cosmungho"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 777={
 	name="Muireadhach"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 778={
 	name="Somhairle"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 779={
 	name="Breitheamh"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 780={
 	name="Ceanadach"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 781={
 	name="Bannock"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 782={
 	name="Glaschu"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 783={
 	name="Errol"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 784={
 	name="Olifard"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 785={
 	name="Gallaibh"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 786={
 	name="Cataibh"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 787={
 	name="Murray"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 788={
 	name="Buchan"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 789={
 	name="Lowden"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 790={
 	name="Buchanan"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 791={
 	name="Dean"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 792={
 	name="Ballantyne"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 793={
 	name="Graham"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 794={
 	name="Cameron"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 795={
 	name="Douglas"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 796={
 	name="Barclay"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 797={
 	name="Fraser"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 798={
 	name="Ramsay"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }
 799={
 	name="Kyle"
 	culture="western_islander"
-	religion="raider_pagan"
+	religion="pirate"
 }

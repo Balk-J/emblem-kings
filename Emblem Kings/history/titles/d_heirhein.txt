@@ -54,9 +54,14 @@
 761.1.1={
 	holder=1049 # Arvis
 }
-777.1.1={
-	holder=1051 # Julius?
+770.1.1={
+	liege = e_grannvale
+	holder=1272 # Dark Bishop
 }
+#777.1.1={
+#	holder=1051 # Julius?
+#}
 779.1.1={
+	liege = k_agustria
 	holder=1098 # Ares?
 }

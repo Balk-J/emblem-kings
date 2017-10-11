@@ -20,7 +20,8 @@
 1012={
 	can_appear=no
 	used_for_random=no
-	name="Leonster"
+	#name="Leonster"
+	name="Claus"
 	culture="thracian"
 	coat_of_arms = {
 		religion="church_of_edda"
@@ -91,4 +92,722 @@
             color = 0
         }
     }
+}
+# Norman from vanilla
+1650={
+	name="of Villeneuve"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1651={
+	name="Balliol"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1652={
+	name="of Chypre"
+	culture="thracian"
+}
+1653={
+	name="of Harenc"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1654={
+	name="of Tiberiade"
+	culture="thracian"
+}
+1655={
+	name="of Montjoy"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1656={
+	name="of Toron"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1657={
+	name="of Urgel"
+	culture="thracian"
+}
+1658={
+	name="of Guingamp"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1659={
+	name="of Brézé"
+	culture="thracian"
+}
+1660={
+	name="of Bigod"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1661={
+	name="of Warren"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1662={
+	name="of Newburgh"
+	culture="thracian"
+}
+1663={
+	name="Peveral"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1664={
+	name="of Braose"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1665={
+	name="of Toni"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1666={
+	name="of Ferrers"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1667={
+	name="of Blundeville"
+	culture="thracian"
+}
+1668={
+	name="of Gloucester"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1669={
+	name="of Grandmesnil"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1670={
+	name="of Gaunt"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1671={
+	name="of Clare"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1672={
+	name="of Morville"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1673={
+	name="Angevin"
+	culture="thracian"
+}
+1674={
+	name="FitzWalter"
+	culture="thracian"
+}
+1675={
+	name="of Tosny"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1676={
+	name="FitzOsbern"
+	culture="thracian"
+}
+1677={
+	name="of Ivry"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1678={
+	name="Voclain"
+	culture="thracian"
+}
+1679={
+	name="of Crepon"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1680={
+	name="of Châtillon"
+	culture="thracian"
+}
+1681={
+	name="Fredelon"
+	culture="thracian"
+}
+1682={
+	name="of Bougency"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1683={
+	name="Taillefer"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1684={
+	name="of Mowbray"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1685={
+	name="of Gael"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1686={
+	name="of Puiset"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1687={
+	name="of Escures"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1688={
+	name="of Jumièges"
+	culture="thracian"
+}
+1689={
+	name="of Maine"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1690={
+	name="of Dagsburg"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1691={
+	name="Drengot"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1692={
+	name="of Hauteville"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1693={
+	name="Roger"
+	culture="thracian"
+}
+1694={
+	name="of Belesme"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1695={
+	name="of Beaumont"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1696={
+	name="of Vielles"
+	culture="thracian"
+}
+1697={
+	name="of Anjou"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1698={
+	name="of Warenne"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1699={
+	name="of Brevere"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1700={
+	name="of Montgomery"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1701={
+	name="of thraciandie"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1702={
+	name="of Brus"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1703={
+	name="Mortimer"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1704={
+	name="Neville"
+	culture="thracian"
+}
+1705={
+	name="Scrope"
+	culture="thracian"
+}
+1706={
+	name="Giffard"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1707={
+	name="Crispin"
+	culture="thracian"
+}
+1708={
+	name="Bourchier"
+	culture="thracian"
+}
+1709={
+	name="Stanley"
+	culture="thracian"
+}
+1710={
+	name="Talbot"
+	culture="thracian"
+}
+1711={
+	name="of Audley"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1712={
+	name="of Fauconberg"
+	culture="thracian"
+}
+1713={
+	name="of Leyburne"
+	culture="thracian"
+}
+1714={
+	name="of Greystock"
+	culture="thracian"
+}
+1715={
+	name="of Lisle"
+	culture="thracian"
+}
+1716={
+	name="of Ufford"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1718={
+	name="of Lacy"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1718={
+	name="of Frenes"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1719={
+	name="FitzGerald"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1720={
+	name="of Cherleton"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1721={
+	name="of Avranches"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1722={
+	name="of Harcourt"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1723={
+	name="of Prunelé"
+	culture="thracian"
+}
+1724={
+	name="of Beaufort"
+	culture="thracian"
+}
+1725={
+	name="of Cosnac"
+	culture="thracian"
+}
+1726={
+	name="of Matignon"
+	culture="thracian"
+}
+1727={
+	name="of Rohan"
+	culture="thracian"
+}
+1728={
+	name="of Forz"
+	culture="thracian"
+}
+1729={
+	name="of Montbray"
+	culture="thracian"
+}
+1730={
+	name="of Say"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1731={
+	name="of l'Isle"
+	culture="thracian"
+}
+1732={
+	name="of Beaumont"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1733={
+	name="of Senlis"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1734={
+	name="of Corbeil"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1735={
+	name="of Dreux"
+	culture="thracian"
+}
+1736={
+	name="Tyrel"
+	culture="thracian"
+}
+1737={
+	name="of Thury"
+	culture="thracian"
+}
+1738={
+	name="Ridel"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1739={
+	name="Mansel"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1740={
+	name="of Bassonville"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1741={
+	name="of Chocques"
+	culture="thracian"
+}
+1742={
+	name="of Alife"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1743={
+	name="of Afranji"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1744={
+	name="of Aubigny"
+	culture="thracian"
+}
+1745={
+	name="of Taillebois"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1746={
+	name="of Roumare"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1747={
+	name="of Briquessart"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1748={
+	name="of Bolingbroke"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1749={
+	name="of Vieuxpont"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1750={
+	name="Bordet"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1751={
+	name="FitzHamon"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1752={
+	name="of Bailleul"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1753={
+	name="Longchamp"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1754={
+	name="Penteur"
+	culture="thracian"
+}
+1755={
+	name="of Bourcq"
+	culture="thracian"
+}
+1756={
+	name="Longespée"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1757={
+	name="Rallis-Raoul"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1758={
+	name="of Vassy"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1759={
+	name="of Toni"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1760={
+	name="Grenier"
+	culture="thracian"
+}
+1761={
+	name="le Cheyne"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1762={
+	name="of Soules"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1763={
+	name="of Valognes"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1764={
+	name="Avenel"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1765={
+	name="of Mortain"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1766={
+	name="of Stafford"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1767={
+	name="of Durham"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1768={
+	name="of Amiens"
+	culture="thracian"
+}
+1769={
+	name="of Eu"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1770={
+	name="of Vexin"
+	culture="thracian"
+}
+1771={
+	name="of Léon"
+	culture="thracian"
+}
+1772={
+	name="of Cornouaille"
+	culture="thracian"
+}
+1773={
+	name="of Vannes"
+	culture="thracian"
+}
+1774={
+	name="of Nantes"
+	culture="thracian"
+}
+1775={
+	name="of Angers"
+	culture="thracian"
+}
+1776={
+	name="of Verdun"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1777={
+	name="Raoul"
+	culture="thracian"
+}
+1778={
+	name="Comyn"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1779={
+	name="of Quincy"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1780={
+	name="of Courcy"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1781={
+	name="of Conteville"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1782={
+	name="of Falaise"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1783={
+	name="of Courseulles"
+	culture="thracian"
+}
+1784={
+	name="of Redvers"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1785={
+	name="of Meschines"
+	culture="thracian"
+}
+1786={
+	name="of Breteuil"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1787={
+	name="of Waer"
+	culture="thracian"
+}
+1788={
+	name="of Cippico"
+	culture="thracian"
+}
+1789={
+	name="le Blount"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1790={
+	name="of Botreaux"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1791={
+	name="of Barry"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1792={
+	name="of Windsor"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1793={
+	name="FitzRichard"
+	culture="thracian"
+}
+1794={
+	name="of Buonalbergo"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1795={
+	name="Longespee"
+	culture="thracian"
+}
+1796={
+	name="of Bellême"
+	culture="thracian"
+}
+1797={
+	name="of Dunstanville"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1798={
+	name="Fitz-Count"
+	culture="thracian"
+}
+1799={
+	name="Gaveston"
+	culture="thracian"
+}
+1800={
+	name="of Winchester"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1801={
+	name="of Luci"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1802={
+	name="Jess"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1803={
+	name="of Theville"
+	culture="thracian"
+	religion="church_of_edda"
+}
+1804={
+	name="Letourneau"
+	culture="thracian"
+	religion="church_of_edda"
 }

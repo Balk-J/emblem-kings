@@ -263,4 +263,4 @@ holy_blood_minor_ulir_desc;This character has minor §YUlir§! holy blood.;;;;;;;;
 possessed_loptyr;Possessed;;;;;;;;;;;;;x
 possessed_loptyr_desc;This character is charismatic, but profoundly unsettling. [GetHerHisCap] gaze draws you in, and you lose yourself in it...;;;;;;;;;;;;;x
 possessed_forseti;Possessed;;;;;;;;;;;;;x
-possessed_forseti_desc;This character is cold and distant. [GetSheHeCap] shows a wealth of knowledge of the world but is reluctant to become involve [GetHerselfHimself] in political affairs.;;;;;;;;;;;;;x
+possessed_forseti_desc;This character is cold and distant. [GetSheHeCap] shows a wealth of knowledge of the world but is reluctant to involve [GetHerselfHimself] in political affairs.;;;;;;;;;;;;;x

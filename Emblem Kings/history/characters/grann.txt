@@ -1586,6 +1586,7 @@
 # d_lubeck
 861={
 	name="Filip"
+	dynasty=2080
 	culture=grann
 	religion=earthen_pagan
 	401.1.1={

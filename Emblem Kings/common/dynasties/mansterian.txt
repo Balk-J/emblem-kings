@@ -45,3 +45,519 @@
         }
     }  
 }
+# Irish from vanilla
+1537={
+	name="Mac Carthaigh"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1538={
+	name="Ua Braenain"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1539={
+	name="Ua Murchada"
+	culture="mansterian"
+}
+1540={
+	name="Ua Conchobair"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1541={
+	name="Sithrigi"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1542={
+	name="Mac Murchada"
+	culture="mansterian"
+}
+1543={
+	name="Lorc"
+	culture="mansterian"
+}
+1544={
+	name="Boru"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1545={
+	name="Crovan"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1546={
+	name="Ua Fáeláin"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1547={
+	name="Ua Néill Móir"
+	culture="mansterian"
+}
+1548={
+	name="Mac Diarmaida"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1549={
+	name="Mac Máil na mBó"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1550={
+	name="Ua Tuathail"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1551={
+	name="Ua Briain"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1552={
+	name="Mac Carthaigh"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1553={
+	name="Ua Braenain"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1554={
+	name="Ua Murchada"
+	culture="mansterian"
+}
+1555={
+	name="Ua Conchobair"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1556={
+	name="Dál Fiatach"
+	culture="mansterian"
+	religion="pagan"
+}
+1557={
+	name="Shannon"
+	culture="mansterian"
+}
+1558={
+	name="Ceiteach"
+	culture="mansterian"
+}
+1559={
+	name="Ua Domnaill"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1560={
+	name="Ua Ruairc"
+	culture="mansterian"
+}
+1561={
+	name="Ua Máil Eóin"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1562={
+	name="FitzPatrick"
+	culture="mansterian"
+}
+1563={
+	name="Ua Cearbhaill"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1564={
+	name="Mac Mathgamna"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1565={
+	name="Ua Néill"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1566={
+	name="Ua hUalgairg"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1567={
+	name="Ua Flaithbertaig"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1568={
+	name="Ua Maíl Sechlainn"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1569={
+	name="Got"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1570={
+	name="Ua Maíl Ruanaid"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1571={
+	name="Ua Cheinnselaig"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1572={
+	name="Mac Murchada Cáemánach"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1573={
+	name="Mac Murchada Cennselach"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1574={
+	name="Ua Fáeláin"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1575={
+	name="Ua Cáellaíde"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1576={
+	name="Ua Rubann"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1577={
+	name="Cétchathach"
+	culture="mansterian"
+	religion="pagan"
+}
+1578={
+	name="Ua Briúin Seóla"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1579={
+	name="Ua Conchobar Sligig"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1580={
+	name="Ua Conchobar Ruad"
+	culture="mansterian"
+}
+1581={
+	name="Ua Conchobar Donn"
+	culture="mansterian"
+}
+1582={
+	name="Eóganacht-Chaisil"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1583={
+	name="Eóganacht-Airthir Chliach"
+	culture="mansterian"
+	religion="pagan"
+}
+1584={
+	name="Eóganacht-Glendamnach"
+	culture="mansterian"
+	religion="pagan"
+}
+1585={
+	name="Eóganacht-Raithlind"
+	culture="mansterian"
+	religion="pagan"
+}
+1586={
+	name="Eóganacht-Áine"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1587={
+	name="Eóganacht-Locha Léin"
+	culture="mansterian"
+	religion="pagan"
+}
+1588={
+	name="Mac Finnachta"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1589={
+	name="Ua Báegill"
+	culture="mansterian"
+}
+1590={
+	name="Ua Dúngaile"
+	culture="mansterian"
+}
+1591={
+	name="Ua Dochartaigh"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1592={
+	name="Ua hEchtigirn"
+	culture="mansterian"
+}
+1593={
+	name="Barry"
+	culture="mansterian"
+}
+1594={
+	name="Ó Braonain"
+	culture="mansterian"
+}
+1595={
+	name="Burke"
+	culture="mansterian"
+}
+1596={
+	name="Ua Bráéin"
+	culture="mansterian"
+}
+1597={
+	name="Ua Cathail"
+	culture="mansterian"
+}
+1598={
+	name="Ua Canannáin"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1599={
+	name="Ua Cerbaill"
+	culture="mansterian"
+}
+1600={
+	name="Ua Cathasaigh"
+	culture="mansterian"
+}
+1601={
+	name="Ua Flannchaid"
+	culture="mansterian"
+}
+1602={
+	name="Ua Cleirigh"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1603={
+	name="Ua Congalaigh"
+	culture="mansterian"
+}
+1604={
+	name="Ua Cruadláich"
+	culture="mansterian"
+}
+1605={
+	name="Ua Dimasaigh"
+	culture="mansterian"
+}
+1606={
+	name="Ua Dubgaill"
+	culture="mansterian"
+}
+1607={
+	name="Ua Áedacáin"
+	culture="mansterian"
+}
+1608={
+	name="Ua Fergail"
+	culture="mansterian"
+}
+1609={
+	name="Ua Flaithbertaigh"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1610={
+	name="Ua Floinn"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1611={
+	name="Ua Gallchobair"
+	culture="mansterian"
+}
+1612={
+	name="Lowery"
+	culture="mansterian"
+}
+1613={
+	name="Ua Dubagáin"
+	culture="mansterian"
+}
+1614={
+	name="Eóganachta"
+	culture="mansterian"
+	religion="pagan"
+}
+1615={
+	name="Connachta"
+	culture="mansterian"
+}
+1616={
+	name="Uí Néill"
+	culture="mansterian"
+}
+1617={
+	name="Uí Maine"
+	culture="mansterian"
+}
+1618={
+	name="Laigin"
+	culture="mansterian"
+}
+1619={
+	name="Dál gCais"
+	culture="mansterian"
+	religion="pagan"
+}
+1620={
+	name="Ua Fidgeinte"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1621={
+	name="Oitir"
+	culture="mansterian"
+}
+1622={
+	name="Uí Briain"
+	culture="mansterian"
+}
+1623={
+	name="Cholmáin"
+	culture="mansterian"
+}
+1624={
+	name="Ua Mael Sechlainn"
+	culture="mansterian"
+}
+1625={
+	name="Uí Garrchon"
+	culture="mansterian"
+}
+1626={
+	name="Laighin"
+	culture="mansterian"
+}
+1627={
+	name="Crovan"
+	culture="mansterian"
+}
+1628={
+	name="Craig"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1629={
+	name="Ua Mórdha"
+	culture="mansterian"
+}
+1630={
+	name="Ua Ruairc"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1631={
+	name="Ua Faeláin"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1632={
+	name="Mac Gilla-Pátraic"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1633={
+	name="Ua Flaithri"
+	culture="mansterian"
+}
+1634={
+	name="Ua hEochadha"
+	culture="mansterian"
+}
+1635={
+	name="Mac Áéda"
+	culture="mansterian"
+}
+1636={
+	name="an t-Saoir"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1637={
+	name="Ua Maíl Doraid"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1638={
+	name="Ua Caollaidhe"
+	culture="mansterian"
+}
+1639={
+	name="Ua Maoileachlainn"
+	culture="mansterian"
+}
+1640={
+	name="Ua Carthaigh"
+	culture="mansterian"
+}
+1641={
+	name="Llyn"
+	culture="mansterian"
+}
+1642={
+	name="Michael"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1643={
+	name="Corcu Loígde"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1644={
+	name="Dál Birn"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1645={
+	name="Ua Máele Ódrain"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1646={
+	name="Síol Muireadaigh"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1647={
+	name="Uí Áeda Odba"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+1648={
+	name="Dal Fiachrach Suighe"
+	culture="mansterian"
+	religion="pagan"
+}
+1649={
+	name="Mac Ruaidrí"
+	culture="mansterian"
+	religion="church_of_edda"
+}

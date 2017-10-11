@@ -13,7 +13,7 @@ d_ganelon_bandits = {
 	#title = "chief_foa"
 	#title_female = "chief_foa_female"
 	short_name = yes
-	religion=raider_pagan
+	religion=bandit
 	
 	allow = {
 		always = no # Only by special decision
@@ -36,7 +36,7 @@ d_taliver_bandits = {
 	#title = "chief_foa"
 	#title_female = "chief_foa_female"
 	short_name = yes
-	religion=raider_pagan
+	religion=bandit
 	
 	allow = {
 		always = no # Only by special decision
@@ -57,7 +57,67 @@ d_orgahil_pirates = {
 	foa = "CAPTAIN_FOA"
 	title_female = "CAPTAIN"
 	short_name = yes
-	religion=raider_pagan
+	religion=pirate
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_silvail_corsairs = {
+	color={ 175 80 60 }
+	color2={ 255 255 255 }
+	
+	capital = 524 # Uberti
+	culture=agustrian
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN"
+	short_name = yes
+	religion=pirate
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_flying_ogres = {
+	color={ 220 200 100 }
+	color2={ 255 255 255 }
+	
+	capital = 519 # Detroyes
+	culture=agustrian
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN"
+	short_name = yes
+	religion=pirate
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_wavebeasts = {
+	color={ 100 100 220 }
+	color2={ 255 255 255 }
+	
+	capital = 520 # Pulci
+	culture=agustrian
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN"
+	short_name = yes
+	religion=pirate
 	
 	allow = {
 		always = no # Only by special decision

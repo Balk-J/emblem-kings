@@ -79,6 +79,11 @@ character_event = {
 			}
 		}
 		
+		# Jugdral-specific character stuff
+		character_event = {
+			id = startup.5
+		}
+		
 		# Startup events for scenarios
 		if = { # Lyn's Story
 			limit = { 
@@ -382,6 +387,122 @@ character_event = {
 				character_event = { id = fe7_eliwood.25 days = 1}
 			}
 		}
+	}
+	option = {
+		name = OK
+	}
+}
+
+# Generic Jugdral setup
+character_event = {
+	id = startup.5
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		# Create dummy characters for people who disappear and show up later as a member of a different family
+		if = { # Brigid
+			limit = { 
+				year = 743
+				NOT = { year = 760 }
+			}
+			character_event = {
+				id = fe4_dynasty.1
+			}
+		}
+		if = { # Brigid again
+			limit = { 
+				year = 761
+				NOT = { year = 785 }
+			}
+			character_event = {
+				id = fe4_dynasty.4
+			}
+		}
+		if = { # Silvia
+			limit = { 
+				year = 746
+			}
+			character_event = {
+				id = fe4_dynasty.5
+			}
+		}
+		if = { # Altena
+			limit = { 
+				year = 761
+				NOT = { year = 778 }
+			}
+			character_event = {
+				id = fe4_dynasty.8
+			}
+		}
+		
+		# Darna Fortress setup
+		if = { 
+			limit = { 
+				year = 770
+				NOT = { year = 778 }
+			}
+			# Make sure Bramsel has it
+			c_1253 = {
+				c_darna = {
+					grant_title = PREV
+				}
+			}
+		}
+		
+		# Loptyrians hide their faith
+		if = { 
+			limit = { 
+				NOT = {
+					has_game_rule = {
+						name = secret_cults
+						value = none
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					year = 649
+					NOT = { year = 770 }
+				}
+				any_playable_ruler = {
+					limit = {
+						has_character_flag = secret_loptyrian_dark_bishop
+					}
+					character_event = { id = startup.6 }	
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = OK
+	}
+}
+
+# Remotely call the falsely_confess_faith_effect since trying to do it from the main block makes it fail due to scope issues.
+character_event = {
+	id = startup.6
+	
+	is_triggered_only = yes
+	hide_window=yes	
+	
+	immediate = {
+		character_event = { id = startup.7 }	
+	}
+	option = {
+		name = OK
+	}
+}
+character_event = {
+	id = startup.7
+	
+	is_triggered_only = yes
+	hide_window=yes
+	
+	immediate = {
+		falsely_confess_faith_effect = yes		
 	}
 	option = {
 		name = OK

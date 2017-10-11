@@ -1,0 +1,17 @@
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+611.1.1={
+	holder=1001 # Heim
+}
+649.1.1={
+	holder=0 # Victory!
+}
+777.1.1={
+	holder=1038 # Seliph
+}
+779.1.1={
+	holder=0 # Victory!
+}
