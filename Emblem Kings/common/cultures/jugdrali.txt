@@ -576,8 +576,9 @@ jugdrali = {
 	# For post-unification
 	new_thracian = {
 		graphical_cultures = { normangfx westerngfx }
-		
-		color = { 0.8 0.3 0.3 } # saxon
+		allow_in_ruler_designer = no
+		used_for_random = no
+		color = { 0.8 0.2 0.8 }
 		male_names = {
 			Arion
 			Bucks
