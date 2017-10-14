@@ -69,3 +69,9 @@
 755.1.1={
 	holder=1296 # filler
 }
+770.1.1={
+	holder=1265 # Morigan
+}
+779.1.1={
+	holder=0 # 
+}

@@ -765,7 +765,7 @@ e_elibe = {
 				color={ 13 129 84 }
 				color2={ 255 255 255 }
 
-				#holy_site = bandit
+				holy_site = raider_pagan
 
 				b_badon_keep = {
 				}
@@ -3595,7 +3595,7 @@ e_elibe = {
 				}
 				b_veod = {
 				}
-				b_veur = {
+				b_schutaeze = {
 				}
 			}
 			c_tor = {
@@ -4876,11 +4876,11 @@ e_elibe = {
 		dignity = 15
 
 		d_leonster = {
-			dignity = 2
 			color={ 57 66 105 }
 			color2={ 255 255 255 }
 
 			capital=435
+			dignity = 2
 			grann="Leinster"
 
 			c_leonster = {
@@ -5122,6 +5122,8 @@ e_elibe = {
 				}
 				b_danzich_2 = {
 				}
+				b_danzig = {
+				}
 			}
 			c_kelves = {
 				color={ 211 143 1 }
@@ -5214,6 +5216,8 @@ e_elibe = {
 				}
 				b_maol_ros = {
 				}
+				b_tobar_na_mac = {
+				}
 			}
 			c_frest = {
 				color={ 151 151 191 }
@@ -5225,6 +5229,12 @@ e_elibe = {
 				b_frest_2 = {
 				}
 				b_frest_3 = {
+				}
+				b_baile_na_hcearc = {
+				}
+				b_srath_bhalgaidh = {
+				}
+				b_an_eaglais_bhreac = {
 				}
 			}
 		}
@@ -5242,6 +5252,7 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=458
+			dignity = 1
 			grann="Thrake"
 
 			c_thracia = {
@@ -5319,6 +5330,7 @@ e_elibe = {
 			color2={ 255 255 255 }
 
 			capital=463
+			dignity = 2
 
 			c_kapathogia = {
 				color={ 104 24 40 }
@@ -6199,7 +6211,7 @@ e_elibe = {
 				color={ 206 99 99 }
 				color2={ 255 255 255 }
 
-				#holy_site = bandit
+				holy_site = raider_pagan
 
 				b_calynda = {
 				}
@@ -6282,7 +6294,7 @@ e_elibe = {
 				color={ 226 175 175 }
 				color2={ 255 255 255 }
 
-				#holy_site = bandit
+				holy_site = raider_pagan
 
 				b_marciana = {
 				}
@@ -6596,7 +6608,7 @@ e_elibe = {
 				color={ 248 104 71 }
 				color2={ 255 255 255 }
 
-				#holy_site = bandit
+				holy_site = raider_pagan
 
 				b_taliver = {
 				}
@@ -6640,7 +6652,7 @@ e_elibe = {
 				color={ 157 135 130 }
 				color2={ 255 255 255 }
 
-				#holy_site = bandit
+				holy_site = raider_pagan
 
 				b_ganelon = {
 				}
@@ -6682,11 +6694,11 @@ e_elibe = {
 		culture = verdanian
 
 		d_verdane = {
-			dignity = 2
 			color={ 228 157 57 }
 			color2={ 255 255 255 }
 
 			capital=489
+			dignity = 2
 
 			c_verdane = {
 				color={ 228 157 57 }

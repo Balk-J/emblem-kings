@@ -29,8 +29,8 @@
 760.4.1={
 	holder=1073 # Dannan
 }
-771.1.1={
-	holder=1075 # Brian
+763.1.1={
+	holder=1333 # Fisher
 }
 779.1.1={
 	holder=1038 # Seliph? Who's left to rule it? Maybe Ulster if we go Lex/Ayra like the manga?

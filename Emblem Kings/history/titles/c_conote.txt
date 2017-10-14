@@ -12,3 +12,18 @@
 649.1.1={
 	holder=1012 # Noba TODO: add filler character
 }
+706.1.1={
+	holder=1344 # Carl's grandfather
+}
+739.1.1={
+	holder=1342 # Carl's father
+}
+756.1.1={
+	holder=1341 # Carl
+}
+763.1.1={
+	holder=1058 # Bloom
+}
+778.1.1={
+	holder = 1162 # Leif 
+}

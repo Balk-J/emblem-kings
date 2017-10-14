@@ -168,17 +168,22 @@ can_inherit_major_loptyr_holy_blood_trigger = {
 				trait=holy_blood_major_loptyr
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_loptyr
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_loptyr
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_loptyr
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_loptyr
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_loptyr
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -228,17 +233,22 @@ can_inherit_major_naga_holy_blood_trigger = {
 				trait=holy_blood_major_naga
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_naga
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_naga
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_naga
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_naga
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_naga
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -287,17 +297,22 @@ can_inherit_major_baldur_holy_blood_trigger = {
 				trait=holy_blood_major_baldur
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_baldur
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_baldur
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_baldur
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_baldur
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_baldur
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -346,17 +361,22 @@ can_inherit_major_blagi_holy_blood_trigger = {
 				trait=holy_blood_major_blagi
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_blagi
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_blagi
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_blagi
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_blagi
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_blagi
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -405,17 +425,22 @@ can_inherit_major_dain_holy_blood_trigger = {
 				trait=holy_blood_major_dain
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_dain
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_dain
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_dain
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_dain
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_dain
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -464,17 +489,22 @@ can_inherit_major_fala_holy_blood_trigger = {
 				trait=holy_blood_major_fala
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_fala
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_fala
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_fala
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_fala
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_fala
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -523,17 +553,22 @@ can_inherit_major_forseti_holy_blood_trigger = {
 				trait=holy_blood_major_forseti
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_forseti
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_forseti
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_forseti
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_forseti
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_forseti
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -582,17 +617,22 @@ can_inherit_major_hezul_holy_blood_trigger = {
 				trait=holy_blood_major_hezul
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_hezul
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_hezul
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_hezul
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_hezul
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_hezul
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -641,17 +681,22 @@ can_inherit_major_neir_holy_blood_trigger = {
 				trait=holy_blood_major_neir
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_neir
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_neir
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_neir
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_neir
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_neir
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -700,17 +745,22 @@ can_inherit_major_noba_holy_blood_trigger = {
 				trait=holy_blood_major_noba
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_noba
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_noba
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_noba
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_noba
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_noba
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -759,17 +809,22 @@ can_inherit_major_odo_holy_blood_trigger = {
 				trait=holy_blood_major_odo
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_odo
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_odo
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_odo
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_odo
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_odo
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -818,17 +873,22 @@ can_inherit_major_tordo_holy_blood_trigger = {
 				trait=holy_blood_major_tordo
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_tordo
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_tordo
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_tordo
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_tordo
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_tordo
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -877,17 +937,22 @@ can_inherit_major_ulir_holy_blood_trigger = {
 				trait=holy_blood_major_ulir
 			}
 		}
+		mother_even_if_dead = {
+			trait=holy_blood_major_ulir
+		}
 		AND = {
-			AND = {
-				is_father_real_father = yes
-				father_even_if_dead = {
-					trait=holy_blood_minor_ulir
+			OR = {
+				AND = {
+					is_father_real_father = yes
+					father_even_if_dead = {
+						trait=holy_blood_minor_ulir
+					}
 				}
-			}
-			AND = {
-				is_father_real_father = no
-				real_father_even_if_dead = {
-					trait=holy_blood_minor_ulir
+				AND = {
+					is_father_real_father = no
+					real_father_even_if_dead = {
+						trait=holy_blood_minor_ulir
+					}
 				}
 			}
 			mother_even_if_dead = {

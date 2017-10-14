@@ -29,7 +29,7 @@
 1038={
 	can_appear=no
 	used_for_random=no
-	name="Osraige"
+	name="Gabrahn"
 	culture="mansterian"
 	religion="church_of_edda"  
 	coat_of_arms = {
@@ -42,6 +42,295 @@
             color = 1
             color = 3
             color = 7
+        }
+    }  
+}
+# for Raydrik
+2102={
+	can_appear=no
+	used_for_random=no
+	name="Breifne"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 11
+            emblem = 0
+            color = 0
+            color = 6
+            color = 8
+        }
+    }  
+}
+# for Carl and the rest of the Conote royal family
+2103={
+	can_appear=no
+	used_for_random=no
+	name="Conote"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+			texture_internal = 7
+            emblem = 0
+            color = 4
+            color = 1
+            color = 1
+        }
+    }  
+}
+# for Lobos
+2104={
+	can_appear=no
+	used_for_random=no
+	name="Kelves"
+	culture="mansterian"
+	religion="church_of_edda"  
+}
+# for Miranda
+2107={
+	can_appear=no
+	used_for_random=no
+	name="Alster"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 21
+            emblem = 0
+            color = 4
+            color = 1
+            color = 1
+        }
+    }  
+}
+# for Conomor
+2108={
+	can_appear=no
+	used_for_random=no
+	name="Clochar"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 4
+            emblem = 0
+            color = 1
+            color = 8
+            color = 12
+        }
+    }  
+}
+# for Dorias
+2109={
+	can_appear=no
+	used_for_random=no
+	name="Osraige"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 5
+            emblem = 0
+            color = 2
+            color = 12
+            color = 1
+        }
+    }  
+}
+# for Xavier
+2110={
+	can_appear=no
+	used_for_random=no
+	name="Mide"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 4
+            emblem = 0
+            color = 4
+            color = 11
+            color = 12
+        }
+    }  
+}
+# for Gustav
+2111={
+	can_appear=no
+	used_for_random=no
+	name="of Leithghlinn"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 22
+            emblem = 0
+            color = 12
+            color = 8
+            color = 12
+        }
+    }  
+}
+# for Weissman
+2112={
+	name="of Eochaill"
+	culture="mansterian"
+	religion="church_of_edda"  
+}
+# for Bandol
+2113={
+	name="of Tuadhmhumhain"
+	culture="mansterian"
+	religion="church_of_edda"  
+}
+# for Farden
+2114={
+	name="of Adare"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Truman
+2115={
+	name="of Bun na Raite"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Aizenau
+2116={
+	name="of Luimneach"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Dalsin
+2117={
+	can_appear=no
+	used_for_random=no
+	name="of Kelves"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 22
+            emblem = 0
+            color = 14
+            color = 8
+            color = 12
+        }
+    }  
+}
+# for Glade
+2118={
+	name="of Callainn"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Finn
+2119={
+	can_appear=no
+	used_for_random=no
+	name="of Leonster"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 2
+            texture_internal = 17
+            emblem = 0
+            color = 2
+            color = 1
+            color = 9
+        }
+    }  
+}
+# for Asbel
+2120={
+	can_appear=no
+	used_for_random=no
+	name="Frest"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 8
+            emblem = 0
+            color = 2
+            color = 9
+            color = 9
+        }
+    }  
+}
+# for Beowolf
+2121={
+	can_appear=no
+	used_for_random=no
+	name="of Conote"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 9
+            emblem = 0
+            color = 5
+            color = 6
+            color = 9
+        }
+    }  
+}
+# for Fergus
+2122={
+	can_appear=no
+	used_for_random=no
+	name="of Conote"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 9
+            emblem = 0
+            color = 13
+            color = 0
+            color = 9
         }
     }  
 }

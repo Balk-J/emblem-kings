@@ -12,3 +12,9 @@
 649.1.1={
 	liege = d_tahra
 }
+750.1.1={
+	holder=1369 # Asbel's father
+}
+779.1.1={
+	holder=1370 # Asbel
+}

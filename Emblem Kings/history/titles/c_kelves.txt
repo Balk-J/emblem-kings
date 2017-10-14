@@ -14,3 +14,9 @@
 	holder=0 
 	liege = d_manster
 }
+735.1.1={
+	holder=1346 # Lobos
+}
+778.1.1={
+	holder=1364 # Dalsin
+}

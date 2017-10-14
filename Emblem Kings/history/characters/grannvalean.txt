@@ -1005,7 +1005,7 @@
 	dna="bjhjcofdjcb"
 	properties="ce0h0e00000000"
 	dynasty=1003
-	father=1042
+	#father=1042
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
@@ -1013,6 +1013,7 @@
 	741.1.1={
 		birth=yes
 		effect={
+			set_father=1042
 			set_character_flag=is_fe4_silvia
 		}
 	}
@@ -1727,8 +1728,8 @@
 # A tyrant, but a nice guy compared to Hilda.
 1058={
 	name="Bloom"
-	dna="abfdvaaaah"
-	properties="am0bjb00000000"
+	dna="acfdvaaaah"
+	properties="am0b0b00000000"
 	father=1056 # Reptor
 	mother=1057 # filler
 	dynasty=1005
@@ -4506,7 +4507,7 @@
 	763.12.1={
 		death = {
 			death_reason=death_murder
-			killer=1524 # Manfroy
+			killer=1254 # Manfroy
 		}
 	}
 }
@@ -6120,6 +6121,617 @@
 		death = {
 			death_reason=death_battle
 			killer=1032 # Sigurd
+		}
+	}
+}
+# General of Friege's Gelb Ritter
+1324={
+	name="Reinhardt"
+	father=1326
+	mother=1327
+	dynasty=2091
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	750.1.1={ # He's older than Olwen, who's 18 in 776
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}	
+	762.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	765.1.1 = {
+		add_trait=skilled_tactician
+		add_trait=cavalry_leader
+		add_trait=organizer
+		add_trait=kind
+		add_trait=cynical
+		add_trait=patient
+		add_trait=shrewd
+	}	
+	770.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Friege soldier, Reinhardt's younger sister
+1325={
+	name="Olwen"
+	female=yes
+	father=1326
+	mother=1327
+	dynasty=2091
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	758.1.1={ # 18 in 776
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}	
+	770.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	773.1.1 = {
+		add_trait=tough_soldier
+		add_trait=organizer # Recon squad!
+		add_trait=wroth
+		add_trait=just
+		add_trait=kind
+	}	
+	776.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_mage_knight_female"
+	}
+	777.1.1 = {
+		employer=1162 # Leif
+	}
+	# Marries Fred after the war
+	779.1.1 = {
+		add_matrilineal_spouse=1328
+	}
+	817.1.1={
+		death = yes
+	}
+}
+# Non-canon; parents for Reinhardt/Olwen
+1326={
+	name="Fredrik"
+	dynasty=2091
+	culture=grannvalean
+	religion=church_of_edda
+	710.1.1={ 
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}	
+	722.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	749.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+		add_spouse=1327
+	}
+	775.1.1={
+		death = yes
+	}
+}
+1327={
+	name="Ragnfrid"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	730.1.1={
+		birth=yes
+	}
+	789.1.1={
+		death = yes
+	}
+}
+
+# Knight of Friege and subordinate to Olwen
+1328={
+	name="Fred"
+	father=1329
+	dynasty=2092
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	751.1.1={ # 25 in 776
+		birth=yes
+		employer=1326
+	}	
+	763.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	766.1.1 = {
+		add_trait=misguided_warrior
+		add_trait=cavalry_leader 
+		add_trait=kind
+		add_trait=just
+		add_trait=brave
+		add_trait=content
+	}	
+	771.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	777.1.1 = {
+		employer=1162 # Leif
+	}
+	804.1.1={
+		death = yes
+	}
+}
+# Non-canon; father for Fred
+1329={
+	name="Emund"
+	dynasty=2092
+	culture=grannvalean
+	religion=church_of_edda
+	721.1.1={ 
+		birth=yes
+		employer=1056 # Reptor
+	}	
+	733.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	777.1.1={
+		death = yes
+	}
+}
+# Reinhardt's subordinate in the Gelben Ritter
+1330={
+	name="Mueller"
+	dynasty=2093
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	754.1.1={ 
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}	
+	766.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	769.1.1 = {
+		add_trait=misguided_warrior
+		add_trait=aggressive_leader
+		add_trait=proud
+		add_trait=stubborn
+		add_trait=brave
+		add_trait=content
+	}	
+	776.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+		effect = {
+			c_1324 = { # Reinhardt
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Danann's confidant and general.
+1331={
+	name="Harold"
+	dynasty=2094
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	739.1.1={
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	754.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader" 
+		add_trait="patient"
+		add_trait="proud"
+	}	
+	756.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+		effect={
+			add_friend=1073 # Danann 
+		}
+	}	 	
+	761.1.1 = {
+		give_job_title = job_marshal
+	} 	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# A general for Danann sent after Seliph when he approaches Rivough
+1332={
+	name="Schmidt"
+	dynasty=2095
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	756.1.1={
+		birth=yes
+		employer=1070
+	}
+	768.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	771.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader" 
+	}	
+	775.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+	776.1.1 = {
+		effect = {
+			c_1073 = { # Danann
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Captain of the Dozel guard who accompanies Brian to prevent Seliph's army from reaching Dozel Castle
+1333={
+	name="Fisher"
+	dynasty=2096
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	743.1.1={
+		birth=yes
+		employer=1070
+	}
+	755.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	758.1.1 = {
+		add_trait=misguided_warrior
+	}	
+	763.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+
+# Bishop stationed at Edda castle in FE4's final chapter
+1334={
+	name="Rodan"
+	dynasty=2097
+	culture=grannvalean
+	religion=church_of_edda
+	719.1.1={
+		birth=yes
+		employer=1210 # Edda
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}
+	731.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	
+	734.1.1 = {
+		add_trait="martial_cleric"
+		add_trait="content"
+		add_trait="brave"
+	}	
+	 
+	749.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}	
+	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Paladin. Mini-boss in FE4's final chapter
+1335={
+	name="Robert"
+	dynasty=2098
+	culture=grannvalean
+	religion=church_of_edda
+	752.1.1={
+		birth=yes
+		employer=1039 # Claud
+	}
+	764.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	767.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="greedy"
+		add_trait="aggressive_leader"
+	}	
+	772.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Paladin. Stationed at Rada Castle
+1336={
+	name="Ridale"
+	dynasty=2099
+	culture=grannvalean
+	religion=church_of_edda
+	746.1.1={
+		birth=yes
+	}
+	758.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	761.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="kind"
+		add_trait="diligent"
+	}	
+	766.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Swordmaster. Defends Edda alongside Rodan
+1337={
+	name="Boyce"
+	dynasty=2100
+	culture=grannvalean
+	religion=church_of_edda
+	744.1.1={
+		birth=yes
+		employer=1041 # Edda
+	}
+	756.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	759.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="cynical"
+		add_trait="proud"
+	}	
+	764.1.1 = {
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Priest of Blagi who can communicate with the spirit of Bishop Claud.
+1338={
+	name="Sleuf"
+	dynasty=2101
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	756.1.1={ # 21 in 776
+		birth=yes
+		employer=1039 # Claud
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}
+	768.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	759.1.1 = {
+		add_trait=scholarly_theologian
+		add_trait=zealous
+		add_trait=theologian
+		add_trait=patient
+		add_trait=kind
+		add_trait=just
+		add_trait=brave
+	}	
+	777.1.1 = {
+		remove_trait="class_priest"
+		add_trait="class_bishop"
+		employer=1162 # Leif
+	}	
+	817.1.1={
+		death = yes
+	}
+}
+# Bishop who guards Fort Danzich
+1347={
+	name="Fraus"
+	dynasty=2105
+	culture=grannvalean
+	religion=church_of_edda
+	724.1.1={ 
+		birth=yes
+		employer=1056 # Reptor
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}
+	736.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	739.1.1 = {
+		add_trait=misguided_warrior
+	}	
+	744.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Baron who guards the imperial prison near Fort Danzich
+1348={
+	name="Zaom"
+	dynasty=2106
+	culture=grannvalean
+	religion=church_of_edda
+	743.1.1={ 
+		birth=yes
+		employer=1056 # Reptor
+	}
+	755.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	758.1.1 = {
+		add_trait=amateurish_plotter
+		add_trait=cruel
+	}	
+	763.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+		employer=1347 # Fraus
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
 		}
 	}
 }

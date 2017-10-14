@@ -311,6 +311,129 @@
 	name="of Monza"
 	culture="grannvalean"
 }
+2091={ # for Reinhardt and Olwen
+	can_appear=no
+	used_for_random=no
+	name="Veod"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 6
+            emblem = 0
+            color = 3
+            color = 5
+            color = 1
+        }
+    }
+}
+2092={ # for Fred
+	can_appear=no
+	used_for_random=no
+	name="Schutaeze"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 1
+            emblem = 0
+            color = 3
+            color = 12
+            color = 1
+        }
+    }
+}
+2093={ # for Mueller
+	can_appear=no
+	used_for_random=no
+	name="of Donar"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 1
+            emblem = 0
+            color = 8
+            color = 12
+            color = 1
+        }
+    }
+}
+2094={ # for Harold
+	can_appear=no
+	used_for_random=no
+	name="Lodi"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 5
+            emblem = 0
+            color = 11
+            color = 5
+            color = 1
+        }
+    }
+}
+2095={ # for Schmidt
+	name="of Dozel"
+	culture="grannvalean"
+}
+2096={ # for Fisher
+	name="of Lombardy"
+	culture="grannvalean"
+}
+2097={ # for Rodan
+	name="of Lokasenna"
+	culture="grannvalean"
+}
+2098={ # for Robert
+	name="of Grimnismal"
+	culture="grannvalean"
+}
+2099={ # for Ridale
+	name="of Rada"
+	culture="grannvalean"
+}
+2100={ # for Boyce
+	name="of Alvissmal"
+	culture="grannvalean"
+}
+2101={ # for Sleuf
+	can_appear=no
+	used_for_random=no
+	name="of Basile"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 1
+            emblem = 0
+            color = 6
+            color = 1
+            color = 1
+        }
+    }
+}
+2105={ # for Fraus
+	name="of Veur"
+	culture="grannvalean"
+}
+2106={ # for Zaom
+	name="of Frigg"
+	culture="grannvalean"
+}
 # Swedish from vanilla
 1025={
 	name="Gårdske"

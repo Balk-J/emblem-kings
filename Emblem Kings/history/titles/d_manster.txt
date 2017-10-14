@@ -18,3 +18,18 @@
 	de_jure_liege = k_manster
 	liege = k_manster
 }
+706.1.1={
+	holder=1344 # Carl's grandfather
+}
+739.1.1={
+	holder=1342 # Carl's father
+}
+756.1.1={
+	holder=1341 # Carl
+}
+763.1.1={
+	holder=1058 # Bloom
+}
+763.1.1={
+	holder=1340 # Raydrik
+}

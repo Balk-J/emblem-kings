@@ -29,7 +29,7 @@ jugdrali = {
 			Cowen
 			Daggon
 			Danann
-			Deimne
+			#Deimne
 			Febail
 			Felipe
 			Filat
@@ -51,7 +51,7 @@ jugdrali = {
 			Largo
 			Lester
 			Lex
-			Lobos
+			#Lobos
 			Lombard
 			Maira
 			Manfroy
@@ -120,7 +120,7 @@ jugdrali = {
 			Liza
 			#Maybell
 			#Meng
-			Muirne
+			#Muirne
 			Olwen
 			Patty
 			Sara
@@ -317,6 +317,7 @@ jugdrali = {
 		male_names = {
 			Chulainn
 			Dalvin
+			Deimne
 			Galzus
 			Mananan
 			Mariccle
@@ -356,6 +357,7 @@ jugdrali = {
 			Karen
 			Larcei
 			Mareeta
+			Muirne
 			# Welsh
 			Addiena_Addiena Aelwyd_Aelwyd Aeronwen Aeronwy Afrella_Abrelda Alys_Alice Angharad Annes_Anna Annest_Agnes Annwyl Anowed Arddyn Arianrhod
 			Blodwen Bronwen_Bronwen Catrin_Catherine Ceindrych_Cagintria Ceridwen Cerie Cerys Cicely_Cecilia Clarisant Creirwy_Creirwy Cristin_Christina Danhadlwen
@@ -413,6 +415,7 @@ jugdrali = {
 			Homer
 			Jabarro
 			Leif
+			Lobos
 			Maphy
 			Merc
 			Perne

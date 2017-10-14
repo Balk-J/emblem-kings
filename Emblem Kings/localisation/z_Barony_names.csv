@@ -2027,8 +2027,8 @@ b_donar_3;Donar;Donar;Donar;;Donar;;;;;;;;;x
 b_donar_3_adj;Donarite;Donarite;Donarite;;Donarite;;;;;;;;;x
 b_veod;Veod;Veod;Veod;;Veod;;;;;;;;;x
 b_veod_adj;Veodite;Veodite;Veodite;;Veodite;;;;;;;;;x
-b_veur;Veur;Veur;Veur;;Veur;;;;;;;;;x
-b_veur_adj;Veurite;Veurite;Veurite;;Veurite;;;;;;;;;x
+b_schutaeze;Schutaeze;Schutaeze;Schutaeze;;Schutaeze;;;;;;;;;x
+b_schutaeze_adj;Schutaezean;Schutaezean;Schutaezean;;Schutaezean;;;;;;;;;x
 b_tor;Tor;Tor;Tor;;Tor;;;;;;;;;x
 b_tor_adj;Torite;Torite;Torite;;Torite;;;;;;;;;x
 b_tor_2;Tor;Tor;Tor;;Tor;;;;;;;;;x
@@ -2761,6 +2761,8 @@ b_danzich;Danzich;Danzich;Danzich;;Danzich;;;;;;;;;x
 b_danzich_adj;Danzichite;Danzichite;Danzichite;;Danzichite;;;;;;;;;x
 b_danzich_2;Danzich;Danzich;Danzich;;Danzich;;;;;;;;;x
 b_danzich_2_adj;Danzichite;Danzichite;Danzichite;;Danzichite;;;;;;;;;x
+b_danzig;Danzig;Danzig;Danzig;;Danzig;;;;;;;;;x
+b_danzig_adj;Danzigite;Danzigite;Danzigite;;Danzigite;;;;;;;;;x
 b_fort_kelves;Fort Kelves;Fort Kelves;Fort Kelves;;Fort Kelves;;;;;;;;;x
 b_fort_kelves_adj;Fort Kelvesite;Fort Kelvesite;Fort Kelvesite;;Fort Kelvesite;;;;;;;;;x
 b_kelves;Kelves;Kelves;Kelves;;Kelves;;;;;;;;;x
@@ -2803,12 +2805,20 @@ b_tahra_2;Tahra;Tahra;Tahra;;Tahra;;;;;;;;;x
 b_tahra_2_adj;Tahran;Tahran;Tahran;;Tahran;;;;;;;;;x
 b_maol_ros;Maol Ros;Maol Ros;Maol Ros;;Maol Ros;;;;;;;;;x
 b_maol_ros_adj;Maol Rosite;Maol Rosite;Maol Rosite;;Maol Rosite;;;;;;;;;x
+b_tobar_na_mac;Tobar na Mac;Tobar na Mac;Tobar na Mac;;Tobar na Mac;;;;;;;;;x
+b_tobar_na_mac_adj;Tobar na Macite;Tobar na Macite;Tobar na Macite;;Tobar na Macite;;;;;;;;;x
 b_frest;Frest;Frest;Frest;;Frest;;;;;;;;;x
 b_frest_adj;Frestite;Frestite;Frestite;;Frestite;;;;;;;;;x
 b_frest_2;Frest;Frest;Frest;;Frest;;;;;;;;;x
 b_frest_2_adj;Frestite;Frestite;Frestite;;Frestite;;;;;;;;;x
 b_frest_3;Frest;Frest;Frest;;Frest;;;;;;;;;x
 b_frest_3_adj;Frestite;Frestite;Frestite;;Frestite;;;;;;;;;x
+b_baile_na_hcearc;Baile na h-Cearc;Baile na h-Cearc;Baile na h-Cearc;;Baile na h-Cearc;;;;;;;;;x
+b_baile_na_hcearc_adj;Baile na h-Cearcite;Baile na h-Cearcite;Baile na h-Cearcite;;Baile na h-Cearcite;;;;;;;;;x
+b_srath_bhalgaidh;Srath Bhalgaidh;Srath Bhalgaidh;Srath Bhalgaidh;;Srath Bhalgaidh;;;;;;;;;x
+b_srath_bhalgaidh_adj;Srath Bhalgaidhite;Srath Bhalgaidhite;Srath Bhalgaidhite;;Srath Bhalgaidhite;;;;;;;;;x
+b_an_eaglais_bhreac;An Eaglais Bhreac;An Eaglais Bhreac;An Eaglais Bhreac;;An Eaglais Bhreac;;;;;;;;;x
+b_an_eaglais_bhreac_adj;An Eaglais Bhreacite;An Eaglais Bhreacite;An Eaglais Bhreacite;;An Eaglais Bhreacite;;;;;;;;;x
 b_thracia_castle;Thracia Castle;Thracia Castle;Thracia Castle;;Thracia Castle;;;;;;;;;x
 b_thracia_castle_adj;Thracia Castler;Thracia Castler;Thracia Castler;;Thracia Castler;;;;;;;;;x
 b_thracia;Thracia;Thracia;Thracia;;Thracia;;;;;;;;;x

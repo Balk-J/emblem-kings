@@ -93,7 +93,7 @@
 		# Attacked from behind at the Battle of River Thracia by Conote forces under a traitor
 		death = {
 			death_reason=death_battle
-			killer=1154 # Raydrik
+			killer=1240 # Raydrik
 		}
 	}
 }
@@ -243,6 +243,19 @@
 	760.12.1={
 		birth=yes
 	}
+	# On the run from the empire...
+	761.1.1={
+		employer=1159 # Leonster
+	}
+	763.1.1={
+		employer=1349 # Alster
+	}
+	766.1.1={
+		employer=1369 # Frest
+	}
+	769.1.1={
+		employer=1168 # Tahra
+	}
 	772.12.1={
 		add_trait="class_thief" # Well, he's a Trickster in Awakening...
 		add_trait="base_class_thief"
@@ -255,7 +268,10 @@
 			set_character_flag="class_selected"
 		}
 	} 
-	 
+	
+	773.1.1={
+		employer=1081 # Eyvel
+	} 
 	775.12.1 = {
 		add_trait="skilled_tactician"
 		add_trait="organizer"
@@ -309,7 +325,9 @@
 		remove_trait="class_thief"
 		add_trait="class_rogue"
 	}	
-	
+	779.1.1 = {
+		add_spouse = 1097 # Nanna
+	}
 	824.1.1={
 		death = yes
 	}
@@ -561,5 +579,1230 @@
 		}
 	}
 }
-	#dna="cccfeeccgal" raydrik
-	#properties="ch0ead00000000"
+
+
+# A former general of Conote who betrayed Manster to two different invaders in the span of a few years. Duke of Manster after imperial takeover.
+1340={
+	name="Raydrik"
+	dna="cccfeeccgal" 
+	properties="ch0ead00000000"
+	dynasty=2102
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	730.1.1={ # Let's say he's in his 40s in 776?
+		birth=yes
+	}
+	742.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	745.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="heavy_infantry_leader" 
+		add_trait="wroth"
+		add_trait="proud"
+		add_trait="ambitious" 
+		add_trait="deceitful" 
+		add_trait="arbitrary" 
+	}	
+	748.1.1 = {
+		add_trait="schemer"
+	}	
+	750.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Conote royal family:
+# I don't have very good info on this. Apparently King Conote died, his son Carl inherited, and Raydrik helped him against the faction that wanted his uncle as king?
+1341={
+	name="Carl"
+	father=1342
+	dynasty=2103
+	culture=mansterian
+	religion=church_of_edda
+	749.1.1={
+		birth=yes
+	}
+	762.12.01 = { 		
+		effect = {
+			c_1340 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	763.1.1={
+		# Attempts to resist Raydrik's takeover. It does not go well.
+		death = {
+			death_reason=death_battle
+			killer=1340 # Raydrik
+		}
+	}
+}
+1342={
+	name="Conall"
+	father=1344
+	mother=1345
+	dynasty=2103
+	culture=mansterian
+	religion=church_of_edda
+	719.1.1={
+		birth=yes
+	}
+	756.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			killer=1340 # Raydrik
+		}
+	}
+}
+1343={
+	name="Dathal"
+	father=1344
+	mother=1345
+	dynasty=2103
+	culture=mansterian
+	religion=church_of_edda
+	720.1.1={
+		birth=yes
+	}
+	757.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			killer=1340 # Raydrik
+		}
+	}
+}
+1372={ # We need a Conote princess for Beowolf
+	name="Finnguala"
+	female=yes
+	father=1344
+	mother=1345
+	dynasty=2103
+	culture=mansterian
+	religion=church_of_edda
+	734.1.1={
+		birth=yes
+	}
+	757.1.1={
+		death = {
+			death_reason=death_murder_unknown
+			killer=1340 # Raydrik
+		}
+	}
+}
+1344={
+	name="Conán"
+	dynasty=2103
+	culture=mansterian
+	religion=church_of_edda
+	686.1.1={
+		birth=yes
+	}
+	720.1.1={
+		add_spouse=1345
+	}
+	739.1.1={
+		death = yes
+	}
+}
+1345={
+	name="Tuathflaith"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	700.1.1={
+		birth=yes
+	}
+	754.1.1={
+		death = yes
+	}
+}
+# A general under Raydrik. Guards Kelves
+1346={
+	name="Lobos"
+	dynasty=2104
+	culture=mansterian
+	religion=church_of_edda
+	719.1.1={ 
+		birth=yes
+	}
+	731.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	739.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# King of Alster.
+1349={
+	name="Murchad"
+	dynasty=2107
+	culture=mansterian
+	religion=church_of_edda
+	719.1.1={ 
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}
+	731.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	739.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	}	
+	761.1.1={	
+		add_spouse=1352 # Ethnia
+	}
+	766.1.1={	
+		effect = {
+			c_1058 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	776.1.1={
+		death = {
+			death_reason=death_dungeon
+			killer=1058 # Bloom
+		}
+	}
+}
+# Princess of Alster
+1350={
+	name="Miranda"
+	female=yes
+	father=1349
+	mother=1352
+	dynasty=2107
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	762.1.1={ # 14 in 776
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}
+	766.1.1={	
+		employer=1058
+	}
+	770.1.1={	
+		employer=1267
+	}
+	774.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			c_1162 = { # Leif
+				reverse_opinion = {
+					modifier = opinion_killed_father # Not really, but she blames him for it.
+					who = ROOT
+					years = 3
+				} 
+			}	
+		}
+	} 
+	777.1.1 = {
+		employer = 1162
+		remove_trait="class_mage_female"
+		add_trait="class_mage_knight_female"
+		add_trait="martial_cleric"
+		add_trait="wroth"
+		add_trait="stubborn"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="trusting"
+	}	
+	823.1.1={
+		death = yes
+	}
+}
+# General of Alster. Served the empire when Miranda was taken hostage.
+1351={
+	name="Conomor"
+	dynasty=2108
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	736.1.1={ 
+		birth=yes
+		effect = {
+			c_1349 = { # Miranda's father
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+		employer=1349
+	}
+	748.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	751.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="unyielding_leader"
+		add_trait="rough_terrain_leader"
+		add_trait="just"
+		add_trait="brave"
+	}	
+	756.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	776.1.1 = {
+		effect = {
+			c_1350 = { # Miranda
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+	}	
+	779.1.1 = {
+		add_matrilineal_spouse = 1350 # Miranda
+	}
+	796.1.1={
+		death = yes
+	}
+}
+# Miranda's mother.
+1352={
+	name="Ethnia"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	742.1.1={ 
+		birth=yes
+	}
+	766.1.1={	
+		effect = {
+			c_1058 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	776.1.1={
+		death = {
+			death_reason=death_dungeon
+			killer=1058 # Bloom
+		}
+	}
+}
+# Knight and Duke (?!) of Leonster.
+1353={
+	name="Dorias"
+	dynasty=2109
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	722.1.1={ # 54 in 776
+		birth=yes
+		effect = {
+			c_1159 = { # Calf
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	734.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	736.1.1={
+		effect = {
+			c_1160 = { # Quan
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	737.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="honest"
+		add_trait="proud"
+	}	
+	756.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+		add_trait="strategist"
+	}
+	760.12.1={
+		effect = {
+			c_1162 = { # Leif
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	763.1.1={
+		employer=1349 # Alster
+		effect = {
+			c_1355 = { # Xavier
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 30
+				} 
+			}
+		}
+	}
+	766.1.1={
+		add_trait=one_handed # Loses an arm covering Leif's escape from Alster
+		employer=1245 # Hannibal
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1058 # Bloom
+		}
+	}
+}
+1354={
+	name="Selphina"
+	female=yes
+	dynasty=2109
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	750.1.1={ # 26 in 776
+		birth=yes
+	}
+	762.01.01={
+		add_trait="class_horse_archer_female"
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	763.1.1={
+		employer=1349 # Alster
+	}
+	765.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="light_infantry_leader"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+		add_trait="charitable"
+	}	
+	766.1.1={
+		employer=1245 # Hannibal
+	}
+	770.1.1 = {
+		remove_trait="class_horse_archer_female"
+		add_trait="class_bow_knight_female"
+		add_matrilineal_spouse=1367 # Glade
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+	}	
+	803.1.1={
+		death = yes
+	}
+}
+# General of Leonster. Sides with the empire to save Leonster's people.
+1355={
+	name="Xavier"
+	dynasty=2110
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	736.1.1={ 
+		birth=yes
+		employer = 1159 # Calf
+	}
+	748.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	751.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="unyielding_leader"
+		add_trait="defensive_leader"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="content"
+	}	
+	756.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	789.1.1={
+		death = yes
+	}
+}
+# Count of Leonster, for the empire. 
+1356={
+	name="Gustav"
+	dynasty=2111
+	culture=mansterian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	725.1.1={ 
+		birth=yes
+		employer = 1158 # Leonster
+	}
+	737.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	740.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="defensive_leader"
+		add_trait="wroth"
+		add_trait="proud"
+		add_trait="ambitious"
+	}	
+	745.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	746.1.1={
+		employer=1340 # Raydrik
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Soldier of Raydrik. FE5 chapter 1 boss. 
+1357={
+	name="Weissman"
+	dynasty=2112
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	751.1.1={ 
+		birth=yes
+		employer=1340 # Raydrik
+	}
+	763.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	766.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="defensive_leader"
+		add_trait="cruel"
+		add_trait="craven"
+		add_trait="arbitrary"
+		add_trait="deceitful"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Soldier of Raydrik. Stationed in Manster Castle. 
+1358={
+	name="Bandol"
+	dynasty=2113
+	culture=mansterian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	750.1.1={ 
+		birth=yes
+		employer=1340 # Raydrik
+	}
+	762.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	765.1.1 = {
+		add_trait="misguided_warrior"
+	}	
+	776.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Soldier of Raydrik. Reluctantly participates in the child hunts. 
+1359={
+	name="Farden"
+	dynasty=2114
+	culture=mansterian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	753.1.1={ 
+		birth=yes
+		employer=1340 # Raydrik
+	}
+	765.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	768.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"
+		add_trait="aggressive_leader"
+		add_trait="proud"
+		add_trait="kind"
+	}	
+	773.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Soldier of Raydrik. Chases Leif after his escape from Manster
+1360={
+	name="Truman"
+	dynasty=2115
+	culture=mansterian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	721.1.1={ 
+		birth=yes
+		employer=1344 # Carl's grandfather
+	}
+	733.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	736.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+	}	
+	746.1.1={ 
+		employer=1340 # Raydrik
+	}
+	751.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Soldier of Raydrik. Chases Leif after his escape from Manster
+1361={
+	name="Aizenau" # Eisenhow?
+	dynasty=2116
+	culture=mansterian
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	725.1.1={ 
+		birth=yes
+	}
+	737.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	741.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="proud"
+	}	
+	751.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Non-canon; parents for Dalsin's family
+1362={
+	name="Dallán" 
+	dynasty=2117
+	culture=mansterian
+	religion=church_of_edda
+	726.1.1={ 
+		birth=yes
+	}
+	735.1.1={
+		employer=1346 # Lobos
+	}
+	738.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	755.1.1={
+		add_spouse=1363
+	}
+	776.1.1={
+		death = yes
+	}
+}
+1363={
+	name="Úna" 
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	731.1.1={ 
+		birth=yes
+	}	
+	735.1.1={
+		employer=1346 # Lobos
+	}
+	776.1.1={
+		death = yes
+	}
+}
+#  Knight of Manster tasked with guarding Manster's prison.
+1364={
+	name="Dalsin" 
+	father=1362
+	mother=1363
+	dynasty=2117
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	756.1.1={ # 20 in 776
+		birth=yes
+		employer=1346 # Lobos
+	}
+	768.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	771.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="diligent"
+	}	
+	777.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}
+	807.1.1={
+		death = yes
+	}
+}
+#  Dalsin's sister
+1365={
+	name="Diana"
+	female=yes	
+	father=1362
+	mother=1363
+	dynasty=2117
+	culture=mansterian
+	religion=church_of_edda
+	770.1.1={ 
+		birth=yes
+		employer=1346 # Lobos
+	}
+	837.1.1={
+		death = yes
+	}
+}
+#  Dalsin's brother
+1366={
+	name="Yubel" 
+	father=1362
+	mother=1363
+	dynasty=2117
+	culture=mansterian
+	religion=church_of_edda
+	771.1.1={ 
+		birth=yes
+		employer=1346 # Lobos
+	}
+	776.1.1 = { 		
+		effect = {
+			c_1346 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	835.1.1={
+		death = yes
+	}
+}
+# Knight of Leonster. Selphina's husband
+1367={
+	name="Glade"
+	dynasty=2118
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	742.1.1={ # 34 in 776
+		birth=yes
+	}
+	754.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	757.1.1 = {
+		add_trait="thrifty_clerk" 
+		add_trait="siege_leader"
+		add_trait="trickster"
+		add_trait="diligent"
+		add_trait="content"
+		add_trait="just"
+	}	
+	760.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+		add_trait="architect"
+	}
+	763.1.1={
+		employer=1349 # Alster
+	}
+	766.1.1={
+		employer=1245 # Hannibal
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+	}	
+	777.1.1 = {
+		employer = 1354 # Selphina
+	}	
+	797.1.1={
+		death = yes
+	}
+}
+# Knight of Leonster. Serves Quan.
+1368={
+	name="Finn"
+	dynasty=2119
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	742.1.1={ # 34 in 776
+		birth=yes
+		employer= 1158 # Leonster
+		effect = {
+			c_1160 = { # Quan
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	754.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	757.1.1 = {
+		add_trait="tough_soldier" 
+		add_trait="cavalry_leader"
+		add_trait="temperate"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+	}	
+	759.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	760.1.1 = {
+		add_trait="patient"
+		add_trait="shy" # very unemotional?
+		effect = {
+			c_1154 = { # Travant
+				reverse_opinion = {
+					modifier = opinion_revenge_seeker
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	760.12.1={
+		effect = {
+			c_1162 = { # Leif
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+	# On the run from the empire...
+	761.1.1={
+		employer=1159 # Leonster
+	}
+	763.1.1={
+		employer=1349 # Alster
+	}
+	766.1.1={
+		employer=1369 # Frest
+	}
+	769.1.1={
+		employer=1168 # Tahra
+	}
+	773.1.1={
+		employer=1081 # Eyvel
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+	}	
+	# vanishes for three years after Leif's coronation as the king of the New Kingdom of Thracia. It is hinted that he spends three years searching for Lachesis in the Yied Desert, but his attempts prove to be futile.
+	779.1.1 = {
+		#employer =  # Yied
+	}	
+	782.1.1 = {
+		employer = 1162 # Leif
+		add_trait=depressed
+	}	
+	800.1.1={
+		death = yes
+	}
+}
+# Bishop of Frest. Asbel's father
+1369={
+	name="Áengus"
+	dynasty=2120
+	culture=mansterian
+	religion=church_of_edda
+	730.1.1={
+		birth=yes
+	}	
+	741.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	
+	750.01.01={
+		remove_trait="class_mage"
+		add_trait="class_sage"
+	} 	
+	779.1.1={
+		death = yes
+	}
+}
+# Son of the Bishop of Frest and a wind mage in the Magi Squad
+1370={
+	name="Asbel"
+	father=1369
+	dynasty=2120
+	culture=mansterian
+	religion=church_of_edda
+	761.1.1={ # 15 in 776
+		birth=yes
+	}	
+	766.1.1={
+		effect={
+			add_friend=1162 # Leif
+		}
+	}
+	773.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	776.1.1 = {
+		add_trait="scholarly_theologian" 
+		add_trait="brave"
+		add_trait="diligent"
+		add_trait="just"
+		add_trait="kind"
+		employer=1112 # Ced
+	}	
+	777.01.01={
+		remove_trait="class_mage"
+		add_trait="class_sage"
+		employer=1162 # Leif
+	} 	
+	824.1.1={
+		death = yes
+	}
+}
+
+# Mercenary working for Voltz
+1371={
+	name="Beowolf"
+	dynasty=2121
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	732.1.1={
+		birth=yes
+	}
+	744.01.01={
+		add_trait="class_cavalier" 
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	747.01.01={
+		# or at least they know each other well enough for Eldigan to have him check on his sister...
+		effect = {
+			add_friend=1094 # Eldigan
+		}
+	} 
+	747.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"
+		add_trait="just"
+		add_trait="greedy"
+		add_trait="honest"
+		add_trait="brawny"
+	}	
+	750.1.1 = {
+		employer=1374 # Voltz
+		effect = {
+			add_friend=1374 # Voltz
+		}
+	}	
+	
+	752.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	760.1.1 = {
+		employer=1032 # Sigurd
+		wealth=100
+	}	
+	
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis, Battle of Belhalla
+		}
+	}
+}
+# Mysterious mercenary from Conote
+1373={
+	name="Fergus"
+	#father=1371 # Beowolf
+	#real_father=1371 # Beowolf
+	mother=1372 # Conote Princess
+	dynasty=2122
+	culture=mansterian
+	religion=church_of_edda
+	trait=bastard
+	trait=strong
+	754.1.1={ # 22-23 in 776
+		birth=yes
+		employer=1342 # Carl's father
+		effect={
+			c_1371 = {				
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}
+	766.01.01={
+		add_trait="class_cavalier" 
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	769.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="just"
+		add_trait="cynical"
+		add_trait="kind"
+		add_trait="brave"
+	}	
+	
+	774.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	776.1.1 = {
+		employer=1346 # Lobos	
+		effect = {
+			c_1346 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.01.01={
+		employer=1162 # Leif
+	} 	
+	# Disappeared like the wind after the war
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+# Ranger. Leader of a mercenary company enlisted by Macbeth to defend Anphony. He is friends with fellow mercenary Beowulf
+1374={
+	name="Voltz"
+	dynasty=2123
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	730.1.1={
+		birth=yes
+	}
+	742.01.01={
+		add_trait="class_horse_archer" 
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	745.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"
+		add_trait="proud"
+		add_trait="cynical"
+		add_trait="brave" # Retreat ain't on the books
+	}
+	747.01.01={
+		effect = {
+			add_friend=1371 # Beowolf
+		}
+	} 	
+	
+	752.1.1 = {
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	
+	760.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}

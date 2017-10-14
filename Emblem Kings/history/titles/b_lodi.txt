@@ -1,0 +1,15 @@
+180.1.1={
+	liege=c_dozel
+}
+755.1.1={
+	holder=1331 # Harold
+}
+761.1.1={
+	holder = 1073 # Danann 
+}
+778.1.1={
+	holder=1075 # Brian
+}
+779.1.1={
+	holder=0 # Seliph? Who's left to rule it? Maybe Ulster if we go Lex/Ayra like the manga?
+}

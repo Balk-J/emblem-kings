@@ -472,7 +472,7 @@
 		add_trait="class_hero"
 	}	
 	777.1.1 = {
-		#employer= # Raydrik
+		employer=1340 # Raydrik
 	}		
 	778.1.1={
 		death = {

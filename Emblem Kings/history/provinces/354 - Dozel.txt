@@ -31,3 +31,6 @@ religion = church_of_edda
 	religion = church_of_edda
 	culture = grannvalean
 }
+755.1.1 = { 
+	b_lodi = castle
+}

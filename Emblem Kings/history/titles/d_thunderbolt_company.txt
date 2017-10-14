@@ -1,0 +1,10 @@
+440.1.1={
+	active = no
+}
+747.1.1={
+	active = yes
+	holder=1374 # Voltz
+}
+760.1.1={
+	#active = no # Destroyed?
+}

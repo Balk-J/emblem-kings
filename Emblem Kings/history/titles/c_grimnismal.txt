@@ -14,3 +14,6 @@
 	liege = d_edda
 	holder=0 # Blagi
 }
+767.1.1={
+	holder = 1335 # Robert (FE4)
+}

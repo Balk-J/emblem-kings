@@ -1,19 +1,15 @@
-# c_osraige > d_leonster
 180.1.1={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
-	liege = d_leonster
+	liege = c_osraige
 	#holder = 0
 }
-440.1.1={
-	holder=1018 # 
+730.1.1={
+	holder=1234
 }
-649.1.1={
-	holder=0 
-}
-738.1.1={
-	holder=1353 # Dorias 
+763.1.1={
+	holder = 0 # Raydrik?
 }
 # TEMP to keep Ares out
 763.1.1={
@@ -21,7 +17,4 @@
 }
 777.1.1={
 	holder=1162 # Leif
-}
-777.1.1={
-	holder=1354 # Selphina
 }

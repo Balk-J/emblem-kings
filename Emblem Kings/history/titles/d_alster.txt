@@ -18,4 +18,16 @@
 	de_jure_liege = k_manster
 	liege = k_manster
 }
+739.1.1={
+	holder=1349 # Miranda's father
+}
+776.1.1={
+	holder=1058 # Bloom
+}
+779.1.1={
+	holder = 1162 # Leif 
+}
+779.1.1={
+	holder=1350 # Miranda
+}
 

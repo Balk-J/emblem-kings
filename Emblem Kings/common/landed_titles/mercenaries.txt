@@ -402,3 +402,37 @@ d_fiana_freeblades = {
 
 	mercenary_type = fiana_freeblades_composition
 }
+
+# Voltz's mercenaries
+d_thunderbolt_company = {
+	color={ 130 100 20 }
+	color2={ 255 255 255 }
+
+	capital = 104 # Conote
+	
+	# Hire Trigger
+	allow = {
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = church_of_edda
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = thunderbolt_company_composition
+}

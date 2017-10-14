@@ -31,6 +31,9 @@
 761.1.1={
 	holder = 1073 # Danann 
 }
+761.1.1={
+	holder=1331 # Harold
+}
 778.1.1={
 	holder = 1136 # Shannan 
 }

@@ -245,10 +245,9 @@ character_event = {
 			limit = {
 				trait = holy_blood_latent_loptyr
 			}
-			set_character_flag=test
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -273,14 +272,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_loptyr
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_loptyr					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_loptyr			
 		}
@@ -290,7 +289,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -315,14 +314,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_naga
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_naga					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_naga			
 		}
@@ -332,7 +331,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -357,14 +356,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_baldur
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_baldur					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_baldur			
 		}
@@ -374,7 +373,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -399,14 +398,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_blagi
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_blagi					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_blagi			
 		}
@@ -416,7 +415,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -441,14 +440,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_dain
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_dain					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_dain			
 		}
@@ -458,7 +457,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -483,14 +482,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_fala
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_fala					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_fala			
 		}
@@ -500,7 +499,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -525,14 +524,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_forseti
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_forseti					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_forseti			
 		}
@@ -542,7 +541,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -567,14 +566,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_hezul
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_hezul					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_hezul			
 		}
@@ -584,7 +583,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -609,14 +608,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_neir
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_neir					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_neir			
 		}
@@ -626,7 +625,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -651,14 +650,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_noba
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_noba					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_noba			
 		}
@@ -668,7 +667,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -693,14 +692,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_odo
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_odo					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_odo			
 		}
@@ -710,7 +709,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -735,14 +734,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_tordo
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_tordo					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_tordo			
 		}
@@ -752,7 +751,7 @@ character_event = {
 			}
 			# What can they get?
 			random_list = {	
-				20 = { # Major
+				30 = { # Major
 					modifier = {
 						factor = 0
 						OR = {
@@ -777,14 +776,14 @@ character_event = {
 					}
 					add_trait=holy_blood_major_ulir
 				}
-				50 = { # Minor
+				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
 					add_trait=holy_blood_minor_ulir					
 				}		
-				30 = {} # Nothing!
+				25 = {} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_ulir			
 		}

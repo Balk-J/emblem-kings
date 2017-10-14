@@ -63,6 +63,11 @@ schwarze_rosen_composition = {
 	levy_size = 4
 	magic_users = 1000
 }
+thunderbolt_company_composition = {
+	levy_size = 1
+	light_cavalry = 400
+	horse_archers = 100
+}
 
 #Vanilla stuff
 

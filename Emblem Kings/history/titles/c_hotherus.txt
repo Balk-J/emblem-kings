@@ -12,3 +12,9 @@
 649.1.1={
 	liege = d_agusty
 }
+776.1.1={
+	holder=1325 # Olwen
+}
+777.1.1={
+	holder=1270 # Dark Bishop
+}

@@ -32,3 +32,9 @@ b_manster_2 = city
 666.1.1 = { 
 	culture = mansterian
 }
+776.1.1 = { 
+	b_tuadhmhumhain = castle
+}
+777.1.1 = { 
+	b_tuadhmhumhain = city
+}

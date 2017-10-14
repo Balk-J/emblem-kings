@@ -386,6 +386,9 @@
 		add_trait="honest"
 		add_trait="wroth"
 	}	
+	759.1.1 = {
+		add_matrilineal_spouse=1368 # Finn
+	}	
 	 
 	760.3.1 = {
 		remove_trait="class_troubador"
@@ -393,19 +396,19 @@
 	}	
 	# On the run from the empire...
 	761.1.1={
-		#employer= # Leonster
+		employer=1159 # Leonster
 	}
 	763.1.1={
-		#employer= # Alster
+		employer=1349 # Alster
 	}
 	766.1.1={
-		#employer= # Frest
+		employer=1369 # Frest
 	}
 	769.1.1={
-		#employer= # Tahra
+		employer=1168 # Tahra
 	}
 	# Leaves to find Diarmuid and is never seen again.
-	771.1.1={
+	772.1.1={
 		death = {
 			death_reason=death_missing
 		} 
@@ -414,7 +417,8 @@
 # Lachesis' son.
 1096={
 	name="Diarmuid"
-	#father= # Beowolf. Probably.
+	father=1368 # Finn
+	#real_father=1371 # Beowolf. Probably. No, I don't care why Lachesis' children have two different fathers.
 	mother=1095 # Lachesis
 	dynasty=1013
 	culture=agustrian
@@ -422,6 +426,11 @@
 	trait=holy_blood_latent_hezul
 	760.1.1={ # 17 in 777. Or maybe 18? https://www.nintendo.co.jp/n02/shvc/bfej/data/chara/index.html
 		birth=yes
+		effect={
+			c_1371 = {				
+				ROOT = { set_real_father = PREV }
+			}
+		}
 	}
 	# separated from his mother and raised in the Isaachian village of Tirnanog in the aftermath of the Battle of Belhalla
 	761.01.01={
@@ -458,7 +467,7 @@
 1097={
 	name="Nanna"
 	female=yes
-	#father= # Beowolf. Possibly. She can't use his sword, so it *could* be Finn...
+	father=1368 # Finn. Probably. It could be Beowolf like her brother, but she can't use his sword. Finn is apparently canon anyway.
 	mother=1095 # Lachesis
 	dynasty=1013
 	culture=agustrian
@@ -470,16 +479,19 @@
 	# On the run from the empire...
 	#761.1.1=
 	762.1.1={
-		#employer= # Leonster
+		employer=1159 # Leonster
 	}
 	763.1.1={
-		#employer= # Alster
+		employer=1349 # Alster
 	}
 	766.1.1={
-		#employer= # Frest
+		employer=1369 # Frest
 	}
 	769.1.1={
-		#employer= # Tahra
+		employer=1168 # Tahra
+	}
+	773.1.1={
+		employer=1081 # Eyvel
 	}
 	774.01.01={
 		add_trait="class_troubador"
@@ -491,6 +503,9 @@
 			set_character_flag="class_selected"
 		}
 	} 
+	776.1.1={
+		employer=1162 # Leif
+	}
 	777.1.1 = {
 		add_trait="fortune_builder"
 		add_trait="just"

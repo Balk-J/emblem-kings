@@ -36,3 +36,6 @@ b_leithghlinn = city
 666.1.1 = { 
 	culture = mansterian
 }
+752.1.1 = { 
+	b_mide = castle
+}

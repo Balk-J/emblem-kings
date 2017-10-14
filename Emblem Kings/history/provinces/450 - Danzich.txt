@@ -4,11 +4,12 @@
 title = c_danzich
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 
 b_fort_danzich = castle
 b_danzich = temple
 #b_danzich_2 = city
+#b_danzig = castle
 
 # Misc
 culture = mansterian
@@ -30,4 +31,10 @@ b_danzich_2 = city
 }
 666.1.1 = { 
 	culture = mansterian
+}
+776.1.1 = { 
+	b_danzig = castle
+}
+777.1.1 = { 
+	b_danzig = temple
 }

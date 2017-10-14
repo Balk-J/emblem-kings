@@ -25,6 +25,9 @@
 756.1.1={
 	holder=1290 # filler
 }
-770.1.1={
-	holder=1265 # Morigan
+764.1.1={
+	holder=1336 # Ridale
 }
+#770.1.1={
+#	holder=1265 # Morigan
+#}

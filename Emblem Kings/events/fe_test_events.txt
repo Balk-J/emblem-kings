@@ -30,30 +30,22 @@ character_event = {
 	
 	hide_window = yes
 	is_triggered_only = yes 
+	trigger = {
+		can_inherit_major_loptyr_holy_blood_trigger = yes
+	}
 	
 	immediate = {
-		random_playable_ruler = {
-			limit = {western_isles_rebel_target_trigger = yes}
-			add_trait = war_dragon
+		if = {
+			limit = {
+				can_inherit_major_loptyr_holy_blood_trigger = yes
+			}
+			set_character_flag = can_inherit_major_loptyr_holy_blood
 		}
 		if = {
 			limit = {
-				NOT = {
-					any_independent_ruler = { western_isles_rebel_target_trigger = yes }
-				}
+				can_inherit_major_loptyr_holy_blood_trigger = no
 			}
-			add_trait = depressed
-		}
-		if = {
-			limit = { 
-				k_the_western_isles = {
-#					any_previous_holder = {
-#						always = yes
-#					}
-					has_holder = yes
-				}
-			} 
-			add_trait = drunkard
+			set_character_flag = cannot_inherit_major_loptyr_holy_blood
 		}
 	}
 	

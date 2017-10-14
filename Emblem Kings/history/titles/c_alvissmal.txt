@@ -14,3 +14,9 @@
 	liege = d_edda
 	holder=0 # Blagi
 }
+760.1.1={
+	holder=1337 # Boyce
+}
+779.1.1={
+	holder=0 
+}

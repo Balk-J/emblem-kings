@@ -25,7 +25,7 @@
 	holder = 1159 # Calf
 }
 763.1.1={
-	holder = 1058 # Raydrik? TODO: fix ID
+	holder = 1356 # Gustav
 }
 777.1.1={
 	holder = 1162 # Leif 
