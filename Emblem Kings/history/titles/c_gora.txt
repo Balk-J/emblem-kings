@@ -6,3 +6,6 @@
 	liege = d_sailane
 	#holder = 0
 }
+779.1.1={
+	holder = 1489 # Karin
+}

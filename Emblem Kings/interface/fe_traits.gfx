@@ -861,15 +861,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_secretly_mairist"
-		texturefile = "gfx/traits/secret_religion_mairist.tga"
+		name = "GFX_trait_secretly_maerist"
+		texturefile = "gfx/traits/secret_religion_maerist.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_major_baldur"
-		texturefile = "gfx/traits/holy_blood_major_baldur.tga"
+		name = "GFX_trait_holy_blood_major_baldr"
+		texturefile = "gfx/traits/holy_blood_major_baldr.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -889,8 +889,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_major_fala"
-		texturefile = "gfx/traits/holy_blood_major_fala.tga"
+		name = "GFX_trait_holy_blood_major_fjalar"
+		texturefile = "gfx/traits/holy_blood_major_fjalar.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -938,15 +938,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_major_odo"
-		texturefile = "gfx/traits/holy_blood_major_odo.tga"
+		name = "GFX_trait_holy_blood_major_od"
+		texturefile = "gfx/traits/holy_blood_major_od.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_major_tordo"
-		texturefile = "gfx/traits/holy_blood_major_tordo.tga"
+		name = "GFX_trait_holy_blood_major_thrud"
+		texturefile = "gfx/traits/holy_blood_major_thrud.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -959,8 +959,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_minor_baldur"
-		texturefile = "gfx/traits/holy_blood_minor_baldur.tga"
+		name = "GFX_trait_holy_blood_minor_baldr"
+		texturefile = "gfx/traits/holy_blood_minor_baldr.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -980,8 +980,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_minor_fala"
-		texturefile = "gfx/traits/holy_blood_minor_fala.tga"
+		name = "GFX_trait_holy_blood_minor_fjalar"
+		texturefile = "gfx/traits/holy_blood_minor_fjalar.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1029,15 +1029,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_minor_odo"
-		texturefile = "gfx/traits/holy_blood_minor_odo.tga"
+		name = "GFX_trait_holy_blood_minor_od"
+		texturefile = "gfx/traits/holy_blood_minor_od.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_minor_tordo"
-		texturefile = "gfx/traits/holy_blood_minor_tordo.tga"
+		name = "GFX_trait_holy_blood_minor_thrud"
+		texturefile = "gfx/traits/holy_blood_minor_thrud.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

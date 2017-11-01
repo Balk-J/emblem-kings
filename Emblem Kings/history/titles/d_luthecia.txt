@@ -17,3 +17,9 @@
 	liege = k_thracia
 	de_jure_liege = k_thracia
 }
+749.1.1={
+	holder=1454 # Disler 
+}
+778.1.1={
+	holder=0 
+}

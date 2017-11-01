@@ -1,5 +1,5 @@
 180.1.1={
-	liege=c_spakona
+	liege=c_galar
 }
 764.1.1={
 	holder=1053 # Saias, to keep him hidden from Manfroy

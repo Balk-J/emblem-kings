@@ -15,3 +15,6 @@
 745.1.1={
 	holder=1361 # Aizenau
 }
+777.1.1={
+	holder=1431 # Ovo
+}

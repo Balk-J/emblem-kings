@@ -106,9 +106,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				can_inherit_baldur_holy_blood_trigger = yes
+				can_inherit_baldr_holy_blood_trigger = yes
 			}
-			add_trait = holy_blood_latent_baldur
+			add_trait = holy_blood_latent_baldr
 		}
 		if = {
 			limit = {
@@ -124,9 +124,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				can_inherit_fala_holy_blood_trigger = yes
+				can_inherit_fjalar_holy_blood_trigger = yes
 			}
-			add_trait = holy_blood_latent_fala
+			add_trait = holy_blood_latent_fjalar
 		}
 		if = {
 			limit = {
@@ -154,15 +154,15 @@ character_event = {
 		}
 		if = {
 			limit = {
-				can_inherit_odo_holy_blood_trigger = yes
+				can_inherit_od_holy_blood_trigger = yes
 			}
-			add_trait = holy_blood_latent_odo
+			add_trait = holy_blood_latent_od
 		}
 		if = {
 			limit = {
-				can_inherit_tordo_holy_blood_trigger = yes
+				can_inherit_thrud_holy_blood_trigger = yes
 			}
-			add_trait = holy_blood_latent_tordo
+			add_trait = holy_blood_latent_thrud
 		}
 		if = {
 			limit = {
@@ -327,7 +327,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = holy_blood_latent_baldur
+				trait = holy_blood_latent_baldr
 			}
 			# What can they get?
 			random_list = {	
@@ -337,35 +337,35 @@ character_event = {
 						OR = {
 							has_major_holy_blood_trigger = yes
 							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_baldur_holy_blood_trigger = yes }
+							NOT = { can_inherit_major_baldr_holy_blood_trigger = yes }
 						}						
 					}
 					modifier = {
 						factor = 0.05
 						any_sibling = {
-							trait=holy_blood_major_baldur
+							trait=holy_blood_major_baldr
 						}						
 					}
 					modifier = {
 						factor = 2
 						NOT = {
 							any_sibling = { # any_sibling_even_if_dead = { 
-								trait=holy_blood_major_baldur
+								trait=holy_blood_major_baldr
 							}	
 						}						
 					}
-					add_trait=holy_blood_major_baldur
+					add_trait=holy_blood_major_baldr
 				}
 				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
-					add_trait=holy_blood_minor_baldur					
+					add_trait=holy_blood_minor_baldr					
 				}		
 				25 = {} # Nothing!
 			}	
-			remove_trait = holy_blood_latent_baldur			
+			remove_trait = holy_blood_latent_baldr			
 		}
 		if = {
 			limit = {
@@ -453,7 +453,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = holy_blood_latent_fala
+				trait = holy_blood_latent_fjalar
 			}
 			# What can they get?
 			random_list = {	
@@ -463,35 +463,35 @@ character_event = {
 						OR = {
 							has_major_holy_blood_trigger = yes
 							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_fala_holy_blood_trigger = yes }
+							NOT = { can_inherit_major_fjalar_holy_blood_trigger = yes }
 						}						
 					}
 					modifier = {
 						factor = 0.05
 						any_sibling = {
-							trait=holy_blood_major_fala
+							trait=holy_blood_major_fjalar
 						}						
 					}
 					modifier = {
 						factor = 2
 						NOT = {
 							any_sibling = { # any_sibling_even_if_dead = { 
-								trait=holy_blood_major_fala
+								trait=holy_blood_major_fjalar
 							}	
 						}						
 					}
-					add_trait=holy_blood_major_fala
+					add_trait=holy_blood_major_fjalar
 				}
 				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
-					add_trait=holy_blood_minor_fala					
+					add_trait=holy_blood_minor_fjalar					
 				}		
 				25 = {} # Nothing!
 			}	
-			remove_trait = holy_blood_latent_fala			
+			remove_trait = holy_blood_latent_fjalar			
 		}
 		if = {
 			limit = {
@@ -663,7 +663,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = holy_blood_latent_odo
+				trait = holy_blood_latent_od
 			}
 			# What can they get?
 			random_list = {	
@@ -673,39 +673,39 @@ character_event = {
 						OR = {
 							has_major_holy_blood_trigger = yes
 							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_odo_holy_blood_trigger = yes }
+							NOT = { can_inherit_major_od_holy_blood_trigger = yes }
 						}						
 					}
 					modifier = {
 						factor = 0.05
 						any_sibling = {
-							trait=holy_blood_major_odo
+							trait=holy_blood_major_od
 						}						
 					}
 					modifier = {
 						factor = 2
 						NOT = {
 							any_sibling = { # any_sibling_even_if_dead = { 
-								trait=holy_blood_major_odo
+								trait=holy_blood_major_od
 							}	
 						}						
 					}
-					add_trait=holy_blood_major_odo
+					add_trait=holy_blood_major_od
 				}
 				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
-					add_trait=holy_blood_minor_odo					
+					add_trait=holy_blood_minor_od					
 				}		
 				25 = {} # Nothing!
 			}	
-			remove_trait = holy_blood_latent_odo			
+			remove_trait = holy_blood_latent_od			
 		}
 		if = {
 			limit = {
-				trait = holy_blood_latent_tordo
+				trait = holy_blood_latent_thrud
 			}
 			# What can they get?
 			random_list = {	
@@ -715,35 +715,35 @@ character_event = {
 						OR = {
 							has_major_holy_blood_trigger = yes
 							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_tordo_holy_blood_trigger = yes }
+							NOT = { can_inherit_major_thrud_holy_blood_trigger = yes }
 						}						
 					}
 					modifier = {
 						factor = 0.05
 						any_sibling = {
-							trait=holy_blood_major_tordo
+							trait=holy_blood_major_thrud
 						}						
 					}
 					modifier = {
 						factor = 2
 						NOT = {
 							any_sibling = { # any_sibling_even_if_dead = { 
-								trait=holy_blood_major_tordo
+								trait=holy_blood_major_thrud
 							}	
 						}						
 					}
-					add_trait=holy_blood_major_tordo
+					add_trait=holy_blood_major_thrud
 				}
 				45 = { # Minor
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
-					add_trait=holy_blood_minor_tordo					
+					add_trait=holy_blood_minor_thrud					
 				}		
 				25 = {} # Nothing!
 			}	
-			remove_trait = holy_blood_latent_tordo			
+			remove_trait = holy_blood_latent_thrud			
 		}
 		if = {
 			limit = {

@@ -1,0 +1,9 @@
+747.1.1={
+	holder=1439 # Dagdar 
+}
+776.1.1={
+	holder=1441 # Gomes 
+}
+777.1.1={
+	holder=0 # Destroyed 
+}

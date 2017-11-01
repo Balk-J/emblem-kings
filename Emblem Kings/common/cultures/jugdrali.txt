@@ -2,7 +2,7 @@ jugdrali = {
 	graphical_cultures = { westerngfx } # buildings, portraits, units
 	
 	grannvalean = {
-		graphical_cultures = { germangfx westerngfx }
+		graphical_cultures = { grannvaleangfx germangfx westerngfx }
 		
 		color = { 0.9 0.9 0.4 } # occitan
 		male_names = {
@@ -12,7 +12,7 @@ jugdrali = {
 			Azmur
 			Azelle
 			Baldack
-			Baldur
+			Baldr
 			Baran
 			Barat
 			Blagi
@@ -53,7 +53,7 @@ jugdrali = {
 			Lex
 			#Lobos
 			Lombard
-			Maira
+			Maera
 			Manfroy
 			Midir
 			Morigan
@@ -86,7 +86,7 @@ jugdrali = {
 			Sigurd
 			Slayder
 			Sleuf
-			Tordo
+			Thrud
 			Ulir
 			Victor
 			Veld
@@ -108,7 +108,7 @@ jugdrali = {
 			Eliu
 			Ethlyn
 			Ethnia
-			Fala
+			Fjalar
 			Fetra
 			Hilda
 			Ishtar
@@ -173,7 +173,6 @@ jugdrali = {
 			Pizarl 
 			Philip 
 			Tristan
-			Xavier
 			Zyne
 			# Breton names from vanilla. For no good reason.
 			Adoyre Adrien_Adrian Aedan_Hugh Agustin_August Alan_Alan Alar_Alaric Aldrien_Aldroenus Alfrond Alor Alured_Alfred Alwen_Alwin Anaoc
@@ -263,7 +262,6 @@ jugdrali = {
 			Maios
 			Olson
 #			Sety
-			Shannam
 			# Polish names from vanilla.
 			Aleksander_Alexander Andrzej_Andrew Bartosz_Bartolomeus Bezprym Boguchwal Bogumil Boleslaw_Boleslav Boncza_Bonifacius Borzyslaw Bozydar_Theodat Borzywoj_Borijov Budziwuj Czcibor_Ctibor Czyrzniech
 			Dalimir Daniel_Daniel Dobieslaw Dobrogost Dobromir Doman Domawuj Dytryk_Thierry Eustachy_Eustace Gaudenty Gierolt_Gerald Gniewomir Gniewosz Gosciwuj Goszczon Henryk_Henry Imram
@@ -321,8 +319,9 @@ jugdrali = {
 			Galzus
 			Mananan
 			Mariccle
-			Odo
+			Od
 			Shannan
+			Shannam
 			Ulster
 			# Welsh
 			Adda Adgar_Edgar Adran_Adrian Aeddan_Hugh Alan_Alan Aldwr_Aldroenus Algwyn_Alwin Alisander_Alexander Alured_Alfred Alwyn_Alwin Anarawd
@@ -425,7 +424,7 @@ jugdrali = {
 			Robert
 			Romeo
 			Salem
-			Shiva
+			#Shiva
 			Troude
 			Truman
 			Voltz
@@ -516,7 +515,7 @@ jugdrali = {
 			Coruta
 			Dain
 			Dagdar
-			Deen
+			Dean
 			Dobalzark
 			Disler
 			Gomes
@@ -535,6 +534,7 @@ jugdrali = {
 			Ronan
 			Rumei
 			Seimetol
+			Shiva
 			Travant
 			# Norman
 			Abelard Adam_Adam Adelard Ademar Alexander_Alexander Alfons_Alphonse Amaury_Amalric Anfroi Anquetil Anselm Armand Arnald_Arnold Asclettin Aubrey Baldwin_Baldwin
@@ -607,6 +607,7 @@ jugdrali = {
 			Ronan
 			Rumei
 			Seimetol
+			Shiva
 			Travant
 			# Norman
 			Abelard Adam_Adam Adelard Ademar Alexander_Alexander Alfons_Alphonse Amaury_Amalric Anfroi Anquetil Anselm Armand Arnald_Arnold Asclettin Aubrey Baldwin_Baldwin
@@ -651,7 +652,7 @@ jugdrali = {
 			Robert
 			Romeo
 			Salem
-			Shiva
+			#Shiva
 			Troude
 			Truman
 			Voltz
@@ -799,6 +800,7 @@ jugdrali = {
 		used_for_random = no
 
 		male_names = {
+			Baldr
 			Ale Alfr_Alf Alfgeir Anders_Andrew Anlaufr Anundr_Anund Arnbjörn Arngrimr Arni_Arne Arnfast Asbjörn_Asbjörn Bagge Baldr_Balder Barid Bengt_Benedict Bersi Bertil Birger Björn_Beorn Bo Borkvard Botulfr Bragi_Brage Buðli
 			Dag Dan Dyre Eilif Egill_Egil Emund Einarr_Einar Eirikr_Erik Eskild Falki Faste Filip_Philip Fredrik_Frederick Frirek Froði_Frode Freyr_Frej Folki_Folke Gandalfr Geirr Georg_George Gnupa_Gnupa Gorm_Gorm Greger_Gregory Grimr_Grim Guðfrið_Godfrey Guðmundr_Gudmund Guðröðr_Gudröd Gunnarr_Gunnar Hakon_Hakon Halsten Haraldr_Harold Haukr Helgi_Helge
 			Hemming Holmger Hrafn Hrolfr_Rolf Hrane Hæsteinn Hjalmar_Hjalmar Hroðgar Hroðulfr Hrörekr_Rurik Hysing Ingólfr_Ingolf Ingemar Ingjald Ivar_Ivar Jedvard_Edward Jon_John Karl_Charles Kettil Kettilmund Kjartan Klas Knut_Knut Kol Kolbjörn Magnus_Magnus Markus_Marcus 

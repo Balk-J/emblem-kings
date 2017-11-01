@@ -521,7 +521,7 @@
 	father=818
 	dynasty=801
 	culture=verdanian
-	religion=mairist
+	religion=maerist
 	trait=holy_blood_latent_loptyr
 	540.1.1={
 		birth=yes
@@ -945,5 +945,303 @@
 		death = {
 			death_reason=death_missing
 		} 
+	}
+}
+1507={
+	name="Emund"
+	culture=verdanian
+	religion=bandit
+	742.1.1={
+		birth=yes
+	}
+	754.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1508={
+	name="Kettilmund"
+	culture=verdanian
+	religion=bandit
+	741.1.1={
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1509={
+	name="Suni"
+	culture=verdanian
+	religion=bandit
+	740.1.1={
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1510={
+	name="Styrkar"
+	culture=verdanian
+	religion=bandit
+	739.1.1={
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1511={
+	name="Markus"
+	culture=verdanian
+	religion=bandit
+	738.1.1={
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1512={
+	name="Holmger"
+	culture=verdanian
+	religion=bandit
+	737.1.1={
+		birth=yes
+	}
+	749.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1513={
+	name="Buðli"
+	culture=verdanian
+	religion=bandit
+	736.1.1={
+		birth=yes
+	}
+	748.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1514={
+	name="Yngvar"
+	culture=verdanian
+	religion=bandit
+	737.1.1={
+		birth=yes
+	}
+	749.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1515={
+	name="Styrbjörn"
+	culture=verdanian
+	religion=bandit
+	738.1.1={
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1516={
+	name="Arnfast"
+	culture=verdanian
+	religion=bandit
+	739.1.1={
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1517={
+	name="Sturla"
+	culture=verdanian
+	religion=bandit
+	740.1.1={
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+1518={
+	name="Jon"
+	culture=verdanian
+	religion=bandit
+	741.1.1={
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_brigand"
+		add_trait="base_class_brigand"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+# Thief from Verdane
+1438={
+	name="Dew" 
+	dynasty=2158
+	culture=verdanian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	744.1.1={ # 13 in 757?
+		birth=yes
+		add_trait="rowdy"
+		add_trait="playful"
+		add_trait="affectionate"
+		employer=1183 # Munnir
+	}
+	756.01.01={
+		add_trait="class_thief"
+		add_trait="base_class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	758.1.1 = {
+		employer=1032 # Sigurd
+	}	 
+	759.1.1 = {
+		add_trait="intricate_webweaver"
+		add_trait="light_infantry_leader"
+		add_trait="brave"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="gregarious"
+		add_trait="deceitful"
+	}
+	760.01.01={
+		remove_trait="class_thief"
+		add_trait="class_rogue"
+	} 
+	# Died at the Battle of Belhalla?
+	761.1.1={
+		death = {
+			death_reason=death_execution_burning
+			killer=1049 # Arvis
+		}
 	}
 }

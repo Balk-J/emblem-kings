@@ -1,0 +1,12 @@
+180.1.1={
+	liege = c_dakia
+	#holder = 0
+}
+771.1.1={
+	holder=1398 # Perne
+	liege=d_dandelion_gang
+}
+777.1.1={
+	holder=0 
+	liege=c_dakia
+}

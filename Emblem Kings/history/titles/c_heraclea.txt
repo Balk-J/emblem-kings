@@ -14,3 +14,6 @@
 	holder = 0 
 	liege = d_kapathogia
 }
+757.1.1={
+	holder=1456 # Kanatz 
+}

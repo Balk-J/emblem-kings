@@ -30,7 +30,14 @@
 756.1.1={
 	holder=1341 # Carl
 }
+762.1.1={
+	liege = k_thracia # Travant invades
+}
+762.1.1={
+	holder=1340 # Raydrik
+}
 763.1.1={
+	liege = k_manster # Grannvale invades
 	holder=1058 # Bloom
 }
 778.1.1={

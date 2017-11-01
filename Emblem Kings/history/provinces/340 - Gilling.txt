@@ -1,16 +1,15 @@
-# 338 - Spakona
+# 340 - Gilling
 
 # County Title
-title = c_spakona
+title = c_gilling
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 
-b_spakona = castle
-b_spakona_2 = temple
-#b_spakona_3 = city
-#b_volur = city
-#b_spae = city
+b_gilling = castle
+b_gilling_2 = temple
+#b_gilling_3 = city
+#b_gunnlod = temple
 
 # Misc
 culture = grannvalean
@@ -20,11 +19,11 @@ religion = church_of_edda
 440.1.1 = { 
 	religion = earthen_pagan
 	culture = grann
-	b_spakona = tribal
+	b_gilling = tribal
 }
 500.1.1 = { 
-	b_spakona = castle
-	b_spakona_3 = city
+	b_gilling = castle
+	b_gilling_3 = city
 }
 649.1.1 = { 
 	religion = church_of_edda

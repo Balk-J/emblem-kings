@@ -9,6 +9,9 @@
 746.1.1={
 	holder=1340 # Raydrik
 }
+777.1.1={
+	holder = 1434 # Vampa 
+}
 778.1.1={
-	holder = 1162 # Leif 
+	holder = 0#1162 # Leif 
 }

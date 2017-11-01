@@ -14,3 +14,13 @@
 	holder=0 
 	liege = d_alster
 }
+776.1.1={
+	holder=1330 # Mueller
+}
+777.1.1={
+	holder=1435 # Fetra
+}
+778.1.1={
+	holder=0#1162 # Leif
+}
+

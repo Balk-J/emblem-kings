@@ -35,6 +35,7 @@ nick_the_lance_knight = {}
 nick_the_scion_of_light = {}
 nick_the_scion_of_darkness = {}
 nick_the_shield_of_thracia = {}
+nick_the_hitman_from_conote = {}
 
 #Black Fang
 nick_the_white_wolf = {}

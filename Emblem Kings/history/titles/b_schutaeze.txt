@@ -5,11 +5,5 @@
 	holder=1329 # Fred's father
 }
 770.1.1={
-	holder=1058 # Bloom
-}
-778.1.1={
-	holder=1067 # Ishtar
-}
-779.1.1={
-	holder=1328 # Fred
+	holder=0 # 
 }

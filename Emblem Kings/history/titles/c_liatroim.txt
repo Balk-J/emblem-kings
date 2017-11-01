@@ -6,3 +6,12 @@
 	liege = d_conote
 	#holder = 0
 }
+763.1.1={
+	holder = 1416 # Barat 
+}
+777.1.1={
+	holder = 1434 # Vampa 
+}
+778.1.1={
+	holder = 0#1162 # Leif 
+}

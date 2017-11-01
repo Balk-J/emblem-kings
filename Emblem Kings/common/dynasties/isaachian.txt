@@ -56,6 +56,72 @@
         }
     }
 }
+# for Deimne/Muirne
+2177={
+	can_appear=no
+	used_for_random=no
+	name="of Isaach"
+	culture="isaachian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 2
+            texture_internal = 11
+            emblem = 0
+            color = 0
+            color = 11
+            color = 12
+        }
+    } 
+}
+# For Karen
+2178={
+	name="of Avrame"
+	culture="isaachian"
+	religion="church_of_edda"
+}
+# for Creidne/Dalvin
+2179={
+	can_appear=no
+	used_for_random=no
+	name="of Tirtairngire"
+	culture="isaachian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 2
+            texture_internal = 11
+            emblem = 0
+            color = 0
+            color = 11
+            color = 12
+        }
+    } 
+}
+# for Shannam
+2187={
+	can_appear=no
+	used_for_random=no
+	name="of Isaach"
+	culture="isaachian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 19
+            emblem = 0
+            color = 0
+            color = 6
+            color = 9
+        }
+    } 
+}
 # Welsh names from vanilla
 1401={
 	name="Caradoc"

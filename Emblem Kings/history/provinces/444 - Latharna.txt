@@ -33,3 +33,6 @@ b_latharna_3 = city
 666.1.1 = { 
 	culture = mansterian
 }
+770.1.1 = { 
+	b_inbhear_beg = castle
+}

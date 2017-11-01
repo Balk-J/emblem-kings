@@ -6,10 +6,12 @@
 	liege = d_tahra
 	#holder = 0
 }
-440.1.1 = { 
+440.1.1={
+	holder=885 # 
 	liege = d_luthecia
 }
 649.1.1={
+	holder=0 
 	liege = d_tahra
 }
 750.1.1={

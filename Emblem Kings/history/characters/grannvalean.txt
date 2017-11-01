@@ -40,7 +40,7 @@
 	}
 }
 1002={
-	name="Baldur"
+	name="Baldr"
 	dynasty=1002
 	culture=grannvalean
 	religion=church_of_edda
@@ -68,7 +68,7 @@
 	632.1.1 = {
 		give_nickname=nick_the_holy_knight
 		add_trait="crusader_draconic"
-		add_trait="holy_blood_major_baldur"
+		add_trait="holy_blood_major_baldr"
 	}
 	# Founding of Jugdral
 	649.1.1 = {
@@ -88,7 +88,7 @@
 	616.1.1={
 		birth=yes
 		culture=grann
-		religion=mairist
+		religion=maerist
 	}
 	628.01.01={
 		add_trait="class_priest"
@@ -121,7 +121,7 @@
 	}
 }
 1004={
-	name="Fala"
+	name="Fjalar"
 	female=yes
 	dynasty=1004
 	culture=grannvalean
@@ -152,7 +152,7 @@
 	632.1.1 = {
 		give_nickname=nick_the_mage_fighter
 		add_trait="crusader_draconic"
-		add_trait="holy_blood_major_fala"
+		add_trait="holy_blood_major_fjalar"
 	}
 	# Founding of Jugdral
 	649.1.1 = {
@@ -164,7 +164,7 @@
 	}
 }
 1005={
-	name="Tordo"
+	name="Thrud"
 	dynasty=1005
 	culture=grannvalean
 	religion=church_of_edda
@@ -193,7 +193,7 @@
 	632.1.1 = {
 		give_nickname=nick_the_mage_knight
 		add_trait="crusader_draconic"
-		add_trait="holy_blood_major_tordo"
+		add_trait="holy_blood_major_thrud"
 	}
 	# Founding of Jugdral
 	649.1.1 = {
@@ -448,7 +448,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	700.1.1={
 		birth=yes
 	}
@@ -459,8 +459,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_major_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_major_baldr"
 	} 
 	715.1.1 = {
 		add_trait="skilled_tactician"
@@ -501,7 +501,7 @@
 	name="Sigurd"
 #	dna="dehaczgbaak"
 #	properties="fd0e0d00000000"  
-	dna="cf0ge0gb0f0"
+	dna="cf0ge0gblf0"
 	properties="fd0e0d00000000"
 	dynasty=1002
 	father=1031 # Byron
@@ -509,7 +509,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	# 22 in 9/757. Born in 734?
 	#735.1.1={
 	734.9.1={
@@ -523,8 +523,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_major_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_major_baldr"
 	} 
 	#728.1.1 = {
 	749.9.1 = {
@@ -568,7 +568,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	# Serenes says she's 16 in 9/757. Wikia says born in 739. These are not compatible.
 	# Altena was born in 757 (3 at the time of Yied Massacre), so at Ethlin's youngest she was born in 741 (assume she marries at 15 and has Altena by age 16). This puts her at 16 for the 757 bookmark. Going with that to remain consistent with the other Serenes ages.
 	#739.12.1={
@@ -583,8 +583,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_minor_baldr"
 	} 
 	#728.12.1 = {
 	756.1.1 = {
@@ -637,7 +637,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	trait=genius
 	# 14 in 9/757
 	743.1.1={
@@ -650,8 +650,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_minor_baldr"
 	} 
 	758.1.1 = {
 		add_trait="skilled_tactician"
@@ -686,7 +686,7 @@
 	dynasty=1002
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	trait=genius
 	711.1.1={ # we can mess with this, but his birth date can't be any later.
 		birth=yes
@@ -698,8 +698,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_minor_baldr"
 	} 
 	726.1.1 = {
 		add_trait="brilliant_strategist"
@@ -728,7 +728,7 @@
 	father=1036 # Sesar
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	trait=quick
 	727.1.1={
 		birth=yes
@@ -740,8 +740,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_minor_baldr"
 	} 
 	 
 	747.1.1={
@@ -753,7 +753,7 @@
 # Our other hero
 1038={
 	name="Seliph"  
-	dna="00bfc0ib0f0"
+	dna="00bfc0iblf0"
 	properties="fg0e0k00000000"
 	dynasty=1002
 	father=1032 # Sigurd
@@ -761,7 +761,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	trait=holy_blood_latent_naga
 	759.1.1={
 		birth=yes
@@ -769,8 +769,8 @@
 	771.1.1={
 		add_trait="class_myrmidon"
 		add_trait="base_class_myrmidon"
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_major_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_major_baldr"
 		remove_trait="holy_blood_latent_naga"
 		add_trait="holy_blood_minor_naga"
 		effect = {
@@ -1164,15 +1164,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	710.1.1={
 		birth=yes
 	}
 	722.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_fala"
-			add_trait="holy_blood_major_fala"
+			remove_trait="holy_blood_latent_fjalar"
+			add_trait="holy_blood_major_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -1226,7 +1226,8 @@
 # Duke of Velthomer, then Emperor of Grannvale. World-class cat's paw.
 1049={
 	name="Arvis"
-	dna="0ficb0ebj00"
+	#dna="0ficb0ebj00"
+	dna="0ficb0ebk00"
 	properties="cj0d0d00000000"
 	dynasty=1004
 	father=1048 # Victor
@@ -1234,7 +1235,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	trait=holy_blood_latent_loptyr
 	trait=quick # "Gift of Kings"?
 	732.1.1={
@@ -1243,8 +1244,8 @@
 	744.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_fala"
-			add_trait="holy_blood_major_fala"
+			remove_trait="holy_blood_latent_fjalar"
+			add_trait="holy_blood_major_fjalar"
 			remove_trait="holy_blood_latent_loptyr"
 			add_trait="holy_blood_minor_loptyr"
 		effect = {
@@ -1297,7 +1298,8 @@
 # close friends with Lex of Dozel and Tailto of Friege 
 1050={
 	name="Azelle"
-	dna="cgbfh0cbj00"
+	#dna="cgbfh0cbj00"
+	dna="cgbfh0cbk00"
 	properties="hd0a0k00000000"
 	dynasty=1004
 	father=1048 # Victor
@@ -1305,7 +1307,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	739.1.1={
 		birth=yes
 		effect = {
@@ -1353,8 +1355,8 @@
 	751.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_fala"
-			add_trait="holy_blood_minor_fala"
+			remove_trait="holy_blood_latent_fjalar"
+			add_trait="holy_blood_minor_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -1391,7 +1393,8 @@
 # The Scion of Darkness
 1051={
 	name="Julius"  
-	dna="0gice0a0j00"
+	#dna="0gice0a0j00"
+	dna="0gice0a0k00"
 	properties="hn0a0000000000"
 	dynasty=1004
 	father=1049 # Arvis
@@ -1401,7 +1404,7 @@
 	disallow_random_traits=yes
 	trait=holy_blood_latent_loptyr
 	trait=holy_blood_latent_naga
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	trait=twin
 	# Arvis & Deirdre start their relationship while Sigurd was in Silesse, and marry shortly before the Battle of Belhalla. Let's say the twins were born a little after?
 	761.1.1={
@@ -1410,8 +1413,8 @@
 	
 	769.1.1={
 		remove_trait="holy_blood_latent_naga"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_minor_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_minor_fjalar"
 		remove_trait="holy_blood_latent_loptyr"
 		add_trait="holy_blood_major_loptyr"
 	} 
@@ -1461,7 +1464,7 @@
 	disallow_random_traits=yes
 	trait=holy_blood_latent_loptyr
 	trait=holy_blood_latent_naga
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	trait=twin
 	# Arvis & Deirdre start their relationship while Sigurd was in Silesse, and marry shortly before the Battle of Belhalla. Let's say the twins were born a little after?
 	761.1.1={
@@ -1470,8 +1473,8 @@
 	
 	769.1.1={
 		remove_trait="holy_blood_latent_loptyr"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_minor_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_minor_fjalar"
 		remove_trait="holy_blood_latent_naga"
 		add_trait="holy_blood_major_naga"
 	} 
@@ -1505,7 +1508,8 @@
 # the illegitimate son of Arvis and his lieutenant Aida
 1053={
 	name="Saias"
-	dna="aebhbtibjaz"
+	#dna="aebhbtibjaz"
+	dna="aebhbtibkaz"
 	properties="ce0j0j00000000"
 	dynasty=1015
 	#father=1049 # Arvis
@@ -1513,7 +1517,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	trait=holy_blood_latent_loptyr
 	trait=bastard
 	trait=quick
@@ -1531,8 +1535,8 @@
 	761.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_fala"
-			add_trait="holy_blood_major_fala"
+			remove_trait="holy_blood_latent_fjalar"
+			add_trait="holy_blood_major_fjalar"
 			remove_trait="holy_blood_latent_loptyr"
 			#add_trait="holy_blood_minor_loptyr" # As fun as it would be, there's no sign of it.
 		effect = {
@@ -1667,15 +1671,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	699.1.1={
 		birth=yes
 	}
 	721.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_major_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_major_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -1728,7 +1732,7 @@
 # A tyrant, but a nice guy compared to Hilda.
 1058={
 	name="Bloom"
-	dna="acfdvaaaah"
+	dna="acfdf0aaqa0"
 	properties="am0b0b00000000"
 	father=1056 # Reptor
 	mother=1057 # filler
@@ -1736,15 +1740,16 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
+	stewardship=2
 	739.1.1={
 		birth=yes
 	}
 	751.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_major_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_major_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -1780,7 +1785,7 @@
 	dynasty=1005
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	trait=sickly
 	740.1.1={
 		birth=yes
@@ -1801,15 +1806,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	741.1.1={ # 16 in 757
 		birth=yes
 	}
 	753.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_minor_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_minor_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -1857,15 +1862,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	#disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	742.1.1={ 
 		birth=yes
 	}
 	754.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_minor_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_minor_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -1905,15 +1910,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	761.1.1={
 		birth=yes
 	}
 	773.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_minor_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_minor_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -1987,15 +1992,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	764.1.1={ # Kaga scenario has her as 13...
 		birth=yes
 	}
 	776.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_minor_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_minor_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -2087,15 +2092,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	761.1.1={
 		birth=yes
 	}
 	773.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_minor_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_minor_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -2169,15 +2174,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	764.1.1={ 
 		birth=yes
 	}
 	776.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_minor_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_minor_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -2270,7 +2275,7 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	759.1.1={
 		birth=yes
 	}
@@ -2280,8 +2285,8 @@
 	771.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_minor_tordo"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_minor_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -2317,8 +2322,8 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_tordo
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_thrud
+	trait=holy_blood_latent_fjalar
 	761.1.1={
 		birth=yes
 	}
@@ -2328,10 +2333,10 @@
 	773.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_tordo"
-			add_trait="holy_blood_major_tordo"
-			remove_trait="holy_blood_latent_fala"
-#			add_trait="holy_blood_minor_fala"
+			remove_trait="holy_blood_latent_thrud"
+			add_trait="holy_blood_major_thrud"
+			remove_trait="holy_blood_latent_fjalar"
+#			add_trait="holy_blood_minor_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -2408,15 +2413,15 @@
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	740.1.1={
 		birth=yes
 	}
 	752.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-			remove_trait="holy_blood_latent_fala"
-			add_trait="holy_blood_minor_fala"
+			remove_trait="holy_blood_latent_fjalar"
+			add_trait="holy_blood_minor_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3021,6 +3026,9 @@
 		add_trait="aggressive_leader"
 		add_trait="rough_terrain_leader"
 	}	
+	759.6.1={
+		employer=1505 # Pizarl
+	}
 	760.1.1={
 		employer=1032 # Sigurd
 		effect = { 
@@ -3345,7 +3353,7 @@
 		birth=yes
 	}
 	772.01.01={
-		add_trait="class_archer"
+		add_trait="class_horse_archer"
 		add_trait="base_class_horse_archer"
 			remove_trait="holy_blood_latent_ulir"
 			add_trait="holy_blood_minor_ulir"
@@ -3548,15 +3556,15 @@
 	dynasty=1002
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	651.1.1={
 		birth=yes
 	}
 	663.01.01={
 		add_trait="class_cavalier"
 		add_trait="base_class_cavalier"
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_major_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_major_baldr"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3579,15 +3587,15 @@
 	dynasty=1002
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	652.1.1={
 		birth=yes
 	}
 	664.01.01={
 		add_trait="class_cavalier"
 		add_trait="base_class_cavalier"
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_minor_baldr"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3608,15 +3616,15 @@
 	dynasty=1002
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	668.1.1={
 		birth=yes
 	}
 	680.01.01={
 		add_trait="class_cavalier"
 		add_trait="base_class_cavalier"
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_major_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_major_baldr"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3639,15 +3647,15 @@
 	dynasty=1002
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	684.1.1={
 		birth=yes
 	}
 	696.01.01={
 		add_trait="class_cavalier"
 		add_trait="base_class_cavalier"
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_major_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_major_baldr"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3669,15 +3677,15 @@
 	dynasty=1002
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	683.1.1={
 		birth=yes
 	}
 	695.01.01={
 		add_trait="class_cavalier"
 		add_trait="base_class_cavalier"
-		remove_trait="holy_blood_latent_baldur"
-		add_trait="holy_blood_minor_baldur"
+		remove_trait="holy_blood_latent_baldr"
+		add_trait="holy_blood_minor_baldr"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3748,15 +3756,15 @@
 	dynasty=1004
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	650.1.1={
 		birth=yes
 	}
 	662.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_major_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_major_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3777,15 +3785,15 @@
 	dynasty=1004
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	655.1.1={
 		birth=yes
 	}
 	667.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_minor_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_minor_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3804,15 +3812,15 @@
 	dynasty=1004
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	668.1.1={
 		birth=yes
 	}
 	680.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_major_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_major_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3833,15 +3841,15 @@
 	dynasty=1004
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	686.1.1={
 		birth=yes
 	}
 	680.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_major_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_major_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3880,15 +3888,15 @@
 	dynasty=1017
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	675.1.1={
 		birth=yes
 	}
 	687.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_minor_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_minor_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3904,15 +3912,15 @@
 	dynasty=1017
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_fala
+	trait=holy_blood_latent_fjalar
 	708.1.1={
 		birth=yes
 	}
 	720.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_fala"
-		add_trait="holy_blood_minor_fala"
+		remove_trait="holy_blood_latent_fjalar"
+		add_trait="holy_blood_minor_fjalar"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3929,15 +3937,15 @@
 	dynasty=1005
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	650.1.1={
 		birth=yes
 	}
 	662.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_tordo"
-		add_trait="holy_blood_major_tordo"
+		remove_trait="holy_blood_latent_thrud"
+		add_trait="holy_blood_major_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3960,15 +3968,15 @@
 	dynasty=1005
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	667.1.1={
 		birth=yes
 	}
 	679.01.01={
 		add_trait="class_mage_female"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_tordo"
-		add_trait="holy_blood_major_tordo"
+		remove_trait="holy_blood_latent_thrud"
+		add_trait="holy_blood_major_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -3988,15 +3996,15 @@
 	dynasty=1005
 	culture=grannvalean
 	religion=church_of_edda
-	trait=holy_blood_latent_tordo
+	trait=holy_blood_latent_thrud
 	683.1.1={
 		birth=yes
 	}
 	695.01.01={
 		add_trait="class_mage"
 		add_trait="base_class_mage"
-		remove_trait="holy_blood_latent_tordo"
-		add_trait="holy_blood_major_tordo"
+		remove_trait="holy_blood_latent_thrud"
+		add_trait="holy_blood_major_thrud"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -4480,6 +4488,10 @@
 		employer = 1162 # Leif
 	} 
 	779.1.1 = {
+		remove_trait="willful"
+		remove_trait="brooding"
+		remove_trait="playful"
+		
 		add_trait="scholarly_theologian"
 		add_trait="depressed"
 		add_trait="content"
@@ -5639,7 +5651,7 @@
 	}
 }
 1300={
-	name=""
+	name="Gorm"
 	culture=grann
 	religion=earthen_pagan
 	629.1.1={
@@ -6201,7 +6213,8 @@
 	776.1.1 = {
 		remove_trait="class_mage_female"
 		add_trait="class_mage_knight_female"
-	}
+		employer=1421 # Kempf
+	}	
 	777.1.1 = {
 		employer=1162 # Leif
 	}
@@ -6657,6 +6670,9 @@
 		add_trait=just
 		add_trait=brave
 	}	
+	776.1.1={ 
+		employer=1437 # Solwood
+	}	
 	777.1.1 = {
 		remove_trait="class_priest"
 		add_trait="class_bishop"
@@ -6732,6 +6748,825 @@
 		death = {
 			death_reason=death_battle
 			killer=1162 # Leif
+		}
+	}
+}
+# One of Bloom's more capable generals. Leads the attempt to retake Leonster.
+1416={
+	name="Barat"
+	dynasty=2143
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	746.1.1={ 
+		birth=yes
+		employer=1056 # Reptor
+	}
+	758.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	761.1.1 = {
+		add_trait=skilled_tactician
+		add_trait=heavy_infantry_leader
+		add_trait=aggressive_leader
+		add_trait=experimenter
+		add_trait=wroth
+		add_trait=proud
+		add_trait=just
+	}	
+	766.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Honorable general of Friege who is strongly opposed to the child hunting
+1417={
+	name="Amalda"
+	female=yes
+	dynasty=2144
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	752.1.1={ # 24 in 776
+		birth=yes
+		employer=1056 # Reptor
+	}
+	764.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	767.1.1 = {
+		add_trait=tough_soldier
+		add_trait=cavalry_leader
+		add_trait=defensive_leader
+		add_trait=kind
+		add_trait=just
+		add_trait=humble
+	}	
+	770.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+		add_trait=depressed
+	}	
+	810.1.1={
+		death = yes
+	}
+}
+# A ruthless mercenary tasked with capturing refugees from Tahra. 
+1418={
+	name="Aihiman" # Eigan?
+	dynasty=2145
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	757.1.1={ 
+		birth=yes
+		employer=1056 # Reptor
+	}
+	769.01.01={
+		add_trait="class_mercenary"
+		add_trait="base_class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	772.1.1 = {
+		add_trait=skilled_tactician
+		add_trait=light_foot_leader
+		add_trait=aggressive_leader
+		add_trait=cynical
+		add_trait=arbitrary
+		add_trait=deceitful
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# General in command at Fort Norden
+1419={
+	name="Nicolov"
+	dynasty=2146
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	721.1.1={ 
+		birth=yes
+		employer=1056 # Reptor
+	}
+	733.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	736.1.1 = {
+		add_trait=tough_soldier
+		add_trait=heavy_infantry_leader
+		add_trait=defensive_leader
+		add_trait=brave
+		add_trait=proud
+		add_trait=honest
+	}	
+	741.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# General. Nicolov's subordinate.
+1420={
+	name="Brook"
+	dynasty=2147
+	culture=grannvalean
+	religion=church_of_edda
+	731.1.1={ 
+		birth=yes
+		employer=1056 # Reptor
+	}
+	743.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	746.1.1 = {
+		add_trait=misguided_warrior
+		add_trait=heavy_infantry_leader
+		add_trait=proud
+	}	
+	751.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	763.1.1 = {
+		employer=1419 # Nicolov
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Noble of Friege. Self-proclaimed rival of Reinhardt
+1421={
+	name="Kempf"
+	dynasty=2147
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	751.1.1={ 
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}	
+	763.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	766.1.1 = {
+		add_trait=amateurish_plotter
+		add_trait=cavalry_leader
+		add_trait=proud
+		add_trait=deceitful
+		add_trait=ambitious
+		add_trait=cruel
+		add_trait=craven
+		add_trait=envious
+		add_trait=wroth
+		effect = {
+			c_1324 = { # Reinhardt
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 30
+				} 
+			}
+			c_1324 = { # Reinhardt
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 30
+				} 
+			}
+			c_1324 = { # Reinhardt
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 30
+				} 
+			}
+			c_1325 = { # Olwen
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 30
+				} 
+			}
+			c_1325 = { # Olwen
+				reverse_opinion = {
+					modifier = opinion_hate
+					who = ROOT
+					years = 30
+				} 
+			}
+		}
+	}	
+	771.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Officer under Kempf. Murder Hollace
+1422={
+	name="Oltof"
+	dynasty=2148
+	culture=grannvalean
+	religion=church_of_edda
+	740.1.1={ 
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}	
+	752.01.01={
+		add_trait="class_monk"
+		add_trait="base_class_monk"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	755.1.1 = {
+		add_trait=martial_cleric
+	}	
+	760.1.1 = {
+		remove_trait="class_monk"
+		add_trait="class_bishop"
+	}
+	763.1.1 = {
+		employer=1421 # Kempf
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Officer under Kempf. A commoner.
+1423={
+	name="Ilios"
+	dynasty=2149
+	culture=grannvalean
+	religion=church_of_edda
+	diplomacy=1
+	stewardship=1
+	754.1.1={ 
+		birth=yes
+		effect = {
+			set_character_flag = magic_or_faith_question
+		}
+	}	
+	766.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	755.1.1 = {
+		add_trait=misguided_warrior
+		add_trait=ambitious
+		add_trait=diligent
+		add_trait=just
+		add_trait=envious
+	}	
+	771.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+	}
+	763.1.1 = {
+		employer=1421 # Kempf
+	}	
+	777.1.1 = {
+		employer = 1162 # Leif
+	}
+	# Granted land in New Thracia. Screws up and is reassigned to an unimportant post.
+	829.1.1={
+		death = yes
+	}
+}
+# General in command at Noel
+1424={
+	name="Largo"
+	dynasty=2150
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	723.1.1={ 
+		birth=yes
+	}
+	735.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	738.1.1 = {
+		add_trait=tough_soldier
+		add_trait=heavy_infantry_leader
+		add_trait=defensive_leader
+		add_trait=brave
+		add_trait=just
+		add_trait=content
+	}	
+	743.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	763.1.1 = {
+		employer=1421 # Kempf
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# General defending Leonster's south gate
+1425={
+	name="Palman"
+	dynasty=2151
+	culture=grannvalean
+	religion=church_of_edda
+	731.1.1={ 
+		birth=yes
+	}
+	743.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	746.1.1 = {
+		add_trait=tough_soldier
+		add_trait=defensive_leader
+		add_trait=cynical
+		add_trait=slothful
+		add_trait=humble
+	}	
+	751.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# General who leads the attack on Tahra
+1426={
+	name="Paulus"
+	dynasty=2151
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	726.1.1={
+		birth=yes
+	}
+	748.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	751.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="unyielding_leader"
+		add_trait="siege_leader"
+		add_trait="humble" # "Laugh at me, Baldack. Laugh at this old coward."
+		add_trait="just"
+		add_trait="content"
+	}	
+	746.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Paulus' subordinate
+1427={
+	name="Baldack"
+	dynasty=2152
+	culture=grannvalean
+	religion=church_of_edda
+	720.1.1={
+		birth=yes
+	}
+	732.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	735.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="brave"
+	}	
+	740.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	763.1.1 = {
+		employer=1426 # Paulus
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Paulus' subordinate. Ambitious and career-driven
+1428={
+	name="Rist"
+	dynasty=2153
+	culture=grannvalean
+	religion=church_of_edda
+	742.1.1={
+		birth=yes
+	}
+	754.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	757.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="proud"
+		add_trait="ambitious"
+		add_trait="wroth"
+	}	
+	762.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	763.1.1 = {
+		employer=1426 # Paulus
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Imperial general. Assigned by Bloom to organize the pursuit of the survivors of Dorias' failed charge on Alster castle
+1429={
+	name="Wolf"
+	dynasty=2154
+	culture=grannvalean
+	religion=church_of_edda
+	744.1.1={
+		birth=yes
+	}
+	756.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	759.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="proud"
+	}	
+	764.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# General in Friege's army, 777
+1430={
+	name="Muhammad"
+	dynasty=2155
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	747.1.1={
+		birth=yes
+		employer=1056 # Reptor
+	}
+	759.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	759.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="cruel"
+		add_trait="brave"
+	}	
+	767.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Mage Knight in Friege's army, 777
+1431={
+	name="Ovo"
+	dynasty=2156
+	culture=grannvalean
+	religion=church_of_edda
+	#disallow_random_traits=yes
+	748.1.1={
+		birth=yes
+		employer=1056 # Reptor
+	}
+	760.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag="magic_or_faith_question"
+		}
+	} 
+	763.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="aggressive_leader"
+		add_trait="proud"
+		effect = {
+			add_rival=1430 # Muhammad
+		}
+	}	
+	768.1.1 = {
+		remove_trait="class_mage"
+		add_trait="class_mage_knight"
+	}	
+	770.1.1 = {
+		religion=loptyrian
+	}
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+# Non-canon; parents for Bloom's mage squad
+1432={
+	name="Algot"
+	culture=grannvalean
+	religion=church_of_edda
+	735.1.1={
+		birth=yes
+		employer=1056 # Reptor
+	}
+	747.01.01={
+		add_trait="class_mage"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+1433={
+	name="Iliana"
+	dynasty=2157
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	736.1.1={
+		birth=yes
+		employer=1056 # Reptor
+	}
+	748.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	752.1.1={
+		add_matrilineal_spouse = 1432
+	}
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+# Bloom's mage squad
+1434={
+	name="Vampa"
+	female=yes
+	father=1432 
+	mother=1433 
+	dynasty=2157
+	culture=grannvalean
+	religion=church_of_edda
+	755.1.1={
+		birth=yes
+		employer=1056 # Reptor
+	}
+	767.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	770.1.1 = {
+		religion=loptyrian
+	}
+	770.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="proud"
+	}	 
+	777.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	} 	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+1435={
+	name="Fetra"
+	female=yes
+	father=1432 
+	mother=1433 
+	dynasty=2157
+	culture=grannvalean
+	religion=church_of_edda
+	756.1.1={
+		birth=yes
+		employer=1056 # Reptor
+	}
+	768.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	770.1.1 = {
+		religion=loptyrian
+	}
+	771.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="proud"
+	}	 
+	777.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	} 	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
+		}
+	}
+}
+1436={
+	name="Eliu"
+	female=yes
+	father=1432 
+	mother=1433 
+	dynasty=2157
+	culture=grannvalean
+	religion=church_of_edda
+	757.1.1={
+		birth=yes
+		employer=1056 # Reptor
+	}
+	769.01.01={
+		add_trait="class_mage_female"
+		add_trait="base_class_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 
+	770.1.1 = {
+		religion=loptyrian
+	}
+	772.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="proud"
+	}	 
+	777.1.1 = {
+		remove_trait="class_mage_female"
+		add_trait="class_sage_female"
+	} 	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1038 # Seliph
 		}
 	}
 }

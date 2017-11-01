@@ -21,6 +21,9 @@
 756.1.1={
 	holder=1341 # Carl
 }
+762.1.1={
+	holder=1340 # Raydrik
+}
 763.1.1={
 	holder=1058 # Bloom
 }

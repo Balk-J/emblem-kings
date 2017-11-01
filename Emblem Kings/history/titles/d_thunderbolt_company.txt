@@ -6,5 +6,8 @@
 	holder=1374 # Voltz
 }
 760.1.1={
+	holder=1375 # Jabarro
+}
+760.1.1={
 	#active = no # Destroyed?
 }

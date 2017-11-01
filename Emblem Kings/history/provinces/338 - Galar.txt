@@ -1,15 +1,16 @@
-# 340 - Walwon
+# 338 - Galar
 
 # County Title
-title = c_walwon
+title = c_galar
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
-b_walwon = castle
-b_walwon_2 = temple
-#b_walwon_3 = city
-#b_volr = temple
+b_galar = castle
+b_galar_2 = temple
+#b_galar_3 = city
+#b_jarnvidr = city
+#b_angrboda = city
 
 # Misc
 culture = grannvalean
@@ -19,11 +20,11 @@ religion = church_of_edda
 440.1.1 = { 
 	religion = earthen_pagan
 	culture = grann
-	b_walwon = tribal
+	b_galar = tribal
 }
 500.1.1 = { 
-	b_walwon = castle
-	b_walwon_3 = city
+	b_galar = castle
+	b_galar_3 = city
 }
 649.1.1 = { 
 	religion = church_of_edda

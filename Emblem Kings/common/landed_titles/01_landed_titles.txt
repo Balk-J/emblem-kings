@@ -3336,69 +3336,69 @@ e_elibe = {
 				}
 				b_velthomer_2 = {
 				}
-				b_velera_4 = {
+				b_gullinkambi = {
 				}
-				b_val = {
+				b_eggther = {
 				}
-				b_fala = {
+				b_galgvidr = {
 				}
 			}
-			c_spakona = {
+			c_galar = {
 				color={ 165 63 39 }
 				color2={ 255 255 255 }
 
 
-				b_spakona = {
+				b_galar = {
 				}
-				b_spakona_2 = {
+				b_galar_2 = {
 				}
-				b_spakona_3 = {
+				b_galar_3 = {
 				}
-				b_volur = {
+				b_jarnvidr = {
 				}
-				b_spae = {
+				b_angrboda = {
 				}
 			}
-			c_spaekona = {
+			c_kvasir = {
 				color={ 234 100 68 }
 				color2={ 255 255 255 }
 
 
-				b_spaekona = {
+				b_kvasir = {
 				}
-				b_spaekona_2 = {
+				b_kvasir_2 = {
 				}
-				b_spaekona_3 = {
+				b_kvasir_3 = {
 				}
-				b_volvur = {
+				b_hnitbjorg = {
 				}
 			}
-			c_walwon = {
+			c_gilling = {
 				color={ 135 42 20 }
 				color2={ 255 255 255 }
 
 
-				b_walwon = {
+				b_gilling = {
 				}
-				b_walwon_2 = {
+				b_gilling_2 = {
 				}
-				b_walwon_3 = {
+				b_gilling_3 = {
 				}
-				b_volr = {
+				b_gunnlod = {
 				}
 			}
-			c_volva = {
+			c_suttungr = {
 				color={ 223 130 108 }
 				color2={ 255 255 255 }
 
 
-				b_volva = {
+				b_suttungr = {
 				}
-				b_volva_2 = {
+				b_suttungr_2 = {
 				}
-				b_volva_3 = {
+				b_suttungr_3 = {
 				}
-				b_fjolkunnig = {
+				b_baugi = {
 				}
 			}
 		}
@@ -6778,7 +6778,7 @@ e_elibe = {
 				color2={ 255 255 255 }
 
 				holy_site = loptyrian
-				holy_site = mairist
+				holy_site = maerist
 
 				b_muktinath = {
 				}
@@ -6909,7 +6909,7 @@ e_elibe = {
 				color2={ 255 255 255 }
 
 				holy_site = loptyrian
-				holy_site = mairist
+				holy_site = maerist
 				holy_site = earthen_pagan
 				holy_site = earthen_pagan_reformed
 				holy_site = church_of_edda
@@ -6990,7 +6990,7 @@ e_elibe = {
 				color2={ 255 255 255 }
 
 				holy_site = loptyrian
-				holy_site = mairist
+				holy_site = maerist
 				holy_site = church_of_edda
 
 				b_miletos_castle = {
@@ -7115,7 +7115,7 @@ e_elibe = {
 				color2={ 255 255 255 }
 
 				holy_site = loptyrian
-				holy_site = mairist
+				holy_site = maerist
 
 				b_sunnemo = {
 				}
@@ -7253,7 +7253,7 @@ e_elibe = {
 				color2={ 255 255 255 }
 
 				holy_site = church_of_edda
-				holy_site = mairist
+				holy_site = maerist
 
 				b_basile = {
 				}

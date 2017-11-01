@@ -20,3 +20,12 @@
 763.1.1={
 	holder=1340 # Raydrik
 }
+777.1.1={
+	holder=1058 # Bloom
+}
+779.1.1={
+	holder=1423 # Ilios
+}
+785.1.1={
+	holder=0 # Ilios screwed up
+}

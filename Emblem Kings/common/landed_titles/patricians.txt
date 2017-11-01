@@ -39,7 +39,7 @@ b_aretas = {
 
 # Jugral
 
-b_f_baldur = {
+b_f_baldr = {
 	culture = grann
 }
 b_f_dellingr = {

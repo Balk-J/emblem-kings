@@ -1,0 +1,7 @@
+# b_dun_sobhairce > c_alster
+180.1.1={
+	liege = c_alster
+}
+770.1.1={
+	holder=1429 # Wolf 
+}

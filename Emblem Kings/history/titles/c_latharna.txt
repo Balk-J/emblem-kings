@@ -12,3 +12,15 @@
 649.1.1={
 	holder=0 
 }
+770.1.1={
+	holder=1326 # Reinhardt's father
+}
+775.1.1={
+	holder=1324 # Reinhardt
+}
+777.1.1={
+	holder=1436 # Eliu
+}
+778.1.1={
+	holder=0 # 
+}

@@ -272,7 +272,7 @@ secretly_elimine_church = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -316,7 +316,7 @@ secretly_autotheist = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -360,7 +360,7 @@ secretly_golden_church = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -404,7 +404,7 @@ secretly_dragon_liberation = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -453,7 +453,7 @@ secretly_elibe_spirits_pagan = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -502,7 +502,7 @@ secretly_divine_sky_pagan_reformed = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -551,7 +551,7 @@ secretly_divine_sky_pagan = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -595,7 +595,7 @@ secretly_anima = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -639,7 +639,7 @@ secretly_dark = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -683,7 +683,7 @@ secretly_divine_dragon_naga = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -727,7 +727,7 @@ secretly_earthen_pagan = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -771,7 +771,7 @@ secretly_earthen_pagan_reformed = {
 		#secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -815,7 +815,7 @@ secretly_church_of_edda = {
 		secretly_earthen_pagan_reformed
 		#secretly_church_of_edda
 		secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -859,7 +859,7 @@ secretly_loptyrian = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		#secretly_loptyrian
-		secretly_mairist
+		secretly_maerist
 	}
 
 	is_visible = {
@@ -880,10 +880,10 @@ secretly_loptyrian = {
 	ai_zeal = -50
 }
 
-secretly_mairist = {
+secretly_maerist = {
 	potential = {
 		NOT = {
-			religion = mairist
+			religion = maerist
 		}
 	}
 	opposites = {
@@ -903,16 +903,16 @@ secretly_mairist = {
 		secretly_earthen_pagan_reformed
 		secretly_church_of_edda
 		secretly_loptyrian
-		#secretly_mairist
+		#secretly_maerist
 	}
 
 	is_visible = {
 		OR = {
 			character = FROM
-			society_member_of = secret_religious_society_mairist
+			society_member_of = secret_religious_society_maerist
 			AND = {
 				is_close_relative = FROM
-				trait = secretly_mairist
+				trait = secretly_maerist
 			}
 		}
 	}

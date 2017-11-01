@@ -149,7 +149,7 @@
 		birth=yes
 		culture=grann
 		effect = {
-			set_name = "Maira"
+			set_name = "Maera"
 		}
 	}
 	454.01.01={
@@ -878,7 +878,7 @@
 	}
 }
 818={
-	name="Maira"
+	name="Maera"
 	dynasty=801
 	culture=grannvalean
 	religion=loptyrian
@@ -919,7 +919,7 @@
 		}
 	}	
 	535.1.1={
-		religion=mairist
+		religion=maerist
 	}
 	 
 	536.1.1 = {

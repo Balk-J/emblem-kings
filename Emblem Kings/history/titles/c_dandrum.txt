@@ -12,3 +12,11 @@
 649.1.1={
 	holder=0 
 }
+763.1.1={
+	liege = k_manster
+	holder=1421 # Kempf
+}
+777.1.1={
+	liege = d_noel
+	holder=0 # ?
+}

@@ -15,3 +15,6 @@
 763.1.1={
 	holder=1347 # Fraus
 }
+777.1.1={
+	holder=1430 # Muhammad
+}

@@ -12,3 +12,9 @@
 469.1.1={
 	holder=0 # 
 }
+758.1.1={
+	holder=1513 # Barbarian
+}
+779.1.1={
+	holder=0 
+}

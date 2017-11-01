@@ -14,3 +14,9 @@
 	holder=0 
 	liege = d_thracia
 }
+742.1.1={
+	holder=1472 # Papilion
+}
+760.1.1={
+	holder=0 
+}

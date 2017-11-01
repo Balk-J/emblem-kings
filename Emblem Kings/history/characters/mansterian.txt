@@ -89,7 +89,7 @@
 		add_trait="class_paladin"
 	}	
 	
-	763.1.1={
+	762.1.1={
 		# Attacked from behind at the Battle of River Thracia by Conote forces under a traitor
 		death = {
 			death_reason=death_battle
@@ -161,7 +161,7 @@
 	religion=church_of_edda
 	disallow_random_traits=yes
 	trait=holy_blood_latent_noba
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	757.1.1={
 		birth=yes
 		effect = {
@@ -192,8 +192,8 @@
 		add_trait="base_class_wyvern_rider"
 		add_trait="holy_blood_major_noba"
 		remove_trait="holy_blood_latent_noba"
-		add_trait="holy_blood_minor_baldur"
-		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldr"
+		remove_trait="holy_blood_latent_baldr"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -237,7 +237,7 @@
 	religion=church_of_edda
 	disallow_random_traits=yes
 	trait=holy_blood_latent_noba
-	trait=holy_blood_latent_baldur
+	trait=holy_blood_latent_baldr
 	stewardship=4
 	# Born in 760, and 15 in FE5
 	760.12.1={
@@ -261,8 +261,8 @@
 		add_trait="base_class_thief"
 		add_trait="holy_blood_minor_noba"
 		remove_trait="holy_blood_latent_noba"
-		add_trait="holy_blood_minor_baldur"
-		remove_trait="holy_blood_latent_baldur"
+		add_trait="holy_blood_minor_baldr"
+		remove_trait="holy_blood_latent_baldr"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -644,7 +644,7 @@
 			}
 		} 
 	}
-	763.1.1={
+	762.1.1={
 		# Attempts to resist Raydrik's takeover. It does not go well.
 		death = {
 			death_reason=death_battle
@@ -1047,7 +1047,7 @@
 	}
 	765.1.1 = {
 		add_trait="tough_soldier"
-		add_trait="light_infantry_leader"
+		add_trait="light_foot_leader"
 		add_trait="just"
 		add_trait="brave"
 		add_trait="kind"
@@ -1210,7 +1210,7 @@
 		}
 	}
 }
-# Soldier of Raydrik. Reluctantly participates in the child hunts. 
+# Soldier of Raydrik. 
 1359={
 	name="Farden"
 	dynasty=2114
@@ -1434,6 +1434,11 @@
 			}
 		} 
 	}
+	777.1.1 = {
+		effect = { 
+			prisoner = no
+		} 
+	}	
 	835.1.1={
 		death = yes
 	}
@@ -1754,6 +1759,10 @@
 		} 
 	}
 	777.01.01={
+		effect = { 
+			prisoner = no
+			#imprison=0  
+		} 
 		employer=1162 # Leif
 	} 	
 	# Disappeared like the wind after the war
@@ -1804,5 +1813,1380 @@
 			death_reason=death_battle
 			killer=1032 # Sigurd
 		}
+	}
+}
+# Ranger. Leader of a mercenary company hired by Bramsel of Darna. Killed by Ares.
+1375={
+	name="Jabarro"
+	dynasty=2124
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	740.1.1={
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_horse_archer" 
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	755.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="cavalry_leader"
+		add_trait="chaste"
+		add_trait="greedy"
+		add_trait="arbitrary" 
+		employer=1374 # Voltz
+	} 	
+	
+	762.1.1 = {
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	
+	778.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1098 # Ares
+		}
+	}
+}
+# Knight of Leonster. Alva's friend and a war orphan whose parents were killed in battle
+1376={
+	name="Cain"
+	father=1377
+	mother=1378
+	dynasty=2125
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	746.1.1={ # 20 in 776
+		birth=yes
+		employer = 1159 # Calf
+	}
+	752.01.01={
+		effect = {
+			add_friend=1379 # Alva
+		}
+	} 	
+	758.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	761.1.1 = {
+		add_trait="thrifty_clerk" # He's a civil servant after the war and I really want an excuse to not give EVERYONE a martial education
+		add_trait="cavalry_leader"
+		add_trait="diligent"
+		add_trait="patient"
+		add_trait="shy"
+	}	
+	763.1.1={
+		employer=1349 # Alster
+	}
+	766.1.1={
+		employer=1245 # Hannibal
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	779.1.1 = {
+		add_trait="administrator"
+	}	
+	799.1.1={
+		death = yes
+	}
+}
+# Parents for Cain
+1377={
+	name="Diarmait"
+	dynasty=2125
+	culture=mansterian
+	religion=church_of_edda
+	726.1.1={ 
+		birth=yes
+		employer=1158 # Leonster
+	}
+	738.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	745.1.1={
+		add_spouse=1378
+	}
+	# I have no idea. Let's say he was in the Lance Ritter and died with Quan.
+	761.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1154 # Travant, Yied Massacre
+		}
+	}
+}
+1378={
+	name="Caitilín"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	726.1.1={ 
+		birth=yes
+		employer=1158 # Leonster
+	}
+	738.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	761.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1154 # Travant, Yied Massacre
+		}
+	}
+}
+# Knight of Leonster. Cain's friend
+1379={
+	name="Alva"
+	dynasty=2126
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	746.1.1={ # 20 in 776
+		birth=yes
+		employer = 1159 # Calf
+	}
+	758.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	761.1.1 = {
+		add_trait="tough_soldier" 
+		add_trait="cavalry_leader"
+		add_trait="wroth"
+		add_trait="charitable"
+		add_trait="gregarious"
+	}	
+	763.1.1={
+		employer=1349 # Alster
+	}
+	766.1.1={
+		employer=1245 # Hannibal
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	779.1.1 = {
+		employer = 1161 # Altena. Requested a post in Southern Thracia under her.
+	}	
+	796.1.1={
+		death = yes
+	}
+}
+# Knight of Leonster. His father died in battle and Hannibal rescued him and his mother. 
+1380={
+	name="Carrion"
+	father=1181
+	mother=1182
+	dynasty=2126
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	747.1.1={ 
+		birth=yes
+		employer = 1159 # Calf
+	}
+	750.1.1={
+		employer=1245 # Hannibal
+		effect = { 
+			c_1245 = { # Hannibal
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}
+	759.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	762.1.1 = {
+		add_trait="charismatic_negotiator" # Diplomat after the war
+		add_trait="cavalry_leader"
+		add_trait="humble"
+		add_trait="just"
+		add_trait="kind"
+	}	
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	808.1.1={
+		death = yes
+	}
+}
+# Parents for Carrion
+1381={
+	name="Ríán"
+	dynasty=2127
+	culture=mansterian
+	religion=church_of_edda
+	727.1.1={ 
+		birth=yes
+		employer=1158 # Leonster
+	}
+	739.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	746.1.1={
+		add_spouse=1382
+	}
+	# I have no idea. Probably well before any of the events in the games.
+	750.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+1382={
+	name="Caisséne"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	728.1.1={ 
+		birth=yes
+		employer=1158 # Leonster
+	}
+	750.1.1={
+		employer=1245 # Hannibal
+	}
+	# Died of illness when Carrion was young, according to Selphina
+	751.1.1={
+		add_trait=ill
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+# Knight of Leonster. Another war orphan
+1383={
+	name="Robert"
+	father=1384
+	mother=1385
+	dynasty=2128
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	759.1.1={ # 17 in 776
+		birth=yes
+		employer = 1159 # Calf
+	}
+	763.1.1={
+		employer=1349 # Alster
+	}
+	766.1.1={
+		employer=1245 # Hannibal
+	}
+	771.01.01={
+		add_trait="class_horse_archer"
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		
+		# Very loyal to Selphina
+			c_1354 = { # Selphina
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	} 	
+	774.1.1 = {
+		add_trait="misguided_warrior" 
+		add_trait="diligent"
+		add_trait="chaste"
+		add_trait="shy"
+	}	
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	# Joins the royal guard
+	779.1.1 = {
+		employer = 1162 # Leif
+	}	
+	816.1.1={
+		death = yes
+	}
+}
+# Parents for Robert
+1384={
+	name="Morand"
+	dynasty=2128
+	culture=mansterian
+	religion=church_of_edda
+	739.1.1={ 
+		birth=yes
+		employer=1159 # Calf
+	}
+	758.1.1={
+		add_spouse=1385
+	}
+	# Died in the war?
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+1385={
+	name="Tómnat"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	740.1.1={ 
+		birth=yes
+		employer=1159 # Calf
+	}
+	# Died in the war?
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+#  Knight of Manster.
+1386={
+	name="Hicks" 
+	dynasty=2129
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	748.1.1={ 
+		birth=yes
+	}
+	760.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	763.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="mountain_terrain_leader"
+		add_trait="kind"
+		add_trait="just"
+	}	
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}
+	779.1.1 = {
+		employer = 0 # Goes back home
+	}
+	801.1.1={
+		death = yes
+	}
+}
+# Hicks' son
+1387={
+	name="Maphy" 
+	father=1386
+	dynasty=2129
+	culture=mansterian
+	religion=church_of_edda
+	770.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Manster Castle
+	776.1.1 = { 		
+		effect = {
+			c_1340 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	834.1.1={
+		death = yes
+	}
+}
+# more kids for the Manster dungeon
+1388={
+	name="Clif" 
+	culture=mansterian
+	religion=church_of_edda
+	769.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Manster Castle
+	776.1.1 = { 		
+		effect = {
+			c_1340 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	819.1.1={
+		death = yes
+	}
+}
+1389={
+	name="Bela"
+	female=yes	
+	culture=mansterian
+	religion=church_of_edda
+	770.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Manster Castle
+	776.1.1 = { 		
+		effect = {
+			c_1340 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	822.1.1={
+		death = yes
+	}
+}
+1390={
+	name="Emily"
+	female=yes	
+	culture=mansterian
+	religion=church_of_edda
+	768.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Manster Castle
+	776.1.1 = { 		
+		effect = {
+			c_1340 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	819.1.1={
+		death = yes
+	}
+}
+1397={
+	name="Lina"
+	female=yes	
+	culture=mansterian
+	religion=church_of_edda
+	768.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Manster Castle
+	776.1.1 = { 		
+		effect = {
+			c_1340 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	819.1.1={
+		death = yes
+	}
+}
+# prisoners at Kelves
+1391={
+	name="Lucia"
+	female=yes	
+	culture=mansterian
+	religion=church_of_edda
+	770.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Kelves
+	776.1.1 = { 		
+		effect = {
+			c_1346 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	821.1.1={
+		death = yes
+	}
+}
+1392={
+	name="Merc"
+	culture=mansterian
+	religion=church_of_edda
+	770.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Kelves
+	776.1.1 = { 		
+		effect = {
+			c_1346 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	831.1.1={
+		death = yes
+	}
+}
+1393={
+	name="Romeo"
+	culture=mansterian
+	religion=church_of_edda
+	768.1.1={ 
+		birth=yes
+	}
+	# Held prisoner at Kelves
+	776.1.1 = { 		
+		effect = {
+			c_1346 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}
+	777.1.1 = { 	
+		effect = { 
+			prisoner = no
+		} 
+	}
+	823.1.1={
+		death = yes
+	}
+}
+# Knight of Manster. Member of the Magi Squad
+1394={
+	name="Brighton" 
+	dynasty=2130
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	753.1.1={ # 23 in 776
+		birth=yes
+	}
+	765.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	768.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="rough_terrain_leader"
+		add_trait="brave"
+		add_trait="kind"
+		add_trait="just"
+	}	
+	775.1.1 = {
+		add_lover=1395 # Machyua
+	}	
+	776.1.1={
+		employer=1112 # Ced
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}
+	779.1.1={
+		add_spouse=1395
+	}
+	810.1.1={
+		death = yes
+	}
+}
+# Member of the Magi Squad
+1395={
+	name="Machyua" 
+	female=yes
+	dynasty=2131
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	757.1.1={ # 19 in 776
+		birth=yes
+	}
+	769.01.01={
+		add_trait="class_mercenary_female"
+		add_trait="base_class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	771.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="light_foot_leader"
+		add_trait="brave"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="diligent"
+	}	
+	776.1.1={
+		employer=1112 # Ced
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_mercenary_female"
+		add_trait="class_hero_female"
+	}
+	810.1.1={
+		death = yes
+	}
+}
+# Thief of the Magi Squad
+1396={
+	name="Lara" 
+	female=yes
+	dynasty=2132
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	761.1.1={ # 15 in 776
+		birth=yes
+	}
+	773.01.01={
+		add_trait="class_thief_female"
+		add_trait="base_class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	776.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="light_foot_leader"
+		add_trait="brave"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="gregarious"
+		employer=1112 # Ced
+	}
+	777.1.1 = {
+		employer = 1162 # Leif
+		remove_trait="class_thief_female"
+		remove_trait="base_class_thief"
+		add_trait="base_class_dancer"
+		add_trait="class_dancer"
+	}
+	820.1.1={
+		death = yes
+	}
+}
+# Leader of the Dandelion Gang, a group of good-natured thieves residing in the Dakia forest. 
+1398={
+	name="Perne"
+	dynasty=2133
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	751.1.1={ # 25 in 776
+		birth=yes
+	}
+	763.1.1={
+		add_trait="class_thief" 
+		add_trait="base_class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	765.1.1 = {
+		add_trait="intricate_webweaver"
+		add_trait="trickster"
+		add_trait="mountain_terrain_leader"
+		add_trait="rough_terrain_leader"
+		add_trait="deceitful"
+		add_trait="chaste"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind"
+	}	
+	 
+	777.1.1 = {
+		employer=1162 # Leif
+		remove_trait="class_thief"
+		add_trait="class_rogue"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+# Member of the Dandelion Gang and very loyal to Perne. 
+1399={
+	name="Troude"
+	dynasty=2134
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	748.1.1={ # 28 in 776
+		birth=yes
+	}
+	760.1.1={
+		add_trait="class_myrmidon" 
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	763.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="light_foot_leader"
+		add_trait="deceitful"
+		add_trait="shy"
+	}	
+	 
+	771.1.1 = {
+		employer=1398 # Perne
+		effect = {
+			# Very loyal to Perne
+			c_1398 = { 
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}	
+	777.1.1 = {
+		employer=1162 # Leif
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_missing
+		} 
+	}
+}
+# Renegade Loptyrian dark mage who falls in with the Dandelion Gang
+1400={
+	name="Salem"
+	dynasty=2135
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	752.1.1={ 
+		birth=yes
+		religion=loptyrian
+		employer=1254 # Manfroy
+	}
+	764.1.1={
+		add_trait="class_dark_mage" 
+		add_trait="base_class_dark_mage"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	767.1.1 = {
+		add_trait="mastermind_theologian"
+		add_trait="flanker"
+		add_trait="shy"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="cynical"
+	}	
+	 
+	776.1.1 = {
+		religion=church_of_edda
+		employer=1398 # Perne
+		# The Loptyrian Order does not tolerate traitors. That's the rule.
+		effect = {
+			c_1254 = { # Manfroy
+				opinion = {
+					modifier = opinion_traitor
+					who = ROOT
+					years = 100
+				}
+			}
+			c_1258 = { # Veld
+				opinion = {
+					modifier = opinion_traitor
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}	
+	777.1.1 = {
+		employer=1162 # Leif
+		remove_trait="class_dark_mage"
+		add_trait="class_sorceror"
+	}	
+	819.1.1={
+		death = yes
+	}
+}
+# Bishop of the Blagi church. Tactician for Leif.
+1401={
+	name="August"
+	dynasty=2136
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	728.1.1={ 
+		birth=yes
+	}
+	740.1.1={
+		add_trait="class_priest" 
+		add_trait="base_class_priest"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	743.1.1 = {
+		add_trait="elusive_shadow"
+		add_trait="deceitful"
+		add_trait="just"
+		add_trait="honest"
+		add_trait="cynical"
+	}	
+	761.1.1 = {
+		remove_trait="class_priest"
+		add_trait="class_bishop"
+		add_trait="impaler"
+	}	
+	762.1.1 = {
+		add_trait="bad_priest_draconic"
+		add_trait="excommunicated"
+		employer=1117 # Erinyes. He had to get in touch with Lewyn somehow - maybe he was in Silesse?
+	}	
+	763.1.1 = {
+		add_trait="strategist"
+	}	
+	771.1.1 = {
+		employer=1402 # Lifis
+	}	
+	777.1.1 = {
+		employer=1162 # Leif
+	}	
+	787.1.1={
+		death = yes
+	}
+}
+# Recent member of the Dandelion Gang who plots against Perne. 
+1404={
+	name="Colho"
+	dynasty=2139
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	755.1.1={ 
+		birth=yes
+	}
+	767.1.1={
+		add_trait="class_fighter" 
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	770.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="heavy_infantry_leader"
+		add_trait="deceitful"
+		add_trait="ambitious"
+		add_trait="greedy"
+		add_trait="cruel"
+	}	
+	 
+	771.1.1 = {
+		employer=1398 # Perne
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	}	
+	779.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		} 
+	}
+}
+# Priestess from Tahra
+1405={
+	name="Safy"
+	female=yes
+	father=1407
+	mother=1408
+	dynasty=2140
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	759.1.1={ # 17 in 776
+		birth=yes
+		employer = 1168 # Linoan's father
+	}	
+	771.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	
+	774.1.1 = {
+		add_trait="scholarly_theologian"
+		add_trait="zealous"
+		add_trait="charitable"
+		add_trait="brave"
+		add_trait="just"
+		employer=1398 # Perne
+	}	
+	777.1.1 = {
+		employer=1162 # Leif
+		remove_trait="class_cleric"
+		add_trait="class_bishop_female"
+	}	
+	779.1.1 = {
+		employer=1169 # Linoan
+	}	
+	816.1.1={
+		death=yes
+	}
+}
+# Cleric from Tahra
+1406={
+	name="Tina"
+	female=yes
+	father=1407
+	mother=1408
+	dynasty=2140
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	761.1.1={ # 15 in 776
+		birth=yes
+		employer = 1168 # Linoan's father
+	}	
+	773.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	
+	776.1.1 = {
+		add_trait="detached_priest"
+		add_trait="trusting"
+		add_trait="gregarious"
+		add_trait="kind"
+	}	
+	777.1.1 = {
+		employer=1162 # Leif
+		remove_trait="class_cleric"
+		add_trait="class_bishop_female"
+	}	
+	779.1.1 = {
+		employer=1169 # Linoan
+	}	
+	816.1.1={
+		death=yes
+	}
+}
+# Parents for Safy/Tina
+1407={
+	name="Máel-Sechnaill"
+	dynasty=2140
+	culture=mansterian
+	religion=church_of_edda
+	739.1.1={ 
+		birth=yes
+		employer = 1167 # Tahra
+	}
+	751.01.01={
+		add_trait="class_priest"
+		add_trait="base_class_priest"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	756.1.1={
+		add_spouse=1408
+	}
+	792.1.1={
+		death = yes
+	}
+}
+1408={
+	name="Tailefhlaith"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	740.1.1={ 
+		birth=yes
+		employer = 1167 # Tahra
+	}
+	792.1.1={
+		add_trait=ill
+		death = yes
+	}
+}
+# A bard
+1409={
+	name="Homer"
+	dynasty=2141
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	755.1.1={ 
+		birth=yes
+		employer = 1168 # Linoan's father
+	}	
+	767.01.01={
+		add_trait="class_bard"
+		add_trait="base_class_bard"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			set_character_flag = magic_or_faith_question
+		}
+	} 	
+	770.1.1 = {
+		add_trait="naive_appeaser"
+		add_trait="gregarious"
+		add_trait="craven"
+		add_trait="lustful"
+		add_trait="cynical"
+		add_trait="poet"
+		add_trait="drunkard"
+	}	
+	776.1.1 = {
+		employer=1169 # Linoan
+	}	
+	777.1.1 = {
+		employer=1162 # Leif
+		#remove_trait="class_bard"
+		#remove_trait="base_class_bard"
+		#add_trait="class_sage"
+		#add_trait="base_class_mage"
+	}	
+	779.1.1 = {
+		employer=1169 # Linoan
+	}	
+	811.1.1={
+		death=yes
+	}
+}
+# A traveling mercenary who joins Leif's army to help fight against the empire.
+1410={
+	name="Ralf"
+	dynasty=2142
+	culture=mansterian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	749.1.1={ 
+		birth=yes
+		employer=1159 # change to Solwood
+	}	
+	761.01.01={
+		add_trait="class_fighter"
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	764.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="rough_terrain_leader"
+		add_trait="brave"
+		add_trait="just"
+		add_trait="diligent"
+	}	
+	769.1.1 = {
+		remove_trait="class_fighter"
+		add_trait="class_hero"
+	}	
+	770.1.1={ 
+		employer=1437 # Solwood
+	}	
+	777.1.1 = {
+		employer=1162 # Leif
+	}	
+	803.1.1={
+		death=yes
+	}
+}
+# Leader of a group of bandits in Leonster.
+1411={
+	name="Zile"
+	culture=mansterian
+	religion=bandit
+	751.1.1={ 
+		birth=yes
+	}	
+	763.01.01={
+		add_trait="class_fighter"
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	766.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="rough_terrain_leader"
+		add_trait="cruel"
+		add_trait="greedy"
+		add_trait="arbitrary"
+		add_trait="proud"
+	}	
+	771.1.1 = {
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	}	
+	777.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1162 # Leif
+		}
+	}
+}
+# Febail's substitute. 
+1412={
+	name="Asaello"
+	father=1414
+	mother=1415
+	dynasty=2142
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	759.1.1={ 
+		birth=yes
+	}
+	771.1.01={
+		add_trait="class_archer"
+		add_trait="base_class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	774.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="kind"
+		add_trait="wroth"
+		add_trait="brave"
+		add_trait="cynical"
+		add_trait="light_foot_leader" 
+	}
+	776.1.1 = {
+		give_nickname=nick_the_hitman_from_conote
+	}	 
+	 
+	779.1.1 = {
+		remove_trait="class_archer"
+		add_trait="class_sniper"
+	}	
+	
+	810.1.1={
+		death = yes
+	}
+}
+# Patty's substitute
+1413={
+	name="Daisy"
+	female=yes
+	father=1414
+	mother=1415
+	dynasty=2142
+	culture=grannvalean
+	religion=church_of_edda
+	disallow_random_traits=yes
+	760.1.1={ 
+		birth=yes
+	}
+	772.1.01={
+		add_trait="class_thief_female"
+		add_trait="base_class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	774.1.1 = {
+		add_trait="flamboyant_schemer"
+		add_trait="kind"
+		add_trait="brave"
+		add_trait="wroth"
+		add_trait="gregarious"
+		add_trait="stubborn"
+	}	 
+	 
+	779.1.1 = {
+		remove_trait="class_thief_female"
+		add_trait="class_rogue"
+	}	
+		
+	811.1.1={
+		death = yes
+	}
+}
+# Parents for Asaello/Patty
+1414={
+	name="Aurthuile"
+	dynasty=2142
+	culture=mansterian
+	religion=church_of_edda
+	737.1.1={ 
+		birth=yes
+		employer = 1344 # Carl's grandfather
+	}
+	749.01.01={
+		add_trait="class_archer"
+		add_trait="base_class_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	758.1.1={
+		add_spouse=1415
+	}
+	# Killed in Thracia's invasion
+	762.1.1={
+		death = {
+			death_reason=death_battle
+			#killer=1154 # Travant
+		}
+	}
+}
+1415={
+	name="Órlaith"
+	female=yes
+	culture=mansterian
+	religion=church_of_edda
+	738.1.1={ 
+		birth=yes
+		employer = 1344 # Carl's grandfather
+	}
+	750.01.01={
+		add_trait="class_thief_female"
+		add_trait="base_class_thief"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 	
+	# Killed in Thracia's invasion
+	762.1.1={
+		death = {
+			death_reason=death_battle
+			#killer=1154 # Travant
+		}
+	}
+}
+# Priest for Solwood
+1437={
+	name="Domangart"
+	culture=mansterian
+	religion=church_of_edda
+	736.1.1={ 
+		birth=yes
+	}
+	807.1.1={
+		death = yes
 	}
 }

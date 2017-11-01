@@ -1,0 +1,7 @@
+# b_melfiye > c_melfiye
+180.1.1={
+	liege = c_melfiye
+}
+770.1.1={
+	holder=1425 # Palman
+}

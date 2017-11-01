@@ -19,6 +19,9 @@
 736.1.1={
 	holder = 1159 # Calf
 }
+762.1.1={
+	holder=0 # Travant invades
+}
 763.1.1={
 	holder=1058 # Bloom
 	liege = e_grannvale

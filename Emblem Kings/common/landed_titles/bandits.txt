@@ -127,3 +127,59 @@ d_wavebeasts = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_dandelion_gang = {
+	color={ 250 230 130 }
+	color2={ 255 255 255 }
+	
+	capital = 441 # Dakia
+	culture=mansterian
+	title = "count_sacaean"
+	title_female = "count_female_sacaean"
+	short_name = yes
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_lifis_pirates = {
+	color={ 190 70 0 }
+	color2={ 255 255 255 }
+	
+	capital = 482 # Iss
+	culture=thracian
+	title = "count_sacaean"
+	title_female = "count_female_sacaean"
+	short_name = yes
+	religion=pirate
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_mount_violdrake_bandits = {
+	color={ 60 80 140 }
+	color2={ 255 255 255 }
+	
+	capital = 467 # Mount Violdrake
+	culture=thracian
+	title = "count_sacaean"
+	title_female = "count_female_sacaean"
+	short_name = yes
+	religion=bandit
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	assimilate = no # Nothing drifts in or out
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

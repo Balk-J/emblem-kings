@@ -6,3 +6,9 @@
 	liege = d_heirhein
 	#holder = 0
 }
+744.1.1={
+	holder=1504 # Philip
+}
+759.1.1={
+	holder=0 # 
+}

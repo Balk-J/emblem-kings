@@ -12,3 +12,23 @@
 649.1.1={
 	liege = d_thove
 }
+752.1.1={
+	holder = 1482 # Deet'var
+}
+760.3.1={
+	holder = 1032 # Sigurd
+}
+761.1.1={
+	#holder=1049 # Arvis
+	# Sigurd is dead; control reverts to Silesse
+	holder = 1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+770.1.1={
+	holder=1280 # Dark Bishop
+}
+779.1.1={
+	holder = 1483 # Misha
+}

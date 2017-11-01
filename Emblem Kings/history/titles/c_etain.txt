@@ -16,7 +16,7 @@
 	holder=1184 # Jamke 
 }
 758.1.1={
-	holder=1240 # Barbarian
+	holder=1510 # Barbarian
 }
 779.1.1={
 	holder=0 # Should be Jamke's son, but since we can't assume...

@@ -37,7 +37,7 @@ holy_blood_minor_naga = {
 	loptyrian_opinion = -5
 	health = 0.25
 }
-holy_blood_major_baldur = {
+holy_blood_major_baldr = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.5
@@ -45,7 +45,7 @@ holy_blood_major_baldur = {
 	health = 0.5
 	combat_rating = 1
 }
-holy_blood_minor_baldur = {
+holy_blood_minor_baldr = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.25
@@ -82,7 +82,7 @@ holy_blood_minor_dain = {
 	church_of_edda_opinion = 5
 	health = 0.25
 }
-holy_blood_major_fala = {
+holy_blood_major_fjalar = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.5
@@ -90,7 +90,7 @@ holy_blood_major_fala = {
 	health = 0.5
 	combat_rating = 1
 }
-holy_blood_minor_fala = {
+holy_blood_minor_fjalar = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.25
@@ -157,7 +157,7 @@ holy_blood_minor_noba = {
 	church_of_edda_opinion = 5
 	health = 0.25
 }
-holy_blood_major_odo = {
+holy_blood_major_od = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.5
@@ -165,14 +165,14 @@ holy_blood_major_odo = {
 	health = 0.5
 	combat_rating = 1
 }
-holy_blood_minor_odo = {
+holy_blood_minor_od = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.25
 	church_of_edda_opinion = 5
 	health = 0.25
 }
-holy_blood_major_tordo = {
+holy_blood_major_thrud = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.5
@@ -180,7 +180,7 @@ holy_blood_major_tordo = {
 	health = 0.5
 	combat_rating = 1
 }
-holy_blood_minor_tordo = {
+holy_blood_minor_thrud = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.25
@@ -215,7 +215,7 @@ holy_blood_latent_naga = {
 	random = no
 	hidden = yes 
 }
-holy_blood_latent_baldur = {
+holy_blood_latent_baldr = {
 	customizer = no
 	random = no
 	hidden = yes 
@@ -230,7 +230,7 @@ holy_blood_latent_dain = {
 	random = no
 	hidden = yes 
 }
-holy_blood_latent_fala = {
+holy_blood_latent_fjalar = {
 	customizer = no
 	random = no
 	hidden = yes 
@@ -255,12 +255,12 @@ holy_blood_latent_noba = {
 	random = no
 	hidden = yes 
 }
-holy_blood_latent_odo = {
+holy_blood_latent_od = {
 	customizer = no
 	random = no
 	hidden = yes 
 }
-holy_blood_latent_tordo = {
+holy_blood_latent_thrud = {
 	customizer = no
 	random = no
 	hidden = yes 

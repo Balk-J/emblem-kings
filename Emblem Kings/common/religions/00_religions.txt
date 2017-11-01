@@ -754,7 +754,7 @@ draconic_group = {
 		religious_clothing_priest = 3
 	}
 	
-	mairist = {
+	maerist = {
 		graphical_culture = westerngfx
 		parent = loptyrian
 		

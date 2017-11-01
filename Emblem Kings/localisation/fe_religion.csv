@@ -149,8 +149,8 @@ dummy_4;Water;;;;;;;;;;;;;x
 dummy_5;Earth;;;;;;;;;;;;;x
 loptyrian;Loptyrian;;;;;;;;;;;;;x
 loptyrian_DESC;The Loptyrians began as a religious order founded by Bishop Galle after his blood bond with the Earth Dragon Loptyr. It is based around worship of Loptyr as the supreme deity. Members gain access to spellbooks and magic staves made using dragon knowledge. However, Loptyr's hatred and resentment of humanity have resulted in truly horrific church rituals...;;;;;;;;;;;;;x
-mairist;Mairist;;;;;;;;;;;;;x
-mairist_DESC;Mairism is a Loptyrian heresy named for its founder Maira, a descendant of the original Bishop Galle. It attempts to harmonize the Loptyrian faith with the old pagan religions of Jugdral. Maira placed Loptyr as only one of many high-ranking gods and emphasized his benevolent qualities. He also encouraged tolerance of other faiths and worked to end discrimination against their believers.;;;;;;;;;;;;;x
+maerist;Maerist;;;;;;;;;;;;;x
+maerist_DESC;Maerism is a Loptyrian heresy named for its founder Maera, a descendant of the original Bishop Galle. It attempts to harmonize the Loptyrian faith with the old pagan religions of Jugdral. Maera placed Loptyr as only one of many high-ranking gods and emphasized his benevolent qualities. He also encouraged tolerance of other faiths and worked to end discrimination against their believers.;;;;;;;;;;;;;x
 temple_baron_loptyrian;Sectarian;;;;;;;;;;;;;x
 temple_baron_female_loptyrian;Sectarian;;;;;;;;;;;;;x
 temple_count_loptyrian;Lord Sectarian;;;;;;;;;;;;;x
@@ -159,16 +159,16 @@ temple_duke_loptyrian;Bishop;;;;;;;;;;;;;x
 temple_duke_female_loptyrian;Bishop;;;;;;;;;;;;;x
 temple_king_loptyrian;Archbishop;;;;;;;;;;;;;x
 temple_king_female_loptyrian;Archbishop;;;;;;;;;;;;;x
-temple_baron_mairist;Sectarian;;;;;;;;;;;;;x
-temple_baron_female_mairist;Sectarian;;;;;;;;;;;;;x
-temple_count_mairist;Lord Sectarian;;;;;;;;;;;;;x
-temple_count_female_mairist;Lady Sectarian;;;;;;;;;;;;;x
-temple_duke_mairist;Bishop;;;;;;;;;;;;;x
-temple_duke_female_mairist;Bishop;;;;;;;;;;;;;x
-temple_king_mairist;Archbishop;;;;;;;;;;;;;x
-temple_king_female_mairist;Archbishop;;;;;;;;;;;;;x
-temple_emperor_mairist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
-temple_emperor_female_mairist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
+temple_baron_maerist;Sectarian;;;;;;;;;;;;;x
+temple_baron_female_maerist;Sectarian;;;;;;;;;;;;;x
+temple_count_maerist;Lord Sectarian;;;;;;;;;;;;;x
+temple_count_female_maerist;Lady Sectarian;;;;;;;;;;;;;x
+temple_duke_maerist;Bishop;;;;;;;;;;;;;x
+temple_duke_female_maerist;Bishop;;;;;;;;;;;;;x
+temple_king_maerist;Archbishop;;;;;;;;;;;;;x
+temple_king_female_maerist;Archbishop;;;;;;;;;;;;;x
+temple_emperor_maerist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
+temple_emperor_female_maerist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
 church_of_edda;Church of Edda;;;;;;;;;;;;;x
 church_of_edda_DESC;The Church of Edda is based on the original pagan religions of Judgral. It was founded by Saint Blagi of the Twelve Crusaders to restore the old faiths and heal the damage caused by Loptyrian persecution. The twelve dragons who came to the Crusaders' aid in their war with Loptyr are revered as its highest gods.;;;;;;;;;;;;;x
 earthen_pagan;Earthen;;;;;;;;;;;;;x

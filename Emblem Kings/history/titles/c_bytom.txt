@@ -13,3 +13,6 @@
 649.1.1={
 	liege = d_thove
 }
+742.1.1={
+	holder = 1244 # Sylvia's guardian
+}

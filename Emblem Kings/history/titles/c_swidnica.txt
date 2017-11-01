@@ -6,6 +6,15 @@
 	liege = d_silesse
 	#holder = 0
 }
-742.1.1={
-	holder = 1244 # Sylvia's guardian
+756.1.1={
+	holder = 1487 # Hawk's father
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+776.1.1={
+	holder=1277 # Dark Bishop
+}
+779.1.1={
+	holder = 1485 # Hawk
 }

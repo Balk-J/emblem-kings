@@ -10,8 +10,8 @@
 	holder=1103 # The old Captain who adopted Brigid
 	liege=d_orgahil_pirates
 }
-759.1.1={
-	holder=1081 # Brigid
+751.1.1={
+	holder=1505 # Pizarl
 }
 760.1.1={
 	holder=1251 # Filler

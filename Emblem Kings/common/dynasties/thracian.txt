@@ -93,6 +93,240 @@
         }
     }
 }
+# for Lifis
+2137={
+	name="of Iss"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Shiva
+2138={
+	name="of Savan"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Dagdar
+2159={
+	can_appear=no
+	used_for_random=no
+	name="of Violdrake"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 21
+            emblem = 0
+            color = 2
+            color = 8
+            color = 4
+        }
+    }  
+}
+# for Gomes
+2160={
+	name="of Ailinne"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Osian
+2161={
+	name="of Fiana"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Halvan
+2162={
+	name="of Fiana"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Marty
+2163={
+	name="of Fiana"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Bucks
+2164={
+	name="of Inis"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Ronan
+2165={
+	can_appear=no
+	used_for_random=no
+	name="of Iss"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 13
+            emblem = 0
+            color = 4
+            color = 8
+            color = 8
+        }
+    }  
+}
+# for Disler
+2166={
+	can_appear=no
+	used_for_random=no
+	name="Luthecia"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 22
+            emblem = 0
+            color = 11
+            color = 10
+            color = 8
+        }
+    }  
+}
+# for Maikov
+2167={
+	can_appear=no
+	used_for_random=no
+	name="Meace"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 14
+            emblem = 0
+            color = 5
+            color = 4
+            color = 8
+        }
+    }  
+}
+# for Kanatz
+2168={
+	name="of Heraclea"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Rumei
+2169={
+	name="of Daru"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Seimetol
+2170={
+	name="of Caiseal"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Dean
+2171={
+	can_appear=no
+	used_for_random=no
+	name="Verissa"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 14
+            emblem = 0
+            color = 5
+            color = 4
+            color = 8
+        }
+    }  
+}
+# for Coruta
+2172={
+	can_appear=no
+	used_for_random=no
+	name="Savan"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 1
+            emblem = 0
+            color = 5
+            color = 2
+            color = 6
+        }
+    }  
+}
+# for Dobalzark
+2173={
+	name="of Noel"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Merlock
+2174={
+	name="of Fionnghlas"
+	culture="thracian"
+	religion="church_of_edda"
+}
+# for Magorn
+2175={
+	can_appear=no
+	used_for_random=no
+	name="Madyta"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 28
+            emblem = 0
+            color = 11
+            color = 4
+            color = 6
+        }
+    } 
+}
+# for Papilion
+2176={
+	can_appear=no
+	used_for_random=no
+	name="Galata"
+	culture="thracian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 23
+            emblem = 0
+            color = 12
+            color = 0
+            color = 6
+        }
+    } 
+}
 # Norman from vanilla
 1650={
 	name="of Villeneuve"

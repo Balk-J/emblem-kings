@@ -1,15 +1,15 @@
-# 341 - Volva
+# 339 - Kvasir
 
 # County Title
-title = c_volva
+title = c_kvasir
 
 # Settlements
 max_settlements = 4
 
-b_volva = castle
-#b_volva_2 = temple
-#b_volva_3 = city
-#b_fjolkunnig = castle
+b_kvasir = castle
+b_kvasir_2 = temple
+#b_kvasir_3 = city
+#b_hnitbjorg = city
 
 # Misc
 culture = grannvalean
@@ -19,12 +19,11 @@ religion = church_of_edda
 440.1.1 = { 
 	religion = earthen_pagan
 	culture = grann
-	b_volva = tribal
+	b_kvasir = tribal
 }
 500.1.1 = { 
-	b_volva = castle
-	b_volva_2 = temple
-	b_volva_3 = city
+	b_kvasir = castle
+	b_kvasir_3 = city
 }
 649.1.1 = { 
 	religion = church_of_edda

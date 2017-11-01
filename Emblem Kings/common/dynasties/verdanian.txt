@@ -41,6 +41,26 @@
 	culture="verdanian"
 	religion="church_of_edda"    
 }
+# for Dew
+2158={
+	can_appear=no
+	used_for_random=no
+	name="of Marpha"
+	culture="verdanian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 21
+            emblem = 0
+            color = 11
+            color = 12
+            color = 4
+        }
+    }  
+}
 # Norse from vanilla
 1163={
 	name="of Orkneyjar"

@@ -540,11 +540,11 @@
 		employer=1234
 	}
 	760.1.1={
-		#employer= # Leonster
+		employer=1159 # Leonster
 	}
 	# Orphaned following Leonster's fall and adopted by the mercenary Jabarro
 	763.1.1={
-		#employer= # Jabarro
+		employer=1375 # Jabarro
 	}
 	769.01.01={
 		add_trait="class_cavalier"
@@ -1103,5 +1103,430 @@
 	}
 	668.1.1={
 		death = yes
+	}
+}
+
+# Cross Knights of Nordion
+
+# Parents
+1494={
+	name="Erouan"
+	dynasty=2188
+	culture=agustrian
+	religion=church_of_edda
+	700.1.1={ 
+		birth=yes
+		employer=1232 # Nordion
+	}
+	712.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	720.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}	
+	737.1.1 = {
+		add_spouse=1495
+	}	
+	756.1.1={
+		death = yes
+	}
+}
+1495={
+	name="Aanor"
+	female=yes
+	culture=agustrian
+	religion=church_of_edda
+	718.1.1={ 
+		birth=yes
+		employer=1232 # Nordion
+	}
+	741.1.1={
+		death = {
+			death_reason=death_childbirth
+		}
+	}
+}
+1496={
+	name="Eve"
+	father=1494
+	mother=1495
+	dynasty=2188
+	culture=agustrian
+	religion=church_of_edda
+	738.1.1={ 
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	754.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1099 # Boldor
+		}
+	}
+}
+1497={
+	name="Eva"
+	father=1494
+	mother=1495
+	dynasty=2188
+	culture=agustrian
+	religion=church_of_edda
+	739.1.1={ 
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	755.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1099 # Boldor
+		}
+	}
+}
+1498={
+	name="Alva"
+	father=1494
+	mother=1495
+	dynasty=2188
+	culture=agustrian
+	religion=church_of_edda
+	740.1.1={ 
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	756.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_paladin"
+	}
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1099 # Boldor
+		}
+	}
+}
+# Substitute for Diarmuid
+1500={
+	name="Tristan"
+	father=1496 # Eva
+	mother=1499 
+	dynasty=2188
+	culture=agustrian
+	religion=church_of_edda
+	758.1.1={
+		birth=yes
+	}
+	# raised in the Isaachian village of Tirnanog in the aftermath of the Battle of Belhalla
+	761.01.01={
+		employer=1082 # Edain, b_tirnanog
+	}
+	770.01.01={
+		add_trait="class_mercenary"
+		add_trait="base_class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	773.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="wroth" 
+		add_trait="light_foot_leader"
+	}	
+	 
+	778.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
+	}	
+	812.1.1={
+		death = yes
+	}
+}
+# Substitute for Nanna
+1501={
+	name="Jeanne"
+	female=yes
+	father=1496 # Eva
+	mother=1499 
+	dynasty=2188
+	culture=agustrian
+	religion=church_of_edda
+	#762.1.1={ 
+	759.9.1={ 
+		birth=yes
+	}
+	# On the run from the empire...
+	762.1.1={
+		employer=1159 # Leonster
+	}
+	763.1.1={
+		employer=1349 # Alster
+	}
+	766.1.1={
+		employer=1369 # Frest
+	}
+	769.1.1={
+		employer=1168 # Tahra
+	}
+	773.1.1={
+		employer=1081 # Eyvel
+	}
+	771.09.01={
+		add_trait="class_troubador"
+		add_trait="base_class_troubador"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	774.9.1 = {
+		add_trait="thrifty_clerk"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="kind" 
+		add_trait="charitable"
+	}	
+	776.1.1={
+		employer=1162 # Leif
+	}
+	 
+	778.1.1 = {
+		remove_trait="class_troubador"
+		add_trait="class_mage_knight_female"
+	}	
+	819.1.1={
+		death = yes
+	}
+}
+# Knight of Agustria under Chagall
+1502={
+	name="Zyne"
+	dynasty=2189
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	732.1.1={
+		birth=yes
+	}
+	744.01.01={
+		add_trait="class_cavalier"
+		add_trait="base_class_cavalier"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	747.1.1 = {
+		add_trait="skilled_tactician"
+		add_trait="cavalry_leader"
+		add_trait="unyielding_leader"
+		add_trait="flat_terrain_leader"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="charitable"
+	}	 
+	 
+	752.1.1 = {
+		remove_trait="class_cavalier"
+		add_trait="class_great_knight"
+	}	
+	
+	760.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Mercenary serving under Chagall
+1503={
+	name="Jacoban"
+	dynasty=2190
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	725.1.1={
+		birth=yes
+	}
+	737.01.01={
+		add_trait="class_mercenary"
+		add_trait="base_class_mercenary"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	740.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="defensive_leader"
+		add_trait="light_foot_leader"
+		add_trait="flat_terrain_leader"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="brave"
+		add_trait="charitable"
+	}	 
+	 
+	742.1.1 = {
+		employer=1090 # Chagall
+	}
+	745.1.1 = {
+		remove_trait="class_mercenary"
+		add_trait="class_hero"
+	}	
+	
+	760.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# One of Boldor's retainers
+1504={
+	name="Philip"
+	dynasty=2191
+	culture=agustrian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	724.1.1={
+		birth=yes
+	}
+	736.01.01={
+		add_trait="class_knight"
+		add_trait="base_class_knight"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	739.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="heavy_infantry_leader"
+		add_trait="unyielding_leader"
+		add_trait="just"
+		add_trait="content"
+		add_trait="brave"
+	}	 
+	 
+	744.1.1 = {
+		remove_trait="class_knight"
+		add_trait="class_general"
+	}	
+	
+	759.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+# Orgahil pirates
+1505={
+	name="Pizarl"
+	dynasty=2192
+	culture=agustrian
+	religion=pirate
+	trait=ugly
+	731.1.1={
+		birth=yes
+		employer=1103
+	}
+	743.01.01={
+		add_trait="class_fighter"
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	746.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="greedy"
+		add_trait="envious"
+		add_trait="ambitious"
+		add_trait="proud"
+	}	 	
+	751.01.01={
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	} 
+	760.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
+	}
+}
+1506={
+	name="Dobarl"
+	dynasty=2193
+	culture=agustrian
+	religion=pirate
+	732.1.1={
+		birth=yes
+		employer=1103
+	}
+	744.01.01={
+		add_trait="class_fighter"
+		add_trait="base_class_fighter"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	747.1.1 = {
+		add_trait="misguided_warrior"
+		add_trait="greedy"
+		add_trait="envious"
+		add_trait="craven"
+		add_trait="proud"
+	}	 	
+	752.01.01={
+		remove_trait="class_fighter"
+		add_trait="class_warrior"
+	} 
+	760.1.1={
+		death = {
+			death_reason=death_battle
+			killer=1032 # Sigurd
+		}
 	}
 }

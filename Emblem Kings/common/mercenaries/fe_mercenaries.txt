@@ -68,6 +68,11 @@ thunderbolt_company_composition = {
 	light_cavalry = 400
 	horse_archers = 100
 }
+heartless_band_composition = {
+	levy_size = 1
+	light_infantry = 450
+	magic_users = 50
+}
 
 #Vanilla stuff
 

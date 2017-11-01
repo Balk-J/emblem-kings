@@ -15,6 +15,21 @@
 744.1.1={
 	holder=1245 # Hannibal 
 }
-798.1.1={
+747.1.1={
+	holder=1439 # Dagdar 
+}
+776.1.1={
+	holder=1441 # Gomes 
+}
+777.1.1={
+	holder=1245 # Hannibal 
+}
+779.1.1={
+	holder=1439 # Dagdar 
+}
+805.1.1={
+	holder=1449 # Marty 
+}
+809.1.1={
 	holder=1248 # Charlot 
 }

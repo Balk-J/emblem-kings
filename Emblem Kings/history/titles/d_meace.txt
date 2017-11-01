@@ -17,6 +17,9 @@
 744.1.1={
 	holder=1245 # Hannibal 
 }
-798.1.1={
-	holder=1248 # Charlot 
+756.1.1={
+	holder=1455 # Maikov 
+}
+779.1.1={
+	holder=1380 # Carrion 
 }

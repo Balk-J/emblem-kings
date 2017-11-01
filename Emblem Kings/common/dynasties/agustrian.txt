@@ -107,6 +107,70 @@
         }
     }
 }
+# for Alva/Eva/Eve
+2188={
+	can_appear=no
+	used_for_random=no
+	name="of Nordion"
+	culture="agustrian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 2
+            emblem = 0
+            color = 5
+            color = 4
+            color = 9
+        }
+    } 
+}
+# for Zyne
+2189={
+	can_appear=no
+	used_for_random=no
+	name="Hotherus"
+	culture="agustrian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 13
+            emblem = 0
+            color = 3
+            color = 5
+            color = 9
+        }
+    } 
+}
+# For Jacoban
+2190={
+	name="of Santala"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+# For Philip
+2191={
+	name="of Castillion"
+	culture="agustrian"
+	religion="church_of_edda"
+}
+# For Pizarl 
+2192={
+	name="of Perrault"
+	culture="agustrian"
+	religion="pirate"
+}
+# For Dobarl
+2193={
+	name="of Daulnoy"
+	culture="agustrian"
+	religion="pirate"
+}
 # Breton from vanilla
 1269={
 	name="of Dinan"

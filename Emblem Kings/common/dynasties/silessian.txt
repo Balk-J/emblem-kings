@@ -111,6 +111,119 @@
         }
     }
 }
+# for Deet'var
+2180={
+	can_appear=no
+	used_for_random=no
+	name="Nysa"
+	culture="silessian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 34
+            emblem = 0
+            color = 9
+            color = 4
+            color = 12
+        }
+    } 
+}
+# for Pamela
+2181={
+	can_appear=no
+	used_for_random=no
+	name="Legnica"
+	culture="silessian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 23
+            emblem = 0
+            color = 9
+            color = 1
+            color = 0
+        }
+    } 
+}
+# for Hawk/Hermina
+2182={
+	can_appear=no
+	used_for_random=no
+	name="of Swidnica"
+	culture="silessian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 2
+            texture_internal = 8
+            emblem = 0
+            color = 5
+            color = 2
+            color = 9
+        }
+    } 
+}
+# for Karin
+2183={
+	can_appear=no
+	used_for_random=no
+	name="of Gora"
+	culture="silessian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 4
+            emblem = 0
+            color = 4
+            color = 3
+            color = 9
+        }
+    } 
+}
+# For Cuvuli
+2184={
+	name="Kozle"
+	culture="silessian"
+	religion="church_of_edda"
+}
+# For Donovan
+2185={
+	name="Jawor"
+	culture="silessian"
+	religion="church_of_edda"
+}
+# for Lamia
+2186={
+	can_appear=no
+	used_for_random=no
+	name="of Glogow"
+	culture="silessian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            #texture = 3
+            texture = 4
+            texture_internal = 12
+            emblem = 0
+            color = 5
+            color = 9
+            color = 9
+        }
+    } 
+}
 # Polish from vanilla
 
 1305={

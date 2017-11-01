@@ -21,6 +21,12 @@
 739.1.1={
 	holder=1349 # Miranda's father
 }
+762.1.1={
+	liege = k_thracia # Travant invades
+}
+763.1.1={
+	liege = k_manster # Grannvale invades
+}
 776.1.1={
 	holder=1058 # Bloom
 }

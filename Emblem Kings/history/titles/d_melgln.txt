@@ -22,7 +22,11 @@
 	de_jure_liege = k_manster
 	liege = k_manster
 }
+762.1.1={
+	liege = k_thracia # Travant invades
+}
 763.1.1={
+	liege = k_manster # Grannvale invades
 	holder=1066 # Ishtore
 }
 778.1.1={

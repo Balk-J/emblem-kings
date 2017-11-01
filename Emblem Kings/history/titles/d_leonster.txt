@@ -33,7 +33,11 @@
 736.1.1={
 	holder = 1159 # Calf
 }
+762.1.1={
+	liege = k_thracia # Travant invades
+}
 763.1.1={
+	liege = k_manster
 	holder=1058 # Bloom?
 }
 777.1.1={

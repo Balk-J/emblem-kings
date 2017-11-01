@@ -408,7 +408,7 @@ d_thunderbolt_company = {
 	color={ 130 100 20 }
 	color2={ 255 255 255 }
 
-	capital = 104 # Conote
+	capital = 446 # Conote
 	
 	# Hire Trigger
 	allow = {
@@ -435,4 +435,38 @@ d_thunderbolt_company = {
 	#strength_growth_per_century = 1.0
 
 	mercenary_type = thunderbolt_company_composition
+}
+# Lamia's mercenaries
+d_heartless_band = {
+	color={ 220 60 60 }
+	color2={ 255 255 255 }
+
+	capital = 399 # Glogow
+	
+	# Hire Trigger
+	allow = {
+		always=yes
+	}
+	
+	# Parent Religion 
+	religion = church_of_edda
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	title_female = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	#strength_growth_per_century = 1.0
+
+	mercenary_type = heartless_band_composition
 }

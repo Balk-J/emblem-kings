@@ -334,6 +334,156 @@
         }
     }  
 }
+# for Voltz
+2123={
+	name="of Gleann Da Loch"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Jabarro
+2124={
+	name="of Druim Mor"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Cain
+2125={
+	name="of Melfiye"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Alva
+2126={
+	name="of Solwood"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Carrion
+2127={
+	can_appear=no
+	used_for_random=no
+	name="of Meace"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 3
+            emblem = 0
+            color = 3
+            color = 1
+            color = 1
+        }
+    }  
+}
+# for Robert
+2128={
+	name="of Maol Ros"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Hicks
+2129={
+	name="of Manster"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Brighton
+2130={
+	name="of Danzig"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Machyua
+2131={
+	name="of Tobar na Mac"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Lara
+2132={
+	name="of Dakia"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Perne
+2133={
+	name="of Dandelion"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Troude
+2134={
+	name="of Libhse"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Salem
+2135={
+	name="of Salcraig"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for August
+2136={
+	name="of Laigin"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Colho
+2139={
+	name="of Baile na h-Cearc"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Safy and Tina
+2140={
+	can_appear=no
+	used_for_random=no
+	name="of Tahra"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 30
+            emblem = 0
+            color = 4
+            color = 1
+            color = 1
+        }
+    }  
+}
+# for Homer
+2141={
+	name="of Srath Bhalgaidh"
+	culture="mansterian"
+	religion="church_of_edda"
+}
+# for Asaello and Daisy
+2142={
+	can_appear=no
+	used_for_random=no
+	name="of Cill Mhor"
+	culture="mansterian"
+	religion="church_of_edda"  
+	coat_of_arms = {
+		religion="church_of_edda"        
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 0
+            emblem = 0
+            color = 8
+            color = 12
+            color = 1
+        }
+    }  
+}
 # Irish from vanilla
 1537={
 	name="Mac Carthaigh"

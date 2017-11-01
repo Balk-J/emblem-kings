@@ -1,0 +1,7 @@
+771.1.1={
+	holder=1398 # Perne
+	liege=0#k_manster 
+}
+777.1.1={
+	holder=0
+}

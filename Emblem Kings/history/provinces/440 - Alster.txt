@@ -32,3 +32,6 @@ b_alster_2 = city
 666.1.1 = { 
 	culture = mansterian
 }
+770.1.1 = { 
+	b_dun_sobhairce = castle
+}

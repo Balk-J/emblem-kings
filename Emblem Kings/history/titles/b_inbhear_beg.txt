@@ -1,0 +1,10 @@
+# b_inbhear_beg > c_latharna
+180.1.1={
+	liege = c_latharna
+}
+770.1.1={
+	holder=1329 # Fred's father
+}
+#777.1.1={
+#	holder=1058 # Bloom
+#}

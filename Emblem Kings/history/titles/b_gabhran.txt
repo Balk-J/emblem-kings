@@ -9,7 +9,7 @@
 	holder=1234
 }
 763.1.1={
-	holder = 0 # Raydrik?
+	#holder = 0 # Raydrik?
 }
 # TEMP to keep Ares out
 763.1.1={

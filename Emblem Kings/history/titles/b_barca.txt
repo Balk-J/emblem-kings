@@ -1,0 +1,8 @@
+# b_barca > c_mount_violdrake
+744.1.1={
+	liege = c_kapathogia
+	#holder=1245 # Hannibal 
+}
+798.1.1={
+	#holder=1248 # Charlot 
+}

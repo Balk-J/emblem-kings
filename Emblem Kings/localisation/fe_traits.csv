@@ -212,14 +212,14 @@ holy_blood_major_loptyr;Major Loptyr Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_loptyr_desc;This character has major §YLoptyr§! holy blood.;;;;;;;;;;;;;x
 holy_blood_major_naga;Major Naga Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_naga_desc;This character has major §YNaga§! holy blood.;;;;;;;;;;;;;x
-holy_blood_major_baldur;Major Baldur Holy Blood;;;;;;;;;;;;;x
-holy_blood_major_baldur_desc;This character has major §YBaldur§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_baldr;Major Baldr Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_baldr_desc;This character has major §YBaldr§! holy blood.;;;;;;;;;;;;;x
 holy_blood_major_blagi;Major Blagi Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_blagi_desc;This character has major §YBlagi§! holy blood.;;;;;;;;;;;;;x
 holy_blood_major_dain;Major Dain Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_dain_desc;This character has major §YDain§! holy blood.;;;;;;;;;;;;;x
-holy_blood_major_fala;Major Fala Holy Blood;;;;;;;;;;;;;x
-holy_blood_major_fala_desc;This character has major §YFala§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_fjalar;Major Fjalar Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_fjalar_desc;This character has major §YFjalar§! holy blood.;;;;;;;;;;;;;x
 holy_blood_major_forseti;Major Forseti Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_forseti_desc;This character has major §YForseti§! holy blood.;;;;;;;;;;;;;x
 holy_blood_major_hezul;Major Hezul Holy Blood;;;;;;;;;;;;;x
@@ -228,24 +228,24 @@ holy_blood_major_neir;Major Neir Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_neir_desc;This character has major §YNeir§! holy blood.;;;;;;;;;;;;;x
 holy_blood_major_noba;Major Noba Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_noba_desc;This character has major §YNoba§! holy blood.;;;;;;;;;;;;;x
-holy_blood_major_odo;Major Odo Holy Blood;;;;;;;;;;;;;x
-holy_blood_major_odo_desc;This character has major §YOdo§! holy blood.;;;;;;;;;;;;;x
-holy_blood_major_tordo;Major Tordo Holy Blood;;;;;;;;;;;;;x
-holy_blood_major_tordo_desc;This character has major §YTordo§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_od;Major Od Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_od_desc;This character has major §YOd§! holy blood.;;;;;;;;;;;;;x
+holy_blood_major_thrud;Major Thrud Holy Blood;;;;;;;;;;;;;x
+holy_blood_major_thrud_desc;This character has major §YThrud§! holy blood.;;;;;;;;;;;;;x
 holy_blood_major_ulir;Major Ulir Holy Blood;;;;;;;;;;;;;x
 holy_blood_major_ulir_desc;This character has major §YUlir§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_loptyr;Minor Loptyr Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_loptyr_desc;This character has minor §YLoptyr§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_naga;Minor Naga Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_naga_desc;This character has minor §YNaga§! holy blood.;;;;;;;;;;;;;x
-holy_blood_minor_baldur;Minor Baldur Holy Blood;;;;;;;;;;;;;x
-holy_blood_minor_baldur_desc;This character has minor §YBaldur§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_baldr;Minor Baldr Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_baldr_desc;This character has minor §YBaldr§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_blagi;Minor Blagi Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_blagi_desc;This character has minor §YBlagi§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_dain;Minor Dain Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_dain_desc;This character has minor §YDain§! holy blood.;;;;;;;;;;;;;x
-holy_blood_minor_fala;Minor Fala Holy Blood;;;;;;;;;;;;;x
-holy_blood_minor_fala_desc;This character has minor §YFala§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_fjalar;Minor Fjalar Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_fjalar_desc;This character has minor §YFjalar§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_forseti;Minor Forseti Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_forseti_desc;This character has minor §YForseti§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_hezul;Minor Hezul Holy Blood;;;;;;;;;;;;;x
@@ -254,10 +254,10 @@ holy_blood_minor_neir;Minor Neir Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_neir_desc;This character has minor §YNeir§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_noba;Minor Noba Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_noba_desc;This character has minor §YNoba§! holy blood.;;;;;;;;;;;;;x
-holy_blood_minor_odo;Minor Odo Holy Blood;;;;;;;;;;;;;x
-holy_blood_minor_odo_desc;This character has minor §YOdo§! holy blood.;;;;;;;;;;;;;x
-holy_blood_minor_tordo;Minor Tordo Holy Blood;;;;;;;;;;;;;x
-holy_blood_minor_tordo_desc;This character has minor §YTordo§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_od;Minor Od Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_od_desc;This character has minor §YOd§! holy blood.;;;;;;;;;;;;;x
+holy_blood_minor_thrud;Minor Thrud Holy Blood;;;;;;;;;;;;;x
+holy_blood_minor_thrud_desc;This character has minor §YThrud§! holy blood.;;;;;;;;;;;;;x
 holy_blood_minor_ulir;Minor Ulir Holy Blood;;;;;;;;;;;;;x
 holy_blood_minor_ulir_desc;This character has minor §YUlir§! holy blood.;;;;;;;;;;;;;x
 possessed_loptyr;Possessed;;;;;;;;;;;;;x

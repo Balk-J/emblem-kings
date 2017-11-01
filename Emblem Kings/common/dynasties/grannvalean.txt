@@ -144,11 +144,11 @@
     }
 }
 1016={ # for Cowen and Aida
-	name="of Spakona"
+	name="of Galar"
 	culture="grannvalean"
 }
 1017={ # for Hilda
-	name="of Spaekona"
+	name="of Kvasir"
 	culture="grannvalean"
 }
 1018={ # for Liza
@@ -272,7 +272,7 @@
 2084={ # for Felipe
 	can_appear=no
 	used_for_random=no
-	name="of Walwon"
+	name="of Gilling"
 	culture="grannvalean"
 }
 2085={ # for Palmark
@@ -433,6 +433,122 @@
 2106={ # for Zaom
 	name="of Frigg"
 	culture="grannvalean"
+}
+2143={ # for Barat
+	name="of Vethorm"
+	culture="grannvalean"
+}
+2144={ # for Amalda
+	can_appear=no
+	used_for_random=no
+	name="of Hloridi"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 46
+            emblem = 0
+            color = 3
+            color = 11
+            color = 1
+        }
+    }
+}
+2145={ # for Aihiman
+	name="of Glasislundr"
+	culture="grannvalean"
+}
+2146={ # for Nicolov
+	name="of Sonnung"
+	culture="grannvalean"
+}
+2147={ # for Kempf
+	can_appear=no
+	used_for_random=no
+	name="of Heidrun"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 6
+            emblem = 0
+            color = 3
+            color = 12
+            color = 0
+        }
+    }
+}        
+2148={ # for Oltof
+	name="of Skirnismal"
+	culture="grannvalean"
+}
+2149={ # for Ilios
+	can_appear=no
+	used_for_random=no
+	name="of Eikthyrnir"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 0
+            texture_internal = 3
+            emblem = 0
+            color = 6
+            color = 12
+            color = 0
+        }
+    }
+} 
+2150={ # for Largo
+	name="of Walaz"
+	culture="grannvalean"
+} 
+2151={ # for Paulus
+	name="of Suttungr"
+	culture="grannvalean"
+}
+2152={ # for Baldack
+	name="of Baugi"
+	culture="grannvalean"
+}
+2153={ # for Rist
+	name="of Gunnlod"
+	culture="grannvalean"
+}
+2154={ # for Wolf
+	name="of Ingunar"
+	culture="grannvalean"
+}
+2155={ # for Muhammad
+	name="of Hymiskvida"
+	culture="grannvalean"
+}
+2156={ # for Ovo
+	name="of Volundarkvida"
+	culture="grannvalean"
+}
+2157={ # for Bloom's mage squad
+	can_appear=no
+	used_for_random=no
+	name="of Jarnvidr"
+	culture="grannvalean"
+	coat_of_arms = {
+		religion="church_of_edda"
+		template = 0
+        layer = {
+            texture = 1
+            texture_internal = 13
+            emblem = 0
+            color = 3
+            color = 0
+            color = 4
+        }
+    }
 }
 # Swedish from vanilla
 1025={

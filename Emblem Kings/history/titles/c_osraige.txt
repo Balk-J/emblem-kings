@@ -17,7 +17,7 @@
 }
 # TEMP to keep Ares out
 763.1.1={
-	holder=1058 # Bloom
+	holder=1417 # Amalda
 }
 777.1.1={
 	holder=1162 # Leif

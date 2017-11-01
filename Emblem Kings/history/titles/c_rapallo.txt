@@ -6,3 +6,9 @@
 	liege = d_genoa
 	#holder = 0
 }
+758.1.1={
+	holder=1516 # Barbarian
+}
+779.1.1={
+	holder=0 
+}

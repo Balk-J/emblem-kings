@@ -4,6 +4,9 @@
 759.1.1={
 	holder=1081 # Brigid
 }
+759.6.1={
+	holder=1505 # Pizarl
+}
 760.1.1={
 	holder=0 # Destroyed by the Grannvale army under Sigurd
 }

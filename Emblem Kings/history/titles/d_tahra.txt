@@ -27,6 +27,12 @@
 745.1.1 = { 
 	holder = 1168 # Linoan's father
 }
+762.1.1={
+	liege = k_thracia # Travant invades
+}
+763.1.1={
+	liege = k_manster # Grannvale invades
+}
 771.1.1 = { 
 	holder = 1170 # A "cruel surrogate"
 }

@@ -43,6 +43,10 @@
 	liege = k_grannvale
 	holder=1243 # Barbarian
 }
+761.1.1={
+	holder=0 
+	liege = 0
+}
 779.1.1={
 	liege = k_verdane
 	holder=1038 # Should be Jamke's son, but since we can't assume...

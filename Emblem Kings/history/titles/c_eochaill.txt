@@ -12,3 +12,11 @@
 649.1.1={
 	holder=0 
 }
+772.1.1={
+	holder=1402 # Lifis
+	liege = d_lifis_pirates
+}
+777.1.1={
+	holder=0
+	liege = d_iss
+}

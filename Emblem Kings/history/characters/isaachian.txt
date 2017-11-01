@@ -1,5 +1,5 @@
 1010={
-	name="Odo"
+	name="Od"
 	dynasty=1010
 	culture=isaachian
 	religion=church_of_edda
@@ -27,7 +27,7 @@
 	632.1.1 = {
 		give_nickname=nick_the_sword_saint
 		add_trait="crusader_draconic"
-		add_trait="holy_blood_major_odo"
+		add_trait="holy_blood_major_od"
 	}
 	# Founding of Jugdral
 	649.1.1 = {
@@ -47,15 +47,15 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	699.1.1={ 
 		birth=yes
 	}
 	711.01.01={
 		add_trait="class_myrmidon"
 		add_trait="base_class_myrmidon"
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -129,15 +129,15 @@
 	culture=isaachian
 	religion=church_of_edda
 	#disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	725.1.1={ 
 		birth=yes
 	}
 	737.01.01={
 		add_trait="class_myrmidon_female"
 		add_trait="base_class_myrmidon"
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -160,15 +160,15 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	728.1.1={ 
 		birth=yes
 	}
 	744.01.01={
 		add_trait="class_myrmidon"
 		add_trait="base_class_myrmidon"
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -202,15 +202,15 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	740.1.1={ 
 		birth=yes
 	}
 	752.01.01={
 		add_trait="class_myrmidon_female"
 		add_trait="base_class_myrmidon"
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_minor_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_minor_od"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -246,15 +246,15 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	749.1.1={ # Assume Shannan is not ready to fight in 760 - 11?
 		birth=yes
 	}
 	761.01.01={
 		add_trait="class_myrmidon"
 		add_trait="base_class_myrmidon"
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -287,7 +287,7 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	trait=twin
 	758.1.1={ 
 		birth=yes
@@ -295,8 +295,8 @@
 	770.01.01={
 		add_trait="class_myrmidon_female"
 		add_trait="base_class_myrmidon"
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_minor_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_minor_od"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -348,7 +348,7 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	trait=twin
 	758.1.1={ 
 		birth=yes
@@ -367,8 +367,8 @@
 				}
 			}
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_minor_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_minor_od"
 	} 	 
 	773.1.1 = {
 		add_trait="tough_soldier"
@@ -439,7 +439,7 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	trait=strong
 	743.1.1={ # Not sure? Mareeta was born in 761, so he's born in 745 at the latest
 		birth=yes
@@ -451,8 +451,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 	} 	 
 	758.1.1 = {
 		add_trait="skilled_tactician"
@@ -507,7 +507,7 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	761.1.1={ 
 		birth=yes
 	}
@@ -529,8 +529,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 	} 	 
 	775.1.1 = {
 		add_trait="tough_soldier"
@@ -573,7 +573,7 @@
 	culture=isaachian
 	religion=church_of_edda
 	#disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	650.1.1={ 
 		birth=yes
 	}
@@ -584,8 +584,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 	} 		
 	670.1.1 = {
 		remove_trait="class_myrmidon"
@@ -604,7 +604,7 @@
 	culture=isaachian
 	religion=church_of_edda
 	#disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	667.1.1={ 
 		birth=yes
 	}
@@ -615,8 +615,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_major_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_major_od"
 	} 	 
 	683.1.1 = {
 		add_matrilineal_spouse=1145 # 
@@ -649,7 +649,7 @@
 	dynasty=1010
 	culture=isaachian
 	religion=church_of_edda
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	651.1.1={ 
 		birth=yes
 	}
@@ -660,8 +660,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_minor_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_minor_od"
 	} 	
 	701.1.1={
 		death = yes
@@ -691,7 +691,7 @@
 	dynasty=1031
 	culture=isaachian
 	religion=church_of_edda
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	668.1.1={ 
 		birth=yes
 	}
@@ -702,8 +702,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_minor_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_minor_od"
 	} 	
 	719.1.1={
 		death = yes
@@ -716,7 +716,7 @@
 	dynasty=1031
 	culture=isaachian
 	religion=church_of_edda
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	700.1.1={ 
 		birth=yes
 	}
@@ -727,8 +727,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_minor_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_minor_od"
 	} 	
 	762.1.1={
 		death = yes
@@ -742,7 +742,7 @@
 	culture=isaachian
 	religion=church_of_edda
 	disallow_random_traits=yes
-	trait=holy_blood_latent_odo
+	trait=holy_blood_latent_od
 	735.1.1={ # Had a crush on Ayra growing up. 5 years older? Or in 733? The two are exclusive unless we take liberties with Ayra's age.
 		birth=yes
 	}
@@ -753,8 +753,8 @@
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
 		}
-			remove_trait="holy_blood_latent_odo"
-			add_trait="holy_blood_minor_odo"
+			remove_trait="holy_blood_latent_od"
+			add_trait="holy_blood_minor_od"
 	} 	 
 	750.1.1 = {
 		add_trait="tough_soldier"
@@ -845,6 +845,360 @@
 		culture=isaachian
 	}
 	676.1.1={
+		death = yes
+	}
+}
+# Substitute for Lester
+1473={
+	name="Deimne"
+	father=1475
+	mother=1476
+	dynasty=2177
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	760.1.1={ 
+		birth=yes
+	}
+	772.01.01={
+		add_trait="class_horse_archer"
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+		add_friend=1477 # Karen
+	} 
+	775.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="patient"
+		add_trait="humble"
+		add_trait="brave"
+		add_trait="light_foot_leader" 
+	}	 
+	 
+	777.1.1 = {
+		employer=1038 # Seliph
+	}	
+	778.1.1 = {
+		remove_trait="class_horse_archer"
+		add_trait="class_bow_knight"
+	}	
+	
+	819.1.1={
+		death = yes
+	}
+}
+# Substitute for Lana
+1474={
+	name="Muirne"
+	female=yes
+	father=1475
+	mother=1476
+	dynasty=2177
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	762.1.1={ 
+		birth=yes
+	}
+	774.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	777.1.1 = {
+		add_trait="scholarly_theologian"
+		add_trait="kind"
+		add_trait="just"
+		add_trait="shy"
+		add_trait="humble"
+		employer=1038 # Seliph
+		effect = {
+			c_1038 = { # Seliph
+				reverse_opinion = {
+					modifier = opinion_crush
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+	}	 
+	 
+	778.1.1 = {
+		remove_trait="class_cleric"
+		add_trait="class_bishop_female"
+	}	
+	
+	825.1.1={
+		death = yes
+	}
+}
+# Parents for Deimne/Muirne
+1475={
+	name="Dyfnarth"
+	dynasty=2177
+	culture=isaachian
+	religion=church_of_edda
+	740.1.1={ 
+		birth=yes
+	}
+	752.01.01={
+		add_trait="class_horse_archer"
+		add_trait="base_class_horse_archer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	757.01.01={
+		add_spouse=1476
+	} 
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+1476={
+	name="Myfanwy"
+	female=yes
+	culture=isaachian
+	religion=church_of_edda
+	741.1.1={ 
+		birth=yes
+	}
+	753.01.01={
+		add_trait="class_cleric"
+		add_trait="base_class_cleric"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+# Deimne's childhood friend
+1477={
+	name="Karen"
+	female=yes
+	dynasty=2178
+	culture=isaachian
+	religion=church_of_edda
+	760.1.1={ 
+		birth=yes
+	}	
+	818.1.1={
+		death = yes
+	}
+}
+# Substitute for Larcei
+1478={
+	name="Creidne"  
+	female=yes
+	father=1480
+	mother=1481
+	dynasty=2179
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=twin
+	758.1.1={ 
+		birth=yes
+	}
+	770.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			c_1136 = { # Shannan
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 30
+				}
+			}
+			c_1035 = { # Oifey
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 30
+				}
+			}
+			c_1076 = { # Iuchar
+				reverse_opinion = {
+					modifier = opinion_seduced_repelled
+					who = ROOT
+					years = 1
+				}
+			}
+			c_1077 = { # Iucharba
+				reverse_opinion = {
+					modifier = opinion_seduced_repelled
+					who = ROOT
+					years = 1
+				}
+			}
+		}
+	} 	 
+	773.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="aggressive_leader"
+		add_trait="experimenter"
+		add_trait="chaste" 
+		add_trait="diligent"
+		add_trait="brave"
+		add_trait="wroth"
+	}	
+	778.1.1 = {
+		remove_trait="class_myrmidon_female"
+		add_trait="class_swordmaster_female"
+	}	
+	810.1.1={
+		death = yes
+	}
+}
+# Substitute for Ulster
+1479={
+	name="Dalvin"  
+	father=1480
+	mother=1481
+	dynasty=2179
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	trait=twin
+	758.1.1={ 
+		birth=yes
+	}
+	770.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+			c_1035 = { # Oifey
+				reverse_opinion = {
+					modifier = opinion_mentor
+					who = ROOT
+					years = 30
+				}
+			}
+		}
+	} 	 
+	773.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="defensive_leader"
+		add_trait="flanker" # he's a scout
+		add_trait="just" 
+		add_trait="brave"
+		add_trait="wroth"
+		add_trait="kind"
+	}	
+	778.1.1 = {
+		remove_trait="class_myrmidon"
+		#add_trait="class_hero" # if we really want to match his canon class and break our system...
+		add_trait="class_swordmaster"
+	}	
+	808.1.1={
+		death = yes
+	}
+}
+# Parents for Creidne/Dalvin
+1480={
+	name="Ceredig"
+	dynasty=2179
+	culture=isaachian
+	religion=church_of_edda
+	738.1.1={ 
+		birth=yes
+	}
+	750.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	757.01.01={
+		add_spouse=1481
+	} 
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+1481={
+	name="Delyth"
+	female=yes
+	culture=isaachian
+	religion=church_of_edda
+	739.1.1={ 
+		birth=yes
+	}
+	751.01.01={
+		add_trait="class_myrmidon_female"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	763.1.1={
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+# The fake Shannan
+1493={
+	name="Shannam"
+	dna="0ca0h0dcaa0"
+	dynasty=2187
+	culture=isaachian
+	religion=church_of_edda
+	disallow_random_traits=yes
+	749.1.1={ 
+		birth=yes
+	}	
+	761.01.01={
+		add_trait="class_myrmidon"
+		add_trait="base_class_myrmidon"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	764.1.1 = {
+		add_trait="amateurish_plotter"
+		add_trait="arbitrary"
+		add_trait="deceitful"
+		add_trait="craven" 
+		add_trait="gregarious"
+	}	 
+	769.01.01={
+		remove_trait="class_myrmidon"
+		add_trait="class_swordmaster"
+	} 
+	776.1.1 = {
+		employer=1169 # Linoan
+	}	
+	779.1.1 = {
+		employer=1136 # Isaach
+	}			
+	800.1.1={
 		death = yes
 	}
 }

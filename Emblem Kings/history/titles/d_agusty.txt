@@ -50,15 +50,15 @@
 #778.1.1={
 770.1.1={
 	liege = e_grannvale
-	#holder=1270 # Dark Bishop
-	holder=1326 # Reinhardt's father
-}
-775.1.1={
-	holder=1324 # Reinhardt
-}
-777.1.1={
 	holder=1270 # Dark Bishop
+	#holder=1326 # Reinhardt's father
 }
+#775.1.1={
+#	holder=1324 # Reinhardt
+#}
+#777.1.1={
+#	holder=1270 # Dark Bishop
+#}
 #777.1.1={
 #	holder=1051 # Julius?
 #}

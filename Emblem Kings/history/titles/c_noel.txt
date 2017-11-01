@@ -12,3 +12,9 @@
 649.1.1={
 	liege = d_noel
 }
+770.1.1={
+	holder=1469 # Dobalzark
+}
+777.1.1={
+	holder=0 # 
+}

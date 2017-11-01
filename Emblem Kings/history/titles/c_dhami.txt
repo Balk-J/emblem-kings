@@ -9,3 +9,9 @@
 440.1.1={
 	holder=838 # 
 }
+758.1.1={
+	holder=1509 # Barbarian
+}
+779.1.1={
+	holder=0 
+}

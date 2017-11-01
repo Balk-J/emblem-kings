@@ -14,3 +14,9 @@
 	holder=0 
 	liege = d_thracia
 }
+746.1.1={
+	holder=1471 # Magorn 
+}
+649.1.1={
+	holder=0 
+}
