@@ -5,6 +5,7 @@
 # rule_token = {
 #	name = "TEXT_KEY_FOR_NAME"
 #	desc = "TEXT_KEY_FOR_LONG_DESC"
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
 #	option = {										# please note that the first option is always the default option
 #		name = option_token
 #		text = "TEXT_KEY_FOR_OPTION_NAME"
@@ -75,6 +76,29 @@ minor_epidemics = {
 
 #mongol_invasion = {}
 #aztec_invasion = {}
+
+#chinese_invasions = {}
+
+#chinese_interactions = {}
+
+unjustified_wars = {
+	name = "RULE_UNJUSTIFIED_WARS"
+	dlc = "Jade Dragon"
+	group = "RULE_GROUP_WARFARE"
+	group = "RULE_GROUP_JD"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_UNJUSTIFIED_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_UNJUSTIFIED_OFF_DESC"
+	}
+}
+
+#jade_dragon_cbs = {}
 
 devil_worshipers = {
 	name = "RULE_DEVIL_WORSHIPERS"
@@ -158,6 +182,46 @@ shattered_retreat = {
 	}
 }
 
+siege_assaults = {
+	name = "RULE_SIEGE_ASSAULTS"
+	group = "RULE_GROUP_WARFARE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_SIEGE_ASSAULTS_ON_DESC"
+	}
+	option = {
+		name = unlimited
+		text = "RULE_OPTION_UNLIMITED"
+		desc = "RULE_SIEGE_ASSAULTS_UNLIMITED_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_SIEGE_ASSAULTS_OFF_DESC"
+	}
+}
+
+siege_events = {
+	name = "RULE_SIEGE_EVENTS"
+	group = "RULE_GROUP_WARFARE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_SIEGE_EVENTS_ON_DESC"
+	}
+	option = {
+		name = defenders
+		text = "RULE_OPTION_DEFENDERS"
+		desc = "RULE_SIEGE_EVENTS_DEFENDERS_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_SIEGE_EVENTS_OFF_DESC"
+	}
+}
+
 defensive_pacts = {
 	name = "RULE_DEFENSIVE_PACTS"
 	group = "RULE_GROUP_WARFARE"
@@ -188,7 +252,7 @@ gender = {
 	}
 	option = {
 		name = all
-		achievements = no
+		#achievements = no
 		text = "RULE_OPTION_ALL"
 		desc = "RULE_GENDER_ALL_DESC"
 	}
@@ -727,29 +791,60 @@ cultural_title_names = {
 	}
 }
 
-#multiplayer_assassinations = {
-#	name = "RULE_MULTIPLAYER_ASSASSINATIONS"
-#	option = {
-#		name = default
-#		text = "RULE_OPTION_DEFAULT"
-#		desc = "RULE_MULTIPLAYER_ASSASSINATIONS_DEFAULT_DESC"
-#	}
-#	option = {
-#		name = no_players
-#		text = "RULE_OPTION_NO_PLAYERS"
-#		desc = "RULE_MULTIPLAYER_ASSASSINATIONS_NO_PLAYERS_DESC"
-#	}
-#	option = {
-#		name = no_players_or_heirs
-#		text = "RULE_OPTION_NO_PLAYERS_OR_HEIRS"
-#		desc = "RULE_MULTIPLAYER_ASSASSINATIONS_NO_PLAYERS_OR_HEIRS_DESC"
-#	}
-#	option = {
-#		name = no_player_dynasties
-#		text = "RULE_OPTION_NO_PLAYER_DYNASTIES"
-#		desc = "RULE_MULTIPLAYER_ASSASSINATIONS_NO_PLAYER_DYNASTIES_DESC"
-#	}
-#}
+multiplayer_assassinations = {
+	name = "RULE_MULTIPLAYER_ASSASSINATIONS"
+	group = "RULE_GROUP_MP"
+	option = {
+		name = free
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_MULTIPLAYER_ASSASSINATIONS_DEFAULT_DESC"
+	}
+	option = {
+		name = no_players_or_relatives
+		text = "RULE_OPTION_NO_CLOSE_PLAYER_RELATIVES"
+		desc = "RULE_MULTIPLAYER_ASSASSINATIONS_NO_CLOSE_PLAYER_RELATIVES_DESC"
+	}
+	option = {
+		name = no_players
+		text = "RULE_OPTION_NO_PLAYERS"
+		desc = "RULE_MULTIPLAYER_ASSASSINATIONS_NO_PLAYERS_DESC"
+	}
+}
+
+multiplayer_invasions = {
+	name = "RULE_MULTIPLAYER_PLAYER_INVASIONS"
+	group = "RULE_GROUP_MP"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_MULTIPLAYER_PLAYER_INVASIONS_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_MULTIPLAYER_PLAYER_INVASIONS_OFF_DESC"
+	}
+}
+
+multiplayer_third_party_claims = {
+	name = "RULE_MULTIPLAYER_3RD_PARTY_CLAIMS"
+	group = "RULE_GROUP_MP"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_MULTIPLAYER_3RD_PARTY_CLAIMS_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_MULTIPLAYER_3RD_PARTY_CLAIMS_OFF_DESC"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_MULTIPLAYER_3RD_PARTY_CLAIMS_LIMITED_DESC"
+	}
+}
 
 demesne_size = {
 	name = "RULE_DEMESNE_SIZE"
@@ -819,3 +914,23 @@ grant_independence = {
 	}
 }
 
+conclave_education_focuses = {
+	name = "RULE_EDU_FOCUSES"
+	dlc = "Conclave"
+	group = "RULE_GROUP_CONCLAVE"
+	option = {
+		name = close_relatives
+		text = "RULE_EDU_FOCUSES_CR"
+		desc = "RULE_EDU_FOCUSES_CR_DESC"
+	}
+	option = {
+		name = all
+		text = "RULE_OPTION_ALL"
+		desc = "RULE_EDU_FOCUSES_ALL_DESC"
+	}
+	option = {
+		name = minimal
+		text = "RULE_OPTION_MINIMAL"
+		desc = "RULE_EDU_FOCUSES_MINIMAL_DESC"
+	}
+}

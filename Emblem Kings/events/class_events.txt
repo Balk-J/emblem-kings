@@ -3,7 +3,7 @@ namespace = class
 # On adolescence event - decide who picks the class
 character_event = {
 	id = class.1
-	desc = "class.1.desc"
+	desc = class.1.desc
 
 	is_triggered_only = yes
 	hide_window = yes
@@ -163,7 +163,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "OK"
+		name = OK
 		set_character_flag = class_selected
 		event_target:class_selector = {
 			#if = {
@@ -180,14 +180,14 @@ character_event = {
 
 character_event = {
 	id = class.2
-	desc = "class.2.desc"
-	picture = "GFX_evt_child_sword" 
+	desc = class.2.desc
+	picture = GFX_evt_child_sword
 		
 	is_triggered_only = yes
 	
 	# Father's classes
 	option = {
-		name = "class.2.A"
+		name = class.2.A
 		trigger = {
 			FROM = {
 				father_even_if_dead = {
@@ -232,7 +232,7 @@ character_event = {
 	
 	# Mother's classes
 	option = {
-		name = "class.2.B"
+		name = class.2.B
 		trigger = {
 			FROM = {
 				mother_even_if_dead = {
@@ -278,7 +278,7 @@ character_event = {
 	
 	# Culture-appropriate solider
 	option = {
-		name = "class.2.C"
+		name = class.2.C
 		ai_chance = {
 			factor = 5
 		}
@@ -298,25 +298,26 @@ character_event = {
 		ai_chance = {
 			factor = 0
 		}
-		name = "class.2.D"		
+		name = class.2.D	
 	}
 }
-
 character_event = {
 	id = class.3
-	desc = "class.3.desc"
-	picture = "GFX_evt_child_sword" 
+	desc = class.3.desc
+	picture = GFX_evt_child_sword 
 		
 	is_triggered_only = yes
 	
 	immediate = {
 		# Set level to 1
-		set_variable = { which = "level" value = 1 }
+		FROMFROM = {
+			set_variable = { which = level value = 1 }
+		}
 	}
 	
 	# Father's class 1
 	option = {
-		name = "class.3.A"
+		name = class.3.A
 		trigger = {
 			FROMFROM = {
 				father_even_if_dead = {
@@ -794,7 +795,7 @@ character_event = {
 	
 	# Father's class 2
 	option = {
-		name = "class.3.B"
+		name = class.3.B
 		trigger = {
 			FROMFROM = {
 				father_even_if_dead = {
@@ -1193,19 +1194,21 @@ character_event = {
 # Mother's classes
 character_event = {
 	id = class.4
-	desc = "class.4.desc"
-	picture = "GFX_evt_child_sword" 
+	desc = class.4.desc
+	picture = GFX_evt_child_sword
 		
 	is_triggered_only = yes
 	
 	immediate = {
 		# Set level to 1
-		set_variable = { which = "level" value = 1 }
+		FROMFROM = {
+			set_variable = { which = level value = 1 }
+		}
 	}
 	
 	# Mother's class 1
 	option = {
-		name = "class.4.A"
+		name = class.4.A
 		trigger = {
 			FROMFROM = {
 				mother_even_if_dead = {
@@ -1685,7 +1688,7 @@ character_event = {
 	
 	# Mother's class 2
 	option = {
-		name = "class.4.B"
+		name = class.4.B
 		trigger = {
 			FROMFROM = {
 				mother_even_if_dead = {
@@ -2086,20 +2089,20 @@ character_event = {
 # Promotion
 character_event = {
 	id = class.5
-	desc = "class.5.desc"
-	picture = "GFX_evt_battle" 
+	desc = class.5.desc
+	picture = GFX_evt_battle
 	
 	is_triggered_only = yes
 		
 	immediate = {
 		if = {
 			limit = {
-				check_variable = { which = "level" value = 20 }
+				check_variable = { which = level value = 20 }
 			}
 			set_character_flag = max_level_promotion
 		}
 		# Reset level to 1
-		set_variable = { which = "level" value = 1 }
+		set_variable = { which = level value = 1 }
 	}
 	
 	option = {
@@ -2818,7 +2821,7 @@ character_event = {
 	
 	# This should never happen, but just in case...
 	option = {
-		name = "class.5.C"
+		name = class.5.C
 		trigger = {
 			NOR = {
 				trait=class_archer
@@ -2855,7 +2858,7 @@ character_event = {
 	}		
 	
 	option = {
-		name = "class.5.D"
+		name = class.5.D
 		ai_chance = {
 			factor = 1
 		}
@@ -2889,8 +2892,8 @@ character_event = {
 			trait=base_class_wyvern_rider
 			trait=base_class_pegasus_knight
 		}
-		#check_variable = { which = "level" value = 10 }
-		check_variable = { which = "level" value = 20 }
+		#check_variable = { which = level value = 10 }
+		check_variable = { which = level value = 20 }
 	}
 	
 	option = {
@@ -2903,13 +2906,13 @@ character_event = {
 character_event = {
 	id = class.7
 	desc = class.7.desc
-	picture = "GFX_evt_battle" 	
+	picture = GFX_evt_battle
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = EXCELLENT
-		change_variable = { which = "level" value = 1 }
+		change_variable = { which = level value = 1 }
 	}
 }
 
@@ -2921,7 +2924,7 @@ character_event = {
 character_event = {
 	id = class.8
 	desc = class.8.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	capable_only = yes
 	only_rulers = yes
@@ -2959,7 +2962,7 @@ character_event = {
 character_event = {
 	id = class.9
 	#desc = class.9.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	is_triggered_only = yes
 	# Captain of the Guard's reaction:
@@ -3007,7 +3010,7 @@ character_event = {
 character_event = {
 	id = class.10
 	desc = class.10.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee 
 	
 	capable_only = yes
 	only_rulers = yes
@@ -3063,9 +3066,9 @@ character_event = {
 	
 	option = {
 		name = class.10.A
-		add_trait = "class_soldier"
-		set_variable = { which = "level" value = 1 }
-		set_character_flag="class_selected"
+		add_trait = class_soldier
+		set_variable = { which = level value = 1 }
+		set_character_flag=class_selected
 		hidden_tooltip = { add_trait = base_class_soldier }
 	}
 }
@@ -3073,7 +3076,7 @@ character_event = {
 character_event = {
 	id = class.11
 	desc = class.11.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	trigger = {
 		in_command = no
@@ -3757,7 +3760,7 @@ character_event = {
 		clr_character_flag=class_training_taught_by_school
 		clr_character_flag=class_training
 		set_character_flag=class_selected
-		set_variable = { which = "level" value = 1 }
+		set_variable = { which = level value = 1 }
 		random_list = {
 			1 = {
 				modifier = {
@@ -4192,7 +4195,7 @@ character_event = {
 character_event = {
 	id = class.21
 	desc = class.21.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	trigger = {
 		in_command = no
@@ -4247,7 +4250,7 @@ character_event = {
 character_event = {
 	id = class.22
 	desc = class.22.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	is_triggered_only=yes
 		
@@ -4327,7 +4330,7 @@ character_event = {
 character_event = {
 	id = class.23
 	desc = class.22.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	is_triggered_only=yes
 		
@@ -4429,7 +4432,7 @@ character_event = {
 character_event = {
 	id = class.24
 	desc = class.22.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	is_triggered_only=yes
 		
@@ -4509,7 +4512,7 @@ character_event = {
 character_event = {
 	id = class.25
 	desc = class.22.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	is_triggered_only=yes
 		
@@ -4593,7 +4596,7 @@ character_event = {
 character_event = {
 	id = class.26
 	desc = class.22.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	is_triggered_only=yes
 		
@@ -4612,7 +4615,7 @@ character_event = {
 character_event = {
 	id = class.27
 	desc = class.27.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	
 	capable_only = yes
 	only_rulers = yes
@@ -4678,11 +4681,11 @@ character_event = {
 character_event = {
 	id = class.28
 	desc = class.28.desc
-	picture = "GFX_evt_melee" 
+	picture = GFX_evt_melee
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		set_variable = { which = "level" value = 1 }
+		set_variable = { which = level value = 1 }
 		set_character_flag = class_selected
 		random_list = {
 			10 = { #90?
@@ -4690,7 +4693,7 @@ character_event = {
 					factor = 0
 					has_character_flag = change_soldier
 				}
-				add_trait = "class_soldier"
+				add_trait = class_soldier
 				hidden_tooltip = { add_trait = base_class_soldier }
 			}
 			10 = {			
@@ -4699,10 +4702,16 @@ character_event = {
 					NOR = { 
 						culture = lycian 
 						culture = etrurian 
-						culture = bernese 				
+						culture = bernese 		
+						culture = grannvalean
+						culture = agustrian
+						culture = mansterian
+						culture = thracian
+						culture = new_thracian	
+						culture = silessian 	
 					}
 				}
-				add_trait = "class_knight"
+				add_trait = class_knight
 				hidden_tooltip = { add_trait = base_class_knight }
 			}
 			10 = {			
@@ -4712,10 +4721,15 @@ character_event = {
 						culture = etrurian 
 						culture = lycian 
 						culture = bernese 
-						culture = ilian						
+						culture = ilian		
+						culture = grannvalean
+						culture = agustrian
+						culture = mansterian
+						culture = new_thracian	
+						culture = silessian 			
 					}
 				}
-				add_trait = "class_cavalier"
+				add_trait = class_cavalier
 				hidden_tooltip = { add_trait = base_class_cavalier }
 			}
 			10 = {			
@@ -4724,7 +4738,10 @@ character_event = {
 					NOR = { 
 						culture = etrurian 
 						culture = lycian 
-						culture = nabatan 				
+						culture = nabatan
+						culture = grannvalean
+						culture = agustrian
+						culture = verdanian 				
 					}
 				}
 				hidden_tooltip = { add_trait = base_class_archer }
@@ -4732,19 +4749,24 @@ character_event = {
 					limit = {
 						is_female = no
 					}
-					add_trait = "class_archer"
+					add_trait = class_archer
 				}
 				if = {
 					limit = {
 						is_female = yes
 					}
-					add_trait = "class_archer_female"
+					add_trait = class_archer_female
 				}
 			}
 			10 = {			
 				modifier = {
 					factor = 0
-					NOT = { culture = sacaean }
+					NOR = { 
+						culture = sacaean
+						culture = grannvalean
+						culture = mansterian
+						culture = new_thracian					
+					}
 				}
 				hidden_tooltip = { add_trait = base_class_horse_archer }
 				if = {
@@ -4769,6 +4791,10 @@ character_event = {
 							culture = sacaean 
 							culture = bernese 
 							culture = western_islander 
+							culture = grann
+							culture = verdanian
+							culture = silessian 
+							culture = isaachian 
 						}
 						is_female = yes
 					}
@@ -4785,7 +4811,10 @@ character_event = {
 							culture = sacaean 
 							culture = bernese 
 							culture = western_islander 
-							culture = nabatan 				
+							culture = nabatan 	
+							culture = grann
+							culture = verdanian		
+							culture = isaachian	
 						}
 						is_female = yes
 					}
@@ -4800,6 +4829,10 @@ character_event = {
 						NOR = { 
 							culture = lycian 
 							culture = western_islander 
+							culture = grann
+							culture = verdanian
+							culture = agustrian
+							culture = isaachian
 						}
 						is_female = yes
 					}
@@ -4815,6 +4848,10 @@ character_event = {
 						culture = bernese 
 						culture = western_islander
 						culture = sacaean
+						culture = grannvalean
+						culture = isaachian
+						culture = thracian
+						culture = new_thracian	
 					}
 				}
 				hidden_tooltip = { add_trait = base_class_myrmidon }
@@ -4839,6 +4876,12 @@ character_event = {
 						culture = bernese 
 						culture = western_islander
 						culture = nabatan
+						culture = grannvalean
+						culture = verdanian
+						culture = mansterian
+						culture = thracian
+						culture = new_thracian	
+						culture = isaachian
 					}
 				}
 				hidden_tooltip = { add_trait = base_class_thief }
@@ -4859,7 +4902,10 @@ character_event = {
 				modifier = {
 					factor = 0
 					OR = {
-						NOT = { culture = ilian }
+						NOR = { 
+							culture = ilian 
+							culture = silessian 
+						}
 						is_female = no
 					}
 				}
@@ -4869,7 +4915,11 @@ character_event = {
 			10 = {			
 				modifier = {
 					factor = 0
-					NOT = { culture = bernese }
+					NOR = { 
+						culture = bernese 
+						culture = thracian 
+						culture = new_thracian 
+					}
 				}
 				add_trait = "class_wyvern_rider"
 				hidden_tooltip = { add_trait = base_class_wyvern_rider }
@@ -4878,7 +4928,13 @@ character_event = {
 				modifier = {
 					factor = 0
 					OR = {
-						NOT = { culture = etrurian }
+						NOR = { 
+							culture = etrurian 
+							culture = grannvalean 
+							culture = agustrian 
+							culture = mansterian 
+							culture = new_thracian 
+						}
 						is_female = no
 					}
 				}
@@ -4892,6 +4948,8 @@ character_event = {
 						culture = lycian 
 						culture = etrurian 
 						culture = bernese 
+						culture = grannvalean 
+						culture = agustrian 
 					}
 				}
 				if = {
@@ -4912,9 +4970,11 @@ character_event = {
 			10 = {			
 				modifier = {
 					factor = 0
-					OR = {
-						NOT = { culture = etrurian }
-						is_female = yes
+					NOR = { 
+						culture = etrurian 
+						culture = verdanian 
+						culture = grannvalean 
+						culture = agustrian 
 					}
 				}
 				add_trait = "class_monk"
@@ -4930,6 +4990,12 @@ character_event = {
 						culture = bernese 
 						culture = western_islander
 						culture = nabatan
+						culture = grannvalean 
+						culture = agustrian 
+						culture = silessian 
+						culture = mansterian 
+						culture = thracian 
+						culture = new_thracian 
 					}
 				}
 				hidden_tooltip = { add_trait = base_class_mage }
@@ -4956,6 +5022,12 @@ character_event = {
 						culture = bernese 
 						culture = sacaean
 						culture = nabatan
+						culture = grannvalean 
+						culture = agustrian 
+						culture = silessian 
+						culture = mansterian 
+						culture = thracian 
+						culture = new_thracian
 					}
 				}
 				hidden_tooltip = { add_trait = base_class_dark_mage }
@@ -4984,8 +5056,8 @@ character_event = {
 # Level up a character who wants to promote
 character_event = {
 	id = class.29
-	desc = "class.29.desc"
-	picture = "GFX_evt_battle" 	
+	desc = class.29.desc
+	picture = GFX_evt_battle	
 	
 	capable_only = yes
 	only_rulers = yes
@@ -4995,7 +5067,7 @@ character_event = {
 		has_ambition = obj_promote
 		has_character_flag = class_selected 
 		NOT = { is_inaccessible_trigger = yes }
-		NOT = { check_variable = { which = "level" value = 20 } } 
+		NOT = { check_variable = { which = level value = 20 } } 
 	}
 	
 	mean_time_to_happen = {
@@ -5004,6 +5076,6 @@ character_event = {
 		
 	option = {
 		name = EXCELLENT
-		change_variable = { which = "level" value = 1 }
+		change_variable = { which = level value = 1 }
 	}
 }

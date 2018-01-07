@@ -1,0 +1,19 @@
+name = "Grannvalean Invasion of Isaach"
+
+casus_belli = {
+	actor = 1029 # Azmur
+	recipient = 1130 # Mananan
+	casus_belli = jugdral_invasion
+	landed_title=k_isaach
+	date=756.1.1
+}
+
+756.1.1 = {
+	add_attacker = 1029
+	add_defender = 1130
+}
+
+756.12.30 = {
+	rem_attacker = 1029
+	rem_defender = 1130
+}

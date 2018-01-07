@@ -1,0 +1,37 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe4_grannvale_isaach.2.title;Assault on Darna;;;;;;;;;;;;;x
+fe4_grannvale_isaach.2.desc;[Root.PrimaryTitle.GetFOA], terrible news! The holy site of Darna Fortress has been attacked by savage raiders! Many different rumors are spreading about the damage - some say the invaders were repelled after a fierce battle, while others claim that they massacred Darna's defenders to a man and then pillaged the town.\n\nThe one thing that is certain is that the attackers were soldiers of [From.PrimaryTitle.GetName]. All accounts agree that they were fighting under the [From.PrimaryTitle.GetName] flag and using their traditional weapons and tactics. [From.GetTitledName] has much to answer for!;;;;;;;;;;;;;x
+fe4_grannvale_isaach.2.A;To arms! Justice for Darna!;;;;;;;;;;;;;x
+fe4_grannvale_isaach.2.A.tooltip;§Y[Root.GetTitledName]§! declares war on §Y[From.GetTitledName]§!;;;;;;;;;;;;;x
+fe4_grannvale_isaach.2.B;We will not fight [From.PrimaryTitle.GetName] over this.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.2.C;This whole matter seems suspicious.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.3.desc;Your vassals will provide levies in accordance with the law, but this situation might call for a greater show of support. Darna is not only a holy site - it's important to the history of all nations in Jugdral. Perhaps you should ask them to loan you their knight brigades for the duration of the conflict?;;;;;;;;;;;;;x
+fe4_grannvale_isaach.3.A;Grannvale's elite will ride as one!;;;;;;;;;;;;;x
+fe4_grannvale_isaach.3.A.tooltip;will be asked to give [Root.GetTitledFirstName] control of their ducal knight brigades for the duration of the war.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.3.B;That won't be necessary.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.4.desc;[Root.GetTitledFirstName],\nWord may have reached you that Darna Fortress was attacked and pillaged. I will see that those responsible pay for this barbaric act, and I ask all able knights of [From.PrimaryTitle.GetName] to join me!\nWill you allow your knight brigade to march under my banner for the duration of the war?\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_isaach.4.A;My knights will remain under my command.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.4.B;They will march with the [From.GetTitle]. For Darna!;;;;;;;;;;;;;x
+fe4_grannvale_isaach.5.desc;[Root.GetTitledFirstName],\nMy knights are at your command. For Darna!\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_isaach.5.A;;;;;;;;;;;;;;x
+fe4_grannvale_isaach.6.desc;[Root.GetTitledFirstName],\nYou have my wholehearted support, but my knights will serve the realm better if they remain under my direct command. They will be needed to defend [From.PrimaryTitle.GetName] with our levies marching for you.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_isaach.6.A;I see.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.7.desc;The war is over, but there are questions left unanswered. Why did they attack Darna? Did they not understand how we would respond? Or is something sinister afoot?;;;;;;;;;;;;;x
+fe4_grannvale_isaach.7.A;Enough of this. I have a country to run.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.7.B;I should be careful. This doesn't feel right.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.8.desc;As you're heading back home along a lonely road, you hear a noise to your right. When you turn to look you feel a sharp pain in your side, then your head. You barely realize they're arrows before everything gets dark...;;;;;;;;;;;;;x
+fe4_grannvale_isaach.8.A;Who...?;;;;;;;;;;;;;x
+fe4_grannvale_isaach.9.title;Death of [From.GetFirstName];;;;;;;;;;;;;x
+fe4_grannvale_isaach.9.desc;[From.GetLordLady] [From.GetFirstName] was murdered while returning to [From.GetHerHis] lands after the war! The assassins remain at large. The most common rumor is that [From.GetFirstName] was killed by enemy soldiers in one final act of revenge.\n\nHowever, since no trace of the killers has been found, some whisper that this is the work of a consipiracy involving a highly placed commander or influential noble...;;;;;;;;;;;;;x
+fe4_grannvale_isaach.9.A;No... my [From.GetSonDaughter]...;;;;;;;;;;;;;x
+fe4_grannvale_isaach.9.B;A dark day for the kingdom.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.9.C;That's no concern of ours...;;;;;;;;;;;;;x
+fe4_grannvale_isaach.9.D;Heim's cursed line deserves this and more.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.10.desc;I was asked to watch the castle, but it seems my 'liege' just lost it. The soldiers who took it freed the prince, so there's no need for us to stay anymore.;;;;;;;;;;;;;x
+fe4_grannvale_isaach.10.A;Good riddance!;;;;;;;;;;;;;x
+fe4_grannvale_isaach..title;;;;;;;;;;;;;;x
+fe4_grannvale_isaach..desc;;;;;;;;;;;;;;x
+fe4_grannvale_isaach..A;;;;;;;;;;;;;;x
+fe4_grannvale_isaach..B;;;;;;;;;;;;;;x
+fe4_grannvale_isaach..C;;;;;;;;;;;;;;x
+fe4_grannvale_isaach..D;;;;;;;;;;;;;;x

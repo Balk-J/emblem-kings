@@ -6,9 +6,9 @@ secret_religious_society__desc;;;;;;;;;;;;;;x
 secret_religious_society__leader_desc;The High Priest, leading the international effort of bringing more people into the fold.;Le grand prêtre dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester, der die internationalen Bemühungen leitet, mehr Menschen in den Schoß der Familie zu führen.;;El Sumo sacerdote, que dirige la misión a escala internacional para atraer a más fieles.;;;;;;;;;x
 secret_religious_society_zoroastrian;the Loyal Magi;;;;;;;;;;;;;x
 secret_religious_society_zoroastrian_desc;Believing themselves to be the protectors of understanding and knowledge in a world under the spell of Ahriman's ignorance, Zoroastrians organizing in secret spread the truth and light of Ahura Mazda's wisdom. Charged by their prophet with protecting the water, earth, fire and air, they enlighten others about the struggle between destructive chaos and the good of creation. Even when forced into secrecy there is yet hope, for Zoroaster told of the inevitability of Ahura Mazda's victory.;;;;;;;;;;;;;x
-secret_religious_society_loptyrian;the Loptyr Sect;;;;;;;;;;;;;x
-secret_religious_society_loptyrian_desc;Worshippers of the dark god Loptyr who find themselves among infidels are subject to disdain, hatred and witch-hunts. They practice their dark rites in secret, dreaming of the day when they can rebuild their empire and restore their god to power.;;;;;;;;;;;;;x
-secret_religious_society_loptyrian_leader_desc;The High Priest, leading the international effort of bringing more people into the fold.;Le grand prêtre dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester, der die internationalen Bemühungen leitet, mehr Menschen in den Schoß der Familie zu führen.;;El Sumo sacerdote, que dirige la misión a escala internacional para atraer a más fieles.;;;;;;;;;x
+secret_religious_society_loptyrian;the Loptyrian Order;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_desc;Worshippers of the dark god Loptyr who find themselves among infidels are subject to disdain, hatred and witch hunts. They practice their dark rites in secret, dreaming of the day when they can rebuild their empire and restore their god to power.;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_leader_desc;The Archbishop, leading the international effort of bringing more people into the fold.;;;;;;;;;;;;;x
 secret_religious_society__rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;;;;;;x
 secret_religious_society__rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;;;;;;x
 secret_religious_society__rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;;;;;;x
@@ -17,11 +17,32 @@ secret_religious_society__rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;;;;;;x
 secret_religious_society__rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;;;;;;x
 secret_religious_society__rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;;;;;;x
 secret_religious_society__rank_4_male;Herald;Messager;Herold;;Mensajero;;;;;;;;;x
-secret_religious_society_loptyrian_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;;;;;;x
-secret_religious_society_loptyrian_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;;;;;;x
-secret_religious_society_loptyrian_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;;;;;;x
-secret_religious_society_loptyrian_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;;;;;;x
-secret_religious_society_loptyrian_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;;;;;;x
-secret_religious_society_loptyrian_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;;;;;;x
-secret_religious_society_loptyrian_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;;;;;;x
-secret_religious_society_loptyrian_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;;;;;;x
+secret_religious_society_loptyrian_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_rank_2_female;Dark Priestess;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_rank_3_female;Dark Bishop;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_rank_4_female;Archbishop;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_rank_2_male;Dark Priest;;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_rank_3_male;Dark Bishop;;;;;;;;;;;;;x
+secret_religious_society_loptyrian_rank_4_male;Archbishop;;;;;;;;;;;;;x
+loptyr_sect_rank_1_female;Abjurer;Apostate;Bannmagierin;;Apóstata;;;;;;;;;x
+loptyr_sect_rank_2_female;Conjurer;Sorcière;Beschwörerin;;Conjuradora;;;;;;;;;x
+loptyr_sect_rank_3_female;Priestess;Prêtresse;Priesterin;;Sacerdotisa;;;;;;;;;x
+loptyr_sect_rank_4_female;High Priestess;Grande prêtresse;Hohepriesterin;;Suma sacerdotisa;;;;;;;;;x
+loptyr_sect_rank_1_male;Abjurer;Apostat;Bannmagier;;Apóstata;;;;;;;;;x
+loptyr_sect_rank_2_male;Conjurer;Sorcier;Beschwörer;;Conjurador;;;;;;;;;x
+loptyr_sect_rank_3_male;Priest;Prêtre;Priester;;Sacerdote;;;;;;;;;x
+loptyr_sect_rank_4_male;High Priest;Grand prêtre;Hohepriester;;Sumo sacerdote;;;;;;;;;x
+currency_name_loptyr_sect;Dark Power;Pouvoir obscur;Dunkle Macht;;Poder oscuro;;;;;;;;;x
+loptyr_sect;The Loptyr Sect;;;;;;;;;;;;;x
+loptyr_sect_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! lusts for the power of darkness. If so, you may offer [Root.GetHerHim] the favor of Lord Loptyr.;;;;;;;;;;;;;x
+String_loptyr_sect;the Loptyr Sect;;;;;;;;;;;;;x
+loptyr_sect_desc;Those who serve the dark god hide in our midst, dedicating their depravities and perfidies to their Lord Loptyr. Every transgression is a hymn, every murder a roar of defiance against the word of [Root.Religion.GetHighGodName]. Loptyr rewards such dark sacraments handsomely – the true faithful are said to be gifted with unnatural lifespans and dark magic of incredible power.;;;;;;;;;;;;;x
+loptyr_sect_leader_desc;The High Priest of Loptyr.;;;;;;;;;;;;;x
+String_Loptyr;Loptyr;;;;;;;;;;;;;x
+String_dark_magic;dark magic;;;;;;;;;;;;;x
+String_dark_priestess;dark priestess;;;;;;;;;;;;;x
+String_dark_priest;dark priest;;;;;;;;;;;;;x
+String_Praise_Loptyr;Praise Loptyr;;;;;;;;;;;;;x
+String_Loptyr_icon;Loptyr icon;;;;;;;;;;;;;x
+String_Loptyrs_blessings;Loptyr's blessings;;;;;;;;;;;;;x

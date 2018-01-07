@@ -104,3 +104,26 @@ consume_concoction.tooltip;The concoction is consumed and [From.GetTitledFirstNa
 consume_elixir;Consume Elixir;;;;;;;;;;;;;x
 consume_elixir_desc;Consuming an elixir will restore a large amount of health.;;;;;;;;;;;;;x
 consume_elixir.tooltip;The elixir is consumed and [From.GetTitledFirstName] gets a large boost to [From.GetHerHis] health temporarily.;;;;;;;;;;;;;x
+raise_weisseritter;Raise Weisseritter;;;;;;;;;;;;;x
+raise_weisseritter_desc;Raise the §YWeisseritter§!, §YBelhalla§!'s knight brigade of mages and armor knights.;;;;;;;;;;;;;x
+raise_grunritter;Raise Grünritter;;;;;;;;;;;;;x
+raise_grunritter_desc;Raise the §YGrünritter§!, §YChalphy§!'s knight brigade of mounted swordsmen.;;;;;;;;;;;;;x
+raise_grauritter;Raise Grau Ritter;;;;;;;;;;;;;x
+raise_grauritter_desc;Raise the §YGrau Ritter§!, §YDozel§!'s knight brigade of mounted axe-wielders.;;;;;;;;;;;;;x
+raise_gelb_ritter;Raise Gelb Ritter;;;;;;;;;;;;;x
+raise_gelb_ritter_desc;Raise the §YGelb Ritter§!, §YFriege§!'s knight brigade of thunder mages.;;;;;;;;;;;;;x
+raise_beige_ritter;Raise Beige Ritter;;;;;;;;;;;;;x
+raise_beige_ritter_desc;Raise the §YBeige Ritter§!, §YJungby§!'s knight brigade of mounted archers.;;;;;;;;;;;;;x
+raise_rot_ritter;Raise Rot Ritter;;;;;;;;;;;;;x
+raise_rot_ritter_desc;Raise the §YRot Ritter§!, §YVelthomer§!'s knight brigade of fire mages.;;;;;;;;;;;;;x
+raise_cross_knights;Raise Cross Knights;;;;;;;;;;;;;x
+raise_cross_knights_desc;Raise the §YCross Knights§!, §YNordion§!'s elite cavaliers.;;;;;;;;;;;;;x
+raise_lanceritter;Raise Lanceritter;;;;;;;;;;;;;x
+raise_lanceritter_desc;Raise the §YLanceritter§!, §YLeonster§!'s knight legion.;;;;;;;;;;;;;x
+raise_dragon_knights;Raise Dragon Knights;;;;;;;;;;;;;x
+raise_dragon_knights_desc;Raise the §YDragon Knights§!, §YThracia§!'s elite wyvern riders.;;;;;;;;;;;;;x
+raise_knight_brigade.tooltip.allow;Has not already raised this knight brigade;;;;;;;;;;;;;x
+marry_loptyian_minor_bloods;Marry the Chosen Ones;;;;;;;;;;;;;x
+marry_loptyian_minor_bloods_desc;If the Loptyrian Order identifies a man and a woman with holy blood, we can try persuading them to marry. The child of such a union would be powerful enough for our lord to possess and return to this plane once more.;;;;;;;;;;;;;x
+marry_loptyian_minor_bloods.tooltip;[From.GetTitledFirstName] seeks out the vessels of the holy blood.;;;;;;;;;;;;;x
+marry_loptyian_minor_bloods.allow;A male and female with minor Loptyr holy blood have been identified by the Loptyrian Order.;;;;;;;;;;;;;x

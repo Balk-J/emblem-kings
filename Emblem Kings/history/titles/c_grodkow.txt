@@ -1,3 +1,4 @@
+180.1.1={holder=1711} # Placeholder character to fix independent barony issue
 # c_grodkow > d_lubeck
 180.1.1={
 	law = status_of_women_4
@@ -11,4 +12,7 @@
 }
 649.1.1={
 	liege = d_lubeck
+}
+757.1.1={
+	holder=2009 # Hides Lewyn and Julia in Gen 2
 }

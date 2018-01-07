@@ -1,0 +1,13 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe4_dynasty.11.desc;Since my marriage, I have learned that I am the [Root.GetSonDaughter] of [Root.Father.GetTitledName], and rightful heir to the Kingdom of Grannvale!;;;;;;;;;;;;;x
+fe4_dynasty.11.A;I had no idea...;;;;;;;;;;;;;x
+fe4_dynasty.12.title;[From.Father.GetFirstName]'s [From.GetSonDaughter];;;;;;;;;;;;;x
+fe4_dynasty.12.desc;Today it was revealed that [From.Father.GetTitledName] had a [From.GetSonDaughter] with [From.Mother.GetTitledName]! [From.Mother.GetFirstName] fled the capital shortly after their affair, and died in childbirth.\n\n[From.GetLordLady] [From.GetFirstName] was unaware of [From.GetHerHis] heritage until recently, when [From.GetSheHe] married [From.Spouse.GetTitledName] and met a courtier who recognized the mark of [From.GetHerHis] holy blood and realized who [From.GetHerHis] father must be.;;;;;;;;;;;;;x
+fe4_dynasty.12.A;I see.;;;;;;;;;;;;;x
+fe4_dynasty.12.B;I never in a million years would have suspected [From.GetSheHe] was of royalty.;;;;;;;;;;;;;x
+fe4_dynasty..title;;;;;;;;;;;;;;x
+fe4_dynasty..desc;;;;;;;;;;;;;;x
+fe4_dynasty..A;;;;;;;;;;;;;;x
+fe4_dynasty..B;;;;;;;;;;;;;;x
+fe4_dynasty..C;;;;;;;;;;;;;;x
+fe4_dynasty..D;;;;;;;;;;;;;;x

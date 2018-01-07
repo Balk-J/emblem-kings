@@ -1,3 +1,4 @@
+180.1.1={holder=1741} # Placeholder character to fix independent barony issue
 # k_valor
 180.1.1={
 	law = status_of_women_4
@@ -16,4 +17,3 @@
 1158.1.1={
 	holder=766
 }
-

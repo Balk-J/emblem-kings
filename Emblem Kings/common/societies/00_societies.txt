@@ -1,4 +1,3 @@
-
 # Hardcoded society tag. If this exists, religions will get versions of this society generated for them unless specifically opted out, or another is specificed. See dynamic_societies.info for more documentation
 secret_religious_society_template = {
 	template = yes

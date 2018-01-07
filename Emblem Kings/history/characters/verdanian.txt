@@ -119,6 +119,9 @@
 	disallow_random_traits=yes
 	694.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_batou
+		}
 	}	
 	706.01.01={
 		add_trait="class_fighter"
@@ -147,7 +150,7 @@
 	758.1.1={
 		death = {
 			death_reason=death_murder
-			#killer= # Sandima
+			killer=1185 # Sandima
 		}
 	}
 }
@@ -183,6 +186,9 @@
 	disallow_random_traits=yes
 	728.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_cimbaeth
+		}
 	}	
 	740.01.01={
 		add_trait="class_fighter"
@@ -223,6 +229,9 @@
 	disallow_random_traits=yes
 	729.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_munnir
+		}
 	}	
 	741.01.01={
 		add_trait="class_fighter"
@@ -246,6 +255,18 @@
 		remove_trait="class_fighter"
 		add_trait="class_warrior"
 	} 
+	757.1.1={
+		raise_levies = {
+			location = 357 # Jungby
+			#force_mult = 2.5
+		}
+		effect = {
+			any_army = {
+				#set_can_toggle_looting = yes
+				set_looting = yes 
+			}
+		}
+	}
 	758.1.1={
 		death = {
 			death_reason=death_battle
@@ -264,6 +285,9 @@
 	disallow_random_traits=yes
 	736.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_jamke
+		}
 	}	
 	748.01.01={
 		add_trait="class_archer"
@@ -329,6 +353,11 @@
 	disallow_random_traits=yes
 	727.1.1={
 		birth=yes
+		#religion=church_of_edda
+		effect = {
+			set_character_flag = is_fe4_sandima
+			set_character_flag = secret_loptyrian_dark_bishop
+		}
 	}	
 	739.01.01={
 		add_trait="class_dark_mage"
@@ -347,6 +376,9 @@
 	}	
 	752.1.1 = { 
 		give_job_title = job_spymaster # what a great advisor
+		effect = {
+			join_society = secret_religious_society_loptyrian
+		}
 	}
 	758.1.1={
 		death = {
@@ -795,6 +827,12 @@
 	739.2.1={
 		birth=yes
 		employer=1193 # Spirit Forest
+		effect = {
+			set_character_flag = is_fe4_deirdre
+		}
+	}
+	748.1.1={
+		employer=1194 # Spirit Forest
 	}
 	751.2.1={
 		add_trait="class_monk"
@@ -1212,6 +1250,9 @@
 		add_trait="playful"
 		add_trait="affectionate"
 		employer=1183 # Munnir
+		effect = {
+			set_character_flag = is_fe4_dew
+		}
 	}
 	756.01.01={
 		add_trait="class_thief"
@@ -1221,6 +1262,16 @@
 			set_character_flag="class_selected"
 		}
 	} 	
+	# Starts the game in Marpha's dungeon
+	757.01.01={	
+		effect = {
+			c_1183 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}  
 	758.1.1 = {
 		employer=1032 # Sigurd
 	}	 

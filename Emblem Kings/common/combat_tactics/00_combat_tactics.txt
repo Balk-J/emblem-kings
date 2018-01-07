@@ -155,7 +155,7 @@ disorganised_harass_tactic = {
 		phase = skirmish
 		OR = {
 			light_cavalry = 0.4
-			camel_cavalry = 0.4
+			camel_cavalry = 0.
 			pegasus_knights = 0.4
 		}
 		OR = {
@@ -776,9 +776,8 @@ shieldwall_tactic = {
 
 	light_cavalry_defensive = -0.5
 	camel_cavalry_defensive = -0.5
-	knights_defensive = -0.5
 	pegasus_knights_defensive = -0.5
-	wyvern_riders_defensive = -0.5
+	knights_defensive = -0.5
 	horse_archers_defensive = -0.5
 }
 
@@ -1083,10 +1082,9 @@ awesome_advance_tactic = {
 	trigger = {
 		phase = melee
 		heavy_infantry = 0.01
-		#knights = 0.01
 		OR = {
 			knights = 0.01
-			wyvern_riders = 0.01		
+			wyvern_riders = 0.01
 		}
 	}
 
@@ -1304,7 +1302,6 @@ awesome_charge_tactic = {
 
 	trigger = {
 		phase = melee
-		#knights = 0.01
 		OR = {
 			knights = 0.01
 			wyvern_riders = 0.01		
@@ -1383,10 +1380,9 @@ awesomer_charge_tactic = {
 
 	trigger = {
 		phase = melee 
-		#knights = 0.01
 		OR = {
 			knights = 0.01
-			wyvern_riders = 0.01		
+			wyvern_riders = 0.01
 		}
 		pikemen = 0.01
 	}
@@ -1517,7 +1513,7 @@ raid_tactic = {
 		phase = melee
 		OR = {
 			light_cavalry = 0.2
-			camel_cavalry = 0.2
+			camel_cavalry = 0.
 			pegasus_knights = 0.2
 		}
 		NOT = {
@@ -1905,7 +1901,6 @@ inspired_defense_tactic = {
 				OR = {
 					trait = class_bishop
 					trait = class_bishop_female
-					trait = class_valkyrie
 				}
 			}
 		}
@@ -1940,7 +1935,10 @@ heroic_countercharge_tactic = {
 
 	trigger = {
 		phase = melee 
-		knights = 0.01
+		OR = {
+			wyvern_riders = 0.01
+			knights = 0.01
+		}
 		OR = {
 			light_cavalry = 0.01
 			camel_cavalry = 0.01
@@ -1975,7 +1973,6 @@ heroic_countercharge_tactic = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 3
 			flank_has_leader = yes
@@ -2019,6 +2016,8 @@ clever_ambush_tactic = {
 				trait = quick
 				trait = genius
 				trait = shrewd
+				trait = class_rogue
+				trait = class_assassin
 			}
 		}
 		location = {
@@ -2132,7 +2131,6 @@ religious_fervour_tactic = {
 					trait = class_monk
 					trait = class_bishop
 					trait = class_bishop_female
-					trait = class_valkyrie
 				}
 			}
 		}
@@ -2336,7 +2334,9 @@ schiltron_formation_tactic = {
 	pikemen_offensive = 2.4
 
 	light_cavalry_defensive = -0.4
+	pegasus_knights_defensive = -0.4
 	knights_defensive = -0.4
+	wyvern_riders_defensive = -0.4
 	horse_archers_defensive = -0.4
 	
 	enemy = {
@@ -2397,6 +2397,7 @@ pike_column_advance_tactic = {
 	}
 
 	knights_offensive = 0.6
+	wyvern_riders_offensive = 0.6
 	heavy_infantry_offensive = 1.2
 	pikemen_offensive = 3
 	enemy = {
@@ -2508,9 +2509,15 @@ couched_lance_charge_tactic = {
 			leader = {
 				martial = 8
 			}
-			heavy_troops = { 
-				who = knights
-				value = 0.6
+			OR = {
+				heavy_troops = { 
+					who = knights
+					value = 0.6
+				}
+				heavy_troops = { 
+					who = wyvern_riders
+					value = 0.6
+				}
 			}
 		}
 		modifier = {
@@ -2519,9 +2526,15 @@ couched_lance_charge_tactic = {
 			leader = {
 				martial = 12
 			}
-			heavy_troops = { 
-				who = knights
-				value = 0.5
+			OR = {
+				heavy_troops = { 
+					who = knights
+					value = 0.5
+				}
+				heavy_troops = { 
+					who = wyvern_riders
+					value = 0.5
+				}
 			}
 		}
 		modifier = {
@@ -2530,16 +2543,87 @@ couched_lance_charge_tactic = {
 			leader = {
 				martial = 16
 			}
-			heavy_troops = { 
-				who = knights
-				value = 0.4
+			OR = {
+				heavy_troops = { 
+					who = knights
+					value = 0.4
+				}
+				heavy_troops = { 
+					who = wyvern_riders
+					value = 0.4
+				}
 			}
 		}
 	}
 
 	knights_offensive = 4.2
+	wyvern_riders_offensive = 4.2
 	heavy_infantry_offensive = -0.6
 	pikemen_offensive = 0.6
+	enemy = {
+		group = advance
+		factor = 3
+	}
+}
+
+# Tibetan
+mountain_ambush_tactic = {
+	days = 18
+	sprite = 3
+	group = stand_fast
+
+	trigger = {
+		phase = melee
+		light_infantry = 0.1
+		flank_has_leader = yes
+		leader = {
+			martial = 9
+			#culture_group = tibetan_group
+			OR = {
+				trait = class_rogue
+				trait = class_assassin
+				trait = class_brigand
+				trait = class_berserker
+			}
+		}
+		location = {
+			OR = {
+				terrain = hills
+				terrain = mountain
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 1.5
+			troops = {
+				who = light_infantry
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				martial = 14
+			}
+		}
+		modifier = {
+			factor = 3
+			flank_has_leader = yes
+			leader = {
+				trait = trickster
+			}
+		}
+	}
+
+	light_cavalry_offensive = 2.4
+	light_infantry_offensive = 1.5
+	heavy_infantry_offensive = 1.25
+	horse_archers_offensive = 1.5
+	archers_offensive = 1.2
 	enemy = {
 		group = advance
 		factor = 3
@@ -2634,7 +2718,12 @@ embolon_charge_formation_tactic = {
 		knights = 0.01
 		flank_has_leader = yes
 		#leader = { culture_group = byzantine }
-		leader = { culture = etrurian }
+		leader = { 
+			OR = {
+				culture = etrurian 
+				culture = grannvalean
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -2745,7 +2834,6 @@ crushing_charge_tactic = {
 
 	knights_offensive = 1.75
 	war_elephants_offensive = 2.5 
-	wyvern_riders_offensive = 2.5 
 }
 
 gray_wall_tactic = {

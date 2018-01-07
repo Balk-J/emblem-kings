@@ -440,6 +440,11 @@ plot_coup = {
 		liege = {
 			NOT = { is_father = ROOT }
 			NOT = { is_mother = ROOT }
+			OR = {
+				trait = infirm
+				trait = incapable
+				NOT = { prestige = 1 }
+			}
 		}
 		OR = {
 			is_councillor = yes

@@ -2104,6 +2104,19 @@ defined_text = {
 		localisation_key = String_Hel
 		trigger = { society_member_of = the_trollcrafters }
 	}
+	text = {
+		localisation_key = String_Loptyr
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
+	}
 }
 
 defined_text = {
@@ -2157,6 +2170,19 @@ defined_text = {
 		localisation_key = String_dark_tantras
 		trigger = { society_member_of = the_cult_of_kali } 
 	}
+	text = {
+		localisation_key = String_dark_magic
+		trigger = { 
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		} 
+	}
 }
 
 defined_text = {
@@ -2198,6 +2224,19 @@ defined_text = {
 		localisation_key = String_rakshasa
 		trigger = { society_member_of = the_cult_of_kali } 
 	}
+	text = {
+		localisation_key = String_demon
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		} 
+	}
 }
 
 defined_text = {
@@ -2238,6 +2277,19 @@ defined_text = {
 	text = {
 		localisation_key = String_rakshasas
 		trigger = { society_member_of = the_cult_of_kali } 
+	}
+	text = {
+		localisation_key = String_demons
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		} 
 	}
 }
 
@@ -2296,6 +2348,34 @@ defined_text = {
 			society_member_of = the_cult_of_kali
 		}
 	}
+	text = {
+		localisation_key = String_dark_priestess
+		trigger = {
+			is_female = yes
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
+	}
+	text = {
+		localisation_key = String_dark_priest
+		trigger = {
+			is_female = no
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
+	}
 }
 
 defined_text = {
@@ -2336,6 +2416,19 @@ defined_text = {
 	text = {
 		localisation_key = String_Glory_to_Hel
 		trigger = { society_member_of = the_trollcrafters }
+	}
+	text = {
+		localisation_key = String_Praise_Loptyr
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
 	}
 }
 
@@ -2637,6 +2730,11 @@ defined_text = {
 		localisation_key = String_Zuns_blessings
 		trigger = { society_member_of = secret_religious_society_zun_pagan_reformed }
 	}
+	
+	text = {
+		localisation_key = String_Loptyrs_blessings
+		trigger = { society_member_of = secret_religious_society_loptyrian }
+	}
 }
 
 defined_text = {
@@ -2693,6 +2791,11 @@ defined_text = {
 	text = {
 		localisation_key = String_May_Zun_illuminate_your_path
 		trigger = { society_member_of = secret_religious_society_zun_pagan_reformed }
+	}
+
+	text = {
+		localisation_key = String_Praise_Loptyr
+		trigger = { society_member_of = secret_religious_society_loptyrian }
 	}
 }
 
@@ -2753,6 +2856,10 @@ defined_text = {
 	text = {
 		localisation_key = String_sun_symbol
 		trigger = { society_member_of = secret_religious_society_zun_pagan_reformed }
+	}
+	text = {
+		localisation_key = String_Loptyr_icon
+		trigger = { society_member_of = secret_religious_society_loptyrian }
 	}
 }
 

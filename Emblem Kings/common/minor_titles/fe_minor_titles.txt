@@ -65,12 +65,12 @@ title_mage_general = {
 		age = 16
 		has_character_flag = class_selected
 		OR = {
-			has_character_flag = class_mage
-			has_character_flag = class_monk
-			has_character_flag = class_priest
-			has_character_flag = class_shaman
-			has_character_flag = class_troubador
-			has_character_flag = class_cleric
+			trait = base_class_mage
+			trait = base_class_dark_mage
+			trait = base_class_monk
+			trait = base_class_priest
+			trait = base_class_cleric
+			trait = base_class_troubador
 		}
 		is_landed = yes
 		NOT = { trait = incapable }
@@ -95,10 +95,10 @@ title_knight_general = {
 		age = 16
 		has_character_flag = class_selected
 		OR = {
-			has_character_flag = class_cavalier
-			has_character_flag = class_knight
-			has_character_flag = class_wyvern_rider
-			has_character_flag = class_pegasus_knight
+			trait = base_class_cavalier
+			trait = base_class_knight
+			trait = base_class_wyvern_rider
+			trait = base_class_pegasus_knight
 		}
 		is_landed = yes
 		NOT = { trait = incapable }
@@ -123,10 +123,10 @@ title_great_general = {
 		age = 16
 		has_character_flag = class_selected
 		OR = {
-			has_character_flag = class_knight
-			has_character_flag = class_cavalier
-			has_character_flag = class_wyvern_rider
-			has_character_flag = class_pegasus_knight
+			trait = base_class_cavalier
+			trait = base_class_knight
+			trait = base_class_wyvern_rider
+			trait = base_class_pegasus_knight
 		}
 		is_landed = yes
 		NOT = { trait = incapable }

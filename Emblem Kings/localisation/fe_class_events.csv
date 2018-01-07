@@ -10,14 +10,14 @@ class.2.C.tooltip;[From.GetTitledFirstName] will be assigned a random class base
 class.2.D;[From.GetSheHeCap] will not receive special training.;;;;;;;;;;;;;x
 class.3.tooltip;[From.GetFirstName] will be assigned a class in [From.GetHerHis] father's class set.;;;;;;;;;;;;;x
 class.3.title;Class;;;;;;;;;;;;;x
-class.3.desc;[From.From.GetTitledFirstName] will receive similar training to [From.From.GetHerHis] father.;;;;;;;;;;;;;x
-class.3.A;As close to [From.From.GetHerHis] father as possible.;;;;;;;;;;;;;x
-class.3.B;Differently than [From.From.GetHerHis] father.;;;;;;;;;;;;;x
+class.3.desc;[FromFrom.GetTitledFirstName] will receive similar training to [FromFrom.GetHerHis] father.;;;;;;;;;;;;;x
+class.3.A;As close to [FromFrom.GetHerHis] father as possible.;;;;;;;;;;;;;x
+class.3.B;Differently than [FromFrom.GetHerHis] father.;;;;;;;;;;;;;x
 class.4.tooltip;[From.GetFirstName] will be assigned a class in [From.GetHerHis] mother's class set.;;;;;;;;;;;;;x
 class.4.title;Class;;;;;;;;;;;;;x
-class.4.desc;[From.From.GetTitledFirstName] will receive similar training to [From.From.GetHerHis] mother.;;;;;;;;;;;;;x
-class.4.A;As close to [From.From.GetHerHis] mother as possible.;;;;;;;;;;;;;x
-class.4.B;Differently than [From.From.GetHerHis] mother.;;;;;;;;;;;;;x
+class.4.desc;[FromFrom.GetTitledFirstName] will receive similar training to [FromFrom.GetHerHis] mother.;;;;;;;;;;;;;x
+class.4.A;As close to [FromFrom.GetHerHis] mother as possible.;;;;;;;;;;;;;x
+class.4.B;Differently than [FromFrom.GetHerHis] mother.;;;;;;;;;;;;;x
 class.5.title;Promotion;;;;;;;;;;;;;x
 class.5.desc;You have become quite experienced in your class and you feel that your skills have reached a new level.\n\nPerhaps it's time to learn a new style of combat, or work on mastering what you already know?;;;;;;;;;;;;;x
 class.5.A.class_general;I will be a peerless knight.;;;;;;;;;;;;;x

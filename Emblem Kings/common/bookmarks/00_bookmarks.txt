@@ -541,7 +541,7 @@ bm_fe7_girl_from_the_plains =
 	date = 1159.1.1
 	
 #	era = yes						## Will be shown on Era screen.
-	picture = GFX_pick_era_image_1159
+#	picture = GFX_pick_era_image_1159
 	
 	selectable_character = {
 		id = 111 # Lyn

@@ -10,7 +10,9 @@
 }
 777.1.1={
 	holder=1051 # Julius
+	set_global_flag = loptyr_revived
 }
 779.1.1={
 	holder=0 # Destroyed
+	set_global_flag = loptyr_defeated
 }

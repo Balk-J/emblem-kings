@@ -11,7 +11,7 @@
 	liege = 0
 }
 649.1.1={
-	holder=0 
+	#holder=0 # Set to appropriately cultured ruler?
 	liege = d_leonster
 }
 770.1.1={
@@ -19,7 +19,7 @@
 	liege = d_loptyrian
 }
 777.1.1={
-	holder=0
+	#holder=0 # Set to appropriately cultured ruler?
 	#holder=1156 # Sara?  
 	liege = d_leonster
 }

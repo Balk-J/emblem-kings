@@ -1,3 +1,4 @@
+180.1.1={holder=1531} # Placeholder character to fix independent barony issue
 # e_elibe
 180.1.1={
 	law = status_of_women_4

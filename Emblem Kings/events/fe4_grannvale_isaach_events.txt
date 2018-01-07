@@ -1,0 +1,576 @@
+namespace = fe4_grannvale_isaach
+
+# if = { limit = { something = yes } do_something = yes } else_if = { limit = { something_else = yes } do_something_else = yes } else = { do_another_thing = yes } 
+
+# Ping event to get the scope right. This should be called for whoever the patsy getting blamed for the attack on Darna is.
+character_event = {
+	id = fe4_grannvale_isaach.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		if = { 
+			limit = { e_grannvale = { has_holder = yes } } 
+		
+			e_grannvale = {
+				holder_scope = {
+					character_event = { id = fe4_grannvale_isaach.2 }
+				}
+			}			
+		} 
+		else_if = { 
+			limit = { k_grannvale = { has_holder = yes } } 
+		
+			k_grannvale = {
+				holder_scope = {
+					character_event = { id = fe4_grannvale_isaach.2 }
+				}
+			}
+		} 
+	}
+}
+
+narrative_event = {
+	id = fe4_grannvale_isaach.2
+	title = fe4_grannvale_isaach.2.title
+	desc = fe4_grannvale_isaach.2.desc
+	picture = GFX_evt_impalement
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		530 = { # Darna
+			add_province_modifier = { name = population_massacred duration = 1825 }
+		}
+	}
+	
+	option = {
+		name = "fe4_grannvale_isaach.2.A"
+		ai_chance = {
+			factor = 50	
+		}
+		custom_tooltip = {
+			text = fe4_grannvale_isaach.2.A.tooltip
+			hidden_tooltip = {
+				FROM = {
+					primary_title = {
+						set_title_flag = jugdral_invasion_target
+						holder_scope = {
+							reverse_war = {
+								target = ROOT
+								casus_belli = jugdral_invasion
+								thirdparty_title = PREV
+								infamy = 0
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_vassal = {
+							OR = {
+								has_landed_title = d_belhalla
+								has_landed_title = d_chalphy
+								has_landed_title = d_dozel
+								has_landed_title = d_friege
+								has_landed_title = d_jungby
+								has_landed_title = d_velthomer
+							}
+						}
+					}
+					character_event = { id = fe4_grannvale_isaach.3 days = 5 random = 3}
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_isaach.2.B"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		prestige = -5000
+		piety = -1000
+		add_character_modifier = { name = suspected_coward duration = 120 } 
+	}		
+	option = {
+		name = "fe4_grannvale_isaach.2.C"
+		trigger = {
+			always = no
+		}
+		# Sorry, no calm and measured responses for us yet.
+	}		
+}
+
+# Ask vassals for knight brigades
+character_event = {
+	id = fe4_grannvale_isaach.3
+	desc = fe4_grannvale_isaach.3.desc
+	picture = GFX_evt_war_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_isaach.3.A"
+		ai_chance = {
+			factor = 50	
+		}		
+		any_vassal = {
+			limit = {
+				OR = {
+					has_landed_title = d_belhalla
+					has_landed_title = d_chalphy
+					has_landed_title = d_dozel
+					has_landed_title = d_friege
+					has_landed_title = d_jungby
+					has_landed_title = d_velthomer
+				}
+			}
+			
+			custom_tooltip = {
+				text = fe4_grannvale_isaach.3.A.tooltip
+				hidden_tooltip = {
+					letter_event = { id = fe4_grannvale_isaach.4 days = 7 random = 3}
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_isaach.3.B"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		prestige = 500
+	}		
+}
+
+# Request to vassal
+letter_event = {
+	id = fe4_grannvale_isaach.4
+	desc = fe4_grannvale_isaach.4.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_isaach.4.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = {
+					has_landed_title = d_chalphy # Grunritter are in
+					has_landed_title = d_dozel # Grauritter are in
+					has_landed_title = d_jungby # Beige Ritter are in
+				}
+			}
+			
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+			hidden_tooltip = {
+				letter_event = { id = fe4_grannvale_isaach.6 } 
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_isaach.4.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = {
+					has_landed_title = d_belhalla
+					#has_landed_title = d_chalphy # Grunritter are in
+					#has_landed_title = d_dozel # Grauritter are in
+					has_landed_title = d_friege
+					#has_landed_title = d_jungby # Beige Ritter are in
+					has_landed_title = d_velthomer
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_landed_title = d_belhalla
+			}
+			disband_event_forces = weisseritter
+		}
+		if = {
+			limit = {
+				has_landed_title = d_chalphy
+			}
+			disband_event_forces = grunritter 
+		}
+		if = {
+			limit = {
+				has_landed_title = d_dozel
+			}
+			disband_event_forces = grauritter 
+		}
+		if = {
+			limit = {
+				has_landed_title = d_friege
+			}
+			disband_event_forces = gelb_ritter 
+		}
+		if = {
+			limit = {
+				has_landed_title = d_jungby
+			}
+			disband_event_forces = beige_ritter 
+		}
+		if = {
+			limit = {
+				has_landed_title = d_velthomer
+			}
+			disband_event_forces = rot_ritter 
+		}
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = d_belhalla
+					has_landed_title = d_chalphy
+					has_landed_title = d_dozel
+					has_landed_title = d_friege
+					has_landed_title = d_jungby
+					has_landed_title = d_velthomer
+				}
+			}
+			piety = 500
+			FROM = {
+				opinion = {
+					modifier = opinion_grateful
+					who = ROOT
+					years = 10
+				}
+				hidden_tooltip = {
+					letter_event = { id = fe4_grannvale_isaach.5 }
+				}
+			}
+		}
+		
+			
+	}
+}
+# Loan knights
+letter_event = {
+	id = fe4_grannvale_isaach.5
+	desc = fe4_grannvale_isaach.5.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = EXCELLENT#fe4_grannvale_isaach.5.A
+		if = {
+			limit = {
+				FROM = {
+					has_landed_title = d_belhalla
+				}
+			}
+			spawn_weisseritter_effect = yes
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_landed_title = d_chalphy
+				}
+			}
+			spawn_grunritter_effect = yes
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_landed_title = d_dozel
+				}
+			}
+			spawn_grauritter_effect = yes
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_landed_title = d_friege
+				}
+			}
+			spawn_gelb_ritter_effect = yes
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_landed_title = d_jungby
+				}
+			}
+			spawn_beige_ritter_effect = yes
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_landed_title = d_velthomer
+				}
+			}
+			spawn_rot_ritter_effect = yes
+		}
+	}
+}
+# Inform no loan
+letter_event = {
+	id = fe4_grannvale_isaach.6
+	desc = fe4_grannvale_isaach.6.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_isaach.6.A
+	}
+}
+# Kurth ponders the end of the war
+character_event = {
+	id = fe4_grannvale_isaach.7
+	desc = fe4_grannvale_isaach.7.desc
+	picture = GFX_evt_spymaster
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_isaach.7.A"
+		ai_chance = {
+			factor = 99	
+		}		
+		if = {
+			limit = { NOT = { trait = diligent } }
+			add_trait = diligent
+		}
+		hidden_tooltip = {
+			letter_event = { id = fe4_grannvale_isaach.8 days = 3 random = 2}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_isaach.7.B"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+		if = {
+			limit = { NOT = { trait = paranoid } }
+			random = {
+				chance = 50
+				add_trait = paranoid
+			}
+		}
+	}		
+}
+# Kurth is killed.
+character_event = {
+	id = fe4_grannvale_isaach.8
+	desc = fe4_grannvale_isaach.8.desc
+	picture = GFX_evt_assassination
+	hide_from = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = fe4_kurth_murdered
+		
+		# Byron gets wounded defending him and runs off.
+		c_1031 = { # Byron
+			if = {
+				limit = {
+					OR = { 
+						is_landed = no
+						ai = yes 
+						any_dynasty_member = { is_alive = yes }
+					}
+				}
+				add_trait = wounded 
+				unsafe_destroy_artifact = regalia_tyrfing
+				death = {
+					death_reason=death_missing
+				}
+			}
+		}
+		# Ring is killed by his son around the same time.
+		c_1078 = { # Ring
+			if = {
+				limit = {
+					OR = { 
+						is_landed = no
+						ai = yes 
+						any_dynasty_member = { is_alive = yes }
+					}
+				}
+				if = {
+					limit = { 
+						any_character = { has_character_flag = is_fe4_andrey } 
+					}
+					
+					c_1083 = {
+						ROOT = {
+							death = {
+								death_reason=death_murder_unknown
+								killer=PREV # Andrey
+							}
+						}
+						
+						if = {
+							limit = {
+								d_jungby = {
+									holder_scope = {
+										dynasty = 1007
+										ai = yes
+									}
+								}
+							}
+							d_jungby = { usurp_title = PREV }
+						}
+					}
+				}else = {
+					death = {
+						death_reason=death_murder_unknown
+					}
+				}
+			}
+		}
+		# If someone is actually playing those guys, uh... pretend they never went to Isaach to get framed? We're not going to straight up kill 'em this way unless they have an heir.
+	}
+	
+	option = {
+		name = "fe4_grannvale_isaach.8.A"
+		if = {
+			limit = { 
+				any_character = { has_character_flag = is_fe4_lombard } 
+			}
+			c_1070 = {
+				ROOT = {
+					death = {
+						death_reason=death_murder_unknown
+						killer=PREV # Duke Lombard of Dozel
+					}
+				}
+			}
+		}else = {
+			death = {
+				death_reason=death_murder_unknown
+			}
+		}
+		
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					primary_title = {
+						region = world_jugdral
+					}
+				}
+				narrative_event = { id = fe4_grannvale_isaach.9 days = 1 }
+			}
+			
+			if = {
+				limit = {
+					any_playable_ruler = { 
+						independent = no
+						has_character_flag = is_fe4_sigurd 
+					}
+				}
+				random_playable_ruler = { 
+					limit = { has_character_flag = is_fe4_sigurd }
+					character_event = { id = fe4_grannvale_agustria.12 days = 7 random = 3 }
+				}				
+			}
+		}
+	}		
+}
+
+# Notify death of Kurth
+narrative_event = {
+	id = fe4_grannvale_isaach.9
+	title = fe4_grannvale_isaach.9.title
+	desc = fe4_grannvale_isaach.9.desc
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "fe4_grannvale_isaach.9.A"
+		trigger = {
+			FROM = {
+				is_child_of = ROOT
+			}
+		}	
+		if = {
+			limit = { NOT = { trait = infirm } }
+			add_trait = infirm
+		}
+		
+	}		
+	option = {
+		name = "fe4_grannvale_isaach.9.B"
+		trigger = {
+			NOT = { FROM = { is_child_of = ROOT	} }
+			OR = {
+				has_landed_title = k_grannvale
+				any_liege = {
+					has_landed_title = k_grannvale
+				}
+			}
+		}	
+	}		
+	option = {
+		name = "fe4_grannvale_isaach.9.C"
+		trigger = {
+			NOT = { FROM = { is_child_of = ROOT	} }
+			NOT = { has_landed_title = k_grannvale }
+			NOT = {
+				any_liege = {
+					has_landed_title = k_grannvale
+				}
+			}
+		}	
+	}	
+	option = {
+		name = "fe4_grannvale_isaach.9.D"
+		trigger = {
+			NOT = { FROM = { is_child_of = ROOT	} }
+			NOT = { has_landed_title = k_grannvale }
+			NOT = {
+				any_liege = {
+					has_landed_title = k_grannvale
+				}
+			}
+			religion = loptyrian
+		}	
+		piety = 100
+	}		
+}

@@ -1,0 +1,188 @@
+spawn_weisseritter_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = weisseritter
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					heavy_infantry = { 1 700 }
+					magic_users = { 1 300 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_grunritter_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = grunritter
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					light_cavalry = { 1 1000 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_grauritter_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = grauritter
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					knights = { 1 500 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_gelb_ritter_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = gelb_ritter
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					magic_users = { 1 1000 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_beige_ritter_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = beige_ritter
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					horse_archers = { 1 500 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_rot_ritter_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = rot_ritter
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					magic_users = { 1 1000 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_cross_knights_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = cross_knights
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					light_cavalry = { 1 1000 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_lanceritter_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = lanceritter
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					light_cavalry = { 1 900 }
+					knights = { 1 50 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn_dragon_knights_effect = {
+	capital_scope = {
+		ROOT = {
+			spawn_unit = {
+				earmark = dragon_knights
+				owner = ROOT
+				home = PREV
+				province = PREV
+				troops = {
+					wyvern_riders = { 1 1000 }
+				}
+				attrition = 1.0
+				reinforces = yes
+				#cannot_inherit = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+	}
+}
+spawn__effect = {
+
+}
+spawn__effect = {
+
+}
+spawn__effect = {
+
+}
+spawn__effect = {
+
+}
+spawn__effect = {
+
+}

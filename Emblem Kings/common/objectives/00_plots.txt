@@ -301,7 +301,7 @@ plot_gain_vassal_title = {
 			temporary = no
 		}
 		NOT = { trait = incapable }
-		NOT = { trait = imbecile }
+		NOT = { has_landed_title = e_china_west_governor }
 		
 		OR = {
 			ai = no
@@ -649,7 +649,7 @@ plot_kill_character = {
 			FROM = { 
 				NOR = {
 					religion = shiite
-					has_secret_religion = shiite
+					secret_religion = shiite
 				}
 			}
 			ROOT = {
@@ -761,6 +761,7 @@ plot_kill_character = {
 		}
 		is_within_diplo_range = FROM
 		NOT = { has_blood_oath_with = FROM }
+		assassination_interaction_trigger = yes
 	}
 	
 	target_potential = {
@@ -1090,11 +1091,9 @@ plot_kill_character = {
 		is_alive = no
 	}
 	abort_effect = {
-		FROM = { 
-			clr_character_flag = murder_in_motion 
-			clr_character_flag = plot_murder_child 
-		}
+		FROM = { clr_character_flag = murder_in_motion }
 	}
+
 	creation_effect = {
 		# ROOT = target, FROM = plotter
 		if = {
@@ -1111,7 +1110,7 @@ plot_kill_character = {
 				set_character_flag = plot_murder_child
 			}
 		}
-}
+	}
 	effect = {
 		FROM = {
 			# Clear flags
@@ -1154,7 +1153,7 @@ plot_kill_spouse = {
 			FROM = { 
 				NOR = {
 					religion = shiite
-					trait = secretly_shiite
+					secret_religion = shiite
 				}
 			}
 			ROOT = {
@@ -1186,7 +1185,8 @@ plot_kill_spouse = {
 	
 	# Target allow trigger for when players target a specific character in the GUI
 	player_allow = {
-		always = yes
+		NOT = { is_lover = FROM }
+		assassination_interaction_trigger = yes
 	}
 	
 	# Target character scope

@@ -57,6 +57,7 @@ has_all_medium_items_trigger = {
 
 can_equip_swords_trigger = {
 	OR = {
+		trait = class_great_knight
 		custom_tooltip = {
 			text = is_assassin_tooltip
 			hidden_tooltip = {					
@@ -149,6 +150,7 @@ can_equip_lances_trigger = {
 		trait = class_wyvern_rider
 		trait = class_wyvern_knight
 		trait = class_wyvern_lord	
+		trait = class_great_knight
 	}
 }
 
@@ -158,6 +160,7 @@ can_equip_axes_trigger = {
 		trait = class_brigand
 		trait = class_fighter
 		trait = class_general
+		trait = class_great_knight
 		custom_tooltip = {
 			text = is_hero_tooltip
 			hidden_tooltip = {						
@@ -451,4 +454,34 @@ western_isles_rebel_target_trigger = {
 			independent = yes
 		}
 	}
+}
+
+has_loptyr_sect_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = loptyrian
+		religion = maerist
+		religion = church_of_edda
+		religion = earthen_pagan
+		religion = earthen_pagan_reformed
+	}
+}
+true_religion_group_draconic_trigger = {
+	true_religion_group = draconic
+}
+
+true_religion_loptyrian_trigger = {
+	true_religion = loptyrian
+}
+true_religion_maerist_trigger = {
+	true_religion = maerist
+}
+true_religion_church_of_edda_trigger = {
+	true_religion = church_of_edda
+}
+true_religion_earthen_pagan_trigger = {
+	true_religion = earthen_pagan
+}
+true_religion_earthen_pagan_reformed_trigger = {
+	true_religion = earthen_pagan_reformed
 }

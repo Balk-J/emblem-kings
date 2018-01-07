@@ -2,16 +2,16 @@ has_latent_holy_blood_trigger = {
 	OR = {
 		trait=holy_blood_latent_loptyr
 		trait=holy_blood_latent_naga
-		trait=holy_blood_latent_baldur
+		trait=holy_blood_latent_baldr
 		trait=holy_blood_latent_blagi
 		trait=holy_blood_latent_dain
-		trait=holy_blood_latent_fala
+		trait=holy_blood_latent_fjalar
 		trait=holy_blood_latent_forseti
 		trait=holy_blood_latent_hezul
 		trait=holy_blood_latent_neir
 		trait=holy_blood_latent_noba
-		trait=holy_blood_latent_odo
-		trait=holy_blood_latent_tordo
+		trait=holy_blood_latent_od
+		trait=holy_blood_latent_thrud
 		trait=holy_blood_latent_ulir
 	}
 }
@@ -19,16 +19,16 @@ has_major_holy_blood_trigger = {
 	OR = {
 		trait=holy_blood_major_loptyr
 		trait=holy_blood_major_naga
-		trait=holy_blood_major_baldur
+		trait=holy_blood_major_baldr
 		trait=holy_blood_major_blagi
 		trait=holy_blood_major_dain
-		trait=holy_blood_major_fala
+		trait=holy_blood_major_fjalar
 		trait=holy_blood_major_forseti
 		trait=holy_blood_major_hezul
 		trait=holy_blood_major_neir
 		trait=holy_blood_major_noba
-		trait=holy_blood_major_odo
-		trait=holy_blood_major_tordo
+		trait=holy_blood_major_od
+		trait=holy_blood_major_thrud
 		trait=holy_blood_major_ulir
 	}
 }
@@ -36,16 +36,16 @@ has_minor_holy_blood_trigger = {
 	OR = {
 		trait=holy_blood_minor_loptyr
 		trait=holy_blood_minor_naga
-		trait=holy_blood_minor_baldur
+		trait=holy_blood_minor_baldr
 		trait=holy_blood_minor_blagi
 		trait=holy_blood_minor_dain
-		trait=holy_blood_minor_fala
+		trait=holy_blood_minor_fjalar
 		trait=holy_blood_minor_forseti
 		trait=holy_blood_minor_hezul
 		trait=holy_blood_minor_neir
 		trait=holy_blood_minor_noba
-		trait=holy_blood_minor_odo
-		trait=holy_blood_minor_tordo
+		trait=holy_blood_minor_od
+		trait=holy_blood_minor_thrud
 		trait=holy_blood_minor_ulir
 	}
 }
@@ -68,10 +68,10 @@ has_naga_holy_blood_trigger = {
 		trait=holy_blood_minor_naga
 	}
 }
-has_baldur_holy_blood_trigger = {
+has_baldr_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_major_baldur
-		trait=holy_blood_minor_baldur
+		trait=holy_blood_major_baldr
+		trait=holy_blood_minor_baldr
 	}
 }
 has_blagi_holy_blood_trigger = {
@@ -86,10 +86,10 @@ has_dain_holy_blood_trigger = {
 		trait=holy_blood_minor_dain
 	}
 }
-has_fala_holy_blood_trigger = {
+has_fjalar_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_major_fala
-		trait=holy_blood_minor_fala
+		trait=holy_blood_major_fjalar
+		trait=holy_blood_minor_fjalar
 	}
 }
 has_forseti_holy_blood_trigger = {
@@ -116,16 +116,16 @@ has_noba_holy_blood_trigger = {
 		trait=holy_blood_minor_noba
 	}
 }
-has_odo_holy_blood_trigger = {
+has_od_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_major_odo
-		trait=holy_blood_minor_odo
+		trait=holy_blood_major_od
+		trait=holy_blood_minor_od
 	}
 }
-has_tordo_holy_blood_trigger = {
+has_thrud_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_major_tordo
-		trait=holy_blood_minor_tordo
+		trait=holy_blood_major_thrud
+		trait=holy_blood_minor_thrud
 	}
 }
 has_ulir_holy_blood_trigger = {
@@ -283,68 +283,68 @@ can_inherit_naga_holy_blood_trigger = {
 		can_inherit_minor_naga_holy_blood_trigger = yes
 	}
 }
-can_inherit_major_baldur_holy_blood_trigger = {
+can_inherit_major_baldr_holy_blood_trigger = {
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				trait=holy_blood_major_baldur
+				trait=holy_blood_major_baldr
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				trait=holy_blood_major_baldur
+				trait=holy_blood_major_baldr
 			}
 		}
 		mother_even_if_dead = {
-			trait=holy_blood_major_baldur
+			trait=holy_blood_major_baldr
 		}
 		AND = {
 			OR = {
 				AND = {
 					is_father_real_father = yes
 					father_even_if_dead = {
-						trait=holy_blood_minor_baldur
+						trait=holy_blood_minor_baldr
 					}
 				}
 				AND = {
 					is_father_real_father = no
 					real_father_even_if_dead = {
-						trait=holy_blood_minor_baldur
+						trait=holy_blood_minor_baldr
 					}
 				}
 			}
 			mother_even_if_dead = {
-				trait=holy_blood_minor_baldur
+				trait=holy_blood_minor_baldr
 			}
 		}
 	}
 }
-can_inherit_minor_baldur_holy_blood_trigger = {
-	#NOT = { can_inherit_major_baldur_holy_blood_trigger = yes }
+can_inherit_minor_baldr_holy_blood_trigger = {
+	#NOT = { can_inherit_major_baldr_holy_blood_trigger = yes }
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				has_baldur_holy_blood_trigger = yes
+				has_baldr_holy_blood_trigger = yes
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				has_baldur_holy_blood_trigger = yes
+				has_baldr_holy_blood_trigger = yes
 			}
 		}
 		mother_even_if_dead = {
-			has_baldur_holy_blood_trigger = yes
+			has_baldr_holy_blood_trigger = yes
 		}
 	}
 }
-can_inherit_baldur_holy_blood_trigger = {
+can_inherit_baldr_holy_blood_trigger = {
 	OR = {
-		can_inherit_major_baldur_holy_blood_trigger = yes
-		can_inherit_minor_baldur_holy_blood_trigger = yes
+		can_inherit_major_baldr_holy_blood_trigger = yes
+		can_inherit_minor_baldr_holy_blood_trigger = yes
 	}
 }
 can_inherit_major_blagi_holy_blood_trigger = {
@@ -475,68 +475,68 @@ can_inherit_dain_holy_blood_trigger = {
 		can_inherit_minor_dain_holy_blood_trigger = yes
 	}
 }
-can_inherit_major_fala_holy_blood_trigger = {
+can_inherit_major_fjalar_holy_blood_trigger = {
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				trait=holy_blood_major_fala
+				trait=holy_blood_major_fjalar
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				trait=holy_blood_major_fala
+				trait=holy_blood_major_fjalar
 			}
 		}
 		mother_even_if_dead = {
-			trait=holy_blood_major_fala
+			trait=holy_blood_major_fjalar
 		}
 		AND = {
 			OR = {
 				AND = {
 					is_father_real_father = yes
 					father_even_if_dead = {
-						trait=holy_blood_minor_fala
+						trait=holy_blood_minor_fjalar
 					}
 				}
 				AND = {
 					is_father_real_father = no
 					real_father_even_if_dead = {
-						trait=holy_blood_minor_fala
+						trait=holy_blood_minor_fjalar
 					}
 				}
 			}
 			mother_even_if_dead = {
-				trait=holy_blood_minor_fala
+				trait=holy_blood_minor_fjalar
 			}
 		}
 	}
 }
-can_inherit_minor_fala_holy_blood_trigger = {
-	#NOT = { can_inherit_major_fala_holy_blood_trigger = yes }
+can_inherit_minor_fjalar_holy_blood_trigger = {
+	#NOT = { can_inherit_major_fjalar_holy_blood_trigger = yes }
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				has_fala_holy_blood_trigger = yes
+				has_fjalar_holy_blood_trigger = yes
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				has_fala_holy_blood_trigger = yes
+				has_fjalar_holy_blood_trigger = yes
 			}
 		}
 		mother_even_if_dead = {
-			has_fala_holy_blood_trigger = yes
+			has_fjalar_holy_blood_trigger = yes
 		}
 	}
 }
-can_inherit_fala_holy_blood_trigger = {
+can_inherit_fjalar_holy_blood_trigger = {
 	OR = {
-		can_inherit_major_fala_holy_blood_trigger = yes
-		can_inherit_minor_fala_holy_blood_trigger = yes
+		can_inherit_major_fjalar_holy_blood_trigger = yes
+		can_inherit_minor_fjalar_holy_blood_trigger = yes
 	}
 }
 can_inherit_major_forseti_holy_blood_trigger = {
@@ -795,132 +795,132 @@ can_inherit_noba_holy_blood_trigger = {
 		can_inherit_minor_noba_holy_blood_trigger = yes
 	}
 }
-can_inherit_major_odo_holy_blood_trigger = {
+can_inherit_major_od_holy_blood_trigger = {
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				trait=holy_blood_major_odo
+				trait=holy_blood_major_od
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				trait=holy_blood_major_odo
+				trait=holy_blood_major_od
 			}
 		}
 		mother_even_if_dead = {
-			trait=holy_blood_major_odo
+			trait=holy_blood_major_od
 		}
 		AND = {
 			OR = {
 				AND = {
 					is_father_real_father = yes
 					father_even_if_dead = {
-						trait=holy_blood_minor_odo
+						trait=holy_blood_minor_od
 					}
 				}
 				AND = {
 					is_father_real_father = no
 					real_father_even_if_dead = {
-						trait=holy_blood_minor_odo
+						trait=holy_blood_minor_od
 					}
 				}
 			}
 			mother_even_if_dead = {
-				trait=holy_blood_minor_odo
+				trait=holy_blood_minor_od
 			}
 		}
 	}
 }
-can_inherit_minor_odo_holy_blood_trigger = {
-	#NOT = { can_inherit_major_odo_holy_blood_trigger = yes }
+can_inherit_minor_od_holy_blood_trigger = {
+	#NOT = { can_inherit_major_od_holy_blood_trigger = yes }
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				has_odo_holy_blood_trigger = yes
+				has_od_holy_blood_trigger = yes
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				has_odo_holy_blood_trigger = yes
+				has_od_holy_blood_trigger = yes
 			}
 		}
 		mother_even_if_dead = {
-			has_odo_holy_blood_trigger = yes
+			has_od_holy_blood_trigger = yes
 		}
 	}
 }
-can_inherit_odo_holy_blood_trigger = {
+can_inherit_od_holy_blood_trigger = {
 	OR = {
-		can_inherit_major_odo_holy_blood_trigger = yes
-		can_inherit_minor_odo_holy_blood_trigger = yes
+		can_inherit_major_od_holy_blood_trigger = yes
+		can_inherit_minor_od_holy_blood_trigger = yes
 	}
 }
-can_inherit_major_tordo_holy_blood_trigger = {
+can_inherit_major_thrud_holy_blood_trigger = {
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				trait=holy_blood_major_tordo
+				trait=holy_blood_major_thrud
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				trait=holy_blood_major_tordo
+				trait=holy_blood_major_thrud
 			}
 		}
 		mother_even_if_dead = {
-			trait=holy_blood_major_tordo
+			trait=holy_blood_major_thrud
 		}
 		AND = {
 			OR = {
 				AND = {
 					is_father_real_father = yes
 					father_even_if_dead = {
-						trait=holy_blood_minor_tordo
+						trait=holy_blood_minor_thrud
 					}
 				}
 				AND = {
 					is_father_real_father = no
 					real_father_even_if_dead = {
-						trait=holy_blood_minor_tordo
+						trait=holy_blood_minor_thrud
 					}
 				}
 			}
 			mother_even_if_dead = {
-				trait=holy_blood_minor_tordo
+				trait=holy_blood_minor_thrud
 			}
 		}
 	}
 }
-can_inherit_minor_tordo_holy_blood_trigger = {
-	#NOT = { can_inherit_major_tordo_holy_blood_trigger = yes }
+can_inherit_minor_thrud_holy_blood_trigger = {
+	#NOT = { can_inherit_major_thrud_holy_blood_trigger = yes }
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				has_tordo_holy_blood_trigger = yes
+				has_thrud_holy_blood_trigger = yes
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				has_tordo_holy_blood_trigger = yes
+				has_thrud_holy_blood_trigger = yes
 			}
 		}
 		mother_even_if_dead = {
-			has_tordo_holy_blood_trigger = yes
+			has_thrud_holy_blood_trigger = yes
 		}
 	}
 }
-can_inherit_tordo_holy_blood_trigger = {
+can_inherit_thrud_holy_blood_trigger = {
 	OR = {
-		can_inherit_major_tordo_holy_blood_trigger = yes
-		can_inherit_minor_tordo_holy_blood_trigger = yes
+		can_inherit_major_thrud_holy_blood_trigger = yes
+		can_inherit_minor_thrud_holy_blood_trigger = yes
 	}
 }
 can_inherit_major_ulir_holy_blood_trigger = {
@@ -996,7 +996,7 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_loptyr
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 		}
 		AND = {
 			trait = holy_blood_minor_loptyr
@@ -1008,7 +1008,7 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_loptyr
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 		}
 		AND = {
 			trait = holy_blood_minor_loptyr
@@ -1028,11 +1028,11 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_loptyr
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_loptyr
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_loptyr
@@ -1040,7 +1040,7 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_naga
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 		}
 		AND = {
 			trait = holy_blood_minor_naga
@@ -1052,7 +1052,7 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_naga
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 		}
 		AND = {
 			trait = holy_blood_minor_naga
@@ -1072,54 +1072,54 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_naga
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_naga
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_naga
 			trait = holy_blood_minor_ulir
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 			trait = holy_blood_minor_blagi
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 			trait = holy_blood_minor_dain
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_baldr
+			trait = holy_blood_minor_fjalar
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 			trait = holy_blood_minor_forseti
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 			trait = holy_blood_minor_hezul
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 			trait = holy_blood_minor_neir
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 			trait = holy_blood_minor_noba
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_baldr
+			trait = holy_blood_minor_od
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_baldr
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
-			trait = holy_blood_minor_baldur
+			trait = holy_blood_minor_baldr
 			trait = holy_blood_minor_ulir
 		}
 		AND = {
@@ -1128,7 +1128,7 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_blagi
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 		}
 		AND = {
 			trait = holy_blood_minor_blagi
@@ -1148,11 +1148,11 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_blagi
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_blagi
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_blagi
@@ -1160,7 +1160,7 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_dain
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 		}
 		AND = {
 			trait = holy_blood_minor_dain
@@ -1180,42 +1180,42 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_dain
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_dain
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_dain
 			trait = holy_blood_minor_ulir
 		}
 		AND = {
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 			trait = holy_blood_minor_forseti
 		}
 		AND = {
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 			trait = holy_blood_minor_hezul
 		}
 		AND = {
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 			trait = holy_blood_minor_neir
 		}
 		AND = {
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 			trait = holy_blood_minor_noba
 		}
 		AND = {
-			trait = holy_blood_minor_fala
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_fjalar
+			trait = holy_blood_minor_od
 		}
 		AND = {
-			trait = holy_blood_minor_fala
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_fjalar
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
-			trait = holy_blood_minor_fala
+			trait = holy_blood_minor_fjalar
 			trait = holy_blood_minor_ulir
 		}
 		AND = {
@@ -1232,11 +1232,11 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_forseti
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_forseti
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_forseti
@@ -1252,11 +1252,11 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_hezul
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_hezul
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_hezul
@@ -1268,11 +1268,11 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_neir
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_neir
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_neir
@@ -1280,26 +1280,26 @@ has_two_minor_holy_blood_trigger = {
 		}
 		AND = {
 			trait = holy_blood_minor_noba
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 		}
 		AND = {
 			trait = holy_blood_minor_noba
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
 			trait = holy_blood_minor_noba
 			trait = holy_blood_minor_ulir
 		}
 		AND = {
-			trait = holy_blood_minor_odo
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_od
+			trait = holy_blood_minor_thrud
 		}
 		AND = {
-			trait = holy_blood_minor_odo
+			trait = holy_blood_minor_od
 			trait = holy_blood_minor_ulir
 		}
 		AND = {
-			trait = holy_blood_minor_tordo
+			trait = holy_blood_minor_thrud
 			trait = holy_blood_minor_ulir
 		}
 	}
@@ -1317,4 +1317,34 @@ can_add_minor_holy_blood_trigger = {
 		has_minor_holy_blood_trigger = yes
 	}
 	
+}
+
+is_minor_blood_found_by_loptyrians_trigger = {
+	has_character_flag = minor_blood_found_by_loptyrians
+	NOT = {	has_character_flag = rejected_loptyrians }
+}
+is_loptyrian_minor_blood_search_candidate_trigger = {
+	trait=holy_blood_minor_loptyr
+	NOT = {	has_character_flag = minor_blood_found_by_loptyrians }
+	NOT = {	has_character_flag = rejected_loptyrians }
+	NOT = {	has_character_flag = loptyrian_marriage }
+}
+
+loptyrians_found_two_minor_blood_trigger = {
+	check_variable = { which = global_male_minor_blood_found_by_loptyrians value = 1 }
+	check_variable = { which = global_female_minor_blood_found_by_loptyrians value = 1 }
+}
+loptyrians_exist_trigger = {
+	loptyrian = {
+		secret_religious_cult = {
+			any_society_member = { always = yes }
+		}
+	}
+}
+loptyrians_searching_for_minor_blood_trigger = {
+	OR = {
+		has_global_flag = loptyr_empire_destroyed
+		has_global_flag = loptyr_defeated
+	}
+	loptyrians_exist_trigger = yes
 }

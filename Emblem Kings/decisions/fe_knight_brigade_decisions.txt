@@ -1,0 +1,346 @@
+decisions = {
+
+	raise_weisseritter = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_belhalla
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = weisseritter	}
+					NOT = {	liege = { has_earmarked_regiments = weisseritter } }
+				}
+			}
+		}
+		effect = {
+			spawn_weisseritter_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_grunritter = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_chalphy
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = grunritter	}
+					NOT = {	liege = { has_earmarked_regiments = grunritter } }
+				}
+			}
+		}
+		effect = {
+			spawn_grunritter_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_grauritter = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_dozel
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = grauritter	}
+					NOT = {	liege = { has_earmarked_regiments = grauritter } }
+				}
+			}
+		}
+		effect = {
+			spawn_grauritter_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_gelb_ritter = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_friege
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = gelb_ritter	}
+					NOT = {	liege = { has_earmarked_regiments = gelb_ritter } }
+				}
+			}
+		}
+		effect = {
+			spawn_gelb_ritter_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_beige_ritter = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_jungby
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = beige_ritter	}
+					NOT = {	liege = { has_earmarked_regiments = beige_ritter } }
+				}
+			}
+		}
+		effect = {
+			spawn_beige_ritter_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_rot_ritter = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_velthomer
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = rot_ritter	}
+					NOT = {	liege = { has_earmarked_regiments = rot_ritter } }
+				}
+			}
+		}
+		effect = {
+			spawn_rot_ritter_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_cross_knights = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_nordion
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = cross_knights	}
+					NOT = {	liege = { has_earmarked_regiments = cross_knights } }
+				}
+			}
+		}
+		effect = {
+			spawn_cross_knights_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_lanceritter = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			has_landed_title = d_leonster
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = lanceritter	}
+					NOT = {	liege = { has_earmarked_regiments = lanceritter } }
+				}
+			}
+		}
+		effect = {
+			spawn_lanceritter_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+	raise_dragon_knights = {
+		only_playable = yes
+		potential = {
+			always = no
+			is_playable = yes
+			has_landed_title = k_thracia
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			custom_tooltip = {
+				text = raise_knight_brigade.tooltip.allow
+				hidden_tooltip = {
+					NOT = {	has_earmarked_regiments = dragon_knights	}
+					NOT = {	liege = { has_earmarked_regiments = dragon_knights } }
+				}
+			}
+		}
+		effect = {
+			spawn_dragon_knights_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
+}

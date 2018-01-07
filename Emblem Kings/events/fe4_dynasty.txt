@@ -13,20 +13,21 @@ character_event = {
 	option = {
 		name = OK
 		
-		d_jungby = {
-			holder_scope = {
+		#d_jungby = {
+			#holder_scope = {
+			c_1078 = { # Ring
 				create_character = { 
 					name = "Brigid"
 					dna="cdaijvdbhab"
 					properties="cf0hie00000000"
-					culture = PREV
-					religion = PREV
+					culture = THIS
+					religion = THIS
 					female = yes
 					#dynasty = 1007
 					age = 5
 					trait=twin
 					trait=went_missing
-					genetic_father = PREV
+					genetic_father = THIS
 					genetic_mother = 1079
 				}
 				c_1082 = {
@@ -42,7 +43,8 @@ character_event = {
 					}
 				}
 			}
-		}
+			#}
+		#}
 	}
 }
 
@@ -344,4 +346,72 @@ character_event = {
 			set_mother = 0
 		}
 	}
+}
+
+# Flip Deirdre's dynasty
+# TODO: review localization!
+character_event = {
+	id = fe4_dynasty.11
+	desc = fe4_dynasty.11.desc
+	picture = GFX_evt_marriage
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_dynasty.11.A
+		c_1030 = { # Kurth
+			ROOT = {
+				set_father = PREV
+				dynasty = PREV
+			}
+		}
+
+		dynasty_head = {
+			if = {
+				limit = { independent = yes }
+				narrative_event = { id = fe4_dynasty.12 }
+				any_vassal = {
+					limit = { NOT = { character = ROOT } }
+					narrative_event = { id = fe4_dynasty.12 }
+				}
+			}else = {
+				top_liege = {
+					narrative_event = { id = fe4_dynasty.12 }
+					any_vassal = {
+						limit = { NOT = { character = ROOT } }
+						narrative_event = { id = fe4_dynasty.12 }
+					}
+				}
+			}
+
+		}
+	}			
+}
+
+narrative_event = {
+	id = fe4_dynasty.12
+	title = fe4_dynasty.12.title
+	desc = fe4_dynasty.12.desc
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_dynasty.12.A
+		trigger = {
+			NOT = {
+				any_spouse = {
+					character = FROM
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = fe4_dynasty.12.B
+		trigger = {
+			any_spouse = {
+				character = FROM
+			}
+		}
+	}		
 }

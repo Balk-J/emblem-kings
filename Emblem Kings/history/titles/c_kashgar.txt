@@ -1,3 +1,4 @@
+180.1.1={holder=1754} # Placeholder character to fix independent barony issue
 180.1.1 = {
 	historical_nomad = yes
 }

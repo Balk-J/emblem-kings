@@ -371,4 +371,44 @@ decisions = {
 			}
 		}
 	}
+	marry_loptyian_minor_bloods = {
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			#independent = yes
+			true_religion = loptyrian
+			society_member_of = secret_religious_society_loptyrian
+			is_society_grandmaster = yes 
+			loptyrians_searching_for_minor_blood_trigger = yes
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = marry_loptyian_minor_bloods.allow
+				hidden_tooltip = {
+					loptyrians_found_two_minor_blood_trigger = yes 
+					NOT = { has_character_modifier = marrying_the_chosen_ones }
+				}
+			}
+		}
+		
+		effect = {		
+			custom_tooltip = {
+				text = marry_loptyian_minor_bloods.tooltip
+				hidden_tooltip = {
+					add_character_modifier = { name = marrying_the_chosen_ones duration = 30 }
+					character_event = { id = loptyrian.4 }
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

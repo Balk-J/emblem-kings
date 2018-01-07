@@ -53,3 +53,20 @@ character_event = {
 		name = OK
 	}
 }	
+character_event = {
+	id = fe_test.3
+	desc = "class.3.desc"
+	picture = "GFX_evt_child_sword" 
+		
+	is_triggered_only = yes
+	
+	# Father's class 1
+	option = {
+		name = "class.3.A"
+	}
+	
+	# Father's class 2
+	option = {
+		name = "class.3.B"
+	}
+}

@@ -44,3 +44,34 @@ character_event = {
 		}
 	}
 }	
+
+# Remove the no marriage trait
+character_event = {
+	id = util.3
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = OK
+		remove_trait = no_marriage
+	}
+}	
+
+# Fix automatically generated baron-tier rulers who wind up with the wrong culture/religion for their province/ruler.
+character_event = {
+	id = util.4
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = OK
+		liege = {
+			ROOT = {
+				culture = PREV
+				religion = PREV
+			}
+		}
+	}
+}	

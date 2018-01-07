@@ -1,0 +1,3430 @@
+1519={
+	name="" # c_aarberg
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1520={
+	name="" # c_abergele
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1521={
+	name="" # c_acaliss
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1522={
+	name="" # c_adare
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1523={
+	name="" # c_adma
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1524={
+	name="" # c_aed
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1525={
+	name="" # c_aevum
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1526={
+	name="" # c_agusty
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1527={
+	name="" # c_agylla
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1528={
+	name="" # c_aigle
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1529={
+	name="" # c_ailinne
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1530={
+	name="" # c_airgialla
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1531={
+	name="" # c_aisarna
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1532={
+	name="" # c_aisinia
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1533={
+	name="" # c_akovos
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1534={
+	name="" # c_alauna
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1535={
+	name="" # c_albenga
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1536={
+	name="" # c_alesia
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1537={
+	name="" # c_alster
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1538={
+	name="" # c_alta
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1539={
+	name="" # c_alvissmal
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1540={
+	name="" # c_amden
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1541={
+	name="" # c_amelas
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1542={
+	name="" # c_amina
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1543={
+	name="" # c_anphony
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1544={
+	name="" # c_anth
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1545={
+	name="" # c_antigonia
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1546={
+	name="" # c_antiphellos
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1547={
+	name="" # c_anu
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1548={
+	name="" # c_aodh
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1549={
+	name="" # c_aoibh
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1550={
+	name="" # c_aonach
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1551={
+	name="" # c_aperlae
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1552={
+	name="" # c_appenzell
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1553={
+	name="" # c_aquleia
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1554={
+	name="" # c_araphen
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1555={
+	name="" # c_araxa
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1556={
+	name="" # c_arcadia
+	culture=nabatan
+	religion=elibe_spirits_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1557={
+	name="" # c_arciun
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1558={
+	name="" # c_arimna
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1559={
+	name="" # c_arles
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1560={
+	name="" # c_armagh
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1561={
+	name="" # c_arritim
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1562={
+	name="" # c_arycanda
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1563={
+	name="" # c_ascona
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1564={
+	name="" # c_atria
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1565={
+	name="" # c_atropatene
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1566={
+	name="" # c_augea
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1567={
+	name="" # c_aulaeitichus
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1568={
+	name="" # c_badon
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1569={
+	name="" # c_bahariya
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1570={
+	name="" # c_balbura
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1571={
+	name="" # c_balgach
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1572={
+	name="" # c_balkh
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1573={
+	name="" # c_baratou
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1574={
+	name="" # c_basel
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1575={
+	name="" # c_basematt
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1576={
+	name="" # c_basile
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1577={
+	name="" # c_batken
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1578={
+	name="" # c_bauen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1579={
+	name="" # c_belgarum
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1580={
+	name="" # c_belhalla
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1581={
+	name="" # c_bellona
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1582={
+	name="" # c_berenger
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1583={
+	name="" # c_bern
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1584={
+	name="" # c_berua
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1585={
+	name="" # c_bettingen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1586={
+	name="" # c_birnam
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1587={
+	name="" # c_birseck
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1588={
+	name="" # c_blachernae
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1589={
+	name="" # c_blaye
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1590={
+	name="" # c_blera
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1591={
+	name="" # c_bolsena
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1592={
+	name="" # c_boltigen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1593={
+	name="" # c_bonfol
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1594={
+	name="" # c_breifne
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1595={
+	name="" # c_bubon
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1596={
+	name="" # c_bulgar
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1597={
+	name="" # c_buron
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1598={
+	name="" # c_bytom
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1599={
+	name="" # c_caelin
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1600={
+	name="" # c_caerleon
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1601={
+	name="" # c_cainua
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1602={
+	name="" # c_caiseal
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1603={
+	name="" # c_caisra
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1604={
+	name="" # c_calach
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1605={
+	name="" # c_calcaria
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1606={
+	name="" # c_calynda
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1607={
+	name="" # c_capeva
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1608={
+	name="" # c_capna
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1609={
+	name="" # c_cardia
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1610={
+	name="" # c_carmna
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1611={
+	name="" # c_caromago
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1612={
+	name="" # c_carrhae
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1613={
+	name="" # c_cassina
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1614={
+	name="" # c_castillon
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1615={
+	name="" # c_catuna
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1616={
+	name="" # c_caunus
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1617={
+	name="" # c_cawdor
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1618={
+	name="" # c_cebrene
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1619={
+	name="" # c_cevio
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1620={
+	name="" # c_chalphy
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1621={
+	name="" # c_chariopolis
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1622={
+	name="" # c_chirades
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1623={
+	name="" # c_choma
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1624={
+	name="" # c_chronos
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1625={
+	name="" # c_cibyra
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1626={
+	name="" # c_clavna
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1627={
+	name="" # c_clevsin
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1628={
+	name="" # c_clochar
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1629={
+	name="" # c_colonnata
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1630={
+	name="" # c_comba
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1631={
+	name="" # c_condate
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1632={
+	name="" # c_conote
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1633={
+	name="" # c_coria
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1634={
+	name="" # c_corinium
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1635={
+	name="" # c_cornol
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1636={
+	name="" # c_cornwell
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1637={
+	name="" # c_cura
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1638={
+	name="" # c_cyaneae
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1639={
+	name="" # c_dahkla
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1640={
+	name="" # c_dakia
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1641={
+	name="" # c_dandrum
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1642={
+	name="" # c_danum
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1643={
+	name="" # c_danzich
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1644={
+	name="" # c_darna
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1645={
+	name="" # c_daru
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1646={
+	name="" # c_daulnoy
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1647={
+	name="" # c_degou
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1648={
+	name="" # c_deleus
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1649={
+	name="" # c_detroyes
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1650={
+	name="" # c_devana
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1651={
+	name="" # c_dhami
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1652={
+	name="" # c_dia
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1653={
+	name="" # c_dias
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1654={
+	name="" # c_donar
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1655={
+	name="" # c_dorneck
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1656={
+	name="" # c_dozel
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1657={
+	name="" # c_dubris
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1658={
+	name="" # c_dungot
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1659={
+	name="" # c_dunsinane
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1660={
+	name="" # c_durandal
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1661={
+	name="" # c_easaw
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1662={
+	name="" # c_eburacum
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1663={
+	name="" # c_ecbatana
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1664={
+	name="" # c_edda
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1665={
+	name="" # c_edessa
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1666={
+	name="" # c_edina
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1667={
+	name="" # c_elati
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1668={
+	name="" # c_ennenda
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1669={
+	name="" # c_eochaill
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1670={
+	name="" # c_erlenbach
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1671={
+	name="" # c_etain
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1672={
+	name="" # c_evans
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1673={
+	name="" # c_evidensca
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1674={
+	name="" # c_falias
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1675={
+	name="" # c_farafra
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1676={
+	name="" # c_felathri
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1677={
+	name="" # c_felsina
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1678={
+	name="" # c_fiana
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1679={
+	name="" # c_finias
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1680={
+	name="" # c_fionnghlas
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1681={
+	name="" # c_fortitudo
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1682={
+	name="" # c_foulkes
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1683={
+	name="" # c_frest
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1684={
+	name="" # c_fribourg
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1685={
+	name="" # c_friege
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1686={
+	name="" # c_fulginia
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1687={
+	name="" # c_galar
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1688={
+	name="" # c_galata
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1689={
+	name="" # c_gallen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1690={
+	name="" # c_gallipoli
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1691={
+	name="" # c_galmiz
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1692={
+	name="" # c_ganeishire
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1693={
+	name="" # c_ganelon
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1694={
+	name="" # c_gartan
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1695={
+	name="" # c_gefyra
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1696={
+	name="" # c_gelonus
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1697={
+	name="" # c_genoa
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1698={
+	name="" # c_gilling
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1699={
+	name="" # c_gizia
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1700={
+	name="" # c_glamis
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1701={
+	name="" # c_glarus
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1702={
+	name="" # c_glasir
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1703={
+	name="" # c_glogow
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1704={
+	name="" # c_gonten
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1705={
+	name="" # c_gora
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1706={
+	name="" # c_gorias
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1707={
+	name="" # c_gortynia
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1708={
+	name="" # c_graupius
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1709={
+	name="" # c_grimnismal
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1710={
+	name="" # c_griplur
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1711={
+	name="" # c_grodkow
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1712={
+	name="" # c_grutia
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1713={
+	name="" # c_hagfors
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1714={
+	name="" # c_halethi
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1715={
+	name="" # c_harbardsljod
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1716={
+	name="" # c_hardres
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1717={
+	name="" # c_haslen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1718={
+	name="" # c_havamal
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1719={
+	name="" # c_heirhein
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1720={
+	name="" # c_heraclea
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1721={
+	name="" # c_herclena
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1722={
+	name="" # c_hodur
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1723={
+	name="" # c_hori
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1724={
+	name="" # c_hortia
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1725={
+	name="" # c_hotherus
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1726={
+	name="" # c_hromundar
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1727={
+	name="" # c_iassos
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1728={
+	name="" # c_ida
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1729={
+	name="" # c_idebessus
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1730={
+	name="" # c_inguin
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1731={
+	name="" # c_ingwaz
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1732={
+	name="" # c_ingwine
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1733={
+	name="" # c_irna
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1734={
+	name="" # c_isaach
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1735={
+	name="" # c_isaris
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1736={
+	name="" # c_isca
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1737={
+	name="" # c_isenthal
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1738={
+	name="" # c_iss
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1739={
+	name="" # c_itingen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1740={
+	name="" # c_iubhair
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1741={
+	name="" # c_iustitia
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1742={
+	name="" # c_jacobe
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1743={
+	name="" # c_jawor
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1744={
+	name="" # c_jungby
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1745={
+	name="" # c_jura
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1746={
+	name="" # c_jutes
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1747={
+	name="" # c_kafti
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1748={
+	name="" # c_kagbeni
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1749={
+	name="" # c_kaisten
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1750={
+	name="" # c_kankelena
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1751={
+	name="" # c_kapathogia
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1752={
+	name="" # c_kapsas
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1753={
+	name="" # c_karyon
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1754={
+	name="" # c_kashgar
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1755={
+	name="" # c_kavi
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1756={
+	name="" # c_kelves
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1757={
+	name="" # c_kharga
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1758={
+	name="" # c_khathelet
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1759={
+	name="" # c_kosalar
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1760={
+	name="" # c_kozle
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1761={
+	name="" # c_kunlun
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1762={
+	name="" # c_kvasir
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1763={
+	name="" # c_kynouria
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1764={
+	name="" # c_laeradr
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1765={
+	name="" # c_landskron
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1766={
+	name="" # c_lasta
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1767={
+	name="" # c_latharna
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1768={
+	name="" # c_laus
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1769={
+	name="" # c_lebessus
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1770={
+	name="" # c_legnica
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1771={
+	name="" # c_leonster
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1772={
+	name="" # c_lete
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1773={
+	name="" # c_levidi
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1774={
+	name="" # c_liatroim
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1775={
+	name="" # c_liburna
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1776={
+	name="" # c_limyra
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1777={
+	name="" # c_lindinis
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1778={
+	name="" # c_lindum
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1779={
+	name="" # c_lir
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1780={
+	name="" # c_llangollen
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1781={
+	name="" # c_lokasenna
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1782={
+	name="" # c_lombardy
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1783={
+	name="" # c_longuyon
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1784={
+	name="" # c_lorantha
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1785={
+	name="" # c_loukas
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1786={
+	name="" # c_luban
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1787={
+	name="" # c_lubeck
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1788={
+	name="" # c_lucerne
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1789={
+	name="" # c_luimneach
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1790={
+	name="" # c_luthecia
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1791={
+	name="" # c_lysimachia
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1792={
+	name="" # c_mackily
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1793={
+	name="" # c_madino
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1794={
+	name="" # c_madyta
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1795={
+	name="" # c_magmell
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1796={
+	name="" # c_magnesia
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1797={
+	name="" # c_makri
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1798={
+	name="" # c_mallota
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1799={
+	name="" # c_malpas
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1800={
+	name="" # c_mamucium
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1801={
+	name="" # c_mani
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1802={
+	name="" # c_mansaba
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1803={
+	name="" # c_manster
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1804={
+	name="" # c_manthra
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1805={
+	name="" # c_mantineia
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1806={
+	name="" # c_marbach
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1807={
+	name="" # c_marciana
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1808={
+	name="" # c_marpha
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1809={
+	name="" # c_marturi
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1810={
+	name="" # c_mascagni
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1811={
+	name="" # c_meace
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1812={
+	name="" # c_media
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1813={
+	name="" # c_mediolanum
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1814={
+	name="" # c_meilen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1815={
+	name="" # c_melas
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1816={
+	name="" # c_melfiye
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1817={
+	name="" # c_melgln
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1818={
+	name="" # c_miletos
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1819={
+	name="" # c_mochdre
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1820={
+	name="" # c_mollakend
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1821={
+	name="" # c_monza
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1822={
+	name="" # c_moresk
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1823={
+	name="" # c_morges
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1824={
+	name="" # c_moridin
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1825={
+	name="" # c_mount_violdrake
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1826={
+	name="" # c_mugla
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1827={
+	name="" # c_muhen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1828={
+	name="" # c_murgleis
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1829={
+	name="" # c_murias
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1830={
+	name="" # c_murist
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1831={
+	name="" # c_mutina
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1832={
+	name="" # c_myra
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1833={
+	name="" # c_naryn
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1834={
+	name="" # c_navio
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1835={
+	name="" # c_neandreia
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1836={
+	name="" # c_nestani
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1837={
+	name="" # c_netstal
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1838={
+	name="" # c_nidwalden
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1839={
+	name="" # c_nisa
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1840={
+	name="" # c_noel
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1841={
+	name="" # c_nogna
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1842={
+	name="" # c_norden
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1843={
+	name="" # c_nordion
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1844={
+	name="" # c_norn
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1845={
+	name="" # c_nucra
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1846={
+	name="" # c_nyon
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1847={
+	name="" # c_nysa
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1848={
+	name="" # c_obwalden
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1849={
+	name="" # c_olawa
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1850={
+	name="" # c_olicana
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1851={
+	name="" # c_olst
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1852={
+	name="" # c_olten
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1853={
+	name="" # c_orcla
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1854={
+	name="" # c_oren
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1855={
+	name="" # c_orgahil
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1856={
+	name="" # c_orhay
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1857={
+	name="" # c_orvin
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1858={
+	name="" # c_osraige
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1859={
+	name="" # c_ostia
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1860={
+	name="" # c_palation
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1861={
+	name="" # c_pamir
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1862={
+	name="" # c_panidos
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1863={
+	name="" # c_patara
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1864={
+	name="" # c_pathva
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1865={
+	name="" # c_perrault
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1866={
+	name="" # c_perthori
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1867={
+	name="" # c_peruluke
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1868={
+	name="" # c_perusia
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1869={
+	name="" # c_phellus
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1870={
+	name="" # c_pherae
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1871={
+	name="" # c_phestos
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1872={
+	name="" # c_phinora
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1873={
+	name="" # c_phlera
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1874={
+	name="" # c_pikernis
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1875={
+	name="" # c_pinabel
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1876={
+	name="" # c_plaka
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1877={
+	name="" # c_pontes
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1878={
+	name="" # c_prudnik
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1879={
+	name="" # c_pulci
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1880={
+	name="" # c_pyrene
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1881={
+	name="" # c_rada
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1882={
+	name="" # c_ragna
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1883={
+	name="" # c_rapallo
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1884={
+	name="" # c_rasela
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1885={
+	name="" # c_rebehkah
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1886={
+	name="" # c_regia
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1887={
+	name="" # c_reglay
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1888={
+	name="" # c_remigen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1889={
+	name="" # c_remnun
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1890={
+	name="" # c_remy
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1891={
+	name="" # c_rhodia
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1892={
+	name="" # c_riedern
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1893={
+	name="" # c_riha
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1894={
+	name="" # c_risch
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1895={
+	name="" # c_rivough
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1896={
+	name="" # c_rizes
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1897={
+	name="" # c_rorbas
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1898={
+	name="" # c_roskva
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1899={
+	name="" # c_russellae
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1900={
+	name="" # c_rute
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1901={
+	name="" # c_ruthin
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1902={
+	name="" # c_ryerde
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1903={
+	name="" # c_sabate
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1904={
+	name="" # c_sabatia
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1905={
+	name="" # c_saeculum
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1906={
+	name="" # c_sagkas
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1907={
+	name="" # c_sailane
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1908={
+	name="" # c_saka
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1909={
+	name="" # c_salinae
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1910={
+	name="" # c_santala
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1911={
+	name="" # c_santaruz
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1912={
+	name="" # c_sarnen
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1913={
+	name="" # c_satria
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1914={
+	name="" # c_savan
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1915={
+	name="" # c_savona
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1916={
+	name="" # c_scinawa
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1917={
+	name="" # c_segontium
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1918={
+	name="" # c_selymbria
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1919={
+	name="" # c_sestos
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1920={
+	name="" # c_shan
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1921={
+	name="" # c_sidyma
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1922={
+	name="" # c_siene
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1923={
+	name="" # c_sigeia
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1924={
+	name="" # c_sigeion
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1925={
+	name="" # c_silesse
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1926={
+	name="" # c_silurum
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1927={
+	name="" # c_silvail
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1928={
+	name="" # c_sion
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1929={
+	name="" # c_sistan
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1930={
+	name="" # c_siwa
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1931={
+	name="" # c_siyabli
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1932={
+	name="" # c_skopi
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1933={
+	name="" # c_skuld
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1934={
+	name="" # c_solothurn
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1935={
+	name="" # c_solwood
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1936={
+	name="" # c_sophara
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1937={
+	name="" # c_souli
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1938={
+	name="" # c_soulos
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1939={
+	name="" # c_spina
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1940={
+	name="" # c_spirit_forest
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1941={
+	name="" # c_stemilion
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1942={
+	name="" # c_stenay
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1943={
+	name="" # c_sunnemo
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1944={
+	name="" # c_suttungr
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1945={
+	name="" # c_swidnica
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1946={
+	name="" # c_syrallum
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1947={
+	name="" # c_tahra
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1948={
+	name="" # c_talas
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1949={
+	name="" # c_taliver
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1950={
+	name="" # c_tania
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1951={
+	name="" # c_tarchna
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1952={
+	name="" # c_targioni
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1953={
+	name="" # c_tarim
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1954={
+	name="" # c_tatoba
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1955={
+	name="" # c_tegea
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1956={
+	name="" # c_telmessus
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1957={
+	name="" # c_temperantia
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1958={
+	name="" # c_thjalfi
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1959={
+	name="" # c_thoknia
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1960={
+	name="" # c_thove
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1961={
+	name="" # c_thracia
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1962={
+	name="" # c_thria
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1963={
+	name="" # c_tios
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1964={
+	name="" # c_tirfothuinn
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1965={
+	name="" # c_tirnanog
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1966={
+	name="" # c_tirtairngire
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1967={
+	name="" # c_tor
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1968={
+	name="" # c_tozzetti
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1969={
+	name="" # c_tralles
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1970={
+	name="" # c_trebenna
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1971={
+	name="" # c_trimontium
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1972={
+	name="" # c_tripotamo
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1973={
+	name="" # c_troas
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1974={
+	name="" # c_truro
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1975={
+	name="" # c_tuscana
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1976={
+	name="" # c_tyros
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1977={
+	name="" # c_uberti
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1978={
+	name="" # c_unterwalden
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1979={
+	name="" # c_urd
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1980={
+	name="" # c_uri
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1981={
+	name="" # c_valholl
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1982={
+	name="" # c_vangos
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1983={
+	name="" # c_vastas
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1984={
+	name="" # c_vaud
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1985={
+	name="" # c_vectis
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1986={
+	name="" # c_velera
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1987={
+	name="" # c_velkha
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1988={
+	name="" # c_velthomer
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1989={
+	name="" # c_velzna
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1990={
+	name="" # c_verdandi
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1991={
+	name="" # c_verdane
+	culture=verdanian
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1992={
+	name="" # c_verissa
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1993={
+	name="" # c_vetluna
+	culture=etrurian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1994={
+	name="" # c_vinovia
+	culture=western_islander
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1995={
+	name="" # c_vipena
+	culture=ilian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1996={
+	name="" # c_virtus
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1997={
+	name="" # c_volga
+	culture=sacaean
+	religion=divine_sky_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1998={
+	name="" # c_vytina
+	culture=nabatan
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+1999={
+	name="" # c_walchwil
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2000={
+	name="" # c_worde
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2001={
+	name="" # c_xanthus
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2002={
+	name="" # c_yens
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2003={
+	name="" # c_yied
+	culture=grann
+	religion=loptyrian
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2004={
+	name="" # c_yngvi
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2005={
+	name="" # c_zaxon
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2006={
+	name="" # c_zem
+	culture=lycian
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2007={
+	name="" # c_ziebice
+	culture=grann
+	religion=earthen_pagan
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}
+2008={
+	name="" # c_zug
+	culture=bernese
+	religion=elimine_church
+	160.1.1={ birth=yes }
+	210.1.1={ death=yes }
+}

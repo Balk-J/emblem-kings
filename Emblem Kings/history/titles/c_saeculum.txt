@@ -1,3 +1,4 @@
+180.1.1={holder=1905} # Placeholder character to fix independent barony issue
 # c_saeculum > d_chronos
 180.1.1={
 	law = status_of_women_4

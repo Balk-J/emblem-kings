@@ -41,7 +41,9 @@ vulenary_consumed;Vulenary Consumed;;;;;;;;;;;;;x
 desc_vulenary_consumed;This character has recently consumed a vulenary.;;;;;;;;;;;;;x
 concoction_consumed;Concoction Consumed;;;;;;;;;;;;;x
 desc_concoction_consumed;This character has recently consumed a concoction.;;;;;;;;;;;;;x
-elixir_consumed;Vulenary Consumed;;;;;;;;;;;;;x
+elixir_consumed;Elixir Consumed;;;;;;;;;;;;;x
 desc_elixir_consumed;This character has recently consumed an elixir.;;;;;;;;;;;;;x
 population_massacred;Population Massacred;;;;;;;;;;;;;x
 desc_population_massacred;Most of the people in this province have been hunted down and killed.;;;;;;;;;;;;;x
+marrying_the_chosen_ones;Seeking the Chosen Ones;;;;;;;;;;;;;x
+desc_marrying_the_chosen_ones;This character is searching for a very special couple...;;;;;;;;;;;;;x

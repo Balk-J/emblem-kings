@@ -1,3 +1,4 @@
+180.1.1={holder=1656} # Placeholder character to fix independent barony issue
 # c_dozel > d_dozel
 180.1.1={
 	law = status_of_women_4
@@ -27,7 +28,7 @@
 760.4.1={
 	holder=1073 # Danann
 }
-778.1.1={
+771.1.1={
 	holder=1075 # Brian
 }
 779.1.1={

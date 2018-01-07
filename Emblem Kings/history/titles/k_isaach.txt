@@ -18,11 +18,19 @@
 714.1.1={
 	holder = 1130 # Mananan
 }
+756.1.1={
+	effect = { 
+		set_title_flag = jugdral_invasion_target
+	}
+}
 757.1.1={
 	holder = 1134 # Mariccle
 }
 760.1.1={
 	holder = 1029 # Azmur 
+	effect = { 
+		clr_title_flag = jugdral_invasion_target
+	}
 }
 761.1.1={
 	holder = 1073 # Danann 

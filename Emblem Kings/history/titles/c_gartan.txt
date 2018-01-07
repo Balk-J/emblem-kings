@@ -1,3 +1,4 @@
+180.1.1={holder=1694} # Placeholder character to fix independent barony issue
 # c_gartan > d_alster
 180.1.1={
 	law = status_of_women_4
@@ -23,4 +24,3 @@
 778.1.1={
 	holder=0#1162 # Leif
 }
-

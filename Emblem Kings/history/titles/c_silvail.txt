@@ -1,3 +1,4 @@
+180.1.1={holder=1927} # Placeholder character to fix independent barony issue
 # c_silvail > d_silvail
 180.1.1={
 	law = status_of_women_4
@@ -16,9 +17,7 @@
 	holder=1008 # Hezul
 }
 668.1.1={
-	liege=d_nordion
-}
-668.1.1={
+	#liege=d_nordion
 	holder=1026 # House Nordion
 }
 685.1.1={

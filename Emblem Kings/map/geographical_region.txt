@@ -165,3 +165,117 @@ world_elibe = {
 		world_elibe_greater_missur		
 	}
 }
+
+world_jugdral_orgahil = {
+	duchies = {
+		d_orgahil
+		d_blagi
+	}
+}
+world_jugdral_yied = {
+	duchies = {
+		d_yied
+		d_lir
+		d_darna
+		d_anu
+		d_phinora
+		d_dahkla
+	}
+}
+world_jugdral_miletos = {
+	duchies = {
+		d_miletos
+		d_chronos
+		d_rada
+		d_peruluke
+	}
+}
+world_jugdral_verdane = {
+	duchies = {
+		d_verdane
+		d_marpha
+		d_genoa
+		d_evans
+	}
+}
+world_jugdral_southern_thracia = {
+	duchies = {
+		d_thracia
+		d_kapathogia
+		d_noel
+		d_meace
+		d_luthecia
+		d_grutia
+		d_iss
+		d_savan
+	}
+}
+world_jugdral_northern_thracia = {
+	duchies = {
+		d_leonster
+		d_alster
+		d_conote
+		d_manster
+		d_melgln
+		d_tahra
+	}
+}
+world_jugdral_isaach = {
+	duchies = {
+		d_isaach
+		d_rivough
+		d_sophara
+		d_ganeishire
+		d_tirnanog
+	}
+}
+world_jugdral_silesse = {
+	duchies = {
+		d_silesse
+		d_zaxon
+		d_thove
+		d_sailane
+		d_lubeck
+	}
+}
+world_jugdral_agustria = {
+	duchies = {
+		d_agusty
+		d_madino
+		d_silvail
+		d_anphony
+		d_heirhein
+		d_nordion
+		d_mackily
+	}
+}
+world_jugdral_grannvale = {
+	duchies = {
+		d_belhalla
+		d_velthomer
+		d_edda
+		d_chalphy
+		d_friege
+		d_dozel
+		d_jungby
+	}
+}
+world_jugdral_thracia = {
+	regions = {
+		world_jugdral_northern_thracia
+		world_jugdral_southern_thracia
+	}	
+}
+world_jugdral = {
+	regions = {
+		world_jugdral_grannvale		
+		world_jugdral_agustria
+		world_jugdral_silesse
+		world_jugdral_isaach
+		world_jugdral_thracia
+		world_jugdral_miletos
+		world_jugdral_verdane
+		world_jugdral_yied
+		world_jugdral_orgahil
+	}	
+}

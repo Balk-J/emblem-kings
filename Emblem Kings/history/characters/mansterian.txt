@@ -109,6 +109,9 @@
 	trait=holy_blood_latent_noba
 	736.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_quan
+		}
 	}
 	747.01.01={
 		effect = {
@@ -1501,6 +1504,7 @@
 		birth=yes
 		employer= 1158 # Leonster
 		effect = {
+			set_character_flag=is_fe4_finn
 			c_1160 = { # Quan
 				reverse_opinion = {
 					modifier = opinion_loyal_servant
@@ -2005,9 +2009,9 @@
 # Knight of Leonster. His father died in battle and Hannibal rescued him and his mother. 
 1380={
 	name="Carrion"
-	father=1181
-	mother=1182
-	dynasty=2126
+	father=1381
+	mother=1382
+	dynasty=2127
 	culture=mansterian
 	religion=church_of_edda
 	disallow_random_traits=yes

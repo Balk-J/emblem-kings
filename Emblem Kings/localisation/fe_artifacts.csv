@@ -54,6 +54,38 @@ regalia_rex_hasta;Rex Hasta;;;;;;;;;;;;;x
 regalia_rex_hasta_desc;A regalia lance.;;;;;;;;;;;;;x
 regalia_regal_blade;Regal Blade;;;;;;;;;;;;;x
 regalia_regal_blade_desc;A regalia sword.;;;;;;;;;;;;;x
+regalia_naga;Book of Naga;;;;;;;;;;;;;x
+regalia_naga_desc;Heim's light tome. The strongest of the weapons bestowed upon the twelve crusaders.;;;;;;;;;;;;;x
+regalia_tyrfing;Tyrfing;;;;;;;;;;;;;x
+regalia_tyrfing_desc;Baldr's Sacred Sword.;;;;;;;;;;;;;x
+regalia_yewfelle;Yewfelle;;;;;;;;;;;;;x
+regalia_yewfelle_desc;Ulir's bow.;;;;;;;;;;;;;x
+regalia_helswath;Helswath;;;;;;;;;;;;;x
+regalia_helswath_desc;Neir's axe.;;;;;;;;;;;;;x
+regalia_valflame;Valflame;;;;;;;;;;;;;x
+regalia_valflame_desc;Fjalar's fire tome, granted by the dragon Salamand.;;;;;;;;;;;;;x
+regalia_mjolnir;Mjölnir;;;;;;;;;;;;;x
+regalia_mjolnir_desc;Thrud's thunder tome.;;;;;;;;;;;;;x
+regalia_valkyrie;Valkyrie;;;;;;;;;;;;;x
+regalia_valkyrie_desc;Blagi's staff of resurrection.;;;;;;;;;;;;;x
+regalia_mystletainn;Mystletainn;;;;;;;;;;;;;x
+regalia_mystletainn_desc;Hezul's Demon Sword.;;;;;;;;;;;;;x
+regalia_balmung;Balmung;;;;;;;;;;;;;x
+regalia_balmung_desc;Od's Divine Sword.;;;;;;;;;;;;;x
+regalia_gungnir;Gungnir;;;;;;;;;;;;;x
+regalia_gungnir_desc;Dain's Heaven Lance.;;;;;;;;;;;;;x
+regalia_gae_bolg;Gáe Bolg;;;;;;;;;;;;;x
+regalia_gae_bolg_desc;Noba's Earth Lance.;;;;;;;;;;;;;x
+regalia_forseti;Forseti;;;;;;;;;;;;;x
+regalia_forseti_desc;Ced's wind tome, imbued with the dragon Forseti's will and passion for the good of mankind.;;;;;;;;;;;;;x
+regalia_loptyr;Book of Loptyr;;;;;;;;;;;;;x
+regalia_loptyr_desc;The dark tome that channels the power and consciousness of the earth dragon Loptyr.;;;;;;;;;;;;;x
+regalia_loptyr_sword;Loptyr Sword;;;;;;;;;;;;;x
+regalia_loptyr_sword_desc;A dark sword whose sinister power protects its wielder from harm.;;;;;;;;;;;;;x
+regalia_blagi_sword;Blagi Sword;;;;;;;;;;;;;x
+regalia_blagi_sword_desc;A sword blessed by Archbishop Blagi with the power to pierce the protection of dark magic.;;;;;;;;;;;;;x
+regalia_kia;Kia;;;;;;;;;;;;;x
+regalia_kia_desc;A staff capable of curing many ailments, including petrification caused by dark magic.;;;;;;;;;;;;;x
 
 iron_sword;Iron Sword;;;;;;;;;;;;;x
 iron_sword_desc;A common sword of a common material.;;;;;;;;;;;;;x

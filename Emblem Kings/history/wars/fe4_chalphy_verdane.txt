@@ -1,0 +1,19 @@
+name = "Chalphy Invasion of Verdane"
+
+casus_belli = {
+	actor = 1032 # Sigurd
+	recipient = 1180 # Batou
+	casus_belli = sigurd_invasion
+	landed_title=k_verdane
+	date=757.1.1
+}
+
+757.1.1 = {
+	add_attacker = 1032
+	add_defender = 1180
+}
+
+758.1.1 = {
+	rem_attacker = 1032
+	rem_defender = 1180
+}

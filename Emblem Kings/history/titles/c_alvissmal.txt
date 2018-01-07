@@ -1,3 +1,4 @@
+180.1.1={holder=1539} # Placeholder character to fix independent barony issue
 # c_alvissmal > d_edda
 180.1.1={
 	law = status_of_women_4
@@ -12,11 +13,11 @@
 }
 649.1.1={
 	liege = d_edda
-	holder=0 # Blagi
+	holder=1003 # Blagi
 }
 760.1.1={
 	holder=1337 # Boyce
 }
 779.1.1={
-	holder=0 
+	#holder=0 # Set to appropriately cultured ruler?
 }

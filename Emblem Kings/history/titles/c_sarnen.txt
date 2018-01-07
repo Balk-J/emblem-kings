@@ -1,3 +1,4 @@
+180.1.1={holder=1912} # Placeholder character to fix independent barony issue
 # k_calach
 180.1.1={
 	law = status_of_women_4
@@ -10,4 +11,3 @@
 1158.01.01 = { 
 	holder=473
 }
-

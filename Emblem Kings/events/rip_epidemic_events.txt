@@ -48,7 +48,7 @@ character_event = {
 				set_character_flag = epidemic_blame_game
 				character_event = { id = RIP.13001 }
 			}
-# Blame Jews
+			# Blame Jews
 			10 = { # Witch hunt
 				modifier = {
 					factor = 0
@@ -61,7 +61,7 @@ character_event = {
 				set_character_flag = epidemic_blame_game
 				character_event = { id = RIP.13198 }
 			}
-# Bad Hindu
+			# Bad Hindu
 		}
 	}
 }
@@ -1215,6 +1215,7 @@ character_event = {
 			if = {
 				limit = {
 					any_courtier = {
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						is_rival = ROOT
 						prisoner = no
@@ -1223,6 +1224,7 @@ character_event = {
 				}
 				random_courtier = {
 					limit = { 
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						is_rival = ROOT
 						prisoner = no
@@ -1244,6 +1246,7 @@ character_event = {
 			if = {
 				limit = {
 					any_courtier = {
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						OR = {
 							trait = possessed
@@ -1255,6 +1258,7 @@ character_event = {
 				}
 				random_courtier = {
 					limit = {
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						OR = {
 							trait = possessed
@@ -1275,6 +1279,7 @@ character_event = {
 			if = {
 				limit = { 
 					any_courtier = {
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						OR = {
 							NOT = { religion = FROM }
@@ -1286,6 +1291,7 @@ character_event = {
 				}
 				random_courtier = {
 					limit = {
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						OR = {
 							NOT = { religion = FROM }
@@ -1305,6 +1311,7 @@ character_event = {
 			if = {
 				limit = {
 					any_courtier = {
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						is_wicked = yes
 						prisoner = no
@@ -1314,6 +1321,7 @@ character_event = {
 				} 
 				random_courtier = {
 					limit = { 
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						is_wicked = yes 
 						prisoner = no
@@ -1331,6 +1339,7 @@ character_event = {
 			if = {
 				limit = {
 					any_courtier = {
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						is_adult = yes 
 						prisoner = no
@@ -1340,6 +1349,7 @@ character_event = {
 
 				random_courtier = { 
 					limit = { 
+						NOT = { character = PREV }
 						NOT = { is_liege_or_above = ROOT }
 						is_adult = yes 
 						prisoner = no
@@ -1507,7 +1517,7 @@ character_event = {
 				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
-					duration = 30
+					duration = 60
 				}
 			}
 		}

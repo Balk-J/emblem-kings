@@ -168,4 +168,44 @@ spriteTypes = {
 		name = "GFX_consume_elixir"
 		texturefile = "gfx\\interface\\decision_icon_vulenary.dds"
 	}
+	spriteType = {
+		name = "GFX_raise_weisseritter"
+		texturefile = "gfx\\interface\\decision_icon_belhalla.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_grunritter"
+		texturefile = "gfx\\interface\\decision_icon_chalphy.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_grauritter"
+		texturefile = "gfx\\interface\\decision_icon_dozel.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_gelb_ritter"
+		texturefile = "gfx\\interface\\decision_icon_friege.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_beige_ritter"
+		texturefile = "gfx\\interface\\decision_icon_jungby.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_rot_ritter"
+		texturefile = "gfx\\interface\\decision_icon_velthomer.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_cross_knights"
+		texturefile = "gfx\\interface\\decision_icon_nordion.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_lanceritter"
+		texturefile = "gfx\\interface\\decision_icon_leonster.dds"
+	}
+	spriteType = {
+		name = "GFX_raise_dragon_knights"
+		texturefile = "gfx\\interface\\decision_icon_thracia.dds"
+	}
+	spriteType = {
+		name = "GFX_marry_loptyian_minor_bloods"
+		texturefile = "gfx\\interface\\decision_icon_pick_main_deity.dds"
+	}
 }

@@ -1,0 +1,462 @@
+namespace = loptyrian
+
+character_event = {
+	id = loptyrian.1
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	trigger = {
+		is_adult = yes
+		is_loptyrian_minor_blood_search_candidate_trigger = yes
+		is_minor_blood_found_by_loptyrians_trigger = no
+		loptyrians_searching_for_minor_blood_trigger = yes
+		NOT = {	trait = no_marriage }
+		NOT = {	trait = no_marriage_hidden }
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 10 
+			religion = maerist
+		}
+		modifier = {
+			factor = 5 
+			has_major_holy_blood_trigger = yes
+		}
+		modifier = {
+			factor = 0.1
+			religion = loptyrian
+		}
+#		modifier = {
+#			factor = 0.5
+#			host = {
+#				any_courtier = {
+#					NOT = { character = ROOT }
+#					society_member_of = secret_religious_society_loptyrian
+#				}
+#			}
+#		}
+	}
+	
+	option = {
+		name = OK
+		add_minor_blood_found_by_loptryians_effect = yes
+		
+		if = {
+			limit = {
+				host = {
+					any_courtier = {
+						NOT = { character = ROOT }
+						society_member_of = secret_religious_society_loptyrian
+					}
+				}
+			}
+			host = {
+				random_courtier = {
+					limit = {
+						NOT = { character = ROOT }
+						society_member_of = secret_religious_society_loptyrian
+					}
+				}
+			}
+		}
+		else = {
+			random_society_member = {
+				limit = {
+					society_member_of = secret_religious_society_loptyrian
+					is_society_grandmaster = yes 
+				}
+				character_event = { id = loptyrian.2 }
+			}
+		}
+	}
+}
+
+# Society member finds a carrier
+character_event = {
+	id = loptyrian.2
+	desc = loptyrian.2.desc
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.2.A
+		trigger = {
+			is_society_grandmaster = no 
+		}
+		random_society_member = {
+			limit = {
+				society_member_of = secret_religious_society_loptyrian
+				is_society_grandmaster = yes 
+			}
+			character_event = { id = loptyrian.3 }
+		}
+	}
+	option = {
+		name = loptyrian.2.B
+		trigger = {
+			is_society_grandmaster = yes 
+		}
+#		if = {
+#			limit = { loptyrians_found_two_minor_blood_trigger = yes }
+#			character_event = { id = loptyrian.4 }
+#		}
+	}
+}	
+# Inform grandmaster
+letter_event = {
+	id = loptyrian.3
+	desc = loptyrian.3.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = loptyrian.3.A
+	}
+}
+
+# Marry the carriers!
+character_event = {
+	id = loptyrian.4
+	desc = loptyrian.4.desc
+	picture = GFX_evt_religious_exultation
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.4.A
+		
+		# Who's the primary spouse?
+		
+		# If we have a landed female and no landed males, it's the lady.
+		if = {
+			limit = {
+				any_playable_ruler = {
+					is_minor_blood_found_by_loptyrians_trigger = yes
+					is_female = yes
+				}
+				NOT = {
+					any_playable_ruler = {
+						is_minor_blood_found_by_loptyrians_trigger = yes
+						is_female = no
+					}
+				}
+			}
+			# TODO: implement this
+		} 
+		# Otherwise (only male is landed, both landed, or none landed), it's the gentleman.
+		else = {
+			random_character = {
+				limit = {
+					is_female = no
+					is_minor_blood_found_by_loptyrians_trigger = yes
+				}
+				set_character_flag = minor_blood_primary
+				
+				if = {
+					limit = {
+						is_married = yes
+					}
+					character_event = {	id = loptyrian.5 }
+				} else = {
+					hidden_tooltip = { add_trait = no_marriage_hidden }
+					character_event = {	id = loptyrian.8 days = 1 }
+				}
+			}
+			random_character = {
+				limit = {
+					is_female = yes
+					is_minor_blood_found_by_loptyrians_trigger = yes
+				}
+				set_character_flag = minor_blood_secondary
+				
+				if = {
+					limit = {
+						is_married = yes
+					}
+					character_event = {	id = loptyrian.5 }
+				} else = {
+					hidden_tooltip = { add_trait = no_marriage_hidden }
+				}
+			}
+		}
+	}
+	option = {
+		name = loptyrian.4.B		
+		ai_chance = {
+			factor = 0	
+		}
+		remove_character_modifier = marrying_the_chosen_ones
+	}
+}	
+					
+# Grandmaster annuls a marriage
+character_event = {
+	id = loptyrian.5
+	desc = loptyrian.5.desc
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.5.A
+		set_character_flag = brainwashed_by_loptyrians
+		remove_lover = yes
+		any_spouse = {
+			remove_spouse = yes
+		}
+		hidden_tooltip = { add_trait = no_marriage_hidden }
+		if = {
+			limit = {
+				has_character_flag = minor_blood_primary
+			}
+			character_event = {	id = loptyrian.6 days = 1 }
+		}
+	}
+	option = {
+		name = loptyrian.5.B
+		trigger = {
+			ai = no
+		}
+		custom_tooltip = {
+			text = loptyrian.5.B.tooltip
+			hidden_tooltip = {
+				reject_loptyrians_effect = yes
+				FROM = { character_event = { id = loptyrian.7 } }
+			}
+		}
+	}
+}	
+
+# Marry the carriers
+character_event = {
+	id = loptyrian.6
+	#desc = loptyrian.6.desc
+	desc = {
+		trigger = {
+			any_character = {
+				has_character_flag = minor_blood_secondary
+			}
+		}
+		text = loptyrian.6.desc.1
+	}	
+	desc = {
+		trigger = {
+			NOT = { 
+				any_character = {
+					has_character_flag = minor_blood_secondary
+				}
+			}
+		}
+		text = loptyrian.6.desc.2
+	}
+	picture = GFX_evt_marriage
+	hide_from = yes
+	is_triggered_only = yes 
+
+	option = {
+		name = loptyrian.6.A
+		trigger = {
+			any_character = {
+				has_character_flag = minor_blood_secondary
+			}
+		}
+		hidden_tooltip = {
+			add_trait = married_by_loptyrians
+			set_variable = { which = global_male_minor_blood_found_by_loptyrians value = 0 }
+			set_variable = { which = global_female_minor_blood_found_by_loptyrians value = 0 } 
+			random_society_member = {
+				limit = {
+					society_member_of = secret_religious_society_loptyrian
+					is_society_grandmaster = yes 
+				}
+				character_event = { id = loptyrian.11 }
+			}
+			any_spouse = {
+				remove_spouse = yes
+			}
+			remove_lover = yes
+			remove_trait = no_marriage_hidden 
+		}
+		random_character = {
+			limit = {
+				has_character_flag = minor_blood_secondary
+				is_minor_blood_found_by_loptyrians_trigger = yes
+			}
+			hidden_tooltip = { 
+				any_spouse = {
+					remove_spouse = yes
+				}
+				remove_lover = yes
+				remove_trait = no_marriage_hidden 
+				add_trait = married_by_loptyrians
+			}
+
+			ROOT = {
+				if = {
+					limit = { is_female = yes }
+					add_spouse_matrilineal = PREV
+					hidden_tooltip = {
+						impregnate = PREV
+					}
+				} else = {
+					add_spouse = PREV
+					hidden_tooltip = {
+						PREV = {
+							impregnate = ROOT
+						}
+					}
+				}
+				add_lover = PREV
+			}
+			if = {
+				limit = {
+					has_character_flag = is_fe4_deirdre
+				}
+				character_event = {	id = fe4_dynasty.11 days = 1 }
+			}
+		}		
+	}
+	option = {
+		name = loptyrian.6.B
+		trigger = {
+			NOT = {
+				any_character = {
+					has_character_flag = minor_blood_secondary
+				}
+			}
+		}
+		clr_character_flag = minor_blood_primary
+	}
+	option = {
+		name = loptyrian.6.C
+		trigger = {
+			ai=no
+			NOT = { has_character_flag = brainwashed_by_loptyrians }
+			any_character = {
+				has_character_flag = minor_blood_secondary
+			}
+		}
+		hidden_tooltip = {
+			any_character = {
+				limit = {
+					is_minor_blood_found_by_loptyrians_trigger = yes
+				}
+				remove_loptyrian_marriage_flags_effect = yes
+			}
+			FROMFROM = { character_event = { id = loptyrian.7 } }
+			reject_loptyrians_effect = yes
+		}
+	}
+}	
+
+# Inform grandmaster that a carrier rejected them
+character_event = {
+	id = loptyrian.7
+	desc = loptyrian.7.desc
+	picture = GFX_evt_bad_news
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.7.A
+		piety = -50
+		hidden_tooltip = {
+			any_character = {
+				limit = {
+					is_minor_blood_found_by_loptyrians_trigger = yes
+				}
+				remove_loptyrian_marriage_flags_effect = yes
+			}
+		}
+	}
+}	
+# Grandmaster asks an unmarried carrier to marry the other one
+character_event = {
+	id = loptyrian.8
+	desc = loptyrian.8.desc
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.8.A
+		hidden_tooltip = { add_trait = no_marriage_hidden }
+		if = {
+			limit = {
+				has_character_flag = minor_blood_primary
+			}
+			character_event = {	id = loptyrian.6 days = 1 }
+		}
+	}
+	option = {
+		name = loptyrian.8.B
+		trigger = {
+			ai = no
+		}
+		hidden_tooltip = {
+			any_character = {
+				limit = {
+					is_minor_blood_found_by_loptyrians_trigger = yes
+				}
+				remove_loptyrian_marriage_flags_effect = yes
+			}
+			FROM = { character_event = { id = loptyrian.7 } }
+			reject_loptyrians_effect = yes
+		}
+	}
+}	
+
+# A minor blood found by the cult dies
+character_event = {
+	id = loptyrian.9
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	trigger = {
+		is_adult = yes
+		is_minor_blood_found_by_loptyrians_trigger = yes
+		NOT = {	has_global_flag = loptyr_revived }
+	}
+
+	option = {
+		name = OK
+		remove_minor_blood_found_by_loptryians_effect = yes
+		random_society_member = {
+			limit = {
+				society_member_of = secret_religious_society_loptyrian
+				is_society_grandmaster = yes 
+			}
+			character_event = { id = loptyrian.10 }
+		}
+	}
+}
+# Inform grandmaster that a carrier died
+character_event = {
+	id = loptyrian.10
+	desc = loptyrian.10.desc
+	picture = GFX_evt_bad_news
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.10.A
+	}
+}	
+# Inform grandmaster of the wedding
+character_event = {
+	id = loptyrian.11
+	desc = loptyrian.11.desc
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.11.A
+		piety = 500
+        add_society_currency_major_effect = yes
+	}
+}	

@@ -1,3 +1,4 @@
+180.1.1={holder=1641} # Placeholder character to fix independent barony issue
 # c_dandrum > d_noel
 180.1.1={
 	law = status_of_women_4
@@ -10,7 +11,7 @@
 	holder=892 # 
 }
 649.1.1={
-	holder=0 
+	#holder=0 # Set to appropriately cultured ruler?
 }
 763.1.1={
 	liege = k_manster
@@ -18,5 +19,6 @@
 }
 777.1.1={
 	liege = d_noel
-	holder=0 # ?
+	#holder=0 # Set to appropriately cultured ruler?
+	#holder=0 # ?
 }

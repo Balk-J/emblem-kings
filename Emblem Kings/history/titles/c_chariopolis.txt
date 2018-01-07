@@ -1,3 +1,4 @@
+180.1.1={holder=1621} # Placeholder character to fix independent barony issue
 # c_chariopolis > d_grutia
 180.1.1={
 	law = status_of_women_4
@@ -11,6 +12,6 @@
 	holder = 881
 }
 649.1.1={
-	holder = 0
+	#holder=0 # Set to appropriately cultured ruler?
 	liege = d_grutia
 }

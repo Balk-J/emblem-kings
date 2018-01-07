@@ -3,12 +3,18 @@
 #ZE.3002 - ZE.3003 Steward collects money but wants land
 #ZE.3004 - ZE.3010 Steward builds statue for liege
 #ZE.3011 - ZE.3014 Steward wants to educate liege in stewardship
+
 # FE changes:
 #Removed:
 #ZE.3000
 #ZE.3001
 
 namespace = ZE
+
+#Steward has low stewardship and is proud, borrows money from jews
+#ZE.3000
+#Jewish merchants approach court to talk payment plan, player finds out steward lent money
+#ZE.3001
 
 #Steward has high stewardship, makes extra money
 character_event = {
@@ -550,14 +556,45 @@ character_event = {
 			NOT = { has_character_flag = ZE.3011_failed_flag }
 		}
 		name = EVTOPTA_ZE_3014
-		if = { limit = { trait = detached_priest } remove_trait = detached_priest add_trait = thrifty_clerk break = yes}
-		if = { limit = { trait = misguided_warrior } remove_trait = misguided_warrior add_trait = thrifty_clerk break = yes}
-		if = { limit = { trait = indulgent_wastrel } remove_trait = indulgent_wastrel add_trait = thrifty_clerk break = yes}
-		if = { limit = { trait = naive_appeaser } remove_trait = naive_appeaser add_trait = thrifty_clerk break = yes}
-		if = { limit = { trait = amateurish_plotter } remove_trait = amateurish_plotter add_trait = thrifty_clerk break = yes}
-		if = { limit = { trait = arbitrary } remove_trait = arbitrary}
-		if = { limit = { NOT = { trait = just } } add_trait = just change_stewardship = 1 break = yes}
-		change_stewardship = 3
+		if = {
+			limit = { has_bottom_tier_education_trait_trigger = yes }
+			trigger_switch = {
+				on_trigger = trait
+				detached_priest = {
+					remove_trait = detached_priest
+					add_trait = thrifty_clerk
+				}
+				misguided_warrior = {
+					remove_trait = misguided_warrior
+					add_trait = thrifty_clerk
+				}
+				indulgent_wastrel = {
+					remove_trait = indulgent_wastrel
+					add_trait = thrifty_clerk
+				}
+				naive_appeaser = {
+					remove_trait = naive_appeaser
+					add_trait = thrifty_clerk
+				}
+				amateurish_plotter = {
+					remove_trait = amateurish_plotter
+					add_trait = thrifty_clerk
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = { trait = arbitrary }
+				remove_trait = arbitrary
+			}
+			if = {
+				limit = { NOT = { trait = just } }
+				add_trait = just
+				change_stewardship = 1
+				break = yes
+			}
+			change_stewardship = 3
+		}
 	}
 
 	#wasnt for me

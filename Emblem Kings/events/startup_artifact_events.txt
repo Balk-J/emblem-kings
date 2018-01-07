@@ -10,6 +10,205 @@ character_event = {
 	option = {
 		
 		# Artifacts
+		
+		# Jugdral
+		
+		# Naga
+		if = {
+			limit = {
+				year = 779
+				NOT = { year = 826 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_julia
+				}
+				add_artifact = regalia_naga
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		# Tyrfing
+		if = {
+			limit = {
+				year = 757
+				NOT = { year = 761 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_byron
+				}
+				add_artifact = regalia_tyrfing
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		if = {
+			limit = {
+				year = 761
+				NOT = { year = 779 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_seliph
+				}
+				add_artifact = regalia_tyrfing
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		
+		# Yewfelle
+		if = {
+			limit = {
+				year = 760
+				NOT = { year = 761 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_brigid
+				}
+				add_artifact = regalia_yewfelle
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		if = {
+			limit = {
+				year = 761
+				NOT = { year = 779 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_febail
+				}
+				add_artifact = regalia_yewfelle
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		
+		# Valflame
+		if = {
+			limit = {
+				year = 777
+				NOT = { year = 779 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_arvis
+				}
+				add_artifact = regalia_valflame
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		
+		# Mystletainn
+		if = {
+			limit = {
+				year = 760
+				NOT = { year = 779 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_ares
+				}
+				add_artifact = regalia_mystletainn
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		
+		# Gungnir
+		if = {
+			limit = {
+				year = 777
+				NOT = { year = 808 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_arion
+				}
+				add_artifact = regalia_gungnir
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		
+		# Gae Bolg
+		if = {
+			limit = {
+				year = 759
+				NOT = { year = 761 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_quan
+				}
+				add_artifact = regalia_gae_bolg
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		if = {
+			limit = {
+				year = 761
+				NOT = { year = 810 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_altena
+				}
+				add_artifact = regalia_gae_bolg
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		
+		# Forseti
+		if = {
+			limit = {
+				year = 760
+				NOT = { year = 761 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_lewyn
+				}
+				add_artifact = regalia_forseti
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		if = {
+			limit = {
+				year = 761
+				NOT = { year = 779 }
+			}
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_ced
+				}
+				add_artifact = regalia_forseti
+				new_artifact = {
+					set_creation_date = 632.1.1
+				}
+			}
+		}
+		
+		# Elibe
 		if = {
 			limit = {
 				year = 1165

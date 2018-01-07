@@ -17,6 +17,31 @@ character_event = {
 	
 	option = {
 		#name = startup.1.A
+		name = OK
+		# Fix automaticaally created barons with wrong culture/religion
+		any_landed_title = {
+			limit = {
+				tier = BARON
+			}
+			holder_scope = {
+				if = {
+					limit = {
+						tier = BARON
+						NOT = {
+							liege = {
+								religion = PREV
+							}
+						}
+						NOT = {
+							liege = {
+								culture = PREV
+							}
+						}
+					}
+					character_event = { id = util.4 }
+				}
+			}
+		}
 			
 		if = {
 			limit = { year = 440 }
@@ -85,6 +110,24 @@ character_event = {
 		}
 		
 		# Startup events for scenarios
+		if = { # Genealogy
+			limit = { 
+				year = 755
+				NOT = { year = 756 }
+			}
+			character_event = {
+				id = startup.9
+			}
+		}
+		if = { # Genealogy
+			limit = { 
+				year = 756
+				NOT = { year = 760 }
+			}
+			character_event = {
+				id = startup.8
+			}
+		}
 		if = { # Lyn's Story
 			limit = { 
 				year = 1159
@@ -503,6 +546,86 @@ character_event = {
 	
 	immediate = {
 		falsely_confess_faith_effect = yes		
+	}
+	option = {
+		name = OK
+	}
+}
+
+
+# Genealogy of the Holy War setup, 757
+character_event = {
+	id = startup.8
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_fe4_genealogy_of_the_holy_war }
+			}
+			set_global_flag = scenario_fe4_genealogy_of_the_holy_war
+			
+			# Would be nice to set the castle to looted here, but there doesn't seem to be a command for that.
+			#c_jungby = { }
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						name = fe_story
+						value = on
+					}
+				}
+				d_velthomer = {
+					holder_scope = {
+						character_event = { id = fe4_grannvale_verdane.1 days = 30 } # Give Sigurd the Silver Sword
+						character_event = { id = loptyrian.1 days = 7 } # Get noticed by the Loptyrians
+					}
+				}
+				c_1160 = { # Quan
+					#character_event = { id = fe4_grannvale_verdane.4 days = 1 }
+				}
+				c_1136 = { # Shannan
+					set_character_flag = fe4_isaach_hiding_in_verdane			
+				}
+				c_1135 = { # Ayra
+					#character_event = { id = fe4_grannvale_verdane.10 days = 90 }	
+					add_trait = no_marriage
+				}
+				c_etain = { # Jamke
+					holder_scope = {
+						#character_event = { id = fe4_grannvale_verdane.7 days = 120 }
+					}
+				}
+				c_1203 = { # Deirdre
+					add_trait = no_marriage					
+				}
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Pre FE4 events for Grannvale-Isaach war, 756
+character_event = {
+	id = startup.9
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_fe4_genealogy_of_the_holy_war }
+			}
+			set_global_flag = scenario_fe4_genealogy_of_the_holy_war
+			
+			k_isaach = {
+				holder_scope = {
+					character_event = { id = fe4_grannvale_isaach.1 days = 1}
+				}
+			}
+		}
 	}
 	option = {
 		name = OK

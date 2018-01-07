@@ -1,0 +1,35 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+loptyrian.2.desc;It has come to my attention that [From.GetTitledName] is a vessel for the holy bloodline. [From.GetSheHeCap] bears the mark of our lord.;;;;;;;;;;;;;x
+loptyrian.2.A;I must inform the Archbishop!;;;;;;;;;;;;;x
+loptyrian.2.B;Lord Loptyr's revival draws ever closer.;;;;;;;;;;;;;x
+loptyrian.3.desc;[Root.GetSRGreeting], [Root.GetSocietyRank] [Root.GetFirstName]\n\nI have confirmed that [FromFrom.GetTitledName] carries the mark of Lord Loptyr. [From.GetSheHeCap] is a vessel for the holy bloodline.\n\n[Root.GetSRFarewell],\nSigned, [From.GetSocietyRank] [From.GetFirstName];;;;;;;;;;;;;x
+loptyrian.3.A;Excellent news!;;;;;;;;;;;;;x
+loptyrian.4.desc;At last... it is time to bring the two vessels of the holy bloodline together. Our lord's revival is within sight at last!;;;;;;;;;;;;;x
+loptyrian.4.A;This is destined to be.;;;;;;;;;;;;;x
+loptyrian.4.B;The time is not right.;;;;;;;;;;;;;x
+loptyrian.5.desc;A sinister-looking [From.GetManWoman] appears in front of you with a flash of light. [From.GetHerHisCap] smile is evil, and [From.GetHerHis] voice is hypnotic. "Prepare for your rebirth. Once we erase a few memories, we shall introduce you to your new [Root.GetHusbandWifeOpp]. There's no use fighting it. This is destined to be.";;;;;;;;;;;;;x
+loptyrian.5.A;W-what... are you d-d-doing? St-stop it! [Root.Spouse.GetFirstName]...;;;;;;;;;;;;;x
+loptyrian.5.A.tooltip;§Y[Root.GetTitledName]§! is overpowered by the spell.;;;;;;;;;;;;;x
+loptyrian.5.B;Get... out of my mind!;;;;;;;;;;;;;x
+loptyrian.5.B.tooltip;§Y[Root.GetTitledName]§! attempts to fight off the spell.;;;;;;;;;;;;;x
+loptyrian.6.desc;;;;;;;;;;;;;;x
+loptyrian.6.desc.1;The [FromFrom.GetManWoman] from before has brought you to a private room in [Root.Location.GetName] where a [Root.GetManWomanOpp] is waiting for you. Something about [Root.GetHerHimOpp] seems familar, and you feel an immediate kinship with [Root.GetHerHimOpp]...;;;;;;;;;;;;;x
+loptyrian.6.desc.2;The appointed time has come and gone, with no word from that [FromFrom.GetManWoman] you encountered before.;;;;;;;;;;;;;x
+loptyrian.6.A;I suppose this is love at first sight!;;;;;;;;;;;;;x
+loptyrian.6.B;So much for destiny.;;;;;;;;;;;;;x
+loptyrian.6.C;Hold on, this is all wrong!;;;;;;;;;;;;;x
+loptyrian.7.desc;[From.GetTitledName] has rejected us! [From.GetSheHeCap] was not at all willing to marry the other heir to the holy blood. Even my formidable powers of, ah, 'persuasion' proved useless. Our lord's revival will be delayed...;;;;;;;;;;;;;x
+loptyrian.7.A;A temporary setback, nothing more.;;;;;;;;;;;;;x
+loptyrian.8.desc;A cloaked [From.GetManWoman] approaches you in a quiet moment. [From.GetSheHeCap] tells you that [From.GetSheHe] recently met a most remarkable [Root.GetManWomanOpp], one [From.GetSheHe] says is destined to be your [Root.GetHusbandWifeOpp]. [From.GetSheHeCap] asks your permission to to formally introduce the two of you. There is an urgency to [From.GetHerHis] tone.;;;;;;;;;;;;;x
+loptyrian.8.A;If this is destiny, how can I refuse?;;;;;;;;;;;;;x
+loptyrian.8.B;I will decide such things for myself, thank you.;;;;;;;;;;;;;x
+loptyrian.10.desc;[From.GetTitledName], a vessel of Lord Loptyr's holy bloodline, has passed away. This will make it harder to produce an heir to the full power of the holy blood.;;;;;;;;;;;;;x
+loptyrian.10.A;This will not stop our lord's revival!;;;;;;;;;;;;;x
+loptyrian.11.desc;It is done. The vessels of the holy bloodline have been joined. Now we only need to await the birth of a child with the full power of our lord's blood.;;;;;;;;;;;;;x
+loptyrian.11.A;Only a few years more.;;;;;;;;;;;;;x
+loptyrian..title;;;;;;;;;;;;;;x
+loptyrian..desc;;;;;;;;;;;;;;x
+loptyrian..A;;;;;;;;;;;;;;x
+loptyrian..B;;;;;;;;;;;;;;x
+loptyrian..C;;;;;;;;;;;;;;x
+loptyrian..D;;;;;;;;;;;;;;x

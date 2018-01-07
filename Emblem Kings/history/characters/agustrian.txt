@@ -117,6 +117,9 @@
 	disallow_random_traits=yes
 	727.1.1={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe4_chagall"
+		}
 	}
 	739.01.01={
 		add_trait="class_knight"
@@ -269,6 +272,9 @@
 	disallow_random_traits=yes
 	735.1.1={ # 22 in 757
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_eldigan
+		}
 	}
 	747.01.01={
 		add_trait="class_cavalier"
@@ -280,6 +286,21 @@
 			set_character_flag="class_selected"
 			add_friend=1032 # Sigurd
 			add_friend=1160 # Quan
+			
+			c_1089 = { # Imuka
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}
+			c_1090 = { # Chagall
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+					years = 100
+				}
+			}
 		}
 	} 
 	750.1.1 = {
@@ -323,6 +344,9 @@
 	trait=holy_blood_latent_hezul
 	741.1.1={ # 16 in 757
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_lachesis
+		}
 	}
 	753.01.01={
 		add_trait="class_troubador"
@@ -533,6 +557,9 @@
 	trait=holy_blood_latent_hezul
 	757.1.1={ # 20 in 777
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_ares
+		}
 	}
 	#  He and his mother Grahnye fled to Leonster in the wake of Agustrian civil war and the execution of his father.
 	# Or maybe they got out before Sigurd invaded?
@@ -614,6 +641,9 @@
 	trait=strong
 	716.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_boldor
+		}
 	}
 	728.01.01={
 		add_trait="class_knight"
@@ -651,8 +681,12 @@
 	culture=agustrian
 	religion=church_of_edda
 	disallow_random_traits=yes
+	father=1099
 	737.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_elliot
+		}
 	}
 	749.01.01={
 		add_trait="class_knight"
@@ -771,6 +805,9 @@
 	disallow_random_traits=yes
 	703.1.1={
 		birth=yes
+		effect = {
+			set_character_flag="is_fe4_orgahil_captain"
+		}
 	}
 	715.01.01={
 		add_trait="class_pirate"

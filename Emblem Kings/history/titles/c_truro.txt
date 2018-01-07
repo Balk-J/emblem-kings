@@ -1,3 +1,4 @@
+180.1.1={holder=1974} # Placeholder character to fix independent barony issue
 # c_truro > d_mackily
 180.1.1={
 	law = status_of_women_4
@@ -9,4 +10,3 @@
 440.1.1={
 	holder=832 # 
 }
-

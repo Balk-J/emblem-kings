@@ -175,3 +175,9 @@ population_massacred = {
 	local_build_cost_modifier = 0.5
 	icon = 24	
 }
+faction_reform_tyrant_government_ultimatum_timer = {
+	icon = 1
+}
+marrying_the_chosen_ones = {
+	icon = 18
+}

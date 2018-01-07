@@ -27,9 +27,25 @@
 	holder=1008 # Hezul #TODO: fix
 	#holder=0
 }
-759.1.1={
+668.1.1={
+	#liege=d_nordion
+	holder=1026 # House Nordion
+}
+685.1.1={
+	holder=1232 # 
+}
+719.1.1={
+	holder=1233 # 
+}
+732.1.1={
+	holder=1091 # Eldigan's father
+}
+741.1.1={
 	holder=1094 # Eldigan
 }
+#759.1.1={
+#	holder=1094 # Eldigan
+#}
 760.1.1={
 	liege = k_agustria
 	holder=1029 # Azmur

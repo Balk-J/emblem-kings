@@ -133,3 +133,16 @@ supreme_essence = {
 		speed = 0.5
 	}
 }
+
+no_marriage = {
+	customizer = no
+	random = no
+	#hidden = yes 
+	cannot_marry = yes
+}
+no_marriage_hidden = {
+	customizer = no
+	random = no
+	hidden = yes 
+	cannot_marry = yes
+}

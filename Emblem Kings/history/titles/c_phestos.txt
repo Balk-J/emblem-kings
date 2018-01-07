@@ -1,3 +1,4 @@
+180.1.1={holder=1871} # Placeholder character to fix independent barony issue
 # e_elibe
 180.1.1={
 	law = status_of_women_4
@@ -23,4 +24,3 @@
 1118.1.1={
 	holder=191 #Isadora's father 
 }
-

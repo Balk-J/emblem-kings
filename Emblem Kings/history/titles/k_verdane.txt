@@ -25,8 +25,16 @@
 715.1.1={
 	holder=1180 # Batou
 }
+757.1.1={
+	effect = { 
+		set_title_flag = sigurd_invasion_target
+	}
+}
 758.1.1={
 	holder=0 # Destroyed; region administered by Grannvale
+	effect = { 
+		clr_title_flag = sigurd_invasion_target
+	}
 }
 761.1.1={
 	liege=e_grannvale 

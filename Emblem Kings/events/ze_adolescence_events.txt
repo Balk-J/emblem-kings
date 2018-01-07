@@ -13,7 +13,6 @@
 
 namespace = ZE
 
-
 #############################################
 #											#
 # Trait maturing events						#
@@ -3933,6 +3932,7 @@ character_event = {
 			any_courtier = {	
 				age = 16
 				NOR = { 
+					character = ROOT
 					age = 35
 					same_sex = ROOT
 					trait = incapable
@@ -3953,6 +3953,7 @@ character_event = {
 				limit = {
 					age = 16
 					NOR = { 
+						character = ROOT
 						age = 35
 						same_sex = ROOT
 						trait = incapable

@@ -1,0 +1,63 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe4_grannvale_verdane.1.desc;Right as we go to war with Isaach, those barbarians from Verdane come over the border, raid Jungby Castle, and kidnap the duke's daughter! Lord Sigurd is preparing a counteroffensive. The king has asked me to check on the situation there.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.1.A;And deliver this sword, it seems.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.2.desc;[Root.GetLordLady] [Root.GetFirstName],\nThe [Root.Liege.GetTitle] has sent me to assess the state of the conflict with Verdane. He also sent this sword. It is a gift for you. I trust you will handle the barbarians... don't let me down, [Root.GetFirstName].;;;;;;;;;;;;;x
+fe4_grannvale_verdane.2.A;Please convey my thanks to the [Root.Liege.GetTitle].;;;;;;;;;;;;;x
+fe4_grannvale_verdane.3.desc;Lords Lex of Dozel and Azelle of Velthomer have come to my aid! They heard about the fighting with Verdane and worried that we would be shorthanded with so many soliders occupied in Isaach.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.3.A;Please, stay as long as you like.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.3.B;I appreciate the offer, but your help is not necessary.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.5.desc;My [From.GetSonDaughter] [From.GetFirstName] has asked for my permission to journey to Grannvale. It seems the barbarians of Verdane have been making raids over the border, and [From.GetFirstName] wants to help his brother-in-law in Chalphy.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.5.A;I forbid it!;;;;;;;;;;;;;x
+fe4_grannvale_verdane.5.B;Go with my blessing.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.5.C;Go, and take the Gáe Bolg to keep you safe.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.6.desc;My old friend Quan has come to fight at my side! He heard about the trouble with Verdane and came to help, just as we promised back in our academy days.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.6.A;You're always here for me, aren't you?;;;;;;;;;;;;;x
+fe4_grannvale_verdane.6.B;What about Leonster? You should make sure your own home is safe!;;;;;;;;;;;;;x
+fe4_grannvale_verdane.8.desc;Locking up that girl from Grannvale started a war, and it was just plain wrong. Maybe I should free her...;;;;;;;;;;;;;x
+fe4_grannvale_verdane.8.A;It's the right thing to do.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.8.B;I can't go against my family.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.9.desc;[From.GetLordLady] [From.GetFirstName] has broken me out of prison! He believes this war is foolish and hopes that releasing me - and that young thief - will help stop the fighting.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.9.A;Good luck to you!;;;;;;;;;;;;;x
+fe4_grannvale_verdane.10.desc;The castle has fallen! The soldiers who seized it let me out of the dungeon.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.10.A;I should go with them.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.11.desc;[From.GetFullName] was being held in the castle we just took. [From.GetSheHeCap] has asked to stay with us, and also wants us to help his aunt. It seems [From.GetFirstName] was kept hostage to force her to fight.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.11.A;We will do what we can.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.11.B;Lady Ayra, was it? That might be a problem...;;;;;;;;;;;;;x
+fe4_grannvale_verdane.12.desc;[From.GetTitledName] has seized the castle where Shannan was held and set the prince free! [From.GetSheHeCap] is asking me to put down my sword and help [From.GetHerHim] protect Shannan.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.12.A;[From.GetSheHeCap]'s right. I can't risk my life for Verdane.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.12.B;[From.GetFirstName] is my sworn enemy!;;;;;;;;;;;;;x
+fe4_grannvale_verdane.13.desc;[From.GetLordLady] [From.GetFirstName] has agreed to stop fighting for Verdane and swear [From.GetHerHis] sword to me. I think [From.GetSheHe] still considers me an enemy, but [From.GetSheHe] seems willing to trust me for [FromFromFrom.GetFirstName]'s sake.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.13.A;I will not betray you.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.13.B;It's best for you to leave.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.14.desc;[From.GetLordLady] [From.GetFirstName] refused to join me. It seems [From.GetSheHe] still thinks of me as [From.GetHerHis] enemy.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.14.A;Is this war really worth risking your life?!;;;;;;;;;;;;;x
+fe4_grannvale_verdane.16.desc;It might be time to go to [Root.TopLiege.Location.GetName] and speak with the [Root.TopLiege.GetTitle]. I have to get [Root.TopLiege.GetHerHim] to see the wrong in this war.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.16.A;What am I waiting for?;;;;;;;;;;;;;x
+fe4_grannvale_verdane.16.B;Maybe [Root.TopLiege.GetSheHe] knows what [Root.TopLiege.GetSheHe]'s doing after all.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.17.desc;My [GetFromRelation] has asked me to end the war with Grannvale. He says it is unjust and worries we will soon be overwhelmed by their forces.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.17.A;Very well. Perhaps they will accept a white peace.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.17.B;Don't you see that THEY were about to attack US?;;;;;;;;;;;;;x
+fe4_grannvale_verdane.18.desc;[Root.GetTitledFirstName],\nThis war began due to a terrible misunderstanding. I believed your country was about to invade mine. It has become clear that you had no such plans. For the sake of both our lands, will you agree to end the fighting?\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_verdane.18.A;Of course.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.18.B;You started this war. We will finish it.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.19.desc;[Root.GetTitledFirstName],\nYour reputation for wisdom and restraint is well deserved. I accept your offer of a white peace.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_verdane.19.A;Wonderful!;;;;;;;;;;;;;x
+fe4_grannvale_verdane.20.desc;[Root.GetTitledFirstName],\nThese are the consequences of your belligerence. There will be no peace until I am certain that [From.PrimaryTitle.GetName] is safe from the menace that is [Root.PrimaryTitle.GetName].\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_verdane.20.A;It was worth a try.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.21.desc;My [GetFromRelation] still won't listen after all I've told [From.GetHerHim]! [From.GetSheHeCap]'s still convinced that Grannvale was about to attack us and that peace is impossible. I have been ordered to see to the defense of our lands...;;;;;;;;;;;;;x
+fe4_grannvale_verdane.21.A;All right, I'll do it.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.21.B;I'll have to stop this war from the other side.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.21.B.tooltip;§Y[Root.GetTitledName]§! joins the invaders.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.21.C.tooltip;§Y[Root.GetTitledName]§! joins the invaders.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.22.desc;[From.GetLordLady] [From.GetFirstName] wants the war to end, but has been unable to convince [From.GetHerHis] liege to sue for peace. [From.GetSheHeCap] has asked to work with us to bring an end to the fighting.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.22.A;I welcome your help.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.22.B;You sound like a spy to me.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.25.desc;While on campaign, I met a beautiful [From.GetBoyGirl]. I haven't been able to put [From.GetHerHim] out of my mind since I saw [From.GetHerHim]. It seems [From.GetSheHe] feels the same way.;;;;;;;;;;;;;x
+fe4_grannvale_verdane.25.A;[From.GetFirstName], will you marry me?;;;;;;;;;;;;;x
+fe4_grannvale_verdane.25.B;I understand. You're not supposed to have a [Root.GetHusbandWife].;;;;;;;;;;;;;x
+fe4_grannvale_verdane..title;;;;;;;;;;;;;;x
+fe4_grannvale_verdane..desc;;;;;;;;;;;;;;x
+fe4_grannvale_verdane..A;;;;;;;;;;;;;;x
+fe4_grannvale_verdane..B;;;;;;;;;;;;;;x
+fe4_grannvale_verdane..C;;;;;;;;;;;;;;x
+fe4_grannvale_verdane..D;;;;;;;;;;;;;;x

@@ -1,3 +1,4 @@
+180.1.1={holder=1818} # Placeholder character to fix independent barony issue
 # c_miletos > d_miletos
 180.1.1={
 	law = status_of_women_4
@@ -21,4 +22,3 @@
 764.1.1={
 	holder=1069 # Hilda TODO: correct this
 }
-

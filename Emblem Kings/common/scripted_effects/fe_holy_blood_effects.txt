@@ -583,3 +583,51 @@ loptyr_possession_effect = {
 		set_variable = { which = "level" value = 20 }		
 	#}
 }
+add_minor_blood_found_by_loptryians_effect = {
+	set_character_flag = minor_blood_found_by_loptyrians
+	if = {
+		limit = { is_female = yes }
+		if = {
+			limit = {
+				NOT = {	
+					check_variable = { which = global_female_minor_blood_found_by_loptyrians value = 1 } 
+				}
+			}
+			set_variable = { which = global_female_minor_blood_found_by_loptyrians value = 1 } 
+		}else = {
+			change_variable = { which = global_female_minor_blood_found_by_loptyrians value = 1 }
+		}
+	}else = {
+		if = {
+			limit = {
+				NOT = {	
+					check_variable = { which = global_male_minor_blood_found_by_loptyrians value = 1 } 
+				}
+			}
+			set_variable = { which = global_male_minor_blood_found_by_loptyrians value = 1 } 
+		}else = {
+			change_variable = { which = global_male_minor_blood_found_by_loptyrians value = 1 }
+		}
+	}
+}
+remove_minor_blood_found_by_loptryians_effect = {
+	if = {
+		limit = { is_female = yes }
+		change_variable = { which = global_female_minor_blood_found_by_loptyrians value = -1 }
+	}else = {
+		change_variable = { which = global_male_minor_blood_found_by_loptyrians value = -1 }
+	}
+}
+reject_loptyrians_effect = {
+	set_character_flag = rejected_loptyrians
+	clr_character_flag = minor_blood_primary
+	clr_character_flag = minor_blood_secondary
+	clr_character_flag = brainwashed_by_loptyrians
+	remove_minor_blood_found_by_loptryians_effect = yes
+}
+remove_loptyrian_marriage_flags_effect = {
+	clr_character_flag = minor_blood_primary
+	clr_character_flag = minor_blood_secondary
+	clr_character_flag = brainwashed_by_loptyrians
+	remove_trait = no_marriage_hidden
+}

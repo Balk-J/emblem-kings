@@ -38,6 +38,9 @@
 722.1.1={
 	holder=1078 # Ring
 }
+757.1.1={
+	holder=1082 # Edain
+}
 760.1.1={
 	holder=1083 # Andrey
 }

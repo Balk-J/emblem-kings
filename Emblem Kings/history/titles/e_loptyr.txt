@@ -56,4 +56,5 @@
 }
 648.1.1={
 	holder=0 # Destroyed
+	set_global_flag = loptyr_empire_destroyed
 }

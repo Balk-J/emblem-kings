@@ -420,6 +420,9 @@
 	trait=holy_blood_latent_dain
 	756.1.1={ 
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_arion
+		}
 	}
 	768.01.01={
 		add_trait="class_wyvern_rider"

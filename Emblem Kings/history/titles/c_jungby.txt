@@ -1,3 +1,4 @@
+180.1.1={holder=1744} # Placeholder character to fix independent barony issue
 # c_jungby > d_jungby
 180.1.1={
 	law = status_of_women_4
@@ -26,6 +27,9 @@
 }
 722.1.1={
 	holder=1078 # Ring
+}
+757.1.1={
+	holder=1082 # Edain
 }
 760.1.1={
 	holder=1083 # Andrey

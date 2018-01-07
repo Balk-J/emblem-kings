@@ -1396,7 +1396,7 @@ add_elibe_mercenary_effect = {
 }
 
 # For mercs who lose to Zephiel's invasion.
-# They can't be vassalized by the governor with the merc title, and giving the county titles new holders doesn't wwork. So we need to make a new merc leader.
+# They can't be vassalized by the governor with the merc title, and giving the county titles new holders doesn't work. So we need to make a new merc leader.
 release_elibe_mercenary_titles_effect = {
 	if = {
 		limit = {
@@ -1459,7 +1459,7 @@ release_elibe_mercenary_titles_effect = {
 			}
 			new_character = {
 				#grant_title = PREV
-				usurp_title = { target = PREV }
+				usurp_title = { target = PREV type = invasion }
 				set_defacto_liege = THIS
 			}
 		}
@@ -1492,4 +1492,58 @@ buy_tier_2_item_effect = {
 }
 buy_tier_3_item_effect = {
 	wealth = -200
+}
+# THIS must be the duchy being taken.
+# FROM is the top liege taking it.
+# ROOT is the top liege losing it.
+seize_agustria_title_effect = {
+	if = {
+		limit = {
+			ROOT = { 
+				any_realm_title = { title = PREVPREV } 
+			}
+		}
+		if = {
+			limit = {
+				holder_scope = {
+					ai = no
+					NOT = { num_of_duke_titles = 2 }
+				}
+			}
+			holder_scope = {
+				any_demesne_title = {
+					limit = {
+						OR = { 
+							tier = FROM
+							higher_tier_than = FROM
+						}
+					}
+					destroy_landed_title = THIS
+				}
+				set_defacto_liege = FROM
+			}
+		}else = {
+			usurp_title = FROM 
+			hidden_tooltip = {
+				FROM = {
+					create_random_steward = {
+						random_traits = yes
+						female = no
+						age = 30
+					}
+					any_demesne_title = {
+						limit = {
+							OR = {
+								title = PREVPREV
+								de_jure_liege_or_above = PREVPREV
+							}
+						}
+						new_character = {
+							grant_title = { target = PREV type = invasion }
+						}
+					}
+				}
+			}
+		}
+	}
 }

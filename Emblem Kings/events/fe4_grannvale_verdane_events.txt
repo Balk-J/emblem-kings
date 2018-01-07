@@ -1,0 +1,851 @@
+namespace = fe4_grannvale_verdane
+
+# Arvis gets the chance to bestow a royal gift.
+character_event = {
+	id = fe4_grannvale_verdane.1
+	desc = fe4_grannvale_verdane.1.desc
+	picture = GFX_evt_large_army
+	is_triggered_only = yes
+	hide_from = yes
+		
+	option = {
+		name = "fe4_grannvale_verdane.1.A"
+		random_character = {
+			limit = {
+				has_character_flag = is_fe4_sigurd
+			}
+			character_event = { id = fe4_grannvale_verdane.2 }
+		}
+	}	
+}
+
+# Give Sigurd the sword
+letter_event = {
+	id = fe4_grannvale_verdane.2
+	desc = fe4_grannvale_verdane.2.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_verdane.2.A		
+		add_artifact = silver_sword
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_character = {
+						has_character_flag = is_fe4_azelle
+						is_landed = no
+					}
+					any_character = {
+						has_character_flag = is_fe4_lex
+						is_landed = no
+					}
+				}
+				#character_event = { id = fe4_grannvale_verdane.3 }
+			}
+		}
+	}
+}
+
+# Lex and Azelle show up
+character_event = {
+	id = fe4_grannvale_verdane.3
+	desc = fe4_grannvale_verdane.3.desc
+	picture = GFX_evt_large_army
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe4_grannvale_verdane.3.A
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_lex
+			}
+			move_character = ROOT
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_azelle
+			}
+			move_character = ROOT
+		}
+		
+	}		
+	option = {
+		name = fe4_grannvale_verdane.3.B
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 200
+	}		
+}
+
+# Quan asks his father to go help Sigurd
+character_event = {
+	id = fe4_grannvale_verdane.4
+	hide_window=yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		father = {
+			character_event = { id = fe4_grannvale_verdane.5 }
+		}
+	}		
+}
+character_event = {
+	id = fe4_grannvale_verdane.5
+	desc = fe4_grannvale_verdane.5.desc
+	picture = GFX_evt_son_asking_father
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_verdane.5.A"
+		ai_chance = {
+			factor = 20	
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		reverse_opinion = {
+			modifier = broke_alliance
+			who = FROM
+			years = 5
+		} 
+	}	
+	
+	option = {
+		name = "fe4_grannvale_verdane.5.B"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		reverse_opinion = {
+			modifier = opinion_grateful
+			who = FROM
+			years = 5
+		}
+		hidden_tooltip = {
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_sigurd
+				}
+				character_event = { id = fe4_grannvale_verdane.6 }
+			}
+		}
+	}		
+	option = {
+		name = "fe4_grannvale_verdane.5.C"
+		ai_chance = {
+			factor = 30	
+		}
+		reverse_opinion = {
+			modifier = opinion_very_grateful
+			who = FROM
+			years = 5
+		}
+		random_artifact = {
+			limit = {
+				artifact_type = regalia_gae_bolg
+			}
+			transfer_artifact = {
+				from = ROOT to = FROM 
+			} 
+		}
+		hidden_tooltip = {
+			random_character = {
+				limit = {
+					has_character_flag = is_fe4_sigurd
+				}
+				character_event = { id = fe4_grannvale_verdane.6 }
+			}
+		}
+	}		
+}
+
+# Team Quan shows up
+character_event = {
+	id = fe4_grannvale_verdane.6
+	desc = fe4_grannvale_verdane.6.desc
+	picture = GFX_evt_crusaders
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe4_grannvale_verdane.6.A
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_quan
+			}
+			move_character = ROOT
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_ethlyn
+			}
+			move_character = ROOT
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_finn
+			}
+			move_character = ROOT
+		}
+		
+	}			
+	option = {
+		name = fe4_grannvale_verdane.6.B
+		ai_chance = {
+			factor = 0
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_quan
+			}
+			opinion = {
+				modifier = opinion_sad
+				who = ROOT
+				years = 1
+			}
+		}
+	}	
+}
+
+# Jamke lets Edain out
+character_event = {
+	id = fe4_grannvale_verdane.7
+	hide_window = yes
+	is_triggered_only = yes
+	hide_from=yes
+	option = {
+		name = OK
+		if = { 
+			limit = {
+				any_character = {
+					has_character_flag = is_fe4_edain
+					prisoner = yes
+				}
+			}
+			character_event = { id = fe4_grannvale_verdane.8 }
+		}		
+	}		
+}
+character_event = {
+	id = fe4_grannvale_verdane.8
+	desc = fe4_grannvale_verdane.8.desc
+	picture = GFX_evt_jailbreak
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_grannvale_verdane.8.A
+		ai_chance = {
+			factor = 90
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_edain
+			}
+			character_event = { id = fe4_grannvale_verdane.9 }
+		}		
+		hidden_tooltip = {
+			character_event = { id = fe4_grannvale_verdane.15 days = 120 }
+		}
+	}		
+	option = {
+		name = fe4_grannvale_verdane.8.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		piety = -50
+	}		
+}
+# Edain and Dew escape
+character_event = {
+	id = fe4_grannvale_verdane.9
+	desc = fe4_grannvale_verdane.9.desc
+	picture = GFX_evt_bandits
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe4_grannvale_verdane.9.A
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_edain
+			}
+			prisoner = no
+		}
+		random_character = { 
+			limit = {
+				has_character_flag = is_fe4_dew
+			}
+			move_character = ROOT
+		}
+		
+	}		
+}
+
+# Shannan runs when his castle is cracked open
+character_event = {
+	id = fe4_grannvale_verdane.10
+	desc = fe4_grannvale_verdane.10.desc
+	picture = GFX_evt_siege
+	is_triggered_only = yes
+	
+	capable_only = yes
+	ai = yes
+	max_age = 15
+	has_character_flag = fe4_isaach_hiding_in_verdane
+	trigger = {
+		action_allowed_trigger = yes
+		has_character_flag = is_fe4_shannan
+		has_character_flag = fe4_isaach_hiding_in_verdane
+		is_landed = no		
+		employer = {
+			OR = {
+				has_landed_title = k_verdane
+				any_liege = {
+					has_landed_title = k_verdane
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_character_flag = fe4_isaach_hiding_in_verdane
+	}
+	
+	option = {
+		name = fe4_grannvale_verdane.10.A
+		new_character = {
+			character_event = { id = fe4_grannvale_verdane.11 }
+		}		
+	}		
+}
+# Sigurd informed about Shannan's breakout
+character_event = {
+	id = fe4_grannvale_verdane.11
+	desc = fe4_grannvale_verdane.11.desc
+	picture = GFX_evt_siege
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			move_character = ROOT
+		}
+	}
+	
+	option = {
+		name = fe4_grannvale_verdane.11.A
+		trigger = {
+			c_1135 = {
+				is_alive = yes
+				action_allowed_trigger = yes
+				is_landed = no
+				is_married = no
+				employer = {
+					OR = {
+						has_landed_title = k_verdane
+						any_liege = {
+							has_landed_title = k_verdane
+						}
+					}
+				}
+			}
+		}
+		c_1135 = {
+			character_event = { id = fe4_grannvale_verdane.12 }
+		}		
+	}	
+	option = {
+		name = fe4_grannvale_verdane.11.B
+		trigger = {
+			c_1135 = {
+				NAND = {
+					is_alive = yes
+					action_allowed_trigger = yes
+					is_landed = no
+					is_married = no
+					employer = {
+						OR = {
+							has_landed_title = k_verdane
+							any_liege = {
+								has_landed_title = k_verdane
+							}
+						}
+					}
+				}
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					NOT = { trait = depressed }
+				}
+				random = {
+					chance = 50
+					add_trait = depressed 
+				}
+			}
+		}		
+	}		
+}
+# Ayra gets the chance to defect
+character_event = {
+	id = fe4_grannvale_verdane.12
+	desc = fe4_grannvale_verdane.12.desc
+	picture = GFX_evt_bandits
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_grannvale_verdane.12.A
+		ai_chance = {
+			factor = 99
+		}
+		FROM = {
+			character_event = { id = fe4_grannvale_verdane.13 }
+		}		
+	}		
+	option = {
+		name = fe4_grannvale_verdane.12.B
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		FROM = {
+			character_event = { id = fe4_grannvale_verdane.14 }
+		}	
+	}		
+}
+# Inform Ayra joining
+character_event = {
+	id = fe4_grannvale_verdane.13
+	desc = fe4_grannvale_verdane.13.desc
+	picture = GFX_evt_bandits
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_grannvale_verdane.13.A
+		ai_chance = {
+			factor = 90
+		}
+		FROM = {
+			move_character = ROOT
+			hidden_tooltip = {
+				remove_trait = no_marriage
+			}
+		}		
+	}			
+	option = {
+		name = fe4_grannvale_verdane.13.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		random_playable_ruler = {
+			limit = {
+				is_within_diplo_range = ROOT
+			}
+			FROM = {
+				move_character = PREV
+			}	
+			c_1136 = { # Shannan
+				move_character = PREV
+			}	
+		}	
+	}			
+}
+# Inform Ayra being dumb and staying in Verdane
+character_event = {
+	id = fe4_grannvale_verdane.14
+	desc = fe4_grannvale_verdane.14.desc
+	picture = GFX_evt_bandits
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_grannvale_verdane.14.A
+		FROM = {
+			opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 10
+			}
+			hidden_tooltip = {
+				remove_trait = no_marriage
+			}
+		}
+	}			
+}
+# Jamke asks liege to stop fighting
+character_event = {
+	id = fe4_grannvale_verdane.15
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		if = { 
+			limit = {
+				top_liege = {
+					any_current_enemy = {
+						has_character_flag = is_fe4_sigurd
+					}
+				}
+			}
+			character_event = { id = fe4_grannvale_verdane.16 }
+		}		
+	}		
+}
+character_event = {
+	id = fe4_grannvale_verdane.16
+	desc = fe4_grannvale_verdane.16.desc
+	picture = GFX_evt_son_asking_father
+	is_triggered_only = yes
+	hide_from=yes
+		
+	option = {
+		name = fe4_grannvale_verdane.16.A
+		ai_chance = {
+			factor = 50
+		}		
+		top_liege = {
+			character_event = { id = fe4_grannvale_verdane.17 }
+		}
+	}			
+	option = {
+		name = fe4_grannvale_verdane.16.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}			
+}
+character_event = {
+	id = fe4_grannvale_verdane.17
+	desc = fe4_grannvale_verdane.17.desc
+	picture = GFX_evt_son_asking_father
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_grannvale_verdane.17.A
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}	
+		}		
+		any_current_enemy = {
+			limit = {
+				has_character_flag = is_fe4_sigurd
+			}
+			character_event = { id = fe4_grannvale_verdane.18 }
+		}
+	}			
+	option = {
+		name = fe4_grannvale_verdane.17.B
+		ai_chance = {
+			factor = 30		
+		}	
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+			character_event = { id = fe4_grannvale_verdane.21 }
+		}
+	}			
+}
+
+letter_event = {
+	id = fe4_grannvale_verdane.18
+	desc = fe4_grannvale_verdane.18.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_verdane.18.A		
+		any_war = { 
+			limit = { using_cb = sigurd_invasion }
+			end_war = whitepeace
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_verdane.19 }
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_verdane.18.B	
+		prestige = 100
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_verdane.20 }
+			}
+		}
+	}
+}
+# Inform war over
+letter_event = {
+	id = fe4_grannvale_verdane.19
+	desc = fe4_grannvale_verdane.19.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_verdane.19.A	
+	}
+}
+# Inform war continues
+letter_event = {
+	id = fe4_grannvale_verdane.20
+	desc = fe4_grannvale_verdane.20.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_verdane.20.A	
+	}
+}
+# Jamke reacts to father's decision to keep fighting
+character_event = {
+	id = fe4_grannvale_verdane.21
+	desc = fe4_grannvale_verdane.21.desc
+	picture = GFX_evt_son_asking_father
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_grannvale_verdane.21.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}	
+		}		
+	}			
+	option = {
+		name = fe4_grannvale_verdane.21.B
+		trigger = {
+			ai = yes
+		}
+		ai_chance = {
+			factor = 50		
+		}	
+		c_1032 = {
+			character_event = { id = fe4_grannvale_verdane.22 }
+		}
+	}		
+	option = {
+		name = fe4_grannvale_verdane.21.B
+		trigger = {
+			ai = no
+		}
+		custom_tooltip = {
+			text = fe4_grannvale_verdane.21.B.tooltip
+			hidden_tooltip = {
+				c_1032 = {
+					ROOT = {
+						set_defacto_liege = PREV
+					}
+				}
+			}
+		}
+	}			
+}
+# Inform Jamke joining
+character_event = {
+	id = fe4_grannvale_verdane.22
+	desc = fe4_grannvale_verdane.22.desc
+	picture = GFX_evt_bandits
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_grannvale_verdane.22.A
+		ai_chance = {
+			factor = 90
+		}
+		FROM = {
+			hidden_tooltip = {
+				any_demesne_title = {
+					usurp_title = FROMFROM
+				}
+			}
+			move_character = ROOT
+		}		
+	}			
+	option = {
+		name = fe4_grannvale_verdane.22.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}			
+}
+# Loptyr cult, clean up the loose ends after the war
+character_event = {
+	id = fe4_grannvale_verdane.23
+	hide_window = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = OK
+		
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+				OR = {
+					has_character_flag = is_fe4_batou
+					has_character_flag = is_fe4_cimbaeth
+					has_character_flag = is_fe4_munnir
+				}
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = random
+				religion = bandit
+				culture = THIS
+				female = no
+				age = 20
+			} 
+			any_demesne_title = {
+				new_character = {
+					usurp_title = { target = PREV }
+				}
+			}
+			death = {
+				death_reason = death_missing#death_murder_unknown
+				#killer = FROM
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+				has_character_flag = is_fe4_sandima
+			}
+			create_random_priest = {
+				random_traits = yes
+				dynasty = random
+				religion = church_of_edda
+				culture = THIS
+				female = no
+				age = 40
+			} 
+			any_demesne_title = {
+				new_character = {
+					usurp_title = { target = PREV type = claim }
+				}
+			}
+			death = {
+				death_reason = death_missing
+				#killer = FROM
+			}
+		}
+	}			
+}
+
+# Marry Deirdre?
+character_event = {
+	id = fe4_grannvale_verdane.24
+	hide_window = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = OK
+		remove_trait = no_marriage
+		c_1032 = {
+			if = {
+				limit = {
+					action_allowed_trigger = yes
+					is_married = no
+				}
+				character_event = { id = fe4_grannvale_verdane.25 }
+			}else = {
+				character_event = { id = loptyrian.1 days = 60 random = 30 }
+			}
+		}
+	}			
+}
+character_event = {
+	id = fe4_grannvale_verdane.25
+	desc = fe4_grannvale_verdane.25.desc
+	picture = GFX_evt_marriage
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_grannvale_verdane.25.A
+		ai_chance = {
+			factor = 90
+		}
+		add_spouse = FROM
+		hidden_tooltip = {
+			FROM = {
+				impregnate = ROOT
+			}
+		}
+	}			
+	option = {
+		name = fe4_grannvale_verdane.25.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}			
+}

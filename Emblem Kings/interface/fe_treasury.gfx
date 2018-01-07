@@ -175,6 +175,134 @@ spriteTypes = {
 		name = "GFX_regalia_irkalla_small"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_irkalla_small.dds"
 	}
+	spriteType = {
+		name = "GFX_regalia_naga"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_naga.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_naga_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_naga_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_tyrfing"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_tyrfing.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_tyrfing_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_tyrfing_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_yewfelle"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_yewfelle.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_yewfelle_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_yewfelle_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_helswath"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_helswath.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_helswath_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_helswath_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_valflame"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_valflame.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_valflame_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_valflame_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_mjolnir"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mjolnir.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_mjolnir_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mjolnir_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_valkyrie"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_valkyrie.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_valkyrie_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_valkyrie_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_mystletainn"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mystletainn.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_mystletainn_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mystletainn_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_balmung"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_balmung.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_balmung_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_balmung_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_gungnir"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_gungnir.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_gungnir_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_gungnir_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_gae_bolg"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_gae_bolg.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_gae_bolg_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_gae_bolg_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_forseti"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_forseti.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_forseti_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_forseti_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_loptyr"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_loptyr_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_loptyr_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_loptyr_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr_sword_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_blagi_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_blagi_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_blagi_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_blagi_sword_small.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_kia"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_kia.dds"
+	}
+	spriteType = {
+		name = "GFX_regalia_kia_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_kia_small.dds"
+	}
 	
 	# Weapons #
 	

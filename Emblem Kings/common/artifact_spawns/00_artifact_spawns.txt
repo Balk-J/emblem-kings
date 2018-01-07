@@ -169,6 +169,468 @@ regalia_mani_katti = {
     }
 }
 
+regalia_naga = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = k_grannvale
+			OR = {
+				NOT = { year = 761 } # Sealed in the vault at Belhalla until Julia gets it after the castle falls.
+				year = 826 # After Julia dies, give it to the king 
+				#year = 779
+			}
+		}
+	}
+    artifacts = {
+        regalia_naga = { 
+            value = 1
+        }
+    }
+}
+regalia_tyrfing = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			#has_landed_title = d_chalphy
+			OR = {
+				AND = {
+					has_landed_title = d_chalphy
+					NOT = { year = 757 } # Byron has it, or Sigurd after he's forced out, or Selpih... 
+				}
+				AND = {
+					has_landed_title = k_grannvale
+					year = 779
+				}
+			}
+		}
+	}
+    artifacts = {
+        regalia_tyrfing = { 
+            value = 1
+        }
+    }
+}
+regalia_yewfelle = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = d_jungby
+			OR = {
+				NOT = { year = 760 } # Brigid/Febail have it 
+				year = 779
+			}
+		}
+	}
+    artifacts = {
+        regalia_yewfelle = { 
+            value = 1
+        }
+    }
+}
+regalia_helswath = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = d_dozel # Lombard, then Brian
+		}
+	}
+    artifacts = {
+        regalia_helswath = { 
+            value = 1
+        }
+    }
+}
+regalia_valflame = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			OR = {
+				# Normally in Velthomer
+				AND = {
+					has_landed_title = d_velthomer
+					OR = {
+						NOT = { year = 777 }  
+						year = 779
+					}
+				}
+				# Make sure it stays with Arvis when Julius has the duchy
+				AND = {
+					has_landed_title = d_chalphy
+					NOT = { year = 779 }  
+					year = 777
+				}
+			}
+		}
+	}
+    artifacts = {
+        regalia_valflame = { 
+            value = 1
+        }
+    }
+}
+regalia_mjolnir = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = d_friege
+		}
+	}
+    artifacts = {
+        regalia_mjolnir = { 
+            value = 1
+        }
+    }
+}
+regalia_valkyrie = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = d_edda
+			OR = {
+				NOT = { year = 761 } # No confirmed major Blagis, so no one has it here.
+				year = 779
+			}
+		}
+	}
+    artifacts = {
+        regalia_valkyrie = { 
+            value = 1
+        }
+    }
+}
+regalia_mystletainn = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			OR = {
+				AND = {
+					has_landed_title = d_nordion
+					NOT = { year = 759 } # 
+				}
+				AND = {
+					has_landed_title = d_silvail
+					year = 759
+					NOT = { year = 760 } # 
+				}
+				AND = {
+					has_landed_title = k_agustria
+					year = 779
+				}
+			}
+		}
+	}
+    artifacts = {
+        regalia_mystletainn = { 
+            value = 1
+        }
+    }
+}
+regalia_balmung = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = k_isaach
+			OR = {
+				NOT = { year = 760 } # Not while it's occupied. Sealed in Yied Shrine.
+				year = 778
+			}
+		}
+	}
+    artifacts = {
+        regalia_balmung = { 
+            value = 1
+        }
+    }
+}
+regalia_gungnir = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = k_thracia
+			NOT = { year = 777 } # Travant gives it to Arion here.
+		}
+	}
+    artifacts = {
+        regalia_gungnir = { 
+            value = 1
+        }
+    }
+}
+regalia_gae_bolg = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = d_leonster
+			NOT = { year = 759 } # Given to Quan here, then Altena. Then...? Poof?
+		}
+	}
+    artifacts = {
+        regalia_gae_bolg = { 
+            value = 1
+        }
+    }
+}
+regalia_forseti = {
+    max_amount = 1
+    spawn_date = 632.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 632
+			has_landed_title = k_silesse
+			OR = {
+				NOT = { year = 760 } # Given to Lewyn here, then held by his son Ced
+				year = 779
+			}
+		}
+	}
+    artifacts = {
+        regalia_forseti = { 
+            value = 1
+        }
+    }
+}
+regalia_loptyr = {
+    max_amount = 1
+    spawn_date = 440.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 440
+			OR = {
+				has_landed_title = d_loptyr
+				has_landed_title = e_loptyr
+				AND = {
+					has_landed_title = e_grannvale
+					NOT = { year = 779 } #
+					year = 777
+				}
+			}
+		}
+	}
+    artifacts = {
+        regalia_loptyr = { 
+            value = 1
+        }
+    }
+}
+regalia_loptyr_sword = {
+    max_amount = 1
+    spawn_date = 449.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			has_landed_title = d_conote
+			NOT = { year = 777 } # 
+			year = 776
+		}
+	}
+    artifacts = {
+        regalia_loptyr_sword = { 
+            value = 1
+        }
+    }
+}
+regalia_blagi_sword = {
+    max_amount = 1
+    spawn_date = 649.1.1
+	
+	spawn_chance = {
+		value = 100
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Mystics" }
+		}
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			year = 777
+			has_landed_title = d_leonster
+		}
+	}
+    artifacts = {
+        regalia_blagi_sword = { 
+            value = 1
+        }
+    }
+}
+
 ###################
 #### QUALITY 4 ####
 ###################

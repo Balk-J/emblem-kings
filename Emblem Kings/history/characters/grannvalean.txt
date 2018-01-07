@@ -356,6 +356,7 @@
 		add_trait="chaste"
 		add_trait="zealous"
 		add_trait="proud"
+		add_trait=class_ninja
 	}	
 	 
 	728.1.1 = {
@@ -363,8 +364,70 @@
 		add_trait="class_bishop"
 	}	
 	
+	756.01.01={
+		effect = {
+			capital_scope = {
+				c_thjalfi = { # Chalphy
+					ROOT = {
+						spawn_unit = {
+							earmark = grunritter
+							owner = ROOT
+							home = PREVPREV
+							province = PREV
+							troops = {
+								light_cavalry = { 1000 1000 }
+							}
+							attrition = 1.0
+							disband_on_peace = yes
+							cannot_inherit = yes
+							maintenance_multiplier = 0.5
+						}
+					}
+				}
+				c_monza = { # Dozel
+					ROOT = {
+						spawn_unit = {
+							earmark = grauritter
+							owner = ROOT
+							home = PREVPREV
+							province = PREV
+							troops = {
+								knights = { 500 500 }
+							}
+							attrition = 1.0
+							disband_on_peace = yes
+							cannot_inherit = yes
+							maintenance_multiplier = 0.5
+						}
+					}
+				}
+				c_ingwine = { # Jungby
+					ROOT = {
+						spawn_unit = {
+							earmark = beige_ritter
+							owner = ROOT
+							home = PREVPREV
+							province = PREV
+							troops = {
+								horse_archers = { 500 500 }
+							}
+							attrition = 1.0
+							disband_on_peace = yes
+							cannot_inherit = yes
+							maintenance_multiplier = 0.5
+						}
+					}
+				}
+			}
+		}
+	}
 	760.1.1={
 		add_trait=infirm
+		effect = {
+			disband_event_forces = grunritter 
+			disband_event_forces = grauritter 
+			disband_event_forces = beige_ritter
+		}
 	}
 	761.1.1={
 		death = {
@@ -451,6 +514,9 @@
 	trait=holy_blood_latent_baldr
 	700.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_byron
+		}
 	}
 	712.01.01={
 		add_trait="class_cavalier"
@@ -484,6 +550,9 @@
 	}
 	750.1.1 = {
 		give_job_title = job_marshal # Kurth's right-hand man in the war with Isaach
+	}
+	757.1.1 = {
+		employer = 1029 # Azmur
 	}	
 	
 	760.3.1 = {
@@ -514,6 +583,9 @@
 	#735.1.1={
 	734.9.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_sigurd
+		}
 	}
 	#747.01.01={
 	746.09.01={
@@ -544,9 +616,32 @@
 	755.1.1 = {
 		remove_trait="class_cavalier"
 		add_trait="class_paladin"
+	}
+	757.1.1={
+		raise_levies = {
+			location = 347 # Chalphy
+			force_mult = 3
+		}
 	}	
+	
 	758.1.1 = {
+		raise_levies = {
+			dismiss = yes
+			location = 347 # Chalphy
+			force_mult = 3
+		}
+		raise_levies = {
+			location = 502 # Evans
+			force_mult = 4
+		}
 		add_spouse=1203 # Deirdre
+	}
+	759.1.1 = {
+		raise_levies = {
+			dismiss = yes
+			location = 502 # Evans
+			force_mult = 4
+		}
 	}
 	760.1.1 = {
 		remove_spouse=1203 # Deirdre
@@ -574,6 +669,9 @@
 	#739.12.1={
 	741.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_ethlyn
+		}
 	}
 	#747.12.01={
 	753.01.01={
@@ -765,6 +863,9 @@
 	trait=holy_blood_latent_naga
 	759.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_seliph
+		}
 	}
 	771.1.1={
 		add_trait="class_myrmidon"
@@ -1045,6 +1146,9 @@
 		add_trait="kind"
 		add_trait="lustful"
 	}
+	757.1.1={
+		employer = 1496 # a count in Nordion
+	}
 	
 	765.1.1={
 		death = {
@@ -1240,6 +1344,10 @@
 	trait=quick # "Gift of Kings"?
 	732.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_arvis
+			set_character_flag = magic_or_faith_question
+		}
 	}
 	744.01.01={
 		add_trait="class_mage"
@@ -1308,9 +1416,12 @@
 	religion=church_of_edda
 	disallow_random_traits=yes
 	trait=holy_blood_latent_fjalar
+	trait=bastard
 	739.1.1={
 		birth=yes
 		effect = {
+			set_character_flag = is_fe4_azelle
+		
 			c_1049 = { # Arvis
 				# Scared of Arvis, but Arvis loves him as a brother.
 				opinion = {
@@ -1469,6 +1580,9 @@
 	# Arvis & Deirdre start their relationship while Sigurd was in Silesse, and marry shortly before the Battle of Belhalla. Let's say the twins were born a little after?
 	761.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_julia
+		}
 	}
 	
 	769.1.1={
@@ -1478,13 +1592,13 @@
 		remove_trait="holy_blood_latent_naga"
 		add_trait="holy_blood_major_naga"
 	} 
-	# Possessed Julius attempts to kill her. Deirdre warps her... somewhere near Belhalla. 
+	# Possessed Julius attempts to kill her. Deirdre warps her... somewhere near Belhalla. Let's go with Felipe - he's a decent enough guy and he canonically hides kids for Arvis.
 	770.1.1 = {
-		#employer=0 # 
+		employer=1317 # Felipe
 	}	
 	# Lewyn finds her and takes her to a hideaway in Silesse.
 	771.1.1 = {
-		#employer=0 # Lewyn 
+		employer=2009 # c_grodkow 
 	}
 	773.01.01={
 		add_trait="class_monk"
@@ -1500,6 +1614,10 @@
 		add_trait="chaste"
 		add_trait="kind"
 		add_trait="humble"
+	}
+	# In Ganeishire with Lewyn at the start of Gen 2, but let's simplify things a bit
+	777.1.1={
+		employer=1038 # Seliph
 	}
 	826.1.1={
 		death = yes
@@ -2465,6 +2583,9 @@
 	trait=strong
 	706.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_lombard
+		}
 	}
 	718.01.01={
 		add_trait="class_knight"
@@ -2649,6 +2770,9 @@
 	# 18 in 757
 	739.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_lex
+		}
 	}
 	741.01.01={
 		add_trait="class_cavalier"
@@ -2918,6 +3042,9 @@
 	743.1.1 = { # When Brigid was 5. 19 in 757 = born in 738 = 743
 		add_trait="pilgrim"
 	}	 
+	757.1.1 = {
+		employer = 1029 # Azmur
+	}	
 	
 	760.1.1={
 		death = {
@@ -3122,13 +3249,31 @@
 		add_trait="cavalry_leader" # She did train as a knight...
 		add_trait="heavy_infantry_leader"
 	}	 
-	 
+	# Captured by Munnir after his attack on Marpha
+	757.01.01={	
+		effect = {
+			c_1183 = {
+				ROOT = { 
+					imprison = PREV 
+				}
+			}
+		} 
+	}  
+	# Freedom!
+	758.01.01={		
+		employer=1032 # Sigurd
+		effect = { 
+			prisoner = no
+		} 
+	}  
 	760.3.1 = {
 		remove_trait="class_cleric"
 		#add_trait="class_war_cleric"
 		add_trait="class_bishop_female"
 	}	
 	# Survives the Battle of Belhalla. Runs a convent in Tirnanog.	
+	761.1.1 = {
+	}	
 	
 	800.1.1={
 		death = yes
@@ -3146,6 +3291,9 @@
 	trait=holy_blood_latent_ulir
 	740.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_andrey
+		}
 	}
 	752.01.01={
 		add_trait="class_horse_archer"
@@ -4368,6 +4516,7 @@
 		effect = {
 			set_character_flag="magic_or_faith_question"
 			set_character_flag = secret_loptyrian_dark_bishop
+			set_character_flag = is_fe4_manfroy
 		}
 	}
 	739.01.01={
@@ -4394,6 +4543,10 @@
 		add_trait="schemer"
 		add_trait="theologian"
 		# falsely confess faith!
+		effect = {
+			join_society = secret_religious_society_loptyrian
+			set_society_grandmaster = yes
+		}
 	}	 
 	744.1.1 = {
 		remove_trait="class_dark_mage"
@@ -4537,6 +4690,7 @@
 		effect = {
 			set_character_flag="magic_or_faith_question"
 			set_character_flag = secret_loptyrian_dark_bishop
+			set_character_flag = is_fe4_veld
 		}
 	}
 	743.1.1 = {
@@ -4561,7 +4715,9 @@
 		add_trait="cruel"
 		add_trait="proud"
 		add_trait="patient"
-		add_trait="holy_warrior"
+		effect = {
+			join_society = secret_religious_society_loptyrian
+		}
 	}	 
 	755.1.1 = {
 		add_trait="schemer"
@@ -5505,6 +5661,7 @@
 	religion=church_of_edda
 	739.1.1={
 		birth=yes
+		culture=silessian
 	}
 	799.1.1={
 		death = yes

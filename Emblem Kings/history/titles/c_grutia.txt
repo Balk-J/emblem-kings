@@ -1,3 +1,4 @@
+180.1.1={holder=1712} # Placeholder character to fix independent barony issue
 # c_grutia > d_grutia
 180.1.1={
 	law = status_of_women_4
@@ -10,11 +11,11 @@
 	holder = 882
 }
 649.1.1={
-	holder = 0
+	#holder=0 # Set to appropriately cultured ruler?
 }
 776.1.1={
 	holder=1263 # Judah
 }
 778.1.1={
-	holder = 0
+	#holder = 0
 }

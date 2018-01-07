@@ -299,3 +299,8 @@ possessed_forseti = {
 	learning = 15
 	health = 1
 }
+married_by_loptyrians = {
+	customizer = no
+	random = no
+	hidden = yes 
+}

@@ -1,0 +1,1614 @@
+namespace = fe4_grannvale_agustria
+
+# if = { limit = { something = yes } do_something = yes } else_if = { limit = { something_else = yes } do_something_else = yes } else = { do_another_thing = yes } 
+
+# Sigurd has invaded Verdane. Give Chagall the chance to seize the throne.
+character_event = {
+	id = fe4_grannvale_agustria.1
+	desc = fe4_grannvale_agustria.1.desc
+	picture = GFX_evt_whispers
+	is_triggered_only = yes
+		
+	option = {
+		name = "fe4_grannvale_agustria.1.A"
+		ai_chance = {
+			factor = 90	
+		}
+		k_agustria = {
+			holder_scope = {
+				death = {
+					death_reason=death_murder_unknown
+					killer=ROOT # Chagall
+				}			
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = fe4_grannvale_agustria.2 days = 7 random = 3 }
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.1.B"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		piety = 100
+	}	
+}
+
+# Chagall gets the chance to invade
+character_event = {
+	id = fe4_grannvale_agustria.2
+	desc = fe4_grannvale_agustria.2.desc
+	picture = GFX_evt_powerful_ruler
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.2.A"
+		ai_chance = {
+			factor = 90	
+		}
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.2.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=chagall_invasion_allowed
+				random_playable_ruler = {
+					limit = {
+						has_character_flag = chagall_invasion_target
+					}
+					if = {
+						limit = {
+							independent = no
+						}
+						top_liege = {
+							reverse_war = {
+								target = ROOT
+								casus_belli = chagall_invasion
+								thirdparty_title = k_verdane
+							}
+						}
+					}
+					else = {
+						reverse_war = {
+							target = ROOT
+							casus_belli = chagall_invasion
+							thirdparty_title = k_verdane
+						}
+					}
+				}
+				clr_character_flag=chagall_invasion_allowed
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.2.B"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		change_martial = 1
+		if = {
+			limit = { trait = dull }
+			random = {
+				chance = 75
+				remove_trait = dull 
+			}
+		}
+	}		
+}
+
+# Chagall gets the chance to invade... again.
+character_event = {
+	id = fe4_grannvale_agustria.3
+	hide_window=yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		# Attack unless Grannvale has magically lost the territory somehow
+		if = {
+			limit = {
+				k_grannvale = {
+					holder_scope = {
+						any_realm_title = {
+							de_jure_liege_or_above = k_agustria
+						}
+					}
+				}
+			}
+			character_event = { id = fe4_grannvale_agustria.4 }
+		}
+		
+		# Also trigger the Brigid event
+		if = {
+			limit = {
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+			c_1081 = { # Brigid
+				character_event = { id = fe4_grannvale_agustria.5 days = 90 random = 30 }
+			}
+		}
+	}		
+}
+character_event = {
+	id = fe4_grannvale_agustria.4
+	desc = fe4_grannvale_agustria.4.desc
+	picture = GFX_evt_bad_news
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.4.A"
+		ai_chance = {
+			factor = 90	
+		}
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.4.A.tooltip
+			hidden_tooltip = {
+				set_character_flag=chagall_invasion_allowed
+				k_grannvale = {
+					holder_scope = {
+						reverse_war = {
+							target = ROOT
+							casus_belli = chagall_invasion
+							thirdparty_title = k_agustria
+						}
+					}
+				}
+				clr_character_flag=chagall_invasion_allowed
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.4.B"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		prestige = -100
+		change_learning = 1
+		if = {
+			limit = { trait = dull }
+			random = {
+				chance = 90
+				remove_trait = dull 
+			}
+		}
+	}		
+}
+
+# Brigid defecting from the pirates
+character_event = {
+	id = fe4_grannvale_agustria.5
+	hide_window=yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		# If the old captain is in charge, kill him.
+		if = {
+			limit = {
+				d_orgahil_pirates = {
+					holder_scope = {
+						has_character_flag=is_fe4_orgahil_captain 
+					}
+				}
+			}
+			d_orgahil_pirates = {
+				holder_scope = {
+					death = yes
+				}
+			}
+		}
+		
+		# AI Brigid gets deposed and flees to Sigurd
+		if = {
+			limit = {
+				d_orgahil_pirates = {
+					holder_scope = {
+						ai=yes
+						OR = {
+							has_character_flag=is_fe4_brigid
+							AND = {
+								current_heir = {
+									ai = yes
+									has_character_flag=is_fe4_brigid
+								}
+							}
+						}
+					}
+				}
+			}
+			d_orgahil_pirates = {
+				holder_scope = {
+					random_vassal = {
+						d_orgahil_pirates = {
+							holder_scope = {
+								any_demesne_title = {
+									usurp_title = PREVPREVPREV
+								}
+							}
+						}
+					}
+					character_event = { id = fe4_grannvale_agustria.6 }
+				}
+			}
+		}
+		# Human Brigid should just get approached by Edain
+		character_event = { id = fe4_grannvale_agustria.7 days = 1}
+	}		
+}
+character_event = {
+	id = fe4_grannvale_agustria.6
+	hide_window=yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		# Flee to Sigurd
+		d_chalphy = {
+			holder_scope = {
+				random_character = { 
+					limit = {
+						has_character_flag = is_fe4_brigid
+					}
+					move_character = PREV
+				}
+			}
+		}
+		character_event = { id = fe4_grannvale_agustria.7 days = 1}
+	}		
+}
+# Ping event to get Edain in scope...
+character_event = {
+	id = fe4_grannvale_agustria.7
+	hide_window=yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		random_character = { 
+			limit = {
+				is_within_diplo_range = ROOT
+				has_character_flag = is_fe4_edain
+			}
+			character_event = { id = fe4_grannvale_agustria.8 }
+		}
+	}		
+}
+character_event = {
+	id = fe4_grannvale_agustria.8
+	desc = fe4_grannvale_agustria.8.desc
+	picture = GFX_evt_busy_trading_dock_republic
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.8.A"
+		ai_chance = {
+			factor = 99	
+		}
+		FROM = { 
+			character_event = { id = fe4_grannvale_agustria.9 }
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.8.B"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# Edain approaches Brigid
+character_event = {
+	id = fe4_grannvale_agustria.9
+	desc = fe4_grannvale_agustria.9.desc
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.9.A"
+		ai_chance = {
+			factor = 99	
+		}
+		character_event = { id = fe4_dynasty.2 }
+		random_character = {
+			limit = {
+				has_artifact = regalia_yewfelle
+			}
+			random_artifact = {
+				limit = {
+					artifact_type = regalia_yewfelle
+				}
+				transfer_artifact = {
+					from = PREV to = PREVPREV 
+				} 
+			}
+		}
+		
+		hidden_tooltip = {
+			k_grannvale = {
+				holder_scope = {
+					any_vassal = {
+						limit = {
+							NOT = { has_character_flag = is_fe4_brigid }
+						}
+						narrative_event = { id = fe4_grannvale_agustria.11 days = 1 }
+					}
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.9.B"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# Edain rejected
+character_event = {
+	id = fe4_grannvale_agustria.10
+	desc = fe4_grannvale_agustria.10.desc
+	picture = GFX_evt_bad_news_female
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.10.A"
+		add_trait = depressed
+	}		
+}
+# Notify Grannvale of Brigid's return
+narrative_event = {
+	id = fe4_grannvale_agustria.11
+	title = fe4_grannvale_agustria.11.title
+	desc = fe4_grannvale_agustria.11.desc
+	picture = GFX_evt_princess_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.11.A"
+		ai_chance = {
+			factor = 99	
+		}
+	}		
+}
+
+# Check if Sigurd's done conquering and can get blamed for Kurth's murder
+character_event = {
+	id = fe4_grannvale_agustria.12
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK 
+		if = {
+			limit = {
+				has_global_flag = fe4_chagall_defeated
+				has_global_flag = fe4_kurth_murdered
+				independent = no
+			}
+			top_liege = {
+				character_event = { id = fe4_grannvale_agustria.13 }
+			}
+		}
+	}		
+}
+# Notify liege that the, ah, "killer" has been found.
+character_event = {
+	id = fe4_grannvale_agustria.13
+	desc = fe4_grannvale_agustria.13.desc
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.13.A"
+		ai_chance = {
+			factor = 99	
+		}
+		FROM = { letter_event = { id = fe4_grannvale_agustria.14 } }
+	}	
+	option = {
+		name = "fe4_grannvale_agustria.13.B"
+		trigger = {
+			intrigue = 10
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+
+# Ultimatum to Sigurd
+letter_event = {
+	id = fe4_grannvale_agustria.14
+	desc = fe4_grannvale_agustria.14.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.14.A
+		ai_chance = {
+			factor = 80			
+		}		
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.14.A.tooltip
+			hidden_tooltip = {
+				
+				# Prepare to flee to Sailane
+				if = {
+					limit = {
+						d_sailane = {
+							holder_scope = {
+								ai = yes
+								NOT = { FROM = { is_liege_or_above = PREV } }
+							}
+						}
+					}
+					
+					# Install Rahna if Silesse is AI controlled and she's alive
+					c_1110 = {
+						if = {
+							limit = {
+								is_alive = yes
+								any_liege = {
+									has_landed_title = k_silesse
+								}
+							}
+							k_silesse = {		
+								holder_scope = {			
+									if = {
+										limit = {	
+											ai = yes
+											has_character_flag = is_fe4_king_silesse
+										}
+										abdicate_to = PREVPREV 
+										death = yes
+									}
+									else_if = {
+										limit = {
+											ai = yes
+											has_character_flag = is_fe4_lewyn
+										}
+										abdicate_to = PREVPREV 
+									}	
+								}						
+							} 	
+						}
+					}
+					
+					c_sailane = {
+						grant_title = ROOT
+					}
+					d_sailane = {
+						grant_title = ROOT
+					}
+					
+					any_demesne_title = {
+						limit = {
+							NOT = { title = d_sailane }
+							NOT = { de_jure_liege_or_above = d_sailane }
+						}
+						usurp_title = FROM
+					}
+					k_silesse = {		
+						holder_scope = {
+							ROOT = {
+								set_defacto_liege = PREV
+							}
+						}
+					}
+				}else = {
+					# Sailane is not AI controlled or somehow got in the realm of Sigurd's liege.
+					any_demesne_title = {
+						usurp_title = FROM
+					}	
+					random_neighbor_independent_ruler = {
+						limit = {
+							any_demesne_title = { can_be_given_away = yes } 
+						}
+						random_demesne_title = {
+							limit = { tier = COUNT can_be_given_away = yes }
+							grant_title = ROOT
+							ROOT = {
+								set_defacto_liege = PREVPREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.14.B
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}			
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.14.B.tooltip
+			FROM = {
+				letter_event = { id = fe4_grannvale_agustria.15	}
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.14.C
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}
+		}				
+		death = { 
+			death_reason = death_execution
+			killer = FROM
+		} 	
+	}
+}
+# Sigurd goes off the rails and declares war on Grannvale
+letter_event = {
+	id = fe4_grannvale_agustria.15
+	desc = fe4_grannvale_agustria.15.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.15.A
+		reverse_war = {
+			target = FROM
+			casus_belli = bid_for_independence
+		}
+	}
+}
+
+# Eldigan can try to stop the war
+character_event = {
+	id = fe4_grannvale_agustria.16
+	desc = fe4_grannvale_agustria.16.desc
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.16.A"
+		ai_chance = {
+			factor = 80	
+		}
+		liege = {
+			character_event = { id = fe4_grannvale_agustria.17 }
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.16.B"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+
+# Chagall asked to stop the war
+letter_event = {
+	id = fe4_grannvale_agustria.17
+	desc = fe4_grannvale_agustria.17.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.17.A
+		ai_chance = {
+			factor = 79		
+		}
+		FROM = {
+			imprison = ROOT
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_agustria.22 }
+			}
+			random_vassal = {
+				limit = {
+					OR = { 
+						has_character_flag = is_fe4_boldor
+						has_character_flag = is_fe4_elliot 
+					}
+					has_landed_title = d_heirhein
+				}
+				character_event = { id = fe4_grannvale_agustria.21 days = 3 }
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.17.B
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+#		any_war = { 
+#			limit = { using_cb = chagall_invasion }
+#			end_war = whitepeace
+#		}
+
+		any_current_enemy = {
+			limit = {
+				any_war = { using_cb = chagall_invasion }
+			}
+			character_event = { id = fe4_grannvale_agustria.18 }
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.17.C
+		ai_chance = {
+			factor = 11
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}
+}
+letter_event = {
+	id = fe4_grannvale_agustria.18
+	desc = fe4_grannvale_agustria.18.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.18.A		
+		any_war = { 
+			limit = { using_cb = chagall_invasion }
+			end_war = whitepeace
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_agustria.19 }
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.18.B	
+		prestige = 100
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_agustria.20 }
+			}
+		}
+	}
+}
+# Inform war over
+letter_event = {
+	id = fe4_grannvale_agustria.19
+	desc = fe4_grannvale_agustria.19.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.19.A	
+	}
+}
+# Inform war continues
+letter_event = {
+	id = fe4_grannvale_agustria.20
+	desc = fe4_grannvale_agustria.20.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.20.A	
+	}
+}
+
+# Heirhein sees their chance
+character_event = {
+	id = fe4_grannvale_agustria.21
+	desc = fe4_grannvale_agustria.21.desc
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "fe4_grannvale_agustria.21.A"
+		ai_chance = {
+			factor = 75	
+		}
+		FROMFROM = {
+			primary_title = {
+				add_claim = ROOT
+				holder_scope = {
+					reverse_war = {
+						target = ROOT
+						casus_belli = claim
+						thirdparty_title = PREV
+					}
+					hidden_tooltip = {
+						random_courtier = {
+							limit = {
+								has_character_flag = is_fe4_lachesis
+							}
+							character_event = { id = fe4_grannvale_agustria.23 }
+						}
+				
+						random_realm_character = { # Lewyn
+							limit = {
+								is_landed = no
+								has_character_flag = is_fe4_lewyn
+							}
+							character_event = { id = fe4_grannvale_agustria.28 }
+						}
+					}
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.21.B"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# Inform Eldigan that Chagall is a jerk and threw him in jail
+character_event = {
+	id = fe4_grannvale_agustria.22
+	desc = fe4_grannvale_agustria.22.desc	
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.22.A
+	}
+}
+# Lachesis asks Sigurd for help
+character_event = {
+	id = fe4_grannvale_agustria.23
+	desc = fe4_grannvale_agustria.23.desc
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.23.A"
+		ai_chance = {
+			factor = 90	
+		}
+		random_playable_ruler = {
+			limit = {
+				has_character_flag = is_fe4_sigurd
+			}
+			character_event = { id = fe4_grannvale_agustria.24 }
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.23.B"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+letter_event = {
+	id = fe4_grannvale_agustria.24
+	desc = fe4_grannvale_agustria.24.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.24.A		
+		FROM = {
+			move_character = ROOT
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		hidden_tooltip = {
+			c_1094 = { # Eldigan
+				set_character_flag = eldigan_release_promised
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.24.B	
+		FROM = {
+			opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+# Sylvia goes to Agustria
+# (not needed, handled in history)
+character_event = {
+	id = fe4_grannvale_agustria.25
+	desc = fe4_grannvale_agustria.25.desc
+	picture = GFX_evt_dancing
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.25.A"
+		trigger = {
+			is_landed = no
+			NOT = {
+				host = {
+					has_landed_title = c_verdandi
+				}
+			}
+		}
+		ai_chance = {
+			factor = 80	
+		}
+		
+		c_verdandi = {
+			holder_scope = {
+				ROOT = {
+					move_character = PREV
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.25.B"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# Lewyn goes a-wandering
+character_event = {
+	id = fe4_grannvale_agustria.26
+	hide_window = yes
+	is_triggered_only = yes
+	option = {
+		name = OK
+		if = {
+			limit = {
+				is_landed = no
+				action_allowed_trigger = yes
+				c_1108 = { # Daccar
+					is_landed = yes
+				}
+				c_1109 = { # Maios
+					is_landed = yes
+				}
+			}
+			character_event = { id = fe4_grannvale_agustria.27 }
+		}
+	}		
+}
+character_event = {
+	id = fe4_grannvale_agustria.27
+	desc = fe4_grannvale_agustria.27.desc
+	picture = GFX_evt_rival_rulers
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.27.A"
+		ai_chance = {
+			factor = 60	
+		}
+		
+		c_verdandi = {
+			holder_scope = {
+				ROOT = {
+					move_character = PREV
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			c_1117 = { # Erinys
+				character_event = { id = fe4_grannvale_agustria.30 days = 60 random = 10 }
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.27.B"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		
+		random = {
+			chance = 20
+			if = {
+				limit = { NOT = { trait = cynical } }
+				add_trait = cynical
+			}
+		}
+	}		
+}
+# Lewyn notices the invasion and joins Sigurd
+character_event = {
+	id = fe4_grannvale_agustria.28
+	desc = fe4_grannvale_agustria.28.desc
+	picture = GFX_evt_bandits
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		top_liege = {
+			set_character_flag = target_erinys_destination # Why won't this work with event targets?
+		}
+	}
+	
+	option = {
+		name = "fe4_grannvale_agustria.28.A"
+		ai_chance = {
+			factor = 90	
+		}
+		random_playable_ruler = {
+			limit = {
+				has_character_flag = is_fe4_sigurd
+			}
+			character_event = { id = fe4_grannvale_agustria.29 }
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.28.B"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# Sigurd asked to take Lewyn and Silvia
+character_event = {
+	id = fe4_grannvale_agustria.29
+	desc = fe4_grannvale_agustria.29.desc
+	picture = GFX_evt_dancing
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.29.A"
+		ai_chance = {
+			factor = 90	
+		}
+		
+		FROM = {
+			move_character = ROOT
+		}
+		if = {
+			limit = {
+				c_1045 = {
+					is_landed = no
+					is_married = no
+				}
+				move_character = ROOT
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.29.B"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+
+
+# Erinys goes after Lewyn
+character_event = {
+	id = fe4_grannvale_agustria.30
+	hide_window = yes
+	is_triggered_only = yes
+	option = {
+		name = OK
+		if = {
+			limit = {
+				c_1111 = { # Lewyn
+					is_landed = no
+					is_married = no 
+				}
+				NOT = {
+					top_liege = {
+						any_realm_character = {
+							has_character_flag = is_fe4_lewyn
+						}
+					}
+				}
+			}
+			
+			
+			if = {
+				limit = {
+					is_landed = no
+					action_allowed_trigger = yes
+				}
+				character_event = { id = fe4_grannvale_agustria.31 }
+			}
+			else = {
+			
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					female = yes
+					age = 18
+				} 
+				new_character = { 
+					add_trait="base_class_pegasus_knight"
+					add_trait="class_pegasus_knight"
+					set_variable = { which = "level" value = 1 }
+					set_character_flag="class_selected"
+
+					character_event = { id = fe4_grannvale_agustria.31 }
+				}
+			}
+		}
+	}		
+}
+character_event = {
+	id = fe4_grannvale_agustria.31
+	desc = fe4_grannvale_agustria.31.desc
+	picture = GFX_evt_carriage
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.31.A"
+		ai_chance = {
+			factor = 60	
+		}
+		
+		#event_target:target_erinys_destination = {
+		random_playable_ruler = {
+			limit = { has_character_flag = target_erinys_destination }
+			character_event = { id = fe4_grannvale_agustria.32 }
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.31.B"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+
+# Chagall receives Erinys
+character_event = {
+	id = fe4_grannvale_agustria.32
+	desc = fe4_grannvale_agustria.32.desc
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.32.A"
+		ai_chance = {
+			factor = 40	
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}		
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_agustria.33 days = 90 random = 10 }
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.32.B"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_agustria.33 days = 3 random = 1 }
+			}
+		}
+	}	
+	option = {
+		name = "fe4_grannvale_agustria.32.C"
+		ai_chance = {
+			factor = 40		
+		}
+		
+		FROM = {
+			move_character = ROOT
+			set_character_flag = deceived_by_chagall
+		
+			hidden_tooltip = {
+				character_event = { id = fe4_grannvale_agustria.33 days = 180 random = 20 }
+			}
+		}
+		
+		capital_scope = {
+			PREV = {
+				spawn_unit = {
+					leader = FROM
+					earmark = erinys_pegasus_knights
+					owner = ROOT
+					home = PREV
+					province = PREV
+					troops = {
+						pegasus_knights = { 500 500 }
+					}
+					attrition = 0.0
+					disband_on_peace = yes
+					maintenance_multiplier = 0.0
+				}
+			}
+		}
+	}		
+}
+
+
+# Erinys finds Lewyn
+character_event = {
+	id = fe4_grannvale_agustria.33
+	hide_window = yes
+	is_triggered_only = yes
+	option = {
+		name = OK
+		c_1111 = { # Lewyn
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = no
+				}
+				character_event = { id = fe4_grannvale_agustria.34 }
+			}else_if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				character_event = { id = fe4_grannvale_agustria.37 }
+			}
+		}
+	}		
+}
+# Unlanded Lewyn decides what to tell Erinys
+character_event = {
+	id = fe4_grannvale_agustria.34
+	desc = fe4_grannvale_agustria.34.desc
+	picture = GFX_evt_large_army
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.34.A"
+		ai_chance = {
+			factor = 50	
+		}
+		liege = {
+			FROM = {
+				move_character = PREV
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					FROM = { has_character_flag = deceived_by_chagall }
+				}	
+				random_playable_ruler = {
+					limit = { has_character_flag = target_erinys_destination }
+				#event_target:target_erinys_destination = {
+					character_event = { id = fe4_grannvale_agustria.35 }
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.34.B"
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		
+		k_silesse = {
+			holder_scope = {
+				ROOT = {
+					liege = {
+						if = {
+							limit = {
+								any_courtier = { 
+									has_character_flag = is_fe4_silvia 
+									is_married = no 
+								}
+							}
+						}
+						random_courtier = {
+							limit = {
+								has_character_flag = is_fe4_silvia
+							}
+							move_character = PREVPREVPREV
+						}
+					}
+					move_character = PREV
+				}
+				FROM = {
+					move_character = PREV
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					FROM = { has_character_flag = deceived_by_chagall }
+				}		
+				random_playable_ruler = {
+					limit = { has_character_flag = target_erinys_destination }
+				#event_target:target_erinys_destination = {
+					character_event = { id = fe4_grannvale_agustria.35 }
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.34.C"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		k_silesse = {
+			holder_scope = {
+				FROM = {
+					move_character = PREV
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					FROM = { has_character_flag = deceived_by_chagall }
+				}		
+				random_playable_ruler = {
+					limit = { has_character_flag = target_erinys_destination }
+				#event_target:target_erinys_destination = {
+					character_event = { id = fe4_grannvale_agustria.35 }
+				}
+			}
+		}
+	}		
+}
+# Notify Chagall that Erinys and her troops left
+character_event = {
+	id = fe4_grannvale_agustria.35
+	desc = fe4_grannvale_agustria.35.desc
+	picture = GFX_evt_large_army
+
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.35.A"
+		clr_character_flag = target_erinys_destination	
+		disband_event_forces = erinys_pegasus_knights
+		opinion = {
+			modifier = opinion_irritated
+			who = FROMFROM
+			years = 5
+		}
+		reverse_opinion = {
+			modifier = opinion_liar
+			who = FROMFROM
+			years = 20
+		}
+		reverse_opinion = {
+			modifier = opinion_disgusted
+			who = FROMFROM
+			years = 20
+		}
+	}			
+}
+# Notify liege (Sigurd, probably) that Lewyn left
+character_event = {
+	id = fe4_grannvale_agustria.36
+	desc = fe4_grannvale_agustria.36.desc
+	picture = GFX_evt_dancing
+
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.36.A"
+	}			
+}
+# Landed (?!) Lewyn decides what to tell Erinys
+character_event = {
+	id = fe4_grannvale_agustria.37
+	desc = fe4_grannvale_agustria.37.desc
+	picture = GFX_evt_large_army
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.37.A"
+		ai_chance = {
+			factor = 50	
+		}
+		FROM = {
+			move_character = ROOT
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					FROM = { has_character_flag = deceived_by_chagall }
+				}		
+				random_playable_ruler = {
+					limit = { has_character_flag = target_erinys_destination }
+				#event_target:target_erinys_destination = {
+					character_event = { id = fe4_grannvale_agustria.35 }
+				}
+			}
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.37.B"		
+		ai_chance = {
+			factor = 50	
+		}
+		k_silesse = {
+			holder_scope = {
+				FROM = {
+					move_character = PREV
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					FROM = { has_character_flag = deceived_by_chagall }
+				}		
+				random_playable_ruler = {
+					limit = { has_character_flag = target_erinys_destination }
+				#event_target:target_erinys_destination = {
+					character_event = { id = fe4_grannvale_agustria.35 }
+				}
+			}
+		}
+	}		
+}
+# Head of the Loptyrian Order kidnaps Deirdre - start with D herself
+character_event = {
+	id = fe4_grannvale_agustria.38
+	hide_window = yes
+	is_triggered_only = yes
+	option = {
+		name = OK
+		random_society_member = {
+			limit = {
+				society_member_of = secret_religious_society_loptyrian
+				is_society_grandmaster = yes 
+			}
+			character_event = { id = fe4_grannvale_agustria.39 }
+		}
+	}		
+}
+# Manfroy gets kidnap decision
+character_event = {
+	id = fe4_grannvale_agustria.39
+	desc = fe4_grannvale_agustria.39.desc
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.39.A"
+		ai_chance = {
+			factor = 70	
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.39.B"	
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+		hidden_tooltip = {
+			if = {
+				limit = {
+					
+				}	
+				
+			}
+		}
+	}		
+}	
+}
+
+character_event = {
+	id = fe4_grannvale_agustria.40
+	desc = fe4_grannvale_agustria.40.desc
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	option = {
+		name = "fe4_grannvale_agustria.40.A"
+		ai_chance = {
+			factor = 50	
+		}
+	}	
+	
+	option = {
+		name = "fe4_grannvale_agustria.40.B"	
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+		hidden_tooltip = {
+			if = {
+				limit = {
+					
+				}	
+				
+			}
+		}
+	}		
+}
+

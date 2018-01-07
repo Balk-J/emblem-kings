@@ -21,5 +21,9 @@
 	holder=1454 # Disler 
 }
 778.1.1={
-	holder=0 
+	#holder=0 
+	holder = 1162 # Leif 
+}
+779.1.1={
+	holder = 1161 # Altena
 }

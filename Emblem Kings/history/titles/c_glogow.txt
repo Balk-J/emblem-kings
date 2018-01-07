@@ -1,3 +1,4 @@
+180.1.1={holder=1703} # Placeholder character to fix independent barony issue
 # c_glogow > d_zaxon
 180.1.1={
 	law = status_of_women_4
@@ -13,4 +14,3 @@
 649.1.1={
 	liege = d_zaxon
 }
-
