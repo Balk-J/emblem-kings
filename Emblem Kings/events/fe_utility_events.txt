@@ -74,4 +74,20 @@ character_event = {
 			}
 		}
 	}
-}	
+}
+
+character_event = {
+	id = util.5
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = OK
+		capital_scope = {
+			province = {
+				spawn_disease = bubonic_plague
+			}
+		}
+	}
+}	 

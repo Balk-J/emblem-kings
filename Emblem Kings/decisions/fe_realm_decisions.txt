@@ -37,6 +37,23 @@ decisions = {
 			custom_tooltip = {
 				text = form_kingdom_of_lycia.tooltip.allow
 				hidden_tooltip = {
+					calc_true_if = {
+						amount = 10
+						d_ostia = { has_holder = yes }
+						d_caelin = { has_holder = yes }
+						d_badon = { has_holder = yes }
+						d_araphen = { has_holder = yes }
+						d_cornwell = { has_holder = yes }
+						d_khathelet = { has_holder = yes }
+						d_laus = { has_holder = yes }
+						d_pherae = { has_holder = yes }
+						d_ryerde = { has_holder = yes }
+						d_santaruz = { has_holder = yes }
+						d_tania = { has_holder = yes }
+						d_thria = { has_holder = yes }
+						d_tuscana = { has_holder = yes }
+						d_worde = { has_holder = yes }
+					}	
 					ROOT = {
 						d_ostia = {
 							OR = {

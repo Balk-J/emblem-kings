@@ -1522,38 +1522,205 @@ character_event = {
 		}
 	}		
 }
-# Head of the Loptyrian Order kidnaps Deirdre - start with D herself
+# Ping event to get Eldigan in scope
 character_event = {
 	id = fe4_grannvale_agustria.38
 	hide_window = yes
 	is_triggered_only = yes
+	
 	option = {
 		name = OK
-		random_society_member = {
-			limit = {
-				society_member_of = secret_religious_society_loptyrian
-				is_society_grandmaster = yes 
+		liege = {
+			if = {
+				limit = { has_character_flag = is_fe4_chagall }
 			}
 			character_event = { id = fe4_grannvale_agustria.39 }
 		}
-	}		
+	}	
+	
 }
-# Manfroy gets kidnap decision
+
+# Chagall blames everything on Eldigan
 character_event = {
 	id = fe4_grannvale_agustria.39
 	desc = fe4_grannvale_agustria.39.desc
-	picture = GFX_evt_lunatic
+	picture = GFX_evt_council_quarrelling
 	
 	is_triggered_only = yes
+	
 	option = {
-		name = "fe4_grannvale_agustria.39.A"
+		name = fe4_grannvale_agustria.39.A
 		ai_chance = {
-			factor = 70	
+			factor = 80	
+		}
+		FROM = {
+#			custom_tooltip = {
+#				text = fe4_grannvale_agustria.39.A.tooltip
+				hidden_tooltip = {
+					letter_event = { id = fe4_grannvale_agustria.40 days = 3 random = 1 }				
+				}
+#			}
 		}
 	}	
 	
 	option = {
-		name = "fe4_grannvale_agustria.39.B"	
+		name = fe4_grannvale_agustria.39.B
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		prestige = 100
+	}		
+}
+
+
+# Chagall yells at Eldigan
+letter_event = {
+	id = fe4_grannvale_agustria.40
+	desc = fe4_grannvale_agustria.40.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.40.A
+		ai_chance = {
+			factor = 80		
+		}
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.40.A.tooltip
+			hidden_tooltip = {
+				capital_scope = {
+					ROOT = {
+						spawn_unit = {
+							owner = ROOT
+							home = PREV
+							province = PREV
+							troops = {
+								light_cavalry = { 1000 1000 }
+							}
+							attrition = 1.0
+							reinforces = no
+							disband_on_peace = yes
+							maintenance_multiplier = 0
+						}
+					}
+				}
+				FROM = {
+#					character_event = { id = fe4_grannvale_agustria.??? }
+					if = {
+						limit = {
+							any_current_enemy = {
+								any_realm_character = {
+									has_character_flag = is_fe4_lachesis
+								}
+							}
+						}
+						c_1095 = {
+							character_event = { id = fe4_grannvale_agustria.42 }
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.40.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.40.B.tooltip
+			hidden_tooltip = {
+				FROM = {
+					opinion = {
+						modifier = opinion_angry
+						who = ROOT
+						years = 5
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.40.C
+		ai_chance = {
+			factor = 9
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.40.C.tooltip
+			hidden_tooltip = {
+				FROM = {
+					opinion = {
+						modifier = opinion_refused_order
+						who = ROOT
+						years = 3
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.40.D
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		custom_tooltip = {
+			text = fe4_grannvale_agustria.40.D.tooltip
+			hidden_tooltip = {
+				FROM = {
+					letter_event = { id = fe4_grannvale_agustria.41 }
+				}
+			}
+		}
+	}
+}
+
+# Eldigan goes off the rails and declares war on Chagall
+letter_event = {
+	id = fe4_grannvale_agustria.41
+	desc = fe4_grannvale_agustria.41.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.41.A
+		ai_chance = {
+			factor = 70		
+		}
+		reverse_war = {
+			target = FROM
+			casus_belli = bid_for_independence
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.41.B
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -1563,36 +1730,39 @@ character_event = {
 					value = on
 				}
 			}			
-		}	
-		hidden_tooltip = {
-			if = {
-				limit = {
-					
-				}	
-				
-			}
 		}
-	}		
-}	
+		FROM = {
+			set_defacto_liege = THIS
+		}
+	}
 }
-
+# Lachesis can try to convince Eldigan to stop fighting.
 character_event = {
-	id = fe4_grannvale_agustria.40
-	desc = fe4_grannvale_agustria.40.desc
-	picture = GFX_evt_lunatic
+	id = fe4_grannvale_agustria.42
+	desc = fe4_grannvale_agustria.42.desc
+	picture = GFX_evt_battle
 	
 	is_triggered_only = yes
+	
 	option = {
-		name = "fe4_grannvale_agustria.40.A"
+		name = fe4_grannvale_agustria.42.A
 		ai_chance = {
-			factor = 50	
+			factor = 90	
+		}
+		FROM = {
+			custom_tooltip = {
+				text = fe4_grannvale_agustria.42.A.tooltip
+				hidden_tooltip = {
+					letter_event = { id = fe4_grannvale_agustria.43 days = 3 random = 1 }				
+				}
+			}
 		}
 	}	
 	
 	option = {
-		name = "fe4_grannvale_agustria.40.B"	
+		name = fe4_grannvale_agustria.42.B
 		ai_chance = {
-			factor = 50
+			factor = 10
 			modifier = {
 				factor = 0
 				has_game_rule = {
@@ -1600,15 +1770,119 @@ character_event = {
 					value = on
 				}
 			}			
-		}	
-		hidden_tooltip = {
-			if = {
-				limit = {
-					
-				}	
-				
-			}
 		}
 	}		
 }
 
+# Eldigan is asked to stop fighting by Lachesis, one last time
+letter_event = {
+	id = fe4_grannvale_agustria.43
+	desc = fe4_grannvale_agustria.43.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.43.A
+		ai_chance = {
+			factor = 80		
+		}
+		top_liege = {
+			letter_event = { id = fe4_grannvale_agustria.45 days = 3 random = 1 }
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.42.B
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		FROM = {
+			letter_event = { id = fe4_grannvale_agustria.44 days = 3 random = 1 }
+		}
+	}
+}
+# Notify Lachesis that Eldigan is done talking.
+letter_event = {
+	id = fe4_grannvale_agustria.44
+	desc = fe4_grannvale_agustria.44.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.44.A
+	}
+}
+# Chagall asked to stop the war for the last time
+letter_event = {
+	id = fe4_grannvale_agustria.45
+	desc = fe4_grannvale_agustria.45.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.45.A
+		ai_chance = {
+			factor = 85		
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = fe4_grannvale_agustria.46 }
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.45.B
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+
+		any_current_enemy = {
+			limit = {
+				any_war = { using_cb = chagall_invasion }
+			}
+			character_event = { id = fe4_grannvale_agustria.18 }
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.45.C
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}
+}
+# Inform Eldigan that Chagall is having him killed
+character_event = {
+	id = fe4_grannvale_agustria.46
+	desc = fe4_grannvale_agustria.46.desc	
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.46.A
+		death = {
+			death_reason=death_execution
+			killer=FROM # Chagall
+		}	
+	}
+}

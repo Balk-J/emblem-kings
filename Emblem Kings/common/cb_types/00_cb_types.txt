@@ -51,6 +51,12 @@ chagall_invasion = {
 					limit = {
 						has_character_flag = chagall_invasion_failed
 					}
+					random_vassal = {
+						limit = {
+							has_character_flag = is_fe4_eldigan
+						}
+						character_event = {	id = fe4_grannvale_agustria.38 days = 10 random = 5 }
+					}
 					c_1203 = { # Deirdre
 						if = {
 							limit = { is_loptyrian_minor_blood_search_candidate_trigger = yes }
@@ -396,6 +402,9 @@ sigurd_invasion = {
 		destroy_landed_title = ROOT
 		hidden_tooltip = { 
 			clr_title_flag = sigurd_invasion_target
+			c_1032 = { # Sigurd
+				remove_trait = no_marriage
+			}
 			c_1135 = { # set Ayra back to normal
 				remove_trait = no_marriage
 			}
@@ -462,6 +471,9 @@ sigurd_invasion = {
 		}
 		hidden_tooltip = { 
 			clr_title_flag = sigurd_invasion_target
+			c_1032 = { # Sigurd
+				remove_trait = no_marriage
+			}
 			c_1135 = { # set Ayra back to normal
 				remove_trait = no_marriage
 			}
@@ -486,6 +498,9 @@ sigurd_invasion = {
 		}
 		hidden_tooltip = { 
 			clr_title_flag = sigurd_invasion_target
+			c_1032 = { # Sigurd
+				remove_trait = no_marriage
+			}
 			c_1135 = { # set Ayra back to normal
 				remove_trait = no_marriage
 			}
@@ -499,6 +514,9 @@ sigurd_invasion = {
 	on_invalidation = {
 		hidden_tooltip = { 
 			clr_title_flag = sigurd_invasion_target
+			c_1032 = { # Sigurd
+				remove_trait = no_marriage
+			}
 			c_1135 = { # set Ayra back to normal
 				remove_trait = no_marriage
 			}

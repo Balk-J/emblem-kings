@@ -76,6 +76,8 @@ temple_king_female_draconic_group;Queen-Bishop;;;;;;;;;;;;;x
 temple_emperor_draconic_group;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
 temple_emperor_female_draconic_group;Empress-Bishop;;;;;;;;;;;;;x
 temple_king_pagan_group;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
+temple_baron_elibe_spirits_pagan;Priest;;;;;;;;;;;;;x
+temple_baron_female_elibe_spirits_pagan;Priestess;;;;;;;;;;;;;x
 pagan_DESC;Since the dawn of history, the world has been home to countless Pagan religions and cults.;;;;;;;;;;;;;x
 draconic_group;Draconic;;;;;;;;;;;;;x
 draconic_group_DESC;The power, wisdom, and longevity of dragons has made them a focal point for religion since the dawn of human civilization.;;;;;;;;;;;;;x

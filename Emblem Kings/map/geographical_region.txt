@@ -279,3 +279,17 @@ world_jugdral = {
 		world_jugdral_orgahil
 	}	
 }
+
+
+###########################################################################
+# Custom Regions
+###########################################################################
+
+custom_historical_plague_free_zone = {
+	duchies = {
+		d_valor
+	}
+	counties = {
+		c_spina c_clavna c_neandreia c_regia c_uri c_spirit_forest c_dhami c_kagbeni c_kozle c_glogow c_jawor c_bytom c_ailinne c_mount_violdrake c_dandrum c_noel c_gartan
+	}
+}

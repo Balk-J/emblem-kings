@@ -6,7 +6,7 @@
 	trait="quick"
 	741.6.24={
 		birth=yes
-		employer=1185
+		employer=1028
 	}
 	753.06.24={
 		add_trait="class_dark_mage"

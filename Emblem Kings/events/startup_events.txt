@@ -576,11 +576,15 @@ character_event = {
 						value = on
 					}
 				}
-				d_velthomer = {
-					holder_scope = {
-						character_event = { id = fe4_grannvale_verdane.1 days = 30 } # Give Sigurd the Silver Sword
-						character_event = { id = loptyrian.1 days = 7 } # Get noticed by the Loptyrians
+				c_1032 = { # Sigurd
+					if = { # Keep AI Sigurd unmarried until the end of the Verdane war, so he's available for Deirdre
+						limit = { ai = yes }
+						add_trait = no_marriage
 					}
+				}
+				c_1049 = { # Arvis
+					character_event = { id = fe4_grannvale_verdane.1 days = 30 } # Give Sigurd the Silver Sword
+					character_event = { id = loptyrian.1 days = 7 } # Get noticed by the Loptyrians
 				}
 				c_1160 = { # Quan
 					#character_event = { id = fe4_grannvale_verdane.4 days = 1 }

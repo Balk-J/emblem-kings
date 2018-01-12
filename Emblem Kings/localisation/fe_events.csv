@@ -4,7 +4,7 @@ EVTDESCfe6.1;Since the time of Roland, the Lycian League has been a federation o
 EVTOPTAfe6.1;Long may it endure!;;;;;;;;;;;;;x
 EVTTOOLTIPfe6.1;The Kingdom of Lycia is formed.;;;;;;;;;;;;;x
 EVTNAMEfe6.2;The Kingdom of Lycia;;;;;;;;;;;;;x
-EVTDESCfe6.2;Since the time of Roland, the Lycian League has been a federation of small marches, governed by largely autonomous nobles. Now these territories have been formally united into a new nation - the Kingdom of Lycia. Lead by [Root.GetTitle] [Root.GetTitledFirstName], the people of the new state hope this marks the beginning of an era of peace, prosperity, and harmony in Lycia.;;;;;;;;;;;;;x
+EVTDESCfe6.2;Since the time of Roland, the Lycian League has been a federation of small marches, governed by largely autonomous nobles. Now these territories have been formally united into a new nation - the Kingdom of Lycia. Lead by [From.GetTitledFirstName], the people of the new state hope this marks the beginning of an era of peace, prosperity, and harmony in Lycia.;;;;;;;;;;;;;x
 EVTOPTAfe6.2;We shall see.;;;;;;;;;;;;;x
 EVTDESCfe6.3;At your command, the Demon Dragon has created several new war dragons. They will surely prove to be capable commanders - and fearsome warriors - for your army.;;;;;;;;;;;;;x
 EVTOPTAfe6.3;My enemies shall burn.;;;;;;;;;;;;;x

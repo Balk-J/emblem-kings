@@ -812,7 +812,9 @@ character_event = {
 				}
 				character_event = { id = fe4_grannvale_verdane.25 }
 			}else = {
-				character_event = { id = loptyrian.1 days = 60 random = 30 }
+				ROOT = {
+					character_event = { id = loptyrian.1 days = 60 random = 30 }
+				}
 			}
 		}
 	}			

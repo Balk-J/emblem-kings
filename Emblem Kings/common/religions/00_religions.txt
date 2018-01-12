@@ -715,6 +715,12 @@ draconic_group = {
 			
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		# Since these people apparently need the things that are strictly forbidden for obvious reasons spelled out for them. Shannan, Calf, Edain, looking at you.
+		bs_marriage = no 
+		pc_marriage = no
+		psc_marriage = no
+		cousin_marriage = yes
 	}
 	
 	loptyrian = {

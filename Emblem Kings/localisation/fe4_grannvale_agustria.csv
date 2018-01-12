@@ -87,9 +87,35 @@ fe4_grannvale_agustria.36.A;Safe journey to you.;;;;;;;;;;;;;x
 fe4_grannvale_agustria.37.desc;[From.GetFirstName] from back home managed to track me down. [From.GetSheHeCap]'s been looking for me since shortly after I left Silesse. [From.GetSheHeCap] was trying to bring me back home.;;;;;;;;;;;;;x
 fe4_grannvale_agustria.37.A;You might as well stay here.;;;;;;;;;;;;;x
 fe4_grannvale_agustria.37.B;You can go home now.;;;;;;;;;;;;;x
-fe4_grannvale_agustria.39.desc;At last;;;;;;;;;;;;;x
-fe4_grannvale_agustria.39.A;;;;;;;;;;;;;;x
-fe4_grannvale_agustria.39.B;;;;;;;;;;;;;;x
+fe4_grannvale_agustria.39.desc;That [GetRootFromInsult] [From.GetFirstName] has been dragging [From.GetHerHis] feet! It's all [From.GetHerHis] fault we fared so badly in that last war. Maybe [From.GetSheHe]'s even planning to betray me. I should go make sure [From.GetSheHe] does [From.GetHerHis] part this time.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.39.A;I'll give [From.GetFirstName] a good talking to!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.39.B;No. A [Root.GetTitle] must be magnanimous.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.desc;[Root.GetFirstName]! What the hell have you been doing?! Your negligence has cost us most of the realm! If you call yourself a knight, stop stalling and attack! Or have you been plotting to overthrow my family all along? \nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.A;I'll have you know I'm proud to be a knight. Cross Knights, ATTACK!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.A.tooltip;§Y[Root.GetTitledName]§! gathers more knights for the defense of the realm.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.B;I understand your eagerness, but let your knights handle this.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.B.tooltip;§Y[Root.GetTitledName]§! attempts to reason with §Y[From.GetTitledName]§!.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.C;[From.PrimaryTitle.GetFOA]! You're not even listening to me!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.C.tooltip;§Y[Root.GetTitledName]§! gets angry with §Y[From.GetTitledName]§!.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.D;This is the final straw. You are no longer my [From.GetTitle].;;;;;;;;;;;;;x
+fe4_grannvale_agustria.40.D.tooltip;§Y[Root.GetTitledName]§! declares independence from §Y[From.GetTitledName]§!.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.41.desc;[Root.PrimaryTitle.GetFOA],\nI was proud to serve as one of your knights. However, I have realized that your poor decisions will mark the end of [Root.PrimaryTitle.GetName]. To protect my people I am forced to declare [From.PrimaryTitle.GetName] independent. Please acknowledge this peacefully so we can avoid further pointless bloodshed.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_agustria.41.A;You traitor! I'll have your head for this!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.41.B;Fine! Good riddance!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.42.desc;My [GetFromRelation] [From.GetFirstName] is fighting for [From.TopLiege.GetTitledFirstName] against the army of [Root.TopLiege.PrimaryTitle.GetName]! Doesn't [From.GetSheHe] realize that's suicide?!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.42.A;I have to get him to stop the fighting!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.42.B;I trust [From.GetFirstName] to make it through safely.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.43.desc;[Root.GetFirstName], please! You can't fight [From.TopLiege.PrimaryTitle.GetName]! Trust your friends and hold off your attack! If [Root.TopLiege.GetFirstName] withdraws [Root.TopLiege.GetHerHis] troops, [From.TopLiege.PrimaryTitle.GetName] will also back down. \nPlease, talk with [Root.TopLiege.GetTitledFirstName]. [Root.TopLiege.GetSheHeCap] can't ignore the commander of the Cross Knights.\n\n[From.GetFirstName];;;;;;;;;;;;;x
+fe4_grannvale_agustria.43.A;Okay... I'll give it one more shot.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.43.B;I'm sorry. Fighting is my only choice.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.44.desc;[Root.GetFirstName],\nI'm sorry. I don't want to see you cry, but I have no other way out of this! If [From.TopLiege.GetFirstName] is defeated, [From.TopLiege.PrimaryTitle.GetName] will fall as well. Please don't come anywhere near the fighting.\n\n[From.GetFirstName];;;;;;;;;;;;;x
+fe4_grannvale_agustria.44.A;Wa... wait! [From.GetFirstName]!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.45.desc;[Root.PrimaryTitle.GetFOA],\nAny more fighting would be futile. Please withdraw the troops. You will take your land back someday, I'm certain of it.\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_grannvale_agustria.45.A;Seize this traitor! Off with [From.GetHerHis] head!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.45.B;If you don't think you can take them, we will withdraw our soldiers.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.45.C;Get back out there and fight, damn you! This is an order from your [Root.GetTitle]!;;;;;;;;;;;;;x
+fe4_grannvale_agustria.46.desc;I should've known this wouldn't go down well. When I tried to explain to [From.GetTitledFirstName] why [From.GetSheHe] needed to stand down, [From.GetSheHe] accused me of conspiring with the enemy. [From.GetSheHeCap] called for [From.GetHerHis] guards... and the headsman.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.46.A;This will mark the end of [From.PrimaryTitle.GetName], I'm afraid...;;;;;;;;;;;;;x
 fe4_grannvale_agustria..title;;;;;;;;;;;;;;x
 fe4_grannvale_agustria..desc;;;;;;;;;;;;;;x
 fe4_grannvale_agustria..A;;;;;;;;;;;;;;x

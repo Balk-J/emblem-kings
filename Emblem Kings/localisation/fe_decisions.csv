@@ -12,7 +12,7 @@ create_golden_church;Create the Golden See;;;;;;;;;;;;;x
 create_golden_church_desc;If I am "pious" enough and control Aquleia, I can create a Golden Bishop to serve as the head of the faith in opposition to the foolish High Bishop of the Elimine Church.;;;;;;;;;;;;;x
 form_kingdom_of_lycia;Form the Kingdom of Lycia;;;;;;;;;;;;;x
 form_kingdom_of_lycia_desc;With enough prestige and the approval of your peers, the Lycian League can be reformed into a true kingdom.;;;;;;;;;;;;;x
-form_kingdom_of_lycia.tooltip.allow;All marches of §YLycia§! have no holder or the current holder's opinion of §Y[Root.GetTitledFirstName]§! is at least §Y50§!.\n;;;;;;;;;;;;;x
+form_kingdom_of_lycia.tooltip.allow;At least §Y10§! of the §Y14§! marches of §YLycia§! exist, and all marches of §YLycia§! have no holder or the current holder's opinion of §Y[Root.GetTitledFirstName]§! is at least §Y50§!.\n;;;;;;;;;;;;;x
 create_war_dragons;Create War Dragons;;;;;;;;;;;;;x
 create_war_dragons_desc;Your Demon Dragon can be called upon to create War Dragons for your army.;;;;;;;;;;;;;x
 create_war_dragons.tooltip.allow;The Demon Dragon has not reached the limit on the number of War Dragons it can control §Y(9)§!.;;;;;;;;;;;;;x
