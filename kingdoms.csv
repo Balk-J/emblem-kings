@@ -1,0 +1,24 @@
+Comment,ID,Red,Green,Blue,Name,Capital Province ID,Culture,Empire Name,Empire ID,Dignity
+,1,91,100,100,Valor,1,bernese,,,
+,2,134,0,37,Bern,5,bernese,Elibe,,
+,3,165,255,250,Calach,36,bernese,,,
+,4,205,145,145,Terina,65,bernese,,,
+,5,6,127,2,Lycia,78,lycian,Elibe,,
+,6,10,255,80,Nabata,116,nabatan,Elibe,,
+,7,120,62,20,Missur,133,nabatan,,,
+,8,188,91,154,Kafti,145,nabatan,,,
+,9,233,158,51,The Western Isles,149,western_islander,Elibe,,
+,10,250,120,90,The Taliver Mountains,181,sacaean,,,
+,11,243,180,17,Sacae,188,sacaean,Elibe,,
+,12,150,80,170,Etruria,206,etrurian,Elibe,,
+,13,110,110,160,Ilia,244,ilian,Elibe,,
+Navrra,14,150,120,5,Grannvale,333,grannvalean,Grannvale,,11
+Mesopotamia,15,55,128,67,Agustria,362,agustrian,Grannvale,,
+Sweden,16,55,112,170,Silesse,392,silessian,Grannvale,,
+Trebizond,17,100,151,33,Isaach,411,isaachian,Grannvale,,
+Moray,18,10,81,243,Manster,435,mansterian,Grannvale,,15
+Northumberland,19,255,0,0,Thracia,458,thracian,Grannvale,,8
+Leon,20,253,158,51,Verdane,489,verdanian,,,
+d_aegean_islands,21,104,8,103,Miletos,506,grannvalean,,,
+Otuken,22,110,150,220,Orgahil,517,agustrian,,,
+Afghanistan,23,163,121,57,Yied,525,grannvalean,,,
