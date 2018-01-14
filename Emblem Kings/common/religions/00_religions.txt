@@ -331,10 +331,10 @@ pagan_group = {
 		scripture_name = THE_LEGENDS
 		priest_title = SHAMAN
 		
-		high_god_name = GOD_THE_EARTH
+		high_god_name = GOD_GRANN
 		
 		god_names = {
-			GOD_THE_GODS 
+			GOD_YUDU GOD_THE_GODS 
 		}
 		evil_god_names = {
 			GOD_THE_DARK_GOD
@@ -420,7 +420,7 @@ raider_group = {
 		}
 		
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
+		scripture_name = THE_SAGAS
 		priest_title = PRIEST
 		priests_can_marry = yes
 		female_temple_holders = yes
@@ -468,7 +468,7 @@ raider_group = {
 		}
 		
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
+		scripture_name = THE_SAGAS
 		priest_title = PRIEST
 		priests_can_marry = yes
 		female_temple_holders = yes
@@ -612,7 +612,7 @@ draconic_group = {
 		color = { 0.8 0.8 0.6 }
 		
 		#crusade_name = CRUSADE
-		scripture_name = THE_BIBLE
+		scripture_name = THE_WORD
 		priest_title = PRIEST
 		
 		high_god_name = GOD_NAGA
@@ -689,13 +689,13 @@ draconic_group = {
 		
 		god_names = {
 			GOD_NAGA GOD_SALAMANDER GOD_FORSETI GOD_GRANN GOD_YUDU 
-#			GOD_HEIM GOD_BALDUR GOD_NEIR GOD_ULIR GOD_BLAGI GOD_FALA GOD_TORDO GOD_CED GOD_ODO GOD_HEZUL GOD_DAIN GOD_NOBA
+#			GOD_HEIM GOD_BALDR GOD_NEIR GOD_ULIR GOD_BLAGI GOD_FJALAR GOD_THRUD GOD_CED GOD_OD GOD_HEZUL GOD_DAIN GOD_NOBA
 		}
 		evil_god_names = {
 			GOD_LOPTYR GOD_THE_DARK_GOD
 		}
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_SCRIPTURE
+		scripture_name = THE_SAGAS
 		priest_title = PRIEST
 		
 		investiture = no
@@ -739,7 +739,7 @@ draconic_group = {
 			GOD_NAGA 
 		}
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_SCRIPTURE
+		scripture_name = THE_WORD
 		priest_title = PRIEST
 		
 		investiture = no
@@ -778,7 +778,7 @@ draconic_group = {
 			THE_DARK_SPIRITS NAGA
 		}
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_SCRIPTURE
+		scripture_name = THE_WORD
 		priest_title = PRIEST
 		
 		investiture = no

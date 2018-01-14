@@ -460,3 +460,5 @@ character_event = {
         add_society_currency_major_effect = yes
 	}
 }	
+
+# Create a new minor blood if there are none left

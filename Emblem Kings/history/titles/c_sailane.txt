@@ -17,7 +17,8 @@
 	holder=1032 # Sigurd
 }
 760.3.1={
-	holder=1032 # Still Sigurd
+	#holder=1032 # Still Sigurd
+	holder=1110 # Rahna
 }
 761.1.1={
 	holder=1110 # Rahna

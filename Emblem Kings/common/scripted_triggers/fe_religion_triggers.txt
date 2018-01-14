@@ -1,0 +1,84 @@
+
+
+has_loptyr_sect_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = loptyrian
+		religion = maerist
+		religion = church_of_edda
+		religion = earthen_pagan
+		religion = earthen_pagan_reformed
+	}
+}
+true_religion_group_draconic_trigger = {
+	true_religion_group = draconic_group
+}
+
+true_religion_group_light_group_trigger = {
+	true_religion_group = light_group
+}
+true_religion_group_raider_group_trigger = {
+	true_religion_group = raider_group
+}
+true_religion_group_magic_group_trigger = {
+	true_religion_group = magic_group
+}
+true_religion_group_draconic_group_trigger = {
+	true_religion_group = draconic_group
+}
+
+
+true_religion_elimine_church_trigger = {
+	true_religion = elimine_church
+}
+true_religion_autotheist_trigger = {
+	true_religion = autotheist
+}
+true_religion_golden_church_trigger = {
+	true_religion = golden_church
+}
+true_religion_dragon_liberation_trigger = {
+	true_religion = dragon_liberation
+}
+true_religion_elibe_spirits_pagan_trigger = {
+	true_religion = elibe_spirits_pagan
+}
+true_religion_divine_sky_pagan_reformed_trigger = {
+	true_religion = divine_sky_pagan_reformed
+}
+true_religion_divine_sky_pagan_trigger = {
+	true_religion = divine_sky_pagan
+}
+true_religion_earthen_pagan_reformed_trigger = {
+	true_religion = earthen_pagan_reformed
+}
+true_religion_earthen_pagan_trigger = {
+	true_religion = earthen_pagan
+}
+true_religion_bandit_trigger = {
+	true_religion = bandit
+}
+true_religion_pirate_trigger = {
+	true_religion = pirate
+}
+true_religion_anima_trigger = {
+	true_religion = anima
+}
+true_religion_dark_trigger = {
+	true_religion = dark
+}
+true_religion_divine_dragon_naga_trigger = {
+	true_religion = divine_dragon_naga
+}
+true_religion_dragon_gods_trigger = {
+	true_religion = dragon_gods
+}
+true_religion_church_of_edda_trigger = {
+	true_religion = church_of_edda
+}
+true_religion_loptyrian_trigger = {
+	true_religion = loptyrian
+}
+true_religion_maerist_trigger = {
+	true_religion = maerist
+}

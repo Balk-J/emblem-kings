@@ -815,8 +815,10 @@ succession_laws = {
 				is_landless_type_title = yes
 				holder_scope = { is_theocracy = no }
 				holder_scope = { 
-					NOT = { religion = catholic }
-					NOT = { religion = fraticelli }
+#					NOT = { religion = catholic }
+#					NOT = { religion = fraticelli }
+					NOT = { religion = elimine_church }
+					NOT = { religion = golden_church }
 				}
 			}
 			holder_scope = { 
@@ -860,8 +862,10 @@ succession_laws = {
 			
 			holder_scope = {
 				OR = {
-					religion = catholic
-					religion = fraticelli
+#					religion = catholic
+#					religion = fraticelli
+					religion = elimine_church
+					religion = golden_church
 				}
 				is_merchant_republic = no
 				OR = {

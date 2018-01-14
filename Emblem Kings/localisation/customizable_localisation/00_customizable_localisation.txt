@@ -2935,6 +2935,22 @@ defined_text = {
 		localisation_key = GetHouseOfWorship_Jain
 		trigger = { religion = jain }
 	}
+	text = {
+		localisation_key = GetHouseOfWorship_Light
+		trigger = { religion_group = light_group }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Draconic
+		trigger = { religion_group = draconic_group }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Magic
+		trigger = { religion_group = magic_group }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Raider
+		trigger = { religion_group = raider_group }
+	}
 }
 
 defined_text = {
@@ -2963,6 +2979,22 @@ defined_text = {
 	text = {
 		localisation_key = String_prayer
 		trigger = { religion_group = indian_group }
+	}
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = light_group }
+	}
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = draconic_group }
+	}
+	text = {
+		localisation_key = String_contemplation
+		trigger = { religion_group = magic_group }
+	}
+	text = {
+		localisation_key = String_worship
+		trigger = { religion_group = raider_group }
 	}
 }
 
@@ -3212,6 +3244,29 @@ defined_text = {
 			}
 		}
 	}
+	text = {
+		localisation_key = String_believer
+		trigger = { 
+			OR = {
+				religion_group = light_group
+				religion_group = draconic_group
+				religion_group = raider_group
+				religion_group = pagan_group
+			}
+		}
+	}
+	text = {
+		localisation_key = String_raider
+		trigger = { 
+			religion_group = raider_group
+		}
+	}
+	text = {
+		localisation_key = String_mage
+		trigger = { 
+			religion_group = magic_group
+		}
+	}
 }
 
 defined_text = {
@@ -3306,6 +3361,14 @@ defined_text = { #WIP
 		localisation_key = String_mantras
 		trigger = { religion_group = indian_group }
 	}	
+	text = { 
+		localisation_key = String_prayers
+		trigger = { religion_group = light_group }
+	}
+	text = { 
+		localisation_key = String_prayers
+		trigger = { religion_group = draconic_group }
+	}
 }
 
 defined_text = {
@@ -3334,6 +3397,22 @@ defined_text = {
 	text = { 
 		localisation_key = String_Indians
 		trigger = { true_religion_group_indian_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_followers_of_the_light
+		trigger = { true_religion_group_light_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_followers_of_the_dragons
+		trigger = { true_religion_group_draconic_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_mages
+		trigger = { true_religion_group_magic_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_raiders
+		trigger = { true_religion_group_raider_group_trigger = yes }
 	}
 }
 
@@ -3421,6 +3500,79 @@ defined_text = {
 		localisation_key = String_Zun
 		trigger = { true_religion_zun_pagan_reformed_trigger = yes }
 	}
+	# FE
+	text = { 
+		localisation_key = String_Elimine_Church
+		trigger = { true_religion_elimine_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Autotheist
+		trigger = { true_religion_autotheist_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Golden_Church
+		trigger = { true_religion_golden_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Liberationist
+		trigger = { true_religion_dragon_liberation_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Old_Elibian
+		trigger = { true_religion_elibe_spirits_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky
+		trigger = { true_religion_divine_sky_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky
+		trigger = { true_religion_divine_sky_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen
+		trigger = { true_religion_earthen_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen
+		trigger = { true_religion_earthen_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_bandit
+		trigger = { true_religion_bandit_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_pirate
+		trigger = { true_religion_pirate_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Anima_Magic
+		trigger = { true_religion_anima_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Elder_Magic
+		trigger = { true_religion_dark_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Dragon
+		trigger = { true_religion_divine_dragon_naga_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Dragon_Gods
+		trigger = { true_religion_dragon_gods_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Church_of_Edda
+		trigger = { true_religion_church_of_edda_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Loptyrian
+		trigger = { true_religion_loptyrian_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Maerist
+		trigger = { true_religion_maerist_trigger = yes }
+	}
 }
 
 defined_text = {
@@ -3505,6 +3657,79 @@ defined_text = {
 	text = { 
 		localisation_key = String_Zunist
 		trigger = { true_religion_zun_pagan_reformed_trigger = yes }
+	}
+	# FE
+	text = { 
+		localisation_key = String_Elimine_Church_Believer
+		trigger = { true_religion_elimine_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Autotheist
+		trigger = { true_religion_autotheist_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Golden_Church_Believer
+		trigger = { true_religion_golden_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Liberationist
+		trigger = { true_religion_dragon_liberation_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Old_Elibian
+		trigger = { true_religion_elibe_spirits_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky_Follower
+		trigger = { true_religion_divine_sky_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky_Follower
+		trigger = { true_religion_divine_sky_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen_Follower
+		trigger = { true_religion_earthen_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen_Follower
+		trigger = { true_religion_earthen_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_bandit
+		trigger = { true_religion_bandit_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_pirate
+		trigger = { true_religion_pirate_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Anima_Mage
+		trigger = { true_religion_anima_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Elder_Mage
+		trigger = { true_religion_dark_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Dragon_Believer
+		trigger = { true_religion_divine_dragon_naga_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Dragon_Gods_Follower
+		trigger = { true_religion_dragon_gods_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Church_of_Edda_Believer
+		trigger = { true_religion_church_of_edda_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Loptyrian
+		trigger = { true_religion_loptyrian_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Maerist
+		trigger = { true_religion_maerist_trigger = yes }
 	}
 }
 

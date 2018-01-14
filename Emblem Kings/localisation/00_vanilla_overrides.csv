@@ -9,6 +9,8 @@ investiture_law_desc;This law determines who appoints landed priests - the relig
 investiture_law_0;Church Investiture;Investiture papale;Päpstliche Investitur;;Investidura papal;;;;;;;;;x
 investiture_law_0_option;Church;Papale;Päpstlich;;Papal;;;;;;;;;x
 investiture_law_0_desc;Only the religious head may appoint landed priests within the Realm. This will give the Crown a §G50%§! Piety cost discount when requesting special religious actions, like Divorce and Excommunication.;;;;;;;;;;;;;x
+CHURCH_INVESTITURE;Only the religious head may appoint landed priests\n;Seul le Pape peut nommer les évêques.\n;Nur der Papst kann Bischöfe ernennen.\n;;Solo el Papa puede nombrar obispos\n;;;;;;;;;x
+FREE_INVESTITURE;Any liege lord may appoint landed priests\n;N'importe quel seigneur peut nommer les évêques.\n;Jeder Lehnsherr kann Bischöfe ernennen.\n;;Cualquier señor feudal puede nombrar obispos\n;;;;;;;;;x
 investiture_law_1;Free Investiture;Investiture libre;Freie Investitur;;Libre investidura;;;;;;;;;x
 investiture_law_1_option;Free;Libre;Frei;;Libre;;;;;;;;;x
 investiture_law_1_desc;Landed priests within the kingdom can be appointed by their secular lieges, and will be more loyal to their liege. The religious head will not be pleased.;Le suzerain séculier peut nommer les évêques du Royaume, ce qui renforce leur loyauté et ne plaît guère au Pape.;Innerhalb des Königreichs dürfen nur säkulare Lehnsherrn Bischöfe ernennen, die ihnen gegenüber dann auch loyaler eingestellt sind. Dies wird dem Papst nicht gefallen.;;Los señores seglares pueden designar a sus obispos del reino, los cuales serán más leales a su señor. Al Papa no le sentará muy bien.;;;;;;;;;x

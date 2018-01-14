@@ -455,33 +455,3 @@ western_isles_rebel_target_trigger = {
 		}
 	}
 }
-
-has_loptyr_sect_prerequisites = {
-	has_common_devilworship_prerequisites = yes
-	OR = {
-		religion = loptyrian
-		religion = maerist
-		religion = church_of_edda
-		religion = earthen_pagan
-		religion = earthen_pagan_reformed
-	}
-}
-true_religion_group_draconic_trigger = {
-	true_religion_group = draconic
-}
-
-true_religion_loptyrian_trigger = {
-	true_religion = loptyrian
-}
-true_religion_maerist_trigger = {
-	true_religion = maerist
-}
-true_religion_church_of_edda_trigger = {
-	true_religion = church_of_edda
-}
-true_religion_earthen_pagan_trigger = {
-	true_religion = earthen_pagan
-}
-true_religion_earthen_pagan_reformed_trigger = {
-	true_religion = earthen_pagan_reformed
-}

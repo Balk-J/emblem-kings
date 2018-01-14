@@ -1,0 +1,81 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+String_famous_mage;famous mage;;;;;;;;;x
+String_Famous_Mage_cap;Famous Mage;;;;;;;;;x
+String_famous_sage;famous sage;;;;;;;;;x
+String_Famous_Sage_cap;Famous Sage;;;;;;;;;x
+String_famous_sorceror;famous druid;;;;;;;;;x
+String_Famous_Sorceror_cap;Famous Druid;;;;;;;;;x
+String_divine_dragon;divine dragon;;;;;;;;;x
+String_Divine_Dragon_cap;Divine Dragon;;;;;;;;;x
+String_first_dragon;first dragon;;;;;;;;;x
+String_First_Dragon_cap;First Dragon;;;;;;;;;x
+
+GetHouseOfWorship_Light;church;à l'église;Kirche;;iglesia;;;;;;;;;x
+GetHouseOfWorship_Draconic;temple;au temple;Tempel;;templo;;;;;;;;;x
+GetHouseOfWorship_Magic;temple;au temple;Tempel;;templo;;;;;;;;;x
+GetHouseOfWorship_Raider;temple;au temple;Tempel;;templo;;;;;;;;;x
+
+String_Loptyr;Loptyr;;;;;;;;;;;;;x
+String_dark_magic;dark magic;;;;;;;;;;;;;x
+String_dark_priestess;dark priestess;;;;;;;;;;;;;x
+String_dark_priest;dark priest;;;;;;;;;;;;;x
+String_Praise_Loptyr;Praise Loptyr;;;;;;;;;;;;;x
+String_Loptyr_icon;Loptyr icon;;;;;;;;;;;;;x
+String_Loptyrs_blessings;Loptyr's blessings;;;;;;;;;;;;;x
+
+
+String_contemplation;contemplation;;;;;;;;;;;;;x
+String_believer;believer;;;;;;;;;;;;;x
+String_raider;raider;;;;;;;;;;;;;x
+String_mage;mage;;;;;;;;;;;;;x
+String_mages;mages;;;;;;;;;;;;;x
+String_raiders;raiders;;;;;;;;;;;;;x
+String_followers_of_the_dragons;followers of the dragons;;;;;;;;;;;;;x
+String_followers_of_the_light;followers of the light;;;;;;;;;;;;;x
+String_Elimine_Church;Elimine Church;;;;;;;;;;;;;x
+String_Autotheist;Autotheist;;;;;;;;;;;;;x
+String_Golden_Church;Golden Church;;;;;;;;;;;;;x
+String_Liberationist;Liberationist;;;;;;;;;;;;;x
+String_Old_Elibian;Old Elibian;;;;;;;;;;;;;x
+String_Divine_Sky;Divine Sky;;;;;;;;;;;;;x
+String_Earthen;Earthen;;;;;;;;;;;;;x
+String_bandit;bandit;;;;;;;;;;;;;x
+String_pirate;pirate;;;;;;;;;;;;;x
+String_Anima_Magic;Anima Magic;;;;;;;;;;;;;x
+String_Elder_Magic;Elder Magic;;;;;;;;;;;;;x
+String_Divine_Dragon;Divine Dragon;;;;;;;;;;;;;x
+String_Dragon_Gods;Dragon Gods;;;;;;;;;;;;;x
+String_Church_of_Edda;Church of Edda;;;;;;;;;;;;;x
+String_Loptyrian;Loptyrian;;;;;;;;;;;;;x
+String_Maerist;Maerist;;;;;;;;;;;;;x
+String_Elimine_Church_Believer;Elimine Church Believer;;;;;;;;;;;;;x
+String_Autotheist;Autotheist;;;;;;;;;;;;;x
+String_Golden_Church_Believer;Golden Church Believer;;;;;;;;;;;;;x
+String_Liberationist;Liberationist;;;;;;;;;;;;;x
+String_Old_Elibian;Old Elibian;;;;;;;;;;;;;x
+String_Divine_Sky_Follower;Divine Sky Follower;;;;;;;;;;;;;x
+String_Earthen_Follower;Earthen Follower;;;;;;;;;;;;;x
+String_bandit;bandit;;;;;;;;;;;;;x
+String_pirate;pirate;;;;;;;;;;;;;x
+String_Anima_Mage;Anima Mage;;;;;;;;;;;;;x
+String_Elder_Mage;Elder Mage;;;;;;;;;;;;;x
+String_Divine_Dragon_Believer;Divine Dragon Believer;;;;;;;;;;;;;x
+String_Dragon_Gods_Follower;Dragon Gods Follower;;;;;;;;;;;;;x
+String_Church_of_Edda_Believer;Church of Edda Believer;;;;;;;;;;;;;x
+String_Loptyrian;Loptyrian;;;;;;;;;;;;;x
+String_Maerist;Maerist;;;;;;;;;;;;;x
+String_Tomes;Tomes;;;;;;;;;;;;;x
+String_Mus;Mus;;;;;;;;;;;;;x
+String_Bovis;Bovis;;;;;;;;;;;;;x
+String_Tigris;Tigris;;;;;;;;;;;;;x
+String_Lepus;Lepus;;;;;;;;;;;;;x
+String_Draco;Draco;;;;;;;;;;;;;x
+String_Anguilla;Anguilla;;;;;;;;;;;;;x
+String_Equus;Equus;;;;;;;;;;;;;x
+String_Ovis;Ovis;;;;;;;;;;;;;x
+String_Simia;Simia;;;;;;;;;;;;;x
+String_Gallus;Gallus;;;;;;;;;;;;;x
+String_Canis;Canis;;;;;;;;;;;;;x
+String_Porcus;Porcus;;;;;;;;;;;;;x
+String_special_codpiece;special codpiece;;;;;;;;;;;;;x
+String_Deadlord;Deadlord;;;;;;;;;;;;;x

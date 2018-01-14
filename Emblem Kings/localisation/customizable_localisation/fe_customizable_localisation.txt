@@ -1,0 +1,1102 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+
+#RELATIONSHIPS
+#GetRootRelation
+#GetSisterBrother
+#GetSeductressSeducer
+#GetManWomanPreference		Gets man/woman depending on character's sexual preferences
+#GetMenWomenPreference		gets men/women depending on character's sexual preferences
+
+#EDUCATION
+#GetEducationSubject
+#GetEducationRole
+#GetEducationTool
+#GetEducationalTopicPlural
+
+#CHARACTER JOBS/TITLES
+#GetActressActor
+#GetAscetic
+#GetQueenKing
+#GetMasterMistressCap
+
+#CHARACTER "DESCRIPTIONS"
+#GetVice
+#GetFaceDescription
+#GetComplimentNoun
+#GetComplimentAdjective
+#GetInsultNoun
+#GetInsultAdjective
+#GetDisease
+#GetWesternZodiacSign		Gets the western astrological zodiac sign of character (based on birth date)
+
+#SOCIETIES
+#GetSocietyName
+#GetSocietyNameCap
+#GetSocietyRank
+#GetSocietyCurrency
+#GetDWReasonToJoin
+#GetDWDevil
+#GetDWDarkMagic
+#GetDWDemon
+#GetDWDemons
+#GetDWMagician
+#GetDWExpression
+#GetMission
+#GetMOGod
+#GetMOSaint
+#GetMOBuilding
+#GetMOCode
+#GetMOGreeting
+#GetMOFarewell
+#GetSRGreeting
+#GetSRFarewell
+#GetSRTrinketSymbol
+#GetHermesThriceBlessed
+#GetHermeticsRank
+#GetHermeticDebateSubject
+#GetSillyDebateSubject
+
+#RELIGION
+#GetHouseOfWorship 			Gets name for house of worship of character's religion (character)
+#GetReligiousRite 			Gets name for a common religious rite (character)
+#GetReligionWarrior
+#GetReligionWarriorPlural
+#GetReligiousPerson
+#GetTrueReligionGroupPersons
+#GetTrueReligionAdjective
+#GetTrueReligionScriptureName
+#GetTrueReligionHighGod
+#GetTrueReligionPerson
+#GetArtifactSource			Gets name for bodypart artifact's source (saint, holy man, hero)
+#GetArtifactSourceCap
+
+#PLACES
+#GetCapitalHolding			Gets an appropriate noun describing a character's capital holding (character)
+#GetHolding 				Gets an appropriate noun to describe a holding (holding)
+#GetChamberOpening 			Gets door/tent opening for capital holding (character)
+#GetChamber 				Gets chamber/tent for capital holding (character)
+#GetReligionTempleName
+
+#WEATHER, TIME
+#GetWeatherAdjective
+#GetTemperature
+
+#GetMatterOfImportance
+
+
+defined_text = {
+	name = GetSocietyCurrency
+
+	text = {
+		localisation_key = currency_name_secret_religious_society_loptyrian
+		trigger = { society_member_of = secret_religious_society_loptyrian }
+	}
+}
+
+defined_text = {
+	name = GetDWDevil # Returns a an appropriate name for the Devil (WIP - Fellow scripters, do expand upon all of the following once you have a good one)
+
+	text = {
+		localisation_key = String_Loptyr
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetDWDarkMagic # Returns a an appropriate name for dark magic
+
+	text = {
+		localisation_key = String_dark_magic
+		trigger = { 
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		} 
+	}
+}
+
+defined_text = {
+	name = GetDWDemon # Returns a an appropriate name for a demon
+
+	text = {
+		localisation_key = String_demon
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		} 
+	}
+}
+
+defined_text = {
+	name = GetDWDemons # Returns a an appropriate name for demons
+
+	text = {
+		localisation_key = String_demons
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		} 
+	}
+}
+
+defined_text = {
+	name = GetDWMagician 
+
+	text = {
+		localisation_key = String_dark_priestess
+		trigger = {
+			is_female = yes
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
+	}
+	text = {
+		localisation_key = String_dark_priest
+		trigger = {
+			is_female = no
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetDWExpression
+
+	text = {
+		localisation_key = String_Praise_Loptyr
+		trigger = {
+			society_member_of = loptyr_sect
+			OR = {
+				religion = loptyrian
+				religion = maerist
+				religion = church_of_edda
+				religion = earthen_pagan
+				religion = earthen_pagan_reformed
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetSRGreeting
+	
+	text = {
+		localisation_key = String_Loptyrs_blessings
+		trigger = { society_member_of = secret_religious_society_loptyrian }
+	}
+}
+
+defined_text = {
+	name = GetSRFarewell
+
+	text = {
+		localisation_key = String_Praise_Loptyr
+		trigger = { society_member_of = secret_religious_society_loptyrian }
+	}
+}
+
+defined_text = {
+	name = GetSRTrinketSymbol
+	text = {
+		localisation_key = String_Loptyr_icon
+		trigger = { society_member_of = secret_religious_society_loptyrian }
+	}
+}
+
+###RELIGION###
+defined_text = {
+	name = GetHouseOfWorship # Returns a suitable name for the house of worship of your religion (WIP)
+
+	text = {
+		localisation_key = GetHouseOfWorship_Light
+		trigger = { religion_group = light_group }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Draconic
+		trigger = { religion_group = draconic_group }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Magic
+		trigger = { religion_group = magic_group }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Raider
+		trigger = { religion_group = raider_group }
+	}
+}
+
+defined_text = {
+	name = GetReligiousRite # Returns a suitable name for a common rite in the character's religion
+
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = light_group }
+	}
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = draconic_group }
+	}
+	text = {
+		localisation_key = String_contemplation
+		trigger = { religion_group = magic_group }
+	}
+	text = {
+		localisation_key = String_worship
+		trigger = { religion_group = raider_group }
+	}
+}
+
+defined_text = {
+	name = GetReligionWarrior #Returns an appropriate word for a warrior/soldier depending on religion (and culture)
+
+	text = {
+		localisation_key = String_warrior
+		#generic
+	}
+}
+
+defined_text = {
+	name = GetReligionWarriorPlural #Returns an appropriate word for a warrior/soldier depending on religion (and culture)
+
+
+	text = {
+		localisation_key = String_warriors
+		#generic
+	}
+}
+
+defined_text = { 
+	name = GetReligiousPerson
+	text = {
+		localisation_key = String_believer
+		trigger = { 
+			OR = {
+				religion_group = light_group
+				religion_group = draconic_group
+				religion_group = raider_group
+				religion_group = pagan_group
+			}
+		}
+	}
+	text = {
+		localisation_key = String_raider
+		trigger = { 
+			religion_group = raider_group
+		}
+	}
+	text = {
+		localisation_key = String_mage
+		trigger = { 
+			religion_group = magic_group
+		}
+	}
+}
+
+defined_text = {
+	name = GetArtifactSource
+	text = {
+		localisation_key = String_saint
+		trigger = {
+#			religion_group = christian
+			religion_group = light_group # FE
+		}
+	}
+	text = {
+		localisation_key = String_famous_holy_man
+		trigger = {
+#			OR = {
+#				religion_group = zoroastrian_group
+#				religion_group = indian_group
+#				religion_group = jewish_group
+#				religion_group = muslim
+#			}
+			always = no
+		}
+	}
+	text = {
+		localisation_key = String_great_hero
+		trigger = {
+			religion_group = pagan_group
+		}
+	}
+	text = {
+		localisation_key = String_famous_mage
+		trigger = {
+			religion_group = magic_group
+		}
+	}
+	text = {
+		localisation_key = String_divine_dragon
+		trigger = {
+			religion_group = draconic_group
+		}
+	}
+}
+
+defined_text = {
+	name = GetArtifactSourceCap
+	text = {
+		localisation_key = String_Saint_cap
+		trigger = {
+#			religion_group = christian
+			religion_group = light_group # FE
+		}
+	}
+	text = {
+		localisation_key = String_Famous_Holy_Man_cap
+		trigger = {
+#			OR = {
+#				religion_group = zoroastrian_group
+#				religion_group = indian_group
+#				religion_group = jewish_group
+#				religion_group = muslim
+#			}
+			always = no
+		}
+	}
+	text = {
+		localisation_key = String_Great_Hero_cap
+		trigger = {
+			religion_group = pagan_group
+		}
+	}
+	text = {
+		localisation_key = String_Famous_Mage_cap
+		trigger = {
+			religion_group = magic_group
+		}
+	}
+	text = {
+		localisation_key = String_Divine_Dragon_cap
+		trigger = {
+			religion_group = draconic_group
+		}
+	}
+}
+
+defined_text = { #WIP
+	name = GetPrayers
+	text = { 
+		localisation_key = String_prayers
+		trigger = { religion_group = christian }
+	}
+	text = { 
+		localisation_key = String_mantras
+		trigger = { religion_group = indian_group }
+	}	
+	text = { 
+		localisation_key = String_prayers
+		trigger = { religion_group = light_group }
+	}
+	text = { 
+		localisation_key = String_prayers
+		trigger = { religion_group = draconic_group }
+	}
+}
+
+defined_text = {
+	name = GetTrueReligionGroupPersons 
+
+	text = { 
+		localisation_key = String_followers_of_the_light
+		trigger = { true_religion_group_light_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_followers_of_the_dragons
+		trigger = { true_religion_group_draconic_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_mages
+		trigger = { true_religion_group_magic_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_raiders
+		trigger = { true_religion_group_raider_group_trigger = yes }
+	}
+}
+
+
+defined_text = {
+	name = GetTrueReligionAdjective
+
+	text = { 
+		localisation_key = String_Elimine_Church
+		trigger = { true_religion_elimine_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Autotheist
+		trigger = { true_religion_autotheist_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Golden_Church
+		trigger = { true_religion_golden_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Liberationist
+		trigger = { true_religion_dragon_liberation_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Old_Elibian
+		trigger = { true_religion_elibe_spirits_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky
+		trigger = { true_religion_divine_sky_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky
+		trigger = { true_religion_divine_sky_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen
+		trigger = { true_religion_earthen_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen
+		trigger = { true_religion_earthen_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_bandit
+		trigger = { true_religion_bandit_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_pirate
+		trigger = { true_religion_pirate_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Anima_Magic
+		trigger = { true_religion_anima_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Elder_Magic
+		trigger = { true_religion_dark_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Dragon
+		trigger = { true_religion_divine_dragon_naga_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Dragon_Gods
+		trigger = { true_religion_dragon_gods_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Church_of_Edda
+		trigger = { true_religion_church_of_edda_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Loptyrian
+		trigger = { true_religion_loptyrian_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Maerist
+		trigger = { true_religion_maerist_trigger = yes }
+	}
+}
+
+defined_text = {
+	name = GetTrueReligionAdherent
+
+	text = { 
+		localisation_key = String_Elimine_Church_Believer
+		trigger = { true_religion_elimine_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Autotheist
+		trigger = { true_religion_autotheist_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Golden_Church_Believer
+		trigger = { true_religion_golden_church_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Liberationist
+		trigger = { true_religion_dragon_liberation_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Old_Elibian
+		trigger = { true_religion_elibe_spirits_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky_Follower
+		trigger = { true_religion_divine_sky_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Sky_Follower
+		trigger = { true_religion_divine_sky_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen_Follower
+		trigger = { true_religion_earthen_pagan_reformed_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Earthen_Follower
+		trigger = { true_religion_earthen_pagan_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_bandit
+		trigger = { true_religion_bandit_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_pirate
+		trigger = { true_religion_pirate_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Anima_Mage
+		trigger = { true_religion_anima_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Elder_Mage
+		trigger = { true_religion_dark_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Divine_Dragon_Believer
+		trigger = { true_religion_divine_dragon_naga_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Dragon_Gods_Follower
+		trigger = { true_religion_dragon_gods_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Church_of_Edda_Believer
+		trigger = { true_religion_church_of_edda_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Loptyrian
+		trigger = { true_religion_loptyrian_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Maerist
+		trigger = { true_religion_maerist_trigger = yes }
+	}
+}
+
+defined_text = {
+	name = GetTrueReligionScriptureName
+	text = {
+		localisation_key = String_Bible
+		trigger = { 
+			OR = {
+				true_religion_group_light_group_trigger = yes 
+			}
+		}
+	}
+	text = { 
+		localisation_key = String_Word
+		trigger = { 
+			OR = {
+				true_religion_divine_dragon_naga_trigger = yes
+				true_religion_loptyrian_trigger = yes
+				true_religion_maerist_trigger = yes 
+			}
+		}
+	}
+	text = { 
+		localisation_key = String_Tomes
+		trigger = { true_religion_group_magic_group_trigger = yes }
+	}
+	text = { 
+		localisation_key = String_Sagas
+		trigger = { true_religion_group_raider_group_trigger = yes }
+			OR = {
+				true_religion_group_raider_group_trigger = yes 
+				true_religion_church_of_edda_trigger = yes
+			}
+	}
+	text = { 
+		localisation_key = String_Legends
+		trigger = { 
+			OR = {
+				true_religion_group_pagan_group_trigger = yes 
+				true_religion_dragon_gods_trigger = yes
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetTrueReligionHighGod
+
+	text = {
+		localisation_key = GOD_GOD
+		trigger = {
+			true_religion_group_light_group_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = GOD_GRANN
+		trigger = {
+			OR = {
+				true_religion_earthen_pagan_reformed_trigger = yes
+				 = yes
+				true_religion_earthen_pagan_trigger = yes 
+			}
+		}
+	}
+	text = {
+		localisation_key = GOD_FATHER_SKY
+		trigger = {
+			OR = {
+				true_religion_divine_sky_pagan_reformed_trigger = yes
+				 = yes
+				true_religion_divine_sky_pagan_trigger = yes 
+			}
+		}
+	}
+	text = {
+		localisation_key = GOD_NAGA
+		trigger = {
+			OR = {
+				true_religion_divine_dragon_naga_trigger = yes
+				 = yes
+				true_religion_church_of_edda_trigger = yes 
+			}
+		}
+	}
+	text = {
+		localisation_key = GOD_LOPTYR
+		trigger = {
+			true_religion_loptyrian_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = GOD_THE_SPIRITS
+		trigger = {
+			OR = {
+				true_religion_anima_trigger = yes
+				true_religion_elibe_spirits_pagan_trigger = yes
+			}
+		}
+	}
+	text = {
+		localisation_key = GOD_THE_CREATOR
+		trigger = {
+			OR = {
+				true_religion_dark_trigger = yes
+				true_religion_dragon_gods_trigger = yes
+				 = yes
+				true_religion_maerist_trigger = yes 
+				true_religion_group_raider_group_trigger = yes
+			}
+		}
+	}
+}
+
+
+
+defined_text = {
+	name = GetTrueReligionPerson
+	text = { 
+		localisation_key = String_Catholic
+		trigger = { true_religion_catholic_trigger = yes }
+	}
+}
+
+###WEATHER, TIME###
+defined_text = {
+	name = GetWeatherAdjective # WIP
+
+	text = {
+		localisation_key = GetWeatherAdjective_Sunny
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 10
+				capital_scope = { 
+					OR = {
+						region = world_elibe_nabata
+						region = world_jugdral_yied
+					}
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetWeatherAdjective_Rainy
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 10
+				trait = depressed
+			}
+
+			modifier = {
+				factor = 5
+				capital_scope = { region = world_elibe_valor }
+			}
+		}
+	}
+	text = {
+		localisation_key = GetWeatherAdjective_Snowy
+
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 10
+				capital_scope = { 
+					OR = {
+						region = world_elibe_ilia
+						region = world_jugdral_silesse
+					}
+				}
+			}
+		}
+
+		trigger = {
+			capital_scope = { 
+				OR = {
+					region = world_elibe
+					region = world_jugdral
+				}
+				NOR = {
+					region = world_elibe_nabata
+					region = world_jugdral_yied
+				}
+			}
+			AND = {
+				month = 10
+				NOT = { month = 3 }
+			}
+		}
+	}
+	text = {
+		localisation_key = GetWeatherAdjective_Stormy
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 5
+				capital_scope = { is_coastal = yes }
+			}
+		}
+	}
+	text = {
+		localisation_key = GetWeatherAdjective_Windy
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 5
+				capital_scope = { is_coastal = yes }
+			}
+		}
+	}
+	text = {
+		localisation_key = GetWeatherAdjective_Cloudy
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 3
+				capital_scope = { is_coastal = yes }
+			}
+		}
+	}
+	text = {
+		localisation_key = GetWeatherAdjective_Foggy
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 3
+				capital_scope = { is_coastal = yes }
+			}
+		}
+	}
+}
+
+
+defined_text = {
+	name = GetTemperature # WIP
+
+	text = {
+		localisation_key = GetTemperature_Sweltering
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 10
+				capital_scope = { 
+					OR = {
+						region = world_elibe_nabata
+						region = world_jugdral_yied
+					}
+				}
+			}
+		}
+		trigger = {
+			month = 5
+			NOT = { month = 9 }
+		}
+	}
+	text = {
+		localisation_key = GetTemperature_Freezing
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 5
+				capital_scope = { 
+					OR = {
+						region = world_elibe_ilia
+						region = world_jugdral_silesse
+					}
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetTemperature_Cold
+
+		weight_multiplier = {
+			factor = 10
+
+			modifier = {
+				factor = 10
+				capital_scope = { 
+					OR = {
+						region = world_elibe_ilia
+						region = world_jugdral_silesse
+					}
+				}
+			}
+		}
+
+		trigger = {
+			capital_scope = { 
+				OR = {
+					region = world_elibe
+					region = world_jugdral
+				}
+				NOR = {
+					region = world_elibe_nabata
+					region = world_jugdral_yied
+				}
+			}
+			AND = {
+				month = 10
+				NOT = { month = 3 }
+			}
+		}
+	}
+	text = {
+		localisation_key = GetTemperature_Warm
+		weight_multiplier = {
+			factor = 20
+		}
+	}
+}
+
+defined_text = {
+	name = GetDWRandomDemon
+	
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Mus
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Bovis
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Tigris
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Lepus
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Draco
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Anguilla
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Equus
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Ovis
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Simia
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Gallus
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Canis
+	}
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Porcus
+	}
+}
+
+defined_text = {
+	name = GetDWPartyClothes
+	text = {
+		localisation_key = String_special_shoes
+	}
+	text = {
+		trigger = { is_female = no }
+		localisation_key = String_special_codpiece
+	}
+	text = {
+		localisation_key = String_skin_mask
+	}
+	text = {
+		localisation_key = String_horned_helmet
+	}
+}
+
+defined_text = {
+	name = GetDWSettlement
+	text = {
+		trigger = {
+			NOT = { society_member_of = the_plaguebringers }
+		}
+		localisation_key = String_town
+	}
+}
+
+defined_text = {
+	name = GetDWBrethrenType
+	text = {
+		trigger = {
+			NOR = {
+				society_member_of = the_cold_ones
+				society_member_of = the_plaguebringers
+			}
+		}
+		localisation_key = String_Darkness
+	}
+}
+
+defined_text = {
+	name = GetDWDemonTerm
+	text = {
+		trigger = {
+			society_member_of = loptyr_sect
+		}
+		localisation_key = String_Deadlord
+	}
+}
+
+#GetHermeticDebateSubject
+# Includes both definite and non-definite texts. Use as a self-contained object in your sentence. (We were debating [GetHermeticDebateSubject].)
+defined_text = {
+	name = GetHermeticDebateSubject
+
+	text = {
+		localisation_key = String_Universal_Theology
+	}
+	text = {
+		localisation_key = String_unity_with_the_One
+	}
+	text = {
+		localisation_key = String_nature_of_Prima_materia
+	}
+	text = {
+		localisation_key = String_nature_of_the_Inner_and_the_Outer_cosmos
+	}
+	text = {
+		localisation_key = String_Prisca_theologia
+	}
+	text = {
+		localisation_key = String_esoteric_meaning_of_the_Caduceus
+	}
+	text = {
+		localisation_key = String_truth_inherent_to_Divine_Consciousness
+	}
+	text = {
+		localisation_key = String_interaction_of_the_soul_and_alchemy
+	}
+	text = {
+		localisation_key = String_very_definition_of_a_true_magnum_opus
+	}
+	text = {
+		weight_multiplier = { factor = 0.1 }
+		localisation_key = String_the_nature_of_the_Judgements_and_the_Bazaar
+	}
+	text = {
+		localisation_key = String_the_movement_of_celestial_bodies
+	}
+	text = {
+		localisation_key = String_the_laws_of_the_stars
+	}
+}

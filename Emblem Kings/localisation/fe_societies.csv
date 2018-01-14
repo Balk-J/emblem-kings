@@ -39,10 +39,3 @@ loptyr_sect_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]
 String_loptyr_sect;the Loptyr Sect;;;;;;;;;;;;;x
 loptyr_sect_desc;Those who serve the dark god hide in our midst, dedicating their depravities and perfidies to their Lord Loptyr. Every transgression is a hymn, every murder a roar of defiance against the word of [Root.Religion.GetHighGodName]. Loptyr rewards such dark sacraments handsomely – the true faithful are said to be gifted with unnatural lifespans and dark magic of incredible power.;;;;;;;;;;;;;x
 loptyr_sect_leader_desc;The High Priest of Loptyr.;;;;;;;;;;;;;x
-String_Loptyr;Loptyr;;;;;;;;;;;;;x
-String_dark_magic;dark magic;;;;;;;;;;;;;x
-String_dark_priestess;dark priestess;;;;;;;;;;;;;x
-String_dark_priest;dark priest;;;;;;;;;;;;;x
-String_Praise_Loptyr;Praise Loptyr;;;;;;;;;;;;;x
-String_Loptyr_icon;Loptyr icon;;;;;;;;;;;;;x
-String_Loptyrs_blessings;Loptyr's blessings;;;;;;;;;;;;;x
