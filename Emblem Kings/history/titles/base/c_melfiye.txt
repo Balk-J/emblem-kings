@@ -1,0 +1,25 @@
+# c_melfiye > d_leonster
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_leonster
+	#holder = 0
+}
+440.1.1={
+	holder=1014 # 
+	liege = 0
+}
+649.1.1={
+	#holder=0 # Set to appropriately cultured ruler?
+	liege = d_leonster
+}
+770.1.1={
+	holder=1267 # Rinecok
+	liege = d_loptyrian
+}
+777.1.1={
+	#holder=0 # Set to appropriately cultured ruler?
+	#holder=1156 # Sara?  
+	liege = d_leonster
+}

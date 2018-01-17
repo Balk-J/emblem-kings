@@ -1,0 +1,36 @@
+# c_tor > d_friege
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_friege
+	#holder = 0
+}
+440.1.1={
+	holder=830 # 
+}
+649.1.1={
+	holder=1005 # Tordo
+}
+679.1.1={
+	holder=1218 # 
+}
+685.1.1={
+	holder=1219 # 
+}
+708.1.1={
+	holder=1220 # 
+}
+719.1.1={
+	holder=1056 # Reptor
+}
+761.1.1={
+	holder=1058 # Bloom
+}
+778.1.1={
+	holder=1067 # Ishtar
+	#holder=1069 # Hilda
+}
+779.1.1={
+	holder=1417 # Amalda
+}

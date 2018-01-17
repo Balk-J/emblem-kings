@@ -1,0 +1,23 @@
+# c_longuyon > d_verdane
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_verdane
+	#holder = 0
+}
+440.1.1={
+	holder=837 # 
+}
+649.1.1={
+	holder=0
+}
+751.1.1={
+	holder=1184 # Jamke 
+}
+758.1.1={
+	holder=1514 # Barbarian
+}
+779.1.1={
+	holder=0 # Should be Jamke's son, but since we can't assume...
+}

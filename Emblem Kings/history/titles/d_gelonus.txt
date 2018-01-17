@@ -10,6 +10,9 @@
 #180.1.1={
 #	liege=k_sacae
 #}
+180.1.1={
+	holder=2525
+}
 1126.1.1={
 	holder=502 #Dayan
 }

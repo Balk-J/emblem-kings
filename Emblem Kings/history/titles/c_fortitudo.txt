@@ -1,10 +1,8 @@
 180.1.1={holder=1681} # Placeholder character to fix independent barony issue
 180.1.1={
 	law = status_of_women_4
-	#liege=d_valor
-}
-180.1.1={
-	holder=602 #Bramimond
+#	liege=d_valor
+#	holder=602 #Bramimond
 }
 200.1.1={
 	holder=0 

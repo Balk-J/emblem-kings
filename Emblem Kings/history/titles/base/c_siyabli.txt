@@ -1,0 +1,11 @@
+# c_siyabli > d_rivough
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_rivough
+	#holder = 0
+}
+776.1.1={
+	holder=1332 # Schmidt
+}

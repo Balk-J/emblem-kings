@@ -1,0 +1,24 @@
+# c_miletos > d_miletos
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_miletos
+	#holder = 0
+}
+440.1.1={
+	holder=856 # 
+}
+646.1.1={
+	holder=1304 # filler
+}
+683.1.1={
+	holder=0 
+}
+748.1.1={
+	holder=1289 # filler
+}
+764.1.1={
+	holder=1069 # Hilda TODO: correct this
+}
+

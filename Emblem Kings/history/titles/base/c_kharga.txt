@@ -1,0 +1,28 @@
+# c_kharga > d_phinora
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_phinora
+	#holder = 0
+}
+440.1.1={
+	holder=878 # 
+}
+649.1.1={
+	holder=0 # 
+}
+752.1.1={
+	liege = d_velthomer
+	holder=1283 # Vaha
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+770.1.1={
+	holder=1282 # Dark Bishop
+}
+779.1.1={
+	liege = d_phinora
+	holder = 0 # 
+}

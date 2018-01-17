@@ -1,0 +1,44 @@
+# d_sailane > k_silesse
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_silesse
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_sailane
+}
+440.1.1={
+	holder=862 # 
+}
+649.1.1={
+	de_jure_liege = k_silesse
+	holder = 1009 # Ced TODO: add a filler character
+}
+737.1.1={
+	holder = 1110 # Rahna 
+}
+760.1.1={
+	holder=1032 # Sigurd
+}
+760.3.1={
+	#holder=1032 # Still Sigurd
+	holder=1110 # Rahna
+}
+761.1.1={
+	holder=1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+770.1.1={
+	holder=1278 # Dark Bishop
+}
+776.1.1={
+	liege=e_grannvale
+}
+779.1.1={
+	liege = k_silesse
+	holder = 1112 # Ced the Hero
+}

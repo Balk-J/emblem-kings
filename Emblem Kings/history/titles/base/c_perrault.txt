@@ -1,0 +1,19 @@
+# c_perrault > d_orgahil
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_orgahil
+	#holder = 0
+}
+719.1.1={
+	holder=1103 # The old Captain who adopted Brigid
+	liege=d_orgahil_pirates
+}
+751.1.1={
+	holder=1505 # Pizarl
+}
+760.1.1={
+	holder=1251 # Filler
+	liege=d_wavebeasts
+}

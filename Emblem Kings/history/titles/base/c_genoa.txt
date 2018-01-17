@@ -1,0 +1,35 @@
+# c_genoa > d_genoa
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_genoa
+	#holder = 0
+}
+440.1.1={
+	holder=825 # 
+}
+449.1.1={
+	holder=801 # Galle I, following the Great Purge
+}
+655.1.1={
+	holder=1177 # 
+}
+680.1.1={
+	holder=1178 # 
+}
+701.1.1={
+	holder=1179 # 
+}
+715.1.1={
+	holder=1180 # Batou
+}
+743.1.1={
+	holder=1182 # Cimbaeth 
+}
+758.1.1={
+	holder=1242 # Barbarian
+}
+779.1.1={
+	holder=0 # Should be Jamke's son, but since we can't assume...
+}

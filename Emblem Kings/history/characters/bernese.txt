@@ -20,6 +20,7 @@
 
 402={
 	name="Desmond"
+	mother=2011
     #dna="alfkhxmcgan" 
     dna="dfhfdoaciaf" 
     properties="aj0bbc00000000"

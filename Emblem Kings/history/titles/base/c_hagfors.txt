@@ -1,0 +1,27 @@
+# c_hagfors > d_rada
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_rada
+	#holder = 0
+}
+440.1.1={
+	holder=860 # 
+}
+441.1.1 = { 
+	holder=0 
+	liege = d_loptyr
+}
+448.1.1 = { 
+	liege = e_loptyr
+}
+642.1.1={
+	holder=1301 # filler
+}
+649.1.1={
+	liege = d_rada
+}
+755.1.1={
+	holder=1295 # filler
+}

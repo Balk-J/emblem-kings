@@ -1,0 +1,21 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_thria
+}
+1110.1.1={
+	holder=115 #Lord Orun's father
+}
+1128.1.1={
+	holder=116 #Orun
+}
+1130.1.1={
+	holder=164 #Wagner
+}
+1180.02.01={
+	holder=164 #Wagner
+}

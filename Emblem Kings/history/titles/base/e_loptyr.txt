@@ -1,0 +1,60 @@
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+448.1.1={
+	holder=801 # Galle I
+}
+457.1.1={
+	holder=802 # Galle I
+}
+460.1.1={
+	holder=803 # Galle II
+}
+463.1.1={
+	holder=804 # Galle IV
+}
+480.1.1={
+	holder=805 # Galle V
+}
+481.1.1={
+	holder=806 # Galle VI
+}
+482.1.1={
+	holder=807 # Galle VII
+}
+485.1.1={
+	holder=808 # Galle VIII
+}
+500.1.1={
+	holder=809 # Galle IX
+}
+515.1.1={
+	holder=810 # Galle X
+}
+517.1.1={
+	holder=811 # Galle XI
+}
+529.1.1={
+	holder=812 # Galle XII
+}
+545.1.1={
+	holder=813 # Galle XIII
+}
+562.1.1={
+	holder=814 # Galle XIV
+}
+578.1.1={
+	holder=815 # Galle XV
+}
+594.1.1={
+	holder=816 # Galle XVI
+}
+611.1.1={
+	holder=817 # Galle XVII
+}
+648.1.1={
+	holder=0 # Destroyed
+	set_global_flag = loptyr_empire_destroyed
+}

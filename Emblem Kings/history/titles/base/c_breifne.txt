@@ -1,0 +1,17 @@
+# c_breifne > d_conote
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_conote
+	#holder = 0
+}
+746.1.1={
+	holder=1340 # Raydrik
+}
+777.1.1={
+	holder = 1434 # Vampa 
+}
+778.1.1={
+	holder = 0#1162 # Leif 
+}

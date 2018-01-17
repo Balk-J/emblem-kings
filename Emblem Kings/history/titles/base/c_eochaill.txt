@@ -1,0 +1,22 @@
+# c_eochaill > d_iss
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_iss
+	#holder = 0
+}
+440.1.1={
+	holder=886 # 
+}
+649.1.1={
+	holder=0 
+}
+772.1.1={
+	holder=1402 # Lifis
+	liege = d_lifis_pirates
+}
+777.1.1={
+	holder=0
+	liege = d_iss
+}

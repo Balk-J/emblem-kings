@@ -1,0 +1,26 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_badon
+}
+#1000.1.1={
+	#liege=k_lycian_league
+	#liege=d_laus
+#}
+#1130.1.1={
+#	liege=d_laus
+#}
+
+1132.01.01 = {
+	liege=d_laus
+	holder=161 #Bauker, Commander of the Imperial Guard of Laus
+}
+1161.1.1={
+	#liege=k_lycian_league
+	liege=0
+	holder=763
+}

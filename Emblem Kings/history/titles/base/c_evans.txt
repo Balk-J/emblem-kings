@@ -1,0 +1,97 @@
+# c_evans > d_evans
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_evans
+	#holder = 0
+}
+
+430.1.1={
+	holder=819 # 
+}
+
+448.1.1={
+	# Loptyrian takeover
+	holder=801 # Galle I
+}
+457.1.1={
+	holder=802 # Galle I
+}
+460.1.1={
+	holder=803 # Galle II
+}
+463.1.1={
+	holder=804 # Galle IV
+}
+480.1.1={
+	holder=805 # Galle V
+}
+481.1.1={
+	holder=806 # Galle VI
+}
+482.1.1={
+	holder=807 # Galle VII
+}
+485.1.1={
+	holder=808 # Galle VIII
+}
+500.1.1={
+	holder=809 # Galle IX
+}
+515.1.1={
+	holder=810 # Galle X
+}
+517.1.1={
+	holder=811 # Galle XI
+}
+529.1.1={
+	holder=812 # Galle XII
+}
+545.1.1={
+	holder=813 # Galle XIII
+}
+562.1.1={
+	holder=814 # Galle XIV
+}
+578.1.1={
+	holder=815 # Galle XV
+}
+594.1.1={
+	holder=816 # Galle XVI
+}
+611.1.1={
+	holder=817 # Galle XVII
+}
+648.1.1={
+	holder=0 # Destroyed
+}
+655.1.1={
+	holder=1177 # 
+}
+680.1.1={
+	holder=1178 # 
+}
+701.1.1={
+	holder=1179 # 
+}
+715.1.1={
+	holder=1180 # Batou
+}
+756.1.1={
+	liege = d_marpha
+	holder=1183 # Munnir
+}
+757.1.1={
+	holder=1187 # Gerrard
+}
+758.1.1={
+	liege=d_evans
+	holder=1032 # Sigurd
+}
+759.1.1={
+	holder=1241 # Barbarian
+}
+779.1.1={
+	holder=0 # Should be Jamke's son, but since we can't assume...
+}

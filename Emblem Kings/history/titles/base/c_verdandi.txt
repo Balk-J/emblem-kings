@@ -1,0 +1,29 @@
+# c_verdandi > d_nordion
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_nordion
+	#holder = 0
+}
+720.1.1={
+	holder = 1494
+}
+756.1.1={
+	holder = 1496
+}
+759.1.1={
+	holder=1032 # Sigurd
+}
+760.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+770.1.1={
+	holder=1275 # Dark Bishop
+}
+779.1.1={
+	holder=1500 # Tristan
+}

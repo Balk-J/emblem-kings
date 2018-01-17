@@ -1276,6 +1276,19 @@
 		}
 	}
 }
+1499={
+	name="Iouenna"
+	female=yes
+	culture=agustrian
+	religion=church_of_edda
+	741.1.1={ 
+		birth=yes
+		employer=1494
+	}
+	792.1.1={
+		death = yes
+	}
+}
 # Substitute for Diarmuid
 1500={
 	name="Tristan"

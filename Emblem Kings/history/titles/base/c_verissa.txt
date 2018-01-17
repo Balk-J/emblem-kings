@@ -1,0 +1,20 @@
+# c_verissa > d_thracia
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_thracia
+	#holder = 0
+}
+747.1.1={
+	holder=1465 # Dean's father 
+}
+781.1.1={
+	holder=1463 # Dean 
+}
+804.1.1={
+	holder=1464 # Eda 
+}
+812.1.1={
+	holder=0
+}

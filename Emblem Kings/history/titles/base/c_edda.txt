@@ -1,0 +1,41 @@
+# c_edda > d_edda
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_edda
+	#holder = 0
+}
+440.1.1={
+	holder=846 # 
+}
+649.1.1={
+	holder=1003 # Blagi
+}
+686.1.1={
+	holder=1209 # 
+}
+713.1.1={
+	holder=1210 # 
+}
+733.1.1={
+	holder=1040 # 
+}
+741.1.1={
+	holder=1041 # 
+}
+747.1.1={
+	holder=1039 # Claud
+}
+760.4.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+770.1.1={
+	holder=1268 # Yupheel
+}
+779.1.1={
+	holder=1047 # Coirpre
+}

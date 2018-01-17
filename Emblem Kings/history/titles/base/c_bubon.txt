@@ -1,0 +1,18 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_badon
+}
+
+1000.1.1={
+	liege=0
+	#liege=k_lycian_league
+	#liege=d_santaruz
+}
+1150.1.1={
+	holder=762
+}

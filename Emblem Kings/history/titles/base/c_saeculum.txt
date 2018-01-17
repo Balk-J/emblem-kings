@@ -1,0 +1,24 @@
+# c_saeculum > d_chronos
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_chronos
+	#holder = 0
+}
+443.1.1 = { 
+	holder=0 
+	liege = d_loptyr
+}
+448.1.1 = { 
+	liege = e_loptyr
+}
+645.1.1={
+	holder=1307 # filler
+}
+649.1.1={
+	liege = d_chronos
+}
+756.1.1={
+	holder=1290 # filler
+}

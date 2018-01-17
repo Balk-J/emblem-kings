@@ -1,0 +1,34 @@
+# c_nysa > d_thove
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_thove
+	#holder = 0
+}
+440.1.1 = { 
+	liege = d_sailane
+}
+649.1.1={
+	liege = d_thove
+}
+752.1.1={
+	holder = 1482 # Deet'var
+}
+760.3.1={
+	holder = 1032 # Sigurd
+}
+761.1.1={
+	#holder=1049 # Arvis
+	# Sigurd is dead; control reverts to Silesse
+	holder = 1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+770.1.1={
+	holder=1280 # Dark Bishop
+}
+779.1.1={
+	holder = 1483 # Misha
+}

@@ -1,0 +1,33 @@
+# c_leonster > d_leonster
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_leonster
+	#holder = 0
+}
+440.1.1={
+	holder=897 # 
+}
+649.1.1={
+	holder=1012 # Noba 
+}
+659.1.1={
+	holder=1024 # Noba's son
+}
+701.1.1={
+	holder = 1157 # 
+}
+723.1.1={
+	holder = 1158 # 
+}
+736.1.1={
+	holder = 1159 # Calf
+}
+762.1.1={
+#763.1.1={
+	holder = 1356 # Gustav
+}
+777.1.1={
+	holder = 1162 # Leif 
+}

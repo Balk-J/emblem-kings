@@ -1,0 +1,22 @@
+180.1.1={
+	law = status_of_women_4
+#	liege=d_valor
+#	holder=602 #Bramimond
+}
+200.1.1={
+	holder=0 
+}
+900.1.1={
+	holder=308 #Nergal
+}
+#1158.1.1={
+#	holder=457
+#}
+#1159.1.1={
+#	liege=e_nergal
+	#holder=516 #Uhai
+#}
+1161.1.1={
+	liege=0
+	holder=569
+}

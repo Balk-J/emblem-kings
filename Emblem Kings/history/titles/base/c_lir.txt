@@ -1,0 +1,20 @@
+# c_lir > d_lir
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_lir
+	#holder = 0
+}
+440.1.1 = { 
+	liege = d_tirnanog
+}
+636.1.1={
+	holder = 1315
+}
+649.1.1={
+	liege = d_lir
+}
+755.1.1={
+	holder = 1287
+}

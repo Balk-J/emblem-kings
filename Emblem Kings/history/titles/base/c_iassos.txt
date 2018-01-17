@@ -1,0 +1,20 @@
+# c_iassos > d_peruluke
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_peruluke
+	#holder = 0
+}
+440.1.1={
+	liege = d_melgln
+}
+644.1.1={
+	holder=1302 # filler
+}
+649.1.1={
+	liege = d_peruluke
+}
+742.1.1={
+	holder=1292 # filler
+}

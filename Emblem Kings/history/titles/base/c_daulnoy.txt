@@ -1,0 +1,19 @@
+# c_daulnoy > d_orgahil
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_orgahil
+	#holder = 0
+}
+719.1.1={
+	holder=1103 # The old Captain who adopted Brigid
+	liege=d_orgahil_pirates
+}
+752.1.1={
+	holder=1506 # Dobarl
+}
+760.1.1={
+	holder=1250 # Filler
+	liege=d_silvail_corsairs
+}

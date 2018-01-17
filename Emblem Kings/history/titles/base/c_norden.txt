@@ -1,0 +1,17 @@
+# c_norden > d_leonster
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_leonster
+	#holder = 0
+}
+440.1.1={
+	holder=897 # 
+}
+649.1.1={
+	#holder=0 # Set to appropriately cultured ruler?
+}
+777.1.1={
+	holder=1162 # Leif
+}

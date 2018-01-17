@@ -8,6 +8,9 @@
 #	liege=k_nabata
 #}
 
+180.1.1={
+	holder=2024
+}
 1125.1.1={
 	holder=603 #Hawkeye
 }

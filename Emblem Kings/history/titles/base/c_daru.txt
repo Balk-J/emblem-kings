@@ -1,0 +1,30 @@
+# c_daru > d_meace
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_meace
+	#holder = 0
+}
+440.1.1={
+	liege = d_kapathogia
+}
+649.1.1={
+	liege = d_meace
+}
+767.1.1={
+	holder=1457 # Rumei 
+}
+777.1.1={
+	holder=1459 # Rumei's kid
+}
+813.1.1={
+	#holder=1460 # Rumei's kid
+}
+821.1.1={
+	#holder=1461 # Rumei's kid
+}
+779.1.1={
+#826.1.1={
+	holder=1380 # Carrion 
+}

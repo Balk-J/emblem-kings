@@ -1,0 +1,11 @@
+# c_inguin > d_jungby
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_jungby
+	#holder = 0
+}
+752.1.1={
+	holder=1322 # Midir 
+}

@@ -1,0 +1,32 @@
+180.1.1 = {
+	historical_nomad = yes
+}
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_tarim
+#}
+1143.1.1={
+	holder=515 # Hassar
+}
+1143.1.1={
+	liege=d_tarim
+}
+1158.6.1={
+	liege=d_ganelon_bandits
+	holder=526 # Batta!
+	historical_nomad = no
+}
+1159.02.01 = {
+	liege=0
+	#holder=539 # Batta is dead
+	holder=524 # Djute
+	historical_nomad = yes
+}
+1180.1.1={
+	holder=517 # Monke
+}

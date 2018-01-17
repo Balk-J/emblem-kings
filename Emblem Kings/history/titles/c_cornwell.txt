@@ -8,6 +8,9 @@
 180.1.1={
 	liege=d_cornwell
 }
+180.1.1={
+	holder=2023
+}
 1111.1.1={
 	holder=121 #Raven's father
 }

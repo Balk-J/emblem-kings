@@ -203,8 +203,7 @@
 
 505 = {
 	name="Sin"
-	dynasty=502
-	# is from the Kutolah clan, and takes over after Dayan dies, so let's make him part of the ruling line. 
+	#dynasty=502 
 	
 	religion=divine_sky_pagan
 	culture=sacaean
@@ -2231,7 +2230,7 @@
 
 564 = {
 	name="Yeke" # non-canon; Post-Lyn boss of the Ganelon Bandits
-	dynasty=585
+	#dynasty=585
 	
 	religion=bandit
 	culture=sacaean
@@ -2325,5 +2324,46 @@
 	
 	1186.1.1= {
 		death = yes
+	}
+}
+# Clan founders
+
+# Kutolah
+2025 = {
+	name=Khutula
+	dynasty=502
+	religion=divine_sky_pagan
+	culture=sacaean
+	140.01.01 = { 
+		birth=yes 
+	}
+	199.01.01 = { 
+		death=yes 
+	}
+}
+# Djute
+2026 = {
+	name=Jurchedei
+	dynasty=503
+	religion=divine_sky_pagan
+	culture=sacaean
+	150.01.01 = { 
+		birth=yes 
+	}
+	221.01.01 = { 
+		death=yes 
+	}
+}
+# Lorca
+2027 = {
+	name=Bala
+	dynasty=505
+	religion=divine_sky_pagan
+	culture=sacaean
+	160.01.01 = { 
+		birth=yes 
+	}
+	218.01.01 = { 
+		death=yes 
 	}
 }

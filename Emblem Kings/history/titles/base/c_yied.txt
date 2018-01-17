@@ -1,0 +1,30 @@
+# c_yied > d_yied
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_yied
+	#holder = 0
+}
+440.1.1={
+	holder=872 # 
+}
+649.1.1={
+	liege = d_darna
+	holder=1027 # Cult of Loptyr
+}
+743.1.1={ 
+	holder=1254 # Manfroy
+}
+770.1.1={ 
+	liege = e_grannvale
+	holder=1264 # Kutuzov
+}
+778.1.1={ 
+	liege = d_yied
+	holder=0 
+}
+779.1.1={ 
+	liege = d_yied
+	holder=0 
+}

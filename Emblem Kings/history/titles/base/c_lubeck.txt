@@ -1,0 +1,49 @@
+# c_lubeck > d_lubeck
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_lubeck
+	#holder = 0
+}
+440.1.1={
+	holder=861 # 
+}
+649.1.1={
+	holder = 1009 # Ced the Wind User
+}
+669.1.1={
+	holder = 1104 # filler 
+}
+690.1.1={
+	holder = 1105 # filler 
+}
+695.1.1={
+	holder = 1119 # Duke Lubeck the non-canon 
+}
+727.1.1={
+	holder = 1120 # 
+}
+745.1.1={
+	holder = 1122 # 
+}
+760.3.1={
+	holder = 1070 # Lombard
+}
+760.4.1={
+	holder = 1032 # Sigurd
+}
+761.1.1={
+	#holder=1049 # Arvis
+	# Sigurd is dead; control reverts to Silesse
+	holder = 1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+770.1.1={
+	holder=1281 # Dark Bishop
+}
+779.1.1={
+	holder = 1112 # Ced the Hero
+}

@@ -1,0 +1,33 @@
+# c_spakona > d_velthomer
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_velthomer
+	#holder = 0
+}
+440.1.1={
+	liege = d_belhalla
+}
+649.1.1={
+	liege = d_velthomer
+	holder=1004 # Fala
+}
+688.1.1={
+	holder=1211 # 
+}
+708.1.1={
+	holder=1213 # 
+}
+722.1.1={
+	holder=1048 # Victor
+}
+732.1.1={
+	holder=1054 # Cowen
+}
+777.1.1={ 
+	holder=1254 # Manfroy
+}
+778.1.1={
+	holder=1053 # Saias
+}

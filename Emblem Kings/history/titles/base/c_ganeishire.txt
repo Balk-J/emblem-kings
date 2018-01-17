@@ -1,0 +1,18 @@
+# c_ganeishire > d_ganeishire
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_ganeishire
+	#holder = 0
+}
+440.1.1={
+	holder=868 # 
+	liege = 0
+}
+649.1.1={
+	liege = d_ganeishire
+}
+761.1.1={
+	holder=1331 # Harold
+}

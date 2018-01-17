@@ -10,6 +10,9 @@
 #180.1.1={
 #	liege=k_lycian_league
 #}
+180.1.1={
+	holder=2020
+}
 
 1140.1.1={
 	holder=196 #

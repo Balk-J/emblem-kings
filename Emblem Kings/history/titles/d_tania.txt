@@ -10,6 +10,9 @@
 #180.1.1={
 #	liege=k_lycian_league
 #}
+180.1.1={
+	holder=2021
+}
 
 1140.1.1={
 	holder=177 #Tiena's father

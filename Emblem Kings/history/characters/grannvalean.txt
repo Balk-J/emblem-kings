@@ -1106,7 +1106,7 @@
 	dna="bjhjcofdjcb"
 	properties="ce0h0e00000000"
 	dynasty=1003
-	#father=1042
+	father=1042
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
@@ -5089,7 +5089,7 @@
 		religion=loptyrian
 		employer=1254 # Manfroy
 	}	
-	745.1 = {
+	745.1.1 = {
 		add_trait="zealous"
 		add_trait="deceitful"
 		add_trait="cruel"

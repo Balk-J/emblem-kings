@@ -1,5 +1,3 @@
-180.1.1={holder=1554} # Placeholder character to fix independent barony issue
-# e_elibe
 180.1.1={
 	law = status_of_women_4
 	law = true_cognatic_succession
@@ -7,6 +5,9 @@
 }
 180.1.1={
 	liege=d_araphen
+}
+180.1.1={
+	holder=2019 
 }
 
 1134.01.01 = {

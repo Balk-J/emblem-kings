@@ -1,0 +1,15 @@
+# k_calach
+180.1.1={
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_jura
+#}
+180.1.1={
+	liege=d_glarus
+}
+
+1156.1.1={
+	holder=413 # Ruud
+}

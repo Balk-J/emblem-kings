@@ -1,0 +1,35 @@
+# c_thracia > d_thracia
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_thracia
+	#holder = 0
+}
+440.1.1 = { 
+	holder = 883
+}
+649.1.1={
+	holder = 1011 # Dain
+}
+660.1.1={
+	holder = 1025 # Dain's son
+}
+692.1.1={
+	holder = 1151 # 
+}
+719.1.1={
+	holder = 1152 # 
+}
+729.1.1={
+	holder = 1153 # 
+}
+749.1.1={
+	holder = 1154 # Travant
+}
+778.1.1={
+	holder = 1162 # Leif 
+}
+779.1.1={
+	holder = 1161 # Altena
+}

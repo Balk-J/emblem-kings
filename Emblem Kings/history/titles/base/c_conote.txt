@@ -1,0 +1,32 @@
+# c_conote > d_conote
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_conote
+	#holder = 0
+}
+440.1.1={
+	holder=896 # 
+}
+649.1.1={
+	holder=1012 # Noba TODO: add filler character
+}
+706.1.1={
+	holder=1344 # Carl's grandfather
+}
+739.1.1={
+	holder=1342 # Carl's father
+}
+756.1.1={
+	holder=1341 # Carl
+}
+762.1.1={
+	holder=1340 # Raydrik
+}
+763.1.1={
+	holder=1058 # Bloom
+}
+778.1.1={
+	holder = 1162 # Leif 
+}

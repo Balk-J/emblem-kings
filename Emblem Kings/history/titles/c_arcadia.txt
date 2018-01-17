@@ -7,12 +7,10 @@
 }
 180.1.1={
 	liege=d_arcadia
+#	holder=601 #Athos
 }
 180.1.1={
-	holder=601 #Athos
-}
-200.1.1={
-	holder=0 
+	holder=2024
 }
 1125.1.1={
 	holder=603 #Hawkeye

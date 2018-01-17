@@ -1,0 +1,17 @@
+# c_anu > d_anu
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_anu
+	#holder = 0
+}
+440.1.1={
+	holder=874 # 
+}
+647.1.1={
+	holder=1311 # filler
+}
+755.1.1={
+	holder = 1284
+}

@@ -3949,3 +3949,189 @@
 		death = yes
 	}
 }
+# First marquesses
+
+# Thria
+2011={
+	name=Lothar	
+	dynasty=106
+	culture=lycian
+	religion=elimine_church		
+	150.1.1={
+		birth=yes
+	}	
+	201.1.1= {
+		death = yes
+	}
+}
+
+# Worde
+2012={
+	name=Waltrude	
+	female=yes
+	dynasty=116
+	culture=lycian
+	religion=elimine_church		
+	148.1.1={
+		birth=yes
+	}	
+	209.1.1= {
+		death = yes
+	}
+}
+
+# Ryerde
+2013={
+	name=Adalgari	
+	dynasty=129
+	culture=lycian
+	religion=elimine_church		
+	152.1.1={
+		birth=yes
+	}	
+	212.1.1= {
+		death = yes
+	}
+}
+
+# Laus
+2014={
+	name=Euric	
+	dynasty=104
+	culture=lycian
+	religion=elimine_church		
+	154.1.1={
+		birth=yes
+	}	
+	206.1.1= {
+		death = yes
+	}
+}
+
+# Badon
+2015={
+	name=Bero	
+	dynasty=105
+	culture=lycian
+	religion=elimine_church		
+	151.1.1={
+		birth=yes
+	}	
+	207.1.1= {
+		death = yes
+	}
+}
+
+# Santaruz
+2016={
+	name=Hildoin	
+	dynasty=107
+	culture=lycian
+	religion=elimine_church		
+	140.1.1={
+		birth=yes
+	}	
+	204.1.1= {
+		death = yes
+	}
+}
+
+# Caelin
+2017={
+	name=Landina	
+	female=yes
+	dynasty=103
+	culture=lycian
+	religion=elimine_church		
+	153.1.1={
+		birth=yes
+	}	
+	216.1.1= {
+		death = yes
+	}
+}
+
+# Khathelet
+2018={
+	name=Tetbert	
+	dynasty=109
+	culture=lycian
+	religion=elimine_church		
+	152.1.1={
+		birth=yes
+	}	
+	210.1.1= {
+		death = yes
+	}
+}
+
+# Araphen
+2019={
+	name=Aregisel	
+	dynasty=110
+	culture=lycian
+	religion=elimine_church		
+	148.1.1={
+		birth=yes
+	}	
+	206.1.1= {
+		death = yes
+	}
+}
+
+# Tuscana
+2020={
+	name=Ceslin	
+	dynasty=111
+	culture=lycian
+	religion=elimine_church		
+	149.1.1={
+		birth=yes
+	}	
+	200.1.1= {
+		death = yes
+	}
+}
+
+# Tania
+2021={
+	name=Creada	
+	female=yes
+	dynasty=112
+	culture=lycian
+	religion=elimine_church		
+	153.1.1={
+		birth=yes
+	}	
+	220.1.1= {
+		death = yes
+	}
+}
+
+# Pherae
+2022={
+	name=Feroard	
+	dynasty=102
+	culture=lycian
+	religion=elimine_church		
+	154.1.1={
+		birth=yes
+	}	
+	234.1.1= {
+		death = yes
+	}
+}
+
+# Cornwell
+2023={
+	name=Raynold	
+	dynasty=113
+	culture=lycian
+	religion=elimine_church		
+	152.1.1={
+		birth=yes
+	}	
+	203.1.1= {
+		death = yes
+	}
+}

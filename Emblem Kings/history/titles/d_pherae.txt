@@ -10,6 +10,9 @@
 #180.1.1={
 #	liege=k_lycian_league
 #}
+180.1.1={
+	holder=2022
+}
 
 1141.1.1={
 	holder=105 #Elbert 

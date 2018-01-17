@@ -1,0 +1,20 @@
+# c_noel > d_noel
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_noel
+	#holder = 0
+}
+440.1.1={
+	liege = d_kapathogia
+}
+649.1.1={
+	liege = d_noel
+}
+770.1.1={
+	holder=1469 # Dobalzark
+}
+777.1.1={
+	holder=0 # 
+}

@@ -1,0 +1,12 @@
+# c_detroyes > d_orgahil
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_orgahil
+	#holder = 0
+}
+753.1.1={
+	liege = d_flying_ogres
+	holder=1252 # Pirate
+}

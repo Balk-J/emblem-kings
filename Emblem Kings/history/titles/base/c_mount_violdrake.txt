@@ -1,0 +1,35 @@
+# c_mount_violdrake > d_noel
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_noel
+	#holder = 0
+}
+440.1.1={
+	holder=893 # 
+}
+649.1.1={
+	holder=0 
+}
+744.1.1={
+	holder=1245 # Hannibal 
+}
+747.1.1={
+	holder=1439 # Dagdar 
+}
+776.1.1={
+	holder=1441 # Gomes 
+}
+777.1.1={
+	holder=1245 # Hannibal 
+}
+779.1.1={
+	holder=1439 # Dagdar 
+}
+805.1.1={
+	holder=1449 # Marty 
+}
+809.1.1={
+	holder=1248 # Charlot 
+}

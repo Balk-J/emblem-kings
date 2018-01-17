@@ -1,0 +1,51 @@
+# c_nordion > d_nordion
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_nordion
+	#holder = 0
+}
+440.1.1={
+	holder=826 # 
+}
+449.1.1={
+	holder=801 # Galle I, following the Great Purge
+}
+649.1.1={
+	holder=1026 # House Nordion
+}
+685.1.1={
+	holder=1232 # 
+}
+719.1.1={
+	holder=1233 # 
+}
+732.1.1={
+	holder=1091 # Eldigan's father
+}
+741.1.1={
+	holder=1094 # Eldigan
+}
+759.1.1={
+	holder=1032 # Sigurd
+}
+760.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+#761.1.1={
+#	holder=1058 # Bloom?
+#}
+#778.1.1={
+770.1.1={
+	holder=1275 # Dark Bishop
+}
+#777.1.1={
+#	holder=1051 # Julius?
+#}
+779.1.1={
+	holder=1096 # Diarmuid
+}

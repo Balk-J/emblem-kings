@@ -10,6 +10,9 @@
 #180.1.1={
 #	liege=k_sacae
 #}
+180.1.1={
+	holder=2527
+}
 
 1143.1.1={
 	holder=515 # Hassar

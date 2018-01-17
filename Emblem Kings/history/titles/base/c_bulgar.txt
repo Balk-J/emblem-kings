@@ -1,0 +1,30 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_bulgar
+#}
+
+1101.1.1={
+	holder=547 # Bulgar clan
+}
+
+1140.1.1={
+	holder=548 # Bulgar clan
+}
+
+1178.1.1={
+	holder=550 # Bulgar clan
+}
+
+1180.1.1={
+	#liege=d_media # Djute
+	liege=d_gelonus # Kutolah
+}
+
+1181.1.1={
+	liege=0
+}

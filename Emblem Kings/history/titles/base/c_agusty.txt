@@ -1,0 +1,59 @@
+# c_agusty > d_agusty
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_agusty
+	#holder = 0
+}
+440.1.1={
+	holder=834 # 
+}
+649.1.1={
+	holder=1008 # Hezul
+}
+677.1.1={
+	holder=1227 # 
+}
+704.1.1={
+	holder=1230 # 
+}
+722.1.1={
+	holder=1231 # 
+}
+724.1.1={
+	holder=1089 # Imuka
+}
+758.1.1={
+	holder=1090 # Chagall
+}
+759.1.1={
+	holder=1032 # Sigurd
+}
+760.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+#761.1.1={
+#	holder=1058 # Bloom?
+#}
+#778.1.1={
+770.1.1={
+	holder=1270 # Dark Bishop
+	#holder=1326 # Reinhardt's father
+}
+#775.1.1={
+#	holder=1324 # Reinhardt
+#}
+#777.1.1={
+#	holder=1270 # Dark Bishop
+#}
+#777.1.1={
+#	holder=1051 # Julius?
+#}
+779.1.1={
+	holder=1098 # Ares
+}
+

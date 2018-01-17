@@ -1,0 +1,18 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_basel
+}
+180.1.1={# So this starts under the Kingdom from the beginning. TODO: Remove this when duchy history is added!
+	liege=k_bern
+}
+1132.1.1={
+	liege=d_basel
+}
+1140.1.1={
+	holder=449 # Elen's father
+}

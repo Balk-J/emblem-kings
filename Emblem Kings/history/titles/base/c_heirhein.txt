@@ -1,0 +1,35 @@
+# c_heirhein > d_heirhein
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_heirhein
+	#holder = 0
+}
+440.1.1={
+	holder=827 # 
+}
+449.1.1={
+	holder=801 # Galle I, following the Great Purge
+}
+736.1.1={
+	holder=1099 # Boldor
+}
+759.1.1={
+	holder=1032 # Sigurd
+}
+760.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+770.1.1={
+	holder=1272 # Dark Bishop
+}
+#777.1.1={
+#	holder=1051 # Julius?
+#}
+779.1.1={
+	holder=1098 # Ares?
+}

@@ -1,0 +1,15 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_neandreia
+#}
+1133.1.1={
+	holder=339 # the ice mage 
+}
+1158.1.1={
+	holder=349 #filler 
+}

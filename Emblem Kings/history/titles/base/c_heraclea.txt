@@ -1,0 +1,19 @@
+# c_heraclea > d_kapathogia
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_kapathogia
+	#holder = 0
+}
+440.1.1 = { 
+	holder = 895
+	liege = 0
+}
+649.1.1={
+	holder = 0 
+	liege = d_kapathogia
+}
+757.1.1={
+	holder=1456 # Kanatz 
+}

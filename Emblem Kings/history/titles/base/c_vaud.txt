@@ -1,0 +1,17 @@
+# k_calach
+180.1.1={
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_vaud
+#}
+1106.01.01 = { 
+	holder=489
+}
+1107.01.01 = { 
+	set_global_flag = fe7_brendan_reed_spawned
+}
+1156.01.01 = { 
+	holder=475
+}

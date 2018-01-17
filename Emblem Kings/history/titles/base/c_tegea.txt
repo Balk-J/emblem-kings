@@ -1,0 +1,23 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=d_tegea
+#}
+
+1148.1.1={
+	holder=639 
+}
+
+1171.1.1={
+	liege=d_tegea
+	holder=615 # Maggie
+}
+
+#Maggie and Rose are dead; give it back
+1181.1.1={
+	holder=639 
+}

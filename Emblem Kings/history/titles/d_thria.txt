@@ -10,6 +10,9 @@
 #180.1.1={
 #	liege=k_lycian_league
 #}
+180.1.1={
+	holder=2011
+}
 1110.1.1={
 	holder=115 #Lord Orun's father
 }

@@ -1,0 +1,36 @@
+# c_madino > d_madino
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_madino
+	#holder = 0
+}
+440.1.1={
+	holder=836 # 
+}
+649.1.1={
+	holder=1008 # Hezul
+}
+724.1.1={
+	holder=1089 # Imuka
+}
+#758.1.1={
+742.1.1={
+	holder=1090 # Chagall
+}
+760.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+770.1.1={
+	holder=1274 # Dark Bishop
+}
+#777.1.1={
+#	holder=1051 # Julius?
+#}
+779.1.1={
+	holder=1098 # Ares
+}

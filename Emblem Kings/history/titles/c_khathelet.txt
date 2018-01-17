@@ -8,6 +8,9 @@
 180.1.1={
 	liege=d_khathelet
 }
+180.1.1={
+	holder=2018
+}
 
 1150.1.1={
 	holder=197 #

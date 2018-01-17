@@ -1,0 +1,20 @@
+# c_dahkla > d_dahkla
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_dahkla
+	#holder = 0
+}
+440.1.1 = { 
+	liege = d_lubeck
+}
+646.1.1={
+	holder = 1313
+}
+649.1.1={
+	liege = d_dahkla
+}
+750.1.1={
+	holder = 1286
+}

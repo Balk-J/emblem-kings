@@ -1,0 +1,16 @@
+# c_gallipoli > d_grutia
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_grutia
+	#holder = 0
+}
+440.1.1 = { 
+	liege = 0
+	holder = 881
+}
+649.1.1={
+	#holder=0 # Set to appropriately cultured ruler?
+	liege = d_grutia
+}

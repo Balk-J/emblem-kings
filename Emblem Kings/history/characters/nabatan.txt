@@ -1207,3 +1207,16 @@
 		death = yes
 	}
 }
+
+2024 = {
+	name=Kera 
+	female=yes
+	religion=elibe_spirits_pagan
+	culture=nabatan
+	160.01.01 = { 
+		birth=yes 
+	}
+	233.01.01 = { 
+		death = yes
+	}
+}

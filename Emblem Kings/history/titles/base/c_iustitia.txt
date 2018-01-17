@@ -1,0 +1,14 @@
+# k_valor
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+#	liege=d_valor
+#	holder=602 #Bramimond
+}
+200.1.1={
+	holder=0 
+}
+1158.1.1={
+	holder=766
+}

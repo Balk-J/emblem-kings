@@ -1,0 +1,35 @@
+# c_dozel > d_dozel
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_dozel
+	#holder = 0
+}
+440.1.1={
+	holder=847 # 
+}
+649.1.1={
+	holder=1006 # Neir
+}
+682.1.1={
+	holder=1221 # 
+}
+701.1.1={
+	holder=1222 # 
+}
+717.1.1={
+	holder=1223 # 
+}
+726.1.1={
+	holder=1070 # Lombard
+}
+760.4.1={
+	holder=1073 # Danann
+}
+771.1.1={
+	holder=1075 # Brian
+}
+779.1.1={
+	holder=1038 # Seliph? Who's left to rule it? Maybe Ulster if we go Lex/Ayra like the manga?
+}

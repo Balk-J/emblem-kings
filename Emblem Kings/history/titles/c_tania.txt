@@ -8,6 +8,9 @@
 180.1.1={
 	liege=d_tania
 }
+180.1.1={
+	holder=2021
+}
 
 1140.1.1={
 	holder=177 #Tiena's father

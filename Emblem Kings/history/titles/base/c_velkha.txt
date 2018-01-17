@@ -1,0 +1,21 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_felathri
+}	
+180.1.1={# So this starts under the Kingdom from the beginning. TODO: Remove this when duchy history is added!
+	liege=k_etruria
+}
+1153.1.1={
+	liege=d_felathri
+}
+1153.1.1={
+	holder=217 # Cecilia
+}
+1154.1.1={
+	holder=233 # Carls
+}

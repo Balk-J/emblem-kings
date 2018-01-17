@@ -1844,3 +1844,17 @@
 		death = yes
 	}
 }
+
+2010 = {
+	name="Arthur"
+	dynasty=202
+	religion=elimine_church
+	culture=etrurian
+	
+	165.01.01 = { 
+		birth=yes 
+	}
+	216.01.01 = { 
+		death=yes 
+	}
+}

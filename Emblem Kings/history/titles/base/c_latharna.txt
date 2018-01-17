@@ -1,0 +1,26 @@
+# c_latharna > d_alster
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_alster
+	#holder = 0
+}
+440.1.1={
+	holder=1018 # 
+}
+649.1.1={
+	#holder=0 # Set to appropriately cultured ruler?
+}
+770.1.1={
+	holder=1326 # Reinhardt's father
+}
+775.1.1={
+	holder=1324 # Reinhardt
+}
+777.1.1={
+	holder=1436 # Eliu
+}
+778.1.1={
+	#holder=0 # 
+}

@@ -1,0 +1,33 @@
+# c_spirit_forest > d_marpha
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_marpha
+	#holder = 0
+}
+
+440.1.1={
+	holder=841 # 
+}
+535.1.1={
+	holder=1188 # 
+}
+571.1.1={
+	holder=1189 # 
+}
+608.1.1={
+	holder=1190 # 
+}
+645.1.1={
+	holder=1191 # 
+}
+667.1.1={
+	holder=1192 # 
+}
+699.1.1={
+	holder=1193 # 
+}
+748.1.1={
+	holder=1194 # 
+}

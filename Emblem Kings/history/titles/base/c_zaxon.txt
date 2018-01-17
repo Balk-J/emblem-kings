@@ -1,0 +1,46 @@
+# c_zaxon > d_zaxon
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_zaxon
+	#holder = 0
+}
+440.1.1 = { 
+	liege = d_lubeck
+}
+649.1.1={
+	liege = d_zaxon
+}
+669.1.1={
+	holder = 1104 # filler 
+}
+690.1.1={
+	holder = 1105 # filler 
+}
+728.1.1={
+	holder = 1107 # Lewyn's father 
+}
+#737.1.1={
+#	holder = 1107 # King of Silesse
+#}
+737.1.1={
+	holder = 1108 # Daccar
+}
+760.3.1={
+	holder = 1032 # Sigurd
+}
+761.1.1={
+	#holder=1049 # Arvis
+	# Sigurd is dead; control reverts to Silesse
+	holder = 1110 # Rahna
+}
+762.1.1={
+	holder = 1117 # Erinys 
+}
+770.1.1={
+	holder=1279 # Dark Bishop
+}
+779.1.1={
+	holder = 1112 # Ced the Hero
+}

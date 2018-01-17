@@ -12,6 +12,9 @@
 180.1.1={
 	liege=d_gelonus
 }
+180.1.1={
+	holder=2525
+}
 
 1126.1.1={
 	holder=502 #Dayan

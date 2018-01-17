@@ -1,0 +1,11 @@
+# c_lokasenna > d_edda
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_edda
+	#holder = 0
+}
+735.1.1={
+	holder = 1334 # Rodan
+}

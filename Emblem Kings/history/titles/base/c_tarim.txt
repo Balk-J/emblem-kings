@@ -1,0 +1,38 @@
+180.1.1 = {
+	historical_nomad = yes
+}
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=d_tarim
+}
+
+
+1143.1.1={
+	holder=515 # Hassar
+}
+1143.1.1={
+	liege=d_tarim
+}
+
+1158.6.1={
+	liege=0
+	holder=528 # Glass needs somewhere to invade the Mani Katti shrine from, and the Lorca are gone...
+	historical_nomad = no
+}
+1159.02.01 = {
+	#holder=538 # Glass is dead
+	historical_nomad = yes
+	#holder=502 #Dayan
+	holder=524 # Djute
+}
+1180.1.1={
+	holder=517 # Monke
+}
+#1189.1.1={
+#	holder=505 # Sin
+#}

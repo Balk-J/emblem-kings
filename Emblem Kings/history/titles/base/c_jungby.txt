@@ -1,0 +1,41 @@
+# c_jungby > d_jungby
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_jungby
+	#holder = 0
+}
+440.1.1={
+	holder=824 # 
+}
+449.1.1={
+	holder=801 # Galle I, following the Great Purge
+}
+649.1.1={
+	holder=1007 # Ulir
+}
+679.1.1={
+	holder=1224 # 
+}
+702.1.1={
+	holder=1225 # 
+}
+718.1.1={
+	holder=1226 # 
+}
+722.1.1={
+	holder=1078 # Ring
+}
+757.1.1={
+	holder=1082 # Edain
+}
+760.1.1={
+	holder=1083 # Andrey
+}
+761.1.1={
+	holder=1086 # Scipio
+}
+779.1.1={
+	holder=1084 # Febail
+}

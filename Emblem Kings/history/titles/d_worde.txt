@@ -10,6 +10,9 @@
 #180.1.1={
 #	liege=k_lycian_league
 #}
+180.1.1={
+	holder=2012 
+}
 
 1120.1.1={
 	holder=176 #Ranward's father
