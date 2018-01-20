@@ -1,53 +1,57 @@
-# d_verdane > k_verdane
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 	liege = k_verdane
-	#holder = 0
 }
-440.1.1={
+0440.01.01={
 	holder=837 # 
 }
-466.1.1={
+0466.01.01={
 	holder=1172 # 
 }
-509.1.1={
+0509.01.01={
 	holder=1173 # 
 }
-536.1.1={
+0536.01.01={
 	holder=1174 # 
 }
-580.1.1={
+0580.01.01={
 	holder=1175 # 
 }
-608.1.1={
+0608.01.01={
 	holder=1176 # 
 }
-634.1.1={
+0634.01.01={
 	holder=1177 # 
 }
-655.1.1={
+0655.01.01={
 	liege = k_verdane
 }
-680.1.1={
+0680.01.01={
 	holder=1178 # 
 }
-701.1.1={
+0701.01.01={
 	holder=1179 # 
 }
-715.1.1={
+0715.01.01={
 	holder=1180 # Batou
 }
-758.1.1={
+0758.01.01={
 	liege = k_grannvale
 	holder=1240 # Barbarian
 }
-761.1.1={
+0758.01.01={
+	holder=3201
+}
+0761.01.01={
 	holder=0 
 	liege = 0
 }
-779.1.1={
+0779.01.01={
 	liege = k_verdane
 	holder=1038 # Should be Jamke's son, but since we can't assume...
+}
+0819.01.01={
+	liege = k_grannvale
 }

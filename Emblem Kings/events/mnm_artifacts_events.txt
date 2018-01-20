@@ -8147,7 +8147,7 @@ character_event = {
     option = { 
         name = {
             text = EXCELLENT
-            trigger = { FROM = { NOT = { has_character_flag = armor_set }  }
+            trigger = { FROM = { NOT = { has_character_flag = armor_set }  } }
         } 
         name = {
             text = EVTOPTA_MNM_9122_ARMOR

@@ -377,7 +377,6 @@ pagan_group = {
 		priests_can_marry = yes
 		female_temple_holders = yes
 		defensive_attrition = yes
-		allow_looting = yes
 		max_consorts = 3
 		reformed = earthen_pagan_reformed
 		intermarry = church_of_edda
@@ -389,6 +388,42 @@ pagan_group = {
 		
 		dislike_tribal_organization = yes
 	}	
+	
+	dragon_gods = {
+		pre_reformed = yes
+		graphical_culture = westerngfx
+		
+		icon = 20
+		allow_in_ruler_designer = no # Never
+		color = { 0.1 0.1 0.1 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS 
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		#crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		investiture = no
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_retire_to_monastery = yes
+		can_grant_claim = no
+		can_call_crusade = no
+		can_have_antipopes = no
+		priests_can_marry = yes
+		priests_can_inherit = no
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+			
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
 }
 
 raider_group = { 
@@ -454,7 +489,7 @@ raider_group = {
 		graphical_culture = norsegfx
 		#pre_reformed = yes
 
-		icon = 11
+		icon = 21
 		
 		color = { 0.4 0.4 0.4 }
 		
@@ -642,42 +677,6 @@ draconic_group = {
 		religious_clothing_priest = 1
 	}
 	
-	dragon_gods = {
-		pre_reformed = yes
-		graphical_culture = westerngfx
-		
-		icon = 1
-		heresy_icon = 2
-		allow_in_ruler_designer = no # Never
-		color = { 0.1 0.1 0.1 }
-		
-		high_god_name = GOD_THE_CREATOR
-		
-		god_names = {
-			GOD_THE_SPIRITS 
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		#crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
-		priest_title = PRIEST
-		
-		investiture = no
-		can_excommunicate = no
-		can_grant_divorce = no
-		can_retire_to_monastery = yes
-		can_grant_claim = no
-		can_call_crusade = no
-		can_have_antipopes = no
-		priests_can_marry = yes
-		priests_can_inherit = no
-		female_temple_holders = yes
-		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
-			
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-	}
 	
 	church_of_edda = {
 		graphical_culture = westerngfx

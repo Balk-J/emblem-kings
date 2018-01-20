@@ -484,6 +484,12 @@
         }
     }  
 }
+# for Ralf
+2197={
+	name="of Emne" # TODO: get a better name
+	culture="mansterian"
+	religion="church_of_edda"
+}
 # Irish from vanilla
 1537={
 	name="Mac Carthaigh"

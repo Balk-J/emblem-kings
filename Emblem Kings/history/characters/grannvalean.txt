@@ -1160,8 +1160,8 @@
 1046={
 	name="Lene"
 	female=yes
-	#dynasty=1003
-	dynasty=1039
+	dynasty=1003
+	#dynasty=1039
 	mother=1045
 	culture=grannvalean
 	religion=church_of_edda
@@ -1169,6 +1169,7 @@
 	trait=holy_blood_latent_blagi
 	760.1.1={ # 17?
 		birth=yes 
+		dynasty=1039
 	}
 	765.1.1={ 
 		employer=1253 # Bramsel of Darna
@@ -1206,9 +1207,9 @@
 # Silvia's son
 1047={
 	name="Coirpre"
-	#dynasty=1003
-	dynasty=1039
-	#mother=1045 # Doesn't know who she was! Or even that Lene is his sister?
+	dynasty=1003
+	#dynasty=1039
+	mother=1045 # Doesn't know who she was! Or even that Lene is his sister?
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
@@ -4414,7 +4415,7 @@
 1248={
 	name="Charlot"
 	dynasty=1041
-	#mother=1246 # Doesn't know who she was! Or even that Laylea is his sister?
+	mother=1246 # Doesn't know who she was! Or even that Laylea is his sister?
 	culture=grannvalean
 	religion=church_of_edda
 	disallow_random_traits=yes
@@ -4501,6 +4502,7 @@
 	name="Manfroy"
 	dna="ajbjjpaabav"
 	properties="cl0eoi00000000"
+	mother=2029 # generated
 	dynasty=2079
 	culture=grannvalean
 	religion=loptyrian
@@ -7059,7 +7061,7 @@
 # General. Nicolov's subordinate.
 1420={
 	name="Brook"
-	dynasty=2147
+	dynasty=2194
 	culture=grannvalean
 	religion=church_of_edda
 	731.1.1={ 
@@ -7297,7 +7299,7 @@
 # General defending Leonster's south gate
 1425={
 	name="Palman"
-	dynasty=2151
+	dynasty=2195
 	culture=grannvalean
 	religion=church_of_edda
 	731.1.1={ 

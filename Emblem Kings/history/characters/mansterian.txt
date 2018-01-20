@@ -1029,6 +1029,7 @@
 }
 1354={
 	name="Selphina"
+	father=1353
 	female=yes
 	dynasty=2109
 	culture=mansterian
@@ -2976,7 +2977,7 @@
 # A traveling mercenary who joins Leif's army to help fight against the empire.
 1410={
 	name="Ralf"
-	dynasty=2142
+	dynasty=2197
 	culture=mansterian
 	religion=church_of_edda
 	disallow_random_traits=yes

@@ -179,6 +179,7 @@
 
 105 = {
 	name="Elbert" #Peer = Paladin?
+	father=2066 # generated
 	dynasty=102
     dna="bmlmkchfegc" 
     properties="ce0ced00000000"
@@ -640,6 +641,7 @@
 
 113 = {
 	name="Astolfo" #non-canon; Marquess Ostia and father of Uther/Hector
+	mother=2033 # generated
 	dynasty=101
 	
 	religion=elimine_church
@@ -691,6 +693,7 @@
 
 115 = {
 	name="Georg"
+	mother=2161 # generated
 	dynasty=106
 	
 	religion=elimine_church
@@ -731,6 +734,7 @@
 
 117 = {
 	name="Danan" #Marquess Araphen from FE7, no canon name
+	father=2259 # generated
 	dynasty=110
 	
 	religion=elimine_church
@@ -752,6 +756,7 @@
 
 118 = {
 	name="Darin"
+	father=2129 # generated
 	dynasty=104
 	dna="bkbiddcffbz" 
 	properties="cg0chd00000000"
@@ -864,6 +869,7 @@
 
 121 = {
 	name="Alen" #Raven and Priscilla's father, non-canonical
+	father=2359 # generated
 	dynasty=113
 	
 	religion=elimine_church
@@ -3120,6 +3126,7 @@
 }
 176 = {
 	name="Wilson" #non-canon, father for Ranward
+	mother=2392 # generated
 	dynasty=116
 	
 	religion=elimine_church
@@ -3138,6 +3145,7 @@
 
 177 = {
 	name="Henning"  #non-canon, father for Tiena
+	father=2326 # generated
 	dynasty=112
 	
 	religion=elimine_church
@@ -3674,6 +3682,7 @@
 
 193 = {
 	name="Lundgren" #non-canon. for Santaruz to continue the line after Helman bites it
+	father=2193 # generated
 	dynasty=107
 	
 	religion=elimine_church
@@ -3705,6 +3714,7 @@
 
 195 = {
 	name="Renault" #non-canon, Marquess for Ryerde
+	mother=2425 # generated
 	dynasty=129
 	
 	religion=elimine_church
@@ -3720,6 +3730,7 @@
 196 = {
 	name="Madelyn" #non-canon, Marquess for Tuscana
 	female=yes
+	mother=2293 # generated
 	dynasty=111
 	
 	religion=elimine_church
@@ -3734,6 +3745,7 @@
 
 197 = {
 	name="Kruzard" #non-canon, Marquess for Kathalet
+	father=2225 # generated
 	dynasty=109
 	
 	religion=elimine_church
@@ -3751,6 +3763,7 @@
 	
 	religion=elimine_church
 	culture=lycian
+	mother=2099 # generated
 	dynasty=103
 	
 	1050.01.01={

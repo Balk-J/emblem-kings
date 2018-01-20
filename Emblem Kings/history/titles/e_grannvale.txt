@@ -1,18 +1,16 @@
-# e_jugdral
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
-	#holder = 0
 }
-761.1.1={
+0761.01.01={
 	holder = 1049 # Arvis. *Technically* Deirdre, but well...
 }
-777.1.1={
+0777.01.01={
 	holder=1051 # Julius
 	set_global_flag = loptyr_revived
 }
-779.1.1={
+0779.01.01={
 	holder=0 # Destroyed
 	set_global_flag = loptyr_defeated
 }

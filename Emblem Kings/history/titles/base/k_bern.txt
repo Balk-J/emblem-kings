@@ -1,0 +1,28 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	law = crown_authority_1
+	effect = { 
+		set_title_flag = fire_emblem_succession
+	}
+}
+#180.1.1={
+#	liege=e_elibe
+#}
+180.1.1={
+	holder=401 #Hartmut
+}
+1122.1.1={
+	holder=402 #Desmond
+}
+1165.1.1={
+	holder=403 #Zephiel
+}
+1180.1.1={
+	set_global_flag = demon_dragon_discovered
+}
+1181.1.1={
+	holder=404 #Guinivere
+}

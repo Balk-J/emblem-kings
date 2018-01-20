@@ -517,6 +517,19 @@ character_event = {
 				}
 			}
 		}
+		# Hide Silvia's dynasty. Doing it here so we can keep the history file correct.
+		c_1045 = {
+			set_father = 0
+		}
+		
+		# Charlot doesn't know his mother
+		c_1248 = {
+			set_mother = 0
+		}
+		# Neither does Coirpre
+		c_1247 = {
+			set_mother = 0
+		}
 		
 	}
 	option = {

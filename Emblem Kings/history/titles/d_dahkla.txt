@@ -1,21 +1,19 @@
-# d_dahkla > k_yied
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 	liege = k_yied
-	#holder = 0
 }
-180.1.1={
+0180.01.01={
 	holder = 0
 	de_jure_liege = k_lubeck
 }
-646.1.1={
+0646.01.01={
 	holder = 1313
 }
-649.1.1={
+0649.01.01={
 	de_jure_liege = k_yied
 }
-686.1.1={
+0686.01.01={
 	holder = 0
 }

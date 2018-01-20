@@ -10,6 +10,9 @@
 180.1.1={
 	liege=d_media
 }
+180.1.1={
+	holder=2526
+}
 
 1110.1.1={
 	holder=525 # Djute

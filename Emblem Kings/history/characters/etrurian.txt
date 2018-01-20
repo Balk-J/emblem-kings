@@ -1324,7 +1324,7 @@
 
 232 = {
 	name="Galdes" #commander of mines in the western Isles. 30? proud, cruel, wroth.
-	dynasty=217
+	dynasty=2196
 	
 	religion=elimine_church
 	culture=etrurian
@@ -1384,6 +1384,7 @@
 #ancestors to make Hellene-Louise relationship work
 234 = {
 	name="Arcard" #Mordred's great-great-grandfather
+	father=2458 # generated
 	dynasty=202
 	
 	religion=elimine_church

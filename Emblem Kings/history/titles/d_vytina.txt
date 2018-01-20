@@ -1,15 +1,11 @@
-# e_elibe
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
-#180.1.1={
-#	liege=k_nabata
-#}
-1151.1.1={
+1151.01.01={
 	holder=613 # Paul
 }
-1161.1.1={
+1161.01.01={
 	holder=0 # Paul's dead
 }

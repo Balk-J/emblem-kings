@@ -765,7 +765,8 @@ e_elibe = {
 				color={ 13 129 84 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				holy_site = bandit
+				holy_site = pirate
 
 				b_badon_keep = {
 				}
@@ -1124,6 +1125,8 @@ e_elibe = {
 				holy_site = elibe_spirits_pagan
 				holy_site = anima
 				holy_site = dark
+				holy_site = dragon_gods
+				holy_site = pagan
 
 				b_arcadia = {
 				}
@@ -2971,6 +2974,8 @@ e_elibe = {
 				color={ 46 46 76 }
 				color2={ 255 255 255 }
 
+				holy_site = dragon_gods
+				holy_site = pagan
 
 				b_neandreia = {
 				}
@@ -4934,6 +4939,7 @@ e_elibe = {
 				color={ 60 70 114 }
 				color2={ 255 255 255 }
 
+				holy_site = pagan
 
 				b_solwood = {
 				}
@@ -5714,6 +5720,8 @@ e_elibe = {
 
 				holy_site = anima
 				holy_site = dark
+				holy_site = dragon_gods
+				holy_site = pagan
 
 				b_the_dragons_gate = {
 				}
@@ -5726,6 +5734,8 @@ e_elibe = {
 				b_potestas = {
 				}
 				b_auctoritas = {
+				}
+				b_veritas = {
 				}
 			}
 			c_temperantia = {
@@ -5743,6 +5753,12 @@ e_elibe = {
 				}
 				b_clementia = {
 				}
+				b_castitas = {
+				}
+				b_caritas = {
+				}
+				b_industria = {
+				}
 			}
 			c_fortitudo = {
 				color={ 62 79 79 }
@@ -5754,6 +5770,14 @@ e_elibe = {
 				b_fortitudo_2 = {
 				}
 				b_fortitudo_3 = {
+				}
+				b_constantia = {
+				}
+				b_firmitas = {
+				}
+				b_disciplina = {
+				}
+				b_salubritas = {
 				}
 			}
 			c_iustitia = {
@@ -5768,6 +5792,12 @@ e_elibe = {
 				b_iustitia_3 = {
 				}
 				b_dignitas = {
+				}
+				b_humanitas = {
+				}
+				b_humilitas = {
+				}
+				b_severitas = {
 				}
 			}
 		}
@@ -5789,6 +5819,8 @@ e_elibe = {
 				color={ 106 96 108 }
 				color2={ 255 255 255 }
 
+				holy_site = dragon_gods
+				holy_site = pagan
 
 				b_calach = {
 				}
@@ -6211,7 +6243,6 @@ e_elibe = {
 				color={ 206 99 99 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
 
 				b_calynda = {
 				}
@@ -6294,7 +6325,6 @@ e_elibe = {
 				color={ 226 175 175 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
 
 				b_marciana = {
 				}
@@ -6608,7 +6638,8 @@ e_elibe = {
 				color={ 248 104 71 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				holy_site = bandit
+				holy_site = pirate
 
 				b_taliver = {
 				}
@@ -6652,7 +6683,8 @@ e_elibe = {
 				color={ 157 135 130 }
 				color2={ 255 255 255 }
 
-				holy_site = raider_pagan
+				holy_site = bandit
+				holy_site = pirate
 
 				b_ganelon = {
 				}
@@ -6704,6 +6736,8 @@ e_elibe = {
 				color={ 228 157 57 }
 				color2={ 255 255 255 }
 
+				holy_site = bandit
+				holy_site = pirate
 
 				b_verdane_castle = {
 				}
@@ -7188,6 +7222,8 @@ e_elibe = {
 
 				holy_site = earthen_pagan
 				holy_site = earthen_pagan_reformed
+				holy_site = bandit
+				holy_site = pirate
 
 				b_orgahil = {
 				}
@@ -7369,6 +7405,7 @@ e_elibe = {
 				color2={ 255 255 255 }
 
 				holy_site = church_of_edda
+				holy_site = dragon_gods
 
 				b_darna_fortress = {
 				}

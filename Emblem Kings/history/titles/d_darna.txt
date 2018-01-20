@@ -1,27 +1,27 @@
-# d_darna > k_yied
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 	liege = k_yied
-	#holder = 0
 }
-649.1.1={
+0649.01.01={
 	holder=1310 # filler
 }
-736.1.1={
+0701.01.01={
+	holder=4245
+}
+0736.01.01={
 	holder=1028 # filler
 }
-#754.1.1={
-770.1.1={
+0770.01.01={
 	holder=1253 # Bramsel
 }
-770.1.1={
+0770.01.01={
 	liege = e_grannvale 
 }
-778.1.1={
+0778.01.01={
 	holder=0 # 
 }
-779.1.1={
+0779.01.01={
 	liege = k_yied 
 }

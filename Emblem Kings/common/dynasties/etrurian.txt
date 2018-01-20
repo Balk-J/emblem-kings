@@ -395,6 +395,11 @@
     }	
 }
 
+2196={
+	name="of Vicentia"
+	culture="etrurian"	
+}
+
 221={
 	name="of Tournemire"
 	culture="etrurian"	

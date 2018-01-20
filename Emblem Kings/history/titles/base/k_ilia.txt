@@ -1,0 +1,22 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=e_elibe
+#}
+#180.1.1={
+#	holder=301 # Barigan. Not really... but let's put him here anyway just for the recognition.
+#}
+#210.1.1={
+#	holder=0 
+#}
+1185.1.1={
+	holder=326 # Zelots
+	# with leadership like that, who needs enemies?
+}
+1204.1.1={
+	holder=327 # Zelots and Juno's daughter
+}

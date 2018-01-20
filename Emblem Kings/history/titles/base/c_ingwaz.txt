@@ -5,3 +5,4 @@
 	law = succ_primogeniture
 	liege = d_jungby
 	#holder = 0
+}

@@ -85,8 +85,8 @@ character_event = {
 	option = {
 		name = OK
 		capital_scope = {
-			province = {
-				spawn_disease = bubonic_plague
+			province = {	
+		add_holding_slot = 1
 			}
 		}
 	}

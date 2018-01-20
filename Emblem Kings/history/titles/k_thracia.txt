@@ -1,30 +1,31 @@
-# k_thracia > e_grannvale
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 	liege = e_grannvale
-	#holder = 0
 }
-649.1.1={
+0649.01.01={
 	liege=0
 	holder = 1011 # Dain
 }
-660.1.1={
+0660.01.01={
 	holder = 1025 # Dain's son
 }
-692.1.1={
+0692.01.01={
 	holder = 1151 # 
 }
-719.1.1={
+0719.01.01={
 	holder = 1152 # 
 }
-729.1.1={
+0729.01.01={
 	holder = 1153 # 
 }
-749.1.1={
+0749.01.01={
 	holder = 1154 # Travant
 }
-778.1.1={
+0778.01.01={
 	holder = 1162 # Leif 
+}
+0779.01.01={
+	holder = 0
 }

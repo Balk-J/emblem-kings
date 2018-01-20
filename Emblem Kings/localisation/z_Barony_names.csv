@@ -11,6 +11,8 @@ b_potestas;Potestas;Potestas;Potestas;;Potestas;;;;;;;;;x
 b_potestas_adj;Potestasite;Potestasite;Potestasite;;Potestasite;;;;;;;;;x
 b_auctoritas;Auctoritas;Auctoritas;Auctoritas;;Auctoritas;;;;;;;;;x
 b_auctoritas_adj;Auctoritasite;Auctoritasite;Auctoritasite;;Auctoritasite;;;;;;;;;x
+b_veritas;Veritas;Veritas;Veritas;;Veritas;;;;;;;;;x
+b_veritas_adj;Veritasite;Veritasite;Veritasite;;Veritasite;;;;;;;;;x
 b_temperantia;Temperantia;Temperantia;Temperantia;;Temperantia;;;;;;;;;x
 b_temperantia_adj;Temperantian;Temperantian;Temperantian;;Temperantian;;;;;;;;;x
 b_rottentree;Rottentree;Rottentree;Rottentree;;Rottentree;;;;;;;;;x
@@ -19,12 +21,26 @@ b_prudentia;Prudentia;Prudentia;Prudentia;;Prudentia;;;;;;;;;x
 b_prudentia_adj;Prudentian;Prudentian;Prudentian;;Prudentian;;;;;;;;;x
 b_clementia;Clementia;Clementia;Clementia;;Clementia;;;;;;;;;x
 b_clementia_adj;Clementian;Clementian;Clementian;;Clementian;;;;;;;;;x
+b_castitas;Castitas;Castitas;Castitas;;Castitas;;;;;;;;;x
+b_castitas_adj;Castitasite;Castitasite;Castitasite;;Castitasite;;;;;;;;;x
+b_caritas;Caritas;Caritas;Caritas;;Caritas;;;;;;;;;x
+b_caritas_adj;Caritasite;Caritasite;Caritasite;;Caritasite;;;;;;;;;x
+b_industria;Industria;Industria;Industria;;Industria;;;;;;;;;x
+b_industria_adj;Industrian;Industrian;Industrian;;Industrian;;;;;;;;;x
 b_fortitudo;Fortitudo;Fortitudo;Fortitudo;;Fortitudo;;;;;;;;;x
 b_fortitudo_adj;Fortitudoan;Fortitudoan;Fortitudoan;;Fortitudoan;;;;;;;;;x
 b_fortitudo_2;Fortitudo;Fortitudo;Fortitudo;;Fortitudo;;;;;;;;;x
 b_fortitudo_2_adj;Fortitudoan;Fortitudoan;Fortitudoan;;Fortitudoan;;;;;;;;;x
 b_fortitudo_3;Fortitudo;Fortitudo;Fortitudo;;Fortitudo;;;;;;;;;x
 b_fortitudo_3_adj;Fortitudoan;Fortitudoan;Fortitudoan;;Fortitudoan;;;;;;;;;x
+b_constantia;Constantia;Constantia;Constantia;;Constantia;;;;;;;;;x
+b_constantia_adj;Constantian;Constantian;Constantian;;Constantian;;;;;;;;;x
+b_firmitas;Firmitas;Firmitas;Firmitas;;Firmitas;;;;;;;;;x
+b_firmitas_adj;Firmitasite;Firmitasite;Firmitasite;;Firmitasite;;;;;;;;;x
+b_disciplina;Disciplina;Disciplina;Disciplina;;Disciplina;;;;;;;;;x
+b_disciplina_adj;Disciplinan;Disciplinan;Disciplinan;;Disciplinan;;;;;;;;;x
+b_salubritas;Salubritas;Salubritas;Salubritas;;Salubritas;;;;;;;;;x
+b_salubritas_adj;Salubritasite;Salubritasite;Salubritasite;;Salubritasite;;;;;;;;;x
 b_iustitia;Iustitia;Iustitia;Iustitia;;Iustitia;;;;;;;;;x
 b_iustitia_adj;Iustitian;Iustitian;Iustitian;;Iustitian;;;;;;;;;x
 b_iustitia_2;Iustitia;Iustitia;Iustitia;;Iustitia;;;;;;;;;x
@@ -33,6 +49,12 @@ b_iustitia_3;Iustitia;Iustitia;Iustitia;;Iustitia;;;;;;;;;x
 b_iustitia_3_adj;Iustitian;Iustitian;Iustitian;;Iustitian;;;;;;;;;x
 b_dignitas;Dignitas;Dignitas;Dignitas;;Dignitas;;;;;;;;;x
 b_dignitas_adj;Dignitasite;Dignitasite;Dignitasite;;Dignitasite;;;;;;;;;x
+b_humanitas;Humanitas;Humanitas;Humanitas;;Humanitas;;;;;;;;;x
+b_humanitas_adj;Humanitasite;Humanitasite;Humanitasite;;Humanitasite;;;;;;;;;x
+b_humilitas;Humilitas;Humilitas;Humilitas;;Humilitas;;;;;;;;;x
+b_humilitas_adj;Humilitasite;Humilitasite;Humilitasite;;Humilitasite;;;;;;;;;x
+b_severitas;Severitas;Severitas;Severitas;;Severitas;;;;;;;;;x
+b_severitas_adj;Severitasite;Severitasite;Severitasite;;Severitasite;;;;;;;;;x
 b_bern_keep;Bern Keep;Bern Keep;Bern Keep;;Bern Keep;;;;;;;;;x
 b_bern_keep_adj;Bern Keepite;Bern Keepite;Bern Keepite;;Bern Keepite;;;;;;;;;x
 b_bern;Bern;Bern;Bern;;Bern;;;;;;;;;x

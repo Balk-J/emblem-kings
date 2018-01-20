@@ -1,0 +1,32 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=k_lycia
+#}
+#180.1.1={
+#	liege=k_lycian_league
+#}
+180.1.1={
+	holder=2022
+}
+
+1141.1.1={
+	holder=105 #Elbert 
+}
+
+1160.1.1={
+	holder=107 #Eliwood 
+}
+
+1180.1.1={
+	holder=108 #Roy 
+}
+
+1181.1.1 = {
+	de_jure_liege=k_lycia
+	liege=k_lycia
+}

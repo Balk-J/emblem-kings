@@ -1,9 +1,5 @@
-# e_elibe
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
-#180.1.1={
-#	liege=k_ilia
-#}

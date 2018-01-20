@@ -252,4 +252,15 @@ e_crusaders = {
 		always = no
 	}
 }
+k_new_thracia = {
+	color={ 255 0 0 }
+	capital = 435 #	Leonster
+	allow = {
+		FROM = {
+			any_previous_holder = {
+				always = yes
+			}
+		}
+	}
+}
 

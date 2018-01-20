@@ -1,35 +1,51 @@
-# d_melgln > k_manster
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 	liege = k_manster
-	#holder = 0
 }
-180.1.1={
+0180.01.01={
 	de_jure_liege = k_melgln
 }
-440.1.1={
+0440.01.01={
 	liege = 0
 	holder=852 # 
 }
-649.1.1={
+0499.01.03={
+	holder=6322
+}
+0548.01.02={
+	holder=6321
+}
+0589.01.02={
+	holder=6320
+}
+0649.01.01={
 	holder=1012 # Noba TODO: add filler character
 	de_jure_liege = k_thracia
 	liege = k_thracia
 }
-666.1.1={
+0666.01.01={
 	de_jure_liege = k_manster
 	liege = k_manster
 }
-762.1.1={
+0685.01.02={
+	holder=6325
+}
+0728.01.01={
+	holder=6324
+}
+0762.01.01={
 	liege = k_thracia # Travant invades
 }
-763.1.1={
+0763.01.01={
 	liege = k_manster # Grannvale invades
 	holder=1066 # Ishtore
 }
-778.1.1={
+0778.01.01={
 	holder=0 # Ishtore's dead
-	# Leif?
+}
+0779.01.01={
+	de_jure_liege = k_new_thracia
+	liege = k_new_thracia
 }

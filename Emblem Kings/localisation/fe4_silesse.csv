@@ -1,0 +1,124 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe4_silesse.1.desc;The court is in an uproar after the war in Verdane. Many people are going back and forth, bringing news of the fighting and preparing for battle just in case. If I wanted to... hasten... my ascent to the throne, this would be an excellent chance.;;;;;;;;;;;;;x
+fe4_silesse.1.A;Seize the opportunity!;;;;;;;;;;;;;x
+fe4_silesse.1.B;That would be wrong.;;;;;;;;;;;;;x
+fe4_silesse.2.desc;Now that I rule Agustria, I have the power to take the lands that are rightfully mine. Verdane should be an easy target after the recent war. Achieving victory there would be the first step in becoming the new world leader.;;;;;;;;;;;;;x
+fe4_silesse.2.A;I'll be emperor of the world!;;;;;;;;;;;;;x
+fe4_silesse.2.A.tooltip;§Y[Root.GetTitledName]§! invades §YVerdane§!;;;;;;;;;;;;;x
+fe4_silesse.2.B;That would be incredibly foolish.;;;;;;;;;;;;;x
+fe4_silesse.4.desc;It has been a year since Grannvale occupied most of Agustria after my incompetent vassals lost the war. The indignity is intolerable! I should take back my country at once!;;;;;;;;;;;;;x
+fe4_silesse.4.A;To arms!;;;;;;;;;;;;;x
+fe4_silesse.4.A.tooltip;§Y[Root.GetTitledName]§! invades occupied §YAgustria§!;;;;;;;;;;;;;x
+fe4_silesse.4.B;Perhaps I should stop before this gets any worse.;;;;;;;;;;;;;x
+fe4_silesse.8.desc;That woman over there! The one dressed like a pirate! She's my sister Brigid, isn't she? I have to talk to her and tell her who she is!;;;;;;;;;;;;;x
+fe4_silesse.8.A;What am I waiting for?;;;;;;;;;;;;;x
+fe4_silesse.8.B;Maybe it isn't really her...;;;;;;;;;;;;;x
+fe4_silesse.9.desc;A woman who looks just like me came to see me today. She says I'm her long-lost twin sister. Could she be right? She does feel familiar...;;;;;;;;;;;;;x
+fe4_silesse.9.A;That bow... I'm starting to remember!;;;;;;;;;;;;;x
+fe4_silesse.9.B;I can't give up my life as Brigid of Orgahil.;;;;;;;;;;;;;x
+fe4_silesse.10.desc;Brigid refused to consider the idea that we're sisters. She wouldn't even touch the Yewfelle...;;;;;;;;;;;;;x
+fe4_silesse.10.A;Why?;;;;;;;;;;;;;x
+fe4_silesse.11.title;The Pirate Queen;;;;;;;;;;;;;x
+fe4_silesse.11.desc;Brigid of Jungby, the long-lost daughter of Lord Ring, has returned! She was thought lost when her father's ship was attacked by pirates during their pilgrimage to Blagi Tower. Brigid was adopted by the pirate captain and lived on Orgahil until some sort of falling out forced her to flee the island. Fortunately, she encountered some knights of Grannvale who guided her back to her family.;;;;;;;;;;;;;x
+fe4_silesse.11.A;A happy ending.;;;;;;;;;;;;;x
+fe4_silesse.13.desc;Ill rumors have been making their way around court at [Root.Capital.GetName] of late. It seems that [From.GetTitledName] has been conspiring to seize the throne, with the help of nobles in Agustria, Isaach, and my own inner circle. [From.GetFirstName] had Kurth murdered and will move against me soon!;;;;;;;;;;;;;x
+fe4_silesse.13.A;Apprehend [From.GetFirstName] and [From.GetHerHis] rebels!;;;;;;;;;;;;;x
+fe4_silesse.13.B;I will not believe this baseless slander.;;;;;;;;;;;;;x
+fe4_silesse.14.desc;[Root.GetTitledFirstName],\nI command that you return to the capital at once to answer for your crimes against [From.PrimaryTitle.GetName]. We know that you have been conspiring with foreign agents to seize the crown, and that your allies murdered Prince Kurth as part of your vile scheme. Come quietly and this will all end swiftly.\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.14.A;I can't fight the [From.GetTitle]. I should flee until the truth comes out.;;;;;;;;;;;;;x
+fe4_silesse.14.A.tooltip;§Y[Root.GetTitledName]§! abandons [Root.GetHerHis] current holdings and flees to another country.;;;;;;;;;;;;;x
+fe4_silesse.14.B;I will prove my innocence on the battlefield!;;;;;;;;;;;;;x
+fe4_silesse.14.B.tooltip;§Y[Root.GetTitledName]§! declares war on §Y[From.GetTitledName]§!;;;;;;;;;;;;;x
+fe4_silesse.14.C;I submit to the [From.GetTitle]'s justice.;;;;;;;;;;;;;x
+fe4_silesse.15.desc;[Root.GetTitledFirstName],\nI deny any knowledge of the crimes for which I stand accused, and I will not submit to a trial while members of your court are conspiring to frame me. I am prepared to prove my innocence on the field of battle if necessary. \n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.15.A;Then war it is!;;;;;;;;;;;;;x
+fe4_silesse.16.desc;The [Root.TopLiege.GetTitle] has commanded us to invade Verdane. There's no reason for us to fight. I need to get [Root.TopLiege.GetHerHim] to see reason.;;;;;;;;;;;;;x
+fe4_silesse.16.A;I know I'll get through to [Root.TopLiege.GetHerHim].;;;;;;;;;;;;;x
+fe4_silesse.16.B;[Root.TopLiege.GetSheHeCap]'s not about to listen to me.;;;;;;;;;;;;;x
+fe4_silesse.17.desc;[Root.PrimaryTitle.GetFOA],\nPlease consider putting an end to this invasion of Verdane. Your father always strived for peace with our neighbors. Besides, a war would be very hard on our people and put your reputation at risk. You must not let this continue!\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.17.A;I rule [Root.PrimaryTitle.GetName]! Throw this trash in the dungeon!;;;;;;;;;;;;;x
+fe4_silesse.17.B;You have a point. Peace it is.;;;;;;;;;;;;;x
+fe4_silesse.17.C;It'll be fine. Do try not to panic.;;;;;;;;;;;;;x
+fe4_silesse.18.desc;[Root.GetTitledFirstName],\nMy vassals misintrepeted my orders to fortify our borders. I assure you that I never had any intention to invade [Root.PrimaryTitle.GetName]. I will see to it that those responsible for this foolishness are dealt with. Let us end these hostilities and renew our old friendship.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.18.A;Will you go away if I say yes?;;;;;;;;;;;;;x
+fe4_silesse.18.B;There's no backing out of this one, [GetRootFromInsult ].;;;;;;;;;;;;;x
+fe4_silesse.19.desc;[Root.GetTitledFirstName],\nI accept your offer of a white peace. I trust you and your vassals will be less hasty in the future.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.19.A;I think I just avoided a terrible mistake.;;;;;;;;;;;;;x
+fe4_silesse.20.desc;[Root.GetTitledFirstName],\nYou would attack [From.PrimaryTitle.GetName] and then try to lie your way out of a fight? We will show you the magnitude of your blunder.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.20.A;No one talks down to me like that!;;;;;;;;;;;;;x
+fe4_silesse.21.desc;[FromFrom.GetTitledName] angered the [From.GetTitle] and got thrown the dungeon, did [FromFrom.GetSheHe]? This could be an opportunity fo us...;;;;;;;;;;;;;x
+fe4_silesse.21.A;Now's our chance to even the score!;;;;;;;;;;;;;x
+fe4_silesse.21.B;We already have a war to worry about.;;;;;;;;;;;;;x
+fe4_silesse.22.desc;My [From.GetLordLady] [From.GetTitledFirstName] flew into a rage when I tried to persaude [From.GetHerHim] to end the war. [From.GetSheHeCap] accused me of trying to make [From.GetHerHim] look like a fool for years. Then [From.GetSheHe] had me thrown in the dungeon.;;;;;;;;;;;;;x
+fe4_silesse.22.A;Wait, [From.PrimaryTitle.GetFOA]... NO!;;;;;;;;;;;;;x
+fe4_silesse.23.desc;[FromFromFrom.GetFirstName] was imprisoned when he went to speak with [FromFrom.GetTitledFirstName]! And now the forces of [From.PrimaryTitle.GetName] are trying to take the castle!;;;;;;;;;;;;;x
+fe4_silesse.23.A;Send word to Lord Sigurd at once.;;;;;;;;;;;;;x
+fe4_silesse.23.B;We'll have to hold them off ourselves.;;;;;;;;;;;;;x
+fe4_silesse.24.desc;[Root.GetLordLady] [Root.GetFirstName],\nI need your help. Our castle is under attack and it seems all of [From.TopLiege.PrimaryTitle.GetName] has turned against us. Please help me save my brother!;;;;;;;;;;;;;x
+fe4_silesse.24.A;I promise.;;;;;;;;;;;;;x
+fe4_silesse.24.B;I can't help you.;;;;;;;;;;;;;x
+fe4_silesse.25.desc;I can't stand staying here any longer! It would be so nice to leave. Travel... see the world...;;;;;;;;;;;;;x
+fe4_silesse.25.A;Time to go!;;;;;;;;;;;;;x
+fe4_silesse.25.B;I really can't...;;;;;;;;;;;;;x
+fe4_silesse.27.desc;At times like this I'm disgusted to be a noble[Root.GetManWoman]. My uncles are constantly squabbling over who will inherit what and which lands are rightfully whose, while ignoring the needs of their subjects. I'd love to just leave this life behind and travel the world as a bard.;;;;;;;;;;;;;x
+fe4_silesse.27.A;What's stopping me?;;;;;;;;;;;;;x
+fe4_silesse.27.B;My duty is here.;;;;;;;;;;;;;x
+fe4_silesse.28.desc;Even this land is not immune to the petty squables of the nobility. A war has broken out, and bandits are starting to raid the village where I have been staying.;;;;;;;;;;;;;x
+fe4_silesse.28.A;Time to go.;;;;;;;;;;;;;x
+fe4_silesse.28.B;I'll stay and do what I can to help.;;;;;;;;;;;;;x
+fe4_silesse.29.desc;A traveling bard named [From.GetFirstName] has asked to join my entourage. Apparently he had been staying in Nordion when the fighting broke out.;;;;;;;;;;;;;x
+fe4_silesse.29.A;You are welcome here.;;;;;;;;;;;;;x
+fe4_silesse.29.B;Away with you, minstrel.;;;;;;;;;;;;;x
+fe4_silesse.31.desc;[FromFrom.GetTitledFirstName] still hasn't come back yet. The realm needs [FromFrom.GetHerHim]... perhaps I should take some knights and bring [FromFrom.GetHerHim] back.;;;;;;;;;;;;;x
+fe4_silesse.31.A;The [Root.TopLiege.GetTitle] would want that.;;;;;;;;;;;;;x
+fe4_silesse.31.B;That's a bad idea.;;;;;;;;;;;;;x
+fe4_silesse.32.desc;A [From.GetManWoman] named [From.GetFirstName] has arrived at court. [From.GetSheHeCap] claims to be looking for the missing [FromFromFrom.GetTitledFirstName], and heard I knew [FromFromFrom.GetHerHis] whereabouts.;;;;;;;;;;;;;x
+fe4_silesse.32.A;It's a shame, but I cannot help you.;;;;;;;;;;;;;x
+fe4_silesse.32.B;[FromFromFrom.GetFirstName] is in [FromFromFrom.Location.GetName].;;;;;;;;;;;;;x
+fe4_silesse.32.C;[FromFromFrom.GetSheHeCap]'s been captured by my enemies and could be killed!;;;;;;;;;;;;;x
+fe4_silesse.34.desc;[From.GetFirstName] from back home managed to track me down. [From.GetSheHeCap]'s been looking for me since shortly after I left. Now [From.GetSheHe] wants me to go back home with [From.GetHerHim].;;;;;;;;;;;;;x
+fe4_silesse.34.A;Why don't you stay here with me instead?;;;;;;;;;;;;;x
+fe4_silesse.34.B;Fine, let's go.;;;;;;;;;;;;;x
+fe4_silesse.34.C;Just go back alone!;;;;;;;;;;;;;x
+fe4_silesse.35.desc;[FromFrom.GetFirstName] seems to have found [FromFrom.GetHerHis] missing [From.GetTitledFirstName]. [FromFrom.GetSheHeCap] and [FromFrom.GetHerHis] soldiers deserted me without so much as a by-your-leave!;;;;;;;;;;;;;x
+fe4_silesse.35.A;The gall of the [FromFrom.GetManWoman]!;;;;;;;;;;;;;x
+fe4_silesse.36.desc;The bard [From.GetFirstName] has taken [From.GetHerHis] leave of our court. [From.GetSheHeCap] left in the company of a [FromFrom.Culture.GetName] pegasus knight.;;;;;;;;;;;;;x
+fe4_silesse.36.A;Safe journey to you.;;;;;;;;;;;;;x
+fe4_silesse.37.desc;[From.GetFirstName] from back home managed to track me down. [From.GetSheHeCap]'s been looking for me since shortly after I left Silesse. [From.GetSheHeCap] was trying to bring me back home.;;;;;;;;;;;;;x
+fe4_silesse.37.A;You might as well stay here.;;;;;;;;;;;;;x
+fe4_silesse.37.B;You can go home now.;;;;;;;;;;;;;x
+fe4_silesse.39.desc;That [GetRootFromInsult] [From.GetFirstName] has been dragging [From.GetHerHis] feet! It's all [From.GetHerHis] fault we fared so badly in that last war. Maybe [From.GetSheHe]'s even planning to betray me. I should go make sure [From.GetSheHe] does [From.GetHerHis] part this time.;;;;;;;;;;;;;x
+fe4_silesse.39.A;I'll give [From.GetFirstName] a good talking to!;;;;;;;;;;;;;x
+fe4_silesse.39.B;No. A [Root.GetTitle] must be magnanimous.;;;;;;;;;;;;;x
+fe4_silesse.40.desc;[Root.GetFirstName]! What the hell have you been doing?! Your negligence has cost us most of the realm! If you call yourself a knight, stop stalling and attack! Or have you been plotting to overthrow my family all along? \nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.40.A;I'll have you know I'm proud to be a knight. Cross Knights, ATTACK!;;;;;;;;;;;;;x
+fe4_silesse.40.A.tooltip;§Y[Root.GetTitledName]§! gathers more knights for the defense of the realm.;;;;;;;;;;;;;x
+fe4_silesse.40.B;I understand your eagerness, but let your knights handle this.;;;;;;;;;;;;;x
+fe4_silesse.40.B.tooltip;§Y[Root.GetTitledName]§! attempts to reason with §Y[From.GetTitledName]§!.;;;;;;;;;;;;;x
+fe4_silesse.40.C;[From.PrimaryTitle.GetFOA]! You're not even listening to me!;;;;;;;;;;;;;x
+fe4_silesse.40.C.tooltip;§Y[Root.GetTitledName]§! gets angry with §Y[From.GetTitledName]§!.;;;;;;;;;;;;;x
+fe4_silesse.40.D;This is the final straw. You are no longer my [From.GetTitle].;;;;;;;;;;;;;x
+fe4_silesse.40.D.tooltip;§Y[Root.GetTitledName]§! declares independence from §Y[From.GetTitledName]§!.;;;;;;;;;;;;;x
+fe4_silesse.41.desc;[Root.PrimaryTitle.GetFOA],\nI was proud to serve as one of your knights. However, I have realized that your poor decisions will mark the end of [Root.PrimaryTitle.GetName]. To protect my people I am forced to declare [From.PrimaryTitle.GetName] independent. Please acknowledge this peacefully so we can avoid further pointless bloodshed.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.41.A;You traitor! I'll have your head for this!;;;;;;;;;;;;;x
+fe4_silesse.41.B;Fine! Good riddance!;;;;;;;;;;;;;x
+fe4_silesse.42.desc;My [GetFromRelation] [From.GetFirstName] is fighting for [From.TopLiege.GetTitledFirstName] against the army of [Root.TopLiege.PrimaryTitle.GetName]! Doesn't [From.GetSheHe] realize that's suicide?!;;;;;;;;;;;;;x
+fe4_silesse.42.A;I have to get him to stop the fighting!;;;;;;;;;;;;;x
+fe4_silesse.42.B;I trust [From.GetFirstName] to make it through safely.;;;;;;;;;;;;;x
+fe4_silesse.43.desc;[Root.GetFirstName], please! You can't fight [From.TopLiege.PrimaryTitle.GetName]! Trust your friends and hold off your attack! If [Root.TopLiege.GetFirstName] withdraws [Root.TopLiege.GetHerHis] troops, [From.TopLiege.PrimaryTitle.GetName] will also back down. \nPlease, talk with [Root.TopLiege.GetTitledFirstName]. [Root.TopLiege.GetSheHeCap] can't ignore the commander of the Cross Knights.\n\n[From.GetFirstName];;;;;;;;;;;;;x
+fe4_silesse.43.A;Okay... I'll give it one more shot.;;;;;;;;;;;;;x
+fe4_silesse.43.B;I'm sorry. Fighting is my only choice.;;;;;;;;;;;;;x
+fe4_silesse.44.desc;[Root.GetFirstName],\nI'm sorry. I don't want to see you cry, but I have no other way out of this! If [From.TopLiege.GetFirstName] is defeated, [From.TopLiege.PrimaryTitle.GetName] will fall as well. Please don't come anywhere near the fighting.\n\n[From.GetFirstName];;;;;;;;;;;;;x
+fe4_silesse.44.A;Wa... wait! [From.GetFirstName]!;;;;;;;;;;;;;x
+fe4_silesse.45.desc;[Root.PrimaryTitle.GetFOA],\nAny more fighting would be futile. Please withdraw the troops. You will take your land back someday, I'm certain of it.\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_silesse.45.A;Seize this traitor! Off with [From.GetHerHis] head!;;;;;;;;;;;;;x
+fe4_silesse.45.B;If you don't think you can take them, we will withdraw our soldiers.;;;;;;;;;;;;;x
+fe4_silesse.45.C;Get back out there and fight, damn you! This is an order from your [Root.GetTitle]!;;;;;;;;;;;;;x
+fe4_silesse.46.desc;I should've known this wouldn't go down well. When I tried to explain to [From.GetTitledFirstName] why [From.GetSheHe] needed to stand down, [From.GetSheHe] accused me of conspiring with the enemy. [From.GetSheHeCap] called for [From.GetHerHis] guards... and the headsman.;;;;;;;;;;;;;x
+fe4_silesse.46.A;This will mark the end of [From.PrimaryTitle.GetName], I'm afraid...;;;;;;;;;;;;;x
+fe4_silesse..title;;;;;;;;;;;;;;x
+fe4_silesse..desc;;;;;;;;;;;;;;x
+fe4_silesse..A;;;;;;;;;;;;;;x
+fe4_silesse..B;;;;;;;;;;;;;;x
+fe4_silesse..C;;;;;;;;;;;;;;x
+fe4_silesse..D;;;;;;;;;;;;;;x

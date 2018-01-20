@@ -1751,6 +1751,7 @@
 }
 354 = {
 	name="Sergia" 
+	mother=353
 	female=yes
 	dynasty=316
 	

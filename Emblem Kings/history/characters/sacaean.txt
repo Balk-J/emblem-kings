@@ -30,10 +30,10 @@
 
 502 = {
 	name="Dayan"
+	father=2518 # generated
 	dynasty=502
     dna="bjddewajaam" 
     properties="gl0bad00000000"
-	
 	religion=divine_sky_pagan
 	culture=sacaean
 	
@@ -766,6 +766,7 @@
 
 515 = {
 	name="Hassar" 
+	mother=2583 # generated
 	dynasty=505
 	
 	religion=divine_sky_pagan
@@ -1188,6 +1189,7 @@
 
 525= {
 	name="Megujin" 
+	mother=2551 # generated
 	dynasty=503
 	
 	religion=divine_sky_pagan

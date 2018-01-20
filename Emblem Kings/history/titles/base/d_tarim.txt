@@ -1,0 +1,22 @@
+180.1.1 = {
+	historical_nomad = yes
+}
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=k_sacae
+#}
+180.1.1={
+	holder=2527
+}
+
+1143.1.1={
+	holder=515 # Hassar
+}
+1158.6.1={
+	holder=0 # Taliver?
+}

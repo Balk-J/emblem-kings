@@ -1,45 +1,49 @@
-# k_verdane
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
-	#holder = 0
 }
-440.1.1={
+0440.01.01={
 	holder=0 # 
 	de_jure_liege = e_grann
 }
-448.1.1={
+0448.01.01={
 	holder=0 # 
 	de_jure_liege = 0
 }
-655.1.1={
+0655.01.01={
 	holder=1177 # 
 }
-680.1.1={
+0680.01.01={
 	holder=1178 # 
 }
-701.1.1={
+0701.01.01={
 	holder=1179 # 
 }
-715.1.1={
+0715.01.01={
 	holder=1180 # Batou
 }
-757.1.1={
+0757.01.01={
 	effect = { 
 		set_title_flag = sigurd_invasion_target
 	}
 }
-758.1.1={
+0758.01.01={
 	holder=0 # Destroyed; region administered by Grannvale
 	effect = { 
 		clr_title_flag = sigurd_invasion_target
 	}
 }
-761.1.1={
+0758.01.01={
+	holder=3201
+}
+0761.01.01={
 	liege=e_grannvale 
 }
-779.1.1={
+0779.01.01={
 	holder=1038 # Should be Jamke's son, but since we can't assume...
 	de_jure_liege = e_grannvale # People want to be a part of Seliph's kingdom
+}
+0819.01.01={
+	holder = 0
 }

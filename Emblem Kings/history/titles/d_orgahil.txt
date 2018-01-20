@@ -1,17 +1,24 @@
-# d_orgahil > k_orgahil
-180.1.1={
+0180.01.01={
 	law = status_of_women_4
 	law = true_cognatic_succession
 	law = succ_primogeniture
 	liege = k_orgahil
-	#holder = 0
 }
-440.1.1={
+0440.01.01={
 	holder=1019 # 
 }
-629.1.1={
+0507.01.02={
+	holder=6540
+}
+0539.01.02={
+	holder=6539
+}
+0583.01.02={
+	holder=6538
+}
+0629.01.01={
 	holder=1297 # Filler
 }
-719.1.1={
+0719.01.01={
 	holder=0
 }

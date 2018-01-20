@@ -550,6 +550,14 @@
         }
     }
 }
+2194={ # for Brook
+	name="of Ingunar"
+	culture="grannvalean"
+}
+2195={ # for Palman
+	name="of Yngve"
+	culture="grannvalean"
+}
 # Swedish from vanilla
 1025={
 	name="Gårdske"

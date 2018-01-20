@@ -20,10 +20,10 @@
 
 402={
 	name="Desmond"
-	mother=2011
     #dna="alfkhxmcgan" 
     dna="dfhfdoaciaf" 
     properties="aj0bbc00000000"
+	mother=2485 # generated
 	dynasty=401
 	culture=bernese
 	religion=elimine_church
