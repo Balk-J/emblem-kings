@@ -42,7 +42,7 @@
 	holder=1240 # Barbarian
 }
 0758.01.01={
-	holder=3201
+	holder=3209
 }
 0761.01.01={
 	holder=0 

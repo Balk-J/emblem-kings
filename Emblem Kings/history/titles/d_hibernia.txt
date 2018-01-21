@@ -3,3 +3,6 @@
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
+1181.01.01={
+	de_jure_liege=k_western_union
+}

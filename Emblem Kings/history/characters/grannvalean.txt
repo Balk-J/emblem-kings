@@ -4502,7 +4502,7 @@
 	name="Manfroy"
 	dna="ajbjjpaabav"
 	properties="cl0eoi00000000"
-	mother=2029 # generated
+	father=2040 # generated
 	dynasty=2079
 	culture=grannvalean
 	religion=loptyrian

@@ -3,13 +3,8 @@
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
-1168.01.01={
-	holder=713 # Scott
-}
 1181.01.01={
-	liege=k_western_union
-	de_jure_liege=k_western_union
-	holder=2037 # post-occupation landholder
+	holder=702 #Ekhidna
 }
 1200.01.01={
 	holder=3211
