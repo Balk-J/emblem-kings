@@ -23,7 +23,7 @@
     #dna="alfkhxmcgan" 
     dna="dfhfdoaciaf" 
     properties="aj0bbc00000000"
-	father=2495 # generated
+	father=2490 # generated
 	dynasty=401
 	culture=bernese
 	religion=elimine_church

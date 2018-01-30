@@ -101,7 +101,7 @@ castle = {
 		knights = 10
 		magic_user = 10
 		knights_morale = 0.075
-		magic_user_morale = 0.075
+		magic_users_morale = 0.075
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -118,7 +118,7 @@ castle = {
 		knights = 15
 		magic_user = 10
 		knights_morale = 0.075
-		magic_user_morale = 0.075
+		magic_users_morale = 0.075
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -135,7 +135,7 @@ castle = {
 		knights = 15
 		magic_user = 20
 		knights_morale = 0.075
-		magic_user_morale = 0.075
+		magic_users_morale = 0.075
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -152,7 +152,7 @@ castle = {
 		knights = 20
 		magic_user = 20
 		knights_morale = 0.075
-		magic_user_morale = 0.075
+		magic_users_morale = 0.075
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -576,6 +576,633 @@ castle = {
 		pegasus_knights_defensive = 0.1
 		pegasus_knights_morale = 0.05
 		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	# Jugdral
+	
+	ca_culture_grannvalean_1 = {
+		desc = ca_culture_grannvalean_1_desc
+		potential = {
+			FROM = { culture = grannvalean }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		knights = 10
+		magic_user = 10
+		knights_offensive = 0.05
+		magic_user_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_grannvalean_2 = {
+		desc = ca_culture_grannvalean_1_desc
+		potential = {
+			FROM = { culture = grannvalean }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_grannvalean_1
+		gold_cost = 300
+		build_time = 1095
+		knights = 15
+		magic_user = 10
+		knights_offensive = 0.05
+		magic_user_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_grannvalean_3 = {
+		desc = ca_culture_grannvalean_1_desc
+		potential = {
+			FROM = { culture = grannvalean }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_grannvalean_2
+		gold_cost = 400
+		build_time = 2190
+		knights = 15
+		magic_user = 20
+		knights_offensive = 0.05
+		magic_user_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_grannvalean_4 = {
+		desc = ca_culture_grannvalean_1_desc
+		potential = {
+			FROM = { culture = grannvalean }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_grannvalean_3
+		gold_cost = 500
+		build_time = 2190
+		knights = 20
+		magic_user = 20
+		knights_offensive = 0.05
+		magic_user_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_agustrian_1 = {
+		desc = ca_culture_agustrian_1_desc
+		potential = {
+			FROM = { culture = agustrian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 15
+		knights = 5
+		knights_offensive = 0.1
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_agustrian_2 = {
+		desc = ca_culture_agustrian_1_desc
+		potential = {
+			FROM = { culture = agustrian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_agustrian_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 20
+		knights = 10
+		knights_offensive = 0.1
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_agustrian_3 = {
+		desc = ca_culture_agustrian_1_desc
+		potential = {
+			FROM = { culture = agustrian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_agustrian_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 25
+		knights = 15
+		knights_offensive = 0.1
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_agustrian_4 = {
+		desc = ca_culture_agustrian_1_desc
+		potential = {
+			FROM = { culture = agustrian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_agustrian_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 30
+		knights = 20
+		knights_offensive = 0.1
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_silessian_1 = {
+		desc = ca_culture_silessian_1_desc
+		potential = {
+			FROM = { 
+				culture = silessian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		magic_users = 10
+		pegasus_knights = 20
+		magic_users_morale = 0.05
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_silessian_2 = {
+		desc = ca_culture_silessian_1_desc
+		potential = {
+			FROM = { 
+				culture = silessian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_silessian_1
+		gold_cost = 300
+		build_time = 1095
+		magic_users = 10
+		pegasus_knights = 30
+		magic_users_morale = 0.05
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_silessian_3 = {
+		desc = ca_culture_silessian_1_desc
+		potential = {
+			FROM = { 
+				culture = silessian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_silessian_2
+		gold_cost = 400
+		build_time = 2190
+		magic_users = 15
+		pegasus_knights = 35
+		magic_users_morale = 0.05
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_silessian_4 = {
+		desc = ca_culture_silessian_1_desc
+		potential = {
+			FROM = { 
+				culture = silessian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_silessian_3
+		gold_cost = 500
+		build_time = 2190
+		magic_users = 20
+		pegasus_knights = 40
+		magic_users_morale = 0.05
+		pegasus_knights_morale = 0.05
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_isaachian_1 = {
+		desc = ca_culture_isaachian_1_desc
+		potential = {
+			FROM = { culture = isaachian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_infantry = 60
+		light_infantry_offensive = 0.2
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_isaachian_2 = {
+		desc = ca_culture_isaachian_1_desc
+		potential = {
+			FROM = { culture = isaachian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_isaachian_1
+		gold_cost = 300
+		build_time = 1095
+		light_infantry = 80
+		light_infantry_offensive = 0.2
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_isaachian_3 = {
+		desc = ca_culture_isaachian_1_desc
+		potential = {
+			FROM = { culture = isaachian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_isaachian_2
+		gold_cost = 400
+		build_time = 2190
+		light_infantry = 100
+		light_infantry_offensive = 0.2
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_isaachian_4 = {
+		desc = ca_culture_isaachian_1_desc
+		potential = {
+			FROM = { culture = isaachian }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_isaachian_3
+		gold_cost = 500
+		build_time = 2190
+		light_infantry = 120
+		light_infantry_offensive = 0.2
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mansterian_1 = {
+		desc = ca_culture_mansterian_1_desc
+		potential = {
+			FROM = { 
+				culture = mansterian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mansterian_2 = {
+		desc = ca_culture_mansterian_1_desc
+		potential = {
+			FROM = { 
+				culture = mansterian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_mansterian_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mansterian_3 = {
+		desc = ca_culture_mansterian_1_desc
+		potential = {
+			FROM = { 
+				culture = mansterian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_mansterian_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mansterian_4 = {
+		desc = ca_culture_mansterian_1_desc
+		potential = {
+			FROM = { 
+				culture = mansterian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_mansterian_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_thracian_1 = {
+		desc = ca_culture_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		wyvern_riders = 15
+		wyvern_riders_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_thracian_2 = {
+		desc = ca_culture_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_thracian_1
+		gold_cost = 300
+		build_time = 1095
+		wyvern_riders = 20
+		wyvern_riders_offensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_thracian_3 = {
+		desc = ca_culture_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_thracian_2
+		gold_cost = 400
+		build_time = 2190
+		wyvern_riders = 25
+		wyvern_riders_offensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_thracian_4 = {
+		desc = ca_culture_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_thracian_3
+		gold_cost = 500
+		build_time = 2190
+		wyvern_riders = 30
+		wyvern_riders_offensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_new_thracian_1 = {
+		desc = ca_culture_new_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = new_thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 15
+		wyvern_riders = 10
+		wyvern_riders_defensive = 0.1
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_new_thracian_2 = {
+		desc = ca_culture_new_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = new_thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_new_thracian_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 20
+		wyvern_riders = 10
+		wyvern_riders_defensive = 0.1
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_new_thracian_3 = {
+		desc = ca_culture_new_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = new_thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_new_thracian_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 25
+		wyvern_riders = 10
+		wyvern_riders_defensive = 0.1
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_new_thracian_4 = {
+		desc = ca_culture_new_thracian_1_desc
+		potential = {
+			FROM = {
+				culture = new_thracian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_new_thracian_3
+		gold_cost = 500
+		build_time = 2190
+		wyvern_riders = 15
+		light_cavalry = 30
+		wyvern_riders_defensive = 0.1
+		light_cavalry_defensive = 0.1
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_verdanian_1 = {
+		desc = ca_culture_verdanian_1_desc
+		potential = {
+			FROM = {
+				culture = verdanian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_verdanian_2 = {
+		desc = ca_culture_verdanian_1_desc
+		potential = {
+			FROM = {
+				culture = verdanian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_verdanian_1
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_verdanian_3 = {
+		desc = ca_culture_verdanian_1_desc
+		potential = {
+			FROM = {
+				culture = verdanian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_verdanian_2
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_verdanian_4 = {
+		desc = ca_culture_verdanian_1_desc
+		potential = {
+			FROM = {
+				culture = verdanian
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_verdanian_3
+		gold_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_grann_1 = {
+		desc = ca_culture_grann_1_desc
+		potential = {
+			FROM = {
+				culture = grann
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_grann_2 = {
+		desc = ca_culture_grann_1_desc
+		potential = {
+			FROM = {
+				culture = grann
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_grann_1
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_offensive = 0.15
+		heavy_infantry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_grann_3 = {
+		desc = ca_culture_grann_1_desc
+		potential = {
+			FROM = {
+				culture = grann
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_grann_2
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_offensive = 0.15
+		heavy_infantry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_grann_4 = {
+		desc = ca_culture_grann_1_desc
+		potential = {
+			FROM = {
+				culture = grann
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_grann_3
+		gold_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_offensive = 0.15
+		heavy_infantry_morale = 0.05
+		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
 	}

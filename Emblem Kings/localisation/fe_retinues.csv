@@ -6,6 +6,16 @@ RETTYPE_CUL_SACAEAN;Nomadic Trooper;;;;;;;;;;;;;x
 RETTYPE_CUL_NABATAN;Desert Warrior;;;;;;;;;;;;;x
 RETTYPE_CUL_WESTERN_ISLANDER;Thunder Warrior;;;;;;;;;;;;;x
 RETTYPE_CUL_ETRURIAN;Etrurian Guard;;;;;;;;;;;;;x
+RETTYPE_CUL_GRANN;Earth Warrior;;;;;;;;;;;;;x
+RETTYPE_CUL_VERDANIAN;Forest Warrior;;;;;;;;;;;;;x
+RETTYPE_CUL_GRANNVALEAN;Holy Knight;;;;;;;;;;;;;x
+RETTYPE_CUL_AGUSTRIAN;Black Knight;;;;;;;;;;;;;x
+RETTYPE_CUL_SILESSIAN;Skydancer;;;;;;;;;;;;;x
+RETTYPE_CUL_ISAACHIAN;Divine Sword;;;;;;;;;;;;;x
+RETTYPE_CUL_MANSTERIAN;Lance Knight;;;;;;;;;;;;;x
+RETTYPE_CUL_THRACIAN;Dragon Knight;;;;;;;;;;;;;x
+RETTYPE_CUL_NEW_THRACIAN;Dragon Lancer;;;;;;;;;;;;;x
 RETTYPE_REL_MAGE;Mage;;;;;;;;;;;;;x
 RETTYPE_REL_SHAMAN;Shaman;;;;;;;;;;;;;x
 RETTYPE_REL_MONK;Monk;;;;;;;;;;;;;x
+RETTYPE_REL_LOPTYRIAN;Dark Priest;;;;;;;;;;;;;x

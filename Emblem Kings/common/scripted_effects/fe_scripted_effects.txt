@@ -1547,3 +1547,21 @@ seize_agustria_title_effect = {
 		}
 	}
 }
+
+set_silesse_claim_flag_effect = {
+	hidden_tooltip = {
+		if = {
+			limit = {
+				has_character_flag = is_fe4_maios
+			}
+			set_global_flag = fe4_maios_defeated 
+		}
+		if = {
+			limit = {
+				has_character_flag = is_fe4_daccar
+			}
+			set_global_flag = fe4_daccar_defeated 
+		}
+		character_event = { id = fe4_silesse.4 }
+	}
+}

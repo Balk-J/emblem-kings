@@ -179,7 +179,7 @@
 
 105 = {
 	name="Elbert" #Peer = Paladin?
-	mother=2076 # generated
+	father=2072 # generated
 	dynasty=102
     dna="bmlmkchfegc" 
     properties="ce0ced00000000"
@@ -641,7 +641,7 @@
 
 113 = {
 	name="Astolfo" #non-canon; Marquess Ostia and father of Uther/Hector
-	mother=2044 # generated
+	mother=2040 # generated
 	dynasty=101
 	
 	religion=elimine_church
@@ -693,7 +693,7 @@
 
 115 = {
 	name="Georg"
-	father=2171 # generated
+	father=2168 # generated
 	dynasty=106
 	
 	religion=elimine_church
@@ -734,7 +734,7 @@
 
 117 = {
 	name="Danan" #Marquess Araphen from FE7, no canon name
-	mother=2270 # generated
+	father=2265 # generated
 	dynasty=110
 	
 	religion=elimine_church
@@ -756,7 +756,7 @@
 
 118 = {
 	name="Darin"
-	mother=2138 # generated
+	father=2135 # generated
 	dynasty=104
 	dna="bkbiddcffbz" 
 	properties="cg0chd00000000"
@@ -869,7 +869,7 @@
 
 121 = {
 	name="Alen" #Raven and Priscilla's father, non-canonical
-	father=2370 # generated
+	father=2364 # generated
 	dynasty=113
 	
 	religion=elimine_church
@@ -3126,7 +3126,7 @@
 }
 176 = {
 	name="Wilson" #non-canon, father for Ranward
-	father=2402 # generated
+	mother=2397 # generated
 	dynasty=116
 	
 	religion=elimine_church
@@ -3145,7 +3145,8 @@
 
 177 = {
 	name="Henning"  #non-canon, father for Tiena
-	father=2337 # generated
+	mother=2331 # generated
+
 	dynasty=112
 	
 	religion=elimine_church
@@ -3682,7 +3683,7 @@
 
 193 = {
 	name="Lundgren" #non-canon. for Santaruz to continue the line after Helman bites it
-	father=2204 # generated
+	mother=2200 # generated
 	dynasty=107
 	
 	religion=elimine_church
@@ -3714,7 +3715,7 @@
 
 195 = {
 	name="Renault" #non-canon, Marquess for Ryerde
-	mother=2435 # generated
+	father=2430 # generated
 	dynasty=129
 	
 	religion=elimine_church
@@ -3730,7 +3731,7 @@
 196 = {
 	name="Madelyn" #non-canon, Marquess for Tuscana
 	female=yes
-	father=2303 # generated
+	mother=2298 # generated
 	dynasty=111
 	
 	religion=elimine_church
@@ -3745,7 +3746,7 @@
 
 197 = {
 	name="Kruzard" #non-canon, Marquess for Kathalet
-	father=2236 # generated
+	father=2231 # generated
 	dynasty=109
 	
 	religion=elimine_church
@@ -3763,7 +3764,7 @@
 	
 	religion=elimine_church
 	culture=lycian
-	father=2108 # generated
+	father=2105 # generated
 	dynasty=103
 	
 	1050.01.01={

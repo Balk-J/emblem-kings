@@ -1346,5 +1346,6 @@ loptyrians_searching_for_minor_blood_trigger = {
 		has_global_flag = loptyr_empire_destroyed
 		has_global_flag = loptyr_defeated
 	}
+	NOT = { has_global_flag = loptyr_revived }
 	loptyrians_exist_trigger = yes
 }

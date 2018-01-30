@@ -34,3 +34,7 @@ b_grutia = city
 778.1.1 = { 
 	capital = b_grutia_castle
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

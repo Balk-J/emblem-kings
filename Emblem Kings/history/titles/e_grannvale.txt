@@ -12,5 +12,6 @@
 }
 0779.01.01={
 	holder=0 # Destroyed
+	clr_global_flag = loptyr_revived
 	set_global_flag = loptyr_defeated
 }

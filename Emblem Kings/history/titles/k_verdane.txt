@@ -34,9 +34,6 @@
 		clr_title_flag = sigurd_invasion_target
 	}
 }
-0758.01.01={
-	holder=3209
-}
 0761.01.01={
 	liege=e_grannvale 
 }

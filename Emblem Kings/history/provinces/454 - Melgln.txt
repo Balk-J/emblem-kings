@@ -31,3 +31,7 @@ religion = church_of_edda
 666.1.1 = { 
 	culture = mansterian
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

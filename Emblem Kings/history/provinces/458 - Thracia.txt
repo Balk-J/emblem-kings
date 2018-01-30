@@ -33,3 +33,7 @@ b_heieron = castle
 	religion = church_of_edda
 	culture = thracian
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

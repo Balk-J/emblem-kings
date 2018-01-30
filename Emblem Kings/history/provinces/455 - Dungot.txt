@@ -31,3 +31,7 @@ religion = church_of_edda
 	b_dungot_2 = temple
 	b_dungot_3 = city
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

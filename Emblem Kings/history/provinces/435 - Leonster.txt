@@ -39,3 +39,7 @@ b_leithghlinn = city
 752.1.1 = { 
 	b_mide = castle
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

@@ -18,31 +18,9 @@ character_event = {
 	option = {
 		#name = startup.1.A
 		name = OK
-		# Fix automaticaally created barons with wrong culture/religion
-		any_landed_title = {
-			limit = {
-				tier = BARON
-			}
-			holder_scope = {
-				if = {
-					limit = {
-						tier = BARON
-						NOT = {
-							liege = {
-								religion = PREV
-							}
-						}
-						NOT = {
-							liege = {
-								culture = PREV
-							}
-						}
-					}
-					character_event = { id = util.4 }
-				}
-			}
-		}
-			
+		# Fix automatically generated rulers
+		character_event = { id = startup.10 }
+		
 		if = {
 			limit = { year = 440 }
 			# Structures on Valor
@@ -640,6 +618,41 @@ character_event = {
 			k_isaach = {
 				holder_scope = {
 					character_event = { id = fe4_grannvale_isaach.1 days = 1}
+				}
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+character_event = {
+	id = startup.10
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		# Fix automatically created barons with wrong culture/religion
+		any_landed_title = {
+			limit = {
+				tier = BARON
+			}
+			holder_scope = {
+				if = {
+					limit = {
+						tier = BARON
+						NOT = {
+							liege = {
+								religion = PREV
+							}
+						}
+						NOT = {
+							liege = {
+								culture = PREV
+							}
+						}
+					}
+					character_event = { id = util.4 }
 				}
 			}
 		}

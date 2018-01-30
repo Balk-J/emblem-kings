@@ -16,20 +16,35 @@ character_event = {
 					}
 				}
 			}
-			character_event = {	id = fe4_silesse.2 }
+			liege = {
+				random_realm_lord = {
+					limit = { has_character_flag = is_fe4_sigurd }
+					character_event = {	id = fe4_silesse.2 }
+				}
+			}
 		}
 	}	
 }
-
+# ping event to get Sigurd in scope
 character_event = {
 	id = fe4_silesse.2
-	desc = fe4_silesse.2.desc
+	hide_window = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = OK
+		FROM = { character_event = { id = fe4_silesse.3 } }
+	}	
+}
+character_event = {
+	id = fe4_silesse.3
+	desc = fe4_silesse.3.desc
 	picture = GFX_evt_shadowy_cabal
 	hide_from = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = fe4_silesse.2.A
+		name = fe4_silesse.3.A
 		ai_chance = {
 			factor = 90	
 		}
@@ -39,10 +54,14 @@ character_event = {
 				primary_title = {
 					add_claim = ROOT
 					ROOT = {
+						set_character_flag = silesse_claim_allowed
 						war = {
 							target = PREVPREV
-							casus_belli = claim
+							casus_belli = silesse_claim
 							thirdparty_title = PREV
+						}
+						hidden_tooltip = {
+							set_global_flag = fe4_maios_war_declared
 						}
 					}
 				}
@@ -54,14 +73,14 @@ character_event = {
 					limit = {
 						has_character_flag = is_fe4_daccar
 					}
-					character_event = {	id = fe4_silesse.3 days = 30 random = 10 }
+					character_event = {	id = fe4_silesse.4 days = 30 random = 10 }
 				}
 			}
 		}
 	}	
 	
 	option = {
-		name = fe4_silesse.2.B
+		name = fe4_silesse.3.B
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -72,12 +91,15 @@ character_event = {
 				}
 			}			
 		}
+		hidden_tooltip = {
+			set_silesse_claim_flag_effect = yes
+			character_event = {	id = fe4_silesse.4 } 
+		}
 	}		
 }
-
-# Daccar gets the option to attack Silesse
+# Post-Silesse claim war event: what should happen next?
 character_event = {
-	id = fe4_silesse.3
+	id = fe4_silesse.4
 	hide_window = yes
 	is_triggered_only = yes
 		
@@ -85,26 +107,59 @@ character_event = {
 		name = OK
 		if = {
 			limit = {
+				has_global_flag = fe4_maios_defeated
+				NOT = { has_global_flag = fe4_daccar_defeated }
+			}
+			any_playable_ruler = { 
+				limit = { has_character_flag = is_fe4_daccar }
+				character_event = {	id = fe4_silesse.5 }
+			}
+		}else_if = {
+			limit = {
+				has_global_flag = fe4_daccar_defeated
+			}
+			any_playable_ruler = { 
+				limit = { has_character_flag = is_fe4_sigurd }
+				character_event = { id = fe4_silesse.11 days = 14 random = 7 }
+			}
+		}
+	}	
+}
+# Daccar gets the option to attack Silesse
+character_event = {
+	id = fe4_silesse.5
+	hide_window = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = OK
+		if = {
+			limit = {
+				independent = no
 				liege = {
-					any_realm_lord = {
-						has_character_flag = is_fe4_sigurd
-						war = yes
-					}
+					independent = yes
 				}
 			}
-			character_event = {	id = fe4_silesse.4 }
+			character_event = {	id = fe4_silesse.6 } 
 		}
 	}	
 }
 character_event = {
-	id = fe4_silesse.4
-	desc = fe4_silesse.4.desc
+	id = fe4_silesse.6
+	desc = {
+		trigger = { has_global_flag = fe4_maios_war_declared }
+		text = fe4_silesse.6.desc.1
+	}
+	desc = {
+		trigger = { NOT = { has_global_flag = fe4_maios_war_declared } }
+		text = fe4_silesse.6.desc.2
+	}
 	picture = GFX_evt_shadowy_cabal
 	hide_from = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = fe4_silesse.4.A
+		name = fe4_silesse.6.A
 		ai_chance = {
 			factor = 90	
 		}
@@ -112,645 +167,27 @@ character_event = {
 			primary_title = {
 				add_claim = ROOT
 				ROOT = {
+					set_character_flag = silesse_claim_allowed
 					war = {
 						target = PREVPREV
-						casus_belli = claim
-						thirdparty_title = PREV
-					}
-				}
-			}
-		}
-		hidden_tooltip = {
-		}
-	}	
-	
-	option = {
-		name = fe4_silesse.4.B
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-
-# Brigid defecting from the pirates
-character_event = {
-	id = fe4_silesse.5
-	hide_window=yes
-	is_triggered_only = yes
-	
-	option = {
-		name = OK
-		
-		# If the old captain is in charge, kill him.
-		if = {
-			limit = {
-				d_orgahil_pirates = {
-					holder_scope = {
-						has_character_flag=is_fe4_orgahil_captain 
-					}
-				}
-			}
-			d_orgahil_pirates = {
-				holder_scope = {
-					death = yes
-				}
-			}
-		}
-		
-		# AI Brigid gets deposed and flees to Sigurd
-		if = {
-			limit = {
-				d_orgahil_pirates = {
-					holder_scope = {
-						ai=yes
-						OR = {
-							has_character_flag=is_fe4_brigid
-							AND = {
-								current_heir = {
-									ai = yes
-									has_character_flag=is_fe4_brigid
-								}
-							}
-						}
-					}
-				}
-			}
-			d_orgahil_pirates = {
-				holder_scope = {
-					random_vassal = {
-						d_orgahil_pirates = {
-							holder_scope = {
-								any_demesne_title = {
-									usurp_title = PREVPREVPREV
-								}
-							}
-						}
-					}
-					character_event = { id = fe4_silesse.6 }
-				}
-			}
-		}
-		# Human Brigid should just get approached by Edain
-		character_event = { id = fe4_silesse.7 days = 1}
-	}		
-}
-character_event = {
-	id = fe4_silesse.6
-	hide_window=yes
-	is_triggered_only = yes
-	
-	option = {
-		name = OK
-		# Flee to Sigurd
-		d_chalphy = {
-			holder_scope = {
-				random_character = { 
-					limit = {
-						has_character_flag = is_fe4_brigid
-					}
-					move_character = PREV
-				}
-			}
-		}
-		character_event = { id = fe4_silesse.7 days = 1}
-	}		
-}
-# Ping event to get Edain in scope...
-character_event = {
-	id = fe4_silesse.7
-	hide_window=yes
-	is_triggered_only = yes
-	
-	option = {
-		name = OK
-		random_character = { 
-			limit = {
-				is_within_diplo_range = ROOT
-				has_character_flag = is_fe4_edain
-			}
-			character_event = { id = fe4_silesse.8 }
-		}
-	}		
-}
-character_event = {
-	id = fe4_silesse.8
-	desc = fe4_silesse.8.desc
-	picture = GFX_evt_busy_trading_dock_republic
-	is_triggered_only = yes
-	
-	option = {
-		name = "fe4_silesse.8.A"
-		ai_chance = {
-			factor = 99	
-		}
-		FROM = { 
-			character_event = { id = fe4_silesse.9 }
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.8.B"
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-# Edain approaches Brigid
-character_event = {
-	id = fe4_silesse.9
-	desc = fe4_silesse.9.desc
-	picture = GFX_evt_courtiers_talking
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "fe4_silesse.9.A"
-		ai_chance = {
-			factor = 99	
-		}
-		character_event = { id = fe4_dynasty.2 }
-		random_character = {
-			limit = {
-				has_artifact = regalia_yewfelle
-			}
-			random_artifact = {
-				limit = {
-					artifact_type = regalia_yewfelle
-				}
-				transfer_artifact = {
-					from = PREV to = PREVPREV 
-				} 
-			}
-		}
-		
-		hidden_tooltip = {
-			k_grannvale = {
-				holder_scope = {
-					any_vassal = {
-						limit = {
-							NOT = { has_character_flag = is_fe4_brigid }
-						}
-						narrative_event = { id = fe4_silesse.11 days = 1 }
-					}
-				}
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.9.B"
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-# Edain rejected
-character_event = {
-	id = fe4_silesse.10
-	desc = fe4_silesse.10.desc
-	picture = GFX_evt_bad_news_female
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "fe4_silesse.10.A"
-		add_trait = depressed
-	}		
-}
-# Notify Grannvale of Brigid's return
-narrative_event = {
-	id = fe4_silesse.11
-	title = fe4_silesse.11.title
-	desc = fe4_silesse.11.desc
-	picture = GFX_evt_princess_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "fe4_silesse.11.A"
-		ai_chance = {
-			factor = 99	
-		}
-	}		
-}
-
-# Check if Sigurd's done conquering and can get blamed for Kurth's murder
-character_event = {
-	id = fe4_silesse.12
-	hide_window = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = OK 
-		if = {
-			limit = {
-				has_global_flag = fe4_chagall_defeated
-				has_global_flag = fe4_kurth_murdered
-				independent = no
-			}
-			top_liege = {
-				character_event = { id = fe4_silesse.13 }
-			}
-		}
-	}		
-}
-# Notify liege that the, ah, "killer" has been found.
-character_event = {
-	id = fe4_silesse.13
-	desc = fe4_silesse.13.desc
-	picture = GFX_evt_spymaster
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "fe4_silesse.13.A"
-		ai_chance = {
-			factor = 99	
-		}
-		FROM = { letter_event = { id = fe4_silesse.14 } }
-	}	
-	option = {
-		name = "fe4_silesse.13.B"
-		trigger = {
-			intrigue = 10
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-
-# Ultimatum to Sigurd
-letter_event = {
-	id = fe4_silesse.14
-	desc = fe4_silesse.14.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.14.A
-		ai_chance = {
-			factor = 80			
-		}		
-		custom_tooltip = {
-			text = fe4_silesse.14.A.tooltip
-			hidden_tooltip = {
-				
-				# Prepare to flee to Sailane
-				if = {
-					limit = {
-						d_sailane = {
-							holder_scope = {
-								ai = yes
-								NOT = { FROM = { is_liege_or_above = PREV } }
-							}
-						}
-					}
-					
-					# Install Rahna if Silesse is AI controlled and she's alive
-					c_1110 = {
-						if = {
-							limit = {
-								is_alive = yes
-								any_liege = {
-									has_landed_title = k_silesse
-								}
-							}
-							k_silesse = {		
-								holder_scope = {			
-									if = {
-										limit = {	
-											ai = yes
-											has_character_flag = is_fe4_king_silesse
-										}
-										abdicate_to = PREVPREV 
-										death = yes
-									}
-									else_if = {
-										limit = {
-											ai = yes
-											has_character_flag = is_fe4_lewyn
-										}
-										abdicate_to = PREVPREV 
-									}	
-								}						
-							} 	
-						}
-					}
-					
-					c_sailane = {
-						grant_title = ROOT
-					}
-					d_sailane = {
-						grant_title = ROOT
-					}
-					
-					any_demesne_title = {
-						limit = {
-							NOT = { title = d_sailane }
-							NOT = { de_jure_liege_or_above = d_sailane }
-						}
-						usurp_title = FROM
-					}
-					k_silesse = {		
-						holder_scope = {
-							ROOT = {
-								set_defacto_liege = PREV
-							}
-						}
-					}
-				}else = {
-					# Sailane is not AI controlled or somehow got in the realm of Sigurd's liege.
-					any_demesne_title = {
-						usurp_title = FROM
-					}	
-					random_neighbor_independent_ruler = {
-						limit = {
-							any_demesne_title = { can_be_given_away = yes } 
-						}
-						random_demesne_title = {
-							limit = { tier = COUNT can_be_given_away = yes }
-							grant_title = ROOT
-							ROOT = {
-								set_defacto_liege = PREVPREV
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.14.B
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}
-		}			
-		custom_tooltip = {
-			text = fe4_silesse.14.B.tooltip
-			FROM = {
-				letter_event = { id = fe4_silesse.15	}
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.14.C
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}
-		}				
-		death = { 
-			death_reason = death_execution
-			killer = FROM
-		} 	
-	}
-}
-# Sigurd goes off the rails and declares war on Grannvale
-letter_event = {
-	id = fe4_silesse.15
-	desc = fe4_silesse.15.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.15.A
-		reverse_war = {
-			target = FROM
-			casus_belli = bid_for_independence
-		}
-	}
-}
-
-# Eldigan can try to stop the war
-character_event = {
-	id = fe4_silesse.16
-	desc = fe4_silesse.16.desc
-	picture = GFX_evt_battle
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "fe4_silesse.16.A"
-		ai_chance = {
-			factor = 80	
-		}
-		liege = {
-			character_event = { id = fe4_silesse.17 }
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.16.B"
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-
-# Chagall asked to stop the war
-letter_event = {
-	id = fe4_silesse.17
-	desc = fe4_silesse.17.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.17.A
-		ai_chance = {
-			factor = 79		
-		}
-		FROM = {
-			imprison = ROOT
-		}
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = fe4_silesse.22 }
-			}
-			random_vassal = {
-				limit = {
-					OR = { 
-						has_character_flag = is_fe4_boldor
-						has_character_flag = is_fe4_elliot 
-					}
-					has_landed_title = d_heirhein
-				}
-				character_event = { id = fe4_silesse.21 days = 3 }
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.17.B
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-#		any_war = { 
-#			limit = { using_cb = chagall_invasion }
-#			end_war = whitepeace
-#		}
-
-		any_current_enemy = {
-			limit = {
-				any_war = { using_cb = chagall_invasion }
-			}
-			character_event = { id = fe4_silesse.18 }
-		}
-	}
-	option = {
-		name = fe4_silesse.17.C
-		ai_chance = {
-			factor = 11
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}
-}
-letter_event = {
-	id = fe4_silesse.18
-	desc = fe4_silesse.18.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.18.A		
-		any_war = { 
-			limit = { using_cb = chagall_invasion }
-			end_war = whitepeace
-		}
-		
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = fe4_silesse.19 }
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.18.B	
-		prestige = 100
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = fe4_silesse.20 }
-			}
-		}
-	}
-}
-# Inform war over
-letter_event = {
-	id = fe4_silesse.19
-	desc = fe4_silesse.19.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.19.A	
-	}
-}
-# Inform war continues
-letter_event = {
-	id = fe4_silesse.20
-	desc = fe4_silesse.20.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.20.A	
-	}
-}
-
-# Heirhein sees their chance
-character_event = {
-	id = fe4_silesse.21
-	desc = fe4_silesse.21.desc
-	picture = GFX_evt_into_the_dungeon
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "fe4_silesse.21.A"
-		ai_chance = {
-			factor = 75	
-		}
-		FROMFROM = {
-			primary_title = {
-				add_claim = ROOT
-				holder_scope = {
-					reverse_war = {
-						target = ROOT
-						casus_belli = claim
+						casus_belli = silesse_claim
 						thirdparty_title = PREV
 					}
 					hidden_tooltip = {
-						random_courtier = {
-							limit = {
-								has_character_flag = is_fe4_lachesis
+						set_global_flag = fe4_daccar_war_declared
+						d_jungby = {
+							holder_scope = {
+								if = {
+									limit = {
+										NOR = { 
+											has_character_flag = is_fe4_brigid 
+											has_character_flag = is_fe4_edain 
+											has_character_flag = is_fe4_ring 
+										}
+									}
+									character_event = {	id = fe4_silesse.7 days = 14 random = 7 }
+								}
 							}
-							character_event = { id = fe4_silesse.23 }
-						}
-				
-						random_realm_character = { # Lewyn
-							limit = {
-								is_landed = no
-								has_character_flag = is_fe4_lewyn
-							}
-							character_event = { id = fe4_silesse.28 }
 						}
 					}
 				}
@@ -759,53 +196,7 @@ character_event = {
 	}	
 	
 	option = {
-		name = "fe4_silesse.21.B"
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-# Inform Eldigan that Chagall is a jerk and threw him in jail
-character_event = {
-	id = fe4_silesse.22
-	desc = fe4_silesse.22.desc	
-	picture = GFX_evt_into_the_dungeon
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.22.A
-	}
-}
-# Lachesis asks Sigurd for help
-character_event = {
-	id = fe4_silesse.23
-	desc = fe4_silesse.23.desc
-	picture = GFX_evt_into_the_dungeon
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.23.A"
-		ai_chance = {
-			factor = 90	
-		}
-		random_playable_ruler = {
-			limit = {
-				has_character_flag = is_fe4_sigurd
-			}
-			character_event = { id = fe4_silesse.24 }
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.23.B"
+		name = fe4_silesse.6.B
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -816,891 +207,117 @@ character_event = {
 				}
 			}			
 		}
-	}		
-}
-letter_event = {
-	id = fe4_silesse.24
-	desc = fe4_silesse.24.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.24.A		
-		FROM = {
-			move_character = ROOT
-			opinion = {
-				modifier = opinion_very_grateful
-				who = ROOT
-				years = 5
-			}
-		}
 		hidden_tooltip = {
-			c_1094 = { # Eldigan
-				set_character_flag = eldigan_release_promised
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.24.B	
-		FROM = {
-			opinion = {
-				modifier = opinion_angry
-				who = ROOT
-				years = 5
-			}
-		}
-	}
-}
-
-# Sylvia goes to Agustria
-# (not needed, handled in history)
-character_event = {
-	id = fe4_silesse.25
-	desc = fe4_silesse.25.desc
-	picture = GFX_evt_dancing
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.25.A"
-		trigger = {
-			is_landed = no
-			NOT = {
-				host = {
-					has_landed_title = c_verdandi
-				}
-			}
-		}
-		ai_chance = {
-			factor = 80	
-		}
-		
-		c_verdandi = {
-			holder_scope = {
-				ROOT = {
-					move_character = PREV
-				}
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.25.B"
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-# Lewyn goes a-wandering
-character_event = {
-	id = fe4_silesse.26
-	hide_window = yes
-	is_triggered_only = yes
-	option = {
-		name = OK
-		if = {
-			limit = {
-				is_landed = no
-				action_allowed_trigger = yes
-				c_1108 = { # Daccar
-					is_landed = yes
-				}
-				c_1109 = { # Maios
-					is_landed = yes
-				}
-			}
-			character_event = { id = fe4_silesse.27 }
-		}
-	}		
-}
-character_event = {
-	id = fe4_silesse.27
-	desc = fe4_silesse.27.desc
-	picture = GFX_evt_rival_rulers
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.27.A"
-		ai_chance = {
-			factor = 60	
-		}
-		
-		c_verdandi = {
-			holder_scope = {
-				ROOT = {
-					move_character = PREV
-				}
-			}
-		}
-		
-		hidden_tooltip = {
-			c_1117 = { # Erinys
-				character_event = { id = fe4_silesse.30 days = 60 random = 10 }
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.27.B"
-		ai_chance = {
-			factor = 40
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		
-		random = {
-			chance = 20
-			if = {
-				limit = { NOT = { trait = cynical } }
-				add_trait = cynical
-			}
-		}
-	}		
-}
-# Lewyn notices the invasion and joins Sigurd
-character_event = {
-	id = fe4_silesse.28
-	desc = fe4_silesse.28.desc
-	picture = GFX_evt_bandits
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		top_liege = {
-			set_character_flag = target_erinys_destination # Why won't this work with event targets?
-		}
-	}
-	
-	option = {
-		name = "fe4_silesse.28.A"
-		ai_chance = {
-			factor = 90	
-		}
-		random_playable_ruler = {
-			limit = {
-				has_character_flag = is_fe4_sigurd
-			}
-			character_event = { id = fe4_silesse.29 }
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.28.B"
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
-}
-# Sigurd asked to take Lewyn and Silvia
-character_event = {
-	id = fe4_silesse.29
-	desc = fe4_silesse.29.desc
-	picture = GFX_evt_dancing
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.29.A"
-		ai_chance = {
-			factor = 90	
-		}
-		
-		FROM = {
-			move_character = ROOT
-		}
-		if = {
-			limit = {
-				c_1045 = {
-					is_landed = no
-					is_married = no
-				}
-				move_character = ROOT
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.29.B"
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
+			set_silesse_claim_flag_effect = yes
+			character_event = {	id = fe4_silesse.4 } 
 		}
 	}		
 }
 
 
-# Erinys goes after Lewyn
+# Jungby gets the option to loan troops to Daccar
 character_event = {
-	id = fe4_silesse.30
-	hide_window = yes
+	id = fe4_silesse.7
+	desc = fe4_silesse.7.desc
+	picture = GFX_evt_battle
 	is_triggered_only = yes
-	option = {
-		name = OK
-		if = {
-			limit = {
-				c_1111 = { # Lewyn
-					is_landed = no
-					is_married = no 
-				}
-				NOT = {
-					top_liege = {
-						any_realm_character = {
-							has_character_flag = is_fe4_lewyn
-						}
-					}
-				}
-			}
-			
-			
-			if = {
-				limit = {
-					is_landed = no
-					action_allowed_trigger = yes
-				}
-				character_event = { id = fe4_silesse.31 }
-			}
-			else = {
-			
-				create_random_soldier = {
-					random_traits = yes
-					dynasty = random
-					religion = ROOT
-					culture = ROOT
-					female = yes
-					age = 18
-				} 
-				new_character = { 
-					add_trait="base_class_pegasus_knight"
-					add_trait="class_pegasus_knight"
-					set_variable = { which = "level" value = 1 }
-					set_character_flag="class_selected"
-
-					character_event = { id = fe4_silesse.31 }
-				}
-			}
-		}
-	}		
-}
-character_event = {
-	id = fe4_silesse.31
-	desc = fe4_silesse.31.desc
-	picture = GFX_evt_carriage
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.31.A"
-		ai_chance = {
-			factor = 60	
-		}
-		
-		#event_target:target_erinys_destination = {
-		random_playable_ruler = {
-			limit = { has_character_flag = target_erinys_destination }
-			character_event = { id = fe4_silesse.32 }
-		}
-	}	
 	
 	option = {
-		name = "fe4_silesse.31.B"
+		name = fe4_silesse.7.A
 		ai_chance = {
-			factor = 40
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
+			factor = 50	
 		}
-	}		
-}
-
-# Chagall receives Erinys
-character_event = {
-	id = fe4_silesse.32
-	desc = fe4_silesse.32.desc
-	picture = GFX_evt_throne_room
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.32.A"
-		ai_chance = {
-			factor = 40	
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}		
-		}
-		
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = fe4_silesse.33 days = 90 random = 10 }
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.32.B"
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = fe4_silesse.33 days = 3 random = 1 }
-			}
-		}
-	}	
-	option = {
-		name = "fe4_silesse.32.C"
-		ai_chance = {
-			factor = 40		
-		}
-		
-		FROM = {
-			move_character = ROOT
-			set_character_flag = deceived_by_chagall
-		
+		custom_tooltip = {
+			text = fe4_silesse.7.A.tooltip
 			hidden_tooltip = {
-				character_event = { id = fe4_silesse.33 days = 180 random = 20 }
+				FROM = { 
+					letter_event = { id = fe4_silesse.9 days = 3 }
+				}
+				add_character_modifier = { name = loaned_beige_ritter duration = 180 } 
 			}
 		}
-		
+	}		
+	option = {
+		name = fe4_silesse.7.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# Daccar gets choice to accept troops
+letter_event = {
+	id = fe4_silesse.9
+	desc = fe4_silesse.9.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_silesse.9.A
+		reverse_add_favor = FROM
 		capital_scope = {
-			PREV = {
+			ROOT = {
 				spawn_unit = {
-					leader = FROM
-					earmark = erinys_pegasus_knights
+					earmark = beige_ritter
 					owner = ROOT
 					home = PREV
 					province = PREV
 					troops = {
-						pegasus_knights = { 500 500 }
+						horse_archers = { 500 500 }
 					}
-					attrition = 0.0
+					attrition = 1.0
 					disband_on_peace = yes
-					maintenance_multiplier = 0.0
+					cannot_inherit = yes
+					maintenance_multiplier = 0.5
 				}
 			}
 		}
-	}		
+	}
+	option = {
+		name = fe4_silesse.9.B
+		FROM = { 
+			letter_event = { id = fe4_silesse.10 days = 3 }
+		}
+	}
 }
-
-
-# Erinys finds Lewyn
-character_event = {
-	id = fe4_silesse.33
-	hide_window = yes
-	is_triggered_only = yes
-	option = {
-		name = OK
-		c_1111 = { # Lewyn
-			if = {
-				limit = {
-					is_alive = yes
-					is_landed = no
-				}
-				character_event = { id = fe4_silesse.34 }
-			}else_if = {
-				limit = {
-					is_alive = yes
-					is_landed = yes
-				}
-				character_event = { id = fe4_silesse.37 }
-			}
-		}
-	}		
-}
-# Unlanded Lewyn decides what to tell Erinys
-character_event = {
-	id = fe4_silesse.34
-	desc = fe4_silesse.34.desc
-	picture = GFX_evt_large_army
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.34.A"
-		ai_chance = {
-			factor = 50	
-		}
-		liege = {
-			FROM = {
-				move_character = PREV
-			}
-		}
-		hidden_tooltip = {
-			if = {
-				limit = {
-					FROM = { has_character_flag = deceived_by_chagall }
-				}	
-				random_playable_ruler = {
-					limit = { has_character_flag = target_erinys_destination }
-				#event_target:target_erinys_destination = {
-					character_event = { id = fe4_silesse.35 }
-				}
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.34.B"
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		
-		k_silesse = {
-			holder_scope = {
-				ROOT = {
-					liege = {
-						if = {
-							limit = {
-								any_courtier = { 
-									has_character_flag = is_fe4_silvia 
-									is_married = no 
-								}
-							}
-						}
-						random_courtier = {
-							limit = {
-								has_character_flag = is_fe4_silvia
-							}
-							move_character = PREVPREVPREV
-						}
-					}
-					move_character = PREV
-				}
-				FROM = {
-					move_character = PREV
-				}
-			}
-		}
-		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					FROM = { has_character_flag = deceived_by_chagall }
-				}		
-				random_playable_ruler = {
-					limit = { has_character_flag = target_erinys_destination }
-				#event_target:target_erinys_destination = {
-					character_event = { id = fe4_silesse.35 }
-				}
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.34.C"
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		k_silesse = {
-			holder_scope = {
-				FROM = {
-					move_character = PREV
-				}
-			}
-		}
-		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					FROM = { has_character_flag = deceived_by_chagall }
-				}		
-				random_playable_ruler = {
-					limit = { has_character_flag = target_erinys_destination }
-				#event_target:target_erinys_destination = {
-					character_event = { id = fe4_silesse.35 }
-				}
-			}
-		}
-	}		
-}
-# Notify Chagall that Erinys and her troops left
-character_event = {
-	id = fe4_silesse.35
-	desc = fe4_silesse.35.desc
-	picture = GFX_evt_large_army
-
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.35.A"
-		clr_character_flag = target_erinys_destination	
-		disband_event_forces = erinys_pegasus_knights
-		opinion = {
-			modifier = opinion_irritated
-			who = FROMFROM
-			years = 5
-		}
-		reverse_opinion = {
-			modifier = opinion_liar
-			who = FROMFROM
-			years = 20
-		}
-		reverse_opinion = {
-			modifier = opinion_disgusted
-			who = FROMFROM
-			years = 20
-		}
-	}			
-}
-# Notify liege (Sigurd, probably) that Lewyn left
-character_event = {
-	id = fe4_silesse.36
-	desc = fe4_silesse.36.desc
-	picture = GFX_evt_dancing
-
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.36.A"
-	}			
-}
-# Landed (?!) Lewyn decides what to tell Erinys
-character_event = {
-	id = fe4_silesse.37
-	desc = fe4_silesse.37.desc
-	picture = GFX_evt_large_army
-	
-	is_triggered_only = yes
-	option = {
-		name = "fe4_silesse.37.A"
-		ai_chance = {
-			factor = 50	
-		}
-		FROM = {
-			move_character = ROOT
-		}
-		hidden_tooltip = {
-			if = {
-				limit = {
-					FROM = { has_character_flag = deceived_by_chagall }
-				}		
-				random_playable_ruler = {
-					limit = { has_character_flag = target_erinys_destination }
-				#event_target:target_erinys_destination = {
-					character_event = { id = fe4_silesse.35 }
-				}
-			}
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.37.B"		
-		ai_chance = {
-			factor = 50	
-		}
-		k_silesse = {
-			holder_scope = {
-				FROM = {
-					move_character = PREV
-				}
-			}
-		}
-		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					FROM = { has_character_flag = deceived_by_chagall }
-				}		
-				random_playable_ruler = {
-					limit = { has_character_flag = target_erinys_destination }
-				#event_target:target_erinys_destination = {
-					character_event = { id = fe4_silesse.35 }
-				}
-			}
-		}
-	}		
-}
-# Ping event to get Eldigan in scope
-character_event = {
-	id = fe4_silesse.38
-	hide_window = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = OK
-		liege = {
-			if = {
-				limit = { has_character_flag = is_fe4_chagall }
-			}
-			character_event = { id = fe4_silesse.39 }
-		}
-	}	
-	
-}
-
-# Chagall blames everything on Eldigan
-character_event = {
-	id = fe4_silesse.39
-	desc = fe4_silesse.39.desc
-	picture = GFX_evt_council_quarrelling
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = fe4_silesse.39.A
-		ai_chance = {
-			factor = 80	
-		}
-		FROM = {
-#			custom_tooltip = {
-#				text = fe4_silesse.39.A.tooltip
-				hidden_tooltip = {
-					letter_event = { id = fe4_silesse.40 days = 3 random = 1 }				
-				}
-#			}
-		}
-	}	
-	
-	option = {
-		name = fe4_silesse.39.B
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		prestige = 100
-	}		
-}
-
-
-# Chagall yells at Eldigan
+# Inform Jungby that troops were rejected
 letter_event = {
-	id = fe4_silesse.40
-	desc = fe4_silesse.40.desc	
+	id = fe4_silesse.10
+	desc = fe4_silesse.10.desc	
 	
 	is_triggered_only = yes	
 	
 	option = {
-		name = fe4_silesse.40.A
-		ai_chance = {
-			factor = 80		
-		}
-		custom_tooltip = {
-			text = fe4_silesse.40.A.tooltip
-			hidden_tooltip = {
-				capital_scope = {
-					ROOT = {
-						spawn_unit = {
-							owner = ROOT
-							home = PREV
-							province = PREV
-							troops = {
-								light_cavalry = { 1000 1000 }
-							}
-							attrition = 1.0
-							reinforces = no
-							disband_on_peace = yes
-							maintenance_multiplier = 0
-						}
-					}
-				}
-				FROM = {
-#					character_event = { id = fe4_silesse.??? }
-					if = {
-						limit = {
-							any_current_enemy = {
-								any_realm_character = {
-									has_character_flag = is_fe4_lachesis
-								}
-							}
-						}
-						c_1095 = {
-							character_event = { id = fe4_silesse.42 }
-						}
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.40.B
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}	
-		custom_tooltip = {
-			text = fe4_silesse.40.B.tooltip
-			hidden_tooltip = {
-				FROM = {
-					opinion = {
-						modifier = opinion_angry
-						who = ROOT
-						years = 5
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.40.C
-		ai_chance = {
-			factor = 9
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		custom_tooltip = {
-			text = fe4_silesse.40.C.tooltip
-			hidden_tooltip = {
-				FROM = {
-					opinion = {
-						modifier = opinion_refused_order
-						who = ROOT
-						years = 3
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.40.D
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		custom_tooltip = {
-			text = fe4_silesse.40.D.tooltip
-			hidden_tooltip = {
-				FROM = {
-					letter_event = { id = fe4_silesse.41 }
-				}
-			}
-		}
+		name = fe4_silesse.10.A
 	}
 }
-
-# Eldigan goes off the rails and declares war on Chagall
-letter_event = {
-	id = fe4_silesse.41
-	desc = fe4_silesse.41.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.41.A
-		ai_chance = {
-			factor = 70		
-		}
-		reverse_war = {
-			target = FROM
-			casus_belli = bid_for_independence
-		}
-	}
-	option = {
-		name = fe4_silesse.41.B
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		FROM = {
-			set_defacto_liege = THIS
-		}
-	}
-}
-# Lachesis can try to convince Eldigan to stop fighting.
+# 
 character_event = {
-	id = fe4_silesse.42
-	desc = fe4_silesse.42.desc
+	id = fe4_silesse.11
+	desc = fe4_silesse.11.desc
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
+	hide_from = yes
 	
 	option = {
-		name = fe4_silesse.42.A
+		name = "fe4_silesse.11.A"
 		ai_chance = {
-			factor = 90	
-		}
-		FROM = {
-			custom_tooltip = {
-				text = fe4_silesse.42.A.tooltip
-				hidden_tooltip = {
-					letter_event = { id = fe4_silesse.43 days = 3 random = 1 }				
-				}
-			}
+			factor = 50	
 		}
 	}	
 	
 	option = {
-		name = fe4_silesse.42.B
+		name = "fe4_silesse.11.B"
 		ai_chance = {
-			factor = 10
+			factor = 50
 			modifier = {
-				factor = 0
+				factor = 0.5
 				has_game_rule = {
 					name = fe_story
 					value = on
@@ -1708,117 +325,4 @@ character_event = {
 			}			
 		}
 	}		
-}
-
-# Eldigan is asked to stop fighting by Lachesis, one last time
-letter_event = {
-	id = fe4_silesse.43
-	desc = fe4_silesse.43.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.43.A
-		ai_chance = {
-			factor = 80		
-		}
-		top_liege = {
-			letter_event = { id = fe4_silesse.45 days = 3 random = 1 }
-		}
-	}
-	option = {
-		name = fe4_silesse.42.B
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-		FROM = {
-			letter_event = { id = fe4_silesse.44 days = 3 random = 1 }
-		}
-	}
-}
-# Notify Lachesis that Eldigan is done talking.
-letter_event = {
-	id = fe4_silesse.44
-	desc = fe4_silesse.44.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.44.A
-	}
-}
-# Chagall asked to stop the war for the last time
-letter_event = {
-	id = fe4_silesse.45
-	desc = fe4_silesse.45.desc	
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.45.A
-		ai_chance = {
-			factor = 85		
-		}
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = fe4_silesse.46 }
-			}
-		}
-	}
-	option = {
-		name = fe4_silesse.45.B
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-
-		any_current_enemy = {
-			limit = {
-				any_war = { using_cb = chagall_invasion }
-			}
-			character_event = { id = fe4_silesse.18 }
-		}
-	}
-	option = {
-		name = fe4_silesse.45.C
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}
-}
-# Inform Eldigan that Chagall is having him killed
-character_event = {
-	id = fe4_silesse.46
-	desc = fe4_silesse.46.desc	
-	picture = GFX_evt_into_the_dungeon
-	
-	is_triggered_only = yes	
-	
-	option = {
-		name = fe4_silesse.46.A
-		death = {
-			death_reason=death_execution
-			killer=FROM # Chagall
-		}	
-	}
 }

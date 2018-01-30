@@ -38,3 +38,7 @@ b_melfiye_3 = city
 777.1.1 = { 
 	capital = b_melfiye
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

@@ -889,6 +889,9 @@ on_five_year_pulse = {
 on_decade_pulse = {
 	events = {
 		RIP.10031 # clear global flags from bubonic plague
+		
+		# FE
+		loptyrian.12 # Create new minor bloods if they're all gone
 	}
 	
 	random_events = {

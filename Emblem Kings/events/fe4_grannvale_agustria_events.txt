@@ -571,6 +571,34 @@ letter_event = {
 				}
 			}
 		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_playable_ruler = {
+						has_character_flag = is_fe4_maios
+					}
+				}
+				c_1109 = { # Maios
+					character_event = {	id = fe4_silesse.1 days = 90 random = 10 }
+				}
+			}else_if = {
+				limit = {
+					any_playable_ruler = {
+						has_character_flag = is_fe4_daccar
+					}
+				}
+				set_global_flag = fe4_maios_defeated
+				c_1108 = { # Daccar
+					character_event = {	id = fe4_silesse.5 days = 90 random = 10 }
+				}
+			}else = {
+				set_global_flag = fe4_maios_defeated
+				set_global_flag = fe4_daccar_defeated
+				# Sigurd
+					character_event = {	id = fe4_silesse.11 days = 90 random = 10 }
+			}
+		}
 	}
 	option = {
 		name = fe4_grannvale_agustria.14.B

@@ -37,3 +37,7 @@ b_tahra = city
 	b_maol_ros = city
 	b_tobar_na_mac = city
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

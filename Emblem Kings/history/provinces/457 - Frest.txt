@@ -36,3 +36,7 @@ religion = church_of_edda
 	b_an_eaglais_bhreac = city
 }
 
+779.1.1 = { 
+	culture = new_thracian
+}
+

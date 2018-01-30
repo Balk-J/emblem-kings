@@ -12,16 +12,16 @@
 	holder=852 # 
 }
 0488.01.01={
-	holder=6530
+	holder=8873
 }
-0514.01.02={
-	holder=6529
+0508.01.02={
+	holder=8872
 }
-0546.01.02={
-	holder=6528
+0557.01.02={
+	holder=8871
 }
-0596.01.02={
-	holder=6527
+0595.01.02={
+	holder=8870
 }
 0649.01.01={
 	holder=1012 # Noba TODO: add filler character
@@ -32,11 +32,11 @@
 	de_jure_liege = k_manster
 	liege = k_manster
 }
-0698.01.02={
-	holder=6533
+0695.01.02={
+	holder=8876
 }
-0737.01.01={
-	holder=6532
+0735.01.01={
+	holder=8875
 }
 0762.01.01={
 	liege = k_thracia # Travant invades

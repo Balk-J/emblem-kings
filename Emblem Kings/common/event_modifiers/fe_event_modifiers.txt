@@ -181,3 +181,6 @@ faction_reform_tyrant_government_ultimatum_timer = {
 marrying_the_chosen_ones = {
 	icon = 18
 }
+loaned_beige_ritter = {
+	icon = 19
+}

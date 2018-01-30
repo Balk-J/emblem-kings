@@ -35,3 +35,7 @@ b_alster_2 = city
 770.1.1 = { 
 	b_dun_sobhairce = castle
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

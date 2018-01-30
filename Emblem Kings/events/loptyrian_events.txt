@@ -462,3 +462,118 @@ character_event = {
 }	
 
 # Create a new minor blood if there are none left
+character_event = {
+	id = loptyrian.12
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	trigger = {
+		is_adult = yes
+		society_member_of = secret_religious_society_loptyrian
+		is_society_grandmaster = yes 
+		loptyrians_searching_for_minor_blood_trigger = yes
+	}
+	
+	option = {
+		name = OK
+		
+		if = {
+			limit = {
+				NOT = {
+					any_character = {
+						trait = holy_blood_major_loptyr
+					}
+				}
+			}
+			random = {
+				chance = 10
+				if = {
+					limit = {
+						NOT = {
+							any_character = {
+								trait = holy_blood_minor_loptyr
+								female = no
+							}
+						}
+					}
+					random_playable_ruler = {
+						limit = {
+							ai = yes
+							capital_holding = {
+								region = world_jugdral
+							}
+						}
+						create_character = {
+							random_traits = yes
+							dynasty = none
+							religion = ROOT
+							culture = ROOT
+							female = no
+							age = 16
+							trait = holy_blood_minor_loptyr
+						}
+					}
+					
+					set_character_flag = minor_blood_created
+				}
+			}
+			random = {
+				chance = 10
+				if = {
+					limit = {
+						NOT = {
+							any_character = {
+								trait = holy_blood_minor_loptyr
+								female = yes
+							}
+						}
+					}					
+					random_playable_ruler = {
+						limit = {
+							ai = yes
+							capital_holding = {
+								region = world_jugdral
+							}
+						}
+						create_character = {
+							random_traits = yes
+							dynasty = none
+							religion = ROOT
+							culture = ROOT
+							female = yes
+							age = 16
+							trait = holy_blood_minor_loptyr
+						}
+					}
+					
+					set_character_flag = minor_blood_created
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = minor_blood_created
+				}
+				any_society_member = {
+					limit = {
+						society_member_of = secret_religious_society_loptyrian
+					}
+					character_event = { id = loptyrian.13 days = 3}
+				}
+				clr_character_flag = minor_blood_created
+			}
+		}
+	}
+}
+# Inform cultists that a minor blood appeared
+character_event = {
+	id = loptyrian.13
+	desc = loptyrian.13.desc
+	picture = GFX_evt_dark_prayer
+	
+	is_triggered_only = yes 
+	hide_from = yes
+	option = {
+		name = loptyrian.13.A
+	}
+}	

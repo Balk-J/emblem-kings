@@ -168,6 +168,9 @@
 	trait=holy_blood_latent_forseti
 	717.1.1={ 
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_daccar
+		}
 	}
 	729.01.01={
 		add_trait="class_mage"
@@ -213,6 +216,9 @@
 	trait=holy_blood_latent_forseti
 	727.1.1={ 
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_maios
+		}
 	}
 	739.01.01={
 		add_trait="class_mage"

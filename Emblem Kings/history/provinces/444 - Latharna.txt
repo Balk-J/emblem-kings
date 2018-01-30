@@ -36,3 +36,7 @@ b_latharna_3 = city
 770.1.1 = { 
 	b_inbhear_beg = castle
 }
+
+779.1.1 = { 
+	culture = new_thracian
+}

@@ -134,6 +134,168 @@ RETTYPE_CUL_BERNESE =
 		wyvern_riders_morale = 0.2
 	}
 }
+
+# Jugdral
+
+RETTYPE_CUL_GRANN = 
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture = grann
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.4
+		heavy_infantry_morale = 0.2
+	}
+}
+RETTYPE_CUL_VERDANIAN = 
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture = verdanian
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.5
+	}
+}
+RETTYPE_CUL_GRANNVALEAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+
+	special_troops = magic_users
+	
+	potential = {
+		is_nomadic = no
+		culture = grannvalean
+	}
+	
+	modifier = {
+		knights_offensive = 0.1
+		magic_users_offensive = 0.1
+		knights_morale = 0.1
+		magic_users_morale = 0.1
+	}
+}
+RETTYPE_CUL_AGUSTRIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		culture = agustrian
+	}
+	
+	modifier = {
+		knights_offensive = 0.1
+		knights_defensive = 0.1
+		knights_morale = 0.2
+	}
+}
+RETTYPE_CUL_SILESSIAN = 
+{
+	first_type = 6
+	first_amount = 250
+	
+	special_troops = pegasus_knights
+	
+	potential = {
+		is_nomadic = no
+		culture = silessian
+	}
+	
+	modifier = {
+		pegasus_knights_offensive = 0.2
+		pegasus_knights_defensive = 0.2
+		pegasus_knights_morale = 0.2
+	}
+}
+RETTYPE_CUL_ISAACHIAN = 
+{
+	first_type = 0
+	first_amount = 400
+	
+	potential = {
+		is_nomadic = no
+		culture = isaachian
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.8
+	}
+}
+RETTYPE_CUL_MANSTERIAN = 
+{
+	first_type = 3
+	first_amount = 300
+	
+	potential = {
+		is_nomadic = no
+		culture = mansterian
+	}
+	
+	modifier = {
+		light_cavalry_defensive = 0.6
+		light_cavalry_morale = 0.2
+	}
+}
+RETTYPE_CUL_THRACIAN = 
+{
+	first_type = 6
+	first_amount = 250
+	
+	special_troops = wyvern_riders
+	
+	potential = {
+		is_nomadic = no
+		culture = thracian
+	}
+	
+	modifier = {
+		wyvern_riders_offensive = 0.4
+		wyvern_riders_morale = 0.2
+	}
+}
+RETTYPE_CUL_NEW_THRACIAN = 
+{
+	first_type = 3
+	first_amount = 200
+	
+	second_type = 6
+	second_amount = 100
+	
+	special_troops = wyvern_riders
+	
+	potential = {
+		is_nomadic = no
+		culture = new_thracian
+	}
+	
+	modifier = {
+		wyvern_riders_defensive = 0.2
+		wyvern_riders_morale = 0.2
+		light_cavalry_defensive = 0.4
+		light_cavalry_morale = 0.2
+	}
+}
+
+# Religious
+
 RETTYPE_REL_MAGE = 
 {
 	first_type = 6
@@ -186,6 +348,23 @@ RETTYPE_REL_MONK =
 	modifier = {
 		magic_users_offensive = 0.2
 		magic_users_defensive = 0.2
+		magic_users_morale = 0.5
+	}
+}
+RETTYPE_REL_LOPTYRIAN = 
+{
+	first_type = 6
+	first_amount = 500
+	
+	special_troops = magic_users
+	
+	potential = {
+		is_nomadic = no
+		religion = loptyrian
+	}
+	
+	modifier = {
+		magic_users_offensive = 0.5
 		magic_users_morale = 0.5
 	}
 }
