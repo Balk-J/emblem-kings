@@ -4,14 +4,26 @@
 	law = succ_primogeniture
 }
 611.1.1={
-	holder=1001 # Heim
+	holder=1001 # Heim	
+	effect = {
+		set_title_flag = crusade_allowed
+	}
 }
 649.1.1={
 	holder=0 # Victory!
+	effect = {
+		clr_title_flag = crusade_allowed
+	}
 }
 777.1.1={
 	holder=1038 # Seliph
+	effect = {
+		set_title_flag = crusade_allowed
+	}
 }
 779.1.1={
 	holder=0 # Victory!
+	effect = {
+		clr_title_flag = crusade_allowed
+	}
 }

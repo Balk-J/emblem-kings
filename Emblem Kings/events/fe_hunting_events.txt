@@ -1,0 +1,706 @@
+namespace = fe4_hunting
+# TODO: need more events here!
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = fe4_hunting.1
+	desc = fe4_hunting.1.desc
+	picture = GFX_evt_hunt	
+	is_triggered_only = yes
+	option = {
+		name = fe4_hunting.1.A
+		hidden_tooltip = { character_event = { id = fe4_hunting.2 days = 30 random = 10 } } 
+	}
+}
+
+# End the hunt
+character_event = {
+	id = fe4_hunting.2
+	desc = fe4_hunting.2.desc
+	picture = GFX_evt_hunt
+
+	is_triggered_only = yes  
+
+	option = {
+		name = fe4_hunting.2.A
+		piety = 50
+		
+		hidden_tooltip = {
+			random_list = {
+				15 = {
+					capital_scope = {
+						create_character = { 
+							culture = THIS
+							religion = THIS
+							age = 10
+						}
+						new_character = { 
+							move_character = ROOT
+							imprison = ROOT
+						}
+					}
+				}
+				15 = {
+					capital_scope = {
+						create_character = { 
+							culture = THIS
+							religion = THIS
+							age = 10
+							female = yes
+						}
+						new_character = { 
+							move_character = ROOT
+							imprison = ROOT
+						}
+					}
+				}
+				70 = {}
+			}
+		}
+	}
+}
+
+# Witch hunt gatekeeper
+character_event = {
+	id = fe4_hunting.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		
+		if = {
+			limit = { 
+				OR = {
+					war = yes 
+					is_inaccessible_trigger = yes
+				}			
+			}
+			character_event = { id = fe4_hunting.10 }
+		}else = {
+			if = {
+				limit = { 
+					any_demense_province = {
+						NOT = { has_province_modifier = witch_hunts }
+					}
+				}
+				random_demense_province = {
+					limit = {
+						NOT = { has_province_modifier = witch_hunts }
+					}
+					random_list = {
+						# Found nothing
+						50 = {
+							ROOT = { character_event = { id = fe4_hunting.22 } }
+						}
+						# Character with Loptyrian holy blood
+						10 = {
+							modifier = {
+								factor = 0
+								ROOT = {
+									NOT = {
+										any_courtier = {
+											at_location = PREVPREV
+											has_loptyr_holy_blood_trigger = yes
+											NOT = { has_character_modifier = loptyr_holy_blood_revealed }
+										}
+									}
+								}					
+							}
+							ROOT = {
+								random_courtier = {
+									limit = { 
+										at_location = PREVPREV 
+										has_loptyr_holy_blood_trigger = yes
+										NOT = { has_character_modifier = loptyr_holy_blood_revealed }
+									}
+									character_event = { id = fe4_hunting.11 }
+								}
+							}							
+						}
+						# Secret Loptyrian nest
+						10 = {
+							modifier = {
+								factor = 0
+								NOT = { has_province_modifier = secret_loptyrian_community }
+							}
+							ROOT = { character_event = { id = fe4_hunting.17 } }
+						}
+						# Peasants suspected of Loptyrian leanings
+						15 = {
+							province_event = { id = fe4_hunting.18 }
+						}
+						# Character suspected of Loptyrian sympathies
+						15 = {
+							ROOT = {
+								random_courtier = {
+									limit = { 
+										at_location = PREVPREV 
+										NOT = { has_loptyr_holy_blood_trigger = yes }
+										NOT = { religion = loptyrian }
+									}
+									character_event = { id = fe4_hunting.19 }
+								}
+							}		
+						}
+					}
+					add_province_modifier = { name = witch_hunts duration = 365 }
+				}
+			}else = {
+				# Nothing to find
+			}
+		}
+	}
+}
+
+# End the chain if at war or otherwise occupied.
+character_event = {
+	id = fe4_hunting.10
+	desc = fe4_hunting.10.desc
+	picture = GFX_evt_heretic
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_witch_hunt
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_witch_hunt
+	}
+
+	option = {
+		name = fe4_hunting.10.A
+	}
+}
+
+# Ping event to get Loptyr blood in scope
+character_event = {
+	id = fe4_hunting.11
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		FROM = { character_event = { id = fe4_hunting.12 } }
+	}
+}
+# Found a character with Loptyr blood
+character_event = {
+	id = fe4_hunting.12
+	desc = fe4_hunting.12.desc
+	picture = GFX_evt_scandal
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_witch_hunt
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_witch_hunt
+	}
+	
+	option = {
+		name = fe4_hunting.12.A
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				trait = zealous
+			}			
+			modifier = {
+				factor = 2
+				trait = just
+			}		
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = FROM value = 0 } }
+			}				
+		}
+		FROM = {
+			add_character_modifier = { name = loptyr_holy_blood_revealed duration = -1 }
+			character_event = {	id = fe4_hunting.13 days = 1}
+		}
+	}
+	option = {
+		name = fe4_hunting.12.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 50
+				trait = greedy
+			}			
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}			
+		}
+		FROM = {
+			letter_event = {	id = fe4_hunting.14 days = 1}
+		}
+	}
+	option = {
+		name = fe4_hunting.12.C
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				trait = trusting
+			}			
+			modifier = {
+				factor = 2
+				trait = kind
+			}			
+			modifier = {
+				factor = 2
+				trait = cynical
+			}			
+			modifier = {
+				factor = 2
+				trait = content
+			}			
+			modifier = {
+				factor = 2
+				trait = craven
+			}			
+			modifier = {
+				factor = 5
+				opinion = { who = FROM value = 20 }
+			}		
+		}
+		random = {
+			chance = 50
+			add_trait_trusting_effect = yes
+		}
+	}
+}
+
+# Notify reveal.
+character_event = {
+	id = fe4_hunting.13
+	desc = fe4_hunting.13.desc
+	picture = GFX_evt_scandal
+	is_triggered_only = yes
+
+	option = {
+		name = fe4_hunting.13.A
+		FROM = {
+			opinion = {
+				modifier = opinion_slandered
+				who = ROOT
+				years = 2
+			}
+		}
+		liege = {
+			if = {
+				limit = { 
+					OR = {
+						religion = church_of_edda
+						religion = earthen_pagan
+						religion = earthen_pagan_reformed
+					}
+				}
+			}
+			opinion = {
+				modifier = opinion_spawn_of_loptyr
+				who = ROOT
+				years = 1
+			}
+		}
+		
+	}
+}
+# Character is blackmailed
+letter_event = {
+	id = fe4_hunting.14
+	desc = fe4_hunting.14.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_hunting.14.A
+		ai_chance = {
+			factor = 50
+
+			modifier = {
+				factor = 2
+				treasury = 50
+			}
+		}
+		treasury = -50
+		FROM = {
+			treasury = 50
+		}
+		opinion = {
+			modifier = opinion_blackmailed
+			who = FROM
+			years = 3
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				letter_event = { id = fe4_hunting.15 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = fe4_hunting.14.B
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 2
+				NOT = {
+					treasury = 50
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_blackmailed
+			who = FROM
+			years = 3
+		}
+		hidden_tooltip = {
+			FROM = {
+				letter_event = { id = fe4_hunting.16 days = 1 }
+			}
+		}
+	}
+}
+# inform blackmail success.
+letter_event = {
+	id = fe4_hunting.15
+	desc = fe4_hunting.15.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+# inform blackmail failure.
+letter_event = {
+	id = fe4_hunting.16
+	desc = fe4_hunting.16.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_hunting.16.A
+		FROM = {
+			add_character_modifier = { name = loptyr_holy_blood_revealed duration = -1 }
+			character_event = {	id = fe4_hunting.13 days = 1 }
+		}
+	}
+	option = {
+		name = fe4_hunting.16.B
+	}
+}
+# Found a province with secret loptyrians
+character_event = {
+	id = fe4_hunting.17
+	desc = fe4_hunting.17.desc
+	picture = GFX_evt_catching_heretic
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_witch_hunt
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_witch_hunt
+	}
+	
+	option = {
+		name = fe4_hunting.17.A
+		ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 5
+				trait = zealous
+			}			
+			modifier = {
+				factor = 2
+				trait = cruel
+			}				
+			modifier = {
+				factor = 2
+				trait = diligent
+			}			
+		}
+		piety = 100
+		random_demense_province = {
+			limit = { has_province_modifier = secret_loptyrian_community }
+			remove_province_modifier = secret_loptyrian_community
+			add_province_modifier = {
+				name = religious_unrest
+				duration = 730
+			}
+		}
+	}
+	option = {
+		name = fe4_hunting.17.B
+		ai_chance = {
+			factor = 3		
+			modifier = {
+				factor = 10
+				religion = maerist
+			}		
+			modifier = {
+				factor = 2
+				trait = kind
+			}			
+			modifier = {
+				factor = 2
+				trait = cynical
+			}			
+			modifier = {
+				factor = 2
+				trait = content
+			}			
+			modifier = {
+				factor = 2
+				trait = craven
+			}			
+			modifier = {
+				factor = 2
+				trait = slothful
+			}	
+		}
+		piety = -50
+		any_courtier = {
+			limit = { 
+				is_priest = yes 
+				OR = {
+					religion = church_of_edda
+					religion = earthen_pagan
+					religion = earthen_pagan_reformed
+				}
+			}
+			opinion = {
+				modifier = opinion_ignored_infidel
+				who = ROOT
+				years = 1
+			}
+		}
+	}
+}
+# Peasants suspected of Loptyrian leanings
+province_event = {
+	id = fe4_hunting.18
+	desc = fe4_hunting.18.desc
+	picture = GFX_evt_accused
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_witch_hunt
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_witch_hunt
+	}
+	
+	option = {
+		name = fe4_hunting.18.A
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				trait = zealous
+			}			
+			modifier = {
+				factor = 2
+				trait = cruel
+			}			
+			modifier = {
+				factor = 2
+				trait = diligent
+			}	
+		}
+		add_province_modifier = {
+			name = religious_unrest
+			duration = 365
+		}
+		owner = { piety = 10 }
+	}
+	option = {
+		name = fe4_hunting.18.B
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				trait = kind
+			}			
+			modifier = {
+				factor = 2
+				trait = cynical
+			}			
+			modifier = {
+				factor = 2
+				trait = content
+			}			
+			modifier = {
+				factor = 2
+				trait = craven
+			}			
+			modifier = {
+				factor = 2
+				trait = slothful
+			}	
+		}
+		owner = { piety = -10 }
+	}
+	option = {
+		name = fe4_hunting.18.C
+		ai_chance = {
+			factor = 1000
+		}
+		tooltip_info = learning
+		trigger = {
+			learning = 12
+		}
+		prestige = 100
+		piety = 10
+	}
+}
+# Ping event to get suspect in scope
+character_event = {
+	id = fe4_hunting.19
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		FROM = { character_event = { id = fe4_hunting.20 } }
+	}
+}
+# Found a suspected Loptyrian
+character_event = {
+	id = fe4_hunting.20
+	desc = fe4_hunting.20.desc
+	picture = GFX_evt_scandal
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_witch_hunt
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_witch_hunt
+	}
+	
+	option = {
+		name = fe4_hunting.20.A
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				trait = zealous
+			}		
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = FROM value = 0 } }
+			}				
+		}
+		piety = 10
+		FROM = {
+			character_event = {	id = fe4_hunting.21 days = 1}
+		}
+	}
+	option = {
+		name = fe4_hunting.20.B
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				trait = trusting
+			}			
+			modifier = {
+				factor = 2
+				trait = kind
+			}			
+			modifier = {
+				factor = 2
+				trait = cynical
+			}			
+			modifier = {
+				factor = 2
+				trait = content
+			}			
+			modifier = {
+				factor = 2
+				trait = craven
+			}			
+			modifier = {
+				factor = 5
+				opinion = { who = FROM value = 20 }
+			}		
+		}
+	}
+}
+# notify slander
+character_event = {
+	id = fe4_hunting.21
+	desc = fe4_hunting.21.desc
+	picture = GFX_evt_scandal
+	is_triggered_only = yes
+
+	option = {
+		name = fe4_hunting.21.A
+		piety = -20
+		opinion = {
+			modifier = opinion_angry
+			who = FROM
+			years = 1
+		}		
+	}
+}
+# Found nothing
+character_event = {
+	id = fe4_hunting.22
+	desc = fe4_hunting.22.desc
+	picture = GFX_evt_bishop
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_witch_hunt
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_witch_hunt
+	}
+
+	option = {
+		name = fe4_hunting.22.A
+		piety = 5
+	}
+}
+
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = fe4_hunting.23
+	hide_window = yes	
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_witch_hunt
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_witch_hunt
+	}
+}
+
+
+#Normal end.
+character_event = {
+	id = fe4_hunting.22222
+	desc = fe4_hunting.2.desc
+	picture = GFX_evt_hunt
+
+	is_triggered_only = yes
+  
+	trigger = {
+		has_character_modifier = holding_child_hunt
+	}
+
+	immediate = {
+		remove_character_modifier = holding_child_hunt
+		clr_character_flag = hunt_found_child
+		clr_character_flag = do_not_disturb
+		clr_character_flag = child_hunt_event_happened
+		clr_character_flag = child_hunt_begin
+		clr_character_flag = recent_child_hunt
+	}
+
+	option = {
+		name = fe4_hunting.2.A
+		piety = 10
+			
+	}
+}

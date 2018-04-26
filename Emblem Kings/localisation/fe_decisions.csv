@@ -127,3 +127,19 @@ marry_loptyian_minor_bloods;Marry the Chosen Ones;;;;;;;;;;;;;x
 marry_loptyian_minor_bloods_desc;If the Loptyrian Order identifies a man and a woman with holy blood, we can try persuading them to marry. The child of such a union would be powerful enough for our lord to possess and return to this plane once more.;;;;;;;;;;;;;x
 marry_loptyian_minor_bloods.tooltip;[From.GetTitledFirstName] seeks out the vessels of the holy blood.;;;;;;;;;;;;;x
 marry_loptyian_minor_bloods.allow;A male and female with minor Loptyr holy blood have been identified by the Loptyrian Order.;;;;;;;;;;;;;x
+hold_child_hunt;Hold Child Hunt;;;;;;;;;;;;;x
+hold_child_hunt_desc;;;;;;;;;;;;;;x
+hold_witch_hunt_church_of_edda;Hold Witch Hunt;;;;;;;;;;;;;x
+hold_witch_hunt_church_of_edda_desc;;;;;;;;;;;;;;x
+summon_the_deadlords;Summon the Deadlords;;;;;;;;;;;;;x
+summon_the_deadlords_desc;Through a dark ritual known to few and within the power of only the greatest mages, corpses can be raised as powerful undead warriors. This ritual goes beyond simply reviving bodies to fight with skills they had in life - it summons the spirits of twelve dark warlords into the vessels, who warp them into forms fitting their power. However, the materials required are expensive and the ritual must be conducted in stages over the course of a year. It cannot be repeated by the same mage.;;;;;;;;;;;;;x
+found_church_of_edda;Found the Church of Edda;;;;;;;;;;;;;x
+found_church_of_edda_desc;To help the land heal from Loptyrian domination, I could start a new church that brings the teachings of our old gods in a form fit for this modern age.;;;;;;;;;;;;;x
+create_church_of_loptyr;Create the Church of Loptyr;;;;;;;;;;;;;x
+create_church_of_loptyr_desc;With enough authority, I could organize my followers into a formal church.;;;;;;;;;;;;;x
+create_schwarze_rosen;Create the Schwarze Rosen;;;;;;;;;;;;;x
+create_schwarze_rosen_desc;We can fund the creation of a Loptyrian holy order to strike fear into the hearts of our enemies.;;;;;;;;;;;;;x
+form_new_thracia;Reunite Thracia;;;;;;;;;;;;;x
+form_new_thracia_desc;With control of the entire Thracian peninsula, I could unite north and south Thracia into the single kingdom they were always meant to be.;;;;;;;;;;;;;x
+reintegrate_manster;;;;;;;;;;;;;;x
+_desc; ;;;;;;;;;;;;;x

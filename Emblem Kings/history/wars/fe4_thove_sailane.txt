@@ -1,0 +1,19 @@
+name = "Thove Claim on Sailane War"
+
+casus_belli = {
+	actor = 1109 # Maios
+	recipient = 1032 # Sigurd
+	casus_belli = silesse_claim
+	landed_title=d_sailane
+	date=760.1.1
+}
+
+760.1.1 = {
+	add_attacker = 1109
+	add_defender = 1032
+}
+
+760.2.28 = {
+	rem_attacker = 1109
+	rem_defender = 1032
+}

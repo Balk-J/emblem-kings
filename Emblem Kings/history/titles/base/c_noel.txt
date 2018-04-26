@@ -10,11 +10,14 @@
 	liege = d_kapathogia
 }
 649.1.1={
-	liege = d_noel
+	liege = k_thracia
 }
 770.1.1={
 	holder=1469 # Dobalzark
 }
 777.1.1={
 	holder=0 # 
+}
+779.1.1={
+	liege = k_new_thracia
 }

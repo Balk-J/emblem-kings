@@ -208,4 +208,28 @@ spriteTypes = {
 		name = "GFX_marry_loptyian_minor_bloods"
 		texturefile = "gfx\\interface\\decision_icon_pick_main_deity.dds"
 	}
+	spriteType = {
+		name = "GFX_found_church_of_edda"
+		texturefile = "gfx\\interface\\decision_icon_church_of_edda.dds"
+	}
+	spriteType = {
+		name = "GFX_create_church_of_loptyr"
+		texturefile = "gfx\\interface\\decision_icon_restore_high_priesthood.dds"
+	}
+	spriteType = {
+		name = "GFX_vassalize_church_of_loptyr"
+		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_child_hunt"
+		texturefile = "gfx\\interface\\decision_icon_hunting.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_witch_hunt_church_of_edda"
+		texturefile = "gfx\\interface\\decision_icon_hunting.dds"
+	}
+	spriteType = {
+		name = "GFX_summon_the_deadlords"
+		texturefile = "gfx\\interface\\decision_icon_morphs.dds"
+	}
 }

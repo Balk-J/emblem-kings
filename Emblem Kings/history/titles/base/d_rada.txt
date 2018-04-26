@@ -1,0 +1,17 @@
+# d_rada > k_miletos
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_miletos
+	#holder = 0
+}
+764.1.1={
+	holder=1069 # Hilda 
+}
+764.1.1={
+	holder=1336 # Ridale
+}
+#770.1.1={
+#	holder=1265 # Morigan
+#}

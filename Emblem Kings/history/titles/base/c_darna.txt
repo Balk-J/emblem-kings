@@ -9,6 +9,12 @@
 440.1.1={
 	holder=872 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	liege = d_darna
+}
 649.1.1={
 	holder=1310 # filler
 }
@@ -19,5 +25,10 @@
 #	holder=1253 # Bramsel # can't do this or it de-republics him
 #}
 778.1.1={
+	#holder=0 # 
+	holder=1038 # Seliph?
+}
+779.1.1={
 	holder=0 # 
+	liege = k_yied 
 }

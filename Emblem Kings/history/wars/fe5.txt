@@ -1,0 +1,22 @@
+name = "Manster Resistance War for Leonster"
+
+casus_belli = {
+	actor = 1058 # Bloom
+	recipient = 1162 # Leif
+	casus_belli = grannvale_suppress_rebels
+	date=776.1.1
+}
+
+776.1.1 = {
+	add_attacker = 1058
+	add_defender = 1162
+}
+777.1.1 = {
+	add_defender = 1038 # Seliph
+}
+
+778.1.1 = {
+	rem_attacker = 1058
+	rem_defender = 1162
+	rem_defender = 1038
+}

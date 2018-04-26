@@ -1,0 +1,20 @@
+name = "Agustrian Invasion of Agustria"
+# Do war names get any better than this?
+
+casus_belli = {
+	actor = 1090 # Chagall
+	recipient = 1029 # Azmur
+	casus_belli = chagall_invasion
+	landed_title=k_verdane
+	date=759.1.1
+}
+
+759.1.1 = {
+	add_attacker = 1090
+	add_defender = 1029
+}
+
+759.12.30 = {
+	rem_attacker = 1090
+	rem_defender = 1029
+}

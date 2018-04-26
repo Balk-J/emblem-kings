@@ -135,6 +135,9 @@ d_divine_sky = {
 	color2={ 220 220 0 }
 	
 	capital = 188 #	Bulgar
+	allow = {
+		always = no # Only by special decision
+	}
 	
 	title = "DIVINE_SKY_PRIEST"
 	title_female = "DIVINE_SKY_PRIESTESS"
@@ -160,7 +163,10 @@ d_earthen = {
 	color={ 122 165 70 }
 	color2={ 220 220 0 }
 	
-	capital = 1 #temp
+	capital = 502 #temp
+	allow = {
+		always = no # Only by special decision
+	}
 	
 	title = "HEAD_PRIEST"
 	title_female = "HEAD_PRIESTESS"
@@ -182,9 +188,42 @@ d_earthen = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
+d_church_of_edda = {
+	color={ 122 165 70 }
+	color2={ 220 220 0 }
+	allow = {
+		always = no # Only by special decision
+	}
+	
+	capital = 342 # Edda 
+	#capital = 523 # Blagi Tower 
+	
+	title = "ARCHBISHOP"
+	title_female = "ARCHBISHOP"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = church_of_edda
+	
+	religion = church_of_edda
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
 d_loptyrian = {
 	color={ 76 56 80 }
 	color2={ 220 220 0 }
+	allow = {
+		always = no # Only by special decision
+	}
 	
 	capital = 525 # Yied
 	

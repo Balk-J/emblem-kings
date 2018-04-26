@@ -1,0 +1,24 @@
+name = "Battle of Belhalla"
+
+casus_belli = {
+	actor = 1070 # Lombard
+	recipient = 1032 # Sigurd
+	casus_belli = battle_of_belhalla
+	date=760.3.1
+}
+
+760.3.1 = {
+	add_attacker = 1070
+	add_defender = 1032
+	add_defender = 1039 # Claud
+	add_attacker = 1056 # Reptor
+	add_attacker = 1083 # Andrey
+}
+
+761.1.1 = {
+	rem_attacker = 1070
+	rem_defender = 1032
+	rem_defender = 1039 # Claud
+	rem_attacker = 1056 # Reptor
+	rem_attacker = 1083 # Andrey
+}

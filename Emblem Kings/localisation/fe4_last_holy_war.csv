@@ -1,0 +1,57 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe4_last_holy_war.4.desc;Now that you are of age, more of the common folk are comparing you to your noble father. They are starting to hail you as a potential savior and the best hope to save the world from darkness.;;;;;;;;;;;;;x
+fe4_last_holy_war.4.A;I hope to prove worthy of their trust.;;;;;;;;;;;;;x
+fe4_last_holy_war.5.title;The Scion of Light;;;;;;;;;;;;;x
+fe4_last_holy_war.5.desc.1;The insignificant worms that infest this land have found a new symbol to cling to. [From.GetLordLady] [From.GetFirstName], the [From.GetSonDaughter] of [From.Father.GetTitledName] and heir of Baldr.\n\nThey have some fanciful story about how [From.GetFirstName] is the rightful ruler of Jugdral and will lead a crusade to cleanse the land of evil.;;;;;;;;;;;;;x
+fe4_last_holy_war.5.desc.2;Lately the common folk have been buzzing with rumors about [From.GetLordLady] [From.GetFirstName], the [From.GetSonDaughter] of [From.Father.GetTitledName].\n\nIf their tales can be believed, [From.GetFirstName] is the heir to [From.GetHerHis] father's noble spirit and a true champion of justice. Some whisper that [From.GetFirstName] is the rightful ruler of all Jugdral, and the only one who can save the land from evil.;;;;;;;;;;;;;x
+fe4_last_holy_war.5.A;Don't make me laugh!;;;;;;;;;;;;;x
+fe4_last_holy_war.5.B;That remains to be seen.;;;;;;;;;;;;;x
+fe4_last_holy_war.6.title;The Scion of Darkness;;;;;;;;;;;;;x
+fe4_last_holy_war.6.desc;Tales about [From.GetTitledName] have been spreading like wildfire across Jugdral. [From.GetHerHisCap] charisma and charm have been well-known for some time, but now it seems that something very dark lurks beneath [From.GetHerHis] polished surface.\n\nThere are countless rumors of [From.GetFirstName]'s cruelty and abuse towards anyone [From.GetSheHe] considers beneath [From.GetHerHim]. Many people who have met with [From.GetFirstName] in person find the experience terrifying, as if they encountered a demon wearing human skin...;;;;;;;;;;;;;x
+fe4_last_holy_war.6.A;[From.GetTitledFirstName] is truly Loptyr's chosen...;;;;;;;;;;;;;x
+fe4_last_holy_war.6.B;You would swear [From.GetSheHe] isn't even human.;;;;;;;;;;;;;x
+fe4_last_holy_war.10.desc;Word has reached you that the forces of [FromFrom.PrimaryTitle.GetName] are planning a purge of rebellious elements. [From.GetTitledName] will be commanding an army to subjugate your lands.;;;;;;;;;;;;;x
+fe4_last_holy_war.10.A;Let's move!;;;;;;;;;;;;;x
+fe4_last_holy_war.10.A.tooltip;§Y[Root.GetTitledFirstName]§! goes to war with §Y[From.GetTitledName]§!;;;;;;;;;;;;;x
+fe4_last_holy_war.11.title;Light Inheritors;;;;;;;;;;;;;x
+fe4_last_holy_war.11.desc;A dangerous revolt is brewing in [From.Capital.GetName]!\n\n [From.GetFullName], a descendant of one of the twelve crusaders, has been quietly gathering people dissatisfied with the rule of your liege [Root.Liege.GetTitledFirstName]. [From.GetFirstName]'s following has been growing steadily and [From.GetSheHe] will soon be able to field a large army, if [From.GetSheHe] does not already have one. \n\nThe people of [Root.PrimaryTitle.GetName] are whispering that [From.GetFirstName] and [From.GetHerHis] rebels are a liberation army that will save Jugdral from tyranny. Unless you act quickly, your position as [Root.GetTitle] will be undermined... and you'll have to answer to [Root.Liege.GetTitledFirstName].;;;;;;;;;;;;;x
+fe4_last_holy_war.11.A;Order the men to attack!;;;;;;;;;;;;;x
+fe4_last_holy_war.13.desc;[From.GetTitledFirstName] has surrendered! The people of [From.PrimaryTitle.GetName] have risen up in your name and seized many of [From.GetHerHis] holdings. They have pledged to turn control of them to you. This is a major step in the liberation of Jugdral!;;;;;;;;;;;;;x
+fe4_last_holy_war.13.A;There is yet more work to be done.;;;;;;;;;;;;;x
+fe4_last_holy_war.14.desc;It is time to decide how you will proceed with the liberation of Jugdral.;;;;;;;;;;;;;x
+fe4_last_holy_war.14.A;We will strike the head from the serpent.;;;;;;;;;;;;;x
+fe4_last_holy_war.14.A.tooltip;§Y[Root.GetTitledFirstName]§! will retain this casus belli if [Root.GetSheHe] decides against declaring war immediately.;;;;;;;;;;;;;x
+fe4_last_holy_war.14.B;Our comrades need our help.;;;;;;;;;;;;;x
+fe4_last_holy_war.14.C;We have enough to deal with at the moment.;;;;;;;;;;;;;x
+fe4_last_holy_war.15.desc;The kingdom you recently conquered is one of the countries founded by the twelve crusaders. Some of your advisors have suggested that you place a descendant of the crusaders with a claim to the title on the throne.;;;;;;;;;;;;;x
+fe4_last_holy_war.15.A;Yes, that would be the proper thing to do.;;;;;;;;;;;;;x
+fe4_last_holy_war.15.B;We will sort this out later.;;;;;;;;;;;;;x
+fe4_last_holy_war.16.desc.1;The rebel army is at war. Since I owe my kingdom to the crusaders, perhaps I should assist them.;;;;;;;;;;;;;x
+fe4_last_holy_war.16.desc.2;The rebel army is at war. We are kindred spirits - perhaps I should assist them.;;;;;;;;;;;;;x
+fe4_last_holy_war.16.A;To arms!;;;;;;;;;;;;;x
+fe4_last_holy_war.16.B;I cannot risk it.;;;;;;;;;;;;;x
+fe4_last_holy_war.16.C;I am already helping. What more can I do?;;;;;;;;;;;;;x
+fe4_last_holy_war.17.desc;You have prevailed over Loptyr's army and seized control of all lands and titles held by the fell beast. The common folk are celebrating you as their savior! When the celebrations are over you will have to decide how to manage the lands you took.;;;;;;;;;;;;;x
+fe4_last_holy_war.17.A;I will take everything and distribute them myself.;;;;;;;;;;;;;x
+fe4_last_holy_war.17.B;Return the rightful heirs to their thrones.;;;;;;;;;;;;;x
+fe4_last_holy_war.17.C;My comrades wish to start their own nations...;;;;;;;;;;;;;x
+fe4_last_holy_war.18.desc;It seems your family is greatly admired by the people of Verdane. A band of Verdanian commoners arrived at [Root.Location.GetName] today to ask that you accept the title of [Root.GetKingQueen] and take the land under your protection.;;;;;;;;;;;;;x
+fe4_last_holy_war.18.A;How can I refuse?;;;;;;;;;;;;;x
+fe4_last_holy_war.18.A.tooltip;Independent rulers in de jure §YVerdane§! may swear fealty to §Y[Root.GetTitledFirstName]§! when they hear the news.;;;;;;;;;;;;;x
+fe4_last_holy_war.18.B;No, I do not have the right.;;;;;;;;;;;;;x
+fe4_last_holy_war.19.desc;[From.GetFullName] has crowned [Root.GetHerselfHimself] [From.GetKingQueen] of Verdane! It seems the local peasants remember one of [From.GetHerHis] ancestors fondly and asked [From.GetHerHim] to become their new protector. They might expect you to acknowledge [From.GetFirstName] as your [From.GetKingQueen] as well.;;;;;;;;;;;;;x
+fe4_last_holy_war.19.A;Long live [From.GetKingQueen] [From.GetFirstName]!;;;;;;;;;;;;;x
+fe4_last_holy_war.19.B;I'll not bow to a [GetRootFromInsult]!;;;;;;;;;;;;;x
+fe4_last_holy_war.20.desc;A group of merchants from Miletos has come seeking an audience. They point out that their nation was not founded by a crusader and should be free to follow its own path. They have asked your permission to establish an independent republic there, modeled after the Grann Republic of old.;;;;;;;;;;;;;x
+fe4_last_holy_war.20.A;A fine idea! Good fortune to your republic.;;;;;;;;;;;;;x
+fe4_last_holy_war.20.A.tooltip;§YMiletos§! will become an independent merchant republic led by a new character.;;;;;;;;;;;;;x
+fe4_last_holy_war.20.B;I will not put Miletos in your hands, but I will release my vassals.;;;;;;;;;;;;;x
+fe4_last_holy_war.20.C;Miletos will remain in my realm.;;;;;;;;;;;;;x
+fe4_last_holy_war.20.D;You do realize that I no longer hold that title, yes?;;;;;;;;;;;;;x
+fe4_last_holy_war.20.D.tooltip;The merchants are very embarrassed.;;;;;;;;;;;;;x
+fe4_last_holy_war..title;;;;;;;;;;;;;;x
+fe4_last_holy_war..desc;;;;;;;;;;;;;;x
+fe4_last_holy_war..A;;;;;;;;;;;;;;x
+fe4_last_holy_war..B;;;;;;;;;;;;;;x
+fe4_last_holy_war..C;;;;;;;;;;;;;;x
+fe4_last_holy_war..D;;;;;;;;;;;;;;x

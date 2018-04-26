@@ -1,0 +1,47 @@
+# d_belhalla > k_grannvale
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_grannvale
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_valhalla
+}
+440.1.1={
+	holder=842 # 
+}
+450.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	liege = k_grannvale
+}
+649.1.1={
+	de_jure_liege = k_grannvale
+}
+649.1.1={
+	holder=1001 # Heim
+}
+670.1.1={
+	holder=1163 # 
+}
+699.1.1={
+	holder=1164 # 
+}
+707.1.1={
+	holder=1171 # 
+}
+712.1.1={
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+776.1.1={
+	holder=1051 # Julius
+}
+779.1.1={
+	holder=1038 # Seliph
+}

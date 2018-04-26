@@ -1179,3 +1179,514 @@ character_event = {
 		set_character_flag = quintessence_rejected
 	}
 }
+# Deadlords
+character_event = {
+	id = magic.20
+	desc = magic.20.desc
+	picture = GFX_evt_magic_ritual
+	
+	is_triggered_only = yes 
+	hide_from = yes
+	
+	option = {
+		name = magic.20.A	
+		hidden_tooltip = { character_event = { id = magic.21 days = 365 } }
+	}
+}
+character_event = {
+	id = magic.21
+	desc = magic.21.desc
+	picture = GFX_evt_magic_ritual
+	
+	is_triggered_only = yes 
+	hide_from = yes
+	
+	option = {
+		name = magic.21.A	
+		
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_mus
+					}
+				}
+			}				
+			create_character = {
+				name = "Eins"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3001
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = brilliant_strategist
+				trait = base_class_knight
+				trait = class_general
+				trait = robust
+				trait = heavy_infantry_leader
+				trait = unyielding_leader
+				trait = experimenter
+				trait = narrow_flank_leader
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_mus				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_bovis
+					}
+				}
+			}				
+			create_character = {
+				name = "Zwei"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3002
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = brilliant_strategist
+				trait = base_class_horse_archer
+				trait = class_bow_knight
+				trait = cavalry_leader
+				trait = flanker
+				trait = flat_terrain_leader
+				trait = light_foot_leader
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_bovis				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_tigris
+					}
+				}
+			}				
+			create_character = {
+				name = "Drei"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3003
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = skilled_tactician
+				trait = base_class_fighter
+				trait = class_warrior
+				trait = strong
+				trait = aggressive_leader
+				trait = heavy_infantry_leader
+				trait = unyielding_leader
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_tigris			
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_lepus
+					}
+				}
+			}				
+			create_character = {
+				name = "Vier"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = yes
+				dynasty = 3004
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = brilliant_strategist
+				trait = base_class_cleric
+				trait = class_war_cleric
+				trait = inspiring_leader
+				trait = holy_warrior
+				trait = defensive_leader
+				trait = light_foot_leader
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_lepus				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_draco
+					}
+				}
+			}				
+			create_character = {
+				name = "Fünf"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3005
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = brilliant_strategist
+				trait = base_class_archer
+				trait = class_sniper
+				trait = light_foot_leader
+				trait = rough_terrain_leader
+				trait = mountain_terrain_leader
+				trait = jungle_terrain_leader
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_draco			
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_anguilla
+					}
+				}
+			}				
+			create_character = {
+				name = "Sechs"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = yes
+				dynasty = 3006
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = skilled_tactician
+				trait = base_class_mage
+				trait = class_mage_knight_female
+				trait = organizer
+				trait = cavalry_leader
+				trait = flat_terrain_leader
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_anguilla				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_equus
+					}
+				}
+			}				
+			create_character = {
+				name = "Seiben"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3007
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = brilliant_strategist
+				trait = base_class_cavalier
+				trait = class_paladin
+				trait = cavalry_leader
+				trait = aggressive_leader
+				trait = experimenter
+				trait = flat_terrain_leader
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_equus				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_ovis
+					}
+				}
+			}				
+			create_character = {
+				name = "Achs"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3008
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = skilled_tactician
+				trait = base_class_mage
+				trait = class_sage
+				trait = defensive_leader
+				trait = inspiring_leader
+				trait = desert_terrain_leader
+				trait = quick
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_ovis			
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_simia
+					}
+				}
+			}				
+			create_character = {
+				name = "Neun"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = yes
+				dynasty = 3009
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = brilliant_strategist
+				trait = base_class_myrmidon
+				trait = class_swordmaster_female
+				trait = light_foot_leader
+				trait = aggressive_leader
+				trait = narrow_flank_leader
+				trait = trickster
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_simia				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_gallus
+					}
+				}
+			}				
+			create_character = {
+				name = "Zehn"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3010
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = skilled_tactician
+				trait = base_class_dark_mage
+				trait = class_sorceror
+				trait = defensive_leader
+				trait = flanker
+				trait = unyielding_leader
+				trait = shrewd
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_gallus				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_canis
+					}
+				}
+			}				
+			create_character = {
+				name = "Elf"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = yes
+				dynasty = 3011
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = brilliant_strategist
+				trait = base_class_monk
+				trait = class_bishop_female
+				trait = holy_warrior
+				trait = inspiring_leader
+				trait = defensive_leader
+				trait = winter_soldier
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_canis		
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					deadlord = {
+						is_alive = yes
+						has_character_flag = is_deadlord_porcus
+					}
+				}
+			}				
+			create_character = {
+				name = "Zwölf"
+				random_traits = no
+				religion = FROM
+				culture = FROM
+				female = no
+				dynasty = 3012
+				age = 20
+				attributes = {
+					martial = 10
+					diplomacy = 0
+					intrigue = 0
+				}
+				trait = undead
+				trait = deadlord
+				trait = skilled_tactician
+				trait = base_class_thief
+				trait = class_assassin
+				trait = siege_leader
+				trait = trickster
+				trait = flanker
+			}			
+			new_character = {
+				set_variable = { which = "level" value = 20 }	
+				set_character_flag = class_selected
+				set_character_flag = magic_or_faith_question
+				set_character_flag = is_deadlord_porcus				
+			}
+		}
+	}
+}
+# Deadlord auto-summon on scenario start
+character_event = {
+	id = magic.22
+	hide_window = yes
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = OK
+		set_character_flag = summoned_deadlords
+		add_character_modifier = {
+			name = summoning_deadlords
+			duration = 7
+		}
+		hidden_tooltip = { character_event = { id = magic.21 days = 7 } }
+	}
+}

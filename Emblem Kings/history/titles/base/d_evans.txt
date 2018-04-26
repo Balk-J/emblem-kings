@@ -1,0 +1,55 @@
+# d_evans > k_verdane
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_verdane
+	#holder = 0
+}
+180.1.1={
+	liege = k_grann
+	de_jure_liege = k_grann
+}
+430.1.1={
+	holder=819 # 
+}
+448.1.1={
+	holder=801 # Grann destroyed
+	de_jure_liege = k_verdane
+}
+448.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	holder=1177 # 
+}
+655.1.1={
+	liege = k_verdane
+}
+680.1.1={
+	holder=1178 # 
+}
+701.1.1={
+	holder=1179 # 
+}
+715.1.1={
+	holder=1180 # Batou
+}
+758.1.1={
+	liege = k_grannvale
+	holder=1032 # Sigurd
+}
+759.1.1={
+	holder=1241 # Barbarian
+}
+761.1.1={
+	holder=0 
+	liege = 0
+}
+779.1.1={
+	liege = k_verdane
+	holder=1038 # Should be Jamke's son, but since we can't assume...
+}
+819.1.1={
+	liege = k_grannvale
+}

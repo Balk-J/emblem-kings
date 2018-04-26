@@ -10,13 +10,16 @@
 	liege = d_thracia
 }
 649.1.1={
-	liege = d_iss
+	liege = k_thracia
 }
 738.1.1={
 	holder = 1448 # Filler
 }
 779.1.1={
 	holder = 1444 # Halvan
+}
+779.1.1={
+	liege = k_new_thracia
 }
 811.1.1={
 	holder = 1445 # Halvan's sister

@@ -10,7 +10,7 @@
 	holder=1020 # 
 }
 649.1.1={
-	holder=0 
+	#holder=0 
 	liege = d_orgahil
 }
 757.1.1={

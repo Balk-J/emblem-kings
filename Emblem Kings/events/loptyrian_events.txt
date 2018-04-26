@@ -28,6 +28,10 @@ character_event = {
 			factor = 0.1
 			religion = loptyrian
 		}
+		modifier = {
+			factor = 0.1
+			society_member_of = secret_religious_society_loptyrian
+		}
 #		modifier = {
 #			factor = 0.5
 #			host = {
@@ -144,7 +148,39 @@ character_event = {
 					}
 				}
 			}
-			# TODO: implement this
+			random_character = {
+				limit = {
+					is_female = yes
+					is_minor_blood_found_by_loptyrians_trigger = yes
+				}
+				set_character_flag = minor_blood_primary
+				
+				if = {
+					limit = {
+						is_married = yes
+					}
+					character_event = {	id = loptyrian.5 }
+				} else = {
+					hidden_tooltip = { add_trait = no_marriage_hidden }
+					character_event = {	id = loptyrian.8 days = 1 }
+				}
+			}
+			random_character = {
+				limit = {
+					is_female = no
+					is_minor_blood_found_by_loptyrians_trigger = yes
+				}
+				set_character_flag = minor_blood_secondary
+				
+				if = {
+					limit = {
+						is_married = yes
+					}
+					character_event = {	id = loptyrian.5 }
+				} else = {
+					hidden_tooltip = { add_trait = no_marriage_hidden }
+				}
+			}
 		} 
 		# Otherwise (only male is landed, both landed, or none landed), it's the gentleman.
 		else = {
@@ -298,18 +334,13 @@ character_event = {
 				if = {
 					limit = { is_female = yes }
 					add_spouse_matrilineal = PREV
-					hidden_tooltip = {
-						impregnate = PREV
-					}
 				} else = {
 					add_spouse = PREV
-					hidden_tooltip = {
-						PREV = {
-							impregnate = ROOT
-						}
-					}
 				}
 				add_lover = PREV
+				hidden_tooltip = {
+					character_event = {	id = loptyrian.14 }
+				}
 			}
 			if = {
 				limit = {
@@ -577,3 +608,736 @@ character_event = {
 		name = loptyrian.13.A
 	}
 }	
+
+# The minor bloods have a baby
+character_event = {
+	id = loptyrian.14	
+	is_triggered_only = yes 
+	hide_window = yes
+	option = {
+		name = OK
+		
+		# if this event is called later than the day of the wedding, make sure the spouse is still holy blooded
+		if = {
+			limit = {
+				is_married = yes
+				spouse = {
+					OR = {
+						trait = holy_blood_major_loptyr
+						trait = holy_blood_minor_loptyr
+					}
+				}
+			}
+			# Is the woman already pregnant?
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							is_female = yes
+							is_pregnant = yes
+						}
+						AND = {
+							is_female = no
+							spouse = {
+								is_pregnant = yes
+							}
+						}
+					}
+				}
+				# Come back in a month and try again
+				character_event = {	id = loptyrian.14 days = 30 }
+			}else = {
+				if = {
+					limit = { is_female = yes }
+					
+					# NOTE: comments in the forum say that impregnate can be called multiple times to get twins. This doesn't appear to work, so we'll have to rely on luck to get Julius and Julia as twins...
+					
+					spouse = {
+						ROOT = {
+							impregnate = PREV
+							
+							# If it's possible, set up a twin with major Naga blood
+							if = {
+								limit = {
+									OR = {
+										trait = holy_blood_major_naga
+										spouse = { trait = holy_blood_major_naga }
+									}
+								}
+								impregnate = PREV
+							}
+						}
+					}
+				} else = {
+					spouse = {
+						impregnate = ROOT
+						# If it's possible, set up a twin with major Naga blood
+						if = {
+							limit = {
+								OR = {
+									trait = holy_blood_major_naga
+									spouse = { trait = holy_blood_major_naga }
+								}
+							}
+							impregnate = ROOT 
+						}
+					}	
+				}
+			}
+		}
+	}
+}
+
+# Inform cultists that the spawn of Loptyr has appeared
+character_event = {
+	id = loptyrian.15
+	desc = {
+		trigger = {
+			NOT = { has_artifact = regalia_loptyr }
+		}
+		text = loptyrian.15.desc.1
+	}	
+	desc = {
+		trigger = {
+			has_artifact = regalia_loptyr
+		}
+		text = loptyrian.15.desc.2
+	}
+	picture = GFX_evt_dark_prayer
+	
+	is_triggered_only = yes 
+	#hide_from = yes
+	option = {
+		name = loptyrian.15.A
+		trigger = {
+			NOT = { has_artifact = regalia_loptyr }
+		}
+	}
+	option = {
+		name = loptyrian.15.B
+		trigger = {
+			has_artifact = regalia_loptyr
+		}
+		ai_chance = {
+			factor = 100		
+		}
+        add_society_currency_major_effect = yes
+		custom_tooltip = {
+			text = loptyrian.15.B.tooltip
+			hidden_tooltip = {
+				FROM = {
+					character_event = {	id = loptyrian.16 days = 10 random = 4 }
+				}
+			}
+		}
+	}
+	option = {
+		name = loptyrian.15.C
+		trigger = {
+			has_artifact = regalia_loptyr
+		}
+		ai_chance = {
+			factor = 0		
+		}
+		detract_society_currency_major_effect = yes
+	}
+}	
+
+# Spawn of Loptyr receives the book
+character_event = {
+	id = loptyrian.16
+	desc = loptyrian.16.desc
+	picture = GFX_evt_shady_meeting
+	
+	is_triggered_only = yes 
+	hide_from = yes
+	option = {
+		name = loptyrian.16.A
+		ai_chance = { 
+			factor = 50 
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+				religion = church_of_edda
+			}
+			modifier = {
+				factor = 100
+				true_religion = loptyrian
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.5
+				trait = trusting
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_artifact = regalia_loptyr }
+			}
+			FROM = { 
+				random_artifact = {
+					limit = {
+						artifact_type = regalia_loptyr
+					}
+					transfer_artifact = {
+						from = PREV to = ROOT 
+					} 
+				}
+			}
+		}else = {
+			add_artifact = regalia_loptyr
+			new_artifact = {
+				set_creation_date = 440.1.1
+			}
+		}	
+		hidden_tooltip = {
+			character_event = {	id = loptyrian.19 }
+		}
+	}
+	option = {
+		name = loptyrian.16.B
+		
+		ai_chance = { 
+			factor = 50 
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}		
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 10
+				trait = zealous
+				religion = church_of_edda
+			}
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = { 
+					FROM = { 
+						NOT = { character = ROOT } 
+						society_member_of = secret_religious_society_loptyrian
+					}				
+				}
+			}
+		}
+		
+	}	
+}		
+# Inform cultist the book was rejected
+character_event = {
+	id = loptyrian.17
+	desc = loptyrian.17.desc
+	picture = GFX_evt_child_play
+	
+	is_triggered_only = yes 
+	option = {
+		name = loptyrian.17.A
+		prestige = -50
+	}
+}
+# Loptyr spawn gets the book
+character_event = {
+	id = loptyrian.18
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = OK
+		if = {
+			limit = {
+				trait = holy_blood_major_loptyr
+				NOT = { trait = possessed_loptyr } 
+				NOT = {	possessed_loptyr = { is_alive = yes } }
+			}
+		}
+		character_event = { id = loptyr.3 }
+	}
+}
+
+# Inform Loptyr of revival
+character_event = {
+	id = loptyrian.19
+	desc = loptyr.3.desc
+	picture = GFX_evt_lunatic
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyr.3.A
+		loptyr_possession_effect = yes
+		loptyr_revival_effect = yes		
+	}
+}
+# Attack the children of Naga!
+character_event = {
+	id = loptyrian.20
+	desc = loptyrian.20.desc
+	picture = GFX_evt_lunatic
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.20.A
+		custom_tooltip = {
+			text = loptyrian.20.A.tooltip
+			#character_event = { id = loptyrian.21 days = 1 }
+			hidden_tooltip = {
+				if = {
+					limit = { 
+						is_ruler = yes
+					}
+					any_courtier = {
+						limit = { has_naga_holy_blood_trigger = yes }
+						character_event = { id = loptyrian.21 days = 1 }
+					}
+				}else = {
+					employer = {
+						any_courtier = {
+							limit = { has_naga_holy_blood_trigger = yes }
+							character_event = { id = loptyrian.21 days = 1 }
+						}
+					}
+				}
+				character_event = {	id = loptyrian.24 days = 730 random = 365 }
+			}
+		}
+	}
+}
+# Naga blood attacked by Loptyr
+character_event = {
+	id = loptyrian.21
+	desc = loptyrian.21.desc
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes 
+	
+	immediate = {
+		opinion = {
+			modifier = attempted_murder
+			who = FROM
+			years = 100
+		}		
+	}
+	
+	option = {
+		name = loptyrian.21.A
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 0
+				OR = {
+					father = {
+						at_location = ROOT
+						has_naga_holy_blood_trigger = yes
+					}
+					mother = {
+						at_location = ROOT
+						has_naga_holy_blood_trigger = yes
+					}			
+				}
+			}		
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+		}
+		custom_tooltip = {
+			text = loptyrian.21.A.tooltip
+		}
+		random_list = {
+			5 = {	# Win and wound attacker
+				FROM = { add_trait_wounded_effect = yes }
+			}
+			10 = {}	# Win
+			15 = { # Lose and get wounded
+				add_trait_wounded_effect = yes
+			}
+			20 = { # Lose and get maimed 
+				add_maimed_trait_effect = yes
+			}
+			50 = { # Lose and die
+				death = {
+					death_reason=death_murder_unknown
+					killer=FROM
+				}
+			}
+		}
+	}
+	option = {
+		name = loptyrian.21.B
+		ai_chance = { 
+			factor = 15 
+			modifier = {
+				factor = 0
+				OR = {
+					father = {
+						at_location = ROOT
+						has_naga_holy_blood_trigger = yes
+					}
+					mother = {
+						at_location = ROOT
+						has_naga_holy_blood_trigger = yes
+					}			
+				}
+			}		
+			modifier = {
+				factor = 2
+				trait = trusting
+			}
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				has_character_flag = is_fe4_deirdre
+			}	
+		}
+		custom_tooltip = {
+			text = loptyrian.21.B.tooltip
+		}
+		random_list = {
+			5 = {}	# Escape
+			10 = { # Wounded
+				add_trait_wounded_effect = yes
+			}
+			15 = { # Maimed 
+				add_maimed_trait_effect = yes
+			}
+			70 = { # Die
+				modifier = {
+					factor = 1000
+					has_character_flag = is_fe4_deirdre
+					ai = yes
+				}
+				death = {
+					death_reason=death_murder_unknown
+					killer=FROM
+				}
+			}
+		}
+	}
+	option = {
+		name = loptyrian.21.C
+		ai_chance = { 
+			factor = 60 
+			modifier = {
+				factor = 10
+				trait = craven
+			}
+		}
+		custom_tooltip = {
+			text = loptyrian.21.C.tooltip
+		}
+		prestige = -50
+		random_list = {
+			50 = {}	# Escape
+			30 = { # Wounded
+				add_trait_wounded_effect = yes
+			}
+			15 = { # Maimed 
+				add_maimed_trait_effect = yes
+			}
+			5 = { # Die
+				death = {
+					death_reason=death_murder_unknown
+					killer=FROM
+				}
+			}
+		}
+	}
+	option = {
+		name = loptyrian.21.D
+		trigger = {
+			OR = {
+				father = {
+					at_location = ROOT
+					has_naga_holy_blood_trigger = yes
+				}
+				mother = {
+					at_location = ROOT
+					has_naga_holy_blood_trigger = yes
+				}			
+			}
+		}
+		ai_chance = { 
+			factor = 1000 
+		}
+		custom_tooltip = {
+			text = loptyrian.21.D.tooltip
+			hidden_tooltip = {
+				random_character = {
+					limit = {
+						trait = possessed_forseti
+					}
+					character_event = { id = loptyrian.22 }
+				}
+			}
+		}
+	}
+}
+# Ping event for Lewyn
+character_event = {
+	id = loptyrian.22
+	desc = loptyrian.22.desc
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.22.A
+		if = {
+			limit = { 
+				FROM = { 
+					ai = yes 
+					is_ruler = no
+				}			
+			}
+			if = {
+				limit = { is_ruler = yes }
+				FROM = { move_character = ROOT }
+			}else = {
+				employer = {
+					FROM = { move_character = PREV }
+				}
+			}
+		}else = {
+			reverse_opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 100
+			}		
+		}
+	}
+	option = {
+		name = loptyrian.22.B
+		character_event = { id = loptyrian.22 }
+	}
+}
+
+# Notify cultists of Loptyr's rebirth
+narrative_event = {
+	id = loptyrian.23
+	title = loptyrian.23.title
+	desc = loptyrian.23.desc
+	picture = GFX_evt_dark_prayer
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = loptyrian.23.A
+		trigger = {
+			is_society_grandmaster = yes
+		}
+		if = {
+			limit = {
+				has_society_currency_major_trigger = no
+			}
+			# Give them enough currency to issue the flip order!
+			add_society_currency_major_effect = yes
+			add_society_currency_major_effect = yes
+		}
+		set_character_flag=loptyrian_order_head_at_revival
+	}
+	option = {
+		name = loptyrian.23.A
+		trigger = {
+			is_society_grandmaster = no
+		}
+	}		
+}
+
+# Loptyr starts to take power.
+character_event = {
+	id = loptyrian.24
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = OK
+		if = {
+			limit = { 
+				is_ruler = no
+				liege = {
+					ROOT = {
+						is_primary_heir = yes
+					}
+				}
+			}
+			liege = { character_event = { id = loptyrian.25 } }
+		}
+	}
+}
+narrative_event = {
+	id = loptyrian.25
+	title = loptyrian.25.title
+	desc = loptyrian.25.desc
+	picture = GFX_evt_scandal
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.25.A
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0 
+				intrigue = 10
+			} 
+		}
+		
+		random = {
+			chance = 50
+			add_trait_trusting_effect = yes
+		}
+		
+		hidden_tooltip = {
+			character_event = { id = loptyrian.26 days = 3 }
+		}
+	}
+	option = {
+		name = loptyrian.25.B
+		ai_chance = { 
+			factor = 90 
+		}
+		FROM = { character_event = { id = loptyrian.26 days = 3 } }
+	}
+}
+
+# Loptyr confronted by liege
+character_event = {
+	id = loptyrian.26
+	desc = loptyrian.26.desc
+	picture = GFX_evt_son_asking_father
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.26.A
+		ai_chance = { 
+			factor = 9 
+		}		
+		FROM = { character_event = { id = loptyrian.28 } }
+	}
+	option = {
+		name = loptyrian.26.B
+		ai_chance = { 
+			factor = 1 
+		}
+		FROM = { character_event = { id = loptyrian.27 } }
+	}
+}
+# Inform liege that Loptyr backed down (?!)
+character_event = {
+	id = loptyrian.27
+	desc = loptyrian.27.desc
+	picture = GFX_evt_son_asking_father
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.27.A		
+	}
+}
+# Inform liege that Loptyr will not back down
+character_event = {
+	id = loptyrian.28
+	desc = loptyrian.28.desc
+	picture = GFX_evt_son_asking_father
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.28.A		
+		character_event = { id = loptyrian.29 }
+	}
+	option = {
+		name = loptyrian.28.B		
+		character_event = { id = loptyrian.29 } 
+	}
+	option = {
+		name = loptyrian.28.C		
+		if = {
+			limit = {
+				ai = yes
+			}
+			abdicate_to = FROM
+		}else = {
+			primary_title = {
+				usurp_title = FROM
+			}
+		}
+	}
+}
+character_event = {
+	id = loptyrian.29
+	desc = loptyrian.29.desc
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.29.A	
+		if = {
+			limit = {
+				ai = yes
+			}
+			abdicate_to = FROMFROM
+		}else = {
+			primary_title = {
+				usurp_title = FROMFROM
+			}
+		}
+	}
+}
+# Liege does not investigate Loptyr and gets brushed aside
+character_event = {
+	id = loptyrian.30
+	desc = loptyrian.30.desc
+	picture = GFX_evt_shadow
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.30.A	
+		character_event = { id = loptyrian.31 }
+	}
+}
+character_event = {
+	id = loptyrian.31
+	desc = loptyrian.31.desc
+	picture = GFX_evt_lunatic
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyrian.31.A	
+		death = {
+			death_reason=death_murder_unknown
+			killer=FROM
+		}
+	}
+}

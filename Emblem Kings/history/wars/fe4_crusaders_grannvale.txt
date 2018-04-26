@@ -1,0 +1,22 @@
+name = "1st Grannvalean Crusade"
+
+casus_belli = {
+	actor = 1038 # Seliph
+	recipient = 1051 # Julius
+	casus_belli = jugdral_crusade
+	date=778.1.1
+}
+
+778.1.1 = {
+	add_attacker = 1038
+	add_defender = 1051
+	add_attacker = 1162 # Leif
+	add_attacker = 1136 # Shannan
+}
+
+779.1.1 = {
+	rem_attacker = 1038
+	rem_defender = 1051
+	rem_attacker = 1162 # Leif
+	rem_attacker = 1136 # Shannan
+}

@@ -88,7 +88,7 @@ character_event = {
 		}
 		
 		# Startup events for scenarios
-		if = { # Genealogy
+		if = { # Genealogy, pre-Birth of the Holy Knight
 			limit = { 
 				year = 755
 				NOT = { year = 756 }
@@ -97,13 +97,40 @@ character_event = {
 				id = startup.9
 			}
 		}
-		if = { # Genealogy
+		if = { # Genealogy, Birth of the Holy Knight
 			limit = { 
 				year = 756
-				NOT = { year = 760 }
+				NOT = { year = 759 }
 			}
 			character_event = {
 				id = startup.8
+			}
+		}
+		if = { # Genealogy, Battle of Belhalla
+			limit = { 
+				year = 760
+				NOT = { year = 761 }
+			}
+			character_event = {
+				id = startup.13
+			}
+		}
+		if = { # Thracia 776
+			limit = { 
+				year = 776
+				NOT = { year = 777 }
+			}
+			character_event = {
+				id = startup.11
+			}
+		}
+		if = { # Genealogy Endgame
+			limit = { 
+				year = 777
+				NOT = { year = 778 }
+			}
+			character_event = {
+				id = startup.12
 			}
 		}
 		if = { # Lyn's Story
@@ -135,6 +162,7 @@ character_event = {
 				id =  startup.2
 			}
 		}
+		
 	}
 }
 
@@ -508,6 +536,25 @@ character_event = {
 		c_1247 = {
 			set_mother = 0
 		}
+		if = { 
+			limit = { 
+				year = 757
+				NOT = { year = 760 }
+			}
+			c_1049 = { # Arvis
+				character_event = { id = loptyrian.1 days = 7 } # Get noticed by the Loptyrians
+			}
+		}
+		if = { 
+			limit = { 
+				year = 759
+				NOT = { year = 760 }
+			}
+			c_1203 = { # Deirdre
+				character_event = { id = loptyrian.1 days = 7 } # Get noticed by the Loptyrians
+			}
+		}
+		
 		
 	}
 	option = {
@@ -545,6 +592,7 @@ character_event = {
 
 
 # Genealogy of the Holy War setup, 757
+# Specifically, for the Birth of the Holy Knight scenario
 character_event = {
 	id = startup.8
 	
@@ -575,11 +623,10 @@ character_event = {
 				}
 				c_1049 = { # Arvis
 					character_event = { id = fe4_grannvale_verdane.1 days = 30 } # Give Sigurd the Silver Sword
-					character_event = { id = loptyrian.1 days = 7 } # Get noticed by the Loptyrians
 				}
-				c_1160 = { # Quan
-					#character_event = { id = fe4_grannvale_verdane.4 days = 1 }
-				}
+#				c_1160 = { # Quan
+#					character_event = { id = fe4_grannvale_verdane.4 days = 1 }
+#				}
 				c_1136 = { # Shannan
 					set_character_flag = fe4_isaach_hiding_in_verdane			
 				}
@@ -587,11 +634,11 @@ character_event = {
 					#character_event = { id = fe4_grannvale_verdane.10 days = 90 }	
 					add_trait = no_marriage
 				}
-				c_etain = { # Jamke
-					holder_scope = {
-						#character_event = { id = fe4_grannvale_verdane.7 days = 120 }
-					}
-				}
+#				c_etain = { # Jamke
+#					holder_scope = {
+#						character_event = { id = fe4_grannvale_verdane.7 days = 120 }
+#					}
+#				}
 				c_1203 = { # Deirdre
 					add_trait = no_marriage					
 				}
@@ -632,7 +679,7 @@ character_event = {
 	is_triggered_only = yes 
 	
 	immediate = {
-		# Fix automatically created barons with wrong culture/religion
+		# Fix automatically created barons with wrong culture/religion. Not sure why this happens - vanilla bug?
 		any_landed_title = {
 			limit = {
 				tier = BARON
@@ -653,6 +700,119 @@ character_event = {
 						}
 					}
 					character_event = { id = util.4 }
+				}
+			}
+		}
+		
+		# Also fix rulers created by the automatic character builder who have the wrong culture (e.g. Grannvalean when Grannvale doesn't exist yet).
+		# Yes, I *should* fix the builder instead of doing this inefficient hack. It's on the list!
+		if = {
+			limit = {
+				NOT = { year = 649 }
+			}
+			any_character = {
+				limit = {
+					culture_group = jugdrali
+					NOT = { culture = grann }
+				}
+				culture = grann
+			}
+			any_character = {
+				limit = {
+					religion = church_of_edda
+				}
+				religion = earthen_pagan
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Thracia 776 Setup
+character_event = {
+	id = startup.11
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_fe5 }
+			}
+			set_global_flag = scenario_fe5
+			
+			d_schwarze_rosen = {
+				holder_scope = {
+					character_event = { id = magic.22 days = 1}
+				}
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Genealogy Endgame Setup
+character_event = {
+	id = startup.12
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_fe4_the_last_holy_war }
+			}
+			set_global_flag = scenario_fe4_the_last_holy_war
+			
+			e_grannvale = {
+				holder_scope = {
+					character_event = { id = magic.22 days = 1}
+				}
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Battle of Belhalla setup
+character_event = {
+	id = startup.13
+	
+	is_triggered_only = yes 
+	
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_fe4_genealogy_of_the_holy_war }
+			}
+			set_global_flag = scenario_fe4_genealogy_of_the_holy_war
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						name = fe_story
+						value = on
+					}
+					c_1032 = {
+						war = yes
+						any_war = { 
+							using_cb = battle_of_belhalla
+						}
+						is_primary_war_defender = yes
+					}
+				}
+				c_1032 = { # Sigurd
+					character_event = {	id = fe4_belhalla.27 days = 10 random = 4 }
+				}
+				c_1160 = { # Quan
+					character_event = { id = fe4_belhalla.6 days=7 random=3 }
+				}
+				c_1049 = { # Arvis
+					character_event = {	id = fe4_belhalla.17 days = 365 random = 14 }
 				}
 			}
 		}

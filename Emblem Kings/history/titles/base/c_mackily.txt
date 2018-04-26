@@ -9,6 +9,12 @@
 440.1.1={
 	holder=832 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	liege = d_mackily
+}
 740.1.1={
 	holder=1102 # Clement
 }

@@ -10,6 +10,9 @@
 	holder = 895
 	liege = 0
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
 	holder = 0 
 	liege = d_kapathogia

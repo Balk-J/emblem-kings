@@ -9,9 +9,9 @@ loptyrian.4.A;This is destined to be.;;;;;;;;;;;;;x
 loptyrian.4.B;The time is not right.;;;;;;;;;;;;;x
 loptyrian.5.desc;A sinister-looking [From.GetManWoman] appears in front of you with a flash of light. [From.GetHerHisCap] smile is evil, and [From.GetHerHis] voice is hypnotic. "Prepare for your rebirth. Once we erase a few memories, we shall introduce you to your new [Root.GetHusbandWifeOpp]. There's no use fighting it. This is destined to be.";;;;;;;;;;;;;x
 loptyrian.5.A;W-what... are you d-d-doing? St-stop it! [Root.Spouse.GetFirstName]...;;;;;;;;;;;;;x
-loptyrian.5.A.tooltip;Â§Y[Root.GetTitledName]Â§! is overpowered by the spell.;;;;;;;;;;;;;x
+loptyrian.5.A.tooltip;§Y[Root.GetTitledName]§! is overpowered by the spell.;;;;;;;;;;;;;x
 loptyrian.5.B;Get... out of my mind!;;;;;;;;;;;;;x
-loptyrian.5.B.tooltip;Â§Y[Root.GetTitledName]Â§! attempts to fight off the spell.;;;;;;;;;;;;;x
+loptyrian.5.B.tooltip;§Y[Root.GetTitledName]§! attempts to fight off the spell.;;;;;;;;;;;;;x
 loptyrian.6.desc;;;;;;;;;;;;;;x
 loptyrian.6.desc.1;The [FromFrom.GetManWoman] from before has brought you to a private room in [Root.Location.GetName] where a [Root.GetManWomanOpp] is waiting for you. Something about [Root.GetHerHimOpp] seems familar, and you feel an immediate kinship with [Root.GetHerHimOpp]...;;;;;;;;;;;;;x
 loptyrian.6.desc.2;The appointed time has come and gone, with no word from that [FromFrom.GetManWoman] you encountered before.;;;;;;;;;;;;;x
@@ -27,8 +27,60 @@ loptyrian.10.desc;[From.GetTitledName], a vessel of Lord Loptyr's holy bloodline
 loptyrian.10.A;This will not stop our lord's revival!;;;;;;;;;;;;;x
 loptyrian.11.desc;It is done. The vessels of the holy bloodline have been joined. Now we only need to await the birth of a child with the full power of our lord's blood.;;;;;;;;;;;;;x
 loptyrian.11.A;Only a few years more.;;;;;;;;;;;;;x
-loptyrian.13.desc;Last night I had a strange dream. A great dark serpent slithered through a city, somehow going unnoticed by everyone it passed. Then it reared up, rising to its full height, taller than the highest buildings around it. It looked me in the eye, then I woke in a cold sweat...;;;;;;;;;;;;;x
+loptyrian.13.desc;Last night you had a strange dream. A great dark serpent slithered through a city, somehow going unnoticed by everyone it passed. Then it reared up, rising to its full height, taller than the highest buildings around it. It looked you in the eye, then you woke in a cold sweat...;;;;;;;;;;;;;x
 loptyrian.13.A;Is this some sort of sign?;;;;;;;;;;;;;x
+loptyrian.15.desc.1;You had a dream last night that can only be a message from Loptyr himself! You saw a [From.GetBoyGirl] playing somewhere in [From.Location.GetName], with the unmistakable brand of Loptyr on [From.GetHerHis] forehead. The scene faded to black, and a great voice rumbled, "THAT IS THE VESSEL. FIND IT. PROTECT IT. ENSURE IT RECEIVES THE HOLY TOME.";;;;;;;;;;;;;x
+loptyrian.15.desc.2;You had a dream last night that can only be a message from Loptyr himself! You saw a [From.GetBoyGirl] playing somewhere in [From.Location.GetName], with the unmistakable brand of Loptyr on [From.GetHerHis] forehead. The scene faded to black, and a great voice rumbled, "KEEPER OF THE TOME. NOW IS THE TIME. DELIVER THE BOOK TO MY VESSEL AT ONCE.";;;;;;;;;;;;;x
+loptyrian.15.A;Lord Loptyr's revival is at hand!;;;;;;;;;;;;;x
+loptyrian.15.B;I will do as you command, my lord!;;;;;;;;;;;;;x
+loptyrian.15.B.tooltip;§Y[Root.GetTitledFirstName]§! gives the §YBook of Loptyr§! to §Y[From.GetTitledName]§!;;;;;;;;;;;;;x
+loptyrian.15.C;I must take my time with a mission this important. Perhaps later.;;;;;;;;;;;;;x
+loptyrian.16.desc;A [From.GetManWoman] dressed in long dark robes has come to visit you today. [From.GetSheHeCap] produces a book bound in black and purple leather and holds it toward you. "A gift for you, my [Root.GetLordLady].";;;;;;;;;;;;;x
+loptyrian.16.A;Thank you!;;;;;;;;;;;;;x
+loptyrian.16.B;I don't want it. It looks scary.;;;;;;;;;;;;;x
+loptyrian.17.desc;[From.GetTitledFirstName] refused to take the holy tome! [From.GetSheHeCap] brushed me aside and ran off to play with other children.;;;;;;;;;;;;;x
+loptyrian.17.A;Now what?;;;;;;;;;;;;;x
+loptyrian.19.desc;You can hear something in that black book calling to you. Something old and cruel. There's a part of you that recognizes that voice, a part that feels everything in your life has been leading up to this moment. Maybe it's that part that drives you to take the book and stare into its arcane symbols, as the calls of the presence get more and more forceful and coil around your own thoughts...;;;;;;;;;;;;;x
+loptyrian.19.A;My... head...;;;;;;;;;;;;;x
+loptyrian.20.desc;You can feel them. The children of your ancient enemy, surrounding you at the moment of your rebirth. If you leave them alone they could threaten you one day. Best to kill them now before they realize what your return means.;;;;;;;;;;;;;x
+loptyrian.20.A;Die.;;;;;;;;;;;;;x
+loptyrian.20.A.tooltip;§Y[Root.GetTitledFirstName]§! attacks nearby characters with §YNaga§! holy blood.;;;;;;;;;;;;;x
+loptyrian.21.desc;You are heading for your chambers late at night when [From.GetTitledName] blocks your path. There's something different about [From.GetHerHim]. [From.GetSheHeCap]'s clutching an eerie black tome and grinning like a terrifying demon of legend. There is no doubt in your mind that [From.GetFirstName] intends to kill you.;;;;;;;;;;;;;x
+loptyrian.21.A;Die, monster!;;;;;;;;;;;;;x
+loptyrian.21.A.tooltip;§Y[Root.GetTitledFirstName]§! attempts to fight §Y[From.GetTitledName]§!;;;;;;;;;;;;;x
+loptyrian.21.B;[From.GetTitledFirstName]? Can we talk about this?;;;;;;;;;;;;;x
+loptyrian.21.B.tooltip;§Y[Root.GetTitledFirstName]§! attempts to reason with §Y[From.GetTitledName]§!;;;;;;;;;;;;;x
+loptyrian.21.C;I have to get away!;;;;;;;;;;;;;x
+loptyrian.21.C.tooltip;§Y[Root.GetTitledFirstName]§! flees;;;;;;;;;;;;;x
+loptyrian.21.D;Wait, what's going on? Is this a warp spell?;;;;;;;;;;;;;x
+loptyrian.21.D.tooltip;§Y[Root.GetTitledFirstName]§! is warped to safety by a nearby relative.;;;;;;;;;;;;;x
+loptyrian.22.desc;You are going about your business when [From.GetTitledName] appears in front of you! [From.GetSheHeCap] seems confused and disoriented. [From.GetSheHeCap] doesn't remember how [From.GetSheHe] got here.;;;;;;;;;;;;;x
+loptyrian.22.A;Don't worry, I'll help you.;;;;;;;;;;;;;x
+loptyrian.22.B;Begone!;;;;;;;;;;;;;x
+loptyrian.23.title;Loptyr's Revival;;;;;;;;;;;;;x
+loptyrian.23.desc;Loptyr has returned at last! Members of the order observed [From.GetTitledName] as [From.GetSheHe] took up the holy Book of Loptyr and became the vessel of our lord in the mortal plane.\n\nUnder [From.GetHerHis] divine guidance, we will surely rise to dominate these lands again!;;;;;;;;;;;;;x
+loptyrian.23.A;Is this the time to come into the open?;;;;;;;;;;;;;x
+loptyrian.23.B;Praise Loptyr!;;;;;;;;;;;;;x
+loptyrian.25.title;The [Root.GetTitle]'s Shadow;;;;;;;;;;;;;x
+loptyrian.25.desc;Your [GetFromRelation] [From.GetFirstName] has been acting odd for a while now. [From.GetSheHeCap] speaks very well and impresses all the dignitaries [From.GetSheHe] meets at court, but there are nasty rumors going around about the cruelty [From.GetSheHe] shows to people who aren't useful to [From.GetHerHim]. \n\n[From.GetFirstName] is regularly seen in the company of [From.GetHerHis] personal servants, priests clad in dark robes. [From.GetSheHeCap] has been quietly inserting these people into positions of authority in the realm. You suspect [From.GetSheHe] has forged orders and issued commands in your name to make this happen. [From.GetHerHisCap] agents haven't done anything objectionable yet, but your reputation could suffer if you allow [From.GetFirstName] to carry on with [From.GetHerHis] schemes.;;;;;;;;;;;;;x
+loptyrian.25.A;[From.GetFirstName] is only trying to take responsibilities off my shoulders.;;;;;;;;;;;;;x
+loptyrian.25.B;I must have a word with [From.GetFirstName] about this.;;;;;;;;;;;;;x
+loptyrian.26.desc;Your [GetFromRelation] [From.GetFirstName] has finally noticed the believers you have been inserting into key positions of [From.PrimaryTitle.GetName]'s court. [From.GetSheHeCap] had the nerve to confront you about it and demand you stop at once!;;;;;;;;;;;;;x
+loptyrian.26.A;Oh, [GetFromRelation]. It's time I showed you that your time has passed.;;;;;;;;;;;;;x
+loptyrian.26.B;Amusing. I'll stop... for now.;;;;;;;;;;;;;x
+loptyrian.27.desc;When you confronted [From.GetHerHim], [From.GetFirstName] apologized for acting without your approval and explained that [From.GetSheHe] was only doing what [From.GetSheHe] thought best for the realm. [From.GetSheHeCap] promised to replace [From.GetHerHis] servants with people of your choice.;;;;;;;;;;;;;x
+loptyrian.27.A;As well [From.GetSheHe] should.;;;;;;;;;;;;;x
+loptyrian.28.desc;When you spoke to [From.GetFirstName] [From.GetSheHe] seemed amused that you would confront [From.GetHerHim] about the matter. [From.GetSheHeCap] encouraged you to abdicate and hand over full control of [Root.PrimaryTitle.GetName] to [From.GetHerHim]!;;;;;;;;;;;;;x
+loptyrian.28.A;You've gone too far. You are hereby banished from the realm.;;;;;;;;;;;;;x
+loptyrian.28.B;That was a poor jest. I'll forgive it if you stop your little scheme.;;;;;;;;;;;;;x
+loptyrian.28.C;Ah... all right, then. As you wish.;;;;;;;;;;;;;x
+loptyrian.29.desc;[FromFrom.GetFirstName] only chuckles. Then [FromFrom.GetSheHe] produces a black tome and stalks toward you. "Let me explain to you how things will be from now on." The next few moments are a blur of dark magic and pain. Some time later, you agree to leave [Root.PrimaryTitle.GetName] to [FromFrom.GetFirstName] and stay out of [FromFrom.GetHerHis] way.;;;;;;;;;;;;;x
+loptyrian.29.A;What sort of monster has my [GetFromFromRelation] become?;;;;;;;;;;;;;x
+loptyrian.30.desc;You've been up a bit too late tonight. [Root.Location.GetName] seems quieter than usual as you head for bed.;;;;;;;;;;;;;x
+loptyrian.30.A;How did it get so dark in there?;;;;;;;;;;;;;x
+loptyrian.31.desc;When you enter your bedchamber, your world goes black. Is this some sort of dark magic? You look around in vain for the mage, but your strength is fading fast...;;;;;;;;;;;;;x
+loptyrian.31.A;Who's there?!;;;;;;;;;;;;;x
+loptyrian.29.B;;;;;;;;;;;;;;x
 loptyrian..title;;;;;;;;;;;;;;x
 loptyrian..desc;;;;;;;;;;;;;;x
 loptyrian..A;;;;;;;;;;;;;;x

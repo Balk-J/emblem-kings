@@ -693,12 +693,12 @@ draconic_group = {
 		evil_god_names = {
 			GOD_LOPTYR GOD_THE_DARK_GOD
 		}
-		crusade_name = GREAT_HOLY_WAR
+		crusade_name = CRUSADE
 		scripture_name = THE_SAGAS
 		priest_title = PRIEST
 		
 		investiture = no
-		can_excommunicate = no
+		can_excommunicate = yes # see: Father August
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
 		can_retire_to_monastery = yes
@@ -712,8 +712,10 @@ draconic_group = {
 		intermarry = earthen_pagan_reformed
 		intermarry = earthen_pagan
 			
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		#religious_clothing_head = 3
+		#religious_clothing_priest = 3
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
 		
 		# Since these people apparently need the things that are strictly forbidden for obvious reasons spelled out for them. Shannan, Calf, Edain, looking at you.
 		bs_marriage = no 
@@ -737,7 +739,7 @@ draconic_group = {
 		evil_god_names = {
 			GOD_NAGA 
 		}
-		crusade_name = GREAT_HOLY_WAR
+		crusade_name = CRUSADE
 		scripture_name = THE_WORD
 		priest_title = PRIEST
 		

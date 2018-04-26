@@ -10,8 +10,11 @@
 	holder=885 # 
 }
 649.1.1={
-	holder=0 
+	liege = k_thracia
 }
 741.1.1={
 	holder=1453 # Filler 
+}
+779.1.1={
+	liege = k_new_thracia
 }

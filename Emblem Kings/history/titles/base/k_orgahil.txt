@@ -1,0 +1,15 @@
+# k_orgahil
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	#holder = 0
+}
+440.1.1={
+	holder=0 # 
+	de_jure_liege = e_grann
+}
+448.1.1={
+	holder=0 # 
+	de_jure_liege = e_orgahil
+}

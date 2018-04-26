@@ -55,18 +55,71 @@ character_event = {
 }	
 character_event = {
 	id = fe_test.3
-	desc = "class.3.desc"
-	picture = "GFX_evt_child_sword" 
 		
 	is_triggered_only = yes
 	
-	# Father's class 1
 	option = {
-		name = "class.3.A"
+		random_demesne_province = {
+			add_holding_slot = 1
+		}
 	}
+}
+character_event = {
+	id = fe_test.4
+		
+	is_triggered_only = yes
 	
-	# Father's class 2
 	option = {
-		name = "class.3.B"
+		any_claim = {
+			limit = {
+				OR = {
+					de_jure_liege_or_above = k_verdane
+					de_jure_liege_or_above = k_agustria
+				}
+			}
+			remove_claim = PREV
+		}
+	}
+}	
+character_event = {
+	id = fe_test.5
+		
+	is_triggered_only = yes
+	
+	option = {
+		if = {
+			limit = {
+				#ROOT = { is_vassal_or_below = k_miletos }
+				ROOT = { any_realm_character = { has_landed_title = k_miletos } }
+			}
+			prestige = 100
+		}
+	}
+	option = {
+		if = {
+			limit = {
+				#ROOT = { is_vassal_or_below = d_agusty }
+				ROOT = { any_realm_character = { has_landed_title = d_agusty } }
+			}
+			prestige = 100
+		}
+	}
+	option = {
+		if = {
+			limit = {
+				#ROOT = { is_vassal_or_below = k_verdane }
+				ROOT = { any_realm_character = { has_landed_title = k_verdane } }
+			}
+			prestige = 100
+		}
+	}
+}
+character_event = {
+	id = fe_test.6
+		
+	is_triggered_only = yes
+	
+	option = {
+		fix_loptyrian_bishop_capitals_effect = yes
 	}
 }

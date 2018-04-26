@@ -1,4 +1,67 @@
 decisions = {	
+	found_church_of_edda = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			OR = {
+				religion = church_of_edda
+				has_character_flag = is_fe4_blagi # Blagi always gets to do it even if he flips back to Earthen for some reason
+			}
+			dynasty = 1003 # Edda
+			NOT = { is_title_active = d_church_of_edda }
+			d_church_of_edda = {
+				has_holder = no
+				NOT = {
+					any_previous_holder = {
+						always = yes
+					}
+				}
+			}
+		}
+		
+		allow = {
+			OR = {
+				owns = 342 # Edda
+				any_realm_lord = {
+					owns = 342
+				}
+			}
+			war = no
+		}
+		
+		effect = {
+			activate_title = { title = d_church_of_edda status = yes }
+			if = {
+				limit = { NOT = { religion = church_of_edda } }
+				religion = church_of_edda
+			}
+			d_church_of_edda = {
+				grant_title = ROOT
+			}
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = papacy_instituted
+					years = 20
+				}
+			}
+			hidden_effect = {
+				character_event = { id = fe_religion.3 }
+			}
+			piety = 1000
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	create_golden_church = {
 		only_playable = yes
 		
@@ -400,6 +463,201 @@ decisions = {
 					add_character_modifier = { name = marrying_the_chosen_ones duration = 30 }
 					character_event = { id = loptyrian.4 }
 				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	create_church_of_loptyr = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			trait = possessed_loptyr
+			NOT = { is_title_active = d_loptyrian }
+		}
+		
+		allow = {
+			independent = yes
+			religion = loptyrian
+			action_allowed_trigger = yes
+			war = no
+			higher_tier_than = DUKE
+		}
+		
+		effect = {
+			activate_title = { title = d_loptyrian status = yes }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						any_playable_ruler = {
+							has_character_flag = loptyrian_order_head_at_revival
+							independent = yes
+							ai = yes
+							religion = loptyrian
+						}
+					}
+					random_playable_ruler = {
+						limit = {
+							has_character_flag = loptyrian_order_head_at_revival
+							independent = yes
+							ai = yes
+							religion = loptyrian
+						}
+						clr_character_flag = loptyrian_order_head_at_revival
+						save_event_target_as = loptyrian_archbishop_target
+					}
+				}else = {
+					create_random_priest = {
+						dynasty = none
+						random_traits = yes
+					}
+					new_character = {
+						add_trait = base_class_dark_mage
+						add_trait = class_sorceror
+						set_variable = { which = level value = 1 }
+						save_event_target_as = loptyrian_archbishop_target
+					}				
+				}
+				event_target:loptyrian_archbishop_target = { 
+					d_loptyrian = {
+						grant_title = PREV
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_creator_of_rel_heal
+					}
+					set_defacto_liege = ROOT
+				}
+				religion_authority = {
+					modifier = papacy_instituted
+					years = 20
+				}
+			}
+			hidden_effect = {
+				character_event = { id = fe_religion.4 }
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	vassalize_church_of_loptyr = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			trait = possessed_loptyr
+			d_loptyrian = { 
+				ai = yes
+				has_holder = yes 
+				independent = yes
+			}
+		}
+		
+		allow = {
+			independent = yes
+			religion = loptyrian
+			action_allowed_trigger = yes
+			war = no
+			higher_tier_than = DUKE
+		}
+		
+		effect = {
+			d_loptyrian = {
+				holder_scope = {
+					set_defacto_liege = ROOT
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	create_schwarze_rosen = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			trait = possessed_loptyr
+			is_title_active = d_loptyrian
+			NOT = { is_title_active = d_schwarze_rosen }
+		}
+		
+		allow = {
+			independent = yes
+			religion = loptyrian
+			action_allowed_trigger = yes
+			war = no
+			wealth = 200
+			piety = 500
+		}
+		
+		effect = {
+			wealth = -200
+			activate_title = { title = d_schwarze_rosen status = yes }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						any_character = {
+							has_character_flag = schwarze_rosen_head
+							ai = yes
+							religion = loptyrian
+						}
+					}
+					random_character = {
+						limit = {
+							has_character_flag = schwarze_rosen_head
+							ai = yes
+							religion = loptyrian
+						}
+						clr_character_flag = schwarze_rosen_head
+						save_event_target_as = schwarze_rosen_head_target
+					}
+				}else = {
+					create_random_priest = {
+						dynasty = none
+						random_traits = yes
+					}
+					new_character = {
+						add_trait = base_class_dark_mage
+						add_trait = class_sorceror
+						set_variable = { which = level value = 1 }
+						save_event_target_as = schwarze_rosen_head_target
+					}				
+				}
+				event_target:loptyrian_archbishop_target = { 
+					d_schwarze_rosen = {
+						grant_title = PREV
+					}
+					wealth = 200
+				}
+			}
+			hidden_effect = {
+				character_event = { id = fe_religion.5 }
 			}
 		}
 		

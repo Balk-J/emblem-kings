@@ -14,11 +14,11 @@
 }
 758.1.1={
 	liege = d_evans
-	holder=0 # 
+	#holder=0 # 
 }
 758.1.1={
 	holder=1508 # Barbarian
 }
 779.1.1={
-	holder=0 
+	#holder=0 
 }

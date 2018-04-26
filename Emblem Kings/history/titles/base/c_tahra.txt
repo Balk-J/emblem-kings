@@ -10,6 +10,9 @@
 	holder = 890
 	liege = 0
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
 	liege = d_tahra
 }

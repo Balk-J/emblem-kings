@@ -16,6 +16,7 @@
 1175.1.1={
 	holder=232 # Galdes
 }
-1181.1.1={
-	liege=0 # liberated
+1181.01.01={
+	liege=d_vectis
+	holder=2034 # post-occupation landholder
 }

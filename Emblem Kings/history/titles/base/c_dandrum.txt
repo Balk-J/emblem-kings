@@ -9,15 +9,21 @@
 440.1.1={
 	holder=892 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
 	#holder=0 # Set to appropriately cultured ruler?
+	liege = k_thracia
 }
 763.1.1={
 	liege = k_manster
 	holder=1421 # Kempf
 }
 777.1.1={
-	liege = d_noel
+	liege = k_thracia
 	#holder=0 # Set to appropriately cultured ruler?
-	#holder=0 # ?
+}
+779.1.1={
+	liege = k_new_thracia
 }

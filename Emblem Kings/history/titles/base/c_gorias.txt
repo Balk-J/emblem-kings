@@ -9,6 +9,12 @@
 440.1.1={
 	holder=872 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	liege = d_darna
+}
 649.1.1={
 	holder=1027 # Cult of Loptyr
 }

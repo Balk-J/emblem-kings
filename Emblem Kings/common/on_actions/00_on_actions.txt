@@ -1575,6 +1575,8 @@ on_death = {
 		#regalia.19 # Death of a regalia holder - DEPRECATED; replaced by artifact inheritance
 		#fire_emblem.1 # Death of the Fire Emblem holder - DEPRECATED; replaced by artifact inheritance
 		loptyrian.9 # Death of a person with minor Loptyr blood discovered by the cult
+		fe4_belhalla.7 # Death of Quan as the leader of the Lanceritter in Yied
+		loptyr.2 # Death of Loptyr's mortal host
 	}
 	random_events = {
 		1 = RIP.29800 #reincarnation investigation
@@ -2915,6 +2917,9 @@ on_society_failed_to_find_new_leader = {
 on_artifact_inheritance = {
 	events = {
 		MNM.5107 # for inheriting ingredients
+		
+		# FE
+		#loptyr.1 # Book of Loptyr inherited # This does not appear to work, or the trigger doesn't work for modded artifacts like MNM.5107. Oh well.
 	}
 }
 

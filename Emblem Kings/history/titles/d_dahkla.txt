@@ -8,10 +8,14 @@
 	holder = 0
 	de_jure_liege = k_lubeck
 }
+0450.01.01={
+	liege = e_loptyr
+}
 0646.01.01={
 	holder = 1313
 }
 0649.01.01={
+	liege = k_yied
 	de_jure_liege = k_yied
 }
 0686.01.01={

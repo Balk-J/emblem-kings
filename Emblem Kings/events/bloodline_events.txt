@@ -91,84 +91,65 @@ character_event = {
 	}
 	
 	option = {
-		name = OK	
+		name = OK
+		# If the character was born as a result of Loptyrian plotting and could be a major blood...
+		
+		# First, check if this character is Naga's answer to the Loptyr spawn
 		if = {
 			limit = {
-				can_inherit_loptyr_holy_blood_trigger = yes
+				OR = {
+					AND = {
+						trait = twin
+						any_sibling = { # I don't think we can scope to *this* character's twin, so this'll have to do. Might get false positives if this character is the younger sibling of a stillborn twin?
+							trait = twin
+							age_diff = { who = ROOT days = 0 }
+							has_character_flag = loptyr_spawn
+						}	
+					}
+					mother_even_if_dead = {
+						trait = pregnant_with_anti_loptyr_spawn
+					}
+				}				
+			}	
+			mother_even_if_dead = {
+				remove_trait = pregnant_with_anti_loptyr_spawn
 			}
-			add_trait = holy_blood_latent_loptyr
-		}
-		if = {
+			set_character_flag = anti_loptyr_spawn
+			add_latent_holy_blood_effect = yes
+			character_event = {	id = bloodline.7 days = 2555 random = 365 } # Age 6-8
+		}else_if = {
 			limit = {
-				can_inherit_naga_holy_blood_trigger = yes
+				is_loptyr_spawn_trigger = yes		
 			}
-			add_trait = holy_blood_latent_naga
-		}
-		if = {
-			limit = {
-				can_inherit_baldr_holy_blood_trigger = yes
+			remove_loptyrian_marriage_traits_effect = yes			
+			set_character_flag = loptyr_spawn
+			add_latent_holy_blood_effect = yes
+			character_event = {	id = bloodline.7 days = 2555 random = 365 } # Age 6-8
+			
+			# Should we have a major Naga child to balance out the major Loptyr child?
+			if = {
+				limit = {
+					NOT = {
+						any_sibling = {
+							has_character_flag = anti_loptyr_spawn
+						}
+					}	
+					mother = {
+						child_can_inherit_major_naga_holy_blood_trigger = yes
+					}
+				}
+				mother = {
+					add_trait = pregnant_with_anti_loptyr_spawn
+					set_character_flag = pregnant_with_anti_loptyr_spawn
+					spouse = {
+						spouse = {
+							impregnate = PREV
+						}
+					}
+				}
 			}
-			add_trait = holy_blood_latent_baldr
-		}
-		if = {
-			limit = {
-				can_inherit_blagi_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_blagi
-		}
-		if = {
-			limit = {
-				can_inherit_dain_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_dain
-		}
-		if = {
-			limit = {
-				can_inherit_fjalar_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_fjalar
-		}
-		if = {
-			limit = {
-				can_inherit_forseti_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_forseti
-		}
-		if = {
-			limit = {
-				can_inherit_hezul_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_hezul
-		}
-		if = {
-			limit = {
-				can_inherit_neir_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_neir
-		}
-		if = {
-			limit = {
-				can_inherit_noba_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_noba
-		}
-		if = {
-			limit = {
-				can_inherit_od_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_od
-		}
-		if = {
-			limit = {
-				can_inherit_thrud_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_thrud
-		}
-		if = {
-			limit = {
-				can_inherit_ulir_holy_blood_trigger = yes
-			}
-			add_trait = holy_blood_latent_ulir
+		}else = {		
+			add_latent_holy_blood_effect = yes
 		}
 	}
 }
@@ -185,7 +166,7 @@ character_event = {
 	
 	option = {
 		name = OK
-		
+			
 		# When can the holy blood manifest?
 		random_list = {	
 			# Right away - pre-teen
@@ -219,7 +200,7 @@ character_event = {
 				set_character_flag=holy_blood_manifest_old
 			}
 			#character_event = { id=bloodline.4 days=1 random=17520 }# Blood can manifest immediately or as late as age 60
-		}	
+		}
 	}		
 }
 
@@ -241,6 +222,7 @@ character_event = {
 		clr_character_flag=holy_blood_manifest_late_teens
 		clr_character_flag=holy_blood_manifest_early_teens
 		clr_character_flag=holy_blood_manifest_soon
+		
 		if = {
 			limit = {
 				trait = holy_blood_latent_loptyr
@@ -250,11 +232,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_loptyr_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_loptyr_holy_blood_trigger = yes						
 					}
 					modifier = {
 						factor = 0.05
@@ -277,6 +255,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_loptyr_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_loptyr					
 				}		
 				25 = {} # Nothing!
@@ -292,11 +274,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_naga_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_naga_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -319,9 +297,18 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_naga_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_naga					
 				}		
-				25 = {} # Nothing!
+				25 = {
+					modifier = {
+						factor = 12
+						has_loptyr_holy_blood_trigger = yes
+					}
+				} # Nothing!
 			}	
 			remove_trait = holy_blood_latent_naga			
 		}
@@ -334,11 +321,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_baldr_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_baldr_holy_blood_trigger = yes						
 					}
 					modifier = {
 						factor = 0.05
@@ -361,6 +344,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_baldr_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_baldr					
 				}		
 				25 = {} # Nothing!
@@ -376,11 +363,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_blagi_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_blagi_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -403,6 +386,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_blagi_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_blagi					
 				}		
 				25 = {} # Nothing!
@@ -418,11 +405,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_dain_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_dain_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -445,6 +428,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_dain_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_dain					
 				}		
 				25 = {} # Nothing!
@@ -460,11 +447,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_fjalar_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_fjalar_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -487,6 +470,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_fjalar_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_fjalar					
 				}		
 				25 = {} # Nothing!
@@ -502,11 +489,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_forseti_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_forseti_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -529,6 +512,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_forseti_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_forseti					
 				}		
 				25 = {} # Nothing!
@@ -544,11 +531,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_hezul_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_hezul_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -571,6 +554,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_hezul_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_hezul					
 				}		
 				25 = {} # Nothing!
@@ -586,11 +573,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_neir_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_neir_holy_blood_trigger = yes						
 					}
 					modifier = {
 						factor = 0.05
@@ -613,6 +596,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_neir_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_neir					
 				}		
 				25 = {} # Nothing!
@@ -628,11 +615,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_noba_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_noba_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -655,6 +638,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_noba_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_noba					
 				}		
 				25 = {} # Nothing!
@@ -670,11 +657,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_od_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_od_holy_blood_trigger = yes						
 					}
 					modifier = {
 						factor = 0.05
@@ -697,6 +680,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_od_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_od					
 				}		
 				25 = {} # Nothing!
@@ -712,11 +699,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_thrud_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_thrud_holy_blood_trigger = yes					
 					}
 					modifier = {
 						factor = 0.05
@@ -739,6 +722,10 @@ character_event = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
 					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_thrud_holy_blood_trigger = yes						
+					}
 					add_trait=holy_blood_minor_thrud					
 				}		
 				25 = {} # Nothing!
@@ -754,11 +741,7 @@ character_event = {
 				30 = { # Major
 					modifier = {
 						factor = 0
-						OR = {
-							has_major_holy_blood_trigger = yes
-							has_two_minor_holy_blood_trigger = yes
-							NOT = { can_inherit_major_ulir_holy_blood_trigger = yes }
-						}						
+						cannot_manifest_major_ulir_holy_blood_trigger = yes						
 					}
 					modifier = {
 						factor = 0.05
@@ -780,6 +763,10 @@ character_event = {
 					modifier = {
 						factor = 0
 						can_add_minor_holy_blood_trigger = no
+					}
+					modifier = {
+						factor = 1.66
+						cannot_manifest_major_ulir_holy_blood_trigger = yes						
 					}
 					add_trait=holy_blood_minor_ulir					
 				}		
@@ -841,5 +828,39 @@ character_event = {
 	
 	option = {
 		name = bloodline.6.A	
+	}
+}
+# Manifest holy blood as spawn of Loptyr (or anti-spawn)
+character_event = {
+	id = bloodline.7
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		if = {
+			limit = { has_character_flag = anti_loptyr_spawn }
+			remove_trait = holy_blood_latent_naga
+			add_trait = holy_blood_major_naga
+			character_event = {	id = bloodline.4 } # Manifest anything else they could get	
+		}else_if = {
+			limit = { has_character_flag = loptyr_spawn }
+			remove_trait = holy_blood_latent_loptyr
+			add_trait = holy_blood_major_loptyr
+			character_event = {	id = bloodline.4 } # Manifest anything else they could get
+				
+			any_society_member = {
+				limit = {
+					society_member_of = secret_religious_society_loptyrian
+					NOT = { character = ROOT }
+				}
+				character_event = { id = loptyrian.15 days = 1 }
+			}
+			
+			if = {
+				limit = { NOT = { any_character = { has_artifact = regalia_loptyr } } }
+				character_event = { id = loptyrian.16 days = 14 random = 7 }
+			}
+		}
 	}
 }

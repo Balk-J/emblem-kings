@@ -10,9 +10,11 @@
 	liege = 0
 	holder=851 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
 	liege = d_chalphy
-	holder=0 # Baldur
 }
 755.1.1={
 	holder=1320 # Alec 

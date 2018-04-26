@@ -1,0 +1,1852 @@
+namespace = fe4_last_holy_war
+
+# Nickname for Loptyr spawn
+character_event = {
+	id = fe4_last_holy_war.1
+	#desc = fe4_last_holy_war.1.desc
+	#picture = GFX_evt_sacrifice
+	#hide_from = yes
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {	
+		has_character_flag = loptyr_spawn	
+	}	
+	option = {
+		name = fe4_last_holy_war.1.A
+		give_nickname=nick_the_scion_of_darkness
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					capital_scope = {
+						region = world_jugdral
+					}
+					NOT = { has_nickname = nick_the_scion_of_darkness }
+				}
+				narrative_event = { id = fe4_last_holy_war.6 days = 1 }
+			}
+		}
+	}	
+}
+# get Julius in scope
+character_event = {
+	id = fe4_last_holy_war.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		random_character = {
+			limit = {
+				has_character_flag = loptyr_spawn
+			}
+			character_event = { id = fe4_last_holy_war.3 }
+		}
+	}	
+}
+# Ping event for Julius
+character_event = {
+	id = fe4_last_holy_war.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		FROM = { character_event = { id = fe4_last_holy_war.4 } }
+	}	
+}
+
+# Inform Seliph of nickname
+character_event = {
+	id = fe4_last_holy_war.4
+	desc = fe4_last_holy_war.4.desc
+	picture = GFX_evt_child_sword
+	hide_from = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_last_holy_war.4.A
+		give_nickname = nick_the_scion_of_light
+		prestige = 100
+		
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					capital_scope = {
+						region = world_jugdral
+					}
+					NOT = { has_nickname = nick_the_scion_of_light }
+				}
+				narrative_event = { id = fe4_last_holy_war.5 days = 1 }
+			}
+		}
+	}	
+}
+
+# Notify rulers of Seliph
+narrative_event = {
+	id = fe4_last_holy_war.5
+	title = fe4_last_holy_war.5.title
+	desc = {
+		trigger = { has_character_flag = loptyr_spawn }
+		text = fe4_last_holy_war.5.desc.1
+	}
+	desc = {
+		trigger = { NOT = { has_character_flag = loptyr_spawn } }
+		text = fe4_last_holy_war.5.desc.2
+	}
+	picture = GFX_evt_heretic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_last_holy_war.5.A
+		trigger = { has_character_flag = loptyr_spawn }
+	}	
+	option = {
+		name = fe4_last_holy_war.5.B
+		trigger = { NOT = { has_character_flag = loptyr_spawn } }
+	}	
+}
+
+# Notify rulers of Julius
+narrative_event = {
+	id = fe4_last_holy_war.6
+	title = fe4_last_holy_war.6.title
+	desc = fe4_last_holy_war.6.desc
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_last_holy_war.6.A
+		trigger = { religion = loptyrian }
+	}	
+	option = {
+		name = fe4_last_holy_war.6.B
+		trigger = { NOT = { religion = loptyrian } }
+	}	
+}
+
+
+character_event = {
+	id = fe4_last_holy_war.7
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = { 
+		set_global_flag = last_holy_war_started
+	}
+	
+	option = {
+		name = OK
+		
+		# Pick a rebel leader
+		if = { # Prefer Sigurd's heir at the time of his death if he's available
+			limit = {
+				any_character = {
+					has_character_flag = sigurd_heir_post_belhalla
+					is_adult = yes
+					action_allowed_trigger = yes					
+				}
+			}
+			
+			random_character = {
+				limit = {
+					has_character_flag = sigurd_heir_post_belhalla					
+				}
+				save_event_target_as = last_holy_war_leader_target
+				add_pressed_claim=k_grannvale
+				add_pressed_claim=d_belhalla
+			}
+		}else_if = { # Otherwise, grab one of Sigurd's dynasty members
+			limit = {
+				any_character = {
+					dynasty = 1002 # Chalphy
+					is_ruler = no
+					is_adult = yes
+					action_allowed_trigger = yes					
+				}
+			}
+			
+			random_character = {
+				limit = {
+					dynasty = 1002 # Chalphy
+					is_ruler = no
+					is_adult = yes
+					action_allowed_trigger = yes					
+				}
+				save_event_target_as = last_holy_war_leader_target
+				add_pressed_claim=d_chalphy
+			}
+		}else = { # Otherwise make someone!
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = random
+				female = no
+				religion = church_of_edda
+				culture = grannvalean
+				attributes = {
+					martial = 10
+					stewardship = 3
+					diplomacy = 10
+					learning = 5
+					intrigue = 0
+				}
+			}
+			new_character = {
+				set_variable = { which = level value = 1 }
+				save_event_target_as = last_holy_war_leader_target
+				
+				random_list = {
+					1 = {
+						add_trait = base_class_monk
+						add_trait = class_monk
+						add_trait = holy_blood_minor_naga
+						add_pressed_claim=k_grannvale
+						add_pressed_claim=d_belhalla
+					}
+					1 = {
+						add_trait = base_class_myrmidon
+						add_trait = class_myrmidon
+						add_trait = holy_blood_minor_baldr
+						add_pressed_claim=d_chalphy
+					}
+					1 = {
+						add_trait = base_class_priest
+						add_trait = class_priest
+						add_trait = holy_blood_minor_blagi
+						add_pressed_claim=d_edda
+					}
+					1 = {
+						add_trait = base_class_mage
+						add_trait = class_mage
+						add_trait = holy_blood_minor_fjalar
+						add_pressed_claim=d_velthomer
+					}
+					1 = {
+						add_trait = base_class_mage
+						add_trait = class_mage
+						add_trait = holy_blood_minor_thrud
+						add_pressed_claim=d_friege
+					}
+					1 = {
+						add_trait = base_class_cavalier
+						add_trait = class_cavalier
+						add_trait = holy_blood_minor_neir
+						add_pressed_claim=d_dozel
+					}
+					1 = {
+						add_trait = base_class_archer
+						add_trait = class_archer
+						add_trait = holy_blood_minor_ulir
+						add_pressed_claim=d_jungby
+					}
+					1 = {
+						add_trait = base_class_cavalier
+						add_trait = class_cavalier
+						add_trait = holy_blood_minor_hezul
+						culture = agustrian
+						add_pressed_claim=k_agustria
+					}
+					1 = {
+						add_trait = base_class_mage
+						add_trait = class_mage
+						add_trait = holy_blood_minor_forseti
+						culture = silessian
+						add_pressed_claim=k_silesse
+					}
+					1 = {
+						add_trait = base_class_myrmidon
+						add_trait = class_myrmidon
+						add_trait = holy_blood_minor_od
+						culture = isaachian
+						add_pressed_claim=k_isaach
+					}
+					1 = {
+						add_trait = base_class_cavalier
+						add_trait = class_cavalier
+						add_trait = holy_blood_minor_noba
+						culture = mansterian
+						add_pressed_claim=k_manster
+					}
+					1 = {
+						add_trait = base_class_wyvern_rider
+						add_trait = class_wyvern_rider
+						add_trait = holy_blood_minor_dain
+						culture = thracian
+						add_pressed_claim=k_thracia
+					}
+				}
+			}	
+		}
+		
+		# Create the rebellion
+		event_target:last_holy_war_leader_target = {
+			# Give them some land if they're not a ruler.
+			# Tirnanog if it's not AI controlled, or a random non-AI one if we're off the rails.
+			if = {
+				limit = { is_ruler = no }
+				
+				if = {
+					limit = {
+						tirnanog_open_trigger = yes
+					}
+					d_tirnanog = {
+						grant_title = PREV
+					}
+					c_tirnanog = {
+						grant_title = PREV
+					}
+					
+					if = {
+						limit = {
+							c_tirfothuinn = { holder_scope = { ai = yes } }
+						}
+						c_tirfothuinn = { grant_title = PREV }
+					}
+					if = {
+						limit = {
+							c_tirtairngire = { holder_scope = { ai = yes } }
+						}
+						c_tirtairngire = { grant_title = PREV }
+					}
+					if = {
+						limit = {
+							c_magmell = { holder_scope = { ai = yes } }
+						}
+						c_magmell = { grant_title = PREV }
+					}
+				}else= {
+					random_playable_ruler = {
+						limit = {
+							ai = yes
+							tier = COUNT
+							is_within_diplo_range = ROOT
+							is_feudal = yes
+							NOT = { same_realm = ROOT }
+						}
+						primary_title = {
+							usurp_title = { target = PREVPREV type = claim }
+						}
+					}
+				}
+			}
+			e_crusaders = {
+				grant_title = PREV
+			}
+			wealth = 300
+			capital_scope = {
+				owner = {
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						troops = {
+							pegasus_knights = { 50 50 }
+							light_cavalry = { 50 50 }
+							heavy_infantry = { 400 400 }
+							light_infantry = { 500 500 }
+						}
+						attrition = 0
+						#disband_on_peace = yes
+						maintenance_multiplier = 0
+					}	
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						troops = {
+							magic_users = { 50 50 }
+							light_cavalry = { 50 50 }
+							heavy_infantry = { 400 400 }
+							light_infantry = { 500 500 }
+						}
+						attrition = 0
+						#disband_on_peace = yes
+						maintenance_multiplier = 0
+					}	
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						troops = {
+							magic_users = { 50 50 }
+							light_cavalry = { 50 50 }
+							heavy_infantry = { 400 400 }
+							light_infantry = { 500 500 }
+						}
+						attrition = 0
+						#disband_on_peace = yes
+						maintenance_multiplier = 0
+					}				
+				}
+			}
+		}
+		
+		# Pick their enemy
+		character_event = {	id = fe4_last_holy_war.8 }
+	}	
+}
+# Pick the enemy for the Crusade.
+# Direct vassal of the emperor who is de jure liege of Seliph's duchy, or a random powerful vassal.
+# Note that Loptyr is ROOT.
+character_event = {
+	id = fe4_last_holy_war.8
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		
+		if = { # Prefer King of rebel capital county, if he's a vassal of Loptyr
+			limit = {
+				e_crusaders = {
+					holder_scope = {
+						capital_scope = {
+							kingdom = {
+								has_holder = yes
+								ROOT = {
+									any_vassal = {
+										has_landed_title = PREVPREV
+									}
+								}
+							}
+						}
+					}
+				}	
+			}
+			
+			e_crusaders = {
+				holder_scope = {
+					capital_scope = {
+						kingdom = {
+							holder_scope = {
+								save_event_target_as = last_holy_war_enemy_target	
+							}
+						}
+					}
+				}
+			}
+		}else = { # Otherwise, pick a random powerful vassal. One not in Manster, we have Leif for that.		
+			random_vassal = {
+				limit = {
+					is_powerful_vassal = yes
+					NOT = { has_landed_title = k_manster }
+					NOT = { capital_scope = { kingdom = { title = k_manster } } }
+				}
+				save_event_target_as = last_holy_war_enemy_target	
+			}	
+		}
+		
+		event_target:last_holy_war_enemy_target = {
+			character_event = {	id = fe4_last_holy_war.9 }
+		}
+	}	
+}
+# Ping events to get imperial leader in scope with rebel leader as FROM.
+character_event = {
+	id = fe4_last_holy_war.9
+	is_triggered_only = yes
+	hide_window = yes
+	option = {
+		name = OK
+		e_crusaders = {
+			holder_scope = {
+				character_event = { id = fe4_last_holy_war.10 }
+			}
+		}
+	}	
+}
+character_event = {
+	id = fe4_last_holy_war.10
+	desc = fe4_last_holy_war.10.desc
+	picture = GFX_evt_siege
+	is_triggered_only = yes
+	option = {
+		name = fe4_last_holy_war.10.A
+		custom_tooltip = {
+			text = fe4_last_holy_war.10.A.tooltip
+			hidden_tooltip = {
+				FROM = { character_event = { id = fe4_last_holy_war.11 } }
+			}
+		}
+	}	
+}
+# Imperial leader get the war declaration. Really, they have to declare war, but details...
+narrative_event = { # narrative_event
+	id = fe4_last_holy_war.11
+	title = fe4_last_holy_war.11.title
+	desc = fe4_last_holy_war.11.desc
+	picture = GFX_evt_siege
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_last_holy_war.11.A
+		set_character_flag = can_attack_grannvale_rebels
+		war = {
+			target = FROM
+			casus_belli = grannvale_suppress_rebels
+		}
+	}	
+}
+# On-action event to start the holy war
+character_event = {
+	id = fe4_last_holy_war.12
+	is_triggered_only = yes
+	hide_window = yes
+	
+	has_global_flag = loptyr_revived
+	only_independent = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		last_holy_war_can_start_trigger = yes
+	}
+	option = {
+		name = OK
+		character_event = {	id = fe4_last_holy_war.7 }
+	}	
+}
+
+# Seliph is victorious!
+character_event = { # narrative_event
+	id = fe4_last_holy_war.13
+	#title = fe4_last_holy_war.13.title
+	desc = fe4_last_holy_war.13.desc
+	picture = GFX_evt_magnificent_castle
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_last_holy_war.13.A
+
+		FROM = {
+			save_event_target_as = last_holy_war_enemy_target
+			hidden_tooltip = {
+				liege = {
+					save_event_target_as = last_holy_war_emperor_target	
+				}
+			}
+			# Seliph takes or vassalizes all titles held by FROM in his capital's de jure kingdom
+			capital_scope = {
+				kingdom = {
+					event_target:last_holy_war_enemy_target = {	
+						# Vassalize all FROM's vassals in the kingdom, or take their titles in the kingdom if they are AI heathens
+						any_realm_character = {
+							limit = {
+								is_ruler = yes
+							}
+							if = {
+								limit = { 
+									NOT = { religion = ROOT }
+									any_demesne_title = {
+										de_jure_liege_or_above = PREVPREVPREV
+									} 								
+								}
+								if = {
+									limit = { 
+										ai = yes 
+										OR = {
+											any_demesne_title = {
+												NOT = { tier = BARON }
+												NOT = { de_jure_liege_or_above = PREVPREVPREV }
+											} 		
+										}
+									}
+									any_demesne_title = {
+										limit = {
+											de_jure_liege_or_above = PREVPREVPREV
+											NOT = { tier = BARON }
+										}
+										usurp_title = { target = ROOT type = invasion }
+									}
+								}else = {
+									set_defacto_liege = ROOT
+								}
+							}else_if = {
+								limit = {
+									primary_title = { de_jure_liege_or_above = PREVPREVPREV }
+								}
+								set_defacto_liege = ROOT
+							}else = {
+								set_character_flag = last_holy_war_enemy_vassal
+							}
+						}
+						
+						# Take the kingdom title if FROM has it
+						if = {
+							limit = {
+								has_landed_title = PREV
+							}
+							ROOT = {
+								usurp_title = PREVPREV
+							}
+						}
+						# And also take all FROM's land in the kingdom
+						any_demesne_title = {
+							limit = {
+								de_jure_liege_or_above = PREVPREV
+								NOT = { tier = BARON }
+							}
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+					
+					if = {
+						limit = {
+							holder_scope = {
+								character = ROOT
+							}
+							any_claimant = {
+								is_non_imperial_crusader_claimant_trigger = yes
+							}
+						}
+						save_event_target_as = jugdral_crusader_conquered_kingdom_target	
+						ROOT = { character_event = { id = fe4_last_holy_war.15 } }
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			event_target:last_holy_war_emperor_target = { 
+				FROM = { 
+					set_defacto_liege = PREV 					
+				}
+				any_playable_ruler = {
+					limit = { 
+						has_character_flag = last_holy_war_enemy_vassal 
+					}
+					if = {
+						limit = { NOT = { liege = { character = FROM } } }
+						set_defacto_liege = PREV
+					}
+					clr_character_flag = last_holy_war_enemy_vassal
+				}
+			}
+		}
+
+		hidden_tooltip = {
+			character_event = { id = fe4_last_holy_war.14 days = 1 }
+		}
+	}	
+}
+# Seliph decides his next move...
+character_event = { 
+	id = fe4_last_holy_war.14
+	desc = fe4_last_holy_war.14.desc
+	picture = GFX_evt_war_planning
+	hide_from = yes
+	is_triggered_only = yes
+	
+	immediate = {		
+		e_crusaders = {
+			set_title_flag = crusade_allowed
+		}
+	}
+	
+	option = {
+		name = fe4_last_holy_war.14.A
+		trigger = {
+			any_playable_ruler = { revived_loptyr_in_power_trigger = yes }
+		}
+		ai_chance = {
+			factor = 1	
+			modifier = {
+				factor = 0
+				OR = {
+					any_playable_ruler = { rebel_in_joinable_war_trigger = yes }
+					war = yes
+				}
+			}
+		}
+		random_playable_ruler = {
+			limit = { revived_loptyr_in_power_trigger = yes }
+			reverse_war = {
+				target = ROOT
+				casus_belli = jugdral_crusade
+			}
+		}
+		custom_tooltip = {
+			text = fe4_last_holy_war.14.A.tooltip
+		}
+	}	
+	option = {
+		name = fe4_last_holy_war.14.B
+		trigger = {
+			any_playable_ruler = { rebel_in_joinable_war_trigger = yes }
+		}
+		ai_chance = {
+			factor = 1	
+		}
+		random_playable_ruler = {
+			limit = { rebel_in_joinable_war_trigger = yes }
+			ROOT = { join_defender_wars = PREV }
+			hidden_tooltip = { character_event = { id = fe5_thracia_776.11 } }
+		}
+	}	
+	option = {
+		name = fe4_last_holy_war.14.C
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					any_playable_ruler = { revived_loptyr_in_power_trigger = yes }
+					any_playable_ruler = { rebel_in_joinable_war_trigger = yes }
+				}
+			}	
+		}
+	}	
+}
+# Seliph conquers a crusader kingdom, should he give it to a claimant? 
+character_event = { 
+	id = fe4_last_holy_war.15
+	desc = fe4_last_holy_war.15.desc
+	picture = GFX_evt_council
+	hide_from = yes
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = fe4_last_holy_war.15.A
+		ai_chance = {
+			factor = 1	
+		}
+		event_target:jugdral_crusader_conquered_kingdom_target = {	
+			# Who gets it?
+			
+			# Prefer characters of the right dynasty, with the right holy blood, if they aren't imperial lackeys
+			if = {
+				limit = {
+					title = k_isaach
+					any_claimant = {
+						dynasty = 1010
+						has_od_holy_blood_trigger = yes
+						is_non_imperial_crusader_claimant_trigger = yes
+					}
+				}	
+				random_character = {
+					limit = {
+						any_claim = { title = PREVPREV }
+						is_non_imperial_crusader_claimant_trigger = yes
+						dynasty = 1010
+						has_od_holy_blood_trigger = yes
+					}
+					save_event_target_as = jugdral_crusader_conquered_kingdom_holder_target
+				}
+			}else_if = {
+				limit = {
+					title = k_grannvale
+					any_claimant = {
+						dynasty = 1001
+						has_naga_holy_blood_trigger = yes
+						is_non_imperial_crusader_claimant_trigger = yes
+					}
+				}
+				random_character = {
+					limit = {
+						any_claim = { title = PREVPREV }
+						is_non_imperial_crusader_claimant_trigger = yes
+						dynasty = 1001
+						has_naga_holy_blood_trigger = yes
+					}
+					save_event_target_as = jugdral_crusader_conquered_kingdom_holder_target
+				}			
+			}else_if = {
+				limit = {
+					title = k_agustria
+					any_claimant = {
+						dynasty = 1008
+						has_hezul_holy_blood_trigger = yes
+						is_non_imperial_crusader_claimant_trigger = yes
+					}
+				}
+				random_character = {
+					limit = {
+						any_claim = { title = PREVPREV }
+						is_non_imperial_crusader_claimant_trigger = yes
+						dynasty = 1008
+						has_hezul_holy_blood_trigger = yes
+					}
+					save_event_target_as = jugdral_crusader_conquered_kingdom_holder_target
+				}			
+			}else_if = {
+				limit = {
+					title = k_silesse
+					any_claimant = {
+						dynasty = 1009
+						has_forseti_holy_blood_trigger = yes
+						is_non_imperial_crusader_claimant_trigger = yes
+					}
+				}
+				random_character = {
+					limit = {
+						any_claim = { title = PREVPREV }
+						is_non_imperial_crusader_claimant_trigger = yes
+						dynasty = 1009
+						has_forseti_holy_blood_trigger = yes
+					}
+					save_event_target_as = jugdral_crusader_conquered_kingdom_holder_target
+				}			
+			}else_if = {
+				limit = {
+					title = k_thracia
+					any_claimant = {
+						dynasty = 1011
+						has_dain_holy_blood_trigger = yes
+						is_non_imperial_crusader_claimant_trigger = yes
+					}
+				}
+				random_character = {
+					limit = {
+						any_claim = { title = PREVPREV }
+						is_non_imperial_crusader_claimant_trigger = yes
+						dynasty = 1011
+						has_dain_holy_blood_trigger = yes
+					}
+					save_event_target_as = jugdral_crusader_conquered_kingdom_holder_target
+				}			
+			}
+			# Otherwise, just pick someone with holy blood since we know there's at least one of those.
+			else = {
+				random_character = {
+					limit = {
+						any_claim = { title = PREVPREV }
+						is_non_imperial_crusader_claimant_trigger = yes
+					}
+					save_event_target_as = jugdral_crusader_conquered_kingdom_holder_target
+				}			
+			}
+			event_target:jugdral_crusader_conquered_kingdom_holder_target = {
+				grant_title = PREV
+				set_defacto_liege = THIS
+				set_character_flag = granted_kingdom_by_crusaders
+			}
+		}
+	}	
+	# No
+	option = {
+		name = fe4_last_holy_war.15.B
+		ai_chance = {
+			factor = 0	
+		}
+	}	
+}
+
+# King installed by Seliph (or Leif) is notified of crusade
+character_event = { 
+	id = fe4_last_holy_war.16
+	desc = {
+		trigger = { has_character_flag = granted_kingdom_by_crusaders }
+		text = fe4_last_holy_war.16.desc.1
+	}
+	desc = {
+		trigger = { NOT = { has_character_flag = granted_kingdom_by_crusaders } }
+		text = fe4_last_holy_war.16.desc.2
+	}
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_last_holy_war.16.A
+		trigger = {
+			any_playable_ruler = { 
+				OR = {
+					rebel_in_joinable_war_trigger = yes 
+					crusader_attacking_loptyr_trigger = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1	
+		}
+		prestige = 100
+		if = {
+			limit = {
+				any_playable_ruler = {
+					rebel_in_joinable_war_trigger = yes 
+				}
+			}
+			random_playable_ruler = {
+				limit = { rebel_in_joinable_war_trigger = yes }
+				ROOT = { join_defender_wars = PREV }
+			}
+		}
+		if = {
+			limit = {
+				any_playable_ruler = {
+					crusader_attacking_loptyr_trigger = yes
+				}
+			}
+			random_playable_ruler = {
+				limit = { crusader_attacking_loptyr_trigger = yes }
+				ROOT = { join_attacker_wars = PREV }
+			}
+		}
+		
+	}	
+	option = {
+		name = fe4_last_holy_war.16.B
+		trigger = {
+			any_playable_ruler = { 
+				OR = {
+					rebel_in_joinable_war_trigger = yes 
+					crusader_attacking_loptyr_trigger = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0	
+		}
+		prestige = -100
+	}	
+	option = {
+		name = fe4_last_holy_war.16.C
+		trigger = {
+			NOT = { 
+				any_playable_ruler = { 
+					OR = {
+						rebel_in_joinable_war_trigger = yes 
+						crusader_attacking_loptyr_trigger = yes
+					}
+				}
+			}
+		}
+	}		
+}
+
+# Seliph won the crusade!
+# ...now what in Naga's name do we do with Loptyr's empire?
+character_event = { 
+	id = fe4_last_holy_war.17
+	desc = fe4_last_holy_war.17.desc
+	picture = GFX_evt_victory_arch_byzantine
+	is_triggered_only = yes
+	
+	# I'll just keep everything.
+	option = {
+		name = fe4_last_holy_war.17.A
+		ai_chance = {
+			factor = 0	
+		}
+		
+		event_target:loptyr_defeated_in_crusade_target = {
+			any_vassal = {
+				set_defacto_liege = ROOT
+			}
+			any_demesne_title = {
+				limit = {
+					NOT = {
+						title = e_loptyr
+					}
+					NOT = {
+						title = d_loptyr
+					}
+				}
+				usurp_title = { target = ROOT type = invasion }
+			}
+			
+		}
+		if = {
+			limit = {
+				e_loptyr = {
+					has_holder = yes
+				}
+			}
+			e_loptyr = {
+				destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_loptyr = {
+					has_holder = yes
+				}
+			}
+			d_loptyr = {
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+	}
+	# Return the kingdoms to their rightful heirs.
+	option = {
+		name = fe4_last_holy_war.17.B
+		trigger = {
+			has_global_flag = loptyr_empire_destroyed
+		}
+		ai_chance = {
+			factor = 1	
+		}
+		event_target:loptyr_defeated_in_crusade_target = {
+			hidden_tooltip = {
+				fix_loptyrian_bishop_capitals_effect = yes
+				any_vassal = { set_defacto_liege = ROOT }
+				# Destroy the empire, and give anything left to ROOT. 
+				any_demesne_title = {
+					if = {
+						limit = { tier = EMPEROR }
+						destroy_landed_title = THIS
+					}else = {
+						usurp_title = { target = ROOT type = invasion }
+					}
+				}	
+			}
+			
+			# For all titles:
+			# If ROOT is a claimant, they take it.
+			# Otherwise, see if we have someone of the right dynasty who is not Loptyrian scum.
+			# Prefer dynasty head, otherwise pick a random dynasty member.
+			# If none exist, give it to ROOT. (Maybe create a character?)
+			k_agustria = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1008 # Agustria
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1008 # Agustria
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else_if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1013 # Nordion
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1013 # Nordion
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_silesse = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									NOT = { trait = possessed_forseti }
+									dynasty = 1009 # Silesse
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									NOT = { trait = possessed_forseti }
+									dynasty = 1009 # Silesse
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_isaach = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1010 # Isaach
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1010 # Isaach
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_manster = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1012 # Claus
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1012 # Claus
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_thracia = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1011 # Thracia
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1011 # Thracia
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_grannvale = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1001 # Belhalla
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1001 # Belhalla
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_miletos = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_claimant = {
+									NOT = { religion = loptyrian }
+								}
+							}
+							random_character = {
+								limit = { 
+									any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+								}
+								hidden_tooltip = { 
+									ROOT = { usurp_title = PREVPREV } 
+								}		
+								grant_title = PREV
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_orgahil = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_claimant = {
+									NOT = { religion = loptyrian }
+								}
+							}
+							random_character = {
+								limit = { 
+									any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+								}
+								hidden_tooltip = { 
+									ROOT = { usurp_title = PREVPREV } 
+								}		
+								grant_title = PREV
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			k_verdane = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1014 # Verdane
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1014 # Verdane
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			d_belhalla = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1001 # Belhalla
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1001 # Belhalla
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			d_chalphy = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1002 # Chalphy
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1002 # Chalphy
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			d_edda = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1003 # Edda
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1003 # Edda
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			d_velthomer = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1004 # Velthomer
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1004 # Velthomer
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			d_friege = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1005 # Friege
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1005 # Friege
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			d_dozel = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									dynasty = 1006 # Dozel
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									dynasty = 1006 # Dozel
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			d_jungby = {
+				if = {
+					limit = {
+						title_can_be_granted_by_crusaders_trigger = yes
+					}
+					if = {
+						limit = { any_claimant = { character = ROOT } }
+						usurp_title = { target = ROOT type = invasion }
+					}else = {
+						if = {
+							limit = {
+								any_character = { # any_claimant ?
+									NOT = { religion = loptyrian }
+									is_alive = yes
+									dynasty = 1007 # Jungby
+								}
+							}
+							random_character = {
+								limit = { #any_claim = { title = PREVPREV }
+									NOT = { religion = loptyrian }
+									is_alive = yes
+									dynasty = 1007 # Jungby
+								}
+								grant_crusader_title_effect = yes
+							}	
+						}else = {
+							usurp_title = { target = ROOT type = invasion }
+						}
+					}
+				}
+			}
+			
+			death = { 
+				death_reason = death_execution
+				killer = ROOT
+			} 			
+		}
+		e_crusaders = {
+			destroy_landed_title = THIS
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					k_verdane = { has_holder = no }
+					OR = {
+						respected_verdane_dynasty_trigger = yes
+						father_even_if_dead = { respected_verdane_dynasty_trigger = yes }
+						mother_even_if_dead = { respected_verdane_dynasty_trigger = yes }
+						father_even_if_dead = {
+							father_even_if_dead = { respected_verdane_dynasty_trigger = yes }
+						}
+						father_even_if_dead = {
+							mother_even_if_dead = { respected_verdane_dynasty_trigger = yes }
+						}
+						mother_even_if_dead = {
+							father_even_if_dead = { respected_verdane_dynasty_trigger = yes }
+						}
+						mother_even_if_dead = {
+							mother_even_if_dead = { respected_verdane_dynasty_trigger = yes }
+						}
+					}
+				}
+				character_event = {	id = fe4_last_holy_war.18 days = 3 }
+			}
+			if = {
+				limit = {
+					has_landed_title = k_miletos
+				}
+				character_event = {	id = fe4_last_holy_war.20 days = 7 random = 2 }
+			}
+		}
+	}	
+	option = {
+		name = fe4_last_holy_war.17.C
+		trigger = {
+			NOT = { has_global_flag = loptyr_empire_destroyed }
+		}
+		ai_chance = {
+			factor = 1	
+		}
+		# TODO: event for Heim to hand out kingdoms
+	}
+}
+
+# Seliph invited to become King of Verdane
+character_event = {
+	id = fe4_last_holy_war.18
+	desc = fe4_last_holy_war.18.desc
+	picture = GFX_evt_emissary
+	hide_from = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_last_holy_war.18.A
+		ai_chance = { 
+			factor = 80 
+			modifier = {
+				factor = 2 
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2 
+				trait = proud
+			}
+			modifier = {
+				factor = 2 
+				trait = greedy
+			}
+			modifier = {
+				factor = 5
+				culture = verdanian
+			}
+		}	
+		k_verdane = {
+			grant_title = ROOT
+		}
+		custom_tooltip = {
+			text = fe4_last_holy_war.18.A.tooltip
+			hidden_tooltip = {
+				any_playable_ruler = {
+					limit = {
+						independent = yes
+						de_jure_liege_or_above = k_verdane
+					}
+					character_event = { id = fe4_last_holy_war.19 }
+				}
+			}
+		}
+	}	
+	option = {
+		name = fe4_last_holy_war.18.B
+		ai_chance = { 
+			factor = 20 
+			modifier = {
+				factor = 2 
+				trait = content
+			}
+			modifier = {
+				factor = 10 
+				trait = humble
+			}
+			modifier = {
+				factor = 2 
+				trait = slothful
+			}
+		}	
+		piety = 20
+		if = {
+			limit = { trait = proud }
+			random = {
+				chance = 30
+				remove_trait = proud
+			}
+		}else_if = {
+			limit = { NOT = { trait = humble } }
+			random = {
+				chance = 30
+				add_trait = humble
+			}
+		}
+	}	
+}
+# Give Verdanians the chance to flip
+character_event = {
+	id = fe4_last_holy_war.19
+	desc = fe4_last_holy_war.19.desc
+	picture = GFX_evt_emissary
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_last_holy_war.19.A
+		ai_chance = { 
+			factor = 30 
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 10 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 20 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 30 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 40 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 50 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 60 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 70 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 80 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 90 }
+			}
+			modifier = {
+				factor = 1.5 
+				opinion = { who = ROOT value = 100 }
+			}
+			modifier = {
+				factor = 2 
+				culture = FROM
+			}
+			modifier = {
+				factor = 5
+				NOT = { relative_power = { who = FROM power = 0.1 } }
+			}
+			modifier = {
+				factor = 5
+				NOT = { relative_power = { who = FROM power = 0.01 } }
+			}
+		}	
+		set_defacto_liege = FROM
+		if = {
+			limit = {
+				religion_group = raider_group				
+			}
+			religion = FROM
+		}
+	}	
+	option = {
+		name = fe4_last_holy_war.19.B
+		ai_chance = { 
+			factor = 70 
+			modifier = {
+				factor = 2 
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5 
+				trait = ambitious
+			}
+			modifier = {
+				factor = 10 
+				NOT = { opinion = { who = ROOT value = -20 } }
+			}
+		}	
+		prestige = 100
+	}	
+}
+
+
+# Seliph can release Miletos
+character_event = {
+	id = fe4_last_holy_war.20
+	desc = fe4_last_holy_war.20.desc
+	picture = GFX_evt_trade_post_republic
+	hide_from = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_last_holy_war.20.A
+		trigger = { has_landed_title = k_miletos }
+		ai_chance = { 
+			factor = 20 
+			modifier = {
+				factor = 2 
+				trait = trusting
+			}
+			modifier = {
+				factor = 1.5
+				trait = kind
+			}
+			modifier = {
+				factor = 1.5 
+				trait = charitable
+			}
+		}	
+		custom_tooltip = {
+			text = fe4_last_holy_war.20.A.tooltip
+			hidden_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							506 = { #Miletos
+								any_province_holding = {
+									holding_type = city
+								}
+							}
+						}
+					}
+					b_miletos_2 = { destroy_settlement = THIS }
+					506 = { #Miletos
+						build_holding = {
+						   title = b_miletos_2
+						   type = city
+						   holder = ROOT
+						}
+					}
+				}
+				b_miletos_2 = {
+					county = {
+						create_random_steward = {
+							age = 30
+							random_traits = yes
+							dynasty = random
+							female = no
+							religion = ROOT
+							culture = grannvalean
+						}
+						new_character = {
+							usurp_title = { target = PREV } 
+							usurp_title = { target = PREVPREV } 
+							k_miletos = { grant_title = PREV }
+							set_government_type = merchant_republic_government
+							set_defacto_liege = THIS
+						}
+					}
+				}
+			}
+		}
+	}	
+	option = {
+		name = fe4_last_holy_war.20.B
+		trigger = { has_landed_title = k_miletos }
+		ai_chance = { 
+			factor = 50 
+			modifier = {
+				factor = 2 
+				trait = humble
+			}
+			modifier = {
+				factor = 2 
+				trait = content
+			}
+			modifier = {
+				factor = 2 
+				trait = just
+			}
+			modifier = {
+				factor = 2 
+				trait = cynical
+			}
+			modifier = {
+				factor = 2 
+				trait = paranoid
+			}
+		}	
+		
+		any_vassal = {
+			limit = {
+				primary_title = { de_jure_liege_or_above = k_miletos }
+			}
+			set_defacto_liege = THIS
+		}
+		k_miletos = {
+			destroy_landed_title = THIS
+		}
+	}	
+	option = {
+		name = fe4_last_holy_war.20.C
+		trigger = { has_landed_title = k_miletos }
+		ai_chance = { 
+			factor = 30 
+			modifier = {
+				factor = 2 
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2 
+				trait = proud
+			}
+			modifier = {
+				factor = 2 
+				trait = greedy
+			}
+		}	
+		prestige = 50
+	}	
+	option = {
+		name = fe4_last_holy_war.20.D
+		trigger = { NOT = { has_landed_title = k_miletos } }
+		ai_chance = { 
+			factor = 1
+		}	
+		custom_tooltip = {
+			text = fe4_last_holy_war.20.D.tooltip
+		}
+		prestige = 10
+	}	
+}
+
+# Also maybe spawn revolts in Agustria and Silesse during the crusade?

@@ -171,18 +171,3 @@ spawn_dragon_knights_effect = {
 		}
 	}
 }
-spawn__effect = {
-
-}
-spawn__effect = {
-
-}
-spawn__effect = {
-
-}
-spawn__effect = {
-
-}
-spawn__effect = {
-
-}

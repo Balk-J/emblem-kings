@@ -13,6 +13,11 @@
 660.1.1={
 	holder = 1025 # Dain's son
 }
+666.1.1={
+	effect = {
+		set_global_flag = thracia_split
+	}
+}
 692.1.1={
 	holder = 1151 # 
 }
@@ -27,4 +32,7 @@
 }
 778.1.1={
 	holder = 1162 # Leif 
+}
+779.1.1={
+	holder = 0
 }

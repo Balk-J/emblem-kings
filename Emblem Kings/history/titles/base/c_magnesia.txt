@@ -7,7 +7,7 @@
 	#holder = 0
 }
 444.1.1 = { 
-	holder=0 
+	#holder=0 
 	liege = d_loptyr
 }
 448.1.1 = { 

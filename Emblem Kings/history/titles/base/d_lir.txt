@@ -1,0 +1,14 @@
+# d_lir > k_yied
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_yied
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_rivough
+}
+649.1.1={
+	de_jure_liege = k_yied
+}

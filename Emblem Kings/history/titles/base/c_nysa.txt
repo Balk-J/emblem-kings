@@ -16,7 +16,8 @@
 	holder = 1482 # Deet'var
 }
 760.3.1={
-	holder = 1032 # Sigurd
+	#holder = 1032 # Sigurd
+	holder = 1110 # Rahna
 }
 761.1.1={
 	#holder=1049 # Arvis

@@ -9,23 +9,31 @@
 440.1.1={
 	holder=893 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
-	holder=0 
+	liege = k_thracia
 }
 744.1.1={
 	holder=1245 # Hannibal 
 }
 747.1.1={
 	holder=1439 # Dagdar 
+	liege = d_mount_violdrake_bandits
 }
 776.1.1={
 	holder=1441 # Gomes 
 }
 777.1.1={
+	liege = k_thracia
 	holder=1245 # Hannibal 
 }
 779.1.1={
 	holder=1439 # Dagdar 
+}
+779.1.1={
+	liege = k_new_thracia
 }
 805.1.1={
 	holder=1449 # Marty 

@@ -4,11 +4,8 @@
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
-#180.1.1={
-#	liege=d_sion
-#}
 800.1.1={
-	holder=308 #Nergal
+	holder=308 # Nergal
 }
 #Nergal's dead, free-for-all on his holdings
 1161.1.1={

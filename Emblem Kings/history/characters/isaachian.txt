@@ -530,15 +530,15 @@
 		birth=yes
 	}
 	767.1.1={
-		employer=1081 # Eyvel
 		effect = { 
 			c_1140 = {
 				ROOT = { set_real_father = PREV }
 			}
 			set_father = none
-			set_mother=1081
+			set_mother = 1081
 			dynasty=1019
 		}
+		employer=1081 # Eyvel
 	}
 	773.01.01={
 		add_trait="class_myrmidon_female"

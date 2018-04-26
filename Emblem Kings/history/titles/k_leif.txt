@@ -1,7 +1,7 @@
 776.1.1={
 	holder=1162 # Leif
-	liege=0#e_grannvale 
+	liege=0
 }
-777.1.1={
+778.1.1={
 	holder=0
 }

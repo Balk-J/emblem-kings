@@ -36,9 +36,8 @@ character_event = {
 							set_father = PREVPREVPREV
 							set_mother = PREV
 							dynasty = PREVPREVPREV
-							death = {
-								death_reason=death_accident_drowning
-							}
+							#death = { death_reason=death_accident_drowning }
+							character_event = { id = fe4_dynasty.14 days = 1 }
 						}
 					}
 				}
@@ -86,6 +85,7 @@ character_event = {
 			mother_even_if_dead = { ROOT = { set_mother = PREV } }
 			
 			ROOT = { 
+				set_name = "Brigid"
 				dynasty = PREV 
 				character_event = { id = util.2 }
 			}
@@ -151,15 +151,15 @@ character_event = {
 							set_father = PREVPREVPREV
 							set_mother = PREV
 							dynasty = PREVPREVPREV
-							death = {
-								death_reason=death_missing
-							}
 							
 							c_1081 = {
 								any_child_even_if_dead = {
 									set_mother = PREVPREV
 								}
 							}
+							
+							#death = { death_reason=death_missing }
+							character_event = { id = fe4_dynasty.13 days = 1 }
 						}
 					}
 				}
@@ -192,9 +192,8 @@ character_event = {
 			new_character = { 
 				set_father = PREV
 				dynasty = PREV
-				death = {
-					death_reason=death_missing
-				}
+				#death = { death_reason=death_missing }
+				character_event = { id = fe4_dynasty.13 days = 1 }
 			}
 		}
 	}
@@ -281,10 +280,11 @@ character_event = {
 					set_father = PREVPREV
 					set_mother = PREV
 					dynasty = PREVPREV
-					death = {
-						death_reason=death_execution
-						killer=1154 # Travant, Yied Massacre
-					}
+#					death = {
+#						death_reason=death_execution
+#						killer=1154 # Travant, Yied Massacre
+#					}
+					character_event = { id = fe4_dynasty.15 days = 1 }
 				}
 			}
 		}
@@ -414,4 +414,37 @@ narrative_event = {
 			}
 		}
 	}		
+}
+
+# Event to kill clones, since killing them in the event that creates them doesn't *keep* them dead.
+# No death date gets saved, so they come back to life when a save is loaded.
+character_event = {
+	id = fe4_dynasty.13
+	hide_window = yes
+	is_triggered_only = yes	
+	option = {
+		name = OK
+		death = { death_reason=death_missing }
+	}
+}
+character_event = {
+	id = fe4_dynasty.14
+	hide_window = yes
+	is_triggered_only = yes	
+	option = {
+		name = OK
+		death = { death_reason=death_accident_drowning }
+	}
+}
+character_event = {
+	id = fe4_dynasty.15
+	hide_window = yes
+	is_triggered_only = yes	
+	option = {
+		name = OK
+		death = {
+			death_reason=death_execution
+			killer=1154 # Travant, Yied Massacre
+		}
+	}
 }

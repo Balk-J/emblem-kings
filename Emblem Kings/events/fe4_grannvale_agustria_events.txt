@@ -569,6 +569,16 @@ letter_event = {
 						}
 					}
 				}
+				# Remove claims on the stuff just vacated that he should *really* be entitled to
+				any_claim = {
+					limit = {
+						OR = {
+							de_jure_liege_or_above = k_verdane
+							de_jure_liege_or_above = k_agustria
+						}
+					}
+					remove_claim = PREV
+				}
 			}
 		}
 		
@@ -1912,5 +1922,67 @@ character_event = {
 			death_reason=death_execution
 			killer=FROM # Chagall
 		}	
+		hidden_tooltip = {
+			if = {
+				limit = { 
+					#ai = yes 
+					independent = no
+				}
+				random_spouse = {
+					character_event = {	id = fe4_grannvale_agustria.47 days = 1 }
+				}
+			}
+		}
+	}
+}
+# Grahyne can take Ares and run
+character_event = {
+	id = fe4_grannvale_agustria.47
+	desc = fe4_grannvale_agustria.47.desc	
+	picture = GFX_evt_bad_news_female
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_grannvale_agustria.47.A
+		ai_chance = {
+			factor = 80		
+		}
+		any_child = {
+			limit = { is_child_of = FROM }
+				any_demesne_title = {
+					#usurp_title = FROM
+					holder_scope = {
+						liege = {
+							usurp_title = { target = PREVPREV type = claim }
+						}
+					}
+				}
+		}
+		
+		c_leonster = {
+			holder_scope = {
+				ROOT = {
+					move_character = PREV
+					any_child = {
+						limit = { is_child_of = FROM }
+						move_character = PREVPREV
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = fe4_grannvale_agustria.47.B
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
 	}
 }

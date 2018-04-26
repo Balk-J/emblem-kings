@@ -4,11 +4,20 @@
 	law = succ_primogeniture
 	liege = k_yied
 }
+0450.01.01={
+	liege = e_loptyr
+}
+0649.01.01={
+	liege = k_yied
+}
 0649.01.01={
 	holder=1310 # filler
 }
 0701.01.01={
-	holder=5989
+	holder=4303
+}
+0706.01.01={
+	holder=4302
 }
 0736.01.01={
 	holder=1028 # filler
@@ -20,8 +29,10 @@
 	liege = e_grannvale 
 }
 0778.01.01={
-	holder=0 # 
+	liege = k_yied 
+	holder=1038 # Seliph?
 }
 0779.01.01={
+	holder=0 # 
 	liege = k_yied 
 }

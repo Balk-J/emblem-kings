@@ -9,7 +9,7 @@
 }
 0448.01.01={
 	holder=0 # 
-	de_jure_liege = 0
+	de_jure_liege = e_grannvale#e_miletos
 }
 0764.01.01={
 	holder=1069 # Hilda

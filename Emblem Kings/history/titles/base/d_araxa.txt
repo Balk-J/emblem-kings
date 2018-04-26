@@ -1,0 +1,11 @@
+# k_terina
+180.1.1={
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=k_terina
+#}
+1152.01.01 = { 
+	holder=460
+}

@@ -1,0 +1,219 @@
+decisions = {	
+	hold_child_hunt = { # the things you type when you play CK2...
+		only_playable = yes
+		ai_check_interval = 2
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			#prisoner = no
+			action_allowed_trigger = yes
+			religion = loptyrian
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_hunting
+				has_focus = focus_theology
+			}
+			d_loptyrian = {
+				has_holder = yes
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			wealth = 25
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			NOT = {	has_character_modifier = recent_child_hunt }
+		}
+		effect = {
+			wealth = -25
+			add_character_modifier = {
+				name = recent_child_hunt
+				duration = 365
+			}				
+			hidden_tooltip = { character_event = { id = fe4_hunting.1  } } 
+			random_demesne_province = {
+				limit = {
+					NOT = { has_province_modifier = child_hunts }
+				}
+				add_province_modifier = { name = child_hunts duration = 365 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { wealth = 50 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+				NOT = { has_focus = focus_hunting }
+				NOT = { has_focus = focus_theology }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					trait = craven
+					trait = kind
+					trait = just
+					trait = slothful
+				}
+			}	
+			modifier = {
+				factor = 0
+				NOT = { trait = zealous }
+			}		
+			modifier = {
+				factor = 0
+				NOT = {
+					martial = 10
+				}
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				had_character_flag = {
+					flag = recent_child_hunt
+					days = 1825
+				}
+			}
+		}
+	}
+	hold_witch_hunt_church_of_edda = { 
+		only_playable = yes
+		ai_check_interval = 2
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			#prisoner = no
+			action_allowed_trigger = yes
+			religion = church_of_edda
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_intrigue
+				has_focus = focus_theology
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			wealth = 25
+			NOT = {	health_traits = 1 }
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {	has_character_modifier = holding_witch_hunt }
+			NOT = {	has_character_modifier = recent_witch_hunt }
+		}
+		effect = {
+			wealth = -25
+			add_character_modifier = {
+				name = holding_witch_hunt
+				duration = -1
+			}				
+			add_character_modifier = {
+				name = recent_witch_hunt
+				duration = 365
+			}				
+			set_character_flag = recent_witch_hunt
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = fe4_hunting.23 days = 150 } } # Safety catch flag clearing
+			hidden_tooltip = { 
+				character_event = { id = fe4_hunting.9 days = 40 random = 20 }
+			}
+#			random_demesne_province = {
+#				limit = {
+#					NOT = { has_province_modifier = witch_hunts }
+#				}
+#				add_province_modifier = { name = witch_hunts duration = 365 }
+#			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { wealth = 50 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+				NOT = { has_focus = focus_hunting }
+				NOT = { has_focus = focus_theology }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					trait = craven
+					trait = kind
+					trait = just
+					trait = slothful
+				}
+			}	
+			modifier = {
+				factor = 0
+				NOT = { trait = zealous }
+			}		
+			modifier = {
+				factor = 0
+				NOT = {
+					martial = 7
+				}
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				had_character_flag = {
+					flag = recent_witch_hunt
+					days = 1825
+				}
+			}
+		}
+	}
+}

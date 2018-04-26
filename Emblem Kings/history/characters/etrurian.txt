@@ -1384,7 +1384,7 @@
 #ancestors to make Hellene-Louise relationship work
 234 = {
 	name="Arcard" #Mordred's great-great-grandfather
-	mother=2464 # generated
+	#mother= # generated
 	dynasty=202
 	
 	religion=elimine_church

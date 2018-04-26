@@ -155,7 +155,7 @@ can_inherit_holy_blood_trigger = {
 	}
 }
 can_inherit_major_loptyr_holy_blood_trigger = {
-	OR = {
+	OR = { 
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
@@ -1304,6 +1304,128 @@ has_two_minor_holy_blood_trigger = {
 		}
 	}
 }
+cannot_manifest_major_loptyr_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_loptyr_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_naga_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_naga_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_baldr_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_baldr_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_blagi_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_blagi_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_dain_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_dain_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_fjalar_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_fjalar_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_forseti_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_forseti_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_hezul_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_hezul_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_neir_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_neir_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_noba_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_noba_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_od_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_od_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_thrud_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_thrud_holy_blood_trigger = yes }
+	}	
+}
+cannot_manifest_major_ulir_holy_blood_trigger = {
+	OR = {
+		has_major_holy_blood_trigger = yes
+		has_two_minor_holy_blood_trigger = yes
+		NOT = { can_inherit_major_ulir_holy_blood_trigger = yes }
+	}	
+}
+
+child_can_inherit_major_loptyr_holy_blood_trigger = {
+	is_married = yes
+	OR = { 
+		trait = holy_blood_major_loptyr
+		spouse = {
+			trait = holy_blood_minor_loptyr
+		}
+		AND = {
+			trait = holy_blood_minor_loptyr
+			spouse = {
+				trait = holy_blood_minor_loptyr
+			}
+		}
+	}
+}
+child_can_inherit_major_naga_holy_blood_trigger = {
+	is_married = yes
+	OR = { 
+		trait = holy_blood_major_naga
+		spouse = {
+			trait = holy_blood_major_naga
+		}
+		AND = {
+			trait = holy_blood_minor_naga
+			spouse = {
+				trait = holy_blood_minor_naga
+			}
+		}
+	}
+}
 can_add_major_holy_blood_trigger = {
 	# If they don't already have major blood or two minors
 	NOT = { has_major_holy_blood_trigger = yes }
@@ -1348,4 +1470,61 @@ loptyrians_searching_for_minor_blood_trigger = {
 	}
 	NOT = { has_global_flag = loptyr_revived }
 	loptyrians_exist_trigger = yes
+}
+is_loptyr_spawn_trigger = {
+	can_inherit_major_loptyr_holy_blood_trigger = yes
+	OR = {
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait = married_by_loptyrians
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait = married_by_loptyrians
+			}
+		}
+	}
+	mother_even_if_dead = {
+		trait = married_by_loptyrians
+	}
+}
+is_non_imperial_crusader_claimant_trigger = {
+	NOT = { character = ROOT }
+	has_holy_blood_trigger = yes
+	OR = {
+		is_ruler = no
+		NOT = {
+			any_liege = {
+				tier = EMPEROR
+				OR = {
+					religion = loptyrian
+					trait = possessed_loptyr
+				}
+			}
+		}
+	}
+}
+can_use_book_of_naga_trigger = {
+	has_artifact = regalia_naga
+	can_equip_light_trigger = yes
+	trait = holy_blood_major_naga
+}
+loptyr_killed_by_book_of_naga_trigger = {
+	any_current_enemy = {
+		OR = {
+			AND = {
+				can_use_book_of_naga_trigger = yes
+				action_allowed_trigger = yes
+			}
+			any_realm_character = {
+				AND = {
+					can_use_book_of_naga_trigger = yes
+					action_allowed_trigger = yes
+				}
+			}
+		}
+	}
 }

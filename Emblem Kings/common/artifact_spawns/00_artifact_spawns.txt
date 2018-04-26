@@ -221,7 +221,7 @@ regalia_tyrfing = {
 			OR = {
 				AND = {
 					has_landed_title = d_chalphy
-					NOT = { year = 757 } # Byron has it, or Sigurd after he's forced out, or Selpih... 
+					NOT = { year = 757 } # Byron has it, or Sigurd after he's forced out, or Seliph... 
 				}
 				AND = {
 					has_landed_title = k_grannvale
@@ -567,6 +567,11 @@ regalia_loptyr = {
 					has_landed_title = e_grannvale
 					NOT = { year = 779 } #
 					year = 777
+				}
+				AND = {
+					has_landed_title = c_yied
+					NOT = { year = 777 } #
+					year = 648
 				}
 			}
 		}

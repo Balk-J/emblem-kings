@@ -1,588 +1,676 @@
 loptyr_possession_effect = {
-	# Religion and bloodline...
-	if = {
-		limit = { NOT = { religion = loptyrian } }
-		religion = loptyrian
-	}
-	if = {
-		limit = { NOT = { trait = holy_blood_major_loptyr } }
-		add_trait = holy_blood_major_loptyr
-	}
-	if = {
-		limit = { trait = holy_blood_minor_loptyr }
-		remove_trait = holy_blood_minor_loptyr
-	}
-	if = {
-		limit = { NOT = { trait = possessed_loptyr } }
-		add_trait = possessed_loptyr
-	}
-	
-	# Personality - he's like this
-	if = {
-		limit = { NOT = { trait = genius } }
-		add_trait = genius
-	}
-	if = {
-		limit = { NOT = { trait = ambitious } }
-		add_trait = ambitious
-	}
-	if = {
-		limit = { NOT = { trait = cruel } }
-		add_trait = cruel
-	}
-	if = {
-		limit = { NOT = { trait = deceitful } }
-		add_trait = deceitful
-	}
-	if = {
-		limit = { NOT = { trait = envious } }
-		add_trait = envious
-	}
-	if = {
-		limit = { NOT = { trait = gregarious } }
-		add_trait = gregarious
-	}
-	if = {
-		limit = { NOT = { trait = impaler } }
-		add_trait = impaler
-	}
-	if = {
-		limit = { NOT = { trait = mystic } }
-		add_trait = mystic
-	}
-	if = {
-		limit = { NOT = { trait = patient } }
-		add_trait = patient
-	}
-	if = {
-		limit = { NOT = { trait = proud } }
-		add_trait = proud
-	}
-	if = {
-		limit = { NOT = { trait = wroth } }
-		add_trait = wroth
-	}
-	if = {
-		limit = { NOT = { trait = zealous } }
-		add_trait = zealous
-	}
-	if = {
-		limit = { NOT = { trait = inspiring_leader } }
-		add_trait = inspiring_leader
-	}
-	if = {
-		limit = { NOT = { trait = aggressive_leader } }
-		add_trait = aggressive_leader
-	}
-	if = {
-		limit = { NOT = { trait = holy_warrior } }
-		add_trait = holy_warrior
-	}
-	
-	# Loptyr is not like this
-	if = {
-		limit = { trait = quick }
-		remove_trait = quick
-	}
-	if = {
-		limit = { trait = arbitrary }
-		remove_trait = arbitrary
-	}
-	if = {
-		limit = { trait = brave }
-		remove_trait = brave
-	}
-	if = {
-		limit = { trait = charitable }
-		remove_trait = charitable
-	}
-	if = {
-		limit = { trait = chaste }
-		remove_trait = chaste
-	}
-	if = {
-		limit = { trait = content }
-		remove_trait = content
-	}
-	if = {
-		limit = { trait = craven }
-		remove_trait = craven
-	}
-	if = {
-		limit = { trait = curious }
-		remove_trait = curious
-	}
-	if = {
-		limit = { trait = cynical }
-		remove_trait = cynical
-	}
-	if = {
-		limit = { trait = depressed }
-		remove_trait = depressed
-	}
-	if = {
-		limit = { trait = diligent }
-		remove_trait = diligent
-	}
-	if = {
-		limit = { trait = drunkard }
-		remove_trait = drunkard
-	}
-	if = {
-		limit = { trait = erudite }
-		remove_trait = erudite
-	}
-	if = {
-		limit = { trait = fussy }
-		remove_trait = fussy
-	}
-	if = {
-		limit = { trait = gluttonous }
-		remove_trait = gluttonous
-	}
-	if = {
-		limit = { trait = greedy }
-		remove_trait = greedy
-	}
-	if = {
-		limit = { trait = haughty }
-		remove_trait = haughty
-	}
-	if = {
-		limit = { trait = honest }
-		remove_trait = honest
-	}
-	if = {
-		limit = { trait = humble }
-		remove_trait = humble
-	}
-	if = {
-		limit = { trait = idolizer }
-		remove_trait = idolizer
-	}
-	if = {
-		limit = { trait = indolent }
-		remove_trait = indolent
-	}
-	if = {
-		limit = { trait = just }
-		remove_trait = just
-	}
-	if = {
-		limit = { trait = kind }
-		remove_trait = kind
-	}
-	if = {
-		limit = { trait = lustful }
-		remove_trait = lustful
-	}
-	if = {
-		limit = { trait = paranoid }
-		remove_trait = paranoid
-	}
-	if = {
-		limit = { trait = playful }
-		remove_trait = playful
-	}
-	if = {
-		limit = { trait = rowdy }
-		remove_trait = rowdy
-	}
-	if = {
-		limit = { trait = shy }
-		remove_trait = shy
-	}
-	if = {
-		limit = { trait = stubborn }
-		remove_trait = stubborn
-	}
-	if = {
-		limit = { trait = temperate }
-		remove_trait = temperate
-	}
-	if = {
-		limit = { trait = timid }
-		remove_trait = timid
-	}
-	if = {
-		limit = { trait = trusting }
-		remove_trait = trusting
-	}
-	if = {
-		limit = { trait = willful }
-		remove_trait = willful
-	}
-	
-	# Fix the class
-	#hidden_tooltip = {	
-		set_character_flag = class_selected
-		
-		# Remove the stuff he shouldn't have		
-		if = {
-			limit = { trait = base_class_knight }
-			remove_trait = base_class_knight
-		}
-		if = {
-			limit = { trait = base_class_cavalier }
-			remove_trait = base_class_cavalier
-		}
-		if = {
-			limit = { trait = base_class_archer }
-			remove_trait = base_class_archer
-		}
-		if = {
-			limit = { trait = base_class_horse_archer }
-			remove_trait = base_class_horse_archer
-		}
-		if = {
-			limit = { trait = base_class_mercenary }
-			remove_trait = base_class_mercenary
-		}
-		if = {
-			limit = { trait = base_class_fighter }
-			remove_trait = base_class_fighter
-		}
-		if = {
-			limit = { trait = base_class_myrmidon }
-			remove_trait = base_class_myrmidon
-		}
-		if = {
-			limit = { trait = base_class_thief }
-			remove_trait = base_class_thief
-		}
-		if = {
-			limit = { trait = base_class_pirate }
-			remove_trait = base_class_pirate
-		}
-		if = {
-			limit = { trait = base_class_brigand }
-			remove_trait = base_class_brigand
-		}
-		if = {
-			limit = { trait = base_class_priest }
-			remove_trait = base_class_priest
-		}
-		if = {
-			limit = { trait = base_class_monk }
-			remove_trait = base_class_monk
-		}
-		if = {
-			limit = { trait = base_class_mage }
-			remove_trait = base_class_mage
-		}
-		#if = {
-		#	limit = { trait = base_class_dark_mage }
-		#	remove_trait = base_class_dark_mage
-		#}
-		if = {
-			limit = { trait = base_class_wyvern_rider }
-			remove_trait = base_class_wyvern_rider
-		}
-		if = {
-			limit = { trait = base_class_pegasus_knight }
-			remove_trait = base_class_pegasus_knight
-		}
-		if = {
-			limit = { trait = base_class_manakete }
-			remove_trait = base_class_manakete
-		}
-		if = {
-			limit = { trait = base_class_soldier }
-			remove_trait = base_class_soldier
-		}
-		if = {
-			limit = { trait = base_class_dancer }
-			remove_trait = base_class_dancer
-		}
-		if = {
-			limit = { trait = base_class_bard }
-			remove_trait = base_class_bard
-		}
-		if = {
-			limit = { trait = base_class_troubador }
-			remove_trait = base_class_troubador
-		}
-		if = {
-			limit = { trait = base_class_cleric }
-			remove_trait = base_class_cleric
-		}
-		if = {
-			limit = { trait = class_archdruid }
-			remove_trait = class_archdruid
-		}
-		if = {
-			limit = { trait = class_archer }
-			remove_trait = class_archer
-		}
-		if = {
-			limit = { trait = class_archer_female }
-			remove_trait = class_archer_female
-		}
-		if = {
-			limit = { trait = class_archsage }
-			remove_trait = class_archsage
-		}
-		if = {
-			limit = { trait = class_assassin }
-			remove_trait = class_assassin
-		}
-		if = {
-			limit = { trait = class_assassin_female }
-			remove_trait = class_assassin_female
-		}
-		if = {
-			limit = { trait = class_bard }
-			remove_trait = class_bard
-		}
-		if = {
-			limit = { trait = class_berserker }
-			remove_trait = class_berserker
-		}
-		if = {
-			limit = { trait = class_bishop }
-			remove_trait = class_bishop
-		}
-		if = {
-			limit = { trait = class_bishop_female }
-			remove_trait = class_bishop_female
-		}
-		if = {
-			limit = { trait = class_brigand }
-			remove_trait = class_brigand
-		}
-		if = {
-			limit = { trait = class_cavalier }
-			remove_trait = class_cavalier
-		}
-		if = {
-			limit = { trait = class_cleric }
-			remove_trait = class_cleric
-		}
-		if = {
-			limit = { trait = class_dancer }
-			remove_trait = class_dancer
-		}
-		if = {
-			limit = { trait = class_dark_druid }
-			remove_trait = class_dark_druid
-		}
-		#if = {
-		#	limit = { trait = class_sorceror }
-		#	remove_trait = class_sorceror
-		#}
-		#if = {
-		#	limit = { trait = class_sorceror_female }
-		#	remove_trait = class_sorceror_female
-		#}
-		if = {
-			limit = { trait = class_falcon_knight }
-			remove_trait = class_falcon_knight
-		}
-		if = {
-			limit = { trait = class_fighter }
-			remove_trait = class_fighter
-		}
-		if = {
-			limit = { trait = class_general }
-			remove_trait = class_general
-		}
-		if = {
-			limit = { trait = class_great_knight }
-			remove_trait = class_great_knight
-		}
-		if = {
-			limit = { trait = class_hero }
-			remove_trait = class_hero
-		}
-		if = {
-			limit = { trait = class_hero_female }
-			remove_trait = class_hero_female
-		}
-		if = {
-			limit = { trait = class_knight }
-			remove_trait = class_knight
-		}
-		if = {
-			limit = { trait = class_mage }
-			remove_trait = class_mage
-		}
-		if = {
-			limit = { trait = class_mage_female }
-			remove_trait = class_mage_female
-		}
-		if = {
-			limit = { trait = class_mage_knight }
-			remove_trait = class_mage_knight
-		}
-		if = {
-			limit = { trait = class_mage_knight_female }
-			remove_trait = class_mage_knight_female
-		}
-		if = {
-			limit = { trait = class_magic_seal }
-			remove_trait = class_magic_seal
-		}
-		if = {
-			limit = { trait = class_manakete }
-			remove_trait = class_manakete
-		}
-		if = {
-			limit = { trait = class_manakete_female }
-			remove_trait = class_manakete_female
-		}
-		if = {
-			limit = { trait = class_mercenary }
-			remove_trait = class_mercenary
-		}
-		if = {
-			limit = { trait = class_mercenary_female }
-			remove_trait = class_mercenary_female
-		}
-		if = {
-			limit = { trait = class_monk }
-			remove_trait = class_monk
-		}
-		if = {
-			limit = { trait = class_myrmidon }
-			remove_trait = class_myrmidon
-		}
-		if = {
-			limit = { trait = class_myrmidon_female }
-			remove_trait = class_myrmidon_female
-		}
-		if = {
-			limit = { trait = class_horse_archer }
-			remove_trait = class_horse_archer
-		}
-		if = {
-			limit = { trait = class_horse_archer_female }
-			remove_trait = class_horse_archer_female
-		}
-		if = {
-			limit = { trait = class_paladin }
-			remove_trait = class_paladin
-		}
-		if = {
-			limit = { trait = class_pegasus_knight }
-			remove_trait = class_pegasus_knight
-		}
-		if = {
-			limit = { trait = class_pirate }
-			remove_trait = class_pirate
-		}
-		if = {
-			limit = { trait = class_priest }
-			remove_trait = class_priest
-		}
-		if = {
-			limit = { trait = class_bow_knight }
-			remove_trait = class_bow_knight
-		}
-		if = {
-			limit = { trait = class_bow_knight_female }
-			remove_trait = class_bow_knight_female
-		}
-		if = {
-			limit = { trait = class_rogue }
-			remove_trait = class_rogue
-		}
-		if = {
-			limit = { trait = class_sage }
-			remove_trait = class_sage
-		}
-		if = {
-			limit = { trait = class_sage_female }
-			remove_trait = class_sage_female
-		}
-		if = {
-			limit = { trait = class_dark_mage }
-			remove_trait = class_dark_mage
-		}
-		if = {
-			limit = { trait = class_dark_mage_female }
-			remove_trait = class_dark_mage_female
-		}
-		if = {
-			limit = { trait = class_sniper }
-			remove_trait = class_sniper
-		}
-		if = {
-			limit = { trait = class_sniper_female }
-			remove_trait = class_sniper_female
-		}
-		if = {
-			limit = { trait = class_soldier }
-			remove_trait = class_soldier
-		}
-		if = {
-			limit = { trait = class_swordmaster }
-			remove_trait = class_swordmaster
-		}
-		if = {
-			limit = { trait = class_swordmaster_female }
-			remove_trait = class_swordmaster_female
-		}
-		if = {
-			limit = { trait = class_thief }
-			remove_trait = class_thief
-		}
-		if = {
-			limit = { trait = class_thief_female }
-			remove_trait = class_thief_female
-		}
-		if = {
-			limit = { trait = class_troubador }
-			remove_trait = class_troubador
-		}
-		if = {
-			limit = { trait = class_war_cleric }
-			remove_trait = class_war_cleric
-		}
-		if = {
-			limit = { trait = class_war_priest }
-			remove_trait = class_war_priest
-		}
-		if = {
-			limit = { trait = class_warrior }
-			remove_trait = class_warrior
-		}
-		if = {
-			limit = { trait = class_wyvern_knight }
-			remove_trait = class_wyvern_knight
-		}
-		if = {
-			limit = { trait = class_wyvern_lord }
-			remove_trait = class_wyvern_lord
-		}
-		if = {
-			limit = { trait = class_wyvern_rider }
-			remove_trait = class_wyvern_rider
-		}
-		
-		# Add the right stuff!
-		
-		if = {
-			limit = { NOT = { trait = base_class_dark_mage } }
-			add_trait = base_class_dark_mage
-		}
-		
-		if = {
-			limit = { is_female = yes }
+	custom_tooltip = {
+		text = loptyr_possession_effect.tooltip
+		hidden_tooltip = {
+			
+			# Religion and bloodline...
 			if = {
-				limit = { NOT = { trait = class_sorceror_female } }
-				add_trait = class_sorceror_female
+				limit = { NOT = { religion = loptyrian } }
+				religion = loptyrian
 			}
-		}
-		if = {
-			limit = { is_female = no }
 			if = {
-				limit = { NOT = { trait = class_sorceror } }
-				add_trait = class_sorceror
+				limit = { NOT = { trait = holy_blood_major_loptyr } }
+				add_trait = holy_blood_major_loptyr
 			}
+			if = {
+				limit = { trait = holy_blood_minor_loptyr }
+				remove_trait = holy_blood_minor_loptyr
+			}
+			if = {
+				limit = { NOT = { trait = possessed_loptyr } }
+				add_trait = possessed_loptyr
+			}
+			
+			# Personality - he's like this
+			if = {
+				limit = { NOT = { trait = genius } }
+				add_trait = genius
+			}
+			if = {
+				limit = { NOT = { trait = ambitious } }
+				add_trait = ambitious
+			}
+			if = {
+				limit = { NOT = { trait = cruel } }
+				add_trait = cruel
+			}
+			if = {
+				limit = { NOT = { trait = deceitful } }
+				add_trait = deceitful
+			}
+			if = {
+				limit = { NOT = { trait = envious } }
+				add_trait = envious
+			}
+			if = {
+				limit = { NOT = { trait = gregarious } }
+				add_trait = gregarious
+			}
+			if = {
+				limit = { NOT = { trait = impaler } }
+				add_trait = impaler
+			}
+			if = {
+				limit = { NOT = { trait = mystic } }
+				add_trait = mystic
+			}
+			if = {
+				limit = { NOT = { trait = patient } }
+				add_trait = patient
+			}
+			if = {
+				limit = { NOT = { trait = proud } }
+				add_trait = proud
+			}
+			if = {
+				limit = { NOT = { trait = wroth } }
+				add_trait = wroth
+			}
+			if = {
+				limit = { NOT = { trait = zealous } }
+				add_trait = zealous
+			}
+			if = {
+				limit = { NOT = { trait = inspiring_leader } }
+				add_trait = inspiring_leader
+			}
+			if = {
+				limit = { NOT = { trait = aggressive_leader } }
+				add_trait = aggressive_leader
+			}
+			if = {
+				limit = { NOT = { trait = holy_warrior } }
+				add_trait = holy_warrior
+			}
+			
+			# Loptyr is not like this
+			if = {
+				limit = { trait = quick }
+				remove_trait = quick
+			}
+			if = {
+				limit = { trait = arbitrary }
+				remove_trait = arbitrary
+			}
+			if = {
+				limit = { trait = brave }
+				remove_trait = brave
+			}
+			if = {
+				limit = { trait = charitable }
+				remove_trait = charitable
+			}
+			if = {
+				limit = { trait = chaste }
+				remove_trait = chaste
+			}
+			if = {
+				limit = { trait = content }
+				remove_trait = content
+			}
+			if = {
+				limit = { trait = craven }
+				remove_trait = craven
+			}
+			if = {
+				limit = { trait = curious }
+				remove_trait = curious
+			}
+			if = {
+				limit = { trait = cynical }
+				remove_trait = cynical
+			}
+			if = {
+				limit = { trait = depressed }
+				remove_trait = depressed
+			}
+			if = {
+				limit = { trait = diligent }
+				remove_trait = diligent
+			}
+			if = {
+				limit = { trait = drunkard }
+				remove_trait = drunkard
+			}
+			if = {
+				limit = { trait = erudite }
+				remove_trait = erudite
+			}
+			if = {
+				limit = { trait = fussy }
+				remove_trait = fussy
+			}
+			if = {
+				limit = { trait = gluttonous }
+				remove_trait = gluttonous
+			}
+			if = {
+				limit = { trait = greedy }
+				remove_trait = greedy
+			}
+			if = {
+				limit = { trait = haughty }
+				remove_trait = haughty
+			}
+			if = {
+				limit = { trait = honest }
+				remove_trait = honest
+			}
+			if = {
+				limit = { trait = humble }
+				remove_trait = humble
+			}
+			if = {
+				limit = { trait = idolizer }
+				remove_trait = idolizer
+			}
+			if = {
+				limit = { trait = indolent }
+				remove_trait = indolent
+			}
+			if = {
+				limit = { trait = just }
+				remove_trait = just
+			}
+			if = {
+				limit = { trait = kind }
+				remove_trait = kind
+			}
+			if = {
+				limit = { trait = lustful }
+				remove_trait = lustful
+			}
+			if = {
+				limit = { trait = paranoid }
+				remove_trait = paranoid
+			}
+			if = {
+				limit = { trait = playful }
+				remove_trait = playful
+			}
+			if = {
+				limit = { trait = rowdy }
+				remove_trait = rowdy
+			}
+			if = {
+				limit = { trait = shy }
+				remove_trait = shy
+			}
+			if = {
+				limit = { trait = stubborn }
+				remove_trait = stubborn
+			}
+			if = {
+				limit = { trait = temperate }
+				remove_trait = temperate
+			}
+			if = {
+				limit = { trait = timid }
+				remove_trait = timid
+			}
+			if = {
+				limit = { trait = trusting }
+				remove_trait = trusting
+			}
+			if = {
+				limit = { trait = willful }
+				remove_trait = willful
+			}
+			
+			# Fix the class
+			#hidden_tooltip = {	
+				set_character_flag = class_selected
+				
+				# Remove the stuff he shouldn't have		
+				if = {
+					limit = { trait = base_class_knight }
+					remove_trait = base_class_knight
+				}
+				if = {
+					limit = { trait = base_class_cavalier }
+					remove_trait = base_class_cavalier
+				}
+				if = {
+					limit = { trait = base_class_archer }
+					remove_trait = base_class_archer
+				}
+				if = {
+					limit = { trait = base_class_horse_archer }
+					remove_trait = base_class_horse_archer
+				}
+				if = {
+					limit = { trait = base_class_mercenary }
+					remove_trait = base_class_mercenary
+				}
+				if = {
+					limit = { trait = base_class_fighter }
+					remove_trait = base_class_fighter
+				}
+				if = {
+					limit = { trait = base_class_myrmidon }
+					remove_trait = base_class_myrmidon
+				}
+				if = {
+					limit = { trait = base_class_thief }
+					remove_trait = base_class_thief
+				}
+				if = {
+					limit = { trait = base_class_pirate }
+					remove_trait = base_class_pirate
+				}
+				if = {
+					limit = { trait = base_class_brigand }
+					remove_trait = base_class_brigand
+				}
+				if = {
+					limit = { trait = base_class_priest }
+					remove_trait = base_class_priest
+				}
+				if = {
+					limit = { trait = base_class_monk }
+					remove_trait = base_class_monk
+				}
+				if = {
+					limit = { trait = base_class_mage }
+					remove_trait = base_class_mage
+				}
+				#if = {
+				#	limit = { trait = base_class_dark_mage }
+				#	remove_trait = base_class_dark_mage
+				#}
+				if = {
+					limit = { trait = base_class_wyvern_rider }
+					remove_trait = base_class_wyvern_rider
+				}
+				if = {
+					limit = { trait = base_class_pegasus_knight }
+					remove_trait = base_class_pegasus_knight
+				}
+				if = {
+					limit = { trait = base_class_manakete }
+					remove_trait = base_class_manakete
+				}
+				if = {
+					limit = { trait = base_class_soldier }
+					remove_trait = base_class_soldier
+				}
+				if = {
+					limit = { trait = base_class_dancer }
+					remove_trait = base_class_dancer
+				}
+				if = {
+					limit = { trait = base_class_bard }
+					remove_trait = base_class_bard
+				}
+				if = {
+					limit = { trait = base_class_troubador }
+					remove_trait = base_class_troubador
+				}
+				if = {
+					limit = { trait = base_class_cleric }
+					remove_trait = base_class_cleric
+				}
+				if = {
+					limit = { trait = class_archdruid }
+					remove_trait = class_archdruid
+				}
+				if = {
+					limit = { trait = class_archer }
+					remove_trait = class_archer
+				}
+				if = {
+					limit = { trait = class_archer_female }
+					remove_trait = class_archer_female
+				}
+				if = {
+					limit = { trait = class_archsage }
+					remove_trait = class_archsage
+				}
+				if = {
+					limit = { trait = class_assassin }
+					remove_trait = class_assassin
+				}
+				if = {
+					limit = { trait = class_assassin_female }
+					remove_trait = class_assassin_female
+				}
+				if = {
+					limit = { trait = class_bard }
+					remove_trait = class_bard
+				}
+				if = {
+					limit = { trait = class_berserker }
+					remove_trait = class_berserker
+				}
+				if = {
+					limit = { trait = class_bishop }
+					remove_trait = class_bishop
+				}
+				if = {
+					limit = { trait = class_bishop_female }
+					remove_trait = class_bishop_female
+				}
+				if = {
+					limit = { trait = class_brigand }
+					remove_trait = class_brigand
+				}
+				if = {
+					limit = { trait = class_cavalier }
+					remove_trait = class_cavalier
+				}
+				if = {
+					limit = { trait = class_cleric }
+					remove_trait = class_cleric
+				}
+				if = {
+					limit = { trait = class_dancer }
+					remove_trait = class_dancer
+				}
+				if = {
+					limit = { trait = class_dark_druid }
+					remove_trait = class_dark_druid
+				}
+				#if = {
+				#	limit = { trait = class_sorceror }
+				#	remove_trait = class_sorceror
+				#}
+				#if = {
+				#	limit = { trait = class_sorceror_female }
+				#	remove_trait = class_sorceror_female
+				#}
+				if = {
+					limit = { trait = class_falcon_knight }
+					remove_trait = class_falcon_knight
+				}
+				if = {
+					limit = { trait = class_fighter }
+					remove_trait = class_fighter
+				}
+				if = {
+					limit = { trait = class_general }
+					remove_trait = class_general
+				}
+				if = {
+					limit = { trait = class_great_knight }
+					remove_trait = class_great_knight
+				}
+				if = {
+					limit = { trait = class_hero }
+					remove_trait = class_hero
+				}
+				if = {
+					limit = { trait = class_hero_female }
+					remove_trait = class_hero_female
+				}
+				if = {
+					limit = { trait = class_knight }
+					remove_trait = class_knight
+				}
+				if = {
+					limit = { trait = class_mage }
+					remove_trait = class_mage
+				}
+				if = {
+					limit = { trait = class_mage_female }
+					remove_trait = class_mage_female
+				}
+				if = {
+					limit = { trait = class_mage_knight }
+					remove_trait = class_mage_knight
+				}
+				if = {
+					limit = { trait = class_mage_knight_female }
+					remove_trait = class_mage_knight_female
+				}
+				if = {
+					limit = { trait = class_magic_seal }
+					remove_trait = class_magic_seal
+				}
+				if = {
+					limit = { trait = class_manakete }
+					remove_trait = class_manakete
+				}
+				if = {
+					limit = { trait = class_manakete_female }
+					remove_trait = class_manakete_female
+				}
+				if = {
+					limit = { trait = class_mercenary }
+					remove_trait = class_mercenary
+				}
+				if = {
+					limit = { trait = class_mercenary_female }
+					remove_trait = class_mercenary_female
+				}
+				if = {
+					limit = { trait = class_monk }
+					remove_trait = class_monk
+				}
+				if = {
+					limit = { trait = class_myrmidon }
+					remove_trait = class_myrmidon
+				}
+				if = {
+					limit = { trait = class_myrmidon_female }
+					remove_trait = class_myrmidon_female
+				}
+				if = {
+					limit = { trait = class_horse_archer }
+					remove_trait = class_horse_archer
+				}
+				if = {
+					limit = { trait = class_horse_archer_female }
+					remove_trait = class_horse_archer_female
+				}
+				if = {
+					limit = { trait = class_paladin }
+					remove_trait = class_paladin
+				}
+				if = {
+					limit = { trait = class_pegasus_knight }
+					remove_trait = class_pegasus_knight
+				}
+				if = {
+					limit = { trait = class_pirate }
+					remove_trait = class_pirate
+				}
+				if = {
+					limit = { trait = class_priest }
+					remove_trait = class_priest
+				}
+				if = {
+					limit = { trait = class_bow_knight }
+					remove_trait = class_bow_knight
+				}
+				if = {
+					limit = { trait = class_bow_knight_female }
+					remove_trait = class_bow_knight_female
+				}
+				if = {
+					limit = { trait = class_rogue }
+					remove_trait = class_rogue
+				}
+				if = {
+					limit = { trait = class_sage }
+					remove_trait = class_sage
+				}
+				if = {
+					limit = { trait = class_sage_female }
+					remove_trait = class_sage_female
+				}
+				if = {
+					limit = { trait = class_dark_mage }
+					remove_trait = class_dark_mage
+				}
+				if = {
+					limit = { trait = class_dark_mage_female }
+					remove_trait = class_dark_mage_female
+				}
+				if = {
+					limit = { trait = class_sniper }
+					remove_trait = class_sniper
+				}
+				if = {
+					limit = { trait = class_sniper_female }
+					remove_trait = class_sniper_female
+				}
+				if = {
+					limit = { trait = class_soldier }
+					remove_trait = class_soldier
+				}
+				if = {
+					limit = { trait = class_swordmaster }
+					remove_trait = class_swordmaster
+				}
+				if = {
+					limit = { trait = class_swordmaster_female }
+					remove_trait = class_swordmaster_female
+				}
+				if = {
+					limit = { trait = class_thief }
+					remove_trait = class_thief
+				}
+				if = {
+					limit = { trait = class_thief_female }
+					remove_trait = class_thief_female
+				}
+				if = {
+					limit = { trait = class_troubador }
+					remove_trait = class_troubador
+				}
+				if = {
+					limit = { trait = class_war_cleric }
+					remove_trait = class_war_cleric
+				}
+				if = {
+					limit = { trait = class_war_priest }
+					remove_trait = class_war_priest
+				}
+				if = {
+					limit = { trait = class_warrior }
+					remove_trait = class_warrior
+				}
+				if = {
+					limit = { trait = class_wyvern_knight }
+					remove_trait = class_wyvern_knight
+				}
+				if = {
+					limit = { trait = class_wyvern_lord }
+					remove_trait = class_wyvern_lord
+				}
+				if = {
+					limit = { trait = class_wyvern_rider }
+					remove_trait = class_wyvern_rider
+				}
+				
+				# Add the right stuff!
+				
+				if = {
+					limit = { NOT = { trait = base_class_dark_mage } }
+					add_trait = base_class_dark_mage
+				}
+				
+				if = {
+					limit = { is_female = yes }
+					if = {
+						limit = { NOT = { trait = class_sorceror_female } }
+						add_trait = class_sorceror_female
+					}
+				}
+				if = {
+					limit = { is_female = no }
+					if = {
+						limit = { NOT = { trait = class_sorceror } }
+						add_trait = class_sorceror
+					}
+				}
+				set_variable = { which = "level" value = 20 }		
+			#}
 		}
-		set_variable = { which = "level" value = 20 }		
-	#}
+	}
 }
+
+add_latent_holy_blood_effect = {
+	if = {
+		limit = {
+			can_inherit_loptyr_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_loptyr
+	}
+	if = {
+		limit = {
+			can_inherit_naga_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_naga
+	}
+	if = {
+		limit = {
+			can_inherit_baldr_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_baldr
+	}
+	if = {
+		limit = {
+			can_inherit_blagi_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_blagi
+	}
+	if = {
+		limit = {
+			can_inherit_dain_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_dain
+	}
+	if = {
+		limit = {
+			can_inherit_fjalar_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_fjalar
+	}
+	if = {
+		limit = {
+			can_inherit_forseti_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_forseti
+	}
+	if = {
+		limit = {
+			can_inherit_hezul_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_hezul
+	}
+	if = {
+		limit = {
+			can_inherit_neir_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_neir
+	}
+	if = {
+		limit = {
+			can_inherit_noba_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_noba
+	}
+	if = {
+		limit = {
+			can_inherit_od_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_od
+	}
+	if = {
+		limit = {
+			can_inherit_thrud_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_thrud
+	}
+	if = {
+		limit = {
+			can_inherit_ulir_holy_blood_trigger = yes
+		}
+		add_trait = holy_blood_latent_ulir
+	}
+}
+
 add_minor_blood_found_by_loptryians_effect = {
 	set_character_flag = minor_blood_found_by_loptyrians
 	if = {
@@ -630,4 +718,57 @@ remove_loptyrian_marriage_flags_effect = {
 	clr_character_flag = minor_blood_secondary
 	clr_character_flag = brainwashed_by_loptyrians
 	remove_trait = no_marriage_hidden
+}
+remove_loptyrian_marriage_traits_effect = {
+	father_even_if_dead = {
+		remove_trait = married_by_loptyrians
+	}	
+	real_father_even_if_dead = {
+		remove_trait = married_by_loptyrians
+	}	
+	mother_even_if_dead = {
+		remove_trait = married_by_loptyrians
+	}
+}
+
+loptyr_revival_effect = {
+	hidden_tooltip = {
+		if = {
+			limit = { 
+				has_global_flag = loptyr_empire_destroyed
+				NOT = { has_global_flag = loptyr_revived }
+			}
+			set_global_flag = loptyr_revived
+			
+			any_society_member = {
+				limit = {
+					society_member_of = secret_religious_society_loptyrian
+					NOT = { character = ROOT }
+				}
+				character_event = { id = loptyrian.23 days = 1 }
+			}
+			
+			if = {
+				limit = { 
+					OR = {
+						AND = {
+							is_ruler = yes 
+							any_courtier = {
+								has_naga_holy_blood_trigger = yes
+							}
+						}
+						AND = {
+							is_ruler = no
+							employer = {
+								any_courtier = {
+									has_naga_holy_blood_trigger = yes
+								}
+							}
+						}
+					}
+				}
+				character_event = {	id = loptyrian.20 }
+			}
+		}
+	}
 }

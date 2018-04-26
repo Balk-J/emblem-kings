@@ -8,6 +8,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -46,6 +47,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -84,6 +86,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -122,6 +125,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -160,6 +164,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -199,6 +204,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -237,6 +243,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -275,6 +282,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes
@@ -314,6 +322,7 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_global_flag = loptyr_empire_destroyed
 		}
 		allow = {
 			is_adult = yes

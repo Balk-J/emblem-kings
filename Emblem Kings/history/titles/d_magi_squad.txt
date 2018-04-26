@@ -1,6 +1,6 @@
 776.1.1={
 	holder=1112 # Ced
-	liege=0#k_manster 
+	liege=k_leif
 }
 777.1.1={
 	holder=0

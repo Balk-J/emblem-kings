@@ -11,6 +11,6 @@
 	liege = 0
 }
 649.1.1={
-	holder=0 # 
+	#holder=0 # 
 	liege = d_ganeishire
 }

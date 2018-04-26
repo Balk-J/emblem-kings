@@ -1,0 +1,22 @@
+# d_phinora > k_yied
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_yied
+	#holder = 0
+}
+647.1.1={
+	holder=1312 # filler
+}
+684.1.1={
+	holder=0 # filler
+}
+770.1.1={
+	liege = e_grannvale
+	holder=1282 # Dark Bishop
+}
+779.1.1={
+	liege = k_yied
+	holder = 0 # 
+}

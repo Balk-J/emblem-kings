@@ -10,7 +10,10 @@
 	liege = 0
 	holder = 881
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
-	#holder=0 # Set to appropriately cultured ruler?
+	holder=0 # Set to appropriately cultured ruler?
 	liege = d_grutia
 }

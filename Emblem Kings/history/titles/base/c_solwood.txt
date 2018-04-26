@@ -10,8 +10,11 @@
 	holder=1015 # 
 	liege = 0
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
-	holder=0 
+	#holder=0 
 	liege = d_leonster
 }
 754.1.1={

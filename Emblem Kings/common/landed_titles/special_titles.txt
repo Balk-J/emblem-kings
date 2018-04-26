@@ -264,3 +264,46 @@ k_new_thracia = {
 	}
 }
 
+# Temporary title for Sigurd in the battle of Belhalla
+d_sigurd = {
+	color={ 185 53 41 }
+	color2={ 255 255 255 }
+	
+	capital = 347 #	Chalphy
+	
+	title = "LORD"
+	title_female = "LORD_female"
+	foa = "LORD_foa"
+	
+	# Cannot be held as a secondary title
+	#primary = yes
+	short_name = yes
+	
+	allow = {
+		always = no 
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+# Temporary title for Quan in the battle of Belhalla
+d_quan = {
+	color={ 10 81 243 }
+	color2={ 255 255 255 }
+	
+	capital = 435 #	Leonster
+	
+	title = "LORD"
+	title_female = "LORD_female"
+	foa = "LORD_foa"
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	#primary = yes
+	short_name = yes
+	
+	allow = {
+		always = no 
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

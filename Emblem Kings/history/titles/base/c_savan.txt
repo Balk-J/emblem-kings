@@ -9,8 +9,14 @@
 440.1.1={
 	holder=886 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
-	holder=0 
+	liege = d_savan
+}
+649.1.1={
+	#holder=0 
 }
 755.1.1={
 	holder=1468 # Coruta 

@@ -1,0 +1,39 @@
+# d_ganeishire > k_isaach
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_isaach
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_tirnanog
+}
+649.1.1={
+	de_jure_liege = k_isaach
+	holder = 1010 # Odo TODO: add filler character
+}
+665.1.1={
+	holder = 1143 #  
+}
+691.1.1={
+	holder = 1144 #  
+}
+714.1.1={
+	holder = 1130 # Mananan
+}
+757.1.1={
+	holder = 1134 # Mariccle
+}
+760.1.1={
+	holder = 1029 # Azmur 
+}
+761.1.1={
+	holder = 1073 # Danann 
+}
+761.1.1={
+	holder=1331 # Harold
+}
+778.1.1={
+	holder = 1136 # Shannan 
+}

@@ -1,0 +1,19 @@
+name = "Zaxon Claim on Silesse War"
+
+casus_belli = {
+	actor = 1108 # Daccar
+	recipient = 1110 # Rahna
+	casus_belli = silesse_claim
+	landed_title=k_silesse
+	date=760.2.1
+}
+
+760.2.1 = {
+	add_attacker = 1108
+	add_defender = 1110
+}
+
+760.2.28 = {
+	rem_attacker = 1108
+	rem_defender = 1110
+}

@@ -7,6 +7,10 @@
 0440.01.01={
 	holder=1020 # 
 }
+0450.01.01={
+	liege = e_loptyr
+}
 0649.01.01={
+	liege = k_orgahil
 	holder=0 
 }

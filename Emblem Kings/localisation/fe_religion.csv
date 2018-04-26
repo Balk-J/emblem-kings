@@ -108,6 +108,8 @@ e_dragon_liberation;The Last Dragons;;;;;;;;;;;;;x
 e_dragon_liberation_adj;Last Dragon;;;;;;;;;;;;;x
 d_loptyrian;Church of Loptyr;;;;;;;;;;;;;x
 d_loptyrian_adj;Loptyrian;;;;;;;;;;;;;x
+d_church_of_edda;Church of Edda;;;;;;;;;;;;;x
+d_church_of_edda_adj;Edda;;;;;;;;;;;;;x
 magic_group;Mage;;;;;;;;;;;;;x
 dark;Elder Magic;;;;;;;;;;;;;x
 dark_DESC;Elder or "dark" magic is an ancient magical discipline whose power stems from deep knowledge and understanding of the arcane. The common folk widely believe elder magic to be evil - perhaps due to the number of mages who have had their minds erased by the forces they sought to command, or been twisted into power-hungry maniacs.;;;;;;;;;;;;;x
@@ -188,3 +190,5 @@ temple_baron_earthen_pagan;Priest;;;;;;;;;;;;;x
 temple_baron_female_earthen_pagan;Priestess;;;;;;;;;;;;;x
 loptyrian_opinion;Loptyrian Opinion;;;;;;;;;;;;;x
 church_of_edda_opinion;Church of Edda Opinion;;;;;;;;;;;;;x
+church_of_edda_creation_independent;Either independent or all lieges Church of Edda\n;;;;;;;;;;;;;x
+

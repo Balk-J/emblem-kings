@@ -51,6 +51,12 @@ e_elibe = {
 				}
 				b_aarwangen = {
 				}
+				b_weissbrodt = {
+				}
+				b_irminger = {
+				}
+				b_rieben = {
+				}
 			}
 			c_landskron = {
 				color={ 224 30 82 }
@@ -67,6 +73,10 @@ e_elibe = {
 				}
 				b_grentzer = {
 				}
+				b_baumann = {
+				}
+				b_moroff = {
+				}
 			}
 			c_boltigen = {
 				color={ 206 65 103 }
@@ -80,6 +90,12 @@ e_elibe = {
 				b_boltigen_3 = {
 				}
 				b_augst = {
+				}
+				b_eschler = {
+				}
+				b_wyssling = {
+				}
+				b_martig = {
 				}
 			}
 			c_erlenbach = {
@@ -96,6 +112,10 @@ e_elibe = {
 				b_seftigen = {
 				}
 				b_belp = {
+				}
+				b_freuler = {
+				}
+				b_welter = {
 				}
 			}
 		}
@@ -118,6 +138,12 @@ e_elibe = {
 				}
 				b_nidau = {
 				}
+				b_hammer = {
+				}
+				b_scherler = {
+				}
+				b_haueter = {
+				}
 			}
 			c_bettingen = {
 				color={ 188 67 101 }
@@ -132,6 +158,12 @@ e_elibe = {
 				}
 				b_thun = {
 				}
+				b_zeller = {
+				}
+				b_kropf = {
+				}
+				b_rieben_2 = {
+				}
 			}
 			c_orvin = {
 				color={ 179 2 51 }
@@ -141,6 +173,16 @@ e_elibe = {
 				b_orvin = {
 				}
 				b_orvin_2 = {
+				}
+				b_hollonweger = {
+				}
+				b_nadig = {
+				}
+				b_giger = {
+				}
+				b_rimensberger = {
+				}
+				b_probst = {
 				}
 			}
 		}
@@ -165,6 +207,10 @@ e_elibe = {
 				}
 				b_signau = {
 				}
+				b_rohrbach = {
+				}
+				b_hodler = {
+				}
 			}
 			c_ennenda = {
 				color={ 184 58 93 }
@@ -178,6 +224,12 @@ e_elibe = {
 				b_ennenda_3 = {
 				}
 				b_oberhasli = {
+				}
+				b_dauss = {
+				}
+				b_wst = {
+				}
+				b_maurhofer = {
 				}
 			}
 			c_riedern = {
@@ -193,6 +245,12 @@ e_elibe = {
 				}
 				b_konolfingen = {
 				}
+				b_jaussi = {
+				}
+				b_hui = {
+				}
+				b_wymann = {
+				}
 			}
 			c_netstal = {
 				color={ 189 30 75 }
@@ -202,6 +260,16 @@ e_elibe = {
 				b_netstal = {
 				}
 				b_netstal_2 = {
+				}
+				b_winkler = {
+				}
+				b_knzi = {
+				}
+				b_lieberherr = {
+				}
+				b_zehnder = {
+				}
+				b_regger = {
 				}
 			}
 		}
@@ -229,6 +297,10 @@ e_elibe = {
 				}
 				b_buren = {
 				}
+				b_kpfer = {
+				}
+				b_reiser = {
+				}
 			}
 			c_bauen = {
 				color={ 163 112 126 }
@@ -240,6 +312,14 @@ e_elibe = {
 				b_bauen_2 = {
 				}
 				b_bauen_3 = {
+				}
+				b_mhlematter = {
+				}
+				b_weilenmann = {
+				}
+				b_liechti = {
+				}
+				b_naef = {
 				}
 			}
 			c_isenthal = {
@@ -254,6 +334,12 @@ e_elibe = {
 				b_isenthal_3 = {
 				}
 				b_brunnen = {
+				}
+				b_bsch = {
+				}
+				b_hermann = {
+				}
+				b_volz = {
 				}
 			}
 		}
@@ -278,6 +364,10 @@ e_elibe = {
 				}
 				b_schwarzenburg = {
 				}
+				b_birchmeier = {
+				}
+				b_hodel = {
+				}
 			}
 			c_galmiz = {
 				color={ 93 36 52 }
@@ -292,6 +382,12 @@ e_elibe = {
 				}
 				b_saanen = {
 				}
+				b_marggi = {
+				}
+				b_romer = {
+				}
+				b_von_dach = {
+				}
 			}
 			c_murist = {
 				color={ 100 67 76 }
@@ -303,6 +399,14 @@ e_elibe = {
 				b_murist_2 = {
 				}
 				b_murist_3 = {
+				}
+				b_grimm = {
+				}
+				b_brker = {
+				}
+				b_egloff = {
+				}
+				b_hammer_2 = {
 				}
 			}
 		}
@@ -325,6 +429,12 @@ e_elibe = {
 				}
 				b_ursanne = {
 				}
+				b_khr = {
+				}
+				b_jggli = {
+				}
+				b_irmiger = {
+				}
 			}
 			c_obwalden = {
 				color={ 101 68 77 }
@@ -339,6 +449,12 @@ e_elibe = {
 				}
 				b_bellelay = {
 				}
+				b_rsli = {
+				}
+				b_gantenbein = {
+				}
+				b_rimensberger_2 = {
+				}
 			}
 			c_nidwalden = {
 				color={ 106 49 65 }
@@ -350,6 +466,14 @@ e_elibe = {
 				b_nidwalden_2 = {
 				}
 				b_nidwalden_3 = {
+				}
+				b_joneli = {
+				}
+				b_hochmuth = {
+				}
+				b_aescher = {
+				}
+				b_bhler = {
 				}
 			}
 		}
@@ -374,6 +498,10 @@ e_elibe = {
 				}
 				b_saugern = {
 				}
+				b_althaus = {
+				}
+				b_aebi = {
+				}
 			}
 			c_gonten = {
 				color={ 86 50 59 }
@@ -388,6 +516,12 @@ e_elibe = {
 				}
 				b_liestal = {
 				}
+				b_nydegger = {
+				}
+				b_habegger = {
+				}
+				b_trufer = {
+				}
 			}
 			c_rute = {
 				color={ 126 66 82 }
@@ -400,6 +534,14 @@ e_elibe = {
 				}
 				b_rute_3 = {
 				}
+				b_wirz = {
+				}
+				b_ottinger = {
+				}
+				b_galli = {
+				}
+				b_tscher = {
+				}
 			}
 			c_haslen = {
 				color={ 230 128 156 }
@@ -411,6 +553,14 @@ e_elibe = {
 				b_haslen_2 = {
 				}
 				b_haslen_3 = {
+				}
+				b_kupper = {
+				}
+				b_isler = {
+				}
+				b_kehrli = {
+				}
+				b_lambert = {
 				}
 			}
 		}
@@ -435,6 +585,10 @@ e_elibe = {
 				}
 				b_wald = {
 				}
+				b_scheuss = {
+				}
+				b_wihler = {
+				}
 			}
 			c_risch = {
 				color={ 107 72 81 }
@@ -447,6 +601,14 @@ e_elibe = {
 				}
 				b_risch_3 = {
 				}
+				b_lamm = {
+				}
+				b_schwendimann = {
+				}
+				b_klla = {
+				}
+				b_schrmann = {
+				}
 			}
 			c_walchwil = {
 				color={ 167 105 122 }
@@ -458,6 +620,14 @@ e_elibe = {
 				b_walchwil_2 = {
 				}
 				b_walchwil_3 = {
+				}
+				b_balz = {
+				}
+				b_regger_2 = {
+				}
+				b_dalcher = {
+				}
+				b_ragetli = {
 				}
 			}
 		}
@@ -478,6 +648,14 @@ e_elibe = {
 				}
 				b_solothurn_3 = {
 				}
+				b_sturzenegger = {
+				}
+				b_naef_2 = {
+				}
+				b_balzli = {
+				}
+				b_giger_2 = {
+				}
 			}
 			c_dorneck = {
 				color={ 189 96 122 }
@@ -490,6 +668,14 @@ e_elibe = {
 				}
 				b_dorneck_3 = {
 				}
+				b_kmpf = {
+				}
+				b_waser = {
+				}
+				b_nold = {
+				}
+				b_lufi = {
+				}
 			}
 			c_olten = {
 				color={ 144 53 78 }
@@ -501,6 +687,14 @@ e_elibe = {
 				b_olten_2 = {
 				}
 				b_olten_3 = {
+				}
+				b_lehnherr = {
+				}
+				b_beutler = {
+				}
+				b_rickli = {
+				}
+				b_hug = {
 				}
 			}
 		}
@@ -1909,7 +2103,7 @@ e_elibe = {
 				holy_site = divine_sky_pagan
 				holy_site = divine_sky_pagan_reformed
 
-				b_mani = {
+				b_mani_2 = {
 				}
 				b_mani_katti_shrine = {
 				}
@@ -3229,6 +3423,14 @@ e_elibe = {
 				}
 			}
 		}
+	}
+	k_western_union = {
+		color={ 233 158 51 }
+		color2={ 255 255 255 }
+
+		capital = 166
+		culture = western_islander
+
 	}
 }e_grannvale = {
 	color={ 195 66 16 }
@@ -5207,7 +5409,7 @@ e_elibe = {
 			color={ 241 155 180 }
 			color2={ 255 255 255 }
 
-			capital=455
+			capital=456
 
 			c_tahra = {
 				color={ 96 96 115 }
@@ -5700,6 +5902,14 @@ e_elibe = {
 			}
 		}
 	}
+	k_new_thracia = {
+		color={ 255 0 0 }
+		color2={ 255 255 255 }
+
+		capital = 435
+		culture = new_thracian
+
+	}
 }
 	k_valor = {
 		color={ 91 100 100 }
@@ -5830,6 +6040,12 @@ e_elibe = {
 				}
 				b_wohlen = {
 				}
+				b_zaugg = {
+				}
+				b_flaucher = {
+				}
+				b_neuenschwander = {
+				}
 			}
 			c_marbach = {
 				color={ 119 139 139 }
@@ -5842,6 +6058,14 @@ e_elibe = {
 				}
 				b_marbach_2 = {
 				}
+				b_riesen = {
+				}
+				b_dysli = {
+				}
+				b_soom = {
+				}
+				b_kropf_2 = {
+				}
 			}
 			c_buron = {
 				color={ 84 89 89 }
@@ -5852,6 +6076,16 @@ e_elibe = {
 				}
 				b_buron_2 = {
 				}
+				b_bessan = {
+				}
+				b_zentner = {
+				}
+				b_abbhl = {
+				}
+				b_keussen = {
+				}
+				b_schalcher = {
+				}
 			}
 			c_regia = {
 				color={ 130 120 132 }
@@ -5859,6 +6093,18 @@ e_elibe = {
 
 
 				b_regia = {
+				}
+				b_bomberger = {
+				}
+				b_ziswiler = {
+				}
+				b_lieber = {
+				}
+				b_mani = {
+				}
+				b_ottiker = {
+				}
+				b_kyhm = {
 				}
 			}
 		}
@@ -5879,6 +6125,14 @@ e_elibe = {
 				}
 				b_sion_3 = {
 				}
+				b_dnner = {
+				}
+				b_kleeli = {
+				}
+				b_hirschi = {
+				}
+				b_trssel = {
+				}
 			}
 			c_remigen = {
 				color={ 112 122 122 }
@@ -5893,6 +6147,12 @@ e_elibe = {
 				}
 				b_emmen = {
 				}
+				b_hundsberger = {
+				}
+				b_klee = {
+				}
+				b_felber = {
+				}
 			}
 			c_kaisten = {
 				color={ 56 64 64 }
@@ -5905,6 +6165,14 @@ e_elibe = {
 				}
 				b_nebikon = {
 				}
+				b_steuri = {
+				}
+				b_grossenbacher = {
+				}
+				b_egger = {
+				}
+				b_sager = {
+				}
 			}
 			c_muhen = {
 				color={ 50 78 78 }
@@ -5914,6 +6182,16 @@ e_elibe = {
 				b_muhen = {
 				}
 				b_muhen_2 = {
+				}
+				b_jud = {
+				}
+				b_schnely = {
+				}
+				b_klee_2 = {
+				}
+				b_blaser = {
+				}
+				b_bondt = {
 				}
 			}
 		}
@@ -5936,6 +6214,12 @@ e_elibe = {
 				}
 				b_geltwil = {
 				}
+				b_fuhrer = {
+				}
+				b_eberle = {
+				}
+				b_binggeli = {
+				}
 			}
 			c_balgach = {
 				color={ 93 108 108 }
@@ -5948,6 +6232,14 @@ e_elibe = {
 				}
 				b_balgach_3 = {
 				}
+				b_germann = {
+				}
+				b_frommenwiler = {
+				}
+				b_tobler = {
+				}
+				b_dalcher_2 = {
+				}
 			}
 			c_amden = {
 				color={ 128 144 144 }
@@ -5959,6 +6251,14 @@ e_elibe = {
 				b_amden_2 = {
 				}
 				b_amden_3 = {
+				}
+				b_schwab = {
+				}
+				b_kubler = {
+				}
+				b_reiff = {
+				}
+				b_moosheer = {
 				}
 			}
 		}
@@ -5977,6 +6277,16 @@ e_elibe = {
 				}
 				b_jura_2 = {
 				}
+				b_amsler = {
+				}
+				b_jutzi = {
+				}
+				b_pieren = {
+				}
+				b_grob = {
+				}
+				b_indorf = {
+				}
 			}
 			c_cornol = {
 				color={ 144 152 152 }
@@ -5986,6 +6296,16 @@ e_elibe = {
 				b_cornol = {
 				}
 				b_cornol_2 = {
+				}
+				b_lau = {
+				}
+				b_itschner = {
+				}
+				b_waller = {
+				}
+				b_zrn = {
+				}
+				b_gehrig = {
 				}
 			}
 			c_bonfol = {
@@ -5997,6 +6317,16 @@ e_elibe = {
 				}
 				b_bonfol_2 = {
 				}
+				b_knodel = {
+				}
+				b_wymann_2 = {
+				}
+				b_knutti = {
+				}
+				b_marolf = {
+				}
+				b_stockar = {
+				}
 			}
 			c_yens = {
 				color={ 159 168 168 }
@@ -6006,6 +6336,16 @@ e_elibe = {
 				b_yens = {
 				}
 				b_yens_2 = {
+				}
+				b_schwendimann_2 = {
+				}
+				b_fuss = {
+				}
+				b_murri = {
+				}
+				b_liechti_2 = {
+				}
+				b_bosshard = {
 				}
 			}
 		}
@@ -6026,6 +6366,14 @@ e_elibe = {
 				}
 				b_sarnen_3 = {
 				}
+				b_gertsch = {
+				}
+				b_ngeli = {
+				}
+				b_hiestand = {
+				}
+				b_warth = {
+				}
 			}
 			c_hori = {
 				color={ 150 165 165 }
@@ -6037,6 +6385,14 @@ e_elibe = {
 				b_hori_2 = {
 				}
 				b_hori_3 = {
+				}
+				b_brunschweiler = {
+				}
+				b_denszler = {
+				}
+				b_willi = {
+				}
+				b_helbling = {
 				}
 			}
 			c_meilen = {
@@ -6050,6 +6406,14 @@ e_elibe = {
 				}
 				b_meilen_3 = {
 				}
+				b_zingg = {
+				}
+				b_kaufmann = {
+				}
+				b_mathys = {
+				}
+				b_schluep = {
+				}
 			}
 			c_rorbas = {
 				color={ 68 72 72 }
@@ -6061,6 +6425,14 @@ e_elibe = {
 				b_rorbas_2 = {
 				}
 				b_rorbas_3 = {
+				}
+				b_schlenker = {
+				}
+				b_hodler_2 = {
+				}
+				b_eberle_2 = {
+				}
+				b_stauffer = {
 				}
 			}
 		}
@@ -6083,6 +6455,12 @@ e_elibe = {
 				}
 				b_fang_tower = {
 				}
+				b_thomann = {
+				}
+				b_grubenmann = {
+				}
+				b_ulmer = {
+				}
 			}
 			c_morges = {
 				color={ 144 184 184 }
@@ -6095,6 +6473,14 @@ e_elibe = {
 				}
 				b_rietheim = {
 				}
+				b_gallati = {
+				}
+				b_riemann = {
+				}
+				b_richert = {
+				}
+				b_zaugg_2 = {
+				}
 			}
 			c_aigle = {
 				color={ 125 132 132 }
@@ -6105,6 +6491,16 @@ e_elibe = {
 				}
 				b_aigle_2 = {
 				}
+				b_schaffner = {
+				}
+				b_elmer = {
+				}
+				b_bruderer = {
+				}
+				b_keller = {
+				}
+				b_zwygart = {
+				}
 			}
 			c_nyon = {
 				color={ 96 106 106 }
@@ -6114,6 +6510,16 @@ e_elibe = {
 				b_nyon = {
 				}
 				b_nyon_2 = {
+				}
+				b_beyeler = {
+				}
+				b_turtschi = {
+				}
+				b_pfuti = {
+				}
+				b_rechsteiner = {
+				}
+				b_betschen = {
 				}
 			}
 		}
@@ -6132,6 +6538,16 @@ e_elibe = {
 				}
 				b_arles_2 = {
 				}
+				b_indermhle = {
+				}
+				b_schwaller = {
+				}
+				b_langenauer = {
+				}
+				b_schwank = {
+				}
+				b_freuler_2 = {
+				}
 			}
 			c_itingen = {
 				color={ 88 83 83 }
@@ -6140,6 +6556,18 @@ e_elibe = {
 
 				b_itingen = {
 				}
+				b_heim = {
+				}
+				b_kubler_2 = {
+				}
+				b_fuss_2 = {
+				}
+				b_wirth = {
+				}
+				b_ramsauer = {
+				}
+				b_schindler = {
+				}
 			}
 			c_birseck = {
 				color={ 183 174 174 }
@@ -6147,6 +6575,18 @@ e_elibe = {
 
 
 				b_birseck = {
+				}
+				b_pfeiffer = {
+				}
+				b_kilcher = {
+				}
+				b_giger_3 = {
+				}
+				b_althaus_2 = {
+				}
+				b_ochsner = {
+				}
+				b_hberling = {
 				}
 			}
 		}
@@ -6169,6 +6609,12 @@ e_elibe = {
 				}
 				b_lugano = {
 				}
+				b_mhlemann = {
+				}
+				b_zeigler = {
+				}
+				b_schranz = {
+				}
 			}
 			c_ascona = {
 				color={ 169 169 169 }
@@ -6179,6 +6625,16 @@ e_elibe = {
 				}
 				b_ascona_2 = {
 				}
+				b_hummel = {
+				}
+				b_irmiger_2 = {
+				}
+				b_haueter_2 = {
+				}
+				b_allemann = {
+				}
+				b_brack = {
+				}
 			}
 			c_cevio = {
 				color={ 115 111 111 }
@@ -6186,6 +6642,18 @@ e_elibe = {
 
 
 				b_cevio = {
+				}
+				b_lenzi = {
+				}
+				b_enggwiller = {
+				}
+				b_lehmann = {
+				}
+				b_anderfuhren = {
+				}
+				b_knzi_2 = {
+				}
+				b_bachofner = {
 				}
 			}
 		}
@@ -6216,6 +6684,12 @@ e_elibe = {
 				}
 				b_arinna = {
 				}
+				b_caretra = {
+				}
+				b_zakrasa = {
+				}
+				b_phalarae = {
+				}
 			}
 			c_cibyra = {
 				color={ 160 127 127 }
@@ -6227,6 +6701,14 @@ e_elibe = {
 				b_cibyra_2 = {
 				}
 				b_cibyra_3 = {
+				}
+				b_hyblyn = {
+				}
+				b_trapodes = {
+				}
+				b_orchinda = {
+				}
+				b_artetra = {
 				}
 			}
 			c_acaliss = {

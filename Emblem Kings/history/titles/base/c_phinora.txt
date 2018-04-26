@@ -9,11 +9,17 @@
 440.1.1={
 	holder=877 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	liege = d_phinora
+}
 647.1.1={
 	holder=1312 # filler
 }
 684.1.1={
-	holder=0 # filler
+	#holder=0 # filler
 }
 752.1.1={
 	liege = d_velthomer
@@ -27,5 +33,5 @@
 }
 779.1.1={
 	liege = d_phinora
-	holder = 0 # 
+	#holder = 0 # 
 }

@@ -10,8 +10,12 @@
 0447.01.01={
 	holder=0 
 }
+0450.01.01={
+	liege = e_loptyr
+}
 0649.01.01={
 	holder=0 
+	liege = k_miletos
 }
 0764.01.01={
 	holder=1069 # Hilda

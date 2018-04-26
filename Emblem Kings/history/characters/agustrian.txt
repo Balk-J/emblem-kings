@@ -165,6 +165,11 @@
 		remove_trait="class_knight"
 		add_trait="class_general"
 	}	
+	759.1.1={
+		effect = {
+			set_character_flag="chagall_invasion_failed"
+		}
+	}
 	
 	760.1.1={
 		death = {
@@ -568,6 +573,11 @@
 	}
 	760.1.1={
 		employer=1159 # Leonster
+	}
+	761.1.1={
+		effect = {
+			add_pressed_claim=k_agustria
+		}
 	}
 	# Orphaned following Leonster's fall and adopted by the mercenary Jabarro
 	763.1.1={

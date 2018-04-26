@@ -1,0 +1,19 @@
+name = "Agustrian Invasion of Verdane"
+
+casus_belli = {
+	actor = 1090 # Chagall
+	recipient = 1029 # Azmur
+	casus_belli = chagall_invasion
+	landed_title=k_verdane
+	date=758.1.1
+}
+
+758.1.1 = {
+	add_attacker = 1090
+	add_defender = 1029
+}
+
+758.12.30 = {
+	rem_attacker = 1090
+	rem_defender = 1029
+}

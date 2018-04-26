@@ -1,0 +1,10 @@
+760.3.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = 0
+	holder = 1032 # Sigurd
+}
+761.1.1={
+	holder = 0 # Sigurd's dead
+}

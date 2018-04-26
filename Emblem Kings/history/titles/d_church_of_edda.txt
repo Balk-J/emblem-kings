@@ -1,0 +1,28 @@
+440.1.1={
+	active = no
+}
+649.1.1={
+	active = yes
+	holder=1003 # Blagi
+}
+686.01.01={
+	holder=1209 # 
+}
+713.01.01={
+	holder=1210 # 
+}
+733.01.01={
+	holder=1040 # 
+}
+741.01.01={
+	holder=1041 # 
+}
+747.01.01={
+	holder=1039 # Claud
+}
+761.01.01={
+	holder=2039 # Filler
+}
+0779.01.01={
+	holder=1338 # Sleuf
+}

@@ -120,7 +120,7 @@ character_event = {
 			}
 			any_playable_ruler = { 
 				limit = { has_character_flag = is_fe4_sigurd }
-				character_event = { id = fe4_silesse.11 days = 14 random = 7 }
+				character_event = { id = fe4_belhalla.1 days = 14 random = 7 }
 			}
 		}
 	}	
@@ -296,33 +296,4 @@ letter_event = {
 	option = {
 		name = fe4_silesse.10.A
 	}
-}
-# 
-character_event = {
-	id = fe4_silesse.11
-	desc = fe4_silesse.11.desc
-	picture = GFX_evt_battle
-	is_triggered_only = yes
-	hide_from = yes
-	
-	option = {
-		name = "fe4_silesse.11.A"
-		ai_chance = {
-			factor = 50	
-		}
-	}	
-	
-	option = {
-		name = "fe4_silesse.11.B"
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0.5
-				has_game_rule = {
-					name = fe_story
-					value = on
-				}
-			}			
-		}
-	}		
 }

@@ -9,6 +9,9 @@
 180.1.1={
 	de_jure_liege = k_savan
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
 	holder=1012 # Noba TODO: add filler character
 	de_jure_liege = k_thracia
@@ -43,7 +46,11 @@
 779.1.1={
 	holder=1423 # Ilios
 }
+779.1.1={
+	de_jure_liege = k_new_thracia
+	liege = k_new_thracia
+}
 785.1.1={
-	holder=0 # Ilios screwed up
+	#holder=0 # Ilios screwed up
 	holder = 1162 # Leif 
 }

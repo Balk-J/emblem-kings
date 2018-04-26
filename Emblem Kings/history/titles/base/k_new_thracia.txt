@@ -1,0 +1,10 @@
+0180.01.01={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = e_grannvale
+	de_jure_liege = e_grannvale
+}
+0779.01.01={
+	holder = 1162 # Leif 
+}

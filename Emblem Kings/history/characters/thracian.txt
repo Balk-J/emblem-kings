@@ -384,6 +384,19 @@
 	750.1.1 = {
 		remove_trait="class_wyvern_rider"
 		add_trait="class_wyvern_lord"
+	}
+	750.1.1 = {
+		remove_trait="class_wyvern_rider"
+		add_trait="class_wyvern_lord"
+	}	
+	763.1.1 = {
+		effect = {
+			e_grannvale = {
+				holder_scope = {
+					set_truce = { who = ROOT years = 10 } 
+				}
+			}
+		}
 	}	
 	778.1.1={ # Thracia... My beautiful kingdom...
 		death = {

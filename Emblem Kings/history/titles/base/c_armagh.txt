@@ -21,5 +21,6 @@
 	holder=225 # Nord
 }
 1181.1.1={
-	liege=0 # liberated
+	liege=d_eburacum
+	holder=2029 # post-occupation landholder
 }

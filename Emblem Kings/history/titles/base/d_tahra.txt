@@ -1,0 +1,45 @@
+# d_tahra > k_manster
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_manster
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_luthecia
+}
+649.1.1={
+	holder=1012 # Noba TODO: add filler character
+	de_jure_liege = k_thracia
+	liege = k_thracia
+}
+666.1.1={
+	de_jure_liege = k_manster
+	liege = k_manster
+}
+673.1.1 = { 
+	holder = 1166
+}
+719.1.1 = { 
+	holder = 1167 #
+}
+745.1.1 = { 
+	holder = 1168 # Linoan's father
+}
+762.1.1={
+	liege = k_thracia # Travant invades
+}
+763.1.1={
+	liege = k_manster # Grannvale invades
+}
+771.1.1 = { 
+	holder = 1170 # A "cruel surrogate"
+}
+773.1.1 = { 
+	holder = 1169 # Linoan
+}
+779.1.1={
+	de_jure_liege = k_new_thracia
+	liege = k_new_thracia
+}

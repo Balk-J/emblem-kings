@@ -9,8 +9,14 @@
 440.1.1={
 	holder=858 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
 646.1.1={
 	holder=1309 # filler
+}
+649.1.1={
+	liege = d_peruluke
 }
 742.1.1={
 	holder=1292 # filler

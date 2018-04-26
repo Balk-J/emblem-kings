@@ -1,0 +1,20 @@
+name = "Crusader War for Isaach"
+
+casus_belli = {
+	actor = 1073 # Danann
+	recipient = 1038 # Seliph
+	casus_belli = grannvale_suppress_rebels
+	date=777.1.1
+}
+
+777.1.1 = {
+	add_attacker = 1073
+	add_defender = 1038
+	add_defender = 1162 # Leif
+}
+
+778.1.1 = {
+	rem_attacker = 1073
+	rem_defender = 1038
+	rem_defender = 1162
+}

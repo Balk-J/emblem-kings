@@ -455,3 +455,186 @@ western_isles_rebel_target_trigger = {
 		}
 	}
 }
+
+battle_of_behalla_support_sigurd_trigger = {
+	OR = {
+		has_character_flag = is_fe4_edain
+		has_character_flag = is_fe4_brigid
+		has_character_flag = is_fe4_jamke
+		has_character_flag = is_fe4_alec
+		has_character_flag = is_fe4_lex 
+		has_character_flag = is_fe4_tailtiu 
+		has_character_flag = is_fe4_ethnia 
+		has_character_flag = is_fe4_claud 
+		has_character_flag = is_fe4_alec 
+		has_character_flag = is_fe4_naoise 
+		has_character_flag = is_fe4_arden 
+		primary_title = {
+			#tier = count
+			de_jure_liege_or_above = d_chalphy
+		}
+	}
+}
+battle_of_behalla_support_grannvale_trigger = {
+	OR = {
+		has_character_flag = is_fe4_lombard
+		has_character_flag = is_fe4_reptor
+		has_character_flag = is_fe4_andrey
+		primary_title = {
+			title = d_friege
+			battle_of_behalla_support_sigurd_trigger = no
+		}
+		primary_title = {
+			title = d_dozel
+			battle_of_behalla_support_sigurd_trigger = no
+		}
+		primary_title = {
+			title = d_jungby
+			battle_of_behalla_support_sigurd_trigger = no
+		}
+	}
+}
+tirnanog_open_trigger = {
+	d_tirnanog = {
+		OR = {
+			has_holder = no
+			holder_scope = {
+				ai = yes
+			}
+		}				
+	}
+	c_tirnanog = {
+		holder_scope = {
+			ai = yes
+		}				
+	}
+}
+rebel_in_joinable_war_trigger = {
+	NOT = { character = ROOT }
+	war = yes
+	any_war = { 
+		OR = {
+			using_cb = grannvale_suppress_rebels 
+			using_cb = travant_invasion 
+		}
+		NOT = {
+			any_defender = { character = ROOT }
+		}
+	}
+	is_primary_war_defender = yes
+}
+crusader_attacking_loptyr_trigger = {
+	NOT = { character = ROOT }
+	war = yes
+	any_war = { 
+		using_cb = jugdral_crusade 
+		NOT = {
+			any_attacker = { character = ROOT }
+		}
+	}
+	is_primary_war_attacker = yes
+}
+revived_loptyr_in_power_trigger = {
+	has_global_flag = loptyr_revived
+	has_global_flag = loptyr_empire_destroyed
+	NOT = { has_global_flag = loptyr_defeated }
+	trait = possessed_loptyr
+	independent = yes
+	religion = loptyrian
+	is_adult = yes
+}
+last_holy_war_can_start_trigger = {
+	revived_loptyr_in_power_trigger = yes
+	NOT = { has_global_flag = last_holy_war_started }
+	any_vassal = {
+		OR = {
+			has_landed_title = k_isaach
+			has_landed_title = k_silesse
+			has_landed_title = k_agustria
+			has_landed_title = k_verdane
+			has_landed_title = k_miletos
+		}
+	}
+}
+deadlord_dead_trigger = {
+	custom_tooltip = {
+		text = deadlord_dead_tooltip
+		hidden_tooltip = {						
+			NAND = {			
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_mus
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_bovis
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_tigris
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_lepus
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_draco
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_anguilla
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_equus
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_ovis
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_simia
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_gallus
+				}				
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_canis
+				}		
+				deadlord = {
+					is_alive = yes
+					has_character_flag = is_deadlord_porcus
+				}
+			}
+		}
+	}
+}
+title_can_be_granted_by_crusaders_trigger = {
+	# Can we even give this out?
+	# Yes, if:
+	# It has existed before.
+	# We or a vassal hold it.
+	# It has no holder and we have at least one de jure province.
+	any_previous_holder = {
+		always = yes
+	}
+	OR = {
+		AND = {
+			has_holder = no
+			ROOT = { num_of_realm_counties = { value = 1 title = PREV } }			
+		}
+		ROOT = { has_landed_title = PREV }
+		ROOT = { is_vassal_or_below = PREV } # meaning PREV is vassal or below of ROOT
+		#ROOT = { any_realm_character = { has_landed_title = PREV } }
+	}
+}
+respected_verdane_dynasty_trigger = {
+	OR = {
+		dynasty=1014 # Verdane
+		dynasty=802 # Spirit Forest
+	}
+}

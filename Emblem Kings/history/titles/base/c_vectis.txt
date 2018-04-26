@@ -16,3 +16,7 @@
 1175.1.1={
 	liege=d_tarchna
 }
+1181.01.01={
+	liege=d_vectis
+	holder=2030 # post-occupation landholder
+}

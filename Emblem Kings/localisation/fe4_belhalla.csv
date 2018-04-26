@@ -1,0 +1,112 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe4_belhalla.1.desc;[Root.Liege.GetTitledFirstName] has tried to convince the lords of Grannvale of my innocence without success. There are rumors that the Grannvalean military is mobilizing to attack... I mustn't involve [Root.Liege.PrimaryTitle.GetName] in my conflict any further. I should prepare for the final battle with the real traitors to the realm.;;;;;;;;;;;;;x
+fe4_belhalla.1.A;Move out.;;;;;;;;;;;;;x
+fe4_belhalla.1.B;No, waiting in [Root.Liege.PrimaryTitle.GetName] is the safer plan.;;;;;;;;;;;;;x
+fe4_belhalla.4.desc;[Root.GetTitledFirstName],\nWe have received word that the traitor [FromFrom.GetFullName] has begun rallying [FromFrom.GetHerHis] soldiers. We request that you eliminate this threat to the realm before [FromFrom.GetSheHe] attacks.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_belhalla.4.A;At once.;;;;;;;;;;;;;x
+fe4_belhalla.4.B;Someone else would be better suited for this than me.;;;;;;;;;;;;;x
+fe4_belhalla.5.desc;[From.GetTitledName] is raising an army to subdue [FromFromFrom.GetFullName] before [FromFromFrom.GetSheHe] can attack the realm. [From.GetFirstName] has sent out a call for other lords of [Root.Liege.PrimaryTitle.GetName] to join [From.GetHerHim] in this effort.;;;;;;;;;;;;;x
+fe4_belhalla.5.tooltip;. §KFighting in this war may have serious consequences§!.;;;;;;;;;;;;;x
+fe4_belhalla.5.A;Of course we stand with [From.GetTitledFirstName] and the [Root.Liege.GetTitle].;;;;;;;;;;;;;x
+fe4_belhalla.5.B;[FromFromFrom.GetTitledFirstName] is no traitor! [Root.PrimaryTitle.GetName] fights with [FromFromFrom.GetHerHim]!;;;;;;;;;;;;;x
+fe4_belhalla.5.C;We can't spare any soldiers for this.;;;;;;;;;;;;;x
+fe4_belhalla.5.D;This is my chance to take over!;;;;;;;;;;;;;x
+fe4_belhalla.5.D.tooltip;[Root.GetTitledFirstName] will start a plan to kill the leaders of both sides and seize power in [Root.Liege.PrimaryTitle.GetName].;;;;;;;;;;;;;x
+fe4_belhalla.6.desc;[From.GetTitledName] is preparing to attack [FromFromFrom.GetFirstName]! [FromFromFrom.GetSheHeCap]'s spewing some nonsense about how [FromFromFrom.GetFirstName] is planning to invade them first. I'm sure [FromFromFrom.GetFirstName] could use all the help [FromFromFrom.GetSheHe] can get. Perhaps I should take some knights and try to meet up with [FromFromFrom.GetHerHis] forces?;;;;;;;;;;;;;x
+fe4_belhalla.6.A;I can't let my friend fight alone.;;;;;;;;;;;;;x
+fe4_belhalla.6.B;Our soldiers are needed at home. I'm sure [FromFromFrom.GetFirstName] will be fine.;;;;;;;;;;;;;x
+fe4_belhalla.8.desc;My [From.GetHusbandWife] [From.GetFirstName] will be leading some knights to help [FromFromFromFrom.GetFirstName]! I'm going with [From.GetHerHim], of course, but I'm worried about leaving our child behind.;;;;;;;;;;;;;x
+fe4_belhalla.8.A;[From.GetFirstName] and I will keep you safe!;;;;;;;;;;;;;x
+fe4_belhalla.8.B;What sort of [Root.GetFatherMother] would drag their child to a battlefield?;;;;;;;;;;;;;x
+fe4_belhalla.8.C;On second thought, I should stay home too.;;;;;;;;;;;;;x
+fe4_belhalla.9.desc;My [From.GetHusbandWife] [From.GetFirstName] is insisting on riding with me for part of the way to the battle. [From.GetSheHeCap] also wants to bring our child... apparently they won't stop crying if [From.GetFirstName] is away for too long.;;;;;;;;;;;;;x
+fe4_belhalla.9.A;If you're only coming part of the way, it's fine.;;;;;;;;;;;;;x
+fe4_belhalla.9.B;Absolutely not!;;;;;;;;;;;;;x
+fe4_belhalla.10.desc;A... reliable informant has brought word that [From.GetTitledName] has left [From.GetHerHis] lands with a detachment of knights. [From.GetFirstName] must intend to join that fight over in Grannvale. Ambushing [From.GetHerHim] would be simple and would remove another barrier to [Root.PrimaryTitle.GetName]'s expansion...;;;;;;;;;;;;;x
+fe4_belhalla.10.A;Let's bid a fine farewell to the Lanceritter.;;;;;;;;;;;;;x
+fe4_belhalla.10.B;We'll leave [From.GetFirstName] alone for now.;;;;;;;;;;;;;x
+fe4_belhalla.12.desc;While crossing [Root.Location.GetName], your troops were ambushed by Dragon Knights led by [From.GetTitledName]! The wyvern riders came out of nowhere and slaughtered your guards before you could react. One of [From.GetFirstName]'s men is circling back toward you, blood on his lance and murder in his eyes...;;;;;;;;;;;;;x
+fe4_belhalla.12.A;[Root.Spouse.GetFirstName], I'm sorry...;;;;;;;;;;;;;x
+fe4_belhalla.14.desc;The captain who led the attack on [From.Father.GetFirstName]'s forces has returned to you with a child in tow. It seems [From.Father.GetFirstName] decided to bring [From.Father.GetHerHis] [From.GetSonDaughter] to the battlefield today. Now the [From.GetBoyGirl]'s fate is in your hands.;;;;;;;;;;;;;x
+fe4_belhalla.14.A;I'm taking [From.GetHerHim] back to [Root.Capital.GetName] with me.;;;;;;;;;;;;;x
+fe4_belhalla.14.A.tooltip;[Root.GetTitledFirstName] will raise [From.GetFirstName] as [Root.GetHerHis] own [From.GetSonDaughter].;;;;;;;;;;;;;x
+fe4_belhalla.14.B;Just kill the [From.GetBoyGirl].;;;;;;;;;;;;;x
+fe4_belhalla.14.C;Give [From.GetHerHim] to one of their survivors and turn them loose.;;;;;;;;;;;;;x
+fe4_belhalla.15.desc;;;;;;;;;;;;;;x
+fe4_belhalla.15.A;Damn... this is it.;;;;;;;;;;;;;x
+fe4_belhalla.16.title;Massacre;;;;;;;;;;;;;x
+fe4_belhalla.16.desc;[From.GetTitledName] and a legion of [From.GetHerHis] knights have been slaughtered by [FromFrom.GetTitledName]! [From.GetFirstName] was on [From.GetHerHis] way to Grannvale to fight alongside [From.GetHerHis] allies when [From.GetSheHe] was ambushed by [FromFrom.GetFirstName]'s Dragon Knights.\n\nWord is that none of [From.GetFirstName]'s party survived the assault.;;;;;;;;;;;;;x
+fe4_belhalla.16.A;This can't be happening.;;;;;;;;;;;;;x
+fe4_belhalla.16.B;War is brutal.;;;;;;;;;;;;;x
+fe4_belhalla.16.C;Not a bad day's work!;;;;;;;;;;;;;x
+fe4_belhalla.17.desc;My soldiers are in place - they will pretend to join the war on the side of the loyalists and assassinate their leaders. That should prove to the rebels that I'm on their side so I can lead them into a trap and dispose of them as well. I could soon rule unopposed.;;;;;;;;;;;;;x
+fe4_belhalla.17.A;I just need to convince the rebels to meet with me...;;;;;;;;;;;;;x
+fe4_belhalla.17.B;No, that's a bad idea.;;;;;;;;;;;;;x
+fe4_belhalla.18.desc;[Root.GetTitledFirstName],\nI have been aware of your innocence all along. The influence of the real traitors has been too great for me to act until now. My agents are in place to remove them. I hereby invite you to the capital so you can clear your name and reclaim your titles. The Royal Guard will escort you after you reply.\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_belhalla.18.A;That should make for a nice closing after all I've been through.;;;;;;;;;;;;;x
+fe4_belhalla.18.B;I don't trust this offer.;;;;;;;;;;;;;x
+fe4_belhalla.19.desc;[Root.GetTitledFirstName],\nI cannot accept your offer. I apologize if it is genuine, but I have been through too much to risk walking into another trap. I intend to prove my cause on the battlefield.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_belhalla.19.A;It was worth a try.;;;;;;;;;;;;;x
+fe4_belhalla.19.B;I suppose I have to kill [From.GetHerHim] with the direct approach.;;;;;;;;;;;;;x
+fe4_belhalla.20.tooltip;[From.GetTitledFirstName] will be restored to all titles claimed in [Root.Liege.PrimaryTitle.GetName].;;;;;;;;;;;;;x
+fe4_belhalla.22.desc;A party of soldiers wearing the colors of [From.GetTitledName] have arrived at [Root.Capital.GetName]. Their commander explains that their [From.GetLordLady] has asked them to support you in the war against the traitors to the realm. Although they are small in number, their equipment and attitude make it clear they are [From.GetFirstName]'s elites.;;;;;;;;;;;;;x
+fe4_belhalla.22.A;With [From.PrimaryTitle.GetName]'s finest backing us up, how can we lose?;;;;;;;;;;;;;x
+fe4_belhalla.22.B;Something is not right about this offer. Send them away.;;;;;;;;;;;;;x
+fe4_belhalla.23.desc;As you're going about your business in [Root.Location.GetName] you notice that your usual guards have been surrounded by those [FromFrom.PrimaryTitle.GetName] soldiers that [FromFrom.GetTitledFirstName] sent. Before you can demand an explanation, their captain yells, "Attack [Root.GetFirstName] according to plan! Kill every one of them! No one is to be spared!";;;;;;;;;;;;;x
+fe4_belhalla.23.A;What!? [FromFrom.PrimaryTitle.GetName] has turned on us!?;;;;;;;;;;;;;x
+fe4_belhalla.24.desc;[Root.GetTitledFirstName],\nI support your cause, though I have been unable to act until now. My men will be dealing with the real traitors shortly. Once that is done, I request your presence at the capital for a ceremony honoring you and the rest of the realm's heroes. The Royal Guard will escort you.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_belhalla.24.A;It'll be a celebration for the triumph of justice!;;;;;;;;;;;;;x
+fe4_belhalla.26.title;Victory;;;;;;;;;;;;;x
+fe4_belhalla.26.desc;You and your allies parade to the capital, flanked by an honor guard of soldiers from the Royal Guard. [From.GetTitledFirstName] greets your party and exclaims that your arrival has been eagerly anticipated.\n\n[From.GetHerHisCap] next words are, "I hereby sentence you to death for your acts of treason."\n\nThe knights of the Royal Guard close in, and its mages begin bombarding your group with fire magic. Your world vanishes in a haze of fire and screams...;;;;;;;;;;;;;x
+fe4_belhalla.26.A;[From.GetFirstName]! You dastard!;;;;;;;;;;;;;x
+fe4_belhalla.27.desc;There is a lone knight riding towards your position at [Root.Location.GetName]. A larger band of enemy soldiers is following close behind. At this distance it's hard to tell if the knight is leading the charge or being pursued.;;;;;;;;;;;;;x
+fe4_belhalla.27.A;He could be an ally. Let's try to help him.;;;;;;;;;;;;;x
+fe4_belhalla.27.B;Take no chances. Attack them all.;;;;;;;;;;;;;x
+fe4_belhalla.28.desc;The lone knight fled in a different direction when your men attacked him. The enemy group gave chase, and cut him down a short time later. Then they retreated. Slaying that knight must have been their mission all along.;;;;;;;;;;;;;x
+fe4_belhalla.28.A;I should have helped him...;;;;;;;;;;;;;x
+fe4_belhalla.30.desc;Your men drive off the enemy and rescue the knight. He's none other than your father, Lord [Root.Father.GetFirstName], thought dead after the war in Isaach! Although he was mortally wounded in his escape, he tells you that [From.GetTitledName] was behind the plot to frame you for treason. He also has a sword for you - the holy Tyrfing.;;;;;;;;;;;;;x
+fe4_belhalla.30.A;Don't worry, father. I will restore your honor.;;;;;;;;;;;;;x
+fe4_belhalla.34.desc;[From.GetTitledFirstName] has recently taken the throne of [From.PrimaryTitle.GetName]. [From.GetSheHeCap] had a sheltered upbringing in Verdane and is clearly unused to court intrigue or governing a large country. Perhaps I should suggest that [From.GetSheHe] abdicate to me, for the good of the realm?;;;;;;;;;;;;;x
+fe4_belhalla.34.A;It really would be for the best.;;;;;;;;;;;;;x
+fe4_belhalla.34.B;[From.GetSheHeCap] is the rightful [From.GetTitle]. I will not stand in [From.GetHerHis] way.;;;;;;;;;;;;;x
+fe4_belhalla.35.desc;My dear [Root.GetFirstName],\nI understand that this must be a difficult time for you, with the recent fighting and your sudden ascent to the throne of [Root.PrimaryTitle.GetName]. I would like to lift a burden from your shoulders. I propose that you abdicate to me and allow me to govern the realm in your name. I believe that will be best for [Root.PrimaryTitle.GetName], its people, and you. Please consider it.\n\n[From.GetFirstName];;;;;;;;;;;;;x
+fe4_belhalla.35.A;I do find this [Root.GetTitle] business a touch overwhelming.;;;;;;;;;;;;;x
+fe4_belhalla.35.A.tooltip;§Y[From.GetTitledFirstName]§! is granted the §Y[Root.PrimaryTitle.GetFullName]§!.;;;;;;;;;;;;;x
+fe4_belhalla.35.B;Thank you, but I believe I can manage.;;;;;;;;;;;;;x
+fe4_belhalla.36.desc;[Root.GetFirstName],\nThank you for your thoughtful offer. I confess that I do find the prospect of reigning as [From.GetTitle] overwhelming. I would consider it a favor if you would govern [From.PrimaryTitle.GetName] in my name.\n\n[From.GetFirstName];;;;;;;;;;;;;x
+fe4_belhalla.36.A;I humbly accept.;;;;;;;;;;;;;x
+fe4_belhalla.37.desc;Dear [Root.GetFirstName],\nIt did come as a shock to be responsible for all of [From.PrimaryTitle.GetName] so suddenly. However, my burden has already been lightened by the knowledge that you have the good of the realm at heart. I will continue to rely on your support in my reign as [From.GetTitle].\n\n[From.GetFirstName];;;;;;;;;;;;;x
+fe4_belhalla.37.A;Well, that was unexpected.;;;;;;;;;;;;;x
+fe4_belhalla.39.desc;Grannvale's power has grown significantly in recent years. The word of the [Root.GetTitle] is law from Agustria to Isaach! Your influence is great enough that you could justify reorganizing the realm into a true empire...;;;;;;;;;;;;;x
+fe4_belhalla.39.A;What am I waiting for?;;;;;;;;;;;;;x
+fe4_belhalla.39.B;Being a [Root.GetTitle] suits me.;;;;;;;;;;;;;x
+fe4_belhalla.40.title;[From.GetTitledFirstName];;;;;;;;;;;;;x
+fe4_belhalla.40.desc.1;At a grand ceremony in [Root.Capital.GetName], you were formally crowned [Root.GetTitledName]. Nobles and clergy from all corners of the realm gathered to recognize you as their new [Root.GetTitle] and witness the birth of a new nation.\n\nThe common folk seem especially overjoyed. They believe that your reign will bring a new era of law and peace and are already celebrating your rule at inns and taverns across the realm.;;;;;;;;;;;;;x
+fe4_belhalla.40.desc.2;The Kingdom of Grannvale has grown to dominate much of the continent in recent years. With Grannvalean power felt from the coasts of Agustria to the mountains of Isaach, [From.GetFullName] has reorganized his realm into the new [From.PrimaryTitle.GetFullName].\n\nAt [From.GetHerHis] coronation, [From.GetTitledFirstName] decreed that this marks the beginning of a new era in Jugdral, one in which all people will be able to live without fear of prejudice or repression.;;;;;;;;;;;;;x
+fe4_belhalla.40.A;Long live the Empire!;;;;;;;;;;;;;x
+fe4_belhalla.40.B;Long live the Empire and [From.GetLordLady] [From.GetFirstName]!;;;;;;;;;;;;;x
+fe4_belhalla.40.C;Is [From.GetSheHe] planning to conquer the entire continent?;;;;;;;;;;;;;x
+fe4_belhalla.41.desc;What happened to your [GetFromRelation] [From.GetFirstName] was a tragedy. [FromFrom.GetTitledName] will answer for [FromFrom.GetHerHis] deeds eventually. For now, however, finding a safe castle takes priority. What will your next move be?;;;;;;;;;;;;;x
+fe4_belhalla.41.A;The mountains of Isaach are an excellent place to hide.;;;;;;;;;;;;;x
+fe4_belhalla.41.B;I could find sanctuary in Verdane.;;;;;;;;;;;;;x
+fe4_belhalla.41.C;I'll go anywhere [FromFrom.GetTitledFirstName] has no influence.;;;;;;;;;;;;;x
+fe4_belhalla.41.D;I will stay in [Root.PrimaryTitle.GetName]. It's as safe as anywhere else.;;;;;;;;;;;;;x
+fe4_belhalla.44.desc;Manster and Thracia have been divided since the Tragedy of the Gáe Bolg, despite the efforts of nobles on both sides. As a powerful vassal of Manster you are in position to... tip the scales a bit, shall we say. Your forces fighting on the side of Thracia could mean the difference. Although the risk is great, so is the possible reward.;;;;;;;;;;;;;x
+fe4_belhalla.44.A;I will propose this to the Thracians.;;;;;;;;;;;;;x
+fe4_belhalla.44.A.tooltip;§YThracia§! will be asked to invade §YManster§! for control of the kingdom. If they accept, §Y[Root.GetTitledFirstName]§! will become a vassal of §YThracia§! and fight on their side in the war. The ruler of §YThracia§! will also owe a favor to §Y[Root.GetTitledFirstName]§!.;;;;;;;;;;;;;x
+fe4_belhalla.44.B;It's tempting, but I'd never get away with it.;;;;;;;;;;;;;x
+fe4_belhalla.45.desc;[From.GetTitledName] has sent you a secret message with an interesting proposal. [From.GetSheHeCap] asks that you march on the capital of Manster immediately and claim the kingdom. [From.GetFirstName] will work to legitimize your claim and will also fight with you against [From.TopLiege.GetTitledFirstName]. [From.GetSheHeCap] only asks that you give [From.GetHerHim] your favor once Manster is yours.;;;;;;;;;;;;;x
+fe4_belhalla.45.A;To arms!;;;;;;;;;;;;;x
+fe4_belhalla.45.B;I don't trust this [From.GetFirstName].;;;;;;;;;;;;;x
+fe4_belhalla.46.desc;To the [GetFromRootCompliment], [Root.GetTitledFirstName].\n\nI accept your proposal and pledge to remember your support once I rule all of Thracia. May fortune favor our cause.\n\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
+fe4_belhalla.46.A;Ha! Exactly as planned.;;;;;;;;;;;;;x
+fe4_belhalla.47.desc;To the [GetFromRootInsult], [Root.GetTitledFirstName].\n\nYou expect me to do the bidding of a self-admitted traitor? Consider yourself fortunate if I do not inform [Root.Liege.GetTitledFirstName] of your cowardly plot.\n\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
+fe4_belhalla.47.A;I may have misjudged that one.;;;;;;;;;;;;;x
+fe4_belhalla.48.desc;Thracia has declared war! What's more, that [GetRootFromFromInsult] [FromFrom.GetTitledFirstName] has turned [FromFrom.GetHerHis] coat and sided with the enemy! [FromFrom.GetSheHeCap] had assured you [FromFrom.GetHerHis] forces would march with yours in the event of Thracian aggression.;;;;;;;;;;;;;x
+fe4_belhalla.48.A;I will not forget this act of treason.;;;;;;;;;;;;;x
+fe4_belhalla..title;;;;;;;;;;;;;;x
+fe4_belhalla..desc;;;;;;;;;;;;;;x
+fe4_belhalla..A;;;;;;;;;;;;;;x
+fe4_belhalla..B;;;;;;;;;;;;;;x
+fe4_belhalla..C;;;;;;;;;;;;;;x
+fe4_belhalla..D;;;;;;;;;;;;;;x

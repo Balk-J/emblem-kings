@@ -12,6 +12,9 @@
 440.1.1 = { 
 	holder = 883
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
 	holder = 1011 # Dain
 	liege = k_thracia
@@ -38,4 +41,8 @@
 }
 779.1.1={
 	holder = 1161 # Altena
+}
+779.1.1={
+	de_jure_liege = k_new_thracia
+	liege = k_new_thracia
 }

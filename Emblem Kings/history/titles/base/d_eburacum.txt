@@ -1,0 +1,20 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=k_the_western_isles
+#}
+#180.1.1={
+#	holder=701 # Durban
+#}
+230.1.1={
+	holder=0 # 
+}
+1181.01.01={
+	holder=2033 # post-occupation landholder
+	liege=k_western_union
+	de_jure_liege=k_western_union
+}

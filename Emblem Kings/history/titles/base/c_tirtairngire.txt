@@ -6,3 +6,9 @@
 	liege = d_tirnanog
 	#holder = 0
 }
+761.01.01={
+	liege = k_isaach
+}
+777.01.01={
+	liege = d_tirnanog
+}

@@ -101,3 +101,8 @@ opinion_crush = {
 	opinion = 25
 	months = 60
 }
+opinion_spawn_of_loptyr = {
+	opinion = -10
+	months = 36
+	prison_reason = yes # This one gives righteous cause to imprison a character
+}

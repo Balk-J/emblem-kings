@@ -99,3 +99,186 @@ character_event = {
 		}
 	}
 }
+
+# Church of Edda founded
+character_event = {
+	id = fe_religion.3
+	desc = {
+		text = fe_religion.3.desc.1
+		trigger = {
+			character = FROM
+		}
+	}
+	desc = {
+		text = fe_religion.3.desc.2
+		trigger = {
+			NOT = { character = FROM }
+		}
+	}
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	major = yes
+
+	is_triggered_only = yes
+	major_trigger = {
+		religion_group = draconic_group
+	}
+	
+	only_playable = yes
+	
+	option = {
+		name = fe_religion.1.A
+		trigger = {
+			religion = church_of_edda
+		}
+	}
+	option = {
+		name = fe_religion.1.B
+		trigger = {
+			religion = loptyrian
+		}
+	}
+	option = {
+		name = fe_religion.1.C
+		trigger = {
+			NOR = {
+				religion = church_of_edda
+				religion = loptyrian
+			}
+		}
+	}
+}
+# Church of Loptyr created
+character_event = {
+	id = fe_religion.4
+	desc = {
+		text = fe_religion.4.desc.1
+		trigger = {
+			character = FROM
+		}
+	}
+	desc = {
+		text = fe_religion.4.desc.2
+		trigger = {
+			NOT = { character = FROM }
+		}
+	}
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	major = yes
+
+	is_triggered_only = yes
+	major_trigger = {
+		religion_group = draconic_group
+	}
+	
+	only_playable = yes
+	
+	option = {
+		name = fe_religion.1.A
+		trigger = {
+			religion = loptyrian
+			NOT = { FROM = { character = ROOT } }
+		}
+	}
+	option = {
+		name = fe_religion.1.B
+		trigger = {
+			religion = church_of_edda
+			NOT = { FROM = { character = ROOT } }
+		}
+	}
+	option = {
+		name = fe_religion.1.C
+		trigger = {
+			NOR = {
+				religion = church_of_edda
+				religion = loptyrian
+			}
+			NOT = { FROM = { character = ROOT } }
+		}
+	}
+	option = {
+		name = fe_religion.4.D
+		trigger = {
+			FROM = { character = ROOT }
+		}
+	}
+}
+
+# Formation of the Schwarze Rosen
+narrative_event = {
+	id = fe_religion.5
+	title = fe_religion.5.title
+	desc = fe_religion.5.desc
+	picture = GFX_evt_crusaders
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+	only_playable = yes
+	religion_group = draconic_group
+	has_global_flag = loptyr_revived
+	
+	trigger = {
+#		OR = {
+			religion = loptyrian
+#			religion = maerist
+#		}
+		is_heretic = no
+		
+		NOT = { has_global_flag = loptyr_defeated }
+		NOT = { is_title_active = d_schwarze_rosen }
+		is_title_active = d_loptyrian
+		possessed_loptyr = {
+			is_alive = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	immediate = {
+		activate_title = { title = d_schwarze_rosen status = yes }
+		create_random_soldier = {
+			dynasty = none
+			random_traits = yes
+			religion = ROOT
+		}
+		new_character = {
+			d_schwarze_rosen = {
+				grant_title = PREV
+				religion = PREV
+			}
+			set_defacto_liege = THIS
+			wealth = 600
+			set_government_type = feudal_government
+		}
+		
+		religion_authority = {
+			modifier = religious_order_formed
+			years = 10
+		}
+	}
+	option = {
+		name = fe_religion.5.A
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = fe_religion.5.B
+		trigger = {
+			NOT = { religion_group = draconic_group }
+		}
+	}
+	option = {
+		name = fe_religion.5.C
+		trigger = {
+			religion_group = draconic_group
+			NOT = { religion = ROOT }
+		}
+	}
+}

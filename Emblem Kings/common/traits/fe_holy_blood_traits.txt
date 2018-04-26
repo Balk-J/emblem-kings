@@ -10,6 +10,7 @@ holy_blood_major_loptyr = {
 	loptyrian_opinion = 10
 	health = 0.5
 	combat_rating = 1
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger
 }
 holy_blood_minor_loptyr = {
 	customizer = no
@@ -291,6 +292,7 @@ possessed_loptyr = {
 		damage = 1.0
 		defence = 0.5
 	}
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger
 }
 possessed_forseti = {
 	#icon = 52
@@ -298,8 +300,16 @@ possessed_forseti = {
 	stewardship = 10
 	learning = 15
 	health = 1
+	can_hold_titles = no
+	cannot_inherit = yes
+	cannot_marry = yes
 }
 married_by_loptyrians = {
+	customizer = no
+	random = no
+	hidden = yes 
+}
+pregnant_with_anti_loptyr_spawn = {
 	customizer = no
 	random = no
 	hidden = yes 

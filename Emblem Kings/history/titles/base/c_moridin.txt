@@ -14,3 +14,7 @@
 	liege=k_etruria
 	holder=258 # Filler
 }
+1181.01.01={
+	liege=d_jutes
+	holder=2035 # post-occupation landholder
+}

@@ -132,6 +132,222 @@
         }
 	}
 }
+3001={
+	can_appear=no
+	used_for_random=no
+	name="Mus"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3002={
+	can_appear=no
+	used_for_random=no
+	name="Bovis"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3003={
+	can_appear=no
+	used_for_random=no
+	name="Tigris"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3004={
+	can_appear=no
+	used_for_random=no
+	name="Lepus"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3005={
+	can_appear=no
+	used_for_random=no
+	name="Draco"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3006={
+	can_appear=no
+	used_for_random=no
+	name="Anguilla"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3007={
+	can_appear=no
+	used_for_random=no
+	name="Equus"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3008={
+	can_appear=no
+	used_for_random=no
+	name="Ovis"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3009={
+	can_appear=no
+	used_for_random=no
+	name="Simia"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3010={
+	can_appear=no
+	used_for_random=no
+	name="Gallus"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3011={
+	can_appear=no
+	used_for_random=no
+	name="Canis"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
+3012={
+	can_appear=no
+	used_for_random=no
+	name="Porcus"
+	culture="grann"
+	coat_of_arms = {
+		religion="dark"
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+    }
+}
 1162={
 	name="of Orkneyjar"
 	culture="grann"

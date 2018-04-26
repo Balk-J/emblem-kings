@@ -3,8 +3,8 @@ is_dragon_tooltip;Has the trait '§YDragon§!';;;;;;;;;;;;;x
 is_mage_tooltip;Has the trait '§YMage§!';;;;;;;;;;;;;x
 is_sage_tooltip;Has the trait '§YSage§!';;;;;;;;;;;;;x
 is_mage_knight_tooltip;Has the trait '§YMage Knight§!';;;;;;;;;;;;;x
-is_dark_mage_tooltip;Has the trait '§YShaman§!';;;;;;;;;;;;;x
-is_sorceror_tooltip;Has the trait '§YDruid§!';;;;;;;;;;;;;x
+is_dark_mage_tooltip;Has the trait '§YDark Mage§!';;;;;;;;;;;;;x
+is_sorceror_tooltip;Has the trait '§YSorceror§!';;;;;;;;;;;;;x
 is_assassin_tooltip;Has the trait '§YAssassin§!';;;;;;;;;;;;;x
 is_hero_tooltip;Has the trait '§YHero§!';;;;;;;;;;;;;x
 is_mercenary_tooltip;Has the trait '§YMercenary§!';;;;;;;;;;;;;x
@@ -13,7 +13,9 @@ is_swordmaster_tooltip;Has the trait '§YSwordmaster§!';;;;;;;;;;;;;x
 is_thief_tooltip;Has the trait '§YThief§!';;;;;;;;;;;;;x
 is_archer_tooltip;Has the trait '§YArcher§!';;;;;;;;;;;;;x
 is_sniper_tooltip;Has the trait '§YSniper§!';;;;;;;;;;;;;x
-is_horse_archer_tooltip;Has the trait '§YNomad§!';;;;;;;;;;;;;x
-is_bow_knight_tooltip;Has the trait '§YNomad Trooper§!';;;;;;;;;;;;;x
+is_horse_archer_tooltip;Has the trait '§YHorse Archer§!';;;;;;;;;;;;;x
+is_bow_knight_tooltip;Has the trait '§YRanger§!';;;;;;;;;;;;;x
 is_bishop_tooltip;Has the trait '§YBishop§!';;;;;;;;;;;;;x
 is_manakete_tooltip;Has the trait '§YManakete§!';;;;;;;;;;;;;x
+loptyr_possession_effect.tooltip;§Y[Root.GetTitledFirstName]§! becomes the vessel of Loptyr;;;;;;;;;;;;;x
+deadlord_dead_tooltip;At least one of the §YDeadlords§! is dead;;;;;;;;;;;;;x

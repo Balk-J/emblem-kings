@@ -1084,4 +1084,18 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_undead"
+		texturefile = "gfx/traits/undead.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_deadlord"
+		texturefile = "gfx/traits/deadlord.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 }

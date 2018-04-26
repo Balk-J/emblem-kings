@@ -1,7 +1,5 @@
 namespace = fe4_grannvale_isaach
 
-# if = { limit = { something = yes } do_something = yes } else_if = { limit = { something_else = yes } do_something_else = yes } else = { do_another_thing = yes } 
-
 # Ping event to get the scope right. This should be called for whoever the patsy getting blamed for the attack on Darna is.
 character_event = {
 	id = fe4_grannvale_isaach.1

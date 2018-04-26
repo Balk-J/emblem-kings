@@ -9,7 +9,7 @@
 }
 0448.01.01={
 	holder=0 # 
-	de_jure_liege = 0
+	de_jure_liege = e_verdane
 }
 0655.01.01={
 	holder=1177 # 

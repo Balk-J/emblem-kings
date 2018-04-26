@@ -1,0 +1,26 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe5_thracia_776.7.title;The Manster Resistance;;;;;;;;;;;;;x
+fe5_thracia_776.7.desc;A dangerous revolt has broken out in Manster! [From.GetFullName], a descendant of the crusader Noba, has assembled a rag-tag band of malcontents and so-called freedom fighters. This group has sworn to reclaim Leonster, the heartland of their country!;;;;;;;;;;;;;x
+fe5_thracia_776.7.A;The rebels must be dealt with.;;;;;;;;;;;;;x
+fe5_thracia_776.8.desc;We have defeated the invaders and reclaimed Manster! The former vassals of [From.GetLordLady] [From.GetFirstName] have fled their lands to escape judgment at the hands of the people they oppressed. This may only be the first step in our journey to bring peace to all of Thracia, but the taste of victory is sweet.;;;;;;;;;;;;;x
+fe5_thracia_776.8.A;Long live Manster!;;;;;;;;;;;;;x
+fe5_thracia_776.9.title;The Liberation of Manster;;;;;;;;;;;;;x
+fe5_thracia_776.9.desc;A rebel army led by [From.GetFullName] has seized control of Leonster Castle and the Mansterian territories formerly held by [FromFrom.GetFullName]!\n\n[FromFrom.GetFirstName]'s forces failed to suppress the rebels and [FromFrom.GetHerHis] loyalists fled the district when they heard of [From.GetHerHis] defeat. [From.GetTitledFirstName] now rules an independent Manster. [From.GetSheHeCap] has vowed to do whatever it takes to bring peace to the entire Thracian peninsula.;;;;;;;;;;;;;x
+fe5_thracia_776.9.A;An ambitious goal.;;;;;;;;;;;;;x
+fe5_thracia_776.10.desc;The rebel army led by [From.GetFullName] has taken Leonster Castle and humiliated [Root.Liege.PrimaryTitle.GetName] on the field of battle! It's only a matter of time before [From.GetFirstName] tries to seize the rest of the region. As [Root.GetPrimaryTitles], it falls to you to stop this revolt here and now!;;;;;;;;;;;;;x
+fe5_thracia_776.10.A;To arms!;;;;;;;;;;;;;x
+fe5_thracia_776.12.desc;[From.GetTitledName] is a fellow rebel fighting against an oppressive invading army. Perhaps I should offer [From.GetHerHim] my support? [From.GetFirstName] will surely reciprocate, and we would be stronger together...;;;;;;;;;;;;;x
+fe5_thracia_776.12.A;We will defend this land together.;;;;;;;;;;;;;x
+fe5_thracia_776.12.B;I cannot spare the troops.;;;;;;;;;;;;;x
+fe5_thracia_776.13.desc;Our future rests on uniting north and south Thracia. [From.GetTitledFirstName] has done us the favor of purging one of our enemies from the peninsula - it seems that now is the ideal time to take action and seize the north.;;;;;;;;;;;;;x
+fe5_thracia_776.13.A;Get going! Kill anyone who offers resistance!;;;;;;;;;;;;;x
+fe5_thracia_776.13.B;Attacking now would be reckless. We wait.;;;;;;;;;;;;;x
+fe5_thracia_776.14.desc;I encountered [From.GetTitledFirstName] during the last battle of the war. [From.GetSheHeCap] told me that my real father was Quan of Leonster, and that [Root.Father.GetFirstName] raised me as his own [Root.GetSonDaughter] after murdering my parents.;;;;;;;;;;;;;x
+fe5_thracia_776.14.A;You take me for some kind of fool?!;;;;;;;;;;;;;x
+fe5_thracia_776.14.B;I want to say you're lying, but I can't!;;;;;;;;;;;;;x
+fe5_thracia_776..title;;;;;;;;;;;;;;x
+fe5_thracia_776..desc;;;;;;;;;;;;;;x
+fe5_thracia_776..A;;;;;;;;;;;;;;x
+fe5_thracia_776..B;;;;;;;;;;;;;;x
+fe5_thracia_776..C;;;;;;;;;;;;;;x
+fe5_thracia_776..D;;;;;;;;;;;;;;x

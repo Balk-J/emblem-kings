@@ -1,0 +1,396 @@
+namespace = loptyr
+
+character_event = {
+	id = loptyr.1
+	#hide_window = yes
+	is_triggered_only = yes 
+    trigger = {
+    	FROM = { artifact = regalia_loptyr } 
+		#trait = holy_blood_major_loptyr
+    	#NOT = { trait = possessed_loptyr } 
+		#NOT = {	possessed_loptyr = { is_alive = yes } }
+    }	
+    immediate = {
+    	set_character_flag = got_a_book
+    }
+	option = {
+		name = OK
+		character_event = { id = loptyr.2 }
+	}
+}
+# Death of Loptyr
+character_event = {
+	id = loptyr.2
+	hide_window = yes
+    trigger = {
+    	trait = possessed_loptyr 
+    }	
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyr.2.A	
+		# Body-surf to the heir if appropriate
+		if = {
+			limit = {
+				has_artifact = regalia_loptyr
+				OR = {
+					AND = {
+						is_ruler = yes
+						current_heir = {
+							trait = holy_blood_major_loptyr
+						}
+					}
+					AND = {
+						is_ruler = no
+						any_child = {
+							trait = holy_blood_major_loptyr
+						}
+					}
+				}
+				loptyr_killed_by_book_of_naga_trigger = no
+			}
+			if = {
+				limit = { is_ruler = yes }
+				current_heir = {
+					character_event = {	id = loptyr.5 }
+				}
+			}else = {
+				random_child = {
+					limit = { trait = holy_blood_major_loptyr }
+					character_event = {	id = loptyr.5 }
+				}
+			}
+			add_trait = undead
+		}
+		# Otherwise move the book to a new character and possess them
+		else_if = {
+			limit = {
+				holy_blood_major_loptyr = {
+					is_alive = yes
+					NOT = { character = ROOT }
+				}
+				loptyr_killed_by_book_of_naga_trigger = no
+			}
+			add_trait = deadlord
+			current_heir = {
+				character_event = {	id = loptyr.4 days = 1 }
+			}
+		}else = {
+			add_trait = dragon
+			if = {
+				limit = { has_global_flag = loptyr_empire_destroyed }
+				set_global_flag = loptyr_defeated
+			}else = {
+				set_global_flag = loptyr_empire_destroyed
+				if = {
+					limit = {
+						e_loptyr = {
+							has_holder = yes
+						}
+					}
+					e_loptyr = {
+						destroy_landed_title = THIS
+					}
+				}
+				if = {
+					limit = {
+						d_loptyr = {
+							has_holder = yes
+						}
+					}
+					d_loptyr = {
+						unsafe_destroy_landed_title = THIS
+					}
+				}
+			}
+			# Notify rulers of Loptyr's death
+			hidden_tooltip = {
+				any_playable_ruler = {
+					if = {
+						limit = {
+							#primary_title = { region = world_jugdral }
+							is_within_diplo_range = ROOT
+						}
+						narrative_event = { id = loptyr.6 days = 1 }
+					}else_if = {
+						limit = {
+							religion = loptyrian
+						}
+						character_event = {	id = loptyr.7 days = 1 }
+					}
+				}
+				d_loptyrian = { 
+					unsafe_destroy_landed_title = THIS
+				}
+				activate_title = { title = d_loptyrian status = no }
+				d_schwarze_rosen = { 
+					unsafe_destroy_landed_title = THIS
+				}
+				activate_title = { title = d_schwarze_rosen status = no }
+			}
+		}
+	}
+}
+# Character possessed by Loptyr
+character_event = {
+	id = loptyr.3
+	desc = loptyr.3.desc
+	picture = GFX_evt_lunatic
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyr.3.A	
+		loptyr_possession_effect = yes
+		loptyr_revival_effect = yes	
+	}
+}
+# Book of Loptyr moved to new vessel; inform current holder
+character_event = {
+	id = loptyr.4
+	desc = loptyr.4.desc
+	picture = GFX_evt_ritual_scroll
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyr.4.A	
+		hidden_tooltip = {
+			random_character = {
+				limit = {
+					trait = holy_blood_major_loptyr
+				}
+				ROOT = { 
+					random_artifact = {
+						limit = {
+							artifact_type = regalia_loptyr
+						}
+						transfer_artifact = {
+							from = PREV to = PREVPREV 
+						} 
+					}
+				}
+				character_event = {	id = loptyr.5 }
+			}
+		}		
+	}
+}
+# Character receives Book of Loptyr after the death of the last host
+character_event = {
+	id = loptyr.5
+	desc = loptyr.5.desc
+	picture = GFX_evt_ritual_scroll
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyr.5.A	
+		ai_chance = { 
+			factor = 100 
+		}
+		character_event = { id = loptyr.3 }	
+	}
+	option = {
+		name = loptyr.5.B
+		ai_chance = { 
+			factor = 0 
+		}	
+		unsafe_destroy_artifact = regalia_loptyr	
+	}
+}
+
+narrative_event = {
+	id = loptyr.6
+	title = loptyr.6.title
+	desc = loptyr.6.desc
+	picture = GFX_evt_died_funeral
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyr.6.A
+		trigger = { religion = loptyrian }
+		hidden_tooltip = {
+			character_event = {	id = loptyr.7 }
+		}
+	}
+	option = {
+		name = loptyr.6.B
+		trigger = { NOT = { religion = loptyrian } }
+	}
+}
+# Former Loptyrians prompted to switch
+character_event = {
+	id = loptyr.7
+	desc = loptyr.7.desc
+	picture = GFX_evt_bad_news_female
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptyr.7.A	
+		trigger = {
+			NOT = { trait = possessed_loptyr }
+		}
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				factor = 0 
+				trait = zealous
+			}
+			modifier = {
+				factor = 2 
+				trait = kind
+			}
+			modifier = {
+				factor = 2 
+				trait = just
+			}
+			modifier = {
+				factor = 2 
+				trait = cynical
+			}
+			modifier = {
+				factor = 2 
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2 
+				trait = content
+			}
+			modifier = {
+				factor = 2 
+				trait = slothful
+			}
+			modifier = {
+				factor = 0 
+				independent = no
+				liege = { NOT = { religion = loptyrian } }
+				has_secret_religion = no
+				has_character_flag = secret_loptyrian_dark_bishop
+				NOT = {
+					has_game_rule = {
+						name = secret_cults
+						value = none
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_ruler = no
+				liege = { NOT = { religion = loptyrian } }
+			}
+			liege = {
+				ROOT = { religion = PREV }
+			}
+		}else_if = {
+			limit = {
+				is_ruler = yes
+				capital_scope = {
+					NOT = { religion = loptyrian }
+				}
+			}
+			capital_scope = {
+				ROOT = { religion = PREV }
+			}
+		}else_if = {
+			limit = {
+				any_playable_ruler = {
+					is_within_diplo_range = ROOT
+					NOT = { religion = loptyrian }
+				}
+			}
+			random_playable_ruler = {
+				limit = {
+					is_within_diplo_range = ROOT
+					NOT = { religion = loptyrian }
+				}
+				ROOT = { religion = PREV }
+			}
+		}else = {
+			religion = maerist
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = { is_ruler = yes }
+				any_courtier = {
+					limit = {
+						religion = loptyrian
+						is_ruler = no
+					}
+					character_event = { id = loptyr.7 }
+				}
+			}
+		}
+	}
+	option = {
+		name = loptyr.7.B
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 10 
+				has_loptyr_holy_blood_trigger = yes
+			}
+			modifier = {
+				factor = 5 
+				trait = cruel
+			}
+			modifier = {
+				factor = 5 
+				trait = impaler
+			}
+			modifier = {
+				factor = 0 
+				independent = no
+				liege = { NOT = { religion = loptyrian } }
+				has_secret_religion = no
+				has_character_flag = secret_loptyrian_dark_bishop
+				NOT = {
+					has_game_rule = {
+						name = secret_cults
+						value = none
+					}
+				}
+			}
+		}	
+		piety = 100
+		if = {
+			limit = { trait = cynical }
+			random = {
+				chance = 50
+				remove_trait = cynical
+			}
+		}else_if = {
+			limit = { NOT = { trait = zealous } }
+			random = {
+				chance = 50
+				add_trait = zealous
+			}
+		}
+	}
+	option = {
+		name = loptyr.7.C
+		trigger = {
+			independent = no
+			liege = { NOT = { religion = loptyrian } }
+			has_secret_religion = no
+			OR = {
+				ai = no
+				has_character_flag = secret_loptyrian_dark_bishop
+			}
+			NOT = {
+				has_game_rule = {
+					name = secret_cults
+					value = none
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 10 
+		}	
+		intrigue = 1
+		falsely_confess_faith_effect = yes
+	}
+}

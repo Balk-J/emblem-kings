@@ -182,4 +182,41 @@ decisions = {
 			factor = 1
 		}
 	}	
+	form_new_thracia = {
+		only_playable = yes
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			always = no # under construction
+			primary_title = {
+				OR = {
+					title = k_thracia
+					title = k_manster
+				}
+			}
+			NOT = { 
+				k_new_thracia = {
+					any_previous_holder = {
+						always = yes
+					}
+				}
+			}
+			has_global_flag = thracia_split
+			culture = mansterian
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			action_allowed_trigger = yes
+			completely_controls_region = world_jugdral_thracia
+		}
+		effect = {
+			narrative_event = { id = fe5_thracia_776.15 tooltip = fe5_thracia_776.15.tooltip }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 }

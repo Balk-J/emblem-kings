@@ -42,6 +42,10 @@ magic.18.A;And yet, there is always more to learn.;;;;;;;;;;;;;x
 magic.19.desc;You have obtained an interesting tome. It's ancient, crumbled, and nearly illegible, but you have been able to decipher a passage that speaks of a primal force behind all livings things. The tome suggests that it is possible to harness this power for many different purposes. Perhaps this bears further study?;;;;;;;;;;;;;x
 magic.19.A;This is quite fascinating.;;;;;;;;;;;;;x
 magic.19.B;I should focus on something else.;;;;;;;;;;;;;x
+magic.20.desc;You have begun preparations to summon the Deadlords, twelve ancient undead warriors. When the ritual is complete they will reanimate and possess corpses you have prepared and twist the vessels into forms that suit their abilities. Summoning them must be done in stages over the course of a year.;;;;;;;;;;;;;x
+magic.20.A;When the Deadlords return, my enemies will tremble.;;;;;;;;;;;;;x
+magic.21.desc;After many long hours over the course of several months, the ritual to summon the Deadlords is complete! You finish the last incantations and stand back as the bodies you prepared begin to to stir... ;;;;;;;;;;;;;x
+magic.21.A;Greetings. I am your new [Root.GetMasterMistress].;;;;;;;;;;;;;x
 magic..title;;;;;;;;;;;;;;x
 magic..desc;;;;;;;;;;;;;;x
 magic..A;;;;;;;;;;;;;;x

@@ -15,4 +15,7 @@
 1180.1.1={
 	holder=702 #Ekhidna
 }
+1181.01.01={
+	liege=d_eburacum
+}
 

@@ -17,6 +17,7 @@
 1175.1.1={
 	holder=223 # Morgan of Etruria
 }
-1181.1.1={
-	liege=0 # liberated
+1181.01.01={
+	liege=d_caledonia
+	holder=2032 # post-occupation landholder
 }

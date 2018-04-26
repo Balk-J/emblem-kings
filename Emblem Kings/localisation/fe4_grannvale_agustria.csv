@@ -116,6 +116,9 @@ fe4_grannvale_agustria.45.B;If you don't think you can take them, we will withdr
 fe4_grannvale_agustria.45.C;Get back out there and fight, damn you! This is an order from your [Root.GetTitle]!;;;;;;;;;;;;;x
 fe4_grannvale_agustria.46.desc;I should've known this wouldn't go down well. When I tried to explain to [From.GetTitledFirstName] why [From.GetSheHe] needed to stand down, [From.GetSheHe] accused me of conspiring with the enemy. [From.GetSheHeCap] called for [From.GetHerHis] guards... and the headsman.;;;;;;;;;;;;;x
 fe4_grannvale_agustria.46.A;This will mark the end of [From.PrimaryTitle.GetName], I'm afraid...;;;;;;;;;;;;;x
+fe4_grannvale_agustria.47.desc;My [GetFromRelation] [From.GetFirstName] has been executed by [FromFrom.GetTitledName]! He said I should head home to be with my parents if anything ever happened.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.47.A;I had better leave.;;;;;;;;;;;;;x
+fe4_grannvale_agustria.47.B;This is my home now.;;;;;;;;;;;;;x
 fe4_grannvale_agustria..title;;;;;;;;;;;;;;x
 fe4_grannvale_agustria..desc;;;;;;;;;;;;;;x
 fe4_grannvale_agustria..A;;;;;;;;;;;;;;x

@@ -20,6 +20,7 @@
 1175.1.1={
 	holder=224 # Orlo
 }
-1181.1.1={
-	liege=0 # liberated
+1181.01.01={
+	liege=d_eburacum
+	holder=2033 # post-occupation landholder
 }

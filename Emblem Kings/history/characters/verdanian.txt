@@ -864,6 +864,7 @@
 	}	 
 	760.1.1 = {
 		employer=1049 # Arvis
+		dynasty=1001
 		effect={
 			remove_lover=1032 
 			add_lover=1049 # Arvis

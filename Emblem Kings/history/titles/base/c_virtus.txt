@@ -5,11 +5,8 @@
 #	liege=d_valor
 #	holder=602 #Bramimond
 }
-200.1.1={
-	holder=0 
-}
 900.1.1={
-	holder=308 #Nergal
+	holder=308 # Nergal
 }
 #Nergal's dead, free-for-all on his holdings
 1161.1.1={

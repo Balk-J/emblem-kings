@@ -243,6 +243,11 @@
 	747.1.1 = {
 		remove_trait="class_mage"
 		add_trait="class_sage"
+	}
+	760.1.1={
+		effect = {
+			add_pressed_claim=d_sailane
+		}
 	}		
 	760.3.1={
 		death = {
@@ -400,7 +405,10 @@
 	776.1.1 = {
 		remove_trait="class_mage"
 		add_trait="class_sage"
-	}	
+		effect = {
+			add_pressed_claim=k_silesse
+		}
+	}
 	776.01.01={
 		effect = {
 			spawn_unit = {

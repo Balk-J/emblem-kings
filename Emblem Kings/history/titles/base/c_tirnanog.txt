@@ -9,11 +9,17 @@
 440.1.1={
 	holder=867 # 
 }
+761.01.01={
+	liege = k_isaach
+}
+777.01.01={
+	liege = d_tirnanog
+}
 777.1.1={
 	holder=1038 # Seliph
 	liege = 0
 }
-779.1.1={
-	holder=0 # Seliph's done here
+778.1.1={
+	holder=1136 # Seliph's done here
 	liege = d_tirnanog
 }

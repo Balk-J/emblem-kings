@@ -1,0 +1,32 @@
+# d_kapathogia > k_thracia
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_thracia
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_kapathogia
+}
+440.1.1={
+	holder=894 # 
+}
+450.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	holder = 1011 # Dain
+	liege = k_thracia
+	de_jure_liege = k_thracia
+}
+744.1.1={
+	holder=1245 # Hannibal 
+}
+798.1.1={
+	holder=1248 # Charlot 
+}
+779.1.1={
+	de_jure_liege = k_new_thracia
+	liege = k_new_thracia
+}

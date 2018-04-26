@@ -555,15 +555,20 @@
 		employer = 1029 # Azmur
 	}	
 	
-	760.3.1 = {
-		add_trait="wounded"
-	}
-	760.4.1={
+	760.1.1={
 		death = {
-			death_reason=death_battle
-			killer=1070 # Duke Lombard of Dozel - well, from wounds taken while fighting his men
+			death_reason=death_missing
 		}
 	}
+#	760.3.1 = {
+#		add_trait="wounded"
+#	}
+#	760.4.1={ # Technically here against Lombard, but we'll move it up for gameplay reasons.
+#		death = {
+#			death_reason=death_battle
+#			killer=1070 # Duke Lombard of Dozel - well, from wounds taken while fighting his men
+#		}
+#	}
 }
 # Our hero
 1032={
@@ -635,6 +640,9 @@
 			force_mult = 4
 		}
 		add_spouse=1203 # Deirdre
+		effect = {
+			set_character_flag = chagall_invasion_target
+		}
 	}
 	759.1.1 = {
 		raise_levies = {
@@ -645,8 +653,33 @@
 	}
 	760.1.1 = {
 		remove_spouse=1203 # Deirdre
+		effect = {
+			clr_character_flag = chagall_invasion_target
+		}
+	}
+	760.3.1={
+		raise_levies = {
+			location = 396 # Zaxon
+			force_mult = 2
+		}
+	}		
+	761.4.1={
+		raise_levies = {
+			dismiss = yes
+			location = 396 # Zaxon
+			force_mult = 2
+		}
+		raise_levies = {
+			location = 408 # Lubeck
+			force_mult = 1.5
+		}
 	}
 	761.1.1={
+		raise_levies = {
+			dismiss = yes
+			location = 408 # Lubeck
+			force_mult = 1.5
+		}
 		death = {
 			death_reason=death_execution_burning
 			killer=1049 # Arvis, you dastard
@@ -867,6 +900,11 @@
 			set_character_flag = is_fe4_seliph
 		}
 	}
+	761.1.1={
+		effect = {
+			set_character_flag = sigurd_heir_post_belhalla
+		}
+	}
 	771.1.1={
 		add_trait="class_myrmidon"
 		add_trait="base_class_myrmidon"
@@ -877,8 +915,10 @@
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
+			add_pressed_claim=k_grannvale
+			add_pressed_claim=d_belhalla
 		}
-	} 
+	}
 	774.1.1 = {
 		add_trait="skilled_tactician"
 		add_trait="inspiring_leader"
@@ -891,13 +931,107 @@
 	777.1.1 = {
 		give_nickname=nick_the_scion_of_light
 #		add_trait="crusader_draconic"
+		effect = {
+			spawn_unit = {
+				earmark = crusader_army
+				owner = ROOT
+				province = 431 # Tirnanog
+				troops = {
+					pegasus_knights = { 50 50 }
+					light_cavalry = { 50 50 }
+					heavy_infantry = { 400 400 }
+					light_infantry = { 500 500 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				earmark = crusader_army
+				owner = ROOT
+				province = 431 # Tirnanog
+				troops = {
+					magic_users = { 50 50 }
+					light_cavalry = { 50 50 }
+					heavy_infantry = { 400 400 }
+					light_infantry = { 500 500 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}	
+			spawn_unit = {
+				earmark = crusader_army
+				owner = ROOT
+				province = 431 # Tirnanog
+				troops = {
+					magic_users = { 50 50 }
+					light_cavalry = { 50 50 }
+					heavy_infantry = { 400 400 }
+					light_infantry = { 500 500 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}	
+		}
 	}
 	 
 	778.1.1 = {
 		remove_trait="class_myrmidon"
 		add_trait="class_swordmaster"
+		effect = {
+			disband_event_forces = crusader_army 
+			spawn_unit = {
+				earmark = crusader_army
+				owner = ROOT
+				province = 530 # Darna
+				troops = {
+					pegasus_knights = { 50 50 }
+					light_cavalry = { 50 50 }
+					heavy_infantry = { 400 400 }
+					light_infantry = { 500 500 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+			spawn_unit = {
+				earmark = crusader_army
+				owner = ROOT
+				province = 530 # Darna
+				troops = {
+					magic_users = { 50 50 }
+					light_cavalry = { 50 50 }
+					heavy_infantry = { 400 400 }
+					light_infantry = { 500 500 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}	
+			spawn_unit = {
+				earmark = crusader_army
+				owner = ROOT
+				province = 530 # Darna
+				troops = {
+					magic_users = { 50 50 }
+					light_cavalry = { 50 50 }
+					heavy_infantry = { 400 400 }
+					light_infantry = { 500 500 }
+				}
+				attrition = 0
+				#disband_on_peace = yes
+				maintenance_multiplier = 0
+			}
+		}
 	}	
 	
+	779.1.1 = {
+		effect = {
+			disband_event_forces = crusader_army 
+		}
+	}
 	819.1.1={
 		death = yes
 	}
@@ -917,6 +1051,9 @@
 	# 27 in 9/757
 	730.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_claud
+		}
 	}
 	742.01.01={
 		add_trait="class_priest"
@@ -1123,6 +1260,7 @@
 		employer=1244
 		dynasty=1039
 		culture=silessian
+		father=0
 		effect={
 			set_father=0
 			c_1042 = {				
@@ -1520,7 +1658,10 @@
 	trait=twin
 	# Arvis & Deirdre start their relationship while Sigurd was in Silesse, and marry shortly before the Battle of Belhalla. Let's say the twins were born a little after?
 	761.1.1={
-		birth=yes
+		birth=yes	
+		effect = {
+			set_character_flag = loptyr_spawn
+		}	
 	}
 	
 	769.1.1={
@@ -1583,6 +1724,7 @@
 		birth=yes
 		effect = {
 			set_character_flag = is_fe4_julia
+			set_character_flag = anti_loptyr_spawn
 		}
 	}
 	
@@ -1793,6 +1935,9 @@
 	trait=holy_blood_latent_thrud
 	699.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_reptor
+		}
 	}
 	721.01.01={
 		add_trait="class_mage"
@@ -1863,6 +2008,9 @@
 	stewardship=2
 	739.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_bloom
+		}
 	}
 	751.01.01={
 		add_trait="class_mage"
@@ -1928,6 +2076,9 @@
 	trait=holy_blood_latent_thrud
 	741.1.1={ # 16 in 757
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_tailtiu
+		}
 	}
 	753.01.01={
 		add_trait="class_mage_female"
@@ -1984,6 +2135,9 @@
 	trait=holy_blood_latent_thrud
 	742.1.1={ 
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_ethnia
+		}
 	}
 	754.01.01={
 		add_trait="class_mage_female"
@@ -2720,6 +2874,9 @@
 	trait=strong
 	738.1.1={
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_danann
+		}
 	}
 	750.01.01={
 		add_trait="class_knight"
@@ -2829,6 +2986,9 @@
 	trait=holy_blood_latent_neir
 	756.1.1={ # Uncertain. He's the oldest of three, and let's say the other two are at least Larcei's age (19).
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_brian
+		}
 	}
 	768.01.01={
 		add_trait="class_knight"
@@ -2876,6 +3036,9 @@
 	trait=holy_blood_latent_neir
 	757.1.1={ 
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_iuchar
+		}
 	}
 	769.01.01={
 		add_trait="class_cavalier"
@@ -2942,6 +3105,9 @@
 	trait=holy_blood_latent_neir
 	758.1.1={ 
 		birth=yes
+		effect = {
+			set_character_flag = is_fe4_iucharba
+		}
 	}
 	770.01.01={
 		add_trait="class_cavalier"
@@ -4502,7 +4668,7 @@
 	name="Manfroy"
 	dna="ajbjjpaabav"
 	properties="cl0eoi00000000"
-	father=2036 # generated
+	#father=0 # generated
 	dynasty=2079
 	culture=grannvalean
 	religion=loptyrian
@@ -4692,7 +4858,7 @@
 		effect = {
 			set_character_flag="magic_or_faith_question"
 			set_character_flag = secret_loptyrian_dark_bishop
-			set_character_flag = is_fe4_veld
+			set_character_flag = is_fe5_veld
 		}
 	}
 	743.1.1 = {
@@ -4700,6 +4866,7 @@
 		employer=1254 # Manfroy
 		effect = {
 			add_friend=1254 # Manfroy
+			set_character_flag = schwarze_rosen_head
 		}
 	}	 
 	751.01.01={
@@ -4725,9 +4892,19 @@
 		add_trait="schemer"
 		# falsely confess faith!
 	}	 
+	756.1.1 = {
+		effect = {
+			set_character_flag = lore_deadlords
+		}
+	}	 
 	757.1.1 = {
 		remove_trait="class_dark_mage"
 		add_trait="class_sorceror"
+	}	
+	776.1.1 = {
+		effect = {
+			set_variable = { which = "level" value = 20 }
+		}
 	}	
 	777.1.1={
 		death = {
@@ -6102,6 +6279,9 @@
 	trait=strong
 	739.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_arden
+		}
 	}	
 	751.01.01={
 		add_trait="class_knight"
@@ -6140,6 +6320,9 @@
 	disallow_random_traits=yes
 	739.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_alec
+		}
 	}	
 	751.01.01={
 		add_trait="class_cavalier"
@@ -6179,6 +6362,9 @@
 	disallow_random_traits=yes
 	739.1.1={
 		birth=yes
+		effect = {
+			set_character_flag=is_fe4_naoise
+		}
 	}	
 	751.01.01={
 		add_trait="class_cavalier"
@@ -7341,7 +7527,7 @@
 	726.1.1={
 		birth=yes
 	}
-	748.01.01={
+	738.01.01={
 		add_trait="class_knight"
 		add_trait="base_class_knight"
 		effect = {
@@ -7349,7 +7535,7 @@
 			set_character_flag="class_selected"
 		}
 	} 
-	751.1.1 = {
+	741.1.1 = {
 		add_trait="skilled_tactician"
 		add_trait="unyielding_leader"
 		add_trait="siege_leader"
@@ -7727,5 +7913,18 @@
 			death_reason=death_battle
 			killer=1038 # Seliph
 		}
+	}
+}
+# Filler to be the head of the Church of Edda, so they game doesn't auto-generate someone from House Edda to hold it.
+2039={
+	name="Freja"
+	female=yes
+	culture=grannvalean
+	religion=church_of_edda
+	741.1.1={
+		birth=yes
+	} 	
+	822.1.1={
+		death = yes
 	}
 }

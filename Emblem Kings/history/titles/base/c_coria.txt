@@ -24,3 +24,6 @@
 	liege=d_coria
 	holder=713 # Scott
 }
+1181.01.01={
+	holder=2037 # post-occupation landholder
+}

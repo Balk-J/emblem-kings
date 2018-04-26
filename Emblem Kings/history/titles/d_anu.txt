@@ -7,10 +7,14 @@
 0180.01.01={
 	de_jure_liege = k_rivough
 }
+0450.01.01={
+	liege = e_loptyr
+}
 0647.01.01={
 	holder=1311 # filler
 }
 0649.01.01={
+	liege = k_yied
 	de_jure_liege = k_yied
 }
 0672.01.01={

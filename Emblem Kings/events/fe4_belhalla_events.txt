@@ -1,0 +1,2380 @@
+namespace = fe4_belhalla
+
+# Door of Destiny event chain - battle of Behalla, Yied Massacre and related events
+character_event = {
+	id = fe4_belhalla.1
+	desc = fe4_belhalla.1.desc
+	picture = GFX_evt_rider_adventure
+	hide_from = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = fe4_belhalla.1.A
+		ai_chance = {
+			factor = 90	
+		}
+		# Give an opinion boost to liege so they don't attack
+		hidden_tooltip = {
+			liege = {
+				opinion = {
+					modifier = opinion_appreciated_abilities
+					who = ROOT
+					years = 5
+				}				
+			}
+		}
+		
+		
+		# Give Sigurd the home castle for this war
+		if = {
+			limit = {
+				liege = {
+					any_realm_title = { title = c_zaxon }
+				}
+			}			
+			c_zaxon = {
+				set_title_flag = battle_of_belhalla_base
+				grant_title = ROOT
+			}
+			liege = {
+				ROOT = {
+# Doesn't seem to work - new title always gets the default.				
+#					primary_title = {
+#						d_sigurd = {
+#							copy_title_laws = PREV
+#						}
+#					}
+					any_demesne_title = {
+						limit = {
+							NOT = { title = c_zaxon }
+							NOT = { de_jure_liege_or_above = c_zaxon }
+						}
+						grant_title = PREVPREV
+					}
+				}
+			}
+		}else = {
+			liege = {
+				ROOT = {
+					random_demesne_title = {
+						limit = {
+							NOT = { is_capital = yes }
+						}
+						set_title_flag = battle_of_belhalla_base
+						grant_title = PREVPREV
+					}
+				}
+			}
+		}
+		set_defacto_liege = THIS		
+		d_sigurd = {
+			grant_title = ROOT 
+			hidden_tooltip = {
+				add_law = { law = succ_primogeniture cooldown = no opinion_effect = no }
+				add_law = { law = true_cognatic_succession cooldown = no opinion_effect = no }
+			}
+		}
+		character_event = { id = fe4_belhalla.2 }
+	}	
+	option = {
+		name = fe4_belhalla.1.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		prestige = -100
+	}	
+}
+# Find the leader of the war against Sigurd
+character_event = {
+	id = fe4_belhalla.2
+	hide_window = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = OK
+		# Prefer Lombard
+		if = {
+			limit = {
+				c_1070 = {
+					is_alive = yes
+					independent = no
+					liege = {
+						has_landed_title = k_grannvale
+					}
+					has_landed_title = d_dozel
+					NOT = { has_character_flag = refused_belhalla_war }
+				}
+			}
+			c_1070 = {
+				set_character_flag = battle_of_belhalla_war_leader
+			}
+		}
+		# Then Reptor 
+		else_if = {
+			limit = {
+				c_1056 = {
+					is_alive = yes
+					independent = no
+					liege = {
+						has_landed_title = k_grannvale
+					}
+					has_landed_title = d_friege
+					NOT = { has_character_flag = refused_belhalla_war }
+				}
+			}
+			c_1056 = {
+				set_character_flag = battle_of_belhalla_war_leader
+			}
+		}
+		# Then try a Dozel who isn't Lex
+		else_if = {
+			limit = {
+				d_dozel = {
+					holder_scope = {
+						independent = no
+						liege = {
+							has_landed_title = k_grannvale
+						}
+						dynasty = 1006 # Dozel
+						NOT = { has_character_flag = is_fe4_lex }
+						NOT = { has_character_flag = refused_belhalla_war }
+					}
+				}
+			}
+			d_dozel = {
+				holder_scope = {
+					set_character_flag = battle_of_belhalla_war_leader
+				}
+			}
+		}
+		# Then try a Friege who isn't one of the good sisters
+		else_if = {
+			limit = {
+				d_friege = {
+					holder_scope = {
+						independent = no
+						liege = {
+							has_landed_title = k_grannvale
+						}
+						dynasty = 1005 # Friege
+						NOT = { has_character_flag = is_fe4_tailtiu }
+						NOT = { has_character_flag = is_fe4_ethnia }
+						NOT = { has_character_flag = refused_belhalla_war }
+					}
+				}
+			}
+			d_friege = {
+				holder_scope = {
+					set_character_flag = battle_of_belhalla_war_leader
+				}
+			}
+		}
+		# Then pick a random powerful vassal who isn't going to be on Sigurd's side
+		else = {
+			k_grannvale = {
+				holder_scope = {
+					random_vassal = {
+						limit = {
+							among_most_powerful_vassals = 5
+							NOT = { has_character_flag = is_fe4_edain }
+							NOT = { has_character_flag = is_fe4_brigid }
+							NOT = { has_character_flag = is_fe4_lex }
+							NOT = { has_character_flag = is_fe4_tailtiu }
+							NOT = { has_character_flag = is_fe4_ethnia }
+							NOT = { has_character_flag = is_fe4_claud }
+							NOT = { has_character_flag = is_fe4_alec }
+							NOT = { has_character_flag = is_fe4_naoise }
+							NOT = { has_character_flag = is_fe4_arden }
+							NOT = { has_character_flag = is_fe4_jamke }
+							NOT = { has_character_flag = is_fe4_arvis }
+							NOT = { has_character_flag = refused_belhalla_war }
+						}
+						set_character_flag = battle_of_belhalla_war_leader
+					}
+				}
+			}
+		}
+		random_playable_ruler = { 
+			limit = { has_character_flag = battle_of_belhalla_war_leader }
+			liege = {
+				character_event = { id = fe4_belhalla.3 } 
+			}
+		}
+	}	
+}
+# Ping event to get leader's liege in scope
+character_event = {
+	id = fe4_belhalla.3
+	hide_window = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = OK
+		random_playable_ruler = { 
+			limit = { has_character_flag = battle_of_belhalla_war_leader }
+			letter_event = { id = fe4_belhalla.4 } 
+		}
+	}	
+}
+# War leader gets the choice to declare war on Sigurd
+letter_event = {
+	id = fe4_belhalla.4
+	desc = fe4_belhalla.4.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.4.A
+		FROM = { 
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			}			
+		}
+		set_character_flag = can_start_battle_of_belhalla
+		war = {
+			target = FROMFROM
+			casus_belli = battle_of_belhalla
+		}
+		
+#		custom_tooltip = {
+#			text = fe4_belhalla.5.tooltip
+#		}
+		hidden_tooltip = {
+			FROM = {
+				any_vassal = {
+					limit = {
+						NOT = { character = ROOT }
+					}
+					character_event = {	id = fe4_belhalla.5 days = 7 random = 3 }
+				}
+			}
+			# Quan
+			c_1160 = {
+				character_event = { id = fe4_belhalla.6 days=7 random=3 }
+			}
+			
+			FROMFROM = {
+				character_event = {	id = fe4_belhalla.27 days = 10 random = 4 }
+			}
+		}
+	}
+	option = {
+		name = fe4_belhalla.4.B
+		FROM = { 
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}			
+		}
+		hidden_tooltip = {
+			set_character_flag = refused_belhalla_war
+			FROMFROM = {
+				character_event = {	id = fe4_belhalla.2 }
+			}
+		}
+	}
+}
+# Other rulers get to pick a side
+character_event = {
+	id = fe4_belhalla.5
+	desc = fe4_belhalla.5.desc
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.5.A
+		ai_chance = {
+			factor = 25	
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = {
+					battle_of_behalla_support_sigurd_trigger = yes
+					battle_of_behalla_support_grannvale_trigger = no
+					has_character_flag = is_fe4_arvis 
+				}
+			}	
+		}
+		join_attacker_wars = FROM
+#		custom_tooltip = {
+#			text = fe4_belhalla.5.tooltip
+#		}
+	}		
+	option = {
+		name = fe4_belhalla.5.B
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = {
+					battle_of_behalla_support_sigurd_trigger = no
+					battle_of_behalla_support_grannvale_trigger = yes
+					has_character_flag = is_fe4_arvis 
+				}
+			}			
+		}
+		join_defender_wars = FROMFROMFROM
+#		custom_tooltip = {
+#			text = fe4_belhalla.5.tooltip
+#		}
+	}	
+	option = {
+		name = fe4_belhalla.5.C
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = {
+					battle_of_behalla_support_sigurd_trigger = yes
+					battle_of_behalla_support_grannvale_trigger = yes
+					has_character_flag = is_fe4_arvis 
+				}
+			}			
+		}
+	}	
+	option = {
+		name = fe4_belhalla.5.D
+		trigger = {
+			OR = { 
+				has_character_flag = is_fe4_arvis
+				any_spouse = { has_character_flag = is_fe4_deirdre }
+			}
+		}
+		custom_tooltip = {
+			text = fe4_belhalla.5.D.tooltip
+			hidden_tooltip = {
+				character_event = {	id = fe4_belhalla.17 days = 365 random = 14 }
+			}
+		}
+	}		
+}
+# Quan can join the war
+character_event = {
+	id = fe4_belhalla.6
+	desc = fe4_belhalla.6.desc
+	picture = GFX_evt_war_planning
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.6.A
+		ai_chance = {
+			factor = 90	
+		}
+		
+		if = {
+			limit = {
+				NOT = { has_artifact = regalia_gae_bolg }
+			}
+			random_character = {
+				limit = {
+					ai = yes
+					has_artifact = regalia_gae_bolg
+				}
+				random_artifact = {
+					limit = {
+						artifact_type = regalia_gae_bolg
+					}
+					transfer_artifact = {
+						from = THIS to = ROOT 
+					} 
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				is_ruler = yes
+			}
+			join_defender_wars = FROMFROMFROM
+		}else = {	
+			d_quan = {
+				grant_title = ROOT
+			}
+			set_defacto_liege = THIS
+			join_defender_wars = FROMFROMFROM
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						earmark = lanceritter
+						owner = ROOT
+						home = PREV
+						province = PREV
+						troops = {
+							light_cavalry = { 900 900 }
+							knights = { 50 50 }
+						}
+						attrition = 1.0
+						disband_on_peace = yes
+						cannot_inherit = yes
+						maintenance_multiplier = 0
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					NOT = { has_landed_title = k_thracia }
+					NOT = { any_liege = { has_landed_title = k_thracia } }
+				}
+				random_spouse = {
+					limit = {
+						any_child = {
+							is_child_of = ROOT 
+							is_adult = no
+							prisoner = no
+						}
+					}
+					character_event = { id = fe4_belhalla.8 days = 3 random = 1 }
+				}
+				
+				k_thracia = {
+					holder_scope = {
+						character_event = { id = fe4_belhalla.10 days = 10 random = 3 }
+					}
+				}
+			}
+		}
+	}		
+	option = {
+		name = fe4_belhalla.6.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# Death of Quan - destroy temporary Lanceritter title
+character_event = {
+	id = fe4_belhalla.7
+	
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	trigger = {
+		has_landed_title = d_quan
+	}
+	
+	option = {
+		name = OK
+		d_quan = { unsafe_destroy_landed_title = THIS }
+	}
+}
+# Quan's wife can decide to bring the kids on the trip
+character_event = {
+	id = fe4_belhalla.8
+	desc = fe4_belhalla.8.desc
+	picture = GFX_evt_birth
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.8.A
+		ai_chance = {
+			factor = 50	
+		}
+		if = {
+			limit = { is_ruler = no }
+			move_character = FROM
+		}
+		set_character_flag = yied_massacre_target
+		FROM = {
+			character_event = { id = fe4_belhalla.9 }
+		}
+	}		
+	option = {
+		name = fe4_belhalla.8.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		set_character_flag = yied_massacre_target
+		if = {
+			limit = { is_ruler = no }
+			move_character = FROM
+		}
+	}	
+	option = {
+		name = fe4_belhalla.8.C
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+	}		
+}
+# "Hey Quan, can I bring the kid to a war zone?"
+character_event = {
+	id = fe4_belhalla.9
+	desc = fe4_belhalla.9.desc
+	picture = GFX_evt_birth
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.9.A
+		ai_chance = {
+			factor = 50	
+		}
+		
+		# Prefer taking Altena, but grab someone else if she's not appropriate when this triggers
+		if = {
+			limit = {
+				any_child = {
+					is_child_of = FROM 
+					is_adult = no
+					prisoner = no
+					has_character_flag = is_fe4_altena
+				}
+			}
+			random_child = {
+				limit = {
+					has_character_flag = is_fe4_altena
+				}
+				move_character = ROOT
+				set_character_flag = brought_to_yied
+			}
+		}else = {
+			random_child = {
+				limit = {
+					is_child_of = FROM 
+					is_adult = no
+					prisoner = no
+				}
+				move_character = ROOT
+				set_character_flag = brought_to_yied
+			}
+		}
+		set_character_flag = brought_child_to_yied
+	}		
+	option = {
+		name = fe4_belhalla.9.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		reverse_opinion = {
+			modifier = opinion_sad
+			who = FROM
+			months = 3
+		}	
+	}		
+}
+# Travant can prepare an ambush
+character_event = {
+	id = fe4_belhalla.10
+	desc = fe4_belhalla.10.desc
+	picture = GFX_evt_spymaster
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.10.A
+		ai_chance = {
+			factor = 75	
+		}
+		character_event = { id = fe4_belhalla.11 days = 150 random = 30 }
+	}		
+	option = {
+		name = fe4_belhalla.9.B
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		piety = 50
+	}		
+}
+# Make sure the Yied Massacre can happen
+character_event = {
+	id = fe4_belhalla.11
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		if = {
+			limit = {
+				FROMFROM = {
+					any_war = {
+						using_cb = battle_of_belhalla
+					}
+				}
+			}
+			set_character_flag = yied_massacre_perpetrator
+			# Did the wife come?
+			if = {
+				limit = {
+					FROMFROM = {
+						any_spouse = {
+							has_character_flag = yied_massacre_target
+						}
+					}
+				}
+				FROMFROM = {
+					any_spouse = {
+						limit = { has_character_flag = yied_massacre_target }
+						character_event = { id = fe4_belhalla.12 }
+					}
+				}
+			}
+			# If the wife is not around, check to see if she brought the kid before leaving
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_child = {
+							is_adult = no
+							prisoner = no
+							has_character_flag = brought_to_yied
+						}
+					}				
+				}
+				FROMFROM = {
+					random_child = {
+						limit = {
+							is_adult = no
+							prisoner = no
+							has_character_flag = brought_to_yied
+						}
+						character_event = { id = fe4_belhalla.13 }
+					}
+				}		
+				
+			}
+			# And kill Quan
+			FROMFROM = {
+				character_event = { id = fe4_belhalla.15 days = 1 }
+			}
+		}		
+	}		
+}
+
+# Inform Ethlyn she's been massacred
+character_event = {
+	id = fe4_belhalla.12
+	desc = fe4_belhalla.12.desc
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.12.A
+		
+		death = {
+			death_reason=death_battle
+			killer=FROM
+		}			
+		# If she brought a kid, let Travant decide what to do with it
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_child = {
+						is_adult = no
+						prisoner = no
+						has_character_flag = brought_to_yied
+					}				
+				}
+				random_child = {
+					limit = {
+						is_adult = no
+						prisoner = no
+						has_character_flag = brought_to_yied
+					}
+					character_event = { id = fe4_belhalla.13 }
+				}
+			}
+		}
+	}			
+}
+
+# ping event to get Altena in scope
+character_event = {
+	id = fe4_belhalla.13
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		random_playable_ruler = {
+			limit = {
+				has_character_flag = yied_massacre_perpetrator
+			}
+			character_event = { id = fe4_belhalla.14 }
+		}
+	}		
+}
+# Travant decides what to do with Quan's child
+character_event = {
+	id = fe4_belhalla.14
+	desc = fe4_belhalla.14.desc
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.14.A
+		ai_chance = {
+			factor = 50		
+		}
+		custom_tooltip = {
+			text = fe4_belhalla.14.A.tooltip
+			hidden_tooltip = {
+				
+				# Make the kid Travant's
+				FROM = {
+					# make a clone if it's Altena since we already have the event.
+					if = {
+						limit = { has_character_flag = is_fe4_altena }
+						character_event = {	id = fe4_dynasty.8 }
+					}
+					# otherwise we don't bother! TODO: add a clone event?
+					
+					# Make sure they still get Ethlyn's holy blood even though we swap mothers
+					if = {
+						limit = {
+							mother_even_if_dead = {
+								trait = holy_blood_minor_baldr
+							}
+						}
+						add_trait=holy_blood_latent_baldr
+					}
+					
+					culture = ROOT
+					religion = ROOT
+					dynasty = ROOT
+					
+					father = {
+						FROM = { set_real_father = PREV }
+					}
+					if = {
+						limit = { ROOT = { is_female = yes } }
+						set_mother = ROOT
+						ROOT = {
+							any_spouse_even_if_dead = {
+								FROM = {
+									set_father = PREV
+								}
+							}
+						}						
+					}else = {
+						set_father = ROOT
+						ROOT = {
+							any_spouse_even_if_dead = {
+								FROM = {
+									set_mother = PREV
+								}
+							}
+						}
+					}
+					opinion = {
+						modifier = opinion_mentor
+						who = ROOT
+						years = 100
+					}		
+					move_character = ROOT
+				}
+			}
+		}
+	}	
+	option = {
+		name = fe4_belhalla.14.B
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		FROM = {
+			death = {
+				death_reason=death_execution
+				killer=ROOT
+			}		
+		}		
+	}	
+	option = {
+		name = fe4_belhalla.14.C
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}
+		
+	}			
+}
+# Inform Quan he's been massacred
+character_event = {
+	id = fe4_belhalla.15
+	desc = fe4_belhalla.12.desc # re-using Ethlyn event text
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.15.A	
+		if = {
+			limit = {
+				has_artifact = regalia_gae_bolg 
+			}
+			random_artifact = {
+				limit = {
+					artifact_type = regalia_gae_bolg
+				}
+				transfer_artifact = {
+					from = ROOT to = FROM 
+				} 
+			}
+		}	
+		death = {
+			death_reason=death_battle
+			killer=FROM
+		}	
+
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					primary_title = {
+						region = world_jugdral
+					}
+				}
+				narrative_event = { id = fe4_belhalla.16 days = 1 }
+			}
+		}
+	}			
+}
+# Notify rulers of Yied Massacre
+narrative_event = {
+	id = fe4_belhalla.16
+	title = fe4_belhalla.16.title
+	desc = fe4_belhalla.16.desc
+	picture = GFX_evt_died_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.16.A
+		trigger = {
+			OR = {
+				has_landed_title = d_sigurd
+				FROM = {
+					dynasty = ROOT
+				}
+			}
+			NOT = { has_character_flag = yied_massacre_perpetrator }
+		}
+	}	
+	option = {
+		name = fe4_belhalla.16.B
+		trigger = {
+			NOR = {
+				has_landed_title = d_sigurd
+				FROM = {
+					dynasty = ROOT
+				}
+			}
+			NOT = { has_character_flag = yied_massacre_perpetrator }
+		}
+	}		
+	option = {
+		name = fe4_belhalla.16.C
+		trigger = {
+			has_character_flag = yied_massacre_perpetrator 
+		}
+		prestige = 500
+		piety = -50
+		clr_character_flag = yied_massacre_perpetrator
+	}		
+}
+
+# Arvis's endgame
+character_event = {
+	id = fe4_belhalla.17
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		if = {
+			limit = {
+				any_playable_ruler = {
+					has_landed_title = d_sigurd
+					any_war = {
+						using_cb = battle_of_belhalla
+					}
+				}
+			}
+			character_event = { id = fe4_belhalla.49 }
+		}
+	}		
+}
+# Arvis can start his plan
+character_event = {
+	id = fe4_belhalla.49
+	desc = fe4_belhalla.17.desc
+	picture = GFX_evt_shadowy_cabal
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.17.A	
+		ai_chance = {
+			factor = 60	
+		}
+		
+		hidden_tooltip = {
+			d_sigurd = {
+				holder_scope = {
+					letter_event = { id = fe4_belhalla.18 days = 3 }
+				}
+			}
+			
+			# Also give King Azmur a kick downhill
+			c_1029 = {
+				if = {
+					limit = { trait = infirm }
+					character_event = { id = 6100 }
+				}
+			}
+		}
+	}	
+	option = {
+		name = fe4_belhalla.17.B
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+	}			
+}
+# Sigurd can blunder into the trap
+letter_event = {
+	id = fe4_belhalla.18
+	desc = fe4_belhalla.18.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.18.A
+		hidden_tooltip = {
+			FROM = { character_event = { id = fe4_belhalla.21 } }
+		}
+	}
+	option = {
+		name = fe4_belhalla.18.B
+		FROM = {
+			letter_event = { id = fe4_belhalla.19 days = 3 }
+		}
+	}
+}
+# Inform Arvis Sigurd didn't take the bait
+letter_event = {
+	id = fe4_belhalla.19
+	desc = fe4_belhalla.19.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.19.A
+	}
+	option = {
+		name = fe4_belhalla.19.B
+		random_character = {
+			limit = { has_character_flag = battle_of_belhalla_war_leader }
+			ROOT = {
+				join_attacker_wars = PREV
+			}
+		}
+	}
+}
+character_event = {
+	id = fe4_belhalla.20
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		FROM = {
+			liege = {
+				ROOT = {
+					any_claim = {
+						limit = {
+						holder_scope = {
+							any_liege = {
+								character = PREVPREVPREVPREV
+							}
+						}
+						}
+						usurp_title_plus_barony_if_unlanded = { target = ROOT type = claim }
+					}
+					
+					set_defacto_liege = PREV
+				}
+			}
+		}
+		d_sigurd = {
+			destroy_landed_title = THIS
+		}
+		any_demesne_title = {
+			limit = { has_title_flag = battle_of_belhalla_base }
+			create_character = {
+				random_traits = yes
+				dynasty = NONE
+				female = no
+				age = 20
+				religion = THIS
+				culture = THIS
+			}
+			new_character = {
+				usurp_title = { target = PREV } 
+				set_defacto_liege = THIS	
+			}
+		}
+	}		
+}
+# Arvis Battle of Behalla event
+character_event = {
+	id = fe4_belhalla.21
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		# For everyone in the war
+		random_character = {
+			limit = { has_character_flag = battle_of_belhalla_war_leader }
+			any_war = {
+				limit = { using_cb = battle_of_belhalla }
+				# Kill the loyalists!
+				any_attacker = {
+					character_event = {	id = fe4_belhalla.22 }
+				}
+				# Invite the rebels to their executions
+				any_defender = {
+					limit = { is_primary_war_defender = no }
+					character_event = {	id = fe4_belhalla.24 }
+				}
+			}
+		}
+		character_event = {	id = fe4_belhalla.25 days = 7 }
+	}		
+}
+# Loyalists get an offer of support from Arvis
+character_event = {
+	id = fe4_belhalla.22
+	desc = fe4_belhalla.22.desc
+	picture = GFX_evt_western_knights_byzantine
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				NOR = {
+					has_character_flag = is_fe4_lombard
+					has_character_flag = is_fe4_reptor
+					has_character_flag = is_fe4_andrey
+				}
+			}
+		}
+	}
+	option = {
+		name = fe4_belhalla.22.A	
+		ai_chance = {
+			factor = 20	
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				NOR = {
+					has_character_flag = is_fe4_lombard
+					has_character_flag = is_fe4_reptor
+					has_character_flag = is_fe4_andrey
+				}
+			}		
+		}
+#		capital_scope = {
+#			ROOT = {
+				spawn_unit = {
+					earmark = belhalla_reinforcements
+					owner = ROOT
+					province = ROOT
+					home = ROOT
+#					province = PREV
+#					home = PREV
+					match_character = FROM
+					match_mult = 0.1
+					attrition = 0
+					disband_on_peace = yes
+					maintenance_multiplier = 0
+#				}
+#			}
+		}
+		hidden_tooltip = {
+			character_event = { id = fe4_belhalla.23 days = 3 random = 1 }
+		}
+	}	
+	option = {
+		name = fe4_belhalla.22.B
+		trigger = {
+			intrigue = 7
+			NOT = {
+				any_war = {
+					using_cb = battle_of_belhalla
+					is_primary_war_attacker = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				OR = {
+					has_character_flag = is_fe4_lombard
+					has_character_flag = is_fe4_reptor
+					has_character_flag = is_fe4_andrey
+				}
+			}			
+		}	
+		tooltip_info = intrigue
+	}			
+}
+# Killed by Arvis's men
+character_event = {
+	id = fe4_belhalla.23
+	desc = fe4_belhalla.23.desc
+	picture = GFX_evt_longbowman
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.23.A
+		disband_event_forces = belhalla_reinforcements
+		death = {
+			death_reason=death_murder_unknown
+			killer=FROMFROM
+		}
+	}	
+}
+# Inform the rebels they've been invited to the capital 
+letter_event = {
+	id = fe4_belhalla.24
+	desc = fe4_belhalla.24.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.24.A
+		set_character_flag = battle_of_belhalla_victim
+	}
+}
+#
+character_event = {
+	id = fe4_belhalla.25
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		any_playable_ruler = {
+			limit = { 
+				OR = {
+					has_character_flag = battle_of_belhalla_victim
+					any_war = {
+						using_cb = battle_of_belhalla 
+						is_primary_war_defender = yes
+					}
+				}
+			}
+			narrative_event = {	id = fe4_belhalla.26 }
+		}
+	}		
+}
+# Notify rulers of Belhalla finale
+narrative_event = {
+	id = fe4_belhalla.26
+	title = fe4_belhalla.26.title
+	desc = fe4_belhalla.26.desc
+	picture = GFX_evt_victory_arch_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.26.A
+		hidden_tooltip = {
+			if = {
+				limit = {
+					any_war = {
+						using_cb = battle_of_belhalla 
+						is_primary_war_defender = yes
+					}
+				}
+				current_heir = {
+					if = {
+						limit = {
+							dynasty = ROOT
+						}
+						FROM = { set_truce = { who = PREV years = 10 } }
+						character_event = { id = fe4_belhalla.41 days = 3 random = 1 }
+					}
+				}
+				any_war = {
+					limit = { using_cb = battle_of_belhalla }
+					end_war = invalid
+				}
+				# Aftermath for Arvis
+				FROM = { character_event = { id = fe4_belhalla.31 } }
+				
+				# Thracia intrigue
+				c_thracia = { 
+					holder_scope = {
+						character_event = { id = fe4_belhalla.43 days = 14 random = 7}
+					}
+				}
+			}
+		}
+		death = {
+			death_reason=death_execution_burning
+			killer=FROM
+		}
+	}
+}
+
+# Byron approaches!
+character_event = {
+	id = fe4_belhalla.27
+	desc = fe4_belhalla.27.desc
+	picture = GFX_evt_joust
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.27.A
+		ai_chance = {
+			factor = 90	
+		}	
+		hidden_tooltip = {
+			any_war = {
+				limit = { using_cb = battle_of_belhalla }
+				any_attacker = {
+					limit = { is_primary_war_attacker = yes }
+					character_event = { id = fe4_belhalla.29 }
+				}
+			}
+		}
+	}		
+	option = {
+		name = fe4_belhalla.27.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+		hidden_tooltip = {
+			character_event = { id = fe4_belhalla.28 days = 3 random = 1 }
+		}
+	}		
+}
+
+# Byron is driven off.
+character_event = {
+	id = fe4_belhalla.28
+	desc = fe4_belhalla.28.desc
+	picture = GFX_evt_longbowman
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.28.A
+	}		
+}
+# Byron is saved
+# ping event to get enemy leader
+character_event = {
+	id = fe4_belhalla.29
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		FROM = { character_event = { id = fe4_belhalla.30 days = 3 random = 1 } }
+	}		
+}
+character_event = {
+	id = fe4_belhalla.30
+	desc = fe4_belhalla.30.desc
+	picture = GFX_evt_died_battle
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.30.A
+		if = {
+			limit = {
+				any_character = { has_artifact = regalia_tyrfing }
+			}
+			random_character = {
+				limit = {
+					has_artifact = regalia_tyrfing
+				}
+				random_artifact = {
+					limit = {
+						artifact_type = regalia_tyrfing
+					}
+					transfer_artifact = {
+						from = THIS to = ROOT 
+					} 
+				}
+			}
+		}else = {
+			add_artifact = regalia_tyrfing
+			new_artifact = {
+				set_creation_date = 632.1.1
+			}
+		}		
+	}		
+}
+
+# Aftermath stuff
+
+character_event = {
+	id = fe4_belhalla.31
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		
+		# Kill King Azmur
+		liege = {
+			if = {
+				limit = {	
+					current_heir = {
+						has_character_flag = is_fe4_deirdre
+					}
+				}
+				current_heir = {
+					if = {
+						limit = {
+							any_spouse = {
+								character = ROOT
+							}
+						}
+						character_event = { id = fe4_belhalla.33 days = 1 }
+					}
+				}
+				death = yes
+			}else = {
+				character_event = {	id = fe4_belhalla.38 days = 7 random = 3 }
+			}
+		}
+	}		
+}
+# Ping event for Deirdre
+character_event = {
+	id = fe4_belhalla.33
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		FROM = {
+			character_event = { id = fe4_belhalla.34 }
+		}
+		
+	}		
+}
+# Arvis, do you want to seize power?
+character_event = {
+	id = fe4_belhalla.34
+	desc = fe4_belhalla.34.desc
+	picture = GFX_evt_coronation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.34.A
+		ai_chance = {
+			factor = 90		
+		}	
+		FROM = {
+			letter_event = { id = fe4_belhalla.35 days = 3 random = 1 }
+		}		
+	}	
+	option = {
+		name = fe4_belhalla.34.B
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}		
+		hidden_tooltip = {
+			FROM = { character_event = { id = fe4_belhalla.38 days = 7 random = 3 } }
+		}
+	}		
+}
+# Deirdre decides whether to give up her title. Or everything for AI.
+letter_event = {
+	id = fe4_belhalla.35
+	desc = fe4_belhalla.35.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.35.A
+		ai_chance = {
+			factor = 30	
+		}	
+		custom_tooltip = {
+			text = fe4_belhalla.35.A.tooltip
+		}
+		FROM = {
+			letter_event = { id = fe4_belhalla.36  }
+		}
+	}
+	option = {
+		name = fe4_belhalla.18.B
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+		FROM = {
+			letter_event = { id = fe4_belhalla.37  }
+		}
+		hidden_tooltip = {
+			character_event = {	id = fe4_belhalla.38 days = 7 random = 3 }
+		}
+	}
+}
+# Inform Arvis he's the king
+letter_event = {
+	id = fe4_belhalla.36
+	desc = fe4_belhalla.36.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.36.A
+		FROM = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				abdicate_to = ROOT
+			}else = {
+				primary_title = {
+					grant_title = ROOT
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {	id = fe4_belhalla.38 days = 7 random = 3 }
+		}
+	}
+}
+
+# Inform Arvis he was rejected
+letter_event = {
+	id = fe4_belhalla.37
+	desc = fe4_belhalla.37.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.37.A
+	}
+}
+
+# Start the event to form the Empire of Grannvale if they're still powerful enough
+character_event = {
+	id = fe4_belhalla.38
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		if = {
+			limit = {
+				tier = king				
+				has_landed_title = k_grannvale
+				e_grannvale = { has_holder = no }
+				# If they have all but about 1 duchy's worth of counties from these
+				num_of_realm_counties = { value = 24 title = k_grannvale }
+				num_of_realm_counties = { value = 25 title = k_agustria }
+				num_of_realm_counties = { value = 19 title = k_isaach }
+				num_of_realm_counties = { value = 12 title = k_verdane }
+			}
+			character_event = {	id = fe4_belhalla.39 }
+		}
+	}		
+}
+# Form the empire?
+character_event = {
+	id = fe4_belhalla.39
+	desc = fe4_belhalla.39.desc
+	picture = GFX_evt_powerful_ruler
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.39.A
+		ai_chance = {
+			factor = 99	
+		}	
+		e_grannvale = {
+			grant_title = ROOT
+		}		
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					capital_scope = {
+						region = world_jugdral
+					}
+					NOT = { has_landed_title = e_grannvale }
+				}
+				narrative_event = { id = fe4_belhalla.40 days = 1 }
+			}
+			ROOT = {
+				narrative_event = { id = fe4_belhalla.40 days = 1 }
+			}
+		}
+	}	
+	option = {
+		name = fe4_belhalla.39.B
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}		
+	}		
+}
+
+# Notify rulers of the founding of the empire
+narrative_event = {
+	id = fe4_belhalla.40
+	title = fe4_belhalla.40.title
+	desc = {
+		trigger = { has_landed_title = e_grannvale }
+		text = fe4_belhalla.40.desc.1
+	}
+	desc = {
+		trigger = { NOT = { has_landed_title = e_grannvale } }
+		text = fe4_belhalla.40.desc.2
+	}
+	picture = GFX_evt_holy_emperor
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.40.A
+		trigger = {
+			has_landed_title = e_grannvale
+		}
+		prestige = 1000
+		add_character_modifier = { name = overwhelming_popular_support duration = 1825 } # 5 years
+	}	
+	option = {
+		name = fe4_belhalla.40.B
+		trigger = {
+			any_liege = { character = FROM }
+		}
+	}	
+	option = {
+		name = fe4_belhalla.40.C
+		trigger = {
+			NOR = {
+				has_landed_title = e_grannvale
+				any_liege = { character = FROM }
+			}
+		}
+	}	
+}
+
+# What should Seliph do?
+character_event = {
+	id = fe4_belhalla.41
+	desc = fe4_belhalla.41.desc
+	picture = GFX_evt_hiding_from_pursuers
+	
+	is_triggered_only = yes
+	immediate = {
+		set_character_flag = sigurd_heir_post_belhalla
+		opinion = {
+			modifier = opinion_evil_tyrant
+			who = FROMFROM
+			years = 100
+		}		
+	}
+	option = {
+		name = fe4_belhalla.41.A
+		trigger = {
+			tirnanog_open_trigger = yes
+		}
+		ai_chance = {
+			factor = 50	
+		}	
+		d_tirnanog = {
+			grant_title = ROOT
+		}
+		c_tirnanog = {
+			grant_title = ROOT
+		}
+		any_demesne_title = {
+			limit = {
+				NOT = { title = d_tirnanog }
+				NOT = { de_jure_liege_or_above = d_tirnanog }
+			}
+			if = {
+				limit = {
+					OR = {
+						tier = DUKE
+						tier = KING
+						tier = EMPEROR
+					}
+				}
+				destroy_landed_title = THIS
+			}else = {
+				create_character = {
+					random_traits = yes
+					dynasty = NONE
+					female = no
+					age = 20
+					religion = THIS
+					culture = THIS
+				}
+				new_character = {
+					usurp_title = { target = PREV } 
+					set_defacto_liege = THIS	
+				}
+			}
+		}
+		
+		hidden_tooltip = { character_event = { id = fe4_belhalla.42 } }
+	}	
+	option = {
+		name = fe4_belhalla.41.B
+		trigger = {
+			d_marpha = {
+				OR = {
+					has_holder = no
+					holder_scope = {
+						ai = yes
+					}
+				}				
+			}
+			c_marpha = {
+				holder_scope = {
+					ai = yes
+				}				
+			}
+		}
+		ai_chance = {
+			factor = 30	
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}	
+		}	
+		d_marpha = {
+			grant_title = ROOT
+		}
+		c_marpha = {
+			grant_title = ROOT
+		}
+		any_demesne_title = {
+			limit = {
+				NOT = { title = d_marpha }
+				NOT = { de_jure_liege_or_above = d_marpha }
+			}
+			if = {
+				limit = {
+					OR = {
+						tier = DUKE
+						tier = KING
+						tier = EMPEROR
+					}
+				}
+				destroy_landed_title = THIS
+			}else = {
+				create_character = {
+					random_traits = yes
+					dynasty = NONE
+					female = no
+					age = 20
+					religion = THIS
+					culture = THIS
+				}
+				new_character = {
+					usurp_title = { target = PREV } 
+					set_defacto_liege = THIS	
+				}
+			}
+		}
+		hidden_tooltip = { character_event = { id = fe4_belhalla.42 } }
+	}	
+	option = {
+		name = fe4_belhalla.41.C
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+
+		random_playable_ruler = {
+			limit = {
+				ai = yes
+				tier = COUNT
+				is_within_diplo_range = ROOT
+				is_feudal = yes
+				NOT = { same_realm = FROMFROM }
+			}
+			
+			primary_title = {
+				usurp_title = ROOT
+				ROOT = {
+					any_demesne_title = {
+						limit = {
+							NOT = { title = PREVPREV }
+							NOT = { de_jure_liege_or_above = PREVPREV }
+						}
+						if = {
+							limit = {
+								OR = {
+									tier = DUKE
+									tier = KING
+									tier = EMPEROR
+								}
+							}
+							destroy_landed_title = THIS
+						}else = {
+							create_character = {
+								random_traits = yes
+								dynasty = NONE
+								female = no
+								age = 20
+								religion = THIS
+								culture = THIS
+							}
+							new_character = {
+								usurp_title = { target = PREV } 
+								set_defacto_liege = THIS	
+							}
+						}
+					}
+				}
+			}
+		}
+		hidden_tooltip = { character_event = { id = fe4_belhalla.42 } }
+	}	
+	option = {
+		name = fe4_belhalla.41.D
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+			}			
+		}	
+		hidden_tooltip = { character_event = { id = fe4_belhalla.42 } }	
+	}		
+}
+
+# Post-Behalla running around
+character_event = {
+	id = fe4_belhalla.42
+	hide_window = yes	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		# Shannan, Ayra, Edain, and any of their children go to Tirnanog
+		c_tirnanog = {
+			holder_scope = {
+				any_character = {
+					limit = {
+						OR = {
+							has_character_flag = is_fe4_ayra
+							has_character_flag = is_fe4_shannan
+							has_character_flag = is_fe4_edain
+						}
+					}
+					move_and_take_children_effect = yes
+				}
+				# Lachesis will send any boys to Tirnanog and take any girls to Leonster
+				c_1095 = { # Lachesis
+					if = {
+						limit = {
+							is_ruler = no
+							OR = {
+								is_married = no
+								spouse = {
+									is_ruler = no
+								}
+							}
+						}
+						any_child = {
+							limit = {
+								is_ruler = no
+								is_adult = no
+								prisoner = no
+								is_female = no
+							}
+							move_character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		
+		c_leonster = {
+			holder_scope = {
+				c_1095 = { # Lachesis
+					if = {
+						limit = {
+							is_ruler = no
+							OR = {
+								is_married = no
+								spouse = {
+									is_ruler = no
+								}
+							}
+						}
+						move_character = PREV	
+						any_child = {
+							limit = {
+								is_ruler = no
+								is_adult = no
+								prisoner = no
+								is_female = yes
+							}
+							move_character = PREVPREV
+						}
+					}
+				}
+			}			
+		}
+		
+		# Erinys takes the kids back to Silesse
+		c_silesse = {
+			holder_scope = {
+				c_1117 = { # Erinys
+					move_and_take_children_effect = yes
+				}
+			}
+		}
+		
+		# Lewyn gets killed, revived, possessed, and runs off.
+		c_orgahil = {
+			holder_scope = {
+				c_1111 = { # Lewyn
+					remove_personality_effect = yes
+					remove_trait=poet
+					add_trait="kind"
+					add_trait="just"
+					add_trait="erudite"
+					add_trait="honest"
+					add_trait="possessed_forseti"
+					move_character = PREV
+				}
+			}		
+		}
+		
+		# Silvia dumps the kids in Darna and vanishes
+		c_darna = {
+			holder_scope = {
+				c_1045 = { # Silvia
+					if = {
+						limit = {
+							is_ruler = no
+							OR = {
+								is_married = no
+								spouse = {
+									is_ruler = no
+								}
+							}
+						}	
+						any_child = {
+							limit = {
+								is_ruler = no
+								is_adult = no
+								prisoner = no
+							}
+							move_character = PREVPREV
+						}
+						death = {
+							death_reason=death_missing 
+						}
+					}
+				}
+			}			
+		}
+		# Tailtiu gets jailed by Hilda and her kids go to Friege
+		c_1060 = {
+			dynasty_head = {
+				if = {
+					limit = { 
+						is_ruler = yes
+						NOT = { character = PREV } 
+					}
+					
+					
+					if = {
+						limit = { is_married = yes }
+						spouse = {
+							c_1060 = {
+								imprison = PREV
+							}
+						}
+					}else = {
+						c_1060 = {
+							imprison = PREV
+						}
+					}
+					
+					c_1060 = {
+						any_child = {
+							limit = {
+								is_ruler = no
+								is_adult = no
+								prisoner = no
+							}
+							move_character = PREVPREV
+						}
+					}
+				}				
+			}
+		}
+		
+		# Azelle is imprisoned?
+		c_1050 = {
+			if = {
+				limit = { dynasty = 1004 }
+				dynasty_head = {
+					if = {
+						limit = { 
+							is_ruler = yes
+							NOT = { character = PREV } 
+						}
+						
+						c_1050 = {
+							imprison = PREV
+						}
+					}
+				}
+			}
+		}
+		
+		# Brigid's kids go to Conote and she becomes Eyvel
+		c_conote = {
+			holder_scope = {
+				c_1081 = { # Brigid
+					if = {
+						limit = {
+							is_ruler = no
+							OR = {
+								is_married = no
+								spouse = {
+									is_ruler = no
+								}
+							}
+						}	
+						any_child = {
+							limit = {
+								is_ruler = no
+								is_adult = no
+								prisoner = no
+							}
+							move_character = PREVPREV
+						}
+						# Make a Brigid clone
+						character_event = {	id = fe4_dynasty.4 }
+						
+						# Eyvel-ize
+						remove_trait="wroth"
+						remove_trait="aggressive_leader"
+						add_trait="defensive_leader"
+						remove_trait="base_class_archer"
+						remove_trait="class_archer_female"
+						remove_trait="class_sniper_female"
+						add_trait="class_swordmaster_female"
+						add_trait="base_class_myrmidon"
+						culture=thracian
+						set_name = "Eyvel"
+						dynasty=1019
+						c_1078 = {
+							c_1081 = { set_real_father = PREV }
+						}
+						set_father = none
+						set_mother = none
+						remove_spouse = yes
+					}
+				}
+			}			
+		}
+		c_iss = {
+			holder_scope = {
+				c_1081 = { # Eyvel
+					move_character = PREV
+					character_event = { id = fe5_thracia_776.1 days = 14 random = 7 }
+				}
+			}
+		}
+	}		
+}
+
+# Set up the war in Thracia
+character_event = {
+	id = fe4_belhalla.43
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		# Can we have a Thracian war?
+		if = {
+			limit = {
+				k_manster = {
+					holder_scope = {
+						independent = yes
+						NOT = { has_landed_title = k_thracia }
+					}
+				}
+				k_thracia = {
+					holder_scope = {
+						independent = yes
+						NOT = { has_claim = k_manster }
+					}
+				}
+			}
+			
+			# Should we make the traitor Raydrik?
+			if = {
+				limit = {
+					has_game_rule = {
+						name = fe_story
+						value = on
+					}
+					k_manster = {
+						holder_scope = {
+							any_realm_lord = {
+								has_character_flag = is_fe5_raydrik
+								action_allowed_trigger = yes
+							}
+						}
+					}
+				}
+				random_playable_ruler = {
+					limit = { has_character_flag = is_fe5_raydrik }
+					character_event = {	id = fe4_belhalla.44 }
+				}
+			}else = {		
+				k_manster = {
+					holder_scope = {
+						random_vassal = {
+							limit = {
+								is_powerful_vassal = yes
+								action_allowed_trigger = yes
+								NOT = { opinion = { who = PREV value = 0 } }
+							}
+							character_event = {	id = fe4_belhalla.44 }
+						}
+					}
+				}
+			}
+		} 
+	}	
+}
+
+# Raydrik decides to cut a secret deal
+character_event = {
+	id = fe4_belhalla.44
+	desc = fe4_belhalla.44.desc
+	picture = GFX_evt_rival_rulers
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.44.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}	
+		}
+		custom_tooltip = {
+			text = fe4_belhalla.44.A.tooltip
+		}
+		k_thracia = {
+			holder_scope = {
+				character_event = { id = fe4_belhalla.45 days = 3 }
+			}
+		}
+	}	
+	option = {
+		name = fe4_belhalla.44.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				has_character_flag = is_fe5_raydrik
+			}		
+			modifier = {
+				factor = 10
+				trait = craven
+			}	
+			modifier = {
+				factor = 2
+				trait = content
+			}
+		}
+	}		
+}
+# Travant can take the deal
+character_event = {
+	id = fe4_belhalla.45
+	desc = fe4_belhalla.45.desc	
+	picture = GFX_evt_shadowy_cabal
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.45.A
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}	
+		}
+		add_claim = k_manster
+		reverse_add_favor = FROM
+		FROM = {
+			set_defacto_liege = ROOT
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						owner = ROOT
+						province = ROOT
+						home = ROOT
+						province = PREV
+						home = PREV
+						match_character = FROM
+						match_mult = 1
+						attrition = 1
+						disband_on_peace = yes
+						maintenance_multiplier = 0
+					}
+				}
+			}
+		}
+		k_manster = {
+			holder_scope = {
+				hidden_tooltip = {
+					character_event = { id = fe4_belhalla.48 days = 1 } 
+				}
+				reverse_war = {
+					target = ROOT
+					casus_belli = claim
+					thirdparty_title = PREV
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = { letter_event = { id = fe4_belhalla.46 } }
+		}
+	}
+	option = {
+		name = fe4_belhalla.45.B
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = fe_story
+					value = on
+				}
+				has_character_flag = is_fe4_travant
+			}		
+			modifier = {
+				factor = 10
+				trait = craven
+			}	
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				war = yes
+			}
+			modifier = {
+				factor = 2
+				k_manster = {
+					holder_scope = {
+						relative_power = { who = ROOT power = 1.5 }
+					}
+				}
+			}
+		}
+		FROM = {
+			letter_event = { id = fe4_belhalla.47 days = 3 }
+		}
+	}	
+}
+# Inform deal taken
+letter_event = {
+	id = fe4_belhalla.46
+	desc = fe4_belhalla.46.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.46.A
+		change_intrigue = 1
+	}
+}
+# Inform deal rejected
+letter_event = {
+	id = fe4_belhalla.47
+	desc = fe4_belhalla.47.desc	
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = fe4_belhalla.47.A
+	}
+}
+# Inform Manster of Invasion
+character_event = {
+	id = fe4_belhalla.48
+	desc = fe4_belhalla.48.desc	
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_belhalla.48.A
+		FROMFROM = {
+			reverse_opinion = {
+				modifier = opinion_traitor
+				who = ROOT
+				months = 160
+			}
+		}
+	}	
+}
+# 49, see 17

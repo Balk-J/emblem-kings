@@ -1,0 +1,23 @@
+# d_iss > k_thracia
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_thracia
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_savan
+}
+649.1.1={
+	holder = 1011 # Dain TODO: fix
+	liege = k_thracia
+	de_jure_liege = k_thracia
+}
+660.1.1={
+	holder = 0
+}
+779.1.1={
+	de_jure_liege = k_new_thracia
+	liege = k_new_thracia
+}

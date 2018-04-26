@@ -1,0 +1,45 @@
+# d_mackily > k_agustria
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_agustria
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_tor
+}
+440.1.1={
+	holder=0 # 
+}
+649.1.1={
+	de_jure_liege = k_agustria
+}
+649.1.1={
+	holder=1008 # Hezul #TODO: fix
+}
+740.1.1={
+	holder=1102 # Clement
+}
+759.1.1={
+	liege = k_grannvale
+	holder=1032 # Sigurd
+}
+760.1.1={
+	liege = k_agustria
+	holder=1029 # Azmur
+}
+761.1.1={
+	holder=1049 # Arvis
+}
+770.1.1={
+	liege = e_grannvale
+	holder=1273 # Dark Bishop
+}
+#777.1.1={
+#	holder=1051 # Julius?
+#}
+779.1.1={
+	liege = k_agustria
+	holder=1098 # Ares?
+}

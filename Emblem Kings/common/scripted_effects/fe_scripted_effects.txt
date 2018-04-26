@@ -1565,3 +1565,127 @@ set_silesse_claim_flag_effect = {
 		character_event = { id = fe4_silesse.4 }
 	}
 }
+move_and_take_children_effect = {
+	if = {
+		limit = {
+			is_ruler = no
+			OR = {
+				is_married = no
+				spouse = {
+					is_ruler = no
+				}
+			}
+		}
+		move_character = PREV	
+		any_child = {
+			limit = {
+				is_ruler = no
+				is_adult = no
+				prisoner = no
+			}
+			move_character = PREVPREV
+		}
+	}
+}
+destroy_all_held_titles_effect = {	
+	any_demesne_title = {
+		if = {
+			limit = {
+				OR = {
+					tier = DUKE
+					tier = KING
+					tier = EMPEROR
+				}
+			}
+			destroy_landed_title = THIS
+		}else = {
+			create_character = {
+				random_traits = yes
+				dynasty = NONE
+				female = no
+				age = 20
+				religion = THIS
+				culture = THIS
+			}
+			new_character = {
+				usurp_title = { target = PREV } 
+				set_defacto_liege = THIS	
+			}
+		}
+	}
+}
+fix_loptyrian_bishop_capitals_effect = {	
+	any_vassal = {
+		limit = {
+			religion = loptyrian
+			is_theocracy = yes
+		}
+		any_vassal = {
+			set_defacto_liege = PREVPREV
+		}
+		any_demesne_province = {
+			limit = {
+				capital_holding = {
+					holding_type = temple
+				}
+			}
+			random_province_holding = {
+				limit = {
+					holding_type = castle
+					holder_scope = {
+						tier = BARON
+					}
+				}
+				make_capital_holding = yes
+			}
+		}
+		set_government_type = feudal_government
+		primary_title = {
+			add_law = { law = status_of_women_4 cooldown = no opinion_effect = no }
+			add_law = { law = true_cognatic_succession cooldown = no opinion_effect = no }
+			add_law = { law = succ_primogeniture cooldown = no opinion_effect = no }
+		}
+		
+		any_demesne_title = {
+			grant_title = PREVPREV
+		}
+		
+#		death = { 
+#			death_reason = death_missing
+#		} 	
+	}
+}
+
+grant_title_to_character_or_non_loptyrian_dynasty_head_effect = {
+	if = {
+		limit = { 
+			dynasty_head = { 
+				NOT = { religion = loptyrian } 
+				NOT = { trait = possessed_forseti } 
+			} 
+		}
+		dynasty_head = { 
+			ROOT = {
+				any_demesne_title = {
+					limit = { de_jure_liege_or_above = PREVPREVPREVPREV }
+					grant_title = PREVPREV
+				}
+			}
+			grant_title = PREVPREV 
+		}
+	}else = {	
+		ROOT = {
+			any_demesne_title = {
+				limit = { de_jure_liege_or_above = PREVPREVPREV }
+				grant_title = PREVPREV 
+			}
+		}					
+		grant_title = PREV
+	}
+}
+grant_crusader_title_effect = {
+	hidden_tooltip = { 
+		ROOT = { usurp_title = PREVPREV } 
+	}
+	grant_title_to_character_or_non_loptyrian_dynasty_head_effect = yes
+}

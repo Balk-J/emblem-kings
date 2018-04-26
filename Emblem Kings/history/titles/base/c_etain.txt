@@ -10,7 +10,7 @@
 	holder=837 # 
 }
 649.1.1={
-	holder=0
+	#holder=0
 }
 751.1.1={
 	holder=1184 # Jamke 

@@ -178,7 +178,7 @@ narrative_event = {
 						set_character_flag = class_selected
 						set_variable = { which = "level" value = 15 }
 						create_title = {
-							tier = COUNT
+							tier = DUKE
 							landless = yes
 							temporary = yes
 							#rebel = yes
@@ -186,35 +186,6 @@ narrative_event = {
 							name = "PHANTOM_GUARDIANS"
 							holder = THIS
 						}
-						# Get the war dec to work right.
-						# Just make the guardians a vassal of the character if he's a duke or above.
-						if = {
-							limit = {
-								ROOT = {
-									primary_title = { higher_tier_than = COUNT } 
-								}
-							}
-							set_defacto_liege = ROOT
-						}
-						
-						# If he's an independent count, the guardians can also stay independent.
-						# If he's a vassal count, the guardians need to have the same liege so they don't war the wrong person.
-						if = {
-							limit = {
-								ROOT = {
-									primary_title = { lower_tier_than = DUKE } 
-									independent = no
-								}
-							}
-							ROOT = {
-								liege = {
-									save_event_target_as = target_count_liege
-								}
-							}
-							set_defacto_liege = event_target:target_count_liege
-							
-						}
-						#set_defacto_liege = ROOT
 						
 						spawn_unit = {
 							province = PREV
@@ -244,7 +215,7 @@ narrative_event = {
 							
 						# DoW on the character
 						ROOT = {
-							reverse_war = {
+							war = {
 								target = PREV
 								casus_belli = regalia_guardian
 							}
@@ -1596,7 +1567,7 @@ narrative_event = {
 						set_variable = { which = "level" value = 16 }
 						
 						create_title = {
-							tier = COUNT
+							tier = DUKE
 							landless = yes
 							temporary = yes
 							#rebel = yes
@@ -1604,35 +1575,6 @@ narrative_event = {
 							name = "PHANTOM_GUARDIANS"
 							holder = THIS
 						}
-						# Get the war dec to work right.
-						# Just make the guardians a vassal of the character if he's a duke or above.
-						if = {
-							limit = {
-								ROOT = {
-									primary_title = { higher_tier_than = COUNT } 
-								}
-							}
-							set_defacto_liege = ROOT
-						}
-						
-						# If he's an independent count, the guardians can also stay independent.
-						# If he's a vassal count, the guardians need to have the same liege so they don't war the wrong person.
-						if = {
-							limit = {
-								ROOT = {
-									primary_title = { lower_tier_than = DUKE } 
-									independent = no
-								}
-							}
-							ROOT = {
-								liege = {
-									save_event_target_as = target_count_liege
-								}
-							}
-							set_defacto_liege = event_target:target_count_liege
-							
-						}
-						#set_defacto_liege = ROOT
 						
 						spawn_unit = {
 							province = PREV
@@ -1662,7 +1604,7 @@ narrative_event = {
 							
 						# DoW on the character
 						ROOT = {
-							reverse_war = {
+							war = {
 								target = PREV
 								casus_belli = regalia_guardian
 							}

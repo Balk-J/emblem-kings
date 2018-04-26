@@ -1,0 +1,26 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+loptyr.1.desc;You have begun preparations to summon the Deadlords, twelve ancient undead warriors. When the ritual is complete they will reanimate and possess corpses you have prepared and twist the vessels into forms that suit their abilities. Summoning them must be done in stages over the course of a year.;;;;;;;;;;;;;x
+loptyr.1.A;When the Deadlords return, my enemies will tremble.;;;;;;;;;;;;;x
+loptyr.2.desc;;;;;;;;;;;;;;x
+loptyr.2.A;;;;;;;;;;;;;;x
+loptyr.3.desc;You can hear something in that black book calling to you. Something old and cruel. There's a part of you that recognizes that voice, a part that feels everything in your life has been leading up to this moment. Maybe it's that part that drives you to take the book and stare into its arcane symbols, as the calls of the presence get more and more forceful and coil around your own thoughts...;;;;;;;;;;;;;x
+loptyr.3.A;My... head...;;;;;;;;;;;;;x
+loptyr.4.desc;Shortly after the death of your [GetFromFromRelation] [FromFrom.GetTitledFirstNameWithNick], you are brought a strange piece of news. It seems that [FromFrom.GetHerHis] chambers were raided, with the only item stolen being being the black and purple tome that was never far from [FromFrom.GetHerHis] side. None of the servants can offer any explanation for its disappearance.;;;;;;;;;;;;;x
+loptyr.4.A;Disturbing.;;;;;;;;;;;;;x
+loptyr.5.desc;When you woke up this morning, you found a black and purple tome sitting beside your bed. You don't know how it got there, but for some reason you feel that you should pick it up and start reading it right away.;;;;;;;;;;;;;x
+loptyr.5.A;Let's take a look.;;;;;;;;;;;;;x
+loptyr.5.B;I will have my servants dispose of it at once.;;;;;;;;;;;;;x
+loptyr.6.title;Loptyr Defeated;;;;;;;;;;;;;x
+loptyr.6.desc;[From.GetTitledName], the last known heir to Loptyr's fell bloodline, has died. The dark god's servants will undoubtedly search for a way to revive their master, but that will likely take generations if it can be accomplished at all.\n\nThose who stood against [From.GetFirstName] are celebrating this moment as a victory for all of humanity.;;;;;;;;;;;;;x
+loptyr.6.A;This cannot be!;;;;;;;;;;;;;x
+loptyr.6.B;The demon is gone at last.;;;;;;;;;;;;;x
+loptyr.7.desc;You find yourself faced with a bit of a crisis of faith. It's only natural. After all, how often does a [Root.GetManWoman] outlive [Root.GetHerHis] god? Followers of Loptyr are not likely to be treated well by his enemies. It might be time to find a new faith.;;;;;;;;;;;;;x
+loptyr.7.A;I should convert before the mob shows up.;;;;;;;;;;;;;x
+loptyr.7.B;I will not abandon our lord! Praise Loptyr!;;;;;;;;;;;;;x
+loptyr.7.C;I can always pretend to convert...;;;;;;;;;;;;;x
+loptyr..title;;;;;;;;;;;;;;x
+loptyr..desc;;;;;;;;;;;;;;x
+loptyr..A;;;;;;;;;;;;;;x
+loptyr..B;;;;;;;;;;;;;;x
+loptyr..C;;;;;;;;;;;;;;x
+loptyr..D;;;;;;;;;;;;;;x

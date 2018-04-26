@@ -9,8 +9,14 @@
 440.1.1={
 	holder=1017 # 
 }
+450.1.1={
+	liege = e_loptyr
+}
 649.1.1={
-	holder=0 
+	liege = d_alster
+}
+649.1.1={
+	#holder=0 
 }
 752.1.1={
 	holder=1351 # Conomor

@@ -11,3 +11,7 @@
 1149.01.01 = { 
 	holder=751
 }
+1181.01.01={
+	liege=d_caledonia
+	holder=2038 # post-occupation landholder
+}

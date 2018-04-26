@@ -63,5 +63,72 @@ decisions = {
 			factor = 0
 		}
 	}	
+	summon_the_deadlords = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			OR = {
+				trait = possessed_loptyr
+				has_character_flag = lore_deadlords
+			}
+			NOT = { has_character_flag = summoned_deadlords }
+		}
+		
+		allow = {
+			wealth = 600
+			piety = 120
+			action_allowed_trigger = yes
+			#can_equip_dark_trigger = yes
+			OR = {
+				trait=class_sorceror
+				trait=class_sorceror_female
+				trait=class_archsage
+				trait=class_archdruid
+				trait=class_dark_druid
+			}
+			check_variable = { which = "level" value = 20 }
+			deadlord_dead_trigger = yes
+		}
+		
+		effect = {
+			wealth = -600
+			piety = -120
+			#set_global_flag = deadlords_summoned
+			set_character_flag = summoned_deadlords
+			add_character_modifier = {
+				name = summoning_deadlords
+				duration = 365
+			}
+			character_event = { id = magic.20 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { wealth = 600 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { piety = 120 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 1200 }
+				NOT = { piety = 180 }
+				NOT = { has_focus = focus_war }
+				NOT = { has_focus = focus_scholarship }
+				NOT = { has_focus = focus_theology }
+			}
+		}
+	}
 	
 }

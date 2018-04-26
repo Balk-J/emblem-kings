@@ -1,10 +1,10 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 PHANTOM_GUARDIANS;[Root.Location.County.GetName] Guardians;;;;;;;;;;;;;x
 CB_NAME_REGALIA_GUARDIAN;[Actor.Location.County.GetName] Regalia Trial;;;;;;;;;;;;;x
-WAR_NAME_REGALIA_GUARDIAN;[Actor.Location.County.GetName] Regalia Defense;;;;;;;;;;;;;x
+WAR_NAME_REGALIA_GUARDIAN;[Actor.Location.County.GetName] Regalia War;;;;;;;;;;;;;x
 CB_NAME_LYN;Lyndis' Return;;;;;;;;;;;;;x
 claim_all_lyn_desc;Lyndis' Return;;;;;;;;;;;;;x
-regalia_guardian_desc;Regalia Defense;;;;;;;;;;;;;x
+regalia_guardian_desc;Regalia War;;;;;;;;;;;;;x
 dragon_liberation_invasion_desc;§Y$TARGET$§! is not of the True Faith - which is all the cause §Y$CLAIMANT$§! needs to invade the §Y$TITLE$§!. If successful, everything §Y$TARGET$§! controls within the §Y$TITLE$§! will be taken or vassalized.;§Y$TARGET$§! ne suit pas la vraie foi - c'est suffisant pour que §Y$CLAIMANT$§! envahisse le §Y$TITLE$§!. En cas de succès, tout ce que contrôle §Y$TARGET$§! dans le §Y$TITLE$§! sera capturé ou vassalisé.;§Y$TARGET$§! gehört nicht dem wahren Glauben an - was Grund genug für §Y$CLAIMANT$§! ist, um eine Invasion zu starten. Sollte er Erfolg haben, so wird aller Besitz von §Y$TARGET$§! innerhalb vom §Y$TITLE$§! übernommen oder vasallisiert.;;§Y$TARGET$§! no es de la verdadera fe - por lo cual §Y$CLAIMANT$§! debe invadir el §Y$TITLE$§!. De tener éxito, todo lo que §Y$TARGET$§! controle dentro del §Y$TITLE$§! será anexionado o vasallizado.;;;;;;;;;x
 dragon_liberation_invasion_succ_tip;All defenders within §Y[This.GetFullBaseName]§! become vassals of §Y[Root.GetTitledFirstName]§!.\n;;;;;;;;;;;;;x
 WAR_NAME_FILICIDE_NC;$ORDER$Revolt against the rule of $DEFENDER$;$ORDER$Révolte contre le règne de $DEFENDER$;$ORDER$Revolte gegen die Herrschaft von  $DEFENDER$;;$ORDER$ Revuelta contra el Gobierno de $DEFENDER$;;;;;;;;;x
@@ -28,3 +28,16 @@ WAR_NAME_LIBERATION;$ORDER$$FIRST_ADJ$ Liberation of $OTHER_TITLE$;;;;;;;;;;;;;x
 western_isles_liberation;Liberation;;;;;;;;;;;;;x
 western_isles_liberation_desc;§Y$CLAIMANT$§! can use this Casus Belli to seize all titles held by §Y$TARGET$§! within the de jure §Y$TITLE$§!. This Casus Belli is valid against any ruler holding land within the de jure Kingdom of the Western Isles who is a bandit or whose primary title is outside the isles.;;;;;;;;;;;;;x
 reform_tyrant_government_desc;Reform Government;;;;;;;;;;;;;x
+CB_NAME_ATTACK;Attack;;;;;;;;;;;;;x
+battle_of_belhalla_desc;We will crush the traitor §Y$TARGET$§!!;;;;;;;;;;;;;x
+WAR_NAME_ATTACK;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ Attack;;;;;;;;;;;;;x
+CB_NAME_IMPERIAL_GRANNVALE;Imperial Conquest of [Title.GetBaseName];;;;;;;;;;;;;x
+WAR_NAME_IMPERIAL_GRANNVALE;$ORDER$$FIRST_ADJ$ Imperial Conquest of $OTHER_TITLE$;;;;;;;;;;;;;x
+grannvale_imperial_conquest_desc;The lands of the holy crusaders must be united! §Y$CLAIMANT$§! can use this Casus Belli to seize all titles held by §Y$TARGET$§! within the de jure §Y$TITLE$§!.;;;;;;;;;;;;;x
+CB_NAME_SUPPRESS_REBELS;Suppress Rebels;;;;;;;;;;;;;x
+grannvale_suppress_rebels_desc;§Y$TARGET$§! is a rebel traitor and must be crushed for the good of the realm!;;;;;;;;;;;;;x
+WAR_NAME_SUPPRESSION;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ Suppression;;;;;;;;;;;;;x
+grannvale_suppress_rebels.tooltip;§Y[From.GetTitledFirstName]§! takes or vassalizes all titles held by §Y[Root.GetTitledFirstName]§! within the region of the revolt.;;;;;;;;;;;;;x
+jugdral_crusade_desc;§Y$TARGET$§! is the mortal vessel of Loptyr and must be defeated for the good of humanity.;;;;;;;;;;;;;x
+jugdral_crusade.tooltip;§Y[Root.GetTitledFirstName]§! executes §Y[From.GetTitledFirstName]§! and takes or vassalizes all of [From.GetHerHis] titles.;;;;;;;;;;;;;x
+WAR_NAME_JUGDRAL_CRUSADE;$ORDER$$SECOND_ADJ$ Crusade;;;;;;;;;;;;;x

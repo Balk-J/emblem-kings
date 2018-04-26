@@ -266,3 +266,7 @@ possessed_forseti;Possessed;;;;;;;;;;;;;x
 possessed_forseti_desc;This character is cold and distant. [GetSheHeCap] shows a wealth of knowledge of the world but is reluctant to involve [GetHerselfHimself] in political affairs.;;;;;;;;;;;;;x
 no_marriage;Refusing Marriage;;;;;;;;;;;;;x
 no_marriage_desc;This character believes [GetSheHe] has more important things to do at the moment than finding a spouse.;;;;;;;;;;;;;x
+undead;Undead;;;;;;;;;;;;;x
+undead_desc;This character is a living corpse. While the undead are completely devoted to their masters, most religions consider them abominations to be destroyed at once.;;;;;;;;;;;;;x
+deadlord;Deadlord;;;;;;;;;;;;;x
+deadlord_desc;This character is one of the twelve Deadlords. Deadlords are ancient spirits summoned to inhabit the corpses of fallen warriors. They twist the bodies they inhabit into forms that suit their identities and powers. The dark mages who call on them typically have them serve as generals or elite soldiers.;;;;;;;;;;;;;x

@@ -1,0 +1,15 @@
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+180.1.1={
+	liege=k_etruria
+}
+1153.1.1={
+	liege=d_felathri
+}
+1153.1.1={
+	holder=217 # Cecilia
+}

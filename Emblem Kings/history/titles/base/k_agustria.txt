@@ -1,0 +1,33 @@
+0180.01.01={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = e_grannvale
+}
+0649.01.01={
+	holder=1008 # Hezul
+}
+0677.01.01={
+	holder=1227 # 
+}
+0704.01.01={
+	holder=1230 # 
+}
+0722.01.01={
+	holder=1231 # 
+}
+0724.01.01={
+	holder=1089 # Imuka
+}
+0758.01.01={
+	holder=1090 # Chagall
+}
+0760.01.01={
+	holder=1029 # Azmur
+}
+0761.01.01={
+	holder=0 
+}
+0779.01.01={
+	holder=1098 # Ares
+}

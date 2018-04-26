@@ -1,0 +1,26 @@
+
+175.1.1={
+	holder=301 # Barigan
+}
+
+# e_elibe
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+#180.1.1={
+#	liege=k_ilia
+#}
+
+
+1127.1.1={
+	holder=346 # Zelots' father
+}
+1167.1.1={
+	holder=326 # Zelots
+}
+1185.1.1={
+	#holder=326 # Zelots
+	liege=k_ilia
+}

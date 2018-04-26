@@ -1,0 +1,32 @@
+# d_grutia > k_thracia
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_thracia
+	#holder = 0
+}
+180.1.1={
+	de_jure_liege = k_grutia
+}
+440.1.1 = { 
+	holder = 882
+}
+450.1.1={
+	liege = e_loptyr
+}
+649.1.1={
+	holder = 1011 # Dain TODO: fix
+	liege = k_thracia
+	de_jure_liege = k_thracia
+}
+776.1.1={
+	holder=1263 # Judah
+}
+778.1.1={
+	holder = 1162 # Leif 
+}
+779.1.1={
+	de_jure_liege = k_new_thracia
+	liege = k_new_thracia
+}
