@@ -141,5 +141,7 @@ create_schwarze_rosen;Create the Schwarze Rosen;;;;;;;;;;;;;x
 create_schwarze_rosen_desc;We can fund the creation of a Loptyrian holy order to strike fear into the hearts of our enemies.;;;;;;;;;;;;;x
 form_new_thracia;Reunite Thracia;;;;;;;;;;;;;x
 form_new_thracia_desc;With control of the entire Thracian peninsula, I could unite north and south Thracia into the single kingdom they were always meant to be.;;;;;;;;;;;;;x
-reintegrate_manster;;;;;;;;;;;;;;x
-_desc; ;;;;;;;;;;;;;x
+reunite_thracia;Reunite Thracia;;;;;;;;;;;;;x
+reunite_thracia_desc;With control of the entire Thracian peninsula, I could reintegrate the breakaway Manster District into the true Kingdom of Thracia.;;;;;;;;;;;;;x
+convert_to_post_crusade_jugdrali;Embrace Post-Crusade Culture;;;;;;;;;;;;;x
+convert_to_post_crusade_jugdrali_desc;Many of our subjects are adopting new ways and traditions, integrating them with local customs. Perhaps we should do the same...;;;;;;;;;;;;;x

@@ -1441,6 +1441,26 @@ can_add_minor_holy_blood_trigger = {
 	
 }
 
+child_of_possessed_loptyr_trigger = {
+	OR = { 
+		AND = {
+			is_father_real_father = yes
+			father_even_if_dead = {
+				trait=possessed_loptyr
+			}
+		}
+		AND = {
+			is_father_real_father = no
+			real_father_even_if_dead = {
+				trait=possessed_loptyr
+			}
+		}
+		mother_even_if_dead = {
+			trait=possessed_loptyr
+		}
+	}
+}
+
 is_minor_blood_found_by_loptyrians_trigger = {
 	has_character_flag = minor_blood_found_by_loptyrians
 	NOT = {	has_character_flag = rejected_loptyrians }

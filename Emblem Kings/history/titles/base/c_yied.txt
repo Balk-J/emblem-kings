@@ -23,7 +23,8 @@
 	liege = e_grannvale
 	holder=1264 # Kutuzov
 }
-778.1.1={ 
+#778.1.1={
+777.8.1={
 	liege = d_darna
 	holder=1038 # Seliph?
 	#holder=0 

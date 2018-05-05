@@ -25,7 +25,8 @@
 770.1.1={
 	liege = e_grannvale 
 }
-778.1.1={
+#778.1.1={
+777.8.1={
 	#holder=0 # 
 	liege = k_yied 
 	holder=1038 # Seliph?

@@ -24,7 +24,7 @@
 	holder=1058 # Bloom
 	liege = e_grannvale
 }
-0778.01.01={
+0777.08.01={
 	liege = 0
 	holder = 1162 # Leif 
 }

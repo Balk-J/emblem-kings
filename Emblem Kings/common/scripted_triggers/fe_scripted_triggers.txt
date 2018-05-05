@@ -534,14 +534,23 @@ crusader_attacking_loptyr_trigger = {
 	}
 	is_primary_war_attacker = yes
 }
-revived_loptyr_in_power_trigger = {
-	has_global_flag = loptyr_revived
-	has_global_flag = loptyr_empire_destroyed
-	NOT = { has_global_flag = loptyr_defeated }
+independent_loptyr_in_power_trigger = {
 	trait = possessed_loptyr
 	independent = yes
 	religion = loptyrian
 	is_adult = yes
+}
+revived_loptyr_in_power_trigger = {
+	has_global_flag = loptyr_revived
+	has_global_flag = loptyr_empire_destroyed
+	NOT = { has_global_flag = loptyr_defeated }
+	independent_loptyr_in_power_trigger = yes
+}
+imperial_loptyr_in_power_trigger = {
+	has_landed_title = e_loptyr
+	NOT = { has_global_flag = loptyr_empire_destroyed }
+	NOT = { has_global_flag = loptyr_defeated }
+	independent_loptyr_in_power_trigger = yes
 }
 last_holy_war_can_start_trigger = {
 	revived_loptyr_in_power_trigger = yes
@@ -636,5 +645,23 @@ respected_verdane_dynasty_trigger = {
 	OR = {
 		dynasty=1014 # Verdane
 		dynasty=802 # Spirit Forest
+	}
+}
+not_ruler_or_spouse_of_ruler_trigger = {
+	is_ruler = no
+	OR = {
+		is_married = no
+		spouse = {
+			is_ruler = no
+		}
+	}
+}
+can_start_crusader_kingdom_trigger = {
+	is_alive = yes
+	OR = {
+		character = ROOT
+		any_liege = {
+			character = ROOT
+		}
 	}
 }

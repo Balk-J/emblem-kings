@@ -11,11 +11,6 @@
 0660.01.01={
 	holder = 1025 # Dain's son
 }
-666.1.1={
-	effect = {
-		set_global_flag = thracia_split
-	}
-}
 0692.01.01={
 	holder = 1151 # 
 }

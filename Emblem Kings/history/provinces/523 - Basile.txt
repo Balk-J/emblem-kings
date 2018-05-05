@@ -18,7 +18,9 @@ religion = church_of_edda
 	religion = earthen_pagan
 	culture = grann
 }
-
+535.1.1 = { 
+	religion = maerist
+}
 649.1.1 = { 
 	religion = church_of_edda
 	culture = agustrian

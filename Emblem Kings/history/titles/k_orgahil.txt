@@ -7,7 +7,11 @@
 	holder=0 # 
 	de_jure_liege = e_grann
 }
-0448.01.01={
+448.01.01={
+	holder=0 # 
+	de_jure_liege = e_loptyr
+}
+649.01.01={
 	holder=0 # 
 	de_jure_liege = e_orgahil
 }

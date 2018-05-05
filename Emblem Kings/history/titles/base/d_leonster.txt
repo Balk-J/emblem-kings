@@ -45,9 +45,10 @@
 }
 777.1.1={
 	holder = 1162 # Leif 
-	liege = 0
+	liege = k_leif
 }
-778.1.1={
+#778.1.1={
+777.8.1={
 	liege = k_manster
 }
 779.1.1={

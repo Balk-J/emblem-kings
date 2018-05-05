@@ -1,0 +1,19 @@
+name = "Thracian Invasion of Manster"
+
+casus_belli = {
+	actor = 1154 # Travant
+	recipient = 1159 # Calf
+	casus_belli = claim
+	landed_title=k_manster
+	date=761.1.1
+}
+
+761.1.1 = {
+	add_attacker = 1154
+	add_defender = 1159
+}
+
+762.1.1 = {
+	rem_attacker = 1154
+	rem_defender = 1159
+}

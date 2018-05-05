@@ -1,10 +1,10 @@
-namespace = battle
+namespace = fe_battle
 
 # Divine Weapon wielder meets a dragon
 narrative_event = {
-	id = battle.1
-	desc = "battle.1.desc"
-	title = "battle.1.title"
+	id = fe_battle.1
+	desc = "fe_battle.1.desc"
+	title = "fe_battle.1.title"
 	picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes
@@ -160,7 +160,7 @@ narrative_event = {
 	}
 	
 	option = {
-		name = battle.1.A
+		name = fe_battle.1.A
 		ai_chance = {
 			factor = 10
 		}
@@ -168,20 +168,20 @@ narrative_event = {
 			random_list = {
 				5 = {
 					custom_tooltip = {
-						text = battle.1.A.3
-						character_event = { id = battle.4 }
+						text = fe_battle.1.A.3
+						character_event = { id = fe_battle.4 }
 					}
 				}
 				10 = {
 					custom_tooltip = {
-						text = battle.1.A.2
-						character_event = { id = battle.3 }
+						text = fe_battle.1.A.2
+						character_event = { id = fe_battle.3 }
 					}
 				}
 				85 = {
 					custom_tooltip = {
-						text = battle.1.A.1
-						character_event = { id = battle.2 }
+						text = fe_battle.1.A.1
+						character_event = { id = fe_battle.2 }
 					}
 				}
 			}
@@ -189,7 +189,7 @@ narrative_event = {
 	}
 	
 	option = {
-		name = battle.1.B
+		name = fe_battle.1.B
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -212,8 +212,8 @@ narrative_event = {
 }
 
 character_event = {
-	id = battle.2
-	desc = "battle.2.desc"
+	id = fe_battle.2
+	desc = "fe_battle.2.desc"
 	picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes
@@ -227,15 +227,15 @@ character_event = {
 		
 		hidden_tooltip = {
 			FROM = {
-				character_event = { id = battle.5 }
+				character_event = { id = fe_battle.5 }
 			}
 		}
 	}
 }
 
 character_event = {
-	id = battle.3
-	desc = "battle.3.desc"
+	id = fe_battle.3
+	desc = "fe_battle.3.desc"
 	picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes
@@ -248,15 +248,15 @@ character_event = {
 		
 		hidden_tooltip = {
 			FROM = {
-				character_event = { id = battle.6 }
+				character_event = { id = fe_battle.6 }
 			}
 		}
 	}
 }
 
 character_event = {
-	id = battle.4
-	desc = "battle.4.desc"
+	id = fe_battle.4
+	desc = "fe_battle.4.desc"
 	picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes
@@ -269,15 +269,15 @@ character_event = {
 		
 		hidden_tooltip = {
 			FROM = {
-				character_event = { id = battle.7 }
+				character_event = { id = fe_battle.7 }
 			}
 		}
 	}
 }
 
 character_event = {
-	id = battle.5
-	desc = "battle.5.desc"
+	id = fe_battle.5
+	desc = "fe_battle.5.desc"
 	picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes
@@ -289,8 +289,8 @@ character_event = {
 }
 
 character_event = {
-	id = battle.6
-	desc = "battle.6.desc"
+	id = fe_battle.6
+	desc = "fe_battle.6.desc"
 	picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes
@@ -302,8 +302,8 @@ character_event = {
 }
 
 character_event = {
-	id = battle.7
-	desc = "battle.7.desc"
+	id = fe_battle.7
+	desc = "fe_battle.7.desc"
 	picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes
@@ -316,7 +316,7 @@ character_event = {
 
 # Clear flags from dragon duel
 character_event = {
-	id = battle.8 	
+	id = fe_battle.8 	
 	
 	is_triggered_only = yes
 	hide_window = yes
@@ -337,8 +337,8 @@ character_event = {
 
 # Post-battle level up gatekeeper
 character_event = {
-	id = battle.9
-	#desc = battle.9.desc
+	id = fe_battle.9
+	#desc = fe_battle.9.desc
 	#picture = "GFX_evt_battle" 	
 	
 	is_triggered_only = yes

@@ -32,7 +32,8 @@
 	liege = k_manster # Grannvale invades
 	holder=1066 # Ishtore
 }
-778.1.1={
+#778.1.1={
+777.8.1={
 	#holder=0 # Ishtore's dead
 	holder=1162 # Leif?
 }

@@ -88,6 +88,53 @@ character_event = {
 		}
 		
 		# Startup events for scenarios
+
+
+		if = { # Descent of Loptyr 
+			limit = { 
+				year = 440
+				NOT = { year = 447 }
+			}
+			character_event = {
+				id = startup.17
+			}
+		}
+		if = { # Invasion of Grann
+			limit = { 
+				year = 447
+				NOT = { year = 448 }
+			}
+			character_event = {
+				id = startup.18
+			}
+		}
+		if = { # Maera's Rebellion 
+			limit = { 
+				year = 535
+				NOT = { year = 536 }
+			}
+			character_event = {
+				id = startup.16
+			}
+		}
+		if = { # Genealogy, pre-Crusader revolt
+			limit = { 
+				year = 611
+				NOT = { year = 632 }
+			}
+			character_event = {
+				id = startup.14
+			}
+		}
+		if = { # Genealogy, during the Crusader revolt
+			limit = { 
+				year = 632
+				NOT = { year = 648 }
+			}
+			character_event = {
+				id = startup.15
+			}
+		}
 		if = { # Genealogy, pre-Birth of the Holy Knight
 			limit = { 
 				year = 755
@@ -555,7 +602,7 @@ character_event = {
 			}
 		}
 		
-		
+		# Schedule holy blood manifestation for historical characters?
 	}
 	option = {
 		name = OK
@@ -780,10 +827,7 @@ character_event = {
 # Battle of Belhalla setup
 character_event = {
 	id = startup.13
-	
 	is_triggered_only = yes 
-	
-	
 	immediate = {
 		if = {
 			limit = {
@@ -815,6 +859,91 @@ character_event = {
 					character_event = {	id = fe4_belhalla.17 days = 365 random = 14 }
 				}
 			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Jugdral Rebellion setup (pre-crusaders)
+character_event = {
+	id = startup.14
+	is_triggered_only = yes 
+	immediate = {
+		e_loptyr = {
+			holder_scope = {
+				character_event = { id = fe4_crusade.3 }
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Jugdral Crusader holy war setup
+character_event = {
+	id = startup.15
+	is_triggered_only = yes 
+	immediate = {
+		e_crusaders = {
+			holder_scope = {
+				character_event = { id = fe4_crusade.6 }
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Maera's Rebellion setup
+character_event = {
+	id = startup.16
+	is_triggered_only = yes 
+	immediate = {
+		c_818 = { # Maera
+			character_event = { id = loptyr.11 days = 1 }
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+# Descent of Loptyr setup
+character_event = {
+	id = startup.17
+	is_triggered_only = yes 
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_descent_of_loptyr }
+			}
+			set_global_flag = scenario_descent_of_loptyr
+		}
+		c_801 = { # Galle
+			character_event = { id = galle.1 days = 1 }
+			if = {
+				limit = { year = 446 }
+				set_character_flag = summoned_deadlords
+				character_event = { id = magic.22 days = 365 }
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+character_event = {
+	id = startup.18
+	is_triggered_only = yes 
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = scenario_descent_of_loptyr }
+			}
+			set_global_flag = scenario_descent_of_loptyr
+		}
+		c_801 = { # Galle
+			character_event = { id = magic.22 days = 1}
 		}
 	}
 	option = {

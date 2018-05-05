@@ -252,6 +252,21 @@ e_crusaders = {
 		always = no
 	}
 }
+d_jugdral_rebels = {
+	color={ 110 10 150 }
+	short_name = yes
+	capital = 530 #	Darna
+	
+	title = "LEADER"
+	title_female = "LEADER"
+		
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	allow = {
+		always = no
+	}
+}
 k_new_thracia = {
 	color={ 255 0 0 }
 	capital = 435 #	Leonster

@@ -1,0 +1,30 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe4_crusade.2.desc;A large band of peasants and former soldiers has risen in rebellion against your rule. The revolutionaries are demanding an end to Loptyrian rule in Jugdral! They appear to be using an old fortress in the Yied Desert as their main base, but warriors from across the country are flocking to their banner.;;;;;;;;;;;;;x
+fe4_crusade.2.A;Crush the rebels!;;;;;;;;;;;;;x
+fe4_crusade.7.title;The Miracle of Darna;;;;;;;;;;;;;x
+fe4_crusade.7.desc;It appeared that the rebellion was over. The few remaining soldiers had barricaded themselves in Darna Fortress to prepare for one last suicidal charge against your army. And then, that meddlesome worm Naga intervened.\n\nShe and eleven of her kin have each formed a blood bond with one of the remaining rebels. The pacts give the bonded humans greater power than the average mortal, but the real problem is the effect Naga's visit has had on the rebels' morale. The fools are calling it a miracle, and a sign that the gods are on their side. Thousands of new rebels have taken up arms and joined these so-called crusaders at their stronghold!;;;;;;;;;;;;;x
+fe4_crusade.7.A;NAGA! I won't let you stop me!;;;;;;;;;;;;;x
+fe4_crusade.8.title;The Miracle of Darna;;;;;;;;;;;;;x
+fe4_crusade.8.desc;It appeared that the revolt against [From.GetTitledName] was over. The few remaining rebels had barricaded themselves in Darna Fortress at sunset, no doubt preparing for one last battle against the [From.PrimaryTitle.GetAdjective] army. And then, something miraculous happened.\n\nTwelve bright lights converged on the fortress, and when the rebels rode out the following morning they had... changed. Twelve of their generals now bear strange marks on their bodies and wield wondrous weapons that respond to them alone. The rebels claim that they have been reborn thanks to the blessing of the gods, and now have the power to defeat [From.GetTitledFirstName] once and for all. \n\nThe rebellion has become a holy war overnight. Thousands of commoners have taken up arms and joined these new crusaders at their stronghold!;;;;;;;;;;;;;x
+fe4_crusade.8.A;Could this really be a miracle?;;;;;;;;;;;;;x
+fe4_crusade.9.desc;The crusade is over and now we must decide the fate of the territories of the former Loptyr Empire.;;;;;;;;;;;;;x
+fe4_crusade.9.A;I will take all of the fiend's titles.;;;;;;;;;;;;;x
+fe4_crusade.9.B;My comrades have mentioned creating new kingdoms...;;;;;;;;;;;;;x
+fe4_crusade.10.desc;With the holy war over a new era has dawned in Jugdral. There is a growing sentiment that the old ways are no longer appropriate for this new age.;;;;;;;;;;;;;x
+fe4_crusade.10.A;We should embrace this change!;;;;;;;;;;;;;x
+fe4_crusade.10.B;The old ways are best.;;;;;;;;;;;;;x
+fe4_crusade.12.desc;Today you received word that the Maerist community on the island of Orgahil where you grew up was wiped out during your absence. The long years of Loptyrian rule have proven that the Earthen faith cannot stand against the dark god; perhaps Maerism is not the answer either?;;;;;;;;;;;;;x
+fe4_crusade.12.A;I will start a new faith!;;;;;;;;;;;;;x
+fe4_crusade.12.B;I will remain [Root.Religion.GetName].;;;;;;;;;;;;;x
+fe4_crusade.13.desc;Your comrade [From.GetTitledFirstName] has always been a spiritual [From.GetManWoman]. [From.GetSheHeCap] recently announced that [From.GetSheHe] is organizing a new church - one that will bring back old religious concepts in a form that can survive in these new times. [From.GetFirstName] has asked you and your fellow crusaders to do [From.GetHerHim] the honor of being [From.GetHerHis] church's first members.;;;;;;;;;;;;;x
+fe4_crusade.13.A;Of course I will join!;;;;;;;;;;;;;x
+fe4_crusade.13.B;What heresy is this?;;;;;;;;;;;;;x
+fe4_crusade.14.desc;That new church is growing rapidly. The people seem to believe it and its founder are blessed by the gods, thanks to the Miracle of Darna and crusaders' victory in the holy war. Perhaps I should embrace this new faith?;;;;;;;;;;;;;x
+fe4_crusade.14.A;Yes, I will join this new church.;;;;;;;;;;;;;x
+fe4_crusade.14.B;No, I will remain true to the ancestors.;;;;;;;;;;;;;x
+fe4_crusade..title;;;;;;;;;;;;;;x
+fe4_crusade..desc;;;;;;;;;;;;;;x
+fe4_crusade..A;;;;;;;;;;;;;;x
+fe4_crusade..B;;;;;;;;;;;;;;x
+fe4_crusade..C;;;;;;;;;;;;;;x
+fe4_crusade..D;;;;;;;;;;;;;;x

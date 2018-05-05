@@ -1190,7 +1190,9 @@ character_event = {
 	
 	option = {
 		name = magic.20.A	
-		hidden_tooltip = { character_event = { id = magic.21 days = 365 } }
+		hidden_tooltip = { 
+			character_event = { id = magic.21 days = 365 } 
+		}
 	}
 }
 character_event = {
@@ -1203,7 +1205,6 @@ character_event = {
 	
 	option = {
 		name = magic.21.A	
-		
 		if = {
 			limit = {
 				NOT = {

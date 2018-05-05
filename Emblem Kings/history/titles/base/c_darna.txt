@@ -12,10 +12,16 @@
 450.1.1={
 	liege = e_loptyr
 }
-649.1.1={
-	liege = d_darna
+611.01.01={
+	holder=2040 # 
+	liege = d_jugdral_rebels
+}
+632.01.01={
+	holder=1001 # Heim 
+	liege = e_crusaders
 }
 649.1.1={
+	liege = d_darna
 	holder=1310 # filler
 }
 736.1.1={
@@ -24,7 +30,8 @@
 #754.1.1={
 #	holder=1253 # Bramsel # can't do this or it de-republics him
 #}
-778.1.1={
+#778.1.1={
+777.8.1={
 	#holder=0 # 
 	holder=1038 # Seliph?
 }

@@ -12,6 +12,12 @@
 450.1.1={
 	liege = e_loptyr
 }
+535.1.1={
+	holder=818 # Maera
+}
+536.1.1={
+	holder=0 # Maera exiled
+}
 649.1.1={
 	liege = k_orgahil
 	holder=0 

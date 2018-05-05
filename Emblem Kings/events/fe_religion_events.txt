@@ -148,6 +148,25 @@ character_event = {
 			}
 		}
 	}
+	option = {
+		name = fe_religion.3.D
+		trigger = {
+			NOT = { character = FROM }
+			OR = {
+				religion = maerist
+				religion = earthen_pagan
+			}
+		}
+		any_courtier = {
+			limit = {
+				religion = ROOT
+				employer = { character = ROOT }
+				dynasty = ROOT
+			}
+			religion = church_of_edda
+		}
+		religion = church_of_edda
+	}
 }
 # Church of Loptyr created
 character_event = {
@@ -203,82 +222,137 @@ character_event = {
 	option = {
 		name = fe_religion.4.D
 		trigger = {
-			FROM = { character = ROOT }
+			FROM = { character = ROOT } 
 		}
 	}
 }
 
 # Formation of the Schwarze Rosen
-narrative_event = {
+character_event = {
 	id = fe_religion.5
-	title = fe_religion.5.title
-	desc = fe_religion.5.desc
-	picture = GFX_evt_crusaders
-	border = GFX_event_narrative_frame_religion
+	desc = {
+		text = fe_religion.5.desc.1
+		trigger = {
+			character = FROM
+		}
+	}
+	desc = {
+		text = fe_religion.5.desc.2
+		trigger = {
+			NOT = { character = FROM }
+		}
+	}
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
 	
 	major = yes
+
+	is_triggered_only = yes
+	major_trigger = {
+		religion_group = draconic_group
+	}
+	
 	only_playable = yes
-	religion_group = draconic_group
-	has_global_flag = loptyr_revived
 	
-	trigger = {
-#		OR = {
+	option = {
+		name = fe_religion.1.A
+		trigger = {
 			religion = loptyrian
-#			religion = maerist
-#		}
-		is_heretic = no
-		
-		NOT = { has_global_flag = loptyr_defeated }
-		NOT = { is_title_active = d_schwarze_rosen }
-		is_title_active = d_loptyrian
-		possessed_loptyr = {
-			is_alive = yes
+			NOT = { FROM = { character = ROOT } }
 		}
 	}
-	
-	mean_time_to_happen = {
-		months = 4
-	}
-	
-	immediate = {
-		activate_title = { title = d_schwarze_rosen status = yes }
-		create_random_soldier = {
-			dynasty = none
-			random_traits = yes
-			religion = ROOT
+	option = {
+		name = fe_religion.1.B
+		trigger = {
+			religion = church_of_edda
+			NOT = { FROM = { character = ROOT } }
 		}
-		new_character = {
-			d_schwarze_rosen = {
-				grant_title = PREV
-				religion = PREV
+	}
+	option = {
+		name = fe_religion.1.C
+		trigger = {
+			NOR = {
+				religion = church_of_edda
+				religion = loptyrian
 			}
-			set_defacto_liege = THIS
-			wealth = 600
-			set_government_type = feudal_government
-		}
-		
-		religion_authority = {
-			modifier = religious_order_formed
-			years = 10
+			NOT = { FROM = { character = ROOT } }
 		}
 	}
 	option = {
-		name = fe_religion.5.A
+		name = fe_religion.5.D
 		trigger = {
-			religion = ROOT
-		}
-	}
-	option = {
-		name = fe_religion.5.B
-		trigger = {
-			NOT = { religion_group = draconic_group }
-		}
-	}
-	option = {
-		name = fe_religion.5.C
-		trigger = {
-			religion_group = draconic_group
-			NOT = { religion = ROOT }
+			FROM = { character = ROOT } 
 		}
 	}
 }
+
+#narrative_event = {
+#	id = fe_religion.5
+#	title = fe_religion.5.title
+#	desc = fe_religion.5.desc
+#	picture = GFX_evt_crusaders
+#	border = GFX_event_narrative_frame_religion
+#	
+#	major = yes
+#	only_playable = yes
+#	religion_group = draconic_group
+#	has_global_flag = loptyr_revived
+#	
+#	trigger = {
+#		religion = loptyrian
+#		is_heretic = no
+#		
+#		NOT = { has_global_flag = loptyr_defeated }
+#		NOT = { is_title_active = d_schwarze_rosen }
+#		is_title_active = d_loptyrian
+#		possessed_loptyr = {
+#			is_alive = yes
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 4
+#	}
+#	
+#	immediate = {
+#		activate_title = { title = d_schwarze_rosen status = yes }
+#		create_random_soldier = {
+#			dynasty = none
+#			random_traits = yes
+#			religion = ROOT
+#		}
+#		new_character = {
+#			d_schwarze_rosen = {
+#				grant_title = PREV
+#				religion = PREV
+#			}
+#			set_defacto_liege = THIS
+#			wealth = 600
+#			set_government_type = feudal_government
+#		}
+#		
+#		religion_authority = {
+#			modifier = religious_order_formed
+#			years = 10
+#		}
+#	}
+#	option = {
+#		name = fe_religion.5.A
+#		trigger = {
+#			religion = ROOT
+#		}
+#	}
+#	option = {
+#		name = fe_religion.5.B
+#		trigger = {
+#			NOT = { religion_group = draconic_group }
+#		}
+#	}
+#	option = {
+#		name = fe_religion.5.C
+#		trigger = {
+#			religion_group = draconic_group
+#			NOT = { religion = ROOT }
+#		}
+#	}
+#}

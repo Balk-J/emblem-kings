@@ -8,6 +8,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	624.01.01={
 		add_trait="class_monk"
@@ -49,6 +50,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	628.01.01={
 		add_trait="class_cavalier"
@@ -66,6 +68,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_holy_knight
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_baldr"
@@ -89,6 +92,7 @@
 		birth=yes
 		culture=grann
 		religion=maerist
+		employer=2040
 	}
 	628.01.01={
 		add_trait="class_priest"
@@ -107,6 +111,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_saint
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_blagi"
@@ -131,6 +136,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	628.01.01={
 		add_trait="class_mage_female"
@@ -150,6 +156,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_mage_fighter
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_fjalar"
@@ -173,6 +180,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	627.01.01={
 		add_trait="class_mage"
@@ -191,6 +199,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_mage_knight
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_thrud"
@@ -214,6 +223,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	627.01.01={
 		add_trait="class_cavalier"
@@ -231,6 +241,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_axe_knight
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_neir"
@@ -254,6 +265,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	628.01.01={
 		add_trait="class_archer"
@@ -271,6 +283,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_bow_user # Seriously? Come on, Crusaders...
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_ulir"
@@ -2037,7 +2050,8 @@
 	770.1.1 = {
 		religion=loptyrian
 	}
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -2578,7 +2592,8 @@
 		add_trait="class_sage"
 		add_lover=1068 # Liza
 	}		
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -2670,7 +2685,8 @@
 		add_trait="proud"
 		add_trait="brave"
 	}	 
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -2908,7 +2924,8 @@
 	770.1.1 = {
 		religion=loptyrian
 	}
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -3087,7 +3104,8 @@
 #		add_trait="class_great_knight"
 #	}	
 	
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -3155,7 +3173,8 @@
 #		add_trait="class_great_knight"
 #	}	
 	
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -4655,7 +4674,8 @@
 	770.1.1 = {
 		religion=loptyrian
 	}
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			#killer=1038 # Seliph
@@ -5155,7 +5175,8 @@
 		remove_trait="class_dark_mage"
 		add_trait="class_sorceror"
 	}	
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1058 # Seliph
@@ -6757,7 +6778,8 @@
 	761.1.1 = {
 		give_job_title = job_marshal
 	} 	
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -6802,7 +6824,8 @@
 			}	
 		}
 	}
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -7696,7 +7719,8 @@
 	770.1.1 = {
 		religion=loptyrian
 	}
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -7738,7 +7762,8 @@
 	770.1.1 = {
 		religion=loptyrian
 	}
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -7830,7 +7855,8 @@
 		remove_trait="class_mage_female"
 		add_trait="class_sage_female"
 	} 	
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -7869,7 +7895,8 @@
 		remove_trait="class_mage_female"
 		add_trait="class_sage_female"
 	} 	
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph
@@ -7908,7 +7935,8 @@
 		remove_trait="class_mage_female"
 		add_trait="class_sage_female"
 	} 	
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_battle
 			killer=1038 # Seliph

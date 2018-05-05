@@ -61,7 +61,6 @@ character_event = {
 					character_event = {	id = loptyr.5 }
 				}
 			}
-			add_trait = undead
 		}
 		# Otherwise move the book to a new character and possess them
 		else_if = {
@@ -72,12 +71,10 @@ character_event = {
 				}
 				loptyr_killed_by_book_of_naga_trigger = no
 			}
-			add_trait = deadlord
 			current_heir = {
 				character_event = {	id = loptyr.4 days = 1 }
 			}
 		}else = {
-			add_trait = dragon
 			if = {
 				limit = { has_global_flag = loptyr_empire_destroyed }
 				set_global_flag = loptyr_defeated
@@ -106,6 +103,14 @@ character_event = {
 			}
 			# Notify rulers of Loptyr's death
 			hidden_tooltip = {
+				if = {
+					limit = {
+						is_ruler = yes
+					}
+					current_heir = {
+						narrative_event = { id = loptyr.6 days = 1 }
+					}
+				}
 				any_playable_ruler = {
 					if = {
 						limit = {
@@ -392,5 +397,205 @@ character_event = {
 		}	
 		intrigue = 1
 		falsely_confess_faith_effect = yes
+	}
+}
+# Loptyr Empire heir can take Galle's name
+character_event = {
+	id = loptyr.8
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	trigger = {
+		FROM = { title = e_loptyr }
+		primary_title = { title = e_loptyr }
+		dynasty = 801
+		NOT = { c_801 = { same_regnal_name = ROOT } }
+	}
+
+	option = {
+		name = OK
+		character_event = {	id = loptyr.9 days = 1 }
+	}
+}
+character_event = {
+	id = loptyr.9
+	desc = loptyr.9.desc
+	picture = GFX_evt_coronation
+	hide_from = yes
+	is_triggered_only = yes 	
+
+	option = {
+		name = loptyr.9.A	
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0 
+				is_female = yes
+			}
+		}
+		set_name = "Galle"
+		prestige = 10
+	}
+	option = {
+		name = loptyr.9.B
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0 
+				is_female = no
+			}
+		}
+	}
+}
+
+# Start Maera's rebellion
+character_event = {
+	id = loptyr.10
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	only_playable = yes
+	only_independent = yes
+	religion = loptyrian
+	trigger = {
+		year = 535
+		NOT = { has_global_flag = maeras_rebellion }
+		NOT = { has_global_flag = loptyr_empire_destroyed }
+		NOT = { has_global_flag = jugdral_rebellion_started }
+		has_landed_title = e_loptyr
+		trait = possessed_loptyr
+		any_sibling = {
+			is_adult = yes
+			trait = holy_blood_minor_loptyr
+			liege = { character = ROOT }
+			NOT = { has_character_flag = declined_maerist_rebellion }
+		}
+	}
+
+	option = {
+		name = OK
+		random_sibling = {
+			limit = {
+				is_adult = yes
+				trait = holy_blood_minor_loptyr
+				liege = { character = ROOT }
+				NOT = { has_character_flag = declined_maerist_rebellion }
+			}
+			character_event = { id = loptyr.11 }
+		}
+	}
+}
+
+# Maera gets the choice to revolt
+character_event = {
+	id = loptyr.11
+	desc = loptyr.11.desc
+	picture = GFX_evt_heretic
+	hide_from = yes
+	is_triggered_only = yes 	
+
+	option = {
+		name = loptyr.11.A	
+		ai_chance = { 
+			factor = 1 
+		}
+		set_global_flag = maeras_rebellion
+		if = {
+			limit = {
+				is_ruler = no
+			}			
+			if = {
+				limit = {
+					c_basile = {
+						holder_scope = {
+							OR = {
+								ai = yes
+								num_of_count_titles_in_realm = 2
+							}
+						}
+					}
+				}
+				c_basile = { usurp_title = { target = ROOT type = invasion } }
+			}else_if = {
+				limit = {
+					c_spirit_forest = {
+						holder_scope = {
+							OR = {
+								ai = yes
+								num_of_count_titles_in_realm = 2
+							}
+						}
+					}
+				}
+				c_spirit_forest = { usurp_title = { target = ROOT type = invasion } }
+			}else = {
+				FROM = {
+					random_realm_title = {
+						limit = {
+							tier = COUNT
+							holder_scope = { ai = yes }
+						}
+						usurp_title = { target = ROOT type = invasion }
+					}
+				}
+			}
+			set_defacto_liege = FROM
+		}
+		religion = maerist
+		capital_scope = {
+			religion = maerist
+		}
+		hidden_tooltip = {
+			c_basile = { province = { religion = maerist } }
+			c_spirit_forest = { province = { religion = maerist } }
+		}
+		piety = 1000
+		top_liege = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = bid_for_independence
+			}
+		}	
+		capital_scope = {
+			owner = {
+				spawn_unit = {
+					owner = THIS
+					province = PREV
+					troops = {
+						magic_users = { 100 100 }
+					}
+					attrition = 0
+					disband_on_peace = yes
+					maintenance_multiplier = 0
+				}	
+				spawn_unit = {
+					owner = THIS
+					province = PREV
+					troops = {
+						magic_users = { 100 100 }
+					}
+					attrition = 0
+					disband_on_peace = yes
+					maintenance_multiplier = 0
+				}	
+				spawn_unit = {
+					owner = THIS
+					province = PREV
+					troops = {
+						magic_users = { 100 100 }
+					}
+					attrition = 0
+					disband_on_peace = yes
+					maintenance_multiplier = 0
+				}					
+			}
+		}
+	}
+	option = {
+		name = loptyr.11.B
+		ai_chance = { 
+			factor = 0 
+		}
+		set_character_flag = declined_maerist_rebellion
 	}
 }

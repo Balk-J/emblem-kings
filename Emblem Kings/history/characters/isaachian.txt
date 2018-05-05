@@ -8,6 +8,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	627.01.01={
 		add_trait="class_myrmidon"
@@ -25,6 +26,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_sword_saint
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_od"
@@ -492,7 +494,8 @@
 	777.1.1 = {
 		employer=1340 # Raydrik
 	}		
-	778.1.1={
+	#778.1.1={
+	777.8.1={
 		death = {
 			death_reason=death_missing # After liberating Manster, Galzus disappeared. There are no records, legends, or even rumors about his life thereafter.
 		} 

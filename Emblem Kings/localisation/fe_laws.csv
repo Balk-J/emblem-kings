@@ -1,0 +1,9 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+loptyrian_demesne;Loptyrian Administration;;;;;;;;;;;;;x
+loptyrian_demesne_desc;The Loptyr Empire can utilize its order of dark priests to decrease the burden on the traditional administrators of the realm, allowing it to support a greater number of vassals.;;;;;;;;;;;;;x
+loptyrian_demesne_0;No Loptyrian Administration;;;;;;;;;;;;;x
+loptyrian_demesne_0_desc;The realm will not use its priests for administration and enjoy no special benefits.;;;;;;;;;;;;;x
+loptyrian_demesne_0_option;None;;;;;;;;;;;;;x
+loptyrian_demesne_1;Loptyrian Administration;;;;;;;;;;;;;;x
+loptyrian_demesne_1_desc;Loptyrian dark priests will assist in the administration of the realm, greatly increasing the number of vassals it can effectively maintain.;;;;;;;;;;;;;x
+loptyrian_demesne_1_option;Enabled;;;;;;;;;;;;;x

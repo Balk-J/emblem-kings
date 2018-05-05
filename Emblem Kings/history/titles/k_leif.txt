@@ -2,6 +2,6 @@
 	holder=1162 # Leif
 	liege=0
 }
-778.1.1={
+777.8.1={
 	holder=0
 }

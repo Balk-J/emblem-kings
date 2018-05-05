@@ -6,6 +6,7 @@ e_verdane = {
 
 	capital = 489
 	culture = verdanian	
+	allow = { any_realm_title = { de_jure_liege_or_above = e_verdane } } 
 }
 
 e_miletos = {
@@ -14,6 +15,7 @@ e_miletos = {
 
 	capital = 506
 	culture = grannvalean
+	allow = { any_realm_title = { de_jure_liege_or_above = e_miletos } } 
 }
 
 
@@ -23,6 +25,7 @@ e_orgahil = {
 
 	capital = 517
 	culture = agustrian
+	allow = { any_realm_title = { de_jure_liege_or_above = e_orgahil } } 
 }
 
 e_yied = {
@@ -31,4 +34,5 @@ e_yied = {
 
 	capital = 525
 	culture = grannvalean
+	allow = { any_realm_title = { de_jure_liege_or_above = e_yied } } 
 }

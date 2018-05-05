@@ -16,6 +16,7 @@ decisions = {
 			d_loptyrian = {
 				has_holder = yes
 			}
+			has_global_flag = sorrow_of_miletos
 		}
 		allow = {
 			war = no

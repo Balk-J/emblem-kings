@@ -1,0 +1,17 @@
+name = "Revolt against the rule of Emperor Galle XVII of the Loptyr Empire"
+
+casus_belli = {
+	actor = 2040 # filler rebel
+	recipient = 817 # Galle XVII
+	casus_belli = jugdral_rebellion
+	date=611.1.1
+}
+
+611.1.1 = {
+	add_attacker = 2040
+	add_defender = 817
+}
+632.1.1 = {
+	rem_attacker = 2040
+	rem_defender = 817
+}

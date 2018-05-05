@@ -25,6 +25,9 @@ religion = church_of_edda
 448.1.1 = { 
 	culture = verdanian
 }
+535.1.1 = { 
+	religion = maerist
+}
 
 649.1.1 = { 
 	religion = church_of_edda

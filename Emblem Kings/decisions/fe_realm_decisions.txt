@@ -188,12 +188,9 @@ decisions = {
 		is_high_prio = yes
 		
 		potential = {
-			always = no # under construction
+			culture = mansterian
 			primary_title = {
-				OR = {
-					title = k_thracia
-					title = k_manster
-				}
+				title = k_manster
 			}
 			NOT = { 
 				k_new_thracia = {
@@ -203,17 +200,65 @@ decisions = {
 				}
 			}
 			has_global_flag = thracia_split
-			culture = mansterian
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 		}
 		allow = {
 			action_allowed_trigger = yes
+			war = no
+			has_landed_title = k_thracia
+			has_landed_title = k_manster
 			completely_controls_region = world_jugdral_thracia
+			#completely_controls = k_thracia
+			#completely_controls = k_manster
+			prestige = 500
 		}
 		effect = {
+			clr_global_flag = thracia_split
+			set_global_flag = thracia_reunited
 			narrative_event = { id = fe5_thracia_776.15 tooltip = fe5_thracia_776.15.tooltip }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	reunite_thracia = {
+		only_playable = yes
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			culture = thracian
+			primary_title = {
+				title = k_thracia
+			}
+			NOT = { 
+				k_new_thracia = {
+					any_previous_holder = {
+						always = yes
+					}
+				}
+			}
+			has_global_flag = thracia_split
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			action_allowed_trigger = yes
+			war = no
+			has_landed_title = k_thracia
+			has_landed_title = k_manster
+			completely_controls_region = world_jugdral_thracia
+			#completely_controls = k_thracia
+			#completely_controls = k_manster
+			prestige = 500
+		}
+		effect = {
+			clr_global_flag = thracia_split
+			set_global_flag = thracia_reunited
+			narrative_event = { id = fe5_thracia_776.17 tooltip = fe5_thracia_776.17.tooltip }
 		}
 		ai_will_do = {
 			factor = 1

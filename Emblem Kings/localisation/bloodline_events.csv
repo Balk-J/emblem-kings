@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 bloodline.5.desc;Today an unusual mark appeared on my body. This is proof that I am heir to a holy lineage!;;;;;;;;;;;;;x
 bloodline.5.A;Excellent!;;;;;;;;;;;;;x
-bloodline.6.desc;An unusual mark appeared on your [From.GetFromRelation] [From.GetFirstName]'s body today. It is clearly not a wound or a bruise - it is a Brand, proof that [From.GetFirstName] carries holy blood.;;;;;;;;;;;;;x
+bloodline.6.desc;An unusual mark appeared on your [GetFromRelation] [From.GetFirstName]'s body today. It is clearly not a wound or a bruise - it is a Brand, proof that [From.GetFirstName] carries holy blood.;;;;;;;;;;;;;x
 bloodline.6.A;I see.;;;;;;;;;;;;;x
 bloodline..title;;;;;;;;;;;;;;x
 bloodline..desc;;;;;;;;;;;;;;x

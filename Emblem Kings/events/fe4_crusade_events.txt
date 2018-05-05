@@ -1,0 +1,924 @@
+namespace = fe4_crusade
+
+# Start the rebellion that leads into the Crusade
+character_event = {
+	id = fe4_crusade.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	only_independent = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		year = 611
+		NOT = { has_global_flag = loptyr_empire_destroyed }
+		NOT = { has_global_flag = jugdral_rebellion_started }
+		has_landed_title = e_loptyr
+		trait = possessed_loptyr
+		independent = yes
+		religion = loptyrian
+		c_darna = {
+			holder_scope = {
+				OR = {
+					ai = yes
+					num_of_count_titles_in_realm = 2
+				}
+			}
+		}
+	}
+	option = {
+		name = OK
+		set_global_flag = jugdral_rebellion_started
+		create_random_soldier = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = earthen_pagan
+			culture = ROOT
+		}
+		
+		new_character = {
+			set_character_flag = jugdral_rebel
+			c_darna = {
+				usurp_title = { target = PREV type = claim }
+			}
+			d_jugdral_rebels = {
+				grant_title = PREV
+			}
+		}
+		character_event = {	id = fe4_crusade.2 }
+	}	
+}
+
+# Notify Loptyr that a revolt has broken out
+character_event = {
+	id = fe4_crusade.2
+	desc = fe4_crusade.2.desc
+	picture = GFX_evt_peasants
+	is_triggered_only = yes
+	hide_from = yes
+	
+	immediate = {
+		character_event = { id = fe4_crusade.3 }
+	}
+	
+	option = {
+		name = fe4_crusade.2.A
+		d_jugdral_rebels = {
+			holder_scope = {
+				war = {
+					target = ROOT
+					casus_belli = jugdral_rebellion
+				}
+			}
+		}
+	}	
+}
+# Spawn troops for Jugral rebels based on Loptyr's strength
+character_event = {
+	id = fe4_crusade.3
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		d_jugdral_rebels = {
+			holder_scope = {
+				spawn_unit = {
+					province = 530 # Darna
+					home = PREV
+					owner = THIS
+					match_character = ROOT
+					match_mult = 0.17
+					attrition = 0
+					maintenance_multiplier = 0
+					disband_on_peace = yes
+				}
+				spawn_unit = {
+					province = 530 # Darna
+					home = PREV
+					owner = THIS
+					match_character = ROOT
+					match_mult = 0.17
+					attrition = 0
+					maintenance_multiplier = 0
+					disband_on_peace = yes
+				}
+				spawn_unit = {
+					province = 530 # Darna
+					home = PREV
+					owner = THIS
+					match_character = ROOT
+					match_mult = 0.17
+					attrition = 0
+					maintenance_multiplier = 0
+					disband_on_peace = yes
+				}
+			}
+		}
+		spawn_jugdral_rebel_small_stack_effect = yes
+		spawn_jugdral_rebel_small_stack_effect = yes
+		spawn_jugdral_rebel_small_stack_effect = yes
+		spawn_jugdral_rebel_small_stack_effect = yes
+		spawn_jugdral_rebel_small_stack_effect = yes
+	}	
+}
+
+character_event = {
+	id = fe4_crusade.4
+	is_triggered_only = yes
+	hide_window = yes
+	
+	only_independent = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	has_global_flag = jugdral_rebellion_defeated
+	trigger = {
+		year = 632
+		NOT = { has_global_flag = loptyr_empire_destroyed }
+		NOT = { has_global_flag = jugdral_crusade_started }
+		has_landed_title = e_loptyr
+		trait = possessed_loptyr
+		independent = yes
+		religion = loptyrian
+	}
+	option = {
+		name = OK
+		character_event = {	id = fe4_crusade.7 }
+	}	
+}
+
+# Start the Crusade!
+character_event = {
+	id = fe4_crusade.5
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = { 
+		set_global_flag = jugdral_crusade_started
+	}
+	
+	option = {
+		name = OK
+		
+		# Find or generate Heim
+		if = { 
+			limit = {
+				c_1001 = {
+					not_ruler_or_spouse_of_ruler_trigger = yes
+				}
+			}
+			c_1001 = {
+				save_event_target_as = crusade_leader_target
+			}
+		}else = { # Otherwise make someone!
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = random
+				culture = grannvalean
+				name = "Heim"
+				age = 20
+				female = no
+				religion = earthen_pagan
+			}
+			new_character = {
+				culture = grann
+				save_event_target_as = crusade_leader_target				
+			}	
+		}
+		
+		# Create the rebellion
+		event_target:crusade_leader_target = {
+			naga_pact_effect = yes
+				
+			c_darna = {
+				usurp_title = { target = PREV type = claim }
+			}
+			e_crusaders = {
+				grant_title = PREV
+			}
+			
+			# Bring in the rest of the crusaders
+			
+			if = { 
+				limit = { c_1002 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1002 = {
+					move_character = PREV		
+					baldr_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = grannvalean
+					name = "Baldr"
+					age = 16
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					baldr_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1003 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1003 = {
+					move_character = PREV		
+					blagi_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = grannvalean
+					name = "Blagi"
+					age = 16
+					female = no
+					religion = maerist
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					blagi_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1004 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1004 = {
+					move_character = PREV		
+					fjalar_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = grannvalean
+					name = "Fjalar"
+					age = 16
+					female = yes 
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					fjalar_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1005 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1005 = {
+					move_character = PREV		
+					thrud_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = grannvalean
+					name = "Thrud"
+					age = 17
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					thrud_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1006 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1006 = {
+					move_character = PREV		
+					neir_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = grann
+					name = "Neir"
+					age = 17
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					neir_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1007 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1007 = {
+					move_character = PREV		
+					ulir_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = grann
+					name = "Ulir"
+					age = 16
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					ulir_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1008 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1008 = {
+					move_character = PREV		
+					hezul_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = agustrian
+					name = "Hezul"
+					age = 17
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					hezul_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1009 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1009 = {
+					move_character = PREV		
+					forseti_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = silessian
+					name = "Ced"
+					age = 16
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					forseti_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1010 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1010 = {
+					move_character = PREV		
+					od_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = isaachian
+					name = "Od"
+					age = 17
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					od_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1011 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1011 = {
+					move_character = PREV		
+					dain_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = thracian
+					name = "Dain"
+					age = 17
+					female = no
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					dain_pact_effect = yes
+				}	
+			}
+			if = { 
+				limit = { c_1012 = { not_ruler_or_spouse_of_ruler_trigger = yes } }
+				c_1012 = {
+					move_character = PREV		
+					noba_pact_effect = yes
+				}
+			}else = { # Otherwise make someone!
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = random
+					culture = thracian
+					name = "Noba"
+					age = 16
+					female = yes
+					religion = earthen_pagan
+				}
+				new_character = {	
+					culture = grann	
+					move_character = PREV		
+					noba_pact_effect = yes
+				}	
+			}
+			
+			# Spawn troops
+			character_event = {	id = fe4_crusade.6 }			
+		}
+		character_event = {	id = fe4_crusade.7 }	
+		
+	}	
+}
+# Spawn Crusader army
+character_event = {
+	id = fe4_crusade.6
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+		
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+		
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+		
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+		spawn_jugdral_crusader_stack_effect = yes
+	}	
+}
+# Notify Loptyr that a revolt has broken out
+narrative_event = {
+	id = fe4_crusade.7
+	title = fe4_crusade.7.title
+	desc = fe4_crusade.7.desc
+	picture = GFX_evt_comet
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe4_crusade.7.A
+		e_crusaders = {
+			holder_scope = {
+				war = {
+					target = ROOT
+					casus_belli = jugdral_crusade
+				}
+			}
+		}
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					OR = {
+						any_liege = {
+							character = ROOT
+						}
+						capital_scope = {
+							region = world_jugdral
+						}
+					}
+					NOT = { character = ROOT }
+				}
+				narrative_event = { id = fe4_crusade.8 }
+			}
+		}
+	}	
+}
+# Notify other rulers of the crusade
+narrative_event = {
+	id = fe4_crusade.8
+	title = fe4_crusade.8.title
+	desc = fe4_crusade.8.desc
+	picture = GFX_evt_comet
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_crusade.8.A
+	}	
+}
+
+
+character_event = { 
+	id = fe4_crusade.9
+	desc = fe4_crusade.9.desc
+	picture = GFX_evt_victory_arch_byzantine
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = loptyr_empire_destroyed
+		k_valhalla = {
+			destroy_landed_title = THIS
+		}
+		k_madino = {
+			destroy_landed_title = THIS
+		}
+		k_tor = {
+			destroy_landed_title = THIS 
+		}
+		k_heirhein = {
+			destroy_landed_title = THIS
+		}
+		k_ollerus = {
+			destroy_landed_title = THIS
+		}
+		k_melgln = {
+			destroy_landed_title = THIS
+		}
+		k_lubeck = {
+			destroy_landed_title = THIS
+		}
+		k_rivough = {
+			destroy_landed_title = THIS
+		}
+		k_tirnanog = {
+			destroy_landed_title = THIS 
+		}
+		k_sailane = {
+			destroy_landed_title = THIS
+		}
+		k_conote = {
+			destroy_landed_title = THIS
+		}
+		k_luthecia = {
+			destroy_landed_title = THIS
+		}
+		k_savan = {
+			destroy_landed_title = THIS
+		}
+		k_grutia = {
+			destroy_landed_title = THIS
+		}
+		k_kapathogia = {
+			destroy_landed_title = THIS
+		}
+		post_crusade_jugdral_de_jure_titles_effect = yes
+	}
+	
+	# I'll just keep everything.
+	option = {
+		name = fe4_crusade.9.A
+		ai_chance = {
+			factor = 0	
+		}
+		
+		event_target:loptyr_defeated_in_crusade_target = {
+			any_vassal = {
+				set_defacto_liege = ROOT
+			}
+			any_demesne_title = {
+				limit = {
+					NOT = {
+						title = e_loptyr
+					}
+					NOT = {
+						title = d_loptyr
+					}
+				}
+				usurp_title = { target = ROOT type = invasion }
+			}
+			
+		}
+		if = {
+			limit = {
+				e_loptyr = {
+					has_holder = yes
+				}
+			}
+			e_loptyr = {
+				destroy_landed_title = THIS
+			}
+		}
+		if = {
+			limit = {
+				d_loptyr = {
+					has_holder = yes
+				}
+			}
+			d_loptyr = {
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+	}
+	option = {
+		name = fe4_crusade.9.B
+		ai_chance = {
+			factor = 1	
+		}
+		hidden_tooltip = {
+			event_target:loptyr_defeated_in_crusade_target = {
+				fix_loptyrian_bishop_capitals_effect = yes
+				any_vassal = { set_defacto_liege = ROOT }
+				# Destroy the empire, and give anything left to ROOT. 
+				any_demesne_title = {
+					if = {
+						limit = { tier = EMPEROR }
+						destroy_landed_title = THIS
+					}else = {
+						usurp_title = { target = ROOT type = invasion }
+					}
+				}
+				
+				k_grannvale = {
+					c_1001 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1001 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_belhalla = {
+					c_1001 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1001 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_chalphy = {
+					c_1002 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1002 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_edda = {
+					c_1003 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1003 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_velthomer = {
+					c_1004 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1004 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_friege = {
+					c_1005 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1005 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_dozel = {
+					c_1006 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1006 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_jungby = {
+					c_1007 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1007 = { grant_title_to_crusader_effect = yes } } }
+				}
+				k_agustria = {
+					c_1008 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1008 = { grant_title_to_crusader_effect = yes } } }
+				}
+				k_silesse = {
+					c_1009 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1009 = { grant_title_to_crusader_effect = yes } } }
+				}
+				k_isaach = {
+					c_1010 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1010 = { grant_title_to_crusader_effect = yes } } }
+				}
+				d_leonster = {
+					c_1012 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1012 = { grant_title_to_crusader_effect = yes } } }
+				}
+				k_thracia = {
+					c_1011 = { grant_title_to_crusader_effect = yes }
+					capital_scope = { county = { c_1011 = { grant_title_to_crusader_effect = yes } } }
+				}
+				death = { 
+					death_reason = death_execution
+					killer = ROOT
+				} 			
+			}
+			e_crusaders = {
+				destroy_landed_title = THIS
+			}
+		}
+	}	
+	
+	after = {
+		hidden_tooltip = {
+			character_event = { id = fe4_crusade.11 days = 1 }
+		}
+	}
+}
+# Culture change!
+character_event = {
+	id = fe4_crusade.10
+	desc = fe4_crusade.10.desc
+	picture = GFX_evt_stone_church
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe4_crusade.10.A	
+		ai_chance = {
+			factor = 1
+		}
+		jugdral_culture_change_effect = yes
+		any_courtier = {
+			limit = {
+				culture = grann
+				employer = { character = ROOT }
+				dynasty = ROOT
+			}
+			jugdral_culture_change_effect = yes
+		}
+		capital_scope = { culture = ROOT }
+	}	
+	option = {
+		name = fe4_crusade.10.B	
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 10
+	}
+}
+character_event = {
+	id = fe4_crusade.11
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		name = OK
+		character_event = { id = fe4_crusade.10 days = 5 random = 2 }
+		any_playable_ruler = {
+			limit = {
+				culture = grann
+				capital_scope = {
+					region = world_jugdral
+				}
+			}
+			character_event = { id = fe4_crusade.10 days = 5 random = 2 }
+		}
+		
+		d_edda = {
+			holder_scope = {
+				character_event = {	id = fe4_crusade.12 days = 10 random = 2 }
+			}
+		}
+	}	
+}
+
+# Start the Church of Edda
+character_event = {
+	id = fe4_crusade.12
+	desc = fe4_crusade.12.desc
+	picture = GFX_evt_bishop
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = fe4_crusade.12.A	
+		ai_chance = {
+			factor = 1
+		}
+		set_character_flag = church_of_edda_founder
+		religion = church_of_edda
+		capital_scope = {
+			religion = church_of_edda
+		}
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					OR = {
+						has_landed_title = k_grannvale
+						has_landed_title = d_belhalla
+						has_landed_title = d_chalphy
+						has_landed_title = d_velthomer
+						has_landed_title = d_friege
+						has_landed_title = d_dozel
+						has_landed_title = d_jungby
+						has_landed_title = k_agustria
+						has_landed_title = k_silesse
+						has_landed_title = k_isaach
+						has_landed_title = d_leonster
+						has_landed_title = k_thracia
+					}
+				}
+				character_event = { id = fe4_crusade.13 }
+			}
+		}
+	}	
+	option = {
+		name = fe4_crusade.12.B	
+		ai_chance = {
+			factor = 0
+		}
+		piety = 10
+	}
+}
+
+# Ask the other crusaders to convert
+character_event = {
+	id = fe4_crusade.13
+	desc = fe4_crusade.13.desc
+	picture = GFX_evt_bishop
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_crusade.13.A	
+		ai_chance = {
+			factor = 99
+		}
+		any_courtier = {
+			limit = {
+				religion = ROOT
+				employer = { character = ROOT }
+				dynasty = ROOT
+			}
+			religion = church_of_edda
+		}
+		religion = church_of_edda
+		capital_scope = {
+			religion = church_of_edda
+		}
+		reverse_opinion = {
+			modifier = opinion_happy
+			who = FROM
+			years = 1
+		}
+	}	
+	option = {
+		name = fe4_crusade.13.B	
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0 
+				NOT = { trait = zealous }
+			}
+		}
+		piety = 10
+		reverse_opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+			years = 1
+		}
+	}
+}
+# Ask the pagans to convert
+character_event = {
+	id = fe4_crusade.14
+	desc = fe4_crusade.14.desc
+	picture = GFX_evt_bishop
+	is_triggered_only = yes
+	
+	option = {
+		name = fe4_crusade.14.A	
+		ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 0 
+				NOT = { tier = BARON }
+				is_theocracy = yes
+			}
+		}
+		any_courtier = {
+			limit = {
+				religion = ROOT
+				employer = { character = ROOT }
+				dynasty = ROOT
+			}
+			religion = church_of_edda
+		}
+		religion = church_of_edda
+		random = {
+			chance = 90 
+			capital_scope = {
+				religion = church_of_edda
+			}
+		}
+	}	
+	option = {
+		name = fe4_crusade.14.B	
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 10 
+				trait = zealous 
+			}
+			modifier = {
+				factor = 0.5 
+				trait = cynical 
+			}
+		}
+		piety = 10
+	}
+}

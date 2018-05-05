@@ -171,6 +171,15 @@ character_event = {
 		random_list = {	
 			# Right away - pre-teen
 			30 = { 
+				modifier = {
+					factor = 100
+					child_of_possessed_loptyr_trigger = yes
+					NOT = {
+						any_sibling = { # any_sibling_even_if_dead = { 
+							trait=holy_blood_major_loptyr
+						}	
+					}	
+				}
 				character_event = { id=bloodline.4 days=1 random=364 }
 				set_character_flag=holy_blood_manifest_soon
 			}
@@ -244,6 +253,15 @@ character_event = {
 						factor = 2
 						NOT = {
 							any_sibling = { # any_sibling_even_if_dead = { 
+								trait=holy_blood_major_loptyr
+							}	
+						}						
+					}
+					modifier = {
+						factor = 100
+						child_of_possessed_loptyr_trigger = yes
+						NOT = {
+							any_sibling = { 
 								trait=holy_blood_major_loptyr
 							}	
 						}						

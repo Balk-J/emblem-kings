@@ -49,6 +49,13 @@ on_yearly_pulse = {
 		fe6_etruria.2 # Return of Prince Mildain
 		fe6_west.2 # End the Western Isles rebellion
 		regalia.84 # End regalia defense wars if the guardians run out of troops before warscore gets to 100%	
+		fe5_thracia_776.2 # Start a revolt in Manster
+		fe5_thracia_776.19 # Destroy the Magi Squad if they aren't involved in the liberation war
+		fe4_last_holy_war.12 # Start Seliph's rebellion
+		loptyr.10 # Start Maera's rebellion
+		galle.4 # The Great Purge
+		galle.7 # The Sorrow of Miletos
+		galle.8 # The Massacre of Edda
 	}
 	
 	random_events = {
@@ -1047,7 +1054,7 @@ on_focus_pulse = {
 #on combat pulse
 on_combat_pulse = {
 	random_events = {
-		2750 = 0
+		2710 = 0 # FE, changed from 2750
 		10 = 242 # Killed
 		20 = 243 # Wounded
 		10 = 244 # Maimed
@@ -1080,10 +1087,12 @@ on_combat_pulse = {
 		50 = MNM.1202 # Scrying vision inspires greatness
 		50 = MNM.1203 # Scrying vision injury
 
+		# FE
+		40 = battle.1 # Battlefield duel (from GoT mod)
 	}
 	# FE
 	events = {
-		battle.1
+		fe_battle.1
 	}
 }
 
@@ -1120,8 +1129,8 @@ on_battle_won = {
 	}
 	# FE
 	events = {
-		battle.8
-		battle.9
+		fe_battle.8
+		fe_battle.9
 	}
 }
 
@@ -1136,7 +1145,7 @@ on_major_battle_won = {
 on_battle_won_leader = {
 	# FE
 	events = {
-		battle.9 # on_battle_won seems to not trigger for the war leader...
+		fe_battle.9 # on_battle_won seems to not trigger for the war leader...
 	}
 }
 
@@ -1164,7 +1173,7 @@ on_battle_lost = {
 	}
 	# FE
 	events = {
-		battle.8
+		fe_battle.8
 	}
 }
 
@@ -2427,6 +2436,9 @@ on_new_holder = {
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
 		
 		539 # Fix adventurers turning Tribal land Feudal
+		
+		# FE
+		loptyr.8 # Take the name Galle on becoming Emperor of Loptyr Empire
 	}
 }
 
@@ -2445,6 +2457,9 @@ on_new_holder_inheritance = {
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
 		JD.9000 # Reapply Scholar Bureaucrat bonus on death/inheritance
+		
+		# FE
+		loptyr.8 # Take the name Galle on becoming Emperor of Loptyr Empire
 	}
 }
 

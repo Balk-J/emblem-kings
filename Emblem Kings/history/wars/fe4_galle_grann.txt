@@ -1,0 +1,18 @@
+name = "Loptyrian Invasion of Grann"
+
+casus_belli = {
+	actor = 801 # filler rebel
+	recipient = 819 # Grann Republic
+	casus_belli = galle_invasion
+	landed_title=k_grann
+	date=447.1.1
+}
+
+447.1.1 = {
+	add_attacker = 801
+	add_defender = 819
+}
+448.1.1 = {
+	rem_attacker = 801
+	rem_defender = 819
+}

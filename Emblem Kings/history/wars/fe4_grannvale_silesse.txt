@@ -1,0 +1,18 @@
+name = "Grannvalean Imperial Conquest of Silesse"
+
+casus_belli = {
+	actor = 1049 # Arvis
+	recipient = 1110 # Rahna
+	casus_belli = grannvale_imperial_conquest
+	date=761.1.1
+}
+
+761.1.1 = {
+	add_attacker = 1049
+	add_defender = 1110
+}
+
+762.1.1 = {
+	rem_attacker = 1049
+	rem_defender = 1110
+}

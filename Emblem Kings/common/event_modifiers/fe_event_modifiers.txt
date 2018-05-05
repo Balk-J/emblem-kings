@@ -231,3 +231,8 @@ loptyr_holy_blood_revealed = {
 summoning_deadlords = {
 	icon = 41
 }
+great_purge = {
+	local_revolt_risk = 0.1
+	local_tax_modifier = -0.25
+	icon = 35
+}

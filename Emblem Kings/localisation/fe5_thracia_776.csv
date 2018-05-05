@@ -18,6 +18,16 @@ fe5_thracia_776.13.B;Attacking now would be reckless. We wait.;;;;;;;;;;;;;x
 fe5_thracia_776.14.desc;I encountered [From.GetTitledFirstName] during the last battle of the war. [From.GetSheHeCap] told me that my real father was Quan of Leonster, and that [Root.Father.GetFirstName] raised me as his own [Root.GetSonDaughter] after murdering my parents.;;;;;;;;;;;;;x
 fe5_thracia_776.14.A;You take me for some kind of fool?!;;;;;;;;;;;;;x
 fe5_thracia_776.14.B;I want to say you're lying, but I can't!;;;;;;;;;;;;;x
+fe5_thracia_776.15.desc;At last, the Thracian peninsula has been unified into a single country. The people's ardent wish is that you take the throne as [Root.GetKingQueen] and lead them into an era of peace and prosperity. As long as history is recorded in Thracia, the name of [Root.GetKingQueen] [Root.GetFirstName] will not be forgotten.;;;;;;;;;;;;;x
+fe5_thracia_776.15.A;Glory to Thracia!;;;;;;;;;;;;;x
+fe5_thracia_776.16.title;New Thracia;;;;;;;;;;;;;x
+fe5_thracia_776.16.desc;North and south Thracia have been divided since the conflict following the Tragedy of the Gáe Bolg. However, both nations are now united under a single [From.GetKingQueen]. In a ceremony at [From.Location.GetName], [From.GetFullName] formally combined the realms into the Kingdom of New Thracia and crowned [From.GetHerselfHimself] [From.GetKingQueen].\n\n[From.GetTitledFirstName] has pledged to carry on the legacy of the crusaders Dain and Noba and maintain peace and prosperity in the nation.;;;;;;;;;;;;;x
+fe5_thracia_776.16.A;Interesting news.;;;;;;;;;;;;;x
+fe5_thracia_776.17.desc;At last, Thracia is whole again. The northern lands have been formally integrated into the kingdom. Their bounty will ensure prosperity for the south and secure your place in history as Thracia's greatest ruler since Dain the Dragon Knight.;;;;;;;;;;;;;x
+fe5_thracia_776.17.A;Glory to Thracia!;;;;;;;;;;;;;x
+fe5_thracia_776.18.title;Thracia Reunited;;;;;;;;;;;;;x
+fe5_thracia_776.18.desc;The Manster District split from the Kingdom of Thracia shortly after the Tragedy of the Gáe Bolg. Generations of Thracian kings have schemed to recover their lost territories. None have succeeded - until now. \n\n[From.GetTitledName] recently announced the dissolution of Manster and the integration of its lands into Thracia proper. History shall speak no more of the Kingdom of Manster.;;;;;;;;;;;;;x
+fe5_thracia_776.18.A;I see.;;;;;;;;;;;;;x
 fe5_thracia_776..title;;;;;;;;;;;;;;x
 fe5_thracia_776..desc;;;;;;;;;;;;;;x
 fe5_thracia_776..A;;;;;;;;;;;;;;x

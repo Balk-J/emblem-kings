@@ -10,6 +10,8 @@ casus_belli = {
 778.1.1 = {
 	add_attacker = 1038
 	add_defender = 1051
+}
+778.1.1 = {
 	add_attacker = 1162 # Leif
 	add_attacker = 1136 # Shannan
 }

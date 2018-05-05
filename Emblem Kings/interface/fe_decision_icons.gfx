@@ -221,6 +221,10 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
 	}
 	spriteType = {
+		name = "GFX_create_schwarze_rosen"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
 		name = "GFX_hold_child_hunt"
 		texturefile = "gfx\\interface\\decision_icon_hunting.dds"
 	}
@@ -231,5 +235,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_summon_the_deadlords"
 		texturefile = "gfx\\interface\\decision_icon_morphs.dds"
+	}
+	spriteType = {
+		name = "GFX_form_new_thracia"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_reunite_thracia"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_convert_to_post_crusade_jugdrali"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_norman.dds"
 	}
 }

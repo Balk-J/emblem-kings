@@ -13,7 +13,7 @@ casus_belli = {
 	add_defender = 1162 # Leif
 }
 
-778.1.1 = {
+777.8.1 = {
 	rem_attacker = 1073
 	rem_defender = 1038
 	rem_defender = 1162

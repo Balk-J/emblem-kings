@@ -42,7 +42,8 @@
 	holder=1075 # Brian
 	liege = k_isaach
 }
-778.1.1={
+#778.1.1={
+777.8.1={
 	liege = k_grannvale
 }
 779.1.1={

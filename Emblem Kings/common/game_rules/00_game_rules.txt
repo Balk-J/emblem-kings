@@ -26,6 +26,49 @@ fe_story = {
 		desc = "RULE_FE_STORY_OFF_DESC"
 	}
 }
+duel_outcome_randomness = {
+	name = "RULE_DUEL_OUTCOME_RANDOMNESS"
+	group = "RULE_GROUP_WARFARE"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_NORMAL_DESC"
+	}
+	option = {
+		name = very_low
+		text = "RULE_DUEL_OUTCOME_RANDOMNESS_VERY_LOW"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_VERY_LOW_DESC"
+	}
+	option = {
+		name = low
+		text = "RULE_DUEL_OUTCOME_RANDOMNESS_LOW"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_LOW_DESC"
+	}
+	option = {
+		name = high
+		text = "RULE_DUEL_OUTCOME_RANDOMNESS_HIGH"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_HIGH_DESC"
+	}
+}
+battlefield_duels = {
+	name = "RULE_BATTLEFIELD_DUELS"
+	group = "RULE_GROUP_WARFARE"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_BATTLEFIELD_DUELS_NORMAL_DESC"
+	}
+	option = {
+		name = more_frequent
+		text = "RULE_BATTLEFIELD_DUELS_MORE_FREQUENT"
+		desc = "RULE_BATTLEFIELD_DUELS_MORE_FREQUENT_DESC"
+	}
+	option = {
+		name = rare
+		text = "RULE_OPTION_RARE"
+		desc = "RULE_BATTLEFIELD_DUELS_RARE_DESC"
+	}
+}
 
 epidemics = {
 	name = "RULE_EPIDEMICS"

@@ -1,0 +1,11 @@
+611.01.01={
+	#law = status_of_women_4
+	#law = true_cognatic_succession
+	#law = succ_primogeniture
+	liege = 0
+	holder=2040 # 
+	set_global_flag = jugdral_rebellion_started
+}
+632.01.01={
+	holder = 0 # Destroyed
+}

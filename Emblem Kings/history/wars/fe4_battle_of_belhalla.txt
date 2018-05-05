@@ -15,7 +15,7 @@ casus_belli = {
 	add_attacker = 1083 # Andrey
 }
 
-761.1.1 = {
+760.4.1 = {
 	rem_attacker = 1070
 	rem_defender = 1032
 	rem_defender = 1039 # Claud

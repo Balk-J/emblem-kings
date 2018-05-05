@@ -61,4 +61,14 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\fire_dragons_gate.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_duel"
+		texturefile = "gfx\\event_pictures\duel.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_lord_dead"
+		texturefile = "gfx\\event_pictures\chrom_dead.tga"
+		allwaystransparent = yes
+	}
 }

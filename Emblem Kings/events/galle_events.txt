@@ -1,0 +1,519 @@
+namespace = galle
+
+# Galle conquers a county
+character_event = {
+	id = galle.1
+	desc = galle.1.desc
+	picture = GFX_evt_heretic
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = galle.1.A
+		ai_chance = {
+			factor = 1
+		}
+		set_character_flag = galle_county_conquest_allowed
+		# Find a target. 
+		# Pick a random neighbor.
+		random_neighbor_independent_ruler = {
+			limit = {
+				NOT = { has_landed_title = k_grann }  
+			}
+			# Pick a province in their realm that borders one of ours
+			random_realm_province = {
+				limit = {
+					any_neighbor_province = {
+						holder_scope = {
+							OR = {
+								character = ROOT
+								top_liege = { character = ROOT }
+							}
+						}
+					}
+				}
+				county = {
+					holder_scope = {
+						top_liege = {
+							reverse_war = {
+								target = ROOT
+								casus_belli = galle_county_conquest
+								thirdparty_title = PREVPREV
+							}
+						}
+					}
+				}
+			}
+		}
+		spawn_galle_stack_effect = yes
+	}	
+	option = {
+		name = galle.1.B
+		ai_chance = {
+			factor = 0
+		}
+		d_loptyr = {
+			destroy_landed_title = THIS
+		}
+	}	
+}
+
+# Hit the Grann Republic!
+character_event = {
+	id = galle.2
+	desc = galle.2.desc
+	picture = GFX_evt_large_army
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = galle.2.A
+		ai_chance = {
+			factor = 1
+		}
+		set_character_flag = galle_invasion_allowed
+		k_grann = {
+			holder_scope = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = galle_invasion
+					thirdparty_title = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_character_flag = summoning_deadlords }
+			}
+			custom_tooltip = {
+				text = galle.2.A.tooltip
+				hidden_tooltip = {
+					character_event = {	id = magic.22 }
+				}
+			}
+		}
+	}	
+	option = {
+		name = galle.2.B
+		ai_chance = {
+			factor = 0
+		}
+		d_loptyr = {
+			destroy_landed_title = THIS
+		}
+	}	
+}
+# Republic destroyed, found the empire.
+character_event = {
+	id = galle.3
+	desc = galle.3.desc
+	picture = GFX_evt_coronation
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = galle.3.A
+		e_loptyr = {
+			grant_title = ROOT
+		}
+		d_loptyr = {
+			destroy_landed_title = THIS
+		}
+		k_grann = {
+			destroy_landed_title = THIS
+		}
+		hidden_tooltip = {
+			post_loptyr_jugdral_de_jure_titles_effect = yes
+			e_loptyr = {
+				add_law = { law = status_of_women_4 cooldown = no opinion_effect = no }
+				add_law = { law = true_cognatic_succession cooldown = no opinion_effect = no }
+				add_law = { law = succ_primogeniture cooldown = no opinion_effect = no }
+			}
+			#character_event = { id = galle.4 days = 7 random = 3 }
+		}
+	}	
+}
+# The Great Purge
+character_event = {
+	id = galle.4
+	desc = galle.4.desc
+	picture = GFX_evt_shadowy_cabal
+	is_triggered_only = yes
+	hide_from = yes
+	
+	only_playable = yes
+	religion = loptyrian
+	has_global_flag = grann_republic_destroyed
+	trigger = {
+		year = 449
+		NOT = { year = 457 }
+		NOT = { has_global_flag = great_purge }
+		imperial_loptyr_in_power_trigger = yes
+		any_vassal = {
+			NOT = { religion = loptyrian }
+		}
+	}
+	
+	immediate = {
+		set_global_flag = great_purge
+	}
+	
+	# Purge the dissidents!
+	option = {
+		name = galle.4.A
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 500
+		custom_tooltip = {
+			text = galle.4.A.tooltip
+			hidden_tooltip = {
+				any_vassal = {
+					limit = {
+						NOT = { religion = loptyrian }
+					}
+					capital_scope = {
+						add_province_modifier = { name = great_purge duration = 365 }
+					}
+					if = {
+						limit = { ai = yes }
+						any_demesne_title = {
+							usurp_title = { target = ROOT type = claim }
+						}
+						death = { 
+							death_reason = death_execution
+							killer = ROOT
+						} 
+					}else = {
+						any_demesne_title = {
+							limit = { higher_tier_than = COUNT }
+							usurp_title = { target = ROOT type = claim }
+						}
+						imprison = ROOT
+					}
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			any_playable_ruler = {
+				if = {
+					limit = {
+						primary_title = { region = world_jugdral }
+						is_within_diplo_range = ROOT
+					}
+					narrative_event = { id = galle.5 days = 1 }
+				}
+			}
+		}
+	}	
+	# Nah, I'll ignore them
+	option = {
+		name = galle.4.B
+		ai_chance = {
+			factor = 0
+		}
+		any_vassal = {
+			limit = {
+				NOT = { religion = loptyrian }
+			}
+			opinion = {
+				modifier = opinion_evil_tyrant
+				who = ROOT
+				years = 10
+			}
+		}
+	}	
+}
+
+# Announce great purge
+narrative_event = {
+	id = galle.5
+	title = galle.5.title
+	desc = galle.5.desc
+	picture = GFX_evt_beheading
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = galle.5.A
+		trigger = { 
+			NOT = { religion = loptyrian }
+		}
+	}	
+	option = {
+		name = galle.5.B
+		trigger = { 
+			religion = loptyrian
+		}
+	}	
+}
+
+# Notify destruction of republic
+narrative_event = {
+	id = galle.6
+	desc = galle.6.desc
+	title = galle.6.title
+	picture = GFX_evt_book_carolingian_script
+	border = GFX_event_narrative_frame_war
+	
+	only_playable = yes
+	has_global_flag = scenario_descent_of_loptyr
+
+	major = yes
+	
+	trigger = {
+		has_landed_title = e_loptyr
+		NOT = { has_global_flag = grann_republic_destroyed }
+	}
+
+	major_trigger = {
+		capital_scope = {
+			region = world_jugdral
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = grann_republic_destroyed
+	}
+	
+	option = {
+		name = galle.6.A
+		trigger = {
+			has_landed_title = e_loptyr
+		}
+	}
+	option = {
+		name = galle.6.B
+		trigger = {
+			NOT = { has_landed_title = e_loptyr }
+			religion = loptyrian
+		}
+	}
+	option = {
+		name = galle.6.C
+		trigger = {
+			NOT = { has_landed_title = e_loptyr }
+			NOT = { religion = loptyrian }
+		}
+	}
+}
+
+# The sorrow of Miletos
+character_event = {
+	id = galle.7
+	desc = galle.7.desc
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes
+	hide_from = yes
+	
+	only_playable = yes
+	religion = loptyrian
+	has_global_flag = great_purge
+	trigger = {
+		year = 452
+		NOT = { has_global_flag = sorrow_of_miletos }
+		imperial_loptyr_in_power_trigger = yes
+		OR = {
+			owns = 506 # Miletos
+			any_realm_lord = {
+				owns = 506
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = sorrow_of_miletos
+	}
+	# Sacrifice children. You monster.
+	option = {
+		name = galle.7.A
+		ai_chance = {
+			factor = 1
+		}
+		piety = 1000
+		506 = {
+			add_province_modifier = { name = population_massacred duration = 1825 }
+		}
+		
+		hidden_tooltip = {
+			any_playable_ruler = {
+				if = {
+					limit = {
+						primary_title = { region = world_jugdral }
+						is_within_diplo_range = ROOT
+					}
+					narrative_event = { id = galle.9 days = 1 }
+				}
+			}
+		}
+	}	
+	# Preserve some shred of decency
+	option = {
+		name = galle.7.B
+		ai_chance = {
+			factor = 0
+		}
+		piety = -100
+	}	
+}
+
+# Massacre of Edda
+character_event = {
+	id = galle.8
+	desc = galle.8.desc
+	picture = GFX_evt_heretic
+	is_triggered_only = yes
+	hide_from = yes
+	
+	only_playable = yes
+	religion = loptyrian
+	has_global_flag = sorrow_of_miletos
+	trigger = {
+		year = 453
+		NOT = { has_global_flag = massacre_of_edda }
+		imperial_loptyr_in_power_trigger = yes
+		OR = {
+			owns = 342 # Edda
+			any_realm_lord = {
+				owns = 342
+			}
+		}
+		342 = {
+			NOT = { religion = loptyrian }
+		}
+	}
+	
+	immediate = {
+		set_global_flag = massacre_of_edda
+	}
+	# 
+	option = {
+		name = galle.8.A
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 1000
+		342 = {
+			add_province_modifier = { name = population_massacred duration = 1825 }
+			religion = loptyrian
+		}
+		
+		hidden_tooltip = {
+			any_playable_ruler = {
+				if = {
+					limit = {
+						primary_title = { region = world_jugdral }
+						is_within_diplo_range = ROOT
+					}
+					narrative_event = { id = galle.10 days = 1 }
+				}
+			}
+		}
+	}	
+	# Preserve some shred of decency
+	option = {
+		name = galle.8.B
+		ai_chance = {
+			factor = 0
+		}
+		piety = -100
+		342 = {
+			add_province_modifier = { name = heretic_stronghold duration = 3650 }
+			religion = earthen_pagan
+		}
+		random_realm_province = {
+			limit = {
+				religion = loptyrian
+			}
+			add_province_modifier = { name = heretic_stronghold duration = 1825 }
+			religion = earthen_pagan
+		}
+		random_realm_province = {
+			limit = {
+				religion = loptyrian
+			}
+			add_province_modifier = { name = heretic_stronghold duration = 1825 }
+			religion = earthen_pagan
+		}
+		random_realm_province = {
+			limit = {
+				religion = loptyrian
+			}
+			add_province_modifier = { name = heretic_stronghold duration = 1825 }
+			religion = earthen_pagan
+		}
+		random_realm_province = {
+			limit = {
+				religion = loptyrian
+			}
+			add_province_modifier = { name = heretic_stronghold duration = 1825 }
+			religion = earthen_pagan
+		}
+		random_realm_province = {
+			limit = {
+				religion = loptyrian
+			}
+			add_province_modifier = { name = heretic_stronghold duration = 1825 }
+			religion = earthen_pagan
+		}
+	}	
+}
+# Announce Sorrow of Miletos
+narrative_event = {
+	id = galle.9
+	title = galle.9.title
+	desc = galle.9.desc
+	picture = GFX_evt_beheading
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = galle.9.A
+		trigger = { 
+			NOT = { religion = loptyrian }
+		}
+		opinion = {
+			modifier = opinion_horrified
+			who = ROOT
+			years = 10
+		}
+	}	
+	option = {
+		name = galle.9.B
+		trigger = { 
+			religion = loptyrian
+		}
+	}	
+}
+# Announce Massacre of Edda
+narrative_event = {
+	id = galle.10
+	title = galle.10.title
+	desc = galle.10.desc
+	picture = GFX_evt_beheading
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = galle.10.A
+		trigger = { 
+			NOT = { religion = loptyrian }
+		}
+		opinion = {
+			modifier = opinion_horrified
+			who = ROOT
+			years = 10
+		}
+	}	
+	option = {
+		name = galle.10.B
+		trigger = { 
+			religion = loptyrian
+		}
+	}	
+}

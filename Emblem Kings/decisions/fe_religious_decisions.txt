@@ -6,11 +6,14 @@ decisions = {
 	
 		potential = {
 			is_playable = yes
+			religion = church_of_edda
 			OR = {
-				religion = church_of_edda
-				has_character_flag = is_fe4_blagi # Blagi always gets to do it even if he flips back to Earthen for some reason
+				#religion = maerist
+				#religion = earthen_pagan
+				#religion = earthen_pagan_reformed
+				dynasty = 1003 # Edda
+				has_character_flag = church_of_edda_founder
 			}
-			dynasty = 1003 # Edda
 			NOT = { is_title_active = d_church_of_edda }
 			d_church_of_edda = {
 				has_holder = no
@@ -45,6 +48,16 @@ decisions = {
 				religion_authority = {
 					modifier = papacy_instituted
 					years = 20
+				}
+				
+				any_playable_ruler = {
+					limit = {
+						religion = earthen_pagan
+						capital_scope = {
+							region = world_jugdral
+						}
+					}
+					character_event = { id = fe4_crusade.14 days = 1 }
 				}
 			}
 			hidden_effect = {
@@ -649,7 +662,7 @@ decisions = {
 						save_event_target_as = schwarze_rosen_head_target
 					}				
 				}
-				event_target:loptyrian_archbishop_target = { 
+				event_target:schwarze_rosen_head_target = { 
 					d_schwarze_rosen = {
 						grant_title = PREV
 					}

@@ -8,6 +8,7 @@
 		birth=yes
 		culture=grann
 		religion=earthen_pagan
+		employer=2040
 	}
 	628.01.01={
 		add_trait="class_mage"
@@ -26,6 +27,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_wind_user
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_forseti"

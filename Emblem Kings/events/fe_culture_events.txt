@@ -1,0 +1,189 @@
+namespace = fe_culture
+
+character_event = {
+	id = fe_culture.1
+	desc = fe_culture.1.desc
+	picture = GFX_evt_market
+	hide_from = yes
+	is_triggered_only = yes
+
+	option = {
+		name = fe_culture.1.A	
+		ai_chance = {
+			factor = 1
+		}
+		culture = new_thracian
+	}
+	option = {
+		name = fe_culture.1.B	
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 10
+	}
+}
+
+# Thracian/Mansterian province converts to New Thracian
+province_event = {
+	id = fe_culture.2
+	desc = fe_culture.2.desc
+	picture = GFX_evt_stone_church
+
+	trigger = {
+		OR = {
+			culture = thracian
+			culture = mansterian
+		}
+		owner = {
+			culture = new_thracian 
+		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					OR = {
+						culture = thracian
+						culture = mansterian
+					}
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = fe_culture.2.A
+		culture = new_thracian
+	}
+}
+
+character_event = {
+	id = fe_culture.1
+	desc = fe_culture.1.desc
+	picture = GFX_evt_market
+	hide_from = yes
+	is_triggered_only = yes
+
+	option = {
+		name = fe_culture.1.A	
+		ai_chance = {
+			factor = 1
+		}
+		culture = new_thracian
+	}
+	option = {
+		name = fe_culture.2.A	
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 10
+	}
+}
+
+province_event = {
+	id = fe_culture.3
+	desc = fe_culture.3.desc
+	picture = GFX_evt_stone_church
+
+	has_global_flag = loptyr_empire_destroyed
+	trigger = {
+#		year = 611		
+		culture = grann
+		region = world_jugdral 
+		OR = {
+			region = world_jugdral
+			owner = { 
+				culture_group = jugdrali
+				NOT = { culture = grann }
+			}
+		}
+		any_province_holding = {
+			NOT = { holding_type = nomad }
+		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = grann 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = grann }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.5
+			owner = {
+				has_holy_blood_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = fe_culture.3
+		if = {
+			limit = { 
+				OR = {
+					region = world_jugdral_agustria
+					region = world_jugdral_orgahil
+				}		
+			}
+			culture = agustrian
+		}else_if = {
+			limit = { region = world_jugdral_silesse }
+			culture = silessian
+		}else_if = {
+			limit = { region = world_jugdral_isaach }
+			culture = isaachian
+		}else_if = {
+			limit = { region = world_jugdral_thracia }
+			culture = thracian
+		}else_if = {
+			limit = { region = world_jugdral_verdane }
+			culture = verdanian
+		}else = {
+			culture = grannvalean
+		}
+	}
+}

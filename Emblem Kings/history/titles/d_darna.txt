@@ -14,10 +14,7 @@
 	holder=1310 # filler
 }
 0701.01.01={
-	holder=4303
-}
-0706.01.01={
-	holder=4302
+	holder=4304
 }
 0736.01.01={
 	holder=1028 # filler
@@ -28,7 +25,7 @@
 0770.01.01={
 	liege = e_grannvale 
 }
-0778.01.01={
+0777.08.01={
 	liege = k_yied 
 	holder=1038 # Seliph?
 }

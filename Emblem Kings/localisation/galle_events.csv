@@ -1,0 +1,43 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+galle.1.desc;Your devoted followers are ready to march on neighboring realms and seize their lands for the glory of [Root.Religion.GetRandomGodNameCap]! You need only give the word and hundreds more will join your invincible host.;;;;;;;;;;;;;x
+galle.1.A;We attack!;;;;;;;;;;;;;x
+galle.1.B;I have no more use for this host.;;;;;;;;;;;;;x
+galle.2.desc;Your lands and armies have grown considerably since you first began rallying people to your cause. Word is that the lords of the Grann Republic have been watching your expansion with considerable unease. The republic has been the foremost power on the continent for centuries, but by now even the legions of Grann should be no match for your host if you choose to invade...;;;;;;;;;;;;;x
+galle.2.A;Let's go. I've been preparing something special for them.;;;;;;;;;;;;;x
+galle.2.A.tooltip;§Y[Root.GetTitledFirstName]§! will also start the ritual to summon the Deadlords.;;;;;;;;;;;;;x
+galle.2.B;I will stop with what I have already taken.;;;;;;;;;;;;;x
+galle.3.desc;With the Grann Republic's surrender, its institutions have been destroyed and its former territories are now under your control. The people are confused and disheartened as well - the land is ready to be reshaped in your image.;;;;;;;;;;;;;x
+galle.3.A;Oh yes, there will be many changes.;;;;;;;;;;;;;x
+galle.4.desc;It has come to your attention that there are loyalists of the Grann Republic among your vassals. Or at the very least, people who doubt the truth of your religion and your right to rule. Fortunately, they are not very well organized. It would be simple to round them all up and create a scene of such glorious carnage that none will challenge you again...;;;;;;;;;;;;;x
+galle.4.A;Make examples of everyone. I don't care how many.;;;;;;;;;;;;;x
+galle.4.A.tooltip;Non-§YLoptyrian§! vassals of §Y[Root.GetTitledFirstName]§! will be purged and their lands seized.;;;;;;;;;;;;;x
+galle.4.B;Let the fools complain. It makes no difference.;;;;;;;;;;;;;x
+galle.5.title;The Great Purge;;;;;;;;;;;;;x
+galle.5.desc;[From.GetTitledName], which was established atop the smoldering ruins of the Grann Republic, has moved to consolidate [From.GetHerHis] power. Prominent landholders and influential figures of the republic were rounded up by [From.GetFirstName]'s fanatical followers, with the [From.GetTitle] seizing their lands and titles. \n\nMost of those arrested were put to death in gruesome public executions. A few simply vanished into the temples of [From.Capital.GetName] and have not been seen since. It is uncertain how many people have been slaughtered, but rumors place the number as high as 100,000. Peasants across the land are starting to refer to this event as 'The Great Purge.';;;;;;;;;;;;;x
+galle.5.A;This is an outrage!;;;;;;;;;;;;;x
+galle.5.B;The fate of all who oppose our lord.;;;;;;;;;;;;;x
+galle.6.title;Grann Republic Destroyed;;;;;;;;;;;;;x
+galle.6.desc;Over 400 years ago, the Grann Kingdom was founded on the banks of the Jun river. It was unusually advanced for its time and rose in power to become the first great human civilization. Since its reorganization into a republic in 230 it has been a force for peace and prosperity in Jugdral. \n\nThat proud history recently came to an end as the Loptryian Host invaded and conquered the republic, establishing the Loptyr Empire in its place. This show of force has amazed rulers across the continent and the empire is now recognized as the de jure liege of all its kingdoms.;;;;;;;;;;;;;x
+galle.6.A;Hail to the [Root.GetTitle]!;Gloire à notre [Root.GetTitle] !;Ehre sei [Root.GetTitle]!;;¡Aclamar al [Root.GetTitle]!;;;;;;;;;x
+galle.6.B;Sic transit gloria mundi.;Sic transit gloria mundi.;Sic transit gloria mundi.;;Sic transit gloria mundi.;;;;;;;;;x
+galle.6.C;Woe!;Malheur !;Oh weh!;;¡Pobre!;;;;;;;;;x
+galle.7.desc;The rites you have created for your church are pleasing, but something is missing. An element of innocence, perhaps? Word is that an unusually large number of children - refugees and war orphans - have gathered in Miletos. You could order them collected and brought to the temples. They will not be missed, and it might inspire a new ritual or two.;;;;;;;;;;;;;x
+galle.7.A;The hunt is on!;;;;;;;;;;;;;x
+galle.7.B;I have better things to do.;;;;;;;;;;;;;x
+galle.8.desc;Word has reached you of unrest in... some unimportant province near the center of the continent. The people there have never truly embraced the Loptyrian faith, and now a local priest is agitating for them to rise up in the name the old gods. This movement could grow if left unchecked.;;;;;;;;;;;;;x
+galle.8.A;Kill them all and bring in some true believers.;;;;;;;;;;;;;x
+galle.8.B;Let the fool ramble all [Root.GetSheHe] likes.;;;;;;;;;;;;;x
+galle.9.title;The Sorrow of Miletos;;;;;;;;;;;;;x
+galle.9.desc;At the behest of [From.GetTitledName], a large number of children in Miletos were captured and brought to the local Loptyrian temples. [From.GetFirstName]'s priests turned the event into a cruel sport, hunting the children down like animals and competing to see who could catch the most.\n\nMost of the children who survived the hunts were sacrificed to Loptyr in a series of ghoulish ceremonies. Between the sacrificed children, the locals who were killed attempting to protect them, and the people who fled the chaos, the city of Miletos is a somber ghost of its former self.;;;;;;;;;;;;;x
+galle.9.A;How could anyone do such a thing?!;;;;;;;;;;;;;x
+galle.9.B;The priests say we should start hunts of our own.;;;;;;;;;;;;;x
+galle.10.title;The Massacre of Edda;;;;;;;;;;;;;x
+galle.10.desc;The armies of the [From.PrimaryTitle.GetName] have slaughtered most of the population in the province of Edda. Loptryian priests have begun to settle in the depopulated villages and towns, preaching the teachings of their dark god to the few desperate survivors. The nights are alive with the sound of screams and the smell of smoke as the priests consecrate new temples to Loptyr.;;;;;;;;;;;;;x
+galle.10.A;When will this madness end?;;;;;;;;;;;;;x
+galle.10.B;The heretics have been taught their place.;;;;;;;;;;;;;x
+galle..title;;;;;;;;;;;;;;x
+galle..desc;;;;;;;;;;;;;;x
+galle..A;;;;;;;;;;;;;;x
+galle..B;;;;;;;;;;;;;;x
+galle..C;;;;;;;;;;;;;;x
+galle..D;;;;;;;;;;;;;;x

@@ -19,7 +19,8 @@
 	holder=1038 # Seliph
 	liege = 0
 }
-778.1.1={
+#778.1.1={
+777.8.1={
 	holder=1136 # Seliph's done here
 	liege = d_tirnanog
 }

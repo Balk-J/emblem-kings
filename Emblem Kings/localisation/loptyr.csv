@@ -11,13 +11,19 @@ loptyr.5.desc;When you woke up this morning, you found a black and purple tome s
 loptyr.5.A;Let's take a look.;;;;;;;;;;;;;x
 loptyr.5.B;I will have my servants dispose of it at once.;;;;;;;;;;;;;x
 loptyr.6.title;Loptyr Defeated;;;;;;;;;;;;;x
-loptyr.6.desc;[From.GetTitledName], the last known heir to Loptyr's fell bloodline, has died. The dark god's servants will undoubtedly search for a way to revive their master, but that will likely take generations if it can be accomplished at all.\n\nThose who stood against [From.GetFirstName] are celebrating this moment as a victory for all of humanity.;;;;;;;;;;;;;x
+loptyr.6.desc;[From.GetFullName], the last known heir to Loptyr's fell bloodline, has died. The dark god's servants will undoubtedly search for a way to revive their master, but that will likely take generations if it can be accomplished at all.\n\nThose who stood against [From.GetFirstName] are celebrating this moment as a victory for all of humanity.;;;;;;;;;;;;;x
 loptyr.6.A;This cannot be!;;;;;;;;;;;;;x
 loptyr.6.B;The demon is gone at last.;;;;;;;;;;;;;x
-loptyr.7.desc;You find yourself faced with a bit of a crisis of faith. It's only natural. After all, how often does a [Root.GetManWoman] outlive [Root.GetHerHis] god? Followers of Loptyr are not likely to be treated well by his enemies. It might be time to find a new faith.;;;;;;;;;;;;;x
+loptyr.7.desc;You find yourself faced with a bit of a crisis of faith. It's only natural. After all, how often does a [Root.GetManWoman] outlive the avatar of [Root.GetHerHis] god? Followers of Loptyr are not likely to be treated well by his enemies. It might be time to find a new faith.;;;;;;;;;;;;;x
 loptyr.7.A;I should convert before the mob shows up.;;;;;;;;;;;;;x
 loptyr.7.B;I will not abandon our lord! Praise Loptyr!;;;;;;;;;;;;;x
 loptyr.7.C;I can always pretend to convert...;;;;;;;;;;;;;x
+loptyr.9.desc;As the new heir to the Loptyr Empire, you could take on the name of your dynasty's founder.;;;;;;;;;;;;;x
+loptyr.9.A;I will carry on his legacy.;;;;;;;;;;;;;x
+loptyr.9.B;I would rather not change my name.;;;;;;;;;;;;;x
+loptyr.11.desc;It has become clear to you that the Loptyrian religion is nothing more than a tool of tyranny and injustice. [Root.Liege.GetFirstName] will never change it - [Root.Liege.GetSheHe] barely seems human anymore. To save the people of your land, you might have to create a new faith by force.;;;;;;;;;;;;;x
+loptyr.11.A;I can do nothing less!;;;;;;;;;;;;;x
+loptyr.11.B;Fighting a hopeless battle will not help anyone.;;;;;;;;;;;;;x
 loptyr..title;;;;;;;;;;;;;;x
 loptyr..desc;;;;;;;;;;;;;;x
 loptyr..A;;;;;;;;;;;;;;x

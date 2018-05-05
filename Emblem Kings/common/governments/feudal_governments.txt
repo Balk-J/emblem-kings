@@ -279,7 +279,13 @@ feudal_governments = {
 		can_build_tribal = no
 		
 		ignore_in_vassal_limit_calculation = {
+			feudal_government
+			merchant_republic_government
+			republic_government
+			theocracy_government			
 			tribal_government
+			nomadic_government
+			chinese_imperial_government
 		}
 		capital_move_delay = 600
 		

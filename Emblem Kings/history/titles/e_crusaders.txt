@@ -3,8 +3,9 @@
 	law = true_cognatic_succession
 	law = succ_primogeniture
 }
-611.1.1={
+632.1.1={
 	holder=1001 # Heim	
+	set_global_flag = jugdral_crusade_started
 	effect = {
 		set_title_flag = crusade_allowed
 	}

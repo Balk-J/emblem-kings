@@ -27,6 +27,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_dragon_knight
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_dain"
@@ -73,6 +74,7 @@
 	
 	# Miracle of Darna
 	632.1.1 = {
+		employer=1001 # Heim
 		give_nickname=nick_the_lance_knight
 		add_trait="crusader_draconic"
 		add_trait="holy_blood_major_noba"
@@ -150,9 +152,14 @@
 		remove_trait="class_cavalier"
 		add_trait="class_paladin"
 	}	
+	 
+	632.1.1 = {
+		employer=1001 # Heim
+	}
 	
 	# Founding of Jugdral
 	649.1.1 = {
+		employer=1012 # Noba
 		religion=church_of_edda
 		culture=thracian
 		add_matrilineal_spouse=1012 # Noba

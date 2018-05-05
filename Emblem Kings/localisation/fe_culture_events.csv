@@ -1,0 +1,14 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+fe_culture.1.desc;Since the unification ceremony, some of your Mansterian retainers have been discussing ways to bring the people of the realm closer together. One suggestion was that you adopt a few Thracian customs and study some of their fighting styles.;;;;;;;;;;;;;x
+fe_culture.1.A;We have much to learn from each other.;;;;;;;;;;;;;x
+fe_culture.1.B;No, [Root.Culture.GetName] ways are best.;;;;;;;;;;;;;x
+fe_culture.2.desc;The spirit of reunification has taken hold in the county of [Root.GetName]. The local culture now reflects habits and traditions from north and south Thracia.;;;;;;;;;;;;;x
+fe_culture.2.A;They are truly New Thracians now.;;;;;;;;;;;;;x
+fe_culture.3.desc;The Grann people in various regions are slowly developing unique local identities with distinctive customs. The county of [Root.GetName] is the latest to adopt new traditions.;;;;;;;;;;;;;x
+fe_culture.3.A;The times are changing.;Les temps changent.;Die Zeiten ändern sich.;;Los tiempos están cambiando.;;;;;;;;;x
+fe_culture..title;;;;;;;;;;;;;;x
+fe_culture..desc;;;;;;;;;;;;;;x
+fe_culture..A;;;;;;;;;;;;;;x
+fe_culture..B;;;;;;;;;;;;;;x
+fe_culture..C;;;;;;;;;;;;;;x
+fe_culture..D;;;;;;;;;;;;;;x

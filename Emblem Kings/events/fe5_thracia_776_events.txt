@@ -792,9 +792,10 @@ character_event = {
 	}	
 }
 
-narrative_event = {
+# Forming New Thracia
+character_event = {
 	id = fe5_thracia_776.15
-	title = fe5_thracia_776.15.title
+	#title = fe5_thracia_776.15.title
 	desc = fe5_thracia_776.15.desc
 	
 	picture = GFX_evt_coronation
@@ -838,6 +839,7 @@ narrative_event = {
 				}
 				narrative_event = { id = fe5_thracia_776.16 }
 			}
+			character_event = {	id = fe_culture.1 days = 1 }
 		}
 	}
 }
@@ -855,4 +857,69 @@ narrative_event = {
 	option = {
 		name = fe5_thracia_776.16
 	}
+}
+
+# Absorbing Manster
+character_event = {
+	id = fe5_thracia_776.17
+	#title = fe5_thracia_776.17.title
+	desc = fe5_thracia_776.17.desc
+	
+	picture = GFX_evt_powerful_ruler
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe5_thracia_776.17.A
+		k_manster = {
+			any_direct_de_jure_vassal_title = {
+				de_jure_liege = k_thracia
+			}
+			destroy_landed_title = THIS
+		}
+		
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					NOT = { has_landed_title = k_thracia }
+					ai = no
+					is_within_diplo_range = ROOT
+				}
+				narrative_event = { id = fe5_thracia_776.18 }
+			}
+		}
+	}
+}
+
+# Informed 
+narrative_event = {
+	id = fe5_thracia_776.18
+	title = fe5_thracia_776.18.title
+	desc = fe5_thracia_776.18.desc
+	
+	picture = GFX_evt_powerful_ruler
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fe5_thracia_776.18
+	}
+}
+
+character_event = {
+	id = fe5_thracia_776.19
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = d_magi_squad
+		war = no
+	}
+	
+	option = {
+		name = OK
+		d_magi_squad = {
+			unsafe_destroy_landed_title = THIS
+		}
+	}	
 }

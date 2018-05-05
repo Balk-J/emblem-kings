@@ -1,3 +1,346 @@
+remove_all_classes_effect = {		
+	if = {
+		limit = { trait = base_class_knight }
+		remove_trait = base_class_knight
+	}
+	if = {
+		limit = { trait = base_class_cavalier }
+		remove_trait = base_class_cavalier
+	}
+	if = {
+		limit = { trait = base_class_archer }
+		remove_trait = base_class_archer
+	}
+	if = {
+		limit = { trait = base_class_horse_archer }
+		remove_trait = base_class_horse_archer
+	}
+	if = {
+		limit = { trait = base_class_mercenary }
+		remove_trait = base_class_mercenary
+	}
+	if = {
+		limit = { trait = base_class_fighter }
+		remove_trait = base_class_fighter
+	}
+	if = {
+		limit = { trait = base_class_myrmidon }
+		remove_trait = base_class_myrmidon
+	}
+	if = {
+		limit = { trait = base_class_thief }
+		remove_trait = base_class_thief
+	}
+	if = {
+		limit = { trait = base_class_pirate }
+		remove_trait = base_class_pirate
+	}
+	if = {
+		limit = { trait = base_class_brigand }
+		remove_trait = base_class_brigand
+	}
+	if = {
+		limit = { trait = base_class_priest }
+		remove_trait = base_class_priest
+	}
+	if = {
+		limit = { trait = base_class_monk }
+		remove_trait = base_class_monk
+	}
+	if = {
+		limit = { trait = base_class_mage }
+		remove_trait = base_class_mage
+	}
+	if = {
+		limit = { trait = base_class_dark_mage }
+		remove_trait = base_class_dark_mage
+	}
+	if = {
+		limit = { trait = base_class_wyvern_rider }
+		remove_trait = base_class_wyvern_rider
+	}
+	if = {
+		limit = { trait = base_class_pegasus_knight }
+		remove_trait = base_class_pegasus_knight
+	}
+	if = {
+		limit = { trait = base_class_manakete }
+		remove_trait = base_class_manakete
+	}
+	if = {
+		limit = { trait = base_class_soldier }
+		remove_trait = base_class_soldier
+	}
+	if = {
+		limit = { trait = base_class_dancer }
+		remove_trait = base_class_dancer
+	}
+	if = {
+		limit = { trait = base_class_bard }
+		remove_trait = base_class_bard
+	}
+	if = {
+		limit = { trait = base_class_troubador }
+		remove_trait = base_class_troubador
+	}
+	if = {
+		limit = { trait = base_class_cleric }
+		remove_trait = base_class_cleric
+	}
+	if = {
+		limit = { trait = class_archdruid }
+		remove_trait = class_archdruid
+	}
+	if = {
+		limit = { trait = class_archer }
+		remove_trait = class_archer
+	}
+	if = {
+		limit = { trait = class_archer_female }
+		remove_trait = class_archer_female
+	}
+	if = {
+		limit = { trait = class_archsage }
+		remove_trait = class_archsage
+	}
+	if = {
+		limit = { trait = class_assassin }
+		remove_trait = class_assassin
+	}
+	if = {
+		limit = { trait = class_assassin_female }
+		remove_trait = class_assassin_female
+	}
+	if = {
+		limit = { trait = class_bard }
+		remove_trait = class_bard
+	}
+	if = {
+		limit = { trait = class_berserker }
+		remove_trait = class_berserker
+	}
+	if = {
+		limit = { trait = class_bishop }
+		remove_trait = class_bishop
+	}
+	if = {
+		limit = { trait = class_bishop_female }
+		remove_trait = class_bishop_female
+	}
+	if = {
+		limit = { trait = class_brigand }
+		remove_trait = class_brigand
+	}
+	if = {
+		limit = { trait = class_cavalier }
+		remove_trait = class_cavalier
+	}
+	if = {
+		limit = { trait = class_cleric }
+		remove_trait = class_cleric
+	}
+	if = {
+		limit = { trait = class_dancer }
+		remove_trait = class_dancer
+	}
+	if = {
+		limit = { trait = class_dark_druid }
+		remove_trait = class_dark_druid
+	}
+	if = {
+		limit = { trait = class_sorceror }
+		remove_trait = class_sorceror
+	}
+	if = {
+		limit = { trait = class_sorceror_female }
+		remove_trait = class_sorceror_female
+	}
+	if = {
+		limit = { trait = class_falcon_knight }
+		remove_trait = class_falcon_knight
+	}
+	if = {
+		limit = { trait = class_fighter }
+		remove_trait = class_fighter
+	}
+	if = {
+		limit = { trait = class_general }
+		remove_trait = class_general
+	}
+	if = {
+		limit = { trait = class_great_knight }
+		remove_trait = class_great_knight
+	}
+	if = {
+		limit = { trait = class_hero }
+		remove_trait = class_hero
+	}
+	if = {
+		limit = { trait = class_hero_female }
+		remove_trait = class_hero_female
+	}
+	if = {
+		limit = { trait = class_knight }
+		remove_trait = class_knight
+	}
+	if = {
+		limit = { trait = class_mage }
+		remove_trait = class_mage
+	}
+	if = {
+		limit = { trait = class_mage_female }
+		remove_trait = class_mage_female
+	}
+	if = {
+		limit = { trait = class_mage_knight }
+		remove_trait = class_mage_knight
+	}
+	if = {
+		limit = { trait = class_mage_knight_female }
+		remove_trait = class_mage_knight_female
+	}
+	if = {
+		limit = { trait = class_magic_seal }
+		remove_trait = class_magic_seal
+	}
+	if = {
+		limit = { trait = class_manakete }
+		remove_trait = class_manakete
+	}
+	if = {
+		limit = { trait = class_manakete_female }
+		remove_trait = class_manakete_female
+	}
+	if = {
+		limit = { trait = class_mercenary }
+		remove_trait = class_mercenary
+	}
+	if = {
+		limit = { trait = class_mercenary_female }
+		remove_trait = class_mercenary_female
+	}
+	if = {
+		limit = { trait = class_monk }
+		remove_trait = class_monk
+	}
+	if = {
+		limit = { trait = class_myrmidon }
+		remove_trait = class_myrmidon
+	}
+	if = {
+		limit = { trait = class_myrmidon_female }
+		remove_trait = class_myrmidon_female
+	}
+	if = {
+		limit = { trait = class_horse_archer }
+		remove_trait = class_horse_archer
+	}
+	if = {
+		limit = { trait = class_horse_archer_female }
+		remove_trait = class_horse_archer_female
+	}
+	if = {
+		limit = { trait = class_paladin }
+		remove_trait = class_paladin
+	}
+	if = {
+		limit = { trait = class_pegasus_knight }
+		remove_trait = class_pegasus_knight
+	}
+	if = {
+		limit = { trait = class_pirate }
+		remove_trait = class_pirate
+	}
+	if = {
+		limit = { trait = class_priest }
+		remove_trait = class_priest
+	}
+	if = {
+		limit = { trait = class_bow_knight }
+		remove_trait = class_bow_knight
+	}
+	if = {
+		limit = { trait = class_bow_knight_female }
+		remove_trait = class_bow_knight_female
+	}
+	if = {
+		limit = { trait = class_rogue }
+		remove_trait = class_rogue
+	}
+	if = {
+		limit = { trait = class_sage }
+		remove_trait = class_sage
+	}
+	if = {
+		limit = { trait = class_sage_female }
+		remove_trait = class_sage_female
+	}
+	if = {
+		limit = { trait = class_dark_mage }
+		remove_trait = class_dark_mage
+	}
+	if = {
+		limit = { trait = class_dark_mage_female }
+		remove_trait = class_dark_mage_female
+	}
+	if = {
+		limit = { trait = class_sniper }
+		remove_trait = class_sniper
+	}
+	if = {
+		limit = { trait = class_sniper_female }
+		remove_trait = class_sniper_female
+	}
+	if = {
+		limit = { trait = class_soldier }
+		remove_trait = class_soldier
+	}
+	if = {
+		limit = { trait = class_swordmaster }
+		remove_trait = class_swordmaster
+	}
+	if = {
+		limit = { trait = class_swordmaster_female }
+		remove_trait = class_swordmaster_female
+	}
+	if = {
+		limit = { trait = class_thief }
+		remove_trait = class_thief
+	}
+	if = {
+		limit = { trait = class_thief_female }
+		remove_trait = class_thief_female
+	}
+	if = {
+		limit = { trait = class_troubador }
+		remove_trait = class_troubador
+	}
+	if = {
+		limit = { trait = class_war_cleric }
+		remove_trait = class_war_cleric
+	}
+	if = {
+		limit = { trait = class_war_priest }
+		remove_trait = class_war_priest
+	}
+	if = {
+		limit = { trait = class_warrior }
+		remove_trait = class_warrior
+	}
+	if = {
+		limit = { trait = class_wyvern_knight }
+		remove_trait = class_wyvern_knight
+	}
+	if = {
+		limit = { trait = class_wyvern_lord }
+		remove_trait = class_wyvern_lord
+	}
+	if = {
+		limit = { trait = class_wyvern_rider }
+		remove_trait = class_wyvern_rider
+	}
+}
+
 add_regalia_effect = {
 	if = {
 		limit = {
@@ -1688,4 +2031,409 @@ grant_crusader_title_effect = {
 		ROOT = { usurp_title = PREVPREV } 
 	}
 	grant_title_to_character_or_non_loptyrian_dynasty_head_effect = yes
+}
+grant_title_to_crusader_effect = {
+	ROOT = {
+		usurp_title = PREVPREV
+	}
+	if = {
+		limit = { 
+			can_start_crusader_kingdom_trigger = yes
+		}
+		ROOT = {
+			any_demesne_title = {
+				limit = { de_jure_liege_or_above = PREVPREVPREV }
+				grant_title = PREVPREV 
+			}
+		}		
+#		any_landed_title = {
+#			limit = { 
+#				tier = COUNT 
+#				de_jure_liege_or_above = PREVPREV 
+#				holder_scope = { any_liege = { character = ROOT } ai=yes }
+#			}
+#			usurp_title = { target = PREV type = invasion }
+#		}			
+		grant_title = PREV
+	}else = {	
+		create_charaxter = {
+			age = 20
+			female = no
+			random_traits = yes
+			dynasty = random
+			culture = ROOT
+			religion = ROOT
+		}
+		new_character = {	
+			ROOT = {
+				any_demesne_title = {
+					limit = { de_jure_liege_or_above = PREVPREVPREVPREV }
+					grant_title = PREVPREVPREV 
+				}
+			}					
+			grant_title = PREVPREV
+		}	
+	}
+}
+spawn_jugdral_rebel_small_stack_effect = {
+	random_realm_province = {
+		d_jugdral_rebels = {
+			holder_scope = {
+				spawn_unit = {
+					province = PREVPREV
+					home = PREVPREV
+					owner = THIS
+					match_character = ROOT
+					match_mult = 0.09
+					attrition = 0
+					maintenance_multiplier = 0
+					disband_on_peace = yes
+				}
+				spawn_unit = {
+					province = PREVPREV
+					home = PREVPREV
+					owner = THIS
+					match_character = ROOT
+					match_mult = 0.09
+					attrition = 0
+					maintenance_multiplier = 0
+					disband_on_peace = yes
+				}
+				spawn_unit = {
+					province = PREVPREV
+					home = PREVPREV
+					owner = THIS
+					match_character = ROOT
+					match_mult = 0.09
+					attrition = 0
+					maintenance_multiplier = 0
+					disband_on_peace = yes
+				}
+			}
+		}
+	}
+}
+spawn_jugdral_crusader_stack_effect = {
+	capital_scope = {
+		owner = {
+			spawn_unit = {
+				owner = THIS
+				province = PREV
+				troops = {
+					magic_users = { 200 200 }
+					knights = { 100 100 }
+					light_cavalry = { 200 200 }
+					heavy_infantry = { 500 500 }
+				}
+				attrition = 0
+				disband_on_peace = yes
+				maintenance_multiplier = 0
+			}					
+		}
+	}
+}
+spawn_galle_stack_effect = {
+	capital_scope = {
+		owner = {
+			spawn_unit = {
+				owner = THIS
+				province = PREV
+				troops = {
+					magic_users = { 100 100 }
+					heavy_infantry = { 200 200 }
+				}
+				attrition = 0
+				maintenance_multiplier = 0
+			}	
+			spawn_unit = {
+				owner = THIS
+				province = PREV
+				troops = {
+					magic_users = { 200 200 }
+					heavy_infantry = { 200 200 }
+				}
+				attrition = 0
+				maintenance_multiplier = 0
+			}	
+			spawn_unit = {
+				owner = THIS
+				province = PREV
+				troops = {
+					magic_users = { 100 100 }
+					heavy_infantry = { 200 200 }
+				}
+				attrition = 0
+				maintenance_multiplier = 0
+			}				
+		}
+	}
+}
+
+post_crusade_jugdral_de_jure_titles_effect = {
+	k_grannvale = {
+		de_jure_liege = e_grannvale
+	}
+	d_belhalla = {
+		de_jure_liege = k_grannvale
+	}
+	d_chalphy = {
+		de_jure_liege = k_grannvale
+	}
+	d_edda = {
+		de_jure_liege = k_grannvale
+	}
+	d_velthomer = {
+		de_jure_liege = k_grannvale
+	}
+	d_friege = {
+		de_jure_liege = k_grannvale
+	}
+	d_dozel = {
+		de_jure_liege = k_grannvale
+	}
+	d_jungby = {
+		de_jure_liege = k_grannvale
+	}
+	d_agusty = {
+		de_jure_liege = k_agustria
+	}
+	d_madino = {
+		de_jure_liege = k_agustria
+	}
+	d_silvail = {
+		de_jure_liege = k_agustria
+	}
+	d_anphony = {
+		de_jure_liege = k_agustria
+	}
+	d_heirhein = {
+		de_jure_liege = k_agustria
+	}
+	d_nordion = {
+		de_jure_liege = k_agustria
+	}
+	d_mackily = {
+		de_jure_liege = k_agustria
+	}
+	k_agustria = {
+		de_jure_liege = e_grannvale
+	}
+	d_silesse = {
+		de_jure_liege = k_silesse
+	}
+	d_zaxon = {
+		de_jure_liege = k_silesse
+	}
+	d_thove = {
+		de_jure_liege = k_silesse
+	}
+	d_sailane = {
+		de_jure_liege = k_silesse
+	}
+	d_lubeck = {
+		de_jure_liege = k_silesse
+	}
+	k_silesse = {
+		de_jure_liege = e_grannvale
+	}
+	d_isaach = {
+		de_jure_liege = k_isaach
+	}
+	d_rivough = {
+		de_jure_liege = k_isaach
+	}
+	d_sophara = {
+		de_jure_liege = k_isaach
+	}
+	d_ganeishire = {
+		de_jure_liege = k_isaach
+	}
+	d_tirnanog = {
+		de_jure_liege = k_isaach
+	}
+	k_isaach = {
+		de_jure_liege = e_grannvale
+	}
+	d_leonster = {
+		de_jure_liege = k_thracia
+	}
+	d_alster = {
+		de_jure_liege = k_thracia
+	}
+	d_conote = {
+		de_jure_liege = k_thracia
+	}
+	d_manster = {
+		de_jure_liege = k_thracia
+	}
+	d_melgln = {
+		de_jure_liege = k_thracia
+	}
+	d_tahra = {
+		de_jure_liege = k_thracia
+	}
+	d_thracia = {
+		de_jure_liege = k_thracia
+	}
+	d_kapathogia = {
+		de_jure_liege = k_thracia
+	}
+	d_noel = {
+		de_jure_liege = k_thracia
+	}
+	d_meace = {
+		de_jure_liege = k_thracia
+	}
+	d_luthecia = {
+		de_jure_liege = k_thracia
+	}
+	d_grutia = {
+		de_jure_liege = k_thracia
+	}
+	d_iss = {
+		de_jure_liege = k_thracia
+	}
+	d_savan = {
+		de_jure_liege = k_thracia
+	}
+	d_leonster = {
+		de_jure_liege = k_thracia
+	}
+	k_thracia = {
+		de_jure_liege = e_grannvale
+	}
+	d_dahkla = {
+		de_jure_liege = k_yied
+	}
+	d_anu = {
+		de_jure_liege = k_yied
+	}
+	d_lir = {
+		de_jure_liege = k_yied
+	}
+	d_peruluke = {
+		de_jure_liege = k_miletos
+	}
+	k_orgahil = {
+		de_jure_liege = e_orgahil
+	}
+	k_verdane = {
+		de_jure_liege = e_verdane
+	}
+	k_miletos = {
+		de_jure_liege = e_miletos
+	}
+	k_yied = {
+		de_jure_liege = e_yied
+	}
+}
+
+post_loptyr_jugdral_de_jure_titles_effect = {
+	d_jungby = {
+		de_jure_liege = k_ollerus
+	}
+	d_evans = {
+		de_jure_liege = k_verdane
+	}
+	d_genoa = {
+		de_jure_liege = k_verdane
+	}
+	d_nordion = {
+		de_jure_liege = k_heirhein
+	}
+	d_heirhein = {
+		de_jure_liege = k_heirhein
+	}
+	d_anphony = {
+		de_jure_liege = k_heirhein
+	}
+	d_silvail = {
+		de_jure_liege = k_heirhein
+	}
+	k_orgahil = {
+		de_jure_liege = e_loptyr
+	}
+	k_verdane = {
+		de_jure_liege = e_loptyr
+	}
+	k_miletos = {
+		de_jure_liege = e_loptyr
+	}
+	k_yied = {
+		de_jure_liege = e_loptyr
+	}
+	k_ollerus = {
+		de_jure_liege = e_loptyr
+	}
+	k_heirhein = {
+		de_jure_liege = e_loptyr
+	}
+	k_madino = {
+		de_jure_liege = e_loptyr
+	}
+	k_tor = {
+		de_jure_liege = e_loptyr
+	}
+	k_valhalla = {
+		de_jure_liege = e_loptyr
+	}
+	k_melgln = {
+		de_jure_liege = e_loptyr
+	}
+	k_lubeck = {
+		de_jure_liege = e_loptyr
+	}
+	k_sailane = {
+		de_jure_liege = e_loptyr
+	}
+	k_tirnanog = {
+		de_jure_liege = e_loptyr
+	}
+	k_rivough = {
+		de_jure_liege = e_loptyr
+	}
+	k_luthecia = {
+		de_jure_liege = e_loptyr
+	}
+	k_conote = {
+		de_jure_liege = e_loptyr
+	}
+	k_savan = {
+		de_jure_liege = e_loptyr
+	}
+	k_kapathogia = {
+		de_jure_liege = e_loptyr
+	}
+	k_grutia = {
+		de_jure_liege = e_loptyr
+	}
+}
+
+jugdral_culture_change_effect = {
+	capital_scope = {
+		if = {
+			limit = { 
+				OR = {
+					region = world_jugdral_agustria
+					region = world_jugdral_orgahil
+				}		
+			}
+			ROOT = { culture = agustrian }
+		}else_if = {
+			limit = { region = world_jugdral_silesse }
+			ROOT = { culture = silessian }
+		}else_if = {
+			limit = { region = world_jugdral_isaach }
+			ROOT = { culture = isaachian }
+		}else_if = {
+			limit = 
+			{ region = world_jugdral_thracia }
+			ROOT = { culture = thracian }
+		}else_if = {
+			limit = { region = world_jugdral_verdane }
+			ROOT = { culture = verdanian }
+		}else = {
+			ROOT = { culture = grannvalean }
+		}
+	}
 }

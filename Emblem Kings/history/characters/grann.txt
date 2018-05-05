@@ -52,36 +52,49 @@
 	}	
 	440.01.01={
 		effect = {
-			spawn_unit = {
-				owner = ROOT
-				province = 514 # Galle's Landing, Sunnemo
-				troops = {
-					magic_users = { 1000 1000 }
-					heavy_infantry = { 2000 2000 }
-				}
-				attrition = 0
-				maintenance_multiplier = 0
-			}
-			spawn_unit = {
-				owner = ROOT
-				province = 514 # Galle's Landing, Sunnemo
-				troops = {
-					magic_users = { 1000 1000 }
-					heavy_infantry = { 2000 2000 }
-				}
-				attrition = 0
-				maintenance_multiplier = 0
-			}
-			spawn_unit = {
-				owner = ROOT
-				province = 514 # Galle's Landing, Sunnemo
-				troops = {
-					magic_users = { 1000 1000 }
-					heavy_infantry = { 2000 2000 }
-				}
-				attrition = 0
-				maintenance_multiplier = 0
-			}
+			set_variable = { which = loptyrian_conquests_needed value = 7 }
+			spawn_galle_stack_effect = yes
+		}
+	}
+	441.01.01={
+		effect = {
+			set_variable = { which = loptyrian_conquests_needed value = 6 }
+			spawn_galle_stack_effect = yes
+		}
+	}
+	442.01.01={
+		effect = {
+			set_variable = { which = loptyrian_conquests_needed value = 5 }
+			spawn_galle_stack_effect = yes
+		}
+	}
+	443.01.01={
+		effect = {
+			set_variable = { which = loptyrian_conquests_needed value = 4 }
+			spawn_galle_stack_effect = yes
+		}
+	}
+	444.01.01={
+		effect = {
+			set_variable = { which = loptyrian_conquests_needed value = 3 }
+			spawn_galle_stack_effect = yes
+		}
+	}
+	445.01.01={
+		effect = {
+			set_variable = { which = loptyrian_conquests_needed value = 2 }
+			spawn_galle_stack_effect = yes
+		}
+	}
+	446.01.01={
+		effect = {
+			set_variable = { which = loptyrian_conquests_needed value = 1 }
+			spawn_galle_stack_effect = yes
+		}
+	}
+	447.01.01={
+		effect = {
+			set_variable = { which = loptyrian_conquests_needed value = 0 }
 		}
 	}
 	457.1.1={
@@ -920,6 +933,7 @@
 	}	
 	535.1.1={
 		religion=maerist
+		add_trait=heresiarch
 	}
 	 
 	536.1.1 = {
@@ -970,7 +984,7 @@
 	}
 }
 821={
-	name="BjÃ¶rn"
+	name="Björn"
 	dynasty=805
 	culture=grann
 	religion=earthen_pagan
@@ -2241,5 +2255,22 @@
 	
 	492.1.1={
 		death = yes
+	}
+}
+# Non-canon; leader of the revolt against Loptyr that loses steam right before the Miracle of Darna.
+2040={
+	name="Hakon"
+	culture=grann
+	religion=earthen_pagan
+	590.1.1={
+		birth=yes
+		culture=grann
+	}
+	
+	632.1.1={
+		death = {
+			death_reason=death_battle
+			killer=817 # Galle XVII
+		}
 	}
 }

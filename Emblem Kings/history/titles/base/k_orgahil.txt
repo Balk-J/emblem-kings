@@ -5,11 +5,15 @@
 	law = succ_primogeniture
 	#holder = 0
 }
-440.1.1={
+0440.01.01={
 	holder=0 # 
 	de_jure_liege = e_grann
 }
-448.1.1={
+448.01.01={
+	holder=0 # 
+	de_jure_liege = e_loptyr
+}
+649.01.01={
 	holder=0 # 
 	de_jure_liege = e_orgahil
 }

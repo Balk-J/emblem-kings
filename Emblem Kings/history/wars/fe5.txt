@@ -15,7 +15,7 @@ casus_belli = {
 	add_defender = 1038 # Seliph
 }
 
-778.1.1 = {
+777.8.1 = {
 	rem_attacker = 1058
 	rem_defender = 1162
 	rem_defender = 1038
