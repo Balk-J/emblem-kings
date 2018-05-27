@@ -2328,7 +2328,7 @@ post_crusade_jugdral_de_jure_titles_effect = {
 	}
 }
 
-post_loptyr_jugdral_de_jure_titles_effect = {
+post_loptous_jugdral_de_jure_titles_effect = {
 	d_jungby = {
 		de_jure_liege = k_ollerus
 	}
@@ -2351,61 +2351,61 @@ post_loptyr_jugdral_de_jure_titles_effect = {
 		de_jure_liege = k_heirhein
 	}
 	k_orgahil = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_verdane = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_miletos = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_yied = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_ollerus = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_heirhein = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_madino = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_tor = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_valhalla = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_melgln = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_lubeck = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_sailane = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_tirnanog = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_rivough = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_luthecia = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_conote = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_savan = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_kapathogia = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 	k_grutia = {
-		de_jure_liege = e_loptyr
+		de_jure_liege = e_loptous
 	}
 }
 

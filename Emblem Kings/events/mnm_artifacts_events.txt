@@ -1,7 +1,3 @@
-# FE Updates:
-# Removed event logic for handing out relics associated with vanilla religions
-# Modified weapon smith to hand out exotic FE weapons instead of the usual
-# TODO: just add localization for the EVTOPTB_MNM_9120_TT_SWORDSCIMITAR tooltips net time!
 ###########################################
 #                                         #
 # M&M Monastic Artifacts Events           #
@@ -53,7 +49,12 @@ character_event = {
 			has_character_modifier = relic_rumor_medium
 			has_character_modifier = relic_rumor_minor
 		}
-		NOT = { religion = pagan }
+		NOR = {
+			religion = zun_pagan
+			religion = zun_pagan_reformed
+			religion = pagan
+			religion = hellenic_pagan
+		}
 	}
 
 	immediate = {
@@ -74,11 +75,185 @@ character_event = {
 					factor = 0.7
 					ai = yes
 				}
-				# TODO: Add religion-specific modifiers as in vanilla
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = christian
+						has_artifact = bones_of_st_peter
+						has_artifact = staff_of_moses
+						has_artifact = davids_harp
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = jewish_group
+						has_artifact = staff_of_moses
+						has_artifact = davids_harp
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = muslim
+						has_artifact = staff_of_moses
+						has_artifact = davids_harp
+						has_artifact = seal_of_mohammad
+						has_artifact = holy_banner_of_mohammad
+						has_artifact = blessed_mantle
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = zoroastrian_group
+						has_artifact = cup_of_jamshid
+						has_artifact = babr_e_bayan
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = indian_group
+						has_artifact = buddhas_tooth
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						OR = {
+							religion = norse_pagan
+							religion = norse_pagan_reformed
+						}
+						has_artifact = mjolnir
+						has_artifact = andvaranaut
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						OR = {
+							religion = west_african_pagan
+							religion = west_african_pagan_reformed
+						}
+						has_artifact = fetish_of_souls
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						OR = {
+							religion = finnish_pagan
+							religion = finnish_pagan_reformed
+						}
+						has_artifact = sampo
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						OR = {
+							religion = slavic_pagan
+							religion = slavic_pagan_reformed
+						}
+						has_artifact = axe_of_perun
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						OR = {
+							religion = baltic_pagan
+							religion = baltic_pagan_reformed
+						}
+						has_artifact = axe_of_perkunas
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						OR = {
+							religion = tengri_pagan
+							religion = tengri_pagan_reformed
+						}
+						has_artifact = yada_tashy
+					}
+				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9001 } } 
 			}
 			30 = { #Good rumor
-				# TODO: Add religion-specific modifiers as in vanilla
+				modifier = { 
+					factor = 0 
+					OR = {
+						religion = finnish_pagan
+						religion = finnish_pagan_reformed
+						religion = slavic_pagan
+						religion = slavic_pagan_reformed
+						religion = baltic_pagan
+						religion = baltic_pagan_reformed
+						religion = tengri_pagan
+						religion = tengri_pagan_reformed
+					} 
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = christian
+						has_artifact = crown_of_thorns
+						has_artifact = seamless_robe_of_jesus
+						has_artifact = fragment_of_true_cross
+						has_artifact = holy_foreskin
+						has_artifact = seal_of_solomon
+						has_artifact = image_of_edessa
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = jewish_group
+						has_artifact = seal_of_solomon
+						has_artifact = tabernacle
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = muslim
+						has_artifact = seal_of_solomon
+						has_artifact = sword_of_mohammad
+						has_artifact = letter_of_mohammad
+						has_artifact = blessed_sandals
+						has_artifact = cloak_of_mohammad
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = zoroastrian_group
+						has_artifact = derafsh_kaviani
+						has_artifact = cyrus_cylinder
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = indian_group
+						has_artifact = mountain_of_light_diamond
+						has_artifact = elaborate_danda
+						has_artifact = sarira
+						has_artifact = sariraka_actual_body_part
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						OR = {
+							religion = norse_pagan
+							religion = norse_pagan_reformed
+						}
+						has_artifact = gjallarhorn
+					}
+				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9002 } }
 			} 
 			60 = { #Weak rumor
@@ -98,7 +273,62 @@ character_event = {
 				modifier = {
 					factor = 0
 					AND = {
-						religion_group = light_group
+						religion_group = christian
+						has_artifact = fingerbone_of_saint
+						has_artifact = famous_head
+						has_artifact = famous_tongue
+						has_artifact = infamous_tongue
+						has_artifact = famous_hand
+						has_artifact = famous_arm
+						has_artifact = famous_foot
+						has_artifact = famous_ancient_weapon
+						has_artifact = chains_of_st_peter
+						has_artifact = right_hand_st_demetrius
+						has_artifact = veil_of_veronica
+						has_artifact = remains_of_st_cessianus
+						has_artifact = weeping_statue
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = jewish_group
+						has_artifact = famous_head
+						has_artifact = famous_tongue
+						has_artifact = infamous_tongue
+						has_artifact = famous_hand
+						has_artifact = famous_arm
+						has_artifact = famous_foot
+						has_artifact = famous_ancient_weapon
+						has_artifact = davids_sling
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = muslim
+						has_artifact = mohammads_beard
+						OR = {
+							has_artifact = blessed_mantle #safeguard so you don't end up with two waters
+							has_artifact = water_of_blessed_mantle
+						}
+						has_artifact = famous_head
+						has_artifact = famous_tongue
+						has_artifact = infamous_tongue
+						has_artifact = famous_hand
+						has_artifact = famous_arm
+						has_artifact = famous_foot
+						has_artifact = famous_ancient_weapon
+						has_artifact = mohammads_bowl
+						has_artifact = tooth_of_mohammad
+					}
+				}
+				modifier = {
+					factor = 0
+					AND = {
+						religion_group = zoroastrian_group
+						has_artifact = haoma_sapling
+						has_artifact = keshmar_cypress_branch
 						has_artifact = famous_head
 						has_artifact = famous_tongue
 						has_artifact = infamous_tongue
@@ -111,9 +341,10 @@ character_event = {
 				modifier = {
 					factor = 0
 					AND = {
-						religion_group = magic_group
+						religion_group = indian_group
 						has_artifact = famous_head
 						has_artifact = famous_tongue
+						has_artifact = infamous_tongue
 						has_artifact = famous_hand
 						has_artifact = famous_arm
 						has_artifact = famous_foot
@@ -167,6 +398,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_MNM_9004
 		custom_tooltip = { text = EVTOPTA_MNM_9004_TT }
+		custom_tooltip = { text = outcome_will_depend_on_froms_skill_tt }
 		add_character_modifier = {
 			name = relic_rumor_major
 			years = 20
@@ -215,6 +447,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_MNM_9005
 		custom_tooltip = { text = EVTOPTA_MNM_9005_TT }
+		custom_tooltip = { text = outcome_will_depend_on_froms_skill_tt }
 		add_character_modifier = {
 			name = relic_rumor_medium
 			years = 20
@@ -263,6 +496,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_MNM_9006
 		custom_tooltip = { text = EVTOPTA_MNM_9006_TT }
+		custom_tooltip = { text = outcome_will_depend_on_froms_skill_tt }
 		add_character_modifier = {
 			name = relic_rumor_minor
 			years = 10
@@ -343,25 +577,9 @@ character_event = {
 			}
 			character_event = { id = MNM.9008 } #Relic tombola
 		}
-		#If relic isn't found...
-		if = {
-			limit = { 
-				NOR = {
-					AND = {
-						event_target:relic_ruler = { check_variable = { which = relic_score value = 15 } }
-						event_target:relic_ruler = { has_character_modifier = relic_rumor_minor } 
-					}
-					AND = {
-						event_target:relic_ruler = { check_variable = { which = relic_score value = 25 } }
-						event_target:relic_ruler = { has_character_modifier = relic_rumor_medium } 
-					}
-					AND = {
-						event_target:relic_ruler = { check_variable = { which = relic_score value = 40 } }
-						event_target:relic_ruler = { has_character_modifier = relic_rumor_major } 
-					}
-				}
-			}
 
+		#If relic isn't found...
+		else = {
 			if = {
 				limit = { # to make sure that you don't the Ask For Help events too often...
 					event_target:relic_ruler = { had_character_flag = { flag = they_asked_for_your_help days = 550 } }
@@ -370,13 +588,15 @@ character_event = {
 			}
 			#Outcome of this search
 			random_list = {
-				10 = { #Search through diplomacy
+				20 = { #Search through diplomacy
 					modifier = { factor = 5 has_job_title = job_chancellor }
 					modifier = { factor = 3 diplomacy = 10 }
 					random_list = {
 						15 = { #Passive points gain
 							modifier = { factor = 1.5 has_job_title = job_chancellor }
-							modifier = { factor = 1.4 diplomacy = 12 }	
+							modifier = { factor = 1.2 diplomacy = 8 }
+							modifier = { factor = 1.2 diplomacy = 10 }
+							modifier = { factor = 1.4 diplomacy = 12 }
 							modifier = { factor = 1.4 diplomacy = 15 }	
 							modifier = { factor = 1.4 diplomacy = 18 }
 							modifier = { factor = 1.5 has_pleasant_personality_trigger = yes }
@@ -391,14 +611,14 @@ character_event = {
 								else = { character_event = { id = MNM.9031 } }
 							}
 						} 
-						2 = { #Ask for help
+						15 = { #Ask for help
 							modifier = { factor = 1.5 has_job_title = job_chancellor }	
 							modifier = { factor = 1.4 diplomacy = 12 }
 							modifier = { factor = 0 event_target:relic_ruler = { has_character_modifier = treasure_hunting_diplomats } }
 							trigger = { event_target:relic_ruler = { NOT = { has_character_flag = they_asked_for_your_help } } }
 							event_target:relic_ruler = { character_event = { id = MNM.9020 } }
 						} 
-						10 = { #Setback
+						1 = { #Setback
 							modifier = { factor = 1.25 event_target:relic_ruler = { has_character_modifier = relic_rumor_medium } }
 							modifier = { factor = 1.5 event_target:relic_ruler = { has_character_modifier = relic_rumor_major } }
 							modifier = { factor = 1.5 NOT = { has_job_title = job_chancellor } }
@@ -417,12 +637,14 @@ character_event = {
 						} 
 					}
 				}
-				10 = { #Search through martial
+				20 = { #Search through martial
 					modifier = { factor = 5 has_job_title = job_marshal }
 					modifier = { factor = 3 martial = 10 }
 					random_list = {
 						15 = { #Passive points gain
 							modifier = { factor = 1.5 has_job_title = job_marshal }
+							modifier = { factor = 1.2 martial = 8 }
+							modifier = { factor = 1.2 martial = 10 }
 							modifier = { factor = 1.4 martial = 12 }	
 							modifier = { factor = 1.4 martial = 15 }	
 							modifier = { factor = 1.4 martial = 18 }	
@@ -439,14 +661,14 @@ character_event = {
 								else = { character_event = { id = MNM.9031 } }
 							}
 						} 
-						2 = { #Ask for help
+						15 = { #Ask for help
 							modifier = { factor = 1.5 has_job_title = job_marshal }	
 							modifier = { factor = 1.4 martial = 12 }
 							modifier = { factor = 0 event_target:relic_ruler = { has_character_modifier = treasure_hunting_soldiers } }
 							trigger = { event_target:relic_ruler = { NOT = { has_character_flag = they_asked_for_your_help } } }
 							event_target:relic_ruler = { character_event = { id = MNM.9021 } }
 						} 
-						10 = { #Setback
+						1 = { #Setback
 							modifier = { factor = 1.25 event_target:relic_ruler = { has_character_modifier = relic_rumor_medium } }
 							modifier = { factor = 1.5 event_target:relic_ruler = { has_character_modifier = relic_rumor_major } }
 							modifier = { factor = 1.5 is_dumb_trigger = yes }
@@ -466,13 +688,15 @@ character_event = {
 						} 
 					}
 				}
-				10 = { #Search through stewardship
+				20 = { #Search through stewardship
 					modifier = { factor = 5 has_job_title = job_treasurer }
 					modifier = { factor = 3 stewardship = 10 }
 					random_list = {
 						15 = { #Passive points gain
 							modifier = { factor = 1.5 has_job_title = job_treasurer }
-							modifier = { factor = 1.4 stewardship = 12 }	
+							modifier = { factor = 1.2 stewardship = 10 }
+							modifier = { factor = 1.2 stewardship = 10 }
+							modifier = { factor = 1.4 stewardship = 12 }
 							modifier = { factor = 1.4 stewardship = 15 }	
 							modifier = { factor = 1.4 stewardship = 18 }	
 							modifier = { factor = 1.4 monthly_income = 3 }
@@ -487,14 +711,14 @@ character_event = {
 								else = { character_event = { id = MNM.9031 } }
 							}
 						} 
-						2 = { #Ask for help
+						15 = { #Ask for help
 							modifier = { factor = 1.5 has_job_title = job_treasurer }	
 							modifier = { factor = 1.4 stewardship = 12 }
 							modifier = { factor = 0 event_target:relic_ruler = { has_character_modifier = treasure_hunting_stewards } }
 							trigger = { event_target:relic_ruler = { NOT = { has_character_flag = they_asked_for_your_help } } }
 							event_target:relic_ruler = { character_event = { id = MNM.9022 } }
 						} 
-						10 = { #Setback
+						1 = { #Setback
 							modifier = { factor = 1.25 event_target:relic_ruler = { has_character_modifier = relic_rumor_medium } }
 							modifier = { factor = 1.5 event_target:relic_ruler = { has_character_modifier = relic_rumor_major } }
 							modifier = { factor = 1.5 is_dumb_trigger = yes }
@@ -513,13 +737,15 @@ character_event = {
 						} 
 					}
 				}
-				10 = { #Search through intrigue
+				20 = { #Search through intrigue
 					modifier = { factor = 5 has_job_title = job_spymaster }
 					modifier = { factor = 3 intrigue = 10 }
 					random_list = {
 						15 = { #Passive points gain
 							modifier = { factor = 1.5 has_job_title = job_spymaster }
-							modifier = { factor = 1.4 intrigue = 12 }	
+							modifier = { factor = 1.2 intrigue = 10 }
+							modifier = { factor = 1.2 intrigue = 10 }
+							modifier = { factor = 1.4 intrigue = 12 }
 							modifier = { factor = 1.4 intrigue = 15 }	
 							modifier = { factor = 1.4 intrigue = 18 }	
 							modifier = { factor = 1.4 has_unpleasant_personality_trigger = yes }
@@ -534,14 +760,14 @@ character_event = {
 								else = { character_event = { id = MNM.9031 } }
 							}
 						} 
-						2 = { #Ask for help
+						15 = { #Ask for help
 							modifier = { factor = 1.5 has_job_title = job_spymaster }	
 							modifier = { factor = 1.4 intrigue = 12 }
 							modifier = { factor = 0 event_target:relic_ruler = { has_character_modifier = treasure_hunting_spies } }
 							trigger = { event_target:relic_ruler = { NOT = { has_character_flag = they_asked_for_your_help } } }
 							event_target:relic_ruler = { character_event = { id = MNM.9023 } }
 						} 
-						10 = { #Setback
+						1 = { #Setback
 							modifier = { factor = 1.25 event_target:relic_ruler = { has_character_modifier = relic_rumor_medium } }
 							modifier = { factor = 1.5 event_target:relic_ruler = { has_character_modifier = relic_rumor_major } }
 							modifier = { factor = 1.5 is_dumb_trigger = yes }
@@ -560,13 +786,15 @@ character_event = {
 						} 
 					}
 				}	
-				10 = { #Search through learning
+				20 = { #Search through learning
 					modifier = { factor = 5 has_job_title = job_spiritual }
 					modifier = { factor = 3 learning = 10 }
 					random_list = {
 						15 = { #Passive points gain
 							modifier = { factor = 1.5 has_job_title = job_spiritual }
-							modifier = { factor = 1.4 learning = 12 }	
+							modifier = { factor = 1.2 learning = 10 }	
+							modifier = { factor = 1.2 learning = 10 }
+							modifier = { factor = 1.4 learning = 12 }
 							modifier = { factor = 1.4 learning = 15 }	
 							modifier = { factor = 1.4 learning = 18 }	
 							modifier = { factor = 1.4 is_learned_trigger = yes }
@@ -581,14 +809,14 @@ character_event = {
 								else = { character_event = { id = MNM.9031 } }
 							}
 						} 
-						2 = { #Ask for help
+						15 = { #Ask for help
 							modifier = { factor = 1.5 has_job_title = job_spiritual }	
 							modifier = { factor = 1.4 learning = 12 }
 							modifier = { factor = 0 event_target:relic_ruler = { has_character_modifier = treasure_hunting_scholars } }
 							trigger = { event_target:relic_ruler = { NOT = { has_character_flag = they_asked_for_your_help } } }
 							event_target:relic_ruler = { character_event = { id = MNM.9024 } }
 						} 
-						10 = { #Setback
+						1 = { #Setback
 							modifier = { factor = 1.25 event_target:relic_ruler = { has_character_modifier = relic_rumor_medium } }
 							modifier = { factor = 1.5 event_target:relic_ruler = { has_character_modifier = relic_rumor_major } }
 							modifier = { factor = 1.5 NOT = { has_job_title = job_spiritual } }
@@ -608,9 +836,26 @@ character_event = {
 					}
 				}
 				5 = { #Ask for money
-					event_target:relic_ruler = { character_event = { id = MNM.9025 } }
+					modifier = {
+						factor = 2
+						OR = {
+							trait = greedy
+							trait = deceitful
+						}
+					}
+					modifier = {
+						factor = 2
+						trait = slothful
+					}
+					modifier = {
+						factor = 2
+						is_rival = event_target:relic_ruler
+					}
+					event_target:relic_ruler = {
+						character_event = { id = MNM.9025 }
+					}
 				}
-				30 = { #Mess up badly
+				15 = { #Mess up badly
 					modifier = { factor = 0.5 is_smart_trigger = yes }
 					modifier = { factor = 1.5 is_dumb_trigger = yes }
 					trigger = {
@@ -619,8 +864,8 @@ character_event = {
 					}
 					event_target:relic_ruler = { character_event = { id = MNM.9027 } } 
 				}
-				1 = { #Encounter a better rumor
-					modifier = { factor = 1.5 is_smart_trigger = yes }
+				5 = { #Encounter a better rumor
+					modifier = { factor = 3 is_smart_trigger = yes }
 					trigger = {
 						NOT = { event_target:relic_ruler = { has_character_modifier = relic_rumor_major } }
 						NOT = { event_target:relic_ruler = { check_variable = { which = relic_score value = 5 } } }
@@ -705,6 +950,7 @@ character_event = {
 					}
 					character_event = { id = MNM.9841 } #receive "Ancient Rusty Weapon" event
 				}
+
 				# FE artifacts
 				# Regalia - S Rank weapons
 				10 = {
@@ -737,6 +983,14 @@ character_event = {
     id = MNM.9009
     picture = "GFX_evt_recieve_letter"
     border = GFX_event_normal_frame_religion
+
+    trigger = {
+    	NOT = { has_character_flag = show_this_event } #fix to deal with duplicate event
+    }
+
+    immediate = {
+    	set_character_flag = show_this_event
+    }
 
     desc = {
     	trigger = {
@@ -785,6 +1039,9 @@ character_event = {
 	    		}
         	}
         	clr_artifact_searcher_effect = yes
+	        custom_tooltip = {
+	        	text = EVTOPTB_MNM_9006_TT #an attempt at more clarity
+	        }
         }
 
         hidden_effect = { #If your previous searcher was shit, you don't have to start below zero progress
@@ -966,14 +1223,24 @@ character_event = {
 		scaled_wealth = { value = -0.5 min = -30 }
 		hidden_effect = { 
 			random_list = {
-				60 = { change_variable = { which = relic_score value = 3 } }
-				20 = { #Nothing happens, they pocket money
-					modifier = { factor = 0 event_target:relic_hunter = { NOR = { trait = greedy trait = deceitful } } }
-				}
-				20 = { #You discover that they pocketed the money
-					modifier = { factor = 0 event_target:relic_hunter = { NOR = { trait = greedy trait = deceitful } } }
-					modifier = { factor = 0 event_target:relic_hunter = { ai = no } }
-					character_event = { id = MNM.9026 days = 14 random = 14 } 
+				80 = { change_variable = { which = relic_score value = 3 } }
+				10 = { #You discover that they pocketed the money
+					trigger = {
+						event_target:relic_hunter = {
+							ai = yes
+							NOT = { trait = honest }
+							NOT = { is_lover = ROOT }
+						}
+					}
+					modifier = {
+						factor = 1.5
+						event_target:relic_hunter = {
+							trait = greedy
+							trait = deceitful
+							is_rival = ROOT
+						}
+					}
+					character_event = { id = MNM.9026 days = 14 random = 14 }
 				}
 			}
 		}	
@@ -1031,7 +1298,7 @@ character_event = {
 			modifier = opinion_useless_moron
 			years = 10
 		}
-		hidden_effect = { change_variable = { which = relic_score value = -5 } }
+		hidden_effect = { change_variable = { which = relic_score value = -3 } }
 	}
 }
 
@@ -1048,6 +1315,14 @@ character_event = {
     option = {      
         name = EVTOPTA_MNM_9028
         custom_tooltip = { text = EVTOPTA_MNM_9028_TT }
+
+        random = {
+			chance = 20
+			add_trait = stressed
+			hidden_effect = {
+				character_event = { id = 38282 } #Notify Stressed
+			}
+		}
 
         if = {
         	limit = { has_character_modifier = relic_rumor_medium }
@@ -1231,12 +1506,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1256,12 +1531,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = famous_head
@@ -1279,12 +1554,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_praised
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		FROM = { prestige = 25 }
 		random = {
@@ -1316,7 +1591,7 @@ character_event = {
         prestige = 10
         reverse_opinion = {
 			who = FROM
-		modifier = opinion_disappointed
+			modifier = opinion_disappointed
 			years = 10
 		}
         add_artifact = famous_tongue
@@ -1331,12 +1606,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1356,12 +1631,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = famous_tongue
@@ -1379,12 +1654,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_praised
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		FROM = { prestige = 25 }
 		random = {
@@ -1416,7 +1691,7 @@ character_event = {
         prestige = 10
         reverse_opinion = {
 			who = FROM
-		modifier = opinion_disappointed
+			modifier = opinion_disappointed
 			years = 10
 		}
         add_artifact = infamous_tongue
@@ -1431,12 +1706,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1456,12 +1731,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = infamous_tongue
@@ -1479,12 +1754,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_praised
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		FROM = { prestige = 25 }
 		random = {
@@ -1516,7 +1791,7 @@ character_event = {
         prestige = 10
         reverse_opinion = {
 			who = FROM
-		modifier = opinion_disappointed
+			modifier = opinion_disappointed
 			years = 10
 		}
         add_artifact = famous_hand
@@ -1531,12 +1806,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1556,12 +1831,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = famous_hand
@@ -1631,12 +1906,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1656,12 +1931,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = famous_arm
@@ -1731,12 +2006,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1756,12 +2031,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = famous_foot
@@ -1831,12 +2106,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1856,12 +2131,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = famous_ancient_weapon
@@ -1879,12 +2154,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_praised
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		FROM = { prestige = 25 }
 		random = {
@@ -1939,7 +2214,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -1964,7 +2239,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = bones_of_st_peter
@@ -2039,7 +2314,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2064,7 +2339,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = seamless_robe_of_jesus
@@ -2139,7 +2414,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2164,7 +2439,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = crown_of_thorns
@@ -2239,7 +2514,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2264,7 +2539,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = fragment_of_true_cross
@@ -2339,7 +2614,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2364,7 +2639,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = holy_foreskin
@@ -2434,12 +2709,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2459,12 +2734,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = fingerbone_of_saint
@@ -2534,12 +2809,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2559,12 +2834,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = chains_of_st_peter
@@ -2634,12 +2909,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2659,12 +2934,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = right_hand_st_demetrius
@@ -2734,12 +3009,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2759,12 +3034,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = veil_of_veronica
@@ -2834,12 +3109,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2859,12 +3134,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = remains_of_st_cessianus
@@ -2934,12 +3209,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -2959,12 +3234,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = weeping_statue
@@ -3039,7 +3314,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3064,7 +3339,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = image_of_edessa
@@ -3142,7 +3417,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3167,7 +3442,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = staff_of_moses
@@ -3243,7 +3518,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3268,7 +3543,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = davids_harp
@@ -3344,7 +3619,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3369,7 +3644,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = seal_of_solomon
@@ -3444,7 +3719,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3469,7 +3744,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = tabernacle
@@ -3539,12 +3814,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3564,12 +3839,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = davids_sling
@@ -3600,6 +3875,106 @@ character_event = {
 			add_friend = FROM
 		}
         add_artifact = davids_sling
+        new_artifact = {
+			set_creation_date = 1.1.1
+		}
+    }
+    after = { clr_artifact_flagsmodifiers_effect = yes }
+}
+
+#Ark of the Covenant
+narrative_event = {
+    id = MNM.9890
+    title = EVTTITLE_MNM_9890
+    desc = EVTDESC_MNM_9890
+    picture = GFX_evt_relic_box
+    border = GFX_event_narrative_frame_religion
+
+    is_triggered_only = yes
+
+    has_dlc = "Mystics"
+
+    option = { #it's their duty
+        name = EVTOPT_MAJOR_ARTIFACT_DUTY
+        prestige = 10
+        reverse_opinion = {
+			who = FROM
+			modifier = opinion_extremely_disappointed
+			years = 20
+		}
+        add_artifact = ark_of_the_covenant
+        new_artifact = {
+			set_creation_date = 1.1.1
+		}
+    }
+
+    option = { #monetary reward
+        name = EVTOPT_MAJOR_ARTIFACT_MONEY
+
+        reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 15
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_major_artifact
+			years = 15
+		}
+		transfer_scaled_wealth = {
+			to = FROM
+			value = 1
+			min = 50
+		}
+
+        add_artifact = ark_of_the_covenant
+        new_artifact = {
+			set_creation_date = 1.1.1
+		}
+    }
+    
+    option = { #reward them with a favor
+        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
+
+        reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_rewarded
+			years = 15
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_major_artifact
+			years = 15
+		}
+        reverse_add_favor = FROM
+        add_artifact = ark_of_the_covenant
+        new_artifact = {
+			set_creation_date = 1.1.1
+		}
+    }
+
+    option = { #praise them (prestige reward)
+    	trigger = {
+			diplomacy = 15
+		}
+        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
+
+        reverse_opinion = {
+			who = FROM
+			modifier = opinion_was_praised
+			years = 15
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_found_major_artifact
+			years = 5
+		}
+		FROM = { prestige = 100 }
+		random = {
+			chance = 20
+			add_friend = FROM
+		}
+        add_artifact = ark_of_the_covenant
         new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -3647,7 +4022,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3672,7 +4047,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = seal_of_mohammad
@@ -3748,7 +4123,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3773,7 +4148,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = holy_banner_of_mohammad
@@ -3849,7 +4224,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3874,7 +4249,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = blessed_mantle
@@ -3949,7 +4324,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -3974,7 +4349,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = sword_of_mohammad
@@ -4049,7 +4424,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4074,7 +4449,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = letter_of_mohammad
@@ -4149,7 +4524,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4174,7 +4549,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = cloak_of_mohammad
@@ -4244,12 +4619,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4269,12 +4644,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = mohammads_beard
@@ -4344,12 +4719,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4369,12 +4744,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = tooth_of_mohammad
@@ -4444,12 +4819,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4469,12 +4844,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = water_of_blessed_mantle
@@ -4549,7 +4924,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4574,7 +4949,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = mohammads_bowl
@@ -4649,7 +5024,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4674,7 +5049,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = blessed_sandals
@@ -4752,7 +5127,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4777,7 +5152,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = cup_of_jamshid
@@ -4853,7 +5228,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4878,7 +5253,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = babr_e_bayan
@@ -4953,7 +5328,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -4978,7 +5353,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = derafsh_kaviani
@@ -5048,12 +5423,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5073,12 +5448,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = haoma_sapling
@@ -5148,12 +5523,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5173,12 +5548,12 @@ character_event = {
         reverse_opinion = {
 			who = FROM
 			modifier = opinion_was_rewarded
-			years = 5
+			years = 10
 		}
 		opinion = {
 			who = FROM
 			modifier = opinion_found_minor_artifact
-			years = 5
+			years = 10
 		}
         reverse_add_favor = FROM
         add_artifact = keshmar_cypress_branch
@@ -5253,7 +5628,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5278,7 +5653,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = cyrus_cylinder
@@ -5354,7 +5729,7 @@ narrative_event = { #Buddhas' Tooth (or atleast one of them)
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5379,7 +5754,7 @@ narrative_event = { #Buddhas' Tooth (or atleast one of them)
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = buddhas_tooth
@@ -5551,7 +5926,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5576,7 +5951,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = elaborate_danda
@@ -5649,7 +6024,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5674,7 +6049,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = sarira
@@ -5747,7 +6122,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5772,7 +6147,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = sariraka_actual_body_part
@@ -5849,7 +6224,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5874,7 +6249,7 @@ character_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_medium_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = gjallarhorn
@@ -5949,7 +6324,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -5974,7 +6349,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = andvaranaut
@@ -6049,7 +6424,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -6074,7 +6449,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = mjolnir
@@ -6151,7 +6526,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -6176,7 +6551,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = fetish_of_souls
@@ -6253,7 +6628,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -6278,7 +6653,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = sampo
@@ -6355,7 +6730,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -6380,7 +6755,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = axe_of_perun
@@ -6457,7 +6832,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -6482,7 +6857,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = axe_of_perkunas
@@ -6559,7 +6934,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
 		transfer_scaled_wealth = {
 			to = FROM
@@ -6584,7 +6959,7 @@ narrative_event = {
 		opinion = {
 			who = FROM
 			modifier = opinion_found_major_artifact
-			years = 5
+			years = 15
 		}
         reverse_add_favor = FROM
         add_artifact = yada_tashy
@@ -6716,7 +7091,8 @@ character_event = {
 		        		set_character_flag = ai_flag_refuse_marriage
 		        		set_character_flag = ai_flag_refuse_concubinage
 		        		set_character_flag = cannot_marry
-						add_trait = cannot_marry
+               			set_character_flag = no_court_invites
+						will_not_marry_effect = yes
 		        	}
 				} 
 				85 = { #Man
@@ -6734,7 +7110,8 @@ character_event = {
 		        		save_event_target_as = smith
 		        		set_character_flag = ai_flag_refuse_marriage
 		        		set_character_flag = cannot_marry
-						add_trait = cannot_marry
+               			set_character_flag = no_court_invites
+						will_not_marry_effect = yes
 					}
 				}
 			}
@@ -6807,6 +7184,7 @@ character_event = {
     immediate = { event_target:smith_employer = { character_event = { id = MNM.9103 } } }
 }
 
+#How much will I spend on the crown jewels?
 character_event = {
     id = MNM.9103
     desc = EVTDESC_MNM_9103
@@ -6825,12 +7203,12 @@ character_event = {
     #The best money can buy
     option = {
         name = EVTOPTA_MNM_9103
-        trigger = { prestige = 2000 }
-        tooltip_info = yes
-        custom_tooltip = { text = available_due_to_prestige_tt }
+        trigger = { 
+        	tier = EMPEROR
+        }
         custom_tooltip = { text = EVTOPTA_MNM_9103_TT }
 
-        scaled_wealth = { value = -5 min = -300 }
+        scaled_wealth = { value = -3.5 min = -300 max = -2000 }
 
         hidden_effect = {
         	event_target:smith = { set_character_flag = expensive_jewels }
@@ -6894,10 +7272,36 @@ character_event = {
 
     #Something nice
     option = {
-        name = EVTOPTB_MNM_9103
-        custom_tooltip = { text = EVTOPTB_MNM_9103_TT }
+        name = {
+        	trigger = {
+        		tier = EMPEROR
+        	}
+        	text = EVTOPTB_MNM_9103
+        }
+        name = {
+        	trigger = {
+        		tier = KING
+        	}
+        	text = EVTOPTB_MNM_9103_KING
+        }
 
-        scaled_wealth = { value = -2.5 min = -150 }
+        trigger = {
+        	higher_tier_than = DUKE
+        }
+        if = {
+        	limit = {
+        		tier = EMPEROR
+        	}
+        	custom_tooltip = { text = EVTOPTB_MNM_9103_TT }
+        }
+        else_if = {
+        	limit = {
+        		tier = KING
+        	}
+        	custom_tooltip = { text = EVTOPTB_MNM_9103_TT_KING }
+        }
+
+        scaled_wealth = { value = -2 min = -150 max = -500 }
 
         hidden_effect = {
         	event_target:smith = { set_character_flag = good_jewels }
@@ -6965,10 +7369,45 @@ character_event = {
    
    	#I can't afford that much 
     option = {
-        name = EVTOPTC_MNM_9103
-        custom_tooltip = { text = EVTOPTC_MNM_9103_TT }
+        name = {
+        	trigger = {
+        		tier = EMPEROR
+        	}
+			text = EVTOPTC_MNM_9103
+		}
+		name = {
+			trigger = {
+				tier = KING
+			}
+			text = EVTOPTC_MNM_9103_KING
+		}
+		name = {
+			trigger = {
+				NAND = {
+					tier = EMPEROR
+					tier = KING
+				}
+			}
+			text = EVTOPTC_MNM_9103_GENERIC
+        }
 
-        scaled_wealth = { value = -1 min = -50 }
+        if = {
+        	limit = {
+        		tier = EMPEROR
+        	}
+        	custom_tooltip = { text = EVTOPTC_MNM_9103_TT }
+        }
+        else_if = {
+        	limit = {
+        		tier = KING
+        	}
+        	custom_tooltip = { text = EVTOPTC_MNM_9103_TT_KING }
+        }
+        else = {
+        	custom_tooltip = { text = EVTOPTC_MNM_9103_TT_GENERIC }
+        }
+
+        scaled_wealth = { value = -1 min = -50 max = -100 }
 
         hidden_effect = {
         	event_target:smith = { set_character_flag = cheap_jewels }
@@ -7047,20 +7486,108 @@ character_event = {
     
     	trigger_switch = {
     		on_trigger = has_character_flag
+    		amazing_jewels		= { event_target:smith_employer = { character_event = { id = MNM.40001 } } }
     		expensive_jewels	= { event_target:smith_employer = { character_event = { id = MNM.9105 } } }
     		good_jewels			= { event_target:smith_employer = { character_event = { id = MNM.9106 } } }
     		cheap_jewels		= { event_target:smith_employer = { character_event = { id = MNM.9107 } } }
 		}
     }
 }
+#Amazing Crown Jewels
+character_event = {
+    id = MNM.40001
+    desc = EVTDESC_MNM_40001
+    picture = GFX_evt_treasure_chamber
+    border = GFX_event_normal_frame_economy
+    is_triggered_only = yes
+    trigger = {
+    	OR = {
+    		has_dlc = "Mystics"
+    		has_dlc = "Jade Dragon"
+    	}
+    }
 
-#Amazing crown jewels
+    immediate = {
+
+    }
+
+    option = { 
+        name = EVTOPTA_MNM_9105
+
+        if = {
+        	limit = { 
+        		OR = {
+        			religion_group = christian 
+        			religion_group = jewish_group
+				}
+        	}
+        	add_artifact = crown_of_majesty_2
+        	add_artifact = emerald_scepter_2
+        	add_artifact = sword_of_heroes_2
+        }
+        else_if = {
+        	limit = { 
+        		OR = {
+        			religion_group = muslim 
+        			religion = west_african_pagan
+        			religion = west_african_pagan_reformed
+        		}
+        	}
+        	add_artifact = dagger_of_glory_2
+        	add_artifact = ruby_bracelets_2
+        }
+        else_if = {
+        	limit = { 
+        		OR = {
+        			religion_group = indian_group
+        			religion = bon
+        		}
+        	}
+        	add_artifact = dagger_of_glory_2
+        	add_artifact = celestial_necklace_2
+        }
+        else_if = {
+        	limit = { 
+        		OR = {
+        			religion_group = zoroastrian_group
+        			religion = zun_pagan
+        			religion = zun_pagan_reformed
+				}
+			}
+        	add_artifact = circlet_of_the_heavens_2
+        	add_artifact = staff_of_majesty_2
+        }
+        else_if = {
+        	limit = {
+        		OR = {
+        			religion = norse_pagan
+        			religion = norse_pagan_reformed
+        		}
+        	}
+        	add_artifact = crown_of_crows_2
+        	add_artifact = sword_of_heroes_2
+        }
+        else = {
+        	add_artifact = heros_crown_2
+        	add_artifact = axe_of_the_ancestors_2
+        }
+
+        hidden_effect = { 
+        	event_target:smith = { character_event = { id = MNM.9110 days = 5 } } 
+        	clr_character_flag = amazing_jewels
+        	clr_character_flag = expensive_jewels
+			clr_character_flag = good_jewels
+			clr_character_flag = cheap_jewels
+        }
+    }
+}
+#Expensive crown jewels
 character_event = {
     id = MNM.9105
     picture = GFX_evt_treasure_chamber
     border = GFX_event_normal_frame_economy
 
-     desc = {
+    desc = {
     	trigger = { religion_group = christian }
     	text = EVTDESC_MNM_9105
     	picture = GFX_evt_holy_emperor
@@ -7149,7 +7676,6 @@ character_event = {
         }
     }
 }
-
 
 #Good crown jewels
 character_event = {
@@ -7250,7 +7776,24 @@ character_event = {
 #Okay crown jewels
 character_event = {
     id = MNM.9107
-    desc = EVTDESC_MNM_9107
+    desc = {
+    	trigger = {
+    		tier = EMPEROR
+    	}
+    	text = EVTDESC_MNM_9107
+    } 
+    desc = {
+    	trigger = {
+    		tier = KING
+    	}
+    	text = EVTDESC_MNM_9107_KING
+    }
+    desc = {
+    	trigger = {
+    		lower_tier_than = KING
+    	}
+    	text = EVTDESC_MNM_9107_GENERIC
+    }
     picture = GFX_evt_weaponsmith
     border = GFX_event_normal_frame_economy
 
@@ -7361,7 +7904,7 @@ character_event = {
 #Problems
 character_event = {
     id = MNM.9109
-    desc = EVTDESC_MNM_9109
+    desc = EVTDESC_MNM_9109_NEW
     picture = GFX_evt_merchant_caravan
     border = GFX_event_normal_frame_economy
 
@@ -7378,50 +7921,51 @@ character_event = {
     option = {
     	trigger = { FROM  = { has_character_flag = expensive_jewels } }
         name = EVTOPTA_MNM_9109
-        custom_tooltip = { text = EVTOPTA_MNM_9109_TT }
+        custom_tooltip = { text = EVTOPTA_MNM_9109_TT_NEW }
 
-        scaled_wealth = { value = -3 min = -150 }
+        scaled_wealth = { value = -3 min = -150 max = -1000}
+
+
+        hidden_effect = {
+        	FROM = {
+	        	clr_character_flag = expensive_jewels
+	        	set_character_flag = amazing_jewels
+        	}
+        	clr_character_flag = expensive_jewels
+        	set_character_flag = amazing_jewels
+    	}
     }
 
     #Settle for less expensive stuff
     option = {
     	trigger = { FROM  = { has_character_flag = expensive_jewels } }
         name = EVTOPTB_MNM_9109
-        custom_tooltip = { text = EVTOPTB_MNM_9109_TT }
-
-        hidden_effect = {
-        	FROM = {
-	        	clr_character_flag = expensive_jewels
-	        	set_character_flag = good_jewels
-        	}
-        	clr_character_flag = expensive_jewels
-        	set_character_flag = good_jewels
-    	}
+        custom_tooltip = { text = EVTOPTB_MNM_9109_TT_NEW }
     }
 
     #I want my good stuff
     option = {
     	trigger = { FROM  = { has_character_flag = good_jewels } }
         name = EVTOPTC_MNM_9109
-        custom_tooltip = { text = EVTOPTC_MNM_9109_TT }
+        custom_tooltip = { text = EVTOPTC_MNM_9109_TT_NEW }
 
-        scaled_wealth = { value = -1.5 min = -100 }
+        scaled_wealth = { value = -1.5 min = -100 max = -500}
+
+        hidden_effect = {
+        	FROM = {
+	        	clr_character_flag = good_jewels
+	        	set_character_flag = expensive_jewels
+			}
+        	clr_character_flag = good_jewels
+        	set_character_flag = expensive_jewels
+        }
     }
 
     #Settle for less good stuff
     option = {
     	trigger = { FROM  = { has_character_flag = good_jewels } }
         name = EVTOPTD_MNM_9109
-        custom_tooltip = { text = EVTOPTD_MNM_9109_TT }
-
-        hidden_effect = {
-        	FROM = {
-	        	clr_character_flag = good_jewels
-	        	set_character_flag = cheap_jewels
-			}
-        	clr_character_flag = good_jewels
-        	set_character_flag = cheap_jewels
-        }
+        custom_tooltip = { text = EVTOPTD_MNM_9109_TT_NEW }
     }
 
     after = { 
@@ -7529,6 +8073,7 @@ character_event = {
         scaled_wealth = { value = 0.5 min = 25 }
     }
     after = {
+    	clr_character_flag = amazing_jewels
     	clr_character_flag = expensive_jewels
 		clr_character_flag = good_jewels
 		clr_character_flag = cheap_jewels
@@ -7581,7 +8126,8 @@ character_event = {
 		        		set_character_flag = ai_flag_refuse_marriage
 		        		set_character_flag = ai_flag_refuse_concubinage
 		        		set_character_flag = cannot_marry
-						add_trait = cannot_marry
+               			set_character_flag = no_court_invites
+						will_not_marry_effect = yes
 		        	}
 				} 
 				85 = { #Man
@@ -7599,7 +8145,8 @@ character_event = {
 		        		save_event_target_as = smith
 		        		set_character_flag = ai_flag_refuse_marriage
 		        		set_character_flag = cannot_marry
-						add_trait = cannot_marry
+               			set_character_flag = no_court_invites
+						will_not_marry_effect = yes
 					}
 				}
 			}
@@ -7789,7 +8336,7 @@ character_event = {
 #And how much are you willing to pay?
 character_event = {
     id = MNM.9120
-    desc = EVTDESC_MNM_9120
+    desc =  EVTDESC_MNM_9120_NEW
     picture = GFX_evt_weaponsmith
     border = GFX_event_normal_frame_economy
 
@@ -7802,12 +8349,12 @@ character_event = {
     	}
     }
 
-    #THe best money can buy
+    #The best money can buy
     option = { 
         name = EVTOPTA_MNM_9120
-        trigger = { prestige = 2000 }
-        tooltip_info = yes
-        custom_tooltip = { text = available_due_to_prestige_tt }
+        trigger = { 
+        	tier = EMPEROR
+        }
        	if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
             custom_tooltip = { text = regalia.tooltip.brave }
@@ -7837,13 +8384,13 @@ character_event = {
             custom_tooltip = { text = EVTOPTA_MNM_9120_TT_ARMOR }
         }
 
-        scaled_wealth = { value = -6 min = -400 }
+        scaled_wealth = { value = -3.5 min = -400 max = -2000 }
 
         hidden_effect = {
         	event_target:smith = { set_character_flag = expensive_weapons }
         	set_character_flag = expensive_weapons
 			random_list = {
-				40 = { #Success
+				55 = { #Success
         			modifier = { factor = 0.7 FROM = { stewardship <= 2 } }
         			modifier = { factor = 0.7 FROM = { stewardship <= 4 } }
         			modifier = { factor = 0.7 FROM = { stewardship <= 6 } }
@@ -7861,7 +8408,7 @@ character_event = {
         			modifier = { factor = 1.3 FROM = { is_smart_trigger = yes } }
         			set_character_flag = smith_success
 				}
-				60 = { #Fail
+				45 = { #Fail
 					set_character_flag = smith_fail
 				}
 				10 = { #Steal
@@ -7890,7 +8437,7 @@ character_event = {
     			factor = 3
     		}
     		modifier = {
-    			NOR = {
+    			NAND = {
     				wealth = 400
     				yearly_income = 40
     			}
@@ -7901,7 +8448,22 @@ character_event = {
 
     #Something nice
     option = {
-        name = EVTOPTB_MNM_9120
+        name = {
+        	trigger = {
+        		tier = EMPEROR
+        	}
+        	text = EVTOPTB_MNM_9120
+        }
+        name = {
+        	trigger = {
+        		tier = KING
+        	}
+        	text = EVTOPTB_MNM_9120_KING
+        }
+
+        trigger = {
+        	higher_tier_than = DUKE
+        }
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
             custom_tooltip = { text = regalia.tooltip.killer }
@@ -7931,13 +8493,13 @@ character_event = {
             custom_tooltip = { text = EVTOPTB_MNM_9120_TT_ARMOR }
         }
 
-        scaled_wealth = { value = -3 min = -180 }
+        scaled_wealth = { value = -2.5 min = -180 max = -500 }
 
         hidden_effect = {
         	event_target:smith = { set_character_flag = good_weapons }
         	set_character_flag = good_weapons
 			random_list = {
-				60 = { #Success
+				70 = { #Success
         			modifier = { factor = 0.7 FROM = { stewardship <= 2 } }
         			modifier = { factor = 0.7 FROM = { stewardship <= 4 } }
         			modifier = { factor = 0.7 FROM = { stewardship <= 6 } }
@@ -7955,7 +8517,7 @@ character_event = {
         			modifier = { factor = 1.3 FROM = { is_smart_trigger = yes } }
         			set_character_flag = smith_success
 				}
-				40 = { #Fail
+				30 = { #Fail
 					set_character_flag = smith_fail
 				}
 				10 = { #Steal
@@ -7988,7 +8550,7 @@ character_event = {
     			factor = 3
     		}
     		modifier = {
-    			NOR = {
+    			NAND = {
     				wealth = 180
     				yearly_income = 18
     			}
@@ -7999,7 +8561,28 @@ character_event = {
    
    	#I can't afford that much 
     option = {
-        name = EVTOPTC_MNM_9120
+        name = {
+        	trigger = {
+        		tier = EMPEROR
+        	}
+        	text = EVTOPTC_MNM_9120
+        }
+        name = {
+        	trigger = {
+        		tier = KING
+        	}
+        	text = EVTOPTC_MNM_9120_KING
+        }
+        name = {
+        	trigger = {
+        		NOT = {
+        			tier = EMPEROR
+        			tier = KING
+        		}
+        	}
+        	text = EVTOPTC_MNM_9120_GENERIC
+        }
+        
         if = {
             limit = { FROM = { NOT = { has_character_flag = armor_set } } }
             custom_tooltip = { text = regalia.tooltip.glass }
@@ -8009,7 +8592,7 @@ character_event = {
             custom_tooltip = { text = EVTOPTC_MNM_9120_TT_ARMOR }
         }
 
-        scaled_wealth = { value = -1.5 min = -75 }
+        scaled_wealth = { value = -1.25 min = -50 max = -100 }
 
         hidden_effect = {
         	event_target:smith = { set_character_flag = cheap_weapons }
@@ -8060,7 +8643,7 @@ character_event = {
     			factor = 3
     		}
     		modifier = {
-    			NOR = {
+    			NAND = {
     				wealth = 75
     				yearly_income = 7.5
     				religion_group = pagan_group
@@ -8113,10 +8696,100 @@ character_event = {
 
     	trigger_switch = {
     		on_trigger = has_character_flag
+    		amazing_weapons 		= { event_target:smith_employer = { character_event = { id = MNM.40000 } } }
     		expensive_weapons		= { event_target:smith_employer = { character_event = { id = MNM.9122 } } }
     		good_weapons			= { event_target:smith_employer = { character_event = { id = MNM.9123 } } }
     		cheap_weapons			= { event_target:smith_employer = { character_event = { id = MNM.9124 } } }
     	}
+    }
+}
+
+#Amazing weapon done
+character_event = {
+    id = MNM.40000
+    desc = {
+    	trigger = { FROM = { NOT = { has_character_flag = armor_set } } }
+    	text = EVTDESC_MNM_40000
+    }
+    desc = {
+    	trigger = { FROM = { has_character_flag = armor_set } }
+    	text = EVTDESC_MNM_40000_B
+    }
+
+    picture = GFX_evt_weaponsmith
+    border = GFX_event_normal_frame_economy
+
+    is_triggered_only = yes
+    trigger = {
+    	OR = {
+    		has_dlc = "Mystics"
+    		has_dlc = "Jade Dragon"
+    	}
+    }
+
+    option = {  
+        name = {
+            text = EXCELLENT
+            trigger = { FROM = { NOT = { has_character_flag = armor_set }  } }
+        } 
+        name = {
+            text = EVTOPTA_MNM_40000_ARMOR
+            trigger = { FROM = { has_character_flag = armor_set } }
+        } 
+
+        if = {
+            limit = { FROM = { has_character_flag = weapon_sword } }
+            add_artifact = brave_sword
+        }
+        if = {
+            limit = { FROM = { has_character_flag = weapon_lance } }
+			add_artifact = brave_lance
+        }
+        if = {
+            limit = { FROM = { has_character_flag = weapon_axe } }
+			add_artifact = brave_axe
+        }
+        if = {
+            limit = { FROM = { has_character_flag = weapon_bow } }
+			add_artifact = brave_bow
+        }
+        if = {
+            limit = { FROM = { has_character_flag = armor_set } }
+            add_artifact = armor_tier_4_guardian
+        }
+    }
+    option = {  
+        trigger = { FROM = { has_character_flag = armor_set } }
+        name = {
+        	text = EVTOPTB_MNM_40000_ARMOR
+        	trigger = { FROM = { has_character_flag = armor_set } }
+        }
+        if = {
+            limit = { FROM = { has_character_flag = armor_set } }
+            add_artifact = armor_tier_4_champion
+        }    
+    }
+
+    option = {
+        trigger = { FROM = { has_character_flag = armor_set } }
+        name = {
+        	text = EVTOPTC_MNM_40000_ARMOR
+        	trigger = { FROM = { has_character_flag = armor_set } }
+        }
+        if = {
+            limit = { FROM = { has_character_flag = armor_set } }
+            add_artifact = armor_tier_4_warden
+        }
+    }
+
+    after = {
+    	hidden_effect = { FROM = { character_event = { id = MNM.9127 days = 5 } } }
+    	clr_character_flag = amazing_weapons
+    	clr_character_flag = expensive_weapons
+		clr_character_flag = good_weapons
+		clr_character_flag = cheap_weapons
+		clr_character_flag = weaponsmith
+        clr_character_flag = armorsmith
     }
 }
 
@@ -8144,7 +8817,7 @@ character_event = {
     	}
     }
 
-    option = { 
+    option = {  
         name = {
             text = EXCELLENT
             trigger = { FROM = { NOT = { has_character_flag = armor_set }  } }
@@ -8153,7 +8826,7 @@ character_event = {
             text = EVTOPTA_MNM_9122_ARMOR
             trigger = { FROM = { has_character_flag = armor_set } }
         } 
-
+		
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
             add_artifact = brave_sword
@@ -8177,6 +8850,7 @@ character_event = {
     }
 
     option = {
+        trigger = { FROM = { has_character_flag = armor_set } }
         name = {
             text = EVTOPTB_MNM_9122_ARMOR
             trigger = { FROM = { has_character_flag = armor_set } }
@@ -8188,6 +8862,7 @@ character_event = {
     }
     
     option = {
+        trigger = { FROM = { has_character_flag = armor_set } }
         name = {
             text = EVTOPTC_MNM_9122_ARMOR
             trigger = { FROM = { has_character_flag = armor_set } }
@@ -8199,6 +8874,7 @@ character_event = {
     }
     after = {
     	hidden_effect = { FROM = { character_event = { id = MNM.9127 days = 5 } } }
+    	clr_character_flag = amazing_weapons
     	clr_character_flag = expensive_weapons
 		clr_character_flag = good_weapons
 		clr_character_flag = cheap_weapons
@@ -8226,6 +8902,7 @@ character_event = {
     option = { 
         name = EVTOPTA_MNM_9123
 
+        
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
             add_artifact = killing_edge
@@ -8263,19 +8940,44 @@ character_event = {
     }
     after = {
     	hidden_effect = { FROM = { character_event = { id = MNM.9127 days = 5 } } }
+    	clr_character_flag = amazing_weapons
     	clr_character_flag = expensive_weapons
 		clr_character_flag = good_weapons
 		clr_character_flag = cheap_weapons
 		clr_character_flag = weaponsmith
         clr_character_flag = armorsmith
+        clr_character_flag = sword_tier_2
+        clr_character_flag = scimitar_tier_2
+        clr_character_flag = lance_tier_2
+        clr_character_flag = axe_tier_2
+        clr_character_flag = mace_tier_2
+        clr_character_flag = bow_tier_2
     }
 }
-
 
 #Cheap weapon done
 character_event = {
     id = MNM.9124
-    desc = EVTDESC_MNM_9124
+    desc = {
+    	trigger = {
+    		tier = EMPEROR
+    	}
+    	text = EVTDESC_MNM_9124
+    }
+    desc = {
+    	trigger = {
+    		tier = KING
+    	}
+    	text = EVTDESC_MNM_9124_KING
+    }
+    desc = {
+    	trigger = {
+    		tier = GENERIC
+    	}
+    	text = EVTDESC_MNM_9124_GENERIC
+    }
+
+
     picture = GFX_evt_weaponsmith
     border = GFX_event_normal_frame_economy
 
@@ -8328,11 +9030,18 @@ character_event = {
     }
     after = {
     	hidden_effect = { FROM = { character_event = { id = MNM.9127 days = 5 } } }
+    	clr_character_flag = amazing_weapons
     	clr_character_flag = expensive_weapons
 		clr_character_flag = good_weapons
 		clr_character_flag = cheap_weapons
 		clr_character_flag = weaponsmith
         clr_character_flag = armorsmith
+        clr_character_flag = sword_tier_1
+        clr_character_flag = scimitar_tier_1
+        clr_character_flag = lance_tier_1
+        clr_character_flag = axe_tier_1
+        clr_character_flag = mace_tier_1
+        clr_character_flag = bow_tier_1
     }
 }
 
@@ -8360,10 +9069,10 @@ character_event = {
     }
 }
 
-#Problems
+#Potentially better
 character_event = {
     id = MNM.9129
-    desc = EVTDESC_MNM_9129
+    desc = EVTDESC_MNM_9129_NEW
     picture = GFX_evt_merchant_caravan
     border = GFX_event_normal_frame_economy
 
@@ -8380,50 +9089,50 @@ character_event = {
     option = {
     	trigger = { FROM  = { has_character_flag = expensive_weapons } }
         name = EVTOPTA_MNM_9109
-        custom_tooltip = { text = EVTOPTA_MNM_9129_TT }
+        custom_tooltip = { text = EVTOPTA_MNM_9129_TT_NEW }
 
-        scaled_wealth = { value = -3 min = -150 }
+        scaled_wealth = { value = -2 min = -300 max = -1000 }
+
+        hidden_effect = {
+        	FROM = {
+        		clr_character_flag = expensive_weapons
+        		set_character_flag = amazing_weapons
+        	}
+        	clr_character_flag = expensive_weapons
+        	set_character_flag = amazing_weapons
+        }
     }
 
     #Settle for less expensive stuff
     option = {
     	trigger = { FROM  = { has_character_flag = expensive_weapons } }
         name = EVTOPTB_MNM_9109
-        custom_tooltip = { text = EVTOPTB_MNM_9129_TT }
-
-        hidden_effect = {
-        	FROM = {
-	        	clr_character_flag = expensive_weapons
-	        	set_character_flag = good_weapons
-        	}
-        	clr_character_flag = expensive_weapons
-        	set_character_flag = good_weapons
-    	}
+        custom_tooltip = { text = EVTOPTB_MNM_9129_TT_NEW }
     }
 
     #I want my good stuff
     option = {
     	trigger = { FROM  = { has_character_flag = good_weapons } }
         name = EVTOPTC_MNM_9109
-        custom_tooltip = { text = EVTOPTA_MNM_9129_TT }
+        custom_tooltip = { text = EVTOPTA_MNM_9129_TT_NEW }
 
-        scaled_wealth = { value = -1.5 min = -100 }
+        scaled_wealth = { value = -1.25 min = -100 max = -500 }
+
+        hidden_effect = {
+        	FROM = {
+        		clr_character_flag = good_weapons
+        		set_character_flag = expensive_weapons
+        	}
+        	clr_character_flag = good_weapons
+        	set_character_flag = expensive_weapons
+        }
     }
 
     #Settle for less good stuff
     option = {
     	trigger = { FROM  = { has_character_flag = good_weapons } }
         name = EVTOPTD_MNM_9109
-        custom_tooltip = { text = EVTOPTB_MNM_9129_TT }
-
-        hidden_effect = {
-        	FROM = {
-	        	clr_character_flag = good_weapons
-	        	set_character_flag = cheap_weapons
-			}
-        	clr_character_flag = good_weapons
-        	set_character_flag = cheap_weapons
-        }
+        custom_tooltip = { text = EVTOPTB_MNM_9129_TT_NEW }
     }
 
     after = { 
@@ -8507,6 +9216,7 @@ character_event = {
         scaled_wealth = { value = 0.8 min = 40 }
     }
     after = {
+    	clr_character_flag = amazing_weapons
     	clr_character_flag = expensive_weapons
 		clr_character_flag = good_weapons
 		clr_character_flag = cheap_weapons
@@ -8543,6 +9253,7 @@ character_event = {
 	}
 }
 
+#What kind of smith?
 character_event = {
 	id = MNM.9130
 	desc = EVT_DESC_MNM_9130
@@ -8600,12 +9311,12 @@ character_event = {
 	}
 	option = {
 		name = EVT_OPTD_MNM_9310
-		#custom_tooltip = {
-		#	text = employ_smith_cd_reset_tt
-		#	hidden_effect = {
-		#		remove_character_modifier = employ_a_smith_cd
-		#	}
-		#}
+		custom_tooltip = {
+			text = employ_smith_cd_reset_tt
+			hidden_effect = {
+				remove_character_modifier = employ_a_smith_cd
+			}
+		}
 	}
 }
 
@@ -8876,6 +9587,67 @@ character_event = {
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
 			}
+			amazing_weapons = {
+				trigger_switch = {
+					on_trigger = has_character_flag
+					weapon_sword = {
+						random_list = {
+							1 = { add_artifact = sword_tier_4_heartseeker }
+			        		1 = { add_artifact = sword_tier_4_vengeance }
+			        		1 = { add_artifact = sword_tier_4_fury }
+						}
+						new_artifact = { set_artifact_flag = stolen_by_smith }
+					}
+			        weapon_scimitar = { 
+			        	random_list = {
+			        		1 = { add_artifact = scimitar_tier_4_golden }
+			        		1 = { add_artifact = scimitar_tier_4_fortune }
+			        		1 = { add_artifact = scimitar_tier_4_conquest }
+			        	}
+		        		new_artifact = { set_artifact_flag = stolen_by_smith }
+			        }
+			        weapon_lance = { 
+			        	random_list = {
+			        		1 = { add_artifact = lance_tier_4_impaler }
+			        		1 = { add_artifact = lance_tier_4_trident }
+			        		1 = { add_artifact = lance_tier_4_piercer }
+			        	}
+		        		new_artifact = { set_artifact_flag = stolen_by_smith }
+			        }
+			        weapon_axe = { 
+			        	random_list = {
+			        		1 = { add_artifact = axe_tier_4_cleaver }
+			        		1 = { add_artifact = axe_tier_4_ravager }
+			        		1 = { add_artifact = axe_tier_4_marauder }
+			        	}
+		        		new_artifact = { set_artifact_flag = stolen_by_smith }
+			        }
+			        weapon_mace = { 
+			        	random_list = {
+			        		1 = { add_artifact = mace_tier_4_foe_hammer }
+			        		1 = { add_artifact = mace_tier_4_bone_breaker }
+			        		1 = { add_artifact = mace_tier_4_shatterer }
+			        	}
+		        		new_artifact = { set_artifact_flag = stolen_by_smith }
+			        }
+			        weapon_bow = { 
+			        	random_list = {
+			        		1 = { add_artifact = bow_tier_4_silent_wind }
+			        		1 = { add_artifact = bow_tier_4_lightning }
+			        		1 = { add_artifact = bow_tier_4_eagle }
+			        	}
+		        		new_artifact = { set_artifact_flag = stolen_by_smith }
+			        }
+			        armor_set = { 
+			        	random_list = {
+			        		1 = { add_artifact = armor_tier_4_guardian }
+			        		1 = { add_artifact = armor_tier_4_champion }
+			        		1 = { add_artifact = armor_tier_4_warden }
+			        	}
+		        		new_artifact = { set_artifact_flag = stolen_by_smith }
+			        }
+				}
+			}
 			expensive_weapons = { 
 				trigger_switch = {
 					on_trigger = has_character_flag
@@ -8940,24 +9712,24 @@ character_event = {
 			good_weapons = { 
 				trigger_switch = {
 					on_trigger = has_character_flag
-			        weapon_sword = { add_artifact = sword_tier_2 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_scimitar = { add_artifact = scimitar_tier_2 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_lance = { add_artifact = lance_tier_2 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_axe = { add_artifact = axe_tier_2 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_mace = { add_artifact = mace_tier_2 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_bow = { add_artifact = bow_tier_2 new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_sword = { add_artifact = sword_tier_2_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_scimitar = { add_artifact = scimitar_tier_2_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_lance = { add_artifact = lance_tier_2_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_axe = { add_artifact = axe_tier_2_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_mace = { add_artifact = mace_tier_2_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_bow = { add_artifact = bow_tier_2_new new_artifact = { set_artifact_flag = stolen_by_smith } }
 			        armor_set = { add_artifact = armor_tier_2 new_artifact = { set_artifact_flag = stolen_by_smith } }
 			    }
 			}
 			cheap_weapons = { 
 				trigger_switch = {
 					on_trigger = has_character_flag
-			        weapon_sword = { add_artifact = sword_tier_1 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_scimitar = { add_artifact = scimitar_tier_1 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_lance = { add_artifact = lance_tier_1 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_axe = { add_artifact = axe_tier_1 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_mace = { add_artifact = mace_tier_1 new_artifact = { set_artifact_flag = stolen_by_smith } }
-			        weapon_bow = { add_artifact = bow_tier_1 new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_sword = { add_artifact = sword_tier_1_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_scimitar = { add_artifact = scimitar_tier_1_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_lance = { add_artifact = lance_tier_1_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_axe = { add_artifact = axe_tier_1_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_mace = { add_artifact = mace_tier_1_new new_artifact = { set_artifact_flag = stolen_by_smith } }
+			        weapon_bow = { add_artifact = bow_tier_1_new new_artifact = { set_artifact_flag = stolen_by_smith } }
 			        armor_set = { add_artifact = armor_tier_1 new_artifact = { set_artifact_flag = stolen_by_smith } }
 			    }
 			}
@@ -9082,15 +9854,18 @@ character_event = {
 		else = { banish = yes }
 		event_target:smith_employer = { character_event = { id = MNM.9132 } }
 		#clear_event_target = smith_employer
+		clr_character_flag = amazing_weapons
     	clr_character_flag = expensive_weapons
 		clr_character_flag = good_weapons
 		clr_character_flag = cheap_weapons
+		clr_character_flag = amazing_jewels
 		clr_character_flag = expensive_jewels
 		clr_character_flag = good_jewels
 		clr_character_flag = cheap_jewels
 	}
 }
 
+#Smith stole item and fled
 character_event = {
 	id = MNM.9132
 	desc = EVT_DESC_MNM_9132
@@ -9177,17 +9952,20 @@ character_event = {
 						ROOT = { 
 							OR = {
 								any_courtier = {
+									is_inaccessible_or_incapable_trigger = no
 									age = 13
 									stewardship < 14
 									NOT = { character = PREVPREV }
 								}
 								any_friend = {
+									is_inaccessible_or_incapable_trigger = no
 									liege = { character = ROOT }
 									age = 13
 									stewardship < 14
 									NOT = { character = PREVPREV }
 								}
 								any_child = {
+									is_inaccessible_or_incapable_trigger = no
 									liege = { character = ROOT }
 									age = 13
 									stewardship < 14
@@ -9213,12 +9991,14 @@ character_event = {
 						ROOT = { 
 							OR = {
 								any_child = {
+									is_inaccessible_or_incapable_trigger = no
 									liege = { character = ROOT }
 									age <= 16
 									is_strong_trigger = no
 									NOT = { trait = weak }
 								}
 								any_pupil = {
+									is_inaccessible_or_incapable_trigger = no
 									age <= 16
 									is_strong_trigger = no
 									NOT = { trait = weak }
@@ -9242,6 +10022,7 @@ character_event = {
 					trigger = {
 						ROOT = {
 							any_courtier = {
+								is_inaccessible_or_incapable_trigger = no
 								age = 16
 								OR = {
 									AND = {
@@ -9326,6 +10107,7 @@ character_event = {
 	immediate = {
 		random_courtier = {
 			limit = { 
+				is_inaccessible_or_incapable_trigger = no
 				age = 13
 				stewardship < 14
 				NOT = { character = FROM }
@@ -9334,6 +10116,7 @@ character_event = {
 		}
 		random_friend = {
 			limit = { 
+				is_inaccessible_or_incapable_trigger = no
 				liege = { character = ROOT }
 				age = 13
 				stewardship < 14
@@ -9343,6 +10126,7 @@ character_event = {
 		}
 		random_child = {
 			limit = { 
+				is_inaccessible_or_incapable_trigger = no
 				liege = { character = ROOT }
 				age = 13
 				stewardship < 14
@@ -9400,7 +10184,10 @@ character_event = {
 							has_character_flag = weaponsmith
 							has_character_flag = armorsmith
 						}
-						NOT = { has_character_flag = expensive_weapons }
+						NOT = { 
+							has_character_flag = expensive_weapons 
+							has_character_flag = amazing_weapons
+						}
 					}
 					AND = {# or has goldsmith not max tier
 						NOR = {
@@ -9480,6 +10267,7 @@ character_event = {
 				age <= 16
 				is_strong_trigger = no
 				NOT = { trait = weak }
+				is_inaccessible_or_incapable_trigger = no
 			}
 			save_event_target_as = smith_event_target
 		}
@@ -9488,6 +10276,7 @@ character_event = {
 				age <= 16
 				is_strong_trigger = no
 				NOT = { trait = weak }
+				is_inaccessible_or_incapable_trigger = no
 			}
 			save_event_target_as = smith_event_target
 		}
@@ -9547,7 +10336,10 @@ character_event = {
 							has_character_flag = weaponsmith
 							has_character_flag = armorsmith
 						}
-						NOT = { has_character_flag = expensive_weapons }
+						NOT = { 
+							has_character_flag = expensive_weapons 
+							has_character_flag = amazing_weapons
+						}
 					}
 					AND = { #or has goldsmith not max tier
 						NOR = {
@@ -9623,6 +10415,7 @@ character_event = {
 	immediate = {
 		random_courtier = {
 			limit = {
+				is_inaccessible_or_incapable_trigger = no
 				age = 16
 				OR = {
 					AND = {
@@ -9674,6 +10467,7 @@ character_event = {
 		hidden_effect = {
     		clear_delayed_event = { id = MNM.9111 }
     		clear_delayed_event = { id = MNM.9125 }
+    		clr_character_flag = amazing_weapons
 	    	clr_character_flag = expensive_weapons
 			clr_character_flag = good_weapons
 			clr_character_flag = cheap_weapons
@@ -9682,6 +10476,7 @@ character_event = {
 			clr_character_flag = smith_success
 			clr_character_flag = smith_fail
 			clr_character_flag = smith_steal
+			clr_character_flag = amazing_jewels
 	    	clr_character_flag = expensive_jewels
 			clr_character_flag = good_jewels
 			clr_character_flag = cheap_jewels
@@ -9689,9 +10484,11 @@ character_event = {
 			clr_character_flag = goldsmith_fail
 			clr_character_flag = goldsmith_steal
 			FROM = {
+				clr_character_flag = amazing_weapons
 		    	clr_character_flag = expensive_weapons
 				clr_character_flag = good_weapons
 				clr_character_flag = cheap_weapons
+				clr_character_flag = amazing_jewels
 		    	clr_character_flag = expensive_jewels
 				clr_character_flag = good_jewels
 				clr_character_flag = cheap_jewels
@@ -9742,6 +10539,7 @@ character_event = {
 		hidden_effect = {
     		clear_delayed_event = { id = MNM.9111 }
     		clear_delayed_event = { id = MNM.9125 }
+    		clr_character_flag = amazing_weapons
 	    	clr_character_flag = expensive_weapons
 			clr_character_flag = good_weapons
 			clr_character_flag = cheap_weapons
@@ -9750,6 +10548,7 @@ character_event = {
 			clr_character_flag = smith_success
 			clr_character_flag = smith_fail
 			clr_character_flag = smith_steal
+			clr_character_flag = amazing_jewels
 	    	clr_character_flag = expensive_jewels
 			clr_character_flag = good_jewels
 			clr_character_flag = cheap_jewels
@@ -9802,6 +10601,7 @@ character_event = {
 		hidden_effect = {
     		clear_delayed_event = { id = MNM.9111 }
     		clear_delayed_event = { id = MNM.9125 }
+    		clr_character_flag = amazing_weapons
 	    	clr_character_flag = expensive_weapons
 			clr_character_flag = good_weapons
 			clr_character_flag = cheap_weapons
@@ -9810,6 +10610,7 @@ character_event = {
 			clr_character_flag = smith_success
 			clr_character_flag = smith_fail
 			clr_character_flag = smith_steal
+			clr_character_flag = amazing_jewels
 	    	clr_character_flag = expensive_jewels
 			clr_character_flag = good_jewels
 			clr_character_flag = cheap_jewels
@@ -9817,9 +10618,11 @@ character_event = {
 			clr_character_flag = goldsmith_fail
 			clr_character_flag = goldsmith_steal
 			FROM = {
+				clr_character_flag = amazing_weapons
 		    	clr_character_flag = expensive_weapons
 				clr_character_flag = good_weapons
 				clr_character_flag = cheap_weapons
+				clr_character_flag = amazing_jewel
 		    	clr_character_flag = expensive_jewels
 				clr_character_flag = good_jewels
 				clr_character_flag = cheap_jewels
@@ -9882,7 +10685,7 @@ character_event = {
 				save_event_target_as = target_location
 			}
 		}
-#		log = "Chance to lose an artifact on_action fired for the leader: [This.GetBestName] on the holding: [From.GetName]"
+		#log = "Chance to lose an artifact on_action fired for the leader: [This.GetBestName] on the holding: [From.GetName]"
 		FROM = {
 			save_event_target_as = target_title
 			holder_scope = {
@@ -10082,6 +10885,7 @@ character_event = {
 	}
 }
 
+#Ransack enemy holding and find artifact, small item
 character_event = {
 	id = MNM.9902
     desc = {
@@ -10156,6 +10960,7 @@ character_event = {
 	}
 }
 
+#Someone ransacked my holding and stole my artifact, small item
 character_event = {
 	id = MNM.9903
     desc = EVTDESC_MNM_9903
@@ -10192,6 +10997,7 @@ character_event = {
 	}
 }
 
+#Ransack enemy holding and find artifact, medium item
 character_event = {
 	id = MNM.9904
     desc = {
@@ -10266,6 +11072,7 @@ character_event = {
 	}
 }
 
+#Someone ransacked my holding and stole my artifact, medium item
 character_event = {
 	id = MNM.9905
     desc = EVTDESC_MNM_9903
@@ -10302,6 +11109,7 @@ character_event = {
 	}
 }
 
+#Ransack enemy holding and find artifact, great item
 character_event = {
 	id = MNM.9906
     desc = {
@@ -10465,6 +11273,7 @@ character_event = {
 	}
 }
 
+#Someone ransacked my holding and stole my artifact, great item
 character_event = {
 	id = MNM.9907
     desc = {
@@ -10534,6 +11343,7 @@ character_event = {
 	}
 }
 
+#Ransack enemy holding and find artifact, great+ item
 character_event = {
 	id = MNM.9908
     desc = {
@@ -10697,6 +11507,7 @@ character_event = {
 	}
 }
 
+#Someone ransacked my holding and stole my artifact, great+ item
 character_event = {
 	id = MNM.9909
     desc = {
@@ -10766,6 +11577,7 @@ character_event = {
 	}
 }
 
+#Ransack enemy holding and find artifact, amazing item
 character_event = {
 	id = MNM.9910
     desc = {
@@ -10929,6 +11741,7 @@ character_event = {
 	}
 }
 
+#Someone ransacked my holding and stole my artifact, amazing item
 character_event = {
 	id = MNM.9911
     desc = {

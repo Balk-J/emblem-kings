@@ -24,7 +24,7 @@ regalia_aureola = {
 	customizer = no
 	random = no
 }
-regalia_murgleis = {
+regalia_mulagir = {
 	customizer = no
 	random = no
 }

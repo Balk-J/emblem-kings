@@ -8,7 +8,7 @@
 	holder=1017 # 
 }
 0450.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0505.01.03={
 	holder=9745

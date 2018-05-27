@@ -16,7 +16,7 @@
 448.1.1={
 	#holder=0 # Grann destroyed
 	de_jure_liege = k_verdane
-	liege = e_loptyr
+	liege = e_loptous
 }
 449.1.1={
 	holder=801 # Galle I, following the Great Purge

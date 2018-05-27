@@ -9,7 +9,7 @@
 	holder = 881
 }
 0450.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0459.01.01={
 	holder=15518

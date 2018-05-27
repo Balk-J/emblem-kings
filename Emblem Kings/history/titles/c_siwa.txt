@@ -8,7 +8,7 @@
 	holder=876 # 
 }
 0450.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0501.01.01={
 	holder=35047
@@ -24,7 +24,7 @@
 }
 0649.01.01={
 	liege = d_darna
-	holder=1027 # Cult of Loptyr
+	holder=1027 # Cult of Loptous
 }
 0679.01.01={
 	holder=2044

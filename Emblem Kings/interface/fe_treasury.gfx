@@ -120,12 +120,12 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mani_katti_small.dds"
 	}
 	spriteType = {
-		name = "GFX_regalia_murgleis"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_murgleis.dds"
+		name = "GFX_regalia_mulagir"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mulagir.dds"
 	}
 	spriteType = {
-		name = "GFX_regalia_murgleis_small"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_murgleis_small.dds"
+		name = "GFX_regalia_mulagir_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_mulagir_small.dds"
 	}
 	spriteType = {
 		name = "GFX_regalia_regal_blade"
@@ -272,20 +272,20 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_forseti_small.dds"
 	}
 	spriteType = {
-		name = "GFX_regalia_loptyr"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr.dds"
+		name = "GFX_regalia_loptous"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptous.dds"
 	}
 	spriteType = {
-		name = "GFX_regalia_loptyr_small"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr_small.dds"
+		name = "GFX_regalia_loptous_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptous_small.dds"
 	}
 	spriteType = {
-		name = "GFX_regalia_loptyr_sword"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr_sword.dds"
+		name = "GFX_regalia_loptous_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptous_sword.dds"
 	}
 	spriteType = {
-		name = "GFX_regalia_loptyr_sword_small"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptyr_sword_small.dds"
+		name = "GFX_regalia_loptous_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\art\\regalia\\regalia_loptous_sword_small.dds"
 	}
 	spriteType = {
 		name = "GFX_regalia_blagi_sword"

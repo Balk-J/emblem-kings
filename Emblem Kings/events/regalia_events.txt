@@ -693,9 +693,9 @@ character_event = {
 			}		
 			if = {
 				limit = {
-					has_artifact = "regalia_murgleis"
+					has_artifact = "regalia_mulagir"
 				}
-				clr_global_flag = "regalia_murgleis_held" 
+				clr_global_flag = "regalia_mulagir_held" 
 			}		
 			if = {
 				limit = {
@@ -2144,10 +2144,10 @@ character_event = {
 		if = {
 			limit = {
 				event_target:last_regalia_owner = {
-					has_artifact = "regalia_murgleis"
+					has_artifact = "regalia_mulagir"
 				}
 			}
-			add_artifact = "regalia_murgleis"
+			add_artifact = "regalia_mulagir"
 		}	
 		if = {
 			limit = {
@@ -3123,7 +3123,7 @@ narrative_event = {
 	}		
 }
 
-# Murgleis
+# Mulagir
 
 # Starting point - do you want to search?
 character_event = {
@@ -3137,7 +3137,7 @@ character_event = {
 	option = {
 		name = "regalia.72.A"
 		trigger = {
-			NOT = { has_character_flag = regalia_murgleis_info }
+			NOT = { has_character_flag = regalia_mulagir_info }
 		}
 		hidden_tooltip = { character_event = { id = regalia.73 days = 5 } }
 	}	
@@ -3145,7 +3145,7 @@ character_event = {
 	option = {
 		name = "regalia.72.B"
 		trigger = {
-			has_character_flag = regalia_murgleis_info 
+			has_character_flag = regalia_mulagir_info 
 		}
 		hidden_tooltip = { character_event = { id = regalia.78 } }
 	}		
@@ -3155,7 +3155,7 @@ character_event = {
 		add_character_modifier = { name = declined_regalia_search duration = 30 } 
 	}		
 }
-# Looking for Murgleis
+# Looking for Mulagir
 narrative_event = {
 	id = regalia.73
 	title = "regalia.73.title"
@@ -3165,7 +3165,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		set_character_flag = regalia_murgleis_info
+		set_character_flag = regalia_mulagir_info
 	}
 	
 	option = {
@@ -3202,48 +3202,48 @@ character_event = {
 	
 	option = {
 		name = "regalia.74.A"
-		trigger = { NOT = { has_character_flag = regalia_murgleis_trial_1_checked } }
-		set_character_flag = regalia_murgleis_trial_1_checked
+		trigger = { NOT = { has_character_flag = regalia_mulagir_trial_1_checked } }
+		set_character_flag = regalia_mulagir_trial_1_checked
 		hidden_tooltip = {
 			if = {
-				limit = { has_character_flag = regalia_murgleis_trial_1 }
+				limit = { has_character_flag = regalia_mulagir_trial_1 }
 				character_event = { id = regalia.79 } 
 				break = yes
 			}
 			if = {
-				limit = { NOT = { has_character_flag = regalia_murgleis_trial_1 } }
+				limit = { NOT = { has_character_flag = regalia_mulagir_trial_1 } }
 				character_event = { id = regalia.76 } 
 			}
 		}
 	}	
 	option = {
 		name = "regalia.74.B"
-		trigger = { NOT = { has_character_flag = regalia_murgleis_trial_2_checked } }
-		set_character_flag = regalia_murgleis_trial_2_checked
+		trigger = { NOT = { has_character_flag = regalia_mulagir_trial_2_checked } }
+		set_character_flag = regalia_mulagir_trial_2_checked
 		hidden_tooltip = {
 			if = {
-				limit = { has_character_flag = regalia_murgleis_trial_2 }
+				limit = { has_character_flag = regalia_mulagir_trial_2 }
 				character_event = { id = regalia.79 } 
 				break = yes
 			}
 			if = {
-				limit = { NOT = { has_character_flag = regalia_murgleis_trial_2 } }
+				limit = { NOT = { has_character_flag = regalia_mulagir_trial_2 } }
 				character_event = { id = regalia.76 } 
 			}
 		}
 	}	
 	option = {
 		name = "regalia.74.C"
-		trigger = { NOT = { has_character_flag = regalia_murgleis_trial_3_checked } }
-		set_character_flag = regalia_murgleis_trial_3_checked
+		trigger = { NOT = { has_character_flag = regalia_mulagir_trial_3_checked } }
+		set_character_flag = regalia_mulagir_trial_3_checked
 		hidden_tooltip = {
 			if = {
-				limit = { has_character_flag = regalia_murgleis_trial_3 }
+				limit = { has_character_flag = regalia_mulagir_trial_3 }
 				character_event = { id = regalia.79 } 
 				break = yes
 			}
 			if = {
-				limit = { NOT = { has_character_flag = regalia_murgleis_trial_3 } }
+				limit = { NOT = { has_character_flag = regalia_mulagir_trial_3 } }
 				character_event = { id = regalia.76 } 
 			}
 		}
@@ -3265,48 +3265,48 @@ character_event = {
 	
 	option = {
 		name = "regalia.83.A"
-		trigger = { NOT = { has_character_flag = regalia_murgleis_trial_4_checked } }
-		set_character_flag = regalia_murgleis_trial_4_checked
+		trigger = { NOT = { has_character_flag = regalia_mulagir_trial_4_checked } }
+		set_character_flag = regalia_mulagir_trial_4_checked
 		hidden_tooltip = {
 			if = {
-				limit = { has_character_flag = regalia_murgleis_trial_4 }
+				limit = { has_character_flag = regalia_mulagir_trial_4 }
 				character_event = { id = regalia.79 } 
 				break = yes
 			}
 			if = {
-				limit = { NOT = { has_character_flag = regalia_murgleis_trial_4 } }
+				limit = { NOT = { has_character_flag = regalia_mulagir_trial_4 } }
 				character_event = { id = regalia.76 } 
 			}
 		}
 	}	
 	option = {
 		name = "regalia.83.B"
-		trigger = { NOT = { has_character_flag = regalia_murgleis_trial_5_checked } }
-		set_character_flag = regalia_murgleis_trial_5_checked
+		trigger = { NOT = { has_character_flag = regalia_mulagir_trial_5_checked } }
+		set_character_flag = regalia_mulagir_trial_5_checked
 		hidden_tooltip = {
 			if = {
-				limit = { has_character_flag = regalia_murgleis_trial_5 }
+				limit = { has_character_flag = regalia_mulagir_trial_5 }
 				character_event = { id = regalia.79 } 
 				break = yes
 			}
 			if = {
-				limit = { NOT = { has_character_flag = regalia_murgleis_trial_5 } }
+				limit = { NOT = { has_character_flag = regalia_mulagir_trial_5 } }
 				character_event = { id = regalia.76 } 
 			}
 		}
 	}	
 	option = {
 		name = "regalia.83.C"
-		trigger = { NOT = { has_character_flag = regalia_murgleis_trial_6_checked } }
-		set_character_flag = regalia_murgleis_trial_6_checked
+		trigger = { NOT = { has_character_flag = regalia_mulagir_trial_6_checked } }
+		set_character_flag = regalia_mulagir_trial_6_checked
 		hidden_tooltip = {
 			if = {
-				limit = { has_character_flag = regalia_murgleis_trial_6 }
+				limit = { has_character_flag = regalia_mulagir_trial_6 }
 				character_event = { id = regalia.79 } 
 				break = yes
 			}
 			if = {
-				limit = { NOT = { has_character_flag = regalia_murgleis_trial_6 } }
+				limit = { NOT = { has_character_flag = regalia_mulagir_trial_6 } }
 				character_event = { id = regalia.76 } 
 			}
 		}
@@ -3353,14 +3353,14 @@ character_event = {
 			if = {
 				limit = {
 					any_current_enemy = {
-						has_character_flag = murgleis_guardian
+						has_character_flag = mulagir_guardian
 					}
 				}
 				location = {
 					ROOT = {
 						random_current_enemy = {
 							limit = {
-								has_character_flag = murgleis_guardian
+								has_character_flag = mulagir_guardian
 							}
 							spawn_unit = {
 								province = PREVPREV
@@ -3394,7 +3394,7 @@ character_event = {
 				limit = {
 					NOT = {
 						any_current_enemy = {
-							has_character_flag = murgleis_guardian
+							has_character_flag = mulagir_guardian
 						}
 					}
 				}
@@ -3420,7 +3420,7 @@ character_event = {
 					}
 					
 					new_character = {
-						set_character_flag = murgleis_guardian
+						set_character_flag = mulagir_guardian
 						set_character_flag = regalia_guardian
 						set_character_flag = class_selected
 						set_variable = { which = "level" value = 15 }
@@ -3551,7 +3551,7 @@ character_event = {
 		}
 		if = {
 			limit = { 
-				has_character_flag = regalia_murgleis_trial 
+				has_character_flag = regalia_mulagir_trial 
 				has_character_flag = lost_to_regalia_guardians 
 			}
 			character_event = { id = regalia.80 }
@@ -3559,7 +3559,7 @@ character_event = {
 		}
 		if = {
 			limit = { 
-				has_character_flag = regalia_murgleis_trial 
+				has_character_flag = regalia_mulagir_trial 
 				has_character_flag = defeated_regalia_guardians 
 			}
 			character_event = { id = regalia.81 }
@@ -3576,27 +3576,27 @@ character_event = {
 		
 	option = {
 		name = OK
-		clr_character_flag = regalia_murgleis_trial_1
-		clr_character_flag = regalia_murgleis_trial_1_checked
-		clr_character_flag = regalia_murgleis_trial_2
-		clr_character_flag = regalia_murgleis_trial_2_checked
-		clr_character_flag = regalia_murgleis_trial_3
-		clr_character_flag = regalia_murgleis_trial_3_checked
-		clr_character_flag = regalia_murgleis_trial_4
-		clr_character_flag = regalia_murgleis_trial_4_checked
-		clr_character_flag = regalia_murgleis_trial_5
-		clr_character_flag = regalia_murgleis_trial_5_checked
-		clr_character_flag = regalia_murgleis_trial_6
-		clr_character_flag = regalia_murgleis_trial_6_checked
+		clr_character_flag = regalia_mulagir_trial_1
+		clr_character_flag = regalia_mulagir_trial_1_checked
+		clr_character_flag = regalia_mulagir_trial_2
+		clr_character_flag = regalia_mulagir_trial_2_checked
+		clr_character_flag = regalia_mulagir_trial_3
+		clr_character_flag = regalia_mulagir_trial_3_checked
+		clr_character_flag = regalia_mulagir_trial_4
+		clr_character_flag = regalia_mulagir_trial_4_checked
+		clr_character_flag = regalia_mulagir_trial_5
+		clr_character_flag = regalia_mulagir_trial_5_checked
+		clr_character_flag = regalia_mulagir_trial_6
+		clr_character_flag = regalia_mulagir_trial_6_checked
 		
-		set_character_flag = regalia_murgleis_trial
+		set_character_flag = regalia_mulagir_trial
 		random_list = {
-			16 = { set_character_flag = regalia_murgleis_trial_1 }
-			16 = { set_character_flag = regalia_murgleis_trial_2 }
-			16 = { set_character_flag = regalia_murgleis_trial_3 }
-			16 = { set_character_flag = regalia_murgleis_trial_4 }
-			16 = { set_character_flag = regalia_murgleis_trial_5 }
-			16 = { set_character_flag = regalia_murgleis_trial_6 }
+			16 = { set_character_flag = regalia_mulagir_trial_1 }
+			16 = { set_character_flag = regalia_mulagir_trial_2 }
+			16 = { set_character_flag = regalia_mulagir_trial_3 }
+			16 = { set_character_flag = regalia_mulagir_trial_4 }
+			16 = { set_character_flag = regalia_mulagir_trial_5 }
+			16 = { set_character_flag = regalia_mulagir_trial_6 }
 		}
 		character_event = { id = regalia.74 }
 	}		
@@ -3615,7 +3615,7 @@ character_event = {
 		trigger = {
 			NOT = {
 				any_current_enemy = {
-					has_character_flag = murgleis_guardian
+					has_character_flag = mulagir_guardian
 				}
 			}
 		}
@@ -3626,7 +3626,7 @@ character_event = {
 		name = "regalia.79.B"
 		trigger = {
 			any_current_enemy = {
-				has_character_flag = murgleis_guardian
+				has_character_flag = mulagir_guardian
 			}
 		}
 	}		
@@ -3640,8 +3640,8 @@ character_event = {
 	is_triggered_only = yes
 	option = {
 		name = "regalia.80.A"
-		set_character_flag = regalia_murgleis_failure
-		clr_character_flag = regalia_murgleis_trial
+		set_character_flag = regalia_mulagir_failure
+		clr_character_flag = regalia_mulagir_trial
 		clr_character_flag = lost_to_regalia_guardians
 		prestige = -500
 	}		
@@ -3655,7 +3655,7 @@ character_event = {
 	is_triggered_only = yes
 	option = {
 		name = "regalia.81.A"
-		clr_character_flag = regalia_murgleis_trial
+		clr_character_flag = regalia_mulagir_trial
 		clr_character_flag = defeated_regalia_guardians
 		hidden_tooltip = { character_event = { id = regalia.82 } }
 	}		
@@ -3672,23 +3672,23 @@ narrative_event = {
 		
 	option = {
 		name = "regalia.82.A"
-		add_artifact = regalia_murgleis
+		add_artifact = regalia_mulagir
 		new_artifact = {
 			set_creation_date = -1.1.1
 		}
-		set_global_flag = regalia_murgleis_held 
-		clr_character_flag = regalia_murgleis_trial_1
-		clr_character_flag = regalia_murgleis_trial_1_checked
-		clr_character_flag = regalia_murgleis_trial_2
-		clr_character_flag = regalia_murgleis_trial_2_checked
-		clr_character_flag = regalia_murgleis_trial_3
-		clr_character_flag = regalia_murgleis_trial_3_checked
-		clr_character_flag = regalia_murgleis_trial_4
-		clr_character_flag = regalia_murgleis_trial_4_checked
-		clr_character_flag = regalia_murgleis_trial_5
-		clr_character_flag = regalia_murgleis_trial_5_checked
-		clr_character_flag = regalia_murgleis_trial_6
-		clr_character_flag = regalia_murgleis_trial_6_checked
+		set_global_flag = regalia_mulagir_held 
+		clr_character_flag = regalia_mulagir_trial_1
+		clr_character_flag = regalia_mulagir_trial_1_checked
+		clr_character_flag = regalia_mulagir_trial_2
+		clr_character_flag = regalia_mulagir_trial_2_checked
+		clr_character_flag = regalia_mulagir_trial_3
+		clr_character_flag = regalia_mulagir_trial_3_checked
+		clr_character_flag = regalia_mulagir_trial_4
+		clr_character_flag = regalia_mulagir_trial_4_checked
+		clr_character_flag = regalia_mulagir_trial_5
+		clr_character_flag = regalia_mulagir_trial_5_checked
+		clr_character_flag = regalia_mulagir_trial_6
+		clr_character_flag = regalia_mulagir_trial_6_checked
 	}		
 }
 

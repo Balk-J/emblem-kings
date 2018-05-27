@@ -1,8 +1,6 @@
 #character
 on_startup = {
 	events = {
-		# FE
-		startup.1 # Initialization
 		GR.13 #True cognatic for rule gender = all
 		MNM.10025 #Save game conversion of secret_traits to secret religions
 		JD.10006#Save game fix for setting the name of the Chinese empire
@@ -10,6 +8,10 @@ on_startup = {
 		ZP.5 #Change Zorastrian pet traits into modifiers
 		JD.60005 #Convert prosthetics event modifiers into artifacts
 		JD.50401 # Set correct value of the Silk Road
+		JD.30504 # Clean up living members of the chinese dynasty
+		
+		# FE
+		startup.1 # Initialization
 	}
 }
 
@@ -37,8 +39,7 @@ on_yearly_pulse = {
 		JD.4000 # Character raiding China result events
 		bear.7 # Secret bear generation
 		bear.1 # Secret bear discovery. Called here and in bear.7, as bear.1 can be temporarily precluded
-
-
+		
 		# FE
 		class.6 # Promotion for non-playable characters
 		magic.8 # Druid Promotion path choice
@@ -52,7 +53,7 @@ on_yearly_pulse = {
 		fe5_thracia_776.2 # Start a revolt in Manster
 		fe5_thracia_776.19 # Destroy the Magi Squad if they aren't involved in the liberation war
 		fe4_last_holy_war.12 # Start Seliph's rebellion
-		loptyr.10 # Start Maera's rebellion
+		loptous.10 # Start Maera's rebellion
 		galle.4 # The Great Purge
 		galle.7 # The Sorrow of Miletos
 		galle.8 # The Massacre of Edda
@@ -902,13 +903,14 @@ on_decade_pulse = {
 	}
 	
 	random_events = {
+		500 = 60500 #Mongol Horde starts forming.
 		100 = 63050 #former MTTH event
 		40 = SoA.4020 #former MTTH event
 		100 = 0
 	}
 }
 
-# For characters 2 to 16 years old
+# For characters older than AGE_CHILDHOOD_PULSE but not an adult as defined by ADULT_AGE_FEMALE and ADULT_AGE_MALE
 on_yearly_childhood_pulse = {
 
 	random_events = {
@@ -1089,6 +1091,7 @@ on_combat_pulse = {
 
 		# FE
 		40 = battle.1 # Battlefield duel (from GoT mod)
+
 	}
 	# FE
 	events = {
@@ -1378,6 +1381,8 @@ on_adulthood = {
 
 		MNM.1269 # Horoscoped child gets new modifiers
 		MNM.4302 # Monastic Order education bonus purity effect
+
+		ZE.40000 # Extra clean up of childhood traits, for incapable etc characters
 		# FE
 		fire_emblem.2 # Coming of age ceremony for the heir to Bern
 	}
@@ -1456,6 +1461,7 @@ on_become_imprisoned_any_reason = {
 		RIP.12097 # Being thrown in prison removes seclusion modifier
 		MNM.9033 # Imprisoned councillor cannot hunt for relics
 		685 # Remove in-hiding trait on imprisonment
+		86867 # Cleanup event for Hajj.
 	}
 }
 
@@ -1471,6 +1477,7 @@ on_became_imprisoned = {
 	events = {
  		151 # Was imprisoned
 		CM.10024  # Chronicle entry
+		86867 # Cleanup event for Hajj.
  	}
 }
 
@@ -1583,9 +1590,9 @@ on_death = {
 		
 		#regalia.19 # Death of a regalia holder - DEPRECATED; replaced by artifact inheritance
 		#fire_emblem.1 # Death of the Fire Emblem holder - DEPRECATED; replaced by artifact inheritance
-		loptyrian.9 # Death of a person with minor Loptyr blood discovered by the cult
+		loptyrian.9 # Death of a person with minor Loptous blood discovered by the cult
 		fe4_belhalla.7 # Death of Quan as the leader of the Lanceritter in Yied
-		loptyr.2 # Death of Loptyr's mortal host
+		loptous.2 # Death of Loptous's mortal host
 	}
 	random_events = {
 		1 = RIP.29800 #reincarnation investigation
@@ -2436,9 +2443,8 @@ on_new_holder = {
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
 		
 		539 # Fix adventurers turning Tribal land Feudal
-		
 		# FE
-		loptyr.8 # Take the name Galle on becoming Emperor of Loptyr Empire
+		loptous.8 # Take the name Galle on becoming Emperor of Loptyrian Empire
 	}
 }
 
@@ -2457,9 +2463,8 @@ on_new_holder_inheritance = {
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
 		JD.9000 # Reapply Scholar Bureaucrat bonus on death/inheritance
-		
 		# FE
-		loptyr.8 # Take the name Galle on becoming Emperor of Loptyr Empire
+		loptous.8 # Take the name Galle on becoming Emperor of Loptyrian Empire
 	}
 }
 
@@ -2934,7 +2939,7 @@ on_artifact_inheritance = {
 		MNM.5107 # for inheriting ingredients
 		
 		# FE
-		#loptyr.1 # Book of Loptyr inherited # This does not appear to work, or the trigger doesn't work for modded artifacts like MNM.5107. Oh well.
+		#loptous.1 # Loptous inherited # This does not appear to work, or the trigger doesn't work for modded artifacts like MNM.5107. Oh well.
 	}
 }
 
@@ -3091,4 +3096,13 @@ on_split_clan_attempted_started_war = {
 	events = {
 		684
  	}
+}
+
+# Triggers on a betrothal being agreed. Sent to employers of both parties
+# Root = Employer of the character getting betrothed
+# From = Character getting betrothed in the court of Root
+# new_character = The other character getting betrothed
+on_betrothal = {
+	events = {
+	}
 }

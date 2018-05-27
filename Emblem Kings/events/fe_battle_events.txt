@@ -16,7 +16,7 @@ narrative_event = {
 			has_artifact = regalia_armads
 			has_artifact = regalia_forblaze
 			has_artifact = regalia_aureola
-			has_artifact = regalia_murgleis
+			has_artifact = regalia_mulagir
 			has_artifact = regalia_apocalypse
 			has_artifact = regalia_eckesachs
 		}

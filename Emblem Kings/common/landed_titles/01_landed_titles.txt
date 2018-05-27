@@ -7206,7 +7206,7 @@ e_elibe = {
 				b_foulkes_2 = {
 				}
 			}
-			c_murgleis = {
+			c_mulagir = {
 				color={ 143 117 112 }
 				color2={ 255 255 255 }
 
@@ -7214,11 +7214,11 @@ e_elibe = {
 				holy_site = divine_sky_pagan
 				holy_site = divine_sky_pagan_reformed
 
-				b_murgleis = {
+				b_mulagir = {
 				}
-				b_murgleis_shrine = {
+				b_mulagir_shrine = {
 				}
-				b_murgleis_2 = {
+				b_mulagir_2 = {
 				}
 			}
 		}

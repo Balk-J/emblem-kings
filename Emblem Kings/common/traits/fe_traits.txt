@@ -37,7 +37,7 @@ eight_legends = {
 
 dragon_blood = {
 	immortal = yes
-	fertility = -0.9
+#	fertility = -0.9
 	customizer = no
 	random = no
 }

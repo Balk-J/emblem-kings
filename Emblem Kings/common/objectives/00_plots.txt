@@ -1,6 +1,5 @@
 #FE Overrides:
 # Get a character killed
-
 # Plot tags need to start with 'plot_'
 
 # Supported types:
@@ -1015,6 +1014,12 @@ plot_kill_character = {
 			}		
 		}
 		modifier = {
+			factor = 0
+			ROOT = {
+				is_pilgrim = yes
+			}
+		}
+		modifier = {
 			factor = 1.5
 			NOT = { their_opinion = { who = FROM value = -25 } }
 		}
@@ -1093,7 +1098,6 @@ plot_kill_character = {
 	abort_effect = {
 		FROM = { clr_character_flag = murder_in_motion }
 	}
-
 	creation_effect = {
 		# ROOT = target, FROM = plotter
 		if = {

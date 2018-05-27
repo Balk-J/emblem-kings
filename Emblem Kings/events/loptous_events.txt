@@ -1,0 +1,601 @@
+namespace = loptous
+
+character_event = {
+	id = loptous.1
+	#hide_window = yes
+	is_triggered_only = yes 
+    trigger = {
+    	FROM = { artifact = regalia_loptous } 
+		#trait = holy_blood_major_loptous
+    	#NOT = { trait = possessed_loptous } 
+		#NOT = {	possessed_loptous = { is_alive = yes } }
+    }	
+    immediate = {
+    	set_character_flag = got_a_book
+    }
+	option = {
+		name = OK
+		character_event = { id = loptous.2 }
+	}
+}
+# Death of Loptous
+character_event = {
+	id = loptous.2
+	hide_window = yes
+    trigger = {
+    	trait = possessed_loptous 
+    }	
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptous.2.A	
+		# Body-surf to the heir if appropriate
+		if = {
+			limit = {
+				has_artifact = regalia_loptous
+				OR = {
+					AND = {
+						is_ruler = yes
+						current_heir = {
+							trait = holy_blood_major_loptous
+						}
+					}
+					AND = {
+						is_ruler = no
+						any_child = {
+							trait = holy_blood_major_loptous
+						}
+					}
+				}
+				loptous_killed_by_book_of_naga_trigger = no
+			}
+			if = {
+				limit = { is_ruler = yes }
+				current_heir = {
+					character_event = {	id = loptous.5 }
+				}
+			}else = {
+				random_child = {
+					limit = { trait = holy_blood_major_loptous }
+					character_event = {	id = loptous.5 }
+				}
+			}
+		}
+		# Otherwise move the book to a new character and possess them
+		else_if = {
+			limit = {
+				holy_blood_major_loptous = {
+					is_alive = yes
+					NOT = { character = ROOT }
+				}
+				loptous_killed_by_book_of_naga_trigger = no
+			}
+			current_heir = {
+				character_event = {	id = loptous.4 days = 1 }
+			}
+		}else = {
+			if = {
+				limit = { has_global_flag = loptous_empire_destroyed }
+				set_global_flag = loptous_defeated
+			}else = {
+				set_global_flag = loptous_empire_destroyed
+				if = {
+					limit = {
+						e_loptous = {
+							has_holder = yes
+						}
+					}
+					e_loptous = {
+						destroy_landed_title = THIS
+					}
+				}
+				if = {
+					limit = {
+						d_loptous = {
+							has_holder = yes
+						}
+					}
+					d_loptous = {
+						unsafe_destroy_landed_title = THIS
+					}
+				}
+			}
+			# Notify rulers of Loptous's death
+			hidden_tooltip = {
+				if = {
+					limit = {
+						is_ruler = yes
+					}
+					current_heir = {
+						narrative_event = { id = loptous.6 days = 1 }
+					}
+				}
+				any_playable_ruler = {
+					if = {
+						limit = {
+							#primary_title = { region = world_jugdral }
+							is_within_diplo_range = ROOT
+						}
+						narrative_event = { id = loptous.6 days = 1 }
+					}else_if = {
+						limit = {
+							religion = loptyrian
+						}
+						character_event = {	id = loptous.7 days = 1 }
+					}
+				}
+				d_loptyrian = { 
+					unsafe_destroy_landed_title = THIS
+				}
+				activate_title = { title = d_loptyrian status = no }
+				d_schwarze_rosen = { 
+					unsafe_destroy_landed_title = THIS
+				}
+				activate_title = { title = d_schwarze_rosen status = no }
+			}
+		}
+	}
+}
+# Character possessed by Loptous
+character_event = {
+	id = loptous.3
+	desc = loptous.3.desc
+	picture = GFX_evt_lunatic
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptous.3.A	
+		loptous_possession_effect = yes
+		loptous_revival_effect = yes	
+	}
+}
+# Book of Loptous moved to new vessel; inform current holder
+character_event = {
+	id = loptous.4
+	desc = loptous.4.desc
+	picture = GFX_evt_ritual_scroll
+	hide_from = yes
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptous.4.A	
+		hidden_tooltip = {
+			random_character = {
+				limit = {
+					trait = holy_blood_major_loptous
+				}
+				ROOT = { 
+					random_artifact = {
+						limit = {
+							artifact_type = regalia_loptous
+						}
+						transfer_artifact = {
+							from = PREV to = PREVPREV 
+						} 
+					}
+				}
+				character_event = {	id = loptous.5 }
+			}
+		}		
+	}
+}
+# Character receives Book of Loptous after the death of the last host
+character_event = {
+	id = loptous.5
+	desc = loptous.5.desc
+	picture = GFX_evt_ritual_scroll
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptous.5.A	
+		ai_chance = { 
+			factor = 100 
+		}
+		character_event = { id = loptous.3 }	
+	}
+	option = {
+		name = loptous.5.B
+		ai_chance = { 
+			factor = 0 
+		}	
+		unsafe_destroy_artifact = regalia_loptous	
+	}
+}
+
+narrative_event = {
+	id = loptous.6
+	title = loptous.6.title
+	desc = loptous.6.desc
+	picture = GFX_evt_died_funeral
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptous.6.A
+		trigger = { religion = loptyrian }
+		hidden_tooltip = {
+			character_event = {	id = loptous.7 }
+		}
+	}
+	option = {
+		name = loptous.6.B
+		trigger = { NOT = { religion = loptyrian } }
+	}
+}
+# Former Loptyrians prompted to switch
+character_event = {
+	id = loptous.7
+	desc = loptous.7.desc
+	picture = GFX_evt_bad_news_female
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = loptous.7.A	
+		trigger = {
+			NOT = { trait = possessed_loptous }
+		}
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				factor = 0 
+				trait = zealous
+			}
+			modifier = {
+				factor = 2 
+				trait = kind
+			}
+			modifier = {
+				factor = 2 
+				trait = just
+			}
+			modifier = {
+				factor = 2 
+				trait = cynical
+			}
+			modifier = {
+				factor = 2 
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2 
+				trait = content
+			}
+			modifier = {
+				factor = 2 
+				trait = slothful
+			}
+			modifier = {
+				factor = 0 
+				independent = no
+				liege = { NOT = { religion = loptyrian } }
+				has_secret_religion = no
+				has_character_flag = secret_loptyrian_dark_bishop
+				NOT = {
+					has_game_rule = {
+						name = secret_cults
+						value = none
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_ruler = no
+				liege = { NOT = { religion = loptyrian } }
+			}
+			liege = {
+				ROOT = { religion = PREV }
+			}
+		}else_if = {
+			limit = {
+				is_ruler = yes
+				capital_scope = {
+					NOT = { religion = loptyrian }
+				}
+			}
+			capital_scope = {
+				ROOT = { religion = PREV }
+			}
+		}else_if = {
+			limit = {
+				any_playable_ruler = {
+					is_within_diplo_range = ROOT
+					NOT = { religion = loptyrian }
+				}
+			}
+			random_playable_ruler = {
+				limit = {
+					is_within_diplo_range = ROOT
+					NOT = { religion = loptyrian }
+				}
+				ROOT = { religion = PREV }
+			}
+		}else = {
+			religion = maerist
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = { is_ruler = yes }
+				any_courtier = {
+					limit = {
+						religion = loptyrian
+						is_ruler = no
+					}
+					character_event = { id = loptous.7 }
+				}
+			}
+		}
+	}
+	option = {
+		name = loptous.7.B
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 10 
+				has_loptous_holy_blood_trigger = yes
+			}
+			modifier = {
+				factor = 5 
+				trait = cruel
+			}
+			modifier = {
+				factor = 5 
+				trait = impaler
+			}
+			modifier = {
+				factor = 0 
+				independent = no
+				liege = { NOT = { religion = loptyrian } }
+				has_secret_religion = no
+				has_character_flag = secret_loptyrian_dark_bishop
+				NOT = {
+					has_game_rule = {
+						name = secret_cults
+						value = none
+					}
+				}
+			}
+		}	
+		piety = 100
+		if = {
+			limit = { trait = cynical }
+			random = {
+				chance = 50
+				remove_trait = cynical
+			}
+		}else_if = {
+			limit = { NOT = { trait = zealous } }
+			random = {
+				chance = 50
+				add_trait = zealous
+			}
+		}
+	}
+	option = {
+		name = loptous.7.C
+		trigger = {
+			independent = no
+			liege = { NOT = { religion = loptyrian } }
+			has_secret_religion = no
+			OR = {
+				ai = no
+				has_character_flag = secret_loptyrian_dark_bishop
+			}
+			NOT = {
+				has_game_rule = {
+					name = secret_cults
+					value = none
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 10 
+		}	
+		intrigue = 1
+		falsely_confess_faith_effect = yes
+	}
+}
+# Loptous Empire heir can take Galle's name
+character_event = {
+	id = loptous.8
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	trigger = {
+		FROM = { title = e_loptous }
+		primary_title = { title = e_loptous }
+		dynasty = 801
+		NOT = { c_801 = { same_regnal_name = ROOT } }
+	}
+
+	option = {
+		name = OK
+		character_event = {	id = loptous.9 days = 1 }
+	}
+}
+character_event = {
+	id = loptous.9
+	desc = loptous.9.desc
+	picture = GFX_evt_coronation
+	hide_from = yes
+	is_triggered_only = yes 	
+
+	option = {
+		name = loptous.9.A	
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0 
+				is_female = yes
+			}
+		}
+		set_name = "Galle"
+		prestige = 10
+	}
+	option = {
+		name = loptous.9.B
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0 
+				is_female = no
+			}
+		}
+	}
+}
+
+# Start Maera's rebellion
+character_event = {
+	id = loptous.10
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	only_playable = yes
+	only_independent = yes
+	religion = loptyrian
+	trigger = {
+		year = 535
+		NOT = { has_global_flag = maeras_rebellion }
+		NOT = { has_global_flag = loptous_empire_destroyed }
+		NOT = { has_global_flag = jugdral_rebellion_started }
+		has_landed_title = e_loptous
+		trait = possessed_loptous
+		any_sibling = {
+			is_adult = yes
+			trait = holy_blood_minor_loptous
+			liege = { character = ROOT }
+			NOT = { has_character_flag = declined_maerist_rebellion }
+		}
+	}
+
+	option = {
+		name = OK
+		random_sibling = {
+			limit = {
+				is_adult = yes
+				trait = holy_blood_minor_loptous
+				liege = { character = ROOT }
+				NOT = { has_character_flag = declined_maerist_rebellion }
+			}
+			character_event = { id = loptous.11 }
+		}
+	}
+}
+
+# Maera gets the choice to revolt
+character_event = {
+	id = loptous.11
+	desc = loptous.11.desc
+	picture = GFX_evt_heretic
+	hide_from = yes
+	is_triggered_only = yes 	
+
+	option = {
+		name = loptous.11.A	
+		ai_chance = { 
+			factor = 1 
+		}
+		set_global_flag = maeras_rebellion
+		if = {
+			limit = {
+				is_ruler = no
+			}			
+			if = {
+				limit = {
+					c_basile = {
+						holder_scope = {
+							OR = {
+								ai = yes
+								num_of_count_titles_in_realm = 2
+							}
+						}
+					}
+				}
+				c_basile = { usurp_title = { target = ROOT type = invasion } }
+			}else_if = {
+				limit = {
+					c_spirit_forest = {
+						holder_scope = {
+							OR = {
+								ai = yes
+								num_of_count_titles_in_realm = 2
+							}
+						}
+					}
+				}
+				c_spirit_forest = { usurp_title = { target = ROOT type = invasion } }
+			}else = {
+				FROM = {
+					random_realm_title = {
+						limit = {
+							tier = COUNT
+							holder_scope = { ai = yes }
+						}
+						usurp_title = { target = ROOT type = invasion }
+					}
+				}
+			}
+			set_defacto_liege = FROM
+		}
+		religion = maerist
+		capital_scope = {
+			religion = maerist
+		}
+		hidden_tooltip = {
+			c_basile = { province = { religion = maerist } }
+			c_spirit_forest = { province = { religion = maerist } }
+		}
+		piety = 1000
+		top_liege = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = bid_for_independence
+			}
+		}	
+		capital_scope = {
+			owner = {
+				spawn_unit = {
+					owner = THIS
+					province = PREV
+					troops = {
+						magic_users = { 100 100 }
+					}
+					attrition = 0
+					disband_on_peace = yes
+					maintenance_multiplier = 0
+				}	
+				spawn_unit = {
+					owner = THIS
+					province = PREV
+					troops = {
+						magic_users = { 100 100 }
+					}
+					attrition = 0
+					disband_on_peace = yes
+					maintenance_multiplier = 0
+				}	
+				spawn_unit = {
+					owner = THIS
+					province = PREV
+					troops = {
+						magic_users = { 100 100 }
+					}
+					attrition = 0
+					disband_on_peace = yes
+					maintenance_multiplier = 0
+				}					
+			}
+		}
+	}
+	option = {
+		name = loptous.11.B
+		ai_chance = { 
+			factor = 0 
+		}
+		set_character_flag = declined_maerist_rebellion
+	}
+}

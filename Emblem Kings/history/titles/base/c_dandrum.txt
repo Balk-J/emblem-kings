@@ -10,7 +10,7 @@
 	holder=892 # 
 }
 450.1.1={
-	liege = e_loptyr
+	liege = e_loptous
 }
 649.1.1={
 	#holder=0 # Set to appropriately cultured ruler?

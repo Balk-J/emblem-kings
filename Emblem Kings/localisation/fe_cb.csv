@@ -38,6 +38,6 @@ CB_NAME_SUPPRESS_REBELS;Suppress Rebels;;;;;;;;;;;;;x
 grannvale_suppress_rebels_desc;§Y$TARGET$§! is a rebel traitor and must be crushed for the good of the realm!;;;;;;;;;;;;;x
 WAR_NAME_SUPPRESSION;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ Suppression;;;;;;;;;;;;;x
 grannvale_suppress_rebels.tooltip;§Y[From.GetTitledFirstName]§! takes or vassalizes all titles held by §Y[Root.GetTitledFirstName]§! within the region of the revolt.;;;;;;;;;;;;;x
-jugdral_crusade_desc;§Y$TARGET$§! is the mortal vessel of Loptyr and must be defeated for the good of humanity.;;;;;;;;;;;;;x
+jugdral_crusade_desc;§Y$TARGET$§! is the mortal vessel of Loptous and must be defeated for the good of humanity.;;;;;;;;;;;;;x
 jugdral_crusade.tooltip;§Y[Root.GetTitledFirstName]§! executes §Y[From.GetTitledFirstName]§! and takes or vassalizes all of [From.GetHerHis] titles.;;;;;;;;;;;;;x
 WAR_NAME_JUGDRAL_CRUSADE;$ORDER$$SECOND_ADJ$ Crusade;;;;;;;;;;;;;x

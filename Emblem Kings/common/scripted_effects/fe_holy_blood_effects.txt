@@ -1,6 +1,6 @@
-loptyr_possession_effect = {
+loptous_possession_effect = {
 	custom_tooltip = {
-		text = loptyr_possession_effect.tooltip
+		text = loptous_possession_effect.tooltip
 		hidden_tooltip = {
 			
 			# Religion and bloodline...
@@ -9,16 +9,16 @@ loptyr_possession_effect = {
 				religion = loptyrian
 			}
 			if = {
-				limit = { NOT = { trait = holy_blood_major_loptyr } }
-				add_trait = holy_blood_major_loptyr
+				limit = { NOT = { trait = holy_blood_major_loptous } }
+				add_trait = holy_blood_major_loptous
 			}
 			if = {
-				limit = { trait = holy_blood_minor_loptyr }
-				remove_trait = holy_blood_minor_loptyr
+				limit = { trait = holy_blood_minor_loptous }
+				remove_trait = holy_blood_minor_loptous
 			}
 			if = {
-				limit = { NOT = { trait = possessed_loptyr } }
-				add_trait = possessed_loptyr
+				limit = { NOT = { trait = possessed_loptous } }
+				add_trait = possessed_loptous
 			}
 			
 			# Personality - he's like this
@@ -83,7 +83,7 @@ loptyr_possession_effect = {
 				add_trait = holy_warrior
 			}
 			
-			# Loptyr is not like this
+			# Loptous is not like this
 			if = {
 				limit = { trait = quick }
 				remove_trait = quick
@@ -253,9 +253,9 @@ loptyr_possession_effect = {
 add_latent_holy_blood_effect = {
 	if = {
 		limit = {
-			can_inherit_loptyr_holy_blood_trigger = yes
+			can_inherit_loptous_holy_blood_trigger = yes
 		}
-		add_trait = holy_blood_latent_loptyr
+		add_trait = holy_blood_latent_loptous
 	}
 	if = {
 		limit = {
@@ -391,14 +391,14 @@ remove_loptyrian_marriage_traits_effect = {
 	}
 }
 
-loptyr_revival_effect = {
+loptous_revival_effect = {
 	hidden_tooltip = {
 		if = {
 			limit = { 
-				has_global_flag = loptyr_empire_destroyed
-				NOT = { has_global_flag = loptyr_revived }
+				has_global_flag = loptous_empire_destroyed
+				NOT = { has_global_flag = loptous_revived }
 			}
-			set_global_flag = loptyr_revived
+			set_global_flag = loptous_revived
 			
 			any_society_member = {
 				limit = {

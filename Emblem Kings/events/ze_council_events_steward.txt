@@ -12,9 +12,9 @@
 namespace = ZE
 
 #Steward has low stewardship and is proud, borrows money from jews
-#ZE.3000
+#id = ZE.3000
 #Jewish merchants approach court to talk payment plan, player finds out steward lent money
-#ZE.3001
+#id = ZE.3001
 
 #Steward has high stewardship, makes extra money
 character_event = {

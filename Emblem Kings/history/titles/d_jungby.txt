@@ -13,7 +13,7 @@
 }
 0448.01.01={
 	de_jure_liege = k_ollerus
-	liege = e_loptyr
+	liege = e_loptous
 }
 0449.01.01={
 	holder=801 # Galle I, following the Great Purge

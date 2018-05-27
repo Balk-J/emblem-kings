@@ -8,7 +8,7 @@
 	de_jure_liege = k_rivough
 }
 0450.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0647.01.01={
 	holder=1311 # filler

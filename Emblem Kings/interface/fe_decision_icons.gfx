@@ -137,7 +137,7 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
 	}
 	spriteType = {
-		name = "GFX_regalia_search_for_murgleis"
+		name = "GFX_regalia_search_for_mulagir"
 		texturefile = "gfx\\interface\\decision_icon_falchion.dds"
 	}
 	spriteType = {
@@ -213,11 +213,11 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_church_of_edda.dds"
 	}
 	spriteType = {
-		name = "GFX_create_church_of_loptyr"
+		name = "GFX_create_church_of_loptous"
 		texturefile = "gfx\\interface\\decision_icon_restore_high_priesthood.dds"
 	}
 	spriteType = {
-		name = "GFX_vassalize_church_of_loptyr"
+		name = "GFX_vassalize_church_of_loptous"
 		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
 	}
 	spriteType = {

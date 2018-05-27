@@ -1,0 +1,72 @@
+0180.01.01={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+0448.01.01={
+	holder=801 # Galle I
+}
+449.01.01={
+	set_global_flag = great_purge
+}
+452.01.01={
+	set_global_flag = sorrow_of_miletos
+}
+453.01.01={
+	set_global_flag = massacre_of_edda
+}
+0457.01.01={
+	holder=802 # Galle I
+}
+0460.01.01={
+	holder=803 # Galle II
+}
+0463.01.01={
+	holder=804 # Galle IV
+}
+0480.01.01={
+	holder=805 # Galle V
+}
+0481.01.01={
+	holder=806 # Galle VI
+}
+0482.01.01={
+	holder=807 # Galle VII
+}
+0485.01.01={
+	holder=808 # Galle VIII
+}
+0500.01.01={
+	holder=809 # Galle IX
+}
+0515.01.01={
+	holder=810 # Galle X
+}
+0517.01.01={
+	holder=811 # Galle XI
+}
+0529.01.01={
+	holder=812 # Galle XII
+}
+535.01.01={
+	set_global_flag = maeras_rebellion
+}
+0545.01.01={
+	holder=813 # Galle XIII
+}
+0562.01.01={
+	holder=814 # Galle XIV
+}
+0578.01.01={
+	holder=815 # Galle XV
+}
+0594.01.01={
+	holder=816 # Galle XVI
+}
+0611.01.01={
+	holder=817 # Galle XVII
+}
+0648.01.01={
+	holder=0 # Destroyed
+	set_global_flag = loptous_empire_destroyed
+}

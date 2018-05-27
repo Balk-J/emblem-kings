@@ -1,8 +1,8 @@
 
-bm_fe4_descent_of_loptyr =
+bm_fe4_descent_of_loptous =
 {
-	name = "bm_fe4_descent_of_loptyr"
-	desc = "bm_fe4_descent_of_loptyr_desc"
+	name = "bm_fe4_descent_of_loptous"
+	desc = "bm_fe4_descent_of_loptous_desc"
 	date = 440.1.1
 	
 	era = yes						## Will be shown on Era screen.
@@ -13,8 +13,8 @@ bm_fe4_descent_of_loptyr =
 		id = 801 # Bishop Galle I
 		age = 17
 		name = ERA_CHAR_NAME_GALLE_I
-		title = d_loptyr 
-		title_name = d_loptyr 
+		title = d_loptous 
+		title_name = d_loptous 
 		character = {
 			religion="loptyrian"
 			dna="agfab0i00e0"

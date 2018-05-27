@@ -13,7 +13,7 @@
 	holder=846 # 
 }
 450.1.1={
-	liege = e_loptyr
+	liege = e_loptous
 }
 649.1.1={
 	liege = k_grannvale

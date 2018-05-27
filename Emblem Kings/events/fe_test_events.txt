@@ -31,21 +31,21 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes 
 	trigger = {
-		can_inherit_major_loptyr_holy_blood_trigger = yes
+		can_inherit_major_loptous_holy_blood_trigger = yes
 	}
 	
 	immediate = {
 		if = {
 			limit = {
-				can_inherit_major_loptyr_holy_blood_trigger = yes
+				can_inherit_major_loptous_holy_blood_trigger = yes
 			}
-			set_character_flag = can_inherit_major_loptyr_holy_blood
+			set_character_flag = can_inherit_major_loptous_holy_blood
 		}
 		if = {
 			limit = {
-				can_inherit_major_loptyr_holy_blood_trigger = no
+				can_inherit_major_loptous_holy_blood_trigger = no
 			}
-			set_character_flag = cannot_inherit_major_loptyr_holy_blood
+			set_character_flag = cannot_inherit_major_loptous_holy_blood
 		}
 	}
 	
@@ -87,31 +87,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		if = {
-			limit = {
-				#ROOT = { is_vassal_or_below = k_miletos }
-				ROOT = { any_realm_character = { has_landed_title = k_miletos } }
-			}
-			prestige = 100
-		}
-	}
-	option = {
-		if = {
-			limit = {
-				#ROOT = { is_vassal_or_below = d_agusty }
-				ROOT = { any_realm_character = { has_landed_title = d_agusty } }
-			}
-			prestige = 100
-		}
-	}
-	option = {
-		if = {
-			limit = {
-				#ROOT = { is_vassal_or_below = k_verdane }
-				ROOT = { any_realm_character = { has_landed_title = k_verdane } }
-			}
-			prestige = 100
-		}
+		dynasty = father_bastard
 	}
 }
 character_event = {

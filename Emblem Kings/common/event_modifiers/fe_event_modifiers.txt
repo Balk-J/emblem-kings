@@ -220,7 +220,7 @@ suspected_loptyrian_sympathizer = {
 	earthen_pagan_reformed_opinion = -10
 	icon = 26
 }
-loptyr_holy_blood_revealed = {
+loptous_holy_blood_revealed = {
 	global_revolt_risk = 0.05
 	church_of_edda_opinion = -50
 	maerist_opinion = -50

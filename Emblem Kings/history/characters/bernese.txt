@@ -455,7 +455,7 @@
 455={
 	name="Galle"
 	culture=grannvalean
-	# actually not from Bern - Lycian, maybe? Or Jugdrali (as in the bishop who was possessed by Loptyr)?
+	# actually not from Bern - Lycian, maybe? Or Jugdrali (as in the bishop who was possessed by Loptous)?
 	religion=elimine_church
 	disallow_random_traits="yes" 
 	1155.1.1={

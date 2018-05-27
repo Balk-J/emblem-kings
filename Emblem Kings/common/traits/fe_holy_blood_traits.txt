@@ -2,7 +2,7 @@
 # WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
 ########################################################################################################
 
-holy_blood_major_loptyr = {
+holy_blood_major_loptous = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.5
@@ -12,7 +12,7 @@ holy_blood_major_loptyr = {
 	combat_rating = 1
 	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger
 }
-holy_blood_minor_loptyr = {
+holy_blood_minor_loptous = {
 	customizer = no
 	random = no
 	monthly_character_prestige = 0.25
@@ -206,7 +206,7 @@ holy_blood_minor_ulir = {
 
 # Hidden traits for latent holy blood
 
-holy_blood_latent_loptyr = {
+holy_blood_latent_loptous = {
 	customizer = no
 	random = no
 	hidden = yes 
@@ -272,7 +272,7 @@ holy_blood_latent_ulir = {
 	hidden = yes 
 }
 
-possessed_loptyr = {
+possessed_loptous = {
 	#icon = 75
 	ai_ambition = 100
 	monthly_character_prestige = 0.5
@@ -309,7 +309,7 @@ married_by_loptyrians = {
 	random = no
 	hidden = yes 
 }
-pregnant_with_anti_loptyr_spawn = {
+pregnant_with_anti_loptous_spawn = {
 	customizer = no
 	random = no
 	hidden = yes 

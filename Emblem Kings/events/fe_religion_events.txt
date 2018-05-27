@@ -168,7 +168,7 @@ character_event = {
 		religion = church_of_edda
 	}
 }
-# Church of Loptyr created
+# Church of Loptous created
 character_event = {
 	id = fe_religion.4
 	desc = {
@@ -296,16 +296,16 @@ character_event = {
 #	major = yes
 #	only_playable = yes
 #	religion_group = draconic_group
-#	has_global_flag = loptyr_revived
+#	has_global_flag = loptous_revived
 #	
 #	trigger = {
 #		religion = loptyrian
 #		is_heretic = no
 #		
-#		NOT = { has_global_flag = loptyr_defeated }
+#		NOT = { has_global_flag = loptous_defeated }
 #		NOT = { is_title_active = d_schwarze_rosen }
 #		is_title_active = d_loptyrian
-#		possessed_loptyr = {
+#		possessed_loptous = {
 #			is_alive = yes
 #		}
 #	}

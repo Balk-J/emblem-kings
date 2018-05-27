@@ -733,7 +733,7 @@ character_event = {
 		}
 	}			
 }
-# Loptyr cult, clean up the loose ends after the war
+# Loptous cult, clean up the loose ends after the war
 character_event = {
 	id = fe4_grannvale_verdane.23
 	hide_window = yes

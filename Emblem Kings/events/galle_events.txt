@@ -479,7 +479,7 @@ narrative_event = {
 		}
 		opinion = {
 			modifier = opinion_horrified
-			who = ROOT
+			who = FROM
 			years = 10
 		}
 	}	
@@ -506,7 +506,7 @@ narrative_event = {
 		}
 		opinion = {
 			modifier = opinion_horrified
-			who = ROOT
+			who = FROM
 			years = 10
 		}
 	}	

@@ -220,26 +220,26 @@ decisions = {
 			factor = 1
 		}
 	}
-	regalia_search_for_murgleis = {
+	regalia_search_for_mulagir = {
 		only_playable = yes		
 		is_high_prio = yes	
 		potential = {
 			is_playable = yes
 			action_allowed_trigger = yes
 			has_ambition = obj_acquire_regalia
-			NOT = { has_artifact = regalia_murgleis }
-			NOT = { has_global_flag = regalia_murgleis_held }
-			NOT = { has_character_flag = regalia_murgleis_trial }
-			NOT = { has_character_flag = regalia_murgleis_failure }
+			NOT = { has_artifact = regalia_mulagir }
+			NOT = { has_global_flag = regalia_mulagir_held }
+			NOT = { has_character_flag = regalia_mulagir_trial }
+			NOT = { has_character_flag = regalia_mulagir_failure }
 			NOT = { has_character_modifier = declined_regalia_search }
 			NOT = { has_character_modifier = searching_for_regalia }
 			
 			location = {
 				county = {
-					title = c_murgleis
+					title = c_mulagir
 				}
 			}
-			#b_murgleis_shrine = {# Nah, they're nomads
+			#b_mulagir_shrine = {# Nah, they're nomads
 			#	has_holder = yes
 			#}
 		}		

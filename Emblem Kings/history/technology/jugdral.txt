@@ -63,7 +63,7 @@ technology = {
 		culture = 1.0
 	}
 
-	3680 = {
+	3791 = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0

@@ -10,11 +10,11 @@
 	holder=875 # 
 }
 450.1.1={
-	liege = e_loptyr
+	liege = e_loptous
 }
 649.1.1={
 	liege = d_darna
-	holder=1027 # Cult of Loptyr
+	holder=1027 # Cult of Loptous
 }
 743.1.1={ 
 	holder=1254 # Manfroy

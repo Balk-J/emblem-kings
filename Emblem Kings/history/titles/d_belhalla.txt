@@ -11,7 +11,7 @@
 	holder=842 # 
 }
 0450.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0649.01.01={
 	liege = k_grannvale

@@ -20,7 +20,7 @@ light_group = {
 	}
 	
 	elimine_church = {
-		#c_aquelia, c_edessa, c_murgleis, c_durandal, c_jutes
+		#c_aquelia, c_edessa, c_mulagir, c_durandal, c_jutes
 		graphical_culture = westerngfx
 		
 		icon = 3
@@ -222,7 +222,7 @@ pagan_group = {
 		
 	divine_sky_pagan_reformed = { # Sacae
 		graphical_culture = mongolgfx
-		#c_bulgar, c_murgleis, c_saka, c_mani, c_talas
+		#c_bulgar, c_mulagir, c_saka, c_mani, c_talas
 		
 		secondary_event_pictures = divine_sky_pagan#tengri_pagan
 
@@ -269,7 +269,7 @@ pagan_group = {
 	
 	divine_sky_pagan = { #Sacae
 		graphical_culture = mongolgfx
-		#c_bulgar, c_murgleis, c_saka, c_mani, c_talas
+		#c_bulgar, c_mulagir, c_saka, c_mani, c_talas
 
 		icon = 7
 		heresy_icon = 8

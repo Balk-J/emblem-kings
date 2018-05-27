@@ -19,7 +19,7 @@ technology = {
 		culture = 1.5
 	}
 		
-	3680 = {
+	3791 = {
 		military = 4.5
 		economy = 4.5
 		culture = 4.5
@@ -49,7 +49,7 @@ technology = {
 		TECH_LEGALISM = 2.0
 	}
 		
-	3680 = {
+	3791 = {
 		military = 4.5
 		economy = 4.5
 		culture = 4.5
@@ -85,7 +85,7 @@ technology = {
 		TECH_FORTIFICATIONS_CONSTRUCTION = 2.0
 		TECH_CASTLE_CONSTRUCTION = 2.0
 	}
-	3680 = {
+	3791 = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
@@ -118,7 +118,7 @@ technology = {
 		economy = 1.0
 		culture = 1.0
 	}
-	3680 = {
+	3791 = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
@@ -156,7 +156,7 @@ technology = {
 		
 		TECH_NAVAL = 2.0
 	}	
-	3680 = {
+	3791 = {
 		military = 3.5
 		economy = 3.5
 		culture = 3.5
@@ -183,7 +183,7 @@ technology = {
 		
 		TECH_NAVAL = 2.0
 	}	
-	3680 = {
+	3791 = {
 		military = 3.5
 		economy = 3.5
 		culture = 3.5
@@ -239,7 +239,7 @@ technology = {
 		
 	}
 	
-	3680 = {
+	3791 = {
 		military = 3.5
 		economy = 3.5
 		culture = 3.5
@@ -260,7 +260,7 @@ technology = {
 		culture = 1.5
 	}
 	
-	3680 = {
+	3791 = {
 		military = 4.5
 		economy = 4.5
 		culture = 4.5
@@ -291,7 +291,7 @@ technology = {
 		culture = 2.5
 	}
 	
-	3680 = {
+	3791 = {
 		military = 4.0
 		economy = 4.0
 		culture = 4.0

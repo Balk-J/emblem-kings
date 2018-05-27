@@ -1,0 +1,16 @@
+#
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_manster
+	#holder = 0
+}
+
+440.1.1={
+	holder=801 # Galle
+}
+
+448.1.1={
+	holder=0 # Empire founded instead
+}

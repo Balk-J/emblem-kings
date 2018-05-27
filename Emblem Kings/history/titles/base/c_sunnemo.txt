@@ -9,10 +9,10 @@
 
 440.1.1 = { 
 	holder=801 # Bishop Galle I
-	liege = d_loptyr
+	liege = d_loptous
 }
 448.1.1 = { 
-	liege = e_loptyr
+	liege = e_loptous
 }
 457.1.1={
 	holder=802 # Galle I

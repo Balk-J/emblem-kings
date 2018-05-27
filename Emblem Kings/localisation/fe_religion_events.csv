@@ -6,17 +6,17 @@ fe_religion.1.B;[FromFrom.Religion.GetRandomGodNameCap] save us!;Que [FromFrom.R
 fe_religion.1.C;The bickering of fools does not concern me;Ces querelles imbéciles ne me concernent pas;Dieses Narrengezänk geht mich nichts an;;La disputa de los necios no me concierne;;;;;;;;;x
 fe_religion.2.desc.1;I have granted the Tower of the Saint to its rightful ruler, so that the holiest may lead the Church from accommodations befitting their stature. The Bishop shall soon take up their abode in the offices historically occupied by their predecessors.;;;;;;;;;;;;;x
 fe_religion.2.desc.2;[From.GetTitledFirstName] has granted the Tower of the Saint to its rightful ruler, so that the holiest may lead the Church from accommodations befitting their stature. The Bishop shall soon take up their abode in the offices historically occupied by their predecessors.;;;;;;;;;;;;;x
-fe_religion.3.desc.1;I have been moved by the suffering Jugdral's people endured under the foul Church of Loptyr. To ensure their spiritual well-being I have established the Church of Edda, which restores the old faith of the land in a form fit for these new times.;;;;;;;;;;;;;x
-fe_religion.3.desc.2;[From.GetTitledFirstName] has been moved by the suffering Jugdral's people endured under the foul Church of Loptyr. To ensure their spiritual well-being [From.GetSheHe] has established the Church of Edda, which restores the old faith of the land in a form fit for these new times.;;;;;;;;;;;;;x
+fe_religion.3.desc.1;I have been moved by the suffering Jugdral's people endured under the foul Church of Loptous. To ensure their spiritual well-being I have established the Church of Edda, which restores the old faith of the land in a form fit for these new times.;;;;;;;;;;;;;x
+fe_religion.3.desc.2;[From.GetTitledFirstName] has been moved by the suffering Jugdral's people endured under the foul Church of Loptous. To ensure their spiritual well-being [From.GetSheHe] has established the Church of Edda, which restores the old faith of the land in a form fit for these new times.;;;;;;;;;;;;;x
 fe_religion.3.D;I will join this new church!;;;;;;;;;;;;;x
-fe_religion.4.desc.1;The Church of Loptyr has been founded. It will not be long before new acolytes flock to its gates and my faithful servants crush anyone who would oppose me.;;;;;;;;;;;;;x
-fe_religion.4.desc.2;[From.GetTitledFirstName] has founded a new Church of Loptyr! A legion of dark-robed fanatics has sprung from what seems like nowhere to attend the [From.GetTitle] and [From.GetHerHis] church. These sinister figures have already started to wield extraordinary influence at the court of [From.PrimaryTitle.GetName]...;;;;;;;;;;;;;x
+fe_religion.4.desc.1;The Church of Loptous has been founded. It will not be long before new acolytes flock to its gates and my faithful servants crush anyone who would oppose me.;;;;;;;;;;;;;x
+fe_religion.4.desc.2;[From.GetTitledFirstName] has founded a new Church of Loptous! A legion of dark-robed fanatics has sprung from what seems like nowhere to attend the [From.GetTitle] and [From.GetHerHis] church. These sinister figures have already started to wield extraordinary influence at the court of [From.PrimaryTitle.GetName]...;;;;;;;;;;;;;x
 fe_religion.4.D;Splendid.;;;;;;;;;;;;;x
 fe_religion.5.title;The Schwarze Rosen;;;;;;;;;;;;;x
 fe_religion.5.desc.1;You have sponsored a new Loptyrian holy order, led by a small group of zealous dark bishops. These mages have taken a black rose as their emblem and have sworn to show no mercy to enemies of their god.;;;;;;;;;;;;;x
 fe_religion.5.desc.2;A new Loptyrian military order has been founded by a small group of zealous dark bishops. These mages have taken a black rose as their emblem and have sworn to show no mercy to enemies of their god.;;;;;;;;;;;;;x
 fe_religion.5.desc.3;A new Loptyrian military order has been founded by a small group of zealous dark bishops. They have sworn to crush anyone who would defy their god's plan for the world. A number of small towns home to the most outspoken critics of the Loptyrian faith have already been burned to the ground by mages wearing the emblem of the black rose, with any survivors hunted down and slaughtered like animals...;;;;;;;;;;;;;x
-fe_religion.5.A;Praise Loptyr!;;;;;;;;;;;;;x
+fe_religion.5.A;Praise Loptous!;;;;;;;;;;;;;x
 fe_religion.5.B;Another pack of misguided fools.;;;;;;;;;;;;;x
 fe_religion.5.C;Those fanatics must be stopped.;;;;;;;;;;;;;x
 fe_religion.5.D;I expect much from them.;;;;;;;;;;;;;x

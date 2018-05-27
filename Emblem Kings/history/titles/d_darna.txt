@@ -5,7 +5,7 @@
 	liege = k_yied
 }
 0450.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0649.01.01={
 	liege = k_yied

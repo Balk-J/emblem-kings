@@ -523,7 +523,7 @@ rebel_in_joinable_war_trigger = {
 	}
 	is_primary_war_defender = yes
 }
-crusader_attacking_loptyr_trigger = {
+crusader_attacking_loptous_trigger = {
 	NOT = { character = ROOT }
 	war = yes
 	any_war = { 
@@ -534,26 +534,26 @@ crusader_attacking_loptyr_trigger = {
 	}
 	is_primary_war_attacker = yes
 }
-independent_loptyr_in_power_trigger = {
-	trait = possessed_loptyr
+independent_loptous_in_power_trigger = {
+	trait = possessed_loptous
 	independent = yes
 	religion = loptyrian
 	is_adult = yes
 }
-revived_loptyr_in_power_trigger = {
-	has_global_flag = loptyr_revived
-	has_global_flag = loptyr_empire_destroyed
-	NOT = { has_global_flag = loptyr_defeated }
-	independent_loptyr_in_power_trigger = yes
+revived_loptous_in_power_trigger = {
+	has_global_flag = loptous_revived
+	has_global_flag = loptous_empire_destroyed
+	NOT = { has_global_flag = loptous_defeated }
+	independent_loptous_in_power_trigger = yes
 }
-imperial_loptyr_in_power_trigger = {
-	has_landed_title = e_loptyr
-	NOT = { has_global_flag = loptyr_empire_destroyed }
-	NOT = { has_global_flag = loptyr_defeated }
-	independent_loptyr_in_power_trigger = yes
+imperial_loptous_in_power_trigger = {
+	has_landed_title = e_loptous
+	NOT = { has_global_flag = loptous_empire_destroyed }
+	NOT = { has_global_flag = loptous_defeated }
+	independent_loptous_in_power_trigger = yes
 }
 last_holy_war_can_start_trigger = {
-	revived_loptyr_in_power_trigger = yes
+	revived_loptous_in_power_trigger = yes
 	NOT = { has_global_flag = last_holy_war_started }
 	any_vassal = {
 		OR = {

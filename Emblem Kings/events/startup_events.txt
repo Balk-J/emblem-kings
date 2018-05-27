@@ -45,6 +45,8 @@ character_event = {
 		character_event = { id = startup_artifacts.1 }
 		
 		# Create immortal characters via event, so they look the appropriate age
+		if = {
+			limit = { always = no }
 		if = { # Athos and Bramimond
 			limit = { 
 				year = 120
@@ -82,6 +84,8 @@ character_event = {
 			}
 		}
 		
+		}
+		
 		# Jugdral-specific character stuff
 		character_event = {
 			id = startup.5
@@ -90,7 +94,7 @@ character_event = {
 		# Startup events for scenarios
 
 
-		if = { # Descent of Loptyr 
+		if = { # Descent of Loptous 
 			limit = { 
 				year = 440
 				NOT = { year = 447 }
@@ -870,7 +874,7 @@ character_event = {
 	id = startup.14
 	is_triggered_only = yes 
 	immediate = {
-		e_loptyr = {
+		e_loptous = {
 			holder_scope = {
 				character_event = { id = fe4_crusade.3 }
 			}
@@ -901,23 +905,23 @@ character_event = {
 	is_triggered_only = yes 
 	immediate = {
 		c_818 = { # Maera
-			character_event = { id = loptyr.11 days = 1 }
+			character_event = { id = loptous.11 days = 1 }
 		}
 	}
 	option = {
 		name = OK
 	}
 }
-# Descent of Loptyr setup
+# Descent of Loptous setup
 character_event = {
 	id = startup.17
 	is_triggered_only = yes 
 	immediate = {
 		if = {
 			limit = {
-				NOT = { has_global_flag = scenario_descent_of_loptyr }
+				NOT = { has_global_flag = scenario_descent_of_loptous }
 			}
-			set_global_flag = scenario_descent_of_loptyr
+			set_global_flag = scenario_descent_of_loptous
 		}
 		c_801 = { # Galle
 			character_event = { id = galle.1 days = 1 }
@@ -938,9 +942,9 @@ character_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = { has_global_flag = scenario_descent_of_loptyr }
+				NOT = { has_global_flag = scenario_descent_of_loptous }
 			}
-			set_global_flag = scenario_descent_of_loptyr
+			set_global_flag = scenario_descent_of_loptous
 		}
 		c_801 = { # Galle
 			character_event = { id = magic.22 days = 1}

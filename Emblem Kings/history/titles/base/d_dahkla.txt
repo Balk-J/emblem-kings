@@ -11,7 +11,7 @@
 	de_jure_liege = k_lubeck
 }
 450.1.1={
-	liege = e_loptyr
+	liege = e_loptous
 }
 646.1.1={
 	holder = 1313

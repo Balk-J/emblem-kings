@@ -1,7 +1,6 @@
 # FE changes:
 # Replaced the bad_priest_christian with bad_priest_light, bad_priest_tengri with bad_priest_divine_sky
 # religion_group = christian to religion_group = light_group
-
 ###########################################
 #                                         #
 # SoA minor religious events              #             
@@ -552,7 +551,7 @@ character_event = {
 				}
 			}
 		}
-		custom_tooltip = { text = insulted_realm_light_groups }
+		custom_tooltip = { text = insulted_realm_christians }
 	}
 }
 
@@ -2655,6 +2654,7 @@ character_event = {
 		set_global_flag = jeanne_darc_spawned
 		create_character = {
 			random_traits = no
+			historical = yes
 			dynasty = NONE
 			religion = ROOT
 			culture = ROOT
@@ -4262,7 +4262,7 @@ character_event = {
 	}
 }
 
-# Muslim tolerance towards Judaism and light_groupity
+# Muslim tolerance towards Judaism and Christianity
 character_event = {
 	id = SoA.5425
 	desc = EVTDESC_SoA_5425
@@ -4276,6 +4276,7 @@ character_event = {
 	religion_group = muslim
 
 	trigger = {
+		religion_group = muslim
 		NOR = {
 			trait = zealous
 			trait = holy_warrior
@@ -4303,11 +4304,17 @@ character_event = {
 	option = {
 		name = EVTOPTA_SoA_5425
 		if = {
-			limit = { NOT = { trait = sympathy_judaism } }
+			limit = { 
+				NOT = { trait = sympathy_judaism } 
+				NOT = { religion_group = jewish_group } 
+				}
 			add_trait = sympathy_judaism
 		}
 		if = {
-			limit = { NOT = { trait = sympathy_christendom } }
+			limit = { 
+				NOT = { trait = sympathy_christendom } 
+				NOT = { religion_group = light_group } 
+				}
 			add_trait = sympathy_christendom
 		}
 	}

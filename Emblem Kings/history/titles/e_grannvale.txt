@@ -7,13 +7,13 @@
 	holder = 1049 # Arvis. *Technically* Deirdre, but well...
 }
 0770.01.01={
-	set_global_flag = loptyr_revived
+	set_global_flag = loptous_revived
 }
 0776.01.01={
 	holder=1051 # Julius
 }
 0779.01.01={
 	holder=0 # Destroyed
-	clr_global_flag = loptyr_revived
-	set_global_flag = loptyr_defeated
+	clr_global_flag = loptous_revived
+	set_global_flag = loptous_defeated
 }

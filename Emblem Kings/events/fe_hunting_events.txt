@@ -100,8 +100,8 @@ character_event = {
 									NOT = {
 										any_courtier = {
 											at_location = PREVPREV
-											has_loptyr_holy_blood_trigger = yes
-											NOT = { has_character_modifier = loptyr_holy_blood_revealed }
+											has_loptous_holy_blood_trigger = yes
+											NOT = { has_character_modifier = loptous_holy_blood_revealed }
 										}
 									}
 								}					
@@ -110,8 +110,8 @@ character_event = {
 								random_courtier = {
 									limit = { 
 										at_location = PREVPREV 
-										has_loptyr_holy_blood_trigger = yes
-										NOT = { has_character_modifier = loptyr_holy_blood_revealed }
+										has_loptous_holy_blood_trigger = yes
+										NOT = { has_character_modifier = loptous_holy_blood_revealed }
 									}
 									character_event = { id = fe4_hunting.11 }
 								}
@@ -135,7 +135,7 @@ character_event = {
 								random_courtier = {
 									limit = { 
 										at_location = PREVPREV 
-										NOT = { has_loptyr_holy_blood_trigger = yes }
+										NOT = { has_loptous_holy_blood_trigger = yes }
 										NOT = { religion = loptyrian }
 									}
 									character_event = { id = fe4_hunting.19 }
@@ -170,7 +170,7 @@ character_event = {
 	}
 }
 
-# Ping event to get Loptyr blood in scope
+# Ping event to get Loptous blood in scope
 character_event = {
 	id = fe4_hunting.11
 	is_triggered_only = yes
@@ -181,7 +181,7 @@ character_event = {
 		FROM = { character_event = { id = fe4_hunting.12 } }
 	}
 }
-# Found a character with Loptyr blood
+# Found a character with Loptous blood
 character_event = {
 	id = fe4_hunting.12
 	desc = fe4_hunting.12.desc
@@ -212,7 +212,7 @@ character_event = {
 			}				
 		}
 		FROM = {
-			add_character_modifier = { name = loptyr_holy_blood_revealed duration = -1 }
+			add_character_modifier = { name = loptous_holy_blood_revealed duration = -1 }
 			character_event = {	id = fe4_hunting.13 days = 1}
 		}
 	}
@@ -296,7 +296,7 @@ character_event = {
 				}
 			}
 			opinion = {
-				modifier = opinion_spawn_of_loptyr
+				modifier = opinion_spawn_of_loptous
 				who = ROOT
 				years = 1
 			}
@@ -382,7 +382,7 @@ letter_event = {
 	option = {
 		name = fe4_hunting.16.A
 		FROM = {
-			add_character_modifier = { name = loptyr_holy_blood_revealed duration = -1 }
+			add_character_modifier = { name = loptous_holy_blood_revealed duration = -1 }
 			character_event = {	id = fe4_hunting.13 days = 1 }
 		}
 	}

@@ -1,0 +1,17 @@
+# c_mulagir
+
+# County Title
+title = c_mulagir
+
+# Settlements
+max_settlements = 3
+
+b_mulagir = tribal
+b_mulagir_shrine = temple
+#b_mulagir_2 = city
+
+# Misc
+culture = sacaean
+religion = elimine_church
+
+#History

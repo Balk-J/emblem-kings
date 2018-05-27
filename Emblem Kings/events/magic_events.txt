@@ -24,7 +24,7 @@ character_event = {
 			trait = class_mage_knight_female
 			trait = class_archsage
 		}
-		NOT = {	trait = possessed_loptyr }
+		NOT = {	trait = possessed_loptous }
 	}
 	
 	immediate = {
@@ -110,7 +110,7 @@ character_event = {
 			trait = class_archdruid
 			trait = class_dark_druid
 		}
-		NOT = {	trait = possessed_loptyr }
+		NOT = {	trait = possessed_loptous }
 	}
 	
 	immediate = {

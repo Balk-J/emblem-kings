@@ -11,7 +11,7 @@
 }
 448.01.01={
 	holder=0 # 
-	de_jure_liege = e_loptyr
+	de_jure_liege = e_loptous
 }
 649.01.01={
 	holder=0 # 

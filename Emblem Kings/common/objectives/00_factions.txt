@@ -7,8 +7,6 @@
 # Faction interfaces and that AI faction members vote for laws in accordance with the faction goal.
 # The valid tags correspond to the law name: faction_succ_seniority, faction_succ_primogeniture, etc.
 # (faction_succ_ultimogeniture is fully supported by the code, but not currently implemented)
-#FE Changes:
-#faction_increase_council_power
 
 ###############
 # FACTIONS

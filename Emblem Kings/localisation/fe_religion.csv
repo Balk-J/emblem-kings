@@ -17,7 +17,7 @@ THE_SPELLBOOKS;The Spellbooks;;;;;;;;;;;;;x
 THE_TOMES;The Tomes;;;;;;;;;;;;;x
 THE_SCRIPTURE;The Scripture;;;;;;;;;;;;;x
 THE_WORD;The Word;;;;;;;;;;;;;x
-GOD_LOPTYR;Loptyr;;;;;;;;;;;;;x
+GOD_LOPTYR;Loptous;;;;;;;;;;;;;x
 GOD_NAGA;Naga;;;;;;;;;;;;;x
 GOD_THE_VOICE;The Voice;;;;;;;;;;;;;x
 GOD_THE_FELL_DRAGON;The Fell Dragon;;;;;;;;;;;;;x
@@ -106,7 +106,7 @@ k_dragon_liberation;The Last Dragons;;;;;;;;;;;;;x
 k_dragon_liberation_adj;Last Dragon;;;;;;;;;;;;;x
 e_dragon_liberation;The Last Dragons;;;;;;;;;;;;;x
 e_dragon_liberation_adj;Last Dragon;;;;;;;;;;;;;x
-d_loptyrian;Church of Loptyr;;;;;;;;;;;;;x
+d_loptyrian;Church of Loptous;;;;;;;;;;;;;x
 d_loptyrian_adj;Loptyrian;;;;;;;;;;;;;x
 d_church_of_edda;Church of Edda;;;;;;;;;;;;;x
 d_church_of_edda_adj;Edda;;;;;;;;;;;;;x
@@ -153,9 +153,9 @@ dummy_3;Wind;;;;;;;;;;;;;x
 dummy_4;Water;;;;;;;;;;;;;x
 dummy_5;Earth;;;;;;;;;;;;;x
 loptyrian;Loptyrian;;;;;;;;;;;;;x
-loptyrian_DESC;The Loptyrians began as a religious order founded by Bishop Galle after his blood bond with the Earth Dragon Loptyr. It is based around worship of Loptyr as the supreme deity. Members gain access to spellbooks and magic staves made using dragon knowledge. However, Loptyr's hatred and resentment of humanity have resulted in truly horrific church rituals...;;;;;;;;;;;;;x
+loptyrian_DESC;The Loptyrians began as a religious order founded by Bishop Galle after his blood bond with the Earth Dragon Loptous. It is based around worship of Loptous as the supreme deity. Members gain access to spellbooks and magic staves made using dragon knowledge. However, Loptous's hatred and resentment of humanity have resulted in truly horrific church rituals...;;;;;;;;;;;;;x
 maerist;Maerist;;;;;;;;;;;;;x
-maerist_DESC;Maerism is a Loptyrian heresy named for its founder Maera, a descendant of the original Bishop Galle. It attempts to harmonize the Loptyrian faith with the old pagan religions of Jugdral. Maera placed Loptyr as only one of many high-ranking gods and emphasized his benevolent qualities. He also encouraged tolerance of other faiths and worked to end discrimination against their believers.;;;;;;;;;;;;;x
+maerist_DESC;Maerism is a Loptyrian heresy named for its founder Maera, a descendant of the original Bishop Galle. It attempts to harmonize the Loptyrian faith with the old pagan religions of Jugdral. Maera placed Loptous as only one of many high-ranking gods and emphasized his benevolent qualities. He also encouraged tolerance of other faiths and worked to end discrimination against their believers.;;;;;;;;;;;;;x
 temple_baron_loptyrian;Sectarian;;;;;;;;;;;;;x
 temple_baron_female_loptyrian;Sectarian;;;;;;;;;;;;;x
 temple_count_loptyrian;Lord Sectarian;;;;;;;;;;;;;x
@@ -175,11 +175,11 @@ temple_king_female_maerist;Archbishop;;;;;;;;;;;;;x
 temple_emperor_maerist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
 temple_emperor_female_maerist;Hierophant;Hiérophante;Hierophant;;Hierofante;;;;;;;;;x
 church_of_edda;Church of Edda;;;;;;;;;;;;;x
-church_of_edda_DESC;The Church of Edda is based on the original pagan religions of Judgral. It was founded by Saint Blagi of the Twelve Crusaders to restore the old faiths and heal the damage caused by Loptyrian persecution. The twelve dragons who came to the Crusaders' aid in their war with Loptyr are revered as its highest gods.;;;;;;;;;;;;;x
+church_of_edda_DESC;The Church of Edda is based on the original pagan religions of Judgral. It was founded by Saint Blagi of the Twelve Crusaders to restore the old faiths and heal the damage caused by Loptyrian persecution. The twelve dragons who came to the Crusaders' aid in their war with Loptous are revered as its highest gods.;;;;;;;;;;;;;x
 earthen_pagan;Earthen;;;;;;;;;;;;;x
 earthen_pagan_DESC;The Earthen religion is polytheistic, with many different gods and spirits of varied abilities and power. It originated in Jugdral alongside humanity's early civilizations and its first holy men were notable for their literacy, knowledge of herbs, and skill in medicine.;;;;;;;;;;;;;x
 earthen_pagan_reformed;Earthen;;;;;;;;;;;;;x
-earthen_pagan_reformed_DESC;The reformed Earthen faith has a Holy Book with a creation myth, chapters on the gods, an account of the battle against the dark god Loptyr, and a book of prophesies. The church also has a standardized liturgy and a formal church hierarchy led by the High Priest of Grann, who can be vassalized by secular rulers.;;;;;;;;;;;;;x
+earthen_pagan_reformed_DESC;The reformed Earthen faith has a Holy Book with a creation myth, chapters on the gods, an account of the battle against the dark god Loptous, and a book of prophesies. The church also has a standardized liturgy and a formal church hierarchy led by the High Priest of Grann, who can be vassalized by secular rulers.;;;;;;;;;;;;;x
 d_earthen;The Earthen Church;;;;;;;;;;;;;x
 d_earthen_adj;Earthen Church;;;;;;;;;;;;;x
 DIVINE_SKY_PRIEST;Divine Priest;;;;;;;;;;;;;x

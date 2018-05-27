@@ -94,7 +94,7 @@ character_event = {
 		name = OK
 		# If the character was born as a result of Loptyrian plotting and could be a major blood...
 		
-		# First, check if this character is Naga's answer to the Loptyr spawn
+		# First, check if this character is Naga's answer to the Loptous spawn
 		if = {
 			limit = {
 				OR = {
@@ -103,35 +103,35 @@ character_event = {
 						any_sibling = { # I don't think we can scope to *this* character's twin, so this'll have to do. Might get false positives if this character is the younger sibling of a stillborn twin?
 							trait = twin
 							age_diff = { who = ROOT days = 0 }
-							has_character_flag = loptyr_spawn
+							has_character_flag = loptous_spawn
 						}	
 					}
 					mother_even_if_dead = {
-						trait = pregnant_with_anti_loptyr_spawn
+						trait = pregnant_with_anti_loptous_spawn
 					}
 				}				
 			}	
 			mother_even_if_dead = {
-				remove_trait = pregnant_with_anti_loptyr_spawn
+				remove_trait = pregnant_with_anti_loptous_spawn
 			}
-			set_character_flag = anti_loptyr_spawn
+			set_character_flag = anti_loptous_spawn
 			add_latent_holy_blood_effect = yes
 			character_event = {	id = bloodline.7 days = 2555 random = 365 } # Age 6-8
 		}else_if = {
 			limit = {
-				is_loptyr_spawn_trigger = yes		
+				is_loptous_spawn_trigger = yes		
 			}
 			remove_loptyrian_marriage_traits_effect = yes			
-			set_character_flag = loptyr_spawn
+			set_character_flag = loptous_spawn
 			add_latent_holy_blood_effect = yes
 			character_event = {	id = bloodline.7 days = 2555 random = 365 } # Age 6-8
 			
-			# Should we have a major Naga child to balance out the major Loptyr child?
+			# Should we have a major Naga child to balance out the major Loptous child?
 			if = {
 				limit = {
 					NOT = {
 						any_sibling = {
-							has_character_flag = anti_loptyr_spawn
+							has_character_flag = anti_loptous_spawn
 						}
 					}	
 					mother = {
@@ -139,8 +139,8 @@ character_event = {
 					}
 				}
 				mother = {
-					add_trait = pregnant_with_anti_loptyr_spawn
-					set_character_flag = pregnant_with_anti_loptyr_spawn
+					add_trait = pregnant_with_anti_loptous_spawn
+					set_character_flag = pregnant_with_anti_loptous_spawn
 					spouse = {
 						spouse = {
 							impregnate = PREV
@@ -173,10 +173,10 @@ character_event = {
 			30 = { 
 				modifier = {
 					factor = 100
-					child_of_possessed_loptyr_trigger = yes
+					child_of_possessed_loptous_trigger = yes
 					NOT = {
 						any_sibling = { # any_sibling_even_if_dead = { 
-							trait=holy_blood_major_loptyr
+							trait=holy_blood_major_loptous
 						}	
 					}	
 				}
@@ -234,39 +234,39 @@ character_event = {
 		
 		if = {
 			limit = {
-				trait = holy_blood_latent_loptyr
+				trait = holy_blood_latent_loptous
 			}
 			# What can they get?
 			random_list = {	
 				30 = { # Major
 					modifier = {
 						factor = 0
-						cannot_manifest_major_loptyr_holy_blood_trigger = yes						
+						cannot_manifest_major_loptous_holy_blood_trigger = yes						
 					}
 					modifier = {
 						factor = 0.05
 						any_sibling = {
-							trait=holy_blood_major_loptyr
+							trait=holy_blood_major_loptous
 						}						
 					}
 					modifier = {
 						factor = 2
 						NOT = {
 							any_sibling = { # any_sibling_even_if_dead = { 
-								trait=holy_blood_major_loptyr
+								trait=holy_blood_major_loptous
 							}	
 						}						
 					}
 					modifier = {
 						factor = 100
-						child_of_possessed_loptyr_trigger = yes
+						child_of_possessed_loptous_trigger = yes
 						NOT = {
 							any_sibling = { 
-								trait=holy_blood_major_loptyr
+								trait=holy_blood_major_loptous
 							}	
 						}						
 					}
-					add_trait=holy_blood_major_loptyr
+					add_trait=holy_blood_major_loptous
 				}
 				45 = { # Minor
 					modifier = {
@@ -275,13 +275,13 @@ character_event = {
 					}
 					modifier = {
 						factor = 1.66
-						cannot_manifest_major_loptyr_holy_blood_trigger = yes						
+						cannot_manifest_major_loptous_holy_blood_trigger = yes						
 					}
-					add_trait=holy_blood_minor_loptyr					
+					add_trait=holy_blood_minor_loptous					
 				}		
 				25 = {} # Nothing!
 			}	
-			remove_trait = holy_blood_latent_loptyr			
+			remove_trait = holy_blood_latent_loptous			
 		}
 		if = {
 			limit = {
@@ -324,7 +324,7 @@ character_event = {
 				25 = {
 					modifier = {
 						factor = 12
-						has_loptyr_holy_blood_trigger = yes
+						has_loptous_holy_blood_trigger = yes
 					}
 				} # Nothing!
 			}	
@@ -848,7 +848,7 @@ character_event = {
 		name = bloodline.6.A	
 	}
 }
-# Manifest holy blood as spawn of Loptyr (or anti-spawn)
+# Manifest holy blood as spawn of Loptous (or anti-spawn)
 character_event = {
 	id = bloodline.7
 	hide_window = yes
@@ -857,14 +857,14 @@ character_event = {
 	option = {
 		name = OK
 		if = {
-			limit = { has_character_flag = anti_loptyr_spawn }
+			limit = { has_character_flag = anti_loptous_spawn }
 			remove_trait = holy_blood_latent_naga
 			add_trait = holy_blood_major_naga
 			character_event = {	id = bloodline.4 } # Manifest anything else they could get	
 		}else_if = {
-			limit = { has_character_flag = loptyr_spawn }
-			remove_trait = holy_blood_latent_loptyr
-			add_trait = holy_blood_major_loptyr
+			limit = { has_character_flag = loptous_spawn }
+			remove_trait = holy_blood_latent_loptous
+			add_trait = holy_blood_major_loptous
 			character_event = {	id = bloodline.4 } # Manifest anything else they could get
 				
 			any_society_member = {
@@ -876,7 +876,7 @@ character_event = {
 			}
 			
 			if = {
-				limit = { NOT = { any_character = { has_artifact = regalia_loptyr } } }
+				limit = { NOT = { any_character = { has_artifact = regalia_loptous } } }
 				character_event = { id = loptyrian.16 days = 14 random = 7 }
 			}
 		}

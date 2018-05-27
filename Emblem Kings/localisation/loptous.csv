@@ -1,0 +1,32 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+loptous.1.desc;You have begun preparations to summon the Deadlords, twelve ancient undead warriors. When the ritual is complete they will reanimate and possess corpses you have prepared and twist the vessels into forms that suit their abilities. Summoning them must be done in stages over the course of a year.;;;;;;;;;;;;;x
+loptous.1.A;When the Deadlords return, my enemies will tremble.;;;;;;;;;;;;;x
+loptous.2.desc;;;;;;;;;;;;;;x
+loptous.2.A;;;;;;;;;;;;;;x
+loptous.3.desc;You can hear something in that black book calling to you. Something old and cruel. There's a part of you that recognizes that voice, a part that feels everything in your life has been leading up to this moment. Maybe it's that part that drives you to take the book and stare into its arcane symbols, as the calls of the presence get more and more forceful and coil around your own thoughts...;;;;;;;;;;;;;x
+loptous.3.A;My... head...;;;;;;;;;;;;;x
+loptous.4.desc;Shortly after the death of your [GetFromFromRelation] [FromFrom.GetTitledFirstNameWithNick], you are brought a strange piece of news. It seems that [FromFrom.GetHerHis] chambers were raided, with the only item stolen being being the black and purple tome that was never far from [FromFrom.GetHerHis] side. None of the servants can offer any explanation for its disappearance.;;;;;;;;;;;;;x
+loptous.4.A;Disturbing.;;;;;;;;;;;;;x
+loptous.5.desc;When you woke up this morning, you found a black and purple tome sitting beside your bed. You don't know how it got there, but for some reason you feel that you should pick it up and start reading it right away.;;;;;;;;;;;;;x
+loptous.5.A;Let's take a look.;;;;;;;;;;;;;x
+loptous.5.B;I will have my servants dispose of it at once.;;;;;;;;;;;;;x
+loptous.6.title;Loptous Defeated;;;;;;;;;;;;;x
+loptous.6.desc;[From.GetFullName], the last known heir to Loptous's fell bloodline, has died. The dark god's servants will undoubtedly search for a way to revive their master, but that will likely take generations if it can be accomplished at all.\n\nThose who stood against [From.GetFirstName] are celebrating this moment as a victory for all of humanity.;;;;;;;;;;;;;x
+loptous.6.A;This cannot be!;;;;;;;;;;;;;x
+loptous.6.B;The demon is gone at last.;;;;;;;;;;;;;x
+loptous.7.desc;You find yourself faced with a bit of a crisis of faith. It's only natural. After all, how often does a [Root.GetManWoman] outlive the avatar of [Root.GetHerHis] god? Followers of Loptous are not likely to be treated well by his enemies. It might be time to find a new faith.;;;;;;;;;;;;;x
+loptous.7.A;I should convert before the mob shows up.;;;;;;;;;;;;;x
+loptous.7.B;I will not abandon our lord! Praise Loptous!;;;;;;;;;;;;;x
+loptous.7.C;I can always pretend to convert...;;;;;;;;;;;;;x
+loptous.9.desc;As the new heir to the Loptyrian Empire, you could take on the name of your dynasty's founder.;;;;;;;;;;;;;x
+loptous.9.A;I will carry on his legacy.;;;;;;;;;;;;;x
+loptous.9.B;I would rather not change my name.;;;;;;;;;;;;;x
+loptous.11.desc;It has become clear to you that the Loptyrian religion is nothing more than a tool of tyranny and injustice. [Root.Liege.GetFirstName] will never change it - [Root.Liege.GetSheHe] barely seems human anymore. To save the people of your land, you might have to create a new faith by force.;;;;;;;;;;;;;x
+loptous.11.A;I can do nothing less!;;;;;;;;;;;;;x
+loptous.11.B;Fighting a hopeless battle will not help anyone.;;;;;;;;;;;;;x
+loptous..title;;;;;;;;;;;;;;x
+loptous..desc;;;;;;;;;;;;;;x
+loptous..A;;;;;;;;;;;;;;x
+loptous..B;;;;;;;;;;;;;;x
+loptous..C;;;;;;;;;;;;;;x
+loptous..D;;;;;;;;;;;;;;x

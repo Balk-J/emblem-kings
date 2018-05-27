@@ -33,8 +33,8 @@ immortal_from_quintessence;Quintessence Immortal;;;;;;;;;;;;;x
 desc_immortal_from_quintessence;This character uses quintessence on themselves regularly, preventing their body from succumbing to the ravages of age.;;;;;;;;;;;;;x
 planning_invasion;Planning Invasion;;;;;;;;;;;;;x
 desc_planning_invasion;This character is considering a large-scale invasion of a foreign kingdom.;;;;;;;;;;;;;x
-#possessed_loptyr;Cold Charisma;;;;;;;;;;;;;x
-#desc_possessed_loptyr;This character is charismatic, but profoundly unsettling. Their gaze draws you in, and you lose yourself in it...;;;;;;;;;;;;;x
+#possessed_loptous;Cold Charisma;;;;;;;;;;;;;x
+#desc_possessed_loptous;This character is charismatic, but profoundly unsettling. Their gaze draws you in, and you lose yourself in it...;;;;;;;;;;;;;x
 #possessed_forseti;Aloof;;;;;;;;;;;;;x
 #desc_possessed_forseti;This character is cold and distant. They show a wealth of knowledge of the world but are reluctant to become involved in political affairs.;;;;;;;;;;;;;x
 vulenary_consumed;Vulenary Consumed;;;;;;;;;;;;;x
@@ -62,11 +62,11 @@ desc_recent_witch_hunt;This character has recently conducted a witch hunt.;;;;;;
 child_hunts;Child Hunts;;;;;;;;;;;;;x
 desc_child_hunts;Child hunts have been conducted in this province.;;;;;;;;;;;;;x
 witch_hunts;Witch Hunts;;;;;;;;;;;;;x
-desc_witch_hunts;This province has been subject to aggressive hunts for followers of Loptyr and descendants of the Loptyrian emperors.;;;;;;;;;;;;;x
+desc_witch_hunts;This province has been subject to aggressive hunts for followers of Loptous and descendants of the Loptyrian emperors.;;;;;;;;;;;;;x
 suspected_loptyrian_sympathizer;Suspected Loptyrian;;;;;;;;;;;;;x
-desc_suspected_loptyrian_sympathizer;This character is suspected of being a follower of Loptyr, or at least sympathetic to the dark god's cause.;;;;;;;;;;;;;x
-loptyr_holy_blood_revealed;Loptyr Holy Blood Revealed;;;;;;;;;;;;;x
-desc_loptyr_holy_blood_revealed;This character's Loptyr holy blood has become public knowledge.;;;;;;;;;;;;;x
+desc_suspected_loptyrian_sympathizer;This character is suspected of being a follower of Loptous, or at least sympathetic to the dark god's cause.;;;;;;;;;;;;;x
+loptous_holy_blood_revealed;Loptous Holy Blood Revealed;;;;;;;;;;;;;x
+desc_loptous_holy_blood_revealed;This character's Loptous holy blood has become public knowledge.;;;;;;;;;;;;;x
 summoning_deadlords;Summoning Deadlords;;;;;;;;;;;;;x
 desc_summoning_deadlords;This character is in the middle of a ritual to create powerful undead generals.;;;;;;;;;;;;;x
 great_purge;Great Purge;;;;;;;;;;;;;x

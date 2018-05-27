@@ -543,7 +543,7 @@ regalia_forseti = {
         }
     }
 }
-regalia_loptyr = {
+regalia_loptous = {
     max_amount = 1
     spawn_date = 440.1.1
 	
@@ -561,8 +561,8 @@ regalia_loptyr = {
 			value = 100
 			year = 440
 			OR = {
-				has_landed_title = d_loptyr
-				has_landed_title = e_loptyr
+				has_landed_title = d_loptous
+				has_landed_title = e_loptous
 				AND = {
 					has_landed_title = e_grannvale
 					NOT = { year = 779 } #
@@ -577,12 +577,12 @@ regalia_loptyr = {
 		}
 	}
     artifacts = {
-        regalia_loptyr = { 
+        regalia_loptous = { 
             value = 1
         }
     }
 }
-regalia_loptyr_sword = {
+regalia_loptous_sword = {
     max_amount = 1
     spawn_date = 449.1.1
 	
@@ -604,7 +604,7 @@ regalia_loptyr_sword = {
 		}
 	}
     artifacts = {
-        regalia_loptyr_sword = { 
+        regalia_loptous_sword = { 
             value = 1
         }
     }

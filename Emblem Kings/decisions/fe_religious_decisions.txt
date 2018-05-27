@@ -487,14 +487,14 @@ decisions = {
 			factor = 1
 		}
 	}
-	create_church_of_loptyr = {
+	create_church_of_loptous = {
 		only_playable = yes
 		
 		is_high_prio = yes
 	
 		potential = {
 			is_playable = yes
-			trait = possessed_loptyr
+			trait = possessed_loptous
 			NOT = { is_title_active = d_loptyrian }
 		}
 		
@@ -568,14 +568,14 @@ decisions = {
 			factor = 1
 		}
 	}
-	vassalize_church_of_loptyr = {
+	vassalize_church_of_loptous = {
 		only_playable = yes
 		
 		is_high_prio = yes
 	
 		potential = {
 			is_playable = yes
-			trait = possessed_loptyr
+			trait = possessed_loptous
 			d_loptyrian = { 
 				ai = yes
 				has_holder = yes 
@@ -615,7 +615,7 @@ decisions = {
 	
 		potential = {
 			is_playable = yes
-			trait = possessed_loptyr
+			trait = possessed_loptous
 			is_title_active = d_loptyrian
 			NOT = { is_title_active = d_schwarze_rosen }
 		}

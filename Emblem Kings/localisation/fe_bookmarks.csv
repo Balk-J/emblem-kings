@@ -7,8 +7,8 @@ bm_fe7_blazing_sword;The Blazing Sword;;;;;;;;;;;;;x
 bm_fe7_blazing_sword_desc;The continent of Elibe teeters on the brink of war. In Lycia, Marquess Elbert of Pherae vanishes among whispers of rebellion, while shadowy figures slip in and out of castles in Laus and Santaruz. In Bern, a succession crisis looms as the envious King Desmond schemes to keep his popular and talented son off the throne. A league of assassins can be connected to all these events, directed by a mysterious sorceror...;;;;;;;;;;;;;x
 bm_fe6_binding_blade;The Binding Blade;;;;;;;;;;;;;x
 bm_fe6_binding_blade_desc;A thousand-year peace is shattered as King Zephiel of Bern begins to conquer the continent. He plans for the divided people of Sacae and Ilia to fall quickly, allowing Bern to turn its attention to the other major powers - the Kingdom of Etruria and the Lycian League. Can the wealth of Etruria or the champions of Lycia prevail against the secret weapons of Bern, or will King Zephiel succeed in his plan to "liberate" Elibe?;;;;;;;;;;;;;x
-bm_fe4_descent_of_loptyr;Descent of Loptyr;;;;;;;;;;;;;x
-bm_fe4_descent_of_loptyr_desc;It is the dawn of the age of humanity. In Archanea, the dragon wars reach an end. The Divine Dragon tribe subdues the feral Earth Dragons before sealing their own powers away and entrusting the future to the humans they fought to protect. The first great human civilization, the Grann Republic of Jugdral, celebrates the 110th year since its founding. However, the republic is about to face a crisis that will change the continent forever. A young priest has returned from journeys overseas, preaching a strange new religion and wielding ominous magic...;;;;;;;;;;;;;x
+bm_fe4_descent_of_loptous;Descent of Loptous;;;;;;;;;;;;;x
+bm_fe4_descent_of_loptous_desc;It is the dawn of the age of humanity. In Archanea, the dragon wars reach an end. The Divine Dragon tribe subdues the feral Earth Dragons before sealing their own powers away and entrusting the future to the humans they fought to protect. The first great human civilization, the Grann Republic of Jugdral, celebrates the 110th year since its founding. However, the republic is about to face a crisis that will change the continent forever. A young priest has returned from journeys overseas, preaching a strange new religion and wielding ominous magic...;;;;;;;;;;;;;x
 bm_fe4_founding_of_jugdral;The Founding of Jugdral;;;;;;;;;;;;;x
 bm_fe4_founding_of_jugdral_desc;The Holy War is over. Emperor Galle XVII lies dead and his brutal empire has been shattered by the Twelve Crusaders. With Jugdral at peace for the first time in fifteen years, the Crusaders part ways and found new nations to build a brighter future for the land.;;;;;;;;;;;;;x
 bm_fe4_birth_of_the_holy_knight;Birth of the Holy Knight;;;;;;;;;;;;;x
@@ -20,8 +20,8 @@ bm_fe4_the_last_holy_war_desc;The fifteen years since the Grannvale Empire uniti
 bm_fe7_blazing_sword;The Blazing Sword;;;;;;;;;;;;;x
 bm_fe7_blazing_sword;The Blazing Sword;;;;;;;;;;;;;x
 PICK_ERA_YEAR;$YEAR$ G.C.;$YEAR$ G.C.;$YEAR$ G.C.;;$YEAR$ G.C.;;;;;;;;;x;;
-ERA_CHAR_NAME_GALLE_I;Galle Loptyr;;;;;;;;;;;;;x
-ERA_CHAR_INFO_801;Bishop Galle was originally a priest of the Earthen religion. He believed the legends that drinking the blood of a legendary creature would grant him incredible power, and travelled the world in search of such a beast. He found himself in Archanea during the dragon war, where he formed a blood pact with the Earth Dragon Loptyr. Galle inherited the dragon's power and malevolent will.;;;;;;;;;;;;;x
+ERA_CHAR_NAME_GALLE_I;Galle Loptous;;;;;;;;;;;;;x
+ERA_CHAR_INFO_801;Bishop Galle was originally a priest of the Earthen religion. He believed the legends that drinking the blood of a legendary creature would grant him incredible power, and travelled the world in search of such a beast. He found himself in Archanea during the dragon war, where he formed a blood pact with the Earth Dragon Loptous. Galle inherited the dragon's power and malevolent will.;;;;;;;;;;;;;x
 ERA_CHAR_NAME_LYN;Lyndis Lorca;;;;;;;;;;;;;x
 ERA_CHAR_INFO_111;A young girl from the Lorca tribe. Stouthearted and kind.;;;;;;;;;;;;;x
 ERA_CHAR_NAME_LUNDGREN;Lundgren Caelin;;;;;;;;;;;;;x
@@ -69,13 +69,13 @@ ERA_CHAR_INFO_1049;The charismatic and talented Duke of Velthomer. He schemes to
 ERA_CHAR_NAME_SELIPH;Seliph Baldos Chalphy;;;;;;;;;;;;;x
 ERA_CHAR_INFO_1038;The son of Duke Sigurd of Chalphy and Empress Deirdre of Grannvale. Raised in Isaach after the Battle of Belhalla, Seliph has become the focal point of the rebellion against the empire and the hope of its people.;;;;;;;;;;;;;x
 ERA_CHAR_NAME_JULIUS;Julius Velthomer;;;;;;;;;;;;;x
-ERA_CHAR_INFO_1051;The Imperial Prince of Grannvale and de facto ruler of the empire. As a youth, Julius was possessed by the Earth Dragon Loptyr. He quickly undermined his father's rule, reducing Emperor Arvis to a figurehead and elevating Loptyrian priests to positions of power. With every day that passes, Julius's Grannvale grows closer to the horrifying Loptyr Empire of old...;;;;;;;;;;;;;x
+ERA_CHAR_INFO_1051;The Imperial Prince of Grannvale and de facto ruler of the empire. As a youth, Julius was possessed by the Earth Dragon Loptous. He quickly undermined his father's rule, reducing Emperor Arvis to a figurehead and elevating Loptyrian priests to positions of power. With every day that passes, Julius's Grannvale grows closer to the horrifying Loptous Empire of old...;;;;;;;;;;;;;x
 ERA_CHAR_NAME_AZMUR;Azmur Belhalla;;;;;;;;;;;;;x
 ERA_CHAR_INFO_1029;The old king of Grannvale. His age and declining health have caused him to entrust much of his responsibilities to his skilled and respected son Prince Kurth.;;;;;;;;;;;;;x
 ERA_CHAR_NAME_MARICCLE;Mariccle Isaach;;;;;;;;;;;;;x
 ERA_CHAR_INFO_1134;The former Crown Prince of Isaach, forced to take the crown after his father was executed during an attempt to broker peace with Grannvale. He believes the war cannot be won, but hopes his sister and son will survive to return Isaach to glory...;;;;;;;;;;;;;x
 ERA_CHAR_NAME_MANFROY;Manfroy of Yied;;;;;;;;;;;;;x
-ERA_CHAR_INFO_1254;The archbishop and leader of the Loptyr Sect, striving to revive his dark god.;;;;;;;;;;;;;x
+ERA_CHAR_INFO_1254;The archbishop and leader of the Loptous Sect, striving to revive his dark god.;;;;;;;;;;;;;x
 ERA_CHAR_NAME_BATOU;Batou Verdane;;;;;;;;;;;;;x
 ERA_CHAR_INFO_1180;The old king of Verdane. Batou has dedicated his reign to building peace with the Kingdom of Grannvale and ending the frequent raids his people make into Grannvalean territory.;;;;;;;;;;;;;x
 ERA_CHAR_NAME_LEIF;Leif Faris Claus;;;;;;;;;;;;;x

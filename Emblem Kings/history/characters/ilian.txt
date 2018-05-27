@@ -312,6 +312,7 @@
 	190.01.01 = { 
 		remove_trait="class_sorceror"
 		add_trait="class_dark_druid"
+		immortal_age=30
 	}
 	200.01.01 = { 
 		add_trait="dark_power_hungry"
@@ -550,165 +551,181 @@
 	}
 }
 
-#312 = {
-#	name="Ninian"
-#	female=yes
-#	dynasty=304
-#	
-#	#religion=dragon_gods
-#	religion = elimine_church #More for gameplay purposes. The dragon religion shouldn't be revived.
-#	culture=ilian
-#	
-#	real_father=308
-#	mother=924
-#	disallow_random_traits="yes" 
-#	#trait="immortal"
-#	trait="dragon_blood"
-#	170.01.01 = { 
-#		birth=yes 
-#		effect = {
-#			set_character_flag="is_fe7_ninian"
-#		}
-#	}
-#	182.01.01={
-#		add_trait="class_dancer"
-#			add_trait="base_class_dancer"
-#		effect = {
-#			set_variable = { which = "level" value = 1 }
-#			set_character_flag="class_selected"
-#		}
-#	} 
-#	185.01.01={
-#		add_trait="scholarly_theologian"
-#		add_trait="kind"
-#		add_trait="shy"
-#		add_trait="chaste"
-#	} 
-#	
-#	# Summoned and imprisoned by Nergal
-#	1158.01.01 = {
-#		employer = 308
-#		effect = {
-#			e_nergal = {
-#				holder_scope = {
-#					ROOT = { 
-#						imprison = PREV 
-#					}
-#				}
-#			}
-#		}
-#	} 	
-#	
-#	# escapes and somehow reaches Kathalet by Lyn's story
-#	1159.1.1 = {
-#		effect = { 
-#			prisoner = no
-#		} 
-#		employer = 197
-#	} 	
-#	
-#	# recaptured?
-#	#1160.01.02 = {
-#	1160.01.01 = {
-#		employer = 308
-#		effect = {
-#			e_nergal = {
-#				holder_scope = {
-#					ROOT = { 
-#						imprison = PREV 
-#					}
-#				}
-#			}
-#		}
-#	} 	
-#	
-#	# After Nergal's defeat, either marries Eliwood or leaves through the Dragon's Gate
-#	1161.1.1 = {
-#		effect = { 
-#			prisoner = no
-#		} 
-#		employer = 107 # Eliwood
-#	} 	
-#	
-#	#1166.1.1= {
-#	1161.1.1= {
-#		#add_trait="disappeared"
-#		death = {
-#			#death_reason=death_trait
-#			death_reason=death_missing
-#		}
-#	}
-#}
-#
-#313 = {
-#	name="Nils"
-#	dynasty=304
-#	
-#	#religion=dragon_gods
-#	religion = elimine_church #More for gameplay purposes. The dragon religion shouldn't be revived.
-#	culture=ilian
-#	
-#	real_father=308
-#	mother=924
-#	disallow_random_traits="yes" 
-#	#trait="immortal"
-#	trait="dragon_blood"
-#	175.01.01 = { 
-#		birth=yes 
-#		effect = {
-#			set_character_flag="is_fe7_nils"
-#		}
-#	}
-#	187.01.01={
-#		add_trait="class_bard"
-#			add_trait="base_class_bard"
-#		effect = {
-#			set_variable = { which = "level" value = 1 }
-#			set_character_flag="class_selected"
-#		}
-#	} 
-#	190.01.01={
-#		add_trait="martial_cleric"
-#		add_trait="brave"
-#		add_trait="cynical"
-#		add_trait="just"
-#	} 
-#	# Summoned and imprisoned by Nergal
-#	1158.01.01 = {
-#		employer = 308
-#		effect = {
-#			e_nergal = {
-#				holder_scope = {
-#					ROOT = { 
-#						imprison = PREV 
-#					}
-#				}
-#			}
-#		}
-#	} 	
-#	
-#	# escapes and somehow reaches Kathalet by Lyn's story
-#	1159.1.1 = {
-#		effect = { 
-#			prisoner = no
-#		} 
-#		employer = 197
-#	} 	
-#	
-#	# NOT recaptured with Ninian. Where exactly was he? Somewhere on Valor?
-#	1160.01.01 = {
-#		employer = 766 # Ruler of Northern Valor
-#	} 	
-#	
-#	# After Nergal's defeat, leaves through the Dragon's Gate
-#	1161.1.1= {
-#		#add_trait="disappeared"
-#		death = {
-#			#death_reason=death_trait
-#			death_reason=death_missing
-#		}
-#	}
-#}
+312 = {
+	name="Ninian"
+	female=yes
+	dynasty=304
+	
+	#religion=dragon_gods
+	religion = elimine_church #More for gameplay purposes. The dragon religion shouldn't be revived.
+	culture=ilian
+	
+	#real_father=308
+	mother=924
+	disallow_random_traits="yes" 
+	trait="dragon_blood"
+	immortal_age=16
+	170.01.01 = { 
+		birth=yes 
+		effect = {
+			set_father=308
+			set_character_flag="is_fe7_ninian"
+		}
+	}
+	180.01.01 = { 
+		father=0
+		effect={
+			set_father=0
+			c_308 = {				
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}
+	182.01.01={
+		add_trait="class_dancer"
+			add_trait="base_class_dancer"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	185.01.01={
+		add_trait="scholarly_theologian"
+		add_trait="kind"
+		add_trait="shy"
+		add_trait="chaste"
+	} 
+	
+	# Summoned and imprisoned by Nergal
+	1158.01.01 = {
+		employer = 308
+		effect = {
+			e_nergal = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	
+	# escapes and somehow reaches Kathalet by Lyn's story
+	1159.1.1 = {
+		effect = { 
+			prisoner = no
+		} 
+		employer = 197
+	} 	
+	
+	# recaptured?
+	#1160.01.02 = {
+	1160.01.01 = {
+		employer = 308
+		effect = {
+			e_nergal = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	
+	# After Nergal's defeat, either marries Eliwood or leaves through the Dragon's Gate
+	1161.1.1 = {
+		effect = { 
+			prisoner = no
+		} 
+		employer = 107 # Eliwood
+	} 	
+	
+	#1166.1.1= {
+	1161.1.1= {
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
+
+313 = {
+	name="Nils"
+	dynasty=304
+	
+	#religion=dragon_gods
+	religion = elimine_church #More for gameplay purposes. The dragon religion shouldn't be revived.
+	culture=ilian
+	
+	#real_father=308
+	mother=924
+	disallow_random_traits="yes" 
+	trait="dragon_blood"
+	immortal_age=11
+	175.01.01 = { 
+		birth=yes 
+		effect = {
+			set_father=308
+			set_character_flag="is_fe7_nils"
+		}
+	}
+	180.01.01 = { 
+		father=0
+		effect={
+			set_father=0
+			c_308 = {				
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}
+	187.01.01={
+		add_trait="class_bard"
+		add_trait="base_class_bard"
+		effect = {
+			set_variable = { which = "level" value = 1 }
+			set_character_flag="class_selected"
+		}
+	} 
+	190.01.01={
+		add_trait="martial_cleric"
+		add_trait="brave"
+		add_trait="cynical"
+		add_trait="just"
+	} 
+	# Summoned and imprisoned by Nergal
+	1158.01.01 = {
+		employer = 308
+		effect = {
+			e_nergal = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+					}
+				}
+			}
+		}
+	} 	
+	
+	# escapes and somehow reaches Kathalet by Lyn's story
+	1159.1.1 = {
+		effect = { 
+			prisoner = no
+		} 
+		employer = 197
+	} 	
+	
+	# NOT recaptured with Ninian. Where exactly was he? Somewhere on Valor?
+	1160.01.01 = {
+		employer = 766 # Ruler of Northern Valor
+	} 	
+	
+	# After Nergal's defeat, leaves through the Dragon's Gate
+	1161.1.1= {
+		death = {
+			death_reason=death_missing
+		}
+	}
+}
 
 320 = {
 	name="Chryseis" #non-canon; mother for the FE6 pegasus sisters

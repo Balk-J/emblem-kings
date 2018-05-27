@@ -142,7 +142,7 @@ regalia_maltet = {
 	picture = "GFX_regalia_maltet"
 	slot = weapon
 }
-regalia_murgleis = {
+regalia_mulagir = {
 	combat_rating = 3
 	monthly_character_prestige = 1
 	martial = 3
@@ -153,7 +153,7 @@ regalia_murgleis = {
 	indestructible = yes
 	flags = { regalia combat_weapon unique bow }
 	stacking = no
-	picture = "GFX_regalia_murgleis"
+	picture = "GFX_regalia_mulagir"
 	slot = weapon
 }
 
@@ -535,26 +535,26 @@ regalia_forseti = {
 	picture = "GFX_regalia_forseti"
 	slot = weapon
 }
-regalia_loptyr = {
+regalia_loptous = {
 	combat_rating = 3
 	monthly_character_prestige = 1
 	martial = 3
 	loptyrian_opinion = 5
 	active = { 
 		can_equip_dark_trigger = yes
-		trait = holy_blood_major_loptyr
+		trait = holy_blood_major_loptous
 	}
 	quality = 5
 	indestructible = yes
 	flags = { regalia combat_weapon unique tome dark }
 	stacking = no
-	picture = "GFX_regalia_loptyr"
+	picture = "GFX_regalia_loptous"
 	slot = weapon
 }
 
 # Other #
 
-regalia_loptyr_sword = {
+regalia_loptous_sword = {
 	combat_rating = 2
 	monthly_character_prestige = 1
 	martial = 2
@@ -567,7 +567,7 @@ regalia_loptyr_sword = {
 	indestructible = yes
 	flags = { regalia combat_weapon unique sword }
 	stacking = no
-	picture = "GFX_regalia_loptyr_sword"
+	picture = "GFX_regalia_loptous_sword"
 	slot = weapon
 }
 regalia_blagi_sword = {
@@ -578,8 +578,8 @@ regalia_blagi_sword = {
 	active = { 
 		can_equip_swords_trigger = yes
 		#religion = church_of_edda
-		NOT = { trait=holy_blood_major_loptyr }
-		NOT = { trait=holy_blood_minor_loptyr }
+		NOT = { trait=holy_blood_major_loptous }
+		NOT = { trait=holy_blood_minor_loptous }
 		OR = {
 			has_major_holy_blood_trigger = yes
 			has_minor_holy_blood_trigger = yes

@@ -8,10 +8,10 @@
 }
 446.1.1 = { 
 	#holder=0 
-	liege = d_loptyr
+	liege = d_loptous
 }
 448.1.1 = { 
-	liege = e_loptyr
+	liege = e_loptous
 }
 636.1.1={
 	holder=1299 # filler

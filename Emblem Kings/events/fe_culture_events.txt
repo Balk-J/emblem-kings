@@ -104,7 +104,7 @@ province_event = {
 	desc = fe_culture.3.desc
 	picture = GFX_evt_stone_church
 
-	has_global_flag = loptyr_empire_destroyed
+	has_global_flag = loptous_empire_destroyed
 	trigger = {
 #		year = 611		
 		culture = grann

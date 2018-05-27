@@ -72,7 +72,7 @@ decisions = {
 			is_playable = yes
 			is_adult = yes
 			OR = {
-				trait = possessed_loptyr
+				trait = possessed_loptous
 				has_character_flag = lore_deadlords
 			}
 			NOT = { has_character_flag = summoned_deadlords }

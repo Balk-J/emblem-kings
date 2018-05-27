@@ -17,5 +17,5 @@ is_horse_archer_tooltip;Has the trait '§YHorse Archer§!';;;;;;;;;;;;;x
 is_bow_knight_tooltip;Has the trait '§YRanger§!';;;;;;;;;;;;;x
 is_bishop_tooltip;Has the trait '§YBishop§!';;;;;;;;;;;;;x
 is_manakete_tooltip;Has the trait '§YManakete§!';;;;;;;;;;;;;x
-loptyr_possession_effect.tooltip;§Y[Root.GetTitledFirstName]§! becomes the vessel of Loptyr;;;;;;;;;;;;;x
+loptous_possession_effect.tooltip;§Y[Root.GetTitledFirstName]§! becomes the vessel of Loptous;;;;;;;;;;;;;x
 deadlord_dead_tooltip;At least one of the §YDeadlords§! is dead;;;;;;;;;;;;;x

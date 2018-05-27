@@ -450,7 +450,7 @@ character_event = {
 	trigger = {
 		is_adult = yes
 		is_minor_blood_found_by_loptyrians_trigger = yes
-		NOT = {	has_global_flag = loptyr_revived }
+		NOT = {	has_global_flag = loptous_revived }
 	}
 
 	option = {
@@ -513,7 +513,7 @@ character_event = {
 			limit = {
 				NOT = {
 					any_character = {
-						trait = holy_blood_major_loptyr
+						trait = holy_blood_major_loptous
 					}
 				}
 			}
@@ -523,7 +523,7 @@ character_event = {
 					limit = {
 						NOT = {
 							any_character = {
-								trait = holy_blood_minor_loptyr
+								trait = holy_blood_minor_loptous
 								female = no
 							}
 						}
@@ -542,7 +542,7 @@ character_event = {
 							culture = ROOT
 							female = no
 							age = 16
-							trait = holy_blood_minor_loptyr
+							trait = holy_blood_minor_loptous
 						}
 					}
 					
@@ -555,7 +555,7 @@ character_event = {
 					limit = {
 						NOT = {
 							any_character = {
-								trait = holy_blood_minor_loptyr
+								trait = holy_blood_minor_loptous
 								female = yes
 							}
 						}
@@ -574,7 +574,7 @@ character_event = {
 							culture = ROOT
 							female = yes
 							age = 16
-							trait = holy_blood_minor_loptyr
+							trait = holy_blood_minor_loptous
 						}
 					}
 					
@@ -623,8 +623,8 @@ character_event = {
 				is_married = yes
 				spouse = {
 					OR = {
-						trait = holy_blood_major_loptyr
-						trait = holy_blood_minor_loptyr
+						trait = holy_blood_major_loptous
+						trait = holy_blood_minor_loptous
 					}
 				}
 			}
@@ -688,18 +688,18 @@ character_event = {
 	}
 }
 
-# Inform cultists that the spawn of Loptyr has appeared
+# Inform cultists that the spawn of Loptous has appeared
 character_event = {
 	id = loptyrian.15
 	desc = {
 		trigger = {
-			NOT = { has_artifact = regalia_loptyr }
+			NOT = { has_artifact = regalia_loptous }
 		}
 		text = loptyrian.15.desc.1
 	}	
 	desc = {
 		trigger = {
-			has_artifact = regalia_loptyr
+			has_artifact = regalia_loptous
 		}
 		text = loptyrian.15.desc.2
 	}
@@ -710,13 +710,13 @@ character_event = {
 	option = {
 		name = loptyrian.15.A
 		trigger = {
-			NOT = { has_artifact = regalia_loptyr }
+			NOT = { has_artifact = regalia_loptous }
 		}
 	}
 	option = {
 		name = loptyrian.15.B
 		trigger = {
-			has_artifact = regalia_loptyr
+			has_artifact = regalia_loptous
 		}
 		ai_chance = {
 			factor = 100		
@@ -734,7 +734,7 @@ character_event = {
 	option = {
 		name = loptyrian.15.C
 		trigger = {
-			has_artifact = regalia_loptyr
+			has_artifact = regalia_loptous
 		}
 		ai_chance = {
 			factor = 0		
@@ -743,7 +743,7 @@ character_event = {
 	}
 }	
 
-# Spawn of Loptyr receives the book
+# Spawn of Loptous receives the book
 character_event = {
 	id = loptyrian.16
 	desc = loptyrian.16.desc
@@ -783,12 +783,12 @@ character_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_artifact = regalia_loptyr }
+				FROM = { has_artifact = regalia_loptous }
 			}
 			FROM = { 
 				random_artifact = {
 					limit = {
-						artifact_type = regalia_loptyr
+						artifact_type = regalia_loptous
 					}
 					transfer_artifact = {
 						from = PREV to = ROOT 
@@ -796,7 +796,7 @@ character_event = {
 				}
 			}
 		}else = {
-			add_artifact = regalia_loptyr
+			add_artifact = regalia_loptous
 			new_artifact = {
 				set_creation_date = 440.1.1
 			}
@@ -857,7 +857,7 @@ character_event = {
 		prestige = -50
 	}
 }
-# Loptyr spawn gets the book
+# Loptous spawn gets the book
 character_event = {
 	id = loptyrian.18
 	hide_window = yes
@@ -867,27 +867,27 @@ character_event = {
 		name = OK
 		if = {
 			limit = {
-				trait = holy_blood_major_loptyr
-				NOT = { trait = possessed_loptyr } 
-				NOT = {	possessed_loptyr = { is_alive = yes } }
+				trait = holy_blood_major_loptous
+				NOT = { trait = possessed_loptous } 
+				NOT = {	possessed_loptous = { is_alive = yes } }
 			}
 		}
-		character_event = { id = loptyr.3 }
+		character_event = { id = loptous.3 }
 	}
 }
 
-# Inform Loptyr of revival
+# Inform Loptous of revival
 character_event = {
 	id = loptyrian.19
-	desc = loptyr.3.desc
+	desc = loptous.3.desc
 	picture = GFX_evt_lunatic
 	hide_from = yes
 	is_triggered_only = yes 
 	
 	option = {
-		name = loptyr.3.A
-		loptyr_possession_effect = yes
-		loptyr_revival_effect = yes		
+		name = loptous.3.A
+		loptous_possession_effect = yes
+		loptous_revival_effect = yes		
 	}
 }
 # Attack the children of Naga!
@@ -925,7 +925,7 @@ character_event = {
 		}
 	}
 }
-# Naga blood attacked by Loptyr
+# Naga blood attacked by Loptous
 character_event = {
 	id = loptyrian.21
 	desc = loptyrian.21.desc
@@ -1139,7 +1139,7 @@ character_event = {
 	}
 }
 
-# Notify cultists of Loptyr's rebirth
+# Notify cultists of Loptous's rebirth
 narrative_event = {
 	id = loptyrian.23
 	title = loptyrian.23.title
@@ -1171,7 +1171,7 @@ narrative_event = {
 	}		
 }
 
-# Loptyr starts to take power.
+# Loptous starts to take power.
 character_event = {
 	id = loptyrian.24
 	hide_window = yes
@@ -1227,7 +1227,7 @@ narrative_event = {
 	}
 }
 
-# Loptyr confronted by liege
+# Loptous confronted by liege
 character_event = {
 	id = loptyrian.26
 	desc = loptyrian.26.desc
@@ -1250,7 +1250,7 @@ character_event = {
 		FROM = { character_event = { id = loptyrian.27 } }
 	}
 }
-# Inform liege that Loptyr backed down (?!)
+# Inform liege that Loptous backed down (?!)
 character_event = {
 	id = loptyrian.27
 	desc = loptyrian.27.desc
@@ -1262,7 +1262,7 @@ character_event = {
 		name = loptyrian.27.A		
 	}
 }
-# Inform liege that Loptyr will not back down
+# Inform liege that Loptous will not back down
 character_event = {
 	id = loptyrian.28
 	desc = loptyrian.28.desc
@@ -1313,7 +1313,7 @@ character_event = {
 		}
 	}
 }
-# Liege does not investigate Loptyr and gets brushed aside
+# Liege does not investigate Loptous and gets brushed aside
 character_event = {
 	id = loptyrian.30
 	desc = loptyrian.30.desc

@@ -101,7 +101,7 @@ defined_text = {
 	text = {
 		localisation_key = String_Loptyr
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 			OR = {
 				religion = loptyrian
 				religion = maerist
@@ -119,7 +119,7 @@ defined_text = {
 	text = {
 		localisation_key = String_dark_magic
 		trigger = { 
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 			OR = {
 				religion = loptyrian
 				religion = maerist
@@ -137,7 +137,7 @@ defined_text = {
 	text = {
 		localisation_key = String_demon
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 			OR = {
 				religion = loptyrian
 				religion = maerist
@@ -155,7 +155,7 @@ defined_text = {
 	text = {
 		localisation_key = String_demons
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 			OR = {
 				religion = loptyrian
 				religion = maerist
@@ -174,7 +174,7 @@ defined_text = {
 		localisation_key = String_dark_priestess
 		trigger = {
 			is_female = yes
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 			OR = {
 				religion = loptyrian
 				religion = maerist
@@ -188,7 +188,7 @@ defined_text = {
 		localisation_key = String_dark_priest
 		trigger = {
 			is_female = no
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 			OR = {
 				religion = loptyrian
 				religion = maerist
@@ -206,7 +206,7 @@ defined_text = {
 	text = {
 		localisation_key = String_Praise_Loptyr
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 			OR = {
 				religion = loptyrian
 				religion = maerist
@@ -935,73 +935,73 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Mus
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Bovis
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Tigris
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Lepus
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Draco
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Anguilla
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Equus
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Ovis
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Simia
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Gallus
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Canis
 	}
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Porcus
 	}
@@ -1051,7 +1051,7 @@ defined_text = {
 	name = GetDWDemonTerm
 	text = {
 		trigger = {
-			society_member_of = loptyr_sect
+			society_member_of = loptous_sect
 		}
 		localisation_key = String_Deadlord
 	}

@@ -10,7 +10,7 @@
 	holder=858 # 
 }
 450.1.1={
-	liege = e_loptyr
+	liege = e_loptous
 }
 635.1.1={
 	holder=1305 # filler

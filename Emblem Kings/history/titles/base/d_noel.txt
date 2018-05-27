@@ -10,7 +10,7 @@
 	de_jure_liege = k_kapathogia
 }
 450.1.1={
-	liege = e_loptyr
+	liege = e_loptous
 }
 649.1.1={
 	holder = 1011 # Dain TODO: fix

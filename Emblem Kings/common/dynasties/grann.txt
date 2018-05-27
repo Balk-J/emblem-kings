@@ -2,7 +2,7 @@
 801={
 	can_appear=no
 	used_for_random=no
-	name="Loptyr"
+	name="Loptous"
 	culture="grannvalean"
 	coat_of_arms = {
 		religion="loptyrian"
@@ -748,7 +748,7 @@
 	culture="grann"
 	religion="earthen_pagan"
 }
-889={
+888={
 	name="of Herjedalen"
 	culture="grann"
 	religion="earthen_pagan"

@@ -1,6 +1,6 @@
 has_latent_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_latent_loptyr
+		trait=holy_blood_latent_loptous
 		trait=holy_blood_latent_naga
 		trait=holy_blood_latent_baldr
 		trait=holy_blood_latent_blagi
@@ -17,7 +17,7 @@ has_latent_holy_blood_trigger = {
 }
 has_major_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_major_loptyr
+		trait=holy_blood_major_loptous
 		trait=holy_blood_major_naga
 		trait=holy_blood_major_baldr
 		trait=holy_blood_major_blagi
@@ -34,7 +34,7 @@ has_major_holy_blood_trigger = {
 }
 has_minor_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_minor_loptyr
+		trait=holy_blood_minor_loptous
 		trait=holy_blood_minor_naga
 		trait=holy_blood_minor_baldr
 		trait=holy_blood_minor_blagi
@@ -56,10 +56,10 @@ has_holy_blood_trigger = {
 	}
 }
 
-has_loptyr_holy_blood_trigger = {
+has_loptous_holy_blood_trigger = {
 	OR = {
-		trait=holy_blood_major_loptyr
-		trait=holy_blood_minor_loptyr
+		trait=holy_blood_major_loptous
+		trait=holy_blood_minor_loptous
 	}
 }
 has_naga_holy_blood_trigger = {
@@ -154,68 +154,68 @@ can_inherit_holy_blood_trigger = {
 		}
 	}
 }
-can_inherit_major_loptyr_holy_blood_trigger = {
+can_inherit_major_loptous_holy_blood_trigger = {
 	OR = { 
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				trait=holy_blood_major_loptyr
+				trait=holy_blood_major_loptous
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				trait=holy_blood_major_loptyr
+				trait=holy_blood_major_loptous
 			}
 		}
 		mother_even_if_dead = {
-			trait=holy_blood_major_loptyr
+			trait=holy_blood_major_loptous
 		}
 		AND = {
 			OR = {
 				AND = {
 					is_father_real_father = yes
 					father_even_if_dead = {
-						trait=holy_blood_minor_loptyr
+						trait=holy_blood_minor_loptous
 					}
 				}
 				AND = {
 					is_father_real_father = no
 					real_father_even_if_dead = {
-						trait=holy_blood_minor_loptyr
+						trait=holy_blood_minor_loptous
 					}
 				}
 			}
 			mother_even_if_dead = {
-				trait=holy_blood_minor_loptyr
+				trait=holy_blood_minor_loptous
 			}
 		}
 	}
 }
-can_inherit_minor_loptyr_holy_blood_trigger = {
-	#NOT = { can_inherit_major_loptyr_holy_blood_trigger = yes }
+can_inherit_minor_loptous_holy_blood_trigger = {
+	#NOT = { can_inherit_major_loptous_holy_blood_trigger = yes }
 	OR = {
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				has_loptyr_holy_blood_trigger = yes
+				has_loptous_holy_blood_trigger = yes
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				has_loptyr_holy_blood_trigger = yes
+				has_loptous_holy_blood_trigger = yes
 			}
 		}
 		mother_even_if_dead = {
-			has_loptyr_holy_blood_trigger = yes
+			has_loptous_holy_blood_trigger = yes
 		}
 	}
 }
-can_inherit_loptyr_holy_blood_trigger = {
+can_inherit_loptous_holy_blood_trigger = {
 	OR = {
-		can_inherit_major_loptyr_holy_blood_trigger = yes
-		can_inherit_minor_loptyr_holy_blood_trigger = yes
+		can_inherit_major_loptous_holy_blood_trigger = yes
+		can_inherit_minor_loptous_holy_blood_trigger = yes
 	}
 }
 
@@ -991,51 +991,51 @@ can_inherit_ulir_holy_blood_trigger = {
 has_two_minor_holy_blood_trigger = {
 	OR = {
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_naga
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_baldr
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_blagi
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_dain
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_fjalar
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_forseti
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_hezul
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_neir
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_noba
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_od
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_thrud
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			trait = holy_blood_minor_ulir
 		}
 		AND = {
@@ -1304,11 +1304,11 @@ has_two_minor_holy_blood_trigger = {
 		}
 	}
 }
-cannot_manifest_major_loptyr_holy_blood_trigger = {
+cannot_manifest_major_loptous_holy_blood_trigger = {
 	OR = {
 		has_major_holy_blood_trigger = yes
 		has_two_minor_holy_blood_trigger = yes
-		NOT = { can_inherit_major_loptyr_holy_blood_trigger = yes }
+		NOT = { can_inherit_major_loptous_holy_blood_trigger = yes }
 	}	
 }
 cannot_manifest_major_naga_holy_blood_trigger = {
@@ -1396,17 +1396,17 @@ cannot_manifest_major_ulir_holy_blood_trigger = {
 	}	
 }
 
-child_can_inherit_major_loptyr_holy_blood_trigger = {
+child_can_inherit_major_loptous_holy_blood_trigger = {
 	is_married = yes
 	OR = { 
-		trait = holy_blood_major_loptyr
+		trait = holy_blood_major_loptous
 		spouse = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 		}
 		AND = {
-			trait = holy_blood_minor_loptyr
+			trait = holy_blood_minor_loptous
 			spouse = {
-				trait = holy_blood_minor_loptyr
+				trait = holy_blood_minor_loptous
 			}
 		}
 	}
@@ -1441,22 +1441,22 @@ can_add_minor_holy_blood_trigger = {
 	
 }
 
-child_of_possessed_loptyr_trigger = {
+child_of_possessed_loptous_trigger = {
 	OR = { 
 		AND = {
 			is_father_real_father = yes
 			father_even_if_dead = {
-				trait=possessed_loptyr
+				trait=possessed_loptous
 			}
 		}
 		AND = {
 			is_father_real_father = no
 			real_father_even_if_dead = {
-				trait=possessed_loptyr
+				trait=possessed_loptous
 			}
 		}
 		mother_even_if_dead = {
-			trait=possessed_loptyr
+			trait=possessed_loptous
 		}
 	}
 }
@@ -1466,7 +1466,7 @@ is_minor_blood_found_by_loptyrians_trigger = {
 	NOT = {	has_character_flag = rejected_loptyrians }
 }
 is_loptyrian_minor_blood_search_candidate_trigger = {
-	trait=holy_blood_minor_loptyr
+	trait=holy_blood_minor_loptous
 	NOT = {	has_character_flag = minor_blood_found_by_loptyrians }
 	NOT = {	has_character_flag = rejected_loptyrians }
 	NOT = {	has_character_flag = loptyrian_marriage }
@@ -1485,14 +1485,14 @@ loptyrians_exist_trigger = {
 }
 loptyrians_searching_for_minor_blood_trigger = {
 	OR = {
-		has_global_flag = loptyr_empire_destroyed
-		has_global_flag = loptyr_defeated
+		has_global_flag = loptous_empire_destroyed
+		has_global_flag = loptous_defeated
 	}
-	NOT = { has_global_flag = loptyr_revived }
+	NOT = { has_global_flag = loptous_revived }
 	loptyrians_exist_trigger = yes
 }
-is_loptyr_spawn_trigger = {
-	can_inherit_major_loptyr_holy_blood_trigger = yes
+is_loptous_spawn_trigger = {
+	can_inherit_major_loptous_holy_blood_trigger = yes
 	OR = {
 		AND = {
 			is_father_real_father = yes
@@ -1521,7 +1521,7 @@ is_non_imperial_crusader_claimant_trigger = {
 				tier = EMPEROR
 				OR = {
 					religion = loptyrian
-					trait = possessed_loptyr
+					trait = possessed_loptous
 				}
 			}
 		}
@@ -1532,7 +1532,7 @@ can_use_book_of_naga_trigger = {
 	can_equip_light_trigger = yes
 	trait = holy_blood_major_naga
 }
-loptyr_killed_by_book_of_naga_trigger = {
+loptous_killed_by_book_of_naga_trigger = {
 	any_current_enemy = {
 		OR = {
 			AND = {

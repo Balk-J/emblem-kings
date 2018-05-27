@@ -9,7 +9,7 @@
 	de_jure_liege = k_lubeck
 }
 0450.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0646.01.01={
 	holder = 1313

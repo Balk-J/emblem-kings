@@ -554,7 +554,7 @@
 	dynasty=801
 	culture=verdanian
 	religion=maerist
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	trait=disinherited
 	540.1.1={
 		birth=yes
@@ -563,8 +563,8 @@
 	552.01.01={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -603,7 +603,7 @@
 	dynasty=802
 	culture=verdanian
 	religion=earthen_pagan
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	560.1.1={
 		birth=yes
 		employer=1188 # Spirit Forest
@@ -611,8 +611,8 @@
 	572.01.01={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -632,7 +632,7 @@
 	dynasty=802
 	culture=verdanian
 	religion=earthen_pagan
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	590.1.1={
 		birth=yes
 		employer=1189 # Spirit Forest
@@ -640,8 +640,8 @@
 	602.01.01={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -661,7 +661,7 @@
 	dynasty=802
 	culture=verdanian
 	religion=earthen_pagan
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	630.1.1={
 		birth=yes
 		employer=1190 # Spirit Forest
@@ -669,8 +669,8 @@
 	642.01.01={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -693,7 +693,7 @@
 	dynasty=802
 	culture=verdanian
 	religion=church_of_edda
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	670.1.1={
 		birth=yes
 		employer=1192 # Spirit Forest
@@ -701,8 +701,8 @@
 	682.01.01={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -724,7 +724,7 @@
 	dynasty=802
 	culture=verdanian
 	religion=church_of_edda
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	698.1.1={
 		birth=yes
 		employer=1193 # Spirit Forest
@@ -732,8 +732,8 @@
 	710.01.01={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -758,7 +758,7 @@
 	dynasty=802
 	culture=verdanian
 	religion=church_of_edda
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	disallow_random_traits=yes
 	714.1.1={
 		birth=yes
@@ -767,8 +767,8 @@
 	726.01.01={
 		add_trait="class_cleric"
 		add_trait="base_class_cleric"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		effect = {
 			set_variable = { which = "level" value = 1 }
 			set_character_flag="class_selected"
@@ -821,7 +821,7 @@
 	dynasty=802
 	culture=verdanian
 	religion=church_of_edda
-	trait=holy_blood_latent_loptyr
+	trait=holy_blood_latent_loptous
 	trait=holy_blood_latent_naga
 	#trait=bastard
 	disallow_random_traits=yes
@@ -838,8 +838,8 @@
 	751.2.1={
 		add_trait="class_monk"
 		add_trait="base_class_monk"
-		remove_trait="holy_blood_latent_loptyr"
-		add_trait="holy_blood_minor_loptyr"
+		remove_trait="holy_blood_latent_loptous"
+		add_trait="holy_blood_minor_loptous"
 		remove_trait="holy_blood_latent_naga"
 		add_trait="holy_blood_major_naga"
 		effect = {
@@ -898,7 +898,7 @@
 	770.1.1={
 		death = {
 			death_reason=death_murder_unknown
-			killer=1051 # Loptyr-possessed Julius
+			killer=1051 # Loptous-possessed Julius
 		}
 	}
 }

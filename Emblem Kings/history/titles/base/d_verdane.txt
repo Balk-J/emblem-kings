@@ -10,7 +10,7 @@
 	holder=837 # 
 }
 450.1.1={
-	liege = e_loptyr
+	liege = e_loptous
 }
 466.1.1={
 	holder=1172 # 

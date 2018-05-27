@@ -1,6 +1,6 @@
 namespace = fe4_last_holy_war
 
-# Nickname for Loptyr spawn
+# Nickname for Loptous spawn
 character_event = {
 	id = fe4_last_holy_war.1
 	#desc = fe4_last_holy_war.1.desc
@@ -10,7 +10,7 @@ character_event = {
 	hide_window = yes
 	
 	trigger = {	
-		has_character_flag = loptyr_spawn	
+		has_character_flag = loptous_spawn	
 	}	
 	option = {
 		name = fe4_last_holy_war.1.A
@@ -38,7 +38,7 @@ character_event = {
 		name = OK
 		random_character = {
 			limit = {
-				has_character_flag = loptyr_spawn
+				has_character_flag = loptous_spawn
 			}
 			character_event = { id = fe4_last_holy_war.3 }
 		}
@@ -88,11 +88,11 @@ narrative_event = {
 	id = fe4_last_holy_war.5
 	title = fe4_last_holy_war.5.title
 	desc = {
-		trigger = { has_character_flag = loptyr_spawn }
+		trigger = { has_character_flag = loptous_spawn }
 		text = fe4_last_holy_war.5.desc.1
 	}
 	desc = {
-		trigger = { NOT = { has_character_flag = loptyr_spawn } }
+		trigger = { NOT = { has_character_flag = loptous_spawn } }
 		text = fe4_last_holy_war.5.desc.2
 	}
 	picture = GFX_evt_heretic
@@ -101,11 +101,11 @@ narrative_event = {
 	
 	option = {
 		name = fe4_last_holy_war.5.A
-		trigger = { has_character_flag = loptyr_spawn }
+		trigger = { has_character_flag = loptous_spawn }
 	}	
 	option = {
 		name = fe4_last_holy_war.5.B
-		trigger = { NOT = { has_character_flag = loptyr_spawn } }
+		trigger = { NOT = { has_character_flag = loptous_spawn } }
 	}	
 }
 
@@ -386,7 +386,7 @@ character_event = {
 }
 # Pick the enemy for the Crusade.
 # Direct vassal of the emperor who is de jure liege of Seliph's duchy, or a random powerful vassal.
-# Note that Loptyr is ROOT.
+# Note that Loptous is ROOT.
 character_event = {
 	id = fe4_last_holy_war.8
 	is_triggered_only = yes
@@ -395,7 +395,7 @@ character_event = {
 	option = {
 		name = OK
 		
-		if = { # Prefer King of rebel capital county, if he's a vassal of Loptyr
+		if = { # Prefer King of rebel capital county, if he's a vassal of Loptous
 			limit = {
 				e_crusaders = {
 					holder_scope = {
@@ -493,7 +493,7 @@ character_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	
-	has_global_flag = loptyr_revived
+	has_global_flag = loptous_revived
 	only_independent = yes
 	min_age = 16
 	capable_only = yes
@@ -647,7 +647,7 @@ character_event = {
 	option = {
 		name = fe4_last_holy_war.14.A
 		trigger = {
-			any_playable_ruler = { revived_loptyr_in_power_trigger = yes }
+			any_playable_ruler = { revived_loptous_in_power_trigger = yes }
 		}
 		ai_chance = {
 			factor = 1	
@@ -660,7 +660,7 @@ character_event = {
 			}
 		}
 		random_playable_ruler = {
-			limit = { revived_loptyr_in_power_trigger = yes }
+			limit = { revived_loptous_in_power_trigger = yes }
 			reverse_war = {
 				target = ROOT
 				casus_belli = jugdral_crusade
@@ -691,7 +691,7 @@ character_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					any_playable_ruler = { revived_loptyr_in_power_trigger = yes }
+					any_playable_ruler = { revived_loptous_in_power_trigger = yes }
 					any_playable_ruler = { rebel_in_joinable_war_trigger = yes }
 				}
 			}	
@@ -853,7 +853,7 @@ character_event = {
 			any_playable_ruler = { 
 				OR = {
 					rebel_in_joinable_war_trigger = yes 
-					crusader_attacking_loptyr_trigger = yes
+					crusader_attacking_loptous_trigger = yes
 				}
 			}
 		}
@@ -875,11 +875,11 @@ character_event = {
 		if = {
 			limit = {
 				any_playable_ruler = {
-					crusader_attacking_loptyr_trigger = yes
+					crusader_attacking_loptous_trigger = yes
 				}
 			}
 			random_playable_ruler = {
-				limit = { crusader_attacking_loptyr_trigger = yes }
+				limit = { crusader_attacking_loptous_trigger = yes }
 				ROOT = { join_attacker_wars = PREV }
 			}
 		}
@@ -891,7 +891,7 @@ character_event = {
 			any_playable_ruler = { 
 				OR = {
 					rebel_in_joinable_war_trigger = yes 
-					crusader_attacking_loptyr_trigger = yes
+					crusader_attacking_loptous_trigger = yes
 				}
 			}
 		}
@@ -907,7 +907,7 @@ character_event = {
 				any_playable_ruler = { 
 					OR = {
 						rebel_in_joinable_war_trigger = yes 
-						crusader_attacking_loptyr_trigger = yes
+						crusader_attacking_loptous_trigger = yes
 					}
 				}
 			}
@@ -916,7 +916,7 @@ character_event = {
 }
 
 # Seliph won the crusade!
-# ...now what in Naga's name do we do with Loptyr's empire?
+# ...now what in Naga's name do we do with Loptous's empire?
 character_event = { 
 	id = fe4_last_holy_war.17
 	desc = fe4_last_holy_war.17.desc
@@ -930,17 +930,17 @@ character_event = {
 			factor = 0	
 		}
 		
-		event_target:loptyr_defeated_in_crusade_target = {
+		event_target:loptous_defeated_in_crusade_target = {
 			any_vassal = {
 				set_defacto_liege = ROOT
 			}
 			any_demesne_title = {
 				limit = {
 					NOT = {
-						title = e_loptyr
+						title = e_loptous
 					}
 					NOT = {
-						title = d_loptyr
+						title = d_loptous
 					}
 				}
 				usurp_title = { target = ROOT type = invasion }
@@ -949,21 +949,21 @@ character_event = {
 		}
 		if = {
 			limit = {
-				e_loptyr = {
+				e_loptous = {
 					has_holder = yes
 				}
 			}
-			e_loptyr = {
+			e_loptous = {
 				destroy_landed_title = THIS
 			}
 		}
 		if = {
 			limit = {
-				d_loptyr = {
+				d_loptous = {
 					has_holder = yes
 				}
 			}
-			d_loptyr = {
+			d_loptous = {
 				unsafe_destroy_landed_title = THIS
 			}
 		}
@@ -972,12 +972,12 @@ character_event = {
 	option = {
 		name = fe4_last_holy_war.17.B
 		trigger = {
-			has_global_flag = loptyr_empire_destroyed
+			has_global_flag = loptous_empire_destroyed
 		}
 		ai_chance = {
 			factor = 1	
 		}
-		event_target:loptyr_defeated_in_crusade_target = {
+		event_target:loptous_defeated_in_crusade_target = {
 			hidden_tooltip = {
 				fix_loptyrian_bishop_capitals_effect = yes
 				any_vassal = { set_defacto_liege = ROOT }
@@ -1528,7 +1528,7 @@ character_event = {
 	option = {
 		name = fe4_last_holy_war.17.C
 		trigger = {
-			NOT = { has_global_flag = loptyr_empire_destroyed }
+			NOT = { has_global_flag = loptous_empire_destroyed }
 		}
 		ai_chance = {
 			factor = 1	

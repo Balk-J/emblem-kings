@@ -16,7 +16,7 @@
 	de_jure_liege = k_verdane
 }
 0448.01.01={
-	liege = e_loptyr
+	liege = e_loptous
 }
 0497.01.03={
 	holder=4700

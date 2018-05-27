@@ -22,14 +22,14 @@ character_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	
-	has_global_flag = loptyr_revived
+	has_global_flag = loptous_revived
 	only_independent = yes
 	min_age = 15
 	trigger = {
-		has_global_flag = loptyr_revived
-		has_global_flag = loptyr_empire_destroyed
+		has_global_flag = loptous_revived
+		has_global_flag = loptous_empire_destroyed
 		NOT = { has_global_flag = manster_resistance_started }
-		trait = possessed_loptyr
+		trait = possessed_loptous
 		religion = loptyrian
 		completely_controls = d_leonster 
 		is_adult = yes
@@ -306,7 +306,7 @@ character_event = {
 }
 
 # Pick the enemy for the Manster rebellion
-# Note that Loptyr is ROOT.
+# Note that Loptous is ROOT.
 character_event = {
 	id = fe5_thracia_776.4
 	is_triggered_only = yes
@@ -363,7 +363,7 @@ character_event = {
 				}
 				save_event_target_as = manster_resistance_enemy_target	
 			}
-		}else = { # Otherwise, uh... pick someone who has a county in d_leonster, since we know that belongs to Loptyr.		
+		}else = { # Otherwise, uh... pick someone who has a county in d_leonster, since we know that belongs to Loptous.		
 			random_vassal = {
 				limit = {
 					num_of_realm_counties = { value = 1 title = d_leonster }
@@ -577,8 +577,8 @@ character_event = { # narrative_event
 				k_manster = { 
 					holder_scope = { 
 						OR = {
-							trait = possessed_loptyr 
-							any_liege = { trait = possessed_loptyr }
+							trait = possessed_loptous 
+							any_liege = { trait = possessed_loptous }
 						}
 					}
 				}
@@ -630,7 +630,7 @@ character_event = { # narrative_event
 					any_playable_ruler = { last_holy_war_can_start_trigger = yes }
 				}
 				random_playable_ruler = {
-					limit = { trait = possessed_loptyr }
+					limit = { trait = possessed_loptous }
 					character_event = {	id = fe4_last_holy_war.7 }
 				}
 			}
@@ -654,7 +654,7 @@ character_event = { # narrative_event
 					k_thracia = {
 						holder_scope = {
 							independent = yes
-							NOT = { trait = possessed_loptyr }
+							NOT = { trait = possessed_loptous }
 						}
 					}
 				} 

@@ -148,11 +148,11 @@ d_temp_2 = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-d_loptyr = {
+d_loptous = {
 	color={ 50 50 50 }
 	color2={ 255 255 255 }
 	
-	capital = 514 # Loptyr's landing
+	capital = 514 # Loptous's landing
 	
 	title = "BISHOP"
 	title_female = "BISHOP"
@@ -174,11 +174,11 @@ d_loptyr = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-e_loptyr = {
+e_loptous = {
 	color={ 50 50 50 }
 	color2={ 255 255 255 }
 	
-	capital = 514 # Loptyr's landing	
+	capital = 514 # Loptous's landing	
 	culture=grann
 	short_name = yes
 	#location_ruler_title = yes

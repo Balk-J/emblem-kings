@@ -1,0 +1,16 @@
+name = "1st Loptryian Crusade"
+
+casus_belli = {
+	actor = 1001 # Heim
+	recipient = 817 # Galle XVII
+	casus_belli = jugdral_crusade
+	date=632.1.1
+}
+632.1.1 = {
+	add_attacker = 1001
+	add_defender = 817
+}
+648.1.1 = {
+	rem_attacker = 1001
+	rem_defender = 817
+}

@@ -929,7 +929,7 @@
 	terrain=plains
 }
 187 = { 
-	title=c_murgleis
+	title=c_mulagir
 	max_settlements=3
 	terrain=plains
 }

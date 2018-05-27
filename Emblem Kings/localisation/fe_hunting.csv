@@ -1,21 +1,21 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 fe4_hunting.1.desc;I have given the order for a child hunt to be organized in [Root.Location.GetName]. All children between the ages of 7 and 13 will be gathered and brought to the priests, who will shape them into proper Loptyrians fit to stand among the next generation of nobles.;;;;;;;;;;;;;;x
 fe4_hunting.1.A;Or so they say.;;;;;;;;;;;;;x
-fe4_hunting.2.desc;The child hunt is over for now. Our standing with the church has improved, and Loptyr will surely reward us for our loyal service.;;;;;;;;;;;;;;x
-fe4_hunting.2.A;Praise Loptyr!;;;;;;;;;;;;;;x
+fe4_hunting.2.desc;The child hunt is over for now. Our standing with the church has improved, and Loptous will surely reward us for our loyal service.;;;;;;;;;;;;;;x
+fe4_hunting.2.A;Praise Loptous!;;;;;;;;;;;;;;x
 fe4_hunting.10.desc;Unfortunately, your present situation means that you will not be able to see your witch hunt to its conclusion.;;;;;;;;;;;;;x
 fe4_hunting.10.A;We will return later.;;;;;;;;;;;;;x
-fe4_hunting.12.desc;One of the inquisitors on your witch hunt has reported that they saw [From.GetTitledName] attempting to hide a strange mark on [From.GetHerHis] body. The priest believes it is the mark of Loptyr - proof that [From.GetFirstName] is an heir to the accursed bloodline.;;;;;;;;;;;;;x
+fe4_hunting.12.desc;One of the inquisitors on your witch hunt has reported that they saw [From.GetTitledName] attempting to hide a strange mark on [From.GetHerHis] body. The priest believes it is the mark of Loptous - proof that [From.GetFirstName] is an heir to the accursed bloodline.;;;;;;;;;;;;;x
 fe4_hunting.12.A;We must announce this at once!;;;;;;;;;;;;;x
 fe4_hunting.12.B;I will give [From.GetFirstName] the chance to buy my silence.;;;;;;;;;;;;;x
-fe4_hunting.12.C;Nonsense! [From.GetTitledFirstName] is no spawn of Loptyr.;;;;;;;;;;;;;x
-fe4_hunting.13.desc;[From.GetTitledName] told the whole court that you have the blood of Loptyr! [From.GetSheHeCap] must have found out during that witch hunt [From.GetSheHe] was holding. Your reputation is bound to suffer...;;;;;;;;;;;;;x
+fe4_hunting.12.C;Nonsense! [From.GetTitledFirstName] is no spawn of Loptous.;;;;;;;;;;;;;x
+fe4_hunting.13.desc;[From.GetTitledName] told the whole court that you have the blood of Loptous! [From.GetSheHeCap] must have found out during that witch hunt [From.GetSheHe] was holding. Your reputation is bound to suffer...;;;;;;;;;;;;;x
 fe4_hunting.13.A;That [GetRootFromInsult]!;;;;;;;;;;;;;x
-fe4_hunting.14.desc;[Root.GetTitledFirstName],\n\nIt has come to my attention that the foul blood of Loptyr runs in your veins. I am sure you would prefer that this fact remains a secret. I am willing to keep silent, for a price...\n\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
+fe4_hunting.14.desc;[Root.GetTitledFirstName],\n\nIt has come to my attention that the foul blood of Loptous runs in your veins. I am sure you would prefer that this fact remains a secret. I am willing to keep silent, for a price...\n\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
 fe4_hunting.14.A;I have no choice but to pay.;;;;;;;;;;;;;x
 fe4_hunting.14.B;You'll get nothing from me!;;;;;;;;;;;;;x
 fe4_hunting.15.desc;[Root.GetTitledFirstName],\n\nThough I curse your name, I will get you your gold. Just... remain silent about my ancestry. \n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
-fe4_hunting.16.desc;[Root.GetTitledFirstName],\n\nI do not understand how you could believe I am a descendant of Loptyr. I will thank you to keep such ridiculous falsehoods to yourself!\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
+fe4_hunting.16.desc;[Root.GetTitledFirstName],\n\nI do not understand how you could believe I am a descendant of Loptous. I will thank you to keep such ridiculous falsehoods to yourself!\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
 fe4_hunting.16.A;The entire court will hear of this!;;;;;;;;;;;;;x
 fe4_hunting.16.B;Could I be wrong about [From.GetHerHim]? I'll stay silent.;;;;;;;;;;;;;x
 fe4_hunting.17.desc;Your priests have discovered a nest of Loptyrians hiding in your very demesne! They have kept their rites hidden for the most part, until an inquisitor assigned to your witch hunt caught them performing a dark ceremony. ;;;;;;;;;;;;;x

@@ -637,8 +637,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_regalia_murgleis"
-		texturefile = "gfx/traits/regalia_murgleis.tga"
+		name = "GFX_trait_regalia_mulagir"
+		texturefile = "gfx/traits/regalia_mulagir.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -910,8 +910,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_major_loptyr"
-		texturefile = "gfx/traits/holy_blood_major_loptyr.tga"
+		name = "GFX_trait_holy_blood_major_loptous"
+		texturefile = "gfx/traits/holy_blood_major_loptous.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1001,8 +1001,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_holy_blood_minor_loptyr"
-		texturefile = "gfx/traits/holy_blood_minor_loptyr.tga"
+		name = "GFX_trait_holy_blood_minor_loptous"
+		texturefile = "gfx/traits/holy_blood_minor_loptous.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1057,8 +1057,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_possessed_loptyr"
-		texturefile = "gfx/traits/possessed_loptyr.tga"
+		name = "GFX_trait_possessed_loptous"
+		texturefile = "gfx/traits/possessed_loptous.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

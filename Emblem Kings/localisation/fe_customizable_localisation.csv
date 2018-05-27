@@ -15,13 +15,13 @@ GetHouseOfWorship_Draconic;temple;au temple;Tempel;;templo;;;;;;;;;x
 GetHouseOfWorship_Magic;temple;au temple;Tempel;;templo;;;;;;;;;x
 GetHouseOfWorship_Raider;temple;au temple;Tempel;;templo;;;;;;;;;x
 
-String_Loptyr;Loptyr;;;;;;;;;;;;;x
+String_Loptyr;Loptous;;;;;;;;;;;;;x
 String_dark_magic;dark magic;;;;;;;;;;;;;x
 String_dark_priestess;dark priestess;;;;;;;;;;;;;x
 String_dark_priest;dark priest;;;;;;;;;;;;;x
-String_Praise_Loptyr;Praise Loptyr;;;;;;;;;;;;;x
-String_Loptyr_icon;Loptyr icon;;;;;;;;;;;;;x
-String_Loptyrs_blessings;Loptyr's blessings;;;;;;;;;;;;;x
+String_Praise_Loptyr;Praise Loptous;;;;;;;;;;;;;x
+String_Loptyr_icon;Loptous icon;;;;;;;;;;;;;x
+String_Loptyrs_blessings;Loptous's blessings;;;;;;;;;;;;;x
 
 
 String_contemplation;contemplation;;;;;;;;;;;;;x
