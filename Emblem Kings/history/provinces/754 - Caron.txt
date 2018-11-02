@@ -1,0 +1,18 @@
+# 754 - Caron
+
+# County Title
+title = c_caron
+
+# Settlements
+max_settlements = 4
+
+b_caron = castle
+b_caron_2 = temple
+b_caron_3 = city
+b_gombert = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

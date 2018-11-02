@@ -1,0 +1,19 @@
+# 804 - Aoukar
+
+# County Title
+title = c_aoukar
+
+# Settlements
+max_settlements = 5
+
+b_aoukar = tribal
+b_aoukar_2 = temple
+#b_aoukar_3 = city
+#b_nefud = castle
+#b_kharan = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

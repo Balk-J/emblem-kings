@@ -1,0 +1,18 @@
+# 615 - Tethra
+
+# County Title
+title = c_tethra
+
+# Settlements
+max_settlements = 4
+
+b_tethra = tribal
+#b_tethra_2 = temple
+#b_tethra_3 = city
+b_orna = castle
+
+# Misc
+culture = rausten
+religion = valega
+
+# History

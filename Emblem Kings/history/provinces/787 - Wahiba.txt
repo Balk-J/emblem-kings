@@ -1,0 +1,17 @@
+# 787 - Wahiba
+
+# County Title
+title = c_wahiba
+
+# Settlements
+max_settlements = 3
+
+b_wahiba = castle
+b_wahiba_2 = temple
+b_wahiba_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

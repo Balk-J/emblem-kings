@@ -1,0 +1,17 @@
+# 694 - Condesa
+
+# County Title
+title = c_condesa
+
+# Settlements
+max_settlements = 3
+
+b_condesa = castle
+b_condesa_2 = temple
+b_condesa_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

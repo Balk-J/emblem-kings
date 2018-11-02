@@ -1,0 +1,16 @@
+# 855 - Aksu
+
+# County Title
+title = c_aksu
+
+# Settlements
+max_settlements = 3
+
+b_aksu = castle
+b_aksu_2 = temple
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

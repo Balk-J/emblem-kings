@@ -1,0 +1,17 @@
+# 630 - Tolinas
+
+# County Title
+title = c_tolinas
+
+# Settlements
+max_settlements = 3
+
+b_tolinas = castle
+b_tolinas_2 = temple
+b_tolinas_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

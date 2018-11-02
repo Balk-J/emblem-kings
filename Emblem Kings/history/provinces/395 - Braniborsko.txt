@@ -1,0 +1,27 @@
+# 395 - Braniborsko
+
+# County Title
+title = c_braniborsko
+
+# Settlements
+max_settlements = 4
+
+b_braniborsko = tribal
+b_braniborsko_2 = temple
+#b_braniborsko_3 = city
+#b_olesnica = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

@@ -1,0 +1,17 @@
+# 783 - Danakil
+
+# County Title
+title = c_danakil
+
+# Settlements
+max_settlements = 3
+
+b_danakil = castle
+b_danakil_2 = temple
+b_danakil_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

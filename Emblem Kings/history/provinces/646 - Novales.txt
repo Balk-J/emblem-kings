@@ -1,0 +1,18 @@
+# 646 - Novales
+
+# County Title
+title = c_novales
+
+# Settlements
+max_settlements = 4
+
+b_novales = castle
+b_novales_2 = temple
+b_novales_3 = city
+b_gurulles = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

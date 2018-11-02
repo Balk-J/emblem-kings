@@ -1,0 +1,17 @@
+# 666 - Barredo
+
+# County Title
+title = c_barredo
+
+# Settlements
+max_settlements = 3
+
+b_barredo = tribal
+#b_barredo_2 = temple
+#b_barredo_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

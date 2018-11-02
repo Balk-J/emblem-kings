@@ -1,0 +1,18 @@
+# 717 - Barrocas
+
+# County Title
+title = c_barrocas
+
+# Settlements
+max_settlements = 4
+
+b_barrocas = castle
+b_barrocas_2 = temple
+b_barrocas_3 = city
+#b_corujeira = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

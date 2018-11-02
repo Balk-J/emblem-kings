@@ -1,0 +1,17 @@
+# 780 - Teri
+
+# County Title
+title = c_teri
+
+# Settlements
+max_settlements = 3
+
+b_teri = castle
+b_teri_2 = temple
+b_teri_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

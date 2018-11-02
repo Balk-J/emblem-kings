@@ -1,0 +1,18 @@
+# 815 - Kenfig
+
+# County Title
+title = c_kenfig
+
+# Settlements
+max_settlements = 4
+
+b_kenfig = tribal
+#b_kenfig_2 = temple
+#b_kenfig_3 = city
+#b_larzac = temple
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

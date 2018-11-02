@@ -1,0 +1,17 @@
+# 643 - Noceda
+
+# County Title
+title = c_noceda
+
+# Settlements
+max_settlements = 3
+
+b_noceda = castle
+b_noceda_2 = temple
+b_noceda_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

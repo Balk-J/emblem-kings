@@ -1,0 +1,18 @@
+# 641 - Caldoveiro
+
+# County Title
+title = c_caldoveiro
+
+# Settlements
+max_settlements = 4
+
+b_caldoveiro = castle
+b_caldoveiro_2 = temple
+b_caldoveiro_3 = city
+#b_vistalegre = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 777 - Cranach
+
+# County Title
+title = c_cranach
+
+# Settlements
+max_settlements = 3
+
+b_cranach = tribal
+#b_cranach_2 = temple
+#b_cranach_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

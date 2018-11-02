@@ -1,0 +1,17 @@
+# 773 - Lark
+
+# County Title
+title = c_lark
+
+# Settlements
+max_settlements = 3
+
+b_lark = tribal
+b_lark_2 = temple
+b_lark_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

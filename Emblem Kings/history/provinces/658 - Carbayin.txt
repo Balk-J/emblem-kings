@@ -1,0 +1,18 @@
+# 658 - Carbayin
+
+# County Title
+title = c_carbayin
+
+# Settlements
+max_settlements = 4
+
+b_carbayin = castle
+b_carbayin_2 = temple
+b_carbayin_3 = city
+#b_panizal = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

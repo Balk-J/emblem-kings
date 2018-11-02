@@ -1,0 +1,18 @@
+# 758 - Bontemps
+
+# County Title
+title = c_bontemps
+
+# Settlements
+max_settlements = 4
+
+b_bontemps = castle
+b_bontemps_2 = temple
+b_bontemps_3 = city
+#b_busnois = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

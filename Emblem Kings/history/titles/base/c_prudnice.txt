@@ -1,0 +1,14 @@
+# c_prudnice > d_thove
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_thove
+	#holder = 0
+}
+440.1.1 = { 
+	liege = d_sailane
+}
+649.1.1={
+	liege = d_thove
+}

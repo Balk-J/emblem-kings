@@ -1,0 +1,17 @@
+# 675 - Ambas
+
+# County Title
+title = c_ambas
+
+# Settlements
+max_settlements = 3
+
+b_ambas = castle
+b_ambas_2 = temple
+b_ambas_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

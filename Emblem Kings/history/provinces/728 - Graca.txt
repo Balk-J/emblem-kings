@@ -1,0 +1,17 @@
+# 728 - Graca
+
+# County Title
+title = c_graca
+
+# Settlements
+max_settlements = 3
+
+b_graca = castle
+b_graca_2 = temple
+b_graca_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

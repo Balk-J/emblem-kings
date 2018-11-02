@@ -1,0 +1,17 @@
+# 722 - Arega
+
+# County Title
+title = c_arega
+
+# Settlements
+max_settlements = 3
+
+b_arega = castle
+b_arega_2 = temple
+b_arega_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

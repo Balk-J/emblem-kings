@@ -1,0 +1,8 @@
+# c_thar > d_calanshio
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_calanshio
+	#holder = 0
+}

@@ -1,0 +1,18 @@
+# 688 - Morana
+
+# County Title
+title = c_morana
+
+# Settlements
+max_settlements = 4
+
+b_morana = castle
+b_morana_2 = temple
+b_morana_3 = city
+#b_villapanada = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,19 @@
+# 748 - Lescot
+
+# County Title
+title = c_lescot
+
+# Settlements
+max_settlements = 5
+
+b_lescot = castle
+b_lescot_2 = temple
+b_lescot_3 = city
+b_mouton = city
+#b_fevin = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

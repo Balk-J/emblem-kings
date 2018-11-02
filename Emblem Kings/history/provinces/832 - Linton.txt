@@ -1,0 +1,18 @@
+# 832 - Linton
+
+# County Title
+title = c_linton
+
+# Settlements
+max_settlements = 4
+
+b_linton = castle
+b_linton_2 = temple
+b_linton_3 = city
+#b_inkersall = temple
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

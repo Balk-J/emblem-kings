@@ -1,0 +1,18 @@
+# 729 - Rolica
+
+# County Title
+title = c_rolica
+
+# Settlements
+max_settlements = 4
+
+b_rolica = castle
+b_rolica_2 = temple
+b_rolica_3 = city
+#b_touguio = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

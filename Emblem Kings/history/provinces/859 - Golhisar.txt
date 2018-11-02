@@ -1,0 +1,17 @@
+# 859 - Golhisar
+
+# County Title
+title = c_golhisar
+
+# Settlements
+max_settlements = 3
+
+b_golhisar = tribal
+#b_golhisar_2 = temple
+#b_golhisar_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

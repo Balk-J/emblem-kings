@@ -1,0 +1,18 @@
+# 614 - Elatha
+
+# County Title
+title = c_elatha
+
+# Settlements
+max_settlements = 4
+
+b_elatha = tribal
+#b_elatha_2 = temple
+#b_elatha_3 = city
+#b_eladha = temple
+
+# Misc
+culture = rausten
+religion = valega
+
+# History

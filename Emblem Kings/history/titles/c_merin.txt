@@ -1,0 +1,8 @@
+# c_merin > d_albul
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_albul
+	#holder = 0
+}

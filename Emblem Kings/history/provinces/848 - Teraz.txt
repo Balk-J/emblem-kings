@@ -1,0 +1,18 @@
+# 848 - Teraz
+
+# County Title
+title = c_teraz
+
+# Settlements
+max_settlements = 4
+
+b_teraz = castle
+b_teraz_2 = city
+b_teraz_3 = temple
+b_ulupinar = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

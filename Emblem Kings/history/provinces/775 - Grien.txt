@@ -1,0 +1,17 @@
+# 775 - Grien
+
+# County Title
+title = c_grien
+
+# Settlements
+max_settlements = 5
+
+b_grien = tribal
+b_grien_2 = temple
+#b_grien_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

@@ -1,0 +1,25 @@
+# 404 - Sosnowiec
+
+# County Title
+title = c_sosnowiec
+
+# Settlements
+max_settlements = 2
+
+b_sosnowiec = tribal
+#b_gliwice = temple
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

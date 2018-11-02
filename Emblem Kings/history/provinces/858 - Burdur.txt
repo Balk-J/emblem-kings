@@ -1,0 +1,17 @@
+# 858 - Burdur
+
+# County Title
+title = c_burdur
+
+# Settlements
+max_settlements = 3
+
+b_burdur = tribal
+#b_burdur_2 = temple
+#b_burdur_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

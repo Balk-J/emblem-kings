@@ -1,0 +1,17 @@
+# 742 - Maiorga
+
+# County Title
+title = c_maiorga
+
+# Settlements
+max_settlements = 3
+
+b_maiorga = castle
+b_maiorga_2 = temple
+b_maiorga_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

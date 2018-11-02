@@ -1,0 +1,16 @@
+# 861 - Gelendost
+
+# County Title
+title = c_gelendost
+
+# Settlements
+max_settlements = 2
+
+b_gelendost = tribal
+#b_gelendost_2 = temple
+
+# Misc
+culture = carcino
+religion = valega
+
+# History

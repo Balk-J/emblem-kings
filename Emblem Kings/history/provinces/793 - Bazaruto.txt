@@ -1,0 +1,17 @@
+# 793 - Bazaruto
+
+# County Title
+title = c_bazaruto
+
+# Settlements
+max_settlements = 3
+
+b_bazaruto = castle
+b_bazaruto_2 = temple
+b_bazaruto_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 731 - Pombal
+
+# County Title
+title = c_pombal
+
+# Settlements
+max_settlements = 4
+
+b_pombal = castle
+b_pombal_2 = temple
+b_pombal_3 = city
+b_pedreirinha = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

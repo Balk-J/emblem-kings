@@ -1,0 +1,19 @@
+# 772 - Ide
+
+# County Title
+title = c_ide
+
+# Settlements
+max_settlements = 5
+
+b_ide = tribal
+b_ide_2 = city
+b_ide_3 = city
+b_holbein = city
+#b_stetter = temple
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

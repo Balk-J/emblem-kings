@@ -1,0 +1,27 @@
+# 407 - Brynice
+
+# County Title
+title = c_brynice
+
+# Settlements
+max_settlements = 4
+
+b_brynice = tribal
+b_brynice_2 = temple
+#b_brynice_3 = city
+#b_nowa_ruda = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

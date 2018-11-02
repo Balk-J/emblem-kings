@@ -1,0 +1,17 @@
+# 674 - Seaza
+
+# County Title
+title = c_seaza
+
+# Settlements
+max_settlements = 3
+
+b_seaza = castle
+b_seaza_2 = temple
+b_seaza_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

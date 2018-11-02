@@ -1,0 +1,89 @@
+# Technology for all duchies - divide into separate files and change technology levels as appropriate.
+
+technology = {
+	titles = {
+		d_darkling_woods
+		d_nelaras
+		d_grado
+		d_pereda
+		d_tolinas
+		d_bercio
+		d_vigana
+		d_caldoveiro
+		d_zaalbul
+		d_albul
+		d_renvall
+		d_adlas
+		d_silva
+		d_taizel
+		d_ambas
+		d_rubiano
+		d_bethroen
+		d_castanedo
+		d_bayo
+		d_rigwald
+		d_frelia
+		d_outer_walles
+		d_walles
+		d_valni
+		d_leiria
+		d_batalha
+		d_mulan
+		d_nazare
+		d_bombarral
+		d_pombal
+		d_obidos
+		d_alcobaca
+		d_renais
+		d_lescot
+		d_bellange
+		d_caron
+		d_froment
+		d_aures
+		d_serafew
+		d_zaha
+		d_marmion
+		d_ide
+		d_borgo
+		d_jehanna
+		d_selima
+		d_rebiana
+		d_calanshio
+		d_lompoul
+		d_mourdi
+		d_hamill
+		d_narube
+		d_aoukar
+		d_lagdou
+		d_oursi
+		d_rausten
+		d_heanor
+		d_belper
+		d_staveley
+		d_melkaen
+		d_glossop
+		d_mimir
+		d_melkana
+		d_kiris
+		d_teraz
+		d_cirali
+		d_camyuva
+		d_pelyn
+		d_pokhara
+		d_baleal
+		d_nazonia
+		d_falibria
+	}
+
+	440 = {
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
+	}
+
+	3680 = {
+		military = 5.0
+		economy = 5.0
+		culture = 5.0
+	}
+}

@@ -1,0 +1,18 @@
+# 696 - Vidais
+
+# County Title
+title = c_vidais
+
+# Settlements
+max_settlements = 4
+
+b_vidais = castle
+b_vidais_2 = temple
+b_vidais_3 = city
+#b_meirinhas = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

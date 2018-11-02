@@ -1,0 +1,17 @@
+# 644 - Tronca
+
+# County Title
+title = c_tronca
+
+# Settlements
+max_settlements = 3
+
+b_tronca = castle
+b_tronca_2 = temple
+b_tronca_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

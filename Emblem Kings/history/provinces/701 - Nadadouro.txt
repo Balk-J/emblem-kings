@@ -1,0 +1,17 @@
+# 701 - Nadadouro
+
+# County Title
+title = c_nadadouro
+
+# Settlements
+max_settlements = 3
+
+b_nadadouro = tribal
+#b_nadadouro_2 = temple
+#b_nadadouro_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

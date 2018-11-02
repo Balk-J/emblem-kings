@@ -1,0 +1,18 @@
+# 792 - Lompoul
+
+# County Title
+title = c_lompoul
+
+# Settlements
+max_settlements = 4
+
+b_lompoul = castle
+b_lompoul_2 = temple
+b_lompoul_3 = city
+#b_katpana = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

@@ -1,0 +1,25 @@
+# 403 - Truso
+
+# County Title
+title = c_truso
+
+# Settlements
+max_settlements = 2
+
+b_truso = tribal
+b_lubliniec = temple
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

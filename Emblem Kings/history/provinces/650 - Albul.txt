@@ -1,0 +1,18 @@
+# 650 - Albul
+
+# County Title
+title = c_albul
+
+# Settlements
+max_settlements = 4
+
+b_albul = castle
+b_albul_2 = temple
+b_albul_3 = city
+b_garaba = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

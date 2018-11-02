@@ -1,0 +1,18 @@
+# 665 - Silva
+
+# County Title
+title = c_silva
+
+# Settlements
+max_settlements = 4
+
+b_silva = tribal
+b_silva_2 = temple
+#b_silva_3 = city
+#b_barreu = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

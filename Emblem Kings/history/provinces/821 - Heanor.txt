@@ -1,0 +1,18 @@
+# 821 - Heanor
+
+# County Title
+title = c_heanor
+
+# Settlements
+max_settlements = 4
+
+b_heanor = castle
+b_heanor_2 = city
+b_heanor_3 = temple
+#b_wardlow = castle
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

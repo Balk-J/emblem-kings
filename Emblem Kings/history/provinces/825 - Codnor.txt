@@ -1,0 +1,17 @@
+# 825 - Codnor
+
+# County Title
+title = c_codnor
+
+# Settlements
+max_settlements = 3
+
+b_codnor = castle
+b_codnor_2 = temple
+b_codnor_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

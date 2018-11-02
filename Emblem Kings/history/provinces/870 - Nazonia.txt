@@ -1,0 +1,19 @@
+# 870 - Nazonia
+
+# County Title
+title = c_nazonia
+
+# Settlements
+max_settlements = 5
+
+b_nazonia = castle
+b_nazonia_2 = city
+b_nazonia_3 = temple
+#b_nazgulia = castle
+#b_neanica = castle
+
+# Misc
+culture = grado
+religion = valega
+
+# History

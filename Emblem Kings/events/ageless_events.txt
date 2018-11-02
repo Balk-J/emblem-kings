@@ -159,7 +159,7 @@ character_event = {
 		NOT = { trait = war_dragon }
 		NOT = { has_character_modifier = immortal_from_quintessence }
 		OR = { 
-			age = 1000
+			age = 2000
 			OR = {
 				trait = stressed
 				trait = depressed

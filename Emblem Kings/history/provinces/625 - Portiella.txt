@@ -1,0 +1,20 @@
+# 625 - Portiella
+
+# County Title
+title = c_portiella
+
+# Settlements
+max_settlements = 6
+
+b_portiella = castle
+b_portiella_2 = temple
+b_portiella_3 = city
+b_pedrouco = city
+#b_terrero = castle
+#b_foyaca = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 655 - Pelayo
+
+# County Title
+title = c_pelayo
+
+# Settlements
+max_settlements = 4
+
+b_pelayo = castle
+b_pelayo_2 = temple
+b_pelayo_3 = city
+#b_rozadas = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

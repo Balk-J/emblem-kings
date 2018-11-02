@@ -1,0 +1,18 @@
+# 760 - Colombe
+
+# County Title
+title = c_colombe
+
+# Settlements
+max_settlements = 4
+
+b_colombe = castle
+b_colombe_2 = temple
+b_colombe_3 = city
+b_crequilon = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

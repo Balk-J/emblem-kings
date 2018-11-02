@@ -1,0 +1,18 @@
+# 713 - Osseira
+
+# County Title
+title = c_osseira
+
+# Settlements
+max_settlements = 4
+
+b_osseira = castle
+b_osseira_2 = temple
+b_osseira_3 = city
+#b_barrio = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

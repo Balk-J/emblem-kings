@@ -1,0 +1,17 @@
+# 709 - Portela
+
+# County Title
+title = c_portela
+
+# Settlements
+max_settlements = 3
+
+b_portela = castle
+b_portela_2 = temple
+b_portela_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

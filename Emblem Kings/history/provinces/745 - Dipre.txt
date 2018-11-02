@@ -1,0 +1,17 @@
+# 745 - Dipre
+
+# County Title
+title = c_dipre
+
+# Settlements
+max_settlements = 3
+
+b_dipre = castle
+b_dipre_2 = temple
+b_dipre_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

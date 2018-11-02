@@ -1,0 +1,17 @@
+# 673 - Villandas
+
+# County Title
+title = c_villandas
+
+# Settlements
+max_settlements = 3
+
+b_villandas = castle
+b_villandas_2 = temple
+b_villandas_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

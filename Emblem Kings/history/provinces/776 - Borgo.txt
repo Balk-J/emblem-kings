@@ -1,0 +1,18 @@
+# 776 - Borgo
+
+# County Title
+title = c_borgo
+
+# Settlements
+max_settlements = 4
+
+b_borgo = tribal
+#b_borgo_2 = temple
+#b_borgo_3 = city
+#b_burgkmair = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

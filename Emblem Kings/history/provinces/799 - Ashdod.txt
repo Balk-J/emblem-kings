@@ -1,0 +1,17 @@
+# 799 - Ashdod
+
+# County Title
+title = c_ashdod
+
+# Settlements
+max_settlements = 3
+
+b_ashdod = tribal
+#b_ashdod_2 = temple
+#b_ashdod_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

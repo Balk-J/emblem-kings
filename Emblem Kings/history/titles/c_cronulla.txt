@@ -1,0 +1,8 @@
+# c_cronulla > d_aoukar
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_aoukar
+	#holder = 0
+}

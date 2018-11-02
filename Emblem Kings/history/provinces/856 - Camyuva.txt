@@ -1,0 +1,17 @@
+# 856 - Camyuva
+
+# County Title
+title = c_camyuva
+
+# Settlements
+max_settlements = 2
+
+b_camyuva = tribal
+b_camyuva_2 = temple
+#b_camyuva_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

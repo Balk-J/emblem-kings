@@ -1,0 +1,17 @@
+# 798 - Texel
+
+# County Title
+title = c_texel
+
+# Settlements
+max_settlements = 3
+
+b_texel = tribal
+#b_texel_2 = temple
+#b_texel_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

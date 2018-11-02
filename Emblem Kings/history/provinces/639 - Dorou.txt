@@ -1,0 +1,16 @@
+# 639 - Dorou
+
+# County Title
+title = c_dorou
+
+# Settlements
+max_settlements = 2
+
+b_dorou = castle
+b_dorou_2 = temple
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 813 - Pilat
+
+# County Title
+title = c_pilat
+
+# Settlements
+max_settlements = 3
+
+b_pilat = tribal
+#b_pilat_2 = temple
+#b_pilat_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

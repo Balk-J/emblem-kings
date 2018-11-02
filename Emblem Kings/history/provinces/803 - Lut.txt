@@ -1,0 +1,18 @@
+# 803 - Lut
+
+# County Title
+title = c_lut
+
+# Settlements
+max_settlements = 4
+
+b_lut = castle
+b_lut_2 = temple
+b_lut_3 = city
+#b_lop = temple
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

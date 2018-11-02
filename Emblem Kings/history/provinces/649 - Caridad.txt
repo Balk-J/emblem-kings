@@ -1,0 +1,17 @@
+# 649 - Caridad
+
+# County Title
+title = c_caridad
+
+# Settlements
+max_settlements = 3
+
+b_caridad = castle
+b_caridad_2 = temple
+b_caridad_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

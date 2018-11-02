@@ -1,0 +1,18 @@
+# 766 - Scorel
+
+# County Title
+title = c_scorel
+
+# Settlements
+max_settlements = 4
+
+b_scorel = castle
+b_scorel_2 = temple
+b_scorel_3 = city
+b_rogier = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

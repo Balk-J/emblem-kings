@@ -1754,7 +1754,7 @@
 	}	
 	# Lewyn finds her and takes her to a hideaway in Silesse.
 	771.1.1 = {
-		employer=2009 # c_grodkow 
+		employer=2009 # c_sasko 
 	}
 	773.01.01={
 		add_trait="class_monk"

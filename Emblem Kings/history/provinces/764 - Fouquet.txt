@@ -1,0 +1,17 @@
+# 764 - Fouquet
+
+# County Title
+title = c_fouquet
+
+# Settlements
+max_settlements = 3
+
+b_fouquet = castle
+b_fouquet_2 = temple
+b_fouquet_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 711 - Leiria
+
+# County Title
+title = c_leiria
+
+# Settlements
+max_settlements = 4
+
+b_leiria = castle
+b_leiria_2 = temple
+b_leiria_3 = city
+#b_lourical = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 868 - Vermoil
+
+# County Title
+title = c_vermoil
+
+# Settlements
+max_settlements = 3
+
+b_vermoil = tribal
+#b_vermoil_2 = temple
+#b_vermoil_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 757 - Clouet
+
+# County Title
+title = c_clouet
+
+# Settlements
+max_settlements = 4
+
+b_clouet = castle
+b_clouet_2 = temple
+b_clouet_3 = city
+#b_machaut = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

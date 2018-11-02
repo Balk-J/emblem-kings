@@ -1,0 +1,19 @@
+# 833 - Melkaen
+
+# County Title
+title = c_melkaen
+
+# Settlements
+max_settlements = 5
+
+b_melkaen = castle
+b_melkaen_2 = temple
+b_melkaen_3 = city
+#b_aldwark = castle
+#b_egstow = temple
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

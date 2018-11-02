@@ -1,0 +1,17 @@
+# 746 - Goujon
+
+# County Title
+title = c_goujon
+
+# Settlements
+max_settlements = 3
+
+b_goujon = castle
+b_goujon_2 = temple
+b_goujon_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

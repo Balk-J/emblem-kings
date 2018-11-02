@@ -1,0 +1,17 @@
+# 702 - Cercas
+
+# County Title
+title = c_cercas
+
+# Settlements
+max_settlements = 3
+
+b_cercas = tribal
+#b_cercas_2 = temple
+#b_cercas_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

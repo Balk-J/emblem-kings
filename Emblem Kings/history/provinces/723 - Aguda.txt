@@ -1,0 +1,18 @@
+# 723 - Aguda
+
+# County Title
+title = c_aguda
+
+# Settlements
+max_settlements = 4
+
+b_aguda = castle
+b_aguda_2 = temple
+b_aguda_3 = city
+#b_carvalhos = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

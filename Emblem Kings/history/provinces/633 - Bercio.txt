@@ -1,0 +1,18 @@
+# 633 - Bercio
+
+# County Title
+title = c_bercio
+
+# Settlements
+max_settlements = 4
+
+b_bercio = castle
+b_bercio_2 = temple
+b_bercio_3 = city
+#b_cabrunana = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

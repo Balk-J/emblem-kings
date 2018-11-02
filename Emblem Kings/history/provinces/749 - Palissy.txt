@@ -1,0 +1,18 @@
+# 749 - Palissy
+
+# County Title
+title = c_palissy
+
+# Settlements
+max_settlements = 4
+
+b_palissy = castle
+b_palissy_2 = temple
+b_palissy_3 = city
+#b_verdelot = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

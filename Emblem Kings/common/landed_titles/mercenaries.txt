@@ -441,7 +441,7 @@ d_heartless_band = {
 	color={ 220 60 60 }
 	color2={ 255 255 255 }
 
-	capital = 399 # Glogow
+	capital = 399 # Goplo
 	
 	# Hire Trigger
 	allow = {

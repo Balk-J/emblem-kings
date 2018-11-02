@@ -1,0 +1,18 @@
+# 863 - Pokhara
+
+# County Title
+title = c_pokhara
+
+# Settlements
+max_settlements = 4
+
+b_pokhara = tribal
+b_pokhara_2 = temple
+#b_pokhara_3 = city
+#b_sutculer = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

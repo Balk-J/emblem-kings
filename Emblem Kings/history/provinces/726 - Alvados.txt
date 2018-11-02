@@ -1,0 +1,16 @@
+# 726 - Alvados
+
+# County Title
+title = c_alvados
+
+# Settlements
+max_settlements = 2
+
+b_alvados = castle
+b_alvados_2 = temple
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

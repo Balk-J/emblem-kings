@@ -1,0 +1,17 @@
+# 647 - Fornos
+
+# County Title
+title = c_fornos
+
+# Settlements
+max_settlements = 3
+
+b_fornos = castle
+b_fornos_2 = temple
+b_fornos_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

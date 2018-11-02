@@ -1,0 +1,18 @@
+# 627 - Moutas
+
+# County Title
+title = c_moutas
+
+# Settlements
+max_settlements = 4
+
+b_moutas = castle
+b_moutas_2 = temple
+b_moutas_3 = city
+#b_picaroso = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

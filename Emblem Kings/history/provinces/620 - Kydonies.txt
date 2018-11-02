@@ -1,0 +1,16 @@
+# 620 - Kydonies
+
+# County Title
+title = c_kydonies
+
+# Settlements
+max_settlements = 2
+
+b_kydonies = tribal
+b_kydonies_2 = temple
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

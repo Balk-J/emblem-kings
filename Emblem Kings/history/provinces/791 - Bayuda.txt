@@ -1,0 +1,18 @@
+# 791 - Bayuda
+
+# County Title
+title = c_bayuda
+
+# Settlements
+max_settlements = 4
+
+b_bayuda = castle
+b_bayuda_2 = temple
+b_bayuda_3 = city
+#b_chalbi = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

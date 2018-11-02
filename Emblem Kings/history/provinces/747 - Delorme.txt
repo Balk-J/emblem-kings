@@ -1,0 +1,18 @@
+# 747 - Delorme
+
+# County Title
+title = c_delorme
+
+# Settlements
+max_settlements = 4
+
+b_delorme = castle
+b_delorme_2 = temple
+b_delorme_3 = city
+#b_compere = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

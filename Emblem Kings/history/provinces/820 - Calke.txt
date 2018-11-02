@@ -1,0 +1,18 @@
+# 820 - Calke
+
+# County Title
+title = c_calke
+
+# Settlements
+max_settlements = 4
+
+b_calke = castle
+b_calke_2 = city
+b_calke_3 = temple
+b_yeaveley = castle
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

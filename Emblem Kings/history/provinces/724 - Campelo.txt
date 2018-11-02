@@ -1,0 +1,17 @@
+# 724 - Campelo
+
+# County Title
+title = c_campelo
+
+# Settlements
+max_settlements = 3
+
+b_campelo = castle
+b_campelo_2 = temple
+b_campelo_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

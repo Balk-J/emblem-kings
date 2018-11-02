@@ -38,7 +38,7 @@
 1026={ # for Annand and Erinys' famly
 	can_appear=no
 	used_for_random=no
-	name="Olawa"
+	name="Braniborsko"
 	culture="silessian"
 	coat_of_arms = {
 		religion="church_of_edda"
@@ -135,7 +135,7 @@
 2181={
 	can_appear=no
 	used_for_random=no
-	name="Legnica"
+	name="Roztoka"
 	culture="silessian"
 	religion="church_of_edda"  
 	coat_of_arms = {
@@ -155,7 +155,7 @@
 2182={
 	can_appear=no
 	used_for_random=no
-	name="of Swidnica"
+	name="of Slega"
 	culture="silessian"
 	religion="church_of_edda"  
 	coat_of_arms = {
@@ -175,7 +175,7 @@
 2183={
 	can_appear=no
 	used_for_random=no
-	name="of Gora"
+	name="of Rawa"
 	culture="silessian"
 	religion="church_of_edda"  
 	coat_of_arms = {
@@ -193,7 +193,7 @@
 }
 # For Cuvuli
 2184={
-	name="Kozle"
+	name="Truso"
 	culture="silessian"
 	religion="church_of_edda"
 }
@@ -207,7 +207,7 @@
 2186={
 	can_appear=no
 	used_for_random=no
-	name="of Glogow"
+	name="of Goplo"
 	culture="silessian"
 	religion="church_of_edda"  
 	coat_of_arms = {

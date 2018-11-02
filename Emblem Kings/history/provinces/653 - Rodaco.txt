@@ -1,0 +1,17 @@
+# 653 - Rodaco
+
+# County Title
+title = c_rodaco
+
+# Settlements
+max_settlements = 3
+
+b_rodaco = castle
+b_rodaco_2 = temple
+b_rodaco_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 800 - Narube
+
+# County Title
+title = c_narube
+
+# Settlements
+max_settlements = 4
+
+b_narube = castle
+b_narube_2 = temple
+b_narube_3 = city
+b_moreton = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

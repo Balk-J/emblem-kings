@@ -1,0 +1,17 @@
+# 864 - Isparta
+
+# County Title
+title = c_isparta
+
+# Settlements
+max_settlements = 3
+
+b_isparta = tribal
+#b_isparta_2 = temple
+#b_isparta_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

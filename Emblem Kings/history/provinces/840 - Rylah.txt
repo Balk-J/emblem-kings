@@ -1,0 +1,18 @@
+# 840 - Rylah
+
+# County Title
+title = c_rylah
+
+# Settlements
+max_settlements = 4
+
+b_rylah = castle
+b_rylah_2 = temple
+b_rylah_3 = city
+#b_renishaw = castle
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

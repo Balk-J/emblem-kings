@@ -1,0 +1,19 @@
+# 669 - Taizel
+
+# County Title
+title = c_taizel
+
+# Settlements
+max_settlements = 5
+
+b_taizel = castle
+b_taizel_2 = temple
+b_taizel_3 = city
+b_acebedo = city
+#b_linar = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

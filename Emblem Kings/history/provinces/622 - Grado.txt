@@ -1,0 +1,20 @@
+# 622 - Grado
+
+# County Title
+title = c_grado
+
+# Settlements
+max_settlements = 6
+
+b_grado_keep = castle
+b_grado = temple
+b_grado_2 = city
+b_grau = castle
+b_cimagrau = castle
+b_rozallana = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

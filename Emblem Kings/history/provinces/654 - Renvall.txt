@@ -1,0 +1,16 @@
+# 654 - Renvall
+
+# County Title
+title = c_renvall
+
+# Settlements
+max_settlements = 2
+
+b_castle_renvall = castle
+b_renvall = temple
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

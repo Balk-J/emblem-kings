@@ -1,0 +1,27 @@
+# 406 - Rawa
+
+# County Title
+title = c_rawa
+
+# Settlements
+max_settlements = 4
+
+b_rawa = tribal
+b_rawa_2 = temple
+#b_rawa_3 = city
+#b_wolow = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

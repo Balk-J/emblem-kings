@@ -1,0 +1,26 @@
+# 410 - Sasko
+
+# County Title
+title = c_sasko
+
+# Settlements
+max_settlements = 3
+
+b_sasko = tribal
+#b_sasko_2 = temple
+#b_sasko_3 = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

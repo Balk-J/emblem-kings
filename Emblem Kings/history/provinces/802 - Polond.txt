@@ -1,0 +1,18 @@
+# 802 - Polond
+
+# County Title
+title = c_polond
+
+# Settlements
+max_settlements = 4
+
+b_polond = castle
+b_polond_2 = temple
+b_polond_3 = city
+#b_dahna = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

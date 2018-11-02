@@ -1,0 +1,18 @@
+# 810 - Curonian
+
+# County Title
+title = c_curonian
+
+# Settlements
+max_settlements = 4
+
+b_curonian = tribal
+#b_curonian_2 = temple
+#b_curonian_3 = city
+#b_oltenia = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

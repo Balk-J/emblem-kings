@@ -1,0 +1,19 @@
+# 681 - Bethroen
+
+# County Title
+title = c_bethroen
+
+# Settlements
+max_settlements = 5
+
+b_bethroen = castle
+b_bethroen_2 = temple
+b_bethroen_3 = city
+#b_molenes = castle
+#b_villaldin = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

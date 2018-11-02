@@ -1,0 +1,18 @@
+# 843 - Youlgreave
+
+# County Title
+title = c_youlgreave
+
+# Settlements
+max_settlements = 4
+
+b_youlgreave = castle
+b_youlgreave_2 = temple
+b_youlgreave_3 = city
+#b_yeldersley = temple
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 744 - Pilon
+
+# County Title
+title = c_pilon
+
+# Settlements
+max_settlements = 4
+
+b_pilon = castle
+b_pilon_2 = temple
+b_pilon_3 = city
+#b_busrois = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

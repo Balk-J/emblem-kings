@@ -1,0 +1,18 @@
+# 812 - Arcachon
+
+# County Title
+title = c_arcachon
+
+# Settlements
+max_settlements = 4
+
+b_arcachon = tribal
+#b_arcachon_2 = temple
+#b_arcachon_3 = city
+#b_accona = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

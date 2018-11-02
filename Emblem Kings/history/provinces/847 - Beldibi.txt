@@ -1,0 +1,17 @@
+# 847 - Beldibi
+
+# County Title
+title = c_beldibi
+
+# Settlements
+max_settlements = 3
+
+b_beldibi = castle
+b_beldibi_2 = temple
+b_beldibi_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

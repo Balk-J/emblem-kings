@@ -1,0 +1,18 @@
+# 715 - Batalha
+
+# County Title
+title = c_batalha
+
+# Settlements
+max_settlements = 4
+
+b_batalha = castle
+b_batalha_2 = temple
+b_batalha_3 = city
+b_pedreiras = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

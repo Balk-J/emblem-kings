@@ -1,0 +1,18 @@
+# 816 - Margam
+
+# County Title
+title = c_margam
+
+# Settlements
+max_settlements = 4
+
+b_margam = tribal
+#b_margam_2 = temple
+#b_margam_3 = city
+#b_margo = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

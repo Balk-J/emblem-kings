@@ -1,0 +1,27 @@
+# 409 - Lower Jawor
+
+# County Title
+title = c_lower_jawor
+
+# Settlements
+max_settlements = 4
+
+b_luban = tribal
+#b_luban_2 = temple
+#b_luban_3 = city
+#b_zielona_gora = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

@@ -1,0 +1,16 @@
+# 640 - Veiga
+
+# County Title
+title = c_veiga
+
+# Settlements
+max_settlements = 2
+
+b_veiga = castle
+b_veiga_2 = temple
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

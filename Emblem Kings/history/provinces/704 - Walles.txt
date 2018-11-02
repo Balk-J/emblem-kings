@@ -1,0 +1,18 @@
+# 704 - Walles
+
+# County Title
+title = c_walles
+
+# Settlements
+max_settlements = 4
+
+b_walles = tribal
+b_walles_2 = temple
+#b_walles_3 = city
+#b_casinhas = temple
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

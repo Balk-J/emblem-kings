@@ -1,0 +1,17 @@
+# 785 - Ubari
+
+# County Title
+title = c_ubari
+
+# Settlements
+max_settlements = 3
+
+b_ubari = castle
+b_ubari_2 = temple
+b_ubari_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

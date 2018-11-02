@@ -1,0 +1,17 @@
+# 727 - Alcaria
+
+# County Title
+title = c_alcaria
+
+# Settlements
+max_settlements = 3
+
+b_alcaria = castle
+b_alcaria_2 = temple
+b_alcaria_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

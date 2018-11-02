@@ -1,0 +1,17 @@
+# 874 - Falibria
+
+# County Title
+title = c_falibria
+
+# Settlements
+max_settlements = 3
+
+b_falibria = tribal
+b_falibria_2 = temple
+#b_falibria_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

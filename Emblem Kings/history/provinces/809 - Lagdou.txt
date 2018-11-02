@@ -1,0 +1,21 @@
+# 809 - Lagdou
+
+# County Title
+title = c_lagdou
+
+# Settlements
+max_settlements = 7
+
+b_lagdou = castle
+b_lagdou_2 = temple
+b_lagdou_3 = city
+#b_lagdou_gardens = temple
+#b_lagdou_halls = castle
+#b_lagdou_aquifer = castle
+#b_lagdou_depths = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 829 - Monyash
+
+# County Title
+title = c_monyash
+
+# Settlements
+max_settlements = 4
+
+b_monyash = castle
+b_monyash_2 = temple
+b_monyash_3 = city
+#b_alkmonton = temple
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

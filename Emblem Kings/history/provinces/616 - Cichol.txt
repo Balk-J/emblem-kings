@@ -1,0 +1,17 @@
+# 616 - Cichol
+
+# County Title
+title = c_cichol
+
+# Settlements
+max_settlements = 3
+
+b_cichol = tribal
+#b_cichol_2 = temple
+#b_cichol_3 = city
+
+# Misc
+culture = rausten
+religion = valega
+
+# History

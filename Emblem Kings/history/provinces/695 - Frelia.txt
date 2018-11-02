@@ -1,0 +1,20 @@
+# 695 - Frelia
+
+# County Title
+title = c_frelia
+
+# Settlements
+max_settlements = 6
+
+b_castle_frelia = castle
+b_frelia = temple
+b_frelia_2 = city
+b_redinha = castle
+b_usseira = city
+#b_almagreira = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

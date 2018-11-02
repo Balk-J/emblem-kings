@@ -1,0 +1,17 @@
+# 834 - Hulland
+
+# County Title
+title = c_hulland
+
+# Settlements
+max_settlements = 3
+
+b_hulland = castle
+b_hulland_2 = temple
+b_hulland_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

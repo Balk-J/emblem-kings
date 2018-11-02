@@ -1,0 +1,17 @@
+# 683 - Entelvalle
+
+# County Title
+title = c_entelvalle
+
+# Settlements
+max_settlements = 3
+
+b_entelvalle = castle
+b_entelvalle_2 = temple
+b_entelvalle_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

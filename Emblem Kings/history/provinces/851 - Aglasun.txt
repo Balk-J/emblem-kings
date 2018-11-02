@@ -1,0 +1,17 @@
+# 851 - Aglasun
+
+# County Title
+title = c_aglasun
+
+# Settlements
+max_settlements = 3
+
+b_aglasun = castle
+b_aglasun_2 = temple
+b_aglasun_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

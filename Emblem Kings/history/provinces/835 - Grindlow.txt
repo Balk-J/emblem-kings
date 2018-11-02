@@ -1,0 +1,18 @@
+# 835 - Grindlow
+
+# County Title
+title = c_grindlow
+
+# Settlements
+max_settlements = 4
+
+b_grindlow = castle
+b_grindlow_2 = temple
+b_grindlow_3 = city
+#b_fernilee = temple
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

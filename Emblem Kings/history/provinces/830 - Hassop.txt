@@ -1,0 +1,17 @@
+# 830 - Hassop
+
+# County Title
+title = c_hassop
+
+# Settlements
+max_settlements = 3
+
+b_hassop = castle
+b_hassop_2 = temple
+b_hassop_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

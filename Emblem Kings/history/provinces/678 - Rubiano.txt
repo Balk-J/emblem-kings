@@ -1,0 +1,18 @@
+# 678 - Rubiano
+
+# County Title
+title = c_rubiano
+
+# Settlements
+max_settlements = 4
+
+b_rubiano = castle
+b_rubiano_2 = temple
+b_rubiano_3 = city
+#b_campamojada = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

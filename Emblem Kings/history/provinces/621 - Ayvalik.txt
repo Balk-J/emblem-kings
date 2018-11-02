@@ -1,0 +1,17 @@
+# 621 - Ayvalik
+
+# County Title
+title = c_ayvalik
+
+# Settlements
+max_settlements = 3
+
+b_ayvalik = tribal
+#b_ayvalik_2 = temple
+#b_ayvalik_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

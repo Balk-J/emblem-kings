@@ -1,0 +1,17 @@
+# 795 - Mourdi
+
+# County Title
+title = c_mourdi
+
+# Settlements
+max_settlements = 3
+
+b_mourdi = castle
+b_mourdi_2 = temple
+b_mourdi_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

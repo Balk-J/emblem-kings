@@ -1,0 +1,17 @@
+# 750 - Quarton
+
+# County Title
+title = c_quarton
+
+# Settlements
+max_settlements = 3
+
+b_quarton = castle
+b_quarton_2 = temple
+b_quarton_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

@@ -1,0 +1,19 @@
+# 656 - Prioto
+
+# County Title
+title = c_prioto
+
+# Settlements
+max_settlements = 5
+
+b_prioto = castle
+b_prioto_2 = temple
+b_prioto_3 = city
+#b_peridiello = castle
+#b_formiguera = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

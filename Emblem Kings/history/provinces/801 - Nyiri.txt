@@ -1,0 +1,17 @@
+# 801 - Nyiri
+
+# County Title
+title = c_nyiri
+
+# Settlements
+max_settlements = 3
+
+b_nyiri = castle
+b_nyiri_2 = temple
+b_nyiri_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

@@ -1,0 +1,19 @@
+# 692 - Rigwald
+
+# County Title
+title = c_rigwald
+
+# Settlements
+max_settlements = 5
+
+b_fort_rigwald = castle
+b_rigwald = temple
+b_rigwald_2 = city
+b_barzana = castle
+#b_sienra = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

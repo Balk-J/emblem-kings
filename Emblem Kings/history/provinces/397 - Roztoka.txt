@@ -1,0 +1,27 @@
+# 397 - Roztoka
+
+# County Title
+title = c_roztoka
+
+# Settlements
+max_settlements = 4
+
+b_roztoka = tribal
+b_roztoka_2 = temple
+#b_roztoka_3 = city
+#b_bolkow = temple
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

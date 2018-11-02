@@ -1,0 +1,18 @@
+# 659 - Adlas
+
+# County Title
+title = c_adlas
+
+# Settlements
+max_settlements = 4
+
+b_adlas = tribal
+b_adlas_2 = city
+#b_adlas_3 = temple
+#b_arellanes = temple
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

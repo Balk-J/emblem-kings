@@ -1,0 +1,18 @@
+# 738 - Alcobaca
+
+# County Title
+title = c_alcobaca
+
+# Settlements
+max_settlements = 4
+
+b_alcobaca = castle
+b_alcobaca_2 = temple
+b_alcobaca_3 = city
+b_abrunheira = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

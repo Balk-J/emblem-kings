@@ -1,0 +1,17 @@
+# 645 - Alvare
+
+# County Title
+title = c_alvare
+
+# Settlements
+max_settlements = 3
+
+b_alvare = castle
+b_alvare_2 = temple
+b_alvare_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

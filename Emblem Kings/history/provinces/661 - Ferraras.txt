@@ -1,0 +1,17 @@
+# 661 - Ferraras
+
+# County Title
+title = c_ferraras
+
+# Settlements
+max_settlements = 3
+
+b_ferraras = tribal
+#b_ferraras_2 = temple
+#b_ferraras_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

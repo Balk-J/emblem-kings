@@ -1,0 +1,18 @@
+# 725 - Bombarral
+
+# County Title
+title = c_bombarral
+
+# Settlements
+max_settlements = 4
+
+b_bombarral = castle
+b_bombarral_2 = temple
+b_bombarral_3 = city
+#b_carvalhal = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 752 - Quesnel
+
+# County Title
+title = c_quesnel
+
+# Settlements
+max_settlements = 3
+
+b_quesnel = castle
+b_quesnel_2 = temple
+b_quesnel_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

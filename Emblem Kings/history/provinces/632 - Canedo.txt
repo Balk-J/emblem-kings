@@ -1,0 +1,18 @@
+# 632 - Canedo
+
+# County Title
+title = c_canedo
+
+# Settlements
+max_settlements = 4
+
+b_canedo = castle
+b_canedo_2 = temple
+b_canedo_3 = city
+#b_cabana = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

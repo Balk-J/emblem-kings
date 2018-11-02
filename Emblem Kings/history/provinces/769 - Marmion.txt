@@ -1,0 +1,18 @@
+# 769 - Marmion
+
+# County Title
+title = c_marmion
+
+# Settlements
+max_settlements = 4
+
+b_marmion = castle
+b_marmion_2 = temple
+b_marmion_3 = city
+#b_tallis = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

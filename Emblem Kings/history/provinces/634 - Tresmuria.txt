@@ -1,0 +1,18 @@
+# 634 - Tresmuria
+
+# County Title
+title = c_tresmuria
+
+# Settlements
+max_settlements = 4
+
+b_tresmuria = castle
+b_tresmuria_2 = temple
+b_tresmuria_3 = city
+#b_somines = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

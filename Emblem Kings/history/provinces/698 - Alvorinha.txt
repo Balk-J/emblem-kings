@@ -1,0 +1,17 @@
+# 698 - Alvorinha
+
+# County Title
+title = c_alvorinha
+
+# Settlements
+max_settlements = 3
+
+b_alvorinha = castle
+b_alvorinha_2 = temple
+b_alvorinha_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 706 - Relvas
+
+# County Title
+title = c_relvas
+
+# Settlements
+max_settlements = 4
+
+b_relvas = tribal
+#b_relvas_2 = temple
+#b_relvas_3 = city
+#b_gaeiras = temple
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

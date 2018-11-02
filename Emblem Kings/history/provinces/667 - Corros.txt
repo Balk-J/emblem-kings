@@ -1,0 +1,17 @@
+# 667 - Corros
+
+# County Title
+title = c_corros
+
+# Settlements
+max_settlements = 3
+
+b_corros = tribal
+#b_corros_2 = temple
+#b_corros_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

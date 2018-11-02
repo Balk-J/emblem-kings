@@ -1,0 +1,17 @@
+# 716 - Eiras
+
+# County Title
+title = c_eiras
+
+# Settlements
+max_settlements = 3
+
+b_eiras = castle
+b_eiras_2 = temple
+b_eiras_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

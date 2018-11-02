@@ -1,0 +1,18 @@
+# 686 - Bravuco
+
+# County Title
+title = c_bravuco
+
+# Settlements
+max_settlements = 4
+
+b_bravuco = castle
+b_bravuco_2 = temple
+b_bravuco_3 = city
+#b_villamarin = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

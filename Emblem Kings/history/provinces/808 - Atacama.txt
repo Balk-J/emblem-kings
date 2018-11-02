@@ -1,0 +1,18 @@
+# 808 - Atacama
+
+# County Title
+title = c_atacama
+
+# Settlements
+max_settlements = 4
+
+b_atacama = tribal
+#b_atacama_2 = temple
+#b_atacama_3 = city
+#b_kavir = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

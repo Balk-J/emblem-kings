@@ -1,0 +1,18 @@
+# 741 - Vimeiro
+
+# County Title
+title = c_vimeiro
+
+# Settlements
+max_settlements = 4
+
+b_vimeiro = castle
+b_vimeiro_2 = temple
+b_vimeiro_3 = city
+b_marinha = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

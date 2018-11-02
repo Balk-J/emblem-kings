@@ -1,0 +1,21 @@
+# 797 - Hamill
+
+# County Title
+title = c_hamill
+
+# Settlements
+max_settlements = 4
+
+b_hamill = tribal
+#b_hamill_2 = temple
+#b_hamill_3 = city
+#b_fisher = city
+#b_ford = castle
+#b_guinness = castle
+#b_williams = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 853 - Cirali
+
+# County Title
+title = c_cirali
+
+# Settlements
+max_settlements = 4
+
+b_cirali = castle
+b_cirali_2 = city
+b_cirali_3 = temple
+b_goynuk = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 736 - Vau
+
+# County Title
+title = c_vau
+
+# Settlements
+max_settlements = 3
+
+b_vau = castle
+b_vau_2 = temple
+b_vau_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

@@ -1,0 +1,19 @@
+# 743 - Renais
+
+# County Title
+title = c_renais
+
+# Settlements
+max_settlements = 5
+
+b_renais_castle = castle
+b_renais = temple
+b_renais_2 = city
+b_dufay = castle
+b_birchois = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

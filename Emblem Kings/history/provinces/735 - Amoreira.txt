@@ -1,0 +1,17 @@
+# 735 - Amoreira
+
+# County Title
+title = c_amoreira
+
+# Settlements
+max_settlements = 3
+
+b_amoreira = castle
+b_amoreira_2 = temple
+b_amoreira_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

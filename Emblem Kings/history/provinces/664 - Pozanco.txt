@@ -1,0 +1,17 @@
+# 664 - Pozanco
+
+# County Title
+title = c_pozanco
+
+# Settlements
+max_settlements = 3
+
+b_pozanco = tribal
+#b_pozanco_2 = temple
+#b_pozanco_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

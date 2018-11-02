@@ -1,0 +1,17 @@
+# 838 - Astwith
+
+# County Title
+title = c_astwith
+
+# Settlements
+max_settlements = 3
+
+b_astwith = castle
+b_astwith_2 = temple
+b_astwith_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 636 - Vigana
+
+# County Title
+title = c_vigana
+
+# Settlements
+max_settlements = 3
+
+b_vigana = castle
+b_vigana_2 = temple
+b_vigana_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 660 - Espina
+
+# County Title
+title = c_espina
+
+# Settlements
+max_settlements = 4
+
+b_espina = tribal
+#b_espina_2 = temple
+#b_espina_3 = city
+#b_perlavia = temple
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

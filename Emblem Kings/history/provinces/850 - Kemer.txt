@@ -1,0 +1,17 @@
+# 850 - Kemer
+
+# County Title
+title = c_kemer
+
+# Settlements
+max_settlements = 3
+
+b_kemer = castle
+b_kemer_2 = temple
+b_kemer_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

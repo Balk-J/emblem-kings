@@ -1,0 +1,17 @@
+# 712 - Bouro
+
+# County Title
+title = c_bouro
+
+# Settlements
+max_settlements = 3
+
+b_bouro = castle
+b_bouro_2 = temple
+b_bouro_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

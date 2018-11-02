@@ -1,0 +1,19 @@
+# 697 - Caldas
+
+# County Title
+title = c_caldas
+
+# Settlements
+max_settlements = 5
+
+b_caldas = castle
+b_caldas_2 = temple
+b_caldas_3 = city
+b_carnide = city
+#b_turquel = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

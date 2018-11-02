@@ -1,0 +1,18 @@
+# 761 - Bellechose
+
+# County Title
+title = c_bellechose
+
+# Settlements
+max_settlements = 4
+
+b_bellechose = castle
+b_bellechose_2 = temple
+b_bellechose_3 = city
+#b_guodimel = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

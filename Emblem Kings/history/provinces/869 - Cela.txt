@@ -1,0 +1,17 @@
+# 869 - Cela
+
+# County Title
+title = c_cela
+
+# Settlements
+max_settlements = 3
+
+b_cela = tribal
+b_cela_2 = temple
+#b_cela_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

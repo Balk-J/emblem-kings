@@ -1,0 +1,17 @@
+# 755 - Deuret
+
+# County Title
+title = c_deuret
+
+# Settlements
+max_settlements = 3
+
+b_deuret = castle
+b_deuret_2 = temple
+b_deuret_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

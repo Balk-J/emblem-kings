@@ -1,0 +1,18 @@
+# 648 - Bondello
+
+# County Title
+title = c_bondello
+
+# Settlements
+max_settlements = 4
+
+b_bondello = castle
+b_bondello_2 = temple
+b_bondello_3 = city
+#b_caborna = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

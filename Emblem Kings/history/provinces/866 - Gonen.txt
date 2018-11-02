@@ -1,0 +1,17 @@
+# 866 - Gonen
+
+# County Title
+title = c_gonen
+
+# Settlements
+max_settlements = 3
+
+b_gonen = tribal
+#b_gonen_2 = temple
+#b_gonen_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

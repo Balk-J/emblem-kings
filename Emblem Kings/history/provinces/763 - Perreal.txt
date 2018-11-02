@@ -1,0 +1,17 @@
+# 763 - Perreal
+
+# County Title
+title = c_perreal
+
+# Settlements
+max_settlements = 3
+
+b_perreal = castle
+b_perreal_2 = temple
+b_perreal_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

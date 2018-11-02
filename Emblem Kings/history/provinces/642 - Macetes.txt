@@ -1,0 +1,17 @@
+# 642 - Macetes
+
+# County Title
+title = c_macetes
+
+# Settlements
+max_settlements = 3
+
+b_macetes = castle
+b_macetes_2 = temple
+b_macetes_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

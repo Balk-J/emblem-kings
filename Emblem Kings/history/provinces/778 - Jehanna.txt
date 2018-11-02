@@ -1,0 +1,19 @@
+# 778 - Jehanna
+
+# County Title
+title = c_jehanna
+
+# Settlements
+max_settlements = 5
+
+b_jehanna_hall = castle
+b_jehanna = temple
+b_jehanna_2 = city
+b_witsand = city
+b_toumma = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

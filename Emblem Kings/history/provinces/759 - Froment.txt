@@ -1,0 +1,18 @@
+# 759 - Froment
+
+# County Title
+title = c_froment
+
+# Settlements
+max_settlements = 4
+
+b_froment = castle
+b_froment_2 = temple
+b_froment_3 = city
+b_marchicourt = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

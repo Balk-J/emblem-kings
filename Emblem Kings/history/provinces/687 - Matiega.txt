@@ -1,0 +1,17 @@
+# 687 - Matiega
+
+# County Title
+title = c_matiega
+
+# Settlements
+max_settlements = 3
+
+b_matiega = castle
+b_matiega_2 = temple
+b_matiega_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

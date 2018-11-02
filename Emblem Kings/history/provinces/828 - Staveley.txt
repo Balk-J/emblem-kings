@@ -1,0 +1,17 @@
+# 828 - Staveley
+
+# County Title
+title = c_staveley
+
+# Settlements
+max_settlements = 3
+
+b_staveley = castle
+b_staveley_2 = temple
+b_staveley_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

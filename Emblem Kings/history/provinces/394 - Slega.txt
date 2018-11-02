@@ -1,0 +1,26 @@
+# 394 - Slega
+
+# County Title
+title = c_slega
+
+# Settlements
+max_settlements = 3
+
+b_slega = tribal
+#b_slega_2 = temple
+#b_slega_3 = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

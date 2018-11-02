@@ -1,0 +1,17 @@
+# 805 - Kobuk
+
+# County Title
+title = c_kobuk
+
+# Settlements
+max_settlements = 3
+
+b_kobuk = tribal
+#b_kobuk_2 = temple
+#b_kobuk_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

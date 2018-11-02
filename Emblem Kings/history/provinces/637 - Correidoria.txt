@@ -1,0 +1,18 @@
+# 637 - Correidoria
+
+# County Title
+title = c_correidoria
+
+# Settlements
+max_settlements = 4
+
+b_correidoria = castle
+b_correidoria_2 = temple
+b_correidoria_3 = city
+#b_bellota = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

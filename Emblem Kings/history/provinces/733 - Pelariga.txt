@@ -1,0 +1,17 @@
+# 733 - Pelariga
+
+# County Title
+title = c_pelariga
+
+# Settlements
+max_settlements = 3
+
+b_pelariga = castle
+b_pelariga_2 = temple
+b_pelariga_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

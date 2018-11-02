@@ -1,0 +1,19 @@
+# 720 - Hortas
+
+# County Title
+title = c_hortas
+
+# Settlements
+max_settlements = 5
+
+b_hortas = castle
+b_hortas_2 = temple
+b_hortas_3 = city
+#b_cabeca = castle
+#b_pinheiro = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

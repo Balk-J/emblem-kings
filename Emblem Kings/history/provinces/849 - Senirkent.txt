@@ -1,0 +1,18 @@
+# 849 - Senirkent
+
+# County Title
+title = c_senirkent
+
+# Settlements
+max_settlements = 4
+
+b_senirkent = castle
+b_senirkent_2 = temple
+b_senirkent_3 = city
+#b_kuzdere = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 705 - Covoes
+
+# County Title
+title = c_covoes
+
+# Settlements
+max_settlements = 3
+
+b_covoes = tribal
+#b_covoes_2 = temple
+#b_covoes_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

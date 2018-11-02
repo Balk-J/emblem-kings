@@ -1,0 +1,18 @@
+# 668 - Piedra
+
+# County Title
+title = c_piedra
+
+# Settlements
+max_settlements = 4
+
+b_piedra = tribal
+#b_piedra_2 = temple
+#b_piedra_3 = city
+#b_fuecara = temple
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

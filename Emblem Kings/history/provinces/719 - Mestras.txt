@@ -1,0 +1,18 @@
+# 719 - Mestras
+
+# County Title
+title = c_mestras
+
+# Settlements
+max_settlements = 4
+
+b_mestras = castle
+b_mestras_2 = temple
+b_mestras_3 = city
+#b_torcano = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

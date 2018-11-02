@@ -1,0 +1,18 @@
+# 703 - Landal
+
+# County Title
+title = c_landal
+
+# Settlements
+max_settlements = 4
+
+b_landal = tribal
+#b_landal_2 = temple
+#b_landal_3 = city
+#b_oliveirinha = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

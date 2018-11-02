@@ -1,0 +1,18 @@
+# 663 - Espriella
+
+# County Title
+title = c_espriella
+
+# Settlements
+max_settlements = 4
+
+b_espriella = tribal
+#b_espriella_2 = temple
+#b_espriella_3 = city
+#b_borondes = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

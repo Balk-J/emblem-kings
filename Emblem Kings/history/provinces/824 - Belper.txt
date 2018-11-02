@@ -1,0 +1,18 @@
+# 824 - Belper
+
+# County Title
+title = c_belper
+
+# Settlements
+max_settlements = 4
+
+b_belper = castle
+b_belper_2 = city
+b_belper_3 = temple
+b_hargate = castle
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 691 - Cadenado
+
+# County Title
+title = c_cadenado
+
+# Settlements
+max_settlements = 3
+
+b_cadenado = tribal
+#b_cadenado_2 = temple
+#b_cadenado_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

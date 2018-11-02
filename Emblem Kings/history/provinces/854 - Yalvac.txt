@@ -1,0 +1,17 @@
+# 854 - Yalvac
+
+# County Title
+title = c_yalvac
+
+# Settlements
+max_settlements = 3
+
+b_yalvac = castle
+b_yalvac_2 = temple
+b_yalvac_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

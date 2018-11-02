@@ -1,0 +1,18 @@
+# 623 - Borbolla
+
+# County Title
+title = c_borbolla
+
+# Settlements
+max_settlements = 4
+
+b_borbolla = castle
+b_borbolla_2 = temple
+b_borbolla_3 = city
+b_lodos = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 682 - Reglal
+
+# County Title
+title = c_reglal
+
+# Settlements
+max_settlements = 4
+
+b_reglal = castle
+b_reglal_2 = temple
+b_reglal_3 = city
+#b_regeural = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

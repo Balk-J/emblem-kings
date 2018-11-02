@@ -1,0 +1,17 @@
+# 819 - Atlow
+
+# County Title
+title = c_atlow
+
+# Settlements
+max_settlements = 3
+
+b_atlow = castle
+b_atlow_2 = temple
+b_atlow_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

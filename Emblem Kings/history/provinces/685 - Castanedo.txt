@@ -1,0 +1,18 @@
+# 685 - Castanedo
+
+# County Title
+title = c_castanedo
+
+# Settlements
+max_settlements = 4
+
+b_castanedo = castle
+b_castanedo_2 = temple
+b_castanedo_3 = city
+#b_trillapena = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

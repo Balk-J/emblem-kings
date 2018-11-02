@@ -1,0 +1,18 @@
+# 626 - Pereda
+
+# County Title
+title = c_pereda
+
+# Settlements
+max_settlements = 4
+
+b_pereda = castle
+b_pereda_2 = temple
+b_pereda_3 = city
+#b_fueja = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

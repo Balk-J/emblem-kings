@@ -1,0 +1,19 @@
+# 657 - Rellan
+
+# County Title
+title = c_rellan
+
+# Settlements
+max_settlements = 5
+
+b_rellan = castle
+b_rellan_2 = temple
+b_rellan_3 = city
+b_reconco = castle
+#b_rodiles = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

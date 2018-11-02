@@ -1,0 +1,17 @@
+# 846 - Tekirova
+
+# County Title
+title = c_tekirova
+
+# Settlements
+max_settlements = 3
+
+b_tekirova = castle
+b_tekirova_2 = temple
+b_tekirova_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

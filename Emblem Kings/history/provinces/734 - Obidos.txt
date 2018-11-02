@@ -1,0 +1,19 @@
+# 734 - Obidos
+
+# County Title
+title = c_obidos
+
+# Settlements
+max_settlements = 5
+
+b_obidos = castle
+b_obidos_2 = temple
+b_obidos_3 = city
+#b_freiras = castle
+#b_panascosas = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

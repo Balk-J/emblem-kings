@@ -1,0 +1,17 @@
+# 730 - Juncal
+
+# County Title
+title = c_juncal
+
+# Settlements
+max_settlements = 3
+
+b_juncal = castle
+b_juncal_2 = temple
+b_juncal_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

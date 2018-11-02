@@ -1,0 +1,17 @@
+# 839 - Derwent
+
+# County Title
+title = c_derwent
+
+# Settlements
+max_settlements = 3
+
+b_derwent = castle
+b_derwent_2 = temple
+b_derwent_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

@@ -1,0 +1,19 @@
+# 845 - Kiris
+
+# County Title
+title = c_kiris
+
+# Settlements
+max_settlements = 5
+
+b_kiris = castle
+b_port_kiris = city
+b_kiris_2 = temple
+b_beycik = city
+b_ovacik = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

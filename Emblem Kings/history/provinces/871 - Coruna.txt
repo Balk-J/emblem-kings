@@ -1,0 +1,17 @@
+# 871 - Coruna
+
+# County Title
+title = c_coruna
+
+# Settlements
+max_settlements = 3
+
+b_coruna = castle
+b_coruna_2 = city
+b_coruna_3 = temple
+
+# Misc
+culture = jehanna
+religion = valega
+
+# History

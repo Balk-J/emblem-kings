@@ -1,0 +1,22 @@
+# c_braniborsko > d_silesse
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_silesse
+	#holder = 0
+}
+736.1.1={
+	holder=1114 # Erinys' father
+}
+762.1.1={
+	holder=1117 # Erinys
+}
+776.1.1={
+	holder = 0 # Destroyed?
+	#holder =  # generic Loptyrian Dark Bishop?
+	#holder=1051 # Julius?
+}
+779.1.1={
+	holder = 1112 # Ced the Hero
+}

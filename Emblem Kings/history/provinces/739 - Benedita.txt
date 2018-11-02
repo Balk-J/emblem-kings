@@ -1,0 +1,17 @@
+# 739 - Benedita
+
+# County Title
+title = c_benedita
+
+# Settlements
+max_settlements = 3
+
+b_benedita = castle
+b_benedita_2 = temple
+b_benedita_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

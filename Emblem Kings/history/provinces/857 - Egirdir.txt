@@ -1,0 +1,17 @@
+# 857 - Egirdir
+
+# County Title
+title = c_egirdir
+
+# Settlements
+max_settlements = 3
+
+b_egirdir = tribal
+#b_egirdir_2 = temple
+#b_egirdir_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

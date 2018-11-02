@@ -1,0 +1,17 @@
+# 784 - Chebbi
+
+# County Title
+title = c_chebbi
+
+# Settlements
+max_settlements = 3
+
+b_chebbi = castle
+b_chebbi_2 = temple
+b_chebbi_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

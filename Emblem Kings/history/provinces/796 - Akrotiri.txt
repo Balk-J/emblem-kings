@@ -1,0 +1,17 @@
+# 796 - Akrotiri
+
+# County Title
+title = c_akrotiri
+
+# Settlements
+max_settlements = 3
+
+b_akrotiri = castle
+b_akrotiri_2 = temple
+b_akrotiri_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

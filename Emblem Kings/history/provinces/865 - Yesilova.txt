@@ -1,0 +1,17 @@
+# 865 - Yesilova
+
+# County Title
+title = c_yesilova
+
+# Settlements
+max_settlements = 3
+
+b_yesilova = tribal
+#b_yesilova_2 = temple
+#b_yesilova_3 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

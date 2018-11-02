@@ -1,0 +1,18 @@
+# 788 - Merheb
+
+# County Title
+title = c_merheb
+
+# Settlements
+max_settlements = 4
+
+b_merheb = castle
+b_merheb_2 = temple
+b_merheb_3 = city
+#b_murzuq = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

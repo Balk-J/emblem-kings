@@ -1,0 +1,17 @@
+# 753 - Freminet
+
+# County Title
+title = c_freminet
+
+# Settlements
+max_settlements = 3
+
+b_freminet = castle
+b_freminet_2 = temple
+b_freminet_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

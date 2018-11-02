@@ -1,0 +1,17 @@
+# 676 - Cubia
+
+# County Title
+title = c_cubia
+
+# Settlements
+max_settlements = 3
+
+b_cubia = castle
+b_cubia_2 = temple
+b_cubia_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

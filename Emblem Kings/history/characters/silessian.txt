@@ -351,7 +351,7 @@
 	}	
 	# Finds Julia and takes her to a hideaway in Silesse.
 	771.1.1 = {
-		employer=2009 # c_grodkow 
+		employer=2009 # c_sasko 
 	}
 	# He's in Ganeishire with Julia at the start of Gen 2, but let's simplify things a bit
 	777.1.1={

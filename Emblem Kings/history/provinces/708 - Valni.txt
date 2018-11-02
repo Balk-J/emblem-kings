@@ -1,0 +1,19 @@
+# 708 - Valni
+
+# County Title
+title = c_valni
+
+# Settlements
+max_settlements = 5
+
+b_valni = castle
+b_tower_of_valni = temple
+b_valni_2 = city
+b_cruzes = temple
+#b_carrico = temple
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

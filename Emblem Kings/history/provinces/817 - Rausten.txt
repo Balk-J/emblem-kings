@@ -1,0 +1,20 @@
+# 817 - Rausten
+
+# County Title
+title = c_rausten
+
+# Settlements
+max_settlements = 6
+
+b_rausten_court = castle
+b_rausten = city
+b_rausten_2 = temple
+b_roston = temple
+#b_brightgate = temple
+#b_lightwood = temple
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

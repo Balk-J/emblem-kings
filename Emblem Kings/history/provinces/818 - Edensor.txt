@@ -1,0 +1,19 @@
+# 818 - Edensor
+
+# County Title
+title = c_edensor
+
+# Settlements
+max_settlements = 5
+
+b_edensor = castle
+b_edensor_2 = temple
+b_edensor_3 = city
+b_pomeroy = temple
+#b_unstone = temple
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

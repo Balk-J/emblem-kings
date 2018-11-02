@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_thove_castle = castle
 b_thove = temple
-#b_thove_2 = city
+b_thove_2 = city
 #b_rybnik = temple
 
 # Misc
@@ -23,15 +23,8 @@ religion = church_of_edda
 }
 500.1.1 = { 
 	b_thove_castle = castle
-	b_thove_2 = city
 }
 649.1.1 = { 
 	religion = church_of_edda
 	culture = silessian
-}
-770.1.1 = { 
-	capital = b_thove
-}
-779.1.1 = { 
-	capital = b_thove_castle
 }

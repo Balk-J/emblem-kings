@@ -1,0 +1,17 @@
+# 635 - Vallina
+
+# County Title
+title = c_vallina
+
+# Settlements
+max_settlements = 3
+
+b_vallina = castle
+b_vallina_2 = temple
+b_vallina_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

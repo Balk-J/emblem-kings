@@ -1,0 +1,17 @@
+# 714 - Antas
+
+# County Title
+title = c_antas
+
+# Settlements
+max_settlements = 3
+
+b_antas = castle
+b_antas_2 = temple
+b_antas_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

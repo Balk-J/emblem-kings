@@ -1,0 +1,17 @@
+# 680 - Morada
+
+# County Title
+title = c_morada
+
+# Settlements
+max_settlements = 3
+
+b_morada = castle
+b_morada_2 = temple
+b_morada_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 875 - Rohatina
+
+# County Title
+title = c_rohatina
+
+# Settlements
+max_settlements = 3
+
+b_rohatina = tribal
+#b_rohatina_2 = temple
+#b_rohatina_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

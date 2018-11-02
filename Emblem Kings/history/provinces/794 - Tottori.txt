@@ -1,0 +1,18 @@
+# 794 - Tottori
+
+# County Title
+title = c_tottori
+
+# Settlements
+max_settlements = 4
+
+b_tottori = castle
+b_tottori_2 = temple
+b_tottori_3 = city
+#b_tanami = temple
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

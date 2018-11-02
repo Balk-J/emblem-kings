@@ -1,0 +1,17 @@
+# 613 - Balor
+
+# County Title
+title = c_balor
+
+# Settlements
+max_settlements = 3
+
+b_balor = tribal
+b_black_temple = temple
+#b_balor_2 = city
+
+# Misc
+culture = rausten
+religion = valega
+
+# History

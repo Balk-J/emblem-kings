@@ -1,0 +1,17 @@
+# 774 - Grunewald
+
+# County Title
+title = c_grunewald
+
+# Settlements
+max_settlements = 3
+
+b_grunewald = tribal
+#b_grunewald_2 = temple
+#b_grunewald_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

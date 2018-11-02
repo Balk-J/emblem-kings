@@ -1,0 +1,17 @@
+# 807 - Dyuni
+
+# County Title
+title = c_dyuni
+
+# Settlements
+max_settlements = 3
+
+b_dyuni = tribal
+#b_dyuni_2 = temple
+#b_dyuni_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

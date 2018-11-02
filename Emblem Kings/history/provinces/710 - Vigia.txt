@@ -1,0 +1,19 @@
+# 710 - Vigia
+
+# County Title
+title = c_vigia
+
+# Settlements
+max_settlements = 5
+
+b_vigia = castle
+b_vigia_2 = temple
+b_vigia_3 = city
+b_arrimal = castle
+#b_mendiga = temple
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

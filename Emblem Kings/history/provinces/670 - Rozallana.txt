@@ -1,0 +1,19 @@
+# 670 - Rozallana
+
+# County Title
+title = c_rozallana
+
+# Settlements
+max_settlements = 5
+
+b_rozallana_2 = castle
+b_rozallana_3 = temple
+b_rozallana_4 = city
+#b_tejera = city
+#b_ordaliegas = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 672 - Campusa
+
+# County Title
+title = c_campusa
+
+# Settlements
+max_settlements = 3
+
+b_campusa = castle
+b_campusa_2 = temple
+b_campusa_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

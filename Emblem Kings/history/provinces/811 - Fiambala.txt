@@ -1,0 +1,19 @@
+# 811 - Fiambala
+
+# County Title
+title = c_fiambala
+
+# Settlements
+max_settlements = 5
+
+b_fiambala = tribal
+#b_fiambala_2 = temple
+#b_fiambala_3 = city
+#b_jaran = city
+#b_melnik = temple
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

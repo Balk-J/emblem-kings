@@ -1,0 +1,17 @@
+# 872 - Merallus
+
+# County Title
+title = c_merallus
+
+# Settlements
+max_settlements = 3
+
+b_merallus = castle
+b_merallus_2 = city
+b_merallus_3 = temple
+
+# Misc
+culture = rausten
+religion = valega
+
+# History

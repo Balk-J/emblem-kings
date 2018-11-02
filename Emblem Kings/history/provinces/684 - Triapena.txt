@@ -1,0 +1,17 @@
+# 684 - Triapena
+
+# County Title
+title = c_triapena
+
+# Settlements
+max_settlements = 3
+
+b_triapena = castle
+b_triapena_2 = temple
+b_triapena_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

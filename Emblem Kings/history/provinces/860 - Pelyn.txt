@@ -1,0 +1,17 @@
+# 860 - Pelyn
+
+# County Title
+title = c_pelyn
+
+# Settlements
+max_settlements = 3
+
+b_fort_pelyn = castle
+b_pelyn = temple
+b_caer_pelyn = city
+
+# Misc
+culture = rausten
+religion = valega
+
+# History

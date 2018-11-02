@@ -1,0 +1,18 @@
+# 789 - Calanshio
+
+# County Title
+title = c_calanshio
+
+# Settlements
+max_settlements = 4
+
+b_calanshio = castle
+b_calanshio_2 = temple
+b_calanshio_3 = city
+#b_piscinas = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

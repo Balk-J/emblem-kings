@@ -1,0 +1,16 @@
+# 876 - Pestra
+
+# County Title
+title = c_pestra
+
+# Settlements
+max_settlements = 2
+
+b_pestra = tribal
+b_pestra_2 = temple
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

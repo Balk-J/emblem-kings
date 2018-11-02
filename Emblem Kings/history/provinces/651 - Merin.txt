@@ -1,0 +1,17 @@
+# 651 - Merin
+
+# County Title
+title = c_merin
+
+# Settlements
+max_settlements = 3
+
+b_merin = castle
+b_merin_2 = temple
+b_merin_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

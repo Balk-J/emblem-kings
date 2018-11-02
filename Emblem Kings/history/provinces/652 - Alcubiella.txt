@@ -1,0 +1,18 @@
+# 652 - Alcubiella
+
+# County Title
+title = c_alcubiella
+
+# Settlements
+max_settlements = 4
+
+b_alcubiella = castle
+b_alcubiella_2 = temple
+b_alcubiella_3 = city
+b_momalo = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

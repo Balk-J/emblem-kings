@@ -1,0 +1,18 @@
+# 617 - Conand
+
+# County Title
+title = c_conand
+
+# Settlements
+max_settlements = 4
+
+b_conand = tribal
+#b_conand_2 = temple
+#b_conand_3 = city
+#b_conann = temple
+
+# Misc
+culture = rausten
+religion = valega
+
+# History

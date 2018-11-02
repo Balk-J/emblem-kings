@@ -1,0 +1,17 @@
+# 693 - Gorrion
+
+# County Title
+title = c_gorrion
+
+# Settlements
+max_settlements = 3
+
+b_gorrion = castle
+b_gorrion_2 = temple
+b_gorrion_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

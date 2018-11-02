@@ -1,0 +1,8 @@
+# c_tekirova > d_kiris
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_kiris
+	#holder = 0
+}

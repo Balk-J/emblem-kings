@@ -1,0 +1,16 @@
+# 700 - Barrosa
+
+# County Title
+title = c_barrosa
+
+# Settlements
+max_settlements = 2
+
+b_barrosa = tribal
+#b_barrosa_2 = temple
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

@@ -1,0 +1,17 @@
+# 699 - Cumeira
+
+# County Title
+title = c_cumeira
+
+# Settlements
+max_settlements = 3
+
+b_cumeira = tribal
+b_cumeira_2 = temple
+#b_cumeira_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

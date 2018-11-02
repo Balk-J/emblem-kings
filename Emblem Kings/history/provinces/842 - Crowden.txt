@@ -1,0 +1,17 @@
+# 842 - Crowden
+
+# County Title
+title = c_crowden
+
+# Settlements
+max_settlements = 3
+
+b_crowden = castle
+b_crowden_2 = temple
+b_crowden_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

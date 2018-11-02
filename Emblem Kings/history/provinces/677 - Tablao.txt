@@ -1,0 +1,17 @@
+# 677 - Tablao
+
+# County Title
+title = c_tablao
+
+# Settlements
+max_settlements = 3
+
+b_tablao = castle
+b_tablao_2 = temple
+b_tablao_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

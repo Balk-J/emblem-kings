@@ -1,0 +1,17 @@
+# 618 - Nelaras
+
+# County Title
+title = c_nelaras
+
+# Settlements
+max_settlements = 3
+
+b_nelaras = tribal
+#b_nelaras_2 = temple
+#b_nelaras_3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

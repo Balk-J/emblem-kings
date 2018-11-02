@@ -1,0 +1,18 @@
+# 786 - Rebiana
+
+# County Title
+title = c_rebiana
+
+# Settlements
+max_settlements = 4
+
+b_rebiana = castle
+b_rebiana_2 = temple
+b_rebiana_3 = city
+#b_genipabu = castle
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

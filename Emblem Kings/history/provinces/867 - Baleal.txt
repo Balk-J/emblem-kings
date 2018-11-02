@@ -1,0 +1,18 @@
+# 867 - Baleal
+
+# County Title
+title = c_baleal
+
+# Settlements
+max_settlements = 4
+
+b_baleal = tribal
+#b_baleal_2 = temple
+#b_baleal_3 = city
+#b_alfeizerao = temple
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

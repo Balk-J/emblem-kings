@@ -1,0 +1,18 @@
+# 740 - Vestiaria
+
+# County Title
+title = c_vestiaria
+
+# Settlements
+max_settlements = 4
+
+b_vestiaria = castle
+b_vestiaria_2 = temple
+b_vestiaria_3 = city
+#b_po = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

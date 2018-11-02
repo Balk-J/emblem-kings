@@ -1,0 +1,27 @@
+# 399 - Goplo
+
+# County Title
+title = c_goplo
+
+# Settlements
+max_settlements = 4
+
+b_goplo = tribal
+#b_goplo_2 = temple
+#b_goplo_3 = city
+#b_lubin = city
+
+# Misc
+culture = silessian
+religion = church_of_edda
+
+# History
+440.1.1 = { 
+	religion = earthen_pagan
+	culture = grann
+}
+
+649.1.1 = { 
+	religion = church_of_edda
+	culture = silessian
+}

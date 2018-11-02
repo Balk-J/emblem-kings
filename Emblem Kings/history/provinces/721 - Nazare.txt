@@ -1,0 +1,18 @@
+# 721 - Nazare
+
+# County Title
+title = c_nazare
+
+# Settlements
+max_settlements = 4
+
+b_nazare = castle
+b_nazare_2 = temple
+b_nazare_3 = city
+#b_ladeiras = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 737 - Ferraria
+
+# County Title
+title = c_ferraria
+
+# Settlements
+max_settlements = 4
+
+b_ferraria = castle
+b_ferraria_2 = temple
+b_ferraria_3 = city
+#b_aljubarrota = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

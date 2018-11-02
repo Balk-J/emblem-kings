@@ -1,0 +1,17 @@
+# 707 - Mouraria
+
+# County Title
+title = c_mouraria
+
+# Settlements
+max_settlements = 3
+
+b_mouraria = tribal
+#b_mouraria_2 = temple
+#b_mouraria_3 = city
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

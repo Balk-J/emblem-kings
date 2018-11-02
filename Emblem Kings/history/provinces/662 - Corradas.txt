@@ -1,0 +1,17 @@
+# 662 - Corradas
+
+# County Title
+title = c_corradas
+
+# Settlements
+max_settlements = 3
+
+b_corradas = tribal
+#b_corradas_2 = temple
+#b_corradas_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

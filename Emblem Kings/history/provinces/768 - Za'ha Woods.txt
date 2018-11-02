@@ -1,0 +1,18 @@
+# 768 - Za'ha Woods
+
+# County Title
+title = c_zaha_woods
+
+# Settlements
+max_settlements = 4
+
+b_zaha = castle
+b_zaha_2 = temple
+b_zaha_3 = city
+#b_tura = temple
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

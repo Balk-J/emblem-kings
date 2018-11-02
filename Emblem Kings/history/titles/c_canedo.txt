@@ -1,0 +1,8 @@
+# c_canedo > d_tolinas
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_tolinas
+	#holder = 0
+}

@@ -1,0 +1,18 @@
+# 624 - Barraca
+
+# County Title
+title = c_barraca
+
+# Settlements
+max_settlements = 4
+
+b_barraca = castle
+b_barraca_2 = temple
+b_barraca_3 = city
+b_robledo = castle
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

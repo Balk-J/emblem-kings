@@ -1,0 +1,17 @@
+# 770 - Dubreuil
+
+# County Title
+title = c_dubreuil
+
+# Settlements
+max_settlements = 3
+
+b_dubreuil = castle
+b_dubreuil_2 = temple
+b_dubreuil_3 = city
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

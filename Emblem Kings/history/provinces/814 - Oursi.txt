@@ -1,0 +1,18 @@
+# 814 - Oursi
+
+# County Title
+title = c_oursi
+
+# Settlements
+max_settlements = 4
+
+b_oursi = tribal
+b_oursi_2 = temple
+#b_oursi_3 = city
+#b_ordos = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

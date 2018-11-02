@@ -1,0 +1,17 @@
+# 873 - Sedma
+
+# County Title
+title = c_sedma
+
+# Settlements
+max_settlements = 3
+
+b_sedma = castle
+b_sedma_2 = city
+b_sedma_3 = temple
+
+# Misc
+culture = grado
+religion = valega
+
+# History

@@ -1,0 +1,18 @@
+# 790 - Thar
+
+# County Title
+title = c_thar
+
+# Settlements
+max_settlements = 4
+
+b_thar = castle
+b_thar_2 = temple
+b_thar_3 = city
+#b_thal = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

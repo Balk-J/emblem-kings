@@ -1,0 +1,18 @@
+# 679 - Calea
+
+# County Title
+title = c_calea
+
+# Settlements
+max_settlements = 4
+
+b_calea = castle
+b_calea_2 = temple
+b_calea_3 = city
+#b_sobrepena = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,16 @@
+# 852 - Atabey
+
+# County Title
+title = c_atabey
+
+# Settlements
+max_settlements = 2
+
+b_atabey = castle
+b_atabey_2 = city
+
+# Misc
+culture = carcino
+religion = latona_church
+
+# History

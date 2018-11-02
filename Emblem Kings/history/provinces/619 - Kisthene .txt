@@ -1,0 +1,17 @@
+# 619 - Kisthene 
+
+# County Title
+title = c_kisthene_
+
+# Settlements
+max_settlements = 3
+
+b_kisthene_ = tribal
+#b_kisthene__2 = temple
+#b_kisthene__3 = city
+
+# Misc
+culture = jehanna
+religion = latona_church
+
+# History

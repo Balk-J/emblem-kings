@@ -1,0 +1,18 @@
+# 671 - Cabayeda
+
+# County Title
+title = c_cabayeda
+
+# Settlements
+max_settlements = 4
+
+b_cabayeda = castle
+b_cabayeda_2 = temple
+b_cabayeda_3 = city
+b_capitulo = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

@@ -1,0 +1,18 @@
+# 751 - Bellange
+
+# County Title
+title = c_bellange
+
+# Settlements
+max_settlements = 4
+
+b_bellange = castle
+b_bellange_2 = temple
+b_bellange_3 = city
+#b_jarequin = castle
+
+# Misc
+culture = renais
+religion = latona_church
+
+# History

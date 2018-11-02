@@ -1,0 +1,17 @@
+# 836 - Dunsa
+
+# County Title
+title = c_dunsa
+
+# Settlements
+max_settlements = 3
+
+b_dunsa = castle
+b_dunsa_2 = temple
+b_dunsa_3 = city
+
+# Misc
+culture = rausten
+religion = latona_church
+
+# History

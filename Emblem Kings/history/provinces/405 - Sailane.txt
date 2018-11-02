@@ -8,7 +8,7 @@ max_settlements = 3
 
 b_sailane_castle = castle
 b_sailane = temple
-#b_sailane_2 = city
+b_sailane_2 = city
 
 # Misc
 culture = silessian
@@ -22,15 +22,8 @@ religion = church_of_edda
 }
 500.1.1 = { 
 	b_sailane_castle = castle
-	b_sailane_2 = city
 }
 649.1.1 = { 
 	religion = church_of_edda
 	culture = silessian
-}
-770.1.1 = { 
-	capital = b_sailane
-}
-779.1.1 = { 
-	capital = b_sailane_castle
 }

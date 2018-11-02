@@ -1,0 +1,22 @@
+# c_truso > d_thove
+180.1.1={
+	law = status_of_women_4
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = d_thove
+	#holder = 0
+}
+440.1.1={
+	liege = 0
+	holder=863 # 
+}
+450.1.1={
+	liege = e_loptous
+}
+649.1.1={
+	liege = d_thove
+}
+
+745.1.1={
+	holder=1490 # Cuvuli
+}

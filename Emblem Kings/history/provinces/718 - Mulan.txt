@@ -1,0 +1,19 @@
+# 718 - Mulan
+
+# County Title
+title = c_mulan
+
+# Settlements
+max_settlements = 5
+
+b_mulan = castle
+b_mulan_2 = temple
+b_mulan_3 = city
+b_azenha = castle
+#b_fialho = castle
+
+# Misc
+culture = frelian
+religion = latona_church
+
+# History

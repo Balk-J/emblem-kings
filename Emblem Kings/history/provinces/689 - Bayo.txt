@@ -1,0 +1,17 @@
+# 689 - Bayo
+
+# County Title
+title = c_bayo
+
+# Settlements
+max_settlements = 3
+
+b_bayo = tribal
+#b_bayo_2 = temple
+#b_bayo_3 = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History

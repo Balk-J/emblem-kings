@@ -1,0 +1,18 @@
+# 628 - Cabanin
+
+# County Title
+title = c_cabanin
+
+# Settlements
+max_settlements = 4
+
+b_cabanin = castle
+b_cabanin_2 = temple
+b_cabanin_3 = city
+#b_bustiello = city
+
+# Misc
+culture = grado
+religion = latona_church
+
+# History
