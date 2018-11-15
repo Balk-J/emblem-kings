@@ -14,6 +14,6 @@ b_nazonia_3 = temple
 
 # Misc
 culture = grado
-religion = valega
+religion = latona_church
 
 # History

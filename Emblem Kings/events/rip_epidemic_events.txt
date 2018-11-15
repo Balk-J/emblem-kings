@@ -1,3 +1,6 @@
+#FE Changes:
+#RIP.13000: removing option to blame the Jews/Hindu.
+
 ###########################################
 #                                         #
 # RIP Epidemic Events           		  #
@@ -10,9 +13,6 @@
 # David Ballantyne
 # Milla Isaksson
 # Mathilda Bjarnehed
-
-#FE Changes:
-#RIP.13000: removing option to blame the Jews/Hindu.
 
 namespace = RIP
 
@@ -48,7 +48,7 @@ character_event = {
 				set_character_flag = epidemic_blame_game
 				character_event = { id = RIP.13001 }
 			}
-			# Blame Jews
+			#10 = # Blame Jews
 			10 = { # Witch hunt
 				modifier = {
 					factor = 0
@@ -61,7 +61,7 @@ character_event = {
 				set_character_flag = epidemic_blame_game
 				character_event = { id = RIP.13198 }
 			}
-			# Bad Hindu
+			#10 =  # Bad Hindu
 		}
 	}
 }
@@ -908,7 +908,7 @@ character_event = { #if you keep jews, stuff happens
 	}
 
 	desc = {
-		picture = GFX_end_of_days
+		picture = GFX_evt_end_of_days
 		text = RIP.13403.d1
 		trigger = { has_character_flag = pogrom_target_selected }
 	}

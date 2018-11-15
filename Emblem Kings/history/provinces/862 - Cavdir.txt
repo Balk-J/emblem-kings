@@ -11,6 +11,6 @@ b_cavdir = tribal
 
 # Misc
 culture = carcino
-religion = valega
+religion = latona_church
 
 # History

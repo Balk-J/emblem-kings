@@ -1,5 +1,6 @@
 #FE Overrides:
 # Get a character killed
+
 # Plot tags need to start with 'plot_'
 
 # Supported types:
@@ -388,6 +389,17 @@ plot_gain_vassal_title = {
 					}
 				}
 			}
+			# Belongs to Tyrannical Bloodline
+			custom_tooltip = {
+				text = TT_PLOT_GAIN_VASSAL_TITLE_TYRANNICAL_BLOODLINE
+				hidden_tooltip = {
+					FROM = {
+						any_owned_bloodline = {
+							has_bloodline_flag = bloodline_revocation_plot 
+						}
+					}
+				}
+			}
 		}
 		holder_scope = {
 			custom_tooltip = { # liege_before_war lacks localisation, among other things
@@ -735,6 +747,7 @@ plot_kill_character = {
 	
 	player_allow = {
 		#NOT = { is_child_of = FROM } # Not my own children
+		# FE
 		OR = {
 			NOT = { is_child_of = FROM } # Not my own children
 			AND = {
@@ -770,6 +783,7 @@ plot_kill_character = {
 	# Target character scope
 	allow = {
 		#NOT = { is_child_of = FROM } # Not my own children
+		#FE
 		OR = {
 			NOT = { is_child_of = FROM } # Not my own children
 			AND = {
@@ -922,6 +936,9 @@ plot_kill_character = {
 					OR = {
 						trait = lunatic
 						trait = possessed
+						any_owned_bloodline = {
+							has_bloodline_flag = bloodline_murderous 
+						}
 					}
 				}
 				
@@ -1084,6 +1101,12 @@ plot_kill_character = {
 				top_liege = { character = father }
 			}
 		}
+		modifier = {
+			factor = 2.0
+			any_owned_bloodline = { #Backstabbing family.
+				has_bloodline_flag = bloodline_murderous 
+			}
+		}
 	}
 	
 	success = {
@@ -1098,6 +1121,7 @@ plot_kill_character = {
 	abort_effect = {
 		FROM = { clr_character_flag = murder_in_motion }
 	}
+	# FE
 	creation_effect = {
 		# ROOT = target, FROM = plotter
 		if = {
@@ -1119,6 +1143,7 @@ plot_kill_character = {
 		FROM = {
 			# Clear flags
 			hidden_tooltip = {
+				#FE
 				if = {
 					limit = {
 						has_character_flag = plot_murder_child 	
@@ -1136,6 +1161,7 @@ plot_kill_character = {
 						character_event = { id = quintessence.2 }
 					}
 				}
+				#FE
 				clr_character_flag = murder_in_motion
 			}
 		}
@@ -1283,6 +1309,12 @@ plot_kill_spouse = {
 					FROM = { trait = ambitious }
 				}
 			}		
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				is_pilgrim = yes
+			}
 		}
 		modifier = {
 			factor = 1.5

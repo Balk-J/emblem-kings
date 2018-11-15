@@ -604,6 +604,8 @@ character_event = {
 	option = {
 		name = EVTOPTA_CM_6112
 		add_trait = gluttonous
+		gain_weight_small_effect = yes
+		weight_trait_check_effect = yes
 	}
 }
 
@@ -867,15 +869,17 @@ character_event = {
 	
 	trigger = {
 		any_plotter = {
-			target = ROOT
+			target = ROOT # FE
 			OR = {
 				has_plot = plot_kill_character
 				has_plot = plot_kill_spouse
 			}
+			# FE
 			NOR = {
 				has_character_flag = hiding_murder_in_motion
 				has_character_flag = murder_in_motion
 			}
+			# FE
 		}
 	}
 	

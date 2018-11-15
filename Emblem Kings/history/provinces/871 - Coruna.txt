@@ -12,6 +12,6 @@ b_coruna_3 = temple
 
 # Misc
 culture = jehanna
-religion = valega
+religion = latona_church
 
 # History

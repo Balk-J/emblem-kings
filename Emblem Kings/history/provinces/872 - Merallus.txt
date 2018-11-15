@@ -12,6 +12,6 @@ b_merallus_3 = temple
 
 # Misc
 culture = rausten
-religion = valega
+religion = latona_church
 
 # History
