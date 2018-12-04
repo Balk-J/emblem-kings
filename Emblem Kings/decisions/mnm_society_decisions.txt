@@ -1,0 +1,1565 @@
+###########################################
+#
+# Society decisions for Monks and Mystics
+#
+# Hermetic/mystic
+# Secret religious cults
+# Monastic orders
+# Assassins
+# Devil worshipers
+#
+###########################################
+
+
+# General
+society_decisions = { # Society decisions are only evaluated by members of societies	
+	request_to_rank_up_within_society = {
+		only_playable = yes
+
+		hide_in_decisions_list = yes # This is shown in the Society View
+		
+		ai_check_interval = 24
+		
+		potential = {
+			hidden_tooltip = {
+				OR = { #In some societies, there can only be 1 member at rank 4
+					society_rank < 3
+					NOR = {
+						society_member_of = black_fang
+						is_devil_worshiper_trigger = yes
+					}
+				}
+				society_rank < 4
+				days_in_society > 365
+				#has_dlc = "Mystics"
+				is_in_society = yes
+				OR = { #Players can always rank up (if they have the power)
+					ai = no
+					AND = {
+						ai = yes
+						society_can_rank_up = yes
+					}
+				}
+			}
+		}
+
+		allow = {
+			#Rank requirements. IMPORTANT!!! If you change the requirements, the customizable loc keys "GetSocietyRankUpTooltip" 1, 2, 3, and 4 must be updated, as it displays these requirements.
+			custom_tooltip = { # Sufficient currency
+				text = request_to_rank_up_within_society_currency_tt
+				OR = {
+					AND = {
+						society_rank == 1
+						society_currency >= 750
+					}
+					AND = {
+						society_rank == 2
+						society_currency >= 1000
+					}
+					society_currency >= 2000 # rank 3
+				}
+			}
+			trigger_if = {
+				limit = { has_character_modifier = lost_rank_up_duel_cooldown }
+				custom_tooltip = {
+					text = recently_lost_rank_up_duel_tt
+					NOT = { has_character_modifier = lost_rank_up_duel_cooldown }				
+				}
+			}
+			trigger_if = {
+				limit = {
+					ai = no #if you are a player
+	                any_society_member = { #and there are already 4 other Heroes (rank is full).
+	                	count = 4
+	                    society_rank == 4
+	                }
+				}
+				custom_tooltip = {
+					text = there_is_a_hero_available_to_duel_tt
+		            any_society_member = { #there is no one to duel for the spot...
+	                    ai = yes
+                    	NOT = { has_character_flag = call_to_legend_active }
+	                    NOT = { trait = incapable }
+	                    prisoner = no
+	                    society_rank == 4
+	                }
+				}
+			}
+			trigger_if = {
+				limit = { has_character_flag = rank_up_blocked }
+				custom_tooltip = {
+					text = rank_up_blocked_tt
+					NOT = { has_character_flag = rank_up_blocked }
+				}
+			}
+
+			custom_tooltip = {
+				text = must_not_have_sent_request_already_tooltip 
+				NOT = { has_character_flag = has_sent_request_to_rank_up }
+			}
+
+			custom_tooltip = {
+				text = must_be_allowed_to_rank_up_tooltip 
+				days_at_current_society_rank >= 1095 #IMPORTANT! Update tooltip.
+			}
+
+			custom_tooltip = {
+				text = must_have_grandmaster_tooltip #You must have a grand master
+				any_society_member = {
+					is_society_grandmaster = yes
+					same_society_as = ROOT
+				}
+			}
+
+			custom_tooltip = {
+				text = must_have_multiple_rank_4 #Society must allow multiple characters at Rank 4
+				NAND = {
+					society_rank == 3
+					OR = {
+						society_member_of = black_fang
+						is_devil_worshiper_trigger = yes
+					}
+				}
+			}
+		}
+
+		effect = {
+			society = { save_event_target_as = my_society }
+			if = { # Special handling for warrior lodge rank 3 members (in a society with enough Heroes already)...
+				limit = {
+					ai = no
+					is_member_of_any_warrior_lodge_trigger = yes
+					society_rank == 3
+					society = {
+	                    any_society_member = { #make sure there is someone you can duel for the spot.
+	                    	NOT = { has_character_flag = call_to_legend_active }
+		                    ai = yes
+		                    prisoner = no
+		                    society_rank == 4
+		                }
+		                any_society_member = { #make sure there are already 4 other Heroes (rank is full).
+		                	count = 4
+		                    society_rank == 4
+		                }
+					}
+				}
+				set_character_flag = has_sent_request_to_rank_up
+				character_event = { id = HF.10060 } #sends event presenting choice: to duel a current Hero or nah?
+			}
+
+			else = { #For everyone else...
+				#Rank up cost
+				if = {
+					limit = { society_rank == 1 }
+					change_society_currency = -750
+				}
+				if = {
+					limit = { society_rank == 2 }
+					change_society_currency = -1000
+				}
+				if = {
+					limit = { society_rank == 3 }
+					change_society_currency = -2000
+				}
+
+				#Perform rank up
+				hidden_tooltip = {
+					save_event_target_as = rank_up_target
+					set_character_flag = has_sent_request_to_rank_up
+					character_event = { id = MNM.10002 days = 20 random = 10 } # sends hidden delayed event to self, which then sends request to Leader of the society
+					
+					#Conversus power for benedictines
+					if = {
+						limit = {
+							society_member_of = monastic_order_benedictine
+							society_rank == 3
+						}
+						character_event = { id = MNM.4600 days = 10 random = 350 }
+					}
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0.5 #Slow down
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+			modifier = {
+				factor = 2 
+				trait = ambitious
+			}
+		}
+	}
+}
+
+###BLACK FANG###
+society_decisions = {
+	#Black Fang
+	black_fang_borrow_money = {
+		only_playable = yes
+
+		ai_check_interval = 80
+		potential = {
+			has_dlc = "Mystics"
+			society_member_of = black_fang
+			NOT = {
+				society_rank = {
+					society = black_fang
+					rank == 4
+				}
+			}
+			NOT = { has_character_modifier = black_fang_debt }
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = black_fang_borrow_money_tooltip
+
+				any_society_member = {
+					is_society_grandmaster = yes
+					society_member_of = black_fang
+					OR = {
+						ai = no
+						NOT = { primary_title = { title = d_black_fang } }
+						AND = {
+							primary_title = { title = d_black_fang } 							
+							wealth = 50
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = { text = black_fang_borrow_money_effect_tooltip }
+			hidden_tooltip = {
+				random_society_member = {
+					limit = {
+						is_society_grandmaster = yes
+						society_member_of = black_fang
+					}
+					character_event = { id = MNM.6000 }	
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0.5 #Slow down
+			}
+			modifier = {
+				factor = 0
+				wealth = 1
+			}
+			modifier = {
+				factor = 0.1
+				war = no
+			}
+		}
+	}
+
+	black_fang_pay_debt = {
+		only_playable = yes
+		ai_check_interval = 18
+
+		potential = {
+			has_dlc = "Mystics"
+			has_character_modifier = black_fang_debt
+			NOT = { has_character_flag = block_payback }
+			any_society_member = {
+				is_society_grandmaster = yes
+				society_member_of = black_fang
+			}
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = black_fang_pay_debt_tooltip
+
+				OR = {
+					AND = {
+						is_variable_equal = { which = black_fang_debt value = 50 }
+						wealth = 50	
+					}
+					AND = {
+						is_variable_equal = { which = black_fang_debt value = 250 }
+						wealth = 250	
+					}
+					AND = {
+						is_variable_equal = { which = black_fang_debt value = 500 }
+						wealth = 500	
+					}
+				}
+			}
+		}
+
+		effect = {
+			pay_back_black_fang_effect = yes
+			remove_black_fang_debt_effect = yes
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0.5 #Slow it down
+			}
+			modifier = {
+				factor = 0.1
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.1
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = black_fang_refused_to_pay_debt
+			}
+			modifier = {
+				factor = 0
+
+				OR = {
+					AND = {
+						is_variable_equal = { which = black_fang_debt value = 50 }
+						OR = {
+							NOT = { wealth = 50 }
+							AND = {
+								NOT = { monthly_income = 0 }
+								NOT = { wealth = 100 }
+							}
+						}
+					}
+					AND = {
+						is_variable_equal = { which = black_fang_debt value = 250 }
+						OR = {
+							NOT = { wealth = 250 }
+							AND = {
+								NOT = { monthly_income = 0 }
+								NOT = { wealth = 500 }
+							}
+						}
+					}
+					AND = {
+						is_variable_equal = { which = black_fang_debt value = 500 }
+						OR = {
+							NOT = { wealth = 500 }
+							AND = {
+								NOT = { monthly_income = 0 }
+								NOT = { wealth = 1000 }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	black_fang_donate = {
+		only_playable = yes
+		ai_check_interval = 120
+
+		potential = {
+			has_dlc = "Mystics"
+			society_member_of = black_fang
+			society_rank < 4
+		}
+
+		allow = {
+			wealth = 200
+		}
+
+		effect = {
+			tooltip = {
+				wealth = -200
+				add_society_currency_minor_effect = yes
+			}
+			hidden_effect = {
+				random_society_member = {
+					limit = {
+						society_rank = {
+							rank == 4
+							society = black_fang
+						}
+					}
+					character_event = { id = MNM.6004 }
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0.1 #Slow it down
+			}
+			modifier = {
+				factor = 0.1
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.1
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 300 }
+			}
+		}
+	}
+
+	black_fang_raise_troops = {
+		only_playable = yes
+		
+		is_high_prio = yes
+		is_mercenary = yes
+		ai_check_interval = 24
+
+		potential = {
+			has_dlc = "Mystics"
+			society_rank = {
+				society = black_fang
+				rank == 4
+			}
+		}
+
+		allow = {
+			war = yes
+			has_society_currency_major_trigger = yes
+			conditional_tooltip = {
+				trigger = {
+					has_character_modifier = black_fang_raise_troops_cooldown
+				}
+
+				custom_tooltip = {
+					text = black_fang_raise_troops_cooldown_TT
+
+					always = no
+				}
+			}
+		}
+
+		effect = {
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						owner = ROOT
+						province = PREV
+						home = PREV
+						troops = {
+							archers = { 1500 1500 }
+							light_infantry = { 2500 2500 }
+							light_cavalry = { 1000 1000 }
+						}
+						attrition = 1.0
+						disband_on_peace = yes
+						maintenance_multiplier = 1
+						earmark = assassin_troops
+					}	
+				}
+			}
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = black_fang_raise_troops_cooldown
+					hidden = yes
+					years = 1
+				}
+			}
+			detract_society_currency_major_effect = yes
+			sound_effect = generic_click_01
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
+		}
+	}
+
+	black_fang_raise_ships = {
+		only_playable = yes
+		
+		is_high_prio = yes
+		is_mercenary = yes
+
+		ai_check_interval = 24
+
+		potential = {
+			has_dlc = "Mystics"
+			society_rank = {
+				society = black_fang
+				rank >= 3
+			}
+		}
+
+		allow = {
+			war = yes
+			has_society_currency_medium_trigger = yes
+		}
+
+		effect = {
+			spawn_fleet = {
+				province = closest
+				owner = ROOT
+				disband_on_peace = yes
+				earmark = assassin_ships
+				troops =
+				{
+					galleys = { 45 45 }
+				}
+			}
+			detract_society_currency_medium_effect = yes
+			sound_effect = generic_click_01
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	black_fang_drug_effect = {
+		ai_check_interval = 36
+		
+		potential = {
+			has_dlc = "Mystics"
+			society_member_of = black_fang
+			NOT = {	has_character_flag = black_fang_taking_drugs	}
+		}
+
+		allow = {
+			has_society_currency_minor_trigger = yes
+		}
+
+		effect = {
+			detract_society_currency_minor_effect = yes
+			custom_tooltip = { text = black_fang_drug_decision_tt }
+			hidden_effect = { 
+				remove_character_modifier = withdrawal_symptoms 
+				character_event = { id = MNM.6800 days = 0}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+targeted_decisions = {
+
+	#Action: recruit black_fang
+	black_fang_recruit = {
+		ai_target_filter = realm
+		is_in_society = yes # Note - Only works for targeted_decisions. For non-targeted decisions you can use "society_decisions"
+		ai_check_interval = 24
+
+		from_potential = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_character_modifier = recruitment_timer }
+			society_member_of = black_fang
+			
+			#Only level 2 and 3 AIs recruit
+			OR = {
+				ai = no
+				society_rank == 2
+				society_rank == 3
+			}
+		}
+		potential = {
+			OR = {
+				FROM = { ai = no }
+				ai = no
+			}
+			OR = {
+				FROM = { ai = yes }
+				is_within_diplo_range = FROM # AI only checks inside realm, so is by definition in range
+			}
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			is_in_society = no
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+
+			#AI cannot invite other AIs when society is full
+			NAND = {
+				ai = yes
+				FROM = { ai = yes }
+				NOT = { can_join_society = black_fang }
+			}
+
+			#Stopping the ai from making stupid choices
+			OR = {
+				FROM = { ai = no }
+				is_friend = FROM
+				is_lover = FROM
+				is_close_relative = FROM
+				interested_in_society = black_fang
+			}
+
+			NAND = {
+				FROM = { ai = yes }
+				ai = yes
+				trait = zealous
+				NOT = { true_religion_group = muslim }
+			}
+		}
+		allow = {
+			has_assassins_prerequisites = yes
+			is_inaccessible_trigger = no
+
+			FROM = {
+				custom_tooltip = {
+					text = recruit_delay_timer_tooltip
+					NOT = { has_character_modifier = recruitment_delay_timer }
+				}
+			}
+
+			ROOT = {
+				is_inaccessible_trigger = no
+				custom_tooltip = {
+					text = black_fang_recruit_block_tooltip
+					OR = {
+						NOT = { has_character_flag = black_fang_attempted_recruitment }
+						interested_in_society = black_fang					
+					}
+					NOT = { has_character_flag = ongoing_recruitment }
+				}
+			}	
+		}
+		effect = {
+			set_character_flag = black_fang_attempted_recruitment
+			set_character_flag = ongoing_recruitment
+			hidden_effect = { 
+				if = {
+					limit = { NOT = { religion = shiite } }
+					character_event = { id = MNM.6020 days = 3 } 
+				}
+				if = {
+					limit = { religion = shiite }
+					character_event = { id = MNM.6022 days = 3 } 
+				}
+				character_event = { id = MNM.7030 days = 365 }
+				FROM = {
+					if = {
+						limit = { ai = yes }
+						add_character_modifier = {
+							name = recruitment_timer
+							days = 730
+							hidden = yes
+						}
+					}
+					add_character_modifier = {
+						name = recruitment_delay_timer
+						days = 90
+						hidden = yes
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1 # slow down
+			}
+			modifier = {
+				factor = 10 # recruit interested parties
+				interested_in_society = black_fang
+			}
+			modifier = {
+				factor = 0 # don't recruit characters interested in something else
+				NOT = { interested_in_society = black_fang }
+				is_interested_in_any_society = yes
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { religion_group = muslim }
+			}
+		}
+	}
+
+	#Power: scare ruler
+	black_fang_scare_ruler = {
+		only_playable = yes
+		
+		ai_target_filter = realm
+		ai_check_interval = 60
+
+		from_potential = {
+			has_dlc = "Conclave"
+			is_playable = yes
+			is_adult = yes
+			NOT = { trait = incapable }
+			society_rank = {
+				society = black_fang
+				rank >= 2
+			}
+			prisoner = no
+		}
+
+		potential = {
+			NOT = { character = FROM }
+			age = 10
+			is_ruler = yes
+			OR = {
+				FROM = { ai = yes } # Only checks realm, so by definition in range
+				is_within_diplo_range = FROM
+			}
+		}
+
+		allow = {
+			ROOT = {
+				NOT = { society_member_of = black_fang }
+				prisoner = no
+				is_inaccessible_trigger = no
+				NOT = { owes_favor_to = FROM }
+			}
+			OR = {
+				FROM = { society_rank == 4 }
+				ROOT = { same_realm = FROM }
+			}
+			FROM = { 
+				has_society_currency_medium_trigger = yes
+				is_inaccessible_trigger = no 
+			}
+			NOT = {
+				has_opinion_modifier = {
+					modifier = opinion_threatened_me
+					who = FROM
+				}
+			}
+		}
+
+		effect = {
+			FROM = { detract_society_currency_medium_effect = yes }
+
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 9
+						FROM = { society_rank == 4 }
+					}
+					modifier = {
+						factor = 3
+						FROM = { society_rank == 3 }
+					}
+					hidden_effect = { character_event = { id = MNM.6840 days = 1 } }
+					FROM = { add_favor = ROOT }
+				}
+				50 = {
+					modifier = { #Makes it even harder to threaten someone 2 steps above you
+						factor = 3
+						OR = {
+							AND = {
+								tier = EMPEROR
+								FROM = { lower_tier_than = KING }
+							}
+							AND = {
+								tier = KING
+								FROM = { tier = BARON }
+							}
+						}
+					}
+					modifier = { #Makes it harder to threaten someone above you
+						factor = 3
+						higher_tier_than = FROM
+					}
+					custom_tooltip = { text = black_fang_scare_ruler_fail }
+					hidden_effect = { FROM = { character_event = { id = MNM.6980 days = 1 } } }
+				}
+			}
+			
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5 # slow down
+			}
+			modifier = {
+				FROM = { is_benevolent_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				FROM = { is_evil_trigger = yes }
+				factor = 2
+			}
+			modifier = {
+				OR = {
+					is_friend = FROM
+					is_lover = FROM
+					NOR = {
+						liege = { character = FROM }
+						is_liege_of = FROM
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+
+	#Power: mark for death
+	black_fang_mark_for_death = {
+		only_playable = yes
+		
+		ai_target_filter = realm
+		ai_target_filter = rivals
+		ai_check_interval = 24
+
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			society_rank = {
+				society = black_fang
+				rank == 4
+			}
+		}
+
+		potential = {
+			NOT = { character = FROM }
+			is_adult = yes
+			is_within_diplo_range = FROM
+
+			#Limits for performance and sense-making
+			OR = {
+				FROM = { ai = no }
+				is_foe = FROM 
+				NOT = { reverse_opinion = { who = FROM value = -30 } }
+				holds_favor_on = FROM
+				any_spouse = { #Unfaithful spouse
+					character = FROM
+					any_lover = { NOT = { character = FROM } }
+				}
+				any_lover = { any_spouse = { character = FROM  } } #Lover of spouse
+				any_lover = { any_lover = { character = FROM } } #Lover of lover
+				ROOT = { any_claim = { any_claimant = { character = FROM } } } #Somneone sharing claims
+				AND = {
+					true_religion_shiite_trigger = no
+					is_ruler = yes
+					OR = {
+						trait = zealous
+						trait = cruel
+						trait = arbitrary
+					}
+				}
+			}
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = black_fang_mark_for_death_allow_tooltip
+				FROM = { 
+					NOT = { has_character_flag = black_fang_marked_someone_for_death } 
+					has_society_currency_medium_trigger = yes
+				}
+			}	
+		}
+
+		effect = {
+			custom_tooltip = {
+				text = black_fang_mark_for_death_effect_tooltip
+				FROM = { 
+					set_character_flag = black_fang_marked_someone_for_death 
+					character_event = { id = MNM.6842 }
+				}
+				set_character_flag = black_fang_target_marked_for_death
+			}
+			FROM = { detract_society_currency_medium_effect = yes }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.2 # slow down
+			}
+			modifier = {
+				FROM = { is_benevolent_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				FROM = { is_evil_trigger = yes }
+				factor = 4
+			}
+			modifier = {
+				FROM = { trait = ambitious }
+				factor = 2
+			}
+			modifier = {
+				OR = {
+					is_friend = FROM
+					is_lover = FROM
+				}
+				factor = 0
+			}
+		}
+	}
+
+	#Action: Clear marked for death
+	black_fang_clear_marked_for_death_target = {
+		only_playable = yes
+		
+		ai_target_filter = realm
+		ai = no
+
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			society_rank = {
+				society = black_fang
+				rank == 4
+			}
+		}
+
+		potential = {
+			NOT = { character = FROM }
+			is_adult = yes
+			is_within_diplo_range = FROM
+			has_character_flag = black_fang_target_marked_for_death
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = black_fang_clear_marked_for_death_target_allow_tooltip
+				has_character_flag = black_fang_target_marked_for_death
+			}
+		}
+
+		effect = {
+			custom_tooltip = {
+				text = black_fang_clear_marked_for_death_target_effect_tooltip
+				clr_character_flag = black_fang_target_marked_for_death
+				FROM = { clr_character_flag = black_fang_marked_someone_for_death }
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	#Action: (Mission only: Train Protege)
+	train_assassin_protege = {
+	    only_playable = yes
+	    is_high_prio = yes
+		ai_check_interval = 36
+	    
+	    from_potential = {
+    		has_dlc = "Mystics"
+	        is_playable = yes
+	        is_adult = yes
+	        prisoner = no
+			society_member_of = black_fang
+	        has_regent = no
+	        is_inaccessible_trigger = no
+	        has_quest = quest_black_fang_protege
+	        NOT = { has_character_flag = training_protege }
+	    }
+	    
+	    potential = {
+        	NOT = { character = FROM }
+	        prisoner = no
+	        #is_child_of = FROM
+	    }
+	    
+	    allow = {
+	    	host = { character = FROM } #must be in your court...?
+		    age = 12
+			NOT = { age = 21 }
+		    is_ruler = no
+			is_abroad = no
+			is_married = no
+			#NOT = { any_spouse = { is_landed = yes } }
+
+	    	trigger_if = {
+	    		limit = { #can't be in a society already...
+	    			is_in_society = yes
+	    		}
+		    	is_in_society = no
+	    	}
+
+	        is_inaccessible_trigger = no
+
+	        custom_tooltip = {
+	            text = characters_are_not_busy_tt
+	            hidden_tooltip = {
+	                FROM = {
+	                    NOT = { has_character_flag = do_not_disturb }
+	                    NOT = { war = yes }
+	                }
+	                NOT = { has_character_flag = do_not_disturb }
+	                NOT = { war = yes }
+	            }
+	        }
+	        trigger_if = {
+	        	limit = { NOT = { is_within_diplo_range = FROM } }
+	        	is_within_diplo_range = FROM # CPU HEAVY!
+	        }
+	    }
+	    
+	    effect = {
+	    	save_event_target_as = assassin_protege
+	    	
+	    	FROM = {
+	    		set_character_flag = is_using_train_protege_decision
+	    		character_event = { id = MNM.6250 }
+	    	}
+	    }
+	    
+	    revoke_allowed = {
+	        always = no
+	    }
+	    ai_will_do = {
+	        factor = 1
+	        modifier = {
+	            factor = 0
+	            #if the target has already recruited someone
+	            any_child = {
+	            	same_society_as = ROOT
+	            }
+
+	        }
+	        modifier = {
+	            factor = 0.3
+	        }
+	    }
+	}
+}
+
+targeted_decisions = {
+
+	search_for_artifact = {
+		only_playable = yes
+		
+		ai_target_filter = court
+		ai_check_interval = 12
+
+		from_potential = {
+			is_ruler = yes
+			prisoner = no
+			is_inaccessible_trigger = no
+			OR = {
+				has_character_modifier = relic_rumor_major
+				has_character_modifier = relic_rumor_medium
+				has_character_modifier = relic_rumor_minor
+			}
+			OR = {
+				ai = no
+				NOT = { any_courtier_or_vassal = { has_character_flag = relic_hunter } }
+			}
+		}
+
+		potential = {
+			is_councillor = yes
+			liege = { character = FROM }
+			NOT = { trait = incapable }
+			prisoner = no
+			is_inaccessible_trigger = no
+			NOT = { has_character_flag = relic_hunter }
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = search_for_artifact_allow_tt
+				is_councillor = yes
+				liege = { character = FROM }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { FROM = { any_courtier_or_vassal = { has_character_flag = relic_hunter } } }
+				custom_tooltip = {
+					text = search_for_artifact_effect_replace_tt
+					FROM = {
+						random_courtier_or_vassal = { 
+							limit = { has_character_flag = relic_hunter } 
+							clr_character_flag = relic_hunter
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = search_for_artifact_effect_tt
+				set_character_flag = relic_hunter
+				save_event_target_as = relic_hunter
+				FROM = { save_event_target_as = relic_ruler }
+				character_event = { id = MNM.9007 days = 30 } # The looping evaluation for progress increase/decrease begins...
+			}
+			if = {
+				limit = { FROM = { check_variable = { which = relic_score value = 1 } } }
+				custom_tooltip = {
+					text = search_for_artifact_effect_progress_tt
+					hidden_effect = { FROM = { multiply_variable = { which = relic_score value = 0.75 } } }
+				}
+			}
+			FROM = { add_artifact_search_payment_effect = yes }
+			custom_tooltip = {
+				text = outcome_will_depend_on_roots_skill_tt
+			}
+		}
+
+		revoke_allowed = { always = no }
+
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				OR = {
+					diplomacy = 14
+					martial = 14
+					stewardship = 14
+					intrigue = 14
+					learning = 14
+				}
+				factor = 10
+			}
+			modifier = {
+				OR = {
+					is_friend = FROM
+					reverse_opinion = { who = FROM value = 30 }
+				}
+				factor = 10
+			}
+			modifier = {
+				FROM = { NOT = { wealth = 50 } }
+				factor = 0
+			}
+			modifier = {
+				ai = no
+				factor = 0
+			}
+		}
+	}
+
+	stop_artifact_search = {
+		only_playable = yes
+		
+		ai_target_filter = court
+		ai_check_interval = 36
+
+		from_potential = {
+			is_ruler = yes
+			prisoner = no
+			OR = {
+				has_character_modifier = relic_rumor_major
+				has_character_modifier = relic_rumor_medium
+				has_character_modifier = relic_rumor_minor
+			}
+			is_inaccessible_trigger = no
+			OR = {
+				has_character_modifier = pays_for_artifact_hunt_minor
+				has_character_modifier = pays_for_artifact_hunt_medium
+				has_character_modifier = pays_for_artifact_hunt_major
+			}
+		}
+
+		potential = {
+			has_character_flag = relic_hunter
+		}
+
+		effect = {
+			custom_tooltip = {
+				text = stop_artifact_search_effect_tt
+				hidden_effect = { 
+					FROM = {
+						if = {
+							limit = { has_character_modifier = pays_for_artifact_hunt_minor }
+							remove_character_modifier = pays_for_artifact_hunt_minor
+						}
+						if = {
+							limit = { has_character_modifier = pays_for_artifact_hunt_medium }
+							remove_character_modifier = pays_for_artifact_hunt_medium
+						}
+						if = {
+							limit = { has_character_modifier = pays_for_artifact_hunt_major }
+							remove_character_modifier = pays_for_artifact_hunt_major
+						}
+					}
+				}
+				hidden_effect = {
+					clr_character_flag = relic_hunter
+				}
+			}
+		}
+
+		revoke_allowed = { always = no }
+
+		ai_will_do = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+				wealth = -100
+			}
+			modifier = {
+				factor = 0
+				check_variable = { which = relic_score value = -2 }
+			}
+		}
+	}
+	
+	decision_abduct = {
+		filter = all
+		ai_target_filter = realm
+		
+		only_playable = yes
+		ai = no
+		
+		from_potential = {
+			OR = {
+				is_devil_worshiper_trigger = yes
+				society_member_of = black_fang
+			}
+			NOT = { trait = incapable }
+			prisoner = no
+			NOT = { has_any_opinion_modifier = opinion_abducting }
+		}
+		
+		potential = {
+			ai = yes
+			NOT = { character = FROM }
+			is_patrician = no
+			OR = {
+				lower_tier_than = DUKE
+				is_landed = no
+			}
+			OR = {
+				father_even_if_dead = {
+					lower_tier_than = DUKE
+					is_patrician = no
+					ai = yes
+				}
+				NOT = {
+					father = {
+						always = yes
+					}
+				}
+			}
+			OR = {
+				mother_even_if_dead = {
+					lower_tier_than = DUKE
+					is_patrician = no
+					ai = yes
+				}
+				NOT = {
+					mother = {
+						always = yes
+					}
+				}
+			}
+			OR = {
+				spouse = {
+					lower_tier_than = DUKE
+					is_patrician = no
+					ai = yes
+				}
+				is_married = no
+			}
+		}
+		
+		allow = {
+			in_revolt = no
+			NOT = { war_with = FROM }
+			NOT = { same_society_as = FROM }
+			prisoner = no
+			OR = {
+				AND = {
+					is_landed = no
+					FROM = {
+						has_society_currency_tiny_trigger = yes
+					}
+				}
+				AND = {
+					is_landed = yes
+					NOT = {
+						higher_tier_than = BARON
+					}
+					FROM = {
+						has_society_currency_minor_trigger = yes
+					}
+				}
+				AND = {
+					higher_tier_than = BARON
+					FROM = {
+						has_society_currency_medium_trigger = yes
+					}
+				}
+			}
+			is_within_diplo_range = FROM
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						is_ruler = yes
+					}
+				}
+				FROM = {
+					detract_society_currency_tiny_effect = yes
+				}
+			}
+			if = {
+				limit = {
+					is_ruler = yes
+					lower_tier_than = COUNT
+				}
+				FROM = {
+					detract_society_currency_minor_effect = yes
+				}
+			}
+			if = {
+				limit = {
+					higher_tier_than = BARON
+				}
+				FROM = {
+					detract_society_currency_medium_effect = yes
+				}
+			}
+			hidden_tooltip = {
+				FROM = {
+					any_opinion_modifier_target = {
+						limit = {
+							reverse_has_opinion_modifier = {
+								who = PREV
+								modifier = opinion_abducting
+							}
+						}
+						reverse_remove_opinion = {
+							who = PREV
+							modifier = opinion_abducting
+						}
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_abducting
+						months = 12000
+					}
+					character_event = { id = MNM.20070 days = 1 }
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0 		# 1 = 100% chance every month (for each allowed target!)
+		}
+	}
+	
+	stop_abduct_decision = {
+		filter = self
+		ai_target_filter = self
+		ai = no
+	
+		potential = {
+			OR = {
+				is_devil_worshiper_trigger = yes
+				society_member_of = black_fang
+			}
+			has_any_opinion_modifier = opinion_abducting
+		}
+		
+		effect = {
+			random_opinion_modifier_target = {
+				limit = {
+					ROOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = opinion_abducting
+						}
+					}
+				}
+				save_event_target_as = target_abduction
+				ROOT = { character_event = { id = MNM.20100 tooltip = stop_abduct_decision_tt } }
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	stop_abduct_decision_target = {
+		filter = all
+		ai_target_filter = realm
+		ai = no
+	
+		from_potential = {
+			OR = {
+				is_devil_worshiper_trigger = yes
+				society_member_of = black_fang
+			}
+			has_any_opinion_modifier = opinion_abducting
+		}
+		
+		potential = {
+			FROM = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_abducting
+				}
+			}
+		}
+		
+		effect = {
+			save_event_target_as = target_abduction
+			hidden_tooltip = {
+				FROM = { character_event = { id = MNM.20100 } }
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
+
+decisions = {
+	employ_a_smith = {
+		only_playable = yes
+		ai_check_interval = 36
+		potential = {
+			NOT = { government = order_government }
+			OR = {
+				has_dlc = "Mystics"
+				has_dlc = "Jade Dragon"
+			}
+			OR = {
+				mercenary = no
+				ai = no
+			}
+			age = 16
+    		is_incapable = no
+			OR = {
+				ai = no
+				higher_tier_than = COUNT
+			}
+			is_landed = yes
+			is_lowborn = no
+		}
+		allow = {
+			hidden_trigger = {
+				OR = {
+					ai = no
+					wealth = 500
+				}
+			}
+			is_inaccessible_trigger = no
+			
+			custom_tooltip = {
+				text = employ_a_smith_cooldown_tt
+				hidden_trigger = {
+					NOT = {
+						has_character_modifier = employ_a_smith_cd
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = {
+				text = employ_a_smith_tt
+				hidden_effect = {
+					character_event = { id = MNM.9130 }
+					add_character_modifier = {
+						name = employ_a_smith_cd
+						hidden = yes
+						years = 2
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				NOR = {
+					tier = KING
+					tier = EMPEROR
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.1
+				trait = content
+			}
+			modifier = {
+				factor = 0
+				any_artifact = { has_artifact_flag = combat_weapon }
+				any_artifact = { has_artifact_flag = armor_set }
+				any_artifact = { has_artifact_flag = crown_jewel }
+			}
+		}
+	}
+}

@@ -28,3 +28,38 @@ d_schwarze_rosen = {
 	# Extra income due to donations, etc
 	#monthly_income = 4 # (Must be an integer between 1 and 512)
 }
+# Black Fang Order/tied to society
+d_black_fang = {
+
+	color={ 25 25 25 }
+	color2={ 255 255 255 }
+	
+	capital = 55 #	Vaud
+	
+	graphical_culture = hashshashingfx
+	
+	title = "tribal_count"
+	foa = "chief_foa"
+	title_female = "LORD_female"
+	
+	holy_order = yes
+
+	# Always exists
+	landless = yes
+	
+	culture = persian
+	
+	# Parent Religion 
+	religion = elimine_church
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+
+	mercenary_type = black_fang_composition
+}
