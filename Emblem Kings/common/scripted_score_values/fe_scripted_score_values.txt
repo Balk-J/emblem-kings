@@ -1,0 +1,102 @@
+# Can be utilized in ai_chance, ai_will_do, random list weighting and anything that utilizes the triggered modifiers to calculate a value.
+
+dishonorable_ai_chance_increase_score = {
+	#Used in ai_chance of options.
+	#Increases chance the sneakier they are.
+	#Decreases chance the more honorable they are.
+	modifier = {
+        factor = 1.5
+        ai_honor = -50
+    }
+    modifier = {
+        factor = 0.5
+        ai_honor = 50
+    }
+    modifier = {
+        factor = 1.2
+        has_education_intrigue_trigger = yes
+    }
+    modifier = {
+        factor = 0.2
+        has_education_martial_trigger = yes
+    }
+    modifier = {
+        factor = 1.5
+        trait = cruel
+        NOT = { trait = honest }
+        NOT = { trait = just }
+    }
+    modifier = {
+        factor = 1.5
+        OR = {
+            trait = impaler
+            trait = schemer
+        }
+    }
+    modifier = {
+        factor = 2
+        OR = {
+            society_member_of = black_fang
+            is_devil_worshiper_trigger = yes
+        }
+    }
+    modifier = {
+        factor = 0.5
+        is_member_of_any_warrior_lodge_trigger = yes
+    }
+    modifier = {
+        factor = 1.5
+        OR = {
+            trait = ambitious
+            ai_ambition = 50
+        }
+    }
+    modifier = {
+        factor = 1.5
+        is_evil_trigger = yes
+    }
+    modifier = {
+        factor = 1.5
+        FROM = { duelist_skill_compared_to_prev_high_group_trigger = yes }
+    }
+    modifier = {
+        factor = 0.5
+        FROM = { duelist_skill_compared_to_prev_low_group_trigger = yes }
+    }
+    modifier = {
+        factor = 0.5
+        liege = { character = FROM }
+        NOT = { trait = envious }
+    }
+    modifier = {
+        factor = 0.9
+        trait = kind
+    }
+    modifier = {
+        factor = 0.5
+        OR = {
+            trait = honest
+            trait = just
+        }
+    }
+    modifier = {
+        factor = 0.5
+        trait = duelist
+    }
+    modifier = {
+        factor = 1.5
+        is_rival = FROM
+    }
+    modifier = {
+        factor = 0.1
+        is_friend = FROM
+    }
+    modifier = {
+        factor = 0.5
+        is_pious_trigger = yes
+    }
+    modifier = {
+        factor = 0.5
+        is_benevolent_trigger = yes
+    }
+}

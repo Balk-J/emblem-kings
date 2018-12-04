@@ -653,7 +653,7 @@ plot_kill_character = {
 	murder_plot = yes
 	society_plot = {
 		ROOT = {
-			society_member_of = the_assassins
+			society_member_of = black_fang
 			society_rank >= 2
 		}
 		OR = {
@@ -664,7 +664,7 @@ plot_kill_character = {
 				}
 			}
 			ROOT = {
-				has_quest = quest_the_assassins_assassination
+				has_quest = quest_black_fang_assassination
 				quest_target = { character = FROM }
 			}
 		}
@@ -964,7 +964,7 @@ plot_kill_character = {
 
 		modifier = {
 			factor = 50
-			FROM = { has_quest = quest_the_assassins_assassination }
+			FROM = { has_quest = quest_black_fang_assassination }
 			is_quest_target_of = FROM
 		}
 		modifier = {
@@ -1176,7 +1176,7 @@ plot_kill_spouse = {
 	murder_plot = yes
 	society_plot = {
 		ROOT = {
-			society_member_of = the_assassins
+			society_member_of = black_fang
 			society_rank >= 2
 		}
 		OR = {
@@ -1187,7 +1187,7 @@ plot_kill_spouse = {
 				}
 			}
 			ROOT = {
-				has_quest = quest_the_assassins_assassination
+				has_quest = quest_black_fang_assassination
 				quest_target = { character = FROM }
 			}
 		}
@@ -1367,7 +1367,7 @@ plot_kill_spouse = {
 		}
 		modifier = {
 			factor = 50
-			FROM = { has_quest = quest_the_assassins_assassination }
+			FROM = { has_quest = quest_black_fang_assassination }
 			is_quest_target_of = FROM
 		}
 	}
@@ -2356,9 +2356,9 @@ plot_seize_trade_post = {
 
 ###SOCIETIES PLOTS###
 
-###Assassins###
+###Black Fang###
 
-plot_assassins_collect_debt = {
+plot_black_fang_collect_debt = {
 	type = realm_characters_plus # All characters in the same realm, plus rivals and relatives of self, parents, children and spouse, and quest target
 	intrigue_plot = yes
 	
@@ -2367,19 +2367,19 @@ plot_assassins_collect_debt = {
 		prisoner = no
 		is_adult = yes
 		NOT = { trait = incapable }
-		society_member_of = the_assassins
-		has_quest = quest_the_assassins_collect_debt
+		society_member_of = black_fang
+		has_quest = quest_black_fang_collect_debt
 	}
 	
 	# Targe scope scope
 	player_allow = {
-		FROM = { has_quest = quest_the_assassins_collect_debt }
+		FROM = { has_quest = quest_black_fang_collect_debt }
 	}
 	
 	#Target scope
 	target_potential = {
 		FROM = {
-			has_quest = quest_the_assassins_collect_debt
+			has_quest = quest_black_fang_collect_debt
 			quest_target = { character = ROOT }
 		}
 	}
@@ -2387,9 +2387,9 @@ plot_assassins_collect_debt = {
 	# Target character scope
 	allow = {
 		custom_tooltip = {
-			text = plot_assassins_collect_debt_allow_tt
+			text = plot_black_fang_collect_debt_allow_tt
 			FROM = {
-				has_quest = quest_the_assassins_collect_debt
+				has_quest = quest_black_fang_collect_debt
 				quest_target = { character = ROOT }
 			}
 		}
@@ -2401,7 +2401,7 @@ plot_assassins_collect_debt = {
 	
 	success = { #From is plotter, root is target
 		custom_tooltip = {
-			text = plot_assassins_collect_debt_success
+			text = plot_black_fang_collect_debt_success
 			FROM = { has_character_flag = collected_debt_success }
 		}
 	}

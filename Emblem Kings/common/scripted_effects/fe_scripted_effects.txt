@@ -2437,3 +2437,118 @@ jugdral_culture_change_effect = {
 		}
 	}
 }
+remove_black_fang_debt_effect = {
+	if = {
+		limit = { has_character_modifier = black_fang_debt }
+		remove_character_modifier = black_fang_debt
+		hidden_tooltip = {
+			set_variable = { which = black_fang_debt value = 0 } 
+		}
+		clr_character_flag = black_fang_target_debt
+		clear_delayed_event = { id = MNM.6009 }
+	}
+}
+pay_back_black_fang_effect = {
+	if = {
+		limit = { is_variable_equal = { which = black_fang_debt value = 50 } }
+		wealth = -50
+		hidden_tooltip = {
+			event_target:grand_master  = {
+				if = {
+					limit = {
+						ai = yes
+						primary_title = { title = d_black_fang } 
+					}
+					wealth = 50
+				}
+			}
+		}
+	}
+	if = {
+		limit = { is_variable_equal = { which = black_fang_debt value = 250 } }
+		wealth = -250	
+		hidden_tooltip = {
+			event_target:grand_master  = {
+				if = {
+					limit = {
+						ai = yes
+						primary_title = { title = d_black_fang } 
+					}
+					wealth = 250
+				}
+			}
+		}
+	}
+	if = {
+		limit = { is_variable_equal = { which = black_fang_debt value = 300 } }
+		wealth = -300
+		hidden_tooltip = {
+			event_target:grand_master  = {
+				if = {
+					limit = {
+						ai = yes
+						primary_title = { title = d_black_fang } 
+					}
+					wealth = 300
+				}
+			}
+		}
+	}
+	if = {
+		limit = { is_variable_equal = { which = black_fang_debt value = 500 } }
+		wealth = -500
+		hidden_tooltip = {
+			event_target:grand_master = {
+				if = {
+					limit = {
+						ai = yes
+						primary_title = { title = d_black_fang } 
+					}
+					wealth = 500
+				}
+			}
+		}
+	}
+}
+clean_up_after_leaving_society_effect = {
+	hidden_effect = {
+		clr_character_flag = do_not_disturb
+		remove_character_modifier = quest_cooldown_timer
+		
+		#Powers, Missions and Interactions: the Assassins
+		#quest_the_assassins_assassination
+		#quest_the_assassins_collect_debt
+		#quest_the_assassins_convert_province
+		#quest_the_assassins_occupy_holding
+		#quest_the_assassins_protege
+		clr_character_flag = ongoing_recruitment
+		clr_character_flag = approves_of_shia
+		clr_character_flag = disapproves_of_shia
+		clr_character_flag = willing_to_join
+		clr_character_flag = unwilling_to_join
+		clr_character_flag = assassins_attempted_recruitment
+		clr_character_flag = escape_successful
+		clr_character_flag = escape_injured
+		clr_character_flag = escape_death
+		clr_character_flag = escape_bribe 
+
+		#Powers, Missions and Interactions: Secret Religious	
+		clr_character_flag = sr_too_honest
+	    clr_character_flag = sr_too_wroth
+	    clr_character_flag = sr_too_slothful
+	    clr_character_flag = sr_too_trusting
+	    clr_character_flag = sr_too_indiscreet
+	    clr_character_flag = free_help
+	    clr_character_flag = help_for_cost
+		clr_character_flag = conduct_secret_ceremony_timer
+		remove_character_modifier = attempting_to_blend_in
+		clr_character_flag = blending_in_timer
+		clr_character_flag = attempting_to_convince_stubborn_courtier
+	    clr_character_flag = attempting_to_convince_concerned_friend
+	    clr_character_flag = blend_in_struggled_with_trait
+	    clr_character_flag = blend_in_attended_house_of_worship
+	    clr_character_flag = blend_in_general_progress
+		#quest_secret_religious_societies_induct_ruler
+		#quest_secret_religious_societies_sympathy_ruler
+	}
+}

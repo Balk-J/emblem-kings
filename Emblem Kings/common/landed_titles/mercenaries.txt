@@ -333,41 +333,6 @@ d_ilia_mercenary_knights = {
 	mercenary_type = ilia_mercenary_knights_composition
 }
 
-d_black_fang = {
-	color={ 25 25 25 }
-	color2={ 255 255 255 }
-	
-	capital = 55 #	Vaud
-	
-	title = "tribal_count"
-	foa = "chief_foa"
-	title_female = "LORD_female"
-	
-	short_name = yes
-	
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	#allow = {
-	#	always = no 
-	#}
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	
-	# merc
-	allow = {
-		OR = {
-			has_landed_title = d_black_fang
-			is_liege_or_above = d_black_fang # TODO - fix this?
-		}
-	}
-	mercenary = yes	
-	mercenary_type = black_fang_composition
-}
-
 # Eyvel's mercenaries
 d_fiana_freeblades = {
 	color={ 240 110 10 }

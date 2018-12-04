@@ -236,3 +236,141 @@ great_purge = {
 	local_tax_modifier = -0.25
 	icon = 35
 }
+borrowed_from_black_fang = {
+	icon = 24
+	church_opinion = -10
+}
+#Monks and mystics
+assassins_debt = {
+	icon = 24
+}
+
+astounding_visions = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 81
+	diplomacy = 2
+	stewardship = 2
+	martial = 2
+	intrigue = 2
+	learning = 2
+}
+
+uplifting_visions = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 81
+	diplomacy = 1
+	stewardship = 1
+	martial = 1
+	intrigue = 1
+	learning = 1
+}
+
+frightening_visions = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 82
+	diplomacy = -1
+	stewardship = -1
+	martial = -1
+	intrigue = -1
+	learning = -1
+}
+
+hashish_addict = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 88
+	health = -0.5
+}
+
+withdrawal_symptoms = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 40
+	health = -0.5
+	diplomacy = -2
+	stewardship = -2
+	martial = -2
+	intrigue = -2
+	learning = -2
+	combat_rating = -20
+}
+# Black Fang Insights
+diplomatic_insight = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 3
+	diplomacy = 2
+}
+martial_insight = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 1
+	martial = 2
+}
+intrigue_insight = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 5
+	intrigue = 2
+}
+learning_insight = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 2
+	learning = 2
+}
+stewardship_insight = {
+	is_visible = { 
+		OR = {
+			society_member_of = black_fang
+			character = FROM
+		}
+	}
+	icon = 4
+	stewardship = 2
+}
+black_fang_raise_troops_cooldown = {
+	icon = 1
+}
+expelled_d_black_fang = {
+	icon = 35
+}
