@@ -16,3 +16,14 @@ government_flavor = {
 		government = tyrant_government
 	}
 }
+
+government_flavor = {
+	name = gov_jugdral_crusaders
+	graphics = GFX_evt_crusaders
+	priority = 4
+	trigger = {
+		primary_title = {
+			title = e_crusaders
+		}
+	}
+}

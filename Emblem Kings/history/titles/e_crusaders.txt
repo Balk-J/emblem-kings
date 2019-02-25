@@ -19,6 +19,7 @@
 777.1.1={
 	holder=1038 # Seliph
 	effect = {
+		set_global_flag = last_holy_war_started
 		set_title_flag = crusade_allowed
 	}
 }

@@ -8391,7 +8391,7 @@ e_elibe = {
 
 				b_mulagir = {
 				}
-				b_mulagirshrine = {
+				b_mulagir_shrine = {
 				}
 				b_mulagir_2 = {
 				}

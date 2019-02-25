@@ -2517,7 +2517,17 @@ targetted_decisions = {
 		
 		potential = {
 			is_playable = yes
-			culture_group = latin
+			OR = {
+				culture_group = latin
+				AND = {
+					culture_group = arabic
+					religion_group = christian
+					liege = {
+						culture_group = latin
+						religion_group = christian
+					}
+				}
+			}
 			has_global_flag = christian_crusades_unlocked
 			NOR = {
 				culture = roman
@@ -2527,11 +2537,24 @@ targetted_decisions = {
 				religion_group = christian
 				top_liege = { religion_group = christian }
 			}
-			capital_scope = {
-				region = world_middle_east
+			OR = {
+				capital_scope = {
+					region = world_middle_east
+				}
+				capital_scope = {
+					region = world_persia
+				}
+				capital_scope = {
+					region = world_africa
+				}
 			}
-			any_realm_province = {
-				culture_group = arabic
+			OR = {
+				any_realm_province = {
+					culture_group = arabic
+				}
+				top_liege = {
+					culture = outremer
+				}
 			}
 			NOT = { government = chinese_imperial_government }
 			NOT = {
@@ -2591,12 +2614,12 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1
 			
-			modifier = {
-				factor = 0.01
-				capital_scope = {
-					NOT = { culture_group = arabic }
-				}
-			}
+			#modifier = {
+			#	factor = 0.01
+			#	capital_scope = {
+			#		NOT = { culture_group = arabic }
+			#	}
+			#}
 			modifier = { #Small Crusader States will balkanize with their own culture or go native.
 				factor = 0
 				top_liege = {

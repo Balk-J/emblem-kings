@@ -2,6 +2,7 @@
 gov_noble_league;Aristocratic League;;;;;;;;;;;;;x
 gov_divine_autocracy;Divine Autocracy;;;;;;;;;;;;;x
 gov_dark_cult;Dark Cult;;;;;;;;;;;;;x
+gov_jugdral_crusaders;Crusader Army;;;;;;;;;;;;;x
 tyrant_government;Divine Autocracy;;;;;;;;;;;;;x 
 tyrant_government_desc;A Divine Autocracy is a Feudal realm under the absolute control of a ruler with incredible magical power, such as an ancient sorceror or a true dragon. They are often the focus of a state religion or cult of personality. However, this form of government relies on the ruler's power to stay united. The realm will fracture if they die without a worthy successor. Realms that can no longer operate as Divine Autocracies will revert to Feudal government.;;;;;;;;;;;;;x
 tyrant_government_FEATURES;§Y*§! The Council is permanently abolished\n§Y*§! If the heir is not a §YDragon§!, §YArchsage§!, §YArchdruid§!, or §YDark Druid§!, all vassals will become independent and get claims on each other's primary titles on ruler death;;;;;;;;;;;;;x

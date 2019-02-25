@@ -99,3 +99,23 @@ character_event = {
 		fix_loptyrian_bishop_capitals_effect = yes
 	}
 }
+character_event = {
+	id = fe_test.7
+		
+	is_triggered_only = yes
+	
+	option = {
+		if = {
+			limit = {
+				NOT = {
+					possessed_loptous = {
+						is_alive = yes
+					}
+				}
+			}
+			e_crusaders = {
+				destroy_landed_title = THIS
+			}
+		}
+	}
+}
